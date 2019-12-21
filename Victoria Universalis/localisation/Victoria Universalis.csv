@@ -1,0 +1,441 @@
+;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+GC2_NAME;Grand Campaign Extra Nations;;;;;;;;;x;;;;
+large_promotion_focus;Large State Promotion;;;;;;;;;x;;;;
+insane_promotion_focus;Massive State Promotion;;;;;;;;;x;;;;
+TRADE_INDUSTRIAL_AND_CONSUMER_GOODS;Industrial & Consumer Goods;;;;;;;;;x;;;;
+industrial_and_consumer_goods;Industrial & Consumer Goods;;;;;;;;;x;;;;
+pharmaceuticals;Pharmaceuticals;;;;;;;;;x;;;;
+pharmaceuticals_desc;The advancement of medicine has led to the development of proper pharmaceuticals, especially those using opiates, as a method of medical treatment replacing more traditional methods.;;;;;;;;;;;;;;;;;;;;;;;;;
+pharmaceutical_plant;Pharmaceutical Plant;;;;;;;;;x;;;;
+pharmaceutical_plant_desc;This plant creates modern medicines by synthesizing new chemical compounds from opium.;;;;;;;;;x;;;;
+wool_fabric_factory;Wool Fabric Factory;;;;;;;;;x;;;;
+wool_fabric_factory_desc;Wool is processed into fabric here.;;;;;;;;;x;;;;
+cotton_fabric_factory;Cotton Fabric Factory;;;;;;;;;x;;;;
+cotton_fabric_factory_desc;Cotton is processed into fabric here.;;;;;;;;;x;;;;
+cigarettes;Cigarettes;;;;;;;;;x;;;;
+cigarette_factory;Cigarette Factory;;;;;;;;;x;;;;
+cigarette_factory_desc;This factory rolls tobacco leaves into paper to create cigarettes.;;;;;;;;;x;;;;
+PNJ;Sikh Empire;Pendjab;Pundschab;;Punjab;;;;;;;;;x;;;;
+PNJ_ADJ;Sikh Empire;Penjabi;Pundschabisch;;Panjab?;;;;;;;;x;;;;
+PNJ_conservative;Royal Faction;Faction royale;K霵igsfraktion;;Facci鏮 Real;;;;;;;;;x;;;;
+PNJ_liberal;The Liberal Faction;Faction lib廨ale;Die liberale Fraktion;;La Facci鏮 Liberal;;;;;;;;;x;;;;
+PNJ_reactionary;The Nationalist Faction;Faction nationaliste;Die nationalistische Fraktion;;La Facci鏮 Nacionalista;;;;;;;;;x;;;;
+PNJ_anarcho_liberal;The Radical Faction;Faction radicale;Die radikale Fraktion;;La Facci鏮 Radical;;;;;;;;;x;;;;
+PNJ_socialist;The Socialist Faction;Faction socialiste;Die sozialistische Fraktion;;La Facci鏮 Socialista;;;;;;;;;x;;;;
+PNJ_communist;The Communist Faction;Faction communiste;Die kommunistische Fraktion;;La Facci鏮 Comunista;;;;;;;;;x;;;;
+PNJ_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;La Facci鏮 Fascista;;;;;;;;;x;;;;
+PER_1142;Laristan;;;;;;;;;;;;;x
+PER_1144;Sistan;;;;;;;;;;;;;x
+JAP_1638;Chugoku;;;;;;;;;;;;;x
+JAP_1665;Shikoku;;;;;;;;;;;;;x
+JAP_1659;Kyoto;;;;;;;;;;;;;x
+JAP_1959;Osaka;;;;;;;;;;;;;x
+JAP_1677;Shizuoka;;;;;;;;;;;;;x
+CHI_1613;Chengde;;;;;;;;;;;;;x
+AUS_782;South Dalmatia;;;;;;;;;;;;;x
+BEL_388;Brussels;;;;;;;;;;;;;x
+TUR_821;Macedonia;;;;;;;;;;;;;x
+ARA_1157;Arabia;;;;;;;;;;;;;x
+ARA_1173;Arabian Coast;;;;;;;;;;;;;x
+IRA_931;Iraq;;;;;;;;;;;;;x
+ARG_2392;Patagonia;;;;;;;;;;;;;x
+acquire_all_cores;Liberate all cores;;;;;;;;;;;;;x
+acquire_all_cores_desc;Liberate your country from its oppressors;;;;;;;;;;;;;x
+acquire_all_cores_setup;Acquires $STATE$;;;;;;;;;;;;;x
+acquire_all_cores_short;Acquires $STATE$;;;;;;;;;;;;;x
+acquire_small_state;Acquire small state;;;;;;;;;;;;;x
+acquire_small_state_setup;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_small_state_short;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_small_state_desc;Take a state of less than 150K POPs;;;;;;;;;;;;;x
+take_capital;Take Capital;;;;;;;;;;;;;x
+take_capital_setup;Take Capital;;;;;;;;;;;;;x
+take_capital_short;Take Capital;;;;;;;;;;;;;x
+take_capital_desc;Take the capital state of a country;;;;;;;;;;;;;x
+conquest_small;Minor Conquest;;;;;;;;;;;;;x
+conquest_small_setup;Minor Conquest;;;;;;;;;;;;;x
+conquest_small_short;Minor Conquest;;;;;;;;;;;;;x
+conquest_small_desc;Annex a nation with less than 400k POPs;;;;;;;;;;;;;x
+demand_chinese_concession_casus_belli;Demand Chinese Concession;;;;;;;;;;;;;x
+demand_chinese_concession_casus_belli_setup;Demand Chinese Concession;;;;;;;;;;;;;x
+demand_chinese_concession_casus_belli_short;Demand Chinese Concession;;;;;;;;;;;;;x
+demand_chinese_concession_casus_belli_description;Take a colonial state in Formosa, Hong Kong, Manchuria, Tibet, or Xinjiang;;;;;;;;;;;;;x
+demand_reparations_desc;Force another §Ycountry§W to pay reparations to us;;;;;;;;;;;;;x
+demand_reparations;Demand Reparations;;;;;;;;;;;;;x
+demand_reparations_short;Make $RECIPIENT$ pay reparations;;;;;;;;;;;;;x
+demand_reparations_setup;Make $RECIPIENT$ pay reparations;;;;;;;;;;;;;x
+tiny_nation;Tiny Nation;;;;;;;;;;;;;x
+small_nation;Small Nation;;;;;;;;;;;;;x
+medium_nation;Medium Nation;;;;;;;;;;;;;x
+average_nation_tariffs;Average Nation Tariff Cap;;;;;;;;;;;;;x
+large_nation;Large Nation;;;;;;;;;;;;;x
+large_nation_tariffs;Large Nation Tariff Cap;;;;;;;;;;;;;x
+empire;Empire;;;;;;;;;;;;;x
+empire_tariffs;Empire Tariff Cap;;;;;;;;;;;;;x
+superpower;Superpower;;;;;;;;;;;;;x
+superpower_tariffs;Superpower Tariff Cap;;;;;;;;;;;;;x
+hegemon;Hegemon;;;;;;;;;;;;;x
+hegemon_tariffs;Hegemon Tariff Cap;;;;;;;;;;;;;x
+one_year_draft_nerf;One Year Draft Nerf;;;;;;;;;;;;;x
+two_year_draft_nerf;Two Year Draft Nerf;;;;;;;;;;;;;x
+four_year_draft_nerf;Four Year Draft Nerf;;;;;;;;;;;;;x
+mandatory_service_nerf;Mandatory Service Nerf;;;;;;;;;;;;;x`
+sphereling_tax_bonus;Sphereling Tax Buff;;;;;;;;;;;;;x
+save_the_nation0.5;Revanchism;;;;;;;;;;;;;x
+save_the_nation1;Revanchism;;;;;;;;;;;;;x
+save_the_nation1.5;Revanchism;;;;;;;;;;;;;x
+save_the_nation2;Revanchism;;;;;;;;;;;;;x
+save_the_nation2.5;Revanchism;;;;;;;;;;;;;x
+save_the_nation3;Revanchism;;;;;;;;;;;;;x
+save_the_nation3.5;Revanchism;;;;;;;;;;;;;x
+save_the_nation4;Revanchism;;;;;;;;;;;;;x
+save_the_nation4.5;Revanchism;;;;;;;;;;;;;x
+save_the_nation5;Revanchism;;;;;;;;;;;;;x
+one_year_draft;One Year Draft;;;;;;;;;;;;;x
+two_year_draft;Two Year Draft;;;;;;;;;;;;;x
+four_year_draft;Four Year Draft;;;;;;;;;;;;;x
+mandatory_service;Mandatory Service;;;;;;;;;;;;;x
+regionalism;Regionalism;;;;;;;;;;;;;x
+totalitarianism;Totalitarianism;;;;;;;;;;;;;x
+confederalism;Confederalism;;;;;;;;;;;;;x
+one_year_draft_china;One Year Draft;;;;;;;;;;;;;x
+two_year_draft_china;Two Year Draft;;;;;;;;;;;;;x
+four_year_draft_china;Four Year Draft;;;;;;;;;;;;;x
+mandatory_service_china;Mandatory Service;;;;;;;;;;;;;x
+regionalism_china;Regionalism;;;;;;;;;;;;;x
+totalitarianism_china;Totalitarianism;;;;;;;;;;;;;x
+confederalism_china;Confederalism;;;;;;;;;;;;;x
+taxation_1875;Midgame Taxation Cap;;;;;;;;;;;;;x
+non_free_trade_tariffs_1875;Midagme Tariff Cap;;;;;;;;;;;;;x
+taxation_1900;Lategame Taxation Cap;;;;;;;;;;;;;x
+non_free_trade_tariffs_1900;Lategame Tariff Cap;;;;;;;;;;;;;x
+administrative_points;Administrative Points;;;;;;;;;x;;;;
+province_selector;Province Selector;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+PS_unlocked;PS Building Unlocked;;;;;;;;;;;;;x
+PS_unlocked_desc;You can now build Province Selector buildings.;;;;;;;;;;;;;x
+AP1;+50 Administration Points;;;;;;;;;;;;;x
+AP1_desc;+50 Administration Points;;;;;;;;;;;;;x
+AP2;+50 Administration Points;;;;;;;;;;;;;x
+AP2_desc;+50 Administration Points;;;;;;;;;;;;;x
+AP3;+50 Administration Points;;;;;;;;;;;;;x
+AP3_desc;+50 Administration Points;;;;;;;;;;;;;x
+AP4;+100 Administration Points;;;;;;;;;;;;;x
+AP4_desc;+50 Administration Points;;;;;;;;;;;;;x
+AP5;+100 Administration Points;;;;;;;;;;;;;x
+AP5_desc;+75 Administration Points;;;;;;;;;;;;;x
+AP6;+100 Administration Points;;;;;;;;;;;;;x
+AP6_desc;+75 Administration Points;;;;;;;;;;;;;x
+geneva_convention;Geneva Convention Signed;;;;;;;;;;;;;x
+geneva_convention_desc;The Geneva Convention will result in fewer casualties turning into fatalities;;;;;;;;;;;;;x
+turn_off_ps_title;Turn off Province Selector Decisions;;;;;;;;;;;;;x
+turn_off_ps_desc;Enacting this decision will permanently disable Province Selector decisions for all players. This decision is only available in the first month of the game.;;;;;;;;;;;;;x
+turn_off_ps_eng_title;Turn off Province Selector Decisions;;;;;;;;;;;;;x
+turn_off_ps_eng_desc;Enacting this decision will permanently disable Province Selector decisions for all players. This decision is only available in the first month of the game.;;;;;;;;;;;;;x
+signing_the_geneva_convention_title;Sign the Geneva Convention;;;;;;;;;;;;;x
+signing_the_geneva_convention_desc;Signing the Geneva Convention will trigger an invention that gives +10% military hospital modifier.;;;;;;;;;;;;;x
+country_attract_immigrants_title;Country Scope: Attract Immigrants;;;;;;;;;x;;;;
+country_attract_immigrants_desc;Gives your country an extra immigrant attraction modifier for 3 years. This modifier is not enough to overcome the non New World penalty to immigration.;;;;;;;;;x;;;;
+country_restrict_emigration_title;Country Scope: Restrict Emigration;;;;;;;;;x;;;;
+country_restrict_emigration_desc;Gives a countrywide -0.3 modifier to emigration for 2 years. For reference, 5 militancy gives +0.2 modifier to emigration and 10 militancy gives a 1.0 modifier to emigration.;;;;;;;;;x;;;;
+increase_conscription_title;Country Scope: Increase Draft Laws;;;;;;;;;x;;;;
+increase_conscription_desc;Raises your draft law by one level. If your government type is a fascist or communist dictatorship, or you are currently involved in a great war, the draft law will skip to service by requirement.;;;;;;;;;x;;;;
+increase_conscription_ps_disabled_title;Increase Conscription Laws;;;;;;;;;x;;;;
+increase_conscription_ps_disabled_desc;Raises your draft law by one level. If you have a fascist government or are currently involved in a great war, the draft law will skip to service by requirement.;;;;;;;;;x;;;;
+country_suppression_title;Country Scope: Suppression;;;;;;;;;x;;;;
+country_suppression_desc;Gives a -0.03 MIL and CON modifier to the country for 10 years.;;;;;;;;;x;;;;
+country_reduce_infamy_title;Country Scope: Reduce Infamy;;;;;;;;;x;;;;
+country_reduce_infamy_desc;Reduces infamy by 3.;;;;;;;;;x;;;;
+country_early_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
+country_early_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_mid_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
+country_mid_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_late_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
+country_late_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_endgame_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
+country_endgame_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_recruitment_drive_title;Country Scope: Increase Soldier Promotion;;;;;;;;;x;;;;
+country_recruitment_drive_desc;Increases the chance of your POPs promoting to soldiers. This does not raise the max soldier cap per province. Only revanchism can raise the maximum soldier cap in non colonial states above 5%.;;;;;;;;;x;;;;
+state_core_integration_title;State Scope: Core Integration;;;;;;;;;x;;;;
+state_core_integration_desc;Gives cores to selected state. POPs cannot assimilate unless they are living in cored provinces.;;;;;;;;;x;;;;
+state_literacy_campaign_title;State Scope: Raise Literacy;;;;;;;;;x;;;;
+state_literacy_campaign_desc;Increases the literacy of the selected state. The amount of literacy gained is dependent on the size of the state. States less than 350K get 25% literacy, states between 350K and 1M get 20%, states over 1M get 15%. Can only use on the same state once every 15 years.;;;;;;;;;x;;;;
+state_assimilation_title;State Scope: Assimilation;;;;;;;;;x;;;;
+state_assimilation_desc;Adds a 300% assimilation rate bonus to the given state for 10 years. Cannot use on colonial states. Assimilation rate and assimilation chance are different variables, if a POPs assimilation chance is 0 it will not assimilate. Hover your mouse over the nationality of a POP in the population tab to see its individual assimilation chance.;;;;;;;;;x;;;;
+state_suppression_title;State Scope: Suppression;;;;;;;;;x;;;;
+state_suppression_desc;Gives a -0.15 MIL and CON modifier to the selected state for 10 years.;;;;;;;;;x;;;;
+state_baby_boom_title;State Scope: Baby Boom;;;;;;;;;x;;;;
+state_baby_boom_desc;Gives a small growth modifier to the selected state for several years. Does not work on states with over 650k POP;;;;;;;;;x;;;;
+province_blood_and_iron_title;Province Scope: Blood and Iron RGO.;;;;;;;;;x;;;;
+province_blood_and_iron_desc;Gives a permanent RGO efficiency bonus and +0.02 militancy modifier to the selected province. Cannot use on gold mines.;;;;;;;;;x;;;;
+province_rgo_expansion_title;Province Scope: RGO Expansion.;;;;;;;;;x;;;;
+province_rgo_expansion_desc;Gives a permanent boost to farm and mining size to the selected province.;;;;;;;;;x;;;;
+province_rgo_change_mining_title;Province Scope: Change Mining RGO.;;;;;;;;;x;;;;
+province_rgo_change_mining_desc;Allows the switching of a single RGO province of the following types: Coal, Iron, or Sulphur into Coal, Iron, or Sulphur. Timber can be made from any province with forest, woods, or jungle terrain. Do not switch to timber if its demand in the world market isn't high otherwise the province will get stuck with 0% employment. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
+province_rgo_change_agriculture_title;Province Scope: Change Agriculture RGO.;;;;;;;;;x;;;;
+province_rgo_change_agriculture_desc;Allows the switching of a single RGO province of the following types: Grain, Fruit, Fish, Cattle, Wool, Cotton, Opium, Dye, Silk, or Tobacco. Fish requires a coastal province. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
+reset_province_selector_title;Reset Province Selector;;;;;;;;;x;;;;
+reset_province_selector_desc;Destroys one province selector and refunds 1000 Admin Points;;;;;;;;;x;;;;
+EVTNAME199036;Mining RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC199036;Choose to change a province to the following RGO types. Coal, Iron, and Sulphur can only be swapped with each other. Timber requires a forest, woods, or jungle province.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199036OPTA;Change a province to produce Coal.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199036OPTB;Change a province to produce Iron.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199036OPTC;Change a province to produce Sulphur.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199036OPTD;I'd rather not change anything.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME199037;Agriculture RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC199037;Choose to change a province to the following RGO types. Fish requires an available costal province.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTA;Change a province to produce Wool.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTB;Change a province to produce Timber.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTC;Change a province to produce Cotton.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTD;Change a province to produce Cattle.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTE;Change a province to produce Fish.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTF;Change a province to produce Fruit.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTG;Change a province to produce Grain.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTH;Change a province to produce Opium.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTI;Change a province to produce Dye.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTJ;Change a province to produce Silk.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTK;Change a province to produce Tobacco.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT199037OPTL;I'd rather not change anything.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME2700;Administrative Points;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC2700;Annual Administrative Points Budget;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA2700;I will use them wisely;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME2707;AP Tech Researched;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC2707;Your annual administrative point budget has increased.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA2707;Great!;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME2600;Choose Your Destiny;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC2600;Pick the political path your country will follow.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA2600;Reactionary;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB2600;Conservative;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTC2600;Liberal;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTD2600;Socialist;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTE2600;Communist;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTF2600;Fascist;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME2604;End of Recruitment Drive;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC2604;The effects of the recruitment drive have worn off and people are returning to civilian life.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA2604;Too bad.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91001;Tutorial;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91001;Welcome to the tutorial of Victoria Universalis. The goal of this mod is to introduce more features to play tall, give the player more control, to provide a challenging single player experience while still being balanced for multiplayer, and to be as light weight as possible so as to not slow down the game too much. To that end, balance and meaningful gameplay additions are prioritized over everything else. Decisions with clear instructions on how to trigger them have replaced most random events. A few big things are included from other mods, namely reforms from HPM, country size modifiers and RGO change decisions from PUIR, and a few art assets from PDM. If you want to end the tutorial, select the first option, if you wish to know more pick the second.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91001;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91001;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91002;Tutorial: Province Selectors;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91002;To use the new decisions, you must first build a Province Selector (PS) building. Country Scope decisions don't care where the PS is built, State Scope decisions will target all provinces in a random state that has a PS, and Province Scope decisions will affect a random province that contains the PS. After enacting each decision, the PS used in the decision will be destroyed. PS require Administrative Points (AP) to build. You receive a base stipend of 50 AP per year and can increase this amount by researching the Economic Thought line of techs. AP cannot be produced by any other means and it is represented by the book icon in the trade window. If you do not wish to play with this feature, you can disable it by enacting the "Disable Province Selector" decision. This decision is only available in the first month of the game.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91002;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91002;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91003;Tutorial: Assimilation;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91003;All assimilation factors in the base game were scrapped and remade from the ground up. POPs now have the same small chance to assimilate that is affected by lifeneeds, literacy, and militancy. This chance is quadrupled in POPs located in provinces without their culture core and then quadrupled again in New World nation provinces, so a POP located in the New World could potentially have 16x higher assimilation chance than one living in the Old World. Your ruling party's citizenship policy also has a large effect on assimilation rate.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91003;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91003;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91004;Tutorial: Revanchism;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91004;A new revanchism comeback mechanic has been introduced. Every 5 points of revanchism now increases both your mobilization pool and maximum solder cap in cored states by 0.5%, capped up to 5% each. Your country gains revanchism by losing core territory, and it is calculated by number of provinces lost not by population lost. You can view your current revanchism by looking in the political tab next to your government type.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91004;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91004;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91005;Tutorial: POPs;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91005;Poor strata POP demotion from unemployment has been nerfed and POP promotion has been buffed to compensate. This makes literacy and national foci use the main drivers of industrialization rather than massive RGO unemployment that occurs in the lategame.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91005;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91005;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91006;Tutorial: The Economy;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91006;A number of small changes have been made in an effort to balance the in-game economy and lessen the frequency of economic crashes. New factory goods have been introduced and POP needs have been rebalanced to make normally useless goods more important. Governments will be forced to pay money to POPs through social spending in order to get pop growth. This has the effect of taking money out of national banks and back into the world market.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91006;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91006;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91007;Tutorial: Combat;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91007;Land combat has been balanced so that lategame artillery only has roughly only twice as much defense as attack, as opposed to four to one in vanilla. Guards and tanks have been buffed to be better than infantry in every aspect, but their costs have increased substantially to compensate. Wooden ship HP has been cut in half and navy stats on all late game ships have been changed to create a balanced combat system. In vanilla, all cruiser fleets would wreck big ships due to their extremely efficient naval supply cost, evasion, and torpedo attacks. Cruisers torpedo attack has been taken away, battleship and dreadnought stats have been buffed. Commerce raiders get many torpedo attack bonuses from late game inventions but almost no normal attack. Torpedoes are a special type of attack that only affect big ships and do no damage to small ships, so the balance of lategame naval combat is Big ships > Cruisers > Commerce Raiders > Big Ships. ;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91007;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91007;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91008;Tutorial: Healthcare;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91008;Healthcare reform is the primary way of growing your population and stabilizing the in game economy. The reforms are time locked, require certain techs to pass, and they have to be funded via the social spending slider. You get no pop growth benefit just by passing the reform, in order to receive the benefits of the reform you must have your social spending slider set to the minimum amount listed in the reform. The money spent on healthcare goes directly into the pockets of POPs, and in this way liquidity is increased in the market which leads to higher demand and higher prices for goods, which leads to more income for POPs.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91008;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91008;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME91009;Tutorial: Protip;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91009;The first thing you should do is max out national admin efficiency by promoting bureaucrats in your largest accepted culture POP states. Tariff efficiency, building costs, and POP promotion are based off your national admin efficiency. Try to not build Province Selectors until you have 100% admin efficiency since their cost is increased when your admin efficiency is below 100%. National admin efficiency DOES NOT CARE where the bureaucrats are, so its better to increase bureaucrats in your biggest state with accepted culture POPs well above 1% in order to get max national admin efficiency faster. State admin efficiency does not have any affect on POP promotion rates, tariffs, or taxes. The in game tooltip on state admin effiency is wrong, only national admin efficiency matters unless you're trying to turn a colony into a state.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91009;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91009;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME31509;Hungarian Revolution of $YEAR$;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC31509;The Hungarian Diet has grown increasingly independent of Austrian rule in recent years. Field Marshall Count Franz Philipp von Lamberg was sent to Hungary to take personal control over their armies, but was attacked upon his arrival. In response, the Austrian government ordered the Hungarian Diet dissolved and the Ban of Croatia installed in Lamberg's place. The Hungarians have refused to obey, and thus we now face civil war to maintain the integrity of the empire.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
+EVTOPTA31509;We will restore order!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,
+EVTNAME32512;The Polish Uprising of $YEAR$;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
+EVTDESC32512;After the latest war our subjects in Poland and other parts of our empire began to grow restless. The uprising began as a spontaneous protest by young Poles against conscription into the $COUNTRY_ADJ$ Army. It was soon joined by high-ranking Polish-Lithuanian officers and various politicians. In Warsaw alone 116 demonstrations were held in $YEAR$. Much of these manifestations in ended in clashes with the $COUNTRY_ADJ$ Army. In spite of $COUNTRY_ADJ$ police interference, a symbolic meeting of hymn-singing Poles and Lithuanians took place on the bridge across an important River. The crowds sang "God protect Poland" in Lithuanian and Belarusian. Earlier in $YEAR$ the $COUNTRY_ADJ$ government introduced a state of emergency in Kovno and Grodno as well as several other Polish-majority provinces. Public gatherings were banned and some public leaders were declared outlaws. The situation threatens to break down in anarchy.;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
+EVTOPTA32512;Suppress them immediately.;;;;;;;;;;;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,
+EVTNAME33006;German Liferating Normalization;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC33006;The German population explosion has ended.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTOPTA33006;It couldn't last forever.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME37227;Revanchism;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC37227;There is much anger and resentment over the loss of Alsace Lorraine. Men are enlisting in droves for the chance to seek vengeance on our foes.;;;;;;;;;;;;x
+EVTOPTA37227;We will reclaim our rightful lands!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME99801;Deciding a Colonial Policy;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC99801;Now that $COUNTRY$ is a colonial power, it is time to decide a policy of how $COUNTRY_ADJ$ colonial lands will be administered.;;;;;;;;;;;;x
+EVT99801OPTA;Our people need more land to settle!;;;;;;;;;;;;x
+EVT99801OPTB;We shall rule our colonies through local rulers.;;;;;;;;;;;;x
+EVT99801OPTC;It is our burden to bring civilization to these lands.;;;;;;;;;;;;x
+EVTNAME99802;Non-Colonial Nation;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC99802;Now that $COUNTRY$ is no longer a colonial power, it is time to reform the bureaucracy centered on the $COUNTRY_ADJ$ homeland.;;;;;;;;;;;;x
+EVT99802OPTA;Who needs a place in the sun anyways?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+serbian_balkan_liberation_war_title;Liberate Greater Serbia;;;;;;;;;;;;x
+serbian_balkan_liberation_war_desc;For too long our people have suffered Ottoman oppression. Let us finish what we started in the Serbian revolution and rid our lands of the Turk once and for all.;;;;;;;;;;;;x
+EVTNAME31201;Victory!;;;;;;;;;;;;x
+EVTDESC31201;We have defeated the vile Ottoman scum and reclaimed our ancestral lands. Serbia will be great once more!;;;;;;;;;;;;x
+EVTOPTA31201;Serbia stronk!;;;;;;;;;;;;x
+greek_balkan_liberation_war_title;Liberate Greece;;;;;;;;;;;;x
+greek_balkan_liberation_war_desc;For too long our people have suffered Ottoman oppression. Let us finish what we started in the Greek revolution and rid our lands of the Turk once and for all.;;;;;;;;;;;;x
+EVTNAME31202;Victory!;;;;;;;;;;;;x
+EVTDESC31202;We have defeated the vile Ottoman scum and reclaimed our ancestral lands. Greece will be great once more!;;;;;;;;;;;;x
+EVTOPTA31202;Onwards to Constantinople!;;;;;;;;;;;;x
+EVTNAME31203;Greek Resurgence;;;;;;;;;;;;x
+EVTDESC31203;The Greek diaspora is returning to our lands in droves and the Turks are leaving either voluntarily or by force.;;;;;;;;;;;;x
+EVTOPTA31203;Onwards to Constantinople!;;;;;;;;;;;;x
+romanian_balkan_liberation_war_title;Form Romania;;;;;;;;;;;;x
+romanian_balkan_liberation_war_desc;For too long our people have remained divided and under foreign rule. It is time we proclaimed a united kingdom of Romania!;;;;;;;;;;;;x
+german;German;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+polish_lithuanian;Polish-Lithuanian;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+scandi;Scandinavian;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wallachian;Wallachian;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+moldavian;Moldavian;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+czechoslovakian;Czechoslovakian;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME11104;Nationalism;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC11104;We are but one people!;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA11104;Yes!;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+levee_en_masse;Levee en Masse;;;;;;;;;;;;;x
+levee_en_masse1;Levee en Masse;;;;;;;;;;;;;x
+mobilization_time_tables1;Mobilization Time Tables;;;;;;;;;;;;;x
+personnel_category_tables1;Personnel Category Tables;;;;;;;;;;;;;x
+staff_command_support1;Staff Command Support;;;;;;;;;;;;;x
+railroad_transport_groups1;Railroad Transport Groups;;;;;;;;;;;;;x
+admin_counter;Admin Points counter;;;;;;;;;;;;;x
+admin_counter_desc;You will receive your annual Admin Points allocation when this counter runs out.;;;;;;;;;;;;;x
+political_propaganda;Spreading Propaganda;;;;;;;;;;;;;x
+political_propaganda_desc;The people are currently being indoctrinated. We must wait awhile before we start a new propaganda campaign.;;;;;;;;;;;;;x
+bad_boy;Reducing Infamy;;;;;;;;;;;;;x
+bad_boy_desc;We are justifying our aggression to the international court;;;;;;;;;;;;;x
+immunity_from_influenza;Immunity from Influenza;;;;;;;;;;;;;x
+immunity_from_influenza_desc;Prevents Pandemic Influenza from recurring in your country as long as modifier is active.;;;;;;;;;;;;;x
+recruitment_drive;Recruitment Drive;;;;;;;;;;;;;x
+recruitment_drive_desc;Enlistment campaigns are being held all over the country to attract more men into the army.;;;;;;;;;;;;;x
+suppression;Suppression;;;;;;;;;;;;;x
+suppression_desc;This province is currently under martial law.;;;;;;;;;;;;;x
+country_suppression;Suppression;;;;;;;;;;;;;x
+country_suppression_desc;The country is currently under martial law.;;;;;;;;;;;;;x
+attract_immigrants;Land of Opportunity;;;;;;;;;;;;;x
+attract_immigrants_desc;A promise of free land and jobs is being advertised to potential immigrants.;;;;;;;;;;;;;x
+draft_law_changed;Draft Law Changed;;;;;;;;;;;;;x
+draft_law_changed_desc;We have increased the eligibility of our draft laws.;;;;;;;;;;;;;x
+assimilation;Forced Assimilation;;;;;;;;;;;;;x
+literacy_campaign;Literacy Campaign;;;;;;;;;;;;;x
+small_baby_boom;Baby Boom;;;;;;;;;;;;;x
+rgo_expansion;RGO Expansion;;;;;;;;;;;;;x
+switched_production;Switched Production;;;;;;;;;;;;;x
+global_population_nerf_1900;Global Population Normalization;;;;;;;;;;;;x
+global_population_nerf_1910;Global Population Normalization;;;;;;;;;;;;x
+global_population_nerf_1920;Global Population Normalization;;;;;;;;;;;;x
+global_population_nerf_1930;Global Population Normalization;;;;;;;;;;;;x
+balkan_liberation_war;Nationalist Ferver;;;;;;;;;;;;;x
+balkan_liberation_war_desc;All resources in the country are being directed to war. The people make do with what little scraps they have in order to feed the army.;;;;;;;;;;;;;x
+form_yugoslavia_title;Form Yugoslavia;;;;;;;;;;;;;x
+form_yugoslavia_desc;Unite our Slavic brethren!;;;;;;;;;;;;;x
+embrace_bedouin_minority_title;Embrace the Bedouin minority;;;;;;;;;;;;;x
+embrace_bedouin_minority_desc;It is time to grant equal rights to the Bedouins;;;;;;;;;;;;;x
+embrace_mashriqi_minority_title;Embrace the Mashriqi minority;;;;;;;;;;;;;x
+embrace_mashriqi_minority_desc;It is time to grant equal rights to the Mashriqi;;;;;;;;;;;;;x
+embrace_misri_minority_title;Embrace the Misri minority;;;;;;;;;;;;;x
+embrace_misri_minority_desc;It is time to grant equal rights to the Misri;;;;;;;;;;;;;x
+embrace_kurdish_minority_title;Embrace the Kurdish minority;;;;;;;;;;;;;x
+embrace_kurdish_minority_desc;It is time to grant equal rights to the Kurds;;;;;;;;;;;;;x
+embrace_armenian_minority_title;Embrace the Armenian minority;;;;;;;;;;;;;x
+embrace_armenian_minority_desc;It is time to grant equal rights to the Armenians;;;;;;;;;;;;;x
+embrace_albanian_minority_title;Embrace the Albanian minority;;;;;;;;;;;;;x
+embrace_albanian_minority_desc;It is time to grant equal rights to the Albanians;;;;;;;;;;;;;x
+embrace_bosniak_minority_title;Embrace the Bosniak minority;;;;;;;;;;;;;x
+embrace_bosniak_minority_desc;It is time to grant equal rights to the Bosniaks;;;;;;;;;;;;;x
+embrace_czech_minority_title;Embrace the Czech minority;;;;;;;;;;;;;x
+embrace_czech_minority_desc;It is time to grant equal rights to Czechs;;;;;;;;;;;;;x
+embrace_polish_minority_title;Embrace the Polish minority;;;;;;;;;;;;;x
+embrace_polish_minority_desc;It is time to grant equal rights to Poles;;;;;;;;;;;;;x
+embrace_slovene_minority_title;Embrace the Slovene minority;;;;;;;;;;;;;x
+embrace_slovene_minority_desc;It is time to grant equal rights to Slovenes;;;;;;;;;;;;;x
+embrace_croat_minority_title;Embrace the Croat minority;;;;;;;;;;;;;x
+embrace_croat_minority_desc;It is time to grant equal rights to Croats;;;;;;;;;;;;;x
+common_army_0;Common Army;;;;;;;;;;;;;x
+common_army_0_desc;The Common Army was the name of the non-German military branch of the Austrian empire. As more cultures get accepted, the Common Army shrinks in order to represent the establishment of each ethnicity's independent army.;;;;;;;;;;;;;x
+common_army_1;Common Army;;;;;;;;;;;;;x
+common_army_1_desc;The Common Army was the name of the non-German military branch of the Austrian empire. As more cultures get accepted, the Common Army shrinks in order to represent the establishment of each ethnicity's independent army.;;;;;;;;;;;;;x
+common_army_2;Common Army;;;;;;;;;;;;;x
+common_army_2_desc;The Common Army was the name of the non-German military branch of the Austrian empire. As more cultures get accepted, the Common Army shrinks in order to represent the establishment of each ethnicity's independent army.;;;;;;;;;;;;;x
+common_army_3;Common Army;;;;;;;;;;;;;x
+common_army_3_desc;The Common Army was the name of the non-German military branch of the Austrian empire. As more cultures get equal status in the empire, the Common Army shrinks in order to represent the establishment of each ethnicity's independent army.;;;;;;;;;;;;;x
+balkan_size_modifier;Balkan RGO Modifier;;;;;;;;;;;;;x
+strategic_rgo;Strategic RGO Modifier;;;;;;;;;;;;;x
+christian_subjugation;Christian Subjugation;;;;;;;;;;;;;x
+christian_subjugation_desc;Christians must pay a jizya tax and are subject to conscription into Ottoman armies.;;;;;;;;;;;;;x
+end_christian_subjugation_title;End Persecution of Christians;;;;;;;;;;;;;x
+end_christian_subjugation_desc;Despite the dissolution of the Janissaries during the Ausipcious Incident in 1826, the continued persecution and enslavement of christians continues. This discrimination must be stamped out in order to create a unified Ottoman state.;;;;;;;;;;;;;x
+annex_egypt_title;Annex Egypt;;;;;;;;;;;;;x
+annex_egypt_desc;The Egyptian rebels have been crushed and are ready to submit to Ottoman rule once more.;;;;;;;;;;;;;x
+oriental_crisis_title;Oriental Crisis;;;;;;;;;;;;;x
+oriental_crisis_desc;Muhammad Ali has declared independence from the Sublime Porte and is threatening our holdings in Syria. We must act now if we are to re-establish Ottoman authority in Egypt and the Levant.;;;;;;;;;;;;;x
+embrace_ottomanism_title;Embrace Ottomanism;;;;;;;;;;;;;x
+embrace_ottomanism_desc;One of the early goals of the liberal reform movement in the Ottoman Empire was the creation of a new pan Ottoman identity that all cultures and religions could identify with. Historically, this idea was never realized as the Empire was destabilized by a series of disastrous wars, coups, and uprisings, however you have the option to change all that.;;;;;;;;;;;;;x
+form_north_italy_title;Avanti Italia!;;;;;;;;;;;;;x
+form_north_italy_desc;By establishing a dominant position on the Italian peninsula, we can secure a national homeland for our people by proclaiming ourselves the motive power of a unified Italian state.;;;;;;;;;;;;;x
+form_south_italy_title;Avanti Italia!;;;;;;;;;;;;;x
+form_south_italy_desc;By establishing a dominant position on the Italian peninsula, we can secure a national homeland for our people by proclaiming ourselves the motive power of a unified Italian state.;;;;;;;;;;;;;x
+unite_northern_italy_title;Unite Northern Italy;;;;;;;;;;;;;x
+unite_northern_italy_desc;We have driven the Austrians out of Lombardia and are now the preeminent power in northern Italy. The rest of the north Italian kingdoms have agreed to unite under our leadership.;;;;;;;;;;;;;x
+unite_iberia_title;Unite Iberia;;;;;;;;;;;;;x
+unite_iberia_desc;The Iberian kingdoms are ready to reunite under our banner.;;;;;;;;;;;;;x
+EVTNAMEcommonarmy;Common Army Divided;;;;;;;;;;;;x
+EVTDESCcommonarmy;The new equal status conferred to one of our minorities allows them to establish their own national army independent of the Common Army.;;;;;;;;;;;;x
+EVTOPTAcommonarmy;A small price to pay.;;;;;;;;;;;;x
+EVTNAME31514;Germany for Germans;;;;;;;;;;;;x
+EVTDESC31514;One of the main tenants of the newly formed German Confederation is to confer privileged status to ethnic Germans. We will have to abandon our hopes of creating a Danubian Confederation in order to appease our German brothers.;;;;;;;;;;;;x
+EVTOPTA31514;Deutschland über alles!;;;;;;;;;;;;x
+EVTNAMEsetgovernment;Set Government;;;;;;;;;;;;x
+EVTDESCsetgovernment;Relevant government flag is set.;;;;;;;;;;;;x
+EVTOPTAsetgovernment;OK;;;;;;;;;;;;x
+EVTNAMEmedicine;Medicine Tech Flag;;;;;;;;;;;;x
+EVTDESCmedicine;This tech allows you to enact trinket healthcare.;;;;;;;;;;;;x
+EVTNAMEinorganicchemistry;Inorganic Chemistry Tech Flag;;;;;;;;;;;;x
+EVTDESCinorganicchemistry;This tech allows you to enact low healthcare.;;;;;;;;;;;;x
+EVTNAMEorganicchemistry;Organic Chemistry Tech Flag;;;;;;;;;;;;x
+EVTDESCorganicchemistry;This tech allows you to enact acceptable healthcare.;;;;;;;;;;;;x
+EVTNAMEelectricity;Electricity Tech Flag;;;;;;;;;;;;x
+EVTDESCelectricity;This tech allows you to enact good healthcare.;;;;;;;;;;;;x
+EVTNAMEnavallogistics;Naval Logistics Tech Flag;;;;;;;;;;;;x
+EVTDESCnavallogistics;This tech raises the colonial soldier cap to 3%.;;;;;;;;;;;;x
+EVTNAMErevolutionncounterrevolution;Revolution and Counterrevolution Tech Flag;;;;;;;;;;;;x
+EVTDESCrevolutionncounterrevolution;This tech allows you to switch to unitary or totalitarianism form of centralization.;;;;;;;;;;;;x
+EVTOPTAtechnologyflag;OK;;;;;;;;;;;;x
+change_culture_nanfaren_title;Switch Accepted Culture;;;;;;;;;;;;x
+change_culture_nanfaren_desc;Focus on developing the South. You will still have the option to switch back.;;;;;;;;;;;;x
+change_culture_beifaren_title;Change Accepted Culture;;;;;;;;;;;;x
+change_culture_beifaren_desc;Focus on developing the North. You will still have the option to switch back.;;;;;;;;;;;;x
+argentianian_constitution_title;Enact the 1853 Constitution;;;;;;;;;;;;x
+argentianian_constitution_desc;The current Argentinian constitution was drafted in 1853 and approved by all provincial governments despite a short lived revolt from Buenos Aires.  It was closely inspired by the juridical and political doctrines of the United States Federal Constitution, establishing for instance a Republican division of powers, a high level of independence for the provinces, and a federal power controlled by a strong executive government yet limited by a bicameral national congress.;;;;;;;;;;;;x
+a_house_divided_title;Begin the American Civil war;;;;;;;;;;;;x
+a_house_divided_desc;A house divided against itself cannot stand. We will deal with the issue of slavery even if it means war.;;;;;;;;;;;;x
+sepoy_rebellion_title;Establish the British Raj;;;;;;;;;;;;x
+sepoy_rebellion_desc;This decision will trigger the Sepoy Rebellion event and cause an independence war to occur between all existing Indian puppets and Britain.;;;;;;;;;;;;x
+EVTNAME36942;Sepoy Rebellion;;;;;;;;;;;;x
+EVTDESC36942;We must break British tyranny in India!;;;;;;;;;;;;x
+EVTOPTA36942;Onwards!;;;;;;;;;;;;x
+the_golden_law_title;Enact Lei Aurea;;;;;;;;;;;;x
+the_golden_law_desc;Lei Aurea, or the Golden Law, abolished slavery once and for all throughout Brazil. The law contained only two artices; Slavery was to be abolished, and any previous ruling contradicting the first article was now void.;;;;;;;;;;;;x
+chinese_confusion;Disorganized Army;;;;;;;;;;;;x
+chinese_confusion;Our armies are in disarray and cannot fight effectively;;;;;;;;;;;;x
+chinese_army_nerf;Chinese Army Nerf;;;;;;;;;;;;x
+chinese_army_nerf;Our army is made up of mostly conscripted peasants and their fighting capability suffers as a result;;;;;;;;;;;;x
+chinese_isolationism;Chinese Isolationism;;;;;;;;;;;;x
+chinese_isolationism_desc;There is nothing we desire of the outside world. The foreign barbarians are banned from entering the country or trading with us;;;;;;;;;;;;x
+taiping_rebellion_title;Begin the Taiping Rebellion;;;;;;;;;;;;x
+taiping_rebellion_desc;This will trigger the Taiping Rebellion event and remove the Chinese Isolationism modifier. All armies will be reduced to 0 organization for 45 days to allow time for the Taiping rebels to mobilize. The Taiping Rebellion will trigger in 1860 if this decision is not enacted before then. ;;;;;;;;;;;;x
+EVTNAME31103;Victory in the Levant;;;;;;;;;;;;x
+EVTDESC31103;We have pushed the Egyptians out of the Levant and they are ready to sue for peace. Are we content with our holdings in the Middle East or do we press on and occupy all of Egypt?;;;;;;;;;;;;x
+EVTOPTA31103;We will settle for Syria and Palestine.;;;;;;;;;;;;x
+EVTOPTB31103;We will take back all of Egypt!;;;;;;;;;;;;x
+EVTNAME31104;Defeat in the Levant;;;;;;;;;;;;x
+EVTDESC31104;We have been pushed out of the Levant and the Ottomans are offering peace if we give up our claims in Syria and Palestine. Do we accept or do we continue the fight?;;;;;;;;;;;;x
+EVTOPTA31104;We will sue for peace.;;;;;;;;;;;;x
+EVTOPTB31104;We will will not surrender!;;;;;;;;;;;;x
+EVTNAME31105;Egypt Surrenders;;;;;;;;;;;;x
+EVTDESC31105;The Egyptians have agreed to give up their claims to Syria and Palestine in exchange for their independence.;;;;;;;;;;;;x
+EVTOPTA31105;Excellent.;;;;;;;;;;;;x
+EVTNAME31106;Egypt Refuses;;;;;;;;;;;;x
+EVTDESC31106;The Egyptians have refused to give up their claims to Syria and Palestine.;;;;;;;;;;;;x
+EVTOPTA31106;Now we will make them give up their claims to Egypt as well!;;;;;;;;;;;;x
+oriental_truce;Truce with Egypt;;;;;;;;;;;;x
+oriental_truce_desc;We have to wait until the truce is over to justify another war with Egypt;;;;;;;;;;;;x

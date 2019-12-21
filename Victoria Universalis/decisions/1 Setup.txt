@@ -1,0 +1,431 @@
+political_decisions = {
+
+	global_1836_setup = {
+		potential = {
+			tag = BHU
+			NOT { has_global_flag = global_1836_setup }
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = global_1836_setup
+			any_country = {
+				limit = { ai = no }
+				administrative_points = 1000
+			}
+			any_country = {
+				activate_technology = early_classical_theory_and_critique
+				set_country_flag = AP1
+			}
+			any_country = {
+				limit = { invention = AP2 }
+				set_country_flag = AP2
+			}
+			GRE_837 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1}
+					}
+				}
+			}
+			GRE_826 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}	
+				}
+			}
+			SER_794 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+			MOL_673 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+			WAL_665 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+			MON_2582 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}			
+			TUR_788 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+			TUR_803 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+			TUR_806 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}			
+			TUR_832 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+			TUR_805 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+			TUR_809 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}			
+			TUR_810 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = balkan_size_modifier duration = -1 }
+					}
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	
+	usa_1836_setup = {
+		potential = {
+			tag = USA
+			always = no
+		}
+		allow = {
+			tag = USA
+		}
+		effect = {
+			set_country_flag = the_slavery_debate
+		}
+	}
+	
+	prussian_1836_setup = {
+		potential = {
+			tag = PRU
+			always = no
+		}
+		allow = {
+			tag = PRU
+		}
+		effect = {
+			set_country_flag = prussia
+		}
+	}
+	
+	austrian_1836_setup = {
+		potential = {
+			tag = AUS
+			always = no
+		}
+		
+		allow = {
+			tag = AUS
+		}
+		
+		effect = {
+			set_country_flag = austria
+			AUS = {
+				set_variable = {
+					which = commonarmy
+					value = 0
+				}
+				add_country_modifier = {
+					name = common_army_0
+					duration = -1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = czech
+					}
+					literacy = 0.3
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = hungarian
+					}
+					literacy = 0.1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ashkenazi
+					}
+					literacy = 0.4
+				}
+			}
+		}
+	}
+	ottoman_1836_setup = {
+		potential = {
+			tag = TUR
+			always = no
+		}
+		
+		allow = {
+			tag = TUR
+		}
+		
+		effect = {
+			TUR = {
+				add_country_modifier = {
+					name = christian_subjugation
+					duration = -1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = sephardic
+					}
+					literacy = 0.4
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = greek
+					}
+					literacy = 0.1
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = mashriqi
+							has_pop_culture = kurdish
+						}
+					}
+					literacy = -0.06
+				}
+			}
+		}
+	}
+	balkan_1836_setup = {
+		potential = {
+			tag = GRE
+			always = no
+		}
+		
+		allow = {
+			tag = GRE
+		}
+		
+		effect = {
+		
+			GRE_837 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}
+			GRE_826 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}	
+				}
+			}
+			SER_794 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}
+			MOL_673 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 365 }
+					}
+				}
+			}
+			WAL_665 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 365 }
+					}
+				}
+			}
+			MON_2582 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}			
+			TUR_788 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}
+			TUR_803 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}
+			TUR_806 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}			
+			TUR_832 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 730 }
+					}
+				}
+			}
+			TUR_805 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 730 }
+					}
+				}
+			}
+			TUR_809 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}			
+			TUR_810 = {
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = baby_boom duration = 1095 }
+					}
+				}
+			}			
+		}
+	}	
+
+	russian_1836_setup = {
+		potential = {
+			tag = RUS
+			always = no
+		}
+		
+		allow = {
+			tag = RUS
+		}
+		
+		effect = {
+			set_country_flag = russia
+			set_country_flag = serfdom_not_abolished
+			#add_country_modifier = { name = prochnost duration = -1 }
+			any_pop = {
+				limit = {
+					has_pop_culture = polish
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = lithuanian
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = latvian
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = estonian
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = ashkenazi
+				}
+				literacy = 0.45
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = finnish
+				}
+				literacy = 0.35
+			}
+		}
+	}
+
+	swedish_1836_setup = {
+		potential = {
+			tag = SWE
+			always = no
+		}
+		allow = {
+			tag = SWE
+		}
+		effect = {
+			306 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+			317 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+			320 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+			321 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+		}
+	}
+
+	english_1836_setup = {
+		potential = {
+			tag = ENG
+			always = no
+		}
+		
+		allow = {
+			tag = ENG
+		}
+		
+		effect = {
+			ENG = {
+				any_pop = {
+					limit = {
+						has_pop_culture = irish
+					}
+					literacy = 0.2
+				}
+			}
+		}
+	}	
+	
+}

@@ -1,0 +1,451 @@
+political_decisions = {
+	1836_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1836
+			NOT = { has_global_flag = 1836_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				artisans = {
+					money = 2000
+				}
+			}	
+			set_global_flag = 1836_ai_literacy_boost
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1840_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1840
+			NOT = { has_global_flag = 1840_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1840_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}	
+	
+	1850_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1850
+			NOT = { has_global_flag = 1850_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1850_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+		
+	1860_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1860
+			NOT = { has_global_flag = 1860_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1860_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	1870_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1870
+			NOT = { has_global_flag = 1870_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				artisans = {
+					money = 2000
+				}
+			}		
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1870_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	1880_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1880
+			NOT = { has_global_flag = 1880_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1880_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1890_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1890
+			NOT = { has_global_flag = 1890_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1890_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1900_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1900
+			NOT = { has_global_flag = 1900_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1900_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1910_ai_literacy_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1910
+			NOT = { has_global_flag = 1910_ai_literacy_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+					NOT = { literacy = 0.7 }
+				}
+				any_pop = {
+					limit = {
+						location = { is_colonial = no }
+					}	
+					literacy = 0.05
+				}				
+			}				
+			set_global_flag = 1910_ai_literacy_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	1850_ai_mobilization_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1850
+			NOT = { has_global_flag = 1850_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1850_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1870_ai_mobilization_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1870
+			NOT = { has_global_flag = 1870_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1870_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1890_ai_mobilization_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1890
+			NOT = { has_global_flag = 1890_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1890_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1910_ai_mobilization_boost = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1910
+			NOT = { has_global_flag = 1910_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1910_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1875_money_injection = {
+		potential = {
+			tag = BHU
+			ai = yes
+			year = 1875
+			NOT = { has_global_flag = 1875_money_injection }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				any_pop = {
+					money = 1000
+				}				
+			}				
+			set_global_flag = 1875_money_injection			
+		}
+		ai_will_do = { factor = 1 }
+	}	
+
+}

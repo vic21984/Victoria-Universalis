@@ -1,0 +1,34 @@
+political_decisions = {
+	become_guatemala = {
+		potential = {
+			tag = UCA
+			NOT = {
+				exists = GUA
+			}
+		} 
+
+		allow = {
+			GUA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					NOT = {
+						is_core = GUA
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 30
+			change_tag = GUA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	
+

@@ -1,0 +1,151 @@
+political_decisions = {
+	die_groot_trek = {
+		potential = {
+			OR = {
+				tag = ORA
+				tag = TRN
+			}
+			NOT = {
+				has_global_flag = the_great_trek
+			}
+		}
+		
+		allow = {
+			prestige = 2
+		}
+		
+		effect = {
+			set_global_flag = the_great_trek
+			any_owned = {
+				add_province_modifier = {
+					name = trek_boers
+					duration = 3650
+				}
+			}
+			ENG = {
+				any_owned = {
+					limit = {	
+						has_pop_culture = boer
+					}
+					any_pop = {
+						limit = {
+							culture = boer
+						}
+						consciousness = 6
+					}
+					add_province_modifier = {
+							name = boer_exodus
+							duration = 3650
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	attack_the_laagers = {
+		potential = {
+			tag = ZUL
+			NOT = {
+				has_global_flag = piet_retief_massacre
+			}
+			has_global_flag = the_great_trek
+			OR = {
+				exists = ORA
+				exists = TRN
+			}
+		}
+		allow = {
+			OR = {
+				NOT = {
+					relation = {
+						who = ORA
+						value = 100
+					}
+				}
+				NOT = {
+					relation = {
+						who = TRN
+						value = 100
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 5
+			set_global_flag = piet_retief_massacre
+			2111 = {
+				any_pop = {
+					limit = {
+						culture = boer
+					}
+					reduce_pop = 0.6
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sand_river_convention = {
+		potential = {
+			tag = TRN
+			NOT = {
+				has_country_flag = had_sand_river_convention
+				any_owned_province = {
+					is_core = ENG
+				}
+			}
+		}
+		allow = {
+			relation = {
+				who = ENG
+				value = 75
+			}
+			prestige = 10
+			state_n_government = 1
+		}
+		effect = {
+			political_reform = no_slavery
+			set_country_flag = had_sand_river_convention
+			relation = {
+				who = ENG
+				value = 25
+			}
+		}
+	}
+	
+	orange_river_convention = {
+		potential = {
+			tag = ORA
+			NOT = {
+				has_country_flag = had_orange_river_convention
+				any_owned_province = {
+					is_core = ENG
+				}
+			}
+		}
+		
+		allow = {
+			relation = {
+				who = ENG
+				value = 75
+			}
+			prestige = 10
+			state_n_government = 1
+		}
+		
+		effect = {
+			political_reform = no_slavery
+			set_country_flag = had_orange_river_convention
+			relation = {
+				who = ENG
+				value = 25
+			}
+		}
+	}
+}

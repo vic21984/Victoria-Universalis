@@ -1,0 +1,24 @@
+country_event = {
+	id = 35600
+
+	trigger = {
+		tag = JAP
+		ai = yes
+		civilized = yes
+		NOT = { has_country_flag = ai_japan_westernized }
+	}
+	
+	option = {
+		set_country_flag = ai_japan_westernized
+		prestige = 50
+		money = 500000
+		activate_technology = strategic_mobility
+		activate_technology = muzzle_loaded_rifles
+		activate_technology = battleship_column_doctrine
+		activate_technology = paddle_steamers
+		activate_technology = ideological_thought
+		activate_technology = idealism
+		activate_technology = medicine
+		activate_technology = mechanical_production
+	}
+}

@@ -1,0 +1,115 @@
+political_decisions = {
+	serbian_balkan_liberation_war = {
+		picture = greater_serbia
+		potential = {
+			tag = SER
+			NOT = {
+				has_country_modifier = balkan_liberation_war
+				OR = {
+					owns = 783
+					owns = 802
+					owns = 806
+					AND = {
+						owns = 771
+						owns = 2538
+					}	
+				}
+			}
+		}
+		
+		allow = {
+			NOT = {
+				OR = {
+					owns = 783
+					owns = 802
+					owns = 806
+					AND = {
+						owns = 771
+						owns = 2538
+					}	
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = { name = balkan_liberation_war duration = -1 }	
+			political_reform = four_year_draft
+			small_arms = 100
+			canned_food = 100
+			liquor = 100
+			wine = 100
+			ammunition = 100
+		}
+	}
+	
+	greek_balkan_liberation_war = {
+		picture = hellenic_army
+		potential = {
+			tag = GRE
+			NOT = {
+				has_country_modifier = balkan_liberation_war
+				OR = {
+					owns = 824
+					owns = 805	
+				}
+			}
+		}
+		
+		allow = {
+			NOT = {
+				OR = {
+					owns = 824
+					owns = 805	
+				}
+			}
+		}
+		
+		effect = {
+			inherit = ION
+			add_country_modifier = { name = balkan_liberation_war duration = -1 }	
+			political_reform = four_year_draft
+			small_arms = 100
+			canned_food = 100
+			liquor = 100
+			wine = 100
+			ammunition = 100
+		}
+	}
+
+	romanian_balkan_liberation_war = {
+		picture = create_romania
+		potential = {
+			exists = yes
+			OR = {
+				tag = WAL
+				tag = MOL
+			}
+			not_has_country_flag = romanian_unification
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = romanian_unification
+			change_tag = culture
+			WAL = { annex_to = THIS }
+			MOL = { annex_to = THIS }
+			primary_culture = romanian
+			political_reform = four_year_draft
+			small_arms = 100
+			canned_food = 100
+			liquor = 100
+			wine = 100
+			ammunition = 100			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {	year = 1856 }
+			}	
+		}
+	}	
+}

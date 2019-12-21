@@ -1,0 +1,58 @@
+AUS = {
+	truce_until = 1840.1.1
+}
+TUR = {
+	truce_until = 1840.1.1
+}
+RUS = {
+	truce_until = 1840.1.1
+}
+leader = {
+	name = "Prince Aleksandar"
+	type = land
+	date="1836.1.1"
+	personality = openminded
+	background = gifted_administrator
+}
+
+army = {
+	name = "Army of the Principality of Serbia"
+	location = 794
+	regiment = {
+		name= "1st Serbian Infantry"
+		type = infantry
+		home = 794
+	}
+
+	regiment = {
+		name= "2nd Serbian Infantry"
+		type = infantry
+		home = 795
+	}
+
+	regiment = {
+		name= "3rd Serbian Infantry"
+		type = infantry
+		home = 794
+	}
+
+	regiment = {
+		name= "4th Serbian Infantry"
+		type = infantry
+		home = 795
+	}
+
+	regiment = {
+		name= "1st Serbian Cavalry"
+		type = dragoon
+		home = 794
+	}
+	
+	regiment = {
+		name= "1st Serbian Artillery"
+		type = artillery
+		home = 796
+	}		
+		
+}
+

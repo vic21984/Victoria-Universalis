@@ -1,0 +1,629 @@
+political_decisions = {
+	
+	oriental_crisis = {
+		picture = greater_syria
+		potential = {
+			tag = TUR
+			NOT = {
+				has_global_flag = oriental_crisis
+			}
+		}
+		
+		allow = {
+			exists = EGY
+			EGY = { is_vassal = no }
+			war = no
+			
+		}
+		
+		effect = {
+			casus_belli = {
+				target = EGY
+				type = make_puppet
+				months = 36
+			}
+			war = {
+				target = EGY
+				attacker_goal = { casus_belli = make_puppet }
+			}			
+			set_global_flag = oriental_crisis
+		}
+	}
+
+	annex_egypt = {
+		picture = greater_turkey
+		potential = {
+			tag = TUR
+			exists = EGY
+			EGY = {
+				civilized = no
+			}
+		}
+		
+		allow = {
+			TUR = { 
+				is_our_vassal = EGY
+			}
+		}
+		
+		effect = {
+			all_core = { remove_core = EGY }
+			EGY = {
+				civilized = yes
+				all_core = { 
+					add_core = THIS
+					add_province_modifier = { name = nationalist_agitation duration = 1825 }
+				}
+			}
+			inherit = EGY
+		}
+	}
+	
+	tanzimat_reforms = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = tanzimat_reforms_enacted
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			random_owned = {
+				limit = {
+					owner = { school_reforms = acceptable_schools }
+				}	
+				owner = { social_reform = good_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = low_schools }
+				}	
+				owner = { social_reform = acceptable_schools }
+			}				
+			random_owned = {
+				limit = {
+					owner = { school_reforms = no_schools }
+				}	
+				owner = { social_reform = low_schools }
+			}			
+			activate_technology = early_classical_theory_and_critique
+			activate_technology = freedom_of_trade
+			activate_technology = malthusian_thought
+			activate_technology = basic_chemistry
+			activate_technology = experimental_railroad
+			activate_technology = introspectionism
+			activate_technology = mechanized_mining
+			set_country_flag = tanzimat_reforms_enacted
+		}
+	}
+
+	end_christian_subjugation = {
+		picture = constantinople
+		potential = {
+			tag = TUR
+			has_country_modifier = christian_subjugation
+		}
+		
+		allow = {
+			tag = TUR
+			invention = secularization
+		}
+		
+		effect = {
+			remove_country_modifier = christian_subjugation
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+	
+	kanun_i_esasi = {
+		potential = {
+			tag = TUR
+			NOT = {
+				has_country_flag = kanun_i_esasi_here
+			}
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			ai = no
+		}
+		
+		effect = {
+			administrative_points = 1000
+			any_pop = {
+				militancy = -3
+				consciousness = 2
+			}
+			prestige = 5
+			set_country_flag = kanun_i_esasi_here
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					average_militancy = 1
+				}
+			}
+		}
+	}
+
+	embrace_kurdish_minority = {
+		picture = embrace_arab_minority
+		potential = {
+			tag = TUR
+			NOT = {
+				accepted_culture = kurdish
+				has_country_flag = embraced_kurdish
+			}					
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { citizenship_policy = residency }
+					NOT = { citizens_rights = primary_culture_only }	
+					AND = {
+						TUR_889 = {
+							owned_by = THIS
+							literacy = 0.3
+							NOT = { average_militancy = 1 }
+						}
+					}
+				}
+				AND = {
+					ai = yes
+					TUR_889 = {
+						owned_by = THIS
+						literacy = 0.3
+					}				
+				}
+			}
+		}
+		effect = {
+			set_country_flag = embraced_kurdish
+			add_accepted_culture = kurdish
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = kurdish }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	embrace_mashriqi_minority = {
+		picture = embrace_arab_minority
+		potential = {
+			tag = TUR
+			NOT = {
+				accepted_culture = mashriqi
+				has_country_flag = embraced_mashriqi
+			}					
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { citizenship_policy = residency }
+					NOT = { citizens_rights = primary_culture_only }	
+					AND = {
+						EGY_897 = {
+							owned_by = THIS
+							literacy = 0.3
+							NOT = { average_militancy = 1 }
+						}
+						IRA_931 = {
+							owned_by = THIS
+							literacy = 0.3
+							NOT = { average_militancy = 1 }
+						}
+					}
+				}
+				AND = {
+					ai = yes
+					EGY_897 = {
+						owned_by = THIS
+						literacy = 0.3
+					}
+					IRA_931 = {
+						owned_by = THIS
+						literacy = 0.3
+					}					
+				}
+			}
+		}		
+		effect = {
+			set_country_flag = embraced_mashriqi
+			add_accepted_culture = mashriqi
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = mashriqi }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	embrace_misri_minority = {
+		picture = embrace_arab_minority
+		potential = {
+			tag = TUR
+			NOT = {
+				accepted_culture = misri
+				has_country_flag = embraced_misri
+			}					
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { citizenship_policy = residency }
+					NOT = { citizens_rights = primary_culture_only }	
+					AND = {
+						EGY_1750 = {
+							owned_by = THIS
+							literacy = 0.3
+							NOT = { average_militancy = 1 }
+						}
+						EGY_1771 = {
+							owned_by = THIS
+							literacy = 0.3
+							NOT = { average_militancy = 1 }
+						}
+					}
+				}
+				AND = {
+					ai = yes
+					EGY_1750 = {
+						owned_by = THIS
+						literacy = 0.3
+					}
+					EGY_1771 = {
+						owned_by = THIS
+						literacy = 0.3
+					}					
+				}
+			}
+		}
+		effect = {
+			set_country_flag = embraced_misri
+			add_accepted_culture = misri
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = misri }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	embrace_bedouin_minority = {
+		picture = embrace_arab_minority
+		potential = {
+			tag = TUR
+			NOT = {
+				accepted_culture = bedouin
+				has_country_flag = embraced_bedouin
+			}					
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { citizenship_policy = residency }
+					NOT = { citizens_rights = primary_culture_only }	
+					nationalism_n_imperialism = 1	
+					AND = {
+						ARA_1157 = {
+							owned_by = THIS
+							NOT = { average_militancy = 1 }
+						}
+						ARA_1173 = {
+							owned_by = THIS
+							NOT = { average_militancy = 1 }			
+						}					
+					}
+				}
+				AND = {
+					ai = yes
+					ARA_1157 = { owned_by = THIS }
+					ARA_1173 = { owned_by = THIS }
+				}
+			}
+		
+		}
+		effect = {
+			set_country_flag = embraced_bedouin
+			add_accepted_culture = bedouin
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = bedouin }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	embrace_armenian_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = TUR
+			NOT = {
+				accepted_culture = armenian
+				has_country_flag = embraced_armenian
+			}					
+		}
+		allow = {
+		NOT = { has_country_modifier = christian_subjugation }
+		religious_policy = secularized
+		citizenship_policy = full_citizenship
+		citizens_rights = all_voting_pops
+		OR = {
+			government = hms_government
+			government = democracy
+		}
+		nationalism_n_imperialism = 1	
+			AND = {
+				TUR_884 = {
+					owned_by = THIS
+					literacy = 0.8
+					NOT = { average_militancy = 1 }
+				}
+				TUR_885 = {
+					owned_by = THIS
+					literacy = 0.8
+					NOT = { average_militancy = 1 }
+				}				
+			}
+		}
+		effect = {
+			set_country_flag = embraced_armenian
+			add_accepted_culture = armenian
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = armenian }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	embrace_albanian_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = TUR
+			NOT = {
+				accepted_culture = albanian
+				has_country_flag = embraced_albanian
+			}					
+		}
+		allow = {
+		NOT = { has_country_modifier = christian_subjugation }
+		citizenship_policy = full_citizenship
+		citizens_rights = all_voting_pops
+		OR = {
+			government = hms_government
+			government = democracy
+		}
+		nationalism_n_imperialism = 1	
+			AND = {
+				TUR_853 = {
+					owned_by = THIS
+					literacy = 0.8
+					NOT = { average_militancy = 1 }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = embraced_albanian
+			add_accepted_culture = albanian
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = albanian }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	embrace_bosniak_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = TUR
+			NOT = {
+				accepted_culture = bosniak
+				has_country_flag = embraced_bosniak
+			}					
+		}
+		allow = {
+		NOT = { has_country_modifier = christian_subjugation }
+		citizenship_policy = full_citizenship
+		citizens_rights = all_voting_pops
+		OR = {
+			government = hms_government
+			government = democracy
+		}
+		nationalism_n_imperialism = 1	
+			AND = {
+				TUR_788 = {
+					owned_by = THIS
+					literacy = 0.8
+					NOT = { average_militancy = 1 }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = embraced_bosniak
+			add_accepted_culture = bosniak
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = bosniak }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	form_israel = {
+		potential = {
+			civilized = yes
+			NOT = {
+				has_global_flag = israel_has_her_cores
+			}
+			916 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			917 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			918 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			919 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			920 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			921 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			EGY_921 = { add_core = ISR }
+			prestige = 10
+			set_global_flag = israel_has_her_cores
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					tag = ENG
+				}
+			}
+		}
+	}
+}

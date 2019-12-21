@@ -1,0 +1,169 @@
+political_decisions = {
+	establish_la_guardia_civil = {
+		potential = {
+			tag = SPA
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = {
+				has_country_flag = guardia_civil_established
+			}
+		}
+		allow = {
+			NOT = {
+				num_of_revolts = 1
+			}
+			OR = {
+				average_militancy = 3
+				average_consciousness = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = la_guardia_civil
+				duration = -1
+			}
+			set_country_flag = guardia_civil_established
+		}
+	}
+
+	confiscations_of_mendizabal = {
+		potential = {
+			tag = SPA
+			NOT = {
+				has_country_flag = mendizabal_confiscated
+			}
+		}
+
+		allow = {
+			ideological_thought = 1
+		}
+
+		effect = {
+			treasury = 25000
+			prestige = 10
+			relation = {
+				who = PAP
+				value = -50
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 4
+				}
+				dominant_issue = {
+					value = pro_atheism
+					factor = 0.15
+				}
+			}
+			set_country_flag = mendizabal_confiscated
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	unite_iberia = {
+		picture = create_iberia
+		potential = {
+			is_culture_group = iberian
+			NOT = { has_global_flag = created_iberia }
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+			SPA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+						owner = {
+							vassal_of = THIS
+							war = no
+						}
+					}
+				}
+			}
+			POR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+						owner = {
+							vassal_of = THIS
+							war = no
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = created_iberia
+			prestige = 10
+			SPA = {
+				all_core = { add_core = THIS }
+			}
+			POR = {
+				all_core = { add_core = THIS }
+			}
+			517 = { add_core = THIS }
+			add_accepted_culture = portuguese
+			add_accepted_culture = spanish
+			add_accepted_culture = catalan
+			add_accepted_culture = basque
+			any_country = {
+				limit = {
+					tag = SPA
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = SPA }
+			}
+			random_country = {
+				limit = {
+					tag = POR
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = POR }
+			}
+			random_country = {
+				limit = {
+					tag = CAT
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = CAT }
+			}
+			any_country = {
+				limit = {
+					NOT = { is_culture_group = iberian }
+					in_sphere = THIS
+				}
+				any_owned = {
+					limit = { is_core = THIS }
+					secede_province = THIS
+				}
+			}
+			any_pop = {
+				limit = { is_culture_group = iberian }
+				militancy = -4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

@@ -1,0 +1,92 @@
+political_decisions = {
+
+	the_meiji_restoration = {
+		potential = {
+			civilized = no
+			tag = JAP
+			not = { has_country_modifier = meiji_restoration_boost }
+		}
+		allow = {
+			war = no
+			part_of_sphere = yes
+		}
+		effect = {
+			administrative_points = 1000
+			years_of_research = 10
+			prestige = 10
+			add_country_modifier = {
+				name = meiji_restoration_boost
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+	
+	the_meiji_restoration2 = {
+		potential = {
+			civilized = no
+			ai = no
+			tag = JAP
+			not = { has_country_modifier = meiji_restoration_boost }
+		}
+		allow = {
+			war = no
+			part_of_sphere = no
+		}
+		effect = {
+			administrative_points = 1000
+			years_of_research = 10
+			prestige = 10
+			add_country_modifier = {
+				name = meiji_restoration_boost
+				duration = -1
+			}
+			economic_reform = yes_land_reform
+			any_pop = {
+				scaled_militancy = {
+					ideology = liberal
+					factor = 0.5
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 7
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 9
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	the_meiji_restoration_ai = {
+		potential = {
+			civilized = no
+			ai = yes
+			tag = JAP
+			not = { has_country_modifier = meiji_restoration_boost }
+		}
+		allow = {
+			war = no
+			part_of_sphere = no
+		}
+		effect = {
+			years_of_research = 10
+			prestige = 10
+			add_country_modifier = {
+				name = meiji_restoration_boost
+				duration = -1
+			}
+			economic_reform = yes_land_reform
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+}

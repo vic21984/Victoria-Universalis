@@ -1,0 +1,503 @@
+#A House Divided
+country_event = {
+	id = 16000
+	title = "EVTNAME16000"
+	desc = "EVTDESC16000"
+	major = yes
+	
+	
+	trigger = {
+		tag = USA
+		AND = {
+			year = 1860
+			slavery = yes_slavery
+			NOT = {
+				has_global_flag = american_civil_war_has_happened
+			}	
+		}
+	}
+	
+	immediate = { clr_country_flag = the_slavery_debate }
+	immediate = {
+		CSA = {
+			set_country_flag = the_slavery_debate
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA16000"
+		any_pop = {
+			consciousness = -7
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				is_core = CSA
+				NOT = {
+					province_id = 146
+					province_id = 147
+					province_id = 148
+					province_id = 149
+					province_id = 150
+					province_id = 217
+					province_id = 218
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			secede_province = CSA
+		}
+		CSA = {
+			capital = 211
+			leadership = 80
+		}
+		capital = 220
+		war = {
+			target = CSA
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		set_global_flag = american_civil_war_has_happened
+		clr_country_flag = the_slavery_debate
+	}
+	
+	option = {
+		name = "EVTOPTB16000"
+		any_pop = {
+			consciousness = -7
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				is_core = CSA
+				NOT = {
+					province_id = 146
+					province_id = 147
+					province_id = 148
+					province_id = 149
+					province_id = 150
+					province_id = 217
+					province_id = 218
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			secede_province = CSA
+		}
+		CSA = {
+			capital = 211
+			leadership = 80
+			set_country_flag = the_slavery_debate
+		}
+		capital = 220
+		
+		change_tag_no_core_switch = CSA
+		USA = {
+			war = {
+				target = CSA
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
+			}
+		}
+		set_global_flag = american_civil_war_has_happened
+		clr_country_flag = the_slavery_debate
+	}
+}
+
+
+#Secessionist Sentiments
+province_event = {
+	id = 16250
+	title = "EVTNAME16250"
+	desc = "EVTDESC16250"
+	
+	trigger = {
+		year = 1837
+		NOT = {
+			is_core = CSA
+			state_id = 220
+			state_id = 219
+			state_id = 217
+			state_id = 185 
+			state_id = 146
+		}
+		owner = {
+			tag = USA
+			slavery = yes_slavery
+			NOT = {
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		state_scope = {
+			is_slave = yes
+		}
+		continent = north_america	
+	}
+	
+	immediate = {
+		owner = {
+		set_country_flag = the_slavery_debate
+			any_owned = {
+				limit = {
+					state_scope = { is_slave = yes }
+					NOT = { state_id = 220 }
+					NOT = { state_id = 219 }
+					NOT = { state_id = 217 }
+					NOT = { state_id = 185 }
+					NOT = { state_id = 146 }
+				}
+				add_core = CSA
+				any_pop = {
+					dominant_issue = {
+						value = yes_slavery
+						factor = 0.2
+					}
+					militancy = 1
+				}
+			}
+		}
+	}
+
+	
+	option = {
+		name = "EVTOPTA16250"
+	}
+}
+
+### Fire-only-once ###
+
+
+#Special
+#American minors apply for statehood
+country_event = {
+	id = 16400
+	title = "EVTNAME16400"
+	desc = "EVTDESC16400"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "EVTOPTA16400"
+		FROM = {
+			any_owned = {
+				add_core = USA
+			}
+		}
+		inherit = FROM
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB16400"
+		relation = {
+			who = FROM
+			value = -100
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#End Of The Anaconda Plan
+country_event = {
+	id = 16410
+	title = "EVTNAME16410"
+	desc = "EVTDESC16410"
+	picture = "Anaconda"
+	
+	trigger = {
+		has_country_modifier = anaconda_plan
+		OR = {
+			NOT = {
+				blockade = 0.8
+			}
+			war = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA16410"
+		remove_country_modifier = anaconda_plan
+	}
+}
+
+
+
+##### Indian Wars #####
+country_event = {
+	id = 16420
+	title = "EVTNAME16420"
+	desc = "EVTDESC16420"
+	picture = "Sioux"
+	
+	trigger = {
+		has_country_flag = custers_expedition_sent
+		owns = 122
+		122 = {
+			trade_goods = precious_metal
+		}
+		NOT = {
+			has_country_flag = sioux_wars
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA16420"
+		any_pop = {
+			limit = {
+				culture = dakota
+			}
+			militancy = 8
+		}
+		set_country_flag = sioux_wars
+	}
+}
+
+country_event = {
+	id = 16425
+	title = "Little Bighorn"
+	desc = "EVTDESC16430"
+	picture = "sittingbull"
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = sioux_wars
+		NOT = { has_country_flag = sioux_wars_over }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA16430"
+		prestige = -5
+		any_pop = {
+			limit = {
+				culture = dakota
+			}
+			militancy = 10
+			consciousness = 10
+		}
+	}
+}
+
+#End of The Sioux Wars
+country_event = {
+	id = 16430
+	title = "EVTNAME16430"
+	desc = "EVTDESC16430"
+	picture = "sittingbull"
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = sioux_wars
+		num_of_revolts = 0
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "EVTOPTA16430"
+		any_pop = {
+			limit = {
+				culture = dakota
+			}
+			militancy = -10
+			consciousness = -10
+			reduce_pop = 0.5
+		}
+		add_accepted_culture = dakota
+		set_country_flag = sioux_wars_over
+	}
+}
+
+#Apache Wars
+country_event = {
+	id = 16440
+	title = "EVTNAME16440"
+	desc = "EVTDESC16440"
+	picture = "Sioux"
+	
+	trigger = {
+		owns = 105
+		year = 1840
+		tag = USA
+		NOT = {
+			has_country_flag = apache_wars
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "EVTOPTA16440"
+		105 = {
+			state_scope = {
+				any_pop = {
+					limit = {
+						culture = native_american_minor
+					}
+					militancy = 8
+				}
+				any_pop = {
+					limit = {
+						not = {
+							is_culture_group = native_american
+						}
+					}
+					reduce_pop = 0.5
+				}
+			}
+		}
+		set_country_flag = apache_wars
+	}
+}
+
+province_event = {
+	id = 16445
+	title = "Apache Raiders"
+	desc = "Local native groups are raiding our settlements in $PROVINCENAME$"
+	picture = "Sioux"
+	
+	trigger = {
+		is_colonial = yes
+		has_country_flag = apache_wars
+		has_pop_culture = native_american_minor
+		not = { has_country_flag = apache_wars_over }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "Blast them!"
+		state_scope = {
+			any_pop = {
+				limit = {
+					culture = native_american_minor
+				}
+				militancy = 10
+			}
+		}
+		add_province_modifier = {
+			name = "apache_raiders"
+			duration = 730
+		}
+	}
+}
+
+
+
+#Apprehending Geronimo
+country_event = {
+	id = 16450
+	title = "EVTNAME16450"
+	desc = "EVTDESC16450"
+	picture = "geronimo"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		year = 1886
+		has_country_flag = apache_wars
+	}
+	
+	mean_time_to_happen = {
+		months = 96
+	}
+	
+	option = {
+		name = "EVTOPTA16450"
+		any_pop = {
+			limit = {
+				culture = native_american_minor
+			}
+			militancy = -10
+			consciousness = -10
+			reduce_pop = 0.8
+		}
+		add_accepted_culture = native_american_minor
+		set_country_flag = apache_wars_over
+	}
+}
+
+# Texas goods
+country_event = {
+	id = 16451
+	title = "EVTNAME16451"
+	desc = "EVTDESC16451"
+	picture = "dixie"
+	
+ 	trigger = {
+		tag = TEX
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "EVTOPTA1206" #Ok
+			small_arms = 100
+			canned_food = 200
+			artillery = 50
+			luxury_clothes = 50
+			wine = 50
+			liquor = 50
+			ammunition = 100
+			money = 1000
+	}
+}
+
+# CSA cleanup
+country_event = {
+	id = 16452
+
+ 	trigger = {
+		tag = BHU
+		CSA = { exists = no }
+		has_global_flag = american_civil_war_has_happened
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		CSA = {
+			all_core = { remove_core = CSA }
+		}
+	}
+}

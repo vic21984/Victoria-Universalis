@@ -1,0 +1,151 @@
+# Trustee System
+country_event = {
+	id = 22000
+	title = "EVTNAME22000"
+	desc = "EVTDESC22000"
+	picture = "prisonworkers"
+
+	trigger = {
+		crime_fighting = 0.5
+		civilized = yes
+		NOT = {
+			poor_strata_everyday_needs = 0.8
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+		modifier = {
+			factor = 0.9
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.2
+			NOT = {
+				average_militancy = 3
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				average_consciousness = 2
+			}
+		}
+		modifier = {
+			factor = 0.9
+			social_science = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA22000"
+		random_state = {
+			any_owned = {
+				add_province_modifier = {
+					name = trustee_system
+					duration = 14600
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB22000"
+		random_state = {
+			any_pop = {
+				consciousness = 2
+				militancy = 2
+			}
+		}
+	}
+}
+
+# Penal Colony
+country_event = {
+	id = 22010
+	title = "EVTNAME22010"
+	desc = "EVTDESC22010"
+	news = yes
+	news_desc_long = "EVTDESC22010_NEWS_LONG"
+	news_desc_medium = "EVTDESC22010_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC22010_NEWS_SHORT"
+	picture = "penal_colony"
+	
+	trigger = {
+		colonial_nation = yes
+		civilized = yes
+		NOT = {
+			poor_strata_everyday_needs = 0.9
+			has_country_modifier = penal_colonies
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+		
+		modifier = {
+			factor = 0.9
+			crime_fighting = 0.5
+		}
+		
+		modifier = {
+			factor = 0.9
+			crime_fighting = 0.6
+		}
+		
+		modifier = {
+			factor = 0.9
+			average_militancy = 4
+		}
+		
+		modifier = {
+			factor = 0.9
+			average_consciousness = 4
+		}
+		modifier = {
+			factor = 1.5
+			poor_strata_life_needs = 0.9
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA22010"
+		add_country_modifier = {
+			name = penal_colonies
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB22010"
+		any_pop = {
+			militancy = -0.5
+		}
+	}
+}
+
+# Penal Colony Gone (Cleanup Event)
+country_event = {
+	id = 22011
+	title = "EVTNAME22011"
+	desc = "EVTDESC22011"
+	picture = "penal_colony"
+		
+	trigger = {
+		has_country_modifier = penal_colonies
+		colonial_nation = no
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	option = {
+		name = "EVTOPTA22011"
+		remove_country_modifier = penal_colonies
+	}
+}

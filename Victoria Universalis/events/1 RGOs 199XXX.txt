@@ -1,0 +1,1412 @@
+country_event = {
+	id = 199036 #Mining Decision Change
+	picture = mining
+	title = "EVTNAME199036"
+	desc = "EVTDESC199036"
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+
+	option = {
+		name = "EVT199036OPTA" #COAL
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+					trade_goods = iron
+					trade_goods = sulphur
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = coal
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }
+				has_building = province_selector
+				OR = {
+					trade_goods = iron
+					trade_goods = sulphur
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = coal
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }			
+				has_building = province_selector
+				OR = {
+					trade_goods = iron
+					trade_goods = sulphur
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = coal
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+			total_pops = 300000
+				has_building = province_selector
+				OR = {
+					trade_goods = iron
+					trade_goods = sulphur
+				}
+			}
+			province_selector = -1
+			trade_goods = coal
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVT199036OPTB" #IRON
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = sulphur
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = iron
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = sulphur
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = iron
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }			
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = sulphur
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = iron
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+			total_pops = 300000
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = sulphur
+				}
+			}
+			province_selector = -1
+			trade_goods = iron
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}		
+	}
+	
+	option = {
+		name = "EVT199036OPTC" #SULPHUR
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = iron
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = sulphur
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = iron
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = sulphur
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }			
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = iron
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = sulphur
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+			total_pops = 300000
+				has_building = province_selector
+				OR = {
+					trade_goods = coal
+					trade_goods = iron
+				}
+			}
+			province_selector = -1
+			trade_goods = sulphur
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+	}
+
+	option = {
+		name = "EVT199037OPTB" #Timber
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				OR = {
+					terrain = forest
+					terrain = jungle
+					terrain = woods
+				}
+			}
+			province_selector = -1
+			trade_goods = timber
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				OR = {
+					terrain = forest
+					terrain = jungle
+					terrain = woods
+				}
+			}
+			province_selector = -1
+			trade_goods = timber
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}	
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				OR = {
+					terrain = forest
+					terrain = jungle
+					terrain = woods
+				}
+			}
+			province_selector = -1
+			trade_goods = timber
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}	
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				OR = {
+					terrain = forest
+					terrain = jungle
+					terrain = woods
+				}
+			}
+			province_selector = -1
+			trade_goods = timber
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}			
+	}	
+	
+	option = {
+		name = "EVT199036OPTD"
+		clr_country_flag = deciding
+	}
+}
+
+country_event = {
+	id = 199037 #Agriculture Decision Change
+	picture = farming
+	title = "EVTNAME199037"
+	desc = "EVTDESC199037"
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+
+	option = {
+		name = "EVT199037OPTA" #WOOL
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = dye
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = wool
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = dye
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = wool
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = dye
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = wool
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000
+				has_building = province_selector
+				OR = {
+				    trade_goods = dye
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			province_selector = -1
+			trade_goods = wool
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}		
+	}
+	
+	option = {
+		name = "EVT199037OPTC" #COTTON
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }			
+			province_selector = -1
+			trade_goods = cotton
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }		
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = cotton
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }		
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = cotton
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}	
+			province_selector = -1
+			trade_goods = cotton
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT199037OPTD" #CATTLE
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = cattle
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }		
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = cattle
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }		
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = cattle
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}	
+			province_selector = -1
+			trade_goods = cattle
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT199037OPTE" #FISH
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				is_coastal = yes
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = fish
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }		
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				is_coastal = yes
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = fish
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }		
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				is_coastal = yes
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = fish
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = dye
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+				is_coastal = yes
+			}	
+			province_selector = -1
+			trade_goods = fish
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT199037OPTG" #GRAIN
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = grain
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }					
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = grain
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }				
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = grain
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			province_selector = -1
+			trade_goods = grain
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}		
+	}
+	option = {
+		name = "EVT199037OPTH" #Opium
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = opium
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }					
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = opium
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }				
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = opium
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			province_selector = -1
+			trade_goods = opium
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}	
+	}
+	option = {
+		name = "EVT199037OPTI" #dye
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = dye
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }					
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = dye
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }				
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = dye
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			province_selector = -1
+			trade_goods = dye
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}	
+	}
+	option = {
+		name = "EVT199037OPTJ" #silk
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = silk
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }					
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = silk
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }				
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = silk
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			province_selector = -1
+			trade_goods = silk
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+	}
+	option = {
+		name = "EVT199037OPTK" #tobacco
+		clr_country_flag = deciding
+		random_owned = {
+			limit = {
+				NOT = { total_pops = 35000 }
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 750 }
+			province_selector = -1
+			trade_goods = tobacco
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 35000
+				NOT = { total_pops = 100000 }					
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 500 }
+			province_selector = -1
+			trade_goods = tobacco
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 100000
+				NOT = { total_pops = 300000 }				
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			owner = { administrative_points = 250 }
+			province_selector = -1
+			trade_goods = tobacco
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+		random_owned = {
+			limit = {
+				total_pops = 300000			
+				has_building = province_selector
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+					trade_goods = opium
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = coffee
+					trade_goods = tea
+				}
+			}
+			province_selector = -1
+			trade_goods = tobacco
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}
+	}		
+	
+	option = {
+		name = "EVT199037OPTL"
+		clr_country_flag = deciding
+	}
+}

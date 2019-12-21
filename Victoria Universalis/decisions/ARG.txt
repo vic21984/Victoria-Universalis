@@ -1,0 +1,126 @@
+political_decisions = {
+	argentianian_constitution = {
+		picture = argentianian_constitution
+		potential = {
+			tag = ARG
+			NOT = {
+				has_country_flag = argentianian_constitution_enacted
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+		}
+		
+		effect = {
+			government = democracy
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							vote_franschise = none_voting
+							vote_franschise = landed_voting
+							vote_franschise = wealth_weighted_voting
+						}
+					}
+				}	
+				owner = { political_reform = wealth_voting }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							debt_law = serfdom
+							debt_law = peonage
+						}
+					}
+				}	
+				owner = { political_reform = debtors_prisons }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							political_parties = underground_parties
+							political_parties = harassment
+						}
+					}
+				}	
+				owner = { political_reform = gerrymandering }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							citizens_rights = primary_culture_only
+							citizens_rights = culture_voting_only
+						}
+					}
+				}	
+				owner = { political_reform = culture_voting_only }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							upper_house_composition = party_appointed
+							upper_house_composition = appointed
+						}
+					}
+				}	
+				owner = { political_reform = state_equal_weight }
+			}
+			political_reform = federalism
+			set_country_flag = argentianian_constitution_enacted
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { state_id = 2348 }
+					}
+				}	
+				ideology = { factor = 0.2 value = liberal }
+				consciousness = 2
+			}
+			ARG_2355 = {
+				any_pop = {
+					militancy = 10
+					consciousness = 10
+				}
+			}	
+		}
+	}
+	
+	law_1420_of_general_common_education = {
+		potential = {
+			tag = ARG
+			NOT = {
+				has_country_flag = 1420_passed
+			}
+		}
+		allow = {
+			biologism = 1
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					owner = { school_reforms = acceptable_schools }
+				}	
+				owner = { social_reform = good_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = low_schools }
+				}	
+				owner = { social_reform = acceptable_schools }
+			}				
+			random_owned = {
+				limit = {
+					owner = { school_reforms = no_schools }
+				}	
+				owner = { social_reform = low_schools }
+			}
+			years_of_research = 0.5
+			set_country_flag = 1420_passed
+		}
+	}	
+}
