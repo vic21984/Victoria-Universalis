@@ -1,7 +1,7 @@
 # Version 0.10 - 12/21/2019
 
 ## All-new game mechanics:
-* Province Selector buildings and their associated decisions have been added as a way to give players unprecented control over their POPs and provinces. When playing an uncivilized nation, you must restart your game after you civilize in order to build province selectors due to a bug in the way the game stores invention files.
+* Province Selector buildings and their associated decisions have been added as a way to give players unprecedented control over their POPs and provinces. When playing an uncivilized nation, you must restart your game after you civilize in order to build province selectors due to a bug in the way the game stores invention files.
 * A new resource called Admin Points has been introduced as a cost to enact these new Province Selector decisions. You gain a base stipend of 100 AP per year plus extra for each level of economic thought researched. Each province selector decision costs anywhere from 250 to 1000 AP.
 * The new decisions are  organized into three categories: country, state, and province level. The player can dynamically choose exactly what the target of each decision will be. Some examples of new decisions are increasing literacy, increasing draft laws, accelerated assimilation, encouraging soldiers, lowering militancy, changing ideology, switching RGOs, boosting RGO throughput, and more.
 * Province Selector decisions and Admin Points can be permanently disabled for all players by enacting the "Disable Province Selector" decision at the start of the game. The decision is available only in the first month. If you are playing in a multiplayer game and you have a player on the UK, then only the UK player can enact the decision.
