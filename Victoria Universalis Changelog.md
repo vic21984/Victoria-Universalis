@@ -1,3 +1,13 @@
+# Version 0.101 - 12/22/2019
+
+## General gameplay changes:
+* Lowered AP gain from tech. The max AP you can generate per year is now 300.
+* Reduced emigration rate sightly.
+* Increased effect of Change Ideology decision from 0.2 to 0.25.
+* Nerfed badboy reduction from Reduce Infamy decision from 0.3 to 0.25 and increased cooldown from 2 years to 5 years
+* Nerfed literacy gained from Increase Literacy decision from 0.25, 0.2, and 0.15 for small, medium, and big states to 0.2, 0.175, and 0.15.
+
+
 # Version 0.10 - 12/21/2019
 
 ## All-new game mechanics:
