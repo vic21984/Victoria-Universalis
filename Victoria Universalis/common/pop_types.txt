@@ -850,7 +850,7 @@ emigration_chance =
 		country = { border_policy = closed_borders }
 	}
 	modifier = {
-		factor = 0.28
+		factor = 0.26
 		NOT = {
 			OR = { 
 				continent = north_america

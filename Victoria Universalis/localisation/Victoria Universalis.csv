@@ -112,18 +112,18 @@ administrative_points;Administrative Points;;;;;;;;;x;;;;
 province_selector;Province Selector;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 PS_unlocked;PS Building Unlocked;;;;;;;;;;;;;x
 PS_unlocked_desc;You can now build Province Selector buildings.;;;;;;;;;;;;;x
-AP1;+50 Administration Points;;;;;;;;;;;;;x
-AP1_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP2;+50 Administration Points;;;;;;;;;;;;;x
-AP2_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP3;+50 Administration Points;;;;;;;;;;;;;x
-AP3_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP4;+100 Administration Points;;;;;;;;;;;;;x
+AP1;+100 Administration Points;;;;;;;;;;;;;x
+AP1_desc;+100 Administration Points;;;;;;;;;;;;;x
+AP2;+25 Administration Points;;;;;;;;;;;;;x
+AP2_desc;+25 Administration Points;;;;;;;;;;;;;x
+AP3;+25 Administration Points;;;;;;;;;;;;;x
+AP3_desc;+25 Administration Points;;;;;;;;;;;;;x
+AP4;+50 Administration Points;;;;;;;;;;;;;x
 AP4_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP5;+100 Administration Points;;;;;;;;;;;;;x
-AP5_desc;+75 Administration Points;;;;;;;;;;;;;x
-AP6;+100 Administration Points;;;;;;;;;;;;;x
-AP6_desc;+75 Administration Points;;;;;;;;;;;;;x
+AP5;+50 Administration Points;;;;;;;;;;;;;x
+AP5_desc;+50 Administration Points;;;;;;;;;;;;;x
+AP6;+50 Administration Points;;;;;;;;;;;;;x
+AP6_desc;+50 Administration Points;;;;;;;;;;;;;x
 geneva_convention;Geneva Convention Signed;;;;;;;;;;;;;x
 geneva_convention_desc;The Geneva Convention will result in fewer casualties turning into fatalities;;;;;;;;;;;;;x
 turn_off_ps_title;Turn off Province Selector Decisions;;;;;;;;;;;;;x
@@ -143,39 +143,39 @@ increase_conscription_ps_disabled_desc;Raises your draft law by one level. If yo
 country_suppression_title;Country Scope: Suppression;;;;;;;;;x;;;;
 country_suppression_desc;Gives a -0.03 MIL and CON modifier to the country for 10 years.;;;;;;;;;x;;;;
 country_reduce_infamy_title;Country Scope: Reduce Infamy;;;;;;;;;x;;;;
-country_reduce_infamy_desc;Reduces infamy by 3.;;;;;;;;;x;;;;
+country_reduce_infamy_desc;Reduces infamy by 2.5 and gives a 5 year cooldown.;;;;;;;;;x;;;;
 country_early_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
-country_early_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_early_change_ideology_desc;Changes countrywide POP ideology by +25% for the chosen ideology.;;;;;;;;;x;;;;
 country_mid_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
-country_mid_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_mid_change_ideology_desc;Changes countrywide POP ideology by +25% for the chosen ideology.;;;;;;;;;x;;;;
 country_late_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
-country_late_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_late_change_ideology_desc;Changes countrywide POP ideology by +25% for the chosen ideology.;;;;;;;;;x;;;;
 country_endgame_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
-country_endgame_change_ideology_desc;Changes countrywide POP ideology by +20% for the chosen ideology.;;;;;;;;;x;;;;
+country_endgame_change_ideology_desc;Changes countrywide POP ideology by +25% for the chosen ideology.;;;;;;;;;x;;;;
 country_recruitment_drive_title;Country Scope: Increase Soldier Promotion;;;;;;;;;x;;;;
 country_recruitment_drive_desc;Increases the chance of your POPs promoting to soldiers. This does not raise the max soldier cap per province. Only revanchism can raise the maximum soldier cap in non colonial states above 5%.;;;;;;;;;x;;;;
 state_core_integration_title;State Scope: Core Integration;;;;;;;;;x;;;;
 state_core_integration_desc;Gives cores to selected state. POPs cannot assimilate unless they are living in cored provinces.;;;;;;;;;x;;;;
 state_literacy_campaign_title;State Scope: Raise Literacy;;;;;;;;;x;;;;
-state_literacy_campaign_desc;Increases the literacy of the selected state. The amount of literacy gained is dependent on the size of the state. States less than 350K get 25% literacy, states between 350K and 1M get 20%, states over 1M get 15%. Can only use on the same state once every 15 years.;;;;;;;;;x;;;;
+state_literacy_campaign_desc;Increases the literacy of the selected state. The amount of literacy gained is dependent on the size of the state. States less than 350K get 2% literacy, states between 350K and 1M get 17.5%, states over 1M get 15%. Can only use on the same state once every 15 years.;;;;;;;;;x;;;;
 state_assimilation_title;State Scope: Assimilation;;;;;;;;;x;;;;
 state_assimilation_desc;Adds a 300% assimilation rate bonus to the given state for 10 years. Cannot use on colonial states. Assimilation rate and assimilation chance are different variables, if a POPs assimilation chance is 0 it will not assimilate. Hover your mouse over the nationality of a POP in the population tab to see its individual assimilation chance.;;;;;;;;;x;;;;
 state_suppression_title;State Scope: Suppression;;;;;;;;;x;;;;
 state_suppression_desc;Gives a -0.15 MIL and CON modifier to the selected state for 10 years.;;;;;;;;;x;;;;
 state_baby_boom_title;State Scope: Baby Boom;;;;;;;;;x;;;;
-state_baby_boom_desc;Gives a small growth modifier to the selected state for several years. Does not work on states with over 650k POP;;;;;;;;;x;;;;
+state_baby_boom_desc;Gives a small growth modifier to the selected state for several years. Cannot use on states with over 500k POP;;;;;;;;;x;;;;
 province_blood_and_iron_title;Province Scope: Blood and Iron RGO.;;;;;;;;;x;;;;
 province_blood_and_iron_desc;Gives a permanent RGO efficiency bonus and +0.02 militancy modifier to the selected province. Cannot use on gold mines.;;;;;;;;;x;;;;
 province_rgo_expansion_title;Province Scope: RGO Expansion.;;;;;;;;;x;;;;
 province_rgo_expansion_desc;Gives a permanent boost to farm and mining size to the selected province.;;;;;;;;;x;;;;
 province_rgo_change_mining_title;Province Scope: Change Mining RGO.;;;;;;;;;x;;;;
-province_rgo_change_mining_desc;Allows the switching of a single RGO province of the following types: Coal, Iron, or Sulphur into Coal, Iron, or Sulphur. Timber can be made from any province with forest, woods, or jungle terrain. Do not switch to timber if its demand in the world market isn't high otherwise the province will get stuck with 0% employment. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
+province_rgo_change_mining_desc;Allows the switching of a single RGO province of the following types: Coal, Iron, and Sulphur can only be swapped with each other and NOT from timber. Timber can be swapped from any agricultural tile and requires a forest, woods, or jungle province. Do not switch to timber if its demand in the world market isn't high otherwise the province will get stuck with 0% employment. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
 province_rgo_change_agriculture_title;Province Scope: Change Agriculture RGO.;;;;;;;;;x;;;;
 province_rgo_change_agriculture_desc;Allows the switching of a single RGO province of the following types: Grain, Fruit, Fish, Cattle, Wool, Cotton, Opium, Dye, Silk, or Tobacco. Fish requires a coastal province. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
 reset_province_selector_title;Reset Province Selector;;;;;;;;;x;;;;
 reset_province_selector_desc;Destroys one province selector and refunds 1000 Admin Points;;;;;;;;;x;;;;
 EVTNAME199036;Mining RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESC199036;Choose to change a province to the following RGO types. Coal, Iron, and Sulphur can only be swapped with each other. Timber requires a forest, woods, or jungle province.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC199036;Choose to change a province to the following RGO types. Coal, Iron, and Sulphur can only be swapped with each other and NOT from timber. Timber can be swapped from any agricultural tile and requires a forest, woods, or jungle province.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT199036OPTA;Change a province to produce Coal.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT199036OPTB;Change a province to produce Iron.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT199036OPTC;Change a province to produce Sulphur.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x

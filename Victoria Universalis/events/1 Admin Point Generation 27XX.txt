@@ -1,31 +1,4 @@
 country_event = {
-	id = 2700
-	title = "EVTNAME2700"
-	desc = "EVTDESC2700"
-	
-	trigger = {
-		NOT = { has_global_flag = ps_turned_off }
-		ai = no
-		year = 1837
-		NOT = { early_classical_theory_and_critique = 1 }
-		NOT = { has_country_modifier = admin_counter }
-	}
-	
-
-	immediate = {
-		add_country_modifier = {
-			name = admin_counter
-			duration = 362
-		}
-	}
-	
-	option = {
-		name = EVTOPTA2700
-		administrative_points = 50
-	}
-}
-
-country_event = {
 	id = 2701
 	title = "EVTNAME2700"
 	desc = "EVTDESC2700"
@@ -77,7 +50,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2700
-		administrative_points = 150
+		administrative_points = 125
 	}
 }
 
@@ -105,7 +78,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2700
-		administrative_points = 200
+		administrative_points = 150
 	}
 }
 
@@ -134,7 +107,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2700
-		administrative_points = 250
+		administrative_points = 200
 	}
 }
 
@@ -162,7 +135,7 @@ country_event = {
 	}
 	
 	option = {
-		administrative_points = 325
+		administrative_points = 250
 		name = EVTOPTA2700
 	}
 }
@@ -190,7 +163,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2700
-		administrative_points = 400
+		administrative_points = 300
 	}
 }
 
@@ -238,7 +211,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2707
-		administrative_points = 150
+		administrative_points = 125
 	}
 }
 
@@ -263,7 +236,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2707
-		administrative_points = 200
+		administrative_points = 150
 	}
 }
 
@@ -288,7 +261,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2707
-		administrative_points = 250
+		administrative_points = 200
 	}
 }
 
@@ -313,7 +286,7 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2707
-		administrative_points = 325
+		administrative_points = 250
 	}
 }
 
@@ -338,6 +311,6 @@ country_event = {
 	
 	option = {
 		name = EVTOPTA2707
-		administrative_points = 400
+		administrative_points = 300
 	}
 }
