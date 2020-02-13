@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Version 0.11 - 2/6/2020
 
 ## General gameplay changes:
@@ -75,6 +76,8 @@
 * Wallachia and Moldavia are no longer puppets of the Ottoman Empire but they start under the Ottoman sphere. The form Romania decision available to human players at the start of the game no longer annexes Wallachia and Moldavia, it simply changes your country tag to Romania and releases you from your current spheremaster while giving you cores on the rest of Romania.
 
 
+=======
+>>>>>>> 0fba8db07113ea52d5e88ee53ad0d7e7193f16e8
 # Version 0.101 - 12/22/2019
 
 ## General gameplay changes:
@@ -84,10 +87,13 @@
 * Nerfed badboy reduction from Reduce Infamy decision from 0.3 to 0.25 and increased cooldown from 2 years to 5 years
 * Nerfed literacy gained from Increase Literacy decision from 0.25, 0.2, and 0.15 for small, medium, and big states to 0.2, 0.175, and 0.15.
 
+<<<<<<< HEAD
 ## Country Balance Changes:
 ###### Germany:
 * Made forming Germany via decision turn the government to federalism instead of unitary.
 
+=======
+>>>>>>> 0fba8db07113ea52d5e88ee53ad0d7e7193f16e8
 
 # Version 0.10 - 12/21/2019
 
