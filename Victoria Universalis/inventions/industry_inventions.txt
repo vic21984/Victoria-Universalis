@@ -488,10 +488,10 @@ drying_techniques = {
 	}
 	effect = {
 		rgo_goods_output = {
-			tea = 0.2
+			tea_leaves = 0.2
 		}
 		rgo_goods_output = {
-			coffee = 0.2
+			coffee_beans = 0.2
 		}
 		rgo_goods_output = {
 			opium = 0.2
@@ -604,13 +604,13 @@ refrigerator_technology = {
 ammunition_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		base = 2
+		base = 10
 		modifier = {
-			factor = 2
+			factor = 5
 			invention = whitney_n_colts_standardized_small_arms
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			army_professionalism = 1
 		}
 	}
@@ -621,13 +621,13 @@ ammunition_production = {
 small_arms_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		base = 2
+		base = 10
 		modifier = {
-			factor = 2
+			factor = 5
 			strategic_mobility = 1
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			early_railroad = 1
 		}
 	}
@@ -638,13 +638,13 @@ small_arms_production = {
 explosives_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		base = 2
+		base = 10
 		modifier = {
-			factor = 2
+			factor = 5
 			medicine = 1
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			invention = nitroglycerin
 		}
 	}
@@ -655,13 +655,13 @@ explosives_production = {
 artillery_production = {
 	limit = { mechanized_mining = 1 }
 	chance = {
-		base = 2
+		base = 10
 		modifier = {
-			factor = 2
+			factor = 5
 			invention = explosives_production
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			iron_muzzle_loaded_artillery = 1
 		}
 	}
@@ -933,7 +933,7 @@ aerial_bacteria_and_antiseptic_principle = {
 		}
 	}
 	effect = {
-		pop_growth = 0.0002
+		pop_growth = 0.0001
 		land_attrition = -0.05  
 		soldier_to_pop_loss = 0.025
 	}
@@ -1132,19 +1132,20 @@ vaccination = {
 	effect = {
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.025
+		colonial_life_rating = -5
 	}
 }
 #organic_chemistry
 synthetic_dye = {
 	limit = { organic_chemistry = 1 }
 	chance = {
-		base = 2
+		base = 10
 		modifier = {
-			factor = 2
+			factor = 5
 			clean_coal = 1
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			management_strategy = 1
 		}
 	}
@@ -1219,7 +1220,6 @@ prophylaxis_against_malaria = {
 	effect = {
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.025
-		colonial_life_rating = -5
 	}
 }
 #electricity
@@ -1244,13 +1244,13 @@ x_rays = {
 edison_light_bulb = {
 	limit = { electricity = 1 }
 	chance = {
-		base = 2
+		base = 10
 		modifier = {
-			factor = 2
+			factor = 5
 			invention = direct_current
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			electrical_power_generation = 1
 		}
 	}
@@ -1261,17 +1261,17 @@ edison_light_bulb = {
 bell_n_greys_telephones = {
 	limit = { electricity = 1 }
 	chance = {
-		base = 2
+		base = 4
 		modifier = {
-			factor = 2
+			factor = 4
 			electrical_power_generation = 1
 		}
 		modifier = {
-			factor = 2
+			factor = 4
 			invention = telegraph_coordination
 		}
 		modifier = {
-			factor = -6
+			factor = -12
 			NOT = {
 				invention = edison_light_bulb
 			}
@@ -1280,6 +1280,32 @@ bell_n_greys_telephones = {
 	effect = {
 		activate_building = telephone_factory 
 	}
+}
+national_radio_networks = {
+	limit = { electricity = 1 }
+	news = no
+	chance = {
+		base = 3
+		modifier = {
+			factor = 5
+			year = 1920
+		}
+		modifier = {
+			factor = 2
+			government = democracy
+		}
+		modifier = {
+			factor = -1
+			NOT = {
+				press_rights = free_press
+			}
+		}
+	}
+	effect = { 
+		activate_building = radio_factory 
+		suppression_points_modifier = -0.05
+	}
+	core_pop_consciousness_modifier = 0.01
 }
 electrical_lighting = {
 	limit = { electricity = 1 }

@@ -811,7 +811,7 @@ machine_gun_armament = {
 }
 colonial_negotiations = {
 	limit = { 
-			year = 1870 
+			year = 1875 
 			breech_loaded_rifles = 1
 			}
 	news = no
@@ -840,6 +840,12 @@ colonial_negotiations = {
 			any_neighbor_country = {
 				invention = colonial_negotiations
 			}
+		}
+		modifier = {
+			factor = -100
+			is_greater_power = no
+			ai = yes
+			NOT = { year = 1880 }
 		}
 	}
 	effect = {
@@ -1165,21 +1171,12 @@ heavy_artillery = {
 	}
 }
 #military_staff_system
-levee_en_masse = {
+mob1 = {
 	limit = { military_staff_system = 1 }
 	chance = {
-		base = 5
-		modifier = {
-			factor = -5
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
+		base = 5	
 	}
 	effect = {
-		mobilisation_size = 0.02
 	}
 }
 
@@ -1205,7 +1202,7 @@ telegraph_coordination = {
 	}
 }
 
-mobilization_time_tables = {
+mob2 = {
 	limit = { military_plans = 1 }
 	chance = {
 		base = 2
@@ -1216,22 +1213,13 @@ mobilization_time_tables = {
 		modifier = {
 			factor = 2
 			strategic_mobility = 1
-		}
-		modifier = {
-			factor = -5
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
+		}	
 	}
 	effect = {
-		mobilisation_size = 0.01
 	}
 }
 
-personnel_category_tables = {
+mob3 = {
 	limit = { military_plans = 1 }
 	chance = {
 		base = 2
@@ -1241,24 +1229,15 @@ personnel_category_tables = {
 		}
 		modifier = {
 			factor = 2
-			scientific_management = 1
-		}
-		modifier = {
-			factor = -6
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
+			invention = mob2
+		}	
 	}
 	effect = {
-		mobilisation_size = 0.01
 	}
 }
 
 #military_statistics
-staff_command_support = {
+mob4 = {
 	limit = { military_statistics = 1 }
 	chance = {
 		base = 3
@@ -1270,17 +1249,8 @@ staff_command_support = {
 			factor = 2
 			army_professionalism = 1
 		}
-		modifier = {
-			factor = -7
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
 	}
 	effect = {
-		mobilisation_size = 0.01
 	}	
 }
 
@@ -1348,7 +1318,7 @@ combat_loss_evaluation_schemata = {
 }
 
 #military_logistics
-railroad_transport_groups = {
+mob5 = {
 	limit = { military_logistics = 1 }
 	chance = {
 		base = 0
@@ -1359,18 +1329,9 @@ railroad_transport_groups = {
 		modifier = {
 			factor = 3
 			early_railroad = 1
-		}
-		modifier = {
-			factor = -5
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
+		}	
 	}
 	effect = {
-		mobilisation_size = 0.01
 	}
 }
 

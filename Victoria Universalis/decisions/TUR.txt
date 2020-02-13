@@ -156,7 +156,7 @@ political_decisions = {
 	}
 
 	embrace_kurdish_minority = {
-		picture = embrace_arab_minority
+		picture = embrace_kurds
 		potential = {
 			tag = TUR
 			NOT = {
@@ -211,7 +211,7 @@ political_decisions = {
 	}
 	
 	embrace_mashriqi_minority = {
-		picture = embrace_arab_minority
+		picture = embrace_mashriqis
 		potential = {
 			tag = TUR
 			NOT = {
@@ -230,7 +230,7 @@ political_decisions = {
 							literacy = 0.3
 							NOT = { average_militancy = 1 }
 						}
-						IRA_931 = {
+						TUR_931 = {
 							owned_by = THIS
 							literacy = 0.3
 							NOT = { average_militancy = 1 }
@@ -243,7 +243,7 @@ political_decisions = {
 						owned_by = THIS
 						literacy = 0.3
 					}
-					IRA_931 = {
+					TUR_931 = {
 						owned_by = THIS
 						literacy = 0.3
 					}					
@@ -275,7 +275,7 @@ political_decisions = {
 	}
 	
 	embrace_misri_minority = {
-		picture = embrace_arab_minority
+		picture = embrace_misris
 		potential = {
 			tag = TUR
 			NOT = {
@@ -339,7 +339,7 @@ political_decisions = {
 	}
 
 	embrace_bedouin_minority = {
-		picture = embrace_arab_minority
+		picture = embrace_arabs
 		potential = {
 			tag = TUR
 			NOT = {
@@ -356,10 +356,14 @@ political_decisions = {
 					AND = {
 						ARA_1157 = {
 							owned_by = THIS
+							is_colonial = no
+							literacy = 0.3
 							NOT = { average_militancy = 1 }
 						}
 						ARA_1173 = {
 							owned_by = THIS
+							is_colonial = no
+							literacy = 0.3
 							NOT = { average_militancy = 1 }			
 						}					
 					}
@@ -397,7 +401,7 @@ political_decisions = {
 	}	
 
 	embrace_armenian_minority = {
-		picture = embrace_minority
+		picture = embrace_armenians
 		potential = {
 			tag = TUR
 			NOT = {
@@ -406,27 +410,27 @@ political_decisions = {
 			}					
 		}
 		allow = {
-		NOT = { has_country_modifier = christian_subjugation }
-		religious_policy = secularized
-		citizenship_policy = full_citizenship
-		citizens_rights = all_voting_pops
-		OR = {
-			government = hms_government
-			government = democracy
-		}
-		nationalism_n_imperialism = 1	
-			AND = {
-				TUR_884 = {
-					owned_by = THIS
-					literacy = 0.8
-					NOT = { average_militancy = 1 }
-				}
-				TUR_885 = {
-					owned_by = THIS
-					literacy = 0.8
-					NOT = { average_militancy = 1 }
-				}				
+			NOT = { has_country_modifier = christian_subjugation }
+			religious_policy = secularized
+			citizenship_policy = full_citizenship
+			citizens_rights = all_voting_pops
+			OR = {
+				government = hms_government
+				government = democracy
 			}
+			nationalism_n_imperialism = 1	
+				AND = {
+					TUR_879 = {
+						owned_by = THIS
+						literacy = 0.8
+						NOT = { average_militancy = 1 }
+					}
+					TUR_885 = {
+						owned_by = THIS
+						literacy = 0.8
+						NOT = { average_militancy = 1 }
+					}				
+				}
 		}
 		effect = {
 			set_country_flag = embraced_armenian
@@ -453,7 +457,7 @@ political_decisions = {
 	}
 
 	embrace_albanian_minority = {
-		picture = embrace_minority
+		picture = embrace_albanians
 		potential = {
 			tag = TUR
 			NOT = {
@@ -503,7 +507,7 @@ political_decisions = {
 	}
 
 	embrace_bosniak_minority = {
-		picture = embrace_minority
+		picture = embrace_bosniaks
 		potential = {
 			tag = TUR
 			NOT = {

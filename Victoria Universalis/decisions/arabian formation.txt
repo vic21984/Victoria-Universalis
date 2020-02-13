@@ -1,4 +1,3 @@
-
 political_decisions = {
 
 	form_arabia = {
@@ -10,17 +9,26 @@ political_decisions = {
 		
 		allow = {
 			OR = { 
-				AND = { 
-					is_greater_power = yes
-					any_neighbor_country = {
-						in_sphere = this
-						is_culture_group = arab
-						relation = { who = THIS value = 100 }
+				AND = {
+					HDJ = {
+						all_core = { 
+							owned_by = THIS 
+						} 
+					}
+					NEJ = {
+						all_core = { 
+							owned_by = THIS 
+						} 
+					}
+					ABU = {
+						all_core = { 
+							owned_by = THIS 
+						}
 					}
 				}
 				AND = {
 					tag = NEJ
-					HDJ = { 
+					HDJ = {
 						all_core = { 
 							owned_by = THIS 
 						} 

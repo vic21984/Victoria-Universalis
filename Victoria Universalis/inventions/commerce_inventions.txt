@@ -160,7 +160,7 @@ industrial_distribution_investments = {
 		}
 	}
 	effect = {
-		factory_cost = -0.01
+		tax_eff = 1 
 	}
 }
 #bank_inspection_board
@@ -427,102 +427,6 @@ AP1 = {
 	effect = {
 	}
 }
-
-levee_en_masse1 = {
-	limit = { early_classical_theory_and_critique = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 5
-			military_staff_system = 1
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
-	}
-	effect = {
-		mobilisation_size = 0.004
-	}
-}
-
-mobilization_time_tables1 = {
-	limit = { early_classical_theory_and_critique = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 5
-			military_plans = 1
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
-	}
-	effect = {
-		mobilisation_size = 0.002
-	}
-}
-
-personnel_category_tables1 = {
-	limit = { early_classical_theory_and_critique = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 5
-			military_plans = 1
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
-	}
-	effect = {
-		mobilisation_size = 0.002
-	}
-}
-
-staff_command_support1 = {
-	limit = { early_classical_theory_and_critique = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 5
-			military_statistics = 1
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
-	}
-	effect = {
-		mobilisation_size = 0.002
-	}
-}
-
-railroad_transport_groups1 = {
-	limit = { early_classical_theory_and_critique = 1 }
-	chance = {
-		base = 0
-		modifier = {
-			factor = 5
-			military_logistics = 1
-			OR = {
-				tag = CHI
-				tag = TPG
-				tag = HND
-			}
-		}		
-	}
-	effect = {
-		mobilisation_size = 0.002
-	}
-}
-
 geneva_convention = {
 	limit = { early_classical_theory_and_critique = 1 }
 	chance = {

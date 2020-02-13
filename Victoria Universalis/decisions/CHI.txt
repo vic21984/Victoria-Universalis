@@ -49,30 +49,7 @@ political_decisions = {
 #			factor = 0
 #		}
 #	}
-	chinese_liferating_nerf = {
-		potential = {
-			tag = BHU
-			ai = yes
-			NOT { has_global_flag = chinese_liferating_nerf }
-			CHI = { ai = no }
-		}
-		allow = {
-		}
-		effect = {
-			set_global_flag = chinese_liferating_nerf
-			CHI = {
-				any_owned = {
-					limit = {
-						is_core = CHI
-						life_rating = 32
-						NOT = { life_rating = 35 }
-					}
-					life_rating = -2
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
+
 	chinese_diplomatic_isolationism = {
 		potential = {
 			tag = CHI
@@ -88,30 +65,45 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
-
-	chinese_setup = {
-
+	
+	china_democracy = {
+		picture = republic_of_china
 		potential = {
-			tag = CHI
-			always = never
+			OR = {
+				tag = CHI
+				tag = TPG
+			}
+			civilized = yes
+			NOT = { has_global_flag = republic_of_china }
+			NOT = { has_global_flag = warlord_era_begun }
 		}
-		
-		allow = { }
-		
+		allow = {
+			OR = {
+				universal_weighted_voting
+				vote_franschise = universal_voting
+			}
+			OR = {
+				political_parties = non_secret_ballots
+				political_parties = secret_ballots
+			}
+			OR = {
+				upper_house_composition = state_equal_weight
+				upper_house_composition = population_equal_weight
+			}
+		}
 		effect = {
-			CHI = {
-				soldiers = {
-					reduce_pop = 0.5
-				}
-				set_country_flag = china
-			}
-			TPG = {
-				set_country_flag = china
-			}
-			HND = {
-				set_country_flag = india
-			}			
+			government = democracy
+			remove_country_modifier = mandate_of_heaven
+			set_global_flag = republic_of_china
+			add_accepted_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = hakka
+			add_accepted_culture = min
+			add_accepted_culture = yue
 		}
-	}	
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 }

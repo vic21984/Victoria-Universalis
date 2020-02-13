@@ -1,0 +1,219 @@
+country_event = {
+	id = 91600
+	title = "EVTNAME91600"
+	desc = "EVTDESC91600"
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		tag = JAN
+		year = 1837
+		NOT = { has_country_modifier = admin_counter }
+	}
+
+	
+	immediate = {
+		add_country_modifier = {
+			name = admin_counter
+			duration = 362
+		}
+	}
+	
+	option = {
+		name = EVTOPTA91600
+			any_country = {
+				limit = {
+					ai = no
+					early_classical_theory_and_critique = 1
+					NOT = { late_classical_theory = 1 }
+				}
+				administrative_points = 100
+			}
+			any_country = {
+				limit = {
+					ai = no
+					late_classical_theory = 1
+					NOT = { collectivist_theory = 1 }
+				}
+				administrative_points = 150
+			}
+			any_country = {
+				limit = {
+					ai = no
+					collectivist_theory = 1
+					NOT = { the_historical_theory = 1 }
+				}
+				administrative_points = 200
+			}
+			any_country = {
+				limit = {
+					ai = no
+					the_historical_theory = 1
+					NOT = { neoclassical_theory = 1 }
+				}
+				administrative_points = 250
+			}
+			any_country = {
+				limit = {
+					ai = no
+					neoclassical_theory = 1
+					NOT = { keynesian_economics = 1 }
+				}
+				administrative_points = 300
+			}
+			any_country = {
+				limit = {
+					ai = no
+					keynesian_economics = 1
+				}
+				administrative_points = 350
+			}
+	}
+}
+
+country_event = {
+	id = 91601
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+	
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		ai = no
+		invention = AP1
+		NOT = { has_country_flag = AP1 }
+	}
+
+	
+	immediate = {
+		set_country_flag = AP1
+	}
+	
+	option = {
+		name = EVTOPTA91601
+		administrative_points = 100
+	}
+}
+
+country_event = {
+	id = 91602
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+	
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		ai = no
+		invention = AP2
+		NOT = { has_country_flag = AP2 }
+	}
+
+	
+	immediate = {
+		set_country_flag = AP2
+	}
+	
+	option = {
+		name = EVTOPTA91601
+		administrative_points = 150
+	}
+}
+
+country_event = {
+	id = 91603
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+	
+	allow_multiple_instances = yes
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		ai = no
+		invention = AP3
+		NOT = { has_country_flag = AP3 }
+	}
+
+	
+	immediate = {
+		set_country_flag = AP3
+	}
+	
+	option = {
+		name = EVTOPTA91601
+		administrative_points = 200
+	}
+}
+
+country_event = {
+	id = 91604
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+	
+	allow_multiple_instances = yes
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		ai = no
+		invention = AP4
+		NOT = { has_country_flag = AP4 }
+	}
+
+	
+	immediate = {
+		set_country_flag = AP4
+	}
+	
+	option = {
+		name = EVTOPTA91601
+		administrative_points = 250
+	}
+}
+
+country_event = {
+	id = 91605
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+	
+	allow_multiple_instances = yes
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		ai = no
+		invention = AP5
+		NOT = { has_country_flag = AP5 }
+	}
+
+	
+	immediate = {
+		set_country_flag = AP5
+	}
+	
+	option = {
+		name = EVTOPTA91601
+		administrative_points = 300
+	}
+}
+
+country_event = {
+	id = 91606
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+	
+	allow_multiple_instances = yes
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		ai = no
+		invention = AP6
+		NOT = { has_country_flag = AP6 }
+	}
+
+	
+	immediate = {
+		set_country_flag = AP6
+	}
+	
+	option = {
+		name = EVTOPTA91601
+		administrative_points = 350
+	}
+}

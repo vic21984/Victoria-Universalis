@@ -23,7 +23,7 @@ promotion_focus =
 {
 	promote_aristocrats =
 	{
-		aristocrats = 0.60 #60% more likeley to become artisans
+		aristocrats = 0.30 #30% more likeley to become this type
 		icon = 5
 		outliner_show_as_percent = yes
 		limit = {
@@ -31,19 +31,9 @@ promotion_focus =
 		}
 	}
 
-	promote_artisans =
-	{
-		artisans = 0.60 #60% more likeley to become this type
-		icon = 6
-		outliner_show_as_percent = yes
-		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
-		}		
-	}
-
 	promote_bureaucrats =
 	{
-		bureaucrats = 0.60 #60% more likeley to become this type
+		bureaucrats = 0.30 #30% more likeley to become this type
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = {
@@ -53,7 +43,7 @@ promotion_focus =
 
 	promote_capitalists =
 	{
-		capitalists = 0.60 #60% more likeley to become this type
+		capitalists = 0.30 #30% more likeley to become this type
 		icon = 8
 		outliner_show_as_percent = yes
 		limit = { 
@@ -65,7 +55,7 @@ promotion_focus =
 	
 	promote_clergymen =
 	{
-		clergymen = 0.60 #60% more likeley to become this type
+		clergymen = 0.30 #30% more likeley to become this type
 		icon = 9
 		outliner_show_as_percent = yes
 		limit = {
@@ -75,7 +65,7 @@ promotion_focus =
 
 	promote_clerks =
 	{
-		clerks = 0.60 #60% more likeley to become this type
+		clerks = 0.30 #30% more likeley to become this type
 		icon = 10
 		outliner_show_as_percent = yes
 		limit = { 
@@ -86,7 +76,7 @@ promotion_focus =
 
 	promote_craftsmen =
 	{
-		craftsmen = 0.60 #60% more likeley to become this type
+		craftsmen = 0.30 #30% more likeley to become this type
 		icon = 11
 		outliner_show_as_percent = yes
 		limit = { 
@@ -97,7 +87,7 @@ promotion_focus =
 
 	promote_farmers =
 	{
-		farmers = 0.60 #60% more likeley to become this type
+		farmers = 0.30 #30% more likeley to become this type
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = {
@@ -107,7 +97,7 @@ promotion_focus =
 	
 	promote_labourers =
 	{
-		labourers = 0.60 #60% more likeley to become this type
+		labourers = 0.30 #30% more likeley to become this type
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
@@ -117,7 +107,7 @@ promotion_focus =
 
 	promote_officers =
 	{
-		officers = 0.60 #60% more likeley to become this type
+		officers = 0.30 #30% more likeley to become this type
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = {
@@ -127,7 +117,7 @@ promotion_focus =
 
 	promote_soldiers =
 	{
-		soldiers = 0.60 #60% more likeley to become this type
+		soldiers = 0.30 #30% more likeley to become this type
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
@@ -140,21 +130,8 @@ large_promotion_focus =
 {
 	promote_aristocrats =
 	{
-		aristocrats = 0.40 #40% more likeley to become artisans
+		aristocrats = 0.20 #20% more likeley to become this type
 		icon = 5
-		outliner_show_as_percent = yes
-		limit = {
-			state_scope = {
-				total_pops = 2000000
-				NOT = { total_pops = 4000000 }
-			}
-		}
-	}
-
-	promote_artisans =
-	{
-		artisans = 0.40 #40% more likeley to become this type
-		icon = 6
 		outliner_show_as_percent = yes
 		limit = {
 			state_scope = {
@@ -166,7 +143,7 @@ large_promotion_focus =
 
 	promote_bureaucrats =
 	{
-		bureaucrats = 0.40 #40% more likeley to become this type
+		bureaucrats = 0.20 #20% more likeley to become this type
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = {
@@ -179,7 +156,7 @@ large_promotion_focus =
 
 	promote_capitalists =
 	{
-		capitalists = 0.40 #40% more likeley to become this type
+		capitalists = 0.20 #20% more likeley to become this type
 		icon = 8
 		outliner_show_as_percent = yes
 		limit = { 
@@ -194,7 +171,7 @@ large_promotion_focus =
 	
 	promote_clergymen =
 	{
-		clergymen = 0.40 #40% more likeley to become this type
+		clergymen = 0.20 #20% more likeley to become this type
 		icon = 9
 		outliner_show_as_percent = yes
 		limit = {
@@ -205,9 +182,9 @@ large_promotion_focus =
 		}
 	}
 
-	promote_lerks =
+	promote_clerks =
 	{
-		clerks = 0.40 #40% more likeley to become this type
+		clerks = 0.20 #20% more likeley to become this type
 		icon = 10
 		outliner_show_as_percent = yes
 		limit = { 
@@ -221,7 +198,7 @@ large_promotion_focus =
 
 	promote_craftsmen =
 	{
-		craftsmen = 0.40 #40% more likeley to become this type
+		craftsmen = 0.20 #20% more likeley to become this type
 		icon = 11
 		outliner_show_as_percent = yes
 		limit = { 
@@ -235,7 +212,7 @@ large_promotion_focus =
 
 	promote_farmers =
 	{
-		farmers = 0.40 #40% more likeley to become this type
+		farmers = 0.20 #20% more likeley to become this type
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = {
@@ -248,7 +225,7 @@ large_promotion_focus =
 	
 	promote_labourers =
 	{
-		labourers = 0.40 #40% more likeley to become this type
+		labourers = 0.20 #20% more likeley to become this type
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
@@ -261,7 +238,7 @@ large_promotion_focus =
 
 	promote_officers =
 	{
-		officers = 0.40 #40% more likeley to become this type
+		officers = 0.20 #20% more likeley to become this type
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = {
@@ -274,7 +251,7 @@ large_promotion_focus =
 
 	promote_soldiers =
 	{
-		soldiers = 0.40 #40% more likeley to become this type
+		soldiers = 0.20 #20% more likeley to become this type
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
@@ -290,20 +267,8 @@ insane_promotion_focus =
 {
 	promote_aristocrats =
 	{
-		aristocrats = 0.20 #20% more likeley to become artisans
+		aristocrats = 0.10 #10% more likeley to become this type
 		icon = 5
-		outliner_show_as_percent = yes
-		limit = {
-			state_scope = {
-				total_pops = 4000000
-			}
-		}
-	}
-
-	promote_artisans =
-	{
-		artisans = 0.20 #20% more likeley to become this type
-		icon = 6
 		outliner_show_as_percent = yes
 		limit = {
 			state_scope = {
@@ -314,7 +279,7 @@ insane_promotion_focus =
 
 	promote_bureaucrats =
 	{
-		bureaucrats = 0.20 #20% more likeley to become this type
+		bureaucrats = 0.10 #10% more likeley to become this type
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = {
@@ -326,7 +291,7 @@ insane_promotion_focus =
 
 	promote_capitalists =
 	{
-		capitalists = 0.20 #20% more likeley to become this type
+		capitalists = 0.10 #10% more likeley to become this type
 		icon = 8
 		outliner_show_as_percent = yes
 		limit = { 
@@ -340,7 +305,7 @@ insane_promotion_focus =
 	
 	promote_clergymen =
 	{
-		clergymen = 0.20 #20% more likeley to become this type
+		clergymen = 0.10 #10% more likeley to become this type
 		icon = 9
 		outliner_show_as_percent = yes
 		limit = {
@@ -350,9 +315,9 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_lerks =
+	promote_clerks =
 	{
-		clerks = 0.20 #20% more likeley to become this type
+		clerks = 0.10 #10% more likeley to become this type
 		icon = 10
 		outliner_show_as_percent = yes
 		limit = { 
@@ -365,7 +330,7 @@ insane_promotion_focus =
 
 	promote_craftsmen =
 	{
-		craftsmen = 0.20 #20% more likeley to become this type
+		craftsmen = 0.10 #10% more likeley to become this type
 		icon = 11
 		outliner_show_as_percent = yes
 		limit = { 
@@ -378,7 +343,7 @@ insane_promotion_focus =
 
 	promote_farmers =
 	{
-		farmers = 0.20 #20% more likeley to become this type
+		farmers = 0.10 #10% more likeley to become this type
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = {
@@ -390,7 +355,7 @@ insane_promotion_focus =
 	
 	promote_labourers =
 	{
-		labourers = 0.20 #20% more likeley to become this type
+		labourers = 0.10 #10% more likeley to become this type
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
@@ -402,7 +367,7 @@ insane_promotion_focus =
 
 	promote_officers =
 	{
-		officers = 0.20 #20% more likeley to become this type
+		officers = 0.10 #10% more likeley to become this type
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = {
@@ -414,7 +379,7 @@ insane_promotion_focus =
 
 	promote_soldiers =
 	{
-		soldiers = 0.20 #20% more likeley to become this type
+		soldiers = 0.10 #10% more likeley to become this type
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
@@ -429,34 +394,35 @@ production_focus =
 {
 	automation_focus =
 	{
-		aeroplanes = 18.3
-		barrels = 18.3
-		automobiles = 18.3
+		aeroplanes = 30
+		barrels = 30
+		automobiles = 30
 		icon = 16
 		limit = { year = 1880 }
 	}
 
 	electrical_focus =
 	{
-		radio = 18.3
-		telephones = 18.3
-		electric_gear = 18.3
+		radio = 30
+		telephones = 30
+		electric_gear = 30
 		icon = 17
 		limit = { year = 1880 }
 	}
 
 	chemical_focus =
 	{
-		fuel = 18.3
-		oil = 18.3
+		fuel = 30
+		oil = 30
+		cigarettes = 15
+		pharmaceuticals = 15
 		icon = 18
-		limit = { year = 1880 }
 	}
 
 	shipping_focus =
 	{
-		steamer_convoy = 18.3
-		clipper_convoy = 18.3
+		steamer_convoy = 30
+		clipper_convoy = 30
 		icon = 19
 		limit = { 
 			#civilized = yes
@@ -466,10 +432,10 @@ production_focus =
 
 	textile_focus =
 	{
-		luxury_clothes = 18.3
-		regular_clothes = 18.3
-		fabric = 0.3
-		dye = 0.3
+		luxury_clothes = 15
+		regular_clothes = 30
+		fabric = 30
+		dye = 30
 		icon = 20
 		#limit = { 
 		#	civilized = yes
@@ -478,10 +444,10 @@ production_focus =
 
 	wood_focus = 
 	{
-		paper = 18.3
-		luxury_furniture = 18.3
-		furniture = 18.3
-		lumber = 18.3
+		paper = 20
+		luxury_furniture = 15
+		furniture = 30
+		lumber = 20
 		icon = 21
 		#limit = { 
 		#	civilized = yes
@@ -490,9 +456,9 @@ production_focus =
 
 	basic_industry_focus =
 	{
-		steel = 18.3
-		machine_parts = 25.3
-		cement = 18.3
+		steel = 30
+		machine_parts = 30
+		cement = 15
 		icon = 22
 		#limit = { 
 		#	civilized = yes
@@ -501,12 +467,12 @@ production_focus =
 
 	armaments_focus = 
 	{
-		artillery = 18.3
-		small_arms = 18.3
-		ammunition = 18.3
-		canned_food = 18.3  
-		explosives = 18.3
-		fertilizer = 18.3
+		artillery = 30
+		small_arms = 30
+		ammunition = 30
+		canned_food = 30 
+		explosives = 30
+		fertilizer = 30
 		icon = 23
 		#limit = { 
 		#	civilized = yes
@@ -515,9 +481,11 @@ production_focus =
 
 	consumer_focus = 
 	{
-		liquor = 18.3
-		wine = 18.3
-		glass = 18.3
+		liquor = 30
+		wine = 30
+		glass = 15
+		tea = 15
+		coffee = 15
 		icon = 24
 		#limit = { 
 		#	civilized = yes

@@ -228,6 +228,8 @@ political_decisions = {
 		effect = {
 			set_country_flag = law_of_guarantees
 			capital = 749
+			749 = { life_rating = 5 }
+			720 = { life_rating = -5 }
 			prestige = 5
 			any_owned = {
 				remove_core = SAR

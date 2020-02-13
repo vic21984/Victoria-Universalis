@@ -398,9 +398,10 @@ country_event = {
 	picture = "Rebellion"
 
 	trigger = {
-		ENG = {
-		}
+		NOT = { year = 1860 }
+		NOT = { has_country_flag = sepoy_rebellion }
 		vassal_of = ENG
+		NOT = { tag = HND }
 		ai = yes
 		civilized = no
 		OR = {

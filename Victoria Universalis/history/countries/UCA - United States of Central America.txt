@@ -11,13 +11,13 @@ prestige = 1
 
 # Political reforms
 slavery = no_slavery
-upper_house_composition = state_equal_weight
+upper_house_composition = appointed
 vote_franschise = landed_voting
-public_meetings = yes_meeting
+public_meetings = no_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
-voting_system = jefferson_method
-political_parties = non_secret_ballots
+voting_system = first_past_the_post
+political_parties = harassment
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -113,12 +113,12 @@ oob = "UCA_oob.txt"
 
 
 #New Reforms
-conscription = one_year_draft
+conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
-centralization = unitary
+centralization = regionalism
 colonial_policy = no_colonies
  

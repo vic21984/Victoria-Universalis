@@ -609,7 +609,7 @@
 	aristocrats = {
 		culture = greek
 		religion = orthodox
-		size = 475
+		size = 375
 	}
 
 	bureaucrats = {
@@ -662,11 +662,6 @@
 }
 #Zante (76000/19000 POPS)
 827 = {
-	aristocrats = {
-		culture = greek
-		religion = orthodox
-		size = 300
-	}
 
 	clergymen = {
 		culture = greek
@@ -1004,6 +999,12 @@
 #under the rule of Greece in 1836
 #Athens (308000/77000 POPS)
 834 = {
+	aristocrats = {
+		culture = greek
+		religion = orthodox
+		size = 475
+	}
+	
 	bureaucrats = {
 		culture = greek
 		religion = orthodox

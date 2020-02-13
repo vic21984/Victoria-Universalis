@@ -454,7 +454,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				is_culture_group = scandinavian
-				is_culture_group = bears
 			}
 			NOT = {
 				exists = SCA
@@ -672,58 +671,6 @@ political_decisions = {
 			change_tag = GCO
 		}
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}	
-
-	unite_moldavia_wallachia = {
-		potential = {
-			OR = {
-				tag = WAL
-				tag = MOL
-			}
-			exists = WAL
-			exists = MOL
-			NOT = { exists = ROM }
-		}
-
-		allow = {
-			OR = {
-				state_n_government = 1
-				is_vassal = no
-			}
-			WAL = {
-				war = no
-				is_vassal = no
-			}
-			MOL = {
-				war = no
-				is_vassal = no
-			}
-		}
-
-		effect = {
-			prestige = 10
-			change_tag = ROM
-			primary_culture = romanian
-			random_country = {
-				limit = {
-					tag = WAL
-					exists = yes
-				}
-				country_event = 11101
-			}
-			random_country = {
-				limit = {
-					tag = MOL
-					exists = yes
-				}
-				country_event = 11101
-			}
-			capital = 664
-		}
-
 		ai_will_do = {
 			factor = 1
 		}

@@ -124,29 +124,6 @@ political_decisions = {
 		}
 	}
 	
-	enact_muhammad_alis_reforms = {
-		potential = {
-			tag = EGY
-			civilized = no
-			NOT = {
-				has_country_flag = muhammad_alis_reforms_enacted
-			}
-		}
-		allow = {
-		}
-		effect = {
-			years_of_research = 5
-			any_pop = {
-				consciousness = 0.5
-			}		
-			add_country_modifier = {
-				name = muhammad_alis_reforms
-				duration = -1
-			}
-			set_country_flag = muhammad_alis_reforms_enacted
-		}
-	}
-	
 	establish_the_dar_al_funun = {
 		potential = {
 			tag = PER
@@ -166,7 +143,7 @@ political_decisions = {
 			set_country_flag = dar_al_funun_built
 			add_country_modifier = {
 				name = dar_al_funun
-				duration = -1
+				duration = 14600
 			}
 		}
 	}

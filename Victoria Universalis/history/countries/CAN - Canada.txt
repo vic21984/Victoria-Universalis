@@ -13,21 +13,21 @@ prestige = 10
 
 # Political reforms
 slavery = no_slavery
-upper_house_composition = appointed
-vote_franschise = universal_weighted_voting
+upper_house_composition = state_equal_weight
+vote_franschise = wealth_voting
 public_meetings = yes_meeting
 press_rights = free_press
 trade_unions = all_trade_unions
-voting_system = first_past_the_post
-political_parties = gerrymandering
+voting_system = jefferson_method
+political_parties = non_secret_ballots
 
 # Social Reforms
-wage_reform = trinket_wage
-work_hours = twelve_hours
+wage_reform = low_minimum_wage
+work_hours = ten_hours
 safety_regulations = trinket_safety
 health_care = no_health_care
 unemployment_subsidies = trinket_subsidies
-pensions = no_pensions 
+pensions = low_pensions 
 school_reforms = no_schools
 
 ruling_party = CAN_conservative

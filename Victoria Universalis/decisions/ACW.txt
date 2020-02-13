@@ -46,20 +46,20 @@ political_decisions = {
 				who = USA
 				value = 175
 			}
-			OR = {
-				AND = {
-					USA = {
-						slavery = yes_slavery
-					}
-					slavery = yes_slavery
-				}
-				AND = {
-					USA = {
-						slavery = no_slavery
-					}
-					slavery = no_slavery
-				}
-			}
+#			OR = {
+#				AND = {
+#					USA = {
+#						slavery = yes_slavery
+#					}
+#					slavery = yes_slavery
+#				}
+#				AND = {
+#					USA = {
+#						slavery = no_slavery
+#					}
+#					slavery = no_slavery
+#				}
+#			}
 		}
 		effect = {
 		set_country_flag = usstatehood_we_have_applied

@@ -1,5 +1,8 @@
-color = { 255  234  154 }
+color = { 250 198 68 }
 graphical_culture = ChineseGC
+absolute_monarchy = { 255  234  154 }
+prussian_constitutionalism = { 255  234  154 }
+hms_government = { 255  234  154 }
 
 party = {
 	name = "CHI_conservative"
@@ -46,7 +49,7 @@ party = {
 party = {
 	name = "CHI_reactionary"
 	start_date = 1830.1.1
-	end_date = 1921.1.1
+	end_date = 1912.1.1
 
 	ideology = reactionary
 
@@ -172,7 +175,7 @@ party = {
 party = {
 	name = "CHI_reactionary_2"
 	start_date = 1912.1.1
-	end_date = 1925.1.1
+	end_date = 2000.1.1
 
 	ideology = reactionary
 

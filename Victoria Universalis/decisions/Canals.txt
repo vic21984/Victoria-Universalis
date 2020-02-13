@@ -100,5 +100,15 @@ political_decisions = {
 				war = yes
 			}
 		}
-	}	
+	}
+	build_bosphorus_canal = {
+		potential = {
+			NOT = { is_canal_enabled = 4 }
+		}
+		allow = {
+		}
+		effect = {
+			enable_canal = 4
+		}
+	}
 }

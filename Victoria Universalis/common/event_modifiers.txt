@@ -176,6 +176,7 @@ loyal_askaris = {
 muhammad_alis_reforms = {
 	research_points_modifier = 0.3
 	pop_consciousness_modifier = 0.03
+	mobilisation_size = 0.02
 	icon = 5
 }
 
@@ -401,7 +402,7 @@ silk_famine = {
 
 blood_and_iron_mine = {
 	local_rgo_throughput = 1
-	pop_militancy_modifier = 0.02
+	pop_militancy_modifier = 0.03
 	icon = 14
 }
 
@@ -517,16 +518,17 @@ ruhr_boom = {
 }
 
 prussian_general_staff = {
-	org_regain = 0.1
-	land_organisation = 0.05
-	land_unit_start_experience = 0.5
-	supply_consumption = -0.05
+	org_regain = 0.15
+	land_organisation = 0.15
+	land_unit_start_experience = 5
+	reinforce_speed = 0.25
+	leadership = 2
 	icon = 15
 }
 
 ##### Boer War #####
 trek_boers = {
-	immigrant_attract = 2		#200%
+	global_immigrant_attract = 6		#600%
 	icon = 19
 }
 
@@ -758,11 +760,21 @@ liberian_research_boost = {
 	icon = 5
 }
 
-######Victoria Univeralis######
+#################### VICTORIA UNIVERSALIS ####################
 
-province_selected = {
-	icon = 5
+admin_counter = {
+	icon = 8
 }
+
+requested_grant = {
+	icon = 10
+}
+
+immunity_from_influenza = {
+	icon = 17
+}
+
+########## PROVINCE SELECTOR DECISIONS ##########
 
 rgo_changed = {
 	icon = 12
@@ -773,22 +785,11 @@ switched_production = {
 	icon = 14
 }
 
-balkan_size_modifier = {
-	farm_rgo_size = 1
-	mine_rgo_size = 1
-	icon = 13
-}
-
 rgo_expansion = {
 	farm_rgo_size = 1
 	mine_rgo_size = 1
 	icon = 13
 }
-
-admin_counter = {
-	icon = 8
-}
-
 
 political_propaganda = {
 	icon = 14
@@ -802,25 +803,8 @@ recruitment_drive = {
 	icon = 15
 }
 
-suppression = {
-	pop_militancy_modifier = -0.15
-	pop_consciousness_modifier = -0.15
-	icon = 20
-}
-
-country_suppression = {
-	global_pop_militancy_modifier = -0.03
-	global_pop_consciousness_modifier = -0.03
-	icon = 18
-}
-
-province_attract_immigrants = {
-	immigrant_attract = 2
-	icon = 9
-}
-
 attract_immigrants = {
-	global_immigrant_attract = 0.20
+	global_immigrant_attract = 0.5
 	icon = 7
 }
 
@@ -833,10 +817,9 @@ draft_law_changed = {
 }
 
 assimilation = {
-	assimilation_rate = 3
+	assimilation_rate = 10
 	icon = 1
 }
-
 
 literacy_campaign = {
 	icon = 7
@@ -847,8 +830,104 @@ small_baby_boom = {
 	icon = 19
 }
 
-immunity_from_influenza = {
+recruited_leader = {
+	icon = 15
+}
+
+suppression = {
+	pop_militancy_modifier = -0.15
+	pop_consciousness_modifier = -0.15
+	icon = 20
+}
+
+country_suppression = {
+	global_pop_militancy_modifier = -0.05
+	global_pop_consciousness_modifier = -0.05
+	icon = 18
+}
+
+province_attract_immigrants = {
+	immigrant_attract = 100
+	icon = 9
+}
+
+########## BACKGROUND STUFF ##########
+
+ghost_country = {
 	icon = 17
+}
+
+starting_healthcare1 = {
+	max_social_spending = 0.01
+}
+
+starting_healthcare2 = {
+	max_social_spending = 0.99
+}
+
+ai_healthcare = {
+	max_social_spending = 1
+}
+
+jan_mayen_isolationism = {
+}
+
+unemployment_fix = {
+	local_RGO_throughput = -0.5
+	icon = 14
+}
+
+rgo_unemployment_timer = {
+}
+
+########## COLONY THROUGHPUT NERFS ##########
+
+colonial_nerf_counter = {
+	icon = 14
+}
+
+colonial_railroad_nerf1 = {
+	local_RGO_throughput = -0.08
+	local_RGO_output = -0.08
+	icon = 14
+}
+
+colonial_railroad_nerf2 = {
+	local_RGO_throughput = -0.16
+	local_RGO_output = -0.16
+	icon = 14
+}
+
+colonial_railroad_nerf3 = {
+	local_RGO_throughput = -0.24
+	local_RGO_output = -0.24
+	icon = 14
+}
+
+colonial_railroad_nerf4 = {
+	local_RGO_throughput = -0.32
+	local_RGO_output = -0.32
+	icon = 14
+}
+
+colonial_railroad_nerf5 = {
+	local_RGO_throughput = -0.4
+	local_RGO_output = -0.4
+	icon = 14
+}
+
+colonial_railroad_nerf6 = {
+	local_RGO_throughput = -0.48
+	local_RGO_output = -0.48
+	icon = 14
+}
+
+########## COUNTRY EVENT MODIFIERS ##########
+
+balkan_size_modifier = {
+	farm_rgo_size = 1
+	mine_rgo_size = 1
+	icon = 13
 }
 
 christian_subjugation = {
@@ -884,20 +963,11 @@ balkan_liberation_war = {
 	icon = 15
 }
 
-
-colonial_bureaucracy = {
-	local_RGO_throughput = -0.5
-	icon = 16
-}
-
 strategic_rgo = {
-	local_rgo_throughput = 1
+	local_rgo_throughput = 5
+	farm_rgo_size = 1
+	mine_rgo_size = 1
 	icon = 13
-}
-
-prochnost = {
-	goods_demand = -0.25
-	icon = 9
 }
 
 chinese_confusion = {
@@ -905,26 +975,11 @@ chinese_confusion = {
 	icon = 16
 }
 
+mandate_of_heaven = {
+	administrative_efficiency_modifier = 1
+	icon = 5
+}
+
 oriental_truce = {
 	icon = 6
-}
-
-one_year_draft_nerf = {
-	mobilisation_size = -0.008
-	icon = 16
-}
-
-two_year_draft_nerf = {
-	mobilisation_size = -0.016
-	icon = 16
-}
-
-four_year_draft_nerf = {
-	mobilisation_size = -0.032
-	icon = 16
-}
-
-mandatory_service_nerf = {
-	mobilisation_size = -0.048
-	icon = 16
 }

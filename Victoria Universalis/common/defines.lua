@@ -24,14 +24,14 @@ country = {
 	CAMPAIGN_EVENT_MIN_TIME = 21 ,-- never more often than 3 weeks between (NOT USED)
 	CAMPAIGN_EVENT_STATE_SCALE = -3,	-- every non-colonial state reduces by 3 days (NOT USED)
 	CAMPAIGN_DURATION = 6,	-- a campaign lasts these amount of months
-	COLONIAL_RANK = 16, -- Minimum rank a nation must have to send colonists
+	COLONIAL_RANK = 24, -- Minimum rank a nation must have to send colonists
 	COLONY_TO_STATE_PRESTIGE_GAIN = 5, -- Prestige gain when turning colony to state
 	COLONIAL_LIFERATING = 35,
 	BASE_GREATPOWER_DAILY_INFLUENCE = 0.25, -- Influence value which is distributed each day
 	AI_SUPPORT_REFORM = 0.00, -- At least this many % needs to support a reform for the AI to take it
 	BASE_MONTHLY_DIPLOPOINTS = 0.5, -- Base value gain for diplomatic actions each month
 	DIPLOMAT_TRAVEL_TIME = 0,
-	PROVINCE_OVERSEAS_PENALTY = 0.025, -- Each province req. this many goods flagged as overseas penalty 
+	PROVINCE_OVERSEAS_PENALTY = 0.010, -- Each province req. this many goods flagged as overseas penalty 
 	NONCORE_TAX_PENALTY = -0.05, -- -5% for each non-core in state
 	BASE_TARIFF_EFFICIENCY = 0.3, -- baseline tariff efficiency
 	COLONY_FORMED_PRESTIGE = 0.5, -- prestige from founding a colony.
@@ -39,14 +39,14 @@ country = {
 	LOYALTY_BOOST_ON_PARTY_WIN = 0.1,
 	MOVEMENT_RADICALISM_BASE = 25,
 	MOVEMENT_RADICALISM_PASSED_REFORM_EFFECT  = -2,
-	MOVEMENT_RADICALISM_NATIONALISM_FACTOR = 0.5,
+	MOVEMENT_RADICALISM_NATIONALISM_FACTOR = 1.0,
 	SUPPRESSION_POINTS_GAIN_BASE = 170, -- monthly gain with max bureaucrats
 	SUPPRESS_BUREAUCRAT_FACTOR = 0.5,
 	WRONG_REFORM_MILITANCY_IMPACT = 1,
 	SUPPRESSION_RADICALISATION_HIT = 5, -- % base added to a movements radicalness
-	INVESTMENT_SCORE_FACTOR = 0.005, -- how much foreign investment money counts towards your industry score
+	INVESTMENT_SCORE_FACTOR = 0.001, -- how much foreign investment money counts towards your industry score
 	UNCIV_TECH_SPREAD_MAX = 0.5,
-	UNCIV_TECH_SPREAD_MIN = 0.7,
+	UNCIV_TECH_SPREAD_MIN = 0.5,
 	MIN_DELAY_BETWEEN_REFORMS = 6, -- months
 	ECONOMIC_REFORM_UH_FACTOR = -0.40,
 	MILITARY_REFORM_UH_FACTOR = -0.40,
@@ -98,8 +98,8 @@ economy = {
 	LOAN_BASE_INTEREST			= 0.02,
 	BANKRUPTCY_EXTERNAL_LOAN_YEARS	= 10,
 	BANKRUPTCY_FACTOR = 0.2,
-	SHADOWY_FINANCIERS_MAX_LOAN_AMOUNT = 1500,
-	MAX_LOAN_CAP_FROM_BANKS = 3, -- can loan max % of country tax base from single country
+	SHADOWY_FINANCIERS_MAX_LOAN_AMOUNT = 0,
+	MAX_LOAN_CAP_FROM_BANKS = 0, -- can loan max % of country tax base from single country
 	GUNBOAT_LOW_TAX_CAP = 0.0,
 	GUNBOAT_HIGH_TAX_CAP = 1.0,
 	GUNBOAT_FLEET_SIZE_FACTOR = 100,
@@ -139,7 +139,7 @@ military = {
 	LAND_SPEED_MODIFIER = 1,
 	NAVAL_SPEED_MODIFIER = 2,
 	EXP_GAIN_DIV = 0.05,
-	LEADER_RECRUIT_COST = 20,
+	LEADER_RECRUIT_COST = 40,
 	SUPPLY_RANGE = 250,
 	POP_MIN_SIZE_FOR_REGIMENT_PROTECTORATE_MULTIPLIER = 8,
 	POP_MIN_SIZE_FOR_REGIMENT_COLONY_MULTIPLIER = 5,
@@ -148,8 +148,8 @@ military = {
 	COMBATLOSS_WAR_EXHAUSTION = 3, -- base war exhastion in combat
 	LEADER_MAX_RANDOM_PRESTIGE = 0.05, -- max percent of prestige, when randomizing stats for leaders.
 	LEADER_AGE_DEATH_FACTOR = 4, -- higher value means leaders live longer
-	LEADER_PRESTIGE_TO_MORALE_FACTOR = 0.8, -- f.ex. 100% of prestige = +10% morale
-	LEADER_PRESTIGE_TO_MAX_ORG_FACTOR = 0.7, -- f.ex. 100% of prestige = +10 max org
+	LEADER_PRESTIGE_TO_MORALE_FACTOR = 1, -- f.ex. 100% of prestige = +10% morale
+	LEADER_PRESTIGE_TO_MAX_ORG_FACTOR = 1, -- f.ex. 100% of prestige = +10 max org
 	LEADER_TRANSFER_PENALTY_ON_COUNTRY_PRESTIGE = 0.05, -- country prestige penalty on unassign leader (f.ex if leader has 100% prestige, the country loose 4% of its prestige)
 	LEADER_PRESTIGE_LAND_GAIN =0.3, -- extra speed gain on prestige for land combat
 	LEADER_PRESTIGE_NAVAL_GAIN =0.3, -- extra speed gain on prestige for naval combat
@@ -410,7 +410,7 @@ diplomacy = {
 	PEACE_RELATION_ON_DECLINE = -10,
 	PEACE_DIPLOMATIC_COST = 1,
 
-	ALLIANCE_RELATION_ON_ACCEPT = 100,
+	ALLIANCE_RELATION_ON_ACCEPT = 50,
 	ALLIANCE_RELATION_ON_DECLINE = -50,
 	ALLIANCE_DIPLOMATIC_COST = 1,
 	CANCELALLIANCE_RELATION_ON_ACCEPT = -20,
@@ -450,7 +450,7 @@ diplomacy = {
 	BANEMBASSY_RELATION_ON_ACCEPT = -10,
 	BANEMBASSY_INFLUENCE_COST = 65,
 	
-	INCREASERELATION_RELATION_ON_ACCEPT = 15,
+	INCREASERELATION_RELATION_ON_ACCEPT = 20,
 	INCREASERELATION_RELATION_ON_DECLINE = 0,
 	INCREASERELATION_DIPLOMATIC_COST = 2,
 
@@ -570,7 +570,7 @@ diplomacy = {
 	TENSION_FROM_MOVEMENT_MAX = 1.2, -- max total value no matter the size of the movement
 	AT_WAR_TENSION_DECAY = -0.12, -- for each potentially interested GP at war (value is if all possible GPs are at war) 
 	TENSION_ON_CB_DISCOVERED = 20,
-	TENSION_ON_REVOLT = 50,
+	TENSION_ON_REVOLT = 40,
 	TENSION_WHILE_CRISIS = -1.0,
 	CRISIS_COOLDOWN_MONTHS = 60,
 	CRISIS_BASE_CHANCE = 20,
@@ -627,7 +627,7 @@ pops = {
 	CONVERSION_SCALE = 0.01,
 	IMMIGRATION_SCALE = 0.004,
 
-	PROMOTION_SCALE = 0.0005,
+	PROMOTION_SCALE = 0.0012,
 	PROMOTION_ASSIMILATION_CHANCE = 1.0,
 	LUXURY_THRESHOLD = 500,
 	BASE_GOODS_DEMAND = 0.8,
@@ -648,15 +648,15 @@ pops = {
 	MIL_NON_ACCEPTED = 0.05,
 		
 	CON_LITERACY = 0.1,
-	CON_LUXURY_GOODS = 0.1,
-	CON_POOR_CLERGY = -2.5,
-	CON_MIDRICH_CLERGY = -1.25,
+	CON_LUXURY_GOODS = 0,
+	CON_POOR_CLERGY = -2,
+	CON_MIDRICH_CLERGY = -1,
 	CON_REFORM_IMPACT = -50,
 	CON_COLONIAL_FACTOR = 0.5,
 	RULING_PARTY_HAPPY_CHANGE = -1,
 	RULING_PARTY_ANGRY_CHANGE = 2,
 
-	PDEF_BASE_CON = 20.0,			-- so half'ed effect.
+	PDEF_BASE_CON = 1000.0,			-- so half'ed effect.
 	
 	NATIONAL_FOCUS_DIVIDER = 40000.0,
 	
@@ -667,16 +667,16 @@ pops = {
 	MIL_TO_JOIN_RISING = 8, -- Rebels over this will join a general rising
 	MIL_TO_AUTORISE = 9, -- Rebels over this rise no matter what
 	REDUCTION_AFTER_RISEING = 0.0, -- After a pop spawns a rebellion, its militancy will be reduced this much
-	REDUCTION_AFTER_DEFEAT = 5.0, -- After a rebellion is being defeated in combat, its pop militancy will be divided by this number.
+	REDUCTION_AFTER_DEFEAT = 7.0, -- After a rebellion is being defeated in combat, its pop militancy will be divided by this number.
 																-- (if value < 1.0, the MIL will be increased) (Beware! value must be > 0)
 	
 	POP_TO_LEADERSHIP = 0.0001, -- how much leadership every 1000 officers gives each day.
 	ARTISAN_MIN_PRODUCTIVITY = 1, -- Minimum efficieny of an artisan
-	SLAVE_GROWTH_DIVISOR = 2, -- Slaves have N times lower growth
+	SLAVE_GROWTH_DIVISOR = 10, -- Slaves have N times lower growth
 	
 	MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
 	LUXURY_CON_CHANGE = 0.001, -- con boost from over-buying luxuary goods
-	INVENTION_IMPACT_ON_DEMAND = 0.002, -- how much each invention in a country increases demand for a product in percent
+	INVENTION_IMPACT_ON_DEMAND = 0.000, -- how much each invention in a country increases demand for a product in percent
 	ARTISAN_SUPPRESSED_COLONIAL_GOODS_CATEGORY = 0, -- Goods category index not produced in colonies
 	ISSUE_MOVEMENT_JOIN_LIMIT = 8,
 	ISSUE_MOVEMENT_LEAVE_LIMIT = 7,
@@ -694,12 +694,12 @@ pops = {
 
 ai =
 {
-	COLONY_WEIGHT = 5.0, -- ai weight for colonising
+	COLONY_WEIGHT = 10.0, -- ai weight for colonising
 	ADMINISTRATOR_WEIGHT = 10.0, -- ai weight for new bureaucrat
 	INDUSTRYWORKER_WEIGHT = 10.0, -- ai weight for new industry workers
-	EDUCATOR_WEIGHT = 60.0, -- ai weigth for new clergy
-	SOLDIER_WEIGHT = 30.0, -- ai weight for soldiers
-	SOLDIER_FRACTION = 0.03, -- max amount of population AI wants to be soldiers
+	EDUCATOR_WEIGHT = 30.0, -- ai weigth for new clergy
+	SOLDIER_WEIGHT = 50.0, -- ai weight for soldiers
+	SOLDIER_FRACTION = 0.05, -- max amount of population AI wants to be soldiers
 	CAPITALIST_FRACTION = 0.001, -- max amount of population AI wants to be capis
 	PRODUCTION_WEIGHT = 0.05, -- ai weight for new production
 	SPAM_PENALTY = 10, -- makes certain diplomatic action less common 
@@ -710,7 +710,7 @@ ai =
 	CHANCE_BUILD_RAILROAD = 0.4, -- chances in % of AI decisions (max value 1.0)
 	CHANCE_BUILD_NAVAL_BASE = 0.25,
 	CHANCE_BUILD_FORT = 0.05,
-	CHANCE_INVEST_POP_PROJ = 0.16,
+	CHANCE_INVEST_POP_PROJ = 0.64,
 	CHANCE_FOREIGN_INVEST = 0.16,
 	TWS_AWARENESS_SCORE_LOW_CAP = 0.2, -- AI will always add CBs if current warscore is less then that number (including TWS)
 	TWS_AWARENESS_SCORE_ASPECT = 0.5, -- AI will not add any more CBs when TWS is more then X% of total WS. (to not destroy the progress)

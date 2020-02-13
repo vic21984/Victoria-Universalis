@@ -16,7 +16,7 @@ political_decisions = {
 			prestige = 10
 			add_country_modifier = {
 				name = meiji_restoration_boost
-				duration = -1
+				duration = 7300
 			}
 		}
 		ai_will_do = {
@@ -41,7 +41,7 @@ political_decisions = {
 			prestige = 10
 			add_country_modifier = {
 				name = meiji_restoration_boost
-				duration = -1
+				duration = 7300
 			}
 			economic_reform = yes_land_reform
 			any_pop = {
@@ -80,13 +80,13 @@ political_decisions = {
 			prestige = 10
 			add_country_modifier = {
 				name = meiji_restoration_boost
-				duration = -1
+				duration = 7300
 			}
 			economic_reform = yes_land_reform
 		}
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
 	
 }

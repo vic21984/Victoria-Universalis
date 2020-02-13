@@ -1,7 +1,7 @@
 #general promote mtth, same for all pops
 promotion_chance = 
 {
-	factor = 2
+	factor = 1
 	modifier = {
 		factor = -0.2
 		country = {
@@ -10,50 +10,54 @@ promotion_chance =
 	}
 	group = {
 		modifier = {
-			factor = 0.04
-			literacy = 0.05		
+			factor = -0.025
+			not = { culture = this }
+			total_pops = 4000000
 		}
 		modifier = {
-			factor = 0.04
-			literacy = 0.1			
+			factor = -0.05
+			not = { culture = this }
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
 		}
 		modifier = {
-			factor = 0.04
-			literacy = 0.2		
+			factor = -0.1
+			not = { culture = this }
+			NOT = { total_pops = 2000000 }
 		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.3			
-		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.4			
-		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.5			
-		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.6			
-		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.7			
-		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.8			
-		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.9			
-		}
-		modifier = {
-			factor = 0.04
-			literacy = 0.99			
-		}		
 	}
+	group = {
+		modifier = {
+			factor = -0.025
+			not = { religion = this }
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = -0.05
+			not = { religion = this }
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
+		}
+		modifier = {
+			factor = -0.1
+			not = { religion = this }
+			NOT = { total_pops = 2000000 }
+		}
+	}
+	modifier = {
+		factor = -0.1
+		country = { slavery = yes_slavery }
+	}
+	modifier = {
+		factor = -0.05
+		state_scope = {
+				is_slave = yes
+			}
+	}	
+	modifier = {
+		factor = -100
+		location = { NOT = { controlled_by = owner } }
+	}	
 
 	group = {
 		modifier = {
@@ -90,7 +94,7 @@ promotion_chance =
 	group = {
 		modifier = {
 			factor = -0.08
-			life_needs = 0.8
+			life_needs = 0.7
 			total_pops = 4000000			
 		}
 		modifier = {
@@ -108,7 +112,7 @@ promotion_chance =
 	group = {
 		modifier = {
 			factor = -0.05
-			life_needs = 0.8
+			life_needs = 0.7
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}
@@ -129,77 +133,77 @@ promotion_chance =
 	#####EVERYDAY NEEDS#####
 	group = {
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.2			
 		}
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.3			
 		}
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.4			
 		}	
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.5			
 		}	
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.6			
 		}
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.7			
 		}	
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.8			
 		}
 		modifier = {
-			factor = 0.04
+			factor = 0.03
 			everyday_needs = 0.9			
 		}			
 	}
 
 	group = {
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.2
 			total_pops = 4000000
 		}
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.3
 			total_pops = 4000000
 		}
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.4
 			total_pops = 4000000
 		}	
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.5
 			total_pops = 4000000
 		}	
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.6
 			total_pops = 4000000		
 		}	
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.7
 			total_pops = 4000000	
 		}	
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.8
 			total_pops = 4000000		
 		}	
 		modifier = {
-			factor = -0.03
+			factor = -0.02
 			everyday_needs = 0.9
 			total_pops = 4000000			
 		}			
@@ -207,83 +211,104 @@ promotion_chance =
 	
 	group = {
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.2
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.3
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.4
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}	
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.5
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}	
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.6
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }		
 		}	
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.7
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }	
 		}	
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.8
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }		
 		}	
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.9
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }			
 		}			
-	}	
-
-	modifier = {
-		factor = -0.1
-		not = { religion = this }
-	}
-	modifier = {
-		factor = -0.1
-		state_scope = { is_colonial = yes }
-	}
-	modifier = {
-		factor = -0.1
-		not = { culture = this }
-	}
-	modifier = {
-		factor = -0.1
-		country = { slavery = yes_slavery }
-	}
-	modifier = {
-		factor = -0.05
-		state_scope = {
-				is_slave = yes
-			}
-	}	
-	modifier = {
-		factor = -100
-		location = { NOT = { controlled_by = owner } }
 	}
 	
 	#####LITERACY#####
+	
+	group = {
+		modifier = {
+			factor = 0.03
+			literacy = 0.05		
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.1			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.2		
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.3			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.4			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.5			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.6			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.7			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.8			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.9			
+		}
+		modifier = {
+			factor = 0.03
+			literacy = 0.99			
+		}		
+	}
+	
 	group = {
 		modifier = {
 			factor = -0.02
@@ -333,6 +358,11 @@ promotion_chance =
 		modifier = {
 			factor = -0.02
 			literacy = 0.9		
+			total_pops = 4000000						
+		}
+		modifier = {
+			factor = -0.02
+			literacy = 0.99	
 			total_pops = 4000000						
 		}
 	}
@@ -397,13 +427,31 @@ promotion_chance =
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}
-	}		
+		modifier = {
+			factor = -0.01
+			literacy = 0.9		
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
+		}
+	}
 	
 }
 
 demotion_chance = 
 {
-	factor = 2
+	factor = 1
+	modifier = {
+		factor = 200
+		strata = poor
+		unemployment = 1
+		location = {
+			work_available = {
+				worker = labourers_gold
+			}
+			controlled_by = owner
+			trade_goods = precious_metal
+		}
+	}
 	modifier = {
 		factor = -0.5
 		country = {
@@ -426,9 +474,26 @@ demotion_chance =
 			not = { life_needs = 0.1 }
 			not = { strata = poor }
 		}
-	}	
+	}
+	group = {
+		modifier = {
+			factor = 0.1
+			not = { everyday_needs = 0.3 }
+			strata = rich
+		}
+		modifier = {
+			factor = 0.1
+			not = { everyday_needs = 0.2 }
+			strata = rich
+		}
+		modifier = {
+			factor = 0.1
+			not = { everyday_needs = 0.1 }
+			strata = rich
+		}
+	}
 	modifier = {
-		factor = -100
+		factor = -10
 		total_pops = 2000000
 	}		
 	modifier = {
@@ -459,73 +524,73 @@ demotion_chance =
 	}
 	group = {
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.9 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.8 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.7 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.6 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.5 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.4 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.3 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.2 }
 		}
 		modifier = {
-			factor = -0.04
+			factor = -0.03
 			not = { literacy = 0.1 }
 		}
 	}
 
 	group = {
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			unemployment = 0.1
 			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.4
 			unemployment = 0.2
 			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.2
 			unemployment = 0.3
 			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.2
 			unemployment = 0.4
 			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.2
 			unemployment = 0.5
 			location = { controlled_by = owner }
 		}			
 		
 	}
 	modifier = {
-		factor = -100
+		factor = -10
 		location = { NOT = { controlled_by = owner } }
 	}
 }
@@ -534,59 +599,42 @@ demotion_chance =
 migration_chance = 
 {
 	factor = 1
-	
-	group = {
-		modifier = {
-			factor = -0.1
-			not = { consciousness = 6 }
-		}
-		modifier = {
-			factor = -0.1
-			not = { consciousness = 7 }
-		}
-		modifier = {
-			factor = -0.1
-			not = { consciousness = 8 } 
+	modifier = {
+		factor = -2.0
+		location = {
+			trade_goods = precious_metal
 		}
 	}
-
 	modifier = {
 		factor = -2.0
 		state_scope = { is_colonial = yes }
 	}
+	
+	modifier = {
+		factor = -0.01
+		state_scope = { is_colonial = no }
+	}
 
-	group = {
-		modifier = {
-			factor = 0.1
-			not = { life_needs = 0.9 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
+	modifier = {
+		factor = 0.2
+		OR = {
+			is_accepted_culture = yes
+			is_primary_culture = yes
 		}
-		modifier = {
-			factor = 0.1
-			not = { life_needs = 0.8 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
-		}
-		modifier = {
-			factor = 0.1
-			not = { life_needs = 0.7 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
-		}
+		country = { has_country_flag = state_migration }
 	}
 
 	group = {
 		modifier = {
-			factor = 0.3
+			factor = 0.1
 			unemployment = 0.1
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			unemployment = 0.2
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			unemployment = 0.3
 		}
 		modifier = {
@@ -614,7 +662,17 @@ colonialmigration_chance =
 	factor = 0.25
 
 	modifier = {
-		factor = -0.5
+		factor = -2.0
+		location = {
+			trade_goods = precious_metal
+		}
+	}
+	modifier = {
+		factor = -0.01
+		state_scope = { is_colonial = no }
+	}
+	modifier = {
+		factor = -0.6
 		NOT = {
 			OR = {
 				is_primary_culture = yes
@@ -623,19 +681,13 @@ colonialmigration_chance =
 		}
 	}
 	modifier = {
-		factor = 0.1
+		factor = 0.03
 		country = { penal_system = colonial_transportation }
 	}
 	
 	modifier = {
-		factor = 0.2
+		factor = 0.05
 		country = { administration_spending = 0.8 colonial_policy = settlement }
-	}
-	group = {
-		modifier = {
-			factor = -0.1
-			not = { consciousness = 5 }
-		}
 	}
 	modifier = {
 		factor = -2.0
@@ -643,37 +695,19 @@ colonialmigration_chance =
 	}
 	group = {
 		modifier = {
-			factor = 0.1
-			not = { life_needs = 0.9 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
-		}
-		modifier = {
-			factor = 0.1
-			not = { life_needs = 0.8 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
-		}
-		modifier = {
-			factor = 0.1
-			not = { life_needs = 0.7 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
-		}
-	}
-
-	group = {
-		modifier = {
-			factor = 0.05
+			factor = 0.02
 			unemployment = 0.1
+			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.02
 			unemployment = 0.2
+			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.02
 			unemployment = 0.3
+			location = { controlled_by = owner }
 		}
 		
 	}
@@ -683,27 +717,33 @@ colonialmigration_chance =
 emigration_chance = 
 {
 	factor = 0.5
-
+	
+	modifier = {
+		factor = -2.0
+		location = {
+			trade_goods = precious_metal
+		}
+	}
 	group = {
 
 		modifier = {
-			factor = 0.1
+			factor = 0.03
 			militancy = 5
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.03
 			militancy = 6
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.03
 			militancy = 7
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.03
 			militancy = 8
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.03
 			militancy = 9
 		}
 	}
@@ -731,126 +771,124 @@ emigration_chance =
 	
 	group = {
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.1
-		}	
+		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.2
 		}	
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.3
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.4
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.5
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.6
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.7
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.8
 		}
 		modifier = {
-			factor = -0.02
+			factor = -0.01
 			everyday_needs = 0.9
-		}			
+		}		
 	}
 
 	group = {
 		modifier = {
-			factor = 0.05
-			unemployment = 0.2
-			location = { controlled_by = owner }
+			factor = -0.005
+			luxury_needs = 0.1
 		}
 		modifier = {
-			factor = 0.05
+			factor = -0.005
+			luxury_needs = 0.2
+		}	
+		modifier = {
+			factor = -0.005
+			luxury_needs = 0.3
+		}
+		modifier = {
+			factor = -0.005
+			luxury_needs = 0.4
+		}
+		modifier = {
+			factor = -0.005
+			luxury_needs = 0.5
+		}
+		modifier = {
+			factor = -0.005
+			luxury_needs = 0.6
+		}
+		modifier = {
+			factor = -0.005
+			luxury_needs = 0.7
+		}
+		modifier = {
+			factor = -0.005
+			luxury_needs = 0.8
+		}
+		modifier = {
+			factor = -0.005
+			luxury_needs = 0.9
+		}		
+	}
+
+	group = {
+		modifier = {
+			factor = 0.02
+			unemployment = 0.2
+		}
+		modifier = {
+			factor = 0.02
 			unemployment = 0.3
 			location = { controlled_by = owner }
-			
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.02
 			unemployment = 0.4
 			location = { controlled_by = owner }
 		}
 		
 	}
 	
-	group = {	
-		modifier = {
-			factor = -0.02
-			agree_with_ruling_party = 0.05
-		}
-		modifier = {
-			factor = -0.02
-			agree_with_ruling_party = 0.1
-		}
-		modifier = {
-			factor = -0.02
-			agree_with_ruling_party = 0.15
-		}	
-		modifier = {
-			factor = -0.02
-			agree_with_ruling_party = 0.2
-		}
+	group = {
 		modifier = {
 			factor = -0.02
 			agree_with_ruling_party = 0.25
+			NOT = { year = 1880 }
 		}
-		modifier = {
-			factor = -0.01
-			agree_with_ruling_party = 0.3
-		}
-		modifier = {
-			factor = -0.01
-			agree_with_ruling_party = 0.35
-		}
-		modifier = {
-			factor = -0.01
-			agree_with_ruling_party = 0.4
-		}	
-		modifier = {
-			factor = -0.01
-			agree_with_ruling_party = 0.45
-		}
-		modifier = {
-			factor = -0.01
-			agree_with_ruling_party = 0.5
-		}		
 	}
-
-	
 	modifier = {
-		factor = -2.0
+		factor = -0.08
 		OR = {
-			culture = nanfaren
-			culture = beifaren
+			is_culture_group = east_asian
 		}
 	}
-	
 
 	modifier = {
 		factor = -5.0
 		state_scope = { is_colonial = yes }
 	}
 	modifier = {
-		factor = -1.0
+		factor = -0.20
 		country = { border_policy = closed_borders }
 	}
 	modifier = {
-		factor = 0.26
+		factor = 0.10
 		NOT = {
 			OR = { 
 				continent = north_america
@@ -867,85 +905,32 @@ assimilation_chance =
 {
 	factor = 1
 
+	modifier = {
+		factor = -2.0
+		state_scope = { is_colonial = yes }
+	}
+	
 	###LITERACY###
 	group = {
 		modifier = {
-			factor = 40
-			literacy = 0.45
-			has_culture_core = yes
-				location = {
-					OR = { 
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}	
-		}
-		modifier = {
-			factor = 40
-			literacy = 0.9
-			has_culture_core = yes
-				location = {
-					OR = { 
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}		
-		}
-	}
-	group = {
-		modifier = {
 			factor = 1
 			literacy = 0.45
 			has_culture_core = yes
-			NOT = {
-				location = {
-					OR = { 
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
+			location = {
+				OR = { 
+					continent = europe
+					continent = asia
 				}
-			}		
+			}
 		}
 		modifier = {
 			factor = 1
 			literacy = 0.9
 			has_culture_core = yes
-			NOT = {
-				location = {
-					OR = { 
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}			
-		}
-	}
-	group = {
-		modifier = {
-			factor = 1.6
-			literacy = 0.45
-			NOT = { has_culture_core = yes }
 			location = {
 				OR = { 
-					continent = north_america
-					continent = south_america
-					continent = oceania
-				}
-			}		
-		}
-		modifier = {
-			factor = 1.6
-			literacy = 0.9
-			NOT = { has_culture_core = yes }
-			location = {
-				OR = { 
-					continent = north_america
-					continent = south_america
-					continent = oceania
+					continent = europe
+					continent = asia
 				}
 			}
 		}
@@ -955,29 +940,79 @@ assimilation_chance =
 			factor = 0.04
 			literacy = 0.45
 			NOT = { has_culture_core = yes }
-			NOT = {
-				location = {
-					OR = { 
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
+			location = {
+				OR = { 
+					continent = europe
+					continent = asia
 				}
-			}			
+			}
 		}
 		modifier = {
 			factor = 0.04
 			literacy = 0.9
 			NOT = { has_culture_core = yes }
+			location = {
+				OR = { 
+					continent = europe
+					continent = asia
+				}
+			}
+		}
+	}
+	group = {
+		modifier = {
+			factor = 15
+			literacy = 0.45
+			has_culture_core = yes
+				NOT = {
+					location = {
+						OR = { 
+							continent = europe
+							continent = asia
+						}
+					}
+				}
+		}
+		modifier = {
+			factor = 15
+			literacy = 0.9
+			has_culture_core = yes
+				NOT = {
+					location = {
+						OR = { 
+							continent = europe
+							continent = asia
+						}
+					}
+				}
+		}
+	}
+	group = {
+		modifier = {
+			factor = 0.6
+			literacy = 0.45
+			NOT = { has_culture_core = yes }
 			NOT = {
 				location = {
 					OR = { 
-						continent = north_america
-						continent = south_america
-						continent = oceania
+						continent = europe
+						continent = asia
 					}
 				}
-			}			
+			}
+		}
+		modifier = {
+			factor = 0.6
+			literacy = 0.9
+			NOT = { has_culture_core = yes }
+			NOT = {
+				location = {
+					OR = { 
+						continent = europe
+						continent = asia
+					}
+				}
+			}
 		}
 	}
 	###LIFE NEEDS###
@@ -985,63 +1020,55 @@ assimilation_chance =
 		factor = 2
 		life_needs = 0.9
 		has_culture_core = yes
-		NOT = {
-			location = {
-				OR = { 
-					continent = north_america
-					continent = south_america
-					continent = oceania
-				}
+		location = {
+			OR = { 
+				continent = europe
+				continent = asia
 			}
-		}		
+		}
 	}
 	modifier = {
 		factor = 0.08
 		life_needs = 0.9
 		NOT = { has_culture_core = yes }
+		location = {
+			OR = { 
+				continent = europe
+				continent = asia
+			}
+		}
+	}
+	modifier = {
+		factor = 30
+		life_needs = 0.9
+		has_culture_core = yes
 		NOT = {
 			location = {
 				OR = { 
-					continent = north_america
-					continent = south_america
-					continent = oceania
+					continent = europe
+					continent = asia
 				}
 			}
-		}		
+		}
 	}
 	modifier = {
-		factor = 80
-		life_needs = 0.9
-		has_culture_core = yes
-		location = {
-			OR = { 
-				continent = north_america
-				continent = south_america
-				continent = oceania
-			}
-		}	
-	}
-	modifier = {
-		factor = 3.2
+		factor = 1.2
 		life_needs = 0.9
 		NOT = { has_culture_core = yes }
-		location = {
-			OR = { 
-				continent = north_america
-				continent = south_america
-				continent = oceania
+		NOT = {
+			location = {
+				OR = { 
+					continent = europe
+					continent = asia
+				}
 			}
-		}	
+		}
 	}
 	
 	###MALUSES###
 	modifier = {
 		factor = -20
 		militancy = 5
-	}
-	modifier = {
-		factor = -20
-		state_scope = { is_colonial = yes }
 	}
 }
 

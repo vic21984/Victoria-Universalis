@@ -72,8 +72,8 @@ leader = {
 	name = "de la Piconnerie"
 	date = 1836.1.1
 	type = land
-	personality = confident
-	background = professor
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -81,8 +81,8 @@ leader = {
 	name = "Jean-Isidore Harispe"
 	date = 1830.1.1
 	type = land
-	personality = heroic
-	background = natural_born_leader
+	personality = defence_2.1
+	background = attack_3.1
 	prestige = 0.3
 }
 
@@ -90,8 +90,8 @@ leader = {
 	name = "Guy-Victor Duperré"
 	date = 1811.1.1
 	type = sea
-	personality = au_fait
-	background = natural_born_leader
+	personality = defence_2.1
+	background = attack_4.1
 	prestige = 0.3
 }
 
@@ -99,8 +99,8 @@ leader = {
 	name = "Comte de Castelanne"
 	date = 1823.1.1
 	type = land
-	personality = incapable
-	background = aristocrat
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.2
 }
 
@@ -108,8 +108,8 @@ leader = {
 	name = "Jacques Achard"
 	date = 1823.1.1
 	type = land
-	personality = relentless
-	background = elderly
+	personality = defence_1.1
+	background = attack_2.1
 	prestige = 0.2
 }
 
@@ -117,8 +117,8 @@ leader = {
 	name = "Jean-Baptiste Vaillant"
 	date = 1832.1.1
 	type = land
-	personality = lackluster
-	background = engineer
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -126,8 +126,8 @@ leader = {
 	name = "Bernand Pierre Magnan"
 	date = 1835.1.1
 	type = land
-	personality = disorderly
-	background = bootlicker
+	personality = defence_1.1
+	background = attack_2.1
 	prestige = 0.1
 }
 
@@ -135,8 +135,8 @@ leader = {
 	name = "Baraguey d'Hilliers"
 	date = 1836.1.1
 	type = land
-	personality = active_p
-	background = drillmaster
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -144,8 +144,8 @@ leader = {
 	name = "Comte de Randon"
 	date = 1835.1.1
 	type = land
-	personality = indifferent
-	background = old_school
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -153,8 +153,8 @@ leader = {
 	name = "Charles Baudin"
 	date = 1836.1.1
 	type = sea
-	personality = stouthearted
-	background = unfit
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -162,8 +162,8 @@ leader = {
 	name = "Reille"
 	date = 1836.1.1
 	type = land
-	personality = gallant
-	background = generals_aide
+	personality = defence_2.1
+	background = attack_1.1
 	prestige = 0.0
 }
 
@@ -171,8 +171,8 @@ leader = {
 	name = "de la Brunerie"
 	date = 1836.1.1
 	type = land
-	personality = stouthearted
-	background = unfit
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.0
 }
 
@@ -299,8 +299,8 @@ army = {
 		name = "Bertrand Clauzel"
 		date = 1803.1.1
 		type = land
-		personality = inefficient
-		background = elderly
+		personality = defence_1.1
+		background = attack_1.1
 		prestige = 0.1
 	}
 

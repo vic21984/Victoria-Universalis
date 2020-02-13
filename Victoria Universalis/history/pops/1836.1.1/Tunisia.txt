@@ -47,7 +47,13 @@
 	soldiers = {
 		culture = maghrebi
 		religion = sunni
-		size = 4000
+		size = 3000
+	}
+
+	soldiers = {
+		culture = maghrebi
+		religion = sunni
+		size = 1000
 	}
 
 	farmers = {
@@ -57,8 +63,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = berber
+		religion = sunni
 		size = 5000
 	}
 
@@ -119,21 +125,15 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = berber
+		religion = sunni
 		size = 2000
-	}
-
-	clergymen = {
-		culture = sephardic
-		religion = jewish
-		size = 5
 	}
 
 	artisans = {
 		culture = sephardic
 		religion = jewish
-		size = 245
+		size = 250
 	}
 }
 #Gafsa (112000/28000 POPS) 
@@ -169,8 +169,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = berber
+		religion = sunni
 		size = 3000
 	}
 }
@@ -207,8 +207,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = berber
+		religion = sunni
 		size = 12000
 	}
 
@@ -257,8 +257,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = berber
+		religion = sunni
 		size = 5000
 	}
 }
@@ -295,21 +295,15 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = berber
+		religion = sunni
 		size = 4000
 	}
-
-	clergymen = {
-		culture = sephardic
-		religion = jewish
-		size = 10
-	}
-
+	
 	artisans = {
 		culture = sephardic
 		religion = jewish
-		size = 490
+		size = 500
 	}
 
 }

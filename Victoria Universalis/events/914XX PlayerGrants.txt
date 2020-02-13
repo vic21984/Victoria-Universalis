@@ -1,0 +1,158 @@
+country_event = {
+	title = EVTNAMErequestgrant
+	desc = EVTDESCrequestgrant
+	id = 91400
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ask_0.5M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 500000
+				NOT = { has_country_flag = deny_grant }
+			}
+			country_event = {id = 91401 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_1M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 1000000
+				NOT = { has_country_flag = deny_grant }
+			}
+			country_event = {id = 91402 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_2M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 2000000
+				NOT = { has_country_flag = deny_grant }
+			}
+			country_event = {id = 91403 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_4M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 4000000
+				NOT = { has_country_flag = deny_grant }
+			}
+			country_event = {id = 91404 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_8M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 8000000
+				NOT = { has_country_flag = deny_grant }
+			}
+			country_event = {id = 91404 days = 0}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91401
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_0.5M_Grant"
+		treasury = -500000
+		FROM = {
+			treasury = 500000
+		}
+	}
+	option = {
+		name = "Give_No_Grant"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91402
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_1M_Grant"
+		treasury = -1000000
+		FROM = {
+			treasury = 1000000
+		}
+	}
+	option = {
+		name = "Give_No_Grant"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91403
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_2M_Grant"
+		treasury = -2000000
+		FROM = {
+			treasury = 2000000
+		}
+	}
+	option = {
+		name = "Give_No_Grant"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91404
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_4M_Grant"
+		treasury = -4000000
+		FROM = {
+			treasury = 4000000
+		}
+	}
+	option = {
+		name = "Give_No_Grant"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91405
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_8M_Grant"
+		treasury = -8000000
+		FROM = {
+			treasury = 8000000
+		}
+	}
+	option = {
+		name = "Give_No_Grant"
+	}
+}

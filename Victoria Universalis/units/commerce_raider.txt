@@ -6,6 +6,7 @@ commerce_raider = {
 	sprite = Raider
 	active = no
 	unit_type = light_ship
+	capital = yes
 	move_sound = steam_move
 	select_sound = steam_selected
 	floating_flag = yes
@@ -29,7 +30,7 @@ commerce_raider = {
 	}
 	min_port_level = 1
 	limit_per_port = -1
-	supply_consumption_score = 5
+	supply_consumption_score = 6
 	
 	supply_consumption = 1.0
 	supply_cost = {
@@ -40,8 +41,8 @@ commerce_raider = {
 	
 	#Naval Abilties
 	hull = 4
-	gun_power = 3
-	fire_range = 0.4
+	gun_power = 1
+	fire_range = 0.3
 	torpedo_attack = 4
 }
 

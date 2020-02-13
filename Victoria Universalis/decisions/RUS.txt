@@ -82,7 +82,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			administrative_points = 1000
+			political_reform = unitary
 			prestige = 5
 			badboy = 3
 			any_pop = {
@@ -109,7 +109,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			political_reform = unitary
+			administrative_points = 500
 			any_pop = {
 				limit = {
 					has_pop_culture = ukrainian
@@ -260,7 +260,8 @@ political_decisions = {
 		
 		effect = {
 			capital = 1008
-			prestige = 5
+			1008 = { life_rating = 5 }
+			994 = { life_rating = -5 }
 		}
 		ai_will_do = {
 			factor = 1

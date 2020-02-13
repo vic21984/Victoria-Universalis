@@ -82,3 +82,24 @@ country_event = {
 			}	
 	}
 }
+
+country_event = {
+	id = 31204
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAN
+		exists = WAL
+		exists = MOL
+		year = 1859
+	}
+	
+	option = {
+		WAL = {
+			primary_culture = romanian
+			inherit = MOL
+			change_tag = culture
+		}
+	}
+}

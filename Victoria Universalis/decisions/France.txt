@@ -55,13 +55,13 @@ political_decisions = {
 			}
 		}
 		allow = {
-			army_professionalism = 1
+			army_decision_making = 1
 		}
 		effect = {
-			add_country_modifier = {
-				name = the_french_foreign_legion
-				duration = -1
-			}
+			random_owned = { limit = { owner = { conscription = four_year_draft } } owner = { political_reform = mandatory_service } }
+			random_owned = { limit = { owner = { conscription = two_year_draft } } owner = { political_reform = four_year_draft } }
+			random_owned = { limit = { owner = { conscription = one_year_draft } } owner = { political_reform = two_year_draft } }
+			random_owned = { limit = { owner = { conscription = no_draft } } owner = { political_reform = one_year_draft } }
 			set_country_flag = french_foreign_legion_supported
 		}
 	}
@@ -304,6 +304,165 @@ political_decisions = {
 			}
 			prestige = 10
 			set_country_flag = extreme_home_makeover
+		}
+	}
+	
+	proclaim_second_empire = {
+		picture = napoleon_iii
+		potential = {
+			tag = FRA
+			NOT = {
+				has_country_flag = napoleon_iii
+			}
+			NOT = {
+				government = absolute_monarchy
+			}
+			year = 1848
+		}
+	
+		allow = {
+			ruling_party = FRA_conservative_3
+			state_n_government = 1
+			owns = 412 #Metz
+			owns = 409 #Strasbourg
+			owns = 410 #Colmar
+		}
+		
+		effect = {
+			set_country_flag = napoleon_iii
+			government = absolute_monarchy
+			political_reform = none_voting
+			political_reform = appointed
+			political_reform = no_meeting
+			political_reform = censored_press
+			political_reform = underground_parties
+			political_reform = all_trade_unions
+			random_owned = {
+				limit = {
+					owner = { child_labor = child_labor_legal }
+				}	
+				owner = { social_reform = child_labor_restricted }
+			}
+			random_owned = {
+				limit = {
+					owner = { work_hours = twelve_hours }
+				}	
+				owner = { social_reform = ten_hours }
+			}
+			random_owned = {
+				limit = {
+					owner = { work_hours = fourteen_hours }
+				}	
+				owner = { social_reform = twelve_hours }
+			}				
+			random_owned = {
+				limit = {
+					owner = { work_hours = no_work_hour_limit }
+				}	
+				owner = { social_reform = fourteen_hours }
+			}
+			random_owned = {
+				limit = {
+					owner = { safety_regulations = low_safety }
+				}	
+				owner = { social_reform = acceptable_safety }
+			}
+			random_owned = {
+				limit = {
+					owner = { safety_regulations = trinket_safety }
+				}	
+				owner = { social_reform = low_safety }
+			}				
+			random_owned = {
+				limit = {
+					owner = { safety_regulations = no_safety }
+				}	
+				owner = { social_reform = trinket_safety }
+			}
+			random_owned = {
+				limit = {
+					owner = { unemployment_subsidies = low_subsidies }
+				}	
+				owner = { social_reform = acceptable_subsidies }
+			}
+			random_owned = {
+				limit = {
+					owner = { unemployment_subsidies = trinket_subsidies }
+				}	
+				owner = { social_reform = low_subsidies }
+			}				
+			random_owned = {
+				limit = {
+					owner = { unemployment_subsidies = no_subsidies }
+				}	
+				owner = { social_reform = trinket_subsidies }
+			}
+			random_owned = {
+				limit = {
+					owner = { pensions = low_pensions }
+				}	
+				owner = { social_reform = acceptable_pensions }
+			}
+			random_owned = {
+				limit = {
+					owner = { pensions = trinket_pensions }
+				}	
+				owner = { social_reform = low_pensions }
+			}				
+			random_owned = {
+				limit = {
+					owner = { pensions = no_pensions }
+				}	
+				owner = { social_reform = trinket_pensions }
+			}
+			random_owned = {
+				limit = {
+					owner = { wage_reform = low_minimum_wage }
+				}	
+				owner = { social_reform = acceptable_minimum_wage }
+			}
+			random_owned = {
+				limit = {
+					owner = { wage_reform = trinket_wage }
+				}	
+				owner = { social_reform = low_minimum_wage }
+			}				
+			random_owned = {
+				limit = {
+					owner = { wage_reform = no_minimum_wage }
+				}	
+				owner = { social_reform = trinket_wage }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = acceptable_schools }
+				}	
+				owner = { social_reform = good_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = low_schools }
+				}	
+				owner = { social_reform = acceptable_schools }
+			}				
+			random_owned = {
+				limit = {
+					owner = { school_reforms = no_schools }
+				}	
+				owner = { social_reform = low_schools }
+			}
+			nationalvalue = nv_order
+			any_pop = {
+				militancy = -3
+			}
+			define_general = {
+				name = "§WNapoléon III"
+				personality = defence_2.1
+				background = attack_2.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

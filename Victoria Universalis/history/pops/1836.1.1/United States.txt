@@ -597,7 +597,13 @@
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 1800
+		size = 900
+	}
+	
+	farmers = {
+		culture = yankee
+		religion = protestant
+		size = 900
 	}
 }
 #Eureka (4000/1000 POPS)
@@ -983,7 +989,12 @@
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 2700
+		size = 2600
+	}
+	farmers = {
+		culture = yankee
+		religion = protestant
+		size = 100
 	}
 }
 #Nevada Region (12000)

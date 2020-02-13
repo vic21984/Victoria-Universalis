@@ -5,6 +5,7 @@ battleship = {
 	type = naval
 	sprite = Battleship
 	unit_type = big_ship
+	capital = yes
 	capital = no
 	active = no
 	move_sound = steam_move
@@ -18,11 +19,11 @@ battleship = {
 	default_organisation = 75
 	maximum_speed = 9
 	weighted_value = 50.0
-	can_build_overseas = no
+	can_build_overseas = yes
 
 
 	#Building Costs
-	build_time = 360
+	build_time = 900
 	build_cost = {
 		steamer_convoy = 80
 		artillery = 20
@@ -30,8 +31,8 @@ battleship = {
 		coal = 25
 	}
 	min_port_level = 4
-	limit_per_port = -1
-	supply_consumption_score = 40
+	limit_per_port = 1
+	supply_consumption_score = 60
 	
 	supply_consumption = 1.0
 	supply_cost = {
@@ -42,8 +43,8 @@ battleship = {
 	}
 	
 	#Naval Abilties
-	hull = 100
-	gun_power = 80
+	hull = 50
+	gun_power = 50
 	fire_range = 0.75
 	evasion = 0
 }

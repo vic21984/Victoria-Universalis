@@ -11,16 +11,14 @@ political_decisions = {
 		}
 		
 		allow = {
-			prestige = 2
+			prestige = 15
 		}
 		
 		effect = {
 			set_global_flag = the_great_trek
-			any_owned = {
-				add_province_modifier = {
-					name = trek_boers
-					duration = 3650
-				}
+			add_country_modifier = {
+				name = trek_boers
+				duration = 1825
 			}
 			ENG = {
 				any_owned = {
@@ -35,7 +33,7 @@ political_decisions = {
 					}
 					add_province_modifier = {
 							name = boer_exodus
-							duration = 3650
+							duration = 1825
 					}
 				}
 			}

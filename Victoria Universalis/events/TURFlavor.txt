@@ -246,7 +246,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = BHU
+		tag = JAN
 		has_global_flag = oriental_crisis
 		TUR = { NOT = { war_with = EGY } }
 		NOT = { has_global_flag = oriental_crisis_ended }

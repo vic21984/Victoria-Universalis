@@ -1,0 +1,214 @@
+country_event = {
+	
+	id = 91301
+	trigger = {
+		year = 1836
+		TAG = JAN
+		NOT = { has_global_flag = money_injected }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		set_global_flag = money_injected
+		any_country = {
+			limit = { is_greater_power = yes }
+			treasury = 150000
+		}
+		any_country = {
+			limit = { is_greater_power = no }
+			treasury = 75000
+		}
+	}
+}
+
+country_event = {
+	id = 91302
+	title = "EVTNAME91302"
+	desc = "EVTDESC91302"
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				continent = africa
+				continent = north_america
+				continent = oceania
+			}
+			OR = {
+				NOT = { life_rating = 11 }
+				NOT = { life_rating = 16 }
+				NOT = { life_rating = 21 }
+				NOT = { life_rating = 26 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91302" 
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+				}
+				NOT = { life_rating = 11 }
+			}
+			life_rating = 25
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = africa
+				}
+				NOT = { life_rating = 11 }
+			}
+			life_rating = 22
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+				}
+				NOT = { life_rating = 16 }
+			}
+			life_rating = 20
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = africa
+				}
+				NOT = { life_rating = 16 }
+			}
+			life_rating = 17
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+				}
+				NOT = { life_rating = 21 }
+			}
+			life_rating = 15
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = africa
+				}
+				NOT = { life_rating = 21 }
+			}
+			life_rating = 12
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+				}
+				NOT = { life_rating = 26 }
+			}
+			life_rating = 10
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = africa
+				}
+				NOT = { life_rating = 26 }
+			}
+			life_rating = 7
+		}
+	}
+}
+
+country_event = {
+	id = 91303
+	trigger = {
+		tag = JAN
+		owns = 2133
+		NOT = { has_country_modifier = ghost_country }
+	}
+
+	immediate = {
+		add_country_modifier = { name = ghost_country duration = 180 }
+	}
+	option = {
+		any_country = {
+			limit = {
+				OR = {
+					is_mobilised = yes
+					total_amount_of_ships = 1
+				}
+				exists = no
+			}
+			country_event = 91304
+		}
+	}
+}
+
+country_event = {
+	id = 91304
+	
+	is_triggered_only = yes
+
+	option = {
+		add_country_modifier = { name = ghost_country duration = 30 }
+		2133 = { secede_province = THIS }
+	}
+}
+
+country_event = {
+	id = 91305
+	trigger = {
+		ai = yes
+		owns = 2133
+		NOT = {
+			tag = JAN
+			has_country_modifier = ghost_country
+		}
+	}
+
+	option = {
+		2133 = { secede_province = JAN }
+	}
+}
+
+#country_event = {
+#	id = 91307
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = JAN
+#		year = 1849
+#	}
+#
+#	option = {
+#		any_country = {
+#			limit = {
+#				ai = yes
+#			}
+#			add_country_modifier = { name = ai_healthcare duration = 2 }
+#		}
+#	}
+#}
+
+country_event = {
+	id = 91308
+	title = "EVTNAME91308"
+	desc = "EVTDESC91308"
+	
+	trigger = {
+		invention = geneva_convention
+		NOT = { has_country_modifier = signed_the_geneva_convention }
+	}
+
+	option = {
+		name = "EVTOPTA91308"
+		add_country_modifier = { name = signed_the_geneva_convention duration = -1 }
+	}
+}

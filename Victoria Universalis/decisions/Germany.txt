@@ -369,6 +369,12 @@ political_decisions = {
 			army_decision_making = 1
 		}
 		effect = {
+			define_general = {
+				name = "§WHelmuth von Moltke the Elder"
+				picture = european_general_36
+				personality = defence_5.1
+				background = attack_5.1
+			}
 			add_country_modifier = {
 				name = prussian_general_staff
 				duration = 10950

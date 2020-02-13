@@ -21,6 +21,7 @@ political_decisions = {
 			}
 		}
 		effect = {
+			administrative_points = 500
 			add_country_modifier = {
 				name = la_guardia_civil
 				duration = -1
@@ -64,16 +65,88 @@ political_decisions = {
 			factor = 0
 		}
 	}
+	
+	abandon_iberian_union = {
+		picture = abandon_iberia
+		potential = {
+			tag = SPA
+			NOT = { has_global_flag = iberian_union_abandoned }
+			POR = { ai = no }
+			SPA = { ai = no }
+		}
+
+		allow = {
+			POR = { ai = no }
+			SPA = { ai = no }
+		}
+
+		effect = {
+			set_global_flag = iberian_union_abandoned
+		}
+	}
+
+	embrace_filipino_minority = {
+		picture = embrace_filipinos
+		potential = {
+			tag = SPA
+			has_global_flag = iberian_union_abandoned
+			NOT = { accepted_culture = filipino }
+		}
+
+		allow = {
+			OR = {
+				government = hms_government
+				government = democracy
+			}
+			NOT = { citizenship_policy = residency }
+			citizens_rights = all_voting_pops
+			revolution_n_counterrevolution = 1
+			NOT = {
+				exists = PHL
+			}
+			SPA_1455 = {
+				owned_by = THIS
+				NOT = { average_militancy = 1 }
+			}
+			SPA_1459 = {
+				owned_by = THIS
+				NOT = { average_militancy = 1 }
+			}
+			SPA_1463 = {
+				owned_by = THIS
+				NOT = { average_militancy = 1 }
+			}
+		}
+
+		effect = {
+			add_accepted_culture = filipino
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+		}
+	}
+
 	unite_iberia = {
 		picture = create_iberia
 		potential = {
 			is_culture_group = iberian
-			NOT = { has_global_flag = created_iberia }
+			NOT = {
+				OR = {
+					has_global_flag = created_iberia
+					has_global_flag = iberian_union_abandoned
+				}
+			}
 		}
 		
 		allow = {
 			war = no
-			is_greater_power = yes
 			revolution_n_counterrevolution = 1
 			SPA = {
 				all_core = {
@@ -82,10 +155,7 @@ political_decisions = {
 						owner = {
 							in_sphere = THIS
 							war = no
-						}
-						owner = {
-							vassal_of = THIS
-							war = no
+							ai = yes
 						}
 					}
 				}
@@ -97,10 +167,7 @@ political_decisions = {
 						owner = {
 							in_sphere = THIS
 							war = no
-						}
-						owner = {
-							vassal_of = THIS
-							war = no
+							ai = yes
 						}
 					}
 				}

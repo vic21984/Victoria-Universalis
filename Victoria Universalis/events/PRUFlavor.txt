@@ -530,7 +530,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = BHU
+		tag = JAN
 		NOT = { exists = PRU }
 	}
 	

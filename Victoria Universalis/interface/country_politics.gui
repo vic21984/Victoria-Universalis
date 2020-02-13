@@ -1128,7 +1128,7 @@ guiTypes = {
 			}
 			
 			windowType = {
-				name = "pensions"
+				name = "school_reforms"
 				backGround =""
 				position = { x = 384 y = 235 }
 				size = { x=151 y=92 }
@@ -1156,7 +1156,7 @@ guiTypes = {
 			}
 			
 			windowType = {
-				name = "health_care"
+				name = "pensions"
 				backGround =""
 				position = { x = 536 y = 235 }
 				size = { x=151 y=92 }
@@ -1184,9 +1184,9 @@ guiTypes = {
 			}
 			
 			windowType = {
-				name = "school_reforms"
+				name = "health_care"
 				backGround =""
-				position = { x = 384 y = 328 }
+				position = { x = 384 y = 314 }
 				size = { x=151 y=92 }
 				moveable = 0
 				dontRender = ""

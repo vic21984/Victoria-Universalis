@@ -1,0 +1,10 @@
+country_event = {
+	id = 2
+	is_triggered_only = yes
+	
+	option = {
+		any_pop = {
+			literacy = 0.10
+		}
+	}
+}

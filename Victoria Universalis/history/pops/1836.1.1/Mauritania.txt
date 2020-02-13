@@ -45,8 +45,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = berber
+		religion = sunni
 		size = 3000
 	}
 }
@@ -83,8 +83,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = wolof
+		religion = sunni
 		size = 5000
 	}
 }
@@ -134,8 +134,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = fulbe
+		religion = sunni
 		size = 6000
 	}
 }
@@ -172,8 +172,8 @@
 	}
 
 	slaves = {
-		culture = african_minor
-		religion = animist
+		culture = fulbe
+		religion = sunni
 		size = 3000
 	}
 }
@@ -223,6 +223,7 @@
 		size = 2700
 	}
 }
+
 #Tichit (12000/3000 POPS) 
 1780 = {
 	aristocrats = {
@@ -255,64 +256,65 @@
 		size = 2700
 	}
 }
+
 #Walata (28000/7000 POPS) 
 1781 = {
 	aristocrats = {
 		culture = maures
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	clergymen = {
-		culture = maures
-		religion = sunni
-		size = 75
-	}
-
-	artisans = {
 		culture = maures
 		religion = sunni
 		size = 150
 	}
 
-	soldiers = {
-		culture = maures
-		religion = sunni
-		size = 25
-	}
-
-	farmers = {
-		culture = maures
-		religion = sunni
-		size = 2700
-	}
-
-	aristocrats = {
-		culture = mande
-		religion = sunni
-		size = 75
-	}
-
-	clergymen = {
-		culture = mande
-		religion = sunni
-		size = 100
-	}
-
 	artisans = {
-		culture = mande
+		culture = maures
 		religion = sunni
-		size = 200
+		size = 300
 	}
 
 	soldiers = {
-		culture = mande
+		culture = maures
 		religion = sunni
 		size = 50
 	}
 
 	farmers = {
-		culture = mande
+		culture = maures
+		religion = sunni
+		size = 5400
+	}
+
+	aristocrats = {
+		culture = maures
+		religion = sunni
+		size = 75
+	}
+
+	clergymen = {
+		culture = maures
+		religion = sunni
+		size = 100
+	}
+
+	artisans = {
+		culture = maures
+		religion = sunni
+		size = 200
+	}
+
+	soldiers = {
+		culture = maures
+		religion = sunni
+		size = 50
+	}
+
+	farmers = {
+		culture = maures
 		religion = sunni
 		size = 3675
 	}

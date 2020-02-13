@@ -30,6 +30,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA16000"
+		political_reform = federalism
 		any_pop = {
 			consciousness = -7
 			militancy = -3
@@ -55,7 +56,7 @@ country_event = {
 		}
 		CSA = {
 			capital = 211
-			leadership = 80
+			leadership = 400
 		}
 		capital = 220
 		war = {
@@ -99,13 +100,14 @@ country_event = {
 		}
 		CSA = {
 			capital = 211
-			leadership = 80
+			leadership = 400
 			set_country_flag = the_slavery_debate
 		}
 		capital = 220
 		
 		change_tag_no_core_switch = CSA
 		USA = {
+			political_reform = federalism
 			war = {
 				target = CSA
 				attacker_goal = {
@@ -488,7 +490,7 @@ country_event = {
 	id = 16452
 
  	trigger = {
-		tag = BHU
+		tag = JAN
 		CSA = { exists = no }
 		has_global_flag = american_civil_war_has_happened
 	}

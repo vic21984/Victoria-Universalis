@@ -151,8 +151,9 @@ machine_parts_factory = {
 	max_level = 99
 	goods_cost =
 	{
-		iron = 200
-		cement = 200
+		iron = 400
+		cement = 400
+		steel = 400
 	}
 	time = 365
 	visibility = yes
@@ -317,27 +318,6 @@ pharmaceutical_plant = {
 	pop_build_factory = yes
 }
 
-cigarette_factory = {
-	type = factory
-	on_completion = factory
-	completion_size = 0.2
-	cost = 0 # 1000
-	max_level = 99
-	goods_cost = 
-	{
-		machine_parts = 200
-		iron = 200
-		cement = 200
-	}
-	time = 365
-	visibility = yes
-	onmap = no
-
-	default_enabled = yes	
-	production_type = cigarette_factory
-	pop_build_factory = yes
-}
-
 steel_factory = {
 	type = factory
 
@@ -478,6 +458,69 @@ explosives_factory = {
 }
 
 ############# CHEAP FACTORIES
+
+cigarette_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	cost = 0 # 1000
+	max_level = 99
+	goods_cost = 
+	{
+		machine_parts = 100
+		iron = 200
+		cement = 200
+	}
+	time = 365
+	visibility = yes
+	onmap = no
+
+	default_enabled = yes	
+	production_type = cigarette_factory
+	pop_build_factory = yes
+}
+
+tea_packaging_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	cost = 0 # 1000
+	max_level = 99
+	goods_cost = 
+	{
+		machine_parts = 100
+		iron = 200
+		cement = 200
+	}
+	time = 365
+	visibility = yes
+	onmap = no
+
+	default_enabled = yes	
+	production_type = tea_packaging_factory
+	pop_build_factory = yes
+}
+
+coffee_packaging_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	cost = 0 # 1000
+	max_level = 99
+	goods_cost = 
+	{
+		machine_parts = 100
+		iron = 200
+		cement = 200
+	}
+	time = 365
+	visibility = yes
+	onmap = no
+
+	default_enabled = yes
+	production_type = coffee_packaging_factory
+	pop_build_factory = yes
+}
 
 ammunition_factory = {
 	type = factory

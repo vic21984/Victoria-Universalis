@@ -1,0 +1,144 @@
+political_decisions = {
+	conquest_of_libyan_desert = {
+		picture = conquest_of_the_south
+		potential = {
+			EGY_1754 = { owned_by = THIS }
+			1739 = { empty = yes }
+		}
+		
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				year = 1870
+			}
+		}
+		
+		effect = {
+			1738 = {
+				secede_province = THIS
+			}
+			1739 = {
+				secede_province = THIS
+			}
+			1740 = {
+				secede_province = THIS
+			}
+			2585 = {
+				secede_province = THIS
+			}
+		}
+	}
+
+	conquest_of_darfur = {
+		picture = conquest_of_the_south	
+		potential = {
+			EGY_1834 = { owned_by = THIS }
+			1841 = { empty = yes }
+		}
+		
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				year = 1870
+			}
+		}
+		
+		effect = {
+			1841 = {
+				secede_province = THIS
+			}
+			1842 = {
+				secede_province = THIS
+			}
+		}
+	}
+	
+	conquest_of_equatoria = {
+		picture = conquest_of_the_south		
+		potential = {
+			EGY_1838 = { owned_by = THIS }
+			1843 = { empty = yes }
+		}
+		
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				year = 1870
+			}
+		}
+		
+		effect = {
+			1843 = {
+				secede_province = THIS
+			}
+			1844 = {
+				secede_province = THIS
+			}
+			1845 = {
+				secede_province = THIS
+			}
+			1846 = {
+				secede_province = THIS
+			}
+			1847 = {
+				secede_province = THIS
+			}
+		}
+	}
+	
+	conquest_of_southern_ethiopia = {
+		picture = conquest_of_the_south
+		potential = {
+			ETH_1864 = { owned_by = THIS }
+			ETH_1867 = { owned_by = THIS }
+			1864 = { empty = yes }
+			1866 = { empty = yes }
+		}
+		
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				year = 1870
+			}
+		}
+		
+		effect = {
+			1864 = {
+				secede_province = THIS
+			}
+			1866 = {
+				secede_province = THIS
+			}
+			1867 = {
+				secede_province = THIS
+			}
+		}
+	}
+
+	conquest_of_inner_libera = {
+		picture = conquest_of_the_south
+		potential = {
+			ENG_1887 = { owned_by = THIS }
+			1890 = { empty = yes }
+		}
+		
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				year = 1870
+			}
+		}
+		
+		effect = {
+			1889 = {
+				secede_province = THIS
+			}
+			1890 = {
+				secede_province = THIS
+			}
+			1891 = {
+				secede_province = THIS
+			}
+		}
+	}
+}

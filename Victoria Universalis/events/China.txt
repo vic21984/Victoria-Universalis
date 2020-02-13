@@ -30,6 +30,12 @@ country_event = {
 			country_event = { id=90901 days=0 }
 		}
 		prestige = 10
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			civilized = yes
+		}
 			remove_country_modifier = educational_reform
 			remove_country_modifier = military_reform
 			remove_country_modifier = western_influences
@@ -130,7 +136,7 @@ country_event = {
 		tag = XBI
 		tag = MGL
 		}
-		}
+	}
 
 	option = {				
 		name = "EVTOPTA90902"
@@ -151,6 +157,12 @@ country_event = {
 			country_event = { id=90904 days=0 }
 		}
 		prestige = 10
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			civilized = yes
+		}
 			remove_country_modifier = educational_reform
 			remove_country_modifier = military_reform
 			remove_country_modifier = western_influences
@@ -199,5 +211,2814 @@ country_event = {
 	option = {
 		wool = 2000
 		grain = 1000
+	}
+}
+
+#Remove TPG cores
+country_event = {
+	id = 90906
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAN
+		has_global_flag = taiping_has_happened
+		TPG = { exists = no }
+	}
+	
+	option = {
+		TPG = {
+			all_core = {
+				remove_core = TPG
+			}
+		}
+	}
+}
+
+###### Warlord Era Events ######
+country_event = {
+	id = 90809
+	title = "EVTNAME90810"
+	desc = "EVTDESC90810"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = TPG
+		civilized = yes
+		NOT = { government = democracy }
+		NOT = { has_global_flag = warlord_era_begun }
+		NOT = { has_global_flag = republic_of_TPGna }
+		war = no
+		OR = {
+			average_militancy = 4
+			revanTPGsm = 0.01
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 6
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA90810"
+		picture = xinhai_revolution
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			add_core = KMT
+			remove_core = GNG
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = hakka
+			add_accepted_culture = min
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB90810"	######Guangdong Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			add_core = KMT
+			remove_core = GNG
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = hakka
+			add_accepted_culture = min
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTC90810"	######Guangxi Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			add_core = KMT
+			remove_core = GXI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = zhuang
+			add_accepted_culture = miao
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTD90810"	######Yunnan Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			add_core = KMT
+			remove_core = YNN
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = yi
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTE90810"	######Hunan Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			add_core = KMT
+			remove_core = HNN
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = miao
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTF90810"	######Anhui Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			add_core = KMT
+			remove_core = HUI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			primary_culture = beifaren
+			add_accepted_culture = nanfaren
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTG90810"	######Sichuan Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			add_core = KMT
+			remove_core = SZC
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yi
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTH90810"	######Ma Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			add_core = KMT
+			remove_core = XBI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			primary_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = mongol
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTI90810"	######Shanxi Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			add_core = KMT
+			remove_core = SXI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		TPG = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = TPG }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			primary_culture = beifaren
+			add_accepted_culture = nanfaren
+			define_general = {
+				name = "§RTPGang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+}
+
+country_event = {
+	id = 90810
+	title = "EVTNAME90810"
+	desc = "EVTDESC90810"
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = CHI
+		civilized = yes
+		NOT = { government = democracy }
+		NOT = { has_global_flag = warlord_era_begun }
+		NOT = { has_global_flag = republic_of_china }
+		war = no
+		OR = {
+			average_militancy = 4
+			revanchism = 0.01
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 6
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA90810"
+		picture = xinhai_revolution
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			add_core = KMT
+			remove_core = GNG
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = hakka
+			add_accepted_culture = min
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB90810"	######Guangdong Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			add_core = KMT
+			remove_core = GNG
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = hakka
+			add_accepted_culture = min
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTC90810"	######Guangxi Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			add_core = KMT
+			remove_core = GXI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = zhuang
+			add_accepted_culture = miao
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTD90810"	######Yunnan Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			add_core = KMT
+			remove_core = YNN
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yue
+			add_accepted_culture = yi
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTE90810"	######Hunan Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			add_core = KMT
+			remove_core = HNN
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = miao
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTF90810"	######Anhui Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			add_core = KMT
+			remove_core = HUI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			primary_culture = beifaren
+			add_accepted_culture = nanfaren
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTG90810"	######Sichuan Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			add_core = KMT
+			remove_core = SZC
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			add_accepted_culture = yi
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTH90810"	######Ma Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			add_core = KMT
+			remove_core = XBI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			secede_province = SXI
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			primary_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = mongol
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+	option = {
+		name = "EVTOPTI90810"	######Shanxi Clique######
+		set_global_flag = warlord_era_begun
+		remove_country_modifier = mandate_of_heaven
+		government = presidential_dictatorship
+		political_reform = no_slavery
+		political_reform = party_appointed
+		political_reform = none_voting
+		political_reform = yes_meeting
+		political_reform = state_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = underground_parties
+		primary_culture = beifaren
+		add_accepted_culture = nanfaren
+		any_owned = {
+			limit = {
+				is_core = GNG
+			}
+			secede_province = GNG
+		}
+		any_owned = {
+			limit = {
+				is_core = XIN
+			}
+			secede_province = XIN
+		}
+		any_owned = {
+			limit = {
+				is_core = TIB
+			}
+			secede_province = TIB
+		}
+		any_owned = {
+			limit = {
+				is_core = GXI
+			}
+			secede_province = GXI
+		}
+		any_owned = {
+			limit = {
+				is_core = YNN
+			}
+			secede_province = YNN
+		}
+		any_owned = {
+			limit = {
+				is_core = HNN
+			}
+			secede_province = HNN
+		}
+		any_owned = {
+			limit = {
+				is_core = MCK
+			}
+			secede_province = MCK
+		}
+		any_owned = {
+			limit = {
+				is_core = HUI
+			}
+			secede_province = HUI
+		}
+		any_owned = {
+			limit = {
+				is_core = SZC
+			}
+			secede_province = SZC
+		}
+		any_owned = {
+			limit = {
+				is_core = XBI
+			}
+			secede_province = XBI
+		}
+		any_owned = {
+			limit = {
+				is_core = SXI
+			}
+			add_core = KMT
+			remove_core = SXI
+			secede_province = KMT
+		}
+		any_owned = {
+			limit = {
+				is_core = MGL
+			}
+			secede_province = MGL
+		}
+		release_vassal = MCK
+		release_vassal = MGL
+		release_vassal = TIB
+		release_vassal = XIN
+		release_vassal = XBI
+		release_vassal = YNN
+		release_vassal = GXI
+		CHI = {
+			all_core = {
+				add_core = KMT
+			}
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+			}
+			government = presidential_dictatorship
+			political_reform = no_slavery
+			political_reform = appointed
+			political_reform = none_voting
+			political_reform = yes_meeting
+			political_reform = state_press
+			political_reform = no_trade_unions
+			political_reform = first_past_the_post
+			political_reform = underground_parties
+			neutrality = yes
+		}
+		any_country = {
+			limit = {
+				is_culture_group = east_asian
+				NOT = { tag = CHI }
+			}
+			leadership = 400
+			money = 250000
+			ammunition = 1000
+			canned_food = 1000
+			artillery = 500
+			small_arms = 500
+			wine = 250
+		}
+		any_country = {
+			limit = {
+				tag = KMT
+			}
+			primary_culture = beifaren
+			add_accepted_culture = nanfaren
+			define_general = {
+				name = "§RChiang Kai-shek§W"
+				picture = asian_general_7
+				personality = defence_2.1
+				background = attack_3.1
+			}
+		}
+		change_tag_no_core_switch = KMT
+	}
+}
+
+country_event = {
+	id = 90811
+	title = "EVTNAME90811"
+	desc = "EVTDESC90811"
+	
+	trigger = {
+		NOT = { tag = CHI }
+		is_culture_group = east_asian
+		has_global_flag = warlord_era_begun
+		owns = 2221
+		KMT = { exists = no }
+	}
+
+	option = {
+		name = "EVTOPTA90811"
+		change_tag = KMT
+		primary_culture = nanfaren
+		remove_accepted_culture = nanfaren
+		add_accepted_culture = beifaren
+		capital = 2221
+	}
+}
+
+country_event = {
+	id = 90812
+	title = "EVTNAME90812"
+	desc = "EVTDESC90812"
+	
+	trigger = {
+		NOT = { tag = KMT }
+		is_culture_group = east_asian
+		has_global_flag = warlord_era_begun
+		owns = 1612
+		CHI = { exists = no }
+	}
+
+	option = {
+		name = "EVTOPTA90812"
+		change_tag = CHI
+		primary_culture = beifaren
+		remove_accepted_culture = beifaren
+		add_accepted_culture = nanfaren
+		capital = 1612
+	}
+}
+
+country_event = {
+	id = 90813
+	title = "EVTNAME90813"
+	desc = "EVTDESC90813"
+	
+	trigger = {
+		tag = KMT
+		owns = 2221
+		NOT = { capital = 2221
+	}
+
+	option = {
+		name = "EVTOPTA90813"
+		capital = 2221
+	}
+}
+
+
+country_event = {
+	id = 90814
+	title = "EVTNAME90814"
+	desc = "EVTDESC90814"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_culture_group = east_asian
+		has_global_flag = warlord_era_begun
+		owns = 1612
+		owns = 2221
+		owns = 1493
+		owns = 1524
+		owns = 1601
+		owns = 1502
+		owns = 1578
+	}
+
+	option = {
+		name = "EVTOPTA90814"
+		any_country = {
+			limit = {
+				NOT = { tag = THIS }
+				NOT = { tag = XIN }
+				is_culture_group = east_asian
+			}
+			country_event = 90815
+		}
+	}
+}
+
+country_event = {
+	id = 90815
+	title = "EVTNAME90815"
+	desc = "EVTDESC90815"
+		
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90815"
+		THIS = {
+			all_core = {
+				remove_core = THIS
+			}
+			annex_to = FROM
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90815"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }

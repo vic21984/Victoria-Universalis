@@ -2,8 +2,8 @@ leader = {
 	name = "Ibrahim Pasha"
 	type = land
 	date="1832.1.1"
-	personality = defiant
-	background = expert_raider
+	personality = defence_3.1
+	background = attack_2.1
 	prestige = 0.3
 }
 
@@ -11,8 +11,8 @@ leader = {
 	name = "Suleyman Pasha"
 	type = land
 	date="1832.1.1"
-	personality = balanced_p
-	background = drillmaster
+	personality = defence_2.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -105,20 +105,20 @@ army = {
 	name = "Army of Egypt"
 	location = 1745
 	regiment = {
+		name= "1.1 Artillery"
+		type = artillery
+		home = 1745
+	}
+
+	regiment = {
 		name= "1.1 Sipahis"
-		type = cavalry
+		type = dragoon
 		home = 1745
 	}
 
 	regiment = {
 		name= "2.1 Sipahis"
-		type = cavalry
-		home = 1745
-	}
-
-	regiment = {
-		name= "3.1 Sipahis"
-		type = cavalry
+		type = hussar
 		home = 1745
 	}
 
@@ -135,27 +135,33 @@ army = {
 	}
 
 	regiment = {
-		name= "3.1 Infantry"
-		type = infantry
+		name= "2.1 Artillery"
+		type = artillery
 		home = 1750
 	}
 
 	regiment = {
-		name= "1.2 Infantry"
+		name= "3.1 Infantry"
 		type = infantry
 		home = 1751
 	}
 
 	regiment = {
-		name= "2.2 Infantry"
+		name= "4.1 Infantry"
 		type = infantry
 		home = 1751
 	}
 
 	regiment = {
-		name= "3.2 Infantry"
-		type = infantry
+		name= "3.1 Artillery"
+		type = artillery
 		home = 1747
+	}
+	
+	regiment = {
+		name= "4.1 Artillery"
+		type = artillery
+		home = 1751
 	}
 }
 
@@ -203,7 +209,7 @@ army = {
 
 army = {
 	name = "Army of the Upper Nile"
-	location = 1827
+	location = 1916
 	regiment = {
 		name= "1.2 Sipahis"
 		type = cavalry

@@ -9,7 +9,9 @@ country_event = {
 	news_desc_long = "EVTDESC90040_NEWS_LONG"
 	news_desc_medium = "EVTDESC90040_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC90040_NEWS_SHORT"
-	picture = "sultan"
+	picture = sepoy_rebellion
+	
+	major = yes
 
 	trigger = {
 		NOT = { has_country_flag = sepoy_rebellion }
@@ -26,6 +28,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA90040"
+			release_vassal = MUG
 			any_country = {
 				limit = {
 					vassal_of = ENG

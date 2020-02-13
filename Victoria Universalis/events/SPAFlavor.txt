@@ -456,3 +456,46 @@ country_event = {
 		}
 	}
 }
+
+#Abolition of Slavery
+country_event = {
+
+	id = 37709
+
+	trigger = {
+		tag = SPA
+		year = 1873
+		ai = yes
+		OR = {
+			slavery = yes_slavery
+			slavery = freedom_of_womb
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		political_reform = no_slavery
+	}
+}
+
+country_event = {
+
+	id = 37710
+
+	trigger = {
+		tag = POR
+		year = 1869
+		ai = yes
+		OR = {
+			slavery = yes_slavery
+			slavery = freedom_of_womb
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		political_reform = no_slavery
+	}
+}

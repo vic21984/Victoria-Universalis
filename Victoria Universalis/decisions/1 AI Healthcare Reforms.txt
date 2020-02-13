@@ -1,8 +1,55 @@
 political_decisions = {
 
+	1855_ai_healthcare_reform = {
+		potential = {
+			tag = JAN
+
+			year = 1855
+			NOT = { has_global_flag = 1855_ai_healthcare_reform }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = acceptable_health_care
+				}
+				social_reform = good_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = low_health_care
+				}
+				social_reform = acceptable_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = trinket_health_care
+				}
+				social_reform = low_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = no_health_care
+				}
+				social_reform = trinket_health_care
+			}
+			set_global_flag = 1855_ai_healthcare_reform			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 	1870_ai_healthcare_reform = {
 		potential = {
-			tag = BHU
+			tag = JAN
 
 			year = 1870
 			NOT = { has_global_flag = 1870_ai_healthcare_reform }
@@ -14,17 +61,9 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = no_health_care
+ 					health_care = acceptable_health_care
 				}
-				social_reform = trinket_health_care
-			}
-			any_country = {
-				limit = {
-					ai = yes
-					civilized = yes
- 					health_care = trinket_health_care
-				}
-				social_reform = low_health_care
+				social_reform = good_health_care
 			}
 			any_country = {
 				limit = {
@@ -40,19 +79,27 @@ political_decisions = {
 					civilized = yes
  					health_care = trinket_health_care
 				}
-				social_reform = good_health_care
-			}			
+				social_reform = low_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = no_health_care
+				}
+				social_reform = trinket_health_care
+			}
 			set_global_flag = 1870_ai_healthcare_reform			
 		}
 		ai_will_do = { factor = 1 }
 	}
-	
-	1880_ai_healthcare_reform = {
-		potential = {
-			tag = BHU
 
-			year = 1880
-			NOT = { has_global_flag = 1880_ai_healthcare_reform }
+	1885_ai_healthcare_reform = {
+		potential = {
+			tag = JAN
+
+			year = 1885
+			NOT = { has_global_flag = 1885_ai_healthcare_reform }
 		}
 		allow = {
 		}
@@ -61,17 +108,9 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = no_health_care
+ 					health_care = acceptable_health_care
 				}
-				social_reform = trinket_health_care
-			}
-			any_country = {
-				limit = {
-					ai = yes
-					civilized = yes
- 					health_care = trinket_health_care
-				}
-				social_reform = low_health_care
+				social_reform = good_health_care
 			}
 			any_country = {
 				limit = {
@@ -87,23 +126,8 @@ political_decisions = {
 					civilized = yes
  					health_care = trinket_health_care
 				}
-				social_reform = good_health_care
-			}			
-			set_global_flag = 1880_ai_healthcare_reform			
-		}
-		ai_will_do = { factor = 1 }
-	}
-
-	1890_ai_healthcare_reform = {
-		potential = {
-			tag = BHU
-
-			year = 1890
-			NOT = { has_global_flag = 1890_ai_healthcare_reform }
-		}
-		allow = {
-		}
-		effect = {
+				social_reform = low_health_care
+			}
 			any_country = {
 				limit = {
 					ai = yes
@@ -112,38 +136,14 @@ political_decisions = {
 				}
 				social_reform = trinket_health_care
 			}
-			any_country = {
-				limit = {
-					ai = yes
-					civilized = yes
- 					health_care = trinket_health_care
-				}
-				social_reform = low_health_care
-			}
-			any_country = {
-				limit = {
-					ai = yes
-					civilized = yes
- 					health_care = low_health_care
-				}
-				social_reform = acceptable_health_care
-			}
-			any_country = {
-				limit = {
-					ai = yes
-					civilized = yes
- 					health_care = trinket_health_care
-				}
-				social_reform = good_health_care
-			}			
-			set_global_flag = 1890_ai_healthcare_reform			
+			set_global_flag = 1885_ai_healthcare_reform			
 		}
 		ai_will_do = { factor = 1 }
 	}
 
 	1900_ai_healthcare_reform = {
 		potential = {
-			tag = BHU
+			tag = JAN
 
 			year = 1900
 			NOT = { has_global_flag = 1900_ai_healthcare_reform }
@@ -155,17 +155,9 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = no_health_care
+ 					health_care = acceptable_health_care
 				}
-				social_reform = trinket_health_care
-			}
-			any_country = {
-				limit = {
-					ai = yes
-					civilized = yes
- 					health_care = trinket_health_care
-				}
-				social_reform = low_health_care
+				social_reform = good_health_care
 			}
 			any_country = {
 				limit = {
@@ -181,8 +173,16 @@ political_decisions = {
 					civilized = yes
  					health_care = trinket_health_care
 				}
-				social_reform = good_health_care
-			}			
+				social_reform = low_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = no_health_care
+				}
+				social_reform = trinket_health_care
+			}
 			set_global_flag = 1900_ai_healthcare_reform			
 		}
 		ai_will_do = { factor = 1 }
@@ -190,7 +190,7 @@ political_decisions = {
 
 	1910_ai_healthcare_reform = {
 		potential = {
-			tag = BHU
+			tag = JAN
 
 			year = 1910
 			NOT = { has_global_flag = 1910_ai_healthcare_reform }
@@ -202,17 +202,17 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = no_health_care
+ 					health_care = good_health_care
 				}
-				social_reform = trinket_health_care
+				social_reform = universal_health_care
 			}
 			any_country = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = trinket_health_care
+ 					health_care = acceptable_health_care
 				}
-				social_reform = low_health_care
+				social_reform = good_health_care
 			}
 			any_country = {
 				limit = {
@@ -228,8 +228,16 @@ political_decisions = {
 					civilized = yes
  					health_care = trinket_health_care
 				}
-				social_reform = good_health_care
-			}			
+				social_reform = low_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = no_health_care
+				}
+				social_reform = trinket_health_care
+			}
 			set_global_flag = 1910_ai_healthcare_reform			
 		}
 		ai_will_do = { factor = 1 }
@@ -237,7 +245,7 @@ political_decisions = {
 
 	1920_ai_healthcare_reform = {
 		potential = {
-			tag = BHU
+			tag = JAN
 
 			year = 1920
 			NOT = { has_global_flag = 1920_ai_healthcare_reform }
@@ -249,17 +257,17 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = no_health_care
+ 					health_care = good_health_care
 				}
-				social_reform = trinket_health_care
+				social_reform = universal_health_care
 			}
 			any_country = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = trinket_health_care
+ 					health_care = acceptable_health_care
 				}
-				social_reform = low_health_care
+				social_reform = good_health_care
 			}
 			any_country = {
 				limit = {
@@ -275,8 +283,16 @@ political_decisions = {
 					civilized = yes
  					health_care = trinket_health_care
 				}
-				social_reform = good_health_care
-			}			
+				social_reform = low_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = no_health_care
+				}
+				social_reform = trinket_health_care
+			}
 			set_global_flag = 1920_ai_healthcare_reform			
 		}
 		ai_will_do = { factor = 1 }
@@ -284,7 +300,7 @@ political_decisions = {
 
 	1930_ai_healthcare_reform = {
 		potential = {
-			tag = BHU
+			tag = JAN
 
 			year = 1930
 			NOT = { has_global_flag = 1930_ai_healthcare_reform }
@@ -296,17 +312,17 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = no_health_care
+ 					health_care = good_health_care
 				}
-				social_reform = trinket_health_care
+				social_reform = universal_health_care
 			}
 			any_country = {
 				limit = {
 					ai = yes
 					civilized = yes
- 					health_care = trinket_health_care
+ 					health_care = acceptable_health_care
 				}
-				social_reform = low_health_care
+				social_reform = good_health_care
 			}
 			any_country = {
 				limit = {
@@ -322,8 +338,16 @@ political_decisions = {
 					civilized = yes
  					health_care = trinket_health_care
 				}
-				social_reform = good_health_care
-			}			
+				social_reform = low_health_care
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+ 					health_care = no_health_care
+				}
+				social_reform = trinket_health_care
+			}
 			set_global_flag = 1930_ai_healthcare_reform			
 		}
 		ai_will_do = { factor = 1 }

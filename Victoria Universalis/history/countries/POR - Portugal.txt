@@ -8,6 +8,7 @@ literacy = 0.13
 civilized = yes
 prestige = 10
 colonial_points = 40
+schools = culture_tech_school
 
 # Political reforms
 slavery = yes_slavery
@@ -32,9 +33,9 @@ ruling_party = POR_liberal
 last_election = 1834.1.1
 upper_house = {
 	fascist = 0
-	liberal = 18
-	conservative = 69
-	reactionary = 13
+	liberal = 45
+	conservative = 50
+	reactionary = 5
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
@@ -166,5 +167,5 @@ child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = unitary
-colonial_policy = civilizing
+colonial_policy = no_colonies
  

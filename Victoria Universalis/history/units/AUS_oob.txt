@@ -111,8 +111,8 @@ leader = {
 	name = "Josef Radetzky"
 	date = 1805.1.1
 	type = land
-	personality = au_fait
-	background = elderly
+	personality = defence_3.1
+	background = attack_3.1
 	prestige = 0.3
 }
 
@@ -120,8 +120,8 @@ leader = {
 	name = "Julius von Haynau"
 	date = 1835.1.1
 	type = land
-	personality = wrathful
-	background = natural_born_leader
+	personality = defence_2.1
+	background = attack_2.1
 	prestige = 0.1
 }
 
@@ -129,8 +129,8 @@ leader = {
 	name = "von Mittrowitz-Nettolitzky"
 	date = 1835.1.1
 	type = land
-	personality = active_p
-	background = aristocrat
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -138,8 +138,8 @@ leader = {
 	name = "Hermann von Hess"
 	date = 1834.1.1
 	type = land
-	personality = aggressive
-	background = generals_aide
+	personality = defence_1.1
+	background = attack_2.1
 	prestige = 0.1
 }
 
@@ -147,8 +147,8 @@ leader = {
 	name = "d’Aspre und Hoobreuck"
 	date = 1832.1.1
 	type = land
-	personality = bold
-	background = drillmaster
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -156,8 +156,8 @@ leader = {
 	name = "Alfred von Windischgraetz"
 	date = 1826.1.1
 	type = land
-	personality = arrogant
-	background = butcher
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.3
 }
 
@@ -165,16 +165,16 @@ leader = {
 	name = "Erzherzog Albrecht"
 	date = 1836.1.1
 	type = land
-	personality = active_p
-	background = aristocrat
+	personality = defence_1.1
+	background = attack_1.1
 }
 
 leader = {
 	name = "Paolucci delle Roncole"
 	date = 1824.1.1
 	type = sea
-	personality = competent
-	background = aristocrat
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 

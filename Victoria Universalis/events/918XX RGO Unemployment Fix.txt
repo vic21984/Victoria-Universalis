@@ -1,0 +1,105 @@
+country_event = {
+	id = 91801
+	
+	trigger = {
+		tag = JAN
+		year = 1850
+		NOT = { has_country_modifier = rgo_unemployment_timer }
+	}
+
+	
+	immediate = {
+		add_country_modifier = {
+			name = rgo_unemployment_timer
+			duration = 3650
+		}
+	}
+	
+	option = {
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = cotton
+						trade_goods = dye
+						trade_goods = wool
+						trade_goods = silk
+						trade_goods = cattle
+						trade_goods = fish
+						trade_goods = fruit
+						trade_goods = grain
+						trade_goods = tobacco
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
+						trade_goods = opium
+						trade_goods = timber
+						trade_goods = rubber
+					}
+				}
+				add_province_modifier = { name = unemployment_fix duration = 3 }
+			}
+		}
+	}
+}
+
+#country_event = {
+#	id = 91802
+#	
+#	trigger = {
+#		any_owned_province = {
+#			has_pop_type = labourers_gold
+#			NOT = { trade_goods = precious_metal }
+#		}
+#	}
+#
+#	
+#	immediate = {
+#		any_owned = {
+#			limit = {
+#				OR = {
+#					trade_goods = cotton
+#					trade_goods = dye
+#					trade_goods = wool
+#					trade_goods = silk
+#					trade_goods = cattle
+#					trade_goods = fish
+#					trade_goods = fruit
+#					trade_goods = grain
+#					trade_goods = tobacco
+#					trade_goods = tea_leaves
+#					trade_goods = coffee_beans
+#					trade_goods = opium
+#				}
+#			}
+#			any_pop = {
+#				limit = {
+#					type = labourers_gold
+#				}
+#				pop_type = farmers
+#			}
+#		}
+#		any_owned = {
+#			limit = {
+#				OR = {
+#					trade_goods = coal
+#					trade_goods = iron
+#					trade_goods = oil
+#					trade_goods = timber
+#					trade_goods = rubber
+#					trade_goods = sulphur
+#					trade_goods = tropical_wood
+#				}
+#			}
+#			any_pop = {
+#				limit = {
+#					type = labourers_gold
+#				}
+#				pop_type = labourers
+#			}
+#		}
+#	}
+#	
+#	option = {
+#
+#	}
+#}

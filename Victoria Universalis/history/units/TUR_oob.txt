@@ -48,14 +48,14 @@ HDJ = {
 }
 
 MOL = {
-	value = 125
-	level = 3
+	value = 125		#relation
+	level = 5
 	influence_value = 25
 }
 
 WAL = {
-	value = 125
-	level = 3
+	value = 125		#relation
+	level = 5
 	influence_value = 25
 }
 
@@ -63,8 +63,8 @@ leader = {
 	name = "Resid Mehmed Pasha"
 	date = 1809.1.1
 	type = land
-	personality = inefficient
-	background = elderly
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.2
 }
 
@@ -72,8 +72,8 @@ leader = {
 	name = "Wojciech Chrzanowski"
 	date = 1836.1.1
 	type = land
-	personality = romantic
-	background = cartographer
+	personality = defence_1.1
+	background = attack_2.1
 	prestige = 0.1
 }
 
@@ -81,8 +81,8 @@ leader = {
 	name = "Helmuth von Moltke"
 	date = 1833.1.1
 	type = land
-	personality = calm
-	background = debutante
+	personality = defence_2.1
+	background = attack_2.1
 	prestige = 0.0
 }
 
@@ -90,8 +90,8 @@ leader = {
 	name = "Abdi Pasha"
 	date = 1836.1.1
 	type = land
-	personality = merciless
-	background = old_school
+	personality = defence_1.1
+	background = attack_3.1
 	prestige = 0.0
 }
 
@@ -99,8 +99,8 @@ leader = {
 	name = "Hafiz Osman Pasha"
 	date = 1836.1.1
 	type = land
-	personality = inept
-	background = yesman
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.0
 }
 
@@ -108,8 +108,8 @@ leader = {
 	name = "Namik Pasha"
 	date = 1836.1.1
 	type = land
-	personality = expert
-	background = diplomat
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.0
 }
 
@@ -117,8 +117,8 @@ leader = {
 	name = "Abdülkerim Pasha"
 	date = 1836.1.1
 	type = land
-	personality = active_p
-	background = war_college
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.0
 }
 
@@ -126,8 +126,8 @@ leader = {
 	name = "Yaver Pasha"
 	date = 1836.1.1
 	type = sea
-	personality = diplomatic
-	background = gifted_administrator
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 

@@ -1,0 +1,71 @@
+political_decisions = {
+	enact_muhammad_alis_reforms = {
+		potential = {
+			tag = EGY
+			civilized = no
+			NOT = {
+				has_country_flag = muhammad_alis_reforms_enacted
+			}
+		}
+		allow = {
+		}
+		effect = {
+			years_of_research = 5
+			any_pop = {
+				consciousness = 0.5
+			}		
+			add_country_modifier = {
+				name = muhammad_alis_reforms
+				duration = 7300
+			}
+			set_country_flag = muhammad_alis_reforms_enacted
+		}
+	}
+	embrace_sudanese_minority = {
+		picture = embrace_sudanese
+		potential = {
+			tag = EGY
+			NOT = {
+				accepted_culture = sudanese
+				has_country_flag = embraced_sudanese
+			}					
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { citizenship_policy = residency }
+					NOT = { citizens_rights = primary_culture_only }	
+					AND = {
+						EGY_1827 = {
+							owned_by = THIS
+							literacy = 0.3
+							NOT = { average_militancy = 1 }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = embraced_sudanese
+			add_accepted_culture = sudanese
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}	
+				militancy = 4
+				consciousness = 4
+			}
+			any_pop = {
+				limit = { has_pop_culture = sudanese }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

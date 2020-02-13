@@ -2,8 +2,8 @@ leader = {
 	name = "Antonio Santa Ana"
 	type = land
 	date="1836.1.1"
-	personality = wrathful
-	background = warmonger
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.2
 }
 
@@ -11,8 +11,8 @@ leader = {
 	name = "Martin de Cos"
 	type = land
 	date="1836.1.1"
-	personality = impulsive
-	background = aristocrat
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -20,32 +20,32 @@ leader = {
 	name = "Nicolas Bravo"
 	type = land
 	date="1836.1.1"
-	personality = heroic
-	background = politician
+	personality = defence_1.1
+	background = attack_1.1
 }
 
 leader = {
 	name = "Mariano Arista"
 	type = land
 	date="1836.1.1"
-	personality = skilled
-	background = war_college
+	personality = defence_1.1
+	background = attack_2.1
 }
 
 leader = {
 	name = "Juan Álvarez"
 	type = land
 	date="1836.1.1"
-	personality = skilled
-	background = elderly
+	personality = defence_1.1
+	background = attack_2.1
 }
 
 leader = {
 	name = "José de Herrera"
 	type = land
 	date="1836.1.1"
-	personality = soldierly
-	background = exranker
+	personality = defence_1.1
+	background = attack_1.1
 }
 
 army = {

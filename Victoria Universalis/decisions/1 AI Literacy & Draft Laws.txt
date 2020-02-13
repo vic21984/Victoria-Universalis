@@ -1,7 +1,7 @@
 political_decisions = {
 	1836_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1836
 			NOT = { has_global_flag = 1836_ai_literacy_boost }
@@ -9,11 +9,6 @@ political_decisions = {
 		allow = {
 		}
 		effect = {
-			any_country = {
-				artisans = {
-					money = 2000
-				}
-			}	
 			set_global_flag = 1836_ai_literacy_boost
 		}
 		ai_will_do = { factor = 1 }
@@ -21,7 +16,7 @@ political_decisions = {
 
 	1840_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1840
 			NOT = { has_global_flag = 1840_ai_literacy_boost }
@@ -33,7 +28,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -49,7 +44,7 @@ political_decisions = {
 	
 	1850_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1850
 			NOT = { has_global_flag = 1850_ai_literacy_boost }
@@ -61,7 +56,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -77,7 +72,7 @@ political_decisions = {
 		
 	1860_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1860
 			NOT = { has_global_flag = 1860_ai_literacy_boost }
@@ -89,7 +84,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -105,7 +100,7 @@ political_decisions = {
 	
 	1870_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1870
 			NOT = { has_global_flag = 1870_ai_literacy_boost }
@@ -122,7 +117,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -138,7 +133,7 @@ political_decisions = {
 	
 	1880_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1880
 			NOT = { has_global_flag = 1880_ai_literacy_boost }
@@ -150,7 +145,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -166,7 +161,7 @@ political_decisions = {
 
 	1890_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1890
 			NOT = { has_global_flag = 1890_ai_literacy_boost }
@@ -178,7 +173,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -194,7 +189,7 @@ political_decisions = {
 
 	1900_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1900
 			NOT = { has_global_flag = 1900_ai_literacy_boost }
@@ -206,7 +201,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -222,7 +217,7 @@ political_decisions = {
 
 	1910_ai_literacy_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1910
 			NOT = { has_global_flag = 1910_ai_literacy_boost }
@@ -234,7 +229,7 @@ political_decisions = {
 				limit = {
 					ai = yes
 					civilized = yes
-					NOT = { literacy = 0.7 }
+					NOT = { literacy = 0.5 }
 				}
 				any_pop = {
 					limit = {
@@ -250,7 +245,7 @@ political_decisions = {
 	
 	1850_ai_mobilization_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1850
 			NOT = { has_global_flag = 1850_ai_mobilization_boost }
@@ -295,7 +290,7 @@ political_decisions = {
 
 	1870_ai_mobilization_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1870
 			NOT = { has_global_flag = 1870_ai_mobilization_boost }
@@ -340,7 +335,7 @@ political_decisions = {
 
 	1890_ai_mobilization_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1890
 			NOT = { has_global_flag = 1890_ai_mobilization_boost }
@@ -385,7 +380,7 @@ political_decisions = {
 
 	1910_ai_mobilization_boost = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			ai = yes
 			year = 1910
 			NOT = { has_global_flag = 1910_ai_mobilization_boost }
@@ -428,24 +423,25 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 
-	1875_money_injection = {
-		potential = {
-			tag = BHU
-			ai = yes
-			year = 1875
-			NOT = { has_global_flag = 1875_money_injection }
-		}
-		allow = {
-		}
-		effect = {
-			any_country = {
-				any_pop = {
-					money = 1000
-				}				
-			}				
-			set_global_flag = 1875_money_injection			
-		}
-		ai_will_do = { factor = 1 }
-	}	
+#	1870_money_injection = {
+#		potential = {
+#			tag = JAN
+#			ai = yes
+#			year = 1872
+#			NOT = { has_global_flag = 1870_money_injection }
+#		}
+#		allow = {
+#		}
+#		effect = {
+#			any_country = {
+#				any_pop = {
+#					money = 500
+#				}			
+#			}				
+#			set_global_flag = 1870_money_injection			
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+
 
 }

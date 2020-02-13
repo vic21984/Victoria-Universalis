@@ -9,6 +9,7 @@ nationalvalue = nv_order
 literacy = 0.60
 civilized = yes
 prestige = 10
+schools = naval_tech_school
 
 # Political reforms
 slavery = yes_slavery
@@ -188,5 +189,5 @@ child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = unitary
-colonial_policy = exploitation
+colonial_policy = no_colonies
  

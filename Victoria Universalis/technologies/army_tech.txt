@@ -113,7 +113,7 @@ point_defense_system = {
 		support = 0.25
 	} 
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = 0.15
 	} 
 	max_fort = 1
 	dig_in_cap = 1
@@ -221,7 +221,7 @@ infiltration = {
 	unciv_military = yes
 		
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = 0.5
 	} 
 	
 	max_fort = 1
@@ -268,7 +268,7 @@ modern_army_doctrine = {
 	unciv_military = yes
 	
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = 0.5
 	} 
 	
 	max_fort = 1
@@ -759,7 +759,7 @@ indirect_artillery_fire = {
 		attack = 1
 		defence = 1
 		support = 0.5
-		supply_consumption = 0.3
+		supply_consumption = 0.5
 	}
 	
 	ai_chance = {
@@ -804,7 +804,7 @@ heavy_armament_dunno = {
 		attack = 1
 		defence = 1
 		support = 0.5
-		supply_consumption = 0.3
+		supply_consumption = 0.5
 	}
 	
 	ai_chance = {
@@ -939,7 +939,7 @@ military_statistics = {
 	
 	army_base = {
 		default_organisation = 5
-		supply_consumption = 0.20
+		supply_consumption = 0.15
 	}
 	
 	ai_chance = {
@@ -1027,7 +1027,7 @@ military_directionism = {
 	
 	army_base = {
 		default_organisation = 10
-		supply_consumption = 0.20
+		supply_consumption = 0.5
 	}
 	ai_chance = {
 		factor = 1.5
@@ -1072,7 +1072,7 @@ aeronautics = {
 	cost = 21600
 	army_base = {
 		default_organisation = 10
-		supply_consumption = 0.20
+		supply_consumption = 0.50
 	}
 	
 	unciv_military = yes
@@ -1211,7 +1211,7 @@ army_decision_making = {
 	military_tactics = 0.25
 
 	army_base = {
-	supply_consumption = 0.20
+	supply_consumption = 0.15
 	}
 	
 	ai_chance = {
@@ -1322,7 +1322,7 @@ army_nco_training = {
 	military_tactics = 0.25
 
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = 0.5
 	}
 	
 	ai_chance = {
@@ -1377,7 +1377,7 @@ great_war_experience = {
 	military_tactics = 0.25
 
 	army_base = {
-		supply_consumption = 0.20
+		supply_consumption = 0.5
 	}
 	
 	ai_chance = {

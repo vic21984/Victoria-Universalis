@@ -43,7 +43,7 @@ reactionary_rebels = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
+	general = no					# Does use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -254,7 +254,7 @@ fascist_rebels = {
 	
 	resilient = yes					# Does not disband on retreat
 	reinforcing = yes				# Receives reinforcements
-	general = yes					# Uses generals
+	general = no					# Uses generals
 	smart = yes					# Assaults forts, tactically withdraws from battle, etc.
 	unit_transfer = no				# Units remain after enforcing demands.
 	
@@ -466,7 +466,7 @@ communist_rebels = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
+	general = no					# Does use generals
 	smart = yes						# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -694,7 +694,7 @@ anarcho_liberal_rebels = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
+	general = no					# Does use generals
 	smart = yes						# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -899,7 +899,7 @@ nationalist_rebels = {
 	
 	resilient = yes					# Does not disband on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
+	general = no					# Does use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = yes				# Units do remain after enforcing demands.
 	
@@ -1114,7 +1114,7 @@ pan_nationalist_rebels = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does not use generals
+	general = no					# Does not use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units remain after enforcing demands.
 	
@@ -1356,7 +1356,7 @@ carlist_rebels = {
 	
 	resilient = yes					
 	reinforcing = yes				
-	general = yes					
+	general = no					
 	smart = yes
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -1539,7 +1539,7 @@ boxer_rebels = {
 	
 	resilient = yes					
 	reinforcing = yes				
-	general = yes					
+	general = no					
 	smart = yes
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -1583,7 +1583,7 @@ boxer_rebels = {
 		modifier = {
 			factor = 0
 			NOT = {
-				year = 1870
+				civilization_progress = 0.5
 			}
 		}
 		modifier = {
@@ -1598,16 +1598,6 @@ boxer_rebels = {
 				}
 			}
 		}
-		modifier = {
-			factor = 0.2
-			country = { is_independant = yes}
-		}
-		
-		modifier = {
-			factor = 1.1
-			country = { is_independant = no}
-		}
-		
 		modifier = {
 			factor = 1.3
 			pop_majority_ideology = reactionary
@@ -1626,7 +1616,7 @@ boxer_rebels = {
 			}
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.5
 			country = {
 				has_country_modifier = western_influences
 			}
@@ -1635,7 +1625,7 @@ boxer_rebels = {
 			factor = 1.05
 			country = {
 				NOT = {
-					prestige = 30
+					prestige = 100
 				}
 			}
 		}
@@ -1643,7 +1633,7 @@ boxer_rebels = {
 			factor = 1.05
 			country = {
 				NOT = {
-					prestige = 25
+					prestige = 50
 				}
 			}
 		}		
@@ -1766,7 +1756,7 @@ red_shirts = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does not use generals
+	general = no					# Does not use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units remain after enforcing demands.
 	
@@ -2016,7 +2006,7 @@ indian_sepoys = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does not use generals
+	general = no					# Does not use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units remain after enforcing demands.
 	
@@ -2233,7 +2223,7 @@ liberal_rebels = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does not use generals
+	general = no					# Does not use generals
 	smart = yes						# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -2451,7 +2441,7 @@ unciv_reactionary_rebels = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
+	general = no					# Does use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -2644,7 +2634,7 @@ sioux_nation = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
+	general = no					# Does use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -2765,7 +2755,7 @@ apache = {
 	
 	resilient = yes					# Disbands on retreat
 	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
+	general = no					# Does use generals
 	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	

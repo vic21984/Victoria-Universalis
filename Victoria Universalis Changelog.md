@@ -1,3 +1,94 @@
+# Version 0.11 - 2/6/2020
+
+## General gameplay changes:
+* Added coffee beans and tea leaves as new RGO types. Coffee beans and tea leaves are raw goods that are used to make coffee and tea from factories or artisans.
+* Removed fruit and grain options from change agricultural RGO decision and replaced them with coffee and tea.
+* Added a new poptype "Gold Labourers". Only gold labourers can work in precious metal mines and all income earned from the gold mines goes directly to the labourers instead of the aristocrats that owns the province. Goods demand of gold labourers was also increased to be several times higher than normal labourers. This ensures that 100% of the money earned by gold mining POPs gets distributed to the world market instead of getting lost in national banks.
+* Changed the way general traits work. They now only give + attack or defense, and the amount they give is color coded and listed in the name of the trait so you can see how much bonus you get without having to hover over the general. Black text is +1, blue is +2, green is +3, red is +4, and white is +5.
+* Increased cost to create general and admiral to 40 leadership points.
+* Soldier POPs that are in a brigade that is commanded by a general cannot rebel anymore.
+* Added decision to free vassals under your control.
+* Added a new selector decision that recruits a 4/4 general.
+* Added new selector decision to raise healthcare reform level.
+* Added internal migration selector decision that directs internal migration to the selected province.
+* Lowered AP cost for most selector decisions except for baby boom.
+* Changed the baby boom province selector decision duration and limit. You can now use it on any state below 1M population and the modifier lasts 300 days plus an additional 300 days for every -100K population below 0.99M e.g. an 850K state would get 600 days of baby boom and a 50K state would get 2700 days of baby boom. The amount of POPs gained from the baby boom event follows a bell curve based on state size which means you get the most POPs from using it on states with around 500K population.
+* Imported Sub-Saharan African nations and their respective populations from HPM.
+* Added a clause to all conquering cbs that prevent them from being used on uncivilized Sub-Saharan African nations before colonial negotiations are invented.
+* Added 2 new acquire Sub-Saharan African state cbs. The first one can only be used by uncivilized Sub-Saharan African nations against each other and cost the normal amount of infamy. The second cb can only be used by civilized countries with the colonial negotiations invention against uncivilized Sub-Saharan African countries and it costs no infamy.
+* Disabled loans due to the bugged nature of interest payments not being paid out to lenders. AI nations also don't seem to pay back debt even when they have enough money to repay it which results in more unnecessary money being taken out of the economy. May re-introduce loans to human players in a later update.
+* Added a request grant decision that lets players receive grants from other human players. Only works in multiplayer games.
+* Rolled back some of the bonus to assimilation in the new world compared to the old world. Also added a bonus to assimilation to Africa after it was discovered that African provinces suffer the same hidden hardcoded penalty to assimilation as new world provinces.
+* Reduced malus to promotion for non accepted culture and wrong religion in large and massive states.
+* Rebalanced goods inputs and outputs for several factories.
+* Rebalanced goods needs for POPs to make some goods more profitable.
+* Disabled artisan wool fabric production. They were using up the entire world's supply of wool and leaving none to POP or military needs.
+* Added rubber provinces in Brazil and Bolivia at the start date.
+* Gave a triggered modifier bonus to immigration attraction to GPs.
+* Extended secondary power status by 8 more places.
+* Added nerf to colonial railroads. They now only give half the bonus as non colonial railroads.
+* Set starting colonial policy of all countries to non colonial. Countries with colonies at the start of the game now get an event to choose which colonial policy they want to enact.
+* Released Jan Mayen at the game start in order to be a placeholder for behind the scenes decisions and events. Jan Mayen cannot manufacture or be the target of cbs that take land and it starts with 0 population.
+* Added ghost unit cleanup event that fires every 6 months. Any country that is mobilized or has ships remaining after being annexed will inherit a province from Jan Mayen for a month to allow them to disband their ships and demobilize.
+* Added event that fires once every 10 years to fix 100% RGO unemployment in some provinces. Normally, if supply for a RGO good is higher than demand, POPs in a province with the oversupplied good will never be hired until world market demand exceeds supply. If a province gets occupied or is recently colonized, all POPs are set to 100% unemployment and if the good in that province is a commonly overproduced good like grain or fruit, those POPs may never become employed for the rest of the game. This event reduces world wide throughput in all RGOs for a few days in order to get those POPs working again. Once the effect wears off some unemployment should come back, but it won't be 100% unless that province gets occupied again.
+* Added strategic goods RGO modifier to a few low population oil/rubber provinces that historically produced much more resources than the game represents.
+* Split new world migration into 2 pools: North America/Oceania and South America. Roughly half the worlds pops will migrate to NA/Oceania for the first 6 months of the game and the other half will migrate to South America. Then in July the POPs that would have migrated to NA/Oceania will now migrate to South America. This cycle repeats every year and ensures that at least 6 different countries in the new world can receive immigrants at any one time.
+
+## Map changes:
+* Changed country borders from a thin dotted red line to a thick solid red line.
+* Changed impassable borders from a thin dotted blue line to a thick solid blue line.
+* Changed state borders from a thin grey line to a thick black line.
+* Changed province borders from a thin grey line to a darker grey thin line.
+* Increased thickness of most rivers. This is a cosmetic change that does not affect combat.
+* Changed country colors for Japan, Austria, Spain, Ottoman Empire, Netherlands, Sweden, Portugal, Egypt, Yugoslavia, Argentina, India, and Persia.
+* Re-arranged some states in the Baltics, Caucasus, Central Asia, Colombia, Anatolia, Germany, Italy, and France.
+* Changed terrain types in a few provinces in Ethiopia and Sinai
+* Added strait crossings in Indonesia, Malay, Guinea, Singapore, Philippines, Madagascar, Yemen, and Cameroon
+* Changed the Bosphorus strait into a canal that is already built at the start of the game. Ships can pass through the canal as long as Istanbul is occupied by their controller or is friendly/neutral with the occupier of Istanbul. Tt is no longer possible to cut off the Balkans and Anatolia with ships, you must occupy Istanbul to separate them.
+
+## Country Balance Changes:
+###### China:
+* Added Warlord Era event that splits China into several warlord cliques. If China civilizes and has either 4+ militancy or 1%+ revanchism, the event will trigger with a MTTH of 12 months. Becoming a democracy prevents the event from triggering.
+* Added decision that allows China to become a democracy if it has enough political reforms passed.
+###### Arabia:
+* Removed GP requirement for forming Arabia.
+###### Egypt:
+* Added a decision to accept Sudanese culture.
+* Added conquest of Darfur and Equatoria decision.
+* Gave a mobilization pool boost to Muhammad Ali's reforms.
+###### Ethiopia
+* Added conquest of Southern Ethiopia decision.
+###### Ottoman Empire
+* Added conquest of Libyan Desert decision.
+###### France:
+* Added decision to form the 2nd French Empire.
+###### Spain:
+* Starts with culture tech school.
+* Removed GP requirement from the Unite Iberia decision.
+* Added a decision that disables the Unite Iberia decision and enables the Embrace Filipino minority decision. Can only be done in multiplayer games where both Portugal and Spain are played by humans.
+###### Portugal:
+* Starts with culture tech school.
+* Changed economic policy of starting conservative party to protectionism instead of free trade.
+###### Prussia:
+* Buffed von Moltke's Reforms decision.
+###### Romania:
+* Wallachia and Moldavia are no longer puppets of the Ottoman Empire but they start under the Ottoman sphere. The form Romania decision available to human players at the start of the game no longer annexes Wallachia and Moldavia, it simply changes your country tag to Romania and releases you from your current spheremaster while giving you cores on the rest of Romania.
+
+
+# Version 0.101 - 12/22/2019
+
+## General gameplay changes:
+* Lowered AP gain from tech. The max AP you can generate per year is now 300.
+* Reduced emigration rate sightly.
+* Increased effect of Change Ideology decision from 0.2 to 0.25.
+* Nerfed badboy reduction from Reduce Infamy decision from 0.3 to 0.25 and increased cooldown from 2 years to 5 years
+* Nerfed literacy gained from Increase Literacy decision from 0.25, 0.2, and 0.15 for small, medium, and big states to 0.2, 0.175, and 0.15.
+
+## Country Balance Changes:
+###### Germany:
+* Made forming Germany via decision turn the government to federalism instead of unitary.
+
+
 # Version 0.10 - 12/21/2019
 
 ## All-new game mechanics:
@@ -80,7 +171,7 @@
 * Gave the Netherlands Boer as an accepted culture.
 ###### Greece, Serbia, Romanian Minors:
 * Every balkan minor country starts with a large population boom modifier that will have increased their population by 50-75% in the first few years of the game. Additionaly, while not country specific, the new revanchism mechanic and small nation triggered modifiers give extremely large bonuses to max soldier % and mobilization pools to these countries.
-* Wallachia and Moldavia have a decision to form Romania that can be activated at any time when played by a human, and 1854 when played by AI.
+* Wallachia and Moldavia have a decision to form Romania that can be activated at any time when played by a human, and 1859 when played by AI.
 * Serbia can form Yugoslavia if it owns all of its Serbian cores instead of having to own all of Yugoslavia.
 * If Greece reclaims its cores in both Greece and Anatolia, it gets an event to increase its Greek population by 100% while reducing its Turkish population by 80%.
 ###### Mexico:

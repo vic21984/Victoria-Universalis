@@ -84,32 +84,32 @@ political_decisions = {
 				tag = WAL
 				tag = MOL
 			}
-			not_has_country_flag = romanian_unification
+			NOT = { has_global_flag = romanian_unification }
 		}
 		
 		allow = {
 		}
 		
 		effect = {
-			set_country_flag = romanian_unification
+			set_global_flag = romanian_unification
 			change_tag = culture
-			WAL = { annex_to = THIS }
-			MOL = { annex_to = THIS }
 			primary_culture = romanian
-			political_reform = four_year_draft
+			political_reform = two_year_draft
 			small_arms = 100
 			canned_food = 100
 			liquor = 100
 			wine = 100
-			ammunition = 100			
+			ammunition = 100
+			sphere_owner = {
+				diplomatic_influence = {
+					who = THIS
+					value = -400
+				}
+			}			
 		}
 		
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = {	year = 1856 }
-			}	
+			factor = 0
 		}
 	}	
 }

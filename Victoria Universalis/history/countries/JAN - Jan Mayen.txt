@@ -1,13 +1,14 @@
 capital = 3246
-primary_culture = norwegian
-culture = swedish
-culture = polar_bears
+primary_culture = polar_bears
 religion = protestant
 government = hms_government
 plurality = 0.5
 nationalvalue = nv_liberty
 literacy = 0.87
 civilized = yes
+decision = healthcare_slider_setup
+decision = jan_mayen_setup
+decision = build_bosphorus_canal
 
 # Political reforms
 slavery = no_slavery

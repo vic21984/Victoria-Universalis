@@ -459,7 +459,7 @@ clipper_design = {
 	year = 1836
 	cost = 3600
 	unciv_military = yes
-	activate_building = clipper_shipyard 
+	activate_building = clipper_shipyard
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -541,6 +541,7 @@ steamers = {
 	cost = 7200
 	unciv_military = yes
 	activate_building = steamer_shipyard 
+	navy_base = { maximum_speed = 2 } 
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -770,7 +771,7 @@ steel_steamers = {
 }
 steam_turbine_ships = {
 	area = ship_construction
-	year = 1900
+	year = 1890
 	cost = 18000
 	unciv_military = yes
 	navy_base = { maximum_speed = 2 } 
@@ -849,7 +850,7 @@ oil_driven_ships = {
 	year = 1919
 	cost = 21600
 	unciv_military = yes
-	navy_base = { maximum_speed = 2 } 
+	navy_base = { maximum_speed = 4 } 
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -1097,10 +1098,11 @@ fire_control_systems = {
 
 weapon_platforms = {
 	area = naval_engineering
-	year = 1850
+	year = 1865
 	cost = 10800
 	unciv_military = yes
 	navy_base = { build_time = -10 }
+	commerce_raider = { build_time = -40 }
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -1187,6 +1189,8 @@ main_armament = {
 	cost = 14400
 	unciv_military = yes
 	navy_base = { build_time = -10 }
+	ironclad = { build_time = -40 }
+	monitor = { build_time = -40 }
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -1278,6 +1282,9 @@ advanced_naval_design = {
 	cost = 18000
 	unciv_military = yes
 	navy_base = { build_time = -10 }
+	cruiser = { build_time = -40 }
+	battleship = { build_time = -180 }
+	commerce_raider = { build_time = -120 }
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this
@@ -1364,6 +1371,7 @@ modern_naval_design = {
 	cost = 21600
 	unciv_military = yes
 	navy_base = { build_time = -10 }
+	dreadnought = { build_time = -240 }
 	ai_chance = {
 		factor = 1
 		# Land-locked countries don't research this

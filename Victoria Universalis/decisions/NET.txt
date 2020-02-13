@@ -8,7 +8,7 @@ political_decisions = {
 			}
 		}
 		allow = {
-			OR = { 
+			OR = {
 				relation = {
 					who = ENG
 					value = 100
@@ -19,8 +19,7 @@ political_decisions = {
 						value = 50
 					}
 				}
-				ideological_thought = 1
-			}		
+			}
 		}
 		effect = {
 			remove_core = 387

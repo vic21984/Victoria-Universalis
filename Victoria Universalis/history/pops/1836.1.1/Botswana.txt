@@ -188,67 +188,67 @@
 		size = 3650
 	}
 }
-#uncolonized in 1836/dominated by the Ndebele in 1836
-#Serowe (8000/2000 POPS) 
+#under the rule of Matabele in 1836
+#Serowe (16000/4000 POPS) 
 2075 = {
 	aristocrats = {
 		culture = nguni
 		religion = animist
-		size = 15
+		size = 30
 	}
 
 	clergymen = {
 		culture = nguni
 		religion = animist
-		size = 15
+		size = 30
 	}
 
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	soldiers = {
 		culture = nguni
+		religion = animist
+		size = 40
+	}
+
+	farmers = {
+		culture = nguni
+		religion = animist
+		size = 1800
+	}
+
+	aristocrats = {
+		culture = tswana
+		religion = animist
+		size = 30
+	}
+
+	clergymen = {
+		culture = tswana
+		religion = animist
+		size = 50
+	}
+
+	artisans = {
+		culture = tswana
+		religion = animist
+		size = 100
+	}
+
+	soldiers = {
+		culture = tswana
 		religion = animist
 		size = 20
 	}
 
 	farmers = {
-		culture = nguni
-		religion = animist
-		size = 900
-	}
-
-	aristocrats = {
 		culture = tswana
 		religion = animist
-		size = 15
-	}
-
-	clergymen = {
-		culture = tswana
-		religion = animist
-		size = 25
-	}
-
-	artisans = {
-		culture = tswana
-		religion = animist
-		size = 50
-	}
-
-	soldiers = {
-		culture = tswana
-		religion = animist
-		size = 10
-	}
-
-	farmers = {
-		culture = tswana
-		religion = animist
-		size = 900
+		size = 1800
 	}
 
 }

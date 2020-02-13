@@ -48,7 +48,6 @@ civil_war
 acquire_core_state 
 annex_core_country
 acquire_state
-acquire_small_state 
 acquire_substate_region
 place_in_the_sun
 colonial_competition
@@ -74,8 +73,16 @@ install_communist_gov_cb
 uninstall_communist_gov_cb
 great_war_penalty_cb
 take_capital
-conquest_low
-demand_chinese_concession_casus_belli 
+acquire_small_state
+conquest_small
+demand_for_ally
+demand_chinese_concession_casus_belli
+chinese_civil_war
+chinese_civil_war_acquire_state
+african_acquire_african_state
+european_acquire_african_state
+african_conquest
+european_african_conquest
 }
 
 gunboat = {
@@ -167,14 +174,22 @@ conquest = {
 				has_global_flag = taiping_has_happened
 			}
 		}
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
 		NOT = {
 			AND = { 
 				tag = EGY
 				THIS = { has_country_modifier = oriental_truce }
 			}
-		}		
-		NOT = { tag = BHU }
-		NOT = { is_our_vassal = THIS }
+		}	
+		NOT = { tag = JAN }
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
+			}
+		}
 		# only one state or unciv
 		NOT = { number_of_states = 5 }
 		OR = {
@@ -227,174 +242,6 @@ conquest = {
 	po_annex = yes
 	
 	war_name = WAR_CONQUEST_NAME
-}
-
-conquest_small = {
-	sprite_index = 2
-	is_triggered_only = yes
-	months = 12
-	crisis = no
-	
-	construction_speed = 0.5
-	
-	can_use = {
-		THIS = {
-			OR = {
-				NOT = { has_country_flag = china }
-				has_global_flag = taiping_has_happened
-			}
-		}
-		NOT = {
-			AND = { 
-				tag = EGY
-				THIS = { has_country_modifier = oriental_truce }
-			}
-		}		
-		NOT = { tag = BHU }	
-		this = { NOT = { badboy = 1 } }
-		NOT = {	total_pops = 400000 }
-
-
-		# only one state or unciv
-		NOT = { number_of_states = 5 }
-		OR = {
-			AND = {
-				civilized = yes
-				NOT = { number_of_states = 3 }
-			}
-			AND = {
-				civilized = no
-				THIS = { civilized = no }
-				NOT = { number_of_states = 3 }
-			}
-			AND = {
-				civilized = no
-				number_of_states = 2
-				THIS = {
-					OR = {
-						NOT = { is_greater_power = yes }
-						NOT = { nationalism_n_imperialism = 1 }
-					}
-				}
-			}
-		}
-	}
-
-	badboy_factor = 1
-	prestige_factor = 5
-	peace_cost_factor = 1
-	penalty_factor = 1
-	
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
-	truce_months = 36
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	construction_speed = 0.5
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-	
-	po_annex = yes
-	
-	war_name = WAR_CONQUEST_NAME
-}
-
-take_capital = {
-	sprite_index = 6
-	is_triggered_only = yes
-	months = 12
-	construction_speed = 0.5
-	
-	badboy_factor = 2.5
-	prestige_factor = 10
-	peace_cost_factor = 1
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
-	truce_months = 36
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-
-	can_use = {
-		THIS = {
-			OR = {
-				NOT = { has_country_flag = china }
-				has_global_flag = taiping_has_happened
-			}
-		}
-		NOT = {
-			AND = { 
-				tag = EGY
-				THIS = { has_country_modifier = oriental_truce }
-			}
-		}
-		number_of_states = 2 # annex if you want their last state
-		any_owned_province = {
-			not = { is_core = THIS }
-			is_colonial = no
-		}
-		OR = {
-			AND = {
-				civilized = yes
-				THIS = {
-					civilized = yes
-				}
-			}
-			AND = {
-				civilized = no
-				THIS = {
-					civilized = no
-				}
-			}
-		}
-		OR = {
-			NOT = { has_country_flag = conquerable_1865 }
-			year = 1865
-		}
-	}
-	
-	allowed_states = {
-		is_colonial = no
-		any_owned_province = {
-			not = {	is_core = THIS }
-			is_colonial = no
-		}
-		any_owned_province = { is_capital = yes }
-	}
-	
-	allowed_states_in_crisis = {
-		any_owned_province = {
-			any_neighbor_province = {
-				owner = { tag = THIS }
-			}
-		}
-	}		
-
-	po_demand_state = yes
-	
-	war_name = WAR_TAKE_NAME
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
 }
 
 # Civil war
@@ -560,10 +407,7 @@ acquire_all_cores = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		civilized = yes
-		NOT = { is_our_vassal = THIS }
 		number_of_states = 2 # annex if you want their last state		
-		is_vassal = no
 		any_owned_province = { is_core = THIS }
 		any_owned_province = { NOT = { is_core = THIS } }
 	}
@@ -616,7 +460,6 @@ acquire_core_state = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { is_our_vassal = THIS }
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
@@ -665,7 +508,6 @@ annex_core_country = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { is_our_vassal = THIS }
 		any_owned_province = {
 			is_core = THIS
 		}
@@ -714,7 +556,6 @@ acquire_substate_region = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { is_our_vassal = THIS }
 		num_of_substates = 1 # if has any substate
 		any_substate = {
 			number_of_states = 1
@@ -776,98 +617,21 @@ acquire_state = {
 				has_global_flag = taiping_has_happened
 			}
 		}
-		NOT = {
-			AND = { 
-				tag = EGY
-				THIS = { has_country_modifier = oriental_truce }
-			}
-		}		
-		NOT = { is_our_vassal = THIS }
-		number_of_states = 2 # annex if you want their last state
-		any_owned_province = {
-			not = { is_core = THIS }
-			is_colonial = no
-		}
-		OR = {
-			AND = {
-				civilized = yes
-				THIS = {
-					civilized = yes
-				}
-			}
-			AND = {
-				civilized = no
-				THIS = {
-					civilized = no
-				}
-			}
-		}
-	}
-	
-	allowed_states = {
-		is_colonial = no
-		any_owned_province = {
-			not = {	is_core = THIS }
-			is_colonial = no
-		}
-		not = { any_owned_province = { is_capital = yes } }
-	}
-	
-	allowed_states_in_crisis = {
-		any_owned_province = {
-			any_neighbor_province = {
-				owner = { tag = THIS }
-			}
-		}
-	}		
-
-	po_demand_state = yes
-	
-	war_name = WAR_TAKE_NAME
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-}
-
-acquire_small_state = {
-	sprite_index = 6
-	is_triggered_only = yes
-	months = 12
-	construction_speed = 0.5
-	
-	badboy_factor = 1
-	prestige_factor = 2
-	peace_cost_factor = 1
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
-	truce_months = 0
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-
-	can_use = {
 		THIS = {
-			OR = {
-				NOT = { has_country_flag = china }
-				has_global_flag = taiping_has_happened
-			}
+			NOT = { has_country_flag = jan_mayen }
 		}
 		NOT = {
 			AND = { 
 				tag = EGY
 				THIS = { has_country_modifier = oriental_truce }
 			}
-		}		
-		NOT = { is_our_vassal = THIS }
+		}
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
+			}
+		}
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			not = { is_core = THIS }
@@ -890,8 +654,9 @@ acquire_small_state = {
 	}
 	
 	allowed_states = {
-		NOT = {	total_pops = 150000 }
 		is_colonial = no
+		total_pops = 150000
+		NOT = {	total_pops = 4000000 }
 		any_owned_province = {
 			not = {	is_core = THIS }
 			is_colonial = no
@@ -941,6 +706,9 @@ place_in_the_sun = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
 		NOT = { is_our_vassal = THIS }
 		any_owned_province = {
 			is_colonial = yes
@@ -1413,7 +1181,7 @@ make_puppet = {
 	good_relation_militancy_factor = 1
 
 	can_use = {
-		NOT = { tag = BHU }
+		NOT = { tag = JAN }
 		NOT = {
 			AND = { 
 				tag = EGY
@@ -1568,11 +1336,19 @@ demand_concession_casus_belli = {
 	always = no
 
 	can_use = {
-		NOT = { is_our_vassal = THIS }
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
 		NOT = {
 			AND = { 
 				tag = EGY
 				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
 			}
 		}
 		THIS = {
@@ -1586,75 +1362,6 @@ demand_concession_casus_belli = {
 		any_owned_province = {
 			is_colonial = no
 			NOT = { is_core = CHI }
-		}
-		not = { any_owned_province = { is_capital = yes } }
-	}
-	
-	po_demand_state = yes
-	
-	war_name = WAR_CONCESSION_NAME
-
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.1
-		}
-	}
-}
-
-#Demand Chinese Concession
-demand_chinese_concession_casus_belli = {
-	sprite_index = 7
-	is_triggered_only = yes
-	months = 0
-	construction_speed = 1.2
-	crisis = no
-	
-	badboy_factor = 1
-	prestige_factor = 0.1
-	peace_cost_factor = 0.6
-	penalty_factor = 1
-
-	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 1
-	break_truce_militancy_factor = 1
-	truce_months = 12
-	
-	good_relation_prestige_factor = 0
-	good_relation_infamy_factor = 0
-	good_relation_militancy_factor = 0
-	
-	always = no
-
-	can_use = {
-		any_owned_province = {
-			OR = {
-				is_core = MCK
-				is_core = XIN
-				is_core = MON
-				is_core = TIB
-			}
-		}	
-		NOT = { is_our_vassal = THIS }
-		THIS = {
-			civilized = yes
-		}
-		civilized = no
-		number_of_states = 2
-	}
-	
-	allowed_states = {
-		any_owned_province = {
-			is_colonial = no
-			OR = {
-				is_core = MCK
-				is_core = XIN
-				is_core = MON
-				is_core = TIB
-				province_id = 1496
-				province_id = 2562
-			}
 		}
 		not = { any_owned_province = { is_capital = yes } }
 	}
@@ -1697,12 +1404,21 @@ establish_protectorate_casus_belli = {
 	always = no
 	
 	can_use = {
-		NOT = { tag = BHU }
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		NOT = { tag = JAN }
 		NOT = { is_our_vassal = THIS }
 		NOT = {
 			AND = { 
 				tag = EGY
 				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
 			}
 		}		
 		THIS = {
@@ -1941,7 +1657,6 @@ unification_annex_casus_belli = {
 	always = yes
 	
 	can_use = {
-		NOT = { is_our_vassal = THIS }
 		THIS = {
 			culture_has_union_tag = yes
 			nationalism_n_imperialism = 1
@@ -2187,3 +1902,881 @@ great_war_penalty_cb = {
     }
 }
 
+#Take Capital
+take_capital = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+	
+	badboy_factor = 3
+	prestige_factor = 10
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 36
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		THIS = {
+			OR = {
+				NOT = { has_country_flag = china }
+				has_global_flag = taiping_has_happened
+			}
+		}
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		NOT = {
+			AND = { 
+				tag = EGY
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
+			}
+		}
+		number_of_states = 2 # annex if you want their last state
+		any_owned_province = {
+			not = { is_core = THIS }
+			is_colonial = no
+		}
+		OR = {
+			AND = {
+				civilized = yes
+				THIS = {
+					civilized = yes
+				}
+			}
+			AND = {
+				civilized = no
+				THIS = {
+					civilized = no
+				}
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = conquerable_1865 }
+			year = 1865
+		}
+	}
+	
+	allowed_states = {
+		is_colonial = no
+		any_owned_province = {
+			not = {	is_core = THIS }
+			is_colonial = no
+		}
+		any_owned_province = { is_capital = yes }
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}		
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+#Acquire Small State
+acquire_small_state = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+	
+	badboy_factor = 1
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		THIS = {
+			OR = {
+				NOT = { has_country_flag = china }
+				has_global_flag = taiping_has_happened
+			}
+		}
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		NOT = {
+			AND = { 
+				tag = EGY
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
+			}
+		}
+		number_of_states = 2 # annex if you want their last state
+		any_owned_province = {
+			not = { is_core = THIS }
+			is_colonial = no
+		}
+		OR = {
+			AND = {
+				civilized = yes
+				THIS = {
+					civilized = yes
+				}
+			}
+			AND = {
+				civilized = no
+				THIS = {
+					civilized = no
+				}
+			}
+		}
+	}
+	
+	allowed_states = {
+		NOT = {	total_pops = 150000 }
+		is_colonial = no
+		any_owned_province = {
+			not = {	is_core = THIS }
+			is_colonial = no
+		}
+		not = { any_owned_province = { is_capital = yes } }
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}		
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+#Acquire Massive State
+acquire_massive_state = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+	
+	badboy_factor = 3
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		THIS = {
+			OR = {
+				NOT = { has_country_flag = china }
+				has_global_flag = taiping_has_happened
+			}
+		}
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		NOT = {
+			AND = { 
+				tag = EGY
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
+			}
+		}
+		number_of_states = 2 # annex if you want their last state
+		any_owned_province = {
+			not = { is_core = THIS }
+			is_colonial = no
+		}
+		OR = {
+			AND = {
+				civilized = yes
+				THIS = {
+					civilized = yes
+				}
+			}
+			AND = {
+				civilized = no
+				THIS = {
+					civilized = no
+				}
+			}
+		}
+	}
+	
+	allowed_states = {
+		total_pops = 4000000
+		is_colonial = no
+		any_owned_province = {
+			not = {	is_core = THIS }
+			is_colonial = no
+		}
+		not = { any_owned_province = { is_capital = yes } }
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}		
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+#Minor Conquest
+conquest_small = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 12
+	crisis = no
+	
+	construction_speed = 0.5
+	
+	can_use = {
+		THIS = {
+			OR = {
+				NOT = { has_country_flag = china }
+				has_global_flag = taiping_has_happened
+			}
+		}
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		NOT = {
+			AND = { 
+				tag = EGY
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}		
+		NOT = { tag = JAN }
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
+			}
+		}
+		NOT = {	total_pops = 400000 }
+
+
+		# only one state or unciv
+		NOT = { number_of_states = 5 }
+		OR = {
+			AND = {
+				civilized = yes
+				NOT = { number_of_states = 3 }
+			}
+			AND = {
+				civilized = no
+				THIS = { civilized = no }
+				NOT = { number_of_states = 3 }
+			}
+			AND = {
+				civilized = no
+				number_of_states = 2
+				THIS = {
+					OR = {
+						NOT = { is_greater_power = yes }
+						NOT = { nationalism_n_imperialism = 1 }
+					}
+				}
+			}
+		}
+	}
+
+	badboy_factor = 1
+	prestige_factor = 5
+	peace_cost_factor = 1
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 36
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	construction_speed = 0.5
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	po_annex = yes
+	
+	war_name = WAR_CONQUEST_NAME
+}
+
+#Demand For Ally
+demand_for_ally = {
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+
+	badboy_factor = 2
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal is scope
+
+	allowed_countries = {
+		number_of_states = 2
+		NOT = {
+			tag = FROM
+			this_culture_union = FROM
+		}
+		FROM = {
+			exists = yes 
+		}
+		THIS = {
+			OR = {
+				NOT = { has_country_flag = china }
+				has_global_flag = taiping_has_happened
+			}
+		}
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		NOT = {
+			AND = { 
+				tag = EGY
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
+		NOT = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				civilized = no
+			}
+		}
+	}
+
+	# THIS - us
+	# FROM - country scope is possible match?
+	# war target country of goal's state
+	allowed_states = {
+		any_owned_province = {
+			NOT = { is_core = CHI }
+			OR = {
+				NOT = { is_core = FROM }
+				NOT = { is_core = THIS }
+				NOT = { is_capital = yes }
+			}	
+		}
+	}
+
+	po_transfer_provinces = yes
+	
+	war_name = WAR_FORALLIES_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+#Chinese CBs
+demand_chinese_concession_casus_belli = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 0
+	construction_speed = 1.2
+	crisis = no
+	
+	badboy_factor = 1
+	prestige_factor = 0.1
+	peace_cost_factor = 0.6
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 12
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = no
+
+	can_use = {
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		has_country_flag = china
+		THIS = {
+			civilized = yes
+		}
+		civilized = no
+		number_of_states = 2
+	}
+	
+	allowed_states = {
+		any_owned_province = {
+			is_colonial = no
+			OR = {
+				is_core = MCK
+				is_core = XIN
+				is_core = MON
+				is_core = TIB
+				region = CHI_2562
+				region = CHI_1496
+				region = CHI_1553
+			}
+		}
+		not = { any_owned_province = { is_capital = yes } }
+	}
+	
+	po_demand_state = yes
+	
+	war_name = WAR_CONCESSION_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+chinese_civil_war = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 2
+	
+	badboy_factor = 0
+	prestige_factor = 0.5
+	peace_cost_factor = 0.5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 12
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	
+	can_use = {
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		THIS = {
+			AND = {
+				has_global_flag = warlord_era_begun
+				is_culture_group = east_asian
+			}
+			NOT = { tag = CHI }
+			NOT = { tag = KMT }
+		}
+		is_culture_group = east_asian
+	}
+
+	po_annex = yes
+	
+	war_name = WAR_CONQUEST_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+chinese_civil_war_acquire_state = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 2
+	
+	badboy_factor = 0
+	prestige_factor = 0.5
+	peace_cost_factor = 0.5
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	
+	can_use = {
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		THIS = {
+			AND = {
+				has_global_flag = warlord_era_begun
+				is_culture_group = east_asian
+			}
+			NOT = { tag = CHI }
+			NOT = { tag = KMT }
+		}
+		is_culture_group = east_asian
+	}
+	
+	allowed_states = {
+		OR = {
+			is_colonial = no
+			is_colonial = yes
+		}
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}		
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+#African CBs
+african_acquire_african_state = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+	
+	badboy_factor = 2
+	prestige_factor = 2
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		THIS = { NOT = { badboy = 1 } }
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		THIS = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				NOT = { has_country_flag = colonial_negotiations_invented }
+			}
+		}
+		AND = {
+			has_country_flag = sub_saharan_africa
+			civilized = no
+		}
+	}
+	
+	allowed_states = {
+		OR = {
+			is_colonial = no
+			is_colonial = yes
+		}
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}		
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+african_conquest = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 12
+	crisis = no
+	
+	can_use = {
+		THIS = { NOT = { badboy = 1 } }
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		THIS = {
+			AND = {
+				has_country_flag = sub_saharan_africa
+				NOT = { has_country_flag = colonial_negotiations_invented }
+			}
+		}
+		AND = {
+			has_country_flag = sub_saharan_africa
+			civilized = no
+		}
+		# only one state or unciv
+		NOT = { number_of_states = 5 }
+	}
+
+	badboy_factor = 2
+	prestige_factor = 5
+	peace_cost_factor = 1
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	construction_speed = 0.5
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	po_annex = yes
+	
+	war_name = WAR_CONQUEST_NAME
+}
+
+european_acquire_african_state = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+	
+	badboy_factor = 0.1
+	prestige_factor = 0.5
+	peace_cost_factor = 0.5
+	penalty_factor = 2
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = yes
+	
+	can_use = {
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		THIS = {
+			AND = {
+				civilized = yes
+				has_country_flag = colonial_negotiations_invented
+			}
+		}
+		AND = {
+			has_country_flag = sub_saharan_africa
+			civilized = no
+		}
+	}
+	
+	allowed_states = {
+		OR = {
+			is_colonial = no
+			is_colonial = yes
+		}
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}		
+
+	po_demand_state = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+european_african_conquest = {
+	sprite_index = 2
+	is_triggered_only = yes
+	months = 12
+	crisis = no
+	
+	always = yes
+	
+	can_use = {
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+		}
+		THIS = {
+			AND = {
+				civilized = yes
+				has_country_flag = colonial_negotiations_invented
+			}
+		}
+		AND = {
+			has_country_flag = sub_saharan_africa
+			civilized = no
+		}
+		NOT = { number_of_states = 5 }
+	}
+
+	badboy_factor = 0.5
+	prestige_factor = 5
+	peace_cost_factor = 1
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 5
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 0
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	construction_speed = 0.5
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	po_annex = yes
+	
+	war_name = WAR_CONQUEST_NAME
+}

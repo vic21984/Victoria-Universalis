@@ -98,7 +98,7 @@ investment_banks = {
 	year = 1870
 	cost = 14400
 
-	tax_eff = 5
+	tax_eff = 2
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -128,7 +128,7 @@ bank_inspection_board = {
 	year = 1900
 	cost = 18000
 
-	tax_eff = 5
+	tax_eff = 2
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -158,7 +158,7 @@ mutual_funds = {
 	year = 1919
 	cost = 21600
 
-	tax_eff = 5
+	tax_eff = 2
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -184,9 +184,6 @@ no_standard = {
 	cost = 3600
 
 	administrative_efficiency = 0.05
-	rgo_goods_output = {
-		precious_metal = 0.25
-	}	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -205,9 +202,6 @@ ad_hoc_money_bill_printing = {
 	cost = 7200
 	
 	administrative_efficiency = 0.05
-	rgo_goods_output = {
-		precious_metal = 0.25
-	}	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -238,9 +232,6 @@ private_bank_money_bill_printing = {
 	cost = 10800
 
 	administrative_efficiency = 0.05
-	rgo_goods_output = {
-		precious_metal = 0.25
-	}	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -263,9 +254,6 @@ central_bank_money_bill_printing = {
 	cost = 14400
 
 	administrative_efficiency = 0.05
-	rgo_goods_output = {
-		precious_metal = 0.25
-	}	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -288,9 +276,6 @@ modern_central_bank_system = {
 	cost = 18000
 
 	administrative_efficiency = 0.05
-	rgo_goods_output = {
-		precious_metal = 0.25
-	}	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -322,10 +307,6 @@ market_determined_exchange_rates = {
 
 
 	administrative_efficiency = 0.05
-	rgo_goods_output = {
-		precious_metal = 0.25
-	}
-	rgo_output = 0.1
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -399,7 +380,7 @@ late_classical_theory = {
 }
 collectivist_theory = {
 	area = economic_thought_and_critique
-	year = 1836
+	year = 1850
 	cost = 10800
 
 	factory_input = -0.01
@@ -429,7 +410,7 @@ collectivist_theory = {
 }
 the_historical_theory = {
 	area = economic_thought_and_critique
-	year = 1850
+	year = 1860
 	cost = 14400
 
 	factory_input = -0.01
@@ -459,7 +440,7 @@ the_historical_theory = {
 }
 neoclassical_theory = {
 	area = economic_thought_and_critique
-	year = 1870
+	year = 1880
 	cost = 18000
 
 	factory_input = -0.01

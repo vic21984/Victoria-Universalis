@@ -7,6 +7,8 @@ nationalvalue = nv_liberty
 literacy = 0.5
 civilized = yes
 
+prestige = 10
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = state_equal_weight
@@ -21,7 +23,7 @@ political_parties = non_secret_ballots
 wage_reform = low_minimum_wage
 work_hours = ten_hours
 safety_regulations = trinket_safety
-health_care = trinket_health_care
+health_care = no_health_care
 unemployment_subsidies = trinket_subsidies
 pensions = low_pensions 
 school_reforms = no_schools
@@ -29,10 +31,10 @@ school_reforms = no_schools
 ruling_party = NWZ_conservative
 upper_house = {
 	fascist = 0
-	liberal = 30
-	conservative = 60
-	reactionary = 5
-	anarcho_liberal = 5
+	liberal = 35
+	conservative = 50
+	reactionary = 8
+	anarcho_liberal = 7
 	socialist = 0
 	communist = 0
 }

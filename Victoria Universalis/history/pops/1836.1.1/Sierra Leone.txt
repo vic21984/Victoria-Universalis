@@ -2,6 +2,25 @@
 #uncolonized in 1836/Britain has trade post in 1836
 #Freetown (400000/100000 POPS) 
 1884 = {
+
+	aristocrats = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 300
+	}
+	
+	officers = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 100
+	}
+
+	clergymen = {
+		culture = afro_caribbean
+		religion = protestant
+		size = 100
+	}
+
 	artisans = {
 		culture = afro_caribbean
 		religion = protestant
@@ -11,7 +30,7 @@
 	soldiers = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 50
+		size = 100
 	}
 
 	farmers = {
@@ -25,11 +44,17 @@
 		religion = sunni
 		size = 675
 	}
+	
+	officers = {
+		culture = mande
+		religion = sunni
+		size = 100
+	}
 
 	clergymen = {
 		culture = mande
 		religion = sunni
-		size = 350
+		size = 100
 	}
 
 	artisans = {
@@ -47,67 +72,73 @@
 	farmers = {
 		culture = mande
 		religion = sunni
-		size = 31975
+		size = 32125
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
 		size = 875
 	}
+	
+	officers = {
+		culture = western_nigritic
+		religion = sunni
+		size = 100
+	}
 
 	clergymen = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
-		size = 450
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
 		size = 2300
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
 		size = 450
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
-		size = 42025
+		size = 48275
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 250
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 150
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 700
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 150
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 12750
+		size = 6800
 	}
 }
 #uncolonized in 1836
@@ -122,7 +153,7 @@
 	clergymen = {
 		culture = mande
 		religion = sunni
-		size = 475
+		size = 100
 	}
 
 	artisans = {
@@ -140,41 +171,41 @@
 	farmers = {
 		culture = mande
 		religion = sunni
-		size = 36275
+		size = 36650
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 800
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 400
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 2000
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 425
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 37375
+		size = 37675
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 7000
 	}
@@ -192,7 +223,7 @@
 	clergymen = {
 		culture = mande
 		religion = sunni
-		size = 475
+		size = 100
 	}
 
 	artisans = {
@@ -210,71 +241,71 @@
 	farmers = {
 		culture = mande
 		religion = sunni
-		size = 36225
+		size = 36600
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
 		size = 800
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
-		size = 400
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
 		size = 1650
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
 		size = 425
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = sunni
-		size = 31725
+		size = 37025
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 125
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 75
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 400
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
-		size = 7300
+		size = 2300
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = western_nigritic
 		religion = animist
 		size = 13000
 	}

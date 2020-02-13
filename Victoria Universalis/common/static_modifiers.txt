@@ -109,7 +109,7 @@ has_siege = {
 }
 
 occupied = {
-	population_growth = -0.02
+	population_growth = -0.1
 	immigrant_attract = -1
 }
 
@@ -175,20 +175,19 @@ great_power = {
 	prestige = 0.05
 	research_points = 1.5
 	diplomatic_points_modifier = 1.0
-	leadership = 2.0
+	leadership = 1
 }
 
 second_power = {
 	prestige = 0.025
 	research_points = 1.25
 	diplomatic_points_modifier = 0.25
-	leadership = 1.0
+	leadership = 0.5
 }
 
 civ_nation = {
 	prestige = 0.01
 	research_points = 1
-	leadership = 0.5
 }
 
 unciv_nation = {
@@ -197,7 +196,7 @@ unciv_nation = {
 
 average_literacy = {
 	research_points = 4
-	leadership = 1
+	leadership = 2
 	self_unciv_economic_modifier = -0.5
 	self_unciv_military_modifier = -0.5
 }

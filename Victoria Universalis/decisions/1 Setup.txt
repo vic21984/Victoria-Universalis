@@ -1,14 +1,34 @@
 political_decisions = {
 
+	healthcare_slider_setup = {
+		potential = {
+			tag = JAN
+			always = no
+		}
+		allow = {
+			tag = JAN
+		}
+		effect = {
+			any_country = {
+				add_country_modifier = { name = starting_healthcare1 duration = 1 }
+			}
+		}
+	}
+	
 	global_1836_setup = {
 		potential = {
-			tag = BHU
+			tag = JAN
 			NOT { has_global_flag = global_1836_setup }
 		}
 		allow = {
 		}
 		effect = {
 			set_global_flag = global_1836_setup
+#			any_country = {
+#				artisans = {
+#					money = 500
+#				}
+#			}
 			any_country = {
 				limit = { ai = no }
 				administrative_points = 1000
@@ -21,6 +41,28 @@ political_decisions = {
 				limit = { invention = AP2 }
 				set_country_flag = AP2
 			}
+			any_country = {
+				add_country_modifier = { name = starting_healthcare2 duration = 1 }
+			}
+			SOK = { set_country_flag = sub_saharan_africa }
+			OYO = { set_country_flag = sub_saharan_africa }
+			BEN = { set_country_flag = sub_saharan_africa }
+			ARO = { set_country_flag = sub_saharan_africa }
+			WRI = { set_country_flag = sub_saharan_africa }
+			ASH = { set_country_flag = sub_saharan_africa }
+			DAH = { set_country_flag = sub_saharan_africa }
+			KNG = { set_country_flag = sub_saharan_africa }
+			JAL = { set_country_flag = sub_saharan_africa }
+			MOS = { set_country_flag = sub_saharan_africa }
+			MAS = { set_country_flag = sub_saharan_africa }
+			DAM = { set_country_flag = sub_saharan_africa }
+			KBO = { set_country_flag = sub_saharan_africa }
+			TOO = { set_country_flag = sub_saharan_africa }
+			GBU = { set_country_flag = sub_saharan_africa }
+			SEG = { set_country_flag = sub_saharan_africa }
+			KON = { set_country_flag = sub_saharan_africa }
+			WOL = { set_country_flag = sub_saharan_africa }
+			LOA = { set_country_flag = sub_saharan_africa }
 			GRE_837 = {
 				state_scope = {
 					any_owned = {
@@ -115,7 +157,106 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+
+	jan_mayen_setup = {
+
+		potential = {
+			tag = JAN
+			always = no
+		}
+		
+		allow = { }
+		
+		effect = {
+			JAN = {
+				set_country_flag = jan_mayen
+			}	
+		}
+	}
 	
+	chinese_liferating_nerf = {
+		potential = {
+			tag = JAN
+			ai = yes
+			NOT { has_global_flag = chinese_liferating_nerf }
+			CHI = { ai = no }
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = chinese_liferating_nerf
+			CHI = {
+				any_owned = {
+					limit = {
+						is_core = CHI
+						life_rating = 32
+						NOT = { life_rating = 35 }
+					}
+					life_rating = -2
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	chinese_setup = {
+
+		potential = {
+			tag = CHI
+			always = no
+		}
+		
+		allow = { }
+		
+		effect = {
+			CHI = {
+				soldiers = {
+					reduce_pop = 0.5
+				}
+				set_country_flag = china
+				add_country_modifier = { name = mandate_of_heaven duration = -1 }
+			}
+			TPG = {
+				set_country_flag = china
+			}
+			KMT = {
+				set_country_flag = china
+			}
+			XBI = {
+				set_country_flag = china
+			}
+			SXI = {
+				set_country_flag = china
+			}
+			MCK = {
+				set_country_flag = china
+			}
+			HUI = {
+				set_country_flag = china
+			}
+			HNN = {
+				set_country_flag = china
+			}
+			SZC = {
+				set_country_flag = china
+			}
+			YNN = {
+				set_country_flag = china
+			}
+			GXI = {
+				set_country_flag = china
+			}
+			GNG = {
+				set_country_flag = china
+			}
+			XIN = {
+				set_country_flag = china
+			}
+			HND = {
+				set_country_flag = india
+			}			
+		}
+	}
 	
 	usa_1836_setup = {
 		potential = {
@@ -191,6 +332,7 @@ political_decisions = {
 			}
 		}
 	}
+	
 	ottoman_1836_setup = {
 		potential = {
 			tag = TUR
@@ -426,6 +568,6 @@ political_decisions = {
 				}
 			}
 		}
-	}	
+	}
 	
 }

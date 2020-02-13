@@ -1123,10 +1123,8 @@ country_event = {
 		ai = yes
 		tag = FRA
 		NOT = {
-			AND = {
-				conscription = mandatory_service
-				owns = 412
-			}
+			conscription = mandatory_service
+			owns = 412
 		}
 	}
 	

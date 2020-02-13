@@ -53,6 +53,15 @@ province_event = {
 			name = gold_rush
 			duration = 730
 		}
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -81,7 +90,15 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		# life_rating = 5
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -107,7 +124,15 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		# life_rating = 5
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -132,7 +157,15 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		# life_rating = 5
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -169,6 +202,15 @@ province_event = {
 				duration = 1460
 			}
 		}
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -202,6 +244,15 @@ country_event = {
 				name = gold_rush
 				duration = 3650
 			}
+			any_pop = {
+				limit = {
+					OR = {
+						type = farmers
+						type = labourers
+					}
+				}
+				pop_type = labourers_gold
+			}
 		}
 	}
 }
@@ -233,7 +284,15 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		# life_rating = 5
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -270,7 +329,15 @@ province_event = {
 	option = {
 		name = "EVTOPTA1105"
 		trade_goods = precious_metal
-		# life_rating = 5
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -298,7 +365,15 @@ province_event = {
 	option = {
 		name = "EVTOPTA1105"
 		trade_goods = precious_metal
-		# life_rating = 5
+		any_pop = {
+			limit = {
+				OR = {
+					type = farmers
+					type = labourers
+				}
+			}
+			pop_type = labourers_gold
+		}
 	}
 }
 
@@ -316,9 +391,6 @@ province_event = {
 			province_id = 1364
 			province_id = 1367
 			province_id = 1382
-			province_id = 1384
-			province_id = 1385
-			province_id = 1386
 			province_id = 1389
 			province_id = 1402
 			province_id = 1404
@@ -331,9 +403,11 @@ province_event = {
 			province_id = 1850
 			province_id = 1890
 			province_id = 1891
+			province_id = 1893
 			province_id = 1923
 			province_id = 1321
 			province_id = 1398
+			province_id = 1414
 			province_id = 1421
 			province_id = 1985
 			province_id = 1406
@@ -341,7 +415,6 @@ province_event = {
 			province_id = 2057
 			province_id = 1426
 			province_id = 2058
-			province_id = 977
 			province_id = 1978
 			province_id = 1980
 			province_id = 1981
@@ -466,10 +539,7 @@ province_event = {
 
 	trigger = {
 		year = 1870
-		or = {
-			province_id = 1102		# Baku
-			province_id = 1205		# Kizil Arvat
-		}
+		province_id = 1102		# Baku
 		not = { trade_goods = oil }
 		OR = {
 			owner = {
@@ -503,6 +573,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -546,6 +617,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -555,7 +627,11 @@ province_event = {
 
 	trigger = {
 		year = 1872
-		province_id = 1186		# Alma Ata
+		or = {
+			province_id = 1186		# Alma Ata
+			province_id = 1182		# Guryev
+			province_id = 1205		# Kizil Arvat
+		}
 		not = { trade_goods = oil }
 		OR = {
 			owner = {
@@ -641,7 +717,10 @@ province_event = {
 
 	trigger = {
 		year = 1874
-		province_id = 1107		# Lankaran
+		or = {
+			province_id = 1107		# Lankaran
+			province_id = 1393		# Brunei
+		}		
 		not = { trade_goods = oil }
 		OR = {
 			owner = {
@@ -675,6 +754,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -937,6 +1017,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -993,8 +1074,8 @@ province_event = {
 	trigger = {
 		year = 1885
 		or = {
-			province_id = 1393		# Brunei
 			province_id = 1401		# Siak
+			province_id = 1416		# Yogyakarta
 			province_id = 1425		# Tarakan
 			province_id = 1432		# Mamuju
 		}
@@ -1044,7 +1125,6 @@ province_event = {
 		or = {
 			province_id = 1335		# Kyaukse
 			province_id = 134		# Dallas
-			province_id = 705		# Przemysl
 		}
 		not = { trade_goods = oil }
 		OR = {
@@ -1267,7 +1347,6 @@ province_event = {
 			province_id = 87		# Monterey
 			province_id = 2162		# Veracruz
 			province_id = 2163		# Tampico
-			province_id = 702		# Lvov
 		}
 		not = { trade_goods = oil }
 		OR = {
@@ -1388,6 +1467,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -1397,7 +1477,10 @@ province_event = {
 
 	trigger = {
 		year = 1907
-		province_id = 2396		# Rawson
+		or = {
+			province_id = 2396		# Rawson
+			province_id = 3261		# Sancti Spiritu
+		}
 		not = { trade_goods = oil }
 		OR = {
 			owner = {
@@ -1440,7 +1523,11 @@ province_event = {
 
 	trigger = {
 		year = 1908
-		province_id = 1131		# Ahvaz
+		or = {
+			province_id = 1131		# Ahvaz
+			province_id = 1125		# Qom
+			province_id = 1135		# Shiraz
+		}
 		not = { trade_goods = oil }
 		OR = {
 			owner = {
@@ -1484,12 +1571,10 @@ province_event = {
 	trigger = {
 		year = 1910
 		or = {
-			province_id = 1732		# Ghayran
-			province_id = 1720		# Timimoun
 			province_id = 1167		# Abu Dhabi
-			province_id = 1163		# Qatif
+			province_id = 2234		# Curacao
+			province_id = 2264		# Caracas
 			province_id = 2270		# Maracaibo
-			province_id = 1170		# Nizwa 
 		}
 		not = { trade_goods = oil }
 		OR = {
@@ -1524,6 +1609,7 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -1533,7 +1619,14 @@ province_event = {
 
 	trigger = {
 		year = 1912
-		province_id = 1132		# Abadan
+		or = {
+			province_id = 1163		# Qatif
+			province_id = 1732		# Ghayran
+			province_id = 1720		# Timimoun
+			province_id = 2253		# Quibdo
+			province_id = 1132		# Abadan
+			province_id = 1170		# Nizwa
+		}
 		not = { trade_goods = oil }
 		OR = {
 			owner = {
@@ -1782,5 +1875,63 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
+	}
+}
+
+###############################
+#     EXTRA RUBBER EVENTS     #
+###############################
+province_event = {
+	
+	id = 1141
+
+	trigger = {
+		year = 1880
+		or = {
+			province_id = 1384
+			province_id = 1385
+			province_id = 1386
+			province_id = 1394
+			province_id = 1395
+		}
+		not = { trade_goods = rubber }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+					}
+				}
+			}
+			owner = {
+				or = {
+					invention = daimlers_automobile
+					invention = edison_light_bulb
+					infiltration = 1
+					aeronautics = 1
+					}
+			}
+			year = 1900
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1107"
+	desc = "EVTDESC1107"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1107"
+		trade_goods = rubber
+		# life_rating = 5
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }

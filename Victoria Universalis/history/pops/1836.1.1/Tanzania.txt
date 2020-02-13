@@ -45,7 +45,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 14000
 	}
@@ -113,7 +113,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 6000
 	}
@@ -181,39 +181,39 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = yao
 		religion = animist
 		size = 350
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = yao
 		religion = animist
 		size = 200
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = yao
 		religion = animist
 		size = 950
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = yao
 		religion = animist
 		size = 200
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = yao
 		religion = animist
 		size = 17300
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = yao
 		religion = animist
-		size = 11000
+		size = 10000
 	}
 }
 #Lindi (64000/16000 POPS)
@@ -221,13 +221,24 @@
 	aristocrats = {
 		culture = swahili
 		religion = sunni
-		size = 300
+		size = 100
+	}
+	aristocrats = {
+		culture = bedouin
+		religion = ibadi
+		size = 500
+	}
+
+	bureaucrats = {
+		culture = bedouin
+		religion = ibadi
+		size = 25
 	}
 
 	clergymen = {
-		culture = swahili
-		religion = sunni
-		size = 150
+		culture = bedouin
+		religion = ibadi
+		size = 50
 	}
 
 	artisans = {
@@ -249,7 +260,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = yao
 		religion = animist
 		size = 4000
 	}
@@ -260,66 +271,66 @@
 2040 = {
 	aristocrats = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 375
 	}
 
 	clergymen = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 200
 	}
 
 	artisans = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 800
 	}
 
 	soldiers = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 200
 	}
 
 	farmers = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 15425
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 225
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 125
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 600
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 125
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 10925
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 3000
 	}
@@ -334,31 +345,31 @@
 2041 = {
 	aristocrats = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 475
 	}
 
 	clergymen = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 250
 	}
 
 	artisans = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 1100
 	}
 
 	soldiers = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 250
 	}
 
 	farmers = {
 		culture = yao
-		religion = animist
+		religion = sunni
 		size = 15125
 	}
 
@@ -431,67 +442,67 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 450
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 225
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 1150
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 225
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 20950
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 13000
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nyasa
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nyasa
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nyasa
 		religion = sunni
 		size = 200
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nyasa
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nyasa
 		religion = sunni
 		size = 3650
 	}
@@ -561,37 +572,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 150
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
-		size = 75
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 350
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
-		size = 75
+		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 6325
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 7000
 	}
@@ -599,13 +610,13 @@
 	aristocrats = {
 		culture = sukuma
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	clergymen = {
 		culture = sukuma
 		religion = animist
-		size = 75
+		size = 100
 	}
 
 	artisans = {
@@ -617,7 +628,7 @@
 	soldiers = {
 		culture = sukuma
 		religion = animist
-		size = 25
+		size = 100
 	}
 
 	farmers = {
@@ -695,7 +706,7 @@
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = lacustrine_bantu
 		religion = animist
 		size = 24000
 	}
@@ -731,31 +742,31 @@
 	}
 
 	aristocrats = {
-		culture = rundi
+		culture = ruanda
 		religion = animist
 		size = 10
 	}
 
 	clergymen = {
-		culture = rundi
+		culture = ruanda
 		religion = animist
 		size = 25
 	}
 
 	artisans = {
-		culture = rundi
+		culture = ruanda
 		religion = animist
 		size = 50
 	}
 
 	soldiers = {
-		culture = rundi
+		culture = ruanda
 		religion = animist
 		size = 15
 	}
 
 	farmers = {
-		culture = rundi
+		culture = ruanda
 		religion = animist
 		size = 900
 	}
@@ -853,37 +864,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 275
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 150
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 700
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 150
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 12825
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 14000
 	}
@@ -951,67 +962,67 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 475
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 250
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 1250
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 250
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 22775
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = nyasa
 		religion = animist
 		size = 12000
 	}
 
 	aristocrats = {
-		culture = rundi
+		culture = south_forest_bantu
 		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = rundi
+		culture = south_forest_bantu
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = rundi
+		culture = south_forest_bantu
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = rundi
+		culture = south_forest_bantu
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	farmers = {
-		culture = rundi
+		culture = south_forest_bantu
 		religion = animist
 		size = 3650
 	}
@@ -1079,33 +1090,39 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 300
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 5475
+	}
+	
+	slaves = {
+		culture = cushitic
+		religion = sunni
+		size = 2000
 	}
 }
 #Zanzibar Region (156000)
@@ -1143,73 +1160,73 @@
 	}
 
 	aristocrats = {
-		culture = mashriqi
-		religion = shiite
+		culture = bedouin
+		religion = ibadi
 		size = 150
 	}
 
 	bureaucrats = {
-		culture = mashriqi
-		religion = shiite
+		culture = bedouin
+		religion = ibadi
 		size = 75
 	}
 
 	officers = {
-		culture = mashriqi
-		religion = shiite
+		culture = bedouin
+		religion = ibadi
 		size = 75
 	}
 
 	clergymen = {
-		culture = mashriqi
-		religion = shiite
+		culture = bedouin
+		religion = ibadi
 		size = 50
 	}
 
 	artisans = {
-		culture = mashriqi
-		religion = shiite
+		culture = bedouin
+		religion = ibadi
 		size = 200
 	}
 
 	soldiers = {
-		culture = mashriqi
-		religion = shiite
+		culture = bedouin
+		religion = ibadi
 		size = 450
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kilombero
 		religion = sunni
 		size = 400
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kilombero
 		religion = sunni
 		size = 200
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kilombero
 		religion = sunni
 		size = 1050
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kilombero
 		religion = sunni
 		size = 225
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kilombero
 		religion = sunni
 		size = 19125
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = kilombero
 		religion = animist
 		size = 8000
 	}

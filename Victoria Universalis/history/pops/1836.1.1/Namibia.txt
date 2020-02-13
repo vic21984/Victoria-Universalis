@@ -29,7 +29,13 @@
 	farmers = {
 		culture = herero
 		religion = animist
-		size = 5475
+		size = 5175
+	}
+	
+	farmers = {
+		culture = herero
+		religion = protestant
+		size = 300
 	}
 
 	aristocrats = {
@@ -59,7 +65,13 @@
 	farmers = {
 		culture = khoisan
 		religion = animist
-		size = 10925
+		size = 10725
+	}
+	
+	farmers = {
+		culture = khoisan
+		religion = protestant
+		size = 200
 	}
 }
 #Swakopmund (52000/13000 POPS)
@@ -95,31 +107,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 50
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 200
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 3650
 	}
@@ -127,31 +139,31 @@
 #Tsumeb (24000/6000 POPS)
 2080 = {
 	aristocrats = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 100
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 300
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 75
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 5475
 	}
@@ -189,31 +201,31 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 75
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 50
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 250
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 50
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 4575
 	}
@@ -223,31 +235,31 @@
 #Linyati (16000/4000 POPS)
 2081 = {
 	aristocrats = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
-		size = 75
+		size = 100
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 150
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
-		size = 25
+		size = 100
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = kavango
 		religion = animist
 		size = 2700
 	}
@@ -255,25 +267,25 @@
 	aristocrats = {
 		culture = lunda
 		religion = animist
-		size = 15
+		size = 100
 	}
 
 	clergymen = {
 		culture = lunda
 		religion = animist
-		size = 25
+		size = 100
 	}
 
 	artisans = {
 		culture = lunda
 		religion = animist
-		size = 50
+		size = 100
 	}
 
 	soldiers = {
 		culture = lunda
 		religion = animist
-		size = 10
+		size = 100
 	}
 
 	farmers = {
@@ -292,12 +304,6 @@
 		size = 15
 	}
 
-	clergymen = {
-		culture = khoisan
-		religion = animist
-		size = 25
-	}
-
 	artisans = {
 		culture = khoisan
 		religion = animist
@@ -313,7 +319,7 @@
 	farmers = {
 		culture = khoisan
 		religion = animist
-		size = 900
+		size = 1925
 	}
 }
 #Angra Pequena (28000/7000 POPS)

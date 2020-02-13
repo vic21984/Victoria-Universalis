@@ -14,8 +14,8 @@ leader = {
 	name = "von Heideck"
 	type = land
 	date="1833.1.1"
-	personality = romantic
-	background = poet
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -23,16 +23,16 @@ leader = {
 	name = "Demetrios Kalergis"
 	type = land
 	date="1836.1.1"
-	personality = impetuous
-	background = cavalry_school
+	personality = defence_1.1
+	background = attack_2.1
 }
 
 leader = {
 	name = "Ioannis Kolokotronis"
 	type = land
 	date="1833.1.1"
-	personality = aweless
-	background = powerful_friends
+	personality = defence_1.1
+	background = attack_1.1
 	prestige = 0.1
 }
 
@@ -40,8 +40,8 @@ leader = {
 	name = "Antonios Kriezis"
 	type = sea
 	date="1836.1.1"
-	personality = audacious
-	background = expert_raider
+	personality = defence_4.1
+	background = attack_4.1
 }
 
 army = {

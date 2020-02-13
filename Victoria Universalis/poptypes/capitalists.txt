@@ -27,6 +27,7 @@ everyday_needs = {
 	wine = 20
 	tobacco = 20
 	coffee = 20
+	opium = 20
 	pharmaceuticals = 20
 }
 
@@ -40,18 +41,18 @@ life_needs = {
 
 
 luxury_needs = {
-	opium = 10
+	pharmaceuticals = 20
 	oil = 10
 	rubber = 10
-	telephones = 20
-	automobiles = 20
-	aeroplanes = 5
-	radio = 20
-	fuel = 30
-	ammunition = 1 
-	small_arms = 1 
-	clipper_convoy = 2
-	steamer_convoy = 2
+	telephones = 60
+	automobiles = 30
+	aeroplanes = 30
+	radio = 60
+	fuel = 20
+	ammunition = 20
+	small_arms = 20
+	clipper_convoy = 20
+	steamer_convoy = 20
 }
 
 
@@ -59,6 +60,15 @@ country_migration_target =
 {
 	factor = 1
 
+	modifier = {
+		factor = 0.01
+		OR = {
+			government = proletarian_dictatorship
+			government = presidential_dictatorship
+			government = fascist_dictatorship
+			government = absolute_monarchy
+		}
+	}
 	modifier = {
 		factor = 0
 		border_policy = quota_immigration
@@ -93,13 +103,9 @@ country_migration_target =
 		war_exhaustion = 25
 	}			
 	modifier = {
-		factor = 0.01
+		factor = 0
 		war_with = THIS
 	}	
-	modifier = {
-		factor = 1.1
-		has_pop_culture = THIS
-	}
 	modifier = {
 		factor = 1.05
 		vote_franschise = wealth_voting
@@ -113,35 +119,117 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 4.0
-		OR = { 
+		factor = 5.0
+		OR = {
 			continent = north_america
-			continent = south_america
 			continent = oceania
+		}
+		NOT = { month = 7 }
+		THIS = {
+			OR = {
+				is_culture_group = germanic
+				is_culture_group = beneluxian
+				is_culture_group = pan_swiss
+				is_culture_group = scandinavian
+				is_culture_group = south_slavic
+				is_culture_group = pan_romanian
+				is_culture_group = hungarian_culture_group
+				is_culture_group = turko_semitic
+				is_culture_group = central_asian
+				is_culture_group = south_asian
+				is_culture_group = american_cultures
+				is_culture_group = west_african
+				is_culture_group = iberian
+				is_culture_group = czecho_slovak_culture_group
+				is_culture_group = southeast_asian
+				is_culture_group = best_asian
+			}
 		}
 	}
 	modifier = {
-		factor = 0.1
-		NOT = {
-			any_owned_province = {
-				life_rating = 30
-				OR = {
-					AND = {
-						has_pop_type = labourers
-						NOT = { unemployment_by_type = { value = 0.1 type = labourers } }
-					}
-					AND = {
-						has_pop_type = farmers
-						NOT = { unemployment_by_type = { value = 0.1 type = farmers } }
-					}
-					AND = {
-						state_scope = { has_factories = yes }
-						NOT = { unemployment_by_type = { value = 0.1 type = farmers } }
-					}
-				}
+		factor = 5.0
+		continent = south_america
+		month = 7
+		THIS = {
+			OR = {
+				is_culture_group = germanic
+				is_culture_group = beneluxian
+				is_culture_group = pan_swiss
+				is_culture_group = scandinavian
+				is_culture_group = south_slavic
+				is_culture_group = pan_romanian
+				is_culture_group = hungarian_culture_group
+				is_culture_group = turko_semitic
+				is_culture_group = central_asian
+				is_culture_group = south_asian
+				is_culture_group = american_cultures
+				is_culture_group = west_african
+				is_culture_group = iberian
+				is_culture_group = czecho_slovak_culture_group
+				is_culture_group = southeast_asian
+				is_culture_group = best_asian
 			}
 		}
-	}	
+	}
+	modifier = {
+		factor = 5.0
+		OR = {
+			continent = south_america
+		}
+		NOT = { month = 7 }
+		THIS = {
+			OR = {
+				is_culture_group = british
+				is_culture_group = polish_culture_group
+				is_culture_group = arab
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				is_culture_group = neo_european_cultures
+				is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = italian
+				is_culture_group = french
+				is_culture_group = east_slavic
+				is_culture_group = baltic
+				is_culture_group = levantine
+				is_culture_group = iranian_turanian
+				is_culture_group = east_asian
+				is_culture_group = latin_american_cultures
+				is_culture_group = east_african
+				is_culture_group = southern_african
+			}
+		}
+	}
+	modifier = {
+		factor = 5.0
+		OR = {
+			continent = north_america
+			continent = oceania
+		}
+		month = 7
+		THIS = {
+			OR = {
+				is_culture_group = british
+				is_culture_group = polish_culture_group
+				is_culture_group = arab
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				is_culture_group = neo_european_cultures
+				is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = italian
+				is_culture_group = french
+				is_culture_group = east_slavic
+				is_culture_group = baltic
+				is_culture_group = levantine
+				is_culture_group = iranian_turanian
+				is_culture_group = east_asian
+				is_culture_group = latin_american_cultures
+				is_culture_group = east_african
+				is_culture_group = southern_african
+			}
+		}
+	}
 }
 
 migration_target =
@@ -209,10 +297,6 @@ migration_target =
 		}
 	}
 	modifier = {
-		factor = 2
-		is_state_capital = yes
-	}		
-	modifier = {
 		factor = 1.5
 		is_capital = yes
 	}
@@ -243,12 +327,13 @@ migration_target =
 	}
 	modifier = {
 		factor = 2
-		life_rating = 50
+		life_rating = 45
 	}
 }
 
 promote_to =
 {
+
 	artisans =
 	{
 		factor = 0.01
@@ -377,19 +462,19 @@ promote_to =
 		}	
 		group = {
 			modifier = {
-				factor = -2
+				factor = -4
 				state_scope = { bureaucrats = 0.002 }
 			}
 			modifier = {
-				factor = -2
+				factor = -4
 				state_scope = { bureaucrats = 0.004 }
 			}
 			modifier = {
-				factor = -2
+				factor = -4
 				state_scope = { bureaucrats = 0.006 }
 			}
 			modifier = {
-				factor = -2
+				factor = -4
 				state_scope = { bureaucrats = 0.008 }
 			}
 			modifier = {
@@ -4812,6 +4897,80 @@ issues =
 		modifier = {
 			factor = 2 
 			is_next_reform = good_health_care
+		}		
+	modifier = {
+			factor = 0.25
+			country = {
+				civilized = no
+			}
+		}
+		modifier = {
+			factor = 1.25
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.25
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.25
+			consciousness = 9
+		}
+		modifier = {
+			factor = 1.255
+			not = { life_needs = 0.25 }
+		}	
+		modifier = {
+			factor = 1.255
+			not = { life_needs = 0.5 }
+		}
+		modifier = {
+			factor = 1.255
+			not = { life_needs = 0.75 }
+		}
+		modifier = {
+			factor = 1.255
+			not = { life_needs = 1 }
+		}
+		modifier = {	
+			factor = 1.25	
+			state_scope = {
+				not = { poor_strata_life_needs = 1 }
+			}
+		}		
+		modifier = {	
+			factor = 1.25	
+			state_scope = {
+				not = { poor_strata_life_needs = 0.75 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			state_scope = {
+				not = { poor_strata_life_needs = 0.5 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			state_scope = { 
+				not = { poor_strata_life_needs = 0.25 }
+			}
+		}
+	}
+	universal_health_care = { 
+		factor = 1
+		modifier = {
+			factor = 0 
+			OR = {
+				NOT = {
+					is_next_reform = universal_health_care
+				}
+				NOT = { is_ideology_enabled = socialist }
+			}	
+		}
+		modifier = {
+			factor = 3
+			is_next_reform = universal_health_care
 		}		
 	modifier = {
 			factor = 0.25

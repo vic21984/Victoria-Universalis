@@ -1,7 +1,7 @@
 capital = 2101
 primary_culture = boer
 religion = protestant
-government = presidential_dictatorship
+government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty
 literacy = 0.25
@@ -12,12 +12,12 @@ civilized = yes
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
-vote_franschise = none_voting
-public_meetings = no_meeting
-press_rights = free_press
-trade_unions = non_socialist
+vote_franschise = wealth_voting
+public_meetings = yes_meeting
+press_rights = censored_press
+trade_unions = no_trade_unions
 voting_system = first_past_the_post
-political_parties = underground_parties
+political_parties = harassment
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -141,7 +141,7 @@ political_parties = secret_ballots
 
 
 #New Reforms
-conscription = no_draft
+conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal

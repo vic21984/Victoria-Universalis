@@ -1,5 +1,5 @@
 #Volta Region (1212000)
-#uncolonized in 1836/ruled by the Mossi Kingdoms in 1836
+#under the rule of Mossi in 1836
 #Wagadugu (440000/110000 POPS)
 1901 = {
 	aristocrats = {
@@ -11,7 +11,7 @@
 	bureaucrats = {
 		culture = mossi
 		religion = animist
-		size = 100
+		size = 400
 	}
 
 	officers = {
@@ -35,13 +35,13 @@
 	soldiers = {
 		culture = mossi
 		religion = animist
-		size = 1150
+		size = 2150
 	}
 
 	farmers = {
 		culture = mossi
 		religion = animist
-		size = 67825
+		size = 66825
 	}
 
 	slaves = {
@@ -73,13 +73,13 @@
 	soldiers = {
 		culture = mossi
 		religion = animist
-		size = 500
+		size = 1500
 	}
 
 	farmers = {
 		culture = mossi
 		religion = animist
-		size = 27525
+		size = 26525
 	}
 
 	slaves = {
@@ -89,37 +89,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 650
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 325
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 1650
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 325
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 30050
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 8000
 	}
@@ -147,13 +147,13 @@
 	soldiers = {
 		culture = mossi
 		religion = animist
-		size = 350
+		size = 1350
 	}
 
 	farmers = {
 		culture = mossi
 		religion = animist
-		size = 16300
+		size = 15300
 	}
 
 	slaves = {
@@ -163,37 +163,37 @@
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 650
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 350
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 1700
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 350
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 30950
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = gur
 		religion = animist
 		size = 12000
 	}
@@ -378,132 +378,132 @@
 		size = 5000
 	}
 }
-#Orodaro (180000/45000 POPS)
+#Orodaro (360000/90000 POPS)
 1906 = {
 	aristocrats = {
 		culture = dyula
 		religion = sunni
-		size = 75
+		size = 150
 	}
 
 	clergymen = {
 		culture = dyula
 		religion = sunni
-		size = 50
+		size = 100
 	}
 
 	artisans = {
 		culture = dyula
 		religion = sunni
-		size = 175
+		size = 350
 	}
 
 	soldiers = {
 		culture = dyula
 		religion = sunni
-		size = 50
+		size = 2100
 	}
 
 	farmers = {
 		culture = dyula
 		religion = sunni
-		size = 2650
+		size = 3300
 	}
 
 	aristocrats = {
-		culture = mande
-		religion = animist
-		size = 275
-	}
-
-	clergymen = {
-		culture = mande
-		religion = animist
-		size = 150
-	}
-
-	artisans = {
 		culture = mande
 		religion = animist
 		size = 550
 	}
 
-	soldiers = {
-		culture = mande
-		religion = animist
-		size = 150
-	}
-
-	farmers = {
-		culture = mande
-		religion = animist
-		size = 7875
-	}
-
-	aristocrats = {
-		culture = bambara
-		religion = animist
-		size = 375
-	}
-
 	clergymen = {
-		culture = bambara
+		culture = mande
 		religion = animist
-		size = 200
+		size = 300
 	}
 
 	artisans = {
-		culture = bambara
+		culture = mande
 		religion = animist
 		size = 1100
 	}
 
 	soldiers = {
-		culture = bambara
+		culture = mande
 		religion = animist
-		size = 200
+		size = 300
 	}
 
 	farmers = {
-		culture = bambara
+		culture = mande
 		religion = animist
-		size = 18225
+		size = 15750
 	}
 
 	aristocrats = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
-		size = 125
+		size = 750
 	}
 
 	clergymen = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
-		size = 75
+		size = 400
 	}
 
 	artisans = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
-		size = 350
+		size = 2000
 	}
 
 	soldiers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
-		size = 75
+		size = 400
 	}
 
 	farmers = {
-		culture = african_minor
+		culture = bambara
 		religion = animist
-		size = 6375
+		size = 36450
+	}
+
+	aristocrats = {
+		culture = gur
+		religion = animist
+		size = 250
+	}
+
+	clergymen = {
+		culture = gur
+		religion = animist
+		size = 150
+	}
+
+	artisans = {
+		culture = gur
+		religion = animist
+		size = 700
+	}
+
+	soldiers = {
+		culture = gur
+		religion = animist
+		size = 150
+	}
+
+	farmers = {
+		culture = gur
+		religion = animist
+		size = 12750
 	}
 
 	slaves = {
-		culture = african_minor
+		culture = senufo
 		religion = animist
-		size = 6000
+		size = 12000
 	}
 
 }
