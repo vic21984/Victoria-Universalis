@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Version 0.11 - 2/6/2020
 
 ## General gameplay changes:
