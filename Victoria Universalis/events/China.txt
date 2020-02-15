@@ -249,11 +249,11 @@ country_event = {
 		civilized = yes
 		NOT = { government = democracy }
 		NOT = { has_global_flag = warlord_era_begun }
-		NOT = { has_global_flag = republic_of_TPGna }
+		NOT = { has_global_flag = republic_of_China }
 		war = no
 		OR = {
 			average_militancy = 4
-			revanTPGsm = 0.01
+			revanchism = 0.01
 		}
 	}
 
@@ -407,7 +407,7 @@ country_event = {
 			add_accepted_culture = hakka
 			add_accepted_culture = min
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -551,7 +551,7 @@ country_event = {
 			add_accepted_culture = hakka
 			add_accepted_culture = min
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -696,7 +696,7 @@ country_event = {
 			add_accepted_culture = zhuang
 			add_accepted_culture = miao
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -840,7 +840,7 @@ country_event = {
 			add_accepted_culture = yue
 			add_accepted_culture = yi
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -983,7 +983,7 @@ country_event = {
 			}
 			add_accepted_culture = miao
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -1127,7 +1127,7 @@ country_event = {
 			primary_culture = beifaren
 			add_accepted_culture = nanfaren
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -1270,7 +1270,7 @@ country_event = {
 			}
 			add_accepted_culture = yi
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -1415,7 +1415,7 @@ country_event = {
 			add_accepted_culture = nanfaren
 			add_accepted_culture = mongol
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1
@@ -1559,7 +1559,7 @@ country_event = {
 			primary_culture = beifaren
 			add_accepted_culture = nanfaren
 			define_general = {
-				name = "§RTPGang Kai-shek§W"
+				name = "§RChiang Kai-shek§W"
 				picture = asian_general_7
 				personality = defence_2.1
 				background = attack_3.1

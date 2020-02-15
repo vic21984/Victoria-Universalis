@@ -675,7 +675,7 @@ pops = {
 	SLAVE_GROWTH_DIVISOR = 10, -- Slaves have N times lower growth
 	
 	MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
-	LUXURY_CON_CHANGE = 0.001, -- con boost from over-buying luxuary goods
+	LUXURY_CON_CHANGE = 0.1, -- con boost from over-buying luxuary goods
 	INVENTION_IMPACT_ON_DEMAND = 0.000, -- how much each invention in a country increases demand for a product in percent
 	ARTISAN_SUPPRESSED_COLONIAL_GOODS_CATEGORY = 0, -- Goods category index not produced in colonies
 	ISSUE_MOVEMENT_JOIN_LIMIT = 8,

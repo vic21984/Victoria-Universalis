@@ -1,3 +1,13 @@
+#Version 0.111 - 2/15/2020
+
+##General gameplay Changes:
+* Fixed the warlord era event for China.
+* Fixed a missing clause with country migration targets.
+* Set internal migration to provinces with over 10% unemployment to 0 unless you use the internal migration decision.
+
+
+=======
+>>>>>>> 0fba8db07113ea52d5e88ee53ad0d7e7193f16e8
 # Version 0.11 - 2/6/2020
 
 ## General gameplay changes:

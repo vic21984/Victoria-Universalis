@@ -1040,7 +1040,7 @@ political_decisions = {
 		}
 		effect = {
 			administrative_points = 600
-			set_country_flag = state_migration
+			set_country_flag = province_migration
 			random_owned = {
 				limit = {
 					has_building = province_selector

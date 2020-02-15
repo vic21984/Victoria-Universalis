@@ -88,6 +88,13 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = oceania
+				}
+			}
 		}
 	}
 	modifier = {
@@ -265,6 +272,15 @@ migration_target =
 			}
 	}
 	modifier = {
+		factor = 0
+		OR = { 
+			unemployment_by_type = { type = farmers value = 0.1  }
+			unemployment_by_type = { type = labourers value = 0.1  }
+			unemployment_by_type = { type = labourers_gold value = 0.1  }
+		}
+		NOT = { country = { has_country_flag = province_migration } }
+	}
+	modifier = {
 		factor = 1.2
 		total_pops = 150000
 	}	
@@ -279,20 +295,6 @@ migration_target =
 	modifier = {
 		factor = 1.2
 		total_pops = 750000
-	}
-	
-	modifier = {
-		factor = 0
-					AND = {
-				state_scope = {
-					has_factories = no
-				}
-				can_build_factory = no
-			}
-		OR = { 
-			unemployment_by_type = { type = farmers value = 0.1  }
-			unemployment_by_type = { type = labourers value = 0.1  }
-		}
 	}
 	modifier = {
 		factor = 1.2
