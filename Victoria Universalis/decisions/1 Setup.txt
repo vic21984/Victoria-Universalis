@@ -170,35 +170,14 @@ political_decisions = {
 		effect = {
 			JAN = {
 				set_country_flag = jan_mayen
-			}	
+			}
+			any_country = {
+				limit = { invention = mob1 }
+				set_country_flag = mob1_invented
+			}
 		}
 	}
 	
-	chinese_liferating_nerf = {
-		potential = {
-			tag = JAN
-			ai = yes
-			NOT { has_global_flag = chinese_liferating_nerf }
-			CHI = { ai = no }
-		}
-		allow = {
-		}
-		effect = {
-			set_global_flag = chinese_liferating_nerf
-			CHI = {
-				any_owned = {
-					limit = {
-						is_core = CHI
-						life_rating = 32
-						NOT = { life_rating = 35 }
-					}
-					life_rating = -2
-				}
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-
 	chinese_setup = {
 
 		potential = {
@@ -215,6 +194,7 @@ political_decisions = {
 				}
 				set_country_flag = china
 				add_country_modifier = { name = mandate_of_heaven duration = -1 }
+				add_country_modifier = { name = opium_addiction duration = -1 }
 			}
 			TPG = {
 				set_country_flag = china
@@ -566,6 +546,8 @@ political_decisions = {
 					}
 					literacy = 0.2
 				}
+				add_country_modifier = { name = corn_laws duration = -1 }
+				add_country_modifier = { name = unequal_china_treaty duration = -1 }
 			}
 		}
 	}

@@ -868,7 +868,7 @@ demand_reparations = {
 	peace_cost_factor = 15
 	penalty_factor = 1
 	
-	construction_speed = 0.5
+	construction_speed = 1
 
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
@@ -2364,10 +2364,79 @@ demand_for_ally = {
 }
 
 #Chinese CBs
+opium_war = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 1.2
+	crisis = no
+	
+	badboy_factor = 0.5
+	prestige_factor = 0.1
+	peace_cost_factor = 10
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 12
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = no
+
+	can_use = {
+		THIS = {
+			NOT = { has_country_flag = jan_mayen }
+			owns = 1247
+			owns = 1248
+			owns = 1250
+		}
+		has_country_flag = china
+		has_global_flag = opium_outlawed
+		NOT = { has_global_flag = warlord_era_ended }
+		NOT = { year = 1900 }
+		OR = {
+			tag = CHI
+			tag = TPG
+		}
+		THIS = {
+			civilized = yes
+		}
+	}
+	
+	po_reparations = yes
+
+	war_name = OPIUM_WAR_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+		THIS = {
+			add_country_modifier = { name = unequal_china_treaty duration = -1 }
+		}
+		clr_global_flag = opium_outlawed
+		add_country_modifier = { name = opium_addiction duration = -1 }
+		add_country_modifier = { name = opium_war_lost duration = 7300 }
+		any_owned = {
+			limit = { province_id = 1496 }
+			secede_province = THIS
+		}
+	}
+}
+
 demand_chinese_concession_casus_belli = {
 	sprite_index = 7
 	is_triggered_only = yes
-	months = 0
+	months = 12
 	construction_speed = 1.2
 	crisis = no
 	

@@ -8,7 +8,7 @@ everyday_needs = {
 	cigarettes = 4.5
 	pharmaceuticals = 2.4
 	tea = 6
-	coffee = 3	
+	coffee = 4.5	
 	liquor = 15
 	regular_clothes = 18
 	furniture = 18
@@ -27,13 +27,13 @@ life_needs = {
 
 
 luxury_needs = {	
-	telephones = 12
-	automobiles = 3
-	radio = 12
+	telephones = 6
+	automobiles = 1.5
+	radio = 6
 	cigarettes = 4.5
 	pharmaceuticals = 2.4
 	tea = 6
-	coffee = 3	
+	coffee = 4.5	
 	liquor = 15
 	regular_clothes = 18
 	furniture = 18
@@ -183,7 +183,41 @@ promote_to =
 			factor = -100
 			NOT = { is_accepted_culture = yes }
 			NOT = { is_primary_culture = yes }
-		}	
+		}
+		group = {
+			modifier = {
+				factor = 2
+				country = {
+					total_pops = 17500000
+				}
+			}
+			modifier = {
+				factor = 2
+				country = {
+					total_pops = 30000000
+				}
+			}
+			modifier = {
+				factor = 4
+				country = {
+					total_pops = 60000000
+				}
+			}
+			modifier = {
+				factor = 8
+				country = {
+					total_pops = 150000000
+				}
+			}
+		}
+		modifier = {
+			factor = 20
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+			location = { is_colonial = yes }
+		}
 		group = {
 			modifier = {
 				factor = -4
@@ -591,24 +625,24 @@ promote_to =
 	craftsmen = {
 		factor = 0.01
 			modifier = {
-				factor = -5
+				factor = -3
 				not = { literacy = 0.1 }
 			}
 			modifier = {
 				factor = -3
-				not = { literacy = 0.15 }
-			}
-			modifier = {
-				factor = -2
 				not = { literacy = 0.2 }
 			}
 			modifier = {
-				factor = -2
-				not = { literacy = 0.25 }
+				factor = -3
+				not = { literacy = 0.3 }
 			}
 			modifier = {
 				factor = -2
-				not = { literacy = 0.3 }
+				not = { literacy = 0.4 }
+			}
+			modifier = {
+				factor = -2
+				not = { literacy = 0.5 }
 			}
 		group = {
 			modifier = {
@@ -946,37 +980,69 @@ ideologies = {
 			factor = 1.1
 			militancy = 6
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			militancy = 7
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			militancy = 8
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			militancy = 9
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 5
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 6
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 7
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 8
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 0.5

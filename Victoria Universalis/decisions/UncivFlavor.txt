@@ -147,6 +147,31 @@ political_decisions = {
 			}
 		}
 	}
+	
+	invite_european_military_advisors = {
+		picture = marching_soldiers
+		potential = {
+			OR = {
+				capital_scope = { continent = africa }
+				capital_scope = { continent = asia }
+			}
+			NOT = { has_country_flag = foreign_military_advisors }
+		}
+
+		allow = {
+			civilized = yes
+			money = 500000
+		}
+
+		effect = {
+			set_country_flag = foreign_military_advisors
+			add_country_modifier = { name = european_military_advisors duration = 7300 }
+			money = -500000
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
 	annals_of_the_fulani_jihad = {
 		potential = {
 			tag = SOK

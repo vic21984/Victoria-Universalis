@@ -1133,7 +1133,7 @@ electricity = {
 }
 synthetic_polymers = {
 	area = chemistry_and_electricity
-	year = 1910
+	year = 1900
 	cost = 21600
 
 	supply_limit = 0.50
@@ -1156,6 +1156,8 @@ synthetic_polymers = {
 			industrial_score = 1500
 		}
 	}
+
+	activate_building = synthetic_rubber_factory
 	
 }
 

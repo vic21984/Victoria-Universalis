@@ -29,62 +29,62 @@ political_decisions = {
 		}
 	}
 
-	conquest_of_darfur = {
-		picture = conquest_of_the_south	
-		potential = {
-			EGY_1834 = { owned_by = THIS }
-			1841 = { empty = yes }
-		}
-		
-		allow = {
-			OR = {
-				nationalism_n_imperialism = 1
-				year = 1870
-			}
-		}
-		
-		effect = {
-			1841 = {
-				secede_province = THIS
-			}
-			1842 = {
-				secede_province = THIS
-			}
-		}
-	}
-	
-	conquest_of_equatoria = {
-		picture = conquest_of_the_south		
-		potential = {
-			EGY_1838 = { owned_by = THIS }
-			1843 = { empty = yes }
-		}
-		
-		allow = {
-			OR = {
-				nationalism_n_imperialism = 1
-				year = 1870
-			}
-		}
-		
-		effect = {
-			1843 = {
-				secede_province = THIS
-			}
-			1844 = {
-				secede_province = THIS
-			}
-			1845 = {
-				secede_province = THIS
-			}
-			1846 = {
-				secede_province = THIS
-			}
-			1847 = {
-				secede_province = THIS
-			}
-		}
-	}
+#	conquest_of_darfur = {
+#		picture = conquest_of_the_south	
+#		potential = {
+#			EGY_1834 = { owned_by = THIS }
+#			1841 = { empty = yes }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				nationalism_n_imperialism = 1
+#				year = 1870
+#			}
+#		}
+#		
+#		effect = {
+#			1841 = {
+#				secede_province = THIS
+#			}
+#			1842 = {
+#				secede_province = THIS
+#			}
+#		}
+#	}
+#	
+#	conquest_of_equatoria = {
+#		picture = conquest_of_the_south		
+#		potential = {
+#			EGY_1838 = { owned_by = THIS }
+#			1843 = { empty = yes }
+#		}
+#		
+#		allow = {
+#			OR = {
+#				nationalism_n_imperialism = 1
+#				year = 1870
+#			}
+#		}
+#		
+#		effect = {
+#			1843 = {
+#				secede_province = THIS
+#			}
+#			1844 = {
+#				secede_province = THIS
+#			}
+#			1845 = {
+#				secede_province = THIS
+#			}
+#			1846 = {
+#				secede_province = THIS
+#			}
+#			1847 = {
+#				secede_province = THIS
+#			}
+#		}
+#	}
 	
 	conquest_of_southern_ethiopia = {
 		picture = conquest_of_the_south

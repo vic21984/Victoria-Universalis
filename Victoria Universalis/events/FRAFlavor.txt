@@ -1177,3 +1177,31 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 37228
+	title = "EVTNAME37228"
+	desc = "EVTDESC37228"
+	picture = "paris_commune"
+
+	trigger = {
+		has_country_flag = napoleon_iii
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+		}
+		revanchism = 0.01
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA37228"
+		government = democracy
+		political_reform = universal_voting
+		political_reform = state_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_secret_ballots
+	}
+}

@@ -330,70 +330,6 @@ local_economic_downturn = {
 	icon = 12
 }
 
-##### AMERICAN CIVIL WAR #####
-free_staters = {
-	life_rating = -0.02
-	pop_militancy_modifier = 0.05
-	icon = 1
-}
-
-border_ruffians = {
-	life_rating = -0.02
-	pop_militancy_modifier = 0.05
-	icon = 18
-}
-
-underground_railroad = {
-	pop_militancy_modifier = 0.05
-	pop_consciousness_modifier = 0.025
-	icon = 4
-}
-
-abolitionist_society = {
-	pop_militancy_modifier = 0.01
-	pop_consciousness_modifier = 0.025
-	icon = 8
-}
-
-knights_of_the_golden_circle = {
-	pop_consciousness_modifier = 0.1
-	pop_militancy_modifier = 0.1
-	icon = 18
-}
-
-american_anti_slavery_society = {
-	pop_consciousness_modifier = 0.1
-	icon = 8
-}
-
-copperhead_democrats = {
-	pop_consciousness_modifier = 0.1
-	icon = 20
-}
-
-anaconda_plan = {
-	war_exhaustion = 0.05
-	icon = 18
-}
-
-the_homestead_act = {
-	global_immigrant_attract = 0.5	#50%
-	global_assimilation_rate = 2
-	icon = 9
-}
-
-the_slavery_debate = {
-	global_pop_consciousness_modifier = 0.05
-	icon = 4
-}
-
-the_bonnie_blue_flag = {
-	leadership = 2
-	mobilisation_economy_impact = -0.25
-	mobilisation_size = 0.1
-	icon = 15
-}
-
 ##### WORKPLACE EVENTS #####
 silk_famine = {
 	farm_rgo_eff = -0.5
@@ -474,56 +410,6 @@ organic_work = {
 	farm_rgo_eff = 0.04
 	mine_rgo_eff = 0.04
 	icon = 13
-}
-
-##### GREAT POWERS #####
-protector_of_eastern_christendom = {
-	prestige = 0.1
-	icon = 17
-}
-
-egyptian_excavations = {
-	prestige = 0.1
-	icon = 5
-}
-
-international_negotiations = {
-	badboy = 0.01
-	icon = 17
-}
-
-the_statue_of_liberty = {
-	prestige = 0.4
-	global_assimilation_rate = 5.0
-	icon = 15
-}
-
-the_congo_reform_association = {
-	badboy = 0.2
-	icon = 17
-}
-
-### GER - GERMANY, PRU - PRUSSIA ###
-germania_werft = {
-	local_repair = 0.5
-	local_ship_build = -0.05
-	icon = 15
-}
-
-ruhr_boom = {
-	factory_owner_cost = -0.5
-	global_population_growth = 0.001
-	factory_throughput = 0.05
-	icon = 11
-}
-
-prussian_general_staff = {
-	org_regain = 0.15
-	land_organisation = 0.15
-	land_unit_start_experience = 5
-	reinforce_speed = 0.25
-	leadership = 2
-	icon = 15
 }
 
 ##### Boer War #####
@@ -617,6 +503,7 @@ great_depression = {
 }
 
 central_bank_established = {
+	max_loan_modifier = 1
 	loan_interest = -0.02
 	icon = 11
 }
@@ -633,67 +520,6 @@ economic_boom = {
 	icon = 11
 }
 
-#### ENG - ENGLAND #####
-corn_laws_repealed = {
-	max_tariff = -0.05
-	global_pop_militancy_modifier = -0.02
-	global_pop_consciousness_modifier = 0.01
-	icon = 1
-}
-
-the_yard = {
-	tax_efficiency = 0.01
-	icon = 1
-}
-
-#### SPA - Spain ####
-la_guardia_civil = {
-	tax_efficiency = 0.01
-	icon = 1
-}
-
-#### FRA - France ####
-the_french_foreign_legion = {
-	prestige = 0.01
-	global_immigrant_attract = 0.01	#1%..
-	icon = 17
-}
-
-the_eiffel_tower = {
-	prestige = 0.05
-	icon = 15
-}
-
-#### SWI - Switzerland ####
-signed_the_geneva_convention = {
-	war_exhaustion = -0.02
-	badboy = 0.02
-	icon = 7
-}
-
-#### SWE - Sweden ####
-folkis_educates = {
-	research_points_modifier = 0.01
-	icon = 5
-}
-
-motala_verkstad = {
-	local_factory_throughput = 0.05
-	icon = 13
-}
-
-### NEN - New England ###
-miskatonic_campus = {
-	research_points_modifier = 0.1
-	pop_consciousness_modifier = 0.01
-	icon = 5
-}
-
-### BAV - Bavaria ###
-the_walhalla = {
-	prestige = 0.01
-	icon = 15
-}
 
 ######CB generation######
  CB_gen_plus = {
@@ -772,6 +598,23 @@ requested_grant = {
 
 immunity_from_influenza = {
 	icon = 17
+}
+
+strategic_rgo = {
+	local_rgo_throughput = 5
+	farm_rgo_size = 1
+	mine_rgo_size = 1
+	icon = 13
+}
+
+european_military_advisors = {
+	army_tech_research_bonus = 0.2
+	land_organisation = -0.2
+	supply_consumption = 0.2
+	min_military_spending = 0.5
+	tax_efficiency = -0.05
+	global_pop_militancy_modifier = 0.03
+	
 }
 
 ########## PROVINCE SELECTOR DECISIONS ##########
@@ -924,21 +767,222 @@ colonial_railroad_nerf6 = {
 
 ########## COUNTRY EVENT MODIFIERS ##########
 
+##### GREAT POWERS #####
+protector_of_eastern_christendom = {
+	prestige = 0.1
+	icon = 17
+}
+
+egyptian_excavations = {
+	prestige = 0.1
+	icon = 5
+}
+
+international_negotiations = {
+	badboy = 0.01
+	icon = 17
+}
+
+the_congo_reform_association = {
+	badboy = 0.2
+	icon = 17
+}
+
+unequal_china_treaty = {
+	tax_efficiency = 0.05
+	goods_demand = -0.05
+	icon = 9
+}
+
+##### USA - UNITED STATES #####
+free_staters = {
+	life_rating = -0.02
+	pop_militancy_modifier = 0.05
+	icon = 1
+}
+
+border_ruffians = {
+	life_rating = -0.02
+	pop_militancy_modifier = 0.05
+	icon = 18
+}
+
+underground_railroad = {
+	pop_militancy_modifier = 0.05
+	pop_consciousness_modifier = 0.025
+	icon = 4
+}
+
+abolitionist_society = {
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.025
+	icon = 8
+}
+
+knights_of_the_golden_circle = {
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.1
+	icon = 18
+}
+
+american_anti_slavery_society = {
+	pop_consciousness_modifier = 0.1
+	icon = 8
+}
+
+copperhead_democrats = {
+	pop_consciousness_modifier = 0.1
+	icon = 20
+}
+
+anaconda_plan = {
+	war_exhaustion = 0.05
+	icon = 18
+}
+
+the_homestead_act = {
+	global_immigrant_attract = 0.5	#50%
+	global_assimilation_rate = 2
+	icon = 9
+}
+
+the_slavery_debate = {
+	global_pop_consciousness_modifier = 0.05
+	icon = 4
+}
+
+the_bonnie_blue_flag = {
+	leadership = 2
+	mobilisation_economy_impact = -0.25
+	mobilisation_size = 0.1
+	icon = 15
+}
+
+the_statue_of_liberty = {
+	prestige = 0.4
+	global_assimilation_rate = 5.0
+	icon = 15
+}
+
+### GER - GERMANY, PRU - PRUSSIA ###
+germania_werft = {
+	local_repair = 0.5
+	local_ship_build = -0.05
+	icon = 15
+}
+
+ruhr_boom = {
+	factory_owner_cost = -0.5
+	global_population_growth = 0.001
+	factory_throughput = 0.05
+	icon = 11
+}
+
+prussian_general_staff = {
+	org_regain = 0.15
+	land_organisation = 0.15
+	land_unit_start_experience = 5
+	reinforce_speed = 0.25
+	leadership = 2
+	icon = 15
+}
+
+die_wacht_am_rhein = {
+	mobilisation_size = 0.02
+	icon = 15
+}
+
+#### ENG - ENGLAND #####
+corn_laws = {
+	max_tariff = 0.05
+	core_pop_militancy_modifier = 0.03
+	core_pop_consciousness_modifier_modifier = 0.03
+	goods_demand = 0.1
+	icon = 10
+}
+
+the_yard = {
+	administrative_efficiency_modifier = 0.10
+	icon = 1
+}
+
+irish_potato_blight = {
+	pop_militancy_modifier = 0.1
+	pop_consciousness_modifier = 0.15
+	local_rgo_throughput = -2
+	immigrant_push = 1
+	population_growth = -0.001
+	icon = 20
+}
+
+#### SPA - Spain ####
+la_guardia_civil = {
+	administrative_efficiency_modifier = 0.05
+	icon = 1
+}
+
+#### FRA - France ####
+the_french_foreign_legion = {
+	prestige = 0.01
+	global_immigrant_attract = 0.01	#1%..
+	icon = 17
+}
+
+the_eiffel_tower = {
+	prestige = 0.05
+	icon = 15
+}
+
+haussmanns_renovations = {
+	farm_rgo_size = 0.5
+	mine_rgo_size = 0.5
+	icon = 13
+}
+
+#### SWI - Switzerland ####
+signed_the_geneva_convention = {
+	war_exhaustion = -0.02
+	badboy = 0.02
+	icon = 7
+}
+
+#### SWE - Sweden ####
+folkis_educates = {
+	research_points_modifier = 0.01
+	icon = 5
+}
+
+motala_verkstad = {
+	local_factory_throughput = 0.05
+	icon = 13
+}
+
+### NEN - New England ###
+miskatonic_campus = {
+	research_points_modifier = 0.1
+	pop_consciousness_modifier = 0.01
+	icon = 5
+}
+
+### BAV - Bavaria ###
+the_walhalla = {
+	prestige = 0.01
+	icon = 15
+}
+
+### SER - SERBIA, GRE - GREECE, WAL - WALLACHIA  ###
 balkan_size_modifier = {
 	farm_rgo_size = 1
 	mine_rgo_size = 1
 	icon = 13
 }
 
-christian_subjugation = {
-	tax_efficiency = 0.1
-	mobilisation_size = 0.02
-	education_efficiency_modifier = -0.2
-	global_pop_militancy_modifier = 0.02
-	assimilation_rate = -1
-	icon = 16
+balkan_liberation_war = {
+	supply_consumption = -0.2
+	icon = 15
 }
 
+### AUS - AUSTRIA ###
 common_army_0 = {
 	mobilisation_size = 0.04
 	icon = 15
@@ -958,18 +1002,21 @@ common_army_3 = {
 	icon = 15
 }
 
-balkan_liberation_war = {
-	supply_consumption = -0.2
-	icon = 15
+### TUR - OTTOMAN EMPIRE ###
+christian_subjugation = {
+	tax_efficiency = 0.1
+	mobilisation_size = 0.02
+	education_efficiency_modifier = -0.3
+	global_pop_militancy_modifier = 0.02
+	assimilation_rate = -2
+	icon = 16
 }
 
-strategic_rgo = {
-	local_rgo_throughput = 5
-	farm_rgo_size = 1
-	mine_rgo_size = 1
-	icon = 13
+oriental_truce = {
+	icon = 6
 }
 
+### CHI - CHINA ###
 chinese_confusion = {
 	land_organisation = -2
 	icon = 16
@@ -980,6 +1027,13 @@ mandate_of_heaven = {
 	icon = 5
 }
 
-oriental_truce = {
+opium_addiction = {
+	education_efficiency_modifier = -0.5
+	RGO_throughput = -0.2
+	factory_throughput = -0.2
+	icon = 18
+}
+
+opium_war_lost = { 
 	icon = 6
 }

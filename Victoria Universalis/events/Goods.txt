@@ -1935,3 +1935,55 @@ province_event = {
 		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
+
+############################
+#      COFFEE EVENTS       #
+############################
+
+province_event = {
+	
+	id = 1142
+
+	trigger = {
+		year = 1880
+		or = {
+			province_id = 1365
+			province_id = 1368
+			province_id = 1369
+			province_id = 1374
+			province_id = 1375
+			province_id = 1380
+			province_id = 1381
+			province_id = 2117
+			province_id = 2186
+			province_id = 2283
+		}
+		not = { trade_goods = coffee_beans }
+		OR = {
+			owner = {
+				part_of_sphere = yes
+				sphere_owner = {
+					invention = tractors
+				}
+			}
+			owner = {
+				invention = tractors
+			}
+			year = 1900
+		}
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+	}
+
+	title = "EVTNAME1142"
+	desc = "EVTDESC1142"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1142"
+		trade_goods = coffee_beans
+	}
+}

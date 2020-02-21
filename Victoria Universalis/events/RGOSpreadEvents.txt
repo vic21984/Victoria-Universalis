@@ -16,8 +16,8 @@ province_event = {
 			trade_goods = fruit
 			trade_goods = grain
 			trade_goods = tobacco
-			trade_goods = tea
-			trade_goods = coffee
+			trade_goods = tea_leaves
+			trade_goods = coffee_beans
 			trade_goods = opium
 		}	
 		NOT = {
@@ -49,8 +49,8 @@ province_event = {
 						trade_goods = fruit
 						trade_goods = grain
 						trade_goods = tobacco
-						trade_goods = tea
-						trade_goods = coffee
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
 						trade_goods = opium
 					}	
 				}						
@@ -191,8 +191,8 @@ province_event = {
 			trade_goods = fruit
 			trade_goods = grain
 			trade_goods = tobacco
-			trade_goods = tea
-			trade_goods = coffee
+			trade_goods = tea_leaves
+			trade_goods = coffee_beans
 			trade_goods = opium
 		}	
 		NOT = {
@@ -224,8 +224,8 @@ province_event = {
 						trade_goods = fruit
 						trade_goods = grain
 						trade_goods = tobacco
-						trade_goods = tea
-						trade_goods = coffee
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
 						trade_goods = opium
 					}	
 				}				
@@ -320,8 +320,8 @@ country_event = {
 						trade_goods = fruit
 						trade_goods = grain
 						trade_goods = tobacco
-						trade_goods = tea
-						trade_goods = coffee
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
 						trade_goods = opium
 					}	
 				}
@@ -430,8 +430,8 @@ country_event = {
 						trade_goods = fruit
 						trade_goods = grain
 						trade_goods = tobacco
-						trade_goods = tea
-						trade_goods = coffee
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
 						trade_goods = opium
 					}	
 				}

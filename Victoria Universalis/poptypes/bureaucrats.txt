@@ -37,7 +37,7 @@ everyday_needs = {
 	cigarettes = 1.5
 	pharmaceuticals = 0.8
 	tea = 3
-	coffee = 0.6	
+	coffee = 2	
 	liquor = 3
 	regular_clothes = 4
 	furniture = 4
@@ -64,7 +64,7 @@ luxury_needs = {
 	cigarettes = 1.5
 	pharmaceuticals = 0.8
 	tea = 3
-	coffee = 0.6
+	coffee = 2
 	liquor = 3
 	regular_clothes = 4
 	furniture = 4
@@ -998,10 +998,6 @@ ideologies = {
 	reactionary = {
 		factor = 1.1
 		modifier = {
-			factor = 0.5
-			not = { militancy = 6 }
-		}
-		modifier = {
 			factor = 1.2
 			ruling_party_ideology = reactionary
 		}
@@ -1037,37 +1033,73 @@ ideologies = {
 			factor = 1.1
 			militancy = 6
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			militancy = 7
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			militancy = 8
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			militancy = 9
 			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 5
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 6
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 7
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
 		}
 		modifier = {
 			factor = 1.1
 			poor_strata_militancy = 8
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 0.5
+			not = { militancy = 6 }
 		}
 	}
 

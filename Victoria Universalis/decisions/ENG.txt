@@ -12,10 +12,7 @@ political_decisions = {
 		}
 
 		effect = {
-			add_country_modifier = {
-				name = corn_laws_repealed
-				duration = 3650
-			}
+			remove_country_modifier = corn_laws
 			any_pop = {
 				militancy = -1
 				consciousness = 1

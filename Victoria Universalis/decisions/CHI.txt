@@ -15,41 +15,7 @@ political_decisions = {
 			factor = 0
 		}
 	}
-#	change_culture_nanfaren = {
-#		picture = south_han
-#		potential = {
-#			tag = CHI
-#			accepted_culture = beifaren
-#		}
-#		allow = {
-#			accepted_culture = beifaren
-#		}
-#		effect = {
-#			remove_accepted_culture = beifaren
-#			add_accepted_culture = nanfaren
-#		}
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
-#	change_culture_beifaren = {
-#		picture = north_han
-#		potential = {
-#			tag = CHI
-#			accepted_culture = nanfaren
-#		}
-#		allow = {
-#			accepted_culture = nanfaren
-#		}
-#		effect = {
-#			remove_accepted_culture = nanfaren
-#			add_accepted_culture = beifaren
-#		}
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
-
+	
 	chinese_diplomatic_isolationism = {
 		potential = {
 			tag = CHI
@@ -103,6 +69,43 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	outlaw_opium = {
+		picture = outlaw_opium
+		potential = {
+			OR = {
+				tag = CHI
+				tag = TPG
+			}
+			has_country_modifier = opium_addiction
+			NOT = { has_global_flag = opium_outlawed }
+		}
+		allow = {
+#			year = 1840
+			war = no
+			NOT = { has_country_modifier = opium_war_lost }
+		}
+		effect = {
+			remove_country_modifier = opium_addiction
+			set_global_flag = opium_outlawed
+			any_country = {
+				limit = {
+					has_country_modifier = unequal_china_treaty
+				}
+				remove_country_modifier = unequal_china_treaty
+				country_event = {
+					id = 90824
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				year = 1850
+			}
 		}
 	}
 	

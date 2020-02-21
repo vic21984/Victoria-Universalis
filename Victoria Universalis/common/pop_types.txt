@@ -851,6 +851,7 @@ emigration_chance =
 		modifier = {
 			factor = 0.02
 			unemployment = 0.2
+			location = { controlled_by = owner }
 		}
 		modifier = {
 			factor = 0.02
@@ -873,7 +874,7 @@ emigration_chance =
 		}
 	}
 	modifier = {
-		factor = -0.08
+		factor = -0.09
 		OR = {
 			is_culture_group = east_asian
 		}
@@ -888,7 +889,7 @@ emigration_chance =
 		country = { border_policy = closed_borders }
 	}
 	modifier = {
-		factor = 0.10
+		factor = 0.11
 		NOT = {
 			OR = { 
 				continent = north_america

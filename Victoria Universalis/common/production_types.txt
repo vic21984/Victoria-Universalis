@@ -130,7 +130,7 @@ cement_template = {
 ############# LATE GAME FACTORIES
 
 aeroplane_factory = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = {
 		machine_parts = 1	#36.5
 		electric_gear = 2	#32
@@ -150,7 +150,7 @@ aeroplane_factory = {
 }
 
 barrel_factory = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = {   
 		automobiles = 0.3		#21
 		machine_parts = 0.85	#29.2
@@ -174,7 +174,7 @@ barrel_factory = {
 }
 
 automobile_factory = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = {     
 		machine_parts = 1.05	#36.5
 		electric_gear = 1.5	#24
@@ -199,7 +199,7 @@ automobile_factory = {
 }
 
 radio_factory = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = {      
 		glass = 10 		#29
 		electric_gear = 3	#48  	total input+maint = 89.15
@@ -217,7 +217,7 @@ radio_factory = {
 }
 
 telephone_factory = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = {       
 		glass = 15 		#43.5
 		electric_gear = 2.5	#40 	total input+maint = 95.65
@@ -237,13 +237,13 @@ telephone_factory = {
 ############# STRATEGIC FACTORIES
 
 electric_gear_factory = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = { 
 		rubber = 4		#28
 		steel = 5		#23.5	total input+maint = 63.65
 	}
 	output_goods = electric_gear 
-	value = 5			#80
+	value = 4.5			#72
 	bonus = {
 		trigger = { trade_goods_in_state = rubber }
 		value = 0.15
@@ -259,7 +259,7 @@ electric_gear_factory = {
 }
 
 machine_parts_factory = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = {    
 		steel = 9		#42.3
 		coal = 5		#11.5  total input+maint = 65.95
@@ -277,22 +277,54 @@ machine_parts_factory = {
 }
 
 synthetic_oil_factory = {       
-	template = machine_part_user_template
+	template = factory_template		#10.325
 	input_goods = { 
-		coal = 12		#27.6	total input+maint = 39.75
+		coal = 12		#27.6	total input+maint = 37.925
 	}
 	output_goods = oil 
-	value = 2.8			#33.6
+	value = 2.6			#31.2
 	bonus = {
 		trigger = { trade_goods_in_state = coal }
 		value = 0.25
 	}
 }
 
+synthetic_rubber_factory = {       
+	template = factory_template		#10.325
+	input_goods = {
+		coal = 8		#13.8
+		oil = 0.75		#9		total input+maint = 33.125
+	}
+	output_goods = rubber 
+	value = 3.8			#26.6
+	bonus = {
+		trigger = { trade_goods_in_state = oil }
+		value = 0.25
+	}
+}
+
+synthetic_nitrate_factory = {       
+	template = factory_template		#10.325
+	input_goods = { 
+		coal = 3.8		#8.74	
+		iron = 0.5		#1.75 	total input+maint = 20.815
+	}
+	output_goods = sulphur
+	value = 2.5			#15
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.20
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = iron }
+		value = 0.05
+	}
+}
+
 ############# ADVANCED FACTORIES
 
 fuel_refinery = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = { 
 		oil = 2.5			#30	total input+maint = 36.325
 	}
@@ -310,7 +342,7 @@ fuel_refinery = {
 }
 
 steamer_shipyard = {       
-	template = machine_part_user_template
+	template = machine_part_user_template	#12.15
 	input_goods = { 
 		steel = 25		#117.5
 		coal = 13		#29.9
@@ -332,7 +364,7 @@ steamer_shipyard = {
 ############# LUXURY GOODS FACTORIES
 
 luxury_clothes_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {   
 		regular_clothes = 1	#5.8
 		silk = 4		#44	total input+maint = 60.125
@@ -350,7 +382,7 @@ luxury_clothes_factory = {
 }
 
 luxury_furniture_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = { 
 		furniture = 2	 	#9.8
 		tropical_wood = 6 	#32.4	total input+maint = 52.525
@@ -370,7 +402,7 @@ luxury_furniture_factory = {
 ############# MEDIUM FACTORIES
 
 pharmaceutical_plant = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {        
 		opium = 4		#16 total input+maint = 23.125
 	}
@@ -380,7 +412,7 @@ pharmaceutical_plant = {
 
 
 steel_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = { 
 		iron = 20		#70
 		coal = 4		#9.2 total input+maint = 89.525
@@ -399,7 +431,7 @@ steel_factory = {
 }
 
 artillery_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = { 
 		explosives = 1.5		#30
 		steel = 6		#37.6   total input+maint = 77.925
@@ -417,7 +449,7 @@ artillery_factory = {
 }
 
 clipper_shipyard = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {         
 		fabric = 80		#144
 		lumber = 80		#80
@@ -441,7 +473,7 @@ clipper_shipyard = {
 }
 
 small_arms_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {        
 		ammunition = 1.0	#17.5
 		steel = 1.5		#7.05		total input+maint = 28.55
@@ -462,7 +494,7 @@ small_arms_factory = {
 ############# COMMON FACTORIES
 
 furniture_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = { 
 		lumber = 30		#30		total input+maint = 40.325
 	}
@@ -479,7 +511,7 @@ furniture_factory = {
 }
 
 paper_mill = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = { 
 		timber = 50		#45	total input+maint = 55.325
 	}
@@ -492,7 +524,7 @@ paper_mill = {
 }
 
 regular_clothes_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {  
 		fabric = 40		#72	total input+maint = 82.325
 	}
@@ -505,7 +537,7 @@ regular_clothes_factory = {
 }
        
 explosives_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {   
 		fertilizer = 3		#30
 		ammunition = 0.8	#14	total input+maint = 54.325
@@ -523,7 +555,7 @@ explosives_factory = {
 }
 
 cotton_fabric_factory = {       
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = {     
 		cotton = 18		#39.6
 		dye = 2			#24 total input+maint = 73.925
@@ -549,7 +581,7 @@ cotton_fabric_factory = {
 
 
 wool_fabric_factory = {       
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = {     
 		wool = 24		#20
 		dye = 0.5		#8	total input+maint = 36.25
@@ -572,7 +604,7 @@ wool_fabric_factory = {
 }
 
 ammunition_factory = {       
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = {      
 		sulphur = 2		#12
 		steel = 4		#18.8	total input+maint = 35.05
@@ -590,7 +622,7 @@ ammunition_factory = {
 }
 
 canned_food_factory = {       
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = { 
 		steel = 0.75 	#3.525
 		cattle = 6 		#12.6
@@ -619,7 +651,7 @@ canned_food_factory = {
 }
        
 dye_factory = {       
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = {     
 		coal = 9   		#20.7	total input+maint = 24.95
 	}
@@ -632,7 +664,7 @@ dye_factory = {
 }
 
 cigarette_factory = {
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = {   
 		tobacco = 5		#5.5
 		paper = 1		#3.4	total input+maint = 13.15
@@ -642,7 +674,7 @@ cigarette_factory = {
 }
 
 tea_packaging_factory = {
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = {   
 		tea_leaves = 5	#13
 		paper = 1		#3.4	total input+maint = 20.65
@@ -652,7 +684,7 @@ tea_packaging_factory = {
 }
 
 coffee_packaging_factory = {
-	template = cheap_factory_template
+	template = cheap_factory_template	#4.25
 	input_goods = {   
 		coffee_beans = 5	#10.5
 		iron = 0.5			#1.75	total input+maint = 17.1
@@ -666,7 +698,7 @@ coffee_packaging_factory = {
 
 
 liquor_distillery = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {        
 		grain = 6.5		#14.95
 		glass = 2		#5.8	total input+maint = 31.075
@@ -684,7 +716,7 @@ liquor_distillery = {
 }
 
 winery = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {  	
 		fruit = 9		#16.2
 		glass = 2	#5.8	total input+maint = 32.375
@@ -702,7 +734,7 @@ winery = {
 }
 
 lumber_mill = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {       
 		timber = 70		#63	total input+maint = 73.325
 	}
@@ -717,7 +749,7 @@ lumber_mill = {
 
 
 cement_factory = {       
-	template = cement_template
+	template = cement_template		#7.3
 	input_goods = {           
 		coal = 12		#27.6		total input+maint = 34.9
 	} 
@@ -730,7 +762,7 @@ cement_factory = {
 }
 
 glass_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {            
 		coal = 10		#23		total input+maint = 33.325
 	}
@@ -743,7 +775,7 @@ glass_factory = {
 }
 
 fertilizer_factory = {       
-	template = factory_template
+	template = factory_template		#10.325
 	input_goods = {   
 		sulphur = 5		#30		total input+maint = 40.325
 	}

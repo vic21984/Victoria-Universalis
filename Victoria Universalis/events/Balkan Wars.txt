@@ -79,6 +79,10 @@ country_event = {
 					limit = { has_pop_culture = turkish }
 					reduce_pop = 1.5
 				}
+				any_pop = {
+					limit = { has_pop_culture = greek }
+					reduce_pop = 0.2
+				}
 			}	
 	}
 }

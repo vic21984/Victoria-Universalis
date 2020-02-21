@@ -139,8 +139,8 @@ self_propelled_torpedoes = {
 	}
 	effect = {
 		commerce_raider = {
-			hull = 2
-			torpedo_attack = 3
+			hull = 1
+			torpedo_attack = 4
 			fire_range = 0.35
 		}
 	}
@@ -372,13 +372,13 @@ modern_battleships = {
 #	}
 #}
 #fire_control_systems
-commerce_raiders = {
+torpedo_boats = {
 	limit = { fire_control_systems = 1 }
 	chance = {
 		base = 10
 	}
 	effect = {
-		activate_unit = commerce_raider 
+		activate_unit = commerce_raider
 	}
 }
 #optical_rangefinders = {
@@ -419,7 +419,7 @@ commerce_raiders = {
 monitors = {
 	limit = { weapon_platforms = 1 }
 	chance = {
-		base = 1
+		base = 0
 		modifier = {
 			factor = 10
 			invention = ironclads

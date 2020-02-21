@@ -1853,7 +1853,7 @@ country_event = {
 	}
 }
 
-#Release Dominions before colonization
+#Release Dominions
 country_event = {
 	id = 36945
 
@@ -1917,5 +1917,83 @@ country_event = {
 			who = NZL
 			value = 400
 		}		
+	}
+}
+
+country_event = {
+	id = 36948
+
+	
+	trigger = {
+		ai = yes
+		year = 1890
+		OR = {
+			tag = CAN
+			tag = AST
+		}
+	}
+	
+ 
+	
+	option = {
+		political_reform = open_borders	
+	}
+}
+
+#Irish Potato Blight
+country_event = {
+	id = 36950
+	title = "EVTNAME36950" #The Great Irish Famine
+	desc = "EVTDESC36950"
+	picture = "famine"
+	major = yes
+	
+	trigger = {
+		tag = ENG
+		year = 1845
+		any_owned_province = {
+			is_core = IRE
+			NOT = { has_province_modifier = potato_blight }
+		}
+		NOT = {
+			has_country_flag = great_irish_famine
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA36950"
+		set_country_flag = great_irish_famine
+		ENG_254 = {
+			add_province_modifier = {
+				name = irish_potato_blight
+				duration = 1460
+			}
+		}
+		ENG_258 = {
+			add_province_modifier = {
+				name = irish_potato_blight
+				duration = 1460
+			}
+		}
+		ENG_260 = {
+			add_province_modifier = {
+				name = irish_potato_blight
+				duration = 1460
+			}
+		}
+		ENG_263 = {
+			add_province_modifier = {
+				name = irish_potato_blight
+				duration = 1460
+			}
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = irish
+				location = { is_core = IRE }
+			}
+			consciousness = 4
+			militancy = 4
+		}
 	}
 }

@@ -491,10 +491,10 @@ drying_techniques = {
 			tea_leaves = 0.2
 		}
 		rgo_goods_output = {
-			coffee_beans = 0.2
+			coffee_beans = 0.5
 		}
 		rgo_goods_output = {
-			opium = 0.2
+			opium = 0.5
 		}
 	}
 }
@@ -1368,7 +1368,15 @@ bakelite = {
 		} 
 	}
 }
-
+haber_bosch_process = {
+	limit = { synthetic_polymers = 1 }
+	chance = {
+		base = 10
+	}
+	effect = {
+		activate_building = synthetic_nitrate_factory
+	}
+}
 vacuum_tube = {
 	limit = { 
 		electricity = 1
