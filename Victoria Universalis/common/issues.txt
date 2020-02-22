@@ -454,6 +454,7 @@ political_reforms = {
 		next_step_only = yes
 		serfdom = {
 			RGO_throughput  = 0.05
+			goods_demand = 0.05
 			education_efficiency_modifier = -0.25
 			leadership_modifier = -0.2
 			poor_savings_modifier = -0.5
@@ -461,10 +462,10 @@ political_reforms = {
 		}
 		peonage = {
 			education_efficiency_modifier = -0.05
-			RGO_throughput  = 0.05
+			RGO_throughput  = 0.025
+			goods_demand = 0.025
 			global_immigrant_attract = -0.05
 			suppression_points_modifier = 0.1
-			poor_everyday_needs = 0.1
 			poor_savings_modifier = -0.25
 			allow = { OR = { NOT = { has_country_flag = serfdom_not_abolished } year = 1870 } }
 		}
@@ -475,6 +476,7 @@ political_reforms = {
 		bankruptcy = {
 			administrative_efficiency_modifier = 0.05
 			tariff_efficiency_modifier = 0.05
+			goods_demand = -0.02
 		}
 	}
 	

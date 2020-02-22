@@ -27,7 +27,10 @@ promotion_focus =
 		icon = 5
 		outliner_show_as_percent = yes
 		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}
 	}
 
@@ -37,7 +40,10 @@ promotion_focus =
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}
 	}
 
@@ -46,11 +52,12 @@ promotion_focus =
 		capitalists = 0.30 #30% more likeley to become this type
 		icon = 8
 		outliner_show_as_percent = yes
-		limit = { 
-			civilized = yes
-			NOT = { state_scope = { total_pops = 2000000 } }
+		limit = {
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}
-
 	}
 	
 	promote_clergymen =
@@ -59,7 +66,10 @@ promotion_focus =
 		icon = 9
 		outliner_show_as_percent = yes
 		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}
 	}
 
@@ -68,9 +78,11 @@ promotion_focus =
 		clerks = 0.30 #30% more likeley to become this type
 		icon = 10
 		outliner_show_as_percent = yes
-		limit = { 
-			civilized = yes
-			NOT = { state_scope = { total_pops = 2000000 } }
+		limit = {
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}
 	}
 
@@ -79,9 +91,11 @@ promotion_focus =
 		craftsmen = 0.30 #30% more likeley to become this type
 		icon = 11
 		outliner_show_as_percent = yes
-		limit = { 
-			civilized = yes
-			NOT = { state_scope = { total_pops = 2000000 } }
+		limit = {
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}
 	}
 
@@ -91,8 +105,11 @@ promotion_focus =
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
-		}	
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
+		}
 	}
 	
 	promote_labourers =
@@ -101,8 +118,11 @@ promotion_focus =
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
-		}		
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
+		}	
 	}
 
 	promote_officers =
@@ -111,7 +131,10 @@ promotion_focus =
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}		
 	}
 
@@ -121,7 +144,10 @@ promotion_focus =
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
-			NOT = { state_scope = { total_pops = 2000000 } }
+			OR = {
+				NOT = { state_scope = { total_pops = 2000000 } }
+				ai = yes
+			}
 		}
 	}
 }

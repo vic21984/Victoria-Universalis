@@ -1,13 +1,41 @@
+#Version 0.12 - 2/21/2020
+##General gameplay changes:
+* Added synthetic rubber and sulphur factories. They are unlocked by the synthetic polymer tech.
+* Rebalanced issues.
+* Rebalanced some goods needs.
+* Added an invite european military advisors decision for unciv nations. It gives a boost to military research but comes with several drawbacks.
+* Added event that flips some RGOs to coffee in the lategame.
+* Renamed commerce raiders to torpedo boats.
+* Fixed music looping issue.
+
+## Map changes:
+* Re-arranged some states in China to more evenly distribute population.
+
+## Country Balance Changes:
+###### China:
+* Added "opium addiction" modifier that gives several nerfs. Also added a decision to get rid of the modifier that also gives whoever controls the state of Bihar an event to start an opium war against China. The opium addiction modifier can also be permanently removed once the warlord era event chain is completed or the year is 1900.
+* Lowered liferating to 30 in most chinese provinces
+
+###### United Kingdom:
+* Added unequal chinese treaty modifier that gives a bonus to tax efficiency and goods demand so long as you control the state of Bihar and China has the "opium addiction" modifier. Should China remove the opium addiction modifier, you have the option to start an opium war to force them to become addicted to opium again.
+
+###### France:
+* Added fall of the second empire event that triggers when core territory is lost and the current government is an absolute monarchy.
+
+###### Prussia:
+* Die wacht am rhein decision now gives +2% mobilization pool for one year.
+
+
+=======
 #Version 0.111 - 2/15/2020
 
-##General gameplay Changes:
+##General gameplay changes:
 * Fixed the warlord era event for China.
 * Fixed a missing clause with country migration targets.
 * Set internal migration to provinces with over 10% unemployment to 0 unless you use the internal migration decision.
 
 
 =======
->>>>>>> 0fba8db07113ea52d5e88ee53ad0d7e7193f16e8
 # Version 0.11 - 2/6/2020
 
 ## General gameplay changes:
@@ -56,7 +84,7 @@
 * Added strait crossings in Indonesia, Malay, Guinea, Singapore, Philippines, Madagascar, Yemen, and Cameroon
 * Changed the Bosphorus strait into a canal that is already built at the start of the game. Ships can pass through the canal as long as Istanbul is occupied by their controller or is friendly/neutral with the occupier of Istanbul. Tt is no longer possible to cut off the Balkans and Anatolia with ships, you must occupy Istanbul to separate them.
 
-## Country Balance Changes:
+## Country balance changes:
 ###### China:
 * Added Warlord Era event that splits China into several warlord cliques. If China civilizes and has either 4+ militancy or 1%+ revanchism, the event will trigger with a MTTH of 12 months. Becoming a democracy prevents the event from triggering.
 * Added decision that allows China to become a democracy if it has enough political reforms passed.
@@ -86,7 +114,6 @@
 
 
 =======
->>>>>>> 0fba8db07113ea52d5e88ee53ad0d7e7193f16e8
 # Version 0.101 - 12/22/2019
 
 ## General gameplay changes:
@@ -97,12 +124,11 @@
 * Nerfed literacy gained from Increase Literacy decision from 0.25, 0.2, and 0.15 for small, medium, and big states to 0.2, 0.175, and 0.15.
 
 <<<<<<< HEAD
-## Country Balance Changes:
+## Country balance changes:
 ###### Germany:
 * Made forming Germany via decision turn the government to federalism instead of unitary.
 
 =======
->>>>>>> 0fba8db07113ea52d5e88ee53ad0d7e7193f16e8
 
 # Version 0.10 - 12/21/2019
 
