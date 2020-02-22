@@ -4,7 +4,7 @@
 * Made the outlaw opium decision appear in 1840 instead of at game start.
 
 
-=======
+
 #Version 0.12 - 2/21/2020
 ##General gameplay changes:
 * Added synthetic rubber and sulphur factories. They are unlocked by the synthetic polymer tech.
@@ -33,7 +33,7 @@
 * Die wacht am rhein decision now gives +2% mobilization pool for one year.
 
 
-=======
+
 #Version 0.111 - 2/15/2020
 
 ##General gameplay changes:
@@ -42,7 +42,7 @@
 * Set internal migration to provinces with over 10% unemployment to 0 unless you use the internal migration decision.
 
 
-=======
+
 # Version 0.11 - 2/6/2020
 
 ## General gameplay changes:
@@ -120,7 +120,7 @@
 * Wallachia and Moldavia are no longer puppets of the Ottoman Empire but they start under the Ottoman sphere. The form Romania decision available to human players at the start of the game no longer annexes Wallachia and Moldavia, it simply changes your country tag to Romania and releases you from your current spheremaster while giving you cores on the rest of Romania.
 
 
-=======
+
 # Version 0.101 - 12/22/2019
 
 ## General gameplay changes:
@@ -130,12 +130,11 @@
 * Nerfed badboy reduction from Reduce Infamy decision from 0.3 to 0.25 and increased cooldown from 2 years to 5 years
 * Nerfed literacy gained from Increase Literacy decision from 0.25, 0.2, and 0.15 for small, medium, and big states to 0.2, 0.175, and 0.15.
 
-<<<<<<< HEAD
 ## Country balance changes:
 ###### Germany:
 * Made forming Germany via decision turn the government to federalism instead of unitary.
 
-=======
+
 
 # Version 0.10 - 12/21/2019
 
