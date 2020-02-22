@@ -1,12 +1,12 @@
-#Version 0.121 - 2/22/2020
+# Version 0.121 - 2/22/2020
 ## Country Balance Changes:
 ###### China:
 * Made the outlaw opium decision appear in 1840 instead of at game start.
 
 
 
-#Version 0.12 - 2/21/2020
-##General gameplay changes:
+# Version 0.12 - 2/21/2020
+## General gameplay changes:
 * Added synthetic rubber and sulphur factories. They are unlocked by the synthetic polymer tech.
 * Rebalanced issues.
 * Rebalanced some goods needs.
@@ -34,9 +34,9 @@
 
 
 
-#Version 0.111 - 2/15/2020
+# Version 0.111 - 2/15/2020
 
-##General gameplay changes:
+## General gameplay changes:
 * Fixed the warlord era event for China.
 * Fixed a missing clause with country migration targets.
 * Set internal migration to provinces with over 10% unemployment to 0 unless you use the internal migration decision.
