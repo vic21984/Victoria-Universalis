@@ -1,3 +1,10 @@
+#Version 0.121 - 2/22/2020
+## Country Balance Changes:
+###### China:
+* Made the outlaw opium decision appear in 1840 instead of at game start.
+
+
+=======
 #Version 0.12 - 2/21/2020
 ##General gameplay changes:
 * Added synthetic rubber and sulphur factories. They are unlocked by the synthetic polymer tech.

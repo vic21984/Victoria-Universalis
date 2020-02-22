@@ -3131,6 +3131,7 @@ country_event = {	#European Response to Opium Outlawed
 		war = {
 			target = FROM
 			attacker_goal = { casus_belli = opium_war }
+			call_ally = yes
 		}
 		ai_will_do = {
 			factor = 1
