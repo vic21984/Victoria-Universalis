@@ -31,8 +31,9 @@ luxury_needs_income =
 }
 
 everyday_needs = {
+	fuel = 0.75
 	cigarettes = 0.75
-	pharmaceuticals = 0.4
+	pharmaceuticals = 0.5
 	tea = 1.5
 	coffee = 1.125	
 	liquor = 1.5
@@ -52,12 +53,13 @@ life_needs = {
 }
 
 
-luxury_needs = {	
+luxury_needs = {
+	fuel = 0.75
 	telephones = 2
 	automobiles = 0.5
 	radio = 1
 	cigarettes = 0.75
-	pharmaceuticals = 0.4
+	pharmaceuticals = 0.5
 	tea = 1.5
 	coffee = 1.125	
 	liquor = 1.5
@@ -82,6 +84,7 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+			has_country_flag = jan_mayen
 			NOT = {
 				OR = {
 					continent = north_america
@@ -141,7 +144,7 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -169,7 +172,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		continent = south_america
 		month = 7
 		THIS = {
@@ -194,7 +197,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = south_america
 		}
@@ -223,7 +226,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -852,7 +855,7 @@ promote_to =
 			}
 		}
 	}
-	farmers = { #and labourers
+	farmers = {
 		factor = 0.01
 		modifier = {
 			factor = 5.0
@@ -872,15 +875,37 @@ promote_to =
 				}
 			}
 		}
+		modifier = {
+			factor = -100
+			location = { NOT = { has_pop_type = farmers } }
+		}
 	}
-#	labourers = 
-#	{
-#		factor = 0.01
-#		modifier = {
-#			factor = 1.4
-#			not = { military_spending = 0.35 }
-#		}
-#	}
+	labourers = 
+	{
+		factor = 0.01
+		modifier = {
+			factor = 5.0
+			soldiers = 0.03
+		}
+		modifier = {
+			factor = 5.0
+			not = { luxury_needs = 0.1 }
+		}
+		modifier = {
+			factor = 5.0
+			NOT = {
+				location = {
+					work_available = {
+						worker = craftsmen
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -100
+			location = { NOT = { has_pop_type = labourers } }
+		}
+	}
 }
 
 

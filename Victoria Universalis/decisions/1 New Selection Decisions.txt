@@ -484,21 +484,7 @@ political_decisions = {
 			}
 
 			random_list = {
-				30 = {
-					define_general = {
-						name = "§RSkilled Commander"
-						personality = defence_3.1
-						background = attack_4.1
-					}
-				}
-				30 = {
-					define_general = {
-						name = "§RSkilled Commander"
-						personality = defence_4.1
-						background = attack_3.1
-					}
-				}
-				30 = {
+				90 = {
 					define_general = {
 						name = "§RLegendary Commander"
 						personality = defence_4.1
@@ -944,6 +930,7 @@ political_decisions = {
 			any_owned_province = {
 			has_building = province_selector 
 			NOT = { trade_goods= precious_metal }
+			NOT = { has_province_modifier = blood_and_iron_mine }
 			}
 		}
 		effect = {
@@ -1025,6 +1012,51 @@ political_decisions = {
 		}
 	}
 	
+	province_establish_financial_center = {
+		picture = province_scope
+		potential = {
+			NOT = { has_global_flag = ps_turned_off }
+			NOT = { has_country_flag = deciding }
+			NOT = { has_country_flag = financial_center_established }
+			ai = no
+		}	
+		allow = {
+			fiat_based_monetary_system = 1
+			NOT = { has_country_flag = financial_center_established }
+			any_owned_province = {
+				has_building = province_selector
+				is_core = THIS
+				NOT = { trade_goods = precious_metal }
+			}
+		}
+		effect = {
+			administrative_points = 1000
+			set_country_flag = financial_center_established
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					is_core = THIS
+					NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = precious_metal
+				add_province_modifier = { name = financial_center duration = -1 }
+				remove_province_modifier = local_electricity
+				remove_province_modifier = local_machine_tools
+				remove_province_modifier = local_nitroglycerin
+				province_selector = -1
+				any_pop = {
+					limit = {
+						OR = {
+							type = farmers
+							type = labourers
+						}
+					}
+					pop_type = labourers_gold
+				}
+			}
+		}
+	}
+	
 	province_migration = {
 		picture = province_scope
 		potential = {
@@ -1034,8 +1066,8 @@ political_decisions = {
 		}	
 		allow = {
 			any_owned_province = { 
-			has_building = province_selector 
-			NOT = { has_province_modifier = province_attract_immigrants }
+				has_building = province_selector 
+				NOT = { has_province_modifier = province_attract_immigrants }
 			}
 		}
 		effect = {
@@ -1051,6 +1083,7 @@ political_decisions = {
 			}
 		}
 	}
+	
 		
 	reset_province_selector = {
 		picture = province_scope

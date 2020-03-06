@@ -31,7 +31,6 @@ province_event = {
 			province_id = 2601			# Sandy Desert
 			province_id = 2605			# Gibson's Desert
 			province_id = 1659			# Kobe
-			province_id = 2142			# Chihuahua
 			province_id = 2255			# Barranquilla
 			province_id = 2513			# Dunedin
 		}
@@ -413,7 +412,6 @@ province_event = {
 			province_id = 1406
 			province_id = 1318
 			province_id = 2057
-			province_id = 1426
 			province_id = 2058
 			province_id = 1978
 			province_id = 1980
@@ -1893,6 +1891,7 @@ province_event = {
 			province_id = 1386
 			province_id = 1394
 			province_id = 1395
+			province_id = 1426
 		}
 		not = { trade_goods = rubber }
 		OR = {

@@ -11,7 +11,7 @@ political_decisions = {
 			NOT = { has_country_modifier = requested_grant }
 		}
 		effect = {
-			country_event = {id = 91400 days = 0}
+			country_event = { id = 91400 days = 0 }
 			add_country_modifier = { name = requested_grant duration = 7 }
 		}
 	}
@@ -43,6 +43,19 @@ political_decisions = {
 		}
 		effect = {
 			clr_country_flag = deny_grant
+		}
+	}
+	mining_focus = {
+		picture = mines
+		alert = no
+		potential = {
+			ai = no
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			country_event = { id = 91309 days = 0 }
 		}
 	}
 }

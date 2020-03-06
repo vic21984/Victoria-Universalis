@@ -130,136 +130,6 @@ promotion_chance =
 		}
 	}	
 	
-	#####EVERYDAY NEEDS#####
-	group = {
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.2			
-		}
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.3			
-		}
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.4			
-		}	
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.5			
-		}	
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.6			
-		}
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.7			
-		}	
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.8			
-		}
-		modifier = {
-			factor = 0.03
-			everyday_needs = 0.9			
-		}			
-	}
-
-	group = {
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.2
-			total_pops = 4000000
-		}
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.3
-			total_pops = 4000000
-		}
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.4
-			total_pops = 4000000
-		}	
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.5
-			total_pops = 4000000
-		}	
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.6
-			total_pops = 4000000		
-		}	
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.7
-			total_pops = 4000000	
-		}	
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.8
-			total_pops = 4000000		
-		}	
-		modifier = {
-			factor = -0.02
-			everyday_needs = 0.9
-			total_pops = 4000000			
-		}			
-	}
-	
-	group = {
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.2
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }
-		}
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.3
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }
-		}
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.4
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }
-		}	
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.5
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }
-		}	
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.6
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }		
-		}	
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.7
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }	
-		}	
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.8
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }		
-		}	
-		modifier = {
-			factor = -0.01
-			everyday_needs = 0.9
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }			
-		}			
-	}
-	
 	#####LITERACY#####
 	
 	group = {
@@ -434,8 +304,47 @@ promotion_chance =
 			NOT = { total_pops = 4000000 }
 		}
 	}
+	#####TECH BONUS#####
 	
+	group = {
+		modifier = {
+			factor = 0.09
+			country = { has_country_flag = 	pop_promotion_bonus1_invented }
+		}
+		modifier = {
+			factor = 0.09
+			country = { has_country_flag = 	pop_promotion_bonus2_invented }		
+		}
+	}
+	
+	group = {
+		modifier = {
+			factor = -0.06
+			country = { has_country_flag = 	pop_promotion_bonus1_invented }
+			total_pops = 4000000						
+		}	
+		modifier = {
+			factor = -0.06
+			country = { has_country_flag = 	pop_promotion_bonus2_invented }
+			total_pops = 4000000						
+		}	
+	}
+	group = {
+		modifier = {
+			factor = -0.03
+			country = { has_country_flag = 	pop_promotion_bonus1_invented }
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
+		}	
+		modifier = {
+			factor = -0.03
+			country = { has_country_flag = 	pop_promotion_bonus2_invented }
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
+		}
+	}
 }
+
 
 demotion_chance = 
 {
@@ -889,7 +798,7 @@ emigration_chance =
 		country = { border_policy = closed_borders }
 	}
 	modifier = {
-		factor = 0.11
+		factor = 0.1
 		NOT = {
 			OR = { 
 				continent = north_america

@@ -34,8 +34,9 @@ luxury_needs_income =
 
 
 everyday_needs = {
+	fuel = 1.5
 	cigarettes = 1.5
-	pharmaceuticals = 0.8
+	pharmaceuticals = 1
 	tea = 3
 	coffee = 2	
 	liquor = 3
@@ -57,12 +58,13 @@ life_needs = {
 }
 
 
-luxury_needs = {	
+luxury_needs = {
+	fuel = 1.5	
 	telephones = 4
 	automobiles = 1
 	radio = 2
 	cigarettes = 1.5
-	pharmaceuticals = 0.8
+	pharmaceuticals = 1
 	tea = 3
 	coffee = 2
 	liquor = 3
@@ -88,6 +90,7 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+			has_country_flag = jan_mayen
 			NOT = {
 				OR = {
 					continent = north_america
@@ -147,7 +150,7 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -175,7 +178,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		continent = south_america
 		month = 7
 		THIS = {
@@ -200,7 +203,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = south_america
 		}
@@ -229,7 +232,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -406,7 +409,7 @@ promote_to =
 			}
 			modifier = {
 				factor = -100
-				state_scope = { capitalists = 0.007 }
+				state_scope = { capitalists = 0.01 }
 			}
 		}
 
@@ -806,89 +809,7 @@ promote_to =
 			not = { literacy = 0.50 }
 		}
 	}
-	
-	craftsmen = {
-		factor = 0.01
-		group = {
-			modifier = {
-				factor =  2
-				literacy = 0.10
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.20
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.3
-			}
-			modifier = {
-				factor =  2
-				literacy = 0.4
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.5
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.6
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.7
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.8
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.9
-			}
-			modifier = {
-				factor = 2
-				literacy = 1
-			}
-		}
-		modifier = {
-				factor = 10
-				state_scope = {
-					has_factories = yes
-				}
-		}
-		modifier = {
-			factor = -40
-			AND = {
-				state_scope = {
-					has_factories = no
-				}
-				can_build_factory = no
-			}
-		}
-		modifier = {
-			factor = -100
-			NOT = {
-				location = {
-					work_available = {
-						worker = craftsmen
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = -100
-			OR = {
-				location = {
-					is_colonial = yes
-				}
-				country = {
-					civilized = no
-				}
-			}
-		}
-	}
-	farmers = { #and labourers
+	farmers = {
 		factor = 0.01
 		modifier = {
 			factor = 5.0
@@ -908,15 +829,37 @@ promote_to =
 				}
 			}
 		}
+		modifier = {
+			factor = -100
+			location = { NOT = { has_pop_type = farmers } }
+		}
 	}
-#	labourers = 
-#	{
-#		factor = 0.01
-#		modifier = {
-#			factor = 1.4
-#			not = { military_spending = 0.35 }
-#		}
-#	}
+	labourers = 
+	{
+		factor = 0.01
+		modifier = {
+			factor = 5.0
+			soldiers = 0.03
+		}
+		modifier = {
+			factor = 5.0
+			not = { luxury_needs = 0.1 }
+		}
+		modifier = {
+			factor = 5.0
+			NOT = {
+				location = {
+					work_available = {
+						worker = craftsmen
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -100
+			location = { NOT = { has_pop_type = labourers } }
+		}
+	}
 }
 
 

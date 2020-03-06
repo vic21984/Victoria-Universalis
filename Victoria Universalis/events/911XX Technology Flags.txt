@@ -245,3 +245,35 @@ country_event = {
 		set_country_flag = synthetic_polymers_invented
 	}
 }
+
+country_event = {
+	title = EVTNAMEpop_promotion_bonus1
+	desc = EVTDESCpop_promotion_bonus1
+	id = 91115
+	
+	trigger = {
+		invention = pop_promotion_bonus1
+		NOT = { has_country_flag = pop_promotion_bonus1_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = pop_promotion_bonus1_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEpop_promotion_bonus2
+	desc = EVTDESCpop_promotion_bonus2
+	id = 91116
+	
+	trigger = {
+		invention = pop_promotion_bonus2
+		NOT = { has_country_flag = pop_promotion_bonus2_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = pop_promotion_bonus2_invented
+	}
+}

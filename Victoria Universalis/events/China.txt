@@ -3071,8 +3071,11 @@ country_event = {	#Gain Unequal China Treaty
 		owns = 1247
 		owns = 1248
 		owns = 1250
-		NOT = { has_country_modifier = unequal_china_treaty }
-		NOT = { has_global_flag = opium_outlawed }
+		NOT = {
+			has_country_modifier = unequal_china_treaty
+			has_global_flag = opium_outlawed
+			year = 1900
+		}
 	}
 
 	option = {

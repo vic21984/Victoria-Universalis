@@ -17,22 +17,19 @@ rebel =
 
 everyday_needs = {
 	paper = 10
-	luxury_clothes = 2.5
-	luxury_furniture = 2.5
-	tobacco = 10
-	coffee_beans = 10
-	tea_leaves = 30
-	opium = 10
-	coffee = 5
+	luxury_clothes = 3
+	luxury_furniture = 3
+	cigarettes = 10
+	coffee = 7.5
 	tea = 10
 }
 
 life_needs = {
-	cattle = 0.75
-	wool =  1
-	fish =  1
-	fruit =  1
-	grain =  2.5
+	cattle = 1.5
+	wool =  2
+	fish =  2
+	fruit =  2
+	grain =  5
 }
 
 
@@ -61,6 +58,7 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+			has_country_flag = jan_mayen
 			NOT = {
 				OR = {
 					continent = north_america
@@ -120,7 +118,7 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -148,7 +146,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		continent = south_america
 		month = 7
 		THIS = {
@@ -173,7 +171,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = south_america
 		}
@@ -202,7 +200,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -433,10 +431,24 @@ promote_to =
 				}
 			}
 		}
-		modifier = {
-			factor = -100
-			capitalists = 0.01
-		}		
+		group = {
+			modifier = {
+				factor = -1
+				state_scope = { capitalists = 0.001 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { capitalists = 0.003 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { capitalists = 0.005 }
+			}
+			modifier = {
+				factor = -100
+				state_scope = { capitalists = 0.01 }
+			}
+		}	
 	}
 	officers = {
 		factor = 0.01

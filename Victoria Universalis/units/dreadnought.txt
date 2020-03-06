@@ -14,7 +14,7 @@ dreadnought = {
 	
 	#Core Abilities
 	priority = 60
-	max_strength = 100
+	max_strength = 200
 	default_organisation = 85
 	maximum_speed = 10
 	weighted_value = 100.0
@@ -23,26 +23,26 @@ dreadnought = {
 	#Building Costs
 	build_time = 1080
 	build_cost = {
-		steamer_convoy = 100
-		artillery = 25
-		canned_food = 10
-		telephones = 10
-		fuel = 25
+		steamer_convoy = 1000
+		artillery = 250
+		canned_food = 100
+		radio = 100
+		steel = 1200
 	}
 	min_port_level = 5
-	limit_per_port = 1
+	limit_per_port = -1
 	supply_consumption_score = 80
 	
 	supply_consumption = 1.0
 	supply_cost = {
 		steamer_convoy = 1.75
 		artillery = 1.2
-		telephones = 0.1
+		radio = 0.1
 		fuel = 1.2
 	}
 	
 	#Naval Abilties
-	hull = 75
+	hull = 50
 	gun_power = 75
 	fire_range = 0.80
 	evasion = 0

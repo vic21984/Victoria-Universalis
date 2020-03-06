@@ -230,7 +230,7 @@ expressionist_literature = {
 			
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 30
 	}
 }
 expressionist_art = {
@@ -251,7 +251,7 @@ expressionist_art = {
 		}
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 30
 	}
 }
 expressionist_music = {
@@ -272,7 +272,7 @@ expressionist_music = {
 		}
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 30
 	}
 }
 #mass_culture_n_the_avant_garde
@@ -294,7 +294,7 @@ avantgarde_literature = {
 		}
 	}
 	effect = {
-		shared_prestige = 30 
+		shared_prestige = 40
 	}
 }
 avantgarde_art = {
@@ -315,7 +315,7 @@ avantgarde_art = {
 		}
 	}
 	effect = {
-		shared_prestige = 30
+		shared_prestige = 40
 	}
 }
 avantgarde_music = {
@@ -336,43 +336,7 @@ avantgarde_music = {
 		}
 	}
 	effect = {
-		shared_prestige = 30 
-	}
-}
-surrealism = {
-	limit = { mass_culture_n_the_avant_garde = 1 }
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			anti__rationalism = 1
-		}
-		modifier = {
-			factor = 2
-			invention = dogma_of_violence
-		}
-	}
-	effect = {
-		shared_prestige = 30 
-	}
-}
-modern_design = {
-	limit = { mass_culture_n_the_avant_garde = 1 }
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			social_science = 1
-		}
-		modifier = {
-			factor = 2
-			invention = sociology
-		}
-	}
-	effect = {
-		shared_prestige = 30
+		shared_prestige = 40
 	}
 }
 jazz = {
@@ -390,7 +354,7 @@ jazz = {
 		}
 	}
 	effect = {
-		shared_prestige = 30
+		shared_prestige = 40
 	}
 }
 socialist_realism = {
@@ -412,7 +376,62 @@ socialist_realism = {
 		}
 	}
 	effect = {
-		shared_prestige = 30
+		shared_prestige = 40
+	}
+}
+#modernism
+modern_design = {
+	limit = { modernism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			social_science = 1
+		}
+		modifier = {
+			factor = 2
+			invention = sociology
+		}
+	}
+	effect = {
+		shared_prestige = 100
+	}
+}
+surrealism = {
+	limit = { modernism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			anti__rationalism = 1
+		}
+		modifier = {
+			factor = 2
+			invention = dogma_of_violence
+		}
+	}
+	effect = {
+		shared_prestige = 100
+	}
+}
+futurism = {
+	limit = { modernism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = stainless_steel
+		}
+		modifier = {
+			factor = 2
+			synthetic_polymers = 1
+		}
+	}
+	effect = {
+		shared_prestige = 100
 	}
 }
 #idealism
@@ -658,24 +677,6 @@ nihilism_and_the_will = {
 		shared_prestige = 25 
 	}
 }
-futurism = {
-	limit = { anti__rationalism = 1 }
-	news = no
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = stainless_steel
-		}
-		modifier = {
-			factor = 2
-			synthetic_polymers = 1
-		}
-	}
-	effect = {
-		shared_prestige = 25 
-	}
-}
 quantum_theory = {
 	limit = { anti__rationalism = 1 }
 	news = no
@@ -846,6 +847,23 @@ the_decline_of_the_west_and_the_lost_generation = {
 	}
 	core_pop_consciousness_modifier = 0.05
 }
+pop_promotion_bonus1 = {
+	limit = { social_alienation = 1 }
+	news = no
+	chance = {
+		base = 100
+	}
+}
+
+#modern_sociology
+pop_promotion_bonus2 = {
+	limit = { modern_sociology = 1 }
+	news = no
+	chance = {
+		base = 100
+	}
+}
+
 #the rights of man - called enlightenment_thought in files...
 paternalism = {
 	limit = { enlightenment_thought = 1 }

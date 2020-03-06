@@ -164,9 +164,57 @@ deep_defense_system = {
 	year = 1870
 	cost = 14400
 	unciv_military = yes
+
 	engineer = {
 		support = 0.25
 	} 
+	army_base = {
+		supply_consumption = 0.15
+	} 
+	
+	max_fort = 1
+	dig_in_cap = 1
+	
+	ai_chance = {
+		factor = 1.5
+		modifier = {
+			factor = 1.2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.1
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+	}
+
+}
+trench_systems = {
+	area = army_doctrine
+	year = 1890
+	cost = 18000
+	unciv_military = yes
+	
 	army_base = {
 		supply_consumption = 0.20
 	} 
@@ -216,19 +264,19 @@ deep_defense_system = {
 }
 infiltration = {
 	area = army_doctrine
-	year = 1900
-	cost = 18000
+	year = 1910
+	cost = 21600
 	unciv_military = yes
-		
+	
 	army_base = {
-		supply_consumption = 0.5
+		supply_consumption = 0.25
 	} 
 	
 	max_fort = 1
 	dig_in_cap = 1
 	
 	ai_chance = {
-		factor = 1.5
+		factor = 1.1
 		modifier = {
 			factor = 1.2
 			civilized = yes
@@ -259,12 +307,11 @@ infiltration = {
 			tech_school = army_tech_school
 		}
 	}
-
 }
 modern_army_doctrine = {
 	area = army_doctrine
-	year = 1919
-	cost = 21600
+	year = 1925
+	cost = 25200
 	unciv_military = yes
 	
 	army_base = {
@@ -494,7 +541,7 @@ machine_guns = {
 }
 bolt_action_rifles = {
 	area = light_armament
-	year = 1900
+	year = 1890
 	cost = 18000
 	unciv_military = yes
 	unit = 1
@@ -534,14 +581,56 @@ bolt_action_rifles = {
 		}
 	}
 }
-modern_divisional_structure = {
+chemical_weapons = {
 	area = light_armament
-	year = 1919
+	year = 1910
 	cost = 21600
 	unciv_military = yes
 
 	unit = 2
-	combat_width = -3
+	combat_width = -2
+	
+		ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
+modern_divisional_structure = {
+	area = light_armament
+	year = 1925
+	cost = 25200
+	unciv_military = yes
+
+	unit = 2
+	combat_width = -1
 	
 		ai_chance = {
 		factor = 1.1
@@ -752,12 +841,12 @@ steel_breech_loaded_artillery = {
 }
 indirect_artillery_fire = {
 	area = heavy_armament
-	year = 1900
+	year = 1890
 	cost = 18000
 	unciv_military = yes
 	artillery = {
-		attack = 1
-		defence = 1
+		attack = 0.75
+		defence = 0.5
 		support = 0.5
 		supply_consumption = 0.5
 	}
@@ -795,10 +884,55 @@ indirect_artillery_fire = {
 		}
 	}
 }
-heavy_armament_dunno = {
+creeping_barrage = {
 	area = heavy_armament
-	year = 1919
+	year = 1910
 	cost = 21600
+	unciv_military = yes
+	artillery = {
+		attack = 0.75
+		defence = 0.5
+		support = 0.5
+		supply_consumption = 0.5
+	}
+	
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
+railway_gun = {
+	area = heavy_armament
+	year = 1925
+	cost = 25200
 	unciv_military = yes
 	artillery = {
 		attack = 1
@@ -1019,16 +1153,52 @@ military_logistics = {
 		}
 	}
 }
-military_directionism = {
+aeronautics = {
 	area = military_science
 	year = 1900
-	cost = 18000
+	cost = 25200
+	
 	unciv_military = yes
 	
-	army_base = {
-		default_organisation = 10
-		supply_consumption = 0.5
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
 	}
+}
+barrel_experiments = {
+	area = military_science
+	year = 1910
+	cost = 25200
+	unciv_military = yes
+	
 	ai_chance = {
 		factor = 1.5
 		modifier = {
@@ -1066,16 +1236,15 @@ military_directionism = {
 		}
 	}
 }
-aeronautics = {
+combined_arms_experiments = {
 	area = military_science
-	year = 1914
-	cost = 21600
-	army_base = {
-		default_organisation = 10
-		supply_consumption = 0.50
-	}
+	year = 1925
+	cost = 28800
 	
 	unciv_military = yes
+	tank = {
+		support = 0.25
+	} 	
 	
 	ai_chance = {
 		factor = 1.1
@@ -1313,7 +1482,7 @@ army_risk_management = {
 }
 army_nco_training = {
 	area = army_leadership
-	year = 1900
+	year = 1890
 	cost = 18000
 	unciv_military = yes
 	morale = 0.25
@@ -1322,7 +1491,7 @@ army_nco_training = {
 	military_tactics = 0.25
 
 	army_base = {
-		supply_consumption = 0.5
+		supply_consumption = 0.25
 	}
 	
 	ai_chance = {
@@ -1369,10 +1538,10 @@ army_nco_training = {
 }
 great_war_experience = {
 	area = army_leadership
-	year = 1919
+	year = 1910
 	cost = 21600
 	unciv_military = yes
-	morale = 0.5
+	morale = 0.25
 
 	military_tactics = 0.25
 
@@ -1413,5 +1582,50 @@ great_war_experience = {
 		}
 	}
 }
+total_war_philosophy = {
+	area = army_leadership
+	year = 1925
+	cost = 25200
+	unciv_military = yes
+	morale = 0.25
 
+	military_tactics = 0.25
+
+	army_base = {
+		supply_consumption = 0.5
+	}
+	
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			war = yes
+		}
+		modifier = {
+			factor = 1.02
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+	}
+}
 

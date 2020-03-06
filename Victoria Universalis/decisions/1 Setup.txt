@@ -1,20 +1,5 @@
 political_decisions = {
 
-	healthcare_slider_setup = {
-		potential = {
-			tag = JAN
-			always = no
-		}
-		allow = {
-			tag = JAN
-		}
-		effect = {
-			any_country = {
-				add_country_modifier = { name = starting_healthcare1 duration = 1 }
-			}
-		}
-	}
-	
 	global_1836_setup = {
 		potential = {
 			tag = JAN
@@ -24,11 +9,6 @@ political_decisions = {
 		}
 		effect = {
 			set_global_flag = global_1836_setup
-#			any_country = {
-#				artisans = {
-#					money = 500
-#				}
-#			}
 			any_country = {
 				limit = { ai = no }
 				administrative_points = 1000
@@ -40,9 +20,6 @@ political_decisions = {
 			any_country = {
 				limit = { invention = AP2 }
 				set_country_flag = AP2
-			}
-			any_country = {
-				add_country_modifier = { name = starting_healthcare2 duration = 1 }
 			}
 			SOK = { set_country_flag = sub_saharan_africa }
 			OYO = { set_country_flag = sub_saharan_africa }

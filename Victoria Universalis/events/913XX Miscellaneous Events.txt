@@ -212,3 +212,51 @@ country_event = {
 		add_country_modifier = { name = signed_the_geneva_convention duration = -1 }
 	}
 }
+
+country_event = {
+	id = 91309
+	title = "EVTNAME91309"
+	desc = "EVTDESC91309"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91309"
+		set_country_flag = coal_mining_focus
+	}
+	option = {
+		name = "EVTOPTB91309"
+		set_country_flag = iron_mining_focus
+	}
+	option = {
+		name = "EVTOPTC91309"
+		set_country_flag = sulphur_mining_focus
+	}
+	option = {
+		name = "EVTOPTD91309"
+		set_country_flag = rubber_mining_focus
+	}
+	option = {
+		name = "EVTOPTE91309"
+		set_country_flag = oil_mining_focus
+	}
+	option = {
+		name = "EVTOPTF91309"
+		set_country_flag = timber_mining_focus
+	}
+	option = {
+		name = "EVTOPTG91309"
+		set_country_flag = tropical_wood_mining_focus
+	}
+	option = {
+		name = "EVTOPTH91309"
+		clr_country_flag = coal_mining_focus
+		clr_country_flag = iron_mining_focus
+		clr_country_flag = sulphur_mining_focus
+		clr_country_flag = rubber_mining_focus
+		clr_country_flag = oil_mining_focus
+		clr_country_flag = timber_mining_focus
+		clr_country_flag = tropical_wood_mining_focus
+	}
+}
+

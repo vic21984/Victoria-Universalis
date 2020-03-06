@@ -7,7 +7,7 @@ equivalent = farmers
 
 everyday_needs = {
 	cigarettes = 1.125
-	pharmaceuticals = 0.6
+	pharmaceuticals = 0.75
 	tea = 1.5
 	coffee = 1.125
 	liquor = 3.75
@@ -32,7 +32,7 @@ luxury_needs = {
 	automobiles = 0.375
 	radio = 1.5
 	cigarettes = 1.125
-	pharmaceuticals = 0.6
+	pharmaceuticals = 0.75
 	tea = 1.5
 	coffee = 1.125
 	liquor = 3.75
@@ -55,6 +55,7 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+			has_country_flag = jan_mayen
 			NOT = {
 				OR = {
 					continent = north_america
@@ -114,7 +115,7 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -142,7 +143,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		continent = south_america
 		month = 7
 		THIS = {
@@ -167,7 +168,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = south_america
 		}
@@ -196,7 +197,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -341,6 +342,41 @@ promote_to =
 	artisans =
 	{
 		factor = 0.01
+		modifier = {
+			factor = -100
+			country = { has_country_flag = coal_mining_focus }
+			location = { trade_goods = coal }
+		}
+		modifier = {
+			factor = -100
+			country = { has_country_flag = iron_mining_focus }
+			location = { trade_goods = iron }
+		}
+		modifier = {
+			factor = -100
+			country = { has_country_flag = sulphur_mining_focus }
+			location = { trade_goods = sulphur }
+		}
+		modifier = {
+			factor = -100
+			country = { has_country_flag = rubber_mining_focus }
+			location = { trade_goods = rubber }
+		}
+		modifier = {
+			factor = -100
+			country = { has_country_flag = oil_mining_focus }
+			location = { trade_goods = oil }
+		}
+		modifier = {
+			factor = -100
+			country = { has_country_flag = timber_mining_focus }
+			location = { trade_goods = timber }
+		}
+		modifier = {
+			factor = -100
+			country = { has_country_flag = timber_mining_focus }
+			location = { trade_goods = tropical_wood }
+		}
 		modifier = {
 			factor = -100
 			location = { is_colonial = yes }
@@ -930,6 +966,41 @@ promote_to =
 	}
 	craftsmen = {
 		factor = 0.01
+			modifier = {
+				factor = -100
+				country = { has_country_flag = coal_mining_focus }
+				location = { trade_goods = coal }
+			}
+			modifier = {
+				factor = -100
+				country = { has_country_flag = iron_mining_focus }
+				location = { trade_goods = iron }
+			}
+			modifier = {
+				factor = -100
+				country = { has_country_flag = sulphur_mining_focus }
+				location = { trade_goods = sulphur }
+			}
+			modifier = {
+				factor = -100
+				country = { has_country_flag = rubber_mining_focus }
+				location = { trade_goods = rubber }
+			}
+			modifier = {
+				factor = -100
+				country = { has_country_flag = oil_mining_focus }
+				location = { trade_goods = oil }
+			}
+			modifier = {
+				factor = -100
+				country = { has_country_flag = timber_mining_focus }
+				location = { trade_goods = timber }
+			}
+			modifier = {
+				factor = -100
+				country = { has_country_flag = timber_mining_focus }
+				location = { trade_goods = tropical_wood }
+			}
 			modifier = {
 				factor = -3
 				not = { literacy = 0.1 }

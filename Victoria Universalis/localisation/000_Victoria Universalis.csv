@@ -1,5 +1,6 @@
 ;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 labourers_gold;Gold Labourers;;;;;;;;;;;;;;
+bankers;Bankers;;;;;;;;;;;;;;
 no_personality;§WNo Bonus;;;;;;;;;;;;;;
 attack_1.1;+1 Attack;;;;;;;;;;;;;;
 attack_1.2;+1 Attack;;;;;;;;;;;;;;
@@ -655,11 +656,94 @@ commerce_raider;Torpedo Boat;;;;;;;;;;;;;;x;;;;
 commerce_raider_short;TP;;;;;;;;;;;;;;;;x;;;;
 commerce_raiders;Torpedo Boats;;;;;;;;;;;;;;x;;;;
 commerce_raiders_desc;A torpedo boat is a relatively small and fast naval ship designed to carry torpedoes into battle. They were created to counter battleships and other slow and heavily armed ships by using speed, agility, and the power of their torpedo weapons.;;;;;;;;;;;;;;x;;;;
+monitor;Submarine Flotilla;;;;;;;;;;;;;;x;;;;
+monitor_short;SS;;;;;;;;;;;;;;;;x;;;;
+submarines;Submarines;;;;;;;;;;;;;;x;;;;
+submarines_desc;A submarine is a watercraft capable of independent operation underwater. Their primary role was anti-surface ship warfare which they accomplished either on the surface, using deck guns or submerged, using torpedoes.;;;;;;;;;;;;;;x;;;;
 GC2_NAME;Grand Campaign Extra Nations;;;;;;;;;;;;;;
 large_promotion_focus;Large State Promotion;;;;;;;;;;;;;;
-insane_promotion_focus;Massive State Promotion;;;;;;;;;;;;;;
+massive_promotion_focus;Massive State Promotion;;;;;;;;;;;;;;
+large_promote_aristocrats;Encourage Landowners;;;;;;;;;;;;;;
+large_promote_bureaucrats;Encourage Bureaucrats;;;;;;;;;;;;;;
+large_promote_capitalists;Encourage Capitalists;;;;;;;;;;;;;;
+large_promote_clergymen;Encourage Intellectuals;;;;;;;;;;;;;;
+large_promote_clerks;Encourage Clerks;;;;;;;;;;;;;;
+large_promote_craftsmen;Encourage Craftsmen;;;;;;;;;;;;;;
+large_promote_farmers;Encourage Farmers;;;;;;;;;;;;;;
+large_promote_labourers;Encourage Labourers;;;;;;;;;;;;;;
+large_promote_officers;Encourage Officers;;;;;;;;;;;;;;
+large_promote_soldiers;Encourage Soldiers;;;;;;;;;;;;;;
+massive_promote_aristocrats;Encourage Landowners;;;;;;;;;;;;;;
+massive_promote_bureaucrats;Encourage Bureaucrats;;;;;;;;;;;;;;
+massive_promote_capitalists;Encourage Capitalists;;;;;;;;;;;;;;
+massive_promote_clergymen;Encourage Intellectuals;;;;;;;;;;;;;;
+massive_promote_clerks;Encourage Clerks;;;;;;;;;;;;;;
+massive_promote_craftsmen;Encourage Craftsmen;;;;;;;;;;;;;;
+massive_promote_farmers;Encourage Farmers;;;;;;;;;;;;;;
+massive_promote_labourers;Encourage Labourers;;;;;;;;;;;;;;
+massive_promote_officers;Encourage Officers;;;;;;;;;;;;;;
+massive_promote_soldiers;Encourage Soldiers;;;;;;;;;;;;;;
 TRADE_INDUSTRIAL_AND_CONSUMER_GOODS;Industrial & Consumer Goods;;;;;;;;;;;;;;
 industrial_and_consumer_goods;Industrial & Consumer Goods;;;;;;;;;;;;;;
+trench_systems;Trench Systems;;;;;;;;;;;;;;
+chemical_weapons;Chemical Weapons;;;;;;;;;;;;;;
+creeping_barrage;Creeping Barrage;;;;;;;;;;;;;;
+railway_gun;Railway Gun;;;;;;;;;;;;;;
+barrel_experiments;Tank Experiments;;;;;;;;;;;;;;
+combined_arms_experiments;Combined Arms Experiments;;;;;;;;;;;;;;
+total_war_philosophy;Total War Philosophy;;;;;;;;;;;;;;
+early_modern_naval_doctrine;Early Modern Naval Doctrine;;;;;;;;;;;;;;
+aircraft_carriers;Aircraft Carriers;;;;;;;;;;;;;;
+carrier;Aircraft Carrier;;;;;;;;;;;;;;
+carriers;Carriers;;;;;;;;;;;;;;
+carriers_desc;An aircraft carrier is a warship that serves as a seagoing airbase, equipped with a full-length flight deck and facilities for carrying, arming, deploying, and recovering aircraft. Carriers allows a naval force to hit targets from far beyond the range of traditional guns.;;;;;;;;;;;;;;
+medium_tank;Medium Tank;;;;;;;;;;;;;;
+medium_tank_desc;The role of medium tanks started with a prioritisation of speed. Medium tanks could travel faster, but needed help to cross trenches, where heavy tanks were large enough to cross unaided. In this later use, medium tanks represent the designer's intent of producing a successful balance of firepower, mobility, and protection. Medium tanks aim to be suitable to the widest variety of roles, with less reliance on other types of tank during normal operations.;;;;;;;;;;;;;;
+early_modern_naval_design;Early Modern Naval Design;;;;;;;;;;;;;;
+naval_aviation;Naval Aviation;;;;;;;;;;;;;;
+early_modern_naval_training;Early Modern Naval Training;;;;;;;;;;;;;;
+modern_naval_exercises;Modern Naval Exercises;;;;;;;;;;;;;;
+modern_naval_exercises_desc;Modern naval exercises evolved into detailed wargame simulations encompassing command post exercises, field exercises, and joint exercises between two or more countries.;;;;;;;;;;;;;;
+modern_financial_institutions;Modern Financial Institutions;;;;;;;;;;;;;;
+fiat_based_monetary_system;Fiat Monetary System;;;;;;;;;;;;;;
+economic_thought_and_critique;Administration;;;;;;;;;;;;;
+early_classical_theory_and_critique;Rudimentary Administration;;;;;;;;;;;;;
+late_classical_theory;Early Administration;;;;;;;;;;;;;
+collectivist_theory;Basic Administration;;;;;;;;;;;;;
+the_historical_theory;Improved Administration;;;;;;;;;;;;;
+neoclassical_theory;Advanced Administration;;;;;;;;;;;;;
+keynesian_economics;Early Modern Administration;;;;;;;;;;;;;
+neoliberal_theory;Modern Administration;;;;;;;;;;;;;;
+AP1;+100 Administration Points;;;;;;;;;;;;;
+AP1_desc;+100 Administration Points;;;;;;;;;;;;;
+AP2;+50 Administration Points;;;;;;;;;;;;;
+AP2_desc;+50 Administration Points;;;;;;;;;;;;;
+AP3;+50 Administration Points;;;;;;;;;;;;;
+AP3_desc;+50 Administration Points;;;;;;;;;;;;;
+AP4;+50 Administration Points;;;;;;;;;;;;;
+AP4_desc;+50 Administration Points;;;;;;;;;;;;;
+AP5;+50 Administration Points;;;;;;;;;;;;;
+AP5_desc;+50 Administration Points;;;;;;;;;;;;;
+AP6;+50 Administration Points;;;;;;;;;;;;;
+AP6_desc;+50 Administration Points;;;;;;;;;;;;;
+AP7;+50 Administration Points;;;;;;;;;;;;;
+AP7_desc;+50 Administration Points;;;;;;;;;;;;;
+keynesianism;Keynesianism;;;;;;;;;;;;;;
+modern_business_management;Modern Business Management;;;;;;;;;;;;;;
+modernism;Modernism;;;;;;;;;;;;;;
+critical_theory;Critical Theory;;;;;;;;;;;;;;
+modern_sociology;Modern Sociology;;;;;;;;;;;;;;
+pop_promotion_bonus1;§GPOP Promotion Bonus;;;;;;;;;;;;;;
+pop_promotion_bonus1_desc;This invention grants a small pop promotion bonus.;;;;;;;;;;;;;;
+pop_promotion_bonus2;§GPOP Promotion Bonus;;;;;;;;;;;;;;
+pop_promotion_bonus2_desc;This invention grants a small pop promotion bonus.;;;;;;;;;;;;;;
+government_mobilization;Government Mobilization;;;;;;;;;;;;;;
+humanistic_psychology;Humanistic Psychology;;;;;;;;;;;;;;
+modern_power_generation;Modern Power Generation;;;;;;;;;;;;;;
+mechanized_manufacturing;Mechanized Manufacturing;;;;;;;;;;;;;;
+modern_metallurgy;Modern Metallurgy;;;;;;;;;;;;;;
+modern_infrastructure;Modern Infrastructure;;;;;;;;;;;;;;
+modern_chemistry;Modern Chemistry;;;;;;;;;;;;;;
 pharmaceuticals;Pharmaceuticals;;;;;;;;;;;;;;
 pharmaceuticals_desc;The advancement of medicine has led to the development of proper pharmaceuticals, especially those using opiates, as a method of medical treatment replacing more traditional methods.;;;;;;;;;;;;;;;;;;;;;;;;;
 pharmaceutical_plant;Pharmaceutical Plant;;;;;;;;;x;;;;
@@ -717,7 +801,7 @@ JAP_1638;Chugoku;;;;;;;;;;;;;x
 JAP_1665;Shikoku;;;;;;;;;;;;;x
 JAP_1659;Kyoto;;;;;;;;;;;;;x
 JAP_1959;Osaka;;;;;;;;;;;;;x
-JAP_1677;Shizuoka;;;;;;;;;;;;;x
+JAP_1645;Niigata;;;;;;;;;;;;;x
 CHI_1472;North Anhui;;;;;;;;;;;;;x
 CHI_1473;South Anhui;;;;;;;;;;;;;x
 CHI_1487;East Canton;;;;;;;;;;;;;x
@@ -758,7 +842,13 @@ ENG_263;Leinster;;;;;;;;;;;;;x
 ENG_1236;West United Provinces;;;;;;;;;;;;;x
 ENG_1243;East United Provinces;;;;;;;;;;;;;x
 movement_universal_health_care;Universal Health Care Movement;;;;;;;;;;;;;x
-acquire_state_desc;Aquire an enemy §Ystate§W with between 150K and 4M population;Prendre un §YÉtat§W ennemi;Erobern Sie einen feindlichen §YStaat§W.;;Adquirir un §Yestado§W enemigo;;;;;;;;;x
+negotiated_transfer;Negotiated Transfer;;;;;;;;;;;;x
+negotiated_transfer_desc;Transfer a state or colonial region to another country with no effect on infamy, prestige, or jingoism;;;;;;;;;;;;x
+negotiated_transfer_short;$RECIPIENT$ receives $STATE$ from us;;;;;;;;;;;;;x
+negotiated_transfer_setup;Transfer $STATE$ from our country to $RECIPIENT$;;;;;;;;;;;;x
+NORMAL_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+AGRESSION_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+acquire_state_desc;Aquire an enemy §Ystate§W with between 150K and 4M population;;;;;;;;;;;;;;;;x
 acquire_all_cores;Liberate all cores;;;;;;;;;;;;;x
 acquire_all_cores_desc;Liberate your country from its oppressors;;;;;;;;;;;;;x
 acquire_all_cores_setup;Acquires $STATE$;;;;;;;;;;;;;x
@@ -883,7 +973,7 @@ mob3;Personnel Category Tables §G+1 Mob Size;;;;;;;;;;;;;x
 mob3_desc;These tables categorized tasks, position, etc. so that it was easy in peace time to place personnel into combat formations. During mobilization the process was sped up as it was easy to know which soldier was to go to what company.;;;;;;;;;;;;;x
 mob4;Staff Command Support §G+1 Mob Size;;;;;;;;;;;;;x
 mob4_desc;The introduction of working staffs at lower echelon units was a spin off from having an effective and functional General Staff. Soon all units had staffs that supported their leaders.;;;;;;;;;;;;;x
-mob5;Railroad Transport Groups §G+1 Mob Size;;;;;;;;;;;;;x
+mob5;Railroad Transport Groups §G+2 Mob Size;;;;;;;;;;;;;x
 mob5_desc;At this point specialists formed certain groups that serviced specialized railroad units. These could quickly load and reload trains and service the full movement of army units.;;;;;;;;;;;;;x
 mob1_trigger;Levée en Masse;;;;;;;;;;;;;x
 mob2_trigger;Mobilization Time Tables;;;;;;;;;;;;;x
@@ -905,38 +995,24 @@ administrative_points;Administrative Points;;;;;;;;;x;;;;
 province_selector;Province Selector;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 PS_unlocked;PS Building Unlocked;;;;;;;;;;;;;x
 PS_unlocked_desc;You can now build Province Selector buildings.;;;;;;;;;;;;;x
-economic_thought_and_critique;Administration;;;;;;;;;;;;;x
-economic_thought_and_critique_desc;Administration;;;;;;;;;;;;;x
-early_classical_theory_and_critique;Rudimentary Administration;;;;;;;;;;;;;x
-early_classical_theory_and_critique_desc;Rudimentary Administration;;;;;;;;;;;;;x
-late_classical_theory;Early Administration;;;;;;;;;;;;;x
-late_classical_theory_desc;Early Administration;;;;;;;;;;;;;x
-collectivist_theory;Basic Administration;;;;;;;;;;;;;x
-collectivist_theory_desc;Basic Administration;;;;;;;;;;;;;x
-the_historical_theory;Late Administration;;;;;;;;;;;;;x
-the_historical_theory_desc;Late Administration;;;;;;;;;;;;;x
-neoclassical_theory;Early Modern Administration;;;;;;;;;;;;;x
-neoclassical_theory_desc;Early Modern Administration;;;;;;;;;;;;;x
-keynesian_economics;Modern Administration;;;;;;;;;;;;;x
-keynesian_economics_desc;Modern Administration;;;;;;;;;;;;;x
-AP1;+100 Administration Points;;;;;;;;;;;;;x
-AP1_desc;+100 Administration Points;;;;;;;;;;;;;x
-AP2;+50 Administration Points;;;;;;;;;;;;;x
-AP2_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP3;+50 Administration Points;;;;;;;;;;;;;x
-AP3_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP4;+50 Administration Points;;;;;;;;;;;;;x
-AP4_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP5;+50 Administration Points;;;;;;;;;;;;;x
-AP5_desc;+50 Administration Points;;;;;;;;;;;;;x
-AP6;+50 Administration Points;;;;;;;;;;;;;x
-AP6_desc;+50 Administration Points;;;;;;;;;;;;;x
 request_grant_title;Request Grant;;;;;;;;;;;;;x
 request_grant_desc;Triggers an event that lets you ask for a grant from other human players.;;;;;;;;;;;;;x
 give_grant_title;Enable Giving Grants;;;;;;;;;;;;;x
 give_grant_desc;Enables you to receive the grant requested event when another country asks for a grant.;;;;;;;;;;;;;x
 deny_grant_title;Disable Giving Grants;;;;;;;;;;;;;x
 deny_grant_desc;Disables the grant requested event when another country asks for a grant.;;;;;;;;;;;;;x
+mining_focus_title;Disable Labourer Promotion;;;;;;;;;;;;;x
+mining_focus_desc;This decision triggers an event that allows you to choose what type of RGO you would like to disable labourer promotion in. You can also choose to enable promotion in previously disabled labourer RGO types.;;;;;;;;;;;;;x
+EVTNAME91309;Disable Labourer Promotion;;;;;;;;;;;;;x
+EVTDESC91309;Labourers in the chosen RGO type will not promote to craftsmen or artisans.;;;;;;;;;;;;;x
+EVTOPTA91309;Coal;;;;;;;;;;;;;x
+EVTOPTB91309;Iron;;;;;;;;;;;;;x
+EVTOPTC91309;Sulphur;;;;;;;;;;;;;x
+EVTOPTD91309;Rubber;;;;;;;;;;;;;x
+EVTOPTE91309;Oil;;;;;;;;;;;;;x
+EVTOPTF91309;Timber;;;;;;;;;;;;;x
+EVTOPTG91309;Tropical Wood;;;;;;;;;;;;;x
+EVTOPTH91309;Clear previous choices and enable promotion in all RGOs;;;;;;;;;;;;;x
 EVTNAMErequestgrant;Request Grant;;;;;;;;;;;;;x
 EVTDESCrequestgrant;Choose an amount you want to apply for;;;;;;;;;;;;;x
 Ask_0.5M_Grant;Ask for 500,000;;;;;;;;;;;;;x
@@ -975,7 +1051,7 @@ country_increase_conscription_ps_disabled_desc;Raises your draft law by one leve
 country_suppression_title;Country Scope: Suppression;;;;;;;;;x;;;;
 country_suppression_desc;Gives a -0.05 MIL and CON modifier to the country for 10 years.;;;;;;;;;x;;;;
 country_recruit_general_title;Country Scope: Recruit General;;;;;;;;;x;;;;
-country_recruit_general_desc;Spawns either a 4/3, 3/4, 4/4 or 5/5 general and sets a 10 year cooldown timer.;;;;;;;;;x;;;;
+country_recruit_general_desc;Spawns either a 4/4 or 5/5 general and sets a 10 year cooldown timer.;;;;;;;;;x;;;;
 country_reduce_infamy_title;Country Scope: Reduce Infamy;;;;;;;;;x;;;;
 country_reduce_infamy_desc;Reduces infamy by 3 and sets a 5 year cooldown timer.;;;;;;;;;x;;;;
 country_early_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
@@ -1016,6 +1092,8 @@ province_rgo_change_mining_title;Province Scope: Change Mining RGO.;;;;;;;;;x;;;
 province_rgo_change_mining_desc;Allows the switching of a single RGO province of the following types: Coal, Iron, and Sulphur can only be swapped with each other and NOT from timber. Timber can be swapped from any agricultural tile and requires a forest, woods, or jungle province. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
 province_rgo_change_agriculture_title;Province Scope: Change Agriculture RGO.;;;;;;;;;x;;;;
 province_rgo_change_agriculture_desc;Allows the switching of a single RGO province of the following types: Grain, Fruit, Fish, Cattle, Wool, Cotton, Opium, Dye, Silk, or Tobacco. Fish requires a coastal province. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
+province_establish_financial_center_title;Province Scope: Establish Financial Center;;;;;;;;;x;;;;
+province_establish_financial_center_desc;Changes the selected province's trade good to precious metal to represent the new financial hub of your country. Can only use this decision once and it must be on core territory.;;;;;;;;;x;;;;
 reset_province_selector_title;Reset Province Selector;;;;;;;;;x;;;;
 reset_province_selector_desc;Destroys one province selector and refunds 1000 Admin Points;;;;;;;;;x;;;;
 EVTNAME91736;Mining RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -1083,11 +1161,11 @@ EVTDESC91005;POP promotion factors and national focus bonuses has been split up 
 EVTOPTA91005;Got it.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTB91005;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91006;Tutorial: The Economy;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESC91006;A number of small changes have been made in an effort to balance the in-game economy and lessen the frequency of economic crashes. New factory goods have been introduced and POP needs have been rebalanced to make normally useless goods more important. Governments will be forced to pay money to POPs through social spending in order to get pop growth. This has the effect of taking money out of national banks and back into the world market.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91006;A number of small changes have been made in an effort to balance the in-game economy and lessen the frequency of economic crashes. New factory goods have been introduced and POP needs have been rebalanced to make normally useless goods more important. Governments will be forced to pay money to POPs through social spending in order to get pop growth. A world bank has been implemented that works by buying up unsold goods in the world market in order to stimulate faltering economies. The world bank does not have infinite money or infinite demand however, so it is possible for some goods to go unsold if is an extreme disparity between supply and demand.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA91006;Got it.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTB91006;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91007;Tutorial: Combat;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESC91007;Land combat has been balanced so that lategame artillery only has roughly only twice as much defense as attack, as opposed to four to one in vanilla. Guards and tanks have been buffed to be better than infantry in every aspect, but their costs have increased substantially to compensate. Stats on all ships have been changed to create a balanced combat system. In vanilla, all cruiser fleets would wreck big ships due to their extremely efficient naval supply cost, evasion, and torpedo attacks. Cruisers torpedo attack has been taken away, battleship and dreadnought stats have been buffed. Commerce raiders get many torpedo attack bonuses from late game inventions but almost no normal attack. Torpedoes are a special type of attack that only affect big ships and do no damage to small ships, so the balance of lategame naval combat is Big ships > Cruisers > Commerce Raiders > Big Ships. ;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91007;Land combat has been balanced so that lategame artillery only has roughly only twice as much defense as attack, as opposed to four to one in vanilla. Guards and tanks have been buffed to be better than infantry in every aspect, but their costs have increased substantially to compensate. Stats on all ships have been changed to create a balanced combat system. In vanilla, all cruiser fleets would wreck big ships due to their extremely efficient naval supply cost, evasion, and torpedo attacks. Cruisers torpedo attack has been taken away, battleship and dreadnought stats have been buffed. Submarines have replaced monitors and come with a high torpedo attack but almost no normal attack. Torpedoes are a special type of attack that only affect big ships and do no damage to small ships, so the balance of lategame naval combat is Big ships > Cruisers > Submarines > Big Ships. ;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA91007;Got it.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTB91007;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91008;Tutorial: Healthcare;;;;;;;;;;;;;;;;;;;;;;;x
@@ -1171,6 +1249,7 @@ EVTDESC31203;The Greek diaspora is returning to our lands in droves and the Turk
 EVTOPTA31203;Onwards to Constantinople!;;;;;;;;;;;;x
 romanian_balkan_liberation_war_title;Form Romania;;;;;;;;;;;;x
 romanian_balkan_liberation_war_desc;For too long our people have remained divided and under foreign rule. It is time we proclaimed a united kingdom of Romania!;;;;;;;;;;;;x
+illuminati;Illuminati;;;;;;;;;;;;;;;;;;;;;;;x
 german;German;;;;;;;;;;;;;;;;;;;;;;;x
 polish_lithuanian;Polish-Lithuanian;;;;;;;;;;;;;;;;;;;;;;;x
 scandi;Scandinavian;;;;;;;;;;;;;;;;;;;;;;;x
@@ -1205,6 +1284,7 @@ assimilation;Forced Assimilation;;;;;;;;;;;;;x
 literacy_campaign;Literacy Campaign;;;;;;;;;;;;;x
 small_baby_boom;Small Baby Boom;;;;;;;;;;;;;x
 rgo_expansion;RGO Expansion;;;;;;;;;;;;;x
+financial_center;Financial Center;;;;;;;;;;;;;x
 switched_production;Switched Production;;;;;;;;;;;;;x
 province_attract_immigrants;Immigration Focus;;;;;;;;;;;;;x
 unemployment_fix;Unemployment Fix;;;;;;;;;;;;;x
@@ -1214,6 +1294,12 @@ colonial_railroad_nerf3;Colonial Railroad Nerf;;;;;;;;;;;;;x
 colonial_railroad_nerf4;Colonial Railroad Nerf;;;;;;;;;;;;;x
 colonial_railroad_nerf5;Colonial Railroad Nerf;;;;;;;;;;;;;x
 colonial_railroad_nerf6;Colonial Railroad Nerf;;;;;;;;;;;;;x
+colonial_farm_nerf1;Colonial Tech Nerf;;;;;;;;;;;;;x
+colonial_farm_nerf2;Colonial Tech Nerf;;;;;;;;;;;;;x
+colonial_farm_nerf3;Colonial Tech Nerf;;;;;;;;;;;;;x
+colonial_mine_nerf1;Colonial Tech Nerf;;;;;;;;;;;;;x
+colonial_mine_nerf2;Colonial Tech Nerf;;;;;;;;;;;;;x
+colonial_mine_nerf3;Colonial Tech Nerf;;;;;;;;;;;;;x
 global_population_nerf_1900;Global Population Normalization;;;;;;;;;;;;x
 global_population_nerf_1910;Global Population Normalization;;;;;;;;;;;;x
 global_population_nerf_1920;Global Population Normalization;;;;;;;;;;;;x
@@ -1284,6 +1370,24 @@ EVTOPTAcommonarmy;A small price to pay.;;;;;;;;;;;;x
 EVTNAME31514;Germany for Germans;;;;;;;;;;;;x
 EVTDESC31514;One of the main tenants of the newly formed German Confederation is to confer privileged status to ethnic Germans. We will have to abandon our hopes of creating a Danubian Confederation in order to appease our German brothers.;;;;;;;;;;;;x
 EVTOPTA31514;Deutschland über alles!;;;;;;;;;;;;x
+EVTNAME29900;The First Tractor in $COUNTRY$;Le premier tracteur ?$COUNTRY$;Der erste Traktor in $COUNTRY$;;Primer tractor en $COUNTRY$;;;;;;;;;x;;;;
+EVTDESC29900;Mother, mother! Old man Johnson has bought a new machine! It can plough, pull, tear, move, and you can ride on it! He says it's called a 'tractor'!'\n\nThe advent of the tractor in $COUNTRY$ has led to a revolution in local agriculture, with farm output increasing on a scale unfathomable a mere generation ago. Truly, the boons of industry are good unto $COUNTRY$.;Maman, maman ! Le vieux Johnson a achet?une nouvelle machine ! Il peut labourer, tirer, arracher, d?lacer, et vous pouvez m?e monter sur elle ! Il dit que l'on appelle ? un ?racteur?! \n\nL'av?ement du tracteur ?$COUNTRY$ conduit une r?olution dans l'agriculture locale, avec la production agricole qui augmentera ?une ?helle insondable et cela en ?peine une g??ation. En v?it? les faveurs de l'industrie sont bien bonnes envers $COUNTRY$. ;Mutter, oh Mutter! Der alte Johnson hat eine neue Maschine gekauft! Sie kann pfl?en, ziehen, anrei?n und fahren - und man kann sogar darauf sitzen! Er sagt, die Maschine sei ein 'Traktor'!'\n\nDie Einf?rung von Traktoren in $COUNTRY$ hat zu einer Revolution der lokalen Landwirtschaft gef?rt und die landwirtschaftliche Leistung auf ein Niveau gehievt, von dem man vor nur einer Generation nur tr?men konnte. Wahrlich, die G?ter der Industrie sind $COUNTRY$ gn?ig.;;?am? mam? ·ap?Johnson ha comprado una m?uina nueva! ·uede arar, arrastrar, desmenuzar, moverse! .ice que se llama 'tractor'!\nLa llegada del tractor a $COUNTRY$ ha significado una revoluci? en la agricultura local, con un nivel de incremento de la producci? impensable hace tan solo una generaci?. Ciertamente, los beneficios de la industria son un bien para $COUNTRY$.;;;;;;;;;x;;;;
+EVTOPTA29900;Truly, 'tis.;C'est certain.;Aber echt!;;Ciertamente, lo son.;;;;;;;;;x;;;;
+EVTNAME29901;$COUNTRY$ Electrified!;?ectrification de $COUNTRY$ !;$COUNTRY$ elektrifiziert!;;?lectricidad en $COUNTRY$!;;;;;;;;;x;;;;
+EVTDESC29901;Mother, Mother! Have you seen the lights on Main Street? They're putting new lights in the lamp posts! They say that they're powered by 'electricity'!'\n\nElectricity, in the form of street lights, have arrived in $COUNTRY$. This new type of lighting illuminates our cities in ways that have hereto only been dreamt of, increasing the efficiency and productivity of local industry, as well as the local quality of life.;Maman, maman ! Avez-vous vu les lumi?es sur la rue principale ? Ils mettent de nouvelles lumi?es en lampadaires ! Ils disent qu'ils sont aliment? par une chose appel? ?lectricit? ! \n\nL'?ectricit? sous la forme d'?lairage des rues, est arriv? en $COUNTRY$. Ce nouveau type d'?lairage illumine nos villes de fa?n ?pr?entement r?er d'accro?re l'efficacit?et la productivit?des industries locales, ainsi que la qualit?de vie. ;Mutter, oh Mutter! Hast du die Lichter auf der Hauptstra? gesehen? Sie bringen neue Lampen in den Laternenpf?len an! Man sagt, diese w?den von 'Elektrizit?' betrieben!'\n\nDie Elektrizit? hat in Form von Stra?nbeleuchtungen in $COUNTRY$ Einzug gehalten. Diese neue Beleuchtungsart erleuchtet unsere St?te auf eine Art und Weise, von der wir vorher nur tr?men konnten. Dies erh?t die Effizienz und die Produktivit? der lokalen Industrie und die Lebensqualit? der lokalen Bev?kerung.;;?am? mam? ?as visto las luces en la calle mayor? ?st? poniendo luces nuevas en las farolas! .icen que funcionan con 'electricidad'!\n\nLa electricidad , en forma de luz en las calles, ha llegado a $COUNTRY$. Este nuevo tipo de luz ilumina nuestras ciudades de una forma hasta ahora solo so?da, lo que incrementa el rendimiento y la productividad de la industria local, as?como la calidad de vida local.;;;;;;;;;x;;;;
+EVTOPTA29901;Brilliant!;Parfait !;Gro?rtig!;;?rillante!;;;;;;;;;x;;;;
+EVTNAME29902;Exploding $COUNTRY$;Explosion ?$COUNTRY$;Explosionen in $COUNTRY$;;Explotando $COUNTRY$;;;;;;;;;x;;;;
+EVTDESC29902;Mother, Mother! Have you heard the sounds and booms echoing from the mine? They say it's a new type of explosive!'\n\nThe introduction of nitroglycerin, and with it the ability to dig deeper into the mine shafts than ever before, in $COUNTRY$ means that the local mining industry has increased its output several times over.;Maman, maman ! Avez-vous entendu les sons et les booms en ?ho de la mine ? Ils disent que c'est un nouveau type d'explosif ! \n\nL'introduction de la nitroglyc?ine, et avec elle la capacit?de creuser plus profond?ent dans les puits de mine, ?$COUNTRY$, signifie que l'industrie mini?e locale va augmenter de plusieurs fois sa production.;Mutter, oh Mutter! Hast du das Donnern und Wummern aus der Mine geh?t? Sie sagen, das sei eine neue Sprengstoffart!'\n\nDie Einf?rung von Nitroglyzerin und die damit einhergehende M?lichkeit, Minensch?hte tiefer als je zuvor in den Boden zu treiben, hat der lokalen Bergbauindustrie in $COUNTRY$ erm?licht, ihre Leistung um ein Vielfaches zu steigern.;;?am? mam? ?as o?o los sonidos de las explosiones que llegan de la mina? .icen que es un nuevo tipo de explosivo!\n\nLa introducci? de la nitroglicerina, y con ella la capacidad para excavar a m? profundidad que nunca en los pozos mineros, en $COUNTRY$ significa que la industria minera local ha incrementado su producci? en varios enteros.;;;;;;;;;x;;;;
+EVTOPTA29902;Kaboom!;Boum !;Bumm!;;?uuuuum!;;;;;;;;;x;;;;
+EVTNAME29903;New Store in $COUNTRY$;Nouveau magasin ?$COUNTRY$;Neuer Laden in $COUNTRY$;;Almac? en $COUNTRY$;;;;;;;;;x;;;;
+EVTDESC29903;Mother! Mother! They've opened a new store in town!'\n\nThe nineteenth century saw the development of vastly improved channels for the distribution of goods to broader groups of customers. The opening of new, specialized and industrialized retailers was essential in bringing new industrial goods, produced in factories, to consumers. The new store in $COUNTRY$ will increase the efficiency of the local farms, as farmers have to spend less time in travel to and from markets.;M?e ! M?e ! Ils ont ouvert un nouveau magasin en ville ! \nLe XIXe si?le voit le d?eloppement de fili?es am?ior?s pour la distribution des biens ?des franges plus larges de la population. L'ouverture d'enseignes, sp?ialis?s et professionalis?s, pour l'apport de nouveaux produits fabriqu? dans des usines pour les consommateurs. Le nouveau magasin ?$COUNTRY$ augmentera l'efficacit?des exploitations agricoles, les agriculteurs vont passer moins de temps en d?lacement aux foires et autres march?.;Mutter! Mutter! In der Stadt haben sie einen neuen Laden aufgemacht!'\n\nIm neunzehnten Jahrhundert wurden die Vertriebskan?e zur G?erverteilung an breitere Konsumentengruppen stark verbessert. Die Er?fnung neuer, spezialisierter und industrialisierter Einzelhandelsgesch?te war unerl?slich daf?, neue, in Fabriken hergestellte Industrieg?er zum Konsumenten zu bringen. Der neue Laden in $COUNTRY$ wird die Effizienz der lokalen Bauernh?e steigern, da die Bauern nun weniger Zeit f? Fahrten zu den M?kten aufwenden m?sen.;;?am? ?am? ?an abierto un almac? en el pueblo!\nEl siglo diecinueve contempl?el desarrollo de canales ampliamente mejorados para la distribuci? de mercanc?s entre un n?ero mayor de clientes. La apertura de comercios nuevos, especializados e industrializados fue esencial para acercar a los consumidores los nuevos productos industriales producidos en las f?ricas. El nuevo almac? en $COUNTRY$ incrementar?el rendimiento de las granjas, mientras que los agricultores podr? ahorrar tiempo en tener que ir y venir a los mercados.;;;;;;;;;x;;;;
+EVTOPTA29903;Excellent!;Parfait !;Hervorragend!;;?xcelente!;;;;;;;;;x;;;;
+EVTNAME29904;Mechanized Mining;Extraction mini?e m?anis?;Mechanisierter Bergbau;;Miner? mecanizada;;;;;;;;;x;;;;
+EVTDESC29904;Mother! Mother! Father says that they've got new tools in the mine!'\n\nWith the invention of machine tools, mines are slowly being fitted with new and efficient tools to aid the excavation of the slumbering riches below the surface. Mine efficiency and size has been increased in $COUNTRY$ on account of this.;M?e ! M?e ! P?e dit qu'ils ont de nouveaux outils ?la mine ! \n\nAvec l'invention des machines-outils, les mines sont peu ?peu ?uip?s d'appareils nouveaux et efficaces pour aider ?l'excavation des richesses endormies sous la surface. L'efficacit?des mines et leur taille ont ??augment?s en $COUNTRY$, et cela est ?mettre sur le compte de ces nouveaux outils. ;Mutter! Mutter! Vater sagt, dass sie jetzt in der Mine neue Werkzeuge haben!'\n\nDurch die Erfindung von Maschinenwerkzeugen werden die Minen allm?lich mit neuen und effizienten Werkzeugen ausgestattet, die beim Abbau der Reicht?er unterhalb der Erdoberfl?he helfen. Aus diesem Grund hat sich die Bergbaueffizienz und der Bergbauumfang in $COUNTRY$ erh?t.;;?am? ?am? ·ap?dice que tienen herramientas nuevas en la mina!\n\nCon la invenci? de maquinaria, las minas est? siendo dotadas, poco a poco, con herramientas nuevas y de buen rendimiento para ayudar en la excavaci? de las riquezas que yacen bajo la superficie. A causa de ello, el rendimiento y el volumen minero se ha incrementado en $COUNTRY$.;;;;;;;;;x;;;;
+EVTOPTA29904;Let us not dig too deep and greedily, though.;Veillons cependant ?ne pas creuser trop profond et ?ne pas nous montrer trop gourmands.;Lasst uns trotzdem nicht zu tief und gierig graben!;;En cualquier caso, que no nos ciegue la avaricia y excavemos m? de la cuenta;;;;;;;;;x;;;;
+EVTNAME29905;Artificial Fertilizers;;;;;;;;;;;;;;x;;;;
+EVTDESC29905;Mother! Mother! Father says that they've got fertilizer for the field!'\n\nWith the invention of the Haber-Bosch Process, farmlands are slowly being fixed with vast amounts of fertilizer. Farm efficiency has been vastly increased in $COUNTRY$ on account of this.;;;;;;;;;;x;;;;
+EVTOPTA29905;Huzzah!;;;;;;;;;;;;;;;;x;;;;
 EVTNAMEsetgovernment;Set Government;;;;;;;;;;;;x
 EVTDESCsetgovernment;Relevant government flag is set.;;;;;;;;;;;;x
 EVTOPTAsetgovernment;OK;;;;;;;;;;;;x
@@ -1310,9 +1414,13 @@ EVTDESCmob3;This invention increases your mobilization size by 1%.;;;;;;;;;;;;x
 EVTNAMEmob4;Staff Command Support Tech Flag;;;;;;;;;;;;x
 EVTDESCmob4;This invention increases your mobilization size by 1%.;;;;;;;;;;;;x
 EVTNAMEmob5;Railroad Transport Groups Tech Flag;;;;;;;;;;;;x
-EVTDESCmob5;This invention increases your mobilization size by 1%.;;;;;;;;;;;;x
+EVTDESCmob5;This invention increases your mobilization size by 2%.;;;;;;;;;;;;x
 EVTNAMEsyntheticpolymers;Synthetic Polymers Tech Flag;;;;;;;;;;;;x
 EVTDESCsyntheticpolymers;This tech allows you to enact universal healthcare.;;;;;;;;;;;;x
+EVTNAMEpop_promotion_bonus1;Pop Promotion Bonus 1;;;;;;;;;;;;x
+EVTDESCpop_promotion_bonus1;This tech gives you a boost to pop promotion.;;;;;;;;;;;;x
+EVTNAMEpop_promotion_bonus2;Pop Promotion Bonus 2;;;;;;;;;;;;x
+EVTDESCpop_promotion_bonus2;This tech gives you a boost to pop promotion.;;;;;;;;;;;;x
 EVTOPTAtechnologyflag;OK;;;;;;;;;;;;x
 change_culture_nanfaren_title;Switch Accepted Culture;;;;;;;;;;;;x
 change_culture_nanfaren_desc;Focus on developing the South. You will still have the option to switch back.;;;;;;;;;;;;x

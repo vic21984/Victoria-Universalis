@@ -5,7 +5,7 @@ private_banks = {
 	cost = 3600
 
 	activate_building = cement_factory 
-	tax_eff = 3
+	tax_eff = 7
 	
 	ai_chance = {
 		factor = 1.1
@@ -36,7 +36,7 @@ stock_exchange = {
 	year = 1836
 	cost = 7200
 
-	tax_eff = 5
+	tax_eff = 2
 	
 	ai_chance = {
 		factor = 1.1
@@ -67,7 +67,7 @@ business_banks = {
 	year = 1850
 	cost = 10800
 
-	tax_eff = 5
+	tax_eff = 4
 	
 	ai_chance = {
 		factor = 1.1
@@ -98,7 +98,7 @@ investment_banks = {
 	year = 1870
 	cost = 14400
 
-	tax_eff = 2
+	tax_eff = 3
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -125,10 +125,10 @@ investment_banks = {
 }
 bank_inspection_board = {
 	area = financial_institutions
-	year = 1900
+	year = 1890
 	cost = 18000
 
-	tax_eff = 2
+	tax_eff = 1
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -155,7 +155,29 @@ bank_inspection_board = {
 }
 mutual_funds = {
 	area = financial_institutions
-	year = 1919
+	year = 1900
+	cost = 21600
+
+	tax_eff = 2
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.5
+			rank = 16
+		}
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}
+}
+modern_financial_institutions = {
+	area = financial_institutions
+	year = 1910
 	cost = 21600
 
 	tax_eff = 2
@@ -302,9 +324,32 @@ modern_central_bank_system = {
 }
 market_determined_exchange_rates = {
 	area = monetary_system
-	year = 1900
+	year = 1890
 	cost = 21600
 
+
+	administrative_efficiency = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.25
+			economic_policy = laissez_faire
+		}
+		modifier = {
+			factor = 1.1
+			rank = 16
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}
+}
+fiat_based_monetary_system = {
+	area = monetary_system
+	year = 1910
+	cost = 21600
+	tax_eff = 1
 
 	administrative_efficiency = 0.05
 	ai_chance = {
@@ -331,7 +376,6 @@ early_classical_theory_and_critique = {
 	year = 1836
 	cost = 3600
 	
-	factory_input = -0.01
 	ai_chance = {
 		factor = 2
 		modifier = {
@@ -353,7 +397,6 @@ late_classical_theory = {
 	year = 1836
 	cost = 7200
 
-	factory_input = -0.01
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -383,7 +426,6 @@ collectivist_theory = {
 	year = 1850
 	cost = 10800
 
-	factory_input = -0.01
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -413,7 +455,6 @@ the_historical_theory = {
 	year = 1860
 	cost = 14400
 
-	factory_input = -0.01
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -443,7 +484,6 @@ neoclassical_theory = {
 	year = 1880
 	cost = 18000
 
-	factory_input = -0.01
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -473,7 +513,35 @@ keynesian_economics = {
 	year = 1900
 	cost = 21600
 
-	factory_input = -0.01
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500 #1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 2000 #1500
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.3 
+		}
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+	}
+}
+neoliberal_theory = {
+	area = economic_thought_and_critique
+	year = 1920
+	cost = 21600
+
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -602,8 +670,8 @@ market_regulations = {
 	cost = 14400
 
 	influence = 0.2
-	farm_rgo_size = 0.2
-	mine_rgo_size = 0.2
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -631,8 +699,8 @@ economic_responsibility = {
 	cost = 18000
 
 	influence = 0.2
-	farm_rgo_size = 0.2
-	mine_rgo_size = 0.2	
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1	
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -656,12 +724,12 @@ economic_responsibility = {
 }
 government_interventionism = {
 	area = market_functionality
-	year = 1900
+	year = 1890
 	cost = 21600
 
 	influence = 0.2
-	farm_rgo_size = 0.2
-	mine_rgo_size = 0.2	
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -681,7 +749,34 @@ government_interventionism = {
 			tech_school = commerce_tech_school
 		}
 	}	
-	
+}
+keynesianism = {
+	area = market_functionality
+	year = 1900
+	cost = 21600
+
+	influence = 0.2
+	farm_rgo_size = 1
+	mine_rgo_size = 1	
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}	
 }
 
 
@@ -692,6 +787,7 @@ guild_based_production = {
 	cost = 3600
 	activate_building = canned_food_factory 
 	factory_output = 0.01
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -726,6 +822,7 @@ organized_factories = {
 	cost = 7200
 
 	factory_output = 0.01
+	factory_input = -0.01
 		ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -764,6 +861,7 @@ scientific_management = {
 	cost = 10800
 
 	factory_output = 0.01
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -802,6 +900,7 @@ time_saving_measures = {
 	cost = 14400
 
 	factory_output = 0.01
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -828,6 +927,7 @@ management_strategy = {
 	cost = 18000
 
 	factory_output = 0.01
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -854,6 +954,7 @@ organizational_development = {
 	cost = 21600
 
 	factory_output = 0.01
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -873,6 +974,33 @@ organizational_development = {
 			tech_school = commerce_tech_school
 		}
 	}	
+}
+modern_business_management = {
+	area = tech_organization
+	year = 1920
+	cost = 21600
+
+	factory_output = 0.03
+	factory_input = -0.01
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = commerce_tech_school
+		}
+	}
 }
 
 

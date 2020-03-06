@@ -64,7 +64,6 @@ medium_nation = {
 average_nation_tariffs = {
 	trigger = {
 		total_pops = 7500000
-		NOT = { total_pops = 17500000 } #17.5 million POPs
 		ai = no
 		trade_policy = protectionism
 		NOT = { civilized = no }			
@@ -85,18 +84,6 @@ large_nation = {
 	icon = 9
 }
 
-large_nation_tariffs = {
-	trigger = {
-		total_pops = 17500000
-		NOT = { total_pops = 30000000 } #30 million POPs
-#		ai = no
-		trade_policy = protectionism
-		NOT = { civilized = no }		
-	}
-	max_tariff = -0.25
-	icon = 9
-}
-
 empire = {
 	trigger = {
 		total_pops = 30000000
@@ -107,18 +94,6 @@ empire = {
 	leadership_modifier = 0.2
 	administrative_efficiency_modifier = -0.2
 	tax_efficiency = -0.06
-	icon = 9
-}
-
-empire_tariffs = {
-	trigger = {
-		total_pops = 30000000
-		NOT = { total_pops = 60000000 } #60 million POPs
-#		ai = no
-		trade_policy = protectionism
-		NOT = { civilized = no }		
-	}
-	max_tariff = -0.25
 	icon = 9
 }
 
@@ -135,18 +110,6 @@ superpower = {
 	icon = 9
 }
 
-superpower_tariffs = {
-	trigger = {
-		total_pops = 60000000
-		NOT = { total_pops = 150000000 }
-#		ai = no
-		trade_policy = protectionism	
-		NOT = { civilized = no }	
-	}
-	max_tariff = -0.25
-	icon = 9
-}
-
 hegemon = {
 	trigger = {
 		total_pops = 150000000
@@ -156,17 +119,6 @@ hegemon = {
 	leadership_modifier = 0.6
 	administrative_efficiency_modifier = -0.6
 	tax_efficiency = -0.10
-	icon = 9
-}
-
-hegemon_tariffs = {
-	trigger = {
-		total_pops = 150000000
-#		ai = no
-		trade_policy = protectionism
-		NOT = { civilized = no }		
-	}
-	max_tariff = -0.25
 	icon = 9
 }
 
@@ -794,6 +746,7 @@ taxation_1890 = {
 help_ai_generic = {
 	trigger = {
 		ai = yes
+		NOT = { has_country_flag = jan_mayen }
 	}
 	icon = 9
 	administrative_efficiency_modifier = 0.5
@@ -803,6 +756,7 @@ help_ai_generic = {
 help_ai_tax = {
 	trigger = {
 		ai = yes
+		NOT = { has_country_flag = jan_mayen }
 	}
 	icon = 9
 	min_tax = 0.95
@@ -812,29 +766,21 @@ help_ai_free_trade = {
 	trigger = {
 		ai = yes
 		trade_policy = free_trade
+		NOT = { has_country_flag = jan_mayen }
 	}
 	icon = 9
-	max_tariff = 0.75
-	min_tariff = 1.5
+	min_tariff = 1.25
 }
 
 help_ai_non_free_trade = {
 	trigger = {
 		ai = yes
 		trade_policy = protectionism
+		NOT = { has_country_flag = jan_mayen }
 	}
 	icon = 9
-	min_tariff = 0.75
+	min_tariff = 1
 }
-
-#help_ai_social0 = {
-#	trigger = {
-#		ai = yes
-#		NOT = { year = 1837 }
-#	}
-#	icon = 9
-#	max_social_spending = 0.01
-#}
 
 help_ai_social1 = {
 	trigger = {
@@ -1022,7 +968,7 @@ mob5_trigger = {
 		NOT = { has_country_flag = china }
 		has_country_flag = mob5_invented
 	}
-	mobilisation_size = 0.01
+	mobilisation_size = 0.02
 	icon = 15		
 }
 
@@ -1067,6 +1013,109 @@ mob5_china_trigger = {
 		has_country_flag = china
 		has_country_flag = mob5_invented
 	}
-	mobilisation_size = 0.002
+	mobilisation_size = 0.004
 	icon = 15		
+}
+
+########## Jan Mayen ##########
+jan_mayen_tariffs = {
+	trigger = {
+		has_country_flag = jan_mayen		
+	}
+	max_tariff = -0.25
+	max_tax = 0.01
+	prestige = -1
+	icon = 9
+}
+
+jan_mayen_world_bank1 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		NOT = { year = 1840 }	
+	}
+	rgo_output = 155
+	icon = 11
+}
+
+jan_mayen_world_bank2 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1840	
+		NOT = { year = 1850 }	
+	}
+	rgo_output = 180
+	icon = 11
+}
+
+jan_mayen_world_bank3 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1850	
+		NOT = { year = 1860 }		
+	}
+	rgo_output = 300
+	icon = 11
+}
+
+jan_mayen_world_bank4 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1860
+		NOT = { year = 1870 }	
+	}
+	rgo_output = 500
+	icon = 11
+}
+jan_mayen_world_bank5 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1870
+		NOT = { year = 1880 }	
+	}
+	rgo_output = 600
+	icon = 11
+}
+jan_mayen_world_bank6 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1880
+		NOT = { year = 1890 }	
+	}
+	rgo_output = 850
+	icon = 11
+}
+jan_mayen_world_bank7 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1890
+		NOT = { year = 1900 }
+	}
+	rgo_output = 1000
+	icon = 11
+}
+jan_mayen_world_bank8 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1900
+		NOT = { year = 1910 }
+	}
+	rgo_output = 1200
+	icon = 11
+}
+jan_mayen_world_bank9 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1910
+		NOT = { year = 1920 }
+	}
+	rgo_output = 1400
+	icon = 11
+}
+jan_mayen_world_bank10 = {
+	trigger = {
+		has_country_flag = jan_mayen
+		year = 1920
+	}
+	rgo_output = 1800
+	icon = 11
 }

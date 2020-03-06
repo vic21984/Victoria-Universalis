@@ -1039,15 +1039,6 @@ arab = {
 		last_names = { Ziyad al-Rahman Firnas al-Majriti al-Zahrawi al-Zarqali Bajjah Zuhr al-Idrisi Tufail Rushd al-Baitar Battuta Khaldon al-Qalasadi 
 		}
 	}
-	sudanese = {
-		color = {241 241 78}
-		first_names = { "Ibn Muhammad" Abdullah "Abbas said" Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
-		}
-
-		last_names = { Ahmad Ali Zubayr Digna Azrak Hammuda al-Tasashi Nujumi
-		}
-		radicalism = 10
-	}
 	union = ARA
 }
 
@@ -2642,6 +2633,15 @@ east_african = {
 		last_names = { Ibrahim Adeer Hassan  Gurey Hirsi Doreh Dekiye Afrah Mujahid Kenadid
 		}
 	}
+	sudanese = {
+		color = {241 241 78}
+		first_names = { "Ibn Muhammad" Abdullah "Abbas said" Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
+		}
+
+		last_names = { Ahmad Ali Zubayr Digna Azrak Hammuda al-Tasashi Nujumi
+		}
+		radicalism = 10
+	}
 	sukuma = {
 		color = {54 167 122} 
 		first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
@@ -2865,5 +2865,10 @@ bears = {
 		
 		last_names = { Beliy Medved Bjorn Rawrrorr Rrrrr Grrr Gyp Qoi Styrbjorn Blomstfjellet }
 	}
-	union = SCA
+	illuminati = {
+		color = { 200 200 200}
+		first_names = {  }
+		
+		last_names = {  }
+	}
 }

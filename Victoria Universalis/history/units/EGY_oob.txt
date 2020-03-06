@@ -147,12 +147,6 @@ army = {
 	}
 
 	regiment = {
-		name= "4.1 Infantry"
-		type = infantry
-		home = 1751
-	}
-
-	regiment = {
 		name= "3.1 Artillery"
 		type = artillery
 		home = 1747
@@ -160,6 +154,12 @@ army = {
 	
 	regiment = {
 		name= "4.1 Artillery"
+		type = artillery
+		home = 1751
+	}
+	
+	regiment = {
+		name= "5.1 Artillery"
 		type = artillery
 		home = 1751
 	}
@@ -209,7 +209,7 @@ army = {
 
 army = {
 	name = "Army of the Upper Nile"
-	location = 1916
+	location = 916
 	regiment = {
 		name= "1.2 Sipahis"
 		type = cavalry

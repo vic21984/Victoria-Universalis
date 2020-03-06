@@ -67,6 +67,13 @@ country_event = {
 				}
 				administrative_points = 350
 			}
+			any_country = {
+				limit = {
+					ai = no
+					neoliberal_theory = 1
+				}
+				administrative_points = 350
+			}
 	}
 }
 
@@ -215,5 +222,30 @@ country_event = {
 	option = {
 		name = EVTOPTA91601
 		administrative_points = 350
+	}
+}
+
+country_event = {
+	id = 91607
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+	
+	allow_multiple_instances = yes
+	
+	trigger = {
+		NOT = { has_global_flag = ps_turned_off }
+		ai = no
+		invention = AP7
+		NOT = { has_country_flag = AP7 }
+	}
+
+	
+	immediate = {
+		set_country_flag = AP7
+	}
+	
+	option = {
+		name = EVTOPTA91601
+		administrative_points = 400
 	}
 }

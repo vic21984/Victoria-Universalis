@@ -85,6 +85,7 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+			has_country_flag = jan_mayen
 			NOT = {
 				OR = {
 					continent = north_america
@@ -144,7 +145,7 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -172,7 +173,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		continent = south_america
 		month = 7
 		THIS = {
@@ -197,7 +198,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = south_america
 		}
@@ -226,7 +227,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania

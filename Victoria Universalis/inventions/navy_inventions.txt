@@ -132,17 +132,13 @@ protected_cruisers = {
 #	}
 #}
 #steam_turbine_ships
-self_propelled_torpedoes = {
+submarines = {
 	limit = { steam_turbine_ships = 1 }
 	chance = {
 		base = 5
 	}
 	effect = {
-		commerce_raider = {
-			hull = 1
-			torpedo_attack = 4
-			fire_range = 0.35
-		}
+		activate_unit = monitor 
 	}
 }
 #light_cruisers = {
@@ -371,6 +367,19 @@ modern_battleships = {
 #	effect = {
 #	}
 #}
+carriers = {
+	limit = { aircraft_carriers = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 10
+			invention = military_aviation
+		}
+	}
+	effect = {
+		activate_unit = carrier
+	}
+}
 #fire_control_systems
 torpedo_boats = {
 	limit = { fire_control_systems = 1 }
@@ -426,7 +435,10 @@ monitors = {
 		}
 	}
 	effect = {
-		activate_unit = monitor 
+		ironclad = {
+			gun_power = 1
+			hull = 1
+		} 
 	}
 }
 #sea_mine_equipment = {
@@ -692,7 +704,7 @@ dreadnoughts = {
 #}
 #modern_naval_design
 wireless = {
-	limit = { modern_naval_design = 1 }
+	limit = { early_modern_naval_design = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -1284,6 +1296,20 @@ nco_tactical_training = {
 		}
 	}
 }
+#early_modern_naval_training
+naval_exercises = {
+	limit = { early_modern_naval_training = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = war_gamming
+		}
+	}
+	effect = {
+		naval_attrition = -0.1
+	}
+}
 #modern_naval_training
 amphibious_warfare_training = {
 	limit = { modern_naval_training = 1 }
@@ -1304,25 +1330,17 @@ amphibious_warfare_training = {
 		}
 	}
 }
-naval_exercises = {
+modern_naval_exercises = {
 	limit = { modern_naval_training = 1 }
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			invention = war_gamming
-		}
-		modifier = {
-			factor = 1
-			invention = offensive_attitude
-		}
-		modifier = {
-			factor = 1
-			invention = defensive_attitude
+			invention = naval_exercises
 		}
 	}
 	effect = {
-		naval_attrition = -0.1
+		naval_attrition = -0.2
 	}
 }
 

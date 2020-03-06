@@ -24,7 +24,13 @@ political_decisions = {
 	embrace_sudanese_minority = {
 		picture = embrace_sudanese
 		potential = {
-			tag = EGY
+			OR = {
+				tag = EGY
+				AND = {
+					tag = ARA
+					capital = 1745
+				}
+			}
 			NOT = {
 				accepted_culture = sudanese
 				has_country_flag = embraced_sudanese

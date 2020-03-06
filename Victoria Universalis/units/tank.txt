@@ -29,15 +29,15 @@ tank = {
 	supply_cost = {
 		barrels = 0.25
 		artillery = 0.15
-		canned_food = 0.15 #0.04
+		canned_food = 0.15
 		fuel = 0.6
 	}
 	
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 16
-	defence = 12
+	attack = 20
+	defence = 14
 	discipline = 1
 	support = 0.25
 	maneuver = 1

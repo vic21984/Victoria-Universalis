@@ -1,8 +1,52 @@
+# Version 0.13 - 3/6/2020
+## General gameplay changes:
+* Expanded the tech tree and rebalanced techs.
+* Rebalanced issues.
+* Rebalanced factory goods.
+* Rebalanced RGO outputs and prices.
+* Fixed immigration to ghost countries bug.
+* Fixed a bug where pops couldn't demote into labourers.
+* Added a decision that allows you to stop promotion of labourers from specific RGOs into craftsmen or artisans.
+* Added a decision that changes the RGO of one province to precious metal. Can only be used once, and it requires the "fiat based monetary system" tech and the province to be cored.
+* Removed the ability for the AI to use normal sized promotion focuses on non normal size states.
+* Introduced new poptype "bankers". They only spawn in Jan Mayen and cannot be obtained by other AI or player countries. They can only work in gold mines and they buy unsold goods in the WM when the rest of the world cannot afford to buy them. They don't have infinite money or demand and they mainly help to keep some unprofitable RGOs and factories employed until natural world demand catches up.
+* Changed name of Jan Mayen to World Bank and set the country to be last place in the rankings in order to make sure they are the last to buy goods from the world market.
+* Changed monitors to submarines.
+* Added new aircraft carrier naval unit.
+* Removed pop promotion bonus for having everyday needs met, replaced it with a pop promotion bonus for researching social alienation and modern sociology.
+* Removed RGO unemployment fix event.
+* Removed issue requirement for tech school changes.
+* Rebalanced lategame unit stats.
+* Moved RGO bonus from distribution channels, tractors, haber bosch process, machine tools, nitroglycerin, and electrical lighting events to the techs themselves. Colonies get a fraction of the bonus from these inventions, previously they didn't get any bonus.
+* Disabled most crises.
+* Removed payments from no healthcare level.
+* Moved some tax efficiency bonus from later financial institutions and monetary systems techs to private banks and no standard. This will help countries in the early game make more money while keeping overall tax rate later in the game the same.
+
+## Map changes:
+* Changed RGOs to create a more balanced early game economy with less overproduction and underproduction
+* Fixed a bugged province in Brazil.
+* Re-arranged some states in Japan.
+
+## Country Balance Changes:
+###### China:
+* Fixed bug that allowed taiping to outlaw opium after they stopped existing.
+* Can only enact the outlaw opium decision once now, if China loses an opium war then the decision is permanently disabled.
+
+###### Sikh Empire:
+* Increased starting soldier POPs and added some artillery to the starting army.
+
+
 # Version 0.121 - 2/22/2020
 ## Country Balance Changes:
 ###### China:
 * Made the outlaw opium decision appear in 1840 instead of at game start.
 
+###### Prussia:
+* Nerfed von Moltke to a 4/4 instead of 5/5.
+
+###### Egypt:
+* Added decreased supply consumption to Muhammad Ali's Reforms.
+* Fixed the starting OOB so that the Army of the Nile no longer spawns in West Africa.
 
 
 # Version 0.12 - 2/21/2020

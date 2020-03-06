@@ -65,6 +65,9 @@ tractors = {
 			economic_policy = laissez_faire
 		}
 	}
+	effect = {
+		farm_RGO_eff = 0.3
+	}
 }
 #electrical_power_generation
 direct_current = {
@@ -259,7 +262,13 @@ hussey_n_mccormicks_reaping_machine = {
 			fruit = 0.2
 		}
 		rgo_goods_output = {
-			tea = 0.2
+			tea_leaves = 0.2
+		}
+		rgo_goods_output = {
+			coffee_beans = 0.2
+		}
+		rgo_goods_output = {
+			opium = 0.2
 		}
 	}
 }
@@ -284,7 +293,7 @@ pitts_threshing_machine = {
 			fruit = 0.2
 		}
 		rgo_goods_output = {
-			tea = 0.2
+			tea_leaves = 0.2
 		}
 	}
 }
@@ -352,6 +361,7 @@ machine_tools = {
 			machine_parts = 0.02 
 		}
 		factory_throughput = 0.05		
+		mine_RGO_eff = 0.3
 	}
 }
 whitney_n_colts_standardized_small_arms = {
@@ -452,6 +462,12 @@ electric_machinery = {
 		rgo_goods_output = {
 			timber = 0.1
 		}
+		rgo_goods_output = {
+			tropical_wood = 0.1
+		}
+		factory_goods_output = {
+			machine_parts = 0.02 
+		}
 	}
 }
 oil_pumping_machinery = {
@@ -491,10 +507,10 @@ drying_techniques = {
 			tea_leaves = 0.2
 		}
 		rgo_goods_output = {
-			coffee_beans = 0.5
+			coffee_beans = 0.2
 		}
 		rgo_goods_output = {
-			opium = 0.5
+			opium = 0.2
 		}
 	}
 }
@@ -685,7 +701,7 @@ pit_coal = {
 	}
 	effect = {
 		rgo_goods_output = {
-			coal = 0.5
+			coal = 0.25
 		}
 	}
 }
@@ -704,7 +720,26 @@ coke = {
 	}
 	effect = {
 		rgo_goods_output = {
-			coal = 0.5
+			coal = 0.25
+		}
+	}
+}
+bessemer_steel = {
+	limit = { clean_coal = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			high_n_low_pressure_steam_engines = 1
+		}
+		modifier = {
+			factor = 2
+			steel_breech_loaded_artillery = 1
+		}
+	}
+	effect = {
+		factory_goods_throughput = {
+			steel = 0.05
 		}
 	}
 }
@@ -728,25 +763,6 @@ advanced_ore_roasting_processes = {
 		}
 	}
 }
-advanced_ore_grinding_processes = {
-	limit = { cheap_iron = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = advanced_ore_roasting_processes
-		}
-		modifier = {
-			factor = 2
-			organized_factories = 1
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			iron = 0.25
-		}
-	}
-}
 advanced_ore_smelting_processes = {
 	limit = { cheap_iron = 1 }
 	chance = {
@@ -762,32 +778,12 @@ advanced_ore_smelting_processes = {
 	}
 	effect = {
 		rgo_goods_output = {
-			iron = 0.5
+			iron = 0.25
 		}
 	}
 }
-bessemer_steel = {
-	limit = { cheap_iron = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			high_n_low_pressure_steam_engines = 1
-		}
-		modifier = {
-			factor = 2
-			steel_breech_loaded_artillery = 1
-		}
-	}
-	effect = {
-		factory_goods_throughput = {
-			steel = 0.05
-		}
-	}
-}
-#cheap_steel
 martin_steel = {
-	limit = { cheap_steel = 1 }
+	limit = { cheap_iron = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -801,10 +797,11 @@ martin_steel = {
 	}
 	effect = {
 		factory_goods_output = {
-			steel = 0.02
+			steel = 0.05
 		}
 	}
 }
+#cheap_steel
 thomas_steel = {
 	limit = { cheap_steel = 1 }
 	chance = {
@@ -820,7 +817,7 @@ thomas_steel = {
 	}
 	effect = {
 		factory_goods_output = {
-			steel = 0.02
+			steel = 0.05
 		}
 	}
 }
@@ -840,7 +837,7 @@ electric_rolling_techniques = {
 	}
 	effect = {
 		factory_goods_output = {
-			steel = 0.04
+			steel = 0.05
 		}
 	}
 }
@@ -1023,7 +1020,7 @@ artificial_fertilizers = {
 	effect = {
 		farm_rgo_eff = 0.02
 		factory_goods_output = {
-			fertilizer = 0.05
+			fertilizer = 0.2
 		}
 	}
 }
@@ -1043,7 +1040,8 @@ nitroglycerin = {
 	effect = {
 		factory_goods_output = {
 			explosives = 0.02
-		} 
+		}
+		mine_RGO_eff = 0.3
 	}
 }
 chemical_wood_pulp_process = {
@@ -1326,12 +1324,24 @@ electrical_lighting = {
 	}
 	effect = {
 		factory_throughput = 0.05
+		mine_RGO_eff = 0.3
 	}
 }
 
 #synthetic_polymers
-rayon = {
+haber_bosch_process = {
 	limit = { synthetic_polymers = 1 }
+	chance = {
+		base = 10
+	}
+	effect = {
+		activate_building = synthetic_nitrate_factory
+		farm_RGO_eff = 0.3
+	}
+}
+#modern_chemistry
+rayon = {
+	limit = { modern_chemistry = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -1350,7 +1360,7 @@ rayon = {
 	}
 }
 bakelite = {
-	limit = { synthetic_polymers = 1 }
+	limit = { modern_chemistry = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -1366,15 +1376,6 @@ bakelite = {
 		factory_goods_output = {
 			glass  = 0.05
 		} 
-	}
-}
-haber_bosch_process = {
-	limit = { synthetic_polymers = 1 }
-	chance = {
-		base = 10
-	}
-	effect = {
-		activate_building = synthetic_nitrate_factory
 	}
 }
 vacuum_tube = {

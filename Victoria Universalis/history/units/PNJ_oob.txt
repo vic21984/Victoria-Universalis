@@ -47,7 +47,7 @@ leader = {
 	type = land
 	date = 1822.1.1
 	personality = defence_1.1
-	background = attack_1.1
+	background = attack_2.1
 	prestige = 0.1
 }
 
@@ -61,47 +61,53 @@ leader = {
 }
 
 army = {
-	name = "Army of the Khalsa"
-	location = 1227
-	regiment = {
-		name= "1. Panjabi Infantry"
-		type = infantry
-		home = 1227
-	}
-
-	regiment = {
-		name= "2. Panjabi Infantry"
-		type = infantry
-		home = 1227
-	}
-
-	regiment = {
-		name= "3. Panjabi Infantry"
-		type = infantry
-		home = 1227
-	}
-
-	regiment = {
-		name= "4. Panjabi Infantry"
-		type = infantry
-		home = 1232
-	}
-
-	regiment = {
-		name= "1. Kashmiri Infantry"
-		type = infantry
-		home = 1224
-	}
-
+	name = "Fauj-i-Ain"
+	location = 1231
 	regiment = {
 		name= "5. Panjabi Infantry"
 		type = infantry
-		home = 1228
+		home = 1227
 	}
 
 	regiment = {
 		name= "6. Panjabi Infantry"
 		type = infantry
+		home = 1227
+	}
+
+	regiment = {
+		name= "7. Panjabi Infantry"
+		type = infantry
+		home = 1227
+	}
+
+	regiment = {
+		name= "8. Panjabi Infantry"
+		type = infantry
+		home = 1232
+	}
+
+	regiment = {
+		name= "1. Kashmiri Irregulars"
+		type = irregular
+		home = 1224
+	}
+
+	regiment = {
+		name= "9. Panjabi Irregulars"
+		type = irregular
+		home = 1228
+	}
+
+	regiment = {
+		name= "10. Panjabi Irregulars"
+		type = irregular
+		home = 1229
+	}
+
+	regiment = {
+		name= "11. Panjabi Irregulars"
+		type = irregular
 		home = 1229
 	}
 
@@ -120,46 +126,125 @@ army = {
 }
 
 army = {
-	name = "Gilgit Guards"
-	location = 1225
+	name = "Fauj-i-Be Qawaid"
+	location = 1234
 	regiment = {
-		name= "1. Pashtun Infantry"
-		type = infantry
+		name= "1. Panjabi Irregulars"
+		type = irregular
+		home = 1234
+	}
+
+	regiment = {
+		name= "2. Panjabi Irregulars"
+		type = irregular
+		home = 1233
+	}
+
+	regiment = {
+		name= "3. Panjabi Irregulars"
+		type = irregular
+		home = 1233
+	}
+
+	regiment = {
+		name= "4. Panjabi Irregulars"
+		type = irregular
 		home = 1218
 	}
 
 	regiment = {
-		name= "7. Panjabi Infantry"
-		type = infantry
+		name= "5. Panjabi Irregulars"
+		type = irregular
 		home = 1231
+	}
+
+	regiment = {
+		name= "6. Panjabi Irregulars"
+		type = irregular
+		home = 1234
 	}
 	
 	regiment = {
-		name= "3. Sikh Cavalry"
+		name= "7. Panjabi Irregulars"
+		type = irregular
+		home = 1224
+	}
+
+	regiment = {
+		name= "8. Panjabi Irregulars"
+		type = irregular
+		home = 1224
+	}
+
+	regiment = {
+		name= "3. Panjabi Cavalry"
 		type = cavalry
-		home = 1234
+		home = 1225
+	}
+
+	regiment = {
+		name= "4. Panjabi Cavalry"
+		type = cavalry
+		home = 1218
 	}
 }
 
 army = {
-	name = "Ludhiana Garrison"
-	location = 1234
+	name = "Fauj-i-Khas"
+	location = 1227
 	regiment = {
-		name= "8. Panjabi Infantry"
+		name= "1. Panjabi Infantry"
 		type = infantry
 		home = 1234
 	}
 
 	regiment = {
-		name= "9. Panjabi Infantry"
+		name= "2. Panjabi Infantry"
 		type = infantry
-		home = 1233
+		home = 1234
 	}
 
 	regiment = {
-		name= "10. Panjabi Infantry"
+		name= "3. Panjabi Infantry"
 		type = infantry
-		home = 1233
+		home = 1227
 	}
+
+	regiment = {
+		name= "4. Panjabi Infantry"
+		type = infantry
+		home = 1232
+	}
+
+	regiment = {
+		name= "1. Panjabi Artillery"
+		type = artillery
+		home = 1234
+	}
+
+	regiment = {
+		name= "2. Panjabi Artillery"
+		type = artillery
+		home = 1234
+	}
+
+	regiment = {
+		name= "3. Panjabi Artillery"
+		type = artillery
+		home = 1226
+	}
+
+	regiment = {
+		name= "1. Sikh Hussars"
+		type = hussar
+		home = 1229
+	}
+
+	regiment = {
+		name= "2. Sikh Dragoon"
+		type = dragoon
+		home = 1227
+	}
+
 }
 

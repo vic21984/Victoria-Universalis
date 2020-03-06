@@ -81,11 +81,12 @@ political_decisions = {
 			}
 			has_country_modifier = opium_addiction
 			NOT = { has_global_flag = opium_outlawed }
+			NOT = { has_global_flag = opium_war_happened }
 		}
 		allow = {
 			year = 1840
 			war = no
-			NOT = { has_country_modifier = opium_war_lost }
+			num_of_cities = 50
 		}
 		effect = {
 			remove_country_modifier = opium_addiction

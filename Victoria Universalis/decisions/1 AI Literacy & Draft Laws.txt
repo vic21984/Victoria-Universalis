@@ -2,7 +2,6 @@ political_decisions = {
 	1836_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1836
 			NOT = { has_global_flag = 1836_ai_literacy_boost }
 		}
@@ -17,7 +16,6 @@ political_decisions = {
 	1840_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1840
 			NOT = { has_global_flag = 1840_ai_literacy_boost }
 		}
@@ -37,7 +35,7 @@ political_decisions = {
 					literacy = 0.05
 				}				
 			}				
-			set_global_flag = 1840_ai_literacy_boost			
+			set_global_flag = 1840_ai_literacy_boost
 		}
 		ai_will_do = { factor = 1 }
 	}	
@@ -45,7 +43,6 @@ political_decisions = {
 	1850_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1850
 			NOT = { has_global_flag = 1850_ai_literacy_boost }
 		}
@@ -65,7 +62,7 @@ political_decisions = {
 					literacy = 0.05
 				}				
 			}				
-			set_global_flag = 1850_ai_literacy_boost			
+			set_global_flag = 1850_ai_literacy_boost
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -73,7 +70,6 @@ political_decisions = {
 	1860_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1860
 			NOT = { has_global_flag = 1860_ai_literacy_boost }
 		}
@@ -101,7 +97,6 @@ political_decisions = {
 	1870_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1870
 			NOT = { has_global_flag = 1870_ai_literacy_boost }
 		}
@@ -134,7 +129,6 @@ political_decisions = {
 	1880_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1880
 			NOT = { has_global_flag = 1880_ai_literacy_boost }
 		}
@@ -162,7 +156,6 @@ political_decisions = {
 	1890_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1890
 			NOT = { has_global_flag = 1890_ai_literacy_boost }
 		}
@@ -190,7 +183,6 @@ political_decisions = {
 	1900_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1900
 			NOT = { has_global_flag = 1900_ai_literacy_boost }
 		}
@@ -218,7 +210,6 @@ political_decisions = {
 	1910_ai_literacy_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1910
 			NOT = { has_global_flag = 1910_ai_literacy_boost }
 		}
@@ -246,7 +237,6 @@ political_decisions = {
 	1850_ai_mobilization_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1850
 			NOT = { has_global_flag = 1850_ai_mobilization_boost }
 		}
@@ -291,7 +281,6 @@ political_decisions = {
 	1870_ai_mobilization_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1870
 			NOT = { has_global_flag = 1870_ai_mobilization_boost }
 		}
@@ -336,7 +325,6 @@ political_decisions = {
 	1890_ai_mobilization_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1890
 			NOT = { has_global_flag = 1890_ai_mobilization_boost }
 		}
@@ -381,7 +369,6 @@ political_decisions = {
 	1910_ai_mobilization_boost = {
 		potential = {
 			tag = JAN
-			ai = yes
 			year = 1910
 			NOT = { has_global_flag = 1910_ai_mobilization_boost }
 		}

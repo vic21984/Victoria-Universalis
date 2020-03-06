@@ -106,6 +106,7 @@ distribution_channels = {
 	}
 	effect = {
 		factory_cost = -0.01
+		farm_RGO_eff = 0.3
 	}
 }
 #investment_banks
@@ -223,9 +224,9 @@ buying_on_margin = {
 		factory_cost = -0.01
 	}
 }
-#ad_hoc_money_bill_printing
+#no_standard
 silver_standard = {
-	limit = { ad_hoc_money_bill_printing = 1 }
+	limit = { no_standard = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -239,9 +240,10 @@ silver_standard = {
 		}
 	}
 	effect = {
-		tax_eff = 3 
+		tax_eff = 3
 	}
 }
+#ad_hoc_money_bill_printing
 decimal_monetary_system = {
 	limit = { ad_hoc_money_bill_printing = 1 }
 	news = no
@@ -317,7 +319,7 @@ gold_standard = {
 		}
 	}
 	effect = {
-		tax_eff = 3 
+		tax_eff = 2
 	}
 }
 international_monetary_exchange_rates = {
@@ -358,7 +360,7 @@ state_bond_monetary_mechanism = {
 		}
 	}
 	effect = {
-		tax_eff = 2 
+		tax_eff = 2
 	}
 }
 #market_determined_exchange_rates
@@ -381,7 +383,7 @@ interest_inflation_weapon = {
 		}
 	}
 	effect = {
-		tax_eff = 2 
+		tax_eff = 1
 	}
 }
 hyperinflation = {
@@ -1131,6 +1133,16 @@ friedrich_hayek = {
 		permanent_prestige = 1 
 	}
 }
+#neoliberal_theory
+AP7 = {
+	limit = { neoliberal_theory = 1 }
+	news = no
+	chance = {
+		base = 100
+	}
+	effect = {
+	}
+}
 #market_structure
 polypoly_structure = {
 	news = no
@@ -1660,7 +1672,7 @@ time_clock = {
 		}
 	}
 	effect = {
-		factory_output = 0.025
+		factory_output = 0.01
 	}
 }
 lighting = {
@@ -1678,7 +1690,7 @@ lighting = {
 		}
 	}
 	effect = {
-		factory_output = 0.025
+		factory_output = 0.01
 	}
 }
 #management_strategy
@@ -1754,7 +1766,7 @@ i_scientific_management = {
 		}
 	}
 	effect = {
-		factory_output = 0.01
+		factory_output = 0.015
 	}
 }
 human_resource_development = {
@@ -1772,6 +1784,6 @@ human_resource_development = {
 		}
 	}
 	effect = {
-		factory_output = 0.01
+		factory_output = 0.015
 	}
 }

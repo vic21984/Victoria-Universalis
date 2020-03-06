@@ -27,10 +27,7 @@ promotion_focus =
 		icon = 5
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 
@@ -40,10 +37,7 @@ promotion_focus =
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 
@@ -53,10 +47,7 @@ promotion_focus =
 		icon = 8
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 	
@@ -66,10 +57,7 @@ promotion_focus =
 		icon = 9
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 
@@ -79,10 +67,7 @@ promotion_focus =
 		icon = 10
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 
@@ -92,10 +77,7 @@ promotion_focus =
 		icon = 11
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 
@@ -105,10 +87,7 @@ promotion_focus =
 		icon = 12
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 	
@@ -118,10 +97,7 @@ promotion_focus =
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}	
 	}
 
@@ -131,10 +107,7 @@ promotion_focus =
 		icon = 14
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}		
 	}
 
@@ -144,17 +117,14 @@ promotion_focus =
 		icon = 15
 		outliner_show_as_percent = yes
 		limit = {
-			OR = {
-				NOT = { state_scope = { total_pops = 2000000 } }
-				ai = yes
-			}
+			NOT = { state_scope = { total_pops = 2000000 } }
 		}
 	}
 }
 
 large_promotion_focus =
 {
-	promote_aristocrats =
+	large_promote_aristocrats =
 	{
 		aristocrats = 0.20 #20% more likeley to become this type
 		icon = 5
@@ -167,7 +137,7 @@ large_promotion_focus =
 		}
 	}
 
-	promote_bureaucrats =
+	large_promote_bureaucrats =
 	{
 		bureaucrats = 0.20 #20% more likeley to become this type
 		icon = 7
@@ -180,7 +150,7 @@ large_promotion_focus =
 		}
 	}
 
-	promote_capitalists =
+	large_promote_capitalists =
 	{
 		capitalists = 0.20 #20% more likeley to become this type
 		icon = 8
@@ -195,7 +165,7 @@ large_promotion_focus =
 
 	}
 	
-	promote_clergymen =
+	large_promote_clergymen =
 	{
 		clergymen = 0.20 #20% more likeley to become this type
 		icon = 9
@@ -208,7 +178,7 @@ large_promotion_focus =
 		}
 	}
 
-	promote_clerks =
+	large_promote_clerks =
 	{
 		clerks = 0.20 #20% more likeley to become this type
 		icon = 10
@@ -222,7 +192,7 @@ large_promotion_focus =
 		}
 	}
 
-	promote_craftsmen =
+	large_promote_craftsmen =
 	{
 		craftsmen = 0.20 #20% more likeley to become this type
 		icon = 11
@@ -236,7 +206,7 @@ large_promotion_focus =
 		}
 	}
 
-	promote_farmers =
+	large_promote_farmers =
 	{
 		farmers = 0.20 #20% more likeley to become this type
 		icon = 12
@@ -249,7 +219,7 @@ large_promotion_focus =
 		}
 	}
 	
-	promote_labourers =
+	large_promote_labourers =
 	{
 		labourers = 0.20 #20% more likeley to become this type
 		icon = 13
@@ -262,7 +232,7 @@ large_promotion_focus =
 		}
 	}
 
-	promote_officers =
+	large_promote_officers =
 	{
 		officers = 0.20 #20% more likeley to become this type
 		icon = 14
@@ -275,7 +245,7 @@ large_promotion_focus =
 		}
 	}
 
-	promote_soldiers =
+	large_promote_soldiers =
 	{
 		soldiers = 0.20 #20% more likeley to become this type
 		icon = 15
@@ -289,9 +259,9 @@ large_promotion_focus =
 	}
 }
 
-insane_promotion_focus =
+massive_promotion_focus =
 {
-	promote_aristocrats =
+	massive_promote_aristocrats =
 	{
 		aristocrats = 0.10 #10% more likeley to become this type
 		icon = 5
@@ -303,7 +273,7 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_bureaucrats =
+	massive_promote_bureaucrats =
 	{
 		bureaucrats = 0.10 #10% more likeley to become this type
 		icon = 7
@@ -315,7 +285,7 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_capitalists =
+	massive_promote_capitalists =
 	{
 		capitalists = 0.10 #10% more likeley to become this type
 		icon = 8
@@ -329,7 +299,7 @@ insane_promotion_focus =
 
 	}
 	
-	promote_clergymen =
+	massive_promote_clergymen =
 	{
 		clergymen = 0.10 #10% more likeley to become this type
 		icon = 9
@@ -341,7 +311,7 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_clerks =
+	massive_promote_clerks =
 	{
 		clerks = 0.10 #10% more likeley to become this type
 		icon = 10
@@ -354,7 +324,7 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_craftsmen =
+	massive_promote_craftsmen =
 	{
 		craftsmen = 0.10 #10% more likeley to become this type
 		icon = 11
@@ -367,7 +337,7 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_farmers =
+	massive_promote_farmers =
 	{
 		farmers = 0.10 #10% more likeley to become this type
 		icon = 12
@@ -379,7 +349,7 @@ insane_promotion_focus =
 		}
 	}
 	
-	promote_labourers =
+	massive_promote_labourers =
 	{
 		labourers = 0.10 #10% more likeley to become this type
 		icon = 13
@@ -391,7 +361,7 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_officers =
+	massive_promote_officers =
 	{
 		officers = 0.10 #10% more likeley to become this type
 		icon = 14
@@ -403,7 +373,7 @@ insane_promotion_focus =
 		}
 	}
 
-	promote_soldiers =
+	massive_promote_soldiers =
 	{
 		soldiers = 0.10 #10% more likeley to become this type
 		icon = 15

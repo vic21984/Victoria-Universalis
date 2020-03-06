@@ -177,6 +177,7 @@ muhammad_alis_reforms = {
 	research_points_modifier = 0.3
 	pop_consciousness_modifier = 0.03
 	mobilisation_size = 0.02
+	supply_consumption = -0.3
 	icon = 5
 }
 
@@ -462,6 +463,11 @@ local_machine_tools = {
 	icon = 13
 }
 
+artificial_nitrogen_fixation = {
+	farm_RGO_eff = 0.5
+	icon = 9
+}
+
 ##### Diseases & Famines #####
 pandemic_influenza = {
 	global_population_growth = -0.01
@@ -694,22 +700,15 @@ province_attract_immigrants = {
 	icon = 9
 }
 
+financial_center = {
+	local_rgo_output = 1
+	icon = 9
+}
+
 ########## BACKGROUND STUFF ##########
 
 ghost_country = {
 	icon = 17
-}
-
-starting_healthcare1 = {
-	max_social_spending = 0.01
-}
-
-starting_healthcare2 = {
-	max_social_spending = 0.99
-}
-
-ai_healthcare = {
-	max_social_spending = 1
 }
 
 jan_mayen_isolationism = {
@@ -723,7 +722,10 @@ unemployment_fix = {
 rgo_unemployment_timer = {
 }
 
-########## COLONY THROUGHPUT NERFS ##########
+world_bank_timer = {
+}
+
+########## COLONY NERFS ##########
 
 colonial_nerf_counter = {
 	icon = 14
@@ -762,6 +764,42 @@ colonial_railroad_nerf5 = {
 colonial_railroad_nerf6 = {
 	local_RGO_throughput = -0.48
 	local_RGO_output = -0.48
+	icon = 14
+}
+
+colonial_railroad_nerf7 = {
+	local_RGO_throughput = -0.56
+	local_RGO_output = -0.56
+	icon = 14
+}
+
+colonial_farm_nerf1 = {
+	farm_rgo_eff = -0.25
+	icon = 14
+}
+
+colonial_farm_nerf2 = {
+	farm_rgo_eff = -0.5
+	icon = 14
+}
+
+colonial_farm_nerf3 = {
+	farm_rgo_eff = -0.75
+	icon = 14
+}
+
+colonial_mine_nerf1 = {
+	mine_rgo_eff = -0.25
+	icon = 14
+}
+
+colonial_mine_nerf2 = {
+	mine_rgo_eff = -0.5
+	icon = 14
+}
+
+colonial_mine_nerf3 = {
+	mine_rgo_eff = -0.75
 	icon = 14
 }
 
@@ -895,8 +933,8 @@ die_wacht_am_rhein = {
 #### ENG - ENGLAND #####
 corn_laws = {
 	max_tariff = 0.05
-	core_pop_militancy_modifier = 0.03
-	core_pop_consciousness_modifier_modifier = 0.03
+	core_pop_militancy_modifier = 0.05
+	core_pop_consciousness_modifier_modifier = 0.05
 	goods_demand = 0.1
 	icon = 10
 }
@@ -1028,12 +1066,8 @@ mandate_of_heaven = {
 }
 
 opium_addiction = {
-	education_efficiency_modifier = -0.5
+	education_efficiency_modifier = -0.4
 	RGO_throughput = -0.2
 	factory_throughput = -0.2
 	icon = 18
-}
-
-opium_war_lost = { 
-	icon = 6
 }

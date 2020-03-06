@@ -6,8 +6,8 @@ equivalent = labourers
 
 
 everyday_needs = {
-	cigarettes = 0.75
-	pharmaceuticals = 0.4
+	cigarettes = 1
+	pharmaceuticals = 0.75
 	tea = 1
 	coffee = 0.75
 	liquor = 2.5
@@ -24,6 +24,7 @@ life_needs = {
 	fish =  1
 	fruit =  1
 	grain =  2.5
+	fertilizer = 0.2
 }
 
 
@@ -31,8 +32,8 @@ luxury_needs = {
 	telephones = 1
 	automobiles = 0.25
 	radio = 1
-	cigarettes = 0.75
-	pharmaceuticals = 0.4
+	cigarettes = 1
+	pharmaceuticals = 0.75
 	tea = 1
 	coffee = 0.75
 	liquor = 2.5
@@ -54,6 +55,7 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+			has_country_flag = jan_mayen
 			NOT = {
 				OR = {
 					continent = north_america
@@ -113,7 +115,7 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
@@ -141,7 +143,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		continent = south_america
 		month = 7
 		THIS = {
@@ -166,7 +168,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = south_america
 		}
@@ -195,7 +197,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 5.0
+		factor = 2.5
 		OR = {
 			continent = north_america
 			continent = oceania
