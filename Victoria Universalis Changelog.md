@@ -1,4 +1,4 @@
-# Version 0.131 - 3/6/2020
+# Version 0.14 - 3/12/2020
 ## General gameplay changes:
 * Increased lifeneeds for all POPs.
 * Removed gold labourer pop type.
