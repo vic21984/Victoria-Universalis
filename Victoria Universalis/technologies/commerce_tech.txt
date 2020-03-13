@@ -578,9 +578,7 @@ freedom_of_trade = {
 	activate_building = luxury_clothes_factory  
 
 	influence = 0.1
-	farm_rgo_eff = 0.1
-	mine_rgo_eff = 0.1
-	
+	farm_rgo_eff = 0.2
 	ai_chance = {
 		factor = 11
 		modifier = {
@@ -608,8 +606,6 @@ market_structure = {
 
 	influence = 0.1
 	farm_rgo_eff = 0.1
-	mine_rgo_eff = 0.1
-	
 	ai_chance = {
 		factor = 3.5
 		modifier = {
@@ -642,7 +638,6 @@ business_regulations = {
 
 	influence = 0.2
 	farm_rgo_eff = 0.1
-	mine_rgo_eff = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {

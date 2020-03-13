@@ -197,6 +197,7 @@ country_event = {
 
 country_event = {
 	id = 91503
+	title = "Colonial Nerf Counter"
 	
 	trigger = {
 		tag = JAN
@@ -211,6 +212,61 @@ country_event = {
 	}
 	
 	option = {
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 306
+						province_id = 317
+						province_id = 320
+						province_id = 321
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1384
+						province_id = 1385
+						province_id = 1386
+						province_id = 1394
+						province_id = 1395
+						province_id = 1426
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = rubber
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 89
+						province_id = 126
+						province_id = 132
+						province_id = 133
+						province_id = 1102
+						province_id = 1104
+						province_id = 1107
+						province_id = 1167
+						province_id = 1393
+						province_id = 2234
+						province_id = 2237
+						province_id = 2264
+						province_id = 2270
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = oil
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
 		any_country = {
 			limit = {
 				experimental_railroad = 1
@@ -554,6 +610,9 @@ country_event = {
 						trade_goods = tea_leaves
 						trade_goods = coffee_beans
 						trade_goods = opium
+						trade_goods = timber
+						trade_goods = tropical_wood
+						trade_goods = rubber
 					}
 					NOT = { has_province_modifier = colonial_farm_nerf1 }
 				}
@@ -589,6 +648,9 @@ country_event = {
 						trade_goods = tea_leaves
 						trade_goods = coffee_beans
 						trade_goods = opium
+						trade_goods = timber
+						trade_goods = tropical_wood
+						trade_goods = rubber
 					}
 					NOT = { has_province_modifier = colonial_farm_nerf2 }
 				}
@@ -619,6 +681,9 @@ country_event = {
 						trade_goods = tea_leaves
 						trade_goods = coffee_beans
 						trade_goods = opium
+						trade_goods = timber
+						trade_goods = tropical_wood
+						trade_goods = rubber
 					}
 					NOT = { has_province_modifier = colonial_farm_nerf3 }
 				}
@@ -647,9 +712,7 @@ country_event = {
 						trade_goods = coal
 						trade_goods = sulphur
 						trade_goods = iron
-						trade_goods = timber
-						trade_goods = tropical_wood
-						trade_goods = rubber
+						trade_goods = precious_metal
 						trade_goods = oil
 					}
 					NOT = { has_province_modifier = colonial_mine_nerf1 }
@@ -677,9 +740,7 @@ country_event = {
 						trade_goods = coal
 						trade_goods = sulphur
 						trade_goods = iron
-						trade_goods = timber
-						trade_goods = tropical_wood
-						trade_goods = rubber
+						trade_goods = precious_metal
 						trade_goods = oil
 					}
 					NOT = { has_province_modifier = colonial_mine_nerf2 }
@@ -702,9 +763,7 @@ country_event = {
 						trade_goods = coal
 						trade_goods = sulphur
 						trade_goods = iron
-						trade_goods = timber
-						trade_goods = tropical_wood
-						trade_goods = rubber
+						trade_goods = precious_metal
 						trade_goods = oil
 					}
 					NOT = { has_province_modifier = colonial_mine_nerf3 }

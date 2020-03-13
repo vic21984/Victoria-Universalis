@@ -78,33 +78,33 @@ promotion_chance =
 	group = {
 		modifier = {
 			factor = 0.1
-			life_needs = 0.7			
+			life_needs = 0.4			
 	
 		}
 		modifier = {
 			factor = 0.1
-			life_needs = 0.8		
+			life_needs = 0.6		
 		}
 		modifier = {
 			factor = 0.1
-			life_needs = 0.9	
+			life_needs = 0.8	
 		}
 	}
 	
 	group = {
 		modifier = {
 			factor = -0.08
-			life_needs = 0.7
+			life_needs = 0.4
 			total_pops = 4000000			
 		}
 		modifier = {
 			factor = -0.08
-			life_needs = 0.8
+			life_needs = 0.6
 			total_pops = 4000000
 		}
 		modifier = {
 			factor = -0.08
-			life_needs = 0.9
+			life_needs = 0.8
 			total_pops = 4000000
 		}
 	}
@@ -112,19 +112,19 @@ promotion_chance =
 	group = {
 		modifier = {
 			factor = -0.05
-			life_needs = 0.7
+			life_needs = 0.4
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
+		}
+		modifier = {
+			factor = -0.05
+			life_needs = 0.6
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}
 		modifier = {
 			factor = -0.05
 			life_needs = 0.8
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }
-		}
-		modifier = {
-			factor = -0.05
-			life_needs = 0.9
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}
@@ -349,18 +349,6 @@ promotion_chance =
 demotion_chance = 
 {
 	factor = 1
-	modifier = {
-		factor = 200
-		strata = poor
-		unemployment = 1
-		location = {
-			work_available = {
-				worker = labourers_gold
-			}
-			controlled_by = owner
-			trade_goods = precious_metal
-		}
-	}
 	modifier = {
 		factor = -0.5
 		country = {
@@ -774,16 +762,8 @@ emigration_chance =
 		}
 		
 	}
-	
-	group = {
-		modifier = {
-			factor = -0.02
-			agree_with_ruling_party = 0.25
-			NOT = { year = 1880 }
-		}
-	}
 	modifier = {
-		factor = -0.09
+		factor = -0.06
 		OR = {
 			is_culture_group = east_asian
 		}
@@ -798,7 +778,7 @@ emigration_chance =
 		country = { border_policy = closed_borders }
 	}
 	modifier = {
-		factor = 0.1
+		factor = 0.08
 		NOT = {
 			OR = { 
 				continent = north_america
@@ -826,23 +806,11 @@ assimilation_chance =
 			factor = 1
 			literacy = 0.45
 			has_culture_core = yes
-			location = {
-				OR = { 
-					continent = europe
-					continent = asia
-				}
-			}
 		}
 		modifier = {
 			factor = 1
 			literacy = 0.9
 			has_culture_core = yes
-			location = {
-				OR = { 
-					continent = europe
-					continent = asia
-				}
-			}
 		}
 	}
 	group = {
@@ -850,79 +818,11 @@ assimilation_chance =
 			factor = 0.04
 			literacy = 0.45
 			NOT = { has_culture_core = yes }
-			location = {
-				OR = { 
-					continent = europe
-					continent = asia
-				}
-			}
 		}
 		modifier = {
 			factor = 0.04
 			literacy = 0.9
 			NOT = { has_culture_core = yes }
-			location = {
-				OR = { 
-					continent = europe
-					continent = asia
-				}
-			}
-		}
-	}
-	group = {
-		modifier = {
-			factor = 15
-			literacy = 0.45
-			has_culture_core = yes
-				NOT = {
-					location = {
-						OR = { 
-							continent = europe
-							continent = asia
-						}
-					}
-				}
-		}
-		modifier = {
-			factor = 15
-			literacy = 0.9
-			has_culture_core = yes
-				NOT = {
-					location = {
-						OR = { 
-							continent = europe
-							continent = asia
-						}
-					}
-				}
-		}
-	}
-	group = {
-		modifier = {
-			factor = 0.6
-			literacy = 0.45
-			NOT = { has_culture_core = yes }
-			NOT = {
-				location = {
-					OR = { 
-						continent = europe
-						continent = asia
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			literacy = 0.9
-			NOT = { has_culture_core = yes }
-			NOT = {
-				location = {
-					OR = { 
-						continent = europe
-						continent = asia
-					}
-				}
-			}
 		}
 	}
 	###LIFE NEEDS###
@@ -930,49 +830,11 @@ assimilation_chance =
 		factor = 2
 		life_needs = 0.9
 		has_culture_core = yes
-		location = {
-			OR = { 
-				continent = europe
-				continent = asia
-			}
-		}
 	}
 	modifier = {
 		factor = 0.08
 		life_needs = 0.9
 		NOT = { has_culture_core = yes }
-		location = {
-			OR = { 
-				continent = europe
-				continent = asia
-			}
-		}
-	}
-	modifier = {
-		factor = 30
-		life_needs = 0.9
-		has_culture_core = yes
-		NOT = {
-			location = {
-				OR = { 
-					continent = europe
-					continent = asia
-				}
-			}
-		}
-	}
-	modifier = {
-		factor = 1.2
-		life_needs = 0.9
-		NOT = { has_culture_core = yes }
-		NOT = {
-			location = {
-				OR = { 
-					continent = europe
-					continent = asia
-				}
-			}
-		}
 	}
 	
 	###MALUSES###

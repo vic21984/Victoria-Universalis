@@ -1,6 +1,7 @@
 #Leave Japan
 country_event = {
 	id = 91201
+	title = "Leave Japan"
 
 	trigger = {
 		tag = JAP
@@ -23,6 +24,7 @@ country_event = {
 #Leave Korea
 country_event = {
 	id = 91202
+	title = "Leave Korea"
 
 	trigger = {
 		tag = KOR
@@ -48,6 +50,7 @@ country_event = {
 #Japan annexes Korea
 country_event = {
 	id = 91203
+	title = "Japan Annex Korea"
 	
 	trigger = {
 		tag = JAP
@@ -66,6 +69,7 @@ country_event = {
 #Annex Sikh Empire
 country_event = {
 	id = 91204
+	title = "Annex Sikh Empire"
 	
 	trigger = {
 		exists = PNJ
@@ -84,6 +88,7 @@ country_event = {
 #Annex Burma
 country_event = {
 	id = 91205
+	title = "Annex Burma"
 	
 	trigger = {
 		exists = BUR
@@ -103,6 +108,7 @@ country_event = {
 #Annex Johore
 country_event = {
 	id = 91206
+	title = "Annex Johore"
 	
 	trigger = {
 		exists = JOH
@@ -121,6 +127,7 @@ country_event = {
 #Annex Brunei
 country_event = {
 	id = 91207
+	title = "Annex Brunei"
 	
 	trigger = {
 		exists = BRU
@@ -139,6 +146,7 @@ country_event = {
 #Annex Kalat
 country_event = {
 	id = 91208
+	title = "Annex Kalat"
 	
 	trigger = {
 		exists = KAL
@@ -158,6 +166,7 @@ country_event = {
 #Annex Atjeh
 country_event = {
 	id = 91209
+	title = "Annex Atjeh"
 	
 	trigger = {
 		exists = ATJ
@@ -176,6 +185,7 @@ country_event = {
 #Annex Cambodia
 country_event = {
 	id = 91210
+	title = "Annex Cambodia"
 	
 	trigger = {
 		exists = CAM
@@ -194,6 +204,7 @@ country_event = {
 #Annex Vietnam
 country_event = {
 	id = 91211
+	title = "Annex Vietnam"
 	
 	trigger = {
 		exists = DAI
@@ -212,6 +223,7 @@ country_event = {
 #Annex Kokand
 country_event = {
 	id = 91212
+	title = "Annex Kokand"
 	
 	trigger = {
 		exists = KOK
@@ -231,6 +243,7 @@ country_event = {
 #Annex Khiva
 country_event = {
 	id = 91213
+	title = "Annex Khiva"
 	
 	trigger = {
 		exists = KHI
@@ -250,6 +263,7 @@ country_event = {
 #Annex Bukkhara
 country_event = {
 	id = 91214
+	title = "Annex Bukkhara"
 	
 	trigger = {
 		exists = BUK
@@ -269,6 +283,7 @@ country_event = {
 #Annex Abu Dhabi
 country_event = {
 	id = 91215
+	title = "Annex Abu Dhabi"
 	
 	trigger = {
 		year = 1870
@@ -289,6 +304,7 @@ country_event = {
 #Annex Hedjaz
 country_event = {
 	id = 91216
+	title = "Annex Hedjaz"
 	
 	trigger = {
 		year = 1870
@@ -309,6 +325,7 @@ country_event = {
 #Annex Nejd
 country_event = {
 	id = 91217
+	title = "Annex Nejd"
 	
 	trigger = {
 		year = 1870
@@ -329,6 +346,7 @@ country_event = {
 #Annex Yemen
 country_event = {
 	id = 91218
+	title = "Annex Yemen"
 	
 	trigger = {
 		year = 1870
@@ -349,6 +367,7 @@ country_event = {
 #Annex Oman
 country_event = {
 	id = 91220
+	title = "Annex Oman"
 	
 	trigger = {
 		year = 1870
@@ -369,6 +388,7 @@ country_event = {
 #Leave Manchuria
 country_event = {
 	id = 91221
+	title = "Leave Manchuria"
 
 	trigger = {
 		tag = MCK
@@ -395,6 +415,7 @@ country_event = {
 #Leave Africa
 country_event = {
 	id = 91224
+	title = "Leave Africa"
 
 	trigger = {
 		has_country_flag = sub_saharan_africa
@@ -418,9 +439,8 @@ country_event = {
 
 #African Isolationism
 country_event = {
-
 	id = 91225
-
+	title = "African Isolationism"
 
 	trigger = {
 		ai = yes
@@ -446,6 +466,7 @@ country_event = {
 #Annex Egypt
 country_event = {
 	id = 91226
+	title = "Annex Egypt"
 	
 	trigger = {
 		exists = EGY
@@ -468,6 +489,7 @@ country_event = {
 #Annex Oranje
 country_event = {
 	id = 91227
+	title = "Annex Oranje"
 	
 	trigger = {
 		year = 1900
@@ -489,6 +511,7 @@ country_event = {
 #Annex Transvaal
 country_event = {
 	id = 91228
+	title = "Annex Transvaal"
 	
 	trigger = {
 		year = 1900
@@ -510,6 +533,7 @@ country_event = {
 #Annex Sind
 country_event = {
 	id = 91229
+	title = "Annex Sind"
 	
 	trigger = {
 		exists = SIN
@@ -529,6 +553,7 @@ country_event = {
 #Annex Luang Prabang
 country_event = {
 	id = 91230
+	title = "Annex Luang Prabang"
 	
 	trigger = {
 		exists = LUA
@@ -548,6 +573,7 @@ country_event = {
 #Annex Morocco
 country_event = {
 	id = 91231
+	title = "Annex Morocco"
 	
 	trigger = {
 		exists = MOR
@@ -567,6 +593,7 @@ country_event = {
 #Annex Algeria
 country_event = {
 	id = 91232
+	title = "Annex Algeria"
 	
 	trigger = {
 		exists = ALD
@@ -586,6 +613,7 @@ country_event = {
 #Annex Tunis
 country_event = {
 	id = 91233
+	title = "Annex Tunis"
 	
 	trigger = {
 		exists = TUN
@@ -605,6 +633,7 @@ country_event = {
 #Annex Krakow
 country_event = {
 	id = 91234
+	title = "Annex Krakow"
 	
 	trigger = {
 		year = 1846
@@ -624,6 +653,7 @@ country_event = {
 #Leave Serbia
 country_event = {
 	id = 91235
+	title = "Leave Serbia"
 
 	trigger = {
 		tag = SER
@@ -652,6 +682,7 @@ country_event = {
 #Leave Greece
 country_event = {
 	id = 91236
+	title = "Leave Greece"
 
 	trigger = {
 		tag = GRE
@@ -677,6 +708,7 @@ country_event = {
 #Annex Java
 country_event = {
 	id = 91237
+	title = "Annex Java"
 	
 	trigger = {
 		exists = JAV
@@ -695,6 +727,7 @@ country_event = {
 #Annex Bali
 country_event = {
 	id = 91237
+	title = "Annex Bali"
 	
 	trigger = {
 		exists = BAL
@@ -713,6 +746,7 @@ country_event = {
 #Leave Italy
 country_event = {
 	id = 91238
+	title = "Leave Italy"
 
 	trigger = {
 		OR = {
@@ -746,6 +780,7 @@ country_event = {
 #Transfer Savoie and Nice
 country_event = {
 	id = 91239
+	title = "Sardinia Transfers Savoie and Nice to France"
 	
 	fire_only_once = yes
 
@@ -782,6 +817,7 @@ country_event = {
 
 country_event = {
 	id = 91240
+	title = "Italy Transfers Savoie and Nice to France"
 	
 	fire_only_once = yes
 
@@ -819,6 +855,7 @@ country_event = {
 #Leave Belgium
 country_event = {
 	id = 91241
+	title = "Leave Belgium"
 
 	trigger = {
 		ai = yes
@@ -853,6 +890,7 @@ country_event = {
 #Leave Burma
 country_event = {
 	id = 91242
+	title = "Leave Burma"
 
 	trigger = {
 		tag = BUR
@@ -880,6 +918,7 @@ country_event = {
 #Leave Sind
 country_event = {
 	id = 91243
+	title = "Leave Sind"
 
 	trigger = {
 		tag = SIN
@@ -907,6 +946,7 @@ country_event = {
 #Leave Kalat
 country_event = {
 	id = 91244
+	title = "Leave Kalat"
 
 	trigger = {
 		tag = KAL
@@ -934,6 +974,7 @@ country_event = {
 #UK Africa
 country_event = {
 	id = 91270
+	title = "UK African War 1"
 
 	trigger = {
 		owns = 1923
@@ -960,6 +1001,7 @@ country_event = {
 
 country_event = {
 	id = 91271
+	title = "UK African War 2"
 
 	trigger = {
 		owns = 1928
@@ -986,6 +1028,7 @@ country_event = {
 
 country_event = {
 	id = 91272
+	title = "UK African War 3"
 
 	trigger = {
 		owns = 1931
@@ -1012,6 +1055,7 @@ country_event = {
 
 country_event = {
 	id = 91273
+	title = "UK African War 4"
 
 	trigger = {
 		owns = 1907
@@ -1039,6 +1083,7 @@ country_event = {
 #French Africa
 country_event = {
 	id = 91274
+	title = "French African War 1"
 
 	trigger = {
 		owns = 1897
@@ -1065,6 +1110,7 @@ country_event = {
 
 country_event = {
 	id = 91275
+	title = "French African War 1"
 
 	trigger = {
 		owns = 1919
@@ -1091,6 +1137,7 @@ country_event = {
 
 country_event = {
 	id = 91276
+	title = "French African War 1"
 
 	trigger = {
 		owns = 2573
@@ -1117,6 +1164,7 @@ country_event = {
 
 country_event = {
 	id = 91277
+	title = "French African War 1"
 
 	trigger = {
 		owns = 1788
@@ -1143,6 +1191,7 @@ country_event = {
 
 country_event = {
 	id = 91278
+	title = "French African War 1"
 
 	trigger = {
 		owns = 1879
@@ -1169,6 +1218,7 @@ country_event = {
 
 country_event = {
 	id = 91279
+	title = "French African War 1"
 
 	trigger = {
 		owns = 2624
@@ -1196,6 +1246,7 @@ country_event = {
 #Oman Cedes East Africa
 country_event = {
 	id = 91281
+	title = "Oman Cedes East Africa to Germany"
 
 	trigger = {
 		OR = {
@@ -1221,6 +1272,7 @@ country_event = {
 
 country_event = {
 	id = 91282
+	title = "Oman Cedes East Africa to Germany 2"
 
 	trigger = {
 		OR = {
@@ -1248,6 +1300,7 @@ country_event = {
 
 country_event = {
 	id = 91283
+		title = "Oman Cedes East Africa to UK 1"
 
 	trigger = {
 		year = 1880
@@ -1282,6 +1335,7 @@ country_event = {
 
 country_event = {
 	id = 91284
+	title = "Oman Cedes East Africa to UK 2"
 
 	trigger = {
 		year = 1880
@@ -1318,6 +1372,7 @@ country_event = {
 
 country_event = {
 	id = 91285
+	title = "Oman Cedes East Africa to UK 3"
 
 	trigger = {
 		OR = {
@@ -1341,6 +1396,7 @@ country_event = {
 
 country_event = {
 	id = 91286
+	title = "Oman Cedes East Africa to Italy 1"
 
 	trigger = {
 		OR = {
@@ -1364,6 +1420,7 @@ country_event = {
 
 country_event = {
 	id = 91287
+	title = "Oman Cedes East Africa to UK 4"
 
 	trigger = {
 		year = 1880
@@ -1398,6 +1455,7 @@ country_event = {
 #Jan Mayen Isolationism
 country_event = {
 	id = 91290
+	title = "Jan Mayen Isolationism"
 
 
 	trigger = {
@@ -1420,6 +1478,7 @@ country_event = {
 #Leave Jan Mayen
 country_event = {
 	id = 91291
+	title = "Leave Jan Mayen"
 
 	trigger = {
 		tag = JAN
@@ -1439,9 +1498,8 @@ country_event = {
 
 #South American Isolationism
 country_event = {
-
 	id = 91292
-
+	title = "South American Isolationism 1"
 
 	trigger = {
 		ai = yes
@@ -1465,9 +1523,8 @@ country_event = {
 }
 
 country_event = {
-
 	id = 91293
-
+	title = "South American Isolationism 2"
 
 	trigger = {
 		ai = yes
@@ -1494,9 +1551,8 @@ country_event = {
 
 #North American Isolationism
 country_event = {
-
 	id = 91294
-
+	title = "North American Isolationism 1"
 
 	trigger = {
 		ai = yes
@@ -1525,9 +1581,8 @@ country_event = {
 }
 
 country_event = {
-
 	id = 91295
-
+	title = "North American Isolationism 2"
 
 	trigger = {
 		ai = yes
@@ -1557,9 +1612,8 @@ country_event = {
 
 #Chinese Isolationism
 country_event = {
-
 	id = 91296
-
+	title = "Chinese Isolationism"
 
 	trigger = {
 		ai = yes
@@ -1587,6 +1641,7 @@ country_event = {
 #Leave China
 country_event = {
 	id = 91297
+	title = "Leave China"
 
 	trigger = {
 		is_culture_group = east_asian

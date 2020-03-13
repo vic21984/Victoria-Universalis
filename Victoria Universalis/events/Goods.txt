@@ -17,7 +17,6 @@ province_event = {
 			province_id = 1390			# Kuantan
 			province_id = 1422			# Muraleve
 			province_id = 1440			# Sumbawa
-			province_id = 1564			# Caozhou
 			province_id = 1884			# Freetown
 			province_id = 2501			# Kimberley
 			province_id = 2153			# Durango
@@ -30,7 +29,6 @@ province_event = {
 			province_id = 2575			# Ipoh
 			province_id = 2601			# Sandy Desert
 			province_id = 2605			# Gibson's Desert
-			province_id = 1659			# Kobe
 			province_id = 2255			# Barranquilla
 			province_id = 2513			# Dunedin
 		}
@@ -52,15 +50,6 @@ province_event = {
 			name = gold_rush
 			duration = 730
 		}
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -72,7 +61,6 @@ province_event = {
 		year = 1848
 		or = {
 			province_id = 88			# Mariposa
-			province_id = 695			# Königsberg
 		}
 		not = { trade_goods = precious_metal }
 	}
@@ -89,15 +77,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -123,15 +102,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -156,15 +126,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -201,15 +162,6 @@ province_event = {
 				duration = 1460
 			}
 		}
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -243,15 +195,6 @@ country_event = {
 				name = gold_rush
 				duration = 3650
 			}
-			any_pop = {
-				limit = {
-					OR = {
-						type = farmers
-						type = labourers
-					}
-				}
-				pop_type = labourers_gold
-			}
 		}
 	}
 }
@@ -283,15 +226,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -328,15 +262,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1105"
 		trade_goods = precious_metal
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -364,15 +289,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1105"
 		trade_goods = precious_metal
-		any_pop = {
-			limit = {
-				OR = {
-					type = farmers
-					type = labourers
-				}
-			}
-			pop_type = labourers_gold
-		}
 	}
 }
 
@@ -795,6 +711,7 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
+		add_province_modifier = { name = strategic_rgo duration = -1 }
 		# life_rate = 5
 	}
 }
@@ -1886,12 +1803,12 @@ province_event = {
 	trigger = {
 		year = 1880
 		or = {
-			province_id = 1384
-			province_id = 1385
-			province_id = 1386
-			province_id = 1394
-			province_id = 1395
-			province_id = 1426
+			province_id = 1384		#Singapore
+			province_id = 1385		#Johor Bahru
+			province_id = 1386		#Malacca
+			province_id = 1394		#Kuching
+			province_id = 1395		#Bintulu
+			province_id = 1426		#Pontiak
 		}
 		not = { trade_goods = rubber }
 		OR = {
@@ -1946,16 +1863,28 @@ province_event = {
 	trigger = {
 		year = 1880
 		or = {
-			province_id = 1365
-			province_id = 1368
-			province_id = 1369
-			province_id = 1374
-			province_id = 1375
-			province_id = 1380
-			province_id = 1381
-			province_id = 2117
-			province_id = 2186
-			province_id = 2283
+			province_id = 1365		#Chanthaburi
+			province_id = 1368		#Stongtreng
+			province_id = 1373		#Lang Son
+			province_id = 1374		#Thanh Hoa
+			province_id = 1375		#Hue
+			province_id = 1382		#Hatien
+			province_id = 1852		#Bondouku
+			province_id = 1899		#Bondouku
+			province_id = 1910		#Kumasi
+			province_id = 2064		#Nampula
+			province_id = 2117		#Ampanihy
+			province_id = 2115		#Tananarive
+			province_id = 2120		#Antsiranana
+			province_id = 2188		#Puerto Barrios
+			province_id = 2197		#Managua
+			province_id = 2267		#Cumana
+			province_id = 2283		#Zamora
+			province_id = 2256		#Cali
+			province_id = 2258		#Buenaventura
+			province_id = 2249		#Vitoria
+			province_id = 2450		#Sao Paulo
+			province_id = 2462		#Sao Miguel
 		}
 		not = { trade_goods = coffee_beans }
 		OR = {
@@ -1984,5 +1913,41 @@ province_event = {
 	option = {
 		name = "EVTOPTA1142"
 		trade_goods = coffee_beans
+	}
+}
+
+############################
+#       OPIUM EVENTS       #
+############################
+
+province_event = {
+	
+	id = 1143
+
+	trigger = {
+		#year = 1880
+		or = {
+			province_id = 1491		#Ningxia
+			province_id = 1501		#Zhaoqing
+			province_id = 1558		#Kegudo
+			province_id = 1576		#Opium
+			province_id = 1603		#Puer
+			province_id = 1616		#Puer
+		}
+		not = { trade_goods = opium }
+	}
+
+	mean_time_to_happen =  {
+		months = 1
+
+	}
+
+	title = "EVTNAME1143"
+	desc = "EVTDESC1143"
+	picture = ""
+
+	option = {
+		name = "EVTOPTA1143"
+		trade_goods = opium
 	}
 }

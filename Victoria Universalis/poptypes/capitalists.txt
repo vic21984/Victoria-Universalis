@@ -3,7 +3,7 @@ color = { 18 129 10 }
 strata = rich
 state_capital_only = yes
 
-#demote_migrant = yes
+demote_migrant = yes
 
 rebel =
 {
@@ -27,14 +27,15 @@ everyday_needs = {
 	cigarettes = 20
 	coffee = 20
 	pharmaceuticals = 20
+	opium = 20
 }
 
 life_needs = {
-	cattle = 1.5
-	wool =  2
-	fish =  2
-	fruit =  2
-	grain =  5
+	cattle = 3
+	wool =  4
+	fish =  4
+	fruit =  4
+	grain =  10
 }
 
 
@@ -43,11 +44,13 @@ luxury_needs = {
 	cigarettes = 40
 	telephones = 80
 	automobiles = 80
-	aeroplanes = 30
+	aeroplanes = 20
 	radio = 80
 	fuel = 80
-	clipper_convoy = 40
-	steamer_convoy = 40
+	clipper_convoy = 20
+	steamer_convoy = 20
+	luxury_clothes = 20
+	luxury_furniture = 20
 }
 
 
@@ -75,7 +78,7 @@ country_migration_target =
 	modifier = {
 		factor = 0
 		border_policy = quota_immigration
-		THIS = { NOT = { literacy = 0.6 } }
+		THIS = { NOT = { literacy = 0.5 } }
 	}
 	modifier = {
 		factor = 1.25
@@ -251,7 +254,6 @@ migration_target =
 		OR = { 
 			unemployment_by_type = { type = farmers value = 0.1  }
 			unemployment_by_type = { type = labourers value = 0.1  }
-			unemployment_by_type = { type = labourers_gold value = 0.1  }
 		}
 		NOT = { country = { has_country_flag = province_migration } }
 	}

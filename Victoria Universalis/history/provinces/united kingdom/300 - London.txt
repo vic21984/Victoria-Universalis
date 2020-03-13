@@ -9,17 +9,17 @@ fort = 1
 #	loyalty_value = 10.5 # loyalty test
 #}
 state_building = {
-	level = 2
+	level = 1
 	building = pharmaceutical_plant
 	upgrade = yes
 }
 state_building = {
-	level = 2
+	level = 4
 	building = canned_food_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2
+	level = 3
 	building = ammunition_factory
 	upgrade = yes
 }
@@ -34,7 +34,7 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 2
+	level = 1
 	building = machine_parts_factory
 	upgrade = yes
 }

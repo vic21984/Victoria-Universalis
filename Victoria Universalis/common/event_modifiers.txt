@@ -701,7 +701,7 @@ province_attract_immigrants = {
 }
 
 financial_center = {
-	local_rgo_output = 1
+	local_rgo_output = 2
 	icon = 9
 }
 
@@ -774,32 +774,32 @@ colonial_railroad_nerf7 = {
 }
 
 colonial_farm_nerf1 = {
-	farm_rgo_eff = -0.25
+	farm_rgo_eff = -0.2
 	icon = 14
 }
 
 colonial_farm_nerf2 = {
-	farm_rgo_eff = -0.5
+	farm_rgo_eff = -0.4
 	icon = 14
 }
 
 colonial_farm_nerf3 = {
-	farm_rgo_eff = -0.75
+	farm_rgo_eff = -0.6
 	icon = 14
 }
 
 colonial_mine_nerf1 = {
-	mine_rgo_eff = -0.25
+	mine_rgo_eff = -0.2
 	icon = 14
 }
 
 colonial_mine_nerf2 = {
-	mine_rgo_eff = -0.5
+	mine_rgo_eff = -0.4
 	icon = 14
 }
 
 colonial_mine_nerf3 = {
-	mine_rgo_eff = -0.75
+	mine_rgo_eff = -0.6
 	icon = 14
 }
 
@@ -936,6 +936,7 @@ corn_laws = {
 	core_pop_militancy_modifier = 0.05
 	core_pop_consciousness_modifier_modifier = 0.05
 	goods_demand = 0.1
+	factory_input = 0.02
 	icon = 10
 }
 
@@ -1042,7 +1043,7 @@ common_army_3 = {
 
 ### TUR - OTTOMAN EMPIRE ###
 christian_subjugation = {
-	tax_efficiency = 0.1
+	tax_efficiency = 0.05
 	mobilisation_size = 0.02
 	education_efficiency_modifier = -0.3
 	global_pop_militancy_modifier = 0.02

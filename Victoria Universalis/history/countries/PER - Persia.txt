@@ -42,23 +42,23 @@ school_reforms = no_schools
 consciousness = 0
 nonstate_consciousness = 0
 
-foreign_training = yes_foreign_training
+
 foreign_weapons = yes_foreign_weapons
-land_reform = yes_land_reform
+military_constructions = yes_military_constructions
 army_schools = yes_army_schools
 foreign_artillery = yes_foreign_artillery
-foreign_naval_officers = yes_foreign_naval_officers
-foreign_navies = yes_foreign_navies
 foreign_officers = yes_foreign_officers
+foreign_navies = yes_foreign_navies
+land_reform = yes_land_reform
 
 # Technology
-clipper_design = 1
+post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 military_staff_system = 1
 army_command_principle = 1
-post_nelsonian_thought = 1
 clipper_design = 1
+freedom_of_trade = 1
 
 oob = "PER_oob.txt"
 

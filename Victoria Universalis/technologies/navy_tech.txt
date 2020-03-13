@@ -1955,10 +1955,7 @@ naval_aviation = {
 	cost = 21600
 	unciv_military = yes
 	supply_range = 0.10
-	carrier = {
-		gun_power = 5
-		fire_range = 1
-	}
+	
 		ai_chance = {
 		factor = 1.01
 		modifier = {

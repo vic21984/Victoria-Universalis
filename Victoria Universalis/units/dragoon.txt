@@ -25,15 +25,15 @@ dragoon = {
 	build_cost = {
 		small_arms = 10
 		canned_food = 10
-		wine = 10
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		small_arms = 0.02 #0.01
-		ammunition = 0.1 #0
-		canned_food = 0.05 #0.08
-		grain = 0.05
+		small_arms = 0.03
+		ammunition = 0.10
+		canned_food = 0.05
+		regular_clothes = 0.1
+		grain = 0.2
 	}
 	
 

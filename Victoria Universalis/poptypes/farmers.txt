@@ -6,25 +6,25 @@ equivalent = labourers
 
 
 everyday_needs = {
-	cigarettes = 1
-	pharmaceuticals = 0.75
-	tea = 1
-	coffee = 0.75
+	cigarettes = 1.5
+	pharmaceuticals = 1
+	opium = 0.05
+	tea = 2
+	coffee = 1
 	liquor = 2.5
 	regular_clothes = 3
 	furniture = 3
 	wine = 1.5
 	canned_food = 1
-	fertilizer = 0.5
+	fertilizer = 1
 }
 
 life_needs = {
-	cattle = 0.75
-	wool =  1
-	fish =  1
-	fruit =  1
-	grain =  2.5
-	fertilizer = 0.2
+	cattle = 1.125
+	wool =  1.5
+	fish =  1.5
+	fruit =  1.5
+	grain =  3.75
 }
 
 
@@ -32,16 +32,17 @@ luxury_needs = {
 	telephones = 1
 	automobiles = 0.25
 	radio = 1
-	cigarettes = 1
-	pharmaceuticals = 0.75
-	tea = 1
-	coffee = 0.75
+	cigarettes = 1.5
+	pharmaceuticals = 1
+	opium = 0.05
+	tea = 2
+	coffee = 1
 	liquor = 2.5
 	regular_clothes = 3
 	furniture = 3
 	wine = 1.5
 	canned_food = 1
-	fertilizer = 0.5
+	fertilizer = 1
 }
 
 country_migration_target =
@@ -68,7 +69,7 @@ country_migration_target =
 	modifier = {
 		factor = 0
 		border_policy = quota_immigration
-		THIS = { NOT = { literacy = 0.6 } }
+		THIS = { NOT = { literacy = 0.5 } }
 	}
 	modifier = {
 		factor = 1.25
@@ -237,7 +238,6 @@ migration_target =
 		OR = { 
 			unemployment_by_type = { type = farmers value = 0.1  }
 			unemployment_by_type = { type = labourers value = 0.1  }
-			unemployment_by_type = { type = labourers_gold value = 0.1  }
 		}
 		NOT = { country = { has_country_flag = province_migration } }
 	}
@@ -323,17 +323,6 @@ migration_target =
 promote_to =
 {
 
-	labourers_gold = {
-		factor = 0.01
-			modifier = {
-				factor = 999
-				location = {
-					work_available = {
-						worker = labourers_gold
-					}
-				}
-			}
-	}
 	artisans =
 	{
 		factor = 0.01

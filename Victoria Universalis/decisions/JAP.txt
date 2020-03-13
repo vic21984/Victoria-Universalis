@@ -44,6 +44,7 @@ political_decisions = {
 				duration = 7300
 			}
 			economic_reform = yes_land_reform
+			activate_technology = freedom_of_trade
 			any_pop = {
 				scaled_militancy = {
 					ideology = liberal
@@ -83,6 +84,7 @@ political_decisions = {
 				duration = 7300
 			}
 			economic_reform = yes_land_reform
+			activate_technology = freedom_of_trade
 		}
 		ai_will_do = {
 			factor = 1

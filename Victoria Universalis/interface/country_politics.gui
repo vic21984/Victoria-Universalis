@@ -1438,13 +1438,13 @@ guiTypes = {
 				iconType = {
 					name = "politics_admin_reform"
 					spriteType = "GFX_politics_admin_reform"
-					position = { x = 1 y = -3 }
+					position = { x = 1 y = 0 }
 					Orientation = "UPPER_LEFT"
 				}
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 34 y = -1 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
@@ -1568,7 +1568,7 @@ guiTypes = {
 			windowType = {
 				name = "transport_improv"
 				backGround =""
-				position = { x = 690 y = 383 }
+				position = { x = 690 y = 369 }
 				size = { x=149 y=72 }
 				moveable = 0
 				dontRender = ""
@@ -1585,7 +1585,7 @@ guiTypes = {
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 34 y = -1 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
@@ -1596,7 +1596,7 @@ guiTypes = {
 			windowType = {
 				name = "firearms_production"
 				backGround =""
-				position = { x = 842 y = 383 }
+				position = { x = 842 y = 369 }
 				size = { x=149 y=72 }
 				moveable = 0
 				dontRender = ""
@@ -1613,7 +1613,7 @@ guiTypes = {
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 34 y = -1 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
@@ -1625,7 +1625,7 @@ guiTypes = {
 			windowType = {
 				name = "pre_indust"
 				backGround =""
-				position = { x = 690 y = 469 }
+				position = { x = 690 y = 455 }
 				size = { x=149 y=72 }
 				moveable = 0
 				dontRender = ""
@@ -1642,7 +1642,7 @@ guiTypes = {
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 34 y = -1 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
@@ -1653,7 +1653,7 @@ guiTypes = {
 			windowType = {
 				name = "industrial_construction"
 				backGround =""
-				position = { x = 842 y = 469 }
+				position = { x = 842 y = 455 }
 				size = { x=149 y=72 }
 				moveable = 0
 				dontRender = ""
@@ -1670,7 +1670,7 @@ guiTypes = {
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 34 y = -1 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100

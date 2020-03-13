@@ -4,6 +4,7 @@ strata = middle
 
 research_points = 3	#if max %, then 2 extra research points.
 research_optimum = 0.02	#2%
+demote_migrant = yes
 
 rebel =
 {
@@ -32,24 +33,28 @@ luxury_needs_income =
 
 everyday_needs = {
 	fuel = 0.75
-	cigarettes = 0.75
-	pharmaceuticals = 0.5
-	tea = 1.5
-	coffee = 1.125	
-	liquor = 1.5
-	regular_clothes = 2
-	furniture = 2
-	wine = 1
-	canned_food = 0.5
-	paper = 7.5
+	telephones = 2
+	automobiles = 0.5
+	radio = 1
+	cigarettes = 1.5
+	pharmaceuticals = 1
+	opium = 0.05
+	tea = 2
+	coffee = 1
+	liquor = 2.5
+	luxury_clothes = 0.35
+	luxury_furniture = 0.35
+	wine = 1.5
+	canned_food = 1
+	paper = 4
 }
 
 life_needs = {
-	cattle = 0.75
-	wool =  1
-	fish =  1
-	fruit =  1
-	grain =  2.5
+	cattle = 1.125
+	wool =  1.5
+	fish =  1.5
+	fruit =  1.5
+	grain =  3.75
 }
 
 
@@ -58,18 +63,17 @@ luxury_needs = {
 	telephones = 2
 	automobiles = 0.5
 	radio = 1
-	cigarettes = 0.75
-	pharmaceuticals = 0.5
-	tea = 1.5
-	coffee = 1.125	
-	liquor = 1.5
-	regular_clothes = 2
-	furniture = 2
-	luxury_clothes = 0.25
-	luxury_furniture = 0.3
-	wine = 1
-	canned_food = 0.5
-	paper = 7.5
+	cigarettes = 1.5
+	pharmaceuticals = 1
+	opium = 0.05
+	tea = 2
+	coffee = 1
+	liquor = 2.5
+	luxury_clothes = 0.35
+	luxury_furniture = 0.35
+	wine = 1.5
+	canned_food = 1
+	paper = 4
 }
 
 
@@ -97,7 +101,7 @@ country_migration_target =
 	modifier = {
 		factor = 0
 		border_policy = quota_immigration
-		THIS = { NOT = { literacy = 0.6 } }
+		THIS = { NOT = { literacy = 0.5 } }
 	}
 	modifier = {
 		factor = 1.25
@@ -273,7 +277,6 @@ migration_target =
 		OR = { 
 			unemployment_by_type = { type = farmers value = 0.1  }
 			unemployment_by_type = { type = labourers value = 0.1  }
-			unemployment_by_type = { type = labourers_gold value = 0.1  }
 		}
 		NOT = { country = { has_country_flag = province_migration } }
 	}

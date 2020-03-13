@@ -1,3 +1,30 @@
+# Version 0.131 - 3/6/2020
+## General gameplay changes:
+* Increased lifeneeds for all POPs.
+* Removed gold labourer pop type.
+* Nerfed output from gold mines.
+* Removed secondary power requirement in the leave sphere of influence decision.
+* Removed rgo throughput bonus from free trade.
+* Removed province selector change mining rgo decision.
+* Each unciv reform's research point costs have been recalibrated and they all unlock new technologies. Technologies activated from unciv reforms also carry over after civilizing.
+* Removed the second row of finance and currency reform from uncivilized reforms and added an extra row to early industrialization and industrial construction.
+* Moved some farming and mining bonuses from later techs to the first row of the industry and commerce techs.
+* Removed wool fabric factories.
+* Added wool as an input good for fabric factories.
+* Removed liquor and wine from unit construction costs.
+* Added 40 leadership to every country at the start.
+* Strategic goods modifier no longer goes away if a province is conquered.
+* Fixed a bug where building a level 7 naval base or fort caused the game to crash.
+* Added carrier naval sprite.
+
+## Map changes:
+* Removed gold RGOs in Japan, Prussia, and China.
+* Removed a few coffee bean provinces around the world at the game start. They are re-introduced later via event.
+* Added an event to flip some provinces in China to Opium in 1880.
+* Made the island of Comoros part of the Indian Ocean Territory state instead of South Madagascar.
+* Moved a province from the state of Adana to Ankara.
+
+
 # Version 0.13 - 3/6/2020
 ## General gameplay changes:
 * Expanded the tech tree and rebalanced techs.

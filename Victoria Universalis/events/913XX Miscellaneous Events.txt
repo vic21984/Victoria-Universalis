@@ -1,6 +1,7 @@
 country_event = {
-	
 	id = 91301
+	title = "Money Injected"
+	
 	trigger = {
 		year = 1836
 		TAG = JAN
@@ -126,8 +127,11 @@ country_event = {
 	}
 }
 
+#Ghost Country Events
 country_event = {
 	id = 91303
+	title = "Ghost Country Trigger"
+	
 	trigger = {
 		tag = JAN
 		owns = 2133
@@ -153,6 +157,7 @@ country_event = {
 
 country_event = {
 	id = 91304
+	title = "Ghost Country Appears"
 	
 	is_triggered_only = yes
 
@@ -164,6 +169,8 @@ country_event = {
 
 country_event = {
 	id = 91305
+	title = "Ghost Country Cleanup"
+	
 	trigger = {
 		ai = yes
 		owns = 2133

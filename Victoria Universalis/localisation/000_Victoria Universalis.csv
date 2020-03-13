@@ -652,6 +652,7 @@ defence_4.2;§R+4 Defence;;;;;;;;;;;;;;
 defence_4.3;§R+4 Defence;;;;;;;;;;;;;;
 defence_4.4;§R+4 Defence;;;;;;;;;;;;;;
 defence_5.1;§W+5 Defence;;;;;;;;;;;;;;
+globalism;Globalism;;;;;;;;;;;;;;
 commerce_raider;Torpedo Boat;;;;;;;;;;;;;;x;;;;
 commerce_raider_short;TP;;;;;;;;;;;;;;;;x;;;;
 commerce_raiders;Torpedo Boats;;;;;;;;;;;;;;x;;;;
@@ -685,22 +686,28 @@ massive_promote_officers;Encourage Officers;;;;;;;;;;;;;;
 massive_promote_soldiers;Encourage Soldiers;;;;;;;;;;;;;;
 TRADE_INDUSTRIAL_AND_CONSUMER_GOODS;Industrial & Consumer Goods;;;;;;;;;;;;;;
 industrial_and_consumer_goods;Industrial & Consumer Goods;;;;;;;;;;;;;;
+no_standard;Official Currencies;;;;;;;;;;;;;;
+industrial_revolution;Industrial Revolution;;;;;;;;;;;;;;
 trench_systems;Trench Systems;;;;;;;;;;;;;;
 chemical_weapons;Chemical Weapons;;;;;;;;;;;;;;
+counter_battery_fire;Counter-Battery Fire;;;;;;;;;;;;;;
+counter_battery_fire_desc;Counter-battery fire is a battlefield military activity to defeat the enemy's indirect fire elements, including their target acquisition, command and control components.;;;;;;;;;;;;;;
 creeping_barrage;Creeping Barrage;;;;;;;;;;;;;;
+creeping_barrage_desc;A creeping barrage was a barrage that lifted in small increments, usually 100 yards every few minutes, so that it moved forward slowly, keeping pace with the infantry. Eventually, three patterns of advancing the barrage developed. In a creeping barrage, fire moved from one line to the next. In a block barrage, the 'block' moved as block to the next lines that were not previously engaged. In a rolling barrage, the fire on the line nearest to own troops moved to the first unengaged line furthest from own troops.;;;;;;;;;;;;;;
 railway_gun;Railway Gun;;;;;;;;;;;;;;
 barrel_experiments;Tank Experiments;;;;;;;;;;;;;;
 combined_arms_experiments;Combined Arms Experiments;;;;;;;;;;;;;;
+medium_tank;Medium Tank;;;;;;;;;;;;;;
+medium_tank_desc;The role of medium tanks started with a prioritisation of speed. Medium tanks could travel faster, but needed help to cross trenches, where heavy tanks were large enough to cross unaided. In this later use, medium tanks represent the designer's intent of producing a successful balance of firepower, mobility, and protection. Medium tanks aim to be suitable to the widest variety of roles, with less reliance on other types of tank during normal operations.;;;;;;;;;;;;;;
 total_war_philosophy;Total War Philosophy;;;;;;;;;;;;;;
 early_modern_naval_doctrine;Early Modern Naval Doctrine;;;;;;;;;;;;;;
 aircraft_carriers;Aircraft Carriers;;;;;;;;;;;;;;
 carrier;Aircraft Carrier;;;;;;;;;;;;;;
 carriers;Carriers;;;;;;;;;;;;;;
 carriers_desc;An aircraft carrier is a warship that serves as a seagoing airbase, equipped with a full-length flight deck and facilities for carrying, arming, deploying, and recovering aircraft. Carriers allows a naval force to hit targets from far beyond the range of traditional guns.;;;;;;;;;;;;;;
-medium_tank;Medium Tank;;;;;;;;;;;;;;
-medium_tank_desc;The role of medium tanks started with a prioritisation of speed. Medium tanks could travel faster, but needed help to cross trenches, where heavy tanks were large enough to cross unaided. In this later use, medium tanks represent the designer's intent of producing a successful balance of firepower, mobility, and protection. Medium tanks aim to be suitable to the widest variety of roles, with less reliance on other types of tank during normal operations.;;;;;;;;;;;;;;
 early_modern_naval_design;Early Modern Naval Design;;;;;;;;;;;;;;
 naval_aviation;Naval Aviation;;;;;;;;;;;;;;
+naval_aviation_desc;Naval aviation is typically projected to a position nearer the target by way of an aircraft carrier. Carrier-based aircraft must be sturdy enough to withstand demanding carrier operations. They must be able to launch in a short distance and be sturdy and flexible enough to come to a sudden stop on a pitching flight deck; they typically have robust folding mechanisms that allow higher numbers of them to be stored in below-decks hangars and small spaces on flight decks.;;;;;;;;;;;;;;
 early_modern_naval_training;Early Modern Naval Training;;;;;;;;;;;;;;
 modern_naval_exercises;Modern Naval Exercises;;;;;;;;;;;;;;
 modern_naval_exercises_desc;Modern naval exercises evolved into detailed wargame simulations encompassing command post exercises, field exercises, and joint exercises between two or more countries.;;;;;;;;;;;;;;
@@ -748,10 +755,6 @@ pharmaceuticals;Pharmaceuticals;;;;;;;;;;;;;;
 pharmaceuticals_desc;The advancement of medicine has led to the development of proper pharmaceuticals, especially those using opiates, as a method of medical treatment replacing more traditional methods.;;;;;;;;;;;;;;;;;;;;;;;;;
 pharmaceutical_plant;Pharmaceutical Plant;;;;;;;;;x;;;;
 pharmaceutical_plant_desc;This plant creates modern medicines by synthesizing new chemical compounds from opium.;;;;;;;;;x;;;;
-wool_fabric_factory;Wool Fabric Factory;;;;;;;;;x;;;;
-wool_fabric_factory_desc;Wool is processed into fabric here.;;;;;;;;;x;;;;
-cotton_fabric_factory;Cotton Fabric Factory;;;;;;;;;x;;;;
-cotton_fabric_factory_desc;Cotton is processed into fabric here.;;;;;;;;;x;;;;
 cigarettes;Cigarettes;;;;;;;;;x;;;;
 cigarette_factory;Cigarette Factory;;;;;;;;;x;;;;
 cigarette_factory_desc;This factory rolls tobacco leaves into paper to create cigarettes.;;;;;;;;;x;;;;
@@ -786,6 +789,7 @@ PHL_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;Partido Liberal;;;;
 PHL_anarcho_liberal;Partido Libertad;Partido Libertad;Partido Libertad;;Partido Libertad;;;;;;;;;x
 PHL_conservative;Partido Nacionalista;Partido Nacionalista;Partido Nacionalista;;Partido Nacionalista;;;;;;;;;x
 PHL_fascist;Partido Fascista;Partido Fascista;Partido Fascista;;Partido Fascista;;;;;;;;;x
+PROV313;Oslo;;;;;;;;;;;;;x
 PRU_370;Schleswig;;;;;;;;;;;;;x
 PRU_544;Mecklenburg;;;;;;;;;;;;;x
 PRU_547;Pommern;;;;;;;;;;;;;
@@ -1119,6 +1123,9 @@ EVT91737OPTL;I'd rather not change anything.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME1142;Coffee cultivation in $PROVINCENAME$;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC1142;The fields in $PROVINCENAME$ have been found favourable to the cultivation of coffee beans. With the rising world demand for coffee, local farmers have found it prudent to switch production over to the new cash crop.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA1142;That could come in handy;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME1143;Opium cultivation in $PROVINCENAME$;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC1143;The fields in $PROVINCENAME$ have been found favourable to the cultivation of opium. With the rising world demand for pharmaceuticals, local farmers have found it prudent to switch production over to the new cash crop.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA1143;That could come in handy;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91600;Administrative Points;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC91600;Annual Administrative Points Budget;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA91600;I will use them wisely;;;;;;;;;;;;;;;;;;;;;;;x

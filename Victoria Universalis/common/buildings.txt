@@ -640,7 +640,7 @@ lumber_mill = {
 	pop_build_factory = yes
 }
 
-cotton_fabric_factory = {
+fabric_factory = {
 	type = factory
 	on_completion = factory
 	completion_size = 0.2
@@ -656,27 +656,7 @@ cotton_fabric_factory = {
 	onmap = no
 
 	default_enabled = yes	
-	production_type = cotton_fabric_factory
-	pop_build_factory = yes
-}
-
-wool_fabric_factory = {
-	type = factory
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 99
-	goods_cost =
-	{
-		machine_parts = 20
-		iron = 200
-		cement = 200
-	}
-	time = 365
-	visibility = yes
-	onmap = no
-	
-	default_enabled = yes	
-	production_type = wool_fabric_factory
+	production_type = fabric_factory
 	pop_build_factory = yes
 }
 
@@ -855,7 +835,7 @@ naval_base = {
 	port = yes
 	visibility = yes
 	max_level = 7
-	colonial_points = { 30 50 70 90 110 130 } #points at levels 1-6
+	colonial_points = { 30 50 70 90 110 130 150 } #points at levels 1-7
 	province = yes
 	one_per_state = yes
 	colonial_range = 50

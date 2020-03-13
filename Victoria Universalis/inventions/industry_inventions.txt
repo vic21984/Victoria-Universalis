@@ -66,7 +66,7 @@ tractors = {
 		}
 	}
 	effect = {
-		farm_RGO_eff = 0.3
+		farm_RGO_eff = 0.2
 	}
 }
 #electrical_power_generation
@@ -145,58 +145,11 @@ sharp_n_roberts_power_loom = {
 		rgo_goods_output = {
 			wool = 0.2
 		}
-	}
-}
-jacquard_power_loom = {
-	limit = { mechanical_production = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = sharp_n_roberts_power_loom
-		}
-		modifier = {
-			factor = 2
-			invention = insurance_companies
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			wool = 0.2
-		}
 		rgo_goods_output = {
 			silk = 0.2
 		}
 		factory_goods_output = {
-			fabric = 0.05 
-		}
-	}
-}
-northrop_power_loom = {
-	limit = { mechanical_production = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = jacquard_power_loom
-		}
-		modifier = {
-			factor = 2
-			invention = insurance_companies
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			cotton = 0.2
-		}
-		rgo_goods_output = {
-			wool = 0.2
-		}
-		rgo_goods_output = {
-			silk = 0.2
-		}
-		factory_goods_throughput = {
-			fabric = 0.05 
+			fabric = 0.1 
 		}
 	}
 }
@@ -215,29 +168,10 @@ mechanical_saw = {
 	}
 	effect = {
 		rgo_goods_output = {
-			timber = 0.1
+			timber = 0.2
 		}
 		rgo_goods_output = {
-			tropical_wood = 0.1
-		}
-	}
-}
-mechanical_precision_saw = {
-	limit = { mechanical_production = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = mechanical_saw
-		}
-		modifier = {
-			factor = 2
-			practical_steam_engine = 1
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			timber = 0.1
+			tropical_wood = 0.2
 		}
 	}
 }
@@ -260,62 +194,6 @@ hussey_n_mccormicks_reaping_machine = {
 		}
 		rgo_goods_output = {
 			fruit = 0.2
-		}
-		rgo_goods_output = {
-			tea_leaves = 0.2
-		}
-		rgo_goods_output = {
-			coffee_beans = 0.2
-		}
-		rgo_goods_output = {
-			opium = 0.2
-		}
-	}
-}
-pitts_threshing_machine = {
-	limit = { mechanical_production = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = hussey_n_mccormicks_reaping_machine
-		}
-		modifier = {
-			factor = 2
-			practical_steam_engine = 1
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			grain = 0.2
-		}
-		rgo_goods_output = {
-			fruit = 0.2
-		}
-		rgo_goods_output = {
-			tea_leaves = 0.2
-		}
-	}
-}
-mechanized_slaughtering_block = {
-	limit = { mechanical_production = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			medicine = 1
-		}
-		modifier = {
-			factor = 2
-			clean_coal = 1
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			cattle = 0.2
-		}
-		rgo_goods_output = {
-			wool = 0.2
 		}
 	}
 }
@@ -361,7 +239,7 @@ machine_tools = {
 			machine_parts = 0.02 
 		}
 		factory_throughput = 0.05		
-		mine_RGO_eff = 0.3
+		mine_RGO_eff = 0.2
 	}
 }
 whitney_n_colts_standardized_small_arms = {
@@ -511,6 +389,9 @@ drying_techniques = {
 		}
 		rgo_goods_output = {
 			opium = 0.2
+		}
+		rgo_goods_output = {
+			tobacco = 0.2
 		}
 	}
 }
@@ -822,8 +703,28 @@ thomas_steel = {
 	}
 }
 #advanced_metallurgy
-electric_rolling_techniques = {
+steel_alloys = {
 	limit = { advanced_metallurgy = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = thomas_steel
+		}
+		modifier = {
+			factor = 2
+			inorganic_chemistry = 1
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			steel = 0.05
+		}
+	}
+}
+#electric_furnace
+electric_rolling_techniques = {
+	limit = { electric_furnace = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -841,28 +742,9 @@ electric_rolling_techniques = {
 		}
 	}
 }
-steel_alloys = {
-	limit = { advanced_metallurgy = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = thomas_steel
-		}
-		modifier = {
-			factor = 2
-			inorganic_chemistry = 1
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-		precious_metal = 0.05
-		}
-	}
-}
-#electric_furnace
+#modern_metallurgy
 stainless_steel = {
-	limit = { electric_furnace = 1 }
+	limit = { modern_metallurgy = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -912,7 +794,7 @@ combat_medicine = {
 		}
 	}
 	effect = {
-		land_attrition = -0.05 
+		land_attrition = -0.1 
 		soldier_to_pop_loss = 0.025
 	}
 }
@@ -935,40 +817,6 @@ aerial_bacteria_and_antiseptic_principle = {
 		soldier_to_pop_loss = 0.025
 	}
 }
-chemotherapy = {
-	limit = { medicine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			empiricism = 1
-		}
-		modifier = {
-			factor = 2
-			market_structure = 1
-		}
-	}
-	effect = {
-		land_attrition = -0.05  
-	}
-}
-genetics:_heredity = {
-	limit = { medicine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			inorganic_chemistry = 1
-		}
-		modifier = {
-			factor = 2
-			colonial_nation = yes
-		}
-	}
-	effect = {
-		shared_prestige = 10
-	}
-}
 clinical_thermometers_and_binaural_stethoscopes = {
 	limit = { medicine = 1 }
 	chance = {
@@ -984,23 +832,6 @@ clinical_thermometers_and_binaural_stethoscopes = {
 	}
 	effect = {
 		pop_growth = 0.0001
-	}
-}
-pressure_chambers_for_thorax_surgery = {
-	limit = { medicine = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			assembly_line = 1
-		}
-		modifier = {
-			factor = 2
-			cheap_iron = 1
-		}
-	}
-	effect = {
-		shared_prestige = 10
 	}
 }
 #inorganic_chemistry
@@ -1020,7 +851,7 @@ artificial_fertilizers = {
 	effect = {
 		farm_rgo_eff = 0.02
 		factory_goods_output = {
-			fertilizer = 0.2
+			fertilizer = 0.05
 		}
 	}
 }
@@ -1041,7 +872,7 @@ nitroglycerin = {
 		factory_goods_output = {
 			explosives = 0.02
 		}
-		mine_RGO_eff = 0.3
+		mine_RGO_eff = 0.2
 	}
 }
 chemical_wood_pulp_process = {
@@ -1283,10 +1114,10 @@ national_radio_networks = {
 	limit = { electricity = 1 }
 	news = no
 	chance = {
-		base = 3
+		base = 0
 		modifier = {
 			factor = 5
-			year = 1920
+			year = 1900
 		}
 		modifier = {
 			factor = 2
@@ -1324,7 +1155,7 @@ electrical_lighting = {
 	}
 	effect = {
 		factory_throughput = 0.05
-		mine_RGO_eff = 0.3
+		mine_RGO_eff = 0.2
 	}
 }
 
@@ -1336,7 +1167,7 @@ haber_bosch_process = {
 	}
 	effect = {
 		activate_building = synthetic_nitrate_factory
-		farm_RGO_eff = 0.3
+		farm_RGO_eff = 0.2
 	}
 }
 #modern_chemistry
@@ -1398,60 +1229,5 @@ vacuum_tube = {
 		factory_goods_output = { radio = 0.03 } 
 		factory_goods_output = { telephones = 0.03 } 
 		factory_goods_output = { electric_gear = 0.03 } 
-	}
-}
-
-tulls_seed_drill = {
-	limit = { water_wheel_power = 1 }
-	chance = {
-		base = 6
-	}
-	effect = {
-		rgo_goods_output = {
-			grain = 0.1
-		}
-		rgo_goods_output = {
-			fruit = 0.1
-		}
-	}
-	
-	
-	
-}
-
-rotherham_plough = {
-	limit = { practical_steam_engine = 1 }
-	chance = {
-		base = 6
-	}
-	effect = {
-		rgo_goods_output = {
-			grain = 0.2
-		}
-	}
-	
-	
-	
-}
-
-telephone_switchboard = {
-	limit = { 
-		electricity = 1
-	}
-	chance = {
-		base = 0
-		modifier = {
-			factor = 5
-			invention = bell_n_greys_telephones
-		}
-		modifier = {
-			factor = 5
-			invention = edison_light_bulb
-		}			
-	}
-	effect = {
-		factory_goods_output = {
-			telephones = 0.03
-		} 
 	}
 }

@@ -39,7 +39,7 @@ mechanized_fishing_vessels = {
 	}
 	effect = {
 		rgo_goods_output = {
-			fish = 0.5
+			fish = 0.2
 		}
 	}
 }
@@ -793,7 +793,6 @@ night_training = {
 		}
 	}
 }
-
 enemy_plotting_cards = {
 	limit = { naval_plans = 1 }
 	chance = {
@@ -813,7 +812,6 @@ enemy_plotting_cards = {
 		}
 	}
 }
-
 target_hit_profile_analysis = {
 	limit = { naval_plans = 1 }
 	chance = {
@@ -833,7 +831,6 @@ target_hit_profile_analysis = {
 		}
 	}
 }
-
 #naval_statistics
 hit_evaluation_reports = {
 	limit = { naval_statistics = 1 }
@@ -854,7 +851,6 @@ hit_evaluation_reports = {
 		}
 	}
 }
-
 empirical_interdiction_reports = {
 	limit = { naval_statistics = 1 }
 	chance = {
@@ -874,7 +870,6 @@ empirical_interdiction_reports = {
 		}
 	}
 }
-
 naval_strike_success_criterium = {
 	limit = { naval_statistics = 1 }
 	chance = {
@@ -894,7 +889,6 @@ naval_strike_success_criterium = {
 		}
 	}
 }
-
 #naval_logistics
 underway_refueling = {
 	limit = { naval_logistics = 1 }
@@ -915,7 +909,6 @@ underway_refueling = {
 		}
 	}
 }
-
 ammunition_conservation_system = {
 	limit = { naval_logistics = 1 }
 	chance = {
@@ -935,9 +928,9 @@ ammunition_conservation_system = {
 		}
 	}
 }
-
+#naval_directionism
 radio_telegraphy = {
-	limit = { naval_logistics = 1 }
+	limit = { naval_directionism = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -951,71 +944,10 @@ radio_telegraphy = {
 	}
 	effect = {
 		navy_base = {
-			default_organisation = 1
+			default_organisation = 3
 		}
 	}
 }
-#naval_directionism
-political_lobbying = {
-	limit = { naval_directionism = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			state_n_government = 1
-		}
-		modifier = {
-			factor = 2
-			scientific_management = 1
-		}
-	}
-	effect = {
-		navy_base = {
-			default_organisation = 1
-		}
-	}
-}
-
-military_political_decision_making = {
-	limit = { naval_directionism = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			state_n_government = 1
-		}
-		modifier = {
-			factor = 2
-			nationalism_n_imperialism = 1
-		}
-	}
-	effect = {
-		navy_base = {
-			default_organisation = 1
-		}
-	}
-}
-
-local_military_government = {
-	limit = { naval_directionism = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 1
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 2
-			invention = pragmatism
-		}
-	}
-	effect = {
-		navy_base = {
-			default_organisation = 1
-		}
-	}
-}
-
 #naval_integration
 war_gamming = {
 	limit = { naval_integration = 1 }
@@ -1036,7 +968,6 @@ war_gamming = {
 		}
 	}
 }
-
 combined_arms_planning = {
 	limit = { naval_integration = 1 }
 	chance = {
@@ -1050,6 +981,44 @@ combined_arms_planning = {
 			naval_risk_management = 1
 		}
 			
+	}
+	effect = {
+		navy_base = {
+			default_organisation = 1
+		}
+	}
+}
+#naval_aviation
+naval_aviation = {
+	limit = { naval_aviation = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 10
+			aircraft_carriers = 1
+		}
+	}
+	effect = {
+		carrier = {
+			gun_power = 5
+			fire_range = 1
+		}
+	}
+}
+
+#the_command_principle
+societal_status = {
+	limit = { the_command_principle = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = national_fraternity
+		}
+		modifier = {
+			factor = 2
+			functionalism = 1
+		}
 	}
 	effect = {
 		navy_base = {
@@ -1099,26 +1068,6 @@ combat_station_training = {
 	}
 }
 
-societal_status = {
-	limit = { naval_professionalism = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = national_fraternity
-		}
-		modifier = {
-			factor = 2
-			functionalism = 1
-		}
-	}
-	effect = {
-		navy_base = {
-			default_organisation = 1
-		}
-	}
-}
-
 #naval_decision_making
 independent_command = {
 	limit = { naval_decision_making = 1 }
@@ -1135,26 +1084,7 @@ independent_command = {
 	}
 	effect = {
 		navy_base = {
-			default_organisation = 1
-		}
-	}
-}
-continuous_issuing_of_orders = {
-	limit = { naval_decision_making = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = radio_telegraphy
-		}
-		modifier = {
-			factor = 1
-			naval_logistics = 1
-		}	
-	}
-	effect = {
-		navy_base = {
-			default_organisation = 1
+			default_organisation = 2
 		}
 	}
 }
@@ -1214,50 +1144,12 @@ alternative_plans = {
 	}
 	effect = {
 		navy_base = {
-			default_organisation = 1
+			default_organisation = 2
 		}
 	}
 }
 
-n_saddle_orders = {
-	limit = { naval_risk_management = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 1
-			invention = night_training
-		}
-		modifier = {
-			factor = 2
-			invention = delegated_power
-		}
-	}
-	effect = {
-		navy_base = {
-			default_organisation = 1
-		}
-	}
-}
 #naval_nco_training
-literate_ncos = {
-	limit = { naval_nco_training = 1 }
-	chance = {
-		base = 4
-		modifier = {
-			factor = 2
-			invention = academic_training
-		}
-		modifier = {
-			factor = 2
-			analytic_philosophy = 1
-		}
-	}
-	effect = {
-		navy_base = {
-			default_organisation = 1
-		}
-	}
-}
 nco_combat_station_training = {
 	limit = { naval_nco_training = 1 }
 	chance = {
@@ -1273,7 +1165,7 @@ nco_combat_station_training = {
 	}
 	effect = {
 		navy_base = {
-			default_organisation = 1
+			default_organisation = 2
 		}
 	}
 }

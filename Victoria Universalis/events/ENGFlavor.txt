@@ -1817,7 +1817,7 @@ country_event = {
 #AI tech buffs
 country_event = {
 	id = 36943
-
+	title = "AI UK Breech Loaded Rifle Tech"
 	
 	trigger = {
 		tag = ENG
@@ -1836,7 +1836,7 @@ country_event = {
 
 country_event = {
 	id = 36944
-
+	title = "AI UK Machine Gun Tech"
 	
 	trigger = {
 		tag = ENG
@@ -1856,7 +1856,7 @@ country_event = {
 #Release Dominions
 country_event = {
 	id = 36945
-
+	title = "Release Canada"
 	
 	trigger = {
 		ai = yes
@@ -1878,7 +1878,7 @@ country_event = {
 
 country_event = {
 	id = 36946
-
+	title = "Release Australia"
 	
 	trigger = {
 		ai = yes
@@ -1900,7 +1900,7 @@ country_event = {
 
 country_event = {
 	id = 36947
-
+	title = "Release New Zealand"
 	
 	trigger = {
 		ai = yes
@@ -1922,7 +1922,7 @@ country_event = {
 
 country_event = {
 	id = 36948
-
+	title = "Commonwealth Open Borders"
 	
 	trigger = {
 		ai = yes
@@ -1931,6 +1931,7 @@ country_event = {
 			tag = CAN
 			tag = AST
 		}
+		NOT = { border_policy = open_borders }
 	}
 	
  

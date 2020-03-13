@@ -872,6 +872,7 @@ global_population_nerf_1930 = {
 sphereling_tax_bonus = {
 	trigger = {
 		part_of_sphere = yes
+		NOT = { has_country_flag = jan_mayen }
 	}
 	tax_efficiency = 0.1
 	icon = 9
@@ -1022,8 +1023,7 @@ jan_mayen_tariffs = {
 	trigger = {
 		has_country_flag = jan_mayen		
 	}
-	max_tariff = -0.25
-	max_tax = 0.01
+	tax_efficiency = -0.3
 	prestige = -1
 	icon = 9
 }
@@ -1033,7 +1033,7 @@ jan_mayen_world_bank1 = {
 		has_country_flag = jan_mayen
 		NOT = { year = 1840 }	
 	}
-	rgo_output = 155
+	rgo_output = 3750
 	icon = 11
 }
 
@@ -1043,7 +1043,7 @@ jan_mayen_world_bank2 = {
 		year = 1840	
 		NOT = { year = 1850 }	
 	}
-	rgo_output = 180
+	rgo_output = 3900
 	icon = 11
 }
 
@@ -1053,7 +1053,7 @@ jan_mayen_world_bank3 = {
 		year = 1850	
 		NOT = { year = 1860 }		
 	}
-	rgo_output = 300
+	rgo_output = 4500
 	icon = 11
 }
 
@@ -1063,7 +1063,7 @@ jan_mayen_world_bank4 = {
 		year = 1860
 		NOT = { year = 1870 }	
 	}
-	rgo_output = 500
+	rgo_output = 5250
 	icon = 11
 }
 jan_mayen_world_bank5 = {
@@ -1072,7 +1072,7 @@ jan_mayen_world_bank5 = {
 		year = 1870
 		NOT = { year = 1880 }	
 	}
-	rgo_output = 600
+	rgo_output = 6750
 	icon = 11
 }
 jan_mayen_world_bank6 = {
@@ -1081,7 +1081,7 @@ jan_mayen_world_bank6 = {
 		year = 1880
 		NOT = { year = 1890 }	
 	}
-	rgo_output = 850
+	rgo_output = 8250
 	icon = 11
 }
 jan_mayen_world_bank7 = {
@@ -1090,7 +1090,7 @@ jan_mayen_world_bank7 = {
 		year = 1890
 		NOT = { year = 1900 }
 	}
-	rgo_output = 1000
+	rgo_output = 10500
 	icon = 11
 }
 jan_mayen_world_bank8 = {
@@ -1099,7 +1099,7 @@ jan_mayen_world_bank8 = {
 		year = 1900
 		NOT = { year = 1910 }
 	}
-	rgo_output = 1200
+	rgo_output = 12750
 	icon = 11
 }
 jan_mayen_world_bank9 = {
@@ -1108,7 +1108,7 @@ jan_mayen_world_bank9 = {
 		year = 1910
 		NOT = { year = 1920 }
 	}
-	rgo_output = 1400
+	rgo_output = 15000
 	icon = 11
 }
 jan_mayen_world_bank10 = {
@@ -1116,6 +1116,6 @@ jan_mayen_world_bank10 = {
 		has_country_flag = jan_mayen
 		year = 1920
 	}
-	rgo_output = 1800
+	rgo_output = 18000
 	icon = 11
 }

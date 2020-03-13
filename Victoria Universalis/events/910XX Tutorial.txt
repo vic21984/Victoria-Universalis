@@ -4,20 +4,11 @@ country_event = {
 	desc = "EVTDESC91001"
 	
 
-	trigger = {
-		ai = no
-		year = 1836
-		NOT = {
-			year = 1837
-			month = 2
-			has_country_flag = tutorial
-		}
-	}
+	is_triggered_only = yes
 	
 	
 	option = {
 		name = "EVTOPTA91001"
-		set_country_flag = tutorial
 	}
 	
 	option = {
@@ -25,7 +16,6 @@ country_event = {
 		country_event = { 
 			id = 91002
 		}
-		set_country_flag = tutorial
 	}	
 }
 

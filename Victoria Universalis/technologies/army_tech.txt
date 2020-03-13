@@ -311,7 +311,7 @@ infiltration = {
 modern_army_doctrine = {
 	area = army_doctrine
 	year = 1925
-	cost = 25200
+	cost = 21600
 	unciv_military = yes
 	
 	army_base = {
@@ -626,7 +626,7 @@ chemical_weapons = {
 modern_divisional_structure = {
 	area = light_armament
 	year = 1925
-	cost = 25200
+	cost = 21600
 	unciv_military = yes
 
 	unit = 2
@@ -932,7 +932,7 @@ creeping_barrage = {
 railway_gun = {
 	area = heavy_armament
 	year = 1925
-	cost = 25200
+	cost = 21600
 	unciv_military = yes
 	artillery = {
 		attack = 1
@@ -1156,7 +1156,7 @@ military_logistics = {
 aeronautics = {
 	area = military_science
 	year = 1900
-	cost = 25200
+	cost = 21600
 	
 	unciv_military = yes
 	
@@ -1196,7 +1196,7 @@ aeronautics = {
 barrel_experiments = {
 	area = military_science
 	year = 1910
-	cost = 25200
+	cost = 21600
 	unciv_military = yes
 	
 	ai_chance = {
@@ -1585,7 +1585,7 @@ great_war_experience = {
 total_war_philosophy = {
 	area = army_leadership
 	year = 1925
-	cost = 25200
+	cost = 21600
 	unciv_military = yes
 	morale = 0.25
 

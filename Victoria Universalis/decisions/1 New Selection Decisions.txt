@@ -974,24 +974,24 @@ political_decisions = {
 		}
 	}	
 		
-	province_rgo_change_mining = {
-		picture = province_scope
-		potential = {
-			NOT = { has_global_flag = ps_turned_off }
-			NOT = { has_country_flag = deciding }
-			NOT = { has_country_modifier = rgo_changed }
-			ai = no
-		}	
-		allow = {
-			any_owned_province = { has_building = province_selector }
-		}
-		effect = {
-			set_country_flag = deciding
-			country_event = { 
-				id = 91736
-			}
-		}
-	}
+#	province_rgo_change_mining = {
+#		picture = province_scope
+#		potential = {
+#			NOT = { has_global_flag = ps_turned_off }
+#			NOT = { has_country_flag = deciding }
+#			NOT = { has_country_modifier = rgo_changed }
+#			ai = no
+#		}	
+#		allow = {
+#			any_owned_province = { has_building = province_selector }
+#		}
+#		effect = {
+#			set_country_flag = deciding
+#			country_event = { 
+#				id = 91736
+#			}
+#		}
+#	}
 		
 	province_rgo_change_agriculture = {
 		picture = province_scope
@@ -1044,15 +1044,6 @@ political_decisions = {
 				remove_province_modifier = local_machine_tools
 				remove_province_modifier = local_nitroglycerin
 				province_selector = -1
-				any_pop = {
-					limit = {
-						OR = {
-							type = farmers
-							type = labourers
-						}
-					}
-					pop_type = labourers_gold
-				}
 			}
 		}
 	}

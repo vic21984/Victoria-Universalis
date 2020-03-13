@@ -389,10 +389,8 @@ finance_reform;Financial Reform;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 finance_reform_l;Financial Reform;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_finance_reform;No Financial Reform;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 yes_finance_reform;Enact Financial Reform;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-finance_reform_two;International Debt;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_finance_reform_desc;Our financial institutions and economy is run like the old days.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 yes_finance_reform_desc;We started to modernize our financial institutions.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-finance_reform_two_desc;We modernized a great part of our financial institutions and now we can borrow money from other nations.;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 education_reform;Basic Education;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 education_reform_l;Basic Education;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_education_reform;No Education Reform;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -408,15 +406,19 @@ yes_transport_improv_desc;The transportation system is being modernized. At leas
 pre_indust;Early Industrialisation;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 pre_indust_l;Early Industrialisation;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_pre_indust;Stick to the Old Ways;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-yes_pre_indust;Industrial Progress;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_pre_indust_desc;We have no need of industry.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-yes_pre_indust_desc;Construct some basic factories with the help of foreign advisors. Could this be the beginning of an industrial revolution?;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+yes_pre_indust;Pre-Industrialization;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+yes_pre_indust_desc;Construct some basic water wheel based mills.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+yes_pre_indust2;Early Industrialization;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+yes_pre_indust2_desc;Construct some basic factories with the help of foreign advisors. Could this be the beginning of an industrial revolution?;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 industrial_construction;Industrial Construction;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 industrial_construction_l;Industrial Construction;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_industrial_construction;No Industrial Construction;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-yes_industrial_construction;Industrial Construction;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 no_industrial_construction_desc;No advanced factories.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+yes_industrial_construction;Industrial Construction;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 yes_industrial_construction_desc;Foreign advisors assist us in building more advanced factories.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+yes_industrial_construction2;Chemical Industry;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+yes_industrial_construction2_desc;Foreign advisors assist us in learning the basics of chemistry.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 foreign_officers;Officer Training;;;;;;;;;;;;;;;;;;;;;;x
 foreign_officers_l;Officer Training;;;;;;;;;;;;;;;;;;;;;;x
 no_foreign_officers;Local Officer Training;;;;;;;;;;;;;;;;;;;;;;;x
@@ -489,9 +491,6 @@ no_monetary_reform_desc;Each province has its own currencies.;;;;;;;;;;;;;;;;;;;
 yes_monetary_reform;Official Currencies;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 yes_monetary_reform_l;Official Currencies;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 yes_monetary_reform_desc;The government adopted some currencies as official but doesn't issue them through a central bank.;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-monetary_reform_two;Single Currency;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-monetary_reform_two_l;Single Currency;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-monetary_reform_two_desc;The government enforces a single currency issued by a few authorized banks. This is the beginning of currency centralization and standardization;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 research_reform;University Reform;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 research_reform_l;University Reform;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;
 no_research_reform;No Universities;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;

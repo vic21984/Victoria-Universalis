@@ -1152,20 +1152,6 @@ country_event = {
 			duration = 4562
 			}
 		}
-#		any_country = {
-#			any_owned = {
-#				limit = {
-#					trade_goods = timber
-#				}
-#				add_province_modifier = { name = unemployment_fix duration = 3 }
-#			}
-#		}
-#		any_owned = {
-#			limit = {
-#				trade_goods = timber
-#			}
-#			add_province_modifier = { name = unemployment_fix duration = 3 }
-#		}
 	}	
 	
 	option = {

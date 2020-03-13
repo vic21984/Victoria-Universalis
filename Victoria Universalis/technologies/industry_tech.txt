@@ -305,11 +305,14 @@ modern_power_generation = {
 
 
 #mechanization
-publishing_industry = {
+industrial_revolution = {
 	area = mechanization
 	year = 1836
 	cost = 3600
 
+	mine_rgo_eff = 0.2
+	farm_rgo_eff = 0.2
+	factory_throughput = 0.05
 	activate_building = regular_clothes_factory 
 	ai_chance = {
 		factor = 1.5
@@ -429,7 +432,7 @@ semi_automatization = {
 	area = mechanization
 	year = 1850
 	cost = 14400
-	factory_throughput = 0.1
+	factory_throughput = 0.05
 	factory_cost = -0.1 
 	ai_chance = {
 		factor = 1.05
@@ -775,9 +778,6 @@ advanced_metallurgy = {
 	year = 1870
 	cost = 18000
 
-	rgo_goods_output = {
-		sulphur = 0.25
-	}
 	rgo_goods_output = {
 		coal = 0.5
 	}

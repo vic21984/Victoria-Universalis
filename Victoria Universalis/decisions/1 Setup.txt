@@ -12,10 +12,12 @@ political_decisions = {
 			any_country = {
 				limit = { ai = no }
 				administrative_points = 1000
+				country_event = { id = 91001 }
 			}
 			any_country = {
 				activate_technology = early_classical_theory_and_critique
 				set_country_flag = AP1
+				leadership = 40
 			}
 			any_country = {
 				limit = { invention = AP2 }
@@ -152,6 +154,10 @@ political_decisions = {
 				limit = { invention = mob1 }
 				set_country_flag = mob1_invented
 			}
+			306 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+			317 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+			320 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+			321 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
 		}
 	}
 	
@@ -486,22 +492,6 @@ political_decisions = {
 				}
 				literacy = 0.35
 			}
-		}
-	}
-
-	swedish_1836_setup = {
-		potential = {
-			tag = SWE
-			always = no
-		}
-		allow = {
-			tag = SWE
-		}
-		effect = {
-			306 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			317 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			320 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			321 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
 		}
 	}
 
