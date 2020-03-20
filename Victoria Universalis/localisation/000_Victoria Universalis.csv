@@ -911,8 +911,14 @@ opium_war;Opium War;;;;;;;;;;;;;x
 opium_war_setup;Force an unequal treaty.;;;;;;;;;;;;;x
 opium_war_short;Force an unequal treaty.;;;;;;;;;;;;;x
 opium_war_desc;This cb will give us the "Unequal Chinese Treaty" modifier that gives +10% tax efficiency while giving China the "Opium Addiction" modifier. If China owns Hong Kong they will also be forced to cede that province to us.;;;;;;;;;;;;;x
-NORMAL_OPIUM_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Opium War;;;;;;;;;;;;;;;;;;;;x,,,
-AGRESSION_OPIUM_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Opium War;;;;;;;;;;;;;;;;;;;;x,,,
+NORMAL_OPIUM_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Opium War;;;;;;;;;;;;;;;;;;;;x
+AGRESSION_OPIUM_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Opium War;;;;;;;;;;;;;;;;;;;;x
+free_balkans;Liberate the Balkans;;;;;;;;;;;;;x
+free_balkans_setup;Liberate the Balkans.;;;;;;;;;;;;;x
+free_balkans_short;Liberate the Balkans.;;;;;;;;;;;;;x
+free_balkans_desc;This cb will liberate the territoties Bulgaria, Romania, and Serbia from the Ottoman Empire.;;;;;;;;;;;;;x
+NORMAL_FREE_BALKANS_NAME;Balkan War;;;;;;;;;;;;;;;;;;;;x,,,
+AGRESSION_FREE_BALKANS_NAME;Balkan War;;;;;;;;;;;;;;;;;;;;x,,,
 demand_reparations_desc;Force another §Ycountry§W to pay reparations to us;;;;;;;;;;;;;x
 demand_reparations;Demand Reparations;;;;;;;;;;;;;x
 demand_reparations_short;Make $RECIPIENT$ pay reparations;;;;;;;;;;;;;x
@@ -1313,6 +1319,8 @@ global_population_nerf_1920;Global Population Normalization;;;;;;;;;;;;x
 global_population_nerf_1930;Global Population Normalization;;;;;;;;;;;;x
 balkan_liberation_war;Nationalist Ferver;;;;;;;;;;;;;x
 balkan_liberation_war_desc;All resources in the country are being directed to war. The people make do with what little scraps they have in order to feed the army.;;;;;;;;;;;;;x
+tsar_of_all_slavs_title;Tsar of all Slavs;;;;;;;;;;;;;x
+tsar_of_all_slavs_desc;Ethnic nationalism and political instability within Ottoman held territories are at an all time high. The slavs in the Balkans clamour for freedom and they look to us for salvation.;;;;;;;;;;;;;x
 form_yugoslavia_title;Form Yugoslavia;;;;;;;;;;;;;x
 form_yugoslavia_desc;Unite our Slavic brethren!;;;;;;;;;;;;;x
 embrace_sudanese_minority_title;Embrace the Sudanese minority;;;;;;;;;;;;;x
@@ -1492,8 +1500,26 @@ EVTOPTA31105;Excellent.;;;;;;;;;;;;x
 EVTNAME31106;Egypt Refuses;;;;;;;;;;;;x
 EVTDESC31106;The Egyptians have refused to give up their claims to Syria and Palestine.;;;;;;;;;;;;x
 EVTOPTA31106;Now we will make them give up their claims to Egypt as well!;;;;;;;;;;;;x
-oriental_truce;Truce with Egypt;;;;;;;;;;;;x
-oriental_truce_desc;We have to wait until the truce is over to justify another war with Egypt;;;;;;;;;;;;x
+EVTNAME32513;Victory in the Balkans!;;;;;;;;;;;;x
+EVTDESC32513;We have pushed the Turks out of the Balkans and they are ready to negotiate. The other great powers want to limit our wargoals in the Balkans to only liberating part of the Balkans instead of all of it. We can agree to their demands and end the war now, or continue the war and enforce our original wargoal.;;;;;;;;;;;;x
+EVTOPTA32513;We will limit our wargoals.;;;;;;;;;;;;x
+EVTOPTB32513;We will liberate all of the Balkans!;;;;;;;;;;;;x
+EVTNAME32514;Defeat in the Balkans;;;;;;;;;;;;x
+EVTDESC32514;The war is turning against us and the Russians are offering to let us keep a small portion of the Balkans in the regions of Macedonia and Albania in exchange for peace. Do we accept or do we continue the fight?;;;;;;;;;;;;x
+EVTOPTA32514;We will sue for peace.;;;;;;;;;;;;x
+EVTOPTB32514;We will not surrender one inch of the Balkans!;;;;;;;;;;;;x
+EVTNAME32515;The Ottoman Empire Surrenders;;;;;;;;;;;;x
+EVTDESC32515;The Ottomans have agreed to free the majority of their lands in the Balkans as well as give the province of Kars to us.;;;;;;;;;;;;x
+EVTOPTA32515;Excellent.;;;;;;;;;;;;x
+EVTNAME32516;The Ottoman Empire Refuses;;;;;;;;;;;;x
+EVTDESC32516;The Ottomans have rejected our generous peace offer.;;;;;;;;;;;;x
+EVTOPTA32516;Now we will really make them pay!;;;;;;;;;;;;x
+EVTNAME32517;The Fate of Bosnia;;;;;;;;;;;;x
+EVTDESC32517;The Congress of Berlin has gifted us with stewardship over the lands of Bosnia. Shall we incorporate it into our own territories or set it free?;;;;;;;;;;;;x
+EVTOPTA32517;Bosnia is ours!;;;;;;;;;;;;x
+EVTOPTB32517;Let them have their independence.;;;;;;;;;;;;x
+oriental_truce;Oriental Truce;;;;;;;;;;;;x
+oriental_truce_desc;We have to wait until the truce is over to justify another war in the middle east.;;;;;;;;;;;;x
 conquest_of_libyan_desert_title;Conquest of the Libyan Desert;;;;;;;;;;;;x
 conquest_of_libyan_desert_desc;It is time to claim the Libyan Desert.;;;;;;;;;;;;x
 conquest_of_darfur_title;Conquest of Darfur;;;;;;;;;;;;x

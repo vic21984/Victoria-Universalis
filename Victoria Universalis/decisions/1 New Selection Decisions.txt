@@ -1002,7 +1002,24 @@ political_decisions = {
 			ai = no
 		}	
 		allow = {
-			any_owned_province = { has_building = province_selector }
+			any_owned_province = {
+				has_building = province_selector
+				OR = {
+				    trade_goods = dye
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = opium
+					trade_goods = grain
+					trade_goods = silk
+					trade_goods = tobacco
+					trade_goods = coffee_beans
+					trade_goods = tea_leaves
+					trade_goods = wool
+				}
+			}
 		}
 		effect = {
 			set_country_flag = deciding

@@ -377,19 +377,7 @@ early_classical_theory_and_critique = {
 	cost = 3600
 	
 	ai_chance = {
-		factor = 2
-		modifier = {
-			factor = 1.02
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.3 
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.6
-		}
+		factor = 0
 	}
 }
 late_classical_theory = {
@@ -398,27 +386,7 @@ late_classical_theory = {
 	cost = 7200
 
 	ai_chance = {
-		factor = 1.01
-		modifier = {
-			factor = 1.2
-			industrial_score = 20 #10
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 100 #50
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.3 
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.6
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = commerce_tech_school
-		}
+		factor = 0
 	}
 }
 collectivist_theory = {
@@ -427,27 +395,7 @@ collectivist_theory = {
 	cost = 10800
 
 	ai_chance = {
-		factor = 1.01
-		modifier = {
-			factor = 1.2
-			industrial_score = 150 #100
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 200 #150
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.3 
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.6
-		}		
+		factor = 0
 	}
 }
 the_historical_theory = {
@@ -456,27 +404,7 @@ the_historical_theory = {
 	cost = 14400
 
 	ai_chance = {
-		factor = 1.01
-		modifier = {
-			factor = 1.1
-			industrial_score = 250 #200
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 300 #250
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.3 
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.6
-		}		
+		factor = 0
 	}
 }
 neoclassical_theory = {
@@ -485,27 +413,7 @@ neoclassical_theory = {
 	cost = 18000
 
 	ai_chance = {
-		factor = 1
-		modifier = {
-			factor = 1.1
-			industrial_score = 500 #400
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 600 #500
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.3 
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.6
-		}		
+		factor = 0
 	}
 }
 keynesian_economics = {
@@ -514,27 +422,7 @@ keynesian_economics = {
 	cost = 21600
 
 	ai_chance = {
-		factor = 1.01
-		modifier = {
-			factor = 1.2
-			industrial_score = 1500 #1000
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 2000 #1500
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.3 
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.6
-		}		
+		factor = 0
 	}
 }
 neoliberal_theory = {
@@ -543,27 +431,7 @@ neoliberal_theory = {
 	cost = 21600
 
 	ai_chance = {
-		factor = 1.01
-		modifier = {
-			factor = 1.2
-			industrial_score = 1500 #1000
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 2000 #1500
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = commerce_tech_school
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.3 
-		}
-		modifier = {
-			factor = 1.05
-			literacy = 0.6
-		}		
+		factor = 0
 	}
 }
 

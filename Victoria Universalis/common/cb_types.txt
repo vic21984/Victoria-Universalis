@@ -40,11 +40,12 @@
 # Order that CBs are executed in a peace treaty
 peace_order = { 
 add_to_sphere 
-take_from_sphere 
+take_from_sphere
+acquire_all_cores
 status_quo 
 gunboat 
 conquest 
-civil_war 
+civil_war
 acquire_core_state 
 annex_core_country
 acquire_state
@@ -179,8 +180,12 @@ conquest = {
 			NOT = { has_country_flag = jan_mayen }
 		}
 		NOT = {
-			AND = { 
-				tag = EGY
+			AND = {
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}	
@@ -415,6 +420,16 @@ acquire_all_cores = {
 		any_owned_province = { is_core = THIS }
 		any_owned_province = { NOT = { is_core = THIS } }
 		NOT = { tag = JAN }
+		NOT = {
+			AND = { 
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
 	}
 	
 	allowed_countries = {
@@ -470,6 +485,16 @@ acquire_core_state = {
 			is_core = THIS
 		}
 		NOT = { tag = JAN }
+		NOT = {
+			AND = { 
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -525,6 +550,16 @@ annex_core_country = {
 			}
 		}
 		NOT = { tag = JAN }
+		NOT = {
+			AND = { 
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
 	}
 
 	po_annex = yes
@@ -630,7 +665,11 @@ acquire_state = {
 		}
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}
@@ -723,6 +762,16 @@ place_in_the_sun = {
 			is_colonial = yes
 		}
 		NOT = { tag = JAN }
+		NOT = {
+			AND = { 
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
+				THIS = { has_country_modifier = oriental_truce }
+			}
+		}
 	}
 	
 	allowed_states = {
@@ -1201,10 +1250,14 @@ make_puppet = {
 		NOT = { tag = JAN }
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
-		}		
+		}
 		NOT = { is_our_vassal = THIS }
 		NOT = {	total_pops = 2000000 }
 		is_greater_power = no
@@ -1360,7 +1413,11 @@ demand_concession_casus_belli = {
 		}
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}
@@ -1430,7 +1487,11 @@ establish_protectorate_casus_belli = {
 		NOT = { is_our_vassal = THIS }
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}
@@ -1963,7 +2024,11 @@ take_capital = {
 		}
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}
@@ -2062,7 +2127,11 @@ acquire_small_state = {
 		}
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}
@@ -2158,7 +2227,11 @@ acquire_massive_state = {
 		}
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}
@@ -2242,7 +2315,11 @@ conquest_small = {
 		}
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}		
@@ -2359,7 +2436,11 @@ demand_for_ally = {
 		}
 		NOT = {
 			AND = { 
-				tag = EGY
+				OR = {
+					tag = EGY
+					tag = TUR
+					tag = RUS
+				}
 				THIS = { has_country_modifier = oriental_truce }
 			}
 		}
@@ -2891,6 +2972,152 @@ european_african_conquest = {
 	po_annex = yes
 	
 	war_name = WAR_CONQUEST_NAME
+}
+
+#Free Balkans
+free_balkans = {
+	sprite_index = 7
+	is_triggered_only = yes
+	constructing_cb = no
+	crisis = no
+	
+	badboy_factor = 0.5
+	prestige_factor = 0.1
+	peace_cost_factor = 100
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 12
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = no
+
+	can_use = {
+		tag = TUR
+		THIS = {
+			civilized = yes
+		}
+	}
+	
+	po_remove_prestige = yes
+
+	war_name = FREE_BALKANS_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+		847 = { remove_core = TUR }
+		848 = { remove_core = TUR }
+		855 = { remove_core = TUR }
+		856 = { remove_core = TUR }
+		857 = { remove_core = TUR }
+		any_owned = {
+			limit = {
+				OR = {
+					AND = {
+						is_core = GRE
+						continent = europe
+					}
+					is_core = ALB
+					is_core = BUL
+					is_core = MON
+					is_core = ROM
+					is_core = SER
+					province_id = 847
+					province_id = 848
+					province_id = 855
+					province_id = 856
+					province_id = 857
+				}
+			}
+			remove_core = TUR
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					AND = {
+						is_core = GRE
+						continent = europe
+					}
+					is_core = ALB
+					is_core = BUL
+					is_core = MON
+					is_core = ROM
+					is_core = SER
+					province_id = 1096
+					province_id = 886
+					province_id = 885
+				}
+			}
+			secede_province = THIS
+		}
+		THIS = {
+			release_vassal = ALB
+			any_owned = {
+				limit = {
+					is_core = ALB
+				}
+				secede_province = ALB
+			}
+			release_vassal = ROM
+			any_owned = {
+				limit = {
+					is_core = ROM
+					NOT = {
+						OR = {
+							province_id = 676
+							province_id = 677
+							province_id = 678
+						}
+					}
+				}
+				secede_province = ROM
+			}
+			release_vassal = MON
+			any_owned = {
+				limit = {
+					is_core = MON
+				}
+				secede_province = MON
+			}
+			release_vassal = BUL
+			any_owned = {
+				limit = {
+					is_core = BUL
+				}
+				secede_province = BUL
+			}
+			release_vassal = SER
+			any_owned = {
+				limit = {
+					is_core = SER
+				}
+				secede_province = SER
+			}
+			release_vassal = GRE
+			any_owned = {
+				limit = {
+					is_core = GRE
+				}
+				secede_province = GRE
+			}
+		}
+		ROM = {
+			inherit = WAL
+			inherit = MOL
+		}
+	}
 }
 
 #Negotiated Transfer

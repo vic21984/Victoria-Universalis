@@ -1,3 +1,18 @@
+# Version 0.141 - 3/19/2020
+## General gameplay changes:
+* Changed the way internal migration works so that arctic, desert, mountain, and jungle provinces will get normal amount of migration from the internal migration focus. Previously they only got a fraction of the effect.
+* Buffed internal migration modifier.
+* Made the AI not research the AP bonus techs since it can't use them.
+
+
+## Country Balance Changes:
+###### Russia:
+* Added Tsar of all Slavs decision that starts a war with the Ottoman Empire to liberate all Balkan provinces. An event fires once 30% of Ottomans have been occupied with an option to end the war immediately in exchange for allowing the Ottomans to keep some land in the Balkans.
+
+###### Greece:
+* Fixed Megali Idea decision requiring a missing invention. Now it requires nationalism and imperialism tech.
+
+
 # Version 0.14 - 3/12/2020
 ## General gameplay changes:
 * Increased lifeneeds for all POPs.

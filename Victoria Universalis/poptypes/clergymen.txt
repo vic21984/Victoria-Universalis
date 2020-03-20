@@ -332,18 +332,22 @@ migration_target =
 	modifier = {
 		factor = 0.6
 		terrain = mountain
+		NOT = { country = { has_country_flag = province_migration } }
 	}
 	modifier = {
 		factor = 0.1
 		terrain = desert
+		NOT = { country = { has_country_flag = province_migration } }
 	}
 	modifier = {
 		factor = 0.6
 		terrain = marsh
+		NOT = { country = { has_country_flag = province_migration } }
 	}
 	modifier = {
 		factor = 0.1
 		terrain = arctic
+		NOT = { country = { has_country_flag = province_migration } }
 	}
 	modifier = {
 		factor = 2

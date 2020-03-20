@@ -505,8 +505,296 @@ country_event = {
 }
 
 country_event = {
-	id = 32513
+		
+	id = 32513 # Congress of Berlin
+	title = "EVTNAME32513"
+	desc = "EVTDESC32513"
+	picture = balkan_victory
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		has_global_flag = tsar_of_all_slavs
+		war_with = TUR
+		TUR = { national_provinces_occupied = 0.3 }
+		NOT = { has_global_flag = congress_of_berlin }
+	}
 
+	option = {
+		name = "EVTOPTA32513"
+		TUR = {
+			country_event = {
+				id = 32514
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 8
+		}
+	}
+	option = {
+		name = "EVTOPTB32513"
+		ai_chance = {
+			factor = 2
+		}		
+	}	
+}
+
+country_event = {
+		
+	id = 32514 # Ottomans Deliberate
+	title = "EVTNAME32514"
+	desc = "EVTDESC32514"
+	picture = congress_of_berlin
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32514"
+		RUS = {
+			country_event = {
+				id = 32515
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}	
+	}
+	option = {
+		name = "EVTOPTB32514"
+		RUS = {
+			country_event = {
+				id = 32516
+				days = 0
+			}
+		}		
+		ai_chance = {
+			factor = 0
+		}		
+	}	
+}
+
+country_event = {
+		
+	id = 32515 # Ottomans Surrender
+	title = "EVTNAME32515"
+	desc = "EVTDESC32515"
+	picture = congress_of_berlin
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32515"
+		end_war = TUR
+		set_global_flag = congress_of_berlin
+		add_country_modifier = { name = oriental_truce duration = 1825 }
+		847 = { remove_core = TUR }
+		848 = { remove_core = TUR }
+		855 = { remove_core = TUR }
+		856 = { remove_core = TUR }
+		857 = { remove_core = TUR }
+		TUR = {
+			add_country_modifier = { name = oriental_truce duration = 1825 }
+			any_owned = {
+				limit = {
+					OR = {
+						AND = {
+							is_core = GRE
+							continent = europe
+							OR = {
+								province_id = 847
+								province_id = 848
+								province_id = 855
+								province_id = 856
+								province_id = 857
+							}
+						}
+						is_core = ALB
+						is_core = BUL
+						is_core = MON
+						is_core = ROM
+						is_core = SER
+					}
+				}
+				remove_core = TUR
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = ROM
+						is_core = MON
+						is_core = BOS
+						is_core = BUL
+						is_core = SER
+						is_core = GRE
+					}
+					NOT = {
+						OR = {
+							province_id = 802
+							province_id = 803
+							province_id = 804
+							province_id = 806
+							province_id = 807
+							province_id = 808
+							province_id = 2577
+							province_id = 805
+							province_id = 819
+							province_id = 820
+							province_id = 821
+							province_id = 822
+							province_id = 823
+							province_id = 829
+							province_id = 830
+							province_id = 843
+							province_id = 844
+							province_id = 846
+							province_id = 855
+							province_id = 856
+							province_id = 857
+						}
+					}
+				}
+				secede_province = THIS
+			}
+		}
+		release = ROM
+		any_owned = {
+			limit = {
+				is_core = ROM
+				NOT = {
+					OR = {
+						province_id = 676
+						province_id = 677
+						province_id = 678
+					}
+				}
+			}
+			secede_province = ROM
+		}
+		ROM = {
+			inherit = WAL
+			inherit = MOL
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 676
+						province_id = 677
+						province_id = 678
+					}
+				}
+				secede_province = THIS
+			}
+		}
+		release = MON
+		any_owned = {
+			limit = {
+				is_core = MON
+			}
+			secede_province = MON
+		}
+		release = BUL
+		any_owned = {
+			limit = {
+				is_core = BUL
+			}
+			secede_province = BUL
+		}
+		release = GRE
+		any_owned = {
+			limit = {
+				is_core = GRE
+			}
+			secede_province = GRE
+		}
+		release = BOS
+		any_owned = {
+			limit = {
+				is_core = BOS
+			}
+			secede_province = BOS
+		}
+		release = SER
+		any_owned = {
+			limit = {
+				is_core = SER
+			}
+			secede_province = SER
+		}
+		771 = {
+			owner = {
+				country_event = {
+					id = 32517
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+		
+	id = 32516 # Ottomans Refuse
+	title = "EVTNAME32516"
+	desc = "EVTDESC32516"
+	picture = balkan_war_continues
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32516"
+	}
+}
+
+country_event = {
+		
+	id = 32517 # Fate of Bosnia
+	title = "EVTNAME32517"
+	desc = "EVTDESC32517"
+	picture = congress_of_berlin
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32517"
+		inherit = BOS
+		ai_chance = {
+			factor = 100
+		}	
+	}
+	option = {
+		name = "EVTOPTB32517"
+		ai_chance = {
+			factor = 0
+		}	
+	}
+}
+
+country_event = {
+		
+	id = 32518 # End of the Russo-Turk War
+	title = "AI END RUSSO-TURK WAR"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAN
+		has_global_flag = tsar_of_all_slavs
+		RUS = { NOT = { war_with = TUR } }
+		NOT = { has_global_flag = congress_of_berlin }
+	}
+
+	option = {
+		set_global_flag = congress_of_berlin
+	}
+}
+
+country_event = {
+	id = 32519
+	title = "AI Medicine Buff"
 	
 	trigger = {
 		tag = RUS
@@ -524,8 +812,8 @@ country_event = {
 }
 
 country_event = {
-	id = 32514
-
+	id = 32520
+	title = "AI Inorganic Chemistry Buff"
 	
 	trigger = {
 		tag = RUS

@@ -1,4 +1,68 @@
 political_decisions = {
+	tsar_of_all_slavs = {
+		picture = tsar_of_all_slavs
+		potential = {
+			tag = RUS
+			NOT = {
+				has_global_flag = tsar_of_all_slavs
+			}
+			TUR = {
+				is_vassal = no
+				OR = {
+					owns = 674
+					owns = 783
+					owns = 798
+					owns = 812
+					owns = 809
+					owns = 824
+				}
+				
+			}
+		}
+		
+		allow = {
+			exists = TUR
+			TUR = {
+				any_owned_province ={
+					continent = europe
+					OR = {
+						is_core = ROM
+						is_core = SER
+						is_core = BUL
+						is_core = GRE
+					}
+					state_scope = { 
+						average_militancy = 9
+					}
+				}
+			}
+			revolution_n_counterrevolution = 1
+			war = no
+		}
+		
+		effect = {
+			badboy = 15
+			casus_belli = {
+				target = TUR
+				type = free_balkans
+				months = 1
+			}
+			war = {
+				target = TUR
+				attacker_goal = {
+					casus_belli = free_balkans
+				}
+			}			
+			set_global_flag = tsar_of_all_slavs
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.2
+			}
+		}
+	}
 	abolish_serfdom = {
 		potential = {
 			tag = RUS

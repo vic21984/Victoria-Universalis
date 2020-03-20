@@ -32,7 +32,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			invention = national_fraternity
+			nationalism_n_imperialism = 1
 			GRE = {
 				all_core = { owned_by = THIS }
 			}	
@@ -74,16 +74,23 @@ political_decisions = {
 			860 = {
 				change_province_name = "Constantinople"
 			}
-			any_country = {
-				any_owned = {
-					limit = {
-						OR = {
-							culture = greek
-							culture = turkish
-						}
-					}
-					add_core = BYZ
-				}
+			TUR_863 = {
+				add_core = BYZ
+			}
+			TUR_876 = {
+				add_core = BYZ
+			}
+			TUR_879 = {
+				add_core = BYZ
+			}
+			TUR_885 = {
+				add_core = BYZ
+			}
+			TUR_889 = {
+				add_core = BYZ
+			}
+			TUR_894 = {
+				add_core = BYZ
 			}
 			prestige = 50
 			badboy = -10

@@ -9,7 +9,15 @@ political_decisions = {
 			NOT = {
 				accepted_culture = czech
 				has_country_flag = embraced_czech
-			}					
+			}
+			OR = {
+				AUS_625 = {
+					owned_by = THIS
+				}
+				AUS_626 = {
+					owned_by = THIS
+				}
+			}
 		}
 		allow = {
 			OR = {
@@ -106,7 +114,15 @@ political_decisions = {
 			NOT = {
 				accepted_culture = slovene
 				has_country_flag = embraced_slovene
-			}					
+			}
+			OR = {
+				AUS_768 = {
+					owned_by = THIS
+				}
+				AUS_736 = {
+					owned_by = THIS
+				}
+			}
 		}
 		allow = {
 		citizenship_policy = full_citizenship
@@ -176,7 +192,15 @@ political_decisions = {
 			NOT = {
 				accepted_culture = croat
 				has_country_flag = embraced_croat
-			}					
+			}
+			OR = {
+				AUS_771 = {
+					owned_by = THIS
+				}
+				AUS_780 = {
+					owned_by = THIS
+				}
+			}			
 		}
 		allow = {
 		citizenship_policy = full_citizenship
@@ -246,7 +270,15 @@ political_decisions = {
 			NOT = {
 				accepted_culture = polish
 				has_country_flag = embraced_poles
-			}					
+			}
+			OR = {
+				AUS_702 = {
+					owned_by = THIS
+				}
+				AUS_662 = {
+					owned_by = THIS
+				}
+			}			
 		}
 		allow = {
 		citizenship_policy = full_citizenship
