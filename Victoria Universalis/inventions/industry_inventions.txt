@@ -867,7 +867,6 @@ artificial_fertilizers = {
 		}
 	}
 	effect = {
-		pop_growth = 0.0001
 		farm_rgo_eff = 0.02
 		factory_goods_output = {
 			fertilizer = 0.05
@@ -981,6 +980,7 @@ vaccination = {
 		}	
 	}
 	effect = {
+		pop_growth = 0.0001
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.025
 		colonial_life_rating = -5
@@ -1035,7 +1035,6 @@ carbon_soil_enrichment = {
 		}
 	}
 	effect = {
-		pop_growth = 0.0001
 		farm_rgo_eff = 0.05
 	}
 }
@@ -1070,6 +1069,7 @@ prophylaxis_against_malaria = {
 		}
 	}
 	effect = {
+		pop_growth = 0.0001
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.025
 	}
