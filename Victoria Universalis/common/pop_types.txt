@@ -643,6 +643,7 @@ emigration_chance =
 			factor = 0.03
 			militancy = 9
 		}
+		NOT = { is_culture_group = east_asian }
 	}
 
 	group = {
@@ -664,6 +665,7 @@ emigration_chance =
 			not = { everyday_needs = 0.1 }
 			not = { luxury_needs = 0.1 }
 		}
+		NOT = { is_culture_group = east_asian }
 	}
 	
 	group = {
@@ -763,10 +765,8 @@ emigration_chance =
 		
 	}
 	modifier = {
-		factor = -0.06
-		OR = {
-			is_culture_group = east_asian
-		}
+		factor = -0.05
+		is_culture_group = east_asian
 	}
 
 	modifier = {

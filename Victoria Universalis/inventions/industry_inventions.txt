@@ -622,6 +622,9 @@ bessemer_steel = {
 		factory_goods_output = {
 			steel = 0.05
 		}
+		factory_goods_input = {
+			steel = -0.05
+		}
 	}
 }
 #cheap_iron
@@ -680,6 +683,9 @@ martin_steel = {
 		factory_goods_output = {
 			steel = 0.05
 		}
+		factory_goods_input = {
+			steel = -0.05
+		}
 	}
 }
 #cheap_steel
@@ -699,6 +705,9 @@ thomas_steel = {
 	effect = {
 		factory_goods_output = {
 			steel = 0.05
+		}
+		factory_goods_input = {
+			steel = -0.05
 		}
 	}
 }
@@ -720,6 +729,9 @@ steel_alloys = {
 		factory_goods_output = {
 			steel = 0.05
 		}
+		factory_goods_input = {
+			steel = -0.05
+		}
 	}
 }
 #electric_furnace
@@ -740,6 +752,9 @@ electric_rolling_techniques = {
 		factory_goods_output = {
 			steel = 0.05
 		}
+		factory_goods_input = {
+			steel = -0.05
+		}
 	}
 }
 #modern_metallurgy
@@ -759,6 +774,9 @@ stainless_steel = {
 	effect = {
 		factory_goods_output = {
 			steel = 0.05
+		}
+		factory_goods_input = {
+			steel = -0.05
 		}
 	}
 }
@@ -849,9 +867,13 @@ artificial_fertilizers = {
 		}
 	}
 	effect = {
+		pop_growth = 0.0001
 		farm_rgo_eff = 0.02
 		factory_goods_output = {
 			fertilizer = 0.05
+		}
+		factory_goods_input = {
+			fertilizer = -0.05
 		}
 	}
 }
@@ -943,7 +965,7 @@ germ_theory = {
 	}
 	effect = {
 		pop_growth = 0.0001
-		} 
+	} 
 }
 vaccination = {
 	limit = { inorganic_chemistry = 1 }
@@ -1013,6 +1035,7 @@ carbon_soil_enrichment = {
 		}
 	}
 	effect = {
+		pop_growth = 0.0001
 		farm_rgo_eff = 0.05
 	}
 }

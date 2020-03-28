@@ -145,7 +145,7 @@ trinket_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.002
+	global_population_growth = 0.001
 	icon = 19
 }
 
@@ -169,7 +169,7 @@ low_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.002
+	global_population_growth = 0.001
 	icon = 19
 }
 
@@ -192,7 +192,7 @@ acceptable_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.002
+	global_population_growth = 0.001
 	icon = 19
 }
 
@@ -878,13 +878,31 @@ sphereling_tax_bonus = {
 	icon = 9
 }
 
-########## CHINA ARMY NERF ##########
+########## CHINA NERFs ##########
 
 chinese_army_nerf = {
 	trigger = {
 		has_country_flag = china
 	}
 	land_unit_start_experience = -10
+	icon = 16
+}
+
+chinese_pop_nerf1 = {
+	trigger = {
+		has_country_flag = china
+		invention = clinical_thermometers_and_binaural_stethoscopes
+	}
+	global_population_growth = -0.001
+	icon = 16
+}
+
+chinese_pop_nerf2 = {
+	trigger = {
+		has_country_flag = china
+		invention = germ_theory
+	}
+	global_population_growth = -0.001
 	icon = 16
 }
 

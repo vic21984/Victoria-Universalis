@@ -1,3 +1,27 @@
+# Version 0.142 - 3/28/2020
+## General gameplay changes:
+* Fixed missing culture POPs in the province of Usumbura.
+* Fixed level two pre-industrialization and level two industrial construction unciv reforms not giving civilization progress. They now give an additional 10% instead of 0%.
+* Reduced cost of later levels of healthcare reform.
+* Nerfed pop growth from early levels of healthcare reform.
+* Increased popgrowth from chemistry technology line.
+* Added reduction to steel factory input to all techs in the metallurgy technology line.
+* Reduced minimum military spending from all war policies by 10%.
+* Reduced admin point cost to change province agricultural RGO decision for all province sizes.
+* Made the admin point cost for state suppression decision based on the size of the state.
+* Added blockade cb that can be used to prevent immigration to New World nations for 10 years.
+
+## Map changes:
+* Fixed a glitched strait that connected Kuching to Al-Ahsa
+
+## Country Balance Changes:
+###### China:
+* Moved start date for communist party in China and Nationalist China from 1890 to 1870.
+
+###### France:
+* Fixed End the Medina Monarchy decision.
+
+
 # Version 0.141 - 3/19/2020
 ## General gameplay changes:
 * Changed the way internal migration works so that arctic, desert, mountain, and jungle provinces will get normal amount of migration from the internal migration focus. Previously they only got a fraction of the effect.

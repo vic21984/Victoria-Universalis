@@ -913,6 +913,14 @@ opium_war_short;Force an unequal treaty.;;;;;;;;;;;;;x
 opium_war_desc;This cb will give us the "Unequal Chinese Treaty" modifier that gives +10% tax efficiency while giving China the "Opium Addiction" modifier. If China owns Hong Kong they will also be forced to cede that province to us.;;;;;;;;;;;;;x
 NORMAL_OPIUM_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Opium War;;;;;;;;;;;;;;;;;;;;x
 AGRESSION_OPIUM_WAR_NAME;$ORDER$$FIRST$-$SECOND$ Opium War;;;;;;;;;;;;;;;;;;;;x
+blockade;Blockade;;;;;;;;;;;;;;;;;;;;x
+blockade_setup;Setup a blockade around country and prevent it from getting immigrants.;;;;;;;;;;;;;;;;;;;;x
+blockade_short;Setup a blockade around country and prevent it from getting immigrants.;;;;;;;;;;;;;;;;;;;;x
+blockade_desc;This cb adds a negative modifier to immigrant attraction to the target nation.;;;;;;;;;;;;;;;;;;;;x
+blockaded;Blockaded;;;;;;;;;;;;;;;;;;;;x
+blockaded_desc;Immigrants are unable to reach our shores due to the ongoing blockade.;;;;;;;;;;;;;;;;;;;;x
+NORMAL_WAR_BLOCKADE_NAME;$ORDER$$FIRST$ Blockade of $SECOND$;;;;;;;;;;;;;;;;;;;;x
+AGRESSION_WAR_BLOCKADE_NAME;$ORDER$$FIRST$ Blockade of $SECOND$;;;;;;;;;;;;;;;;;;;;x
 free_balkans;Liberate the Balkans;;;;;;;;;;;;;x
 free_balkans_setup;Liberate the Balkans.;;;;;;;;;;;;;x
 free_balkans_short;Liberate the Balkans.;;;;;;;;;;;;;x
@@ -1089,19 +1097,19 @@ state_literacy_campaign_desc;Increases the literacy of the selected state by 15%
 state_assimilation_title;State Scope: Assimilation;;;;;;;;;x;;;;
 state_assimilation_desc;Adds a 300% assimilation rate bonus to the given state for 10 years. Cannot use on colonial states. Assimilation rate and assimilation chance are different variables, if a POPs assimilation chance is 0 it will not assimilate. Hover your mouse over the nationality of a POP in the population tab to see its individual assimilation chance.;;;;;;;;;x;;;;
 state_suppression_title;State Scope: Suppression;;;;;;;;;x;;;;
-state_suppression_desc;Gives a -0.15 MIL and CON modifier to the selected state for 10 years.;;;;;;;;;x;;;;
+state_suppression_desc;Gives a -0.15 MIL and CON modifier to the selected state for 10 years. You will receive a rebate of 900, 850, 800, and 700 AP for states with <100K, <300k, <1M, and >1M POPs respectively.;;;;;;;;;x;;;;
 province_migration_title;Province Scope: Encourage Internal Migration;;;;;;;;;x;;;;
-province_migration_desc;Gives a large bonus to internal migration to the targeted province and a small modifier to internal migration push to accepted culture pops. Does not increase the chance of receiving immigrants from other countries and does not work on colonial states.;;;;;;;;;x;;;;
+province_migration_desc;Gives a large bonus to internal migration to the targeted province and a large modifier to internal migration push to accepted culture pops. Does not increase the chance of receiving immigrants from other countries and does not work on colonial states.;;;;;;;;;x;;;;
 state_baby_boom_title;State Scope: Small Baby Boom;;;;;;;;;x;;;;
 state_baby_boom_desc;Gives a small baby boom modifier to the selected state. The duration is inversely proportional to the size of the state, e.g. a state with 90K population will have the modifier last 10x longer than a state with 900K population. Cannot be used on states above 1M population.;;;;;;;;;x;;;;
 state_rgo_expansion_title;State Scope: RGO Expansion.;;;;;;;;;x;;;;
 state_rgo_expansion_desc;Gives a permanent boost to farm and mining size to every province in the selected state.;;;;;;;;;x;;;;
 province_blood_and_iron_title;Province Scope: Blood and Iron RGO.;;;;;;;;;x;;;;
-province_blood_and_iron_desc;Gives a permanent RGO efficiency bonus and +0.02 militancy modifier to the selected province. Cannot use on gold mines.;;;;;;;;;x;;;;
+province_blood_and_iron_desc;Gives a permanent RGO efficiency bonus and +0.03 militancy modifier to the selected province. Cannot use on gold mines.;;;;;;;;;x;;;;
 province_rgo_change_mining_title;Province Scope: Change Mining RGO.;;;;;;;;;x;;;;
 province_rgo_change_mining_desc;Allows the switching of a single RGO province of the following types: Coal, Iron, and Sulphur can only be swapped with each other and NOT from timber. Timber can be swapped from any agricultural tile and requires a forest, woods, or jungle province. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
 province_rgo_change_agriculture_title;Province Scope: Change Agriculture RGO.;;;;;;;;;x;;;;
-province_rgo_change_agriculture_desc;Allows the switching of a single RGO province of the following types: Grain, Fruit, Fish, Cattle, Wool, Cotton, Opium, Dye, Silk, or Tobacco. Fish requires a coastal province. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 750, 500, 250, or 0 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
+province_rgo_change_agriculture_desc;Allows the switching of a single RGO province of the following types: Grain, Fruit, Fish, Cattle, Wool, Cotton, Opium, Dye, Silk, or Tobacco. Fish requires a coastal province. Gives a 50% output debuff for 12.5 years. You will receive a rebate of 800, 600, 400, or 200 AP for provinces with <35K, <100k, <300k, and >300k population respectively.;;;;;;;;;x;;;;
 province_establish_financial_center_title;Province Scope: Establish Financial Center;;;;;;;;;x;;;;
 province_establish_financial_center_desc;Changes the selected province's trade good to precious metal to represent the new financial hub of your country. Can only use this decision once and it must be on core territory.;;;;;;;;;x;;;;
 reset_province_selector_title;Reset Province Selector;;;;;;;;;x;;;;
@@ -1480,6 +1488,8 @@ unequal_china_treaty;Unequal Chinese Treaty;;;;;;;;;;;;x
 unequal_china_treaty_desc;Our monopoly on the opium trade with China has provided a great boon to our economy.;;;;;;;;;;;;x
 chinese_army_nerf;Chinese Army Nerf;;;;;;;;;;;;x
 chinese_army_nerf_desc;Our army is made up of mostly conscripted peasants and their fighting capability suffers as a result;;;;;;;;;;;;x
+chinese_chinese_pop_nerf1;Chinese Pop Growth Nerf 1;;;;;;;;;;;;x
+chinese_chinese_pop_nerf2;Chinese Pop Growth Nerf 2;;;;;;;;;;;;x
 outlaw_opium_title;Outlaw Opium;;;;;;;;;;;;x
 outlaw_opium_desc;It is time we banned the use of this poison and expel the foreign barbarians that forced this drug upon us. Beware that enacting this decision will give other countries the Opium War casus belli against us.;;;;;;;;;;;;x
 taiping_rebellion_title;Begin the Taiping Rebellion;;;;;;;;;;;;x

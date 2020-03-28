@@ -674,7 +674,7 @@ coffee_packaging_factory = {
 	template = cheap_factory_template	#4.25
 	input_goods = {   
 		coffee_beans = 5	#13
-		iron = 0.5			#1.4	total input+maint = 18.65
+		iron = 0.1			#0.28	total input+maint = 17.5
 	}
 	output_goods = coffee
 	value = 5				#21

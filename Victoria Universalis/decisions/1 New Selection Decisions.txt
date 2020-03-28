@@ -431,7 +431,7 @@ political_decisions = {
 			random_owned = { limit = { owner = { conscription = one_year_draft } } owner = { political_reform = two_year_draft } }
 			random_owned = { limit = { owner = { conscription = no_draft } } owner = { political_reform = one_year_draft } }
 		}		
-	}	
+	}
 
 	country_recruitment_drive = {
 		picture = country_scope
@@ -903,12 +903,57 @@ political_decisions = {
 			}
 		}
 		effect = {
-			administrative_points = 750
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { total_pops = 100000 }
 					NOT = { has_province_modifier = suppression }
 				}
+				owner = { administrative_points = 900 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = suppression duration = 1825 }
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 100000
+					NOT = { total_pops = 300000 }
+					NOT = { has_province_modifier = suppression }
+				}
+				owner = { administrative_points = 850 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = suppression duration = 1825 }
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 300000
+					NOT = { total_pops = 1000000 }
+					NOT = { has_province_modifier = suppression }
+				}
+				owner = { administrative_points = 800 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = suppression duration = 1825 }
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					total_pops = 1000000
+					NOT = { has_province_modifier = suppression }
+				}
+				owner = { administrative_points = 700 }
 				state_scope = {
 					any_owned = {
 						add_province_modifier = { name = suppression duration = 1825 }

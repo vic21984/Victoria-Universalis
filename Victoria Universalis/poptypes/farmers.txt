@@ -56,6 +56,11 @@ country_migration_target =
 			government = presidential_dictatorship
 			government = fascist_dictatorship
 			government = absolute_monarchy
+		}
+	}
+	modifier = {
+		factor = 0
+		OR = {
 			has_country_flag = jan_mayen
 			NOT = {
 				OR = {
