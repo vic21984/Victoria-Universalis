@@ -1,3 +1,8 @@
+# Version 0.143 - 3/29/2020
+## Country Balance Changes:
+###### USA & Mexico:
+* Increased starting soldier POPs.
+
 # Version 0.142 - 3/28/2020
 ## General gameplay changes:
 * Fixed missing culture POPs in the province of Usumbura.
