@@ -1,5 +1,7 @@
 # Victoria Universalis Mod
 
+*Remember to completely delete both the Victoria Univeralis folders in your steam/steamapps/common/Victoria 2/mod and documents/Paradox Interactive/Victoria II directories before installing a new version of this mod.
+
 This mod was created to showcase a new feature that could dynamically target provinces or states for events and decisions. I removed almost all random events and replaced their effects with my new targeted decision system. It was made mostly from the ground up from vanilla with a few things included from other mods that I liked, namely the reforms and African nations from HPM, art assets from PDM, and a few event files from various other mods.
 
 The secondary goal in creating this mod was to solve the liquidity crisis that plagued the economy in the base game due to numerous money sinks that destroy money instead of transferring it back into the market. I chose to make the pop growth bonus from healthcare reform based entirely on social spending funding and then make the reforms massively expensive in order to put money from national banks back into the hands of POPs. I know this isn't historical or realistic, but it rewards players for managing their economy well and leads to some interesting gameplay choices when combined with my new decision system.
