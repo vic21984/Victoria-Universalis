@@ -1,7 +1,21 @@
-# Version 0.143 - 3/29/2020
+# Version 0.143 - 3/30/2020
+## General gameplay changes:
+* Reduced minimum spending on healthcare reform from 25%, 50%, 75%, 100%, and 100% to 20%, 40%, 60%, 80%, and 100% for trinket, low, acceptable, good, and universal healthcare levels.
+* Removed minimum spending military spending on all war policies and added a maximum military spending cap for anti military and pacifism.
+* Reduced emigration rate from POPs not having lifeneeds met.
+* Changed malus for non semi constitutional monarchy, constitutional monarchy, and democracy immigration attraction from -99% to -90%.
+* Internal Migration decision now costs 250 instead of 400, and the duration was reduced from 1825 days to 730 days.
+* Converted some farmers to artisans in the history files. This should help some military goods be produced.
+
+## Map changes:
+* Fixed a province goods flip event that would change some chinese RGOs to opium in 1836. Now the event correctly fires in 1880.
+
 ## Country Balance Changes:
 ###### USA & Mexico:
 * Increased starting soldier POPs.
+
+###### China:
+* Starts with mechanized mining tech now. This allows chinese artisans to build military goods from the start.
 
 # Version 0.142 - 3/28/2020
 ## General gameplay changes:

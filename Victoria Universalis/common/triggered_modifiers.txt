@@ -141,7 +141,7 @@ trinket_health_care_fully_funded = {
 			}
 			AND = {
 				ai = no
-				social_spending = 0.24
+				social_spending = 0.19
 			}
 		}
 	}
@@ -165,7 +165,7 @@ low_health_care_fully_funded = {
 			}
 			AND = {
 				ai = no
-				social_spending = 0.49
+				social_spending = 0.39
 			}
 		}
 	}
@@ -188,7 +188,7 @@ acceptable_health_care_fully_funded = {
 			}
 			AND = {
 				ai = no
-				social_spending = 0.74
+				social_spending = 0.59
 			}
 		}
 	}
@@ -210,7 +210,7 @@ good_health_care_fully_funded = {
 			}
 			AND = {
 				ai = no
-				social_spending = 0.99
+				social_spending = 0.79
 			}
 		}
 	}

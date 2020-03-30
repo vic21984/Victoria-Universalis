@@ -325,6 +325,7 @@ regular_clothes_factory = {
 	visibility = yes
 	onmap = no
 
+	default_enabled = yes	
 	production_type = regular_clothes_factory
 	pop_build_factory = yes
 }

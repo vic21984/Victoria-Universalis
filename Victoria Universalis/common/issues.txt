@@ -149,8 +149,7 @@ party_issues = {
 	}
 	war_policy = {
 		jingoism = {
-			max_military_spending = 1.0
-			min_military_spending = 0.3
+			max_military_spending = 1
 			war_exhaustion_effect = 0.5
 			is_jingoism = yes
 			cb_generation_speed_modifier = 0.3
@@ -159,8 +158,7 @@ party_issues = {
 			reinforce_speed = 0.2
 		}
 		pro_military = {
-			max_military_spending = 1.0
-			min_military_spending = 0.2
+			max_military_spending = 1
 			war_exhaustion_effect = 0.7
 			cb_generation_speed_modifier = 0.2
 			mobilization_impact = 3
@@ -168,19 +166,17 @@ party_issues = {
 			reinforce_speed = 0.1
 		}
 		anti_military = {
-			max_military_spending = 1
-			min_military_spending = 0.1
+			max_military_spending = 0.9
 			war_exhaustion_effect = 1.2
 			cb_generation_speed_modifier = -0.2
 			mobilization_impact = 2
-			org_regain = -0.1
 		}
 		pacifism = {
-			max_military_spending = 1
+			max_military_spending = 0.8
 			war_exhaustion_effect = 1.5
 			cb_generation_speed_modifier = -0.4
 			mobilization_impact = 1
-			org_regain = -0.2
+			org_regain = -0.1
 			reinforce_speed = -0.1
 		}
 	}

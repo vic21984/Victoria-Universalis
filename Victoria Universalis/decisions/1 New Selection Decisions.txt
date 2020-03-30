@@ -1124,14 +1124,14 @@ political_decisions = {
 			}
 		}
 		effect = {
-			administrative_points = 600
+			administrative_points = 750
 			set_country_flag = province_migration
 			random_owned = {
 				limit = {
 					has_building = province_selector
 					NOT = { has_province_modifier = province_attract_immigrants }
 				}
-				add_province_modifier = { name = province_attract_immigrants duration = 1825 }
+				add_province_modifier = { name = province_attract_immigrants duration = 730 }
 				province_selector = -1
 			}
 		}

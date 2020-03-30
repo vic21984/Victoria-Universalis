@@ -59,7 +59,7 @@ country_migration_target =
 	factor = 1
 
 	modifier = {
-		factor = 0.01
+		factor = 0.1
 		OR = {
 			government = proletarian_dictatorship
 			government = presidential_dictatorship
