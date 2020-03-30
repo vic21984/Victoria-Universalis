@@ -4,7 +4,7 @@
 * Removed minimum spending military spending on all war policies and added a maximum military spending cap for anti military and pacifism.
 * Reduced emigration rate from POPs not having lifeneeds met.
 * Changed malus for non semi constitutional monarchy, constitutional monarchy, and democracy immigration attraction from -99% to -90%.
-* Internal Migration decision now costs 250 instead of 400, and the duration was reduced from 1825 days to 730 days.
+* Internal Migration decision now costs 250 instead of 400 and the duration was reduced from 1825 days to 730 days.
 * Converted some farmers to artisans in the history files. This should help some military goods be produced.
 
 ## Map changes:
