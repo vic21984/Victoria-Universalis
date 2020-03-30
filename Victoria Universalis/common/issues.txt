@@ -246,28 +246,28 @@ political_reforms = {
 			middle_vote = 1
 			poor_vote = 0
 			cb_generation_speed_modifier = 0.05
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.04
 		}
 		wealth_voting = {
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 0
 
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.06
 		}
 		universal_weighted_voting = {
 			rich_vote = 3
 			middle_vote = 2
 			poor_vote = 1
 			cb_generation_speed_modifier = -0.1
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.08
 		}
 		universal_voting = {
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 1
 			cb_generation_speed_modifier = -0.15
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.1
 		}
 	}
 	
