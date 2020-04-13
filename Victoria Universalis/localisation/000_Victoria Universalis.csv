@@ -743,6 +743,14 @@ pop_promotion_bonus1;§GPOP Promotion Bonus;;;;;;;;;;;;;;
 pop_promotion_bonus1_desc;This invention grants a small pop promotion bonus.;;;;;;;;;;;;;;
 pop_promotion_bonus2;§GPOP Promotion Bonus;;;;;;;;;;;;;;
 pop_promotion_bonus2_desc;This invention grants a small pop promotion bonus.;;;;;;;;;;;;;;
+craftsmen_bonus1;Craftsmen Promotion Bonus;;;;;;;;;;;;;;
+craftsmen_bonus1_desc;This invention makes it less likely for your POPs to promote to artisans and more likely to promote to craftsmen.;;;;;;;;;;;;;;
+craftsmen_bonus2;Craftsmen Promotion Bonus;;;;;;;;;;;;;;
+craftsmen_bonus2_desc;This invention makes it less likely for your POPs to promote to artisans and more likely to promote to craftsmen.;;;;;;;;;;;;;;
+craftsmen_bonus3;Craftsmen Promotion Bonus;;;;;;;;;;;;;;
+craftsmen_bonus3_desc;This invention makes it less likely for your POPs to promote to artisans and more likely to promote to craftsmen.;;;;;;;;;;;;;;
+craftsmen_bonus4;Craftsmen Promotion Bonus;;;;;;;;;;;;;;
+craftsmen_bonus4_desc;This invention makes it less likely for your POPs to promote to artisans and more likely to promote to craftsmen.;;;;;;;;;;;;;;
 government_mobilization;Government Mobilization;;;;;;;;;;;;;;
 humanistic_psychology;Humanistic Psychology;;;;;;;;;;;;;;
 modern_power_generation;Modern Power Generation;;;;;;;;;;;;;;
@@ -769,6 +777,10 @@ synthetic_nitrate_factory;Synthetic Nitrate Factory;;;;;;;;;x;;;;
 synthetic_nitrate_factory_desc;The Haber–Bosch process, is an artificial nitrogen fixation process and is the main industrial procedure for the production of ammonia today. The process converts atmospheric nitrogen (N2) to ammonia (NH3) by a reaction with hydrogen (H2) using a metal catalyst under high temperatures and pressures.;;;;;;;;;x;;;;
 haber_bosch_process;Haber–Bosch Process;;;;;;;;;;x;;;;
 haber_bosch_process_desc;The Haber–Bosch process, is an artificial nitrogen fixation process and is the main industrial procedure for the production of ammonia today. The process converts atmospheric nitrogen (N2) to ammonia (NH3) by a reaction with hydrogen (H2) using a metal catalyst under high temperatures and pressures.;;;;;;;;;x;;;;
+portland_cement;Portland Cement;;;;;;;;;;;;;;
+portland_cement_desc;Portland cement is the most common type of cement in general use around the world as a basic ingredient of concrete, mortar, stucco, and non-specialty grout. It was developed from other types of hydraulic lime in England in the early 19th century by Joseph Aspdin, and usually originates from limestone.;;;;;;;;;;;;;;
+rotary_kiln;Rotary Kiln;;;;;;;;;;;;;;
+rotary_kiln_desc;A rotary kiln is a pyroprocessing device used to raise materials to a high temperature (calcination) in a continuous process. The earliest successful rotary kilns were developed in Pennsylvania around 1890, and were about 1.5 m in diameter and 15 m in length. Such a kiln made about 20 tonnes of cement per day.;;;;;;;;;;;;;;
 starting_healthcare;;;;;;;;;;x;;;;
 PNJ;Sikh Empire;Pendjab;Pundschab;;Punjab;;;;;;;;;x;;;;
 PNJ_ADJ;Sikh Empire;Penjabi;Pundschabisch;;Panjab?;;;;;;;;x;;;;
@@ -798,7 +810,7 @@ HAN_538;Westhannover;;;;;;;;;;;;;x
 FRA_415;Amiens;;;;;;;;;;;;;x
 FRA_473;Corsica;;;;;;;;;;;;;x
 JAN_3246;Jan Mayen;;;;;;;;;;;;;x
-PER_1142;Laristan;;;;;;;;;;;;;x
+PER_1142;Laristan-Sistan;;;;;;;;;;;;;x
 PER_1144;Sistan;;;;;;;;;;;;;x
 JAP_1638;Chugoku;;;;;;;;;;;;;x
 JAP_1665;Shikoku;;;;;;;;;;;;;x
@@ -1092,7 +1104,7 @@ country_recruitment_drive_desc;Increases the chance of your POPs promoting to so
 state_core_integration_title;State Scope: Core Integration;;;;;;;;;x;;;;
 state_core_integration_desc;Gives cores to selected state. POPs cannot assimilate unless they are living in cored provinces.;;;;;;;;;x;;;;
 state_literacy_campaign_title;State Scope: Raise Literacy;;;;;;;;;x;;;;
-state_literacy_campaign_desc;Increases the literacy of the selected state by 15%. A rebate of 250, 375, and 500 AP will be given for states <350K, 350K-1M, and 1M+ in size. Can only use on the same state once every 15 years.;;;;;;;;;x;;;;
+state_literacy_campaign_desc;Increases the literacy of the selected state by 15%. A rebate of 800, 700, and 600 AP will be given for states <350K, 350K-1M, and 1M+ in size. Can only use on the same state once every 15 years.;;;;;;;;;x;;;;
 state_assimilation_title;State Scope: Assimilation;;;;;;;;;x;;;;
 state_assimilation_desc;Adds a 300% assimilation rate bonus to the given state for 10 years. Cannot use on colonial states. Assimilation rate and assimilation chance are different variables, if a POPs assimilation chance is 0 it will not assimilate. Hover your mouse over the nationality of a POP in the population tab to see its individual assimilation chance.;;;;;;;;;x;;;;
 state_suppression_title;State Scope: Suppression;;;;;;;;;x;;;;
@@ -1161,7 +1173,7 @@ EVTNAME91709;End of Forced Migration;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC91709;We are no longer encouraging internal migration to a targeted state.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA91709;OK.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91001;Tutorial;;;;;;;;;;;;;;;;;;;;;;;x
-EVTDESC91001;Welcome to the tutorial of Victoria Universalis. The goal of this mod is to introduce more features to play tall, give the player more control, to provide a challenging single player experience while still being balanced for multiplayer, and to be as light weight as possible so as to not slow down the game too much. To that end, balance and meaningful gameplay additions are prioritized over everything else. Decisions with clear instructions on how to trigger them have replaced most random events. A few big things are included from other mods, namely reforms from HPM, country size modifiers and RGO change decisions from PUIR, and a few art assets from PDM. If you want to end the tutorial, select the first option, if you wish to know more pick the second.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC91001;Welcome to the tutorial of Victoria Universalis. This mod introduces more features to play tall, give the player more control, provides a challenging single player experience while still being balanced for multiplayer, and to be as light weight as possible so as to not slow down the game too much. Balance and gameplay mechanics are prioritized over everything else. Decisions with clear instructions on how to trigger them have replaced most random events. A few big things are included from other mods, namely reforms from HPM, country size modifiers and RGO change decisions from PUIR, and a few art assets from PDM. If you want to end the tutorial, select the first option, if you wish to know more pick the second.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA91001;Got it.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTB91001;I would like to know more.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91002;Tutorial: Province Selectors;;;;;;;;;;;;;;;;;;;;;;;x
@@ -1327,7 +1339,7 @@ global_population_nerf_1930;Global Population Normalization;;;;;;;;;;;;x
 balkan_liberation_war;Nationalist Ferver;;;;;;;;;;;;;x
 balkan_liberation_war_desc;All resources in the country are being directed to war. The people make do with what little scraps they have in order to feed the army.;;;;;;;;;;;;;x
 tsar_of_all_slavs_title;Tsar of all Slavs;;;;;;;;;;;;;x
-tsar_of_all_slavs_desc;Ethnic nationalism and political instability within Ottoman held territories are at an all time high. The slavs in the Balkans clamour for freedom and they look to us for salvation.;;;;;;;;;;;;;x
+tsar_of_all_slavs_desc;Ethnic nationalism and political instability within Ottoman held territories are at an all time high. The slavs in the Balkans dream of freedom and they look to us for salvation.;;;;;;;;;;;;;x
 form_yugoslavia_title;Form Yugoslavia;;;;;;;;;;;;;x
 form_yugoslavia_desc;Unite our Slavic brethren!;;;;;;;;;;;;;x
 embrace_sudanese_minority_title;Embrace the Sudanese minority;;;;;;;;;;;;;x
@@ -1443,6 +1455,14 @@ EVTNAMEpop_promotion_bonus1;Pop Promotion Bonus 1;;;;;;;;;;;;x
 EVTDESCpop_promotion_bonus1;This tech gives you a boost to pop promotion.;;;;;;;;;;;;x
 EVTNAMEpop_promotion_bonus2;Pop Promotion Bonus 2;;;;;;;;;;;;x
 EVTDESCpop_promotion_bonus2;This tech gives you a boost to pop promotion.;;;;;;;;;;;;x
+EVTNAMEcraftsmen_bonus1;Pop Promotion Bonus 1;;;;;;;;;;;;x
+EVTDESCcraftsmen_bonus1;This tech reduces the chance of your POPs promoting into artisans.;;;;;;;;;;;;x
+EVTNAMEcraftsmen_bonus2;Pop Promotion Bonus 1;;;;;;;;;;;;x
+EVTDESCcraftsmen_bonus2;This tech reduces the chance of your POPs promoting into artisans.;;;;;;;;;;;;x
+EVTNAMEcraftsmen_bonus3;Pop Promotion Bonus 1;;;;;;;;;;;;x
+EVTDESCcraftsmen_bonus3;This tech reduces the chance of your POPs promoting into artisans.;;;;;;;;;;;;x
+EVTNAMEcraftsmen_bonus4;Pop Promotion Bonus 1;;;;;;;;;;;;x
+EVTDESCcraftsmen_bonus4;This tech reduces the chance of your POPs promoting into artisans.;;;;;;;;;;;;x
 EVTOPTAtechnologyflag;OK;;;;;;;;;;;;x
 change_culture_nanfaren_title;Switch Accepted Culture;;;;;;;;;;;;x
 change_culture_nanfaren_desc;Focus on developing the South. You will still have the option to switch back.;;;;;;;;;;;;x

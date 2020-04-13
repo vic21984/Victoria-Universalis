@@ -652,6 +652,13 @@ trademark = {
 	}
 }
 #market_regulations
+craftsmen_bonus1 = {
+	limit = { market_regulations = 1 }
+	news = no
+	chance = {
+		base = 100
+	}
+}
 anti_trust_laws = {
 	limit = { market_regulations = 1 }
 	news = no
@@ -711,6 +718,13 @@ banking_regulations = {
 	}
 }
 #economic_responsibility
+craftsmen_bonus2 = {
+	limit = { economic_responsibility = 1 }
+	news = no
+	chance = {
+		base = 100
+	}
+}
 working_board_of_directors = {
 	limit = { economic_responsibility = 1 }
 	news = no
@@ -766,6 +780,13 @@ annual_report_proceedings = {
 	}
 }
 #government_interventionism
+craftsmen_bonus3 = {
+	limit = { government_interventionism = 1 }
+	news = no
+	chance = {
+		base = 100
+	}
+}
 centralized_economic_planning = {
 	limit = { government_interventionism = 1 }
 	news = no
@@ -833,6 +854,13 @@ import_substitution_industrialization = {
 	}
 }
 #keynesianism
+craftsmen_bonus4 = {
+	limit = { keynesianism = 1 }
+	news = no
+	chance = {
+		base = 100
+	}
+}
 priming_the_pump_ = {
 	limit = { keynesianism = 1 }
 	news = no

@@ -372,8 +372,12 @@ carriers = {
 	chance = {
 		base = 0
 		modifier = {
-			factor = 10
-			invention = military_aviation
+			factor = -100
+			NOT = { invention = military_aviation }
+		}
+		modifier = {
+			factor = 100
+			modern_naval_doctrine = 1
 		}
 	}
 	effect = {

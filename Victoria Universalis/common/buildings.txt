@@ -785,9 +785,9 @@ fort = {
 	goods_cost =
 	{
 		lumber = 1000
-		cement = 1000
-		explosives = 500
-		small_arms = 500
+		cement = 500
+		explosives = 400
+		small_arms = 400
 		artillery = 400
 	}
 	time = 1080 
@@ -824,10 +824,9 @@ naval_base = {
 	cost = 15000
 	goods_cost =
 	{
-		timber = 500
-		lumber = 500
-		cement = 1000
-		steel = 1000
+		lumber = 1000
+		cement = 500
+		steel = 500
 	}
 	time = 1080
 	naval_capacity = 1

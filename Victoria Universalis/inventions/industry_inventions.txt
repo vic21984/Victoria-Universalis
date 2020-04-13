@@ -711,6 +711,25 @@ thomas_steel = {
 		}
 	}
 }
+portland_cement = {
+	limit = { cheap_steel = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			inorganic_chemistry = 1
+		}
+		modifier = {
+			factor = 2
+			early_railroad = 1
+		}
+	}
+	effect = {
+		factory_goods_input = {
+			cement = -0.05
+		}
+	}
+}
 #advanced_metallurgy
 steel_alloys = {
 	limit = { advanced_metallurgy = 1 }
@@ -731,6 +750,27 @@ steel_alloys = {
 		}
 		factory_goods_input = {
 			steel = -0.05
+		}
+	}
+}
+rotary_kiln = {
+	limit = { advanced_metallurgy = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 3
+			invention = portland_cement
+			year = 1890
+		}
+		modifier = {
+			factor = 2
+			combustion_engine = 1
+			year = 1900
+		}
+	}
+	effect = {
+		factory_goods_input = {
+			cement = -0.05
 		}
 	}
 }
@@ -868,9 +908,6 @@ artificial_fertilizers = {
 	}
 	effect = {
 		farm_rgo_eff = 0.02
-		factory_goods_output = {
-			fertilizer = 0.05
-		}
 		factory_goods_input = {
 			fertilizer = -0.05
 		}
@@ -1036,6 +1073,9 @@ carbon_soil_enrichment = {
 	}
 	effect = {
 		farm_rgo_eff = 0.05
+		factory_goods_input = {
+			fertilizer = -0.05
+		}
 	}
 }
 cracking = {
@@ -1193,6 +1233,25 @@ haber_bosch_process = {
 		farm_RGO_eff = 0.2
 	}
 }
+bakelite = {
+	limit = { synthetic_polymers = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = bell_n_greys_telephones
+		}
+		modifier = {
+			factor = 2
+			time_saving_measures = 1
+		}
+	}
+	effect = {
+		factory_goods_input = {
+			glass  = -0.1
+		} 
+	}
+}
 #modern_chemistry
 rayon = {
 	limit = { modern_chemistry = 1 }
@@ -1210,25 +1269,6 @@ rayon = {
 	effect = {
 		factory_goods_output = {
 			fabric = 0.05
-		} 
-	}
-}
-bakelite = {
-	limit = { modern_chemistry = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = bell_n_greys_telephones
-		}
-		modifier = {
-			factor = 2
-			time_saving_measures = 1
-		}
-	}
-	effect = {
-		factory_goods_output = {
-			glass  = 0.05
 		} 
 	}
 }

@@ -30,20 +30,20 @@ carrier = {
 		steel = 1000
 	}
 	min_port_level = 6
-	limit_per_port = 1 #-1 is unlimited, but it is possible to limit number of ships per port level.
+	limit_per_port = -1
 	supply_consumption_score = 80
 	
 	supply_consumption = 1.0
 	supply_cost = {
 		steamer_convoy = 1.75
 		radio = 0.1
-		fuel = 1.8
-		aeroplanes = 2
+		fuel = 2.4
+		aeroplanes = 2.5
 	}
 	
 	#Naval Abilties
-	hull = 50
+	hull = 65
 	gun_power = 70
-	fire_range = 1
+	fire_range = 2
 	evasion = 0
 }

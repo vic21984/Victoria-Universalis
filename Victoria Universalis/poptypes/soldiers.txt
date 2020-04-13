@@ -368,47 +368,54 @@ promote_to =
 	artisans =
 	{
 		factor = 0.01
+		modifier = {
+			factor = -100
+			location = { is_colonial = yes }
+		}
 		group = {
 			modifier = {
-				factor = -1
-				literacy = 0.1
+				factor = 10
+				total_pops = 2000000
+				country = { ai = no }
 			}
 			modifier = {
-				factor = -1
-				literacy = 0.2
+				factor = 10
+				total_pops = 3000000
+				country = { ai = no }
 			}
 			modifier = {
-				factor = -1
-				literacy = 0.3
+				factor = 10
+				total_pops = 4000000
+				country = { ai = no }
 			}
 			modifier = {
-				factor = -1
-				literacy = 0.4
+				factor = 10
+				total_pops = 6000000
+				country = { ai = no }
 			}
 			modifier = {
-				factor = -1
-				literacy = 0.5
+				factor = 10
+				total_pops = 8000000
+				country = { ai = no }
+			}
+		}
+		group = {
+			modifier = {
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus1_invented }
 			}
 			modifier = {
-				factor = -1
-				literacy = 0.6
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus2_invented }		
 			}
 			modifier = {
-				factor = -1
-				literacy = 0.7
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus3_invented }		
 			}
 			modifier = {
-				factor = -1
-				literacy = 0.8
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus4_invented }		
 			}
-			modifier = {
-				factor = -1
-				literacy = 0.9
-			}
-			modifier = {
-				factor = -1
-				literacy = 0.99
-			}			
 		}
 		group = {		
 			modifier = {
@@ -435,23 +442,23 @@ promote_to =
 		group = {
 			modifier = {
 				factor = 1
+				state_scope = { bureaucrats = 0.002 }
+			}
+			modifier = {
+				factor = 1
+				state_scope = { bureaucrats = 0.004 }
+			}
+			modifier = {
+				factor = 1
+				state_scope = { bureaucrats = 0.006 }
+			}
+			modifier = {
+				factor = 1
+				state_scope = { bureaucrats = 0.008 }
+			}
+			modifier = {
+				factor = 1
 				state_scope = { bureaucrats = 0.01 }
-			}
-			modifier = {
-				factor = 1
-				state_scope = { bureaucrats = 0.02 }
-			}
-			modifier = {
-				factor = 1
-				state_scope = { bureaucrats = 0.03 }
-			}
-			modifier = {
-				factor = 1
-				state_scope = { bureaucrats = 0.04 }
-			}
-			modifier = {
-				factor = 1
-				state_scope = { bureaucrats = 0.05 }
 			}
 		}
 		group = {
@@ -478,11 +485,8 @@ promote_to =
 		}
 		modifier = {
 			factor = 10
-			AND = {
-				state_scope = {
-					has_factories = no
-				}
-				can_build_factory = no
+			state_scope = {
+				has_factories = no
 			}
 		}
 	}

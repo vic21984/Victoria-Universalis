@@ -350,45 +350,21 @@ promote_to =
 		factor = 0.01
 		group = {
 			modifier = {
-				factor = -1.5
-				literacy = 0.1
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus1_invented }
 			}
 			modifier = {
-				factor = -1.5
-				literacy = 0.2
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus2_invented }		
 			}
 			modifier = {
-				factor = -1.5
-				literacy = 0.3
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus3_invented }		
 			}
 			modifier = {
-				factor = -1.5
-				literacy = 0.4
+				factor = -5
+				country = { has_country_flag = 	craftsmen_bonus4_invented }		
 			}
-			modifier = {
-				factor = -1.5
-				literacy = 0.5
-			}
-			modifier = {
-				factor = -1.5
-				literacy = 0.6
-			}
-			modifier = {
-				factor = -1.5
-				literacy = 0.7
-			}
-			modifier = {
-				factor = -1.5
-				literacy = 0.8
-			}
-			modifier = {
-				factor = -1.5
-				literacy = 0.9
-			}
-			modifier = {
-				factor = -1.5
-				literacy = 0.99
-			}			
 		}
 		group = {		
 			modifier = {

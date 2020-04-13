@@ -5,7 +5,7 @@ religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.2
+literacy = 0.03
 
 ruling_party = AFG_conservative
 upper_house = {
@@ -17,6 +17,11 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+foreign_weapons = yes_foreign_weapons
+
+# Technology
+flintlock_rifles = 1
 
 # Starting Consciousness
 consciousness = 0

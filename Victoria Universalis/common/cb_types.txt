@@ -866,6 +866,7 @@ cut_down_to_size = {
 		NOT = { is_our_vassal = THIS }
 		is_disarmed = no
 		NOT = { tag = JAN }
+		great_wars_enabled = no
 	}
 	
 	on_add = {
@@ -940,7 +941,6 @@ demand_reparations = {
 	good_relation_infamy_factor = 1
 	good_relation_militancy_factor = 1
 
-	po_disarmament = no
 	po_reparations = yes
 
 	war_name = WAR_NAME
@@ -1962,10 +1962,10 @@ great_war_penalty_cb = {
     }
 
 
-    badboy_factor = 0
-    prestige_factor = 1
-    peace_cost_factor = 0
-    penalty_factor = 1
+	badboy_factor = 0.5
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
 
     break_truce_prestige_factor = 1
     break_truce_infamy_factor = 1

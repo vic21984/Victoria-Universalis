@@ -277,3 +277,67 @@ country_event = {
 		set_country_flag = pop_promotion_bonus2_invented
 	}
 }
+
+country_event = {
+	title = EVTNAMEcraftsmen_bonus1
+	desc = EVTDESCcraftsmen_bonus1
+	id = 91117
+	
+	trigger = {
+		invention = craftsmen_bonus1
+		NOT = { has_country_flag = craftsmen_bonus1_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = craftsmen_bonus1_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEcraftsmen_bonus2
+	desc = EVTDESCcraftsmen_bonus2
+	id = 91118
+	
+	trigger = {
+		invention = craftsmen_bonus2
+		NOT = { has_country_flag = craftsmen_bonus2_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = craftsmen_bonus2_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEcraftsmen_bonus3
+	desc = EVTDESCcraftsmen_bonus3
+	id = 91119
+	
+	trigger = {
+		invention = craftsmen_bonus3
+		NOT = { has_country_flag = craftsmen_bonus3_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = craftsmen_bonus3_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEcraftsmen_bonus4
+	desc = EVTDESCcraftsmen_bonus4
+	id = 91120
+	
+	trigger = {
+		invention = craftsmen_bonus4
+		NOT = { has_country_flag = craftsmen_bonus4_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = craftsmen_bonus4_invented
+	}
+}

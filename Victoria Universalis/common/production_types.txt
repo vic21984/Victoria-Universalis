@@ -488,6 +488,24 @@ small_arms_factory = {
 	}
 }
 
+ammunition_factory = {       
+	template = factory_template		#10.325
+	input_goods = {      
+		sulphur = 2		#10
+		steel = 3		#14.1	total input+maint = 34.425
+	}
+	output_goods = ammunition 
+	value = 2.3			#40.25
+	bonus = {
+		trigger = { trade_goods_in_state = sulphur }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+}
+
 ############# COMMON FACTORIES
 
 furniture_factory = {       
@@ -573,25 +591,6 @@ fabric_factory = {
 
 ############# CHEAP FACTORIES
 
-
-ammunition_factory = {       
-	template = cheap_factory_template	#4.25
-	input_goods = {      
-		sulphur = 2.5		#12.5
-		steel = 3.5		#16.45	total input+maint = 33.2
-	}
-	output_goods = ammunition 
-	value = 2.3			#40.25
-	bonus = {
-		trigger = { trade_goods_in_state = sulphur }
-		value = 0.15
-	}
-	bonus = {
-		trigger = { has_building = steel_factory }
-		value = 0.1
-	}
-}
-
 canned_food_factory = {       
 	template = cheap_factory_template	#4.25
 	input_goods = { 
@@ -674,16 +673,16 @@ coffee_packaging_factory = {
 	template = cheap_factory_template	#4.25
 	input_goods = {   
 		coffee_beans = 5	#13
-		iron = 0.1			#0.28	total input+maint = 17.5
+		paper = 0.5		#1.7	total input+maint = 18.95
 	}
 	output_goods = coffee
-	value = 5				#21
+	value = 5				#22.5
 	bonus = {
 		trigger = { trade_goods_in_state = coffee_beans }
 		value = 0.15
 	}
 	bonus = {
-		trigger = { trade_goods_in_state = iron }
+		trigger = { has_building = paper_mill }
 		value = 0.1
 	}
 }
@@ -1217,11 +1216,11 @@ artisan_tea = {
 artisan_coffee = {    
 	input_goods = {   
 		coffee_beans = 5	#13
-		iron = 0.5			#1.4	total input+maint = 14.4
+		paper = 0.5		#1.7	total input+maint = 14.7
 	}
 	
 	output_goods = coffee
-	value = 5				#21
+	value = 5				#22.5
 	
 	owner = {
 		poptype = artisan 
@@ -1295,12 +1294,11 @@ artisan_clipper = {
 
 artisan_small_arms = {       
 	input_goods = {        
-		ammunition = 2.0	#35
-		lumber = 5			#5
-		steel = 3.0			#14.1		total input+maint = 54.1
+		lumber = 10			#10
+		steel = 2			#7.05		total input+maint = 17.05
 	}
 	output_goods = small_arms 
-	value = 2			#74
+	value = 1			#37
 
 	owner = {
 		poptype = artisan 
@@ -1387,8 +1385,8 @@ artisan_explosives = {
 
 artisan_ammunition = {       
 	input_goods = {      
-		sulphur = 3		#15
-		steel = 3		#14.1	total input+maint = 29.1
+		sulphur = 2		#10
+		steel = 3		#14.1	total input+maint = 24.1
 	}
 	output_goods = ammunition 
 	value = 2.3			#40.25

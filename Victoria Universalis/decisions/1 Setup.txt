@@ -244,6 +244,26 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = prussia
+			PRU = {
+				any_pop = {
+					limit = {
+						has_pop_culture = czech
+					}
+					literacy = 0.25
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					literacy = 0.45
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ashkenazi
+					}
+					literacy = 0.65
+				}
+			}
 		}
 	}
 	
@@ -288,6 +308,12 @@ political_decisions = {
 				}
 				any_pop = {
 					limit = {
+						has_pop_culture = polish
+					}
+					literacy = 0.05
+				}
+				any_pop = {
+					limit = {
 						has_pop_culture = ashkenazi
 					}
 					literacy = 0.4
@@ -316,22 +342,67 @@ political_decisions = {
 					limit = {
 						has_pop_culture = sephardic
 					}
-					literacy = 0.4
+					literacy = 0.49
 				}
 				any_pop = {
 					limit = {
 						has_pop_culture = greek
 					}
-					literacy = 0.1
+					literacy = 0.19
 				}
 				any_pop = {
 					limit = {
-						OR = {
-							has_pop_culture = mashriqi
-							has_pop_culture = kurdish
-						}
+						has_pop_culture = serb
 					}
-					literacy = -0.06
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = bulgarian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = georgian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = romanian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = bosniak
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = albanian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = croat
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = armenian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ukrainian
+					}
+					literacy = 0.03
 				}
 			}
 		}
@@ -484,7 +555,7 @@ political_decisions = {
 				limit = {
 					has_pop_culture = ashkenazi
 				}
-				literacy = 0.45
+				literacy = 0.75
 			}
 			any_pop = {
 				limit = {
@@ -515,6 +586,50 @@ political_decisions = {
 				}
 				add_country_modifier = { name = corn_laws duration = -1 }
 				add_country_modifier = { name = unequal_china_treaty duration = -1 }
+			}
+		}
+	}
+	
+	egypt_1836_setup = {
+		potential = {
+			tag = EGY
+			always = no
+		}
+		allow = {
+			tag = EGY
+		}
+		effect = {
+			EGY = {
+				any_pop = {
+					limit = {
+						has_pop_culture = sephardic
+					}
+					literacy = 0.49
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_caucasian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = greek
+					}
+					literacy = 0.19
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = armenian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = turkish
+					}
+					literacy = 0.03
+				}
 			}
 		}
 	}

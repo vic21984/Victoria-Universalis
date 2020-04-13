@@ -790,375 +790,6 @@ country_event = {
 
 ########## RGO CHANGE EVENTS ##########
 
-country_event = {
-	id = 91736 #Mining Decision Change
-	picture = mining
-	title = "EVTNAME91736"
-	desc = "EVTDESC91736"
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-
-	option = {
-		name = "EVT91736OPTA" #COAL
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-					trade_goods = iron
-					trade_goods = sulphur
-				}
-			}
-			owner = { administrative_points = 750 }
-			province_selector = -1
-			trade_goods = coal
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }
-				has_building = province_selector
-				OR = {
-					trade_goods = iron
-					trade_goods = sulphur
-				}
-			}
-			owner = { administrative_points = 500 }
-			province_selector = -1
-			trade_goods = coal
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }			
-				has_building = province_selector
-				OR = {
-					trade_goods = iron
-					trade_goods = sulphur
-				}
-			}
-			owner = { administrative_points = 250 }
-			province_selector = -1
-			trade_goods = coal
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-			total_pops = 300000
-				has_building = province_selector
-				OR = {
-					trade_goods = iron
-					trade_goods = sulphur
-				}
-			}
-			province_selector = -1
-			trade_goods = coal
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}	
-	}
-	
-	option = {
-		name = "EVT91736OPTB" #IRON
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = sulphur
-				}
-			}
-			owner = { administrative_points = 750 }
-			province_selector = -1
-			trade_goods = iron
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = sulphur
-				}
-			}
-			owner = { administrative_points = 500 }
-			province_selector = -1
-			trade_goods = iron
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }			
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = sulphur
-				}
-			}
-			owner = { administrative_points = 250 }
-			province_selector = -1
-			trade_goods = iron
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-			total_pops = 300000
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = sulphur
-				}
-			}
-			province_selector = -1
-			trade_goods = iron
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}		
-	}
-	
-	option = {
-		name = "EVT91736OPTC" #SULPHUR
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = iron
-				}
-			}
-			owner = { administrative_points = 750 }
-			province_selector = -1
-			trade_goods = sulphur
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = iron
-				}
-			}
-			owner = { administrative_points = 500 }
-			province_selector = -1
-			trade_goods = sulphur
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }			
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = iron
-				}
-			}
-			owner = { administrative_points = 250 }
-			province_selector = -1
-			trade_goods = sulphur
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-			total_pops = 300000
-				has_building = province_selector
-				OR = {
-					trade_goods = coal
-					trade_goods = iron
-				}
-			}
-			province_selector = -1
-			trade_goods = sulphur
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-	}
-
-	option = {
-		name = "EVT91737OPTB" #TIMBER
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-				OR = {
-					terrain = forest
-					terrain = jungle
-					terrain = woods
-				}
-			}
-			province_selector = -1
-			trade_goods = timber
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-				OR = {
-					terrain = forest
-					terrain = jungle
-					terrain = woods
-				}
-			}
-			province_selector = -1
-			trade_goods = timber
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}	
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-				OR = {
-					terrain = forest
-					terrain = jungle
-					terrain = woods
-				}
-			}
-			province_selector = -1
-			trade_goods = timber
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}	
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-				OR = {
-					terrain = forest
-					terrain = jungle
-					terrain = woods
-				}
-			}
-			province_selector = -1
-			trade_goods = timber
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-	}	
-	
-	option = {
-		name = "EVT91736OPTD"
-		clr_country_flag = deciding
-	}
-}
 
 country_event = {
 	id = 91737 #Agriculture Decision Change
@@ -1193,7 +824,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = wool
 			add_province_modifier = {
@@ -1221,7 +852,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = wool
 			add_province_modifier = {
@@ -1249,7 +880,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = wool
 			add_province_modifier = {
@@ -1276,6 +907,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = wool
 			add_province_modifier = {
@@ -1307,7 +939,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }			
+			owner = { administrative_points = 800 }			
 			province_selector = -1
 			trade_goods = cotton
 			add_province_modifier = {
@@ -1335,7 +967,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = cotton
 			add_province_modifier = {
@@ -1363,7 +995,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = cotton
 			add_province_modifier = {
@@ -1389,7 +1021,8 @@ country_event = {
 					trade_goods = coffee_beans
 					trade_goods = tea_leaves
 				}
-			}	
+			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = cotton
 			add_province_modifier = {
@@ -1421,7 +1054,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = cattle
 			add_province_modifier = {
@@ -1449,7 +1082,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = cattle
 			add_province_modifier = {
@@ -1477,7 +1110,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = cattle
 			add_province_modifier = {
@@ -1503,7 +1136,8 @@ country_event = {
 					trade_goods = coffee_beans
 					trade_goods = tea_leaves
 				}
-			}	
+			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = cattle
 			add_province_modifier = {
@@ -1514,7 +1148,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVT91737OPTE" #FISH
+		name = "EVT91737OPTE" #GRAIN
 		clr_country_flag = deciding
 		random_owned = {
 			limit = {
@@ -1528,17 +1162,16 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fruit
 					trade_goods = opium
-					trade_goods = grain
+					trade_goods = fish
 					trade_goods = silk
 					trade_goods = tobacco
 					trade_goods = coffee_beans
 					trade_goods = tea_leaves
 				}
-				is_coastal = yes
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
-			trade_goods = fish
+			trade_goods = grain
 			add_province_modifier = {
 			name = switched_production
 			duration = 4562
@@ -1557,17 +1190,16 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fruit
 					trade_goods = opium
-					trade_goods = grain
+					trade_goods = fish
 					trade_goods = silk
 					trade_goods = tobacco
 					trade_goods = coffee_beans
 					trade_goods = tea_leaves
 				}
-				is_coastal = yes
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
-			trade_goods = fish
+			trade_goods = grain
 			add_province_modifier = {
 			name = switched_production
 			duration = 4562
@@ -1586,17 +1218,16 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fruit
 					trade_goods = opium
-					trade_goods = grain
+					trade_goods = fish
 					trade_goods = silk
 					trade_goods = tobacco
 					trade_goods = coffee_beans
 					trade_goods = tea_leaves
 				}
-				is_coastal = yes
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
-			trade_goods = fish
+			trade_goods = grain
 			add_province_modifier = {
 			name = switched_production
 			duration = 4562
@@ -1614,16 +1245,16 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fruit
 					trade_goods = opium
-					trade_goods = grain
+					trade_goods = fish
 					trade_goods = silk
 					trade_goods = tobacco
 					trade_goods = coffee_beans
 					trade_goods = tea_leaves
 				}
-				is_coastal = yes
-			}	
+			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
-			trade_goods = fish
+			trade_goods = grain
 			add_province_modifier = {
 			name = switched_production
 			duration = 4562
@@ -1653,7 +1284,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = coffee_beans
 			add_province_modifier = {
@@ -1681,7 +1312,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = coffee_beans
 			add_province_modifier = {
@@ -1709,7 +1340,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = coffee_beans
 			add_province_modifier = {
@@ -1736,6 +1367,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = coffee_beans
 			add_province_modifier = {
@@ -1766,7 +1398,7 @@ country_event = {
 					trade_goods = coffee_beans
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = tea_leaves
 			add_province_modifier = {
@@ -1794,7 +1426,7 @@ country_event = {
 					trade_goods = coffee_beans
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = tea_leaves
 			add_province_modifier = {
@@ -1822,7 +1454,7 @@ country_event = {
 					trade_goods = coffee_beans
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = tea_leaves
 			add_province_modifier = {
@@ -1849,6 +1481,7 @@ country_event = {
 					trade_goods = coffee_beans
 				}
 			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = tea_leaves
 			add_province_modifier = {
@@ -1858,7 +1491,7 @@ country_event = {
 		}		
 	}
 	option = {
-		name = "EVT91737OPTH" #Opium
+		name = "EVT91737OPTH" #OPIUM
 		clr_country_flag = deciding
 		random_owned = {
 			limit = {
@@ -1879,7 +1512,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = opium
 			add_province_modifier = {
@@ -1907,7 +1540,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = opium
 			add_province_modifier = {
@@ -1935,7 +1568,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = opium
 			add_province_modifier = {
@@ -1962,6 +1595,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = opium
 			add_province_modifier = {
@@ -1971,7 +1605,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "EVT91737OPTI" #dye
+		name = "EVT91737OPTI" #DYE
 		clr_country_flag = deciding
 		random_owned = {
 			limit = {
@@ -1992,7 +1626,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = dye
 			add_province_modifier = {
@@ -2020,7 +1654,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = dye
 			add_province_modifier = {
@@ -2048,7 +1682,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = dye
 			add_province_modifier = {
@@ -2075,6 +1709,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = dye
 			add_province_modifier = {
@@ -2084,7 +1719,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "EVT91737OPTJ" #silk
+		name = "EVT91737OPTJ" #SILK
 		clr_country_flag = deciding
 		random_owned = {
 			limit = {
@@ -2105,7 +1740,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = silk
 			add_province_modifier = {
@@ -2133,7 +1768,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = silk
 			add_province_modifier = {
@@ -2161,7 +1796,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = silk
 			add_province_modifier = {
@@ -2188,6 +1823,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
+			owner = { administrative_points = 200 }
 			province_selector = -1
 			trade_goods = silk
 			add_province_modifier = {
@@ -2197,7 +1833,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVT91737OPTK" #tobacco
+		name = "EVT91737OPTK" #TOBACCO
 		clr_country_flag = deciding
 		random_owned = {
 			limit = {
@@ -2218,7 +1854,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 750 }
+			owner = { administrative_points = 800 }
 			province_selector = -1
 			trade_goods = tobacco
 			add_province_modifier = {
@@ -2246,7 +1882,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 500 }
+			owner = { administrative_points = 600 }
 			province_selector = -1
 			trade_goods = tobacco
 			add_province_modifier = {
@@ -2274,7 +1910,7 @@ country_event = {
 					trade_goods = tea_leaves
 				}
 			}
-			owner = { administrative_points = 250 }
+			owner = { administrative_points = 400 }
 			province_selector = -1
 			trade_goods = tobacco
 			add_province_modifier = {
@@ -2282,6 +1918,7 @@ country_event = {
 			duration = 4562
 			}
 		}
+		owner = { administrative_points = 200 }
 		random_owned = {
 			limit = {
 				total_pops = 300000			

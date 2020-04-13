@@ -1395,6 +1395,7 @@ province_event = {
 		or = {
 			province_id = 2396		# Rawson
 			province_id = 3261		# Sancti Spiritu
+			province_id = 2264		# Caracas
 		}
 		not = { trade_goods = oil }
 		OR = {
@@ -1488,7 +1489,6 @@ province_event = {
 		or = {
 			province_id = 1167		# Abu Dhabi
 			province_id = 2234		# Curacao
-			province_id = 2264		# Caracas
 			province_id = 2270		# Maracaibo
 		}
 		not = { trade_goods = oil }

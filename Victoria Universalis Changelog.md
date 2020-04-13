@@ -1,3 +1,23 @@
+# Version 0.144 - 4/13/2020
+## General gameplay changes:
+* Fixed admin point cost reduction for change agricultural RGO decision that was meant to be introduced in v0.142.
+* Fixed localization for healthcare reform. It now correctly displays how much pop growth you get per level.
+* Reduced cost of change population ideology decision to from 600 admin points to 500.
+* Re-added grain to the list of options in the change province agriculture decision.
+* Rebalanced needs for different poptypes.
+* Coffee packaging factory inputs changed from coffee beans and iron to coffee beans and paper.
+* Added input reduction techs for cement in the metallurgy tech column.
+* Added craftsmen promotion buff techs in the market functionality tech column.
+* Reduced max naval port level by 1. Early Modern Naval Doctrine is now a prerequisite tech to unlock carriers.
+* Buffed carrier range and hull value.
+
+## Map changes:
+* Combined two states in Persia.
+
+## Country Balance Changes:
+###### Russia:
+* Reduced conditions to the Tsar of all Slavs decisions to 7 average militancy instead of 9 in any Ottoman held balkan state.
+
 # Version 0.143 - 3/30/2020
 ## General gameplay changes:
 * Reduced minimum spending on healthcare reform from 25%, 50%, 75%, 100%, and 100% to 20%, 40%, 60%, 80%, and 100% for trinket, low, acceptable, good, and universal healthcare levels.

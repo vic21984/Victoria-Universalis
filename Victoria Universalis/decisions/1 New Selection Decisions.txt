@@ -89,7 +89,7 @@ political_decisions = {
 			any_owned_province = { has_building = province_selector }
 		}
 		effect = {
-			administrative_points = 400
+			administrative_points = 500
 			country_event = {
 				id = 91700
 			}
@@ -111,7 +111,7 @@ political_decisions = {
 			any_owned_province = { has_building = province_selector }
 		}
 		effect = {
-			administrative_points = 400
+			administrative_points = 500
 			country_event = {
 				id = 91701
 			}
@@ -133,7 +133,7 @@ political_decisions = {
 			any_owned_province = { has_building = province_selector }
 		}
 		effect = {
-			administrative_points = 400
+			administrative_points = 500
 			country_event = {
 				id = 91702
 			}
@@ -154,7 +154,7 @@ political_decisions = {
 			any_owned_province = { has_building = province_selector }
 		}
 		effect = {
-			administrative_points = 400
+			administrative_points = 500
 			country_event = {
 				id = 91703
 			}
@@ -1121,6 +1121,7 @@ political_decisions = {
 			any_owned_province = { 
 				has_building = province_selector 
 				NOT = { has_province_modifier = province_attract_immigrants }
+				NOT = { state_scope = { is_colonial = yes } }
 			}
 		}
 		effect = {

@@ -21,11 +21,11 @@ everyday_needs = {
 }
 
 life_needs = {
-	cattle = 1.125
-	wool =  1.5
-	fish =  1.5
-	fruit =  1.5
-	grain =  3.75
+	cattle = 1.6875
+	wool =  2.25
+	fish =  2.25
+	fruit =  2.25
+	grain =  5.625
 }
 
 
@@ -256,42 +256,10 @@ migration_target =
 		NOT = { country = { has_country_flag = province_migration } }
 	}
 	modifier = {
-		factor = 1.2
-		total_pops = 150000
-	}	
-	modifier = {
-		factor = 1.2
-		total_pops = 250000
-	}
-	modifier = {
-		factor = 1.2
-		total_pops = 500000
-	}
-	modifier = {
-		factor = 1.2
-		total_pops = 750000
-	}
-	modifier = {
-		factor = 1.2
-		has_pop_culture = THIS
-	}
-	modifier = {
-    	factor = 0.25
-    	has_culture_core = no
-	}
-	modifier = {
 		factor = 6
 		state_scope = {
 					has_factories = yes
 				}
-	}
-	modifier = {
-		factor = 1.2
-		has_pop_religion = THIS
-	}
-	modifier = {
-		factor = 1.5
-		any_core = { is_primary_culture = THIS }
 	}
 	modifier = {
 		factor = 0.75
@@ -302,27 +270,6 @@ migration_target =
 	modifier = {
 		factor = 1.5
 		is_capital = yes
-	}
-	modifier = {
-		factor = 1.05
-		is_coastal = yes
-	}
-	
-	modifier = {
-		factor = 0.6
-		terrain = mountain
-	}
-	modifier = {
-		factor = 0.1
-		terrain = desert
-	}
-	modifier = {
-		factor = 0.6
-		terrain = marsh
-	}
-	modifier = {
-		factor = 0.1
-		terrain = arctic
 	}
 	modifier = {
 		factor = 2
