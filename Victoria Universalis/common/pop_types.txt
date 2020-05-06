@@ -2,10 +2,28 @@
 promotion_chance = 
 {
 	factor = 1
-	modifier = {
-		factor = -0.2
-		country = {
-			border_policy = closed_borders
+	group = {
+		modifier = {
+			factor = -0.05
+			country = {
+				border_policy = closed_borders
+			}
+			total_pops = 4000000
+		}
+		modifier = {
+			factor = -0.1
+			country = {
+				border_policy = closed_borders
+			}
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
+		}
+		modifier = {
+			factor = -0.2
+			country = {
+				border_policy = closed_borders
+			}
+			NOT = { total_pops = 2000000 }
 		}
 	}
 	group = {
@@ -496,6 +514,10 @@ demotion_chance =
 migration_chance = 
 {
 	factor = 1
+		modifier = {
+			factor = -2
+			location = { NOT = { controlled_by = owner } }
+		}	
 	modifier = {
 		factor = -2.0
 		location = {
@@ -537,17 +559,14 @@ migration_chance =
 		modifier = {
 			factor = 0.1
 			unemployment = 0.4
-			location = { controlled_by = owner }
 		}		
 		modifier = {
 			factor = 0.1
 			unemployment = 0.5
-			location = { controlled_by = owner }
 		}		
 		modifier = {
 			factor = 0.1
 			unemployment = 0.6
-			location = { controlled_by = owner }
 		}	
 		
 	}
@@ -584,7 +603,7 @@ colonialmigration_chance =
 	
 	modifier = {
 		factor = 0.05
-		country = { administration_spending = 0.8 colonial_policy = settlement }
+		country = { administration_spending = 0.79 colonial_policy = settlement }
 	}
 	modifier = {
 		factor = -2.0
@@ -622,7 +641,6 @@ emigration_chance =
 		}
 	}
 	group = {
-
 		modifier = {
 			factor = 0.03
 			militancy = 5
@@ -643,29 +661,52 @@ emigration_chance =
 			factor = 0.03
 			militancy = 9
 		}
-		NOT = { is_culture_group = east_asian }
+	}
+
+	group = {
+		modifier = {
+			factor = -0.02
+			militancy = 5
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = -0.02
+			militancy = 6
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = -0.02
+			militancy = 7
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = -0.02
+			militancy = 8
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = -0.02
+			militancy = 9
+			is_culture_group = east_asian
+		}
 	}
 
 	group = {
 		modifier = {
 			factor = 0.05
-			not = { life_needs = 0.9 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
-		}
-		modifier = {
-			factor = 0.05
 			not = { life_needs = 0.8 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
+			NOT = { is_culture_group = east_asian }
 		}
 		modifier = {
 			factor = 0.05
 			not = { life_needs = 0.7 }
-			not = { everyday_needs = 0.1 }
-			not = { luxury_needs = 0.1 }
+			NOT = { is_culture_group = east_asian }
 		}
-		NOT = { is_culture_group = east_asian }
+		modifier = {
+			factor = 0.05
+			not = { life_needs = 0.6 }
+			NOT = { is_culture_group = east_asian }
+		}
 	}
 	
 	group = {
@@ -704,6 +745,54 @@ emigration_chance =
 		modifier = {
 			factor = -0.01
 			everyday_needs = 0.9
+		}		
+	}
+
+	group = {
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.1
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.2
+			is_culture_group = east_asian
+		}	
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.3
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.4
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.5
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.6
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.7
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.8
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.007
+			everyday_needs = 0.9
+			is_culture_group = east_asian
 		}		
 	}
 
@@ -748,24 +837,75 @@ emigration_chance =
 
 	group = {
 		modifier = {
+			factor = 0.003
+			luxury_needs = 0.1
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.2
+			is_culture_group = east_asian
+		}	
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.3
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.4
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.5
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.6
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.7
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.8
+			is_culture_group = east_asian
+		}
+		modifier = {
+			factor = 0.003
+			luxury_needs = 0.9
+			is_culture_group = east_asian
+		}		
+	}
+
+	group = {
+		modifier = {
 			factor = 0.02
 			unemployment = 0.2
 			location = { controlled_by = owner }
+			NOT = { is_culture_group = east_asian }
 		}
 		modifier = {
 			factor = 0.02
 			unemployment = 0.3
 			location = { controlled_by = owner }
+			NOT = { is_culture_group = east_asian }
 		}
 		modifier = {
 			factor = 0.02
 			unemployment = 0.4
 			location = { controlled_by = owner }
+			NOT = { is_culture_group = east_asian }
 		}
 		
 	}
 	modifier = {
-		factor = -0.05
+		factor = -0.06
 		is_culture_group = east_asian
 	}
 

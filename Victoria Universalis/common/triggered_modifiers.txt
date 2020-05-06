@@ -11,6 +11,8 @@ tiny_nation  = {
 			OR = {
 				total_pops = 1000000 #1 million POPs
 				is_culture_group = germanic
+				is_culture_group = south_asian
+				is_culture_group = east_asian
 			}
 		}
 	}
@@ -19,7 +21,7 @@ tiny_nation  = {
 	administrative_efficiency_modifier = 0.2
 	mobilisation_economy_impact = -0.5
 	supply_consumption = -0.2
-	mobilisation_size = 0.04
+	mobilisation_size = 0.03
 	tax_efficiency = 0.1
 	rgo_throughput = 0.20
 	icon = 9
@@ -32,6 +34,8 @@ small_nation = {
 			OR = {
 				total_pops = 3500000 #3.5 million POPs
 				is_culture_group = germanic
+				is_culture_group = south_asian
+				is_culture_group = east_asian
 			}
 		}
 	}
@@ -891,7 +895,7 @@ chinese_army_nerf = {
 chinese_pop_nerf1 = {
 	trigger = {
 		has_country_flag = china
-		invention = clinical_thermometers_and_binaural_stethoscopes
+		has_country_flag = medicine_invented
 	}
 	global_population_growth = -0.001
 	icon = 16
@@ -900,7 +904,7 @@ chinese_pop_nerf1 = {
 chinese_pop_nerf2 = {
 	trigger = {
 		has_country_flag = china
-		invention = germ_theory
+		has_country_flag = inorganic_chemistry_invented
 	}
 	global_population_growth = -0.001
 	icon = 16
@@ -1136,4 +1140,13 @@ jan_mayen_world_bank10 = {
 	}
 	rgo_output = 18000
 	icon = 11
+}
+
+########## UNCIV ##########
+unciv_research_points_on_conquer = {
+	trigger = {
+		civilized = no
+		NOT = { has_country_flag = china }
+	}
+	research_points_on_conquer = 1
 }

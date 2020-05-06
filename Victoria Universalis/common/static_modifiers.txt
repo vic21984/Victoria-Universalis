@@ -172,21 +172,21 @@ bad_debter = {
 }
 
 great_power = {
-	prestige = 0.05
+	prestige = 0.1
 	research_points = 1.5
 	diplomatic_points_modifier = 1.0
 	leadership = 1
 }
 
 second_power = {
-	prestige = 0.025
+	prestige = 0.05
 	research_points = 1.25
 	diplomatic_points_modifier = 0.25
 	leadership = 0.5
 }
 
 civ_nation = {
-	prestige = 0.01
+	prestige = 0.025
 	research_points = 1
 }
 
@@ -214,7 +214,7 @@ total_occupation = {
 }
 
 total_blockaded = {
-	war_exhaustion = 0.5				#increased by war exhaustion.  
+	war_exhaustion = 0.25				#increased by war exhaustion.  
 }
 
 in_bankrupcy = {

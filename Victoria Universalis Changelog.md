@@ -1,3 +1,40 @@
+# Version 0.15 - 5/6/2020
+## General gameplay changes:
+* Fixed a few missing culture provinces in Africa.
+* Fixed a bug where if AI UK or France didn't annex the coastal African nations they would perpetually truce break and declare war over and over again.
+* Fixed a bug with change ideology decision that gave unlimited admin points.
+* Removed RGO size bonus from strategic goods event modifier.
+* Removed cooldown from reduce infamy decision.
+* Lowered cost of assimilation decision from 500 admin points to 400.
+* Lowered infamy cost from take capital and acquire massive state casus bellis from 15 to 12.5.
+* Added smokeless powder invention that reduces ammunition factory input costs.
+* Added option to ask for £100,000 in the request grant decision and removed option to request £4M and £8M grants. Anytime a transfer of over £2,000,000 occurs in game, for some reason it glitches and goes negative.
+* Reduced infamy gain from geneva convention modifier.
+* Bureaucrats will no longer promote or demote into anything unless they make up more than 1% of a state's population.
+* Revolution and counterrevolution tech will automatically set a country's centralization level to unitary if it was on regionalism.
+* Lowered minimum naval supply slider from 30% to 20%.
+* Lowered minimum naval supply before attrition kicks in from 25% to 15%
+* Lowered education slider expenses by about 40%.
+* All uncivs except China can now gain researchpoints by conquest at the start without needing to pass any military reforms.
+* Halved total blockaded modifier.
+
+## Map changes:
+* Rebalanced some grain, fruit, fish, and cattle RGOs.
+* Re-arranged states in Mongolia and Poland.
+* Split Manchuria into 2 states and doubled the number of provinces in each.
+* Added 2 more provinces to North Zhili state.
+
+## Country Balance Changes:
+###### China:
+* Nerfed chinese emigration.
+* Introduced a "soft" cap of 1%, 0.5%, and 0.3% to soldier POPs in states above 1M, 2M, and 4M population if a pop is chinese. This soft cap can be exceeded if a national focus is used to encourage soldiers in that province, this only affects the rate of soldier promotion if no national focus is used.
+* Removed the ability for human players to trigger the taiping rebellion early. Now it always triggers in 1851. China still cannot declare wars for acquire state or conquest before the taiping rebellion occurs.
+* Removed mandate of heaven modifier.
+* Added imperial examinations modifier. Imperial examinations give +100% admin efficiency and -30% research points. It can be removed via decision.
+* Added early and late qing reform decisions. They both give a modifier that gives +2 daily base research points, however the early one also gives +0.2 global militancy and the later one can only be enacted in 1895.
+* Changed the way boxer rebels work. When they capture a province, they kill 50% of the clergy and 3% of the all POPs in the province. When they enforce their demands by occupying the capital they remove 2 economic reforms, 2 military reforms, and both early and late qing reforms. Boxer rebels only spawn after China reaches 50% civilization progress.
+* Disabled ability for China to gain research points from conquest. Not even passing military reforms can enable this. You'll have to enact the early qing reforms decision if you want to civilize quickly.
+
 # Version 0.144 - 4/13/2020
 ## General gameplay changes:
 * Fixed admin point cost reduction for change agricultural RGO decision that was meant to be introduced in v0.142.

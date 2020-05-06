@@ -771,6 +771,8 @@ tea_packaging_factory_desc;This factory dries tea leaves and packs them into bag
 coffee_beans;Coffee Beans;;;;;;;;;x;;;;
 coffee_packaging_factory;Coffee Packing Factory;;;;;;;;;x;;;;
 coffee_packaging_factory_desc;This factory grinds coffee beans and packs them into cans.;;;;;;;;;x;;;;
+smokeless_powder;Smokeless Powder;;;;;;;;;x;;;;
+smokeless_powder_desc;Smokeless powder is the name given to a number of propellants used in firearms and artillery that produce negligible smoke when fired. It has several advantages over traditional gunpowder such as increased muzzle velocity, decreased barrel corrosion, and less smoke produced when fired. These advantages combined with the cheaper costs of manufacturing smokeless powder led to it replacing black powder in military and industrial use.
 synthetic_rubber_factory;Synthetic Rubber Factory;;;;;;;;;x;;;;
 synthetic_rubber_factory_desc;Synthetic rubber, like other polymers, is made from various petroleum-based monomers. A mixture of coal and oil is added together and then refined to produce the flammable hydrocarbon naphtha, which is then combined with natural gas to produce monomers. Chemical additives bond together with the monomers to form chains of polymers and the resulting product then undergoes vulcanisation in order to produce synthetic rubber.;;;;;;;;;x;;;;
 synthetic_nitrate_factory;Synthetic Nitrate Factory;;;;;;;;;x;;;;
@@ -801,6 +803,12 @@ PHL_anarcho_liberal;Partido Libertad;Partido Libertad;Partido Libertad;;Partido 
 PHL_conservative;Partido Nacionalista;Partido Nacionalista;Partido Nacionalista;;Partido Nacionalista;;;;;;;;;x
 PHL_fascist;Partido Fascista;Partido Fascista;Partido Fascista;;Partido Fascista;;;;;;;;;x
 PROV313;Oslo;;;;;;;;;;;;;x
+PROV3249;Tonghua;;;;;;;;;;;;;x
+PROV3250;Jixi;;;;;;;;;;;;;x
+PROV3251;Daqing;;;;;;;;;;;;;x
+PROV3252;Hulunbuir;;;;;;;;;;;;;x
+PROV3253;Chaoyang;;;;;;;;;;;;;x
+PROV3254;Qinhuangdao;;;;;;;;;;;;;x
 PRU_370;Schleswig;;;;;;;;;;;;;x
 PRU_544;Mecklenburg;;;;;;;;;;;;;x
 PRU_547;Pommern;;;;;;;;;;;;;
@@ -822,13 +830,15 @@ CHI_1473;South Anhui;;;;;;;;;;;;;x
 CHI_1487;East Canton;;;;;;;;;;;;;x
 CHI_1499;West Canton;;;;;;;;;;;;;x
 CHI_1508;East Henan;;;;;;;;;;;;;x
-CHI_1513;West Henan;;;;;;;;;;;;;x
+CHI_1511;West Henan;;;;;;;;;;;;;x
 CHI_1527;South Hunan;;;;;;;;;;;;;x
 CHI_1529;North Hunan;;;;;;;;;;;;;x
 CHI_1538;Zhejiang;;;;;;;;;;;;;x
 CHI_1542;North Jiangsu;;;;;;;;;;;;;x
 CHI_1545;North Jiangxi;;;;;;;;;;;;;x
-CHI_1550;South Jiangxi;;;;;;;;;;;;;x
+CHI_1547;South Jiangxi;;;;;;;;;;;;;x
+CHI_1553;North Manchuria;;;;;;;;;;;;;x
+CHI_1555;South Manchuria;;;;;;;;;;;;;x
 CHI_1565;Shangdong;;;;;;;;;;;;;x
 CHI_1607;Fujian;;;;;;;;;;;;;x
 CHI_1613;North Zhili;;;;;;;;;;;;;x
@@ -836,6 +846,9 @@ CHI_1614;South Zhili;;;;;;;;;;;;;x
 CHI_1618;Beijing;;;;;;;;;;;;;x
 CHI_1603;Guizhou;;;;;;;;;;;;;x
 CHI_2221;South Jiangsu;;;;;;;;;;;;;x
+CHI_1481;Port Arthur;;;;;;;;;;;;;x
+CHI_1566;Qingdao;;;;;;;;;;;;;x
+CHI_1569;Weihaiwei;;;;;;;;;;;;;x
 AUS_782;South Dalmatia;;;;;;;;;;;;;x
 BEL_388;Brussels;;;;;;;;;;;;;x
 TUR_821;Macedonia;;;;;;;;;;;;;x
@@ -1044,18 +1057,16 @@ EVTOPTG91309;Tropical Wood;;;;;;;;;;;;;x
 EVTOPTH91309;Clear previous choices and enable promotion in all RGOs;;;;;;;;;;;;;x
 EVTNAMErequestgrant;Request Grant;;;;;;;;;;;;;x
 EVTDESCrequestgrant;Choose an amount you want to apply for;;;;;;;;;;;;;x
+Ask_0.1M_Grant;Ask for 100,000;;;;;;;;;;;;;x
 Ask_0.5M_Grant;Ask for 500,000;;;;;;;;;;;;;x
 Ask_1M_Grant;Ask for 1,000,000;;;;;;;;;;;;;x
 Ask_2M_Grant;Ask for 2,000,000;;;;;;;;;;;;;x
-Ask_4M_Grant;Ask for 4,000,000;;;;;;;;;;;;;x
-Ask_8M_Grant;Ask for 8,000,000;;;;;;;;;;;;;x
 EVTNAMEgivegrant;Grant Requested;;;;;;;;;;;;;x
 EVTDESCgivegrant;Another nation has come to us to ask for a grant. Shall we give it to them?;;;;;;;;;;;;;x
+Give_0.1M_Grant;Give them 100,000.;;;;;;;;;;;;;x
 Give_0.5M_Grant;Give them 500,000.;;;;;;;;;;;;;x
 Give_1M_Grant;Give them 1,000,000.;;;;;;;;;;;;;x
 Give_2M_Grant;Give them 2,000,000.;;;;;;;;;;;;;x
-Give_4M_Grant;Give them 4,000,000.;;;;;;;;;;;;;x
-Give_8M_Grant;Give them 8,000,000.;;;;;;;;;;;;;x
 Give_No_Grant;No.;;;;;;;;;;;;;x
 geneva_convention;Geneva Convention Signed;;;;;;;;;;;;;x
 geneva_convention_desc;The Geneva Convention will result in fewer casualties turning into fatalities;;;;;;;;;;;;;x
@@ -1082,7 +1093,7 @@ country_suppression_desc;Gives a -0.05 MIL and CON modifier to the country for 1
 country_recruit_general_title;Country Scope: Recruit General;;;;;;;;;x;;;;
 country_recruit_general_desc;Spawns either a 4/4 or 5/5 general and sets a 10 year cooldown timer.;;;;;;;;;x;;;;
 country_reduce_infamy_title;Country Scope: Reduce Infamy;;;;;;;;;x;;;;
-country_reduce_infamy_desc;Reduces infamy by 3 and sets a 5 year cooldown timer.;;;;;;;;;x;;;;
+country_reduce_infamy_desc;Reduces infamy by 3 and sets a 2 year cooldown timer.;;;;;;;;;x;;;;
 country_early_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
 country_early_change_ideology_desc;Changes countrywide POP ideology by +25% for the chosen ideology.;;;;;;;;;x;;;;
 country_mid_change_ideology_title;Country Scope: Change Ideology;;;;;;;;;x;;;;
@@ -1436,7 +1447,7 @@ EVTDESCelectricity;This tech allows you to enact good healthcare.;;;;;;;;;;;;x
 EVTNAMEnavallogistics;Naval Logistics Tech Flag;;;;;;;;;;;;x
 EVTDESCnavallogistics;This tech raises the colonial soldier cap to 3%.;;;;;;;;;;;;x
 EVTNAMErevolutionncounterrevolution;Revolution and Counterrevolution Tech Flag;;;;;;;;;;;;x
-EVTDESCrevolutionncounterrevolution;This tech allows you to switch to unitary or totalitarianism form of centralization.;;;;;;;;;;;;x
+EVTDESCrevolutionncounterrevolution;This tech upgrades your centralization level from regionalism to unitary. This event does not fire for countries that don't have regionalism.;;;;;;;;;;;;x
 EVTNAMEcolonialnegotiations;Colonial Negotiations Tech Flag;;;;;;;;;;;;x
 EVTDESCcolonialnegotiations;This invention allows you to colonize and use the Acquire Sub-Saharan African State casus beli.;;;;;;;;;;;;x
 EVTNAMEmob1;Levée en Masse Tech Flag;;;;;;;;;;;;x
@@ -1492,29 +1503,39 @@ EVTNAME90823;Opium Monopoly Ended;;;;;;;;;;;;x
 EVTDESC90823;The opium trade with China has become untenable for us and our merchants have already begun to pull out of Chinese markets.;;;;;;;;;;;;x
 EVTOPTA90823;Disappointing.;;;;;;;;;;;;x
 EVTNAME90824;Opium Outlawed in China;;;;;;;;;;;;x
-EVTDESC90824;The chinese government has burned our recent shipments of opium and expelled our merchants from their shores. This represents a serious blow to our economy should this ban stay in place. What shall we do?;;;;;;;;;;;;x
+EVTDESC90824;The chinese government has burned our recent shipments of opium and expelled our merchants from their shores. Our economy will suffer a serious blow if the ban stays in place. What shall we do?;;;;;;;;;;;;x
 EVTOPTA90824;Force them to lift the ban and make them pay for the shipments they have destroyed.;;;;;;;;;;;;x
 EVTOPTB90824;Respect their sovereignty.;;;;;;;;;;;;x
 chinese_confusion;Disorganized Army;;;;;;;;;;;;x
 chinese_confusion_desc;Our armies are in disarray and cannot fight effectively;;;;;;;;;;;;x
-mandate_of_heaven;Mandate of Heaven;;;;;;;;;;;;x
-mandate_of_heaven_desc;The Mandate of Heaven will persist so long as the Qing dynasty remains in power.;;;;;;;;;;;;x
+abolish_imperial_exams_title;Abolish the Imperial Examinations;;;;;;;;;;;;x
+abolish_imperial_exams_desc;The imperial examinations are a civil service examination system for selecting candidates for the state bureacracy. It focuses mainly on classic literature and Confucianist philosophy while omitting or downplaying western science, mathematics, and military affairs. Rigid adherence to the imperial exams is stifling the adoption of western technology and it must be abolished if China is to modernize in a timely fashion.;;;;;;;;;;;;x
+imperial_examinations;Imperial Examinations;;;;;;;;;;;;x
+imperial_examinations_desc;The imperial examinations were a civil service examination system in Imperial China for selecting candidates for the state bureaucracy. By the time of the late Qing dynasty, its Confucianist principles were directly at odds with modern western thought.;;;;;;;;;;;;x
+enact_early_qing_reforms_title;Early Qing Reforms;;;;;;;;;;;;x
+enact_early_qing_reforms_desc;Reformers in our court warn us of the growing power of the West. They say that we must begin a self-strengthening movemment of modernization based upon European principles in order to not fall behind, however the conservative hardliners will oppose any attempt at supplanting our traditional Confucianist systems with barbaric European science.;;;;;;;;;;;;x
+enact_late_qing_reforms_title;Late Qing Reforms;;;;;;;;;;;;x
+enact_late_qing_reforms_desc;The numerous defeats we have suffered to rebellions and foreigners have convinced both the court and population of the need for reform.;;;;;;;;;;;;x
+early_qing_reforms;The New Policies;;;;;;;;;;;;x
+early_qing_reforms_desc;The New Policies were a series of cultural, economic, educational, military, and political reforms that were implemented in the last decade of the Qing dynasty to keep the dynasty in power after a series humiliating defeats by foreign powers.;;;;;;;;;;;;x
+late_qing_reforms;The New Policies;;;;;;;;;;;;x
+late_qing_reforms_desc;The New Policies were a series of cultural, economic, educational, military, and political reforms that were implemented in the last decade of the Qing dynasty to keep the dynasty in power after a series humiliating defeats by foreign powers.;;;;;;;;;;;;x
 opium_addiction;Opium Addiction;;;;;;;;;;;;x
 opium_addiction_desc;Our people are hopelessly addicted to the "black spice". It has dulled their minds, destroyed their productivity, and left them destitute.;;;;;;;;;;;;x
 opium_war_lost;Opium War Lost;;;;;;;;;;;;x
 opium_war_lost_desc;We have been humiliated and forced to sign an unequal treaty that allows an unrestricted flow of opium into our country from the west. It will take some time before we can build up enough strength to challenge the westerners again.;;;;;;;;;;;;x
 unequal_china_treaty;Unequal Chinese Treaty;;;;;;;;;;;;x
-unequal_china_treaty_desc;Our monopoly on the opium trade with China has provided a great boon to our economy.;;;;;;;;;;;;x
+unequal_china_treaty_desc;Our monopoly on the opium trade with China is a great boon to our economy.;;;;;;;;;;;;x
 chinese_army_nerf;Chinese Army Nerf;;;;;;;;;;;;x
 chinese_army_nerf_desc;Our army is made up of mostly conscripted peasants and their fighting capability suffers as a result;;;;;;;;;;;;x
-chinese_chinese_pop_nerf1;Chinese Pop Growth Nerf 1;;;;;;;;;;;;x
-chinese_chinese_pop_nerf2;Chinese Pop Growth Nerf 2;;;;;;;;;;;;x
+chinese_pop_nerf1;Chinese Pop Growth Nerf 1;;;;;;;;;;;;x
+chinese_pop_nerf2;Chinese Pop Growth Nerf 2;;;;;;;;;;;;x
 outlaw_opium_title;Outlaw Opium;;;;;;;;;;;;x
 outlaw_opium_desc;It is time we banned the use of this poison and expel the foreign barbarians that forced this drug upon us. Beware that enacting this decision will give other countries the Opium War casus belli against us.;;;;;;;;;;;;x
 taiping_rebellion_title;Begin the Taiping Rebellion;;;;;;;;;;;;x
 taiping_rebellion_desc;This will trigger the Taiping Rebellion event and remove the Chinese Isolationism modifier. All armies will be reduced to 0 organization for 45 days to allow time for the Taiping rebels to mobilize. The Taiping Rebellion will trigger in 1860 if this decision is not enacted before then.;;;;;;;;;;;;x
 china_democracy_title;Become the Republic of China;;;;;;;;;;;;x
-china_democracy_desc;This decision will change the country into a democracy and add Han, Hakka, and Min as accepted cultures. Not passing this decision after civilizing while your militancy is greater than 4 or your revanchism is greater than 1% will trigger the Warlord Era event which breaks the country up into several Warlord Cliques.;;;;;;;;;;;;x
+china_democracy_desc;This decision will change the country into a democracy and add Han, Hakka, and Min as accepted cultures. Not passing this decision after civilizing while your militancy is greater than 2 or you are missing any cores will trigger the Warlord Era event which breaks the country up into several Warlord Cliques.;;;;;;;;;;;;x
 EVTNAME31103;Victory in the Levant;;;;;;;;;;;;x
 EVTDESC31103;We have pushed the Egyptians out of the Levant and they are ready to sue for peace. Are we content with our holdings in the Levant or do we press on and occupy all of Egypt?;;;;;;;;;;;;x
 EVTOPTA31103;We will grant them their independence in exchange for Syria and Palestine.;;;;;;;;;;;;x

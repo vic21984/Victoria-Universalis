@@ -242,7 +242,7 @@ silver_standard = {
 	effect = {
 		tax_eff = 3
 		rgo_goods_output = {
-			precious_metal = 0.25
+			precious_metal = 0.5
 		}
 	}
 }
@@ -324,7 +324,7 @@ gold_standard = {
 	effect = {
 		tax_eff = 2
 		rgo_goods_output = {
-			precious_metal = 0.5
+			precious_metal = 1
 		}
 	}
 }

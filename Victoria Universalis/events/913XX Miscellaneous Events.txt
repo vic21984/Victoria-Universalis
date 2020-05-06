@@ -144,10 +144,7 @@ country_event = {
 	option = {
 		any_country = {
 			limit = {
-				OR = {
-					is_mobilised = yes
-					total_amount_of_ships = 1
-				}
+				is_mobilised = yes
 				exists = no
 			}
 			country_event = 91304
@@ -172,7 +169,6 @@ country_event = {
 	title = "Ghost Country Cleanup"
 	
 	trigger = {
-		ai = yes
 		owns = 2133
 		NOT = {
 			tag = JAN

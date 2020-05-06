@@ -1,15 +1,89 @@
 political_decisions = {
-	taiping_rebellion = {
-		picture = taiping_rebellion
+	enact_early_qing_reforms = {
+		picture = lin_zexu
 		potential = {
 			tag = CHI
-			NOT = { has_global_flag = taiping_has_happened }			
+			NOT = {
+				OR = {
+					has_country_flag = early_qing_reforms
+					has_country_flag = late_qing_reforms
+				}
+			}
+			civilized = no
 		}
 		allow = {
+			NOT = { has_country_flag = late_qing_reforms }
+			civilized = no
 		}
 		effect = {
-			set_global_flag = taiping_has_happened
-			country_event = { id = 160001 days = 0 }
+			set_country_flag = early_qing_reforms
+			add_country_modifier = { name = early_qing_reforms duration = -1 }
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	enact_late_qing_reforms = {
+		picture = guangxu_emperor
+		potential = {
+			tag = CHI
+			NOT = {
+				OR = {
+					has_country_flag = early_qing_reforms
+					has_country_flag = late_qing_reforms
+				}
+			}
+			civilized = no
+		}
+		allow = {
+			NOT = { has_country_flag = early_qing_reforms }
+			year = 1895
+			civilized = no
+		}
+		effect = {
+			set_country_flag = late_qing_reforms
+			add_country_modifier = { name = late_qing_reforms duration = -1 }
+			years_of_research = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	abolish_imperial_exams = {
+		picture = tongwen_guan
+		potential = {
+			tag = CHI
+			NOT = { has_country_flag = abolished_imperial_exams }
+			civilized = no
+		}
+		allow = {
+			civilized = no
+		}
+		effect = {
+			set_country_flag = abolished_imperial_exams
+			remove_country_modifier = imperial_examinations
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 5
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -59,7 +133,7 @@ political_decisions = {
 		}
 		effect = {
 			government = democracy
-			remove_country_modifier = mandate_of_heaven
+			remove_country_modifier = imperial_examinations
 			set_global_flag = republic_of_china
 			add_accepted_culture = beifaren
 			add_accepted_culture = nanfaren

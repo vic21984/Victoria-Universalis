@@ -585,7 +585,7 @@ acquire_substate_region = {
 	
 	badboy_factor = 1
 	prestige_factor = 2
-	peace_cost_factor = 1
+	peace_cost_factor = 0.5
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -1998,7 +1998,7 @@ take_capital = {
 	months = 12
 	construction_speed = 0.5
 	
-	badboy_factor = 3
+	badboy_factor = 2.5
 	prestige_factor = 10
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -2201,7 +2201,7 @@ acquire_massive_state = {
 	months = 12
 	construction_speed = 0.5
 	
-	badboy_factor = 3
+	badboy_factor = 2.5
 	prestige_factor = 2
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -2557,9 +2557,9 @@ demand_chinese_concession_casus_belli = {
 	construction_speed = 1.2
 	crisis = no
 	
-	badboy_factor = 1
-	prestige_factor = 0.1
-	peace_cost_factor = 0.6
+	badboy_factor = 0.5
+	prestige_factor = 0.5
+	peace_cost_factor = 0.5
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -2594,9 +2594,12 @@ demand_chinese_concession_casus_belli = {
 				is_core = XIN
 				is_core = MON
 				is_core = TIB
-				region = CHI_2562
+				region = CHI_1481
 				region = CHI_1496
 				region = CHI_1553
+				region = CHI_1566
+				region = CHI_1569
+				region = CHI_2562
 			}
 		}
 		not = { any_owned_province = { is_capital = yes } }

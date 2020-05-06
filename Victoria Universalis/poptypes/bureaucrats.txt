@@ -374,6 +374,12 @@ promote_to =
 	{
 		factor = 0.01
 		modifier = {
+			factor = -100
+			state_scope = {
+				NOT = { bureaucrats = 0.01 }
+			}
+		}
+		modifier = {
 			factor = -1
 			terrain = desert
 		}
@@ -480,6 +486,12 @@ promote_to =
 	{
 		factor = 0.01
 		modifier = {
+			factor = -100
+			state_scope = {
+				NOT = { bureaucrats = 0.01 }
+			}
+		}
+		modifier = {
 			factor = -1
 			NOT = { literacy = 0.30 }
 		}
@@ -509,7 +521,12 @@ promote_to =
 	}
 	clerks = {
 		factor = 0.01
-	
+		modifier = {
+			factor = -100
+			state_scope = {
+				NOT = { bureaucrats = 0.01 }
+			}
+		}
 			modifier = {
 				factor =  -50
 				not = { literacy = 0.50 }
@@ -663,7 +680,13 @@ promote_to =
 	}
 	clergymen =
 	{
-		factor = 0.01		
+		factor = 0.01
+		modifier = {
+			factor = -100
+			state_scope = {
+				NOT = { bureaucrats = 0.01 }
+			}
+		}	
 		group = {
 			modifier = {
 				factor = 0.5
@@ -796,7 +819,12 @@ promote_to =
 	aristocrats = 
 	{
 		factor = 0.01
-		
+		modifier = {
+			factor = -100
+			state_scope = {
+				NOT = { bureaucrats = 0.01 }
+			}
+		}
 		modifier = {
 			factor = -100
 			state_scope = {
@@ -820,6 +848,12 @@ promote_to =
 	}
 	farmers = {
 		factor = 0.01
+		modifier = {
+			factor = -100
+			state_scope = {
+				NOT = { bureaucrats = 0.01 }
+			}
+		}
 		modifier = {
 			factor = 5.0
 			soldiers = 0.03
@@ -846,6 +880,12 @@ promote_to =
 	labourers = 
 	{
 		factor = 0.01
+		modifier = {
+			factor = -100
+			state_scope = {
+				NOT = { bureaucrats = 0.01 }
+			}
+		}
 		modifier = {
 			factor = 5.0
 			soldiers = 0.03

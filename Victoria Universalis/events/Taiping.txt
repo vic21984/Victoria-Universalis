@@ -13,7 +13,8 @@ country_event = {
 	trigger = {
 		tag = CHI
 		NOT = { has_global_flag = taiping_has_happened }
-		year = 1860
+		year = 1851
+		civilized = no
 	}
 	
 	

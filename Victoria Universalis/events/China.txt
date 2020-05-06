@@ -19,6 +19,8 @@ country_event = {
 	option = {				
 		name = "EVTOPTA90900"
 		set_global_flag = the_dragon_wakes
+		remove_country_modifier = early_qing_reforms 
+		remove_country_modifier = late_qing_reforms 
 		any_country = {
 			limit = {
 				NOT = {
@@ -610,10 +612,9 @@ country_event = {
 		NOT = { government = democracy }
 		NOT = { has_global_flag = warlord_era_begun }
 		NOT = { has_global_flag = republic_of_China }
-		war = no
 		OR = {
-			average_militancy = 4
-			revanchism = 0.01
+			average_militancy = 2
+			lost_national = 1
 		}
 	}
 
@@ -621,11 +622,11 @@ country_event = {
 		months = 12
 		modifier = {
 			factor = 0.5
-			average_militancy = 5
+			average_militancy = 3
 		}
 		modifier = {
-			factor = 0.5
-			average_militancy = 6
+			factor = 0.1
+			average_militancy = 4
 		}
 	}
 	
@@ -633,7 +634,7 @@ country_event = {
 		name = "EVTOPTA90810"
 		picture = xinhai_revolution
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -752,12 +753,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -777,7 +780,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB90810"	######Guangdong Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -896,12 +899,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -922,7 +927,7 @@ country_event = {
 	option = {
 		name = "EVTOPTC90810"	######Guangxi Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1041,12 +1046,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -1067,7 +1074,7 @@ country_event = {
 	option = {
 		name = "EVTOPTD90810"	######Yunnan Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1186,12 +1193,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -1211,7 +1220,7 @@ country_event = {
 	option = {
 		name = "EVTOPTE90810"	######Hunan Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1330,12 +1339,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -1354,7 +1365,7 @@ country_event = {
 	option = {
 		name = "EVTOPTF90810"	######Anhui Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1473,12 +1484,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -1498,7 +1511,7 @@ country_event = {
 	option = {
 		name = "EVTOPTG90810"	######Sichuan Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1617,12 +1630,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -1641,7 +1656,7 @@ country_event = {
 	option = {
 		name = "EVTOPTH90810"	######Ma Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1760,12 +1775,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -1786,7 +1803,7 @@ country_event = {
 	option = {
 		name = "EVTOPTI90810"	######Shanxi Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1905,12 +1922,14 @@ country_event = {
 				NOT = { tag = TPG }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -1943,10 +1962,9 @@ country_event = {
 		NOT = { government = democracy }
 		NOT = { has_global_flag = warlord_era_begun }
 		NOT = { has_global_flag = republic_of_china }
-		war = no
 		OR = {
-			average_militancy = 4
-			revanchism = 0.01
+			average_militancy = 2
+			lost_national = 1
 		}
 	}
 
@@ -1954,11 +1972,11 @@ country_event = {
 		months = 12
 		modifier = {
 			factor = 0.5
-			average_militancy = 5
+			average_militancy = 3
 		}
 		modifier = {
-			factor = 0.5
-			average_militancy = 6
+			factor = 0.1
+			average_militancy = 4
 		}
 	}
 	
@@ -1966,7 +1984,7 @@ country_event = {
 		name = "EVTOPTA90810"
 		picture = xinhai_revolution
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -1978,6 +1996,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2085,12 +2104,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -2110,7 +2131,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB90810"	######Guangdong Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -2122,6 +2143,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2229,12 +2251,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -2255,7 +2279,7 @@ country_event = {
 	option = {
 		name = "EVTOPTC90810"	######Guangxi Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -2267,6 +2291,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2374,12 +2399,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -2400,7 +2427,7 @@ country_event = {
 	option = {
 		name = "EVTOPTD90810"	######Yunnan Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -2412,6 +2439,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2519,12 +2547,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -2544,7 +2574,7 @@ country_event = {
 	option = {
 		name = "EVTOPTE90810"	######Hunan Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -2556,6 +2586,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2663,12 +2694,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -2687,7 +2720,7 @@ country_event = {
 	option = {
 		name = "EVTOPTF90810"	######Anhui Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -2699,6 +2732,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2806,12 +2840,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -2831,7 +2867,7 @@ country_event = {
 	option = {
 		name = "EVTOPTG90810"	######Sichuan Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -2843,6 +2879,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2950,12 +2987,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -2974,7 +3013,7 @@ country_event = {
 	option = {
 		name = "EVTOPTH90810"	######Ma Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -2986,6 +3025,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -3093,12 +3133,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -3119,7 +3161,7 @@ country_event = {
 	option = {
 		name = "EVTOPTI90810"	######Shanxi Clique######
 		set_global_flag = warlord_era_begun
-		remove_country_modifier = mandate_of_heaven
+		remove_country_modifier = imperial_examinations
 		government = presidential_dictatorship
 		political_reform = no_slavery
 		political_reform = party_appointed
@@ -3131,6 +3173,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		add_accepted_culture = manchu
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -3238,12 +3281,14 @@ country_event = {
 				NOT = { tag = CHI }
 			}
 			leadership = 400
-			money = 250000
+			money = 750000
 			ammunition = 1000
 			canned_food = 1000
 			artillery = 500
 			small_arms = 500
 			wine = 250
+			clipper_convoy = 250
+			administrative_points = 2000
 		}
 		any_country = {
 			limit = {
@@ -3316,7 +3361,7 @@ country_event = {
 	trigger = {
 		tag = KMT
 		owns = 2221
-		NOT = { capital = 2221
+		NOT = { capital = 2221 }
 	}
 
 	option = {

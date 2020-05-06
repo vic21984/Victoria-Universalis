@@ -928,7 +928,7 @@ nitroglycerin = {
 	}
 	effect = {
 		factory_goods_output = {
-			explosives = 0.02
+			explosives = 0.05
 		}
 		mine_RGO_eff = 0.2
 	}
@@ -1021,6 +1021,25 @@ vaccination = {
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.025
 		colonial_life_rating = -5
+	}
+}
+smokeless_powder = {
+	limit = { inorganic_chemistry = 1 }
+	chance = {
+		base = 0
+		modifier = {
+			factor = 4
+			organic_chemistry = 1
+		}
+		modifier = {
+			factor = 2
+			machine_guns = 1
+		}
+	}
+	effect = {
+		factory_goods_input = {
+			ammunition = -0.2
+		}
 	}
 }
 #organic_chemistry

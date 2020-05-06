@@ -118,6 +118,9 @@ country_event = {
 		name = "EVTOPTA31102" #We have been ultimately driven from Europe...
 		prestige = -10
 		capital = 876
+		876 = {
+			life_rating = 5
+		}
 	}
 }
 

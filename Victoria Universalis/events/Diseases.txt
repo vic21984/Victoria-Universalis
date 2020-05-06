@@ -56,14 +56,13 @@ country_event = {
 			poor_strata = {
 				reduce_pop = 0.99
 			}
-		add_tax_relative_income	= -100
-		#treasury = -1500
+		add_tax_relative_income	= -50
 	}
 	
 	option = {
 		name = "EVTOPTB21010"
 			poor_strata = {
-				reduce_pop = 0.95
+				reduce_pop = 0.96
 				militancy = 1
 			}
 	}

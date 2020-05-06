@@ -126,11 +126,15 @@ country_event = {
 	trigger = {
 		revolution_n_counterrevolution = 1
 		NOT = { has_country_flag = revolution_n_counterrevolution_invented }
+		centralization = regionalism
+		NOT = { has_country_flag = confederalism }
+		
 	}
 	
 	option = {
 		name = "EVTOPTAtechnologyflag"	
 		set_country_flag = revolution_n_counterrevolution_invented
+		political_reform = unitary
 	}
 }
 

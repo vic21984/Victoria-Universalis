@@ -608,14 +608,11 @@ immunity_from_influenza = {
 
 strategic_rgo = {
 	local_rgo_throughput = 5
-	farm_rgo_size = 1
-	mine_rgo_size = 1
 	icon = 13
 }
 
 european_military_advisors = {
 	army_tech_research_bonus = 0.2
-	land_organisation = -0.2
 	supply_consumption = 0.2
 	min_military_spending = 0.5
 	tax_efficiency = -0.05
@@ -961,7 +958,7 @@ irish_potato_blight = {
 
 #### SPA - Spain ####
 la_guardia_civil = {
-	administrative_efficiency_modifier = 0.05
+	administrative_efficiency_modifier = 0.10
 	icon = 1
 }
 
@@ -986,7 +983,7 @@ haussmanns_renovations = {
 #### SWI - Switzerland ####
 signed_the_geneva_convention = {
 	war_exhaustion = -0.02
-	badboy = 0.02
+	badboy = 0.01
 	icon = 7
 }
 
@@ -1066,14 +1063,27 @@ chinese_confusion = {
 	icon = 16
 }
 
-mandate_of_heaven = {
+imperial_examinations = {
 	administrative_efficiency_modifier = 1
+	research_points_modifier = -0.3
 	icon = 5
 }
 
 opium_addiction = {
 	education_efficiency_modifier = -0.4
 	RGO_throughput = -0.2
-	factory_throughput = -0.2
+	factory_throughput = -0.1
+	research_points_modifier = -0.2
 	icon = 18
+}
+
+early_qing_reforms = {
+	research_points = 2
+	global_pop_militancy_modifier = 0.1
+	icon = 3
+}
+
+late_qing_reforms = {
+	research_points = 2
+	icon = 3
 }

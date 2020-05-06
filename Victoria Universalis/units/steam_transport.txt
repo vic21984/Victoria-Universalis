@@ -25,7 +25,7 @@ steam_transport = {
 	build_cost = {
 		steamer_convoy = 5
 	}
-	min_port_level = 1
+	min_port_level = 0
 	limit_per_port = -1
 	supply_consumption_score = 2
 	
@@ -37,7 +37,7 @@ steam_transport = {
 	#Naval Abilties
 	hull = 5
 	gun_power = 0
-	fire_range = 0.4
+	fire_range = 0
 	evasion = 0
 }
 

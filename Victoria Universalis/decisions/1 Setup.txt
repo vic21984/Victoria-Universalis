@@ -172,11 +172,8 @@ political_decisions = {
 		
 		effect = {
 			CHI = {
-				soldiers = {
-					reduce_pop = 0.5
-				}
 				set_country_flag = china
-				add_country_modifier = { name = mandate_of_heaven duration = -1 }
+				add_country_modifier = { name = imperial_examinations duration = -1 }
 				add_country_modifier = { name = opium_addiction duration = -1 }
 			}
 			TPG = {

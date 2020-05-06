@@ -974,7 +974,7 @@ country_event = {
 #UK Africa
 country_event = {
 	id = 91270
-	title = "UK African War 1"
+	title = "UK Conquest of Yoruba States"
 
 	trigger = {
 		owns = 1923
@@ -985,9 +985,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_yoruba_states }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_yoruba_states
 		ENG = {
 			war = {
 				target = THIS
@@ -1001,7 +1003,7 @@ country_event = {
 
 country_event = {
 	id = 91271
-	title = "UK African War 2"
+	title = "UK Conquest of Benin"
 
 	trigger = {
 		owns = 1928
@@ -1012,9 +1014,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_benin }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_benin
 		ENG = {
 			war = {
 				target = THIS
@@ -1028,7 +1032,7 @@ country_event = {
 
 country_event = {
 	id = 91272
-	title = "UK African War 3"
+	title = "UK Conquest of Niger Delta"
 
 	trigger = {
 		owns = 1931
@@ -1039,9 +1043,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_niger_delta }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_niger_delta
 		ENG = {
 			war = {
 				target = THIS
@@ -1055,7 +1061,7 @@ country_event = {
 
 country_event = {
 	id = 91273
-	title = "UK African War 4"
+	title = "UK Conquest of Ghana"
 
 	trigger = {
 		owns = 1907
@@ -1066,9 +1072,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_ghana }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_ghana
 		ENG = {
 			war = {
 				target = THIS
@@ -1083,7 +1091,7 @@ country_event = {
 #French Africa
 country_event = {
 	id = 91274
-	title = "French African War 1"
+	title = "French Conquest of Ivory Coast"
 
 	trigger = {
 		owns = 1897
@@ -1094,9 +1102,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_ivory_coast }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_ivory_coast
 		FRA = {
 			war = {
 				target = THIS
@@ -1110,7 +1120,7 @@ country_event = {
 
 country_event = {
 	id = 91275
-	title = "French African War 1"
+	title = "French Conquest of Dahomey"
 
 	trigger = {
 		owns = 1919
@@ -1121,9 +1131,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_dahomey }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_dahomey
 		FRA = {
 			war = {
 				target = THIS
@@ -1137,7 +1149,7 @@ country_event = {
 
 country_event = {
 	id = 91276
-	title = "French African War 1"
+	title = "French Conquest of Senegal"
 
 	trigger = {
 		owns = 2573
@@ -1148,9 +1160,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_senegal }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_senegal
 		FRA = {
 			war = {
 				target = THIS
@@ -1164,10 +1178,10 @@ country_event = {
 
 country_event = {
 	id = 91277
-	title = "French African War 1"
+	title = "French Conquest of Gambia"
 
 	trigger = {
-		owns = 1788
+		owns = 1792
 		civilized = no
 		has_country_flag = sub_saharan_africa
 		FRA = {
@@ -1175,9 +1189,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_gambia }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_gambia
 		FRA = {
 			war = {
 				target = THIS
@@ -1191,7 +1207,7 @@ country_event = {
 
 country_event = {
 	id = 91278
-	title = "French African War 1"
+	title = "French Conquest of Guinea"
 
 	trigger = {
 		owns = 1879
@@ -1202,9 +1218,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_guinea }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_guinea
 		FRA = {
 			war = {
 				target = THIS
@@ -1218,7 +1236,7 @@ country_event = {
 
 country_event = {
 	id = 91279
-	title = "French African War 1"
+	title = "French Conquest of Congo"
 
 	trigger = {
 		owns = 2624
@@ -1229,9 +1247,11 @@ country_event = {
 			ai = yes
 			is_greater_power = yes
 		}
+		NOT = { has_global_flag = conquest_of_congo }
 	}
 	
 	option = {
+		set_global_flag = conquest_of_congo
 		FRA = {
 			war = {
 				target = THIS

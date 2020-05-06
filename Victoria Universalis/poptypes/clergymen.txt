@@ -27,15 +27,11 @@ everyday_needs_income = {
 
 luxury_needs_income =
 {
-	type = education
+	type = reform
 	weight = 1
 }
 
 everyday_needs = {
-	fuel = 0.75
-	telephones = 2
-	automobiles = 0.5
-	radio = 1
 	cigarettes = 1.5
 	pharmaceuticals = 1
 	opium = 0.05

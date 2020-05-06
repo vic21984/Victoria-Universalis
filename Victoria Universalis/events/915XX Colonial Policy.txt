@@ -202,6 +202,10 @@ country_event = {
 	trigger = {
 		tag = JAN
 		NOT = { has_country_modifier = colonial_nerf_counter }
+		OR = {
+			NOT = { year = 1875 }
+			year = 1885
+		}
 	}
 	
 	immediate = {

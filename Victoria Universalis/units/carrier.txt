@@ -16,7 +16,7 @@ carrier = {
 	priority = 60
 	max_strength = 150
 	default_organisation = 85
-	maximum_speed = 14
+	maximum_speed = 12
 	weighted_value = 100.0
 
 
@@ -44,6 +44,6 @@ carrier = {
 	#Naval Abilties
 	hull = 65
 	gun_power = 70
-	fire_range = 2
+	fire_range = 0.9
 	evasion = 0
 }
