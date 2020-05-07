@@ -14,13 +14,18 @@ country_event = {
 		tag = CHI
 		NOT = { has_global_flag = taiping_has_happened }
 		year = 1851
+		NOT = { year = 1861 }
 		civilized = no
+		TPG = {
+			any_core = {
+				owned_by = CHI
+			}
+		}
 	}
 	
 	
 	option = {
 		name = "EVTOPTA160001"
-		add_country_modifier = { name = chinese_confusion duration = 45 }
 		any_owned = {
 			limit = {
 				is_core = TPG
@@ -64,7 +69,6 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB160001"
-		add_country_modifier = { name = chinese_confusion duration = 45 }
 		any_owned = {
 			limit = {
 				is_core = TPG
