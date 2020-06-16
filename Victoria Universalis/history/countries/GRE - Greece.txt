@@ -74,7 +74,7 @@ nonstate_consciousness = 0
 oob = "GRE_oob.txt"
 
 1843.9.3 = {
-	decision = hellenic_parliament
+	set_country_flag = voule_ton_ellinon
 }
 
 1861.1.1 = {
@@ -171,7 +171,6 @@ colonial_policy = no_colonies
 	literacy = 0.4
 	non_state_culture_literacy = 0.4
 	set_country_flag = greek_balkan_liberation_war
-	set_country_flag = voule_ton_ellinon
 	set_country_flag = army_organisation_idea
 	set_country_flag = reinforce_rate_idea
 	set_country_flag = farming_idea
@@ -313,7 +312,9 @@ colonial_policy = no_colonies
 
 1914.7.28 = {
 	oob = "/WW1/GRE_oob.txt"
+	government = democracy
+	vote_franschise=universal_voting
+	political_parties=non_secret_ballots
 	capital = 805
 	ruling_party = GRE_liberal_2
-	government = democracy
 }

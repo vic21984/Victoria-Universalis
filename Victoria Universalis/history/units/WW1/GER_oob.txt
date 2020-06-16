@@ -55,13 +55,6 @@ leader = {
 	background = attack_2.1
 }
 leader = {
-	name = "Albrecht, Duke of Württemberg"
-	type = land
-	date = 1914.1.1
-	personality = defence_2.1
-	background = attack_1.1
-}
-leader = {
 	name = "Friedrich Sixt von Armin"
 	type = land
 	date = 1914.1.1
@@ -81,13 +74,6 @@ leader = {
 	date = 1914.1.1
 	personality = defence_1.1
 	background = attack_1.1
-}
-leader = {
-	name = "Rupprecht, Crown Prince of Bavaria"
-	type = land
-	date = 1914.1.1
-	personality = defence_4.1
-	background = attack_3.1
 }
 leader = {
 	name = "Ludwig von Falkenhausen"
@@ -144,13 +130,6 @@ leader = {
 	date = 1914.1.1
 	personality = defence_1.1
 	background = attack_1.1
-}
-leader = {
-	name = "Paul von Hindenburg"
-	type = land
-	date = 1914.1.1
-	personality = defence_5.1
-	background = attack_4.1
 }
 leader = {
 	name = "Erich Ludendorff"
@@ -1937,6 +1916,13 @@ army = {
 }
 army = {
 	name = "XI Corps"
+	leader = {
+		name = "Paul von Hindenburg"
+		type = land
+		date = 1914.1.1
+		personality = defence_5.1
+		background = attack_4.1
+	}
 	location = 397
 	regiment = {
 		name= "43rd Infantry Brigade"
@@ -2060,6 +2046,13 @@ name = "XII (1st Royal Saxon) Corps"
 }
 army = {
 name = "XIII (Royal Wuttermberg) Corps"
+leader = {
+	name = "Albrecht, Duke of Württemberg"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
 	location = 397
 	regiment = {
 		name= "51st Infantry Brigade"
@@ -2558,6 +2551,13 @@ army = {
 }
 army = {
 	name = "Royal Bavarian Corps"
+	leader = {
+		name = "Rupprecht, Crown Prince of Bavaria"
+		type = land
+		date = 1914.1.1
+		personality = defence_4.1
+		background = attack_3.1
+	}
 	location = 587
 	regiment = {
 		name= "1st Bavarian Infantry Brigade"
