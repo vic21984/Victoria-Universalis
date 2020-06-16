@@ -4,3 +4,10 @@ add_core = CHI
 add_core = SXI
 trade_goods = coal
 life_rating = 30
+1914.1.1 = {
+	state_building = {
+		level = 4
+		building = cement_factory
+		upgrade = yes
+	}
+}

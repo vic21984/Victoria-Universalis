@@ -36,6 +36,7 @@ child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = regionalism
+colonial_policy = no_colonies
 
 
 ruling_party = HNN_conservative
@@ -50,3 +51,11 @@ upper_house = {
 }
 
 # Inventions
+
+1914.1.1 = {
+	oob = "/1914/HNN_oob.txt"
+	government = presidential_dictatorship
+	literacy = 0.15
+	non_state_culture_literacy = 0.15
+	civilized = yes
+}

@@ -5,25 +5,47 @@ add_core = ITA
 trade_goods = cattle
 life_rating = 35
 fort = 1
-#state_building = {
-#	level = 1
-#	building = fabric_factory
-#	upgrade = yes
-#}
-1861.1.1 = {
+1914.1.1 = {
 	owner = ITA
 	controller = ITA
-}
-1861.1.1 = { 
 	state_building = {
-	level = 1
-	building = steel_factory
-	upgrade = yes
+		level = 9
+		building = pharmaceutical_plant
+		upgrade = yes
 	}
 	state_building = {
-	level = 1
-	building = luxury_clothes_factory
-	upgrade = yes
+		level = 9
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = cement_factory
+		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }

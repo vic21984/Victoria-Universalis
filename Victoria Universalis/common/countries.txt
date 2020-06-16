@@ -314,14 +314,16 @@ D48		= "countries/D48.txt"
 D49		= "countries/D49.txt"
 D50		= "countries/D50.txt"
 
-###Victoria Universalis
+########## Victoria Universalis ##########
 
 ##Africa
 ARO		= "countries/Aro.txt"
 ASH		= "countries/Ashanti.txt"
 BEN		= "countries/Benin.txt"
+CYR		= "countries/Cyrenaica.txt"
 DAH		= "countries/Dahomey.txt"
 DAM		= "countries/Damagaram.txt"
+DAR		= "countries/Darfur.txt"
 GBU		= "countries/Gabu.txt"
 JAL		= "countries/Jallon.txt"
 KBO		= "countries/Kanem-Bornu.txt"
@@ -330,12 +332,20 @@ KON		= "countries/Kongo.txt"
 LOA		= "countries/Loango.txt"
 MAS		= "countries/Massina.txt"
 MOS		= "countries/Mossi.txt"
+NIG		= "countries/Niger.txt"
 OYO 	= "countries/Oyo.txt"
 SEG		= "countries/Segu.txt"
+SOM		= "countries/Somalia.txt"
 SUD		= "countries/Sudan.txt"
 TOO		= "countries/Tooro.txt"
 WRI		= "countries/Warri.txt"
 WOL		= "countries/Wolof.txt"
+
+KGR		="countries/Kingdom of Greece.txt"
+
+##North America
+WIF 	= "countries/West Indies Federation.txt"
+JAM		= "countries/Jamaica.txt"
 
 ##China
 HUI		= "countries/Anhui.txt"
@@ -343,3 +353,20 @@ SZC		= "countries/Sichuan.txt"
 HNN		= "countries/Hunan.txt"
 GNG		= "countries/Guangdong.txt"
 KMT		= "countries/Nationalist China.txt"
+
+##India
+PAK		= "countries/Pakistan.txt"
+SRI		= "countries/Sri Lanka.txt"
+
+##South America
+GUY		= "countries/Guyana.txt"
+TTB		= "countries/Trinidad.txt"
+
+##Central Asia
+PLS		= "countries/Palestine.txt"
+SYR		= "countries/Syria.txt"
+KYR		= "countries/Kyrgyzstan.txt"
+TKM		= "countries/Turkmenistan.txt"
+TAJ		= "countries/Tajikstan.txt"
+KAZ 	= "countries/Kazakhstan.txt"
+UZB		= "countries/Uzbekistan.txt"

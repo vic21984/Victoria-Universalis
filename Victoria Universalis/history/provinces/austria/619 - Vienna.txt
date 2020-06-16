@@ -4,26 +4,48 @@ add_core = AUS
 trade_goods = grain
 life_rating = 35
 fort = 1
-#state_building = {
-#	level = 1
-#	building = regular_clothes_factory
-#	upgrade = yes
-#}
-#state_building = {
-#	level = 1
-#	building = small_arms_factory
-#	upgrade = yes
-#}
-1861.1.1 = { railroad = 2 }
-1861.1.1 = {
+1914.1.1 = {
+	owner = KUK
+	controller = KUK
+	add_core = KUK
 	state_building = {
-		level = 1
-		building = glass_factory
+		level = 5
+		building = explosives_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 1
-		building = fabric_factory
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = ammunition_factory
 		upgrade = yes
 	}
 }

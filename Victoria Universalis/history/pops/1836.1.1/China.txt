@@ -6040,31 +6040,64 @@
     aristocrats = {
         culture = mongol
         religion = gelugpa
-        size = 650
+        size = 350
     }
 
     clergymen = {
         culture = mongol
         religion = gelugpa
-        size = 325
+        size = 190
     }
 
     artisans = {
         culture = mongol
         religion = gelugpa
-        size = 1375
+        size = 850
     }
 
     soldiers = {
         culture = mongol
         religion = gelugpa
-        size = 1100
+        size = 625
     }
 
     farmers = {
         culture = mongol
         religion = gelugpa
-        size = 30650
+        size = 17500
+    }
+
+}
+#Tongliao (152000/38000 POPS)
+3257 = {
+    aristocrats = {
+        culture = mongol
+        religion = gelugpa
+        size = 325
+    }
+
+    clergymen = {
+        culture = mongol
+        religion = gelugpa
+        size = 160
+    }
+
+    artisans = {
+        culture = mongol
+        religion = gelugpa
+        size = 600
+    }
+
+    soldiers = {
+        culture = mongol
+        religion = gelugpa
+        size = 500
+    }
+
+    farmers = {
+        culture = mongol
+        religion = gelugpa
+        size = 15000
     }
 
     clergymen = {
@@ -6083,36 +6116,6 @@
         culture = beifaren
         religion = mahayana
         size = 1875
-    }
-
-    aristocrats = {
-        culture = siberian
-        religion = animist
-        size = 25
-    }
-
-    clergymen = {
-        culture = siberian
-        religion = animist
-        size = 25
-    }
-
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 75
-    }
-
-    soldiers = {
-        culture = siberian
-        religion = animist
-        size = 25
-    }
-
-    farmers = {
-        culture = siberian
-        religion = animist
-        size = 1850
     }
 }
 #Ulaan Chab Chuulghan (132000/33000 POPS)

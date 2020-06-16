@@ -9,4 +9,20 @@ owner = AST
 controller = AST
 colonial = 0
 }
- 
+1914.1.1 = {
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+}

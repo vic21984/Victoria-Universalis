@@ -1799,13 +1799,13 @@
 	aristocrats = {
 		culture = ukrainian
 		religion = orthodox
-		size = 6000
+		size = 4500
 	}
 
 	clergymen = {
 		culture = ukrainian
 		religion = orthodox
-		size = 3500
+		size = 2625
 	}
 
 	artisans = {
@@ -1817,19 +1817,19 @@
 	artisans = {
 		culture = ukrainian
 		religion = orthodox
-		size = 6000
+		size = 2000
 	}
 
 	soldiers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 3750
+		size = 2800
 	}
 
 	farmers = {
 		culture = ukrainian
 		religion = orthodox
-		size = 342350
+		size = 256750
 	}
 
 	clergymen = {
@@ -1885,6 +1885,40 @@
 		religion = orthodox
 		size = 275
 	}
+}
+
+#Sumy (371900/92975 POPS)
+3255 = {
+	aristocrats = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1500
+	}
+
+	clergymen = {
+		culture = ukrainian
+		religion = orthodox
+		size = 875
+	}
+
+	artisans = {
+		culture = ukrainian
+		religion = orthodox
+		size = 4000
+	}
+
+	soldiers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 1000
+	}
+
+	farmers = {
+		culture = ukrainian
+		religion = orthodox
+		size = 85600
+	}
+
 }
 #Taurida Region (360000)
 #under the rule of Russia in 1836

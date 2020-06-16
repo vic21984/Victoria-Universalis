@@ -5,3 +5,35 @@ add_core = UKR
 #add_core = PLC
 trade_goods = coal
 life_rating = 35
+1914.1.1 = {
+	state_building = {
+		level = 3
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

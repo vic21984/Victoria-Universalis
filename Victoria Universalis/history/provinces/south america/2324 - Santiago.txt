@@ -3,3 +3,40 @@ controller = CHL
 add_core = CHL
 trade_goods = grain
 life_rating = 35
+1914.1.1 = {
+	state_building = {
+		level = 4
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = small_arms_factory
+		upgrade = yes
+	}
+}

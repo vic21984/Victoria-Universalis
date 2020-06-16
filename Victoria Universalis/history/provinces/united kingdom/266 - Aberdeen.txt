@@ -4,13 +4,45 @@ add_core = ENG
 add_core = SCO
 trade_goods = fish
 life_rating = 35
-1861.1.1 = {
+1914.1.1 = {
 	state_building = {
-		level = 1
-		building = fabric_factory
+		level = 3
+		building = artillery_factory
 		upgrade = yes
 	}
-}
-1861.1.1 = { 
-	railroad = 3 
+	state_building = {
+		level = 2
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cigarette_factory
+		upgrade = yes
+	}
 }

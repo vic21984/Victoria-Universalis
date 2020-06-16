@@ -4,3 +4,14 @@ add_core = BOL
 add_core = CHL
 trade_goods = sulphur
 life_rating = 35
+1914.1.1 = {
+	owner = CHL
+	controller = CHL
+	remove_core = BOL
+	state_building = {
+		level = 1
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

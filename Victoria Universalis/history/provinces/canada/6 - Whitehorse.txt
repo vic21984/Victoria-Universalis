@@ -6,3 +6,10 @@ owner = CAN
 controller = CAN
 colonial = 0
 }
+1914.1.1 = {
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

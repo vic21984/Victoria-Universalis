@@ -5,8 +5,25 @@ add_core = TPG
 add_core = HUI
 trade_goods = grain
 life_rating = 30
-1861.1.1 = {
-	controller = TPG
-	owner = TPG
-	
+1914.1.1 = {
+	state_building = {
+		level = 1
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = dye_factory
+		upgrade = yes
+	}
 }

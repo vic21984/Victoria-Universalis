@@ -1,3 +1,6 @@
+#########################################################################
+# 						STARTING MONEY									#
+#########################################################################
 country_event = {
 	id = 91301
 	title = "Money Injected"
@@ -25,6 +28,9 @@ country_event = {
 	}
 }
 
+#########################################################################
+# 							LIFERATING									#
+#########################################################################
 country_event = {
 	id = 91302
 	title = "EVTNAME91302"
@@ -127,6 +133,9 @@ country_event = {
 	}
 }
 
+#########################################################################
+# 							GHOST COUNTRY								#
+#########################################################################
 #Ghost Country Events
 country_event = {
 	id = 91303
@@ -144,6 +153,7 @@ country_event = {
 	option = {
 		any_country = {
 			limit = {
+				total_amount_of_divisions = 1
 				is_mobilised = yes
 				exists = no
 			}
@@ -181,41 +191,14 @@ country_event = {
 	}
 }
 
-#country_event = {
-#	id = 91307
-#	fire_only_once = yes
-#	
-#	trigger = {
-#		tag = JAN
-#		year = 1849
-#	}
-#
-#	option = {
-#		any_country = {
-#			limit = {
-#				ai = yes
-#			}
-#			add_country_modifier = { name = ai_healthcare duration = 2 }
-#		}
-#	}
-#}
+#########################################################################
+# 						AI HEALTHCARE BUFFS								#
+#########################################################################
 
-country_event = {
-	id = 91308
-	title = "EVTNAME91308"
-	desc = "EVTDESC91308"
-	
-	trigger = {
-		invention = geneva_convention
-		NOT = { has_country_modifier = signed_the_geneva_convention }
-	}
 
-	option = {
-		name = "EVTOPTA91308"
-		add_country_modifier = { name = signed_the_geneva_convention duration = -1 }
-	}
-}
-
+#########################################################################
+# 						DISABLE CRAFTSMEN								#
+#########################################################################
 country_event = {
 	id = 91309
 	title = "EVTNAME91309"
@@ -225,34 +208,39 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA91309"
-		set_country_flag = coal_mining_focus
+		set_country_flag = disable_non_accepted_craftsmen
 	}
 	option = {
 		name = "EVTOPTB91309"
-		set_country_flag = iron_mining_focus
+		set_country_flag = coal_mining_focus
 	}
 	option = {
 		name = "EVTOPTC91309"
-		set_country_flag = sulphur_mining_focus
+		set_country_flag = iron_mining_focus
 	}
 	option = {
 		name = "EVTOPTD91309"
-		set_country_flag = rubber_mining_focus
+		set_country_flag = sulphur_mining_focus
 	}
 	option = {
 		name = "EVTOPTE91309"
-		set_country_flag = oil_mining_focus
+		set_country_flag = rubber_mining_focus
 	}
 	option = {
 		name = "EVTOPTF91309"
-		set_country_flag = timber_mining_focus
+		set_country_flag = oil_mining_focus
 	}
 	option = {
 		name = "EVTOPTG91309"
-		set_country_flag = tropical_wood_mining_focus
+		set_country_flag = timber_mining_focus
 	}
 	option = {
 		name = "EVTOPTH91309"
+		set_country_flag = tropical_wood_mining_focus
+	}
+	option = {
+		name = "EVTOPTI91309"
+		clr_country_flag = disable_non_accepted_craftsmen
 		clr_country_flag = coal_mining_focus
 		clr_country_flag = iron_mining_focus
 		clr_country_flag = sulphur_mining_focus
@@ -263,3 +251,53 @@ country_event = {
 	}
 }
 
+#########################################################################
+# 							REMINDERS									#
+#########################################################################
+country_event = {
+	id = 91310
+	title = "Baby Boom Reminder"
+	desc = "Your baby boom cooldown timer has expired. You can now use another baby boom decision."
+	
+	trigger = {
+		ai = no
+		year = 1837
+		NOT = {
+			year = 1914
+			has_global_flag = 1914_bookmark
+		}
+		NOT = { has_country_modifier = baby_booming }
+		NOT = { has_country_flag = baby_boom_reminder }
+	}
+
+	option = {
+		name = "OK."
+		set_country_flag = baby_boom_reminder
+	}
+}
+
+country_event = {
+	id = 91311
+	title = "Blood and Iron Reminder"
+	desc = "Your blood and iron cooldown timer has expired. You can now use another blood and iron decision."
+	
+	trigger = {
+		ai = no
+		year = 1837
+		NOT = {
+			year = 1914
+			has_global_flag = 1914_bookmark
+		}
+		NOT = { has_country_modifier = blood_and_iron }
+		NOT = { has_country_flag = blood_and_iron_reminder }
+	}
+
+	option = {
+		name = "OK."
+		set_country_flag = blood_and_iron_reminder
+	}
+}
+
+#########################################################################
+# 							AI HEALTHCARE								#
+#########################################################################

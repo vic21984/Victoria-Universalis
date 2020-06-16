@@ -5,6 +5,7 @@ political_decisions = {
 			tag = SER
 			NOT = {
 				has_country_modifier = balkan_liberation_war
+				has_country_flag = serbian_balkan_liberation_war
 				OR = {
 					owns = 783
 					owns = 802
@@ -32,7 +33,8 @@ political_decisions = {
 		}
 		
 		effect = {
-			add_country_modifier = { name = balkan_liberation_war duration = -1 }	
+			add_country_modifier = { name = balkan_liberation_war duration = -1 }
+			set_country_flag = serbian_balkan_liberation_war
 			political_reform = four_year_draft
 			small_arms = 100
 			canned_food = 100
@@ -48,6 +50,7 @@ political_decisions = {
 			tag = GRE
 			NOT = {
 				has_country_modifier = balkan_liberation_war
+				has_country_flag = greek_balkan_liberation_war
 				OR = {
 					owns = 824
 					owns = 805	
@@ -66,7 +69,8 @@ political_decisions = {
 		
 		effect = {
 			inherit = ION
-			add_country_modifier = { name = balkan_liberation_war duration = -1 }	
+			add_country_modifier = { name = balkan_liberation_war duration = -1 }
+			set_country_flag = greek_balkan_liberation_war
 			political_reform = four_year_draft
 			small_arms = 100
 			canned_food = 100

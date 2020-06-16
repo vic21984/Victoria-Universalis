@@ -4,13 +4,45 @@ add_core = SWE
 add_core = SCA
 trade_goods = fish
 life_rating = 35
-#state_building = {
-#	level = 1
-#	building = canned_food_factory
-#	upgrade = yes
-#}
-#state_building = {
-#	level = 1
-#	building = paper_mill
-#	upgrade = yes
-#}
+1914.1.1 = {
+	state_building = {
+		level = 6
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steel_factory
+		upgrade = yes
+	}
+}

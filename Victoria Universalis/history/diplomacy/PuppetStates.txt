@@ -238,26 +238,33 @@ vassal = {
 }
 
 #########1861
-# Siam - Cambodia
-vassal = {
-	first = SIA
-	second = CAM
-	start_date = 1861.1.1
-	end_date = 1936.1.1
-}
 
-# UK - KAS
+#########1914
+# United Kingdom-Kutch
 vassal = {
 	first = ENG
-	second = KAS
-	start_date = 1861.1.1
-	end_date = 1936.1.1
+	second = CAN
+	start_date = 1914.1.1
+	end_date = 1931.1.1
 }
 
-# OE - Hejaz 
 vassal = {
-	first = TUR
-	second = HDJ
-	start_date = 1861.1.1
-	end_date = 1936.1.1
+	first = ENG
+	second = SAF
+	start_date = 1914.1.1
+	end_date = 1931.1.1
+}
+
+vassal = {
+	first = ENG
+	second = AST
+	start_date = 1914.1.1
+	end_date = 1942.1.1
+}
+
+vassal = {
+	first = ENG
+	second = NZL
+	start_date = 1914.1.1
+	end_date = 1947.1.1
 }

@@ -1394,7 +1394,7 @@ province_event = {
 		year = 1907
 		or = {
 			province_id = 2396		# Rawson
-			province_id = 3261		# Sancti Spiritu
+			province_id = 2361		# Sancti Spiritu
 			province_id = 2264		# Caracas
 		}
 		not = { trade_goods = oil }

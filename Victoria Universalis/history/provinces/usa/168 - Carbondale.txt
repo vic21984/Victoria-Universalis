@@ -3,21 +3,45 @@ controller = USA
 add_core = USA
 trade_goods = cattle
 life_rating = 35
-1861.1.1 = {
+1914.1.1 = {
 	state_building = {
-		level = 1
+		level = 10
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
 		building = steel_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 1
-		building = canned_food_factory
+		level = 10
+		building = cement_factory
 		upgrade = yes
 	}
-
-	party_loyalty = {
-		ideology = liberal
-		loyalty_value = 15
+	state_building = {
+		level = 10
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = machine_parts_factory
+		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }

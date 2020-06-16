@@ -1,13 +1,7 @@
-SER = {
-	truce_until = 1840.1.1
-}
 WAL = {
 	truce_until = 1840.1.1
 }
 MOL = {
-	truce_until = 1840.1.1
-}
-GRE = {
 	truce_until = 1840.1.1
 }
 #Sphere of Influence
@@ -24,6 +18,7 @@ SER = {
 	value = 125
 	level = 4
 	influence_value = 25
+	truce_until = 1840.1.1
 }
 
 GRE = {
@@ -31,6 +26,7 @@ GRE = {
 	value = 125
 	level = 4
 	influence_value = 25
+	truce_until = 1840.1.1
 }
 
 KRA = {

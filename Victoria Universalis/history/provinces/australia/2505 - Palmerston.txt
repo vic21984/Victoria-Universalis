@@ -1,7 +1,7 @@
 owner = ENG
 controller = ENG
 add_core = AST
-trade_goods = grain
+trade_goods = fish
 life_rating = 35
 naval_base = 1
 colonial = 2
@@ -10,4 +10,11 @@ owner = AST
 controller = AST
 colonial = 0
 }
- 
+1914.1.1 = {
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

@@ -126,3 +126,25 @@ country_event = {
 		name = "Give_No_Grant"
 	}
 }
+
+country_event = {
+	title = "Grant Options"
+	desc = "In order to receive requests from player grants, select the enable giving grants option. If you wish to automatically deny player grants, select the deny giving grants option. If you are asking for a grant, select request grant."
+	id = 91405
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Enable Giving Grants"
+		clr_country_flag = deny_grant
+	}
+	option = {
+		name = "Deny Giving Grants"
+		set_country_flag = deny_grant
+	}
+	option = {
+		name = "Request Grant"
+		country_event = { id = 91400 days = 0 }
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+}

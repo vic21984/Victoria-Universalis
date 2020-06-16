@@ -4,8 +4,4 @@ add_core = DES
 add_core = CAL
 trade_goods = grain
 life_rating = 45
-1861.1.1 = {
-owner = USA
-controller = USA
-add_core = USA
-}
+1914.1.1 = {	controller = USA	owner = USA	add_core = USA	remove_core = MEX}

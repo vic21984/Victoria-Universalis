@@ -201,13 +201,9 @@ hussey_n_mccormicks_reaping_machine = {
 precision_work = {
 	limit = { mechanical_production = 1 }
 	chance = {
-		base = 2
+		base = 3
 		modifier = {
-			factor = 2
-			invention = mechanical_precision_saw
-		}
-		modifier = {
-			factor = 2
+			factor = 3
 			early_railroad = 1
 		}
 	}
@@ -481,7 +477,7 @@ refrigerator_technology = {
 	}
 	effect = {
 		rgo_goods_output = {
-			cattle = 0.2
+			cattle = 0.4
 		}
 		rgo_goods_output = {
 			fruit = 0.2
@@ -567,32 +563,13 @@ artillery_production = {
 	}
 }
 #clean_coal
-pit_coal = {
-	limit = { clean_coal = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			practical_steam_engine = 1
-		}
-		modifier = {
-			factor = 2
-			early_railroad = 1
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			coal = 0.25
-		}
-	}
-}
 coke = {
 	limit = { clean_coal = 1 }
 	chance = {
 		base = 2
 		modifier = {
 			factor = 2
-			invention = pit_coal
+			practical_steam_engine = 1
 		}
 		modifier = {
 			factor = 2
@@ -639,25 +616,6 @@ advanced_ore_roasting_processes = {
 		modifier = {
 			factor = 2
 			inorganic_chemistry = 1
-		}
-	}
-	effect = {
-		rgo_goods_output = {
-			iron = 0.25
-		}
-	}
-}
-advanced_ore_smelting_processes = {
-	limit = { cheap_iron = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			invention = advanced_ore_grinding_processes
-		}
-		modifier = {
-			factor = 2
-			iron_railroad = 1
 		}
 	}
 	effect = {

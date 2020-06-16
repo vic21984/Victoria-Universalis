@@ -3,23 +3,45 @@ controller = NET
 add_core = NET
 trade_goods = cattle
 life_rating = 40
-#state_building = {
-#	level = 1
-#	building = fabric_factory
-#	upgrade = yes
-#}
-#state_building = {
-#	level = 1
-#	building = ammunition_factory
-#	upgrade = yes
-#}
-1861.1.1 = { 
-	railroad = 3 
-}
-1861.1.1 = {
+1914.1.1 = {
 	state_building = {
-		level = 1
-		building = paper_mill
+		level = 6
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steamer_shipyard
 		upgrade = yes
 	}
 }

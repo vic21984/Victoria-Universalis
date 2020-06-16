@@ -1126,11 +1126,13 @@ country_event = {
 			conscription = mandatory_service
 			owns = 412
 		}
+		NOT = { has_country_flag = french_revanchism }
 	}
 	
 	fire_only_once = yes
 
 	option = {
+		set_country_flag = french_revanchism
 		political_reform = mandatory_service
 	}
 }
@@ -1145,12 +1147,14 @@ country_event = {
 		ai = no
 		tag = FRA
 		NOT = { owns = 412 }
+		NOT = { has_country_flag = french_revanchism }
 	}
 	
 	fire_only_once = yes
 
 	option = {
 		name = "EVTOPTA37227"
+		set_country_flag = french_revanchism
 		random_owned = {
 			limit = {
 				owner = { conscription = four_year_draft }

@@ -444,6 +444,7 @@ country_event = {
 			HUN = { involved_in_crisis = yes }
 			exists = HUN
 		}
+		NOT = { has_global_flag = 1914_bookmark }
 	}
 	
 	fire_only_once = yes

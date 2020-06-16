@@ -1,3 +1,47 @@
+# Version 0.2 - 6/16/2020
+## General gameplay changes:
+* Added two scenarios starting in Jan 1 1914 and July 28 1914. The 1914.1.1 bookmark is an open ended campaign and does not feature a WW1 event because it is impossible to add multiple countries to the same war via events, and the 1914.7.1 bookmark starts with WW1 already underway.
+* Removed admin points from province selector decisions.  All previous province selector decisions have alternate costs or maluses associated with them now. Some decisions were removed entirely.
+* Added province selector decision that allows you to pass one reform without the approval of the upper house every 10 years. Other prerequisites must still be met, e.g. trinket healthcare cannot be passed unless a country has medicine researched and it cannot be less than 6 months since another reform was passed.
+* Added ability to toggle non-accepted culture POP promotion on and off.  If a province only has 1 culture type of craftsmen, all POPs that promote into craftsmen in that province will assimilate into that culture. This is called the craftsmen exploit and it is hardcoded into the game. Turning off non-accepted craftsmen promotion prevents the craftsmen exploit from turning your primary/accepted POPs into non accepted POPs if it is done before any non-accepted POPs have become craftsmen in a particular province. The best way to use this decision is to turn off non-accepted culture craftsmen promotion at the start of the game then turn it back on once you've filled enough provinces with accepted culture craftsmen POPs.
+* Increased chance of a POP joining a movement based on CON.
+* Removed CON reducing effect of clergy.
+* Increased militancy gain from POPs wanting reforms back to vanilla levels.
+* Changed ideology modifiers for POPs.
+* Added ability for communist upper house to revoke social reforms.
+* Fixed missing brackets that prevented the smallpox and cholera events from firing.
+* Added a negative modifier for research points that triggers whenever education funding for a country above 50% literacy falls below the whatever their current literacy level is. So at 50% literacy you need to fund education at 50% or you will lose research points, 90% literacy needs 90% education spending, etc.
+* Increased max daily research points spent on research from 100 to 200.
+* Increased normal rate of internal migration and removed the immigrant push from the province migration decision. The province migration attraction modifier itself was also reduced so that it will not capture all internal migration.
+* Added tiny conquest CB that lets you annex a country with less than 150k POP for 5 infamy.
+* Changed tech requirement for establish financial center decision to modern central bank system instead of fiat monetary system. The province you place the financial center in must also now have at least 90% literacy rate.
+* Added +25% iron/coal production to mechanized mining tech and deleted advanced ore smelting process and pit coal inventions.
+* Added +25% supply limit to basic chemistry and removed 25% supply limit from electricity.
+* Decreased organisation and morale bonuses from tech. Armies should run out of organisation before manpower until 1890 tech.
+* Nerfed experience gain from pyschology techs to vanilla levels.
+* Changed colonial transportation penal policy to punitive labour. Punitive labour does not give increased colonial migration anymore.
+* Increased administrative multiplier for settlement and indirect rule colonial policies. This number raises the required bureaucrat % in order to get 100% admin efficiency.
+* Removed the military hospital bonus and infamy growth from geneva convention. The modifier now gives -0.02 war exhaustion and +10% supply consumption.
+* Replaced admin points techs with national idea techs. Each tech triggers an event that lets you choose an idea group from a list, which then triggers another event that let's you choose between 1 out of the 2 ideas in that group. Each idea grants a unique bonus and you can only have a total of 6 ideas.
+* Decreased build time of forts.
+* Buffed cuirassier stats from tech.
+* Increased penalty from switched production to include a -50% throughput modifier for several years.
+* Lowered minimum level naval port to build cruisers from 4 to 3.
+* Lowered max infrastructure of deserts by 2.
+* Lowered gas attack dice roll modifier from 3 to 2.
+* Removed pop growth bonus to small and tiny nations.
+* Lowered max battle warscore to 25 from 50.
+
+## Map changes:
+* Split up some provinces in Ukraine, Latvia, and Manchuria.
+
+## Country Balance Changes:
+###### Ottoman Empire:
+* Removed the embrace minority decisions and replaced them with embrace ottomanism decision that gives increased assimilation chance.
+
+###### Austria:
+* Removed embrace polish minority decision.
+
 # Version 0.15 - 5/6/2020
 ## General gameplay changes:
 * Fixed a few missing culture provinces in Africa.

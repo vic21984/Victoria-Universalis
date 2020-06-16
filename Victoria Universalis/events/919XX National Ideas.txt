@@ -1,0 +1,203 @@
+country_event = {
+	id = 91951
+	title = "Army Morale Idea"
+	desc = "Our armies have increased morale."
+	
+	
+	trigger = {
+		has_country_flag = army_morale_idea
+		NOT = { has_country_modifier = army_morale_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = army_morale_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91952
+	title = "Army Organisation Idea"
+	desc = "Our armies have increased organisation."
+	
+	
+	trigger = {
+		has_country_flag = army_organisation_idea
+		NOT = { has_country_modifier = army_organisation_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = army_organisation_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91953
+	title = "Army Experience Idea"
+	desc = "Our armies start with more experience."
+	
+	
+	trigger = {
+		has_country_flag = army_experience_idea
+		NOT = { has_country_modifier = army_experience_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = army_experience_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91954
+	title = "Leadership Idea"
+	desc = "We have inreased leadership point generation."
+	
+	
+	trigger = {
+		has_country_flag = leadership_idea
+		NOT = { has_country_modifier = leadership_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = leadership_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91955
+	title = "Prestige Idea"
+	desc = "We generate more prestige per month."
+	
+	
+	trigger = {
+		has_country_flag = prestige_idea
+		NOT = { has_country_modifier = prestige_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = prestige_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91956
+	title = "Navy Organisation Idea"
+	desc = "Our navies have increased organisation."
+	
+	
+	trigger = {
+		has_country_flag = navy_organisation_idea
+		NOT = { has_country_modifier = navy_organisation_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = navy_organisation_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91957
+	title = "Expansion Idea"
+	desc = "We have increased infamy decay."
+	
+	
+	trigger = {
+		has_country_flag = expansion_idea
+		NOT = { has_country_modifier = expansion_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = expansion_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91958
+	title = "Assimilation Idea"
+	desc = "We have increased assimilation rate."
+	
+	
+	trigger = {
+		has_country_flag = assimilation_idea
+		NOT = { has_country_modifier = assimilation_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = assimilation_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91959
+	title = "Farming Idea"
+	desc = "We have increased farming efficiency."
+	
+	
+	trigger = {
+		has_country_flag = farming_idea
+		NOT = { has_country_modifier = farming_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = farming_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91960
+	title = "Mining Idea"
+	desc = "We have increased mining efficiency."
+	
+	
+	trigger = {
+		has_country_flag = mining_idea
+		NOT = { has_country_modifier = mining_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = mining_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91961
+	title = "Colonial Idea"
+	desc = "We have increased colonial migration."
+	
+	
+	trigger = {
+		has_country_flag = colonial_idea
+		NOT = { has_country_modifier = colonial_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = colonial_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91962
+	title = "Domestic Idea"
+	desc = "We have increased internal migration."
+	
+	
+	trigger = {
+		has_country_flag = domestic_idea
+		NOT = { has_country_modifier = domestic_idea }
+	}
+	
+	option = {
+		name = "Great!"
+		add_country_modifier = { name = domestic_idea duration = -1 }
+	}
+}

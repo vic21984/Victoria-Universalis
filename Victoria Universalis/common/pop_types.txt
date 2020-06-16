@@ -2,6 +2,7 @@
 promotion_chance = 
 {
 	factor = 1
+	#####CLOSED BORDERS#####
 	group = {
 		modifier = {
 			factor = -0.05
@@ -26,6 +27,7 @@ promotion_chance =
 			NOT = { total_pops = 2000000 }
 		}
 	}
+	#####CULTURE#####
 	group = {
 		modifier = {
 			factor = -0.025
@@ -44,6 +46,7 @@ promotion_chance =
 			NOT = { total_pops = 2000000 }
 		}
 	}
+	#####RELIGION#####
 	group = {
 		modifier = {
 			factor = -0.025
@@ -62,6 +65,26 @@ promotion_chance =
 			NOT = { total_pops = 2000000 }
 		}
 	}
+	
+
+	#####MARTIAL LAW#####
+		modifier = {
+			factor = -0.025
+			total_pops = 4000000
+			country = { has_country_flag = martial_law }
+		}
+		modifier = {
+			factor = -0.05
+			total_pops = 2000000
+			NOT = { total_pops = 4000000 }
+			country = { has_country_flag = martial_law }
+		}
+		modifier = {
+			factor = -0.1
+			NOT = { total_pops = 2000000 }
+			country = { has_country_flag = martial_law }
+		}
+	
 	modifier = {
 		factor = -0.1
 		country = { slavery = yes_slavery }
@@ -75,7 +98,7 @@ promotion_chance =
 	modifier = {
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
-	}	
+	}
 
 	group = {
 		modifier = {
@@ -111,17 +134,17 @@ promotion_chance =
 	
 	group = {
 		modifier = {
-			factor = -0.08
+			factor = -0.075
 			life_needs = 0.4
 			total_pops = 4000000			
 		}
 		modifier = {
-			factor = -0.08
+			factor = -0.075
 			life_needs = 0.6
 			total_pops = 4000000
 		}
 		modifier = {
-			factor = -0.08
+			factor = -0.075
 			life_needs = 0.8
 			total_pops = 4000000
 		}
@@ -317,46 +340,7 @@ promotion_chance =
 		}
 		modifier = {
 			factor = -0.01
-			literacy = 0.9		
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }
-		}
-	}
-	#####TECH BONUS#####
-	
-	group = {
-		modifier = {
-			factor = 0.09
-			country = { has_country_flag = 	pop_promotion_bonus1_invented }
-		}
-		modifier = {
-			factor = 0.09
-			country = { has_country_flag = 	pop_promotion_bonus2_invented }		
-		}
-	}
-	
-	group = {
-		modifier = {
-			factor = -0.06
-			country = { has_country_flag = 	pop_promotion_bonus1_invented }
-			total_pops = 4000000						
-		}	
-		modifier = {
-			factor = -0.06
-			country = { has_country_flag = 	pop_promotion_bonus2_invented }
-			total_pops = 4000000						
-		}	
-	}
-	group = {
-		modifier = {
-			factor = -0.03
-			country = { has_country_flag = 	pop_promotion_bonus1_invented }
-			total_pops = 2000000
-			NOT = { total_pops = 4000000 }
-		}	
-		modifier = {
-			factor = -0.03
-			country = { has_country_flag = 	pop_promotion_bonus2_invented }
+			literacy = 0.99		
 			total_pops = 2000000
 			NOT = { total_pops = 4000000 }
 		}
@@ -513,9 +497,9 @@ demotion_chance =
 #general migration chance mtth, same for all pops
 migration_chance = 
 {
-	factor = 1
+	factor = 0.5
 		modifier = {
-			factor = -2
+			factor = -2.0
 			location = { NOT = { controlled_by = owner } }
 		}	
 	modifier = {
@@ -528,45 +512,74 @@ migration_chance =
 		factor = -2.0
 		state_scope = { is_colonial = yes }
 	}
-	
+	modifier = {
+		factor = -2.0
+		strata = rich
+	}
 	modifier = {
 		factor = -0.01
 		state_scope = { is_colonial = no }
 	}
-
 	modifier = {
-		factor = 0.2
-		OR = {
-			is_accepted_culture = yes
-			is_primary_culture = yes
-		}
-		country = { has_country_flag = province_migration }
+		factor = 0.06
+		country = { has_country_flag = domestic_idea }
 	}
-
 	group = {
 		modifier = {
-			factor = 0.1
+			factor = 0.01
+			consciousness = 5
+		}
+		modifier = {
+			factor = 0.01
+			consciousness = 6
+		}
+		modifier = {
+			factor = 0.01
+			consciousness = 7
+		}
+		modifier = {
+			factor = 0.01
+			consciousness = 8
+		}
+		modifier = {
+			factor = 0.01
+			consciousness = 9
+		}
+		modifier = {
+			factor = 0.01
+			consciousness = 10
+		}
+	}
+	group = {
+		modifier = {
+			factor = 0.01
+			unemployment = 0.05
+			location = { controlled_by = owner }
+		}
+		modifier = {
+			factor = 0.01
 			unemployment = 0.1
+			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.01
+			unemployment = 0.15
+			location = { controlled_by = owner }
+		}
+		modifier = {
+			factor = 0.01
 			unemployment = 0.2
-		}
+			location = { controlled_by = owner }
+		}		
 		modifier = {
-			factor = 0.1
+			factor = 0.01
+			unemployment = 0.25
+			location = { controlled_by = owner }
+		}		
+		modifier = {
+			factor = 0.01
 			unemployment = 0.3
-		}
-		modifier = {
-			factor = 0.1
-			unemployment = 0.4
-		}		
-		modifier = {
-			factor = 0.1
-			unemployment = 0.5
-		}		
-		modifier = {
-			factor = 0.1
-			unemployment = 0.6
+			location = { controlled_by = owner }
 		}	
 		
 	}
@@ -575,7 +588,7 @@ migration_chance =
 #general colonial migration mtth, same for all pops
 colonialmigration_chance = 
 {
-	factor = 0.25
+	factor = 0.5
 
 	modifier = {
 		factor = -2.0
@@ -584,11 +597,11 @@ colonialmigration_chance =
 		}
 	}
 	modifier = {
-		factor = -0.01
+		factor = -0.005
 		state_scope = { is_colonial = no }
 	}
 	modifier = {
-		factor = -0.6
+		factor = -0.3
 		NOT = {
 			OR = {
 				is_primary_culture = yes
@@ -597,31 +610,30 @@ colonialmigration_chance =
 		}
 	}
 	modifier = {
-		factor = 0.03
-		country = { penal_system = colonial_transportation }
-	}
-	
-	modifier = {
-		factor = 0.05
+		factor = 0.02
 		country = { administration_spending = 0.79 colonial_policy = settlement }
 	}
 	modifier = {
 		factor = -2.0
 		state_scope = { is_colonial = yes }
 	}
+	modifier = {
+		factor = 0.02
+		country = { has_country_flag = colonial_idea }
+	}
 	group = {
 		modifier = {
-			factor = 0.02
+			factor = 0.01
 			unemployment = 0.1
 			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.02
+			factor = 0.01
 			unemployment = 0.2
 			location = { controlled_by = owner }
 		}
 		modifier = {
-			factor = 0.02
+			factor = 0.01
 			unemployment = 0.3
 			location = { controlled_by = owner }
 		}
@@ -982,6 +994,19 @@ assimilation_chance =
 		factor = -20
 		militancy = 5
 	}
+	
+	###FLAGS###
+	modifier = {
+		factor = 4
+		has_culture_core = yes
+		country = { has_country_flag = embraced_ottomanism }
+	}
+	modifier = {
+		factor = 0.16
+		NOT = { has_culture_core = yes }
+		country = { has_country_flag = embraced_ottomanism }
+	}
+	
 }
 
 #general conversion mtth, same for all pops

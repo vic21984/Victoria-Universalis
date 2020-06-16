@@ -128,13 +128,11 @@ reactionary_rebels = {
 		}
 		modifier = {
 			factor = 1.0105
-			AND = {
-				pop_majority_ideology = conservative
-				NOT = {
-					country = {
-						has_country_modifier = global_liberal_agitation
-						has_country_modifier = springtime_of_nations	
-					}
+			pop_majority_ideology = conservative
+			NOT = {
+				country = {
+					has_country_modifier = global_liberal_agitation
+					has_country_modifier = springtime_of_nations	
 				}
 			}
 		}
@@ -1205,7 +1203,7 @@ pan_nationalist_rebels = {
 		
 		modifier = {
 			factor = 0
-			war = yes
+			country = { war = yes }
 		}
 		
 		modifier = {
@@ -1225,11 +1223,9 @@ pan_nationalist_rebels = {
 
 		modifier = {
 			factor = 1.3
-			OR = {
-				country = {
-					has_country_modifier = global_liberal_agitation
-					has_country_modifier = springtime_of_nations
-				}
+			country = {
+				has_country_modifier = global_liberal_agitation
+				has_country_modifier = springtime_of_nations
 			}
 		}
 		
@@ -1613,20 +1609,20 @@ boxer_rebels = {
 		}
 		modifier = {
 			factor = 1.05
-			AND = {
-				pop_majority_ideology = conservative
-				NOT = {
-					country = {
-						has_country_modifier = global_liberal_agitation
-						has_country_modifier = springtime_of_nations	
-					}
+			pop_majority_ideology = conservative
+			NOT = {
+				country = {
+					has_country_modifier = global_liberal_agitation
+					has_country_modifier = springtime_of_nations	
 				}
 			}
 		}
 		modifier = {
 			factor = 0 # -100?
 			NOT = { is_culture_group = east_asian }
-			NOT = { tag = CHI }
+			NOT = {
+				country = { has_country_flag = china }
+			}
 		}
 		
 		modifier = {
@@ -1765,10 +1761,8 @@ red_shirts = {
 		}
 		modifier = {
 			factor = 0.4
-			OR = {
-				country = {
-					has_country_modifier = springtime_of_nations
-				}
+			country = {
+				has_country_modifier = springtime_of_nations
 			}
 		}
 		modifier = {
@@ -1830,11 +1824,9 @@ red_shirts = {
 
 		modifier = {
 			factor = 1.3
-			OR = {
-				country = {
-					has_country_modifier = global_liberal_agitation
-					has_country_modifier = springtime_of_nations
-				}
+			country = {
+				has_country_modifier = global_liberal_agitation
+				has_country_modifier = springtime_of_nations
 			}
 		}
 		
@@ -2011,15 +2003,11 @@ liberal_rebels = {
 		}
 		modifier = {
 			factor = 0.4
-			country = {
-				has_country_modifier = springtime_of_nations
-			}
+			country = { has_country_modifier = springtime_of_nations }
 		}
 		modifier = {
 			factor = 1.5
-			country = {
-				has_country_modifier = global_liberal_agitation
-			}
+			country = { has_country_modifier = global_liberal_agitation }
 		}
 	}
 	
@@ -2086,13 +2074,11 @@ liberal_rebels = {
 		
 		modifier = {
 			factor = 1.15
-			AND = {
-				pop_majority_ideology = conservative
-				country = {
-					OR = {
-						has_country_modifier = global_liberal_agitation
-						has_country_modifier = springtime_of_nations
-					}
+			pop_majority_ideology = conservative
+			country = {
+				OR = {
+					has_country_modifier = global_liberal_agitation
+					has_country_modifier = springtime_of_nations
 				}
 			}
 		}
@@ -2261,13 +2247,11 @@ unciv_reactionary_rebels = {
 		}
 		modifier = {
 			factor = 1.05
-			AND = {
-				pop_majority_ideology = conservative
-				NOT = {
-					country = {
-						has_country_modifier = global_liberal_agitation
-						has_country_modifier = springtime_of_nations	
-					}
+			pop_majority_ideology = conservative
+			NOT = {
+				country = {
+					has_country_modifier = global_liberal_agitation
+					has_country_modifier = springtime_of_nations	
 				}
 			}
 		}
@@ -2307,11 +2291,9 @@ unciv_reactionary_rebels = {
 		}
 		modifier = {
 			factor = 1.02
-			country = { 
-				AND = {
-					civilization_progress = 0.1
-					part_of_sphere = yes
-				}
+			country = {
+				civilization_progress = 0.1
+				part_of_sphere = yes
 			}
 		}
 	}

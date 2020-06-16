@@ -6,3 +6,30 @@ owner = CAN
 controller = CAN
 colonial = 0
 }
+1914.1.1 = {
+	state_building = {
+		level = 1
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

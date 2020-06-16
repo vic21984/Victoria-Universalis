@@ -4,3 +4,41 @@ add_core = ION
 add_core = GRE
 trade_goods = fish
 life_rating = 35
+1914.1.1 = {
+	owner = GRE
+	controller = GRE
+	remove_core = ION
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+}
+1914.7.28 = {
+add_core = KGR
+}

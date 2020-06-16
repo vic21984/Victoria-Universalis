@@ -54,6 +54,7 @@ child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = regionalism
+colonial_policy = no_colonies 
 
 1861.1.1 = {
 	oob = "/1861/GXI_oob.txt"
@@ -65,13 +66,10 @@ centralization = regionalism
 }
 
 
-#New Reforms
-conscription = no_draft
-debt_law = peonage
-penal_system = capital_punishment
-child_labor = child_labor_legal
-citizens_rights = primary_culture_only
-border_policy = open_borders
-centralization = unitary
-colonial_policy = no_colonies
- 
+1914.1.1 = {
+	oob = "/1914/GXI_oob.txt"
+	government = presidential_dictatorship
+	literacy = 0.15
+	non_state_culture_literacy = 0.15
+	civilized = yes
+}

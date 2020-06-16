@@ -37,17 +37,13 @@ political_decisions = {
 			}					
 		}
 		allow = {
-			OR = {
-				AND = {
-					NOT = { citizenship_policy = residency }
-					NOT = { citizens_rights = primary_culture_only }	
-					AND = {
-						EGY_1827 = {
-							owned_by = THIS
-							literacy = 0.3
-							NOT = { average_militancy = 1 }
-						}
-					}
+			NOT = { citizenship_policy = residency }
+			NOT = { citizens_rights = primary_culture_only }	
+			AND = {
+				EGY_1827 = {
+					owned_by = THIS
+					literacy = 0.3
+					NOT = { average_militancy = 1 }
 				}
 			}
 		}

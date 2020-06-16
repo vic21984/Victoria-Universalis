@@ -4,3 +4,51 @@ add_core = TUR
 add_core = GRE
 trade_goods = fish
 life_rating = 35
+1914.1.1 = {
+	owner = GRE
+	controller = GRE
+	remove_core = TUR
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = furniture_factory
+		upgrade = yes
+	}
+}
+1914.7.28 = {
+add_core = KGR
+}

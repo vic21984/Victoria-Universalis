@@ -286,10 +286,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			OR = {
-				is_greater_power = yes
-				invention = national_fraternity
-			}
+			is_greater_power = yes
 		}
 		
 		effect = {

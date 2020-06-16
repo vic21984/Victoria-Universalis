@@ -5,3 +5,15 @@ add_core = UKR
 add_core = CRI
 trade_goods = fish
 life_rating = 35
+1914.1.1 = {
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

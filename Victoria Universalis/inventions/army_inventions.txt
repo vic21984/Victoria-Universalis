@@ -85,15 +85,6 @@ signal_detachments = {
 		}	
 	}
 	effect = {
-		engineer = {
-			siege = 1			
-		}
-		dragoon = {
-			reconnaissance = 1
-		}
-		hussar = {
-			reconnaissance = 1
-		}
 		infantry = {
 			defence = 1
 		}
@@ -102,12 +93,15 @@ signal_detachments = {
 		}
 		engineer = {
 			defence = 1
+			siege = 1
 		}
 		dragoon = {
 			defence = 1
+			reconnaissance = 1
 		}
 		hussar = {
 			defence = 1
+			reconnaissance = 1
 		}
 		cavalry = {
 			defence = 0.5
@@ -140,6 +134,9 @@ field_fortifications = {
 		}
 		engineer = {
 			defence = 2
+		}
+		cuirassier = {
+			defence = 1
 		}
 		dragoon = {
 			defence = 2
@@ -189,7 +186,7 @@ elastic_defense_system = {
 			defence = 1
 		}
 		cuirassier = {
-			defence = 0.5
+			defence = 1
 		}
 		cavalry = {
 			defence = 0.5
@@ -231,6 +228,9 @@ flexible_counterattacks = {
 		}
 		hussar = {
 			attack = 1
+		}
+		cuirassier = {
+			attack = 2
 		}
 		cavalry = {
 			attack = 0.5
@@ -322,11 +322,11 @@ stormtrooper_training = {
 			attack = 1
 		}
 		cavalry = {
-			attack = 0.5
+			attack = 1
 			defence = 1
 		}
 		irregular = {
-			attack = 0.5
+			attack = 1
 			defence = 1
 		}
 		army_base = {
@@ -420,10 +420,6 @@ human_wave_vs_spearhead = {
 		irregular = {
 			defence = 3.5
 		}
-		morale = 0.5
-		army_base = {
-			default_organisation = 10
-		} 
 	}
 }
 #flintlock_rifles
@@ -693,11 +689,11 @@ gas_attack_capability = {
 	chance = {
 		base = 0
 		modifier = {
-			factor = 10
+			factor = 25
 			invention = cracking
 		}
 		modifier = {
-			factor = 10
+			factor = 25
 			invention = carbon_soil_enrichment
 		}		
 	}
@@ -713,7 +709,7 @@ gas_defense_capability = {
 	chance = {
 		base = 5
 		modifier = {
-			factor = 25
+			factor = 50
 			war = yes
 			war_countries = { invention = gas_attack_capability }
 		}		
@@ -848,10 +844,6 @@ ammunition_area_effect_calculations = {
 	limit = { iron_breech_loaded_artillery = 1 }
 	chance = {
 		base = 5
-		modifier = {
-			factor = 2
-			empirical_combat_efficiency_matrix = 1
-		}
 	}
 	effect = {
 		artillery = {
@@ -889,11 +881,7 @@ counter_battery_fire = {
 	chance = {
 		base = 2
 		modifier = {
-			factor = 1
-			ammunition_area_effect_calculations = 1
-		}
-		modifier = {
-			factor = 2
+			factor = 3
 			scientific_management = 1
 		}
 	}
@@ -909,11 +897,7 @@ creeping_barrage = {
 	chance = {
 		base = 2
 		modifier = {
-			factor = 1
-			ammunition_area_effect_calculations = 1
-		}
-		modifier = {
-			factor = 2
+			factor = 3
 			scientific_management = 1
 		}
 	}
@@ -969,7 +953,7 @@ telegraph_coordination = {
 	}
 	effect = {
 		army_base = {
-			default_organisation = 5
+			default_organisation = 2.5
 			supply_consumption = 0.10
 		} 
 	}
@@ -996,10 +980,6 @@ mob3 = {
 	limit = { military_plans = 1 }
 	chance = {
 		base = 2
-		modifier = {
-			factor = 2
-			invention = mobilization_time_tables
-		}
 		modifier = {
 			factor = 2
 			invention = mob2
@@ -1042,7 +1022,7 @@ empirical_combat_efficiency_matrix = {
 	}
 	effect = {
 		army_base = {
-			default_organisation = 5
+			default_organisation = 2.5
 			supply_consumption = 0.1
 		} 
 	}
@@ -1292,10 +1272,6 @@ armoured_cars = {
 			invention = tractors
 		}
 		modifier = {
-			factor = 10
-			invention = tankette
-		}
-		modifier = {
 			factor = -30
 			not = { invention = tank_exploits }
 		}
@@ -1324,7 +1300,6 @@ late_interwar_bombers = {
 		plane = {
 			attack = 3
 			support = 0.5
-			default_organisation = 15
 			supply_consumption = 1.5
 		}
 	}
@@ -1345,7 +1320,6 @@ late_interwar_fighters = {
 	effect = {
 		plane = {
 			attack = 2
-			default_organisation = 15
 			reconnaissance = 2
 			supply_consumption = 1.5
 		}
@@ -1371,6 +1345,24 @@ army_societal_status = {
 	}
 }
 
+field_training = {
+	limit = { army_command_principle = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			muzzle_loaded_rifles = 1
+		}
+		modifier = {
+			factor = 1
+			strategic_mobility = 1
+		}
+	}
+	effect = {
+		morale = 0.15
+	}
+}
+
 #army_professionalism
 army_academic_training = {
 	limit = { army_professionalism = 1 }
@@ -1387,24 +1379,6 @@ army_academic_training = {
 	}
 	effect = {
 		morale = 0.15
-	}
-}
-
-field_training = {
-	limit = { army_professionalism = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 1
-			muzzle_loaded_rifles = 1
-		}
-		modifier = {
-			factor = 1
-			strategic_mobility = 1
-		}
-	}
-	effect = {
-		mobilisation_economy_impact = -0.05
 	}
 }
 
@@ -1446,7 +1420,7 @@ army_delegated_power = {
 
 	}
 	effect = {
-		morale = 0.3
+		morale = 0.15
 	}
 }
 
@@ -1497,7 +1471,7 @@ saddle_orders = {
 		}
 	}
 	effect = {
-		morale = 0.3
+		morale = 0.15
 	}
 }
 
@@ -1517,7 +1491,7 @@ army_literate_ncos = {
 	}
 	effect = {
 		army_base = {
-			default_organisation = 5
+			default_organisation = 2.5
 		}
 	}
 }
@@ -1556,7 +1530,7 @@ army_nco_tactical_training = {
 		}
 	}
 	effect = {
-		morale = 0.5
+		morale = 0.15
 	}
 }
 
@@ -1587,12 +1561,8 @@ army_wargames = {
 	chance = {
 		base = 2
 		modifier = {
-			factor = 1
+			factor = 2
 			state_n_government = 1
-		}
-		modifier = {
-			factor = 1
-			invention = staff_command_support 
 		}
 	}
 	effect = {

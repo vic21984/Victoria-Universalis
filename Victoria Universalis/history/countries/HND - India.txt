@@ -7,10 +7,6 @@ culture = kanauji
 culture = telegu
 culture = kannada
 culture = rajput
-culture = sindi
-culture = bengali
-culture = panjabi
-culture = kashmiri
 
 religion = hindu
 government = democracy
@@ -64,4 +60,30 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
- 
+
+1914.1.1 = {
+	oob = "/1914/HND_oob.txt"
+	prestige = 25
+	plurality = 25
+	government = absolute_monarchy
+	ruling_party = HND_conservative
+	literacy = 0.05
+	civilized = yes
+
+# Technologies
+		post_napoleonic_thought = 1
+		strategic_mobility = 1
+		flintlock_rifles = 1
+		muzzle_loaded_rifles = 1
+		breech_loaded_rifles = 1
+		machine_guns = 1
+		bolt_action_rifles = 1
+		bronze_muzzle_loaded_artillery = 1
+		iron_muzzle_loaded_artillery = 1
+		iron_breech_loaded_artillery = 1
+		steel_breech_loaded_artillery = 1
+		military_staff_system = 1
+		army_command_principle = 1
+		basic_chemistry = 1
+		medicine = 1
+}

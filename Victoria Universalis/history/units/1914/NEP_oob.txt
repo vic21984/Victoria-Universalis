@@ -1,0 +1,37 @@
+leader = {
+	name = "Chandra Shumsher Jang Bahadur Rana"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "1st Division"
+	location = 1326
+	regiment = {
+		name= "1. Infantry Brigade"
+		type = infantry
+		home = 1326
+	}
+	regiment = {
+		name= "2. Infantry Brigade"
+		type = infantry
+		home = 1326
+	}
+	regiment = {
+		name= "3. Infantry Brigade"
+		type = infantry
+		home = 1326
+	}
+	regiment = {
+		name= "1. Cavalry Battalion"
+		type = hussar
+		home = 1326
+	}
+	regiment = {
+		name= "1. Field Artillery Battalion"
+		type = artillery
+		home = 1327
+	}
+}

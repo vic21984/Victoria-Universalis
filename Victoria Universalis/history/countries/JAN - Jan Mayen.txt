@@ -5,8 +5,7 @@ government = democracy
 plurality = 0
 nationalvalue = nv_liberty
 literacy = 0
-decision = healthcare_slider_setup
-decision = jan_mayen_setup
+decision = jan_mayen_1836_setup
 decision = build_bosphorus_canal
 
 # Political reforms
@@ -58,4 +57,12 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
- 
+
+1914.1.1 = {
+	set_global_flag = 1914_bookmark
+	decision = jan_mayen_1914_setup
+}
+
+1914.7.28 = {
+	set_global_flag = ww1_bookmark
+}

@@ -1,0 +1,57 @@
+leader = {
+	name = "José Monteagudo"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "I Corps"
+	location = 2209
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2209
+	}
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2209
+	}
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2209
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 2209
+	}
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2210
+	}
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2210
+	}
+	regiment = {
+		name= "3rd Battery Republican Artillery"
+		type = artillery
+		home = 2211
+	}
+	regiment = {
+		name= "4th Battery Republican Artillery"
+		type = artillery
+		home = 2211
+	}
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2212
+	}
+}

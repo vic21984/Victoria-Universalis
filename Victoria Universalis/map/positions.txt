@@ -16240,59 +16240,36 @@
 } # Valmiera
 
 355 = {
-    unit = {
-        x = 3214.000000
-        y = 1784.000000
-    }
-
     text_position = {
-        x = 3213.699951
-        y = 1778.000000
+        x = 3200.546667
+        y = 1780.706667
     }
 
-    text_scale = 3.799999
+    text_scale = 3.299999
+    factory = {
+        x = 3192.420000
+        y = 1789.906667
+    }
+
     building_construction = {
-        x = 3199.699951
-        y = 1790.000000
+        x = 3195.870000
+        y = 1791.900000
     }
 
     military_construction = {
-        x = 3225.000000
-        y = 1772.000000
-    }
-
-    factory = {
-        x = 3199.000000
-        y = 1798.000000
+        x = 3198.783333
+        y = 1778.253333
     }
 
     building_position = {
         fort = {
-            x = 3236.000000
-            y = 1784.000000
+            x = 3203.230000
+            y = 1776.030000
         }
 
         naval_base = {
             x = 3184.199951
             y = 1792.000000
-        }
-
-    }
-
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 3197.812500
-            y = 1782.998779
         }
 
     }
@@ -40074,25 +40051,28 @@
 } # Poltava
 
 963 = {
-    unit = {
-        x = 3334.000000
-        y = 1632.000000
-    }
-
     text_position = {
-        x = 3334.000000
-        y = 1622.000000
+        x = 3348.625000
+        y = 1617.975000
     }
 
     text_scale = 3.899998
-    building_construction = {
-        x = 3353.000000
-        y = 1615.000000
+    factory = {
+        x = 3344.400000
+        y = 1611.908333
     }
 
-    factory = {
-        x = 3319.000000
-        y = 1633.000000
+    building_construction = {
+        x = 3350.141667
+        y = 1611.908333
+    }
+
+    building_position = {
+        fort = {
+            x = 3349.600000
+            y = 1629.458333
+        }
+
     }
 
 } # Simferopol
@@ -63374,49 +63354,31 @@
 } # Jirim Chuulgan
 
 1533 = {
-    unit = {
-        x = 4718.000000
-        y = 1537.000000
+    text_position = {
+        x = 4690.816667
+        y = 1532.550000
     }
 
-    text_scale = 4.199998
+    text_scale = 3.9
+    factory = {
+        x = 4687.520000
+        y = 1554.480000
+    }
+
     building_construction = {
-        x = 4716.000000
-        y = 1559.000000
+        x = 4689.383333
+        y = 1559.926667
     }
 
     military_construction = {
-        x = 4721.000000
-        y = 1518.000000
-    }
-
-    factory = {
-        x = 4738.000000
-        y = 1549.000000
+        x = 4687.090000
+        y = 1520.223333
     }
 
     building_position = {
         fort = {
-            x = 4751.000000
-            y = 1523.000000
-        }
-
-    }
-
-    spawn_railway_track = {
-        {
-            x = 4682.000000
-            y = 1562.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 4720.301270
-            y = 1483.796143
+            x = 4694.543333
+            y = 1524.236667
         }
 
     }
@@ -112263,53 +112225,6 @@
     }
 
     text_scale = 7.599995
-    factory = {
-        x = 3397.000000
-        y = 2098.000000
-    }
-
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 3375.000000
-            y = 2048.000000
-        }
-
-    }
 
 } # Lofoten Sea
 
@@ -112325,13 +112240,6 @@
     }
 
     text_scale = 5.999996
-    spawn_railway_track = {
-        {
-            x = 3050.000000
-            y = 2022.099976
-        }
-
-    }
 
 } # Northern Norwegian Sea
 
@@ -112433,38 +112341,6 @@
     }
 
     text_scale = 3.299999
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 2835.000000
-            y = 1626.000000
-        }
-
-    }
 
 } # The Channel
 
@@ -112481,10 +112357,6 @@
 
     text_rotation = 6.283185
     text_scale = 3.599998
-    military_construction = {
-        x = 2770.100098
-        y = 1613.000000
-    }
 
 } # Lands End
 
@@ -112501,23 +112373,6 @@
 
     text_rotation = 0.000001
     text_scale = 4.099998
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 2776.000000
-            y = 1669.000000
-        }
-
-    }
 
 } # Coast of Britanny
 
@@ -112598,9 +112453,6 @@
     }
 
     text_scale = 3.099999
-    building_rotation = {
-        naval_base = 6.108653
-    }
 
 } # The North Sea
 
@@ -112904,13 +112756,6 @@
     }
 
     text_scale = 4.699998
-    spawn_railway_track = {
-        {
-            x = 2943.000000
-            y = 1431.000000
-        }
-
-    }
 
 } # Tyrrhenian Sea
 
@@ -112998,10 +112843,6 @@
 
     text_rotation = 5.410519
     text_scale = 3.799999
-    building_construction = {
-        x = 3035.000000
-        y = 1532.500000
-    }
 
 } # Adriatic Sea
 
@@ -113061,33 +112902,6 @@
     }
 
     text_scale = 4.599998
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 3159.000000
-            y = 1386.000000
-        }
-
-    }
 
 } # Gulf of Sirte
 
@@ -113308,23 +113122,6 @@
 
     text_rotation = 5.323253
     text_scale = 4.699998
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 3416.000000
-            y = 1136.000000
-        }
-
-    }
 
 } # Red Sea
 
@@ -113340,13 +113137,6 @@
     }
 
     text_scale = 4.999998
-    spawn_railway_track = {
-        {
-            x = 3447.000000
-            y = 1075.000000
-        }
-
-    }
 
 } # Straits of Obokk
 
@@ -113759,10 +113549,6 @@
     }
 
     text_scale = 7.899994
-    city = {
-        x = 4606.000000
-        y = 624.000000
-    }
 
 } # Straits of Makassar
 
@@ -113999,38 +113785,6 @@
     }
 
     text_scale = 4.199998
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 4868.000000
-            y = 1339.000000
-        }
-
-    }
 
 } # North Korean Sea
 
@@ -114221,48 +113975,6 @@
     }
 
     text_scale = 6.199996
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 4842.000000
-            y = 1285.000000
-        }
-
-    }
 
 } # Tokai Sea
 
@@ -114292,10 +114004,6 @@
     }
 
     text_scale = 4.599998
-    factory = {
-        x = 4829.000000
-        y = 1226.000000
-    }
 
 } # Luzon Strait
 
@@ -114385,28 +114093,6 @@
     }
 
     text_scale = 6.299996
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 4680.000000
-            y = 744.000000
-        }
-
-    }
 
 } # Sea of Ternate
 
@@ -114937,18 +114623,6 @@
     }
 
     text_scale = 8.499996
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 5436.000000
-            y = 1952.000000
-        }
-
-    }
 
 } # Bay of Anadyr
 
@@ -114964,18 +114638,6 @@
     }
 
     text_scale = 7.099996
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 5432.000000
-            y = 1940.000000
-        }
-
-    }
 
 } # Yekaterina Plains
 
@@ -115041,15 +114703,6 @@
     }
 
     text_scale = 5.599997
-    building_construction = {
-        x = 3672.000000
-        y = 676.000000
-    }
-
-    military_construction = {
-        x = 3639.199951
-        y = 676.000000
-    }
 
 } # Western Arabian Sea
 
@@ -115347,10 +115000,6 @@
     }
 
     text_scale = 6.399996
-    building_construction = {
-        x = 2744.800049
-        y = 2090.199951
-    }
 
 } # Icelandic Sea
 
@@ -115417,23 +115066,6 @@
     }
 
     text_scale = 6.299996
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 2147.000000
-            y = 2063.000000
-        }
-
-    }
 
 } # Eastern Coast of Greenland
 
@@ -115453,13 +115085,6 @@
     }
 
     text_scale = 4.399998
-    spawn_railway_track = {
-        {
-            x = 2059.000000
-            y = 2039.000000
-        }
-
-    }
 
 } # Labrador Strait
 
@@ -115475,18 +115100,6 @@
     }
 
     text_scale = 4.799998
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 1795.000000
-            y = 1880.000000
-        }
-
-    }
 
 } # Baffin Bay
 
@@ -115506,13 +115119,6 @@
     }
 
     text_scale = 3.999998
-    spawn_railway_track = {
-        {
-            x = 1730.900024
-            y = 2115.000000
-        }
-
-    }
 
 } # James Bay
 
@@ -115896,28 +115502,6 @@
     }
 
     text_scale = 5.299997
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 1498.000000
-            y = 1123.000000
-        }
-
-    }
 
 } # Jamaica Channel
 
@@ -115961,13 +115545,6 @@
     }
 
     text_scale = 4.299998
-    spawn_railway_track = {
-        {
-            x = 1495.000000
-            y = 1320.000000
-        }
-
-    }
 
 } # Venezuelan Gulf
 
@@ -116096,13 +115673,6 @@
     }
 
     text_scale = 4.799998
-    spawn_railway_track = {
-        {
-            x = 1892.000000
-            y = 1059.000000
-        }
-
-    }
 
 } # Coast of Amapá
 
@@ -116262,13 +115832,6 @@
     }
 
     text_scale = 3.899998
-    spawn_railway_track = {
-        {
-            x = 1719.000000
-            y = 68.000000
-        }
-
-    }
 
 } # South Chilean Coast
 
@@ -116284,10 +115847,6 @@
     }
 
     text_scale = 4.299998
-    factory = {
-        x = 1627.000000
-        y = 111.800003
-    }
 
 } # Coast of Chile
 
@@ -116361,27 +115920,6 @@
     }
 
     text_scale = 6.799996
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 1563.000000
-            y = 1103.000000
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 0.087266
-    }
 
 } # Bay of Costa Rica
 
@@ -116922,13 +116460,6 @@
     }
 
     text_scale = 3.699999
-    spawn_railway_track = {
-        {
-            x = 1890.000000
-            y = 77.000000
-        }
-
-    }
 
 } # Fernando de Noronha Islands
 
@@ -117590,18 +117121,6 @@
 
     text_rotation = 1.047198
     text_scale = 3.999998
-    spawn_railway_track = {
-        {
-            x = 0.000000
-            y = 0.000000
-        }
-
-        {
-            x = 4412.000000
-            y = 1653.000000
-        }
-
-    }
 
 } # Lake Dongting
 
@@ -117858,15 +117377,6 @@
     }
 
     text_scale = 8.299995
-    building_construction = {
-        x = 5080.000000
-        y = 1028.199951
-    }
-
-    military_construction = {
-        x = 5079.200195
-        y = 1029.000000
-    }
 
 } # Maysdale Flats
 
@@ -118243,10 +117753,6 @@
     }
 
     text_scale = 9.800001
-    factory = {
-        x = 325.000000
-        y = 443.000000
-    }
 
 } # Clipperton Island
 
@@ -118577,13 +118083,6 @@
     }
 
     text_scale = 7.499995
-    spawn_railway_track = {
-        {
-            x = 1113.000000
-            y = 522.000000
-        }
-
-    }
 
 } # Coast of the Ellice Islands
 
@@ -118881,15 +118380,7 @@
     }
 
     text_scale = 3.799999
-    spawn_railway_track = {
-        {
-            x = 5582.000000
-            y = 473.000000
-        }
 
-    }
-
-    railroad_visibility = {1 0 }
 } # Coast of Norfolk Island
 
 3220 = {
@@ -119028,13 +118519,6 @@
     }
 
     text_scale = 4.799998
-    spawn_railway_track = {
-        {
-            x = 4026.000000
-            y = 2054.000000
-        }
-
-    }
 
 } # Lake Van
 
@@ -119312,9 +118796,8 @@
     }
 
     text_scale = 5.299997
-}
+} # Tonghua
 
-# Tonghua
 3249 = {
     text_position = {
         x = 4784.458333
@@ -119355,9 +118838,8 @@
 
     }
 
-}
+} # Jixi
 
-# Jixi
 3250 = {
     text_position = {
         x = 4858.466667
@@ -119388,9 +118870,8 @@
 
     }
 
-}
+} # Daqing
 
-# Daqing
 3251 = {
     text_position = {
         x = 4797.150000
@@ -119421,9 +118902,8 @@
 
     }
 
-}
+} # Hulunbuir
 
-# Hulunbuir
 3252 = {
     text_position = {
         x = 4647.595238
@@ -119454,9 +118934,8 @@
 
     }
 
-}
+} # Chaoyang
 
-# Chaoyang
 3253 = {
     text_position = {
         x = 4673.320000
@@ -119487,9 +118966,8 @@
 
     }
 
-}
+} # Qinhuangdao
 
-# Qinhuangdao
 3254 = {
     text_position = {
         x = 4659.190000
@@ -119521,6 +118999,103 @@
         naval_base = {
             x = 4669.399902
             y = 1429.099976
+        }
+
+    }
+
+} # Sumy
+
+3255 = {
+    text_position = {
+        x = 3323.115000
+        y = 1636.630000
+    }
+
+    text_scale = 4
+    factory = {
+        x = 3312.190000
+        y = 1625.800000
+    }
+
+    building_construction = {
+        x = 3316.465000
+        y = 1623.995000
+    }
+
+    military_construction = {
+        x = 3324.730000
+        y = 1627.225000
+    }
+
+    building_position = {
+        fort = {
+            x = 3316.275000
+            y = 1626.655000
+        }
+
+    }
+
+} # Rezekne
+
+3256 = {
+    text_position = {
+        x = 3226.533333
+        y = 1773.466667
+    }
+
+    text_scale = 3.299999
+    factory = {
+        x = 3228.666667
+        y = 1788.800000
+    }
+
+    building_construction = {
+        x = 3233.733333
+        y = 1785.200000
+    }
+
+    military_construction = {
+        x = 3222.533333
+        y = 1769.266667
+    }
+
+    building_position = {
+        fort = {
+            x = 3223.066667
+            y = 1779.400000
+        }
+
+    }
+
+}
+
+# Tongliao
+3257 = {
+    text_position = {
+        x = 4733.670000
+        y = 1524.610000
+    }
+
+    text_scale = 4
+    factory = {
+        x = 4737.585000
+        y = 1514.890000
+    }
+
+    building_construction = {
+        x = 4741.095000
+        y = 1507.195000
+    }
+
+    military_construction = {
+        x = 4719.630000
+        y = 1516.105000
+    }
+
+    building_position = {
+        fort = {
+            x = 4730.430000
+            y = 1534.870000
         }
 
     }

@@ -769,7 +769,6 @@ province_selector = {
 	type = province_selector
 	goods_cost =
 	{
-		administrative_points = 1000
 	}
 	time = 2
 	visibility = no
@@ -785,12 +784,13 @@ fort = {
 	goods_cost =
 	{
 		lumber = 1000
-		cement = 500
+		cement = 400
+		steel = 400
 		explosives = 400
-		small_arms = 400
-		artillery = 400
+		small_arms = 200
+		artillery = 200
 	}
-	time = 1080 
+	time = 365
 	visibility = yes
 	onmap = yes
 	max_level = 7
@@ -802,9 +802,9 @@ railroad = {
 	type = infrastructure
 	goods_cost =
 	{
-		timber = 100
-		cement = 100
-		steel = 100
+		timber = 500
+		cement = 50
+		steel = 150
 	}
 	time = 720
 	visibility = yes

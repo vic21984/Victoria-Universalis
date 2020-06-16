@@ -5,8 +5,10 @@ add_core = TPG
 add_core = HUI
 trade_goods = grain
 life_rating = 35
-1861.1.1 = {
-	controller = TPG
-	owner = TPG
-	
+1914.1.1 = {
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
 }

@@ -200,7 +200,8 @@ country_event = {
 	trigger = {
 		tag = GER
 		num_of_cities = 1
-		}
+		NOT = { has_global_flag = 1914_bookmark }
+	}
 	
 
 	option = {

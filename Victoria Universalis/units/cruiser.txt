@@ -7,7 +7,6 @@ cruiser = {
 	active = no
 	unit_type = light_ship
 	capital = yes
-	capital = yes
 	move_sound = steam_move
 	select_sound = steam_selected
 	colonial_points = 20
@@ -30,7 +29,7 @@ cruiser = {
 		canned_food = 40
 		steel = 350
 	}
-	min_port_level = 4
+	min_port_level = 3
 	limit_per_port = -1
 	supply_consumption_score = 20
 	

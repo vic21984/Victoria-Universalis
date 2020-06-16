@@ -66,10 +66,8 @@ political_decisions = {
 		potential = {
 			tag = CHI
 			NOT = { has_country_flag = abolished_imperial_exams }
-			civilized = no
 		}
 		allow = {
-			civilized = no
 		}
 		effect = {
 			set_country_flag = abolished_imperial_exams
@@ -94,11 +92,17 @@ political_decisions = {
 		potential = {
 			tag = CHI
 			ai = yes
-			any_neighbor_country = { alliance_with = THIS }
+			OR = {
+				any_neighbor_country = { alliance_with = THIS }
+				any_greater_power = { alliance_with = THIS }
+			}
 			civilized = no
 		}
 		allow = {
-			any_neighbor_country = { alliance_with = THIS }
+			OR = {
+				any_neighbor_country = { alliance_with = THIS }
+				any_greater_power = { alliance_with = THIS }
+			}
 		}
 		effect = {
 			any_country = { leave_alliance = THIS }
@@ -119,7 +123,7 @@ political_decisions = {
 		}
 		allow = {
 			OR = {
-				universal_weighted_voting
+				vote_franschise = universal_weighted_voting
 				vote_franschise = universal_voting
 			}
 			OR = {
@@ -159,6 +163,7 @@ political_decisions = {
 		}
 		allow = {
 			year = 1840
+			NOT = { year = 1900 }
 			war = no
 			num_of_cities = 50
 		}

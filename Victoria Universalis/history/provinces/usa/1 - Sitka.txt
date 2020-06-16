@@ -3,3 +3,14 @@ controller = RUS
 trade_goods = timber
 life_rating = 35
 colonial = 2
+1914.1.1 = {
+	colonial = 0
+	owner = USA
+	controller = USA
+	add_core = USA
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

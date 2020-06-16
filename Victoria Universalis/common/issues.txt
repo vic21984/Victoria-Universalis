@@ -150,34 +150,28 @@ party_issues = {
 	war_policy = {
 		jingoism = {
 			max_military_spending = 1
-			war_exhaustion_effect = 0.5
+			war_exhaustion_effect = 0.25
 			is_jingoism = yes
 			cb_generation_speed_modifier = 0.3
 			mobilization_impact = 4
-			org_regain = 0.2
-			reinforce_speed = 0.2
 		}
 		pro_military = {
 			max_military_spending = 1
-			war_exhaustion_effect = 0.7
+			war_exhaustion_effect = 0.5
 			cb_generation_speed_modifier = 0.2
 			mobilization_impact = 3
-			org_regain = 0.1
-			reinforce_speed = 0.1
 		}
 		anti_military = {
 			max_military_spending = 0.9
-			war_exhaustion_effect = 1.2
+			war_exhaustion_effect = 0.75
 			cb_generation_speed_modifier = -0.2
 			mobilization_impact = 2
 		}
 		pacifism = {
 			max_military_spending = 0.8
-			war_exhaustion_effect = 1.5
+			war_exhaustion_effect = 1
 			cb_generation_speed_modifier = -0.4
 			mobilization_impact = 1
-			org_regain = -0.1
-			reinforce_speed = -0.1
 		}
 	}
 }
@@ -469,11 +463,10 @@ political_reforms = {
 		}
 		
 		debtors_prisons = {
+			goods_demand = -0.01
 		}
 		
 		bankruptcy = {
-			administrative_efficiency_modifier = 0.05
-			tariff_efficiency_modifier = 0.05
 			goods_demand = -0.02
 		}
 	}
@@ -518,30 +511,28 @@ political_reforms = {
 		next_step_only = yes
 		settlement = {
 			global_immigrant_attract = 0.015
-			supply_consumption = 0.05
 			tax_efficiency = -0.02
 			non_accepted_pop_consciousness_modifier = 0.05
 			non_accepted_pop_militancy_modifier = 0.05
 			core_pop_militancy_modifier = -0.03
 			core_pop_consciousness_modifier = -0.03
-			administrative_multiplier = 1
+			administrative_multiplier = 4
 			allow = { colonial_nation = yes }
 		}
 		
 		exploitation = {
 			prestige = 0.1
-			supply_consumption = 0.05
 			non_accepted_pop_militancy_modifier = -0.02
 			suppression_points_modifier = 0.25
-			administrative_multiplier = 1
+			administrative_multiplier = 3
 			allow = { colonial_nation = yes }
 		}
-				
+		
 		civilizing = {
 			prestige = 0.1
 			global_assimilation_rate = 0.1
 			education_efficiency_modifier = 0.1
-			administrative_multiplier = 1
+			administrative_multiplier = 2
 			allow = {
 				colonial_nation = yes 
 			}
@@ -549,8 +540,6 @@ political_reforms = {
 		
 		no_colonies = {
 			allow = { colonial_nation = no }
-			supply_consumption = -0.05
-			navy_tech_research_bonus = -0.05
 			army_tech_research_bonus = 0.05
 		}
 	}
@@ -724,19 +713,19 @@ social_reforms = {
 		no_subsidies = {
 		}
 		trinket_subsidies = {
-			unemployment_benefit = 0.5
+			unemployment_benefit = 2
 			global_immigrant_attract = 0.01
 		}
 		low_subsidies = {
-			unemployment_benefit = 1
+			unemployment_benefit = 3
 			global_immigrant_attract = 0.02
 		}
 		acceptable_subsidies = {
-			unemployment_benefit = 1.5
+			unemployment_benefit = 4
 			global_immigrant_attract = 0.03
 		}
 		good_subsidies = {
-			unemployment_benefit = 2
+			unemployment_benefit = 5
 			global_immigrant_attract = 0.04
 		}
 	}
@@ -803,7 +792,7 @@ social_reforms = {
 			}
 		}
 		universal_health_care = {
-			pension_level	= 9
+			pension_level	= 10
 			global_immigrant_attract = 0.05
 			allow = { 
 				year = 1910
@@ -842,8 +831,8 @@ social_reforms = {
 			suppression_points_modifier = 0.25
 		}
 		
-		colonial_transportation = {
-			administrative_multiplier = 3
+		punitive_labour = {
+			RGO_throughput = 0.01
 		}
 		
 		incarceration = {
@@ -854,6 +843,7 @@ social_reforms = {
 			global_immigrant_attract = 0.02
 			global_assimilation_rate = 0.1
 			suppression_points_modifier = -0.2
+			tax_efficiency = -0.01
 		}
 	}
 		

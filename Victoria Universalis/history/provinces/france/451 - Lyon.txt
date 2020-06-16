@@ -4,20 +4,49 @@ add_core = FRA
 trade_goods = grain
 life_rating = 31
 state_building = {
-	level = 1
+	level = 2
 	building = steel_factory
 	upgrade = yes
 }
-1861.1.1 = {
+1914.1.1 = {
 	state_building = {
-		level = 1
-		building = furniture_factory
+		level = 3
+		building = automobile_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
-		building = luxury_clothes_factory
+		level = 3
+		building = aeroplane_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steel_factory
 		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }

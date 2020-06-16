@@ -452,9 +452,7 @@ political_decisions = {
 		news_desc_medium = "form_scandinavia_NEWS_MEDIUM"
 		news_desc_short = "form_scandinavia_NEWS_SHORT"
 		potential = {
-			OR = {
-				is_culture_group = scandinavian
-			}
+			is_culture_group = scandinavian
 			NOT = {
 				exists = SCA
 			}

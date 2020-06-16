@@ -3,3 +3,15 @@ controller = PER
 add_core = PER
 trade_goods = cotton
 life_rating = 35
+1914.1.1 = {
+	state_building = {
+		level = 2
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

@@ -1,8 +1,5 @@
-capital = 1935
+capital = 1911
 primary_culture = ibo
-culture = tiv
-culture = ibibio
-culture = edo
 religion = animist
 government = absolute_monarchy
 plurality = 0.0
@@ -33,24 +30,29 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = regionalism
+colonial_policy = no_colonies
 
 
 ruling_party = ARO_conservative
 upper_house = {
 	fascist = 0
-	liberal = 16
-	conservative = 63
-	reactionary = 21
+	liberal = 0
+	conservative = 60
+	reactionary = 40
 	anarcho_liberal = 0
 	socialist = 0
 	communist = 0
 }
 
 
+#foreign_weapons = yes_foreign_weapons
 # Technologies
+#flintlock_rifles = 1
+
 
 # Inventions
 
@@ -64,11 +66,10 @@ oob = "ARO_oob.txt"
 }
 1861.1.1 = {
 
+foreign_training = yes_foreign_training
 foreign_weapons = yes_foreign_weapons
 
 # Technologies
 flintlock_rifles = 1
-
-# Inventions
-
 }
+

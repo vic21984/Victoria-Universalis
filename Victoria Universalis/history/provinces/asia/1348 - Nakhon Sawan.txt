@@ -3,3 +3,20 @@ controller = SIA
 add_core = SIA
 trade_goods = opium
 life_rating = 35
+1914.1.1 = {
+	state_building = {
+		level = 2
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+}

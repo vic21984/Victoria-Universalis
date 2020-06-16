@@ -3,6 +3,41 @@ controller = ENG
 add_core = ENG
 trade_goods = iron
 life_rating = 35
-1861.1.1 = { 
-	railroad = 3 
+1914.1.1 = {
+	state_building = {
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
 }
+ 

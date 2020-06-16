@@ -628,6 +628,7 @@ rgo_changed = {
 
 switched_production = {
 	local_RGO_output = -0.50
+	local_RGO_throughput = -0.50
 	icon = 14
 }
 
@@ -637,29 +638,38 @@ rgo_expansion = {
 	icon = 13
 }
 
-political_propaganda = {
+liberal_influence = {
+	global_pop_militancy_modifier = 0.1
 	icon = 14
 }
 
-bad_boy = {
+socialist_influence = {
+	global_pop_militancy_modifier = 0.1
+	icon = 14
+}
+
+communist_influence = {
+	global_pop_militancy_modifier = 0.1
+	icon = 14
+}
+
+fascist_influence = {
+	global_pop_militancy_modifier = 0.1
+	icon = 14
+}
+
+reform_passed = {
+	global_pop_militancy_modifier = 0.03
+	tax_efficiency = -0.03
 	icon = 6
 }
 
-recruitment_drive = {
-	icon = 15
+baby_booming = {
+	icon = 17
 }
 
-attract_immigrants = {
-	global_immigrant_attract = 0.5
-	icon = 7
-}
-
-restrict_emigration = {
-	icon = 7
-}
-
-draft_law_changed = {
-	icon = 15
+blood_and_iron = {
+	icon = 11
 }
 
 assimilation = {
@@ -689,6 +699,7 @@ suppression = {
 country_suppression = {
 	global_pop_militancy_modifier = -0.05
 	global_pop_consciousness_modifier = -0.05
+	tax_efficiency = -0.05
 	icon = 18
 }
 
@@ -702,6 +713,10 @@ financial_center = {
 	icon = 9
 }
 
+force_reform  = {
+	icon = 5
+}
+
 ########## BACKGROUND STUFF ##########
 
 ghost_country = {
@@ -711,13 +726,6 @@ ghost_country = {
 jan_mayen_isolationism = {
 }
 
-unemployment_fix = {
-	local_RGO_throughput = -0.5
-	icon = 14
-}
-
-rgo_unemployment_timer = {
-}
 
 world_bank_timer = {
 }
@@ -919,10 +927,10 @@ ruhr_boom = {
 }
 
 prussian_general_staff = {
-	org_regain = 0.15
+	org_regain = 0.2
 	land_organisation = 0.15
 	land_unit_start_experience = 5
-	reinforce_speed = 0.25
+	reinforce_speed = 0.2
 	leadership = 2
 	icon = 15
 }
@@ -936,9 +944,9 @@ die_wacht_am_rhein = {
 corn_laws = {
 	max_tariff = 0.05
 	core_pop_militancy_modifier = 0.05
-	core_pop_consciousness_modifier_modifier = 0.05
 	goods_demand = 0.1
-	factory_input = 0.02
+	factory_input = 0.03
+	factory_output = -0.03
 	icon = 10
 }
 
@@ -964,7 +972,7 @@ la_guardia_civil = {
 
 #### FRA - France ####
 the_french_foreign_legion = {
-	prestige = 0.01
+	prestige = 0.05
 	global_immigrant_attract = 0.01	#1%..
 	icon = 17
 }
@@ -983,7 +991,7 @@ haussmanns_renovations = {
 #### SWI - Switzerland ####
 signed_the_geneva_convention = {
 	war_exhaustion = -0.02
-	badboy = 0.01
+	supply_consumption = 0.1
 	icon = 7
 }
 
@@ -1045,11 +1053,11 @@ common_army_3 = {
 
 ### TUR - OTTOMAN EMPIRE ###
 christian_subjugation = {
-	tax_efficiency = 0.05
+	tax_efficiency = 0.02
 	mobilisation_size = 0.02
 	education_efficiency_modifier = -0.3
 	global_pop_militancy_modifier = 0.02
-	assimilation_rate = -2
+	global_assimilation_rate = -2
 	icon = 16
 }
 
@@ -1058,10 +1066,6 @@ oriental_truce = {
 }
 
 ### CHI - CHINA ###
-chinese_confusion = {
-	land_organisation = -2
-	icon = 16
-}
 
 imperial_examinations = {
 	administrative_efficiency_modifier = 1
@@ -1086,4 +1090,82 @@ early_qing_reforms = {
 late_qing_reforms = {
 	research_points = 2
 	icon = 3
+}
+
+### SENUSIYAN JIHAD ###
+senussi_jihad = {
+	mobilisation_size = 1
+	icon = 15
+}
+
+jihad = {
+	mobilisation_size = 0.25
+	icon = 15
+}
+
+
+########## NATIONAL IDEAS ##########
+
+army_morale_idea  = {
+	org_regain = 0.5
+	icon = 15
+}
+
+army_organisation_idea  = {
+	land_organisation = 0.2
+	icon = 15
+}
+
+army_experience_idea  = {
+	land_unit_start_experience = 15
+	icon = 15
+}
+
+leadership_idea  = {
+	leadership = 1
+	icon = 15
+}
+
+prestige_idea  = {
+	prestige = 1
+	icon = 13
+}
+
+navy_organisation_idea  = {
+	naval_organisation = 0.2
+	icon = 15
+}
+
+navy_build_speed_idea = {
+	local_ship_build = -0.5
+	local_repair = 0.5
+	icon = 17
+}
+
+expansion_idea  = {
+	badboy = -0.02
+	icon = 5
+}
+
+assimilation_idea  = {
+	global_assimilation_rate = 0.5
+	icon = 17
+}
+
+farming_idea  = {
+	farm_RGO_eff = 0.2
+	icon = 11
+}
+
+mining_idea  = {
+	mine_RGO_eff = 0.2
+	icon = 11
+}
+
+colonial_idea  = {
+	icon = 17
+}
+
+domestic_idea  = {
+	icon = 17
 }

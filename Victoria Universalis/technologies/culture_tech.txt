@@ -514,7 +514,7 @@ modern_sociology = {
 	year = 1920
 	cost = 21600
 	
-	education_efficiency = 0.2
+	max_national_focus = 1
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -561,29 +561,7 @@ ideological_thought = {
 	max_national_focus = 1 
 		
 	ai_chance = {
-		factor = 1.1
-		modifier = {
-			factor = 6
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.5
-			total_pops = 1000000
-		}
-		modifier = {
-			factor = 51
-			rank = 16
-			year = 1840
-		}
-		modifier = {
-			factor = 51
-			year = 1850
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = culture_tech_school
-		}
-		
+		factor = 100
 	}
 }
 state_n_government = {
@@ -736,7 +714,7 @@ introspectionism = {
 	cost = 3600
 
 
-	regular_experience_level = 10
+	regular_experience_level = 5
 	reinforce_rate = 0.05
 	
 	ai_chance = {
@@ -765,7 +743,7 @@ associationism = {
 	year = 1836
 	cost = 7200
 
-	regular_experience_level = 10
+	regular_experience_level = 5
 	reinforce_rate = 0.05
 	
 	ai_chance = {
@@ -793,7 +771,7 @@ phenomenalism = {
 	year = 1836
 	cost = 10800
 
-	regular_experience_level = 10
+	regular_experience_level = 5
 	reinforce_rate = 0.05
 	
 	ai_chance = {
@@ -821,7 +799,7 @@ experimental_psychology = {
 	year = 1850
 	cost = 14400
 
-	regular_experience_level = 10
+	regular_experience_level = 5
 	reinforce_rate = 0.05
 	
 	ai_chance = {
@@ -849,7 +827,7 @@ psychoanalysis = {
 	year = 1870
 	cost = 18000
 
-	regular_experience_level = 10
+	regular_experience_level = 5
 	reinforce_rate = 0.05
 	
 	ai_chance = {
@@ -878,7 +856,7 @@ behaviorism = {
 	year = 1900
 	cost = 21600
 
-	regular_experience_level = 10
+	regular_experience_level = 5
 	reinforce_rate = 0.05
 	
 	ai_chance = {
@@ -906,7 +884,7 @@ humanistic_psychology = {
 	year = 1920
 	cost = 21600
 
-	regular_experience_level = 10
+	regular_experience_level = 5
 	reinforce_rate = 0.05
 	
 	ai_chance = {

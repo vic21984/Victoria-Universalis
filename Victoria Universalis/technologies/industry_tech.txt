@@ -312,7 +312,7 @@ industrial_revolution = {
 
 	mine_rgo_eff = 0.2
 	farm_rgo_eff = 0.2
-	factory_throughput = 0.05
+	factory_throughput = 0.1
 	ai_chance = {
 		factor = 1.5
 		modifier = {
@@ -347,7 +347,7 @@ mechanical_production = {
 	year = 1836
 	cost = 7200
 
-	factory_throughput = 0.05 
+	factory_throughput = 0.1
 	
 	ai_chance = {
 		factor = 1.05
@@ -397,7 +397,7 @@ interchangeable_parts = {
 	year = 1836
 	cost = 10800
 
-	factory_throughput = 0.05
+	factory_throughput = 0.1
 	
 	ai_chance = {
 		factor = 1.05
@@ -431,7 +431,7 @@ semi_automatization = {
 	area = mechanization
 	year = 1850
 	cost = 14400
-	factory_throughput = 0.05
+	factory_throughput = 0.1
 	factory_cost = -0.1 
 	ai_chance = {
 		factor = 1.05
@@ -562,10 +562,10 @@ mechanized_mining = {
 	activate_building = steel_factory 
 
 	rgo_goods_output = {
-		iron = 0.25
+		iron = 0.5
 	}
 	rgo_goods_output = {
-		coal = 0.25
+		coal = 0.5
 	}
 	
 	ai_chance = {
@@ -1112,6 +1112,8 @@ basic_chemistry = {
 	year = 1836
 	cost = 3600
 
+	supply_limit = 0.25
+	
 	activate_building = fertilizer_factory 
 	ai_chance = {
 		factor = 1.1
@@ -1133,19 +1135,7 @@ medicine = {
 	supply_limit = 0.25
 	
 	ai_chance = {
-		factor = 1.5
-		modifier = {
-			factor = 1.5
-			civilized = yes
-		}
-		modifier = {
-			factor = 1.02
-			tech_school = industrial_tech_school
-		}
-		modifier = {
-			factor = 1.5
-			is_greater_power = yes
-		}
+		factor = 100
 	}
 }
 inorganic_chemistry = {
@@ -1156,31 +1146,7 @@ inorganic_chemistry = {
 	supply_limit = 0.25
 	
 	ai_chance = {
-		factor = 1.1
-		modifier = {
-			factor = 1.02
-			tech_school = industrial_tech_school
-		}
-		modifier = {
-			factor = 2
-			is_greater_power = yes
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 100
-		}
-		modifier = {
-			factor = 1.1
-			year = 1860
-		}
-		modifier = {
-			factor = 2
-			year = 1870
-		}
-		modifier = {
-			factor = 1.2
-			industrial_score = 150
-		}
+		factor = 100
 	}
 }
 organic_chemistry = {
@@ -1223,7 +1189,7 @@ electricity = {
 	year = 1880
 	cost = 18000
 	
-	supply_limit = 0.50
+	supply_limit = 0.25
 	ai_chance = {
 		factor = 2
 		modifier = {

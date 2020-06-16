@@ -6,67 +6,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
-	}
-	
+
 	option = {
 		name = "EVTOPTC91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = liberal_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
+		set_country_flag = liberal_influence
 	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
+	option = {
 		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
-		administrative_points = 500
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
 }
 
@@ -78,81 +30,33 @@ country_event = {
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
-	}
-	
+
 	option = {
 		name = "EVTOPTD91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = socialist_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = socialist
-			}
-		}
+		set_country_flag = socialist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
-		option = {
+	option = {
 		name = "EVTOPTC91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = liberal_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
 	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
+	option = {
 		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
-		administrative_points = 500
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
 }
 
@@ -164,96 +68,51 @@ country_event = {
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
-	}
-	
+
 	option = {
 		name = "EVTOPTE91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = communist_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = communist
-			}
-		}
+		set_country_flag = communist_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
-	
 	option = {
 		name = "EVTOPTD91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = socialist_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = socialist
-			}
-		}
+		set_country_flag = socialist_influence
+		remove_country_modifier = communist_influence
+		clr_country_flag = communist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
-		option = {
+	option = {
 		name = "EVTOPTC91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = liberal_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = communist_influence
+		clr_country_flag = communist_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
 	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
+	option = {
 		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
-		administrative_points = 500
+		remove_country_modifier = communist_influence
+		clr_country_flag = communist_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
 }
 
@@ -265,484 +124,139 @@ country_event = {
 	is_triggered_only = yes
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
-	}
-	
+
 	option = {
 		name = "EVTOPTF91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = fascist_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = fascist
-			}
-		}
+		set_country_flag = fascist_influence
+		remove_country_modifier = communist_influence
+		clr_country_flag = communist_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
-	
 	option = {
 		name = "EVTOPTE91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = communist_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = communist
-			}
-		}
+		set_country_flag = communist_influence
+		remove_country_modifier = fascist_influence
+		clr_country_flag = fascist_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
-	
 	option = {
 		name = "EVTOPTD91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = socialist_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = socialist
-			}
-		}
+		set_country_flag = socialist_influence
+		remove_country_modifier = fascist_influence
+		clr_country_flag = fascist_influence
+		remove_country_modifier = communist_influence
+		clr_country_flag = communist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
-		option = {
+	option = {
 		name = "EVTOPTC91700"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
+			name = liberal_influence
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = fascist_influence
+		clr_country_flag = fascist_influence
+		remove_country_modifier = communist_influence
+		clr_country_flag = communist_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
 	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 365
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
+	option = {
 		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
-		administrative_points = 500
+		remove_country_modifier = fascist_influence
+		clr_country_flag = fascist_influence
+		remove_country_modifier = communist_influence
+		clr_country_flag = communist_influence
+		remove_country_modifier = socialist_influence
+		clr_country_flag = socialist_influence
+		remove_country_modifier = liberal_influence
+		clr_country_flag = liberal_influence
 	}
 }
 
 country_event = {
 	id = 91704
-	title = "EVTNAME91700"
-	desc = "EVTDESC91700"
+	title = "EVTNAME91704"
+	desc = "EVTDESC91704"
 
-	is_triggered_only = yes
-	
-	fire_only_once = yes
+	trigger = {
+		has_country_flag = reform_passed
+		NOT = { has_country_modifier = reform_passed }
+	}
 	
 	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
+		clr_country_flag = reform_passed
 	}
 	
 	option = {
-		name = "EVTOPTC91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
+		name = "EVTOPTA91704"
 	}
 }
 
 country_event = {
 	id = 91705
-	title = "EVTNAME91700"
-	desc = "EVTDESC91700"
+	title = "EVTNAME91705"
+	desc = "EVTDESC91705"
 
 	is_triggered_only = yes
 	
 	fire_only_once = yes
 	
-	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
-	}
 	
 	option = {
-		name = "EVTOPTD91700"
+		name = "EVTOPTA91705"
 		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
+			name = country_suppression
+			duration = -1
 		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = socialist
-			}
-		}
+		set_country_flag = martial_law
 	}
-		option = {
-		name = "EVTOPTC91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
+	option = {
+		name = "EVTOPTB91705"
+		remove_country_modifier = country_suppression
+		clr_country_flag = martial_law
 	}
 }
 
 country_event = {
 	id = 91706
-	title = "EVTNAME91700"
-	desc = "EVTDESC91700"
+	title = "EVTNAME91706"
+	desc = "EVTDESC91706"
 
-	is_triggered_only = yes
-	
-	fire_only_once = yes
+	trigger = {
+		has_country_flag = force_reform
+		NOT = { has_country_modifier = force_reform }
+	}
 	
 	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
+		clr_country_flag = force_reform
 	}
 	
 	option = {
-		name = "EVTOPTE91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = communist
-			}
-		}
-	}
-	
-	option = {
-		name = "EVTOPTD91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = socialist
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTC91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
+		name = "EVTOPTA91706"
 	}
 }
 
-country_event = {
-	id = 91707
-	title = "EVTNAME91700"
-	desc = "EVTDESC91700"
-
-	is_triggered_only = yes
-	
-	fire_only_once = yes
-	
-	immediate = {
-		set_country_flag = political_propaganda
-		random_owned = {
-			limit = {
-				has_building = province_selector
-			}
-			state_scope = {
-				any_owned = {
-					province_selector = -1
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = "EVTOPTF91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = fascist
-			}
-		}
-	}
-	
-	option = {
-		name = "EVTOPTE91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = communist
-			}
-		}
-	}
-	
-	option = {
-		name = "EVTOPTD91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = socialist
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTC91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = liberal
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTB91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = conservative
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTA91700"
-		add_country_modifier = {
-			name = political_propaganda
-			duration = 3650
-		}
-		clr_country_flag = political_propaganda
-				any_pop = {
-			ideology = {
-				factor = 0.25
-				value = reactionary
-			}
-		}
-	}
-		option = {
-		name = "EVTOPTZ91700"
-		clr_country_flag = political_propaganda
-	}
-}
 
 ########## RECRUITMENT DRIVE AND MIGRATION ##########
 
@@ -791,7 +305,7 @@ country_event = {
 ########## RGO CHANGE EVENTS ##########
 
 
-country_event = {
+province_event = {
 	id = 91737 #Agriculture Decision Change
 	picture = farming
 	title = "EVTNAME91737"
@@ -804,1151 +318,107 @@ country_event = {
 
 	option = {
 		name = "EVT91737OPTA" #WOOL
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = dye
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = wool
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = wool
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = dye
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = wool
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = dye
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = wool
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000
-				has_building = province_selector
-				OR = {
-				    trade_goods = dye
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = wool
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}		
 	}
-	
 	option = {
 		name = "EVT91737OPTC" #COTTON
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }			
-			province_selector = -1
-			trade_goods = cotton
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }	
+		province_selector = -1
+		trade_goods = cotton
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }		
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = cotton
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }		
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = cotton
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = cotton
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
 	}
-	
 	option = {
 		name = "EVT91737OPTD" #CATTLE
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = cattle
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = cattle
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }		
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = cattle
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }		
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = cattle
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = grain
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = cattle
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
 	}
-	
 	option = {
 		name = "EVT91737OPTE" #GRAIN
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = fish
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = grain
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = grain
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }		
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = fish
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = grain
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }		
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = fish
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = grain
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = dye
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = fish
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = grain
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-	}
-	
-	option = {
-		name = "EVT91737OPTG" #COFFEE BEANS
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = coffee_beans
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }					
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = coffee_beans
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }				
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = coffee_beans
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = coffee_beans
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}		
 	}
 	option = {
 		name = "EVT91737OPTF" #TEA LEAVES
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = coffee_beans
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = tea_leaves
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = tea_leaves
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }					
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = coffee_beans
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = tea_leaves
-			add_province_modifier = {
+	}
+	option = {
+		name = "EVT91737OPTG" #COFFEE BEANS
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = coffee_beans
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }				
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = coffee_beans
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = tea_leaves
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = grain
-					trade_goods = coffee_beans
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = tea_leaves
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}		
 	}
 	option = {
 		name = "EVT91737OPTH" #OPIUM
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = opium
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = opium
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }					
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = opium
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }				
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = opium
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = opium
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}	
 	}
 	option = {
 		name = "EVT91737OPTI" #DYE
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = dye
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = dye
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }					
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = dye
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }				
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = dye
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = silk
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = dye
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}	
 	}
 	option = {
 		name = "EVT91737OPTJ" #SILK
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = silk
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = silk
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }					
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = silk
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }				
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = silk
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = tobacco
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 200 }
-			province_selector = -1
-			trade_goods = silk
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
 	}
 	option = {
 		name = "EVT91737OPTK" #TOBACCO
-		clr_country_flag = deciding
-		random_owned = {
-			limit = {
-				NOT = { total_pops = 35000 }
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 800 }
-			province_selector = -1
-			trade_goods = tobacco
-			add_province_modifier = {
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = tobacco
+		add_province_modifier = {
 			name = switched_production
-			duration = 4562
-			}
+			duration = 5475
 		}
-		random_owned = {
-			limit = {
-				total_pops = 35000
-				NOT = { total_pops = 100000 }					
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 600 }
-			province_selector = -1
-			trade_goods = tobacco
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		random_owned = {
-			limit = {
-				total_pops = 100000
-				NOT = { total_pops = 300000 }				
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			owner = { administrative_points = 400 }
-			province_selector = -1
-			trade_goods = tobacco
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-		owner = { administrative_points = 200 }
-		random_owned = {
-			limit = {
-				total_pops = 300000			
-				has_building = province_selector
-				OR = {
-				    trade_goods = wool
-					trade_goods = timber
-					trade_goods = cotton
-					trade_goods = cattle
-					trade_goods = fish
-					trade_goods = fruit
-					trade_goods = grain
-					trade_goods = opium
-					trade_goods = dye
-					trade_goods = silk
-					trade_goods = coffee_beans
-					trade_goods = tea_leaves
-				}
-			}
-			province_selector = -1
-			trade_goods = tobacco
-			add_province_modifier = {
-			name = switched_production
-			duration = 4562
-			}
-		}
-	}		
+	}
 	
 	option = {
 		name = "EVT91737OPTL"
-		clr_country_flag = deciding
+		owner = { clr_country_flag = deciding }
 	}
 }

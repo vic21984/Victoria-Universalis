@@ -1,17 +1,51 @@
 owner = USA
-controller = USA
-add_core = USA
+controller = USAadd_core = USA
 add_core = MAN
 trade_goods = fish
-life_rating = 50railroad = 1fort = 1party_loyalty = {	ideology = liberal	loyalty_value = 25}
+life_rating = 50railroad = 1fort = 1party_loyalty = {	ideology = liberal	loyalty_value = 25}
 state_building = {
-	level = 1
+	level = 5
 	building = steel_factory
 	upgrade = yes
 }
-state_building = {
-	level = 1
-	building = artillery_factory
-	upgrade = yes
-}1861.1.1 = {	party_loyalty = {	ideology = liberal	loyalty_value = 35	}	state_building = {		level = 1		building = ammunition_factory		upgrade = yes	}	state_building = {		level = 1		building = steamer_shipyard		upgrade = yes	}}
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	party_loyalty = {
+		ideology = liberal
+		loyalty_value = 35
+	}
+	state_building = {
+		level = 15
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 20
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = machine_parts_factory
+		upgrade = yes
+	}
+}

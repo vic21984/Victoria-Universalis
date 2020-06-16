@@ -4,4 +4,8 @@ add_core = FRA
 add_core = GER
 trade_goods = sulphur
 life_rating = 30
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	fort = 5
+	owner = GER
+	controller = GER
+}

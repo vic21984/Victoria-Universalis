@@ -4,11 +4,35 @@ add_core = FRA
 trade_goods = fish
 life_rating = 32
 naval_base = 2
-1861.1.1 = {
+1914.1.1 = {
 	state_building = {
-		level = 1
-		building = fabric_factory
+		level = 4
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cigarette_factory
 		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }

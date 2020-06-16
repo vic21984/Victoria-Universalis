@@ -349,9 +349,11 @@ fiat_based_monetary_system = {
 	area = monetary_system
 	year = 1910
 	cost = 21600
-	tax_eff = 1
 
 	administrative_efficiency = 0.05
+	rgo_goods_output = {
+		precious_metal = 2
+	}
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -377,7 +379,7 @@ early_classical_theory_and_critique = {
 	cost = 3600
 	
 	ai_chance = {
-		factor = 0
+		factor = 0.5
 	}
 }
 late_classical_theory = {
@@ -386,7 +388,7 @@ late_classical_theory = {
 	cost = 7200
 
 	ai_chance = {
-		factor = 0
+		factor = 0.5
 	}
 }
 collectivist_theory = {
@@ -395,16 +397,16 @@ collectivist_theory = {
 	cost = 10800
 
 	ai_chance = {
-		factor = 0
+		factor = 0.5
 	}
 }
 the_historical_theory = {
 	area = economic_thought_and_critique
-	year = 1860
+	year = 1865
 	cost = 14400
 
 	ai_chance = {
-		factor = 0
+		factor = 0.5
 	}
 }
 neoclassical_theory = {
@@ -413,25 +415,25 @@ neoclassical_theory = {
 	cost = 18000
 
 	ai_chance = {
-		factor = 0
+		factor = 0.5
 	}
 }
 keynesian_economics = {
 	area = economic_thought_and_critique
-	year = 1900
+	year = 1895
 	cost = 21600
 
 	ai_chance = {
-		factor = 0
+		factor = 0.5
 	}
 }
 neoliberal_theory = {
 	area = economic_thought_and_critique
-	year = 1920
+	year = 1910
 	cost = 21600
 
 	ai_chance = {
-		factor = 0
+		factor = 0.5
 	}
 }
 
@@ -562,8 +564,8 @@ economic_responsibility = {
 	cost = 18000
 
 	influence = 0.2
-	farm_rgo_size = 0.2
-	mine_rgo_size = 0.2
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -591,8 +593,8 @@ government_interventionism = {
 	cost = 21600
 
 	influence = 0.2
-	farm_rgo_size = 0.3
-	mine_rgo_size = 0.3
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -619,8 +621,8 @@ keynesianism = {
 	cost = 21600
 
 	influence = 0.2
-	farm_rgo_size = 0.4
-	mine_rgo_size = 0.4
+	farm_rgo_size = 0.5
+	mine_rgo_size = 0.5
 	ai_chance = {
 		factor = 1.01
 		modifier = {

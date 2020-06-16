@@ -3,13 +3,30 @@ controller = USA
 add_core = USA
 trade_goods = tobacco
 life_rating = 35
-1861.1.1 = {
-	controller = CSA
-	owner = CSA
-	add_core = CSA
+1914.1.1 = {
+	state_building = {
+		level = 8
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fabric_factory
+		upgrade = yes
+	}
 	state_building = {
 		level = 1
+		building = dye_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
 		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
 		upgrade = yes
 	}
 }

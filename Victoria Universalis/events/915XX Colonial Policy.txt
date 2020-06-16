@@ -284,8 +284,6 @@ country_event = {
 						terrain = woods
 						terrain = steppe
 						terrain = plains
-						terrain = desert
-						terrain = coastal_desert
 						
 					}
 				}
@@ -306,8 +304,6 @@ country_event = {
 						terrain = woods
 						terrain = steppe
 						terrain = plains
-						terrain = desert
-						terrain = coastal_desert
 						
 					}
 				}
@@ -339,8 +335,6 @@ country_event = {
 						terrain = woods
 						terrain = steppe
 						terrain = plains
-						terrain = desert
-						terrain = coastal_desert
 						
 					}
 				}
@@ -366,6 +360,8 @@ country_event = {
 						terrain = mountain
 						terrain = jungle
 						terrain = marsh
+						terrain = desert
+						terrain = coastal_desert
 					}
 				}
 				add_province_modifier = { name = colonial_railroad_nerf1 duration = -1 }
@@ -385,8 +381,6 @@ country_event = {
 						terrain = woods
 						terrain = steppe
 						terrain = plains
-						terrain = desert
-						terrain = coastal_desert
 						
 					}
 				}
@@ -414,6 +408,8 @@ country_event = {
 						terrain = mountain
 						terrain = jungle
 						terrain = marsh
+						terrain = desert
+						terrain = coastal_desert
 					}
 				}
 				remove_province_modifier = colonial_railroad_nerf1
@@ -434,8 +430,6 @@ country_event = {
 						terrain = woods
 						terrain = steppe
 						terrain = plains
-						terrain = desert
-						terrain = coastal_desert
 						
 					}
 				}
@@ -465,6 +459,8 @@ country_event = {
 						terrain = mountain
 						terrain = jungle
 						terrain = marsh
+						terrain = desert
+						terrain = coastal_desert
 					}
 				}
 				remove_province_modifier = colonial_railroad_nerf1
@@ -486,8 +482,6 @@ country_event = {
 						terrain = woods
 						terrain = steppe
 						terrain = plains
-						terrain = desert
-						terrain = coastal_desert
 						
 					}
 				}
@@ -519,6 +513,8 @@ country_event = {
 						terrain = mountain
 						terrain = jungle
 						terrain = marsh
+						terrain = desert
+						terrain = coastal_desert
 					}
 				}
 				remove_province_modifier = colonial_railroad_nerf1
@@ -540,8 +536,6 @@ country_event = {
 						terrain = woods
 						terrain = steppe
 						terrain = plains
-						terrain = desert
-						terrain = coastal_desert
 						
 					}
 				}
@@ -575,6 +569,8 @@ country_event = {
 						terrain = mountain
 						terrain = jungle
 						terrain = marsh
+						terrain = desert
+						terrain = coastal_desert
 					}
 				}
 				remove_province_modifier = colonial_railroad_nerf1

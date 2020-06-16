@@ -6,35 +6,46 @@ add_core = POL
 trade_goods = grain
 life_rating = 40
 state_building = {
-	level = 1
+	level = 3
 	building = explosives_factory
 	upgrade = yes
 }
 state_building = {
-	level = 1
+	level = 3
 	building = artillery_factory
 	upgrade = yes
 }
-1861.1.1 = {
+1914.1.1 = {
+	owner = GER
+	controller = GER
 	state_building = {
-		level = 1
-		building = steel_factory
+		level = 10
+		building = ammunition_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
+		level = 10
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
 		building = fabric_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 1
-		building = explosives_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 2
-		building = artillery_factory
+		level = 10
+		building = regular_clothes_factory
 		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }

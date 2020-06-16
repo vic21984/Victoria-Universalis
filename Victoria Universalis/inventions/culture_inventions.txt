@@ -363,16 +363,12 @@ socialist_realism = {
 	chance = {
 		base = 2
 		modifier = {
-			factor = 2
+			factor = 3
 			government = proletarian_dictatorship
 		}
 		modifier = {
-			factor = 2
+			factor = 3
 			ruling_party_ideology = socialist
-		}
-		modifier = {
-			factor = 2
-			invention = dogma_of_mass_action
 		}
 	}
 	effect = {
@@ -627,13 +623,9 @@ nihilism_and_the_will = {
 	limit = { anti__rationalism = 1 }
 	news = no
 	chance = {
-		base = 2
+		base = 3
 		modifier = {
-			factor = 2
-			invention = national_fraternity
-		}
-		modifier = {
-			factor = 2
+			factor = 3
 			invention = social_anthropology
 		}
 	}
@@ -678,14 +670,10 @@ social_darwinism = {
 	limit = { biologism = 1 }
 	news = no
 	chance = {
-		base = 2
+		base = 3
 		modifier = {
-			factor = 2
+			factor = 3
 			invention = darwinism
-		}
-		modifier = {
-			factor = 2
-			invention = national_fraternity
 		}
 	}
 	effect = {
@@ -737,11 +725,7 @@ political_science = {
 			revolution_n_counterrevolution = 1
 		}
 		modifier = {
-			factor = 1
-			military_directionism = 1
-		}
-		modifier = {
-			factor = 1
+			factor = 2
 			naval_directionism = 1
 		}
 	}
@@ -788,22 +772,9 @@ the_revolt_of_the_masses = {
 		core_pop_consciousness_modifier = 0.05
 	}
 }
-pop_promotion_bonus1 = {
-	limit = { social_alienation = 1 }
-	news = no
-	chance = {
-		base = 100
-	}
-}
 
 #modern_sociology
-pop_promotion_bonus2 = {
-	limit = { modern_sociology = 1 }
-	news = no
-	chance = {
-		base = 100
-	}
-}
+
 
 #the rights of man - called enlightenment_thought in files...
 paternalism = {

@@ -189,13 +189,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 800
-	}
-#		modifier = {
-#			factor = 0.9
-#			NOT = {
-#				luxury_needs = 0.9
-#			}
-#		}
 		modifier = {
 			factor = 5
 			organic_chemistry = 1
@@ -293,7 +286,7 @@ province_event = {
 	mean_time_to_happen = {
 		months = 50000
 		modifier = {
-			factor = 3
+			factor = 5
 			owner = {
 				medicine = 1
 			}
@@ -315,7 +308,7 @@ province_event = {
 			any_neighbor_province = {
 					OR = {
 						has_province_modifier = cholera_epidemic_small
-						cholera_epidemic_big
+						has_province_modifier = cholera_epidemic_big
 					}
 			}
 		}		
@@ -325,7 +318,7 @@ province_event = {
 		name = "EVTOPTA10230"
 			add_province_modifier = {
 				name = cholera_epidemic_small
-				duration = 180
+				duration = 90
 			}
 			any_pop = {
 				consciousness = 2
@@ -336,7 +329,7 @@ province_event = {
 		name = "EVTOPTB10230"
 			add_province_modifier = {
 				name = cholera_epidemic_big
-				duration = 365
+				duration = 180
 			}
 			any_pop = {
 				consciousness = -2

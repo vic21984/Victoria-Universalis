@@ -1,7 +1,7 @@
 defines = {
 
 start_date = '1836.1.1',
-end_date = '1935.12.31',
+end_date = '1936.12.31',
 
 country = {
 	YEARS_OF_NATIONALISM 	= 20,   -- Years of Nationalism
@@ -42,7 +42,7 @@ country = {
 	MOVEMENT_RADICALISM_NATIONALISM_FACTOR = 1.0,
 	SUPPRESSION_POINTS_GAIN_BASE = 170, -- monthly gain with max bureaucrats
 	SUPPRESS_BUREAUCRAT_FACTOR = 0.5,
-	WRONG_REFORM_MILITANCY_IMPACT = 1,
+	WRONG_REFORM_MILITANCY_IMPACT = 2,
 	SUPPRESSION_RADICALISATION_HIT = 5, -- % base added to a movements radicalness
 	INVESTMENT_SCORE_FACTOR = 0.001, -- how much foreign investment money counts towards your industry score
 	UNCIV_TECH_SPREAD_MAX = 0.5,
@@ -94,7 +94,7 @@ country = {
 },
 
 economy = {
-	MAX_DAILY_RESEARCH		    = 100,
+	MAX_DAILY_RESEARCH		    = 200,
 	LOAN_BASE_INTEREST			= 0.02,
 	BANKRUPTCY_EXTERNAL_LOAN_YEARS	= 10,
 	BANKRUPTCY_FACTOR = 0.2,
@@ -144,12 +144,12 @@ military = {
 	POP_MIN_SIZE_FOR_REGIMENT_PROTECTORATE_MULTIPLIER = 8,
 	POP_MIN_SIZE_FOR_REGIMENT_COLONY_MULTIPLIER = 5,
 	POP_MIN_SIZE_FOR_REGIMENT_NONCORE_MULTIPLIER = 3, -- VALUE * POP_MIN_SIZE_FOR_REGIMENT is min for noncores
-	GAS_ATTACK_MODIFIER = 3,
+	GAS_ATTACK_MODIFIER = 2,
 	COMBATLOSS_WAR_EXHAUSTION = 3, -- base war exhastion in combat
 	LEADER_MAX_RANDOM_PRESTIGE = 0.05, -- max percent of prestige, when randomizing stats for leaders.
 	LEADER_AGE_DEATH_FACTOR = 4, -- higher value means leaders live longer
-	LEADER_PRESTIGE_TO_MORALE_FACTOR = 1, -- f.ex. 100% of prestige = +10% morale
-	LEADER_PRESTIGE_TO_MAX_ORG_FACTOR = 1, -- f.ex. 100% of prestige = +10 max org
+	LEADER_PRESTIGE_TO_MORALE_FACTOR = 0, -- f.ex. 100% of prestige = +10% morale
+	LEADER_PRESTIGE_TO_MAX_ORG_FACTOR = 0, -- f.ex. 100% of prestige = +10 max org
 	LEADER_TRANSFER_PENALTY_ON_COUNTRY_PRESTIGE = 0.05, -- country prestige penalty on unassign leader (f.ex if leader has 100% prestige, the country loose 4% of its prestige)
 	LEADER_PRESTIGE_LAND_GAIN =0.3, -- extra speed gain on prestige for land combat
 	LEADER_PRESTIGE_NAVAL_GAIN =0.3, -- extra speed gain on prestige for naval combat
@@ -505,7 +505,7 @@ diplomacy = {
 	
 	MIN_WARSCORE_TO_INTERVENE = -1,
 	MIN_MONTHS_TO_INTERVENE = 0,
-	MAX_WARSCORE_FROM_BATTLES = 50,
+	MAX_WARSCORE_FROM_BATTLES = 25,
 	
 	GUNBOAT_DIPLOMATIC_COST = 1,
 	GUNBOAT_RELATION_ON_ACCEPT = 1,
@@ -564,17 +564,17 @@ diplomacy = {
 	GW_WARSCORE_COST_MOD = 0.65, -- cost reduction factor on warscore needed to fulfill goal if great war
 	GW_WARSCORE_COST_MOD_2 = 0.3, -- cost reduction factor on warscore needed to fulfill goal if late game great war
 	GW_WARSCORE_2_THRESHOLD = 50, -- warscore threshold where a GW turns into a world war for winner side
-	TENSION_DECAY = -1,
-	TENSION_FROM_CB = 0.04,
-	TENSION_FROM_MOVEMENT = 0.01, -- tension per 1000 in nationalist movement
-	TENSION_FROM_MOVEMENT_MAX = 1.2, -- max total value no matter the size of the movement
+	TENSION_DECAY = -100,
+	TENSION_FROM_CB = 0,
+	TENSION_FROM_MOVEMENT = 0, -- tension per 1000 in nationalist movement
+	TENSION_FROM_MOVEMENT_MAX = 0, -- max total value no matter the size of the movement
 	AT_WAR_TENSION_DECAY = -0.12, -- for each potentially interested GP at war (value is if all possible GPs are at war) 
 	TENSION_ON_CB_DISCOVERED = 20,
-	TENSION_ON_REVOLT = 40,
+	TENSION_ON_REVOLT = 0,
 	TENSION_WHILE_CRISIS = -1.0,
 	CRISIS_COOLDOWN_MONTHS = 60,
-	CRISIS_BASE_CHANCE = 20,
-	CRISIS_TEMPERATURE_INCREASE = 0.05,
+	CRISIS_BASE_CHANCE = 0,
+	CRISIS_TEMPERATURE_INCREASE = 0,
 	CRISIS_OFFER_DIPLOMATIC_COST = 0,
 	CRISIS_OFFER_RELATION_ON_ACCEPT = 0,
 	CRISIS_OFFER_RELATION_ON_DECLINE = 0,
@@ -640,7 +640,7 @@ pops = {
 	MIL_HAS_EVERYDAY_NEED = -0.1,
 	MIL_HAS_LUXURY_NEED = -0.2,
 	MIL_NO_LIFE_NEED = 0.2,
-	MIL_REQUIRE_REFORM = 0.1,
+	MIL_REQUIRE_REFORM = 0.2,
 	MIL_IDEOLOGY = -0.1,
 	MIL_RULING_PARTY = -0.1,
 	MIL_REFORM_IMPACT = 2,
@@ -649,9 +649,9 @@ pops = {
 		
 	CON_LITERACY = 0.1,
 	CON_LUXURY_GOODS = 0,
-	CON_POOR_CLERGY = -2,
-	CON_MIDRICH_CLERGY = -1,
-	CON_REFORM_IMPACT = -50,
+	CON_POOR_CLERGY = 0,
+	CON_MIDRICH_CLERGY = 0,
+	CON_REFORM_IMPACT = -70,
 	CON_COLONIAL_FACTOR = 0.5,
 	RULING_PARTY_HAPPY_CHANGE = -1,
 	RULING_PARTY_ANGRY_CHANGE = 2,
@@ -680,7 +680,7 @@ pops = {
 	ARTISAN_SUPPRESSED_COLONIAL_GOODS_CATEGORY = 0, -- Goods category index not produced in colonies
 	ISSUE_MOVEMENT_JOIN_LIMIT = 8,
 	ISSUE_MOVEMENT_LEAVE_LIMIT = 7,
-	MOVEMENT_CON_FACTOR = 0.05,
+	MOVEMENT_CON_FACTOR = 0.15,
 	MOVEMENT_LIT_FACTOR = 0.3,
 	MIL_ON_REB_MOVE = 8,
 	POPULATION_SUPPRESSION_FACTOR = 0.0, -- controls base pop size for factor of supression/radicalness cost. zero  disables the feature and jsut uses radicalness
@@ -732,7 +732,7 @@ ai =
 	FLEET_SIZE = 30, -- AI will attempt to keep fleets of roughly this size (fewer fleets generally results in more competent naval AI)
 	MIN_FLEETS = 1, -- Minimum amount of main fleets the AI will divide its navy into (does not include specialized fleets such as blockades and naval invasions)
 	MAX_FLEETS = 10, -- Maximal amount of main fleets the AI will divide its navy into (does not include specialized fleets such as blockades and naval invasions)
-	MONTHS_BEFORE_DISBAND = 0, -- Months from start date before AI will disband armies/navies (to avoid disbands because of early economic turmoil)
+	MONTHS_BEFORE_DISBAND = 6, -- Months from start date before AI will disband armies/navies (to avoid disbands because of early economic turmoil)
 },
 
 graphics =

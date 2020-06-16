@@ -7,45 +7,48 @@ life_rating = 45
 railroad = 1
 fort = 1
 state_building = {
-	level = 1
+	level = 2
 	building = steel_factory
 	upgrade = yes
 }
 state_building = {
-	level = 1
-	building = ammunition_factory
-	upgrade = yes
-}
-state_building = {
-	level = 1
-	building = canned_food_factory
-	upgrade = yes
-}
-state_building = {
-	level = 1
+	level = 2
 	building = machine_parts_factory
 	upgrade = yes
 }
-1861.1.1 = {
+1914.1.1 = {
+	fort = 5
+	owner = GER
+	controller = GER
 	state_building = {
-		level = 2
-		building = glass_factory
+		level = 10
+		building = pharmaceutical_plant
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
-		building = ammunition_factory
+		level = 5
+		building = synthetic_nitrate_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
+		level = 10
 		building = small_arms_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
-		building = paper_mill
+		level = 10
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = artillery_factory
 		upgrade = yes
 	}
 }
-1861.1.1 = { railroad = 3 }
+

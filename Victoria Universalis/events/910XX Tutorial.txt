@@ -210,3 +210,16 @@ country_event = {
 #		name = "EVTOPTA91011"
 #	}
 #}
+
+country_event = {
+	id = 91051
+	title = "EVTNAME91051"
+	desc = "EVTDESC91051"
+
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91051"
+	}
+}

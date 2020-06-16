@@ -3,19 +3,44 @@ controller = TEX
 add_core = TEX
 trade_goods = cattle
 life_rating = 45
-1861.1.1 = {
-owner = USA
-controller = USA
-add_core = USA
-}
-1861.1.1 = {
-	controller = CSA
-	owner = CSA
-	add_core = CSA
+1914.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	remove_core = MEX
 	state_building = {
-		level = 1
+		level = 10
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
 		building = canned_food_factory
 		upgrade = yes
 	}
+	state_building = {
+		level = 2
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
 }
-1861.1.1 = { railroad = 2 }

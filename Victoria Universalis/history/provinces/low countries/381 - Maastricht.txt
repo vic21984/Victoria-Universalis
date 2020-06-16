@@ -3,14 +3,45 @@ controller = NET
 add_core = NET
 trade_goods = coal
 life_rating = 35
-#state_building = {
-#	level = 1
-#	building = canned_food_factory
-#	upgrade = yes
-#}
-#state_building = {
-#	level = 1
-#	building = liquor_distillery
-#	upgrade = yes
-#}
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	state_building = {
+		level = 6
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

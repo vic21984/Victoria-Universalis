@@ -2,10 +2,48 @@ owner = EGY
 controller = EGY
 add_core = EGY
 add_core = TUR
+add_core = SYR
 trade_goods = grain
 life_rating = 35
-
-1861.1.1 = {
-	controller = TUR 
-	owner = TUR
+1914.1.1 = {
+fort = 4
+owner = TUR
+controller = TUR
+remove_core = EGY
+colonial = 0
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
 }

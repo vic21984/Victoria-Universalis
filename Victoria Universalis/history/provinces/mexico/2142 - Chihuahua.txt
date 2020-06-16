@@ -3,3 +3,15 @@ controller = MEX
 add_core = MEX
 trade_goods = iron
 life_rating = 35
+1914.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+}

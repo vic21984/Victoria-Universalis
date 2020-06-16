@@ -5,4 +5,9 @@ add_core = SLO
 add_core = YUG
 trade_goods = cotton
 life_rating = 35
-1861.1.1 = { railroad = 2 }
+1914.1.1 = {
+	owner = KUK
+	controller = KUK
+remove_core = AUS
+add_core = KUK
+}

@@ -52,4 +52,11 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
- 
+
+1914.1.1 = {
+	oob = "/1914/SXI_oob.txt"
+	government = presidential_dictatorship
+	literacy = 0.15
+	non_state_culture_literacy = 0.15
+	civilized = yes
+}

@@ -3,13 +3,30 @@ controller = USA
 add_core = USA
 trade_goods = grain
 life_rating = 35
-1861.1.1 = {
-	controller = CSA
-	owner = CSA
-	add_core = CSA
+1914.1.1 = {
 	state_building = {
-		level = 1
+		level = 3
 		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
 		upgrade = yes
 	}
 }

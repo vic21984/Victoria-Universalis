@@ -1,9 +1,25 @@
 add_core = NZL
-trade_goods = wool
+trade_goods = fish
 life_rating = 35
 1836.1.2 = {
 owner = NZL
 controller = NZL
 colonial = 0
 }
- 
+1914.1.1 = {
+	state_building = {
+		level = 2
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}

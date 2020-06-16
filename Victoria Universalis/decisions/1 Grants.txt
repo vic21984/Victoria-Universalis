@@ -1,52 +1,19 @@
 political_decisions = {
-	request_grant = {
+	z1manage_grants = {
 		picture = grant
 		alert = no
 		potential = {
 			ai = no
-			NOT = { has_country_modifier = requested_grant }
 		}
 		allow = {
 			ai = no
-			NOT = { has_country_modifier = requested_grant }
 		}
 		effect = {
-			country_event = { id = 91400 days = 0 }
-			add_country_modifier = { name = requested_grant duration = 7 }
+			country_event = { id = 91405 }
 		}
 	}
-	deny_grant = {
-		picture = grant
-		alert = no
-		potential = {
-			ai = no
-			NOT = { has_country_flag = deny_grant }
-		}
-		allow = {
-			ai = no
-			NOT = { has_country_flag = deny_grant }
-		}
-		effect = {
-			set_country_flag = deny_grant
-		}
-	}
-	give_grant = {
-		picture = grant
-		alert = no
-		potential = {
-			ai = no
-			has_country_flag = deny_grant
-		}
-		allow = {
-			ai = no
-			has_country_flag = deny_grant
-		}
-		effect = {
-			clr_country_flag = deny_grant
-		}
-	}
-	mining_focus = {
-		picture = mines
+	zmining_focus = {
+		picture = craftsmen
 		alert = no
 		potential = {
 			ai = no

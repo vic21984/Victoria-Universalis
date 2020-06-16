@@ -3464,6 +3464,7 @@ country_event = {	#Opium Outlawed
 	option = {
 		name = "EVTOPTA90821"
 		remove_country_modifier = opium_addiction
+		set_global_flag = opium_outlawed
 	}
 }
 
