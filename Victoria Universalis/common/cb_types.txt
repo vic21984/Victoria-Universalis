@@ -483,7 +483,7 @@ acquire_all_cores = {
 	}
 
 	all_allowed_states = yes
-	po_transfer_provinces = yes
+	po_demand_state = yes
 	
 	war_name = WAR_LIBERATE_NAME
 	

@@ -808,16 +808,19 @@ social_reforms = {
 			global_assimilation_rate = -0.002
 		}
 		low_schools = {
+			tax_efficiency = -0.01
 			education_efficiency_modifier = 0.05
 			global_assimilation_rate = 0.002
 			global_immigrant_attract = 0.02	
 		}
 		acceptable_schools = {
+			tax_efficiency = -0.02
 			education_efficiency_modifier = 0.075
 			global_assimilation_rate = 0.005
 			global_immigrant_attract = 0.03
 		}
 		good_schools = {
+			tax_efficiency = -0.03
 			education_efficiency_modifier = 0.1
 			global_assimilation_rate = 0.01
 			global_immigrant_attract = 0.04

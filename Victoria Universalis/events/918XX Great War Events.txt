@@ -29,6 +29,35 @@ country_event = {
 
 country_event = {
 	id = 91802
+	title = "Venizelist Victory"
+	desc = "With the Allies victorious in the Great War, the German aligned monarchy has no choice but to accept re-unification under our government."
+
+	trigger = {
+		tag = GRE
+		exists = KGR
+		NOT = { has_country_flag = venizelist_victory }
+		has_global_flag = allied_victory
+	}
+
+	immediate = { set_country_flag = venizelist_victory }
+
+	option = {
+		name = "Long live democracy!"
+		inherit = KGR
+		capital = 834
+		any_owned = {
+			remove_core = KGR
+		}
+		any_country = {
+			any_owned = {
+				remove_core = KGR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91803
 	title = "Epistratoi Victory"
 	desc = "The Epistratoi have succeeded in defending the monarchy and crushing the rebellious Venizelos supporters. As part of our agreement of neutrality with the Germany we must return any territory claimed by the Central Powers."
 
@@ -64,10 +93,97 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 91804
+	title = "Epistratoi Victory"
+	desc = "With the Central Powers victorious in the Great War, the Allied aligned republic has no choice but to accept re-unification under our government."
+
+	trigger = {
+		tag = KGR
+		exists = GRE
+		NOT = { has_country_flag = epistratoi_victory }
+		has_global_flag = central_victory
+	}
+
+	immediate = { set_country_flag = epistratoi_victory }
+
+	option = {
+		name = "Long live the King!"
+		inherit = GRE
+		any_owned = {
+			remove_core = GRE
+		}
+		any_country = {
+			any_owned = {
+				remove_core = GRE
+				remove_core = KGR
+			}
+		}
+		any_owned = {
+			limit = { is_core = TUR }
+			secede_province = TUR
+			remove_core = KGR
+		}
+		any_owned = {
+			limit = { is_core = BUL }
+			secede_province = BUL
+			remove_core = KGR
+		}
+	}
+}
+
 
 ########## AFRICAN EVENTS ##########
+#country_event = {
+#	id = 91810
+#	title = "Senussi Jihad"
+#	desc = "The Grand Senussi Ahmed Sharif as-Senussi of Libya has allied himself with the Central Powers and declared Jihad against the European colonialists in North #Africa."
+#	
+#	
+#	trigger = {
+#		tag = ITA
+#		war = yes
+#		has_global_flag = 1914_bookmark
+#		NOT = { has_global_flag = senussi_jihad }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 3
+#	}
+#
+#	immediate = {
+#		set_global_flag = senussi_jihad
+#		CYR = {
+#			prestige = -500
+#			add_country_modifier = { name = senussi_jihad duration = 365 }
+#			money = 500000
+#			ammunition = 2000
+#			canned_food = 2000
+#			artillery = 1000
+#			small_arms = 2000
+#			war = {
+#				target = ITA
+#				attacker_goal = {
+#					casus_belli = acquire_core_state
+#					state_province_id = 1731
+#				}
+#				attacker_goal = {
+#					casus_belli = acquire_core_state
+#					state_province_id = 1733
+#				}
+#				defender_goal = { casus_belli = european_african_conquest }
+#				call_ally = yes
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = "We will put them down!"
+#	}
+#}
+
 country_event = {
-	id = 91810
+	id = 91811
 	title = "The Zaian War"
 	desc = "Taking advantage of the outbreak of war in Europe, the Zaian confederation of Berber tribes in Morocco have begun an open revolt against us."
 	
@@ -98,60 +214,22 @@ country_event = {
 			canned_food = 2000
 			artillery = 1000
 			small_arms = 2000
-			war = {
-				target = FRA
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = european_african_conquest }
-				call_ally = yes
-			}
 		}
-	}
-	
-	option = {
-		name = "We will put them down!"
-	}
-}
-
-country_event = {
-	id = 91811
-	title = "Senussi Jihad"
-	desc = "The Grand Senussi Ahmed Sharif as-Senussi of Libya has allied himself with the Central Powers and declared Jihad against the European colonialists in North Africa."
-	
-	
-	trigger = {
-		tag = ITA
-		war = yes
-		has_global_flag = 1914_bookmark
-		year = 1915
-		NOT = { has_global_flag = senussi_jihad }
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	immediate = {
-		set_global_flag = senussi_jihad
-		ENG = { release = CYR }
-		1740 = { secede_province = CYR }
-		1741 = { secede_province = CYR }
-		1742 = { secede_province = CYR }
-		1743 = { secede_province = CYR }
-		1744 = { secede_province = CYR }
-		CYR = {
-			prestige = -400
-			add_country_modifier = { name = senussi_jihad duration = 365 }
-			money = 500000
-			ammunition = 2000
-			canned_food = 2000
-			artillery = 1000
-			small_arms = 2000
-			war = {
-				target = ITA
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = european_african_conquest }
-				call_ally = yes
+		war = {
+			target = MOR
+			defender_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1685
 			}
+			defender_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1690
+			}
+			defender_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1694
+			}
+			attacker_goal = { casus_belli = european_african_conquest }
 		}
 	}
 	
@@ -171,7 +249,6 @@ country_event = {
 		war = yes
 		has_global_flag = 1914_bookmark
 		has_global_flag = senussi_jihad
-		year = 1915
 		NOT = { has_global_flag = kaocen_revolt }
 	}
 
@@ -186,20 +263,26 @@ country_event = {
 		1814 = { secede_province = NIG }
 		1817 = { secede_province = NIG }
 		NIG = {
-			prestige = -120
+			prestige = -500
 			add_country_modifier = { name = senussi_jihad duration = 365 }
 			money = 500000
 			ammunition = 2000
 			canned_food = 2000
 			artillery = 1000
 			small_arms = 2000
-			war = {
-				target = FRA
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = european_african_conquest }
-				call_ally = yes
-			}
 		}
+			war = {
+				target = NIG
+				defender_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1811
+				}
+				defender_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1825
+				}
+				attacker_goal = { casus_belli = european_african_conquest }
+			}
 	}
 	
 	option = {
@@ -209,45 +292,6 @@ country_event = {
 
 country_event = {
 	id = 91813
-	title = "The Darfur Expedition"
-	desc = "The sultan of Darfur, Ali Dinar, has stopped paying his customary tribute and has aligned himself with the Central Powers."
-	
-	
-	trigger = {
-		tag = ENG
-		war = yes
-		has_global_flag = 1914_bookmark
-		year = 1915
-		NOT = { has_global_flag = darfur_expedition }
-	}
-	
-	immediate = {
-		set_global_flag = darfur_expedition
-		ENG = { release = DAR }
-		DAR = {
-			prestige = -275
-			add_country_modifier = { name = jihad duration = 365 }
-			money = 500000
-			ammunition = 2000
-			canned_food = 2000
-			artillery = 1000
-			small_arms = 2000
-			war = {
-				target = ENG
-				attacker_goal = { casus_belli = status_quo }
-				defender_goal = { casus_belli = european_african_conquest }
-				call_ally = yes
-			}
-		}
-	}
-	
-	option = {
-		name = "We will put them down!"
-	}
-}
-
-country_event = {
-	id = 91814
 	title = "The Volta-Bani War"
 	desc = "The tribes of Volta region have taken advantage of our ongoing war in Europe and declared open revolt against us."
 	
@@ -256,7 +300,6 @@ country_event = {
 		tag = FRA
 		war = yes
 		has_global_flag = 1914_bookmark
-		year = 1915
 		NOT = { has_global_flag = volta_bani_war }
 	}
 
@@ -266,16 +309,178 @@ country_event = {
 
 	immediate = {
 		set_global_flag = volta_bani_war
-		FRA = { release = MOS }
+		FRA = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1902
+						province_id = 1903
+						province_id = 1905
+						province_id = 1906
+					}
+				}
+				secede_province = MOS
+			}
+		}
 		MOS = {
+			prestige = -500
+			add_country_modifier = { name = jihad duration = 365 }
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+		}
+			war = {
+				target = MOS
+				defender_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1901
+				}
+				attacker_goal = { casus_belli = european_african_conquest }
+			}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+country_event = {
+	id = 91814
+	title = "The Darfur Expedition"
+	desc = "The sultan of Darfur, Ali Dinar, has stopped paying his customary tribute and has aligned himself with the Central Powers."
+	
+	
+	trigger = {
+		tag = ENG
+		war = yes
+		has_global_flag = 1914_bookmark
+		NOT = { has_global_flag = darfur_expedition }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	immediate = {
+		set_global_flag = darfur_expedition
+		ENG = {
+			any_owned = {
+				limit = { is_core = DAR }
+				secede_province = DAR
+			}
+		}
+		DAR = {
+			prestige = -500
+			add_country_modifier = { name = jihad duration = 365 }
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+		}
+		war = {
+			target = DAR
+			attacker_goal = { casus_belli = european_african_conquest }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+#country_event = {
+#	id = 91815
+#	title = "The Dervish Movement"
+#	desc = "The Somali Dervish movement has taken up arms against our holdings along the coast of Somaliland."
+#	
+#	
+#	trigger = {
+#		tag = ENG
+#		war = yes
+#		has_global_flag = 1914_bookmark
+#		NOT = { has_global_flag = dervish_movement }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 3
+#	}
+#
+#	immediate = {
+#		set_global_flag = dervish_movement
+#		SOM = {
+#			ammunition = 2000
+#			canned_food = 2000
+#			artillery = 1000
+#			small_arms = 2000
+#			add_country_modifier = { name = jihad duration = 365 }
+#			war = {
+#				target = ENG
+#				attacker_goal = {
+#					casus_belli = acquire_core_state
+#					state_province_id = 1873
+#				}
+#				defender_goal = { casus_belli = status_quo }
+#				call_ally = yes
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = "We will put them down!"
+#	}
+#}
+
+country_event = {
+	id = 91816
+	title = "The Bussa Rebellion"
+	desc = "Sabukki, a local prince of Bussa, has expelled our administrators in Western Nigeria and seeks to create a new Borgu Emirate."
+	
+	
+	trigger = {
+		tag = ENG
+		war = yes
+		has_global_flag = 1914_bookmark
+		NOT = { has_global_flag = bussa_rebellion }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		set_global_flag = bussa_rebellion
+		ENG = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1946
+						province_id = 1940
+						province_id = 1927
+						province_id = 1938
+					}
+				}
+				secede_province = BRG
+			}
+		}
+		BRG = {
+			prestige = -1000
+			add_country_modifier = { name = jihad duration = 365 }
 			money = 500000
 			ammunition = 2000
 			canned_food = 2000
 			artillery = 1000
 			small_arms = 2000
 			war = {
-				target = FRA
-				attacker_goal = { casus_belli = status_quo }
+				target = ENG
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1948
+				}
 				defender_goal = { casus_belli = european_african_conquest }
 				call_ally = yes
 			}
@@ -288,16 +493,16 @@ country_event = {
 }
 
 country_event = {
-	id = 91815
-	title = "The Dervish Insurgency"
-	desc = "The Somali Dervish movement has taken up arms against our holdings along the coast of Somaliland."
+	id = 91817
+	title = "The Egba Uprising"
+	desc = "Egba tribesmen of the Abeokuta province have rebelled against our rule."
 	
 	
 	trigger = {
 		tag = ENG
 		war = yes
 		has_global_flag = 1914_bookmark
-		NOT = { has_global_flag = dervish_movement }
+		NOT = { has_global_flag = egba_uprising }
 	}
 
 	mean_time_to_happen = {
@@ -305,29 +510,43 @@ country_event = {
 	}
 
 	immediate = {
-		set_global_flag = dervish_movement
-		SOM = {
+		set_global_flag = egba_uprising
+		ENG = {
+			any_owned = {
+				limit = {
+					province_id = 1924
+					province_id = 1925
+				}
+				secede_province = OYO
+			}
+		}
+		OYO = {
+			add_country_modifier = { name = jihad duration = 365 }
+			prestige = -1000
+			money = 500000
 			ammunition = 2000
 			canned_food = 2000
 			artillery = 1000
 			small_arms = 2000
-			add_country_modifier = { name = jihad duration = 365 }
 			war = {
 				target = ENG
-				attacker_goal = { casus_belli = acquire_all_cores }
-				defender_goal = { casus_belli = status_quo }
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1923
+				}
+				defender_goal = { casus_belli = european_african_conquest }
 				call_ally = yes
 			}
 		}
 	}
-
+	
 	option = {
 		name = "We will put them down!"
 	}
 }
 
 country_event = {
-	id = 91816
+	id = 91818
 	title = "The death of Mohammed Abdullah Hassan"
 	desc = "The Allied powers have hunted down and killed the leader of the Dervish movement, Mohammed Abdullah Hassan. The British have agreed to Ethiopian annexation of the defunct Dervish state."
 	
@@ -335,16 +554,59 @@ country_event = {
 	trigger = {
 		tag = ETH
 		has_global_flag = allied_victory
+		has_global_flag = ww1_bookmark
 		NOT = { has_country_flag = annexation_of_somalia }
+		exists = SOM
+	}
+
+	mean_time_to_happen = {
+		months = 1
 	}
 
 	immediate = {
-		set_country_flag = annexation_of_somalia
+		set_global_flag = annexation_of_somalia
 	}
 
 	option = {
 		name = "Finally!"
 		inherit = SOM
+	}
+}
+
+country_event = {
+	id = 91819
+	title = "The death of Mohammed Abdullah Hassan"
+	desc = "The leader of the Dervish movement, Mohammed Abdullah Hassan, has been hunted down and killed by a joint Anglo-Ethiopian task force. In exchange for their help, have agreed to Ethiopian annexation of the defunct Dervish state."
+	
+	
+	trigger = {
+		has_global_flag = allied_victory
+		owns = 1866
+		owns = 1867
+		has_global_flag = ww1_bookmark
+		NOT = { has_global_flag = annexation_of_somalia }
+		NOT = { tag = SOM }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_global_flag = annexation_of_somalia
+	}
+
+	option = {
+		name = "Finally!"
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1866
+					province_id = 1867
+				}
+			}
+			secede_province = ETH
+		}
 	}
 }
 
@@ -854,6 +1116,19 @@ country_event = {
 			}
 			secede_province = LUX
 		}
+		ENG = {
+			inherit = BRG
+			inherit = OYO
+			inherit = DAR
+		}
+		FRA = {
+			inherit = MOR
+			inherit = NIG
+			inherit = MOS
+		}
+		FRA = {
+			inherit = CYR
+		}
 		government = democracy
 		vote_franschise = universal_voting
 		political_parties = non_secret_ballots
@@ -1037,6 +1312,19 @@ country_event = {
 				is_core = LUX
 			}
 			secede_province = LUX
+		}
+		ENG = {
+			inherit = BRG
+			inherit = OYO
+			inherit = DAR
+		}
+		FRA = {
+			inherit = MOR
+			inherit = NIG
+			inherit = MOS
+		}
+		FRA = {
+			inherit = CYR
 		}
 		government = democracy
 		vote_franschise = universal_voting
@@ -1849,7 +2137,7 @@ country_event = {
 	
 	trigger = {
 		tag = ITA
-		NOT { exists = KUK }
+		NOT = { exists = KUK }
 		NOT = { has_country_flag = ita_lost }
 		OR = {
 			has_country_flag = great_war_lost

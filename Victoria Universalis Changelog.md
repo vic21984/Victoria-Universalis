@@ -1,3 +1,11 @@
+# Version 0.2 - 6/18/2020
+## General gameplay changes:
+* Touched up the 1914 and WW1 scenarios and fixed some bugs.
+
+## Interface changes:
+* New UI design.
+
+
 # Version 0.2 - 6/16/2020
 ## General gameplay changes:
 * Added two scenarios starting in Jan 1 1914 and July 28 1914. The 1914.1.1 bookmark is an open ended campaign and does not feature a WW1 event because it is impossible to add multiple countries to the same war via events, and the 1914.7.1 bookmark starts with WW1 already underway.

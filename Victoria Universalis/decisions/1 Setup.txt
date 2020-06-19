@@ -1362,11 +1362,7 @@ political_decisions = {
 			KUK = {
 				set_variable = {
 					which = commonarmy
-					value = 2
-				}
-				add_country_modifier = {
-					name = common_army_2
-					duration = -1
+					value = 4
 				}
 				any_pop = {
 					limit = {

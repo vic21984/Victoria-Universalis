@@ -3,8 +3,9 @@ add_core = CYR
 trade_goods = wool
 life_rating = 10
 1914.1.1 = {
-owner = ITA
-controller = ITA
+owner = CYR
+controller = CYR
 life_rating = 32
-colonial = 2
+remove_core = TRI
+colonial = 0
 }
