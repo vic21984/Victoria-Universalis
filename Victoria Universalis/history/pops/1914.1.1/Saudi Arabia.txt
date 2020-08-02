@@ -592,7 +592,7 @@
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 979
+        size = 14451
     }
 
     soldiers = {
@@ -601,10 +601,10 @@
         size = 3080
     }
 
-    farmers = {
+    labourers = {
         culture = bedouin
         religion = sunni
-        size = 15472
+        size = 2000
     }
 
     aristocrats = {
@@ -622,7 +622,13 @@
     artisans = {
         culture = bedouin
         religion = shiite
-        size = 2240
+        size = 20337
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = shiite
+        size = 20000
     }
 
     soldiers = {
@@ -631,22 +637,10 @@
         size = 489
     }
 
-    farmers = {
+    labourers = {
         culture = bedouin
         religion = shiite
-        size = 41097
-    }
-
-    capitalists = {
-        culture = bedouin
-        religion = sunni
-        size = 28
-    }
-
-    capitalists = {
-        culture = bedouin
-        religion = shiite
-        size = 56
+        size = 3000
     }
 }
 #Hufuf (96000/POPS)

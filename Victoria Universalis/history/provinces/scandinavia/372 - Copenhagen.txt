@@ -14,17 +14,17 @@ fort = 1
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
-		building = steel_factory
+		level = 4
+		building = lumber_mill
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
+		level = 3
 		building = regular_clothes_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
+		level = 3
 		building = fabric_factory
 		upgrade = yes
 	}
@@ -34,7 +34,7 @@ fort = 1
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
+		level = 3
 		building = liquor_distillery
 		upgrade = yes
 	}

@@ -121,7 +121,13 @@
 	artisans = {
 		culture = uighur
 		religion = sunni
-		size = 1500
+		size = 15825
+	}
+
+	artisans = {
+		culture = uighur
+		religion = sunni
+		size = 10000
 	}
 
 	soldiers = {
@@ -130,10 +136,10 @@
 		size = 300
 	}
 
-	farmers = {
+	labourers = {
 		culture = uighur
 		religion = sunni
-		size = 27325
+		size = 3000
 	}
 
 	aristocrats = {
@@ -151,7 +157,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 300
+		size = 4775
 	}
 
 	soldiers = {
@@ -160,10 +166,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 5475
+		size = 1000
 	}
 
 	aristocrats = {
@@ -181,19 +187,13 @@
 	artisans = {
 		culture = beifaren
 		religion = sunni
-		size = 50
+		size = 950
 	}
 
 	soldiers = {
 		culture = beifaren
 		religion = sunni
 		size = 10
-	}
-
-	farmers = {
-		culture = beifaren
-		religion = sunni
-		size = 900
 	}
 
 	aristocrats = {
@@ -211,7 +211,7 @@
 	artisans = {
 		culture = mongol
 		religion = gelugpa
-		size = 250
+		size = 3800
 	}
 
 	soldiers = {
@@ -220,10 +220,10 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = mongol
 		religion = gelugpa
-		size = 4550
+		size = 1000
 	}
 }
 #Tulta (88000/22000 POPS)
@@ -365,7 +365,13 @@
 	artisans = {
 		culture = uighur
 		religion = sunni
-		size = 2400
+		size = 21050
+	}
+
+	artisans = {
+		culture = uighur
+		religion = sunni
+		size = 20000
 	}
 
 	soldiers = {
@@ -374,10 +380,10 @@
 		size = 500
 	}
 
-	farmers = {
+	labourers = {
 		culture = uighur
 		religion = sunni
-		size = 43650
+		size = 5000
 	}
 }
 #Khotan (88000/22000 POPS)

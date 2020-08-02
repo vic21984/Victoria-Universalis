@@ -289,7 +289,7 @@
 	artisans = {
 		culture = north_andean
 		religion = catholic
-		size = 800
+		size = 7325
 	}
 
 	soldiers = {
@@ -298,10 +298,10 @@
 		size = 175
 	}
 
-	farmers = {
+	labourers = {
 		culture = north_andean
 		religion = catholic
-		size = 14525
+		size = 8000
 	}
 
 	clergymen = {
@@ -313,7 +313,7 @@
 	artisans = {
 		culture = native_american_minor
 		religion = catholic
-		size = 250
+		size = 2900
 	}
 
 	soldiers = {
@@ -322,10 +322,10 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = native_american_minor
 		religion = catholic
-		size = 4650
+		size = 2000
 	}
 }
 #Antioquia Region (452000)
@@ -359,7 +359,19 @@
 	artisans = {
 		culture = north_andean
 		religion = catholic
-		size = 1100
+		size = 20000
+	}
+
+	artisans = {
+		culture = north_andean
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = north_andean
+		religion = catholic
+		size = 16975
 	}
 
 	soldiers = {
@@ -368,10 +380,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = north_andean
 		religion = catholic
-		size = 56875
+		size = 1000
 	}
 
 	clergymen = {
@@ -383,7 +395,7 @@
 	artisans = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 400
+		size = 9875
 	}
 
 	soldiers = {
@@ -392,16 +404,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 5475
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 8000
+		size = 4000
 	}
 
 	clergymen = {
@@ -413,7 +419,7 @@
 	artisans = {
 		culture = native_american_minor
 		religion = catholic
-		size = 150
+		size = 2950
 	}
 
 	soldiers = {
@@ -422,11 +428,6 @@
 		size = 25
 	}
 
-	farmers = {
-		culture = native_american_minor
-		religion = catholic
-		size = 2800
-	}
 }
 #Quibdo (48000/12000 POPS)
 2253 = {
@@ -445,7 +446,7 @@
 	artisans = {
 		culture = north_andean
 		religion = catholic
-		size = 250
+		size = 3650
 	}
 
 	soldiers = {
@@ -454,10 +455,10 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = north_andean
 		religion = catholic
-		size = 4400
+		size = 1000
 	}
 
 	clergymen = {
@@ -469,7 +470,7 @@
 	artisans = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 350
+		size = 2850
 	}
 
 	soldiers = {
@@ -478,16 +479,10 @@
 		size = 75
 	}
 
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1500
-	}
-
 	slaves = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 5000
+		size = 4000
 	}
 }
 #Cartagena de Indias (144000/36000 POPS)
@@ -593,7 +588,13 @@
 	artisans = {
 		culture = north_andean
 		religion = catholic
-		size = 650
+		size = 20000
+	}
+
+	artisans = {
+		culture = north_andean
+		religion = catholic
+		size = 11375
 	}
 
 	soldiers = {
@@ -602,10 +603,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = north_andean
 		religion = catholic
-		size = 35725
+		size = 5000
 	}
 
 	clergymen = {
@@ -617,7 +618,7 @@
 	artisans = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 900
+		size = 13700
 	}
 
 	soldiers = {
@@ -626,16 +627,10 @@
 		size = 200
 	}
 
-	farmers = {
+	labourers = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 14800
-	}
-
-	slaves = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 3000
+		size = 5000
 	}
 
 	clergymen = {
@@ -647,7 +642,7 @@
 	artisans = {
 		culture = amazonian #guajiro
 		religion = catholic
-		size = 50
+		size = 980
 	}
 
 	soldiers = {
@@ -656,11 +651,6 @@
 		size = 10
 	}
 
-	farmers = {
-		culture = amazonian #guajiro
-		religion = catholic
-		size = 930
-	}
 }
 #Ruled by Colombia 1836
 #Cauca Region (300000)

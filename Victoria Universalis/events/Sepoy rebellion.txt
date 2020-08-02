@@ -28,7 +28,6 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA90040"
-			release_vassal = MUG
 			any_country = {
 				limit = {
 					vassal_of = ENG
@@ -63,5 +62,59 @@ country_event = {
 				defender_goal = { casus_belli = acquire_all_cores country = HND }
 			}
 		badboy = -10			
+	}
+}
+
+country_event = {
+
+	id = 90041 # Sepoys Win
+
+	title = "EVTNAME90041"
+	desc = "EVTDESC90041"
+	picture = sepoy_rebellion
+
+
+	trigger = {
+		has_country_flag = sepoy_rebellion
+		NOT = { has_global_flag = sepoy_rebellion_ended }
+		tag = ENG
+		NOT = { war_with = HND }
+		exists = HND
+		any_owned_province = { is_core = HND }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA90041"
+		set_global_flag = sepoy_rebellion_ended
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					is_core = PAK
+				}
+			}
+			secede_province = HND
+		}
+	}
+}
+
+country_event = {
+
+	id = 90042 # Sepoys Lose
+
+	title = "Sepoys Lose"
+
+	trigger = {
+		tag = JAN
+		ENG = { has_country_flag = sepoy_rebellion }
+		NOT = { exists = HND }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		set_global_flag = sepoy_rebellion_ended
 	}
 }

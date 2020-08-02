@@ -1,6 +1,5 @@
 owner = RUS
 controller = RUS
-add_core = RUS
 add_core = FIN
 add_core = SWE
 trade_goods = timber
@@ -12,7 +11,7 @@ life_rating = 35
 		upgrade = yes
 	}
 	state_building = {
-		level = 2
+		level = 3
 		building = furniture_factory
 		upgrade = yes
 	}

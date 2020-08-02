@@ -239,19 +239,13 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 200
+		size = 3850
 	}
 
 	soldiers = {
 		culture = nguni
 		religion = animist
 		size = 50
-	}
-
-	farmers = {
-		culture = nguni
-		religion = animist
-		size = 3650
 	}
 
 	aristocrats = {
@@ -269,7 +263,19 @@
 	artisans = {
 		culture = shona
 		religion = animist
-		size = 1800
+		size = 20000
+	}
+
+	artisans = {
+		culture = shona
+		religion = animist
+		size = 20000
+	}
+
+	artisans = {
+		culture = shona
+		religion = animist
+		size = 13875
 	}
 
 	soldiers = {
@@ -278,16 +284,16 @@
 		size = 400
 	}
 
-	farmers = {
+	labourers = {
 		culture = shona
 		religion = animist
-		size = 39375
+		size = 6000
 	}
 
 	slaves = {
 		culture = shona
 		religion = animist
-		size = 22700
+		size = 4000
 	}
 
 }
@@ -555,7 +561,7 @@
 	artisans = {
 		culture = shona
 		religion = animist
-		size = 500
+		size = 4400
 	}
 
 	soldiers = {
@@ -564,10 +570,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = shona
 		religion = animist
-		size = 7125
+		size = 3225
 	}
 
 	slaves = {
@@ -600,7 +606,7 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = nyasa
 		religion = animist
 		size = 4850
@@ -636,7 +642,7 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = sena
 		religion = animist
 		size = 6425

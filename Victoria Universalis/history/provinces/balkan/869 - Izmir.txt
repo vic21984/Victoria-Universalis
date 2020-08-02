@@ -5,4 +5,24 @@ trade_goods = fish
 life_rating = 35
 1914.1.1 = {
 	naval_base = 5
+	state_building = {
+		level = 4
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cigarette_factory
+		upgrade = yes
+	}
 }

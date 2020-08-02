@@ -4,11 +4,13 @@ country_event = {
 	id = 91801
 	title = "Venizelist Victory"
 	desc = "The Venizelist movement has succeeded in overthrowing the monarchy and instituting a provisional government to lead the war against the Central Powers."
+	picture = great_war_surrender
 
 	trigger = {
 		tag = GRE
 		NOT = { exists = KGR }
 		NOT = { has_country_flag = venizelist_victory }
+		has_global_flag = ww1_bookmark
 	}
 
 	immediate = { set_country_flag = venizelist_victory }
@@ -31,12 +33,14 @@ country_event = {
 	id = 91802
 	title = "Venizelist Victory"
 	desc = "With the Allies victorious in the Great War, the German aligned monarchy has no choice but to accept re-unification under our government."
+	picture = great_war_surrender
 
 	trigger = {
 		tag = GRE
 		exists = KGR
 		NOT = { has_country_flag = venizelist_victory }
 		has_global_flag = allied_victory
+		has_global_flag = ww1_bookmark
 	}
 
 	immediate = { set_country_flag = venizelist_victory }
@@ -60,11 +64,13 @@ country_event = {
 	id = 91803
 	title = "Epistratoi Victory"
 	desc = "The Epistratoi have succeeded in defending the monarchy and crushing the rebellious Venizelos supporters. As part of our agreement of neutrality with the Germany we must return any territory claimed by the Central Powers."
+	picture = great_war_surrender
 
 	trigger = {
 		tag = KGR
 		NOT = { exists = GRE }
 		NOT = { has_country_flag = epistratoi_victory }
+		has_global_flag = ww1_bookmark
 	}
 
 	immediate = { set_country_flag = epistratoi_victory }
@@ -97,12 +103,14 @@ country_event = {
 	id = 91804
 	title = "Epistratoi Victory"
 	desc = "With the Central Powers victorious in the Great War, the Allied aligned republic has no choice but to accept re-unification under our government."
+	picture = great_war_surrender
 
 	trigger = {
 		tag = KGR
 		exists = GRE
 		NOT = { has_country_flag = epistratoi_victory }
 		has_global_flag = central_victory
+		has_global_flag = ww1_bookmark
 	}
 
 	immediate = { set_country_flag = epistratoi_victory }
@@ -185,13 +193,13 @@ country_event = {
 country_event = {
 	id = 91811
 	title = "The Zaian War"
-	desc = "Taking advantage of the outbreak of war in Europe, the Zaian confederation of Berber tribes in Morocco have begun an open revolt against us."
-	
+	desc = "Zaian confederation of Berber tribes in Morocco have taken advantage of the war in europe and begun an open revolt against us."
+	picture = zaian_revolt
 	
 	trigger = {
 		tag = FRA
 		war = yes
-		has_global_flag = 1914_bookmark
+		has_global_flag = ww1_bookmark
 		year = 1914
 		NOT = { has_global_flag = zaian_war }
 	}
@@ -242,12 +250,12 @@ country_event = {
 	id = 91812
 	title = "The Kaocen Revolt"
 	desc = "The Taureg leader, Ag Mohammed Wau Teguidda Kaocen, has taken up the call of the Senusiyan Jihad against all European colonialists."
-	
+	picture = zaian_revolt
 	
 	trigger = {
 		tag = FRA
 		war = yes
-		has_global_flag = 1914_bookmark
+		has_global_flag = ww1_bookmark
 		has_global_flag = senussi_jihad
 		NOT = { has_global_flag = kaocen_revolt }
 	}
@@ -294,12 +302,12 @@ country_event = {
 	id = 91813
 	title = "The Volta-Bani War"
 	desc = "The tribes of Volta region have taken advantage of our ongoing war in Europe and declared open revolt against us."
-	
+	picture = zaian_revolt
 	
 	trigger = {
 		tag = FRA
 		war = yes
-		has_global_flag = 1914_bookmark
+		has_global_flag = ww1_bookmark
 		NOT = { has_global_flag = volta_bani_war }
 	}
 
@@ -350,12 +358,12 @@ country_event = {
 	id = 91814
 	title = "The Darfur Expedition"
 	desc = "The sultan of Darfur, Ali Dinar, has stopped paying his customary tribute and has aligned himself with the Central Powers."
-	
+	picture = zaian_revolt
 	
 	trigger = {
 		tag = ENG
 		war = yes
-		has_global_flag = 1914_bookmark
+		has_global_flag = ww1_bookmark
 		NOT = { has_global_flag = darfur_expedition }
 	}
 
@@ -439,12 +447,12 @@ country_event = {
 	id = 91816
 	title = "The Bussa Rebellion"
 	desc = "Sabukki, a local prince of Bussa, has expelled our administrators in Western Nigeria and seeks to create a new Borgu Emirate."
-	
+	picture = zaian_revolt
 	
 	trigger = {
 		tag = ENG
 		war = yes
-		has_global_flag = 1914_bookmark
+		has_global_flag = ww1_bookmark
 		NOT = { has_global_flag = bussa_rebellion }
 	}
 
@@ -496,12 +504,12 @@ country_event = {
 	id = 91817
 	title = "The Egba Uprising"
 	desc = "Egba tribesmen of the Abeokuta province have rebelled against our rule."
-	
+	picture = zaian_revolt
 	
 	trigger = {
 		tag = ENG
 		war = yes
-		has_global_flag = 1914_bookmark
+		has_global_flag = ww1_bookmark
 		NOT = { has_global_flag = egba_uprising }
 	}
 
@@ -511,14 +519,14 @@ country_event = {
 
 	immediate = {
 		set_global_flag = egba_uprising
-		ENG = {
-			any_owned = {
-				limit = {
+		any_owned = {
+			limit = {
+				OR = {
 					province_id = 1924
 					province_id = 1925
 				}
-				secede_province = OYO
 			}
+			secede_province = OYO
 		}
 		OYO = {
 			add_country_modifier = { name = jihad duration = 365 }
@@ -549,7 +557,7 @@ country_event = {
 	id = 91818
 	title = "The death of Mohammed Abdullah Hassan"
 	desc = "The Allied powers have hunted down and killed the leader of the Dervish movement, Mohammed Abdullah Hassan. The British have agreed to Ethiopian annexation of the defunct Dervish state."
-	
+	picture = ethiopian_empire
 	
 	trigger = {
 		tag = ETH
@@ -577,8 +585,8 @@ country_event = {
 	id = 91819
 	title = "The death of Mohammed Abdullah Hassan"
 	desc = "The leader of the Dervish movement, Mohammed Abdullah Hassan, has been hunted down and killed by a joint Anglo-Ethiopian task force. In exchange for their help, have agreed to Ethiopian annexation of the defunct Dervish state."
-	
-	
+	picture = ethiopian_empire
+
 	trigger = {
 		has_global_flag = allied_victory
 		owns = 1866
@@ -615,7 +623,8 @@ country_event = {
 	id = 91850
 	title = "Treaty of Neuilly"
 	desc = "Allied armies have reversed all our gains and now occupy our country. We will have to surrender our claims in Macedonia and Dobrudja."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = BUL
 		NOT = { has_country_flag = bul_lost }
@@ -668,7 +677,8 @@ country_event = {
 	id = 91851
 	title = "Treaty of Saint-Germain"
 	desc = "The various ethnic minorities within our empire have all declared independence and a liberal revolution has overthrown the Habsburg dynasty in Austria."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = KUK
 		NOT = { has_country_flag = kuk_lost }
@@ -724,9 +734,9 @@ country_event = {
 		}
 		any_owned = {
 			limit = {
-				is_core = POL
+				is_core = GLM
 			}
-			secede_province = POL
+			secede_province = GLM
 		}
 		any_owned = {
 			limit = {
@@ -774,7 +784,8 @@ country_event = {
 	id = 91852
 	title = "Treaty of Sèvres"
 	desc = "The Allies have carved out our holdings in the middle east for themselves and plan to divide the rest of our nation between the Greeks and Armenians."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = TUR
 		NOT = { has_country_flag = tur_lost }
@@ -887,7 +898,8 @@ country_event = {
 	id = 91853
 	title = "Treaty of Sèvres"
 	desc = "The Allies have carved out our holdings in the middle east for themselves and plan to create a new Armenian nation in our eastern lands."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = TUR
 		NOT = { has_country_flag = tur_lost }
@@ -989,12 +1001,14 @@ country_event = {
 	id = 91854
 	title = "Treaty of Versailles"
 	desc = "We have been defeated on the field of battle and the Kaiser has abdicated. We are forced to give up our colonies and cede land to France, Russia, and Denmark."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = GER
 		NOT = { has_country_flag = ger_lost }
 		has_country_flag = great_war_lost
 		NOT = { has_global_flag = october_revolution }
+		has_global_flag = ww1_bookmark
 	}
 	
 	immediate = {
@@ -1139,12 +1153,14 @@ country_event = {
 	id = 91855
 	title = "Treaty of Versailles"
 	desc = "We have been defeated on the field of battle and the Kaiser has abdicated. We are forced to give up all our colonies and cede land to France, Denmark, and the new Polish and Lithuanian states."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = GER
 		NOT = { has_country_flag = ger_lost }
 		has_country_flag = great_war_lost
 		has_global_flag = october_revolution
+		has_global_flag = ww1_bookmark
 	}
 	
 	immediate = {
@@ -1181,6 +1197,7 @@ country_event = {
 			remove_core = GER
 			secede_province = POL
 		}
+		POL = { inherit = GLM }
 		any_owned = {
 			limit = {
 				is_core = DEN
@@ -1336,11 +1353,13 @@ country_event = {
 	id = 91856
 	title = "Anglo-Iranian Agreement"
 	desc = "We have agreed to withdraw from Iran in exchange for exclusive rights to their oil market."
+	picture = great_war_surrender
 
 	trigger = {
 		tag = ENG
 		has_global_flag = allied_victory
 		NOT = { has_country_flag = anglo_iranian_agreement }
+		has_global_flag = ww1_bookmark
 	}
 
 	mean_time_to_happen = {
@@ -1371,7 +1390,8 @@ country_event = {
 	id = 91861
 	title = "Treaty of Cologne"
 	desc = "Germany has annexed eastern Wallonie, taken all of our colonial possessions, and has forced us to become a vassal state."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = BEL
 		NOT = { has_country_flag = bel_lost }
@@ -1425,11 +1445,13 @@ country_event = {
 	id = 91862
 	title = "Treaty of Berlin"
 	desc = "Victorious German armies marched into Paris and dictated terms of surrender to us. We will have to cede border provinces in France and most of our African possessions to the new Kaiserreich."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = FRA
 		has_country_flag = great_war_lost
 		NOT = { has_country_flag = fra_lost }
+		has_global_flag = ww1_bookmark
 	}
 	
 	immediate = {
@@ -1518,11 +1540,13 @@ country_event = {
 	id = 91863
 	title = "Treaty of Berlin"
 	desc = "Our colonies in Africa and Asia have been are to be transferred to Germany and what was left of our empire has declared independence."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = ENG
 		has_country_flag = great_war_lost
 		NOT = { has_country_flag = eng_lost }
+		has_global_flag = ww1_bookmark
 	}
 	
 	immediate = {
@@ -1790,8 +1814,10 @@ country_event = {
 	id = 91864
 	title = "October Revolution"
 	desc = "The abysmal performance of the Tsardom in the great war has led to full blown rebellion among the masses. Several nations have already declared independence and a communist ferver is overtaking Russia."
-	
+	picture = october_revolution
+
 	trigger = {
+		has_global_flag = ww1_bookmark
 		tag = RUS
 		NOT = { TUR = { has_country_flag = tur_lost } }
 		OR = {
@@ -1925,8 +1951,10 @@ country_event = {
 	id = 91865
 	title = "October Revolution"
 	desc = "The abysmal performance of the Tsardom in the great war has led to full blown rebellion among the masses. Several nations have already declared independence and a communist ferver is overtaking Russia."
-	
+	picture = october_revolution
+
 	trigger = {
+		has_global_flag = ww1_bookmark
 		tag = RUS
 		TUR = { has_country_flag = tur_lost }
 		OR = {
@@ -2054,7 +2082,8 @@ country_event = {
 	id = 91866
 	title = "The Treaty of Trento"
 	desc = "The war has been a disaster and we are forced to sue for peace. We are to give up our colonial holdings and surrender Venice and Lombardia to Austria-Hungary."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = ITA
 		exists = KUK
@@ -2134,7 +2163,8 @@ country_event = {
 	id = 91867
 	title = "The Treaty of Trento"
 	desc = "The war has been a disaster and we are forced to sue for peace. We are to give up our colonial holdings and surrender Venice and Lombardia to the newly formed Austrian Republic."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = ITA
 		NOT = { exists = KUK }
@@ -2221,7 +2251,8 @@ country_event = {
 	id = 91868
 	title = "Treaty of Graz"
 	desc = "Austria-Hungary is free to oppress us in the Balkans."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = SER
 		NOT = { has_country_flag = ser_lost }
@@ -2272,7 +2303,8 @@ country_event = {
 	id = 91869
 	title = "Treaty of Graz"
 	desc = "We are forced to give up territory to Austria, Hungary, and Bulgaria."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = YUG
 		NOT = { has_country_flag = yug_lost }
@@ -2334,7 +2366,8 @@ country_event = {
 	id = 91870
 	title = "Treaty of Sofia"
 	desc = "We are forced to give up Dobrudja to the Bulgarians."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = ROM
 		exists = KUK
@@ -2392,7 +2425,8 @@ country_event = {
 	id = 91871
 	title = "Treaty of Temesvar"
 	desc = "We are forced to give up our gains in Transylvania to the new Hungarian Kingdom and Dobrudja to the Bulgarians."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = ROM
 		NOT = { exists = KUK }
@@ -2440,7 +2474,8 @@ country_event = {
 	id = 91872
 	title = "Treaty of Edirne"
 	desc = "We are forced to give up all of our recent gains in the Balkans and Anatolia."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = GRE
 		NOT = { has_country_flag = gre_lost }
@@ -2500,7 +2535,8 @@ country_event = {
 	id = 91873
 	title = "Treaty of Istanbul"
 	desc = "The Entente has lost, and we are forced to give up all of our recent gains in the Balkans and Anatolia."
-	
+	picture = great_war_surrender
+
 	trigger = {
 		tag = GRE
 		has_country_flag = gre_lost
@@ -2552,7 +2588,8 @@ country_event = {
 	id = 91880
 	title = "EVTNAME91880"
 	desc = "EVTDESC91880"
-	
+	picture = allied_victory
+
 	trigger = {
 		ai = no
 		has_global_flag = allied_victory
@@ -2582,7 +2619,8 @@ country_event = {
 	id = 91881
 	title = "EVTNAME91881"
 	desc = "EVTDESC91881"
-	
+	picture = allied_victory
+
 	trigger = {
 		ai = no
 		has_global_flag = allied_victory
@@ -2611,7 +2649,8 @@ country_event = {
 	id = 91882
 	title = "EVTNAME91882"
 	desc = "EVTDESC91882"
-	
+	picture = central_victory
+
 	trigger = {
 		ai = no
 		has_global_flag = central_victory
@@ -2638,7 +2677,8 @@ country_event = {
 	id = 91883
 	title = "EVTNAME91883"
 	desc = "EVTDESC91883"
-	
+	picture = central_victory
+
 	trigger = {
 		ai = no
 		has_global_flag = central_victory

@@ -38,10 +38,10 @@
         size = 226
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 16836
+        size = 5000
     }
 
     clergymen = {
@@ -62,10 +62,28 @@
         size = 380
     }
 
-    farmers = {
+    labourers = {
         culture = aimara
         religion = catholic
-        size = 27389
+        size = 9999
+    }
+
+    craftsmen = {
+        culture = south_andean
+        religion = catholic
+        size = 10836
+    }
+
+    craftsmen = {
+        culture = aimara
+        religion = catholic
+        size = 17389
+    }
+
+    clerks = {
+        culture = south_andean
+        religion = catholic
+        size = 1000
     }
 
     capitalists = {
@@ -91,7 +109,7 @@
     artisans = {
         culture = south_andean
         religion = catholic
-        size = 366
+        size = 1649
     }
 
     soldiers = {
@@ -100,10 +118,10 @@
         size = 151
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 6283
+        size = 5000
     }
 
     clergymen = {
@@ -115,7 +133,7 @@
     artisans = {
         culture = aimara
         religion = catholic
-        size = 610
+        size = 2078
     }
 
     soldiers = {
@@ -124,10 +142,10 @@
         size = 151
     }
 
-    farmers = {
+    labourers = {
         culture = aimara
         religion = catholic
-        size = 11468
+        size = 9999
     }
 
     capitalists = {
@@ -163,10 +181,10 @@
         size = 75
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 4026
+        size = 5000
     }
 
     clergymen = {
@@ -178,7 +196,7 @@
     artisans = {
         culture = aimara
         religion = catholic
-        size = 732
+        size = 3425
     }
 
     soldiers = {
@@ -187,17 +205,12 @@
         size = 226
     }
 
-    farmers = {
+    labourers = {
         culture = aimara
         religion = catholic
-        size = 13603
+        size = 9999
     }
 
-    capitalists = {
-        culture = south_andean
-        religion = catholic
-        size = 64
-    }
 }
 #Arica (20000/5000 POPS)
 2308 = {
@@ -216,7 +229,7 @@
     artisans = {
         culture = south_andean
         religion = catholic
-        size = 122
+        size = 927
     }
 
     soldiers = {
@@ -225,10 +238,10 @@
         size = 29
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 1805
+        size = 1000
     }
 
     clergymen = {
@@ -240,7 +253,7 @@
     artisans = {
         culture = aimara
         religion = catholic
-        size = 488
+        size = 5577
     }
 
     soldiers = {
@@ -249,10 +262,10 @@
         size = 151
     }
 
-    farmers = {
+    labourers = {
         culture = aimara
         religion = catholic
-        size = 9089
+        size = 4000
     }
 
     capitalists = {
@@ -342,7 +355,7 @@
     artisans = {
         culture = south_andean
         religion = catholic
-        size = 1952
+        size = 7708
     }
 
     soldiers = {
@@ -351,10 +364,10 @@
         size = 531
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 15756
+        size = 10000
     }
 
     craftsmen = {
@@ -626,92 +639,45 @@
     clergymen = {
         culture = south_andean
         religion = catholic
-        size = 1385
+        size = 1780
     }
 
     artisans = {
         culture = south_andean
         religion = catholic
-        size = 2074
+        size = 10115
     }
 
     soldiers = {
         culture = south_andean
         religion = catholic
-        size = 3355
+        size = 3581
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 12426
-    }
-
-    aristocrats = {
-        culture = patagonian
-        religion = animist
-        size = 207
-    }
-
-    clergymen = {
-        culture = patagonian
-        religion = animist
-        size = 395
-    }
-
-    artisans = {
-        culture = patagonian
-        religion = animist
-        size = 732
-    }
-
-    soldiers = {
-        culture = patagonian
-        religion = animist
-        size = 226
-    }
-
-    farmers = {
-        culture = patagonian
-        religion = animist
-        size = 4676
+        size = 10000
     }
 
     craftsmen = {
         culture = south_andean
         religion = catholic
-        size = 21230
-    }
-
-    craftsmen = {
-        culture = patagonian
-        religion = animist
-        size = 7988
+        size = 29218
     }
 
     capitalists = {
         culture = south_andean
         religion = catholic
-        size = 128
-    }
-
-    capitalists = {
-        culture = patagonian
-        religion = animist
-        size = 37
+        size = 165
     }
 
     clerks = {
         culture = south_andean
         religion = catholic
-        size = 1846
+        size = 2541
     }
 
-    clerks = {
-        culture = patagonian
-        religion = animist
-        size = 695
-    }
 }
 #Temuco (36000/9000 POPS)
 2329 = {
@@ -724,91 +690,37 @@
     clergymen = {
         culture = south_andean
         religion = catholic
-        size = 395
-    }
-
-    artisans = {
-        culture = south_andean
-        religion = catholic
-        size = 610
+        size = 987
     }
 
     soldiers = {
         culture = south_andean
         religion = catholic
-        size = 151
+        size = 302
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 3864
-    }
-
-    aristocrats = {
-        culture = patagonian
-        religion = animist
-        size = 104
-    }
-
-    clergymen = {
-        culture = patagonian
-        religion = animist
-        size = 592
-    }
-
-    artisans = {
-        culture = patagonian
-        religion = animist
-        size = 488
-    }
-
-    soldiers = {
-        culture = patagonian
-        religion = animist
-        size = 151
-    }
-
-    farmers = {
-        culture = patagonian
-        religion = animist
-        size = 3096
+        size = 10000
     }
 
     craftsmen = {
         culture = south_andean
         religion = catholic
-        size = 6603
-    }
-
-    craftsmen = {
-        culture = patagonian
-        religion = animist
-        size = 5289
+        size = 10554
     }
 
     capitalists = {
         culture = south_andean
         religion = catholic
-        size = 46
-    }
-
-    capitalists = {
-        culture = patagonian
-        religion = animist
-        size = 18
+        size = 64
     }
 
     clerks = {
         culture = south_andean
         religion = catholic
-        size = 574
-    }
-
-    clerks = {
-        culture = patagonian
-        religion = animist
-        size = 460
+        size = 534
     }
 }
 #Cauquenes (68000/17000 POPS)
@@ -860,67 +772,31 @@
     clergymen = {
         culture = south_andean
         religion = catholic
-        size = 592
-    }
-
-    artisans = {
-        culture = south_andean
-        religion = catholic
-        size = 854
+        size = 987
     }
 
     soldiers = {
         culture = south_andean
         religion = catholic
-        size = 226
+        size = 301
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 15433
+        size = 14999
     }
 
-    aristocrats = {
-        culture = patagonian
-        religion = animist
-        size = 52
-    }
-
-    clergymen = {
-        culture = patagonian
-        religion = animist
-        size = 395
-    }
-
-    artisans = {
-        culture = patagonian
-        religion = animist
-        size = 244
-    }
-
-    soldiers = {
-        culture = patagonian
-        religion = animist
-        size = 75
-    }
-
-    farmers = {
-        culture = patagonian
-        religion = animist
-        size = 4392
+    craftsmen = {
+        culture = south_andean
+        religion = catholic
+        size = 5978
     }
 
     capitalists = {
         culture = south_andean
         religion = catholic
-        size = 64
-    }
-
-    capitalists = {
-        culture = patagonian
-        religion = animist
-        size = 9
+        size = 70
     }
 }
 #Magellanes Region (92000)
@@ -963,10 +839,10 @@
         size = 380
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 28792
+        size = 10000
     }
 
     aristocrats = {
@@ -993,22 +869,28 @@
         size = 151
     }
 
-    farmers = {
+    labourers = {
         culture = patagonian
         religion = animist
-        size = 8784
+        size = 4999
+    }
+
+    craftsmen = {
+        culture = south_andean
+        religion = catholic
+        size = 18792
+    }
+
+    craftsmen = {
+        culture = patagonian
+        religion = animist
+        size = 3784
     }
 
     capitalists = {
         culture = south_andean
         religion = catholic
-        size = 101
-    }
-
-    capitalists = {
-        culture = patagonian
-        religion = animist
-        size = 27
+        size = 128
     }
 }
 #uncolonized/claimed by Chile 1836

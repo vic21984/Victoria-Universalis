@@ -240,6 +240,7 @@ country_event = {
 country_event = {
 
 	id = 44804
+	title = "AI End Texan War"
 
 	trigger = {
 		tag = MEX
@@ -247,7 +248,7 @@ country_event = {
 		USA = { ai = yes }
 		month = 6
 	}
-	
+
 	fire_only_once = yes
 
 	option = {

@@ -53,19 +53,7 @@
 	artisans = {
 		culture = filipino
 		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = filipino
-		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = filipino
-		religion = catholic
-		size = 9000
+		size = 20000
 	}
 
 	soldiers = {
@@ -77,7 +65,7 @@
 	farmers = {
 		culture = filipino
 		religion = catholic
-		size = 136550
+		size = 145550
 	}
 
 	artisans = {
@@ -579,7 +567,7 @@
 	artisans = {
 		culture = filipino
 		religion = catholic
-		size = 850
+		size = 1500
 	}
 
 	soldiers = {
@@ -591,7 +579,7 @@
 	farmers = {
 		culture = filipino
 		religion = catholic
-		size = 14800
+		size = 14150
 	}
 
 	aristocrats = {
@@ -609,7 +597,7 @@
 	artisans = {
 		culture = filipino
 		religion = sunni
-		size = 600
+		size = 1500
 	}
 
 	soldiers = {
@@ -621,13 +609,7 @@
 	farmers = {
 		culture = filipino
 		religion = sunni
-		size = 11100
-	}
-
-	farmers = {
-		culture = malay
-		religion = catholic
-		size = 1100
+		size = 11300
 	}
 
 	aristocrats = {
@@ -645,7 +627,7 @@
 	artisans = {
 		culture = asian_minor
 		religion = animist
-		size = 350
+		size = 725
 	}
 
 	soldiers = {
@@ -657,7 +639,7 @@
 	farmers = {
 		culture = asian_minor
 		religion = animist
-		size = 7375
+		size = 7000
 	}
 }
 #Under rule of Sultans of Sulu in 1836
@@ -678,7 +660,13 @@
 	artisans = {
 		culture = filipino
 		religion = sunni
-		size = 2500
+		size = 26400
+	}
+
+	artisans = {
+		culture = filipino
+		religion = sunni
+		size = 20000
 	}
 
 	soldiers = {
@@ -687,10 +675,10 @@
 		size = 500
 	}
 
-	farmers = {
+	labourers = {
 		culture = filipino
 		religion = sunni
-		size = 44900
+		size = 1000
 	}
 
 	clergymen = {
@@ -701,20 +689,20 @@
 
 	artisans = {
 		culture = filipino
-		religion = catholic
-		size = 750
+		religion = sunni
+		size = 14950
 	}
 
-	farmers = {
+	labourers = {
 		culture = filipino
 		religion = catholic
-		size = 12200
+		size = 500
 	}
 
 	slaves = {
 		culture = filipino
 		religion = catholic
-		size = 4000
+		size = 1500
 	}
 
 	aristocrats = {
@@ -732,7 +720,7 @@
 	artisans = {
 		culture = asian_minor
 		religion = animist
-		size = 300
+		size = 8825
 	}
 
 	soldiers = {
@@ -741,11 +729,6 @@
 		size = 100
 	}
 
-	farmers = {
-		culture = asian_minor
-		religion = animist
-		size = 8525
-	}
 }
 #Jolo (44000/11000 POPS)
 1464 = {

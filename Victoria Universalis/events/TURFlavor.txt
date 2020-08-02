@@ -259,3 +259,17 @@ country_event = {
 		set_global_flag = oriental_crisis_ended
 	}
 }
+
+country_event = {
+		
+	id = 31108 # Tsar of all Slavs
+	title = "EVTNAME31108"
+	desc = "EVTDESC31108"
+	picture = balkan_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31108"
+	}
+}

@@ -22,7 +22,7 @@ colonial = 0
 		upgrade = yes
 	}
 	state_building = {
-		level = 4
+		level = 8
 		building = glass_factory
 		upgrade = yes
 	}
@@ -44,6 +44,11 @@ colonial = 0
 	state_building = {
 		level = 2
 		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = winery
 		upgrade = yes
 	}
 }

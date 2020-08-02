@@ -5,6 +5,7 @@ plane = {
 	sprite = Plane
 	active = no
 	unit_type = support
+	primary_culture = yes
 	floating_flag = no
 	
 	#Core Abilities
@@ -26,18 +27,18 @@ plane = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		aeroplanes = 0.2
-		small_arms = 0.03
+		aeroplanes = 0.3
+		small_arms = 0.1
 		ammunition = 0.1	
 		canned_food = 0.05
-		fuel = 0.5
+		fuel = 0.8
 	}
 	
 
 	#Land Abilties
 	reconnaissance = 4
-	attack = 2
-	defence = 9
+	attack = 4
+	defence = 6
 	discipline = 1
 	support = 3.5
 	maneuver = 5

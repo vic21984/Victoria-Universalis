@@ -326,7 +326,7 @@ country_event = {
 	id = 33006
 	title = "EVTNAME33006"
 	desc = "EVTDESC33006"
-	picture = "german_rhine"
+	picture = "rhineland"
 
 	trigger = {
 		owns = 549 #Berlin
@@ -341,5 +341,186 @@ country_event = {
 	option = {
 		name = "EVTOPTA33006"
 		GER = { all_core = { limit = { life_rating = 40  } life_rating = -5 } }
+	}
+}
+
+#Bismarck's Reforms
+country_event = {
+	id = 33007
+	title = "EVTNAME33007"
+	desc = "EVTDESC33007"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = NGF
+		}
+		NOT = { has_country_flag = bismarck_reforms }
+		year = 1880
+		NOT = { has_global_flag = 1914_bookmark }
+	}
+	
+	mean_time_to_happen = { days = 14 }
+	
+	option = {
+		name = "EVTOPTA33007"
+		set_country_flag = bismarck_reforms
+		random_owned = {
+			limit = {
+				owner = { school_reforms = good_schools }
+			}	
+			owner = { social_reform = compulsory_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = acceptable_schools }
+			}	
+			owner = { social_reform = good_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = low_schools }
+			}	
+			owner = { social_reform = acceptable_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = no_schools }
+			}	
+			owner = { social_reform = low_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = ten_hours }
+			}	
+			owner = { social_reform = eight_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = twelve_hours }
+			}	
+			owner = { social_reform = ten_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = fourteen_hours }
+			}	
+			owner = { social_reform = twelve_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = no_work_hour_limit }
+			}	
+			owner = { social_reform = fourteen_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = acceptable_safety }
+			}	
+			owner = { social_reform = good_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = low_safety }
+			}	
+			owner = { social_reform = acceptable_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = trinket_safety }
+			}	
+			owner = { social_reform = low_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = no_safety }
+			}	
+			owner = { social_reform = trinket_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = acceptable_subsidies }
+			}	
+			owner = { social_reform = good_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = low_subsidies }
+			}	
+			owner = { social_reform = acceptable_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = trinket_subsidies }
+			}	
+			owner = { social_reform = low_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = no_subsidies }
+			}	
+			owner = { social_reform = trinket_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = acceptable_pensions }
+			}	
+			owner = { social_reform = good_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = low_pensions }
+			}	
+			owner = { social_reform = acceptable_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = trinket_pensions }
+			}	
+			owner = { social_reform = low_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = no_pensions }
+			}	
+			owner = { social_reform = trinket_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { NOT = { child_labor = child_labor_illegal } }
+			}	
+			owner = { social_reform = child_labor_illegal }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = good_health_care }
+			}	
+			owner = { social_reform = universal_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = acceptable_health_care } 
+			}	
+			owner = { social_reform = good_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = low_health_care }
+			}	
+			owner = { social_reform = acceptable_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = trinket_health_care }
+			}	
+			owner = { social_reform = low_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = no_health_care }
+			}	
+			owner = { social_reform = trinket_health_care }
+		}
 	}
 }

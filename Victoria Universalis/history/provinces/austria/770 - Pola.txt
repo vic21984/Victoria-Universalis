@@ -10,4 +10,14 @@ life_rating = 35
 	remove_core = AUS
 	add_core = KUK
 	naval_base = 6
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
 }

@@ -28,7 +28,7 @@
     artisans = {
         culture = swedish
         religion = protestant
-        size = 3580
+        size = 8383
     }
 
     soldiers = {
@@ -37,11 +37,24 @@
         size = 3938
     }
 
-    farmers = {
+    labourers = {
         culture = swedish
         religion = protestant
-        size = 39603
+        size = 14999
     }
+
+    craftsmen = {
+        culture = swedish
+        religion = protestant
+        size = 18000
+    }
+
+    clerks = {
+        culture = swedish
+        religion = protestant
+        size = 1800
+    }
+
 }
 #Sundsvall (80000/20000 POPS)
 318 = {
@@ -125,13 +138,13 @@
         size = 358
     }
 
-    labourers = {
+    farmers = {
         culture = swedish
         religion = protestant
         size = 5858
     }
 
-    labourers = {
+    farmers = {
         culture = norwegian
         religion = protestant
         size = 689
@@ -184,7 +197,7 @@
     artisans = {
         culture = swedish
         religion = protestant
-        size = 1342
+        size = 3056
     }
 
     soldiers = {
@@ -196,14 +209,27 @@
     labourers = {
         culture = swedish
         religion = protestant
-        size = 21345
+        size = 13030
     }
 
-    farmers = {
+    labourers = {
         culture = finnish
         religion = protestant
         size = 1969
     }
+
+    craftsmen = {
+        culture = swedish
+        religion = protestant
+        size = 6000
+    }
+
+    clerks = {
+        culture = swedish
+        religion = protestant
+        size = 600
+    }
+
 }
 #Lulea (44000/11000 POPS)
 321 = {
@@ -216,7 +242,7 @@
     artisans = {
         culture = swedish
         religion = protestant
-        size = 716
+        size = 2452
     }
 
     soldiers = {
@@ -228,7 +254,7 @@
     labourers = {
         culture = swedish
         religion = protestant
-        size = 11187
+        size = 9450
     }
 
     artisans = {
@@ -237,13 +263,13 @@
         size = 179
     }
 
-    farmers = {
+    labourers = {
         culture = sami
         religion = protestant
         size = 3580
     }
 
-    farmers = {
+    labourers = {
         culture = finnish
         religion = protestant
         size = 1969
@@ -279,7 +305,7 @@
     artisans = {
         culture = swedish
         religion = protestant
-        size = 6712
+        size = 20224
     }
 
     soldiers = {
@@ -288,40 +314,28 @@
         size = 14320
     }
 
-    farmers = {
+    labourers = {
         culture = swedish
         religion = protestant
-        size = 55512
+        size = 10000
     }
 
     craftsmen = {
         culture = swedish
         religion = protestant
-        size = 1902
+        size = 47630
     }
 
-    craftsmen = {
+    clerks = {
         culture = swedish
         religion = protestant
-        size = 15728
+        size = 5112
     }
 
     capitalists = {
         culture = swedish
         religion = protestant
         size = 134
-    }
-
-    clerks = {
-        culture = swedish
-        religion = protestant
-        size = 336
-    }
-
-    clerks = {
-        culture = swedish
-        religion = protestant
-        size = 2776
     }
 }
 #Falun (144000/36000 POPS)
@@ -341,7 +355,7 @@
     artisans = {
         culture = swedish
         religion = protestant
-        size = 2349
+        size = 10315
     }
 
     soldiers = {
@@ -350,40 +364,28 @@
         size = 3938
     }
 
-    farmers = {
+    labourers = {
         culture = swedish
         religion = protestant
-        size = 43966
+        size = 5000
     }
 
     craftsmen = {
         culture = swedish
         religion = protestant
-        size = 666
+        size = 42124
     }
 
-    craftsmen = {
+    clerks = {
         culture = swedish
         religion = protestant
-        size = 12458
+        size = 4315
     }
 
     capitalists = {
         culture = swedish
         religion = protestant
         size = 134
-    }
-
-    clerks = {
-        culture = swedish
-        religion = protestant
-        size = 117
-    }
-
-    clerks = {
-        culture = swedish
-        religion = protestant
-        size = 2198
     }
 }
 #Uppsala (88000/22000 POPS)
@@ -527,7 +529,7 @@
     artisans = {
         culture = swedish
         religion = protestant
-        size = 3691
+        size = 22137
     }
 
     soldiers = {
@@ -536,40 +538,28 @@
         size = 3938
     }
 
-    farmers = {
+    labourers = {
         culture = swedish
         religion = protestant
-        size = 65446
+        size = 5000
     }
 
     craftsmen = {
         culture = swedish
         religion = protestant
-        size = 1046
+        size = 59590
     }
 
-    craftsmen = {
+    clerks = {
         culture = swedish
         religion = protestant
-        size = 18544
+        size = 5457
     }
 
     capitalists = {
         culture = swedish
         religion = protestant
         size = 134
-    }
-
-    clerks = {
-        culture = swedish
-        religion = protestant
-        size = 185
-    }
-
-    clerks = {
-        culture = swedish
-        religion = protestant
-        size = 3272
     }
 }
 #Orebro (127000/31750 POPS)

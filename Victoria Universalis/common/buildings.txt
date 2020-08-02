@@ -151,7 +151,7 @@ machine_parts_factory = {
 	max_level = 99
 	goods_cost =
 	{
-		iron = 400
+		lumber = 400
 		cement = 400
 		steel = 400
 	}
@@ -258,7 +258,7 @@ liquor_distillery = {
 	goods_cost =
 	{
 		machine_parts = 80
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -278,7 +278,7 @@ winery = {
 	goods_cost =
 	{
 		machine_parts = 80
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -298,7 +298,7 @@ furniture_factory = {
 	goods_cost =
 	{
 		machine_parts = 140
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -318,7 +318,7 @@ regular_clothes_factory = {
 	goods_cost =
 	{
 		machine_parts = 140
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -338,7 +338,7 @@ explosives_factory = {
 	goods_cost =
 	{
 		machine_parts = 140
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -360,7 +360,7 @@ steel_factory = {
 	goods_cost =
 	{
 		machine_parts = 200
-		iron = 200
+		steel = 100
 		coal = 200
 	}
 	time = 365
@@ -380,7 +380,7 @@ artillery_factory = {
 	goods_cost =
 	{
 		machine_parts = 200
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -399,7 +399,7 @@ small_arms_factory = {
 	goods_cost =
 	{
 		machine_parts = 140
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -419,7 +419,7 @@ ammunition_factory = {
 	goods_cost =
 	{
 		machine_parts = 100
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -441,7 +441,7 @@ tea_packaging_factory = {
 	goods_cost = 
 	{
 		machine_parts = 100
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -462,7 +462,7 @@ coffee_packaging_factory = {
 	goods_cost = 
 	{
 		machine_parts = 100
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -483,7 +483,7 @@ canned_food_factory = {
 	goods_cost =
 	{
 		machine_parts = 80
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -503,7 +503,7 @@ dye_factory = {
 	goods_cost =
 	{
 		machine_parts = 80
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -522,7 +522,7 @@ paper_mill = {
 	goods_cost =
 	{
 		machine_parts = 140
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -543,7 +543,7 @@ cigarette_factory = {
 	goods_cost = 
 	{
 		machine_parts = 100
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -566,7 +566,7 @@ luxury_clothes_factory = {
 	goods_cost =
 	{
 		machine_parts = 200
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -586,7 +586,7 @@ luxury_furniture_factory = {
 	goods_cost =
 	{
 		machine_parts = 200
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -607,7 +607,7 @@ pharmaceutical_plant = {
 	goods_cost = 
 	{
 		machine_parts = 200
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -629,7 +629,7 @@ lumber_mill = {
 	goods_cost =
 	{
 		machine_parts = 20
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -649,7 +649,7 @@ fabric_factory = {
 	goods_cost =
 	{
 		machine_parts = 20
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -669,8 +669,8 @@ cement_factory = {
 	goods_cost =
 	{
 		machine_parts = 20
-		iron = 200
-		timber = 200
+		steel = 100
+		lumber = 200
 	}
 	time = 365
 	visibility = yes
@@ -688,7 +688,7 @@ glass_factory = {
 	goods_cost =
 	{
 		machine_parts = 40
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -708,7 +708,7 @@ fertilizer_factory = {
 	goods_cost =
 	{
 		machine_parts = 200
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -754,7 +754,7 @@ clipper_shipyard = {
 	goods_cost =
 	{
 		machine_parts = 200
-		iron = 200
+		steel = 100
 		cement = 200
 	}
 	time = 365
@@ -770,7 +770,7 @@ province_selector = {
 	goods_cost =
 	{
 	}
-	time = 2
+	time = 1
 	visibility = no
 	onmap = no
 	max_level = 2
@@ -802,7 +802,7 @@ railroad = {
 	type = infrastructure
 	goods_cost =
 	{
-		timber = 500
+		lumber = 500
 		cement = 50
 		steel = 150
 	}
@@ -828,7 +828,7 @@ naval_base = {
 		cement = 500
 		steel = 500
 	}
-	time = 1080
+	time = 720
 	naval_capacity = 1
 	capital = yes
 	onmap = yes

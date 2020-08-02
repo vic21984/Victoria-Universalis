@@ -239,7 +239,7 @@
     artisans = {
         culture = nguni
         religion = animist
-        size = 200
+        size = 2850
     }
 
     soldiers = {
@@ -248,10 +248,10 @@
         size = 150
     }
 
-    farmers = {
+    labourers = {
         culture = nguni
         religion = animist
-        size = 3650
+        size = 1000
     }
 
     aristocrats = {
@@ -269,7 +269,13 @@
     artisans = {
         culture = shona
         religion = animist
-        size = 1800
+        size = 30000
+    }
+
+    artisans = {
+        culture = shona
+        religion = animist
+        size = 24875
     }
 
     soldiers = {
@@ -278,16 +284,10 @@
         size = 1200
     }
 
-    farmers = {
+    labourers = {
         culture = shona
         religion = animist
-        size = 39375
-    }
-
-    slaves = {
-        culture = shona
-        religion = animist
-        size = 22700
+        size = 9000
     }
 }
 #Zambezia Region (912000)
@@ -554,7 +554,7 @@
     artisans = {
         culture = shona
         religion = animist
-        size = 500
+        size = 3625
     }
 
     soldiers = {
@@ -563,16 +563,10 @@
         size = 450
     }
 
-    farmers = {
+    labourers = {
         culture = shona
         religion = animist
-        size = 7125
-    }
-
-    slaves = {
-        culture = shona
-        religion = animist
-        size = 3000
+        size = 7000
     }
 
     aristocrats = {
@@ -590,7 +584,7 @@
     artisans = {
         culture = nyasa
         religion = animist
-        size = 400
+        size = 5750
     }
 
     soldiers = {
@@ -599,16 +593,10 @@
         size = 300
     }
 
-    farmers = {
+    labourers = {
         culture = nyasa
         religion = animist
-        size = 4850
-    }
-
-    slaves = {
-        culture = nyasa
-        religion = animist
-        size = 2500
+        size = 2000
     }
 
     aristocrats = {
@@ -626,7 +614,7 @@
     artisans = {
         culture = sena
         religion = animist
-        size = 350
+        size = 5775
     }
 
     soldiers = {
@@ -635,10 +623,10 @@
         size = 300
     }
 
-    farmers = {
+    labourers = {
         culture = sena
         religion = animist
-        size = 6425
+        size = 1000
     }
 }
 #Songo (164000/41000 POPS)

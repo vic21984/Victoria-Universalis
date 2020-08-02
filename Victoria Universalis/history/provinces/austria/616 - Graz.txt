@@ -6,5 +6,30 @@ life_rating = 35
 1914.1.1 = {
 	owner = KUK
 	controller = KUK
-add_core = KUK
+	add_core = KUK
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
 }

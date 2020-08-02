@@ -2,7 +2,7 @@ country_event = {
 	id = 91501 #Deciding a Colonial Policy
 	title = "EVTNAME91501"
 	desc = "EVTDESC91501"
-	picture = "exemplar_colony"
+	picture = colonial_policy
 
 	trigger = {
 		civilized = yes
@@ -45,6 +45,14 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 10
+				tag = ENG
+			}
+			modifier = {
+				factor = 0
+				NOT = { is_greater_power = yes }
+			}
+			modifier = {
 				factor = 1.5
 				government = absolute_monarchy
 			}
@@ -69,7 +77,7 @@ country_event = {
 	
 	option = {
 		name = "EVT91501OPTB"
-		political_reform = exploitation
+		political_reform = indirect_rule
 		any_pop = { 
 			limit = {
 				is_primary_culture = yes
@@ -142,6 +150,10 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 0
+				NOT = { is_greater_power = yes }
+			}
+			modifier = {
 				factor = 1.5
 				government = democracy
 			}
@@ -169,12 +181,12 @@ country_event = {
 	id = 91502 #No Colonies Colonial Policy
 	title = "EVTNAME91502"
 	desc = "EVTDESC91502"
-	picture = "exemplar_colony"
+	picture = colonial_policy
 
 	trigger = {
 		civilized = yes
 		OR = {
-		colonial_policy = exploitation
+		colonial_policy = indirect_rule
 		colonial_policy = civilizing
 		colonial_policy = settlement
 		}
@@ -220,14 +232,22 @@ country_event = {
 			any_owned = {
 				limit = {
 					OR = {
-						province_id = 306
-						province_id = 317
-						province_id = 320
-						province_id = 321
+						continent = north_america
+						continent = south_america
+						continent = oceania
 					}
-					NOT = { has_province_modifier = strategic_rgo }
+					NOT = {
+						has_province_modifier = new_world_farm
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = precious_metal
+							trade_goods = oil
+						}
+					}
 				}
-				add_province_modifier = { name = strategic_rgo duration = -1 }
+				add_province_modifier = { name = new_world_farm duration = -1 }
 			}
 		}
 		any_country = {
@@ -243,29 +263,6 @@ country_event = {
 					}
 					NOT = { has_province_modifier = strategic_rgo }
 					trade_goods = rubber
-				}
-				add_province_modifier = { name = strategic_rgo duration = -1 }
-			}
-		}
-		any_country = {
-			any_owned = {
-				limit = {
-					OR = {
-						province_id = 89
-						province_id = 126
-						province_id = 132
-						province_id = 133
-						province_id = 1102
-						province_id = 1104
-						province_id = 1107
-						province_id = 1167
-						province_id = 1393
-						province_id = 2234
-						province_id = 2237
-						province_id = 2270
-					}
-					NOT = { has_province_modifier = strategic_rgo }
-					trade_goods = oil
 				}
 				add_province_modifier = { name = strategic_rgo duration = -1 }
 			}

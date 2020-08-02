@@ -23,7 +23,7 @@
 	artisans = {
 		culture = north_german
 		religion = catholic
-		size = 750
+		size = 13150
 	}
 
 	soldiers = {
@@ -32,10 +32,10 @@
 		size = 2000
 	}
 
-	farmers = {
+	labourers = {
 		culture = north_german
 		religion = catholic
-		size = 14900
+		size = 2500
 	}
 
 	aristocrats = {
@@ -65,7 +65,13 @@
 	artisans = {
 		culture = french
 		religion = catholic
-		size = 1750
+		size = 12625
+	}
+
+	artisans = {
+		culture = french
+		religion = catholic
+		size = 10000
 	}
 
 	soldiers = {
@@ -74,10 +80,10 @@
 		size = 250
 	}
 
-	farmers = {
+	labourers = {
 		culture = french
 		religion = catholic
-		size = 23375
+		size = 2500
 	}
 
 }

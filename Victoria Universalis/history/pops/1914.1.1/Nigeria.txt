@@ -732,13 +732,37 @@
 	artisans = {
 		culture = ibo
 		religion = animist
-		size = 10000
+		size = 50000
 	}
-	
+
 	artisans = {
 		culture = ibo
 		religion = animist
-		size = 2650
+		size = 50000
+	}
+
+	artisans = {
+		culture = ibo
+		religion = animist
+		size = 50000
+	}
+
+	artisans = {
+		culture = ibo
+		religion = animist
+		size = 50000
+	}
+
+	artisans = {
+		culture = ibo
+		religion = animist
+		size = 50000
+	}
+
+	artisans = {
+		culture = ibo
+		religion = animist
+		size = 42650
 	}
 
 	soldiers = {
@@ -753,16 +777,10 @@
 		size = 900
 	}
 
-	farmers = {
+	labourers = {
 		culture = ibo
 		religion = animist
-		size = 214000
-	}
-
-	slaves = {
-		culture = itsekari
-		religion = animist
-		size = 76000
+		size = 10000
 	}
 }
 #Calabar (840000/210000 POPS)
@@ -788,7 +806,31 @@
 	artisans = {
 		culture = ibibio
 		religion = animist
-		size = 8400
+		size = 30650
+	}
+
+	artisans = {
+		culture = ibibio
+		religion = animist
+		size = 30000
+	}
+
+	artisans = {
+		culture = ibibio
+		religion = animist
+		size = 30000
+	}
+
+	artisans = {
+		culture = ibibio
+		religion = animist
+		size = 30000
+	}
+
+	artisans = {
+		culture = ibibio
+		religion = animist
+		size = 30000
 	}
 
 	soldiers = {
@@ -797,16 +839,22 @@
 		size = 2100
 	}
 
-	farmers = {
+	labourers = {
 		culture = ibibio
 		religion = animist
-		size = 149250
+		size = 7000
 	}
 
-	slaves = {
+	artisans = {
 		culture = tiv
 		religion = animist
-		size = 44000
+		size = 41000
+	}
+
+	labourers = {
+		culture = tiv
+		religion = animist
+		size = 3000
 	}
 }
 #Aruchukwu (832000/208000 POPS)
@@ -1972,7 +2020,19 @@
 	artisans = {
 		culture = hausa
 		religion = sunni
-		size = 2950
+		size = 30000
+	}
+
+	artisans = {
+		culture = hausa
+		religion = sunni
+		size = 30000
+	}
+
+	artisans = {
+		culture = hausa
+		religion = sunni
+		size = 23650
 	}
 
 	soldiers = {
@@ -1981,10 +2041,10 @@
 		size = 600
 	}
 
-	farmers = {
+	labourers = {
 		culture = hausa
 		religion = sunni
-		size = 83700
+		size = 3000
 	}
 
 	aristocrats = {
@@ -2002,7 +2062,19 @@
 	artisans = {
 		culture = hausa
 		religion = animist
-		size = 600
+		size = 30000
+	}
+
+	artisans = {
+		culture = hausa
+		religion = animist
+		size = 30000
+	}
+
+	artisans = {
+		culture = hausa
+		religion = animist
+		size = 19525
 	}
 
 	soldiers = {
@@ -2011,16 +2083,10 @@
 		size = 125
 	}
 
-	farmers = {
+	labourers = {
 		culture = hausa
 		religion = animist
-		size = 35925
-	}
-
-	slaves = {
-		culture = hausa
-		religion = animist
-		size = 47000
+		size = 4000
 	}
 
 	aristocrats = {
@@ -2038,7 +2104,19 @@
 	artisans = {
 		culture = fulbe
 		religion = sunni
-		size = 1325
+		size = 30000
+	}
+
+	artisans = {
+		culture = fulbe
+		religion = sunni
+		size = 30000
+	}
+
+	artisans = {
+		culture = fulbe
+		religion = sunni
+		size = 16675
 	}
 
 	soldiers = {
@@ -2047,10 +2125,10 @@
 		size = 350
 	}
 
-	farmers = {
+	labourers = {
 		culture = fulbe
 		religion = sunni
-		size = 78350
+		size = 3000
 	}
 }
 #Adamawa Region (140000) #see Cameroun.txt for balance of region   

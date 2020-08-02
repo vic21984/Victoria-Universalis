@@ -1,10 +1,16 @@
 #Trondelag-Nordland Region - 304000
 #Trondheim (140000/35000 POPS)
 305 = {
+	aristocrats = {
+		culture = norwegian
+		religion = protestant
+		size = 100
+	}
+
 	bureaucrats = {
 		culture = norwegian
 		religion = protestant
-		size = 300
+		size = 600
 	}
 
 	officers = {
@@ -22,7 +28,7 @@
 	artisans = {
 		culture = norwegian
 		religion = protestant
-		size = 3250
+		size = 2950
 	}
 
 	soldiers = {
@@ -34,7 +40,7 @@
 	farmers = {
 		culture = norwegian
 		religion = protestant
-		size = 30250
+		size = 30150
 	}
 }
 #Bodo (56000/14000 POPS)
@@ -48,7 +54,7 @@
 	artisans = {
 		culture = norwegian
 		religion = protestant
-		size = 750
+		size = 3950
 	}
 
 	soldiers = {
@@ -57,13 +63,13 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = norwegian
 		religion = protestant
-		size = 12100
+		size = 8900
 	}
 
-	farmers = {
+	labourers = {
 		culture = finnish
 		religion = protestant
 		size = 1100
@@ -138,8 +144,8 @@
 3246 = {
 	bankers = {
 		culture = illuminati
-		religion = jewish
-		size = 10000
+		religion = animist
+		size = 10001
 	}
 }
 
@@ -149,7 +155,7 @@
 	bureaucrats = {
 		culture = norwegian
 		religion = protestant
-		size = 500
+		size = 1000
 	}
 
 	officers = {
@@ -167,7 +173,7 @@
 	artisans = {
 		culture = norwegian
 		religion = protestant
-		size = 5000
+		size = 4500
 	}
 
 	soldiers = {
@@ -245,7 +251,13 @@
 	artisans = {
 		culture = norwegian
 		religion = protestant
-		size = 2000
+		size = 18125
+	}
+
+	artisans = {
+		culture = norwegian
+		religion = protestant
+		size = 10000
 	}
 
 	soldiers = {
@@ -257,17 +269,23 @@
 	labourers = {
 		culture = norwegian
 		religion = protestant
-		size = 31125
+		size = 5000
 	}
 
 }
 #Ostlandet Region - 352000
 #Christiania (108000/27000 POPS)
 313 = {
+	aristocrats = {
+		culture = norwegian
+		religion = protestant
+		size = 300
+	}
+
 	bureaucrats = {
 		culture = norwegian
 		religion = protestant
-		size = 500
+		size = 1000
 	}
 
 	officers = {
@@ -285,7 +303,7 @@
 	artisans = {
 		culture = norwegian
 		religion = protestant
-		size = 7000
+		size = 14325
 	}
 
 	soldiers = {
@@ -294,10 +312,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = norwegian
 		religion = protestant
-		size = 18275
+		size = 10000
 	}
 }
 #Hamar (80000/20000 POPS)
@@ -311,7 +329,7 @@
 	artisans = {
 		culture = norwegian
 		religion = protestant
-		size = 1100
+		size = 9850
 	}
 
 	soldiers = {
@@ -320,10 +338,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = norwegian
 		religion = protestant
-		size = 18750
+		size = 10000
 	}
 }
 #Lillehammer (96000/24000 POPS)

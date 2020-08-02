@@ -29,7 +29,25 @@
     artisans = {
         culture = north_andean
         religion = catholic
-        size = 5309
+        size = 30000
+    }
+
+    artisans = {
+        culture = north_andean
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = north_andean
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = north_andean
+        religion = catholic
+        size = 10786
     }
 
     soldiers = {
@@ -38,10 +56,10 @@
         size = 3561
     }
 
-    farmers = {
+    labourers = {
         culture = north_andean
         religion = catholic
-        size = 105477
+        size = 9999
     }
 
     clergymen = {
@@ -53,7 +71,7 @@
     artisans = {
         culture = afro_caribeno
         religion = catholic
-        size = 1424
+        size = 31130
     }
 
     soldiers = {
@@ -62,16 +80,10 @@
         size = 3561
     }
 
-    farmers = {
+    labourers = {
         culture = afro_caribeno
         religion = catholic
-        size = 24346
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 10360
+        size = 5000
     }
 
     capitalists = {
@@ -707,7 +719,7 @@
     artisans = {
         culture = north_andean
         religion = catholic
-        size = 1813
+        size = 30605
     }
 
     soldiers = {
@@ -716,10 +728,10 @@
         size = 484
     }
 
-    farmers = {
+    labourers = {
         culture = north_andean
         religion = catholic
-        size = 31792
+        size = 3000
     }
 
     clergymen = {
@@ -731,7 +743,7 @@
     artisans = {
         culture = afro_caribeno
         religion = catholic
-        size = 1295
+        size = 24011
     }
 
     soldiers = {
@@ -740,16 +752,10 @@
         size = 323
     }
 
-    farmers = {
+    labourers = {
         culture = afro_caribeno
         religion = catholic
-        size = 19036
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 5180
+        size = 1500
     }
 
     clergymen = {
@@ -761,7 +767,7 @@
     artisans = {
         culture = guajiro
         religion = catholic
-        size = 129
+        size = 2037
     }
 
     soldiers = {
@@ -770,10 +776,10 @@
         size = 31
     }
 
-    farmers = {
+    labourers = {
         culture = guajiro
         religion = catholic
-        size = 2408
+        size = 500
     }
 
     capitalists = {
@@ -799,7 +805,13 @@
     artisans = {
         culture = north_andean
         religion = catholic
-        size = 2727
+        size = 21654
+    }
+
+    artisans = {
+        culture = north_andean
+        religion = catholic
+        size = 20000
     }
 
     soldiers = {
@@ -808,10 +820,10 @@
         size = 3561
     }
 
-    farmers = {
+    labourers = {
         culture = north_andean
         religion = catholic
-        size = 47927
+        size = 9000
     }
 
     clergymen = {
@@ -823,7 +835,7 @@
     artisans = {
         culture = afro_caribeno
         religion = catholic
-        size = 404
+        size = 7707
     }
 
     soldiers = {
@@ -832,16 +844,10 @@
         size = 160
     }
 
-    farmers = {
+    labourers = {
         culture = afro_caribeno
         religion = catholic
-        size = 5454
-    }
-
-    slaves = {
-        culture = afro_caribeno
-        religion = catholic
-        size = 2849
+        size = 1000
     }
 
     clergymen = {
@@ -853,19 +859,13 @@
     artisans = {
         culture = native_american_minor
         religion = catholic
-        size = 101
+        size = 1978
     }
 
     soldiers = {
         culture = native_american_minor
         religion = catholic
         size = 31
-    }
-
-    farmers = {
-        culture = native_american_minor
-        religion = catholic
-        size = 1877
     }
 
     craftsmen = {

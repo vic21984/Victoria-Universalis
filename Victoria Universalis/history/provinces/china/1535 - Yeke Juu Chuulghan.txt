@@ -5,3 +5,10 @@ add_core = MGL
 add_core = XBI
 trade_goods = cattle
 life_rating = 32
+1914.1.1 = {
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+}

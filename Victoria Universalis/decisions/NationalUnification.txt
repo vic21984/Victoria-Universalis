@@ -274,6 +274,7 @@ political_decisions = {
 					}
 				}
 			}
+			FRA_412 = { owned_by = THIS }
 		}
 		
 		effect = {
@@ -673,79 +674,4 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
-	form_yugoslavia = {
-		potential = {
-			is_culture_group = south_slavic
-			NOT = { exists = YUG }
-			NOT = { has_global_flag = yugoslavia_formed }
-		}
-
-		allow = {
-			war = no
-			SER = {
-				all_core = {
-					owned_by = THIS
-				}
-			}
-		}
-
-		effect = {
-			set_global_flag = yugoslavia_formed
-			prestige = 20
-			all_core = { add_core = YUG }
-			SER = { all_core = { add_core = YUG } }
-			MON = { all_core = { add_core = YUG } }
-			CRO = { all_core = { add_core = YUG } }
-			BOS = { all_core = { add_core = YUG } }
-			SLO = { all_core = { add_core = YUG } }
-			primary_culture = yugoslavian
-			add_accepted_culture = serb
-			add_accepted_culture = bosniak
-			add_accepted_culture = croat
-			change_tag = YUG
-			any_country = {
-				limit = {
-					NOT = { is_culture_group = south_slavic }
-					in_sphere = THIS
-					war = no
-					any_owned_province = {
-						OR = {
-							is_core = SER
-							is_core = BOS
-							is_core = CRO
-						}
-					}
-				}
-				any_owned = {
-					limit = {
-						OR = {
-							is_core = SER
-							is_core = BOS
-							is_core = CRO
-						}
-					}
-					secede_province = THIS
-				}
-			}
-			any_country = {
-				limit = {
-					war = no
-					is_culture_group = south_slavic
-					NOT = { tag = ALB }
-					OR = {
-						in_sphere = THIS
-						sphere_owner = { is_sphere_leader_of = THIS }
-						relation = { who = THIS value = 50 }
-					}
-				}
-				country_event = 11108
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 }

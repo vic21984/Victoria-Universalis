@@ -220,9 +220,20 @@ political_decisions = {
 		}
 		
 		allow = {
-			ITA = {
-				all_core = { owned_by = THIS }
-			}
+			SAR_720 = { owned_by = THIS }
+			SAR_765 = { owned_by = THIS }
+			AUS_726 = { owned_by = THIS }
+			MOD_739 = { owned_by = THIS }
+			TUS_744 = { owned_by = THIS }
+			PAP_741 = { owned_by = THIS }
+			PAP_749 = { owned_by = THIS }
+			PAP_752 = { owned_by = THIS }
+			SIC_754 = { owned_by = THIS }
+			SIC_753 = { owned_by = THIS }
+			SIC_756 = { owned_by = THIS }
+			SIC_759 = { owned_by = THIS }
+			SIC_755 = { owned_by = THIS }
+			SIC_763 = { owned_by = THIS }
 		}
 		
 		effect = {
@@ -288,5 +299,30 @@ political_decisions = {
 				add_core = ITA
 			}
 		}
+	}
+
+	embrace_south_italians = {
+		picture = embrace_south_italians
+		potential = {
+			tag = SAR
+			NOT = { has_country_flag = embraced_south_italians }
+		}
+		
+		allow = {
+			state_n_government = 1
+			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+			765 = { owned_by = THIS }
+			766 = { owned_by = THIS }
+		}
+		
+		effect = {
+			add_accepted_culture = south_italian
+			set_country_flag = embraced_south_italians
+		}
+		
+		ai_will_do = { factor = 1 }
 	}
 }

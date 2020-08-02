@@ -16,7 +16,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 650
+		size = 1300
 	}
 
 	clergymen = {
@@ -28,7 +28,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 6350
+		size = 5700
 	}
 
 	soldiers = {
@@ -63,16 +63,22 @@
 		size = 5000
 	}
 
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 4750
+	}
+
 	soldiers = {
 		culture = spanish
 		religion = catholic
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 10850
+		size = 6100
 	}
 
 	clergymen = {
@@ -144,7 +150,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 400
+		size = 800
 	}
 
 	clergymen = {
@@ -156,7 +162,19 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 3500
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 16700
 	}
 
 	soldiers = {
@@ -165,10 +183,10 @@
 		size = 700
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 63600
+		size = 10000
 	}
 }
 #Santander (178000/44500) POPS
@@ -188,7 +206,13 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 1500
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 13100
 	}
 
 	soldiers = {
@@ -197,10 +221,10 @@
 		size = 400
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 37700
+		size = 6100
 	}
 
 	clergymen = {
@@ -215,7 +239,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = basque
 		religion = catholic
 		size = 3900
@@ -316,7 +340,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 350
+		size = 700
 	}
 
 	clergymen = {
@@ -328,7 +352,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 3500
+		size = 3150
 	}
 
 	soldiers = {
@@ -426,7 +450,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 250
+		size = 500
 	}
 
 	clergymen = {
@@ -438,7 +462,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 4500
+		size = 4250
 	}
 
 	soldiers = {
@@ -505,16 +529,28 @@
 		size = 2500
 	}
 
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 13725
+	}
+
 	soldiers = {
 		culture = spanish
 		religion = catholic
 		size = 450
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 38725
+		size = 5000
 	}
 
 }
@@ -536,25 +572,13 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 1100
+		size = 2200
 	}
 
 	clergymen = {
 		culture = spanish
 		religion = catholic
 		size = 900
-	}
-
-	artisans = {
-		culture = spanish
-		religion = catholic
-		size = 10000
-	}
-	
-	artisans = {
-		culture = spanish
-		religion = catholic
-		size = 10000
 	}
 
 	artisans = {
@@ -572,7 +596,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 50600
+		size = 69500
 	}
 }
 #Siguenza (204000/51000 POPS)
@@ -624,7 +648,19 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 6000
+		size = 23200
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
 	}
 
 	soldiers = {
@@ -633,10 +669,10 @@
 		size = 5000
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 62200
+		size = 5000
 	}
 }
 #Cuenca (346000/86500 POPS)
@@ -723,14 +759,6 @@
 		rebel_type = carlist_rebels
 	}
 
-	artisans = {
-		culture = basque
-		religion = catholic
-		size = 3000
-		militancy = 8
-		rebel_type = carlist_rebels
-	}
-
 	soldiers = {
 		culture = basque
 		religion = catholic
@@ -739,10 +767,26 @@
 		rebel_type = carlist_rebels
 	}
 
-	farmers = {
+	artisans = {
 		culture = basque
 		religion = catholic
-		size = 51800
+		size = 20000
+		militancy = 8
+		rebel_type = carlist_rebels
+	}
+
+	artisans = {
+		culture = basque
+		religion = catholic
+		size = 20000
+		militancy = 8
+		rebel_type = carlist_rebels
+	}
+
+	artisans = {
+		culture = basque
+		religion = catholic
+		size = 14800
 		militancy = 8
 		rebel_type = carlist_rebels
 	}
@@ -762,7 +806,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 1100
+		size = 14950
 	}
 
 	soldiers = {
@@ -771,10 +815,10 @@
 		size = 200
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 18850
+		size = 5000
 	}
 }
 #Pamplona (244000/61000 POPS)
@@ -798,7 +842,7 @@
 	bureaucrats = {
 		culture = basque
 		religion = catholic
-		size = 150
+		size = 300
 		militancy = 8
 		rebel_type = carlist_rebels
 	}
@@ -814,7 +858,7 @@
 	artisans = {
 		culture = basque
 		religion = catholic
-		size = 1750
+		size = 1600
 		militancy = 8
 		rebel_type = carlist_rebels
 	}
@@ -827,7 +871,7 @@
 		rebel_type = carlist_rebels
 	}
 
-	labourers = {
+	farmers = {
 		culture = basque
 		religion = catholic
 		size = 35025
@@ -850,7 +894,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 200
+		size = 400
 	}
 
 	clergymen = {
@@ -862,7 +906,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 1250
+		size = 1050
 	}
 
 	soldiers = {
@@ -928,7 +972,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 300
+		size = 600
 	}
 
 	clergymen = {
@@ -943,12 +987,6 @@
 		size = 10000
 	}
 
-	artisans = {
-		culture = spanish
-		religion = catholic
-		size = 5000
-	}
-
 	soldiers = {
 		culture = spanish
 		religion = catholic
@@ -958,7 +996,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 57100
+		size = 61800
 	}
 
 	clergymen = {
@@ -1029,7 +1067,7 @@
 		size = 250
 	}
 
-	labourers = {
+	farmers = {
 		culture = catalan
 		religion = catholic
 		size = 16025
@@ -1096,7 +1134,7 @@
 	bureaucrats = {
 		culture = catalan
 		religion = catholic
-		size = 550
+		size = 1100
 	}
 
 	clergymen = {
@@ -1111,24 +1149,6 @@
 		size = 10000
 	}
 
-	artisans = {
-		culture = catalan
-		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = catalan
-		religion = catholic
-		size = 10000
-	}
-
-	artisans = {
-		culture = catalan
-		religion = catholic
-		size = 1100
-	}
-
 	soldiers = {
 		culture = catalan
 		religion = catholic
@@ -1138,7 +1158,7 @@
 	farmers = {
 		culture = catalan
 		religion = catholic
-		size = 53225
+		size = 73775
 	}
 
 	aristocrats = {
@@ -1156,7 +1176,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 200
+		size = 400
 	}
 
 	clergymen = {
@@ -1168,7 +1188,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 9000
+		size = 2500
 	}
 
 	soldiers = {
@@ -1180,7 +1200,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 16125
+		size = 22425
 	}
 }
 #Gerona (228000/57000 POPS)
@@ -1449,7 +1469,7 @@
 		size = 200
 	}
 
-	labourers = {
+	farmers = {
 		culture = spanish
 		religion = catholic
 		size = 15900
@@ -1474,7 +1494,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 275
+		size = 550
 	}
 
 	clergymen = {
@@ -1489,12 +1509,6 @@
 		size = 10000
 	}
 
-	artisans = {
-		culture = spanish
-		religion = catholic
-		size = 1100
-	}
-
 	soldiers = {
 		culture = spanish
 		religion = catholic
@@ -1504,7 +1518,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 37900
+		size = 38725
 	}
 
 	aristocrats = {
@@ -1522,7 +1536,7 @@
 	bureaucrats = {
 		culture = catalan
 		religion = catholic
-		size = 225
+		size = 450
 	}
 
 	clergymen = {
@@ -1534,7 +1548,7 @@
 	artisans = {
 		culture = catalan
 		religion = catholic
-		size = 10000
+		size = 9775
 	}
 
 	soldiers = {
@@ -1667,7 +1681,7 @@
 		size = 400
 	}
 
-	labourers = {
+	farmers = {
 		culture = catalan
 		religion = catholic
 		size = 38300
@@ -1692,7 +1706,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 900
+		size = 1800
 	}
 
 	clergymen = {
@@ -1704,7 +1718,13 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 7000
+		size = 23475
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
 	}
 
 	soldiers = {
@@ -1713,10 +1733,10 @@
 		size = 550
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 42375
+		size = 5000
 	}
 }
 #Murcia (92000/23000 POPS)
@@ -1736,7 +1756,7 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 1100
+		size = 17125
 	}
 
 	soldiers = {
@@ -1745,10 +1765,10 @@
 		size = 250
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 21025
+		size = 5000
 	}
 }
 #Albacete (20000/50000 POPS)
@@ -1802,7 +1822,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 450
+		size = 900
 	}
 
 	clergymen = {
@@ -1823,12 +1843,6 @@
 		size = 10000
 	}
 
-	artisans = {
-		culture = spanish
-		religion = catholic
-		size = 5000
-	}
-
 	soldiers = {
 		culture = spanish
 		religion = catholic
@@ -1838,7 +1852,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 62200
+		size = 66750
 	}
 }
 #Cordoba (324000/81000 POPS)
@@ -1890,7 +1904,13 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 2000
+		size = 18375
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 10000
 	}
 
 	soldiers = {
@@ -1899,10 +1919,10 @@
 		size = 500
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 31375
+		size = 5000
 	}
 }
 #Cadiz (336000/84000 POPS)
@@ -1962,7 +1982,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 500
+		size = 1000
 	}
 
 	clergymen = {
@@ -1974,13 +1994,25 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 10000
+		size = 22350
 	}
 
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 5000
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
 	}
 
 	soldiers = {
@@ -1989,10 +2021,10 @@
 		size = 3000
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 72850
+		size = 5000
 	}
 }
 #Malaga (402000/100500 POPS)
@@ -2012,13 +2044,25 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 10000
+		size = 25900
 	}
 
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 7500
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
 	}
 
 	soldiers = {
@@ -2027,10 +2071,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 78400
+		size = 10000
 	}
 }
 #Almeria (242000/60500 POPS)
@@ -2050,7 +2094,19 @@
 	artisans = {
 		culture = spanish
 		religion = catholic
-		size = 5000
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = spanish
+		religion = catholic
+		size = 12600
 	}
 
 	soldiers = {
@@ -2059,10 +2115,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = spanish
 		religion = catholic
-		size = 52600
+		size = 5000
 	}
 }
 #Jaen (270000/67500 POPS)
@@ -2117,7 +2173,7 @@
 	bureaucrats = {
 		culture = spanish
 		religion = catholic
-		size = 75
+		size = 150
 	}
 
 	clergymen = {
@@ -2141,7 +2197,7 @@
 	farmers = {
 		culture = spanish
 		religion = catholic
-		size = 47025
+		size = 46950
 	}
 
 }

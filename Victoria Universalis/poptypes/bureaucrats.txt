@@ -34,9 +34,10 @@ luxury_needs_income =
 
 
 everyday_needs = {
-	fuel = 1.5	
-	telephones = 4
-	automobiles = 1
+	fuel = 1
+	telephones = 5
+	automobiles = 0.5
+	aeroplanes = 0.5
 	radio = 2
 	cigarettes = 2.25
 	pharmaceuticals = 1.5
@@ -52,18 +53,19 @@ everyday_needs = {
 }
 
 life_needs = {
-	cattle = 1.125
-	wool =  1.5
-	fish =  1.5
-	fruit =  1.5
-	grain =  3.75
+	cattle = 0.3
+	wool =  0.3
+	fish =  0.3
+	fruit =  0.5
+	grain =  0.9
 }
 
 
 luxury_needs = {
-	fuel = 1.5	
-	telephones = 4
-	automobiles = 1
+	fuel = 1
+	telephones = 5
+	automobiles = 0.5
+	aeroplanes = 0.5
 	radio = 2
 	cigarettes = 2.25
 	pharmaceuticals = 1.5
@@ -72,7 +74,7 @@ luxury_needs = {
 	coffee = 1.5
 	liquor = 3.75
 	luxury_clothes = 0.6
-	luxury_furniture = 0.6
+	luxury_furniture = 0.3
 	wine = 2.25
 	canned_food = 1.5
 	paper = 4
@@ -85,6 +87,30 @@ country_migration_target =
 	factor = 1
 
 	modifier = {
+		factor = 100
+		OR = {
+			is_culture_group = american_cultures
+			primary_culture = australian
+			primary_culture = anglo_canadian
+		}
+		THIS = { has_pop_culture = irish }
+		year = 1845
+		NOT = { year = 1850 }
+	}
+	modifier = {
+		factor = 0
+		NOT = {
+			OR = {
+				is_culture_group = american_cultures
+				primary_culture = australian
+				primary_culture = anglo_canadian
+			}
+		}
+		THIS = { has_pop_culture = irish }
+		year = 1845
+		NOT = { year = 1850 }
+	}
+	modifier = {
 		factor = 0.1
 		OR = {
 			government = proletarian_dictatorship
@@ -94,7 +120,7 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 0
+		factor = 0.001
 		OR = {
 			has_country_flag = jan_mayen
 			NOT = {
@@ -156,12 +182,12 @@ country_migration_target =
 		vote_franschise = universal_voting
 	}
 	modifier = {
-		factor = 2.5
+		factor = 0.01
 		OR = {
 			continent = north_america
 			continent = oceania
 		}
-		NOT = { month = 7 }
+		NOT = { month = 6 }
 		THIS = {
 			OR = {
 				is_culture_group = germanic
@@ -184,9 +210,9 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 2.5
+		factor = 0.01
 		continent = south_america
-		month = 7
+		month = 6
 		THIS = {
 			OR = {
 				is_culture_group = germanic
@@ -209,11 +235,11 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 2.5
+		factor = 0.01
 		OR = {
 			continent = south_america
 		}
-		NOT = { month = 7 }
+		NOT = { month = 6 }
 		THIS = {
 			OR = {
 				is_culture_group = british
@@ -238,12 +264,12 @@ country_migration_target =
 		}
 	}
 	modifier = {
-		factor = 2.5
+		factor = 0.01
 		OR = {
 			continent = north_america
 			continent = oceania
 		}
-		month = 7
+		month = 6
 		THIS = {
 			OR = {
 				is_culture_group = british
@@ -272,12 +298,27 @@ country_migration_target =
 migration_target =
 {
 	factor = 0
-
 }
 
 promote_to =
 {
-
+	bureaucrats =
+	{
+		factor = 0.01
+		modifier = {
+			factor = -100
+			NOT = { is_accepted_culture = yes }
+			NOT = { is_primary_culture = yes }
+		}
+		modifier = {
+			factor = 30
+			OR = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+			location = { is_colonial = yes }
+		}
+	}
 	capitalists = 
 	{
 		factor = 0.01
@@ -717,35 +758,34 @@ promote_to =
 				clergymen = 0.036
 			}			
 			modifier = {
-				factor = -100
+				factor = -2
 				clergymen = 0.04
 			}						
 		}
-		group = {
-			modifier = {
-				factor = -0.5
-				consciousness = 2
-			}
-			modifier = {
-				factor = -0.5
-				consciousness = 4
-			}
-			modifier = {
-				factor = -0.5
-				consciousness = 5
-			}
-			modifier = {
-				factor = -1
-				consciousness = 6
-			}
-			modifier = {
-				factor = -1.5
-				consciousness = 7
-			}
-			modifier = {
-				factor = -2
-				consciousness = 8
-			}
+		modifier = {
+			factor = -100
+			clergymen = 0.02
+			country = { school_reforms = no_schools }
+		}
+		modifier = {
+			factor = -100
+			clergymen = 0.025
+			country = { school_reforms = low_schools }
+		}
+		modifier = {
+			factor = -100
+			clergymen = 0.03
+			country = { school_reforms = acceptable_schools }
+		}
+		modifier = {
+			factor = -100
+			clergymen = 0.035
+			country = { school_reforms = good_schools }
+		}
+		modifier = {
+			factor = -100
+			clergymen = 0.04
+			country = { school_reforms = compulsory_schools }
 		}
 	}
 	aristocrats = 
@@ -849,7 +889,7 @@ ideologies = {
 	fascist = {
 		factor = 1
 		modifier = {
-			factor = 3
+			factor = 2
 			country = { has_country_flag = fascist_influence }
 		}
 		modifier = {
@@ -1118,7 +1158,7 @@ ideologies = {
 	socialist = {
 		factor = 1
 		modifier = {
-			factor = 3
+			factor = 2
 			country = { has_country_flag = socialist_influence }
 		}
 		modifier = {
@@ -1227,7 +1267,7 @@ ideologies = {
 	communist = {
 		factor = 1
 		modifier = {
-			factor = 3
+			factor = 2
 			country = { has_country_flag = communist_influence }
 		}
 		modifier = {
@@ -1288,7 +1328,7 @@ ideologies = {
 	liberal = {
 		factor = 1.1
 		modifier = {
-			factor = 3
+			factor = 2
 			country = { has_country_flag = liberal_influence }
 		}
 		modifier = {
@@ -2301,21 +2341,33 @@ issues =
 			}
 		}	
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			life_needs = 1.0
-			everyday_needs = 1.0
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			life_needs = 1.0
-			everyday_needs = 1.0
-			luxury_needs = 0.5
+			everyday_needs = 0.1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.25
 			life_needs = 1.0
-			everyday_needs = 1.0
-			luxury_needs = 1.0
+			everyday_needs = 0.2
+		}
+		modifier = {
+			factor = 1.25
+			life_needs = 1.0
+			everyday_needs = 0.3
+		}
+		modifier = {
+			factor = 1.25
+			life_needs = 1.0
+			everyday_needs = 0.4
+		}
+		modifier = {
+			factor = 1.25
+			life_needs = 1.0
+			everyday_needs = 0.5
 		}
 		modifier = {
 			factor = 1.5
@@ -5651,35 +5703,6 @@ issues =
 		
 	bankruptcy = {
 		factor = 1
-		
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { is_next_reform = bankruptcy }
-				country = {	civilized = no }
-				luxury_needs =  1.0
-				NOT = { consciousness = 8 }
-				NOT = { everyday_needs = 0.4 }
-				NOT = { vote_franschise = universal_voting }
-				NOT = { press_rights = free_press }
-				NOT = { political_parties = secret_ballots }
-				NOT = { safety_regulations = good_safety }
-				NOT = { work_hours = eight_hours }
-				NOT = { wage_reform = good_minimum_wage }
-				NOT = { unemployment_subsidies = good_subsidies }
-				NOT = { pensions = good_pensions }
-				NOT = { health_care = good_health_care }
-				NOT = { school_reforms = good_schools }
-				NOT = { child_labor = child_labor_illegal }
-				public_meetings = no_meeting
-				upper_house_composition = appointed
-				upper_house_composition = party_appointed
-				location = { is_colonial = yes }
-				NOT = { is_ideology_enabled = socialist }
-				NOT = { literacy = 0.7 }
-			}
-		}
-		
 		modifier = {
 			factor = 1.25
 			pop_majority_ideology = liberal

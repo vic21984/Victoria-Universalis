@@ -605,3 +605,25 @@ country_event = {
 		remove_accepted_culture = slovene
 	}
  }
+ 
+ country_event = {
+	title = "AI Austria loses Brothers' War"
+	id = 31515 #Lost Brothers' War
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = austria
+		has_country_flag = lost_hegemony_war
+	}
+
+	option = {
+		relation = {
+			who = NGF
+			value = 400
+		}
+		relation = {
+			who = PRU
+			value = 400
+		}
+	}
+ }

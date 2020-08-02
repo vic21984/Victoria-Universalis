@@ -125,7 +125,13 @@
 	artisans = {
 		culture = slovene
 		religion = catholic
-		size = 2100
+		size = 20000
+	}
+
+	artisans = {
+		culture = slovene
+		religion = catholic
+		size = 13650
 	}
 
 	soldiers = {
@@ -134,10 +140,10 @@
 		size = 425
 	}
 
-	farmers = {
+	labourers = {
 		culture = slovene
 		religion = catholic
-		size = 39575
+		size = 8025
 	}
 
 	clergymen = {
@@ -146,7 +152,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_german
 		religion = catholic
 		size = 1975

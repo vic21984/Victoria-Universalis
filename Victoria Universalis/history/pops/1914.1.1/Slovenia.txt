@@ -209,7 +209,7 @@
     artisans = {
         culture = slovene
         religion = catholic
-        size = 1971
+        size = 29620
     }
 
     soldiers = {
@@ -218,10 +218,10 @@
         size = 2848
     }
 
-    farmers = {
+    labourers = {
         culture = slovene
         religion = catholic
-        size = 37149
+        size = 9500
     }
 
     clergymen = {
@@ -230,51 +230,39 @@
         size = 151
     }
 
-    farmers = {
+    labourers = {
         culture = south_german
         religion = catholic
-        size = 1853
-    }
-
-    capitalists = {
-        culture = slovene
-        religion = catholic
-        size = 186
+        size = 500
     }
 
     craftsmen = {
         culture = slovene
         religion = catholic
-        size = 1042
-    }
-
-    craftsmen = {
-        culture = slovene
-        religion = catholic
-        size = 19635
+        size = 20677
     }
 
     craftsmen = {
         culture = south_german
         religion = catholic
-        size = 980
+        size = 2333
     }
 
     clerks = {
         culture = slovene
         religion = catholic
-        size = 116
-    }
-
-    clerks = {
-        culture = slovene
-        religion = catholic
-        size = 2182
+        size = 2298
     }
 
     clerks = {
         culture = south_german
         religion = catholic
         size = 109
+    }
+
+    capitalists = {
+        culture = slovene
+        religion = catholic
+        size = 186
     }
 }

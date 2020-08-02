@@ -20,10 +20,10 @@
         size = 1083
     }
 
-    craftsmen = {
+    artisans = {
         culture = north_german
         religion = catholic
-        size = 1096
+        size = 11410
     }
 
     soldiers = {
@@ -32,10 +32,10 @@
         size = 6880
     }
 
-    farmers = {
+    labourers = {
         culture = north_german
         religion = catholic
-        size = 12814
+        size = 2500
     }
 
     aristocrats = {
@@ -62,10 +62,10 @@
         size = 1986
     }
 
-    craftsmen = {
+    artisans = {
         culture = french
         religion = catholic
-        size = 2558
+        size = 17660
     }
 
     soldiers = {
@@ -74,10 +74,10 @@
         size = 860
     }
 
-    farmers = {
+    labourers = {
         culture = french
         religion = catholic
-        size = 20102
+        size = 2500
     }
 
     capitalists = {
@@ -107,24 +107,12 @@
     clerks = {
         culture = north_german
         religion = catholic
-        size = 194
+        size = 2116
     }
 
     clerks = {
         culture = french
         religion = catholic
-        size = 452
-    }
-
-    clerks = {
-        culture = north_german
-        religion = catholic
-        size = 1922
-    }
-
-    clerks = {
-        culture = french
-        religion = catholic
-        size = 3015
+        size = 3467
     }
 }

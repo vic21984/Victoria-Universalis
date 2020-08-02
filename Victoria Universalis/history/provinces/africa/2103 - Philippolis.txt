@@ -16,12 +16,17 @@ controller = SAF
 	}
 	state_building = {
 		level = 2
-		building = paper_mill
+		building = tea_packaging_factory
 		upgrade = yes
 	}
 	state_building = {
 		level = 2
-		building = tea_packaging_factory
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
 		upgrade = yes
 	}
 }

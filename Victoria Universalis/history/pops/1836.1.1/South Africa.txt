@@ -364,7 +364,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 1575
@@ -388,7 +388,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = british
 		religion = protestant
 		size = 1800
@@ -412,7 +412,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = khoisan
 		religion = animist
 		size = 2890
@@ -436,7 +436,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = khoisan
 		religion = protestant
 		size = 1850
@@ -500,7 +500,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 2450
@@ -524,7 +524,7 @@
 		size = 10
 	}
 
-	farmers = {
+	labourers = {
 		culture = british
 		religion = protestant
 		size = 775
@@ -548,7 +548,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = khoisan
 		religion = animist
 		size = 4800
@@ -750,7 +750,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = tswana
 		religion = animist
 		size = 4650
@@ -874,7 +874,7 @@
 	artisans = {
 		culture = british
 		religion = protestant
-		size = 150
+		size = 6575
 	}
 
 	soldiers = {
@@ -883,10 +883,10 @@
 		size = 15
 	}
 
-	farmers = {
+	labourers = {
 		culture = british
 		religion = protestant
-		size = 8825
+		size = 2400
 	}
 
 	aristocrats = {
@@ -913,7 +913,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = xhosa
 		religion = animist
 		size = 3800
@@ -934,19 +934,13 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 100
+		size = 950
 	}
 
 	soldiers = {
 		culture = nguni
 		religion = animist
 		size = 25
-	}
-
-	farmers = {
-		culture = nguni
-		religion = animist
-		size = 850
 	}
 
 	clergymen = {
@@ -958,7 +952,7 @@
 	artisans = {
 		culture = khoisan
 		religion = animist
-		size = 100
+		size = 150
 	}
 
 	soldiers = {
@@ -967,10 +961,10 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = khoisan
 		religion = animist
-		size = 3850
+		size = 3800
 	}
 }
 #uncolonized/ruled by the Xhosa 1836
@@ -1079,7 +1073,7 @@
 	bureaucrats = {
 		culture = boer
 		religion = protestant
-		size = 2
+		size = 200
 	}
 
 	officers = {
@@ -1106,7 +1100,7 @@
 		size = 90
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 600
@@ -1127,7 +1121,7 @@
 	artisans = {
 		culture = sotho
 		religion = animist
-		size = 2375
+		size = 36475
 	}
 
 	soldiers = {
@@ -1136,10 +1130,10 @@
 		size = 475
 	}
 
-	farmers = {
+	labourers = {
 		culture = sotho
 		religion = animist
-		size = 43500
+		size = 9400
 	}
 }
 #Winburg (102000/25500 POPS)
@@ -1162,7 +1156,7 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 420
@@ -1183,7 +1177,7 @@
 	artisans = {
 		culture = sotho
 		religion = animist
-		size = 1100
+		size = 10745
 	}
 
 	soldiers = {
@@ -1192,10 +1186,10 @@
 		size = 200
 	}
 
-	farmers = {
+	labourers = {
 		culture = sotho
 		religion = animist
-		size = 18225
+		size = 8580
 	}
 
 	aristocrats = {
@@ -1213,7 +1207,7 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 250
+		size = 3825
 	}
 
 	soldiers = {
@@ -1222,10 +1216,10 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = nguni
 		religion = animist
-		size = 4575
+		size = 1000
 	}
 }
 #Philippolis (85000/21250 POPS)
@@ -1248,7 +1242,7 @@
 		size = 90
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 600
@@ -1269,7 +1263,7 @@
 	artisans = {
 		culture = sotho
 		religion = animist
-		size = 1025
+		size = 15300
 	}
 
 	soldiers = {
@@ -1278,10 +1272,10 @@
 		size = 200
 	}
 
-	farmers = {
+	labourers = {
 		culture = sotho
 		religion = animist
-		size = 18675
+		size = 4400
 	}
 }
 #Thaba Bosiu (128000/32000 POPS) #now Lesotho 
@@ -1313,7 +1307,7 @@
 	artisans = {
 		culture = sotho
 		religion = animist
-		size = 1600
+		size = 20575
 	}
 
 	soldiers = {
@@ -1322,10 +1316,10 @@
 		size = 325
 	}
 
-	farmers = {
+	labourers = {
 		culture = sotho
 		religion = animist
-		size = 28975
+		size = 10000
 	}
 }
 #Transvaal Region (349000)
@@ -1336,7 +1330,7 @@
 	bureaucrats = {
 		culture = boer
 		religion = protestant
-		size = 2
+		size = 200
 	}
 
 	officers = {
@@ -1419,7 +1413,7 @@
 		size = 65
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 500
@@ -1440,7 +1434,7 @@
 	artisans = {
 		culture = sotho
 		religion = animist
-		size = 1250
+		size = 14525
 	}
 
 	soldiers = {
@@ -1449,10 +1443,10 @@
 		size = 250
 	}
 
-	farmers = {
+	labourers = {
 		culture = sotho
 		religion = animist
-		size = 22775
+		size = 9500
 	}
 }
 #uncolonized in 1836/dominated by the Ndebele
@@ -1476,7 +1470,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 205
@@ -1496,7 +1490,7 @@
 	artisans = {
 		culture = tswana
 		religion = animist
-		size = 600
+		size = 7395
 	}
 
 	soldiers = {
@@ -1505,10 +1499,10 @@
 		size = 125
 	}
 
-	farmers = {
+	labourers = {
 		culture = tswana
 		religion = animist
-		size = 15925
+		size = 6795
 	}
 
 	aristocrats = {
@@ -1526,7 +1520,7 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 600
+		size = 6425
 	}
 
 	soldiers = {
@@ -1535,10 +1529,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = nguni
 		religion = animist
-		size = 8825
+		size = 3000
 	}
 }
 #Limpopo Region (129000)
@@ -1564,7 +1558,7 @@
 		size = 6
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 40
@@ -1585,7 +1579,7 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 200
+		size = 825
 	}
 
 	soldiers = {
@@ -1594,10 +1588,10 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = nguni
 		religion = animist
-		size = 2625
+		size = 2000
 	}
 
 	aristocrats = {
@@ -1615,7 +1609,7 @@
 	artisans = {
 		culture = sotho
 		religion = animist
-		size = 350
+		size = 5765
 	}
 
 	soldiers = {
@@ -1624,10 +1618,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = sotho
 		religion = animist
-		size = 8375
+		size = 2960
 	}
 }
 #uncolonized in 1836/dominated by the Zulu
@@ -1651,7 +1645,7 @@
 		size = 15
 	}
 
-	farmers = {
+	labourers = {
 		culture = boer
 		religion = protestant
 		size = 120
@@ -1672,7 +1666,7 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 650
+		size = 2620
 	}
 
 	soldiers = {
@@ -1681,10 +1675,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = nguni
 		religion = animist
-		size = 11850
+		size = 9880
 	}
 }
 #uncolonized in 1836/dominated by the Gaza Nguni
@@ -1880,7 +1874,7 @@
 	artisans = {
 		culture = zulu
 		religion = animist
-		size = 1950
+		size = 20850
 	}
 
 	soldiers = {
@@ -1889,10 +1883,10 @@
 		size = 7000
 	}
 
-	farmers = {
+	labourers = {
 		culture = zulu
 		religion = animist
-		size = 28900
+		size = 10000
 	}
 }
 #Ulundi (320000/80000 POPS)
@@ -1956,7 +1950,7 @@
 	artisans = {
 		culture = zulu
 		religion = animist
-		size = 350
+		size = 3725
 	}
 
 	soldiers = {
@@ -1965,10 +1959,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = zulu
 		religion = animist
-		size = 6375
+		size = 3000
 	}
 
 	aristocrats = {
@@ -1986,7 +1980,7 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 650
+		size = 5500
 	}
 
 	soldiers = {
@@ -1995,10 +1989,10 @@
 		size = 125
 	}
 
-	farmers = {
+	labourers = {
 		culture = nguni
 		religion = animist
-		size = 11850
+		size = 7000
 	}
 
 }

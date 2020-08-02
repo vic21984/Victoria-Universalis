@@ -342,7 +342,7 @@
 	artisans = {
 		culture = mande
 		religion = sunni
-		size = 1650
+		size = 12375
 	}
 
 	soldiers = {
@@ -351,10 +351,10 @@
 		size = 425
 	}
 
-	farmers = {
+	labourers = {
 		culture = mande
 		religion = sunni
-		size = 12725
+		size = 2000
 	}
 
 	aristocrats = {
@@ -372,7 +372,7 @@
 	artisans = {
 		culture = western_nigritic
 		religion = animist
-		size = 250
+		size = 26550
 	}
 
 	soldiers = {
@@ -381,16 +381,9 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = western_nigritic
 		religion = animist
-		size = 24550
+		size = 3000
 	}
-
-	slaves = {
-		culture = western_nigritic
-		religion = animist
-		size = 5000
-	}
-
 }

@@ -676,7 +676,25 @@
     artisans = {
         culture = filipino
         religion = sunni
-        size = 6075
+        size = 30000
+    }
+
+    artisans = {
+        culture = filipino
+        religion = sunni
+        size = 30000
+    }
+
+    artisans = {
+        culture = filipino
+        religion = sunni
+        size = 30000
+    }
+
+    artisans = {
+        culture = filipino
+        religion = sunni
+        size = 23182
     }
 
     soldiers = {
@@ -685,10 +703,10 @@
         size = 1215
     }
 
-    farmers = {
+    labourers = {
         culture = filipino
         religion = sunni
-        size = 109107
+        size = 2000
     }
 
     clergymen = {
@@ -700,19 +718,13 @@
     artisans = {
         culture = filipino
         religion = catholic
-        size = 1822
+        size = 39188
     }
 
-    farmers = {
+    labourers = {
         culture = filipino
         religion = catholic
-        size = 29646
-    }
-
-    slaves = {
-        culture = filipino
-        religion = catholic
-        size = 9720
+        size = 2000
     }
 
     aristocrats = {
@@ -730,7 +742,7 @@
     artisans = {
         culture = asian_minor
         religion = animist
-        size = 729
+        size = 20444
     }
 
     soldiers = {
@@ -739,10 +751,10 @@
         size = 243
     }
 
-    farmers = {
+    labourers = {
         culture = asian_minor
         religion = animist
-        size = 20715
+        size = 1000
     }
 }
 #Jolo (44000/11000 POPS)

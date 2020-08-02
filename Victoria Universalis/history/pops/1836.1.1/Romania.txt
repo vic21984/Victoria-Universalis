@@ -1887,7 +1887,7 @@
 	bureaucrats = {
 		culture = romanian
 		religion = orthodox
-		size = 350 
+		size = 2350 
 	}
 
 	officers = {
@@ -1905,19 +1905,7 @@
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 10000
-	}
-
-	artisans = {
-		culture = romanian
-		religion = orthodox
-		size = 10000
-	}
-
-	artisans = {
-		culture = romanian
-		religion = orthodox
-		size = 3000
+		size = 5000
 	}
 
 	soldiers = {
@@ -1929,7 +1917,7 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 38650
+		size = 54650
 	}
 }
 #Tirgu Jiu (172000/43000 POPS)  
@@ -1981,7 +1969,7 @@
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 2250
+		size = 10000
 	}
 
 	soldiers = {
@@ -1993,7 +1981,7 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 44950 
+		size = 37200 
 	}
 }
 #Tirgoviste (188000/47000 POPS)  
@@ -2013,7 +2001,13 @@
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 2150
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 15375
 	}
 
 	soldiers = {
@@ -2022,10 +2016,10 @@
 		size = 2350 
 	}
 
-	farmers = {
+	labourers = {
 		culture = romanian
 		religion = orthodox
-		size = 43225
+		size = 10000
 	}
 }
 #Braila (272000/68000 POPS)  
@@ -2045,7 +2039,19 @@
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 3100
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 15175
 	}
 
 	soldiers = {
@@ -2054,10 +2060,10 @@
 		size = 3400
 	}
 
-	farmers = {
+	labourers = {
 		culture = romanian
 		religion = orthodox
-		size = 62075
+		size = 10000
 	}
 }
 #Calarasi (140000/35000 POPS)  
@@ -2077,7 +2083,7 @@
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 1600
+		size = 23025
 	}
 
 	soldiers = {
@@ -2086,10 +2092,10 @@
 		size = 1850
 	}
 
-	farmers = {
+	labourers = {
 		culture = romanian
 		religion = orthodox
-		size = 31425
+		size = 10000
 	}
 }
 #Moldavia Region (1356000)   
@@ -2105,7 +2111,7 @@
 	bureaucrats = {
 		culture = romanian
 		religion = orthodox
-		size = 575 
+		size = 2300
 	}
 
 	officers = {
@@ -2126,12 +2132,6 @@
 		size = 10000
 	}
 
-	artisans = {
-		culture = romanian
-		religion = orthodox
-		size = 5000
-	}
-
 	soldiers = {
 		culture = romanian
 		religion = orthodox
@@ -2141,7 +2141,7 @@
 	farmers = {
 		culture = romanian
 		religion = orthodox
-		size = 116375
+		size = 119650
 	}
 }
 #Botosani (176000/44000 POPS)  
@@ -2193,7 +2193,31 @@
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 5500
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 14950
 	}
 
 	soldiers = {
@@ -2202,10 +2226,10 @@
 		size = 5500
 	}
 
-	farmers = {
+	labourers = {
 		culture = romanian
 		religion = orthodox
-		size = 99450
+		size = 10000
 	}
 }
 #Galati (272000/68000 POPS)  
@@ -2225,7 +2249,19 @@
 	artisans = {
 		culture = romanian
 		religion = orthodox
-		size = 5500
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 20000
+	}
+
+	artisans = {
+		culture = romanian
+		religion = orthodox
+		size = 15025
 	}
 
 	soldiers = {
@@ -2234,10 +2270,10 @@
 		size = 3400
 	}
 
-	farmers = {
+	labourers = {
 		culture = romanian
 		religion = orthodox
-		size = 59525
+		size = 10000
 	}
 }
 #Dobruja Region (168000) #see Bulgaria.txt for balance of Region  

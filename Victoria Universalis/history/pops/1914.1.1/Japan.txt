@@ -525,7 +525,7 @@
     artisans = {
         culture = japanese
         religion = mahayana
-        size = 850
+        size = 6177
     }
 
     soldiers = {
@@ -534,10 +534,10 @@
         size = 850
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
-        size = 15597
+        size = 9999
     }
 
     clergymen = {
@@ -549,7 +549,7 @@
     artisans = {
         culture = japanese
         religion = shinto
-        size = 850
+        size = 6390
     }
 
     soldiers = {
@@ -558,10 +558,10 @@
         size = 850
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = shinto
-        size = 15810
+        size = 10000
     }
 
     aristocrats = {
@@ -579,7 +579,19 @@
     artisans = {
         culture = ainu
         religion = animist
-        size = 2550
+        size = 20000
+    }
+
+    artisans = {
+        culture = ainu
+        religion = animist
+        size = 20000
+    }
+
+    artisans = {
+        culture = ainu
+        religion = animist
+        size = 10077
     }
 
     soldiers = {
@@ -588,10 +600,22 @@
         size = 2125
     }
 
-    farmers = {
+    labourers = {
         culture = ainu
         religion = animist
-        size = 63027
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = ainu
+        religion = animist
+        size = 5000
+    }
+
+    clerks = {
+        culture = ainu
+        religion = animist
+        size = 500
     }
 
     capitalists = {
@@ -2915,7 +2939,31 @@
     artisans = {
         culture = japanese
         religion = mahayana
-        size = 15555
+        size = 50000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 50000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 50000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 50000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 28690
     }
 
     soldiers = {
@@ -2924,10 +2972,10 @@
         size = 15725
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
-        size = 283135
+        size = 14999
     }
 
     aristocrats = {
@@ -2945,7 +2993,19 @@
     artisans = {
         culture = japanese
         religion = shinto
-        size = 5950
+        size = 30000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = shinto
+        size = 30000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = shinto
+        size = 17325
     }
 
     soldiers = {
@@ -2954,10 +3014,34 @@
         size = 5950
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = shinto
-        size = 108375
+        size = 15000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = mahayana
+        size = 50000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = mahayana
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = shinto
+        size = 20000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = shinto
+        size = 2000
     }
 
     capitalists = {
@@ -3233,7 +3317,37 @@
     artisans = {
         culture = japanese
         religion = mahayana
-        size = 12410
+        size = 40000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 10147
     }
 
     soldiers = {
@@ -3242,10 +3356,10 @@
         size = 12537
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
-        size = 226737
+        size = 7000
     }
 
     aristocrats = {
@@ -3263,7 +3377,13 @@
     artisans = {
         culture = japanese
         religion = shinto
-        size = 3825
+        size = 34940
+    }
+
+    artisans = {
+        culture = japanese
+        religion = shinto
+        size = 30000
     }
 
     soldiers = {
@@ -3272,10 +3392,34 @@
         size = 3825
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = shinto
-        size = 69615
+        size = 3000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = mahayana
+        size = 20000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = mahayana
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = shinto
+        size = 5000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = shinto
+        size = 500
     }
 
     capitalists = {
@@ -3945,7 +4089,19 @@
     artisans = {
         culture = japanese
         religion = mahayana
-        size = 4760
+        size = 30000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 30000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 10417
     }
 
     soldiers = {
@@ -3954,10 +4110,10 @@
         size = 4887
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
-        size = 86657
+        size = 9999
     }
 
     aristocrats = {
@@ -3975,7 +4131,7 @@
     artisans = {
         culture = japanese
         religion = shinto
-        size = 1955
+        size = 29270
     }
 
     soldiers = {
@@ -3984,10 +4140,34 @@
         size = 1912
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = shinto
-        size = 35615
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = mahayana
+        size = 10000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = mahayana
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = shinto
+        size = 3000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = shinto
+        size = 300
     }
 
     capitalists = {
@@ -4019,7 +4199,19 @@
     artisans = {
         culture = japanese
         religion = mahayana
-        size = 5865
+        size = 33325
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 30000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 30000
     }
 
     soldiers = {
@@ -4028,10 +4220,10 @@
         size = 5950
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
-        size = 108460
+        size = 9999
     }
 
     aristocrats = {
@@ -4049,7 +4241,7 @@
     artisans = {
         culture = japanese
         religion = shinto
-        size = 2465
+        size = 36845
     }
 
     soldiers = {
@@ -4058,10 +4250,34 @@
         size = 2550
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = shinto
-        size = 44880
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = mahayana
+        size = 10000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = mahayana
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = shinto
+        size = 5000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = shinto
+        size = 500
     }
 
     capitalists = {
@@ -4093,7 +4309,19 @@
     artisans = {
         culture = japanese
         religion = mahayana
-        size = 5355
+        size = 30000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 30000
+    }
+
+    artisans = {
+        culture = japanese
+        religion = mahayana
+        size = 28935
     }
 
     soldiers = {
@@ -4102,10 +4330,10 @@
         size = 5525
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
-        size = 97580
+        size = 3000
     }
 
     aristocrats = {
@@ -4123,7 +4351,13 @@
     artisans = {
         culture = japanese
         religion = shinto
-        size = 2550
+        size = 21502
+    }
+
+    artisans = {
+        culture = japanese
+        religion = shinto
+        size = 20000
     }
 
     soldiers = {
@@ -4132,10 +4366,34 @@
         size = 2550
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = shinto
-        size = 46452
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = mahayana
+        size = 10000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = mahayana
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = shinto
+        size = 5000
+    }
+
+    clerks = {
+        culture = japanese
+        religion = shinto
+        size = 500
     }
 
     capitalists = {
@@ -4921,7 +5179,7 @@
     artisans = {
         culture = japanese
         religion = mahayana
-        size = 1870
+        size = 17938
     }
 
     soldiers = {
@@ -4930,39 +5188,27 @@
         size = 1700
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
-        size = 21068
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = japanese
+        religion = mahayana
+        size = 9582
+    }
+
+    clerks = {
+        culture = japanese
+        religion = mahayana
+        size = 505
     }
 
     capitalists = {
         culture = japanese
         religion = mahayana
         size = 96
-    }
-
-    craftsmen = {
-        culture = japanese
-        religion = mahayana
-        size = 164
-    }
-
-    craftsmen = {
-        culture = japanese
-        religion = mahayana
-        size = 9418
-    }
-
-    clerks = {
-        culture = japanese
-        religion = mahayana
-        size = 9
-    }
-
-    clerks = {
-        culture = japanese
-        religion = mahayana
-        size = 496
     }
 }

@@ -13,5 +13,15 @@ life_rating = 35
 		building = fertilizer_factory
 		upgrade = yes
 	}
+	state_building = {
+		level = 2
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
 	naval_base = 5
 }

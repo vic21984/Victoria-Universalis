@@ -18,6 +18,84 @@ political_decisions = {
 				activate_technology = early_classical_theory_and_critique
 				leadership = 40
 			}
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					NOT = { tag = AUS }
+				}
+				set_country_flag = south_german
+			}
+			any_country = {
+				limit = { primary_culture = south_italian }
+				set_country_flag = south_italian
+			}
+			any_country = {
+				limit = {
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				political_reform = rudimentary_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				political_reform = very_low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				political_reform = low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				political_reform = basic_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				political_reform = moderate_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				political_reform = acceptable_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				political_reform = good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				political_reform = very_good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.9
+					NOT = { literacy = 0.99 }
+				}
+				political_reform = advanced_rnd
+			}
+			any_country = {
+				limit = { literacy = 0.99 }
+				political_reform = futuristic_rnd
+			}
 			SOK = { set_country_flag = sub_saharan_africa }
 			OYO = { set_country_flag = sub_saharan_africa }
 			BEN = { set_country_flag = sub_saharan_africa }
@@ -37,100 +115,59 @@ political_decisions = {
 			KON = { set_country_flag = sub_saharan_africa }
 			WOL = { set_country_flag = sub_saharan_africa }
 			LOA = { set_country_flag = sub_saharan_africa }
-			GRE_837 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1}
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}
+			84 = {
+				labourers = {
+					reduce_pop = 0.34
 				}
 			}
-			GRE_826 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}	
+			89 = {
+				farmers = {
+					reduce_pop = 0.04
 				}
 			}
-			SER_794 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}
+			132 = {
+				farmers = {
+					reduce_pop = 0.05
 				}
 			}
-			MOL_673 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 365 }
-					}
+			134 = {
+				farmers = {
+					reduce_pop = 0.02
 				}
 			}
-			WAL_665 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 365 }
-					}
+			135 = {
+				labourers = {
+					reduce_pop = 0.34
 				}
 			}
-			MON_2582 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 365 }
-					}
-				}
-			}			
-			TUR_788 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}
+			126 = {
+				farmers = {
+					reduce_pop = 0.04
 				}
 			}
-			TUR_803 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}
+			158 = {
+				labourers = {
+					reduce_pop = 0.34
 				}
 			}
-			TUR_806 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}
-				}
-			}			
-			TUR_832 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 730 }
-					}
+			177 = {
+				labourers = {
+					reduce_pop = 0.5
 				}
 			}
-			TUR_809 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}
+			1496 = {
+				labourers = {
+					reduce_pop = 0.1
 				}
-			}			
-			TUR_810 = {
-				state_scope = {
-					any_owned = {
-						add_province_modifier = { name = balkan_size_modifier duration = -1 }
-						add_province_modifier = { name = baby_boom duration = 1095 }
-					}
+			}
+			2237 = {
+				farmers = {
+					reduce_pop = 0.25
+				}
+			}
+			2264 = {
+				farmers = {
+					reduce_pop = 0.2
 				}
 			}
 		}
@@ -150,6 +187,39 @@ political_decisions = {
 		effect = {
 			set_global_flag = global_1914_setup
 			any_country = {
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+						}
+					}
+					add_province_modifier = { name = mine_expansion duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+						}
+					}
+					labourers = {
+						reduce_pop = 2
+					}
+				}
+			}
+			any_country = {
+				limit = { ai = yes }
+				set_country_flag = coal_mining_focus
+				set_country_flag = iron_mining_focus
+				set_country_flag = sulphur_mining_focus
+				set_country_flag = oil_mining_focus
+			}
+			any_country = {
 				activate_technology = early_classical_theory_and_critique
 				leadership = 40
 				add_country_modifier = {
@@ -157,7 +227,6 @@ political_decisions = {
 					duration = 1825
 				}
 				money = 500000
-				any_pop = { money = 100 }
 			}
 			USA = { money = 2000000 }
 			USA = { money = 2000000 }
@@ -167,6 +236,7 @@ political_decisions = {
 			GER = { money = 2000000 }
 			RUS = { money = 2000000 }
 			KUK = { money = 2000000 }
+			KUK = { money = 1000000 }
 			ITA = { money = 2000000 }
 			JAP = { money = 2000000 }
 			FRA = { money = 2000000 }
@@ -179,6 +249,69 @@ political_decisions = {
 			set_variable = {
 				which = brest_litovsk
 				value = 0
+			}
+			any_country = {
+				limit = {
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				political_reform = rudimentary_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				political_reform = very_low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				political_reform = low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				political_reform = basic_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				political_reform = moderate_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				political_reform = acceptable_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				political_reform = good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				political_reform = very_good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.9
+					NOT = { literacy = 0.99 }
+				}
+				political_reform = advanced_rnd
 			}
 			any_country = {
 				limit = {
@@ -514,6 +647,13 @@ political_decisions = {
 		effect = {
 			set_global_flag = global_ww1_setup
 			any_country = {
+				limit = { ai = yes }
+				set_country_flag = coal_mining_focus
+				set_country_flag = iron_mining_focus
+				set_country_flag = sulphur_mining_focus
+				set_country_flag = oil_mining_focus
+			}
+			any_country = {
 				limit = { ai = no }
 				country_event = { id = 91051 }
 			}
@@ -673,10 +813,7 @@ political_decisions = {
 				limit = { invention = mob1 }
 				set_country_flag = mob1_invented
 			}
-			306 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			317 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			320 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			321 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
+			3246 = { add_province_modifier = { name = mine_expansion duration = -1 } }
 		}
 	}
 	
@@ -829,10 +966,6 @@ political_decisions = {
 				limit = { invention = national_idea6 }
 				set_country_flag = national_idea6
 			}
-			306 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			317 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			320 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
-			321 = { add_province_modifier = { name = strategic_rgo duration = -1 } }
 			1 = { trade_goods = precious_metal }
 			2 = { trade_goods = precious_metal }
 			766 = { trade_goods = precious_metal }
@@ -894,7 +1027,6 @@ political_decisions = {
 			1321 = { trade_goods = rubber }
 			1398 = { trade_goods = rubber }
 			1414 = { trade_goods = rubber }
-			1421 = { trade_goods = rubber }
 			1985 = { trade_goods = rubber }
 			1406 = { trade_goods = rubber }
 			1318 = { trade_goods = rubber }
@@ -924,22 +1056,22 @@ political_decisions = {
 			2549 = { trade_goods = rubber }
 			2550 = { trade_goods = rubber }
 			2600 = { trade_goods = rubber }
-			1102 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
-			1104 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1102 = { trade_goods = oil }
+			1104 = { trade_goods = oil }
 			1186 = { trade_goods = oil }
 			1182 = { trade_goods = oil }
 			1205 = { trade_goods = oil }
 			1202 = { trade_goods = oil }
-			1107 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
-			1393 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
-			132 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1107 = { trade_goods = oil }
+			1393 = { trade_goods = oil }
+			132 = { trade_goods = oil }
 			667 = { trade_goods = oil }
 			672 = { trade_goods = oil }
+			702 = { trade_goods = oil }
 			1168 = { trade_goods = oil }
 			110 = { trade_goods = oil }
-			89 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
-			133 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
-			126 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
+			89 = { trade_goods = oil }
+			126 = { trade_goods = oil }
 			1399 = { trade_goods = oil }
 			1055 = { trade_goods = oil }
 			1401 = { trade_goods = oil }
@@ -957,16 +1089,16 @@ political_decisions = {
 			2162 = { trade_goods = oil }
 			2163 = { trade_goods = oil }
 			1397 = { trade_goods = oil }
-			2237 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
+			2237 = { trade_goods = oil }
 			2396 = { trade_goods = oil }
 			2361 = { trade_goods = oil }
 			2264 = { trade_goods = oil }
 			1131 = { trade_goods = oil }
 			1125 = { trade_goods = oil }
 			1135 = { trade_goods = oil }
-			1167 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
-			2234 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
-			2270 = { trade_goods = oil add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1167 = { trade_goods = oil }
+			2234 = { trade_goods = oil }
+			2270 = { trade_goods = oil }
 			1163 = { trade_goods = oil }
 			1732 = { trade_goods = oil }
 			1720 = { trade_goods = oil }
@@ -986,28 +1118,12 @@ political_decisions = {
 			1374 = { trade_goods = coffee_beans }
 			1375 = { trade_goods = coffee_beans }
 			1382 = { trade_goods = coffee_beans }
-			1852 = { trade_goods = coffee_beans }
 			1899 = { trade_goods = coffee_beans }
 			1910 = { trade_goods = coffee_beans }
-			2064 = { trade_goods = coffee_beans }
-			2117 = { trade_goods = coffee_beans }
-			2115 = { trade_goods = coffee_beans }
-			2120 = { trade_goods = coffee_beans }
-			2188 = { trade_goods = coffee_beans }
-			2197 = { trade_goods = coffee_beans }
-			2267 = { trade_goods = coffee_beans }
-			2283 = { trade_goods = coffee_beans }
-			2256 = { trade_goods = coffee_beans }
-			2258 = { trade_goods = coffee_beans }
-			2249 = { trade_goods = coffee_beans }
-			2450 = { trade_goods = coffee_beans }
-			2462 = { trade_goods = coffee_beans }
 			1491 = { trade_goods = opium }
 			1501 = { trade_goods = opium }
 			558 = { trade_goods = opium }
-			1576 = { trade_goods = opium }
 			1603 = { trade_goods = opium }
-			1616 = { trade_goods = opium }
 		}
 	}
 	
@@ -1078,6 +1194,12 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = the_slavery_debate
+				any_pop = {
+					limit = {
+						has_pop_culture = dixie
+					}
+					literacy = -0.1
+				}
 		}
 	}
 
@@ -1140,19 +1262,19 @@ political_decisions = {
 					limit = {
 						has_pop_culture = czech
 					}
-					literacy = 0.25
+					literacy = 0.2
 				}
 				any_pop = {
 					limit = {
 						has_pop_culture = french
 					}
-					literacy = 0.45
+					literacy = 0.4
 				}
 				any_pop = {
 					limit = {
 						has_pop_culture = ashkenazi
 					}
-					literacy = 0.65
+					literacy = 0.6
 				}
 			}
 		}
@@ -1329,7 +1451,7 @@ political_decisions = {
 					limit = {
 						has_pop_culture = hungarian
 					}
-					literacy = 0.1
+					literacy = 0.05
 				}
 				any_pop = {
 					limit = {
@@ -1342,6 +1464,12 @@ political_decisions = {
 						has_pop_culture = ashkenazi
 					}
 					literacy = 0.4
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ukrainian
+					}
+					literacy = -0.05
 				}
 			}
 		}
@@ -1552,6 +1680,18 @@ political_decisions = {
 				}
 				literacy = 0.35
 			}
+			any_pop = {
+				limit = {
+					has_pop_culture = swedish
+				}
+				literacy = 0.75
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = sami
+				}
+				literacy = 0.35
+			}
 		}
 	}
 
@@ -1572,6 +1712,42 @@ political_decisions = {
 						has_pop_culture = irish
 					}
 					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = maltese
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = boer
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = spanish
+					}
+					literacy = 0.08
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = anglo_canadian
+					}
+					literacy = 0.5
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = french_canadian
+					}
+					literacy = 0.5
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = australian
+					}
+					literacy = 0.5
 				}
 				add_country_modifier = { name = corn_laws duration = -1 }
 				add_country_modifier = { name = unequal_china_treaty duration = -1 }
@@ -1599,7 +1775,28 @@ political_decisions = {
 				}
 				remove_country_modifier = unequal_china_treaty
 			}
-			300 = { add_province_modifier = { name = financial_center duration = -1 } }
+		}
+	}
+
+	sardinian_1836_setup = {
+		potential = {
+			tag = SAR
+			always = no
+		}
+		
+		allow = {
+			tag = SAR
+		}
+		
+		effect = {
+			SAR = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					literacy = 0.32
+				}
+			}
 		}
 	}
 	
@@ -1646,5 +1843,6 @@ political_decisions = {
 			}
 		}
 	}
+
 	
 }

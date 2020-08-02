@@ -6,7 +6,7 @@ religion = protestant
 government = democracy
 plurality = 25.0
 nationalvalue = nv_liberty
-literacy = 0.50
+literacy = 0.60
 civilized = yes
 
 
@@ -25,12 +25,12 @@ political_parties = gerrymandering
 
 # Social Reforms
 wage_reform = trinket_wage
-work_hours = no_work_hour_limit
+work_hours = twelve_hours
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
-school_reforms = no_schools
+school_reforms = good_schools
 
 ruling_party = USA_conservative
 last_election = 1828.12.3
@@ -228,7 +228,7 @@ school_reforms = low_schools
 conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legal
+child_labor = child_labor_restricted
 citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = federalism
@@ -401,11 +401,11 @@ colonial_policy = no_colonies
 
 #Reforms
 	wage_reform=low_minimum_wage
-	work_hours=twelve_hours
-	safety_regulations=low_safety
+	work_hours=eight_hours
+	safety_regulations=good_safety
 	unemployment_subsidies=trinket_subsidies
-	pensions=acceptable_pensions
-	health_care=good_health_care
+	pensions=acceptable_subsidies
+	health_care=universal_health_care
 	school_reforms=good_schools
 	penal_system=punitive_labour
 	child_labor=child_labor_illegal

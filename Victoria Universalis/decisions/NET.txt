@@ -99,4 +99,21 @@ political_decisions = {
 			}
 		}
 	}
+	annex_luxembourg = {
+		picture = annex_luxembourg
+		potential = {
+			tag = NET
+			NOT = { has_country_flag = luxembourg_annexed }
+			LUX = { vassal_of = THIS }
+		}
+		allow = {
+			BEL_394 = { owned_by = THIS }
+			exists = LUX
+			LUX = { vassal_of = THIS }
+		}
+		effect = {
+			inherit = LUX
+			set_country_flag = luxembourg_annexed
+		}
+	}
 }

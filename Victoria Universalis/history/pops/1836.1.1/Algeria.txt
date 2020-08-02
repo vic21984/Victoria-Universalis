@@ -434,7 +434,13 @@
 	artisans = {
 		culture = maghrebi
 		religion = sunni
-		size = 2250
+		size = 20000
+	}
+
+	artisans = {
+		culture = maghrebi
+		religion = sunni
+		size = 16300
 	}
 
 	soldiers = {
@@ -443,10 +449,10 @@
 		size = 4000
 	}
 
-	farmers = {
+	labourers = {
 		culture = maghrebi
 		religion = sunni
-		size = 37550
+		size = 3500
 	}
 
 	aristocrats = {
@@ -470,7 +476,7 @@
 	artisans = {
 		culture = berber
 		religion = sunni
-		size = 350
+		size = 8100
 	}
 
 	soldiers = {
@@ -479,10 +485,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = berber
 		religion = sunni
-		size = 9250
+		size = 1500
 	}
 
 	artisans = {
@@ -734,7 +740,7 @@
 	artisans = {
 		culture = maghrebi
 		religion = sunni
-		size = 1100
+		size = 17912
 	}
 
 	soldiers = {
@@ -743,10 +749,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = maghrebi
 		religion = sunni
-		size = 19312
+		size = 2500
 	}
 
 	aristocrats = {
@@ -770,7 +776,7 @@
 	artisans = {
 		culture = berber
 		religion = sunni
-		size = 1025
+		size = 18075
 	}
 
 	soldiers = {
@@ -779,10 +785,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = berber
 		religion = sunni
-		size = 19550
+		size = 2500
 	}
 
 	clergymen = {
@@ -814,7 +820,7 @@
 	artisans = {
 		culture = maghrebi
 		religion = sunni
-		size = 750
+		size = 10700
 	}
 
 	soldiers = {
@@ -823,10 +829,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = maghrebi
 		religion = sunni
-		size = 12950
+		size = 3000
 	}
 
 	aristocrats = {
@@ -844,7 +850,7 @@
 	artisans = {
 		culture = berber
 		religion = sunni
-		size = 500
+		size = 7700
 	}
 
 	soldiers = {
@@ -853,10 +859,10 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = berber
 		religion = sunni
-		size = 9200
+		size = 2000
 	}
 
 }
@@ -1422,7 +1428,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = tuareg
 		religion = sunni
 		size = 3800

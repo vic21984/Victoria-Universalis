@@ -2,7 +2,8 @@ country_event = {
 	id = 91600
 	title = "EVTNAME91600"
 	desc = "EVTDESC91600"
-	
+
+
 	trigger = {
 		tag = JAN
 		year = 1837
@@ -20,6 +21,80 @@ country_event = {
 	option = {
 		name = EVTOPTA91600
 		treasury = -1000000
+		any_country = {
+			limit = {
+				ai = no
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				literacy = -0.001
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				literacy = -0.002
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				literacy = -0.003
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				literacy = -0.004
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				literacy = -0.005
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				literacy = -0.006
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				literacy = -0.007
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				literacy = -0.008
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.9
+					NOT = { literacy = 0.9 }
+				}
+				literacy = -0.009
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.99
+				}
+				literacy = -0.01
+			}
+		}
 	}
 }
 
@@ -27,8 +102,9 @@ country_event = {
 	id = 91601
 	title = "EVTNAME91601"
 	desc = "EVTDESC91601"
-	
-	
+	picture = national_idea_group
+
+
 	trigger = {
 		invention = national_idea1
 		NOT = { has_country_flag = national_idea1 }
@@ -141,6 +217,10 @@ country_event = {
 					has_country_flag = mining_idea
 				}
 			}
+			modifier = {
+				factor = 100
+				tech_school = commerce_tech_school
+			}
 		}
 	}
 	
@@ -155,6 +235,10 @@ country_event = {
 					has_country_flag = consumer_goods_idea
 					has_country_flag = industrial_goods_idea
 				}
+			}
+			modifier = {
+				factor = 100
+				tech_school = commerce_tech_school
 			}
 		}
 	}
@@ -171,6 +255,10 @@ country_event = {
 					has_country_flag = domestic_idea
 				}
 			}
+			modifier = {
+				factor = 0
+				ai = yes
+			}
 		}
 	}
 
@@ -180,8 +268,9 @@ country_event = {
 	id = 91602
 	title = "EVTNAME91601"
 	desc = "EVTDESC91601"
-	
-	
+	picture = national_idea_group
+
+
 	trigger = {
 		invention = national_idea2
 		NOT = { has_country_flag = national_idea2 }
@@ -332,8 +421,9 @@ country_event = {
 	id = 91603
 	title = "EVTNAME91601"
 	desc = "EVTDESC91601"
-	
-	
+	picture = national_idea_group
+
+
 	trigger = {
 		invention = national_idea3
 		NOT = { has_country_flag = national_idea3 }
@@ -484,8 +574,9 @@ country_event = {
 	id = 91604
 	title = "EVTNAME91601"
 	desc = "EVTDESC91601"
-	
-	
+	picture = national_idea_group
+
+
 	trigger = {
 		invention = national_idea4
 		NOT = { has_country_flag = national_idea4 }
@@ -636,8 +727,9 @@ country_event = {
 	id = 91605
 	title = "EVTNAME91601"
 	desc = "EVTDESC91601"
-	
-	
+	picture = national_idea_group
+
+
 	trigger = {
 		invention = national_idea5
 		NOT = { has_country_flag = national_idea5 }
@@ -788,8 +880,9 @@ country_event = {
 	id = 91606
 	title = "EVTNAME91601"
 	desc = "EVTDESC91601"
-	
-	
+	picture = national_idea_group
+
+
 	trigger = {
 		invention = national_idea6
 		NOT = { has_country_flag = national_idea6 }
@@ -940,8 +1033,9 @@ country_event = {
 	id = 91607
 	title = "EVTNAME91601"
 	desc = "EVTDESC91601"
-	
-	
+	picture = national_idea_group
+
+
 	trigger = {
 		invention = national_idea7
 		NOT = { has_country_flag = national_idea7 }
@@ -1092,8 +1186,9 @@ country_event = {
 	id = 91651
 	title = "Army Morale vs Army Organisation"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_army_morale_vs_army_organisation
 		NOT = {
@@ -1128,8 +1223,9 @@ country_event = {
 	id = 91652
 	title = "Army Morale vs Army Organisation"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_army_morale_vs_army_organisation
 		OR = {
@@ -1150,8 +1246,9 @@ country_event = {
 	id = 91653
 	title = "Army Supply vs Military Hospitals"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_army_supply_vs_military_hospitals
 		NOT = {
@@ -1187,8 +1284,9 @@ country_event = {
 	id = 91654
 	title = "Army Supply vs Military Hospitals"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_army_supply_vs_military_hospitals
 		OR = {
@@ -1209,8 +1307,9 @@ country_event = {
 	id = 91655
 	title = "Army Experience vs Reinforce Rate"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_army_experience_vs_reinforce_rate
 		NOT = {
@@ -1246,8 +1345,9 @@ country_event = {
 	id = 91656
 	title = "Army Experience vs Reinforce Rate"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_army_experience_vs_reinforce_rate
 		OR = {
@@ -1268,8 +1368,9 @@ country_event = {
 	id = 91657
 	title = "Leadership vs Prestige"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_leadership_vs_prestige
 		NOT = {
@@ -1288,7 +1389,7 @@ country_event = {
 	}
 
 	option = {
-		name = "+1 Base Monthly Prestige"
+		name = "+0.5 Base Monthly Prestige"
 		set_country_flag = prestige_idea
 		clr_country_flag = choosing_leadership_vs_prestige
 	}
@@ -1305,8 +1406,9 @@ country_event = {
 	id = 91658
 	title = "Leadership vs Prestige"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_leadership_vs_prestige
 		OR = {
@@ -1327,8 +1429,9 @@ country_event = {
 	id = 91659
 	title = "Navy Build Speed vs Navy Organisation"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_navy_build_speed_vs_navy_organisation
 		NOT = {
@@ -1364,8 +1467,9 @@ country_event = {
 	id = 91660
 	title = "Naval Build Speed vs Naval Organisation"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_navy_build_speed_vs_navy_organisation
 		OR = {
@@ -1386,8 +1490,9 @@ country_event = {
 	id = 91661
 	title = "Navy Build Speed National Idea"
 	desc = "This event gives +50% ship build speed and repair to every province with a naval base."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = navy_build_speed_idea
 		any_owned_province = {
@@ -1413,8 +1518,9 @@ country_event = {
 	id = 91662
 	title = "Expansion vs Assimilation"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_expansion_vs_assimilation
 		NOT = {
@@ -1450,8 +1556,9 @@ country_event = {
 	id = 91663
 	title = "Expansion vs Assimilation"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_expansion_vs_assimilation
 		OR = {
@@ -1472,8 +1579,9 @@ country_event = {
 	id = 91664
 	title = "Farming vs Mining"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_farming_vs_mining
 		NOT = {
@@ -1509,8 +1617,9 @@ country_event = {
 	id = 91665
 	title = "Farming vs Mining"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_farming_vs_mining
 		OR = {
@@ -1531,8 +1640,9 @@ country_event = {
 	id = 91666
 	title = "Consumer Goods vs Industrial Goods"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_consumer_goods_vs_industrial_goods
 		NOT = {
@@ -1568,8 +1678,9 @@ country_event = {
 	id = 91667
 	title = "Consumer Goods vs Industrial Goods"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_consumer_goods_vs_industrial_goods
 		OR = {
@@ -1590,8 +1701,9 @@ country_event = {
 	id = 91668
 	title = "Colonial vs Domestic"
 	desc = "Choose which bonus you would like to receive."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_colonial_vs_domestic
 		NOT = {
@@ -1610,7 +1722,7 @@ country_event = {
 	}
 
 	option = {
-		name = "+0.05 Interal Migration"
+		name = "Increased Interal Migration"
 		set_country_flag = domestic_idea
 		clr_country_flag = choosing_colonial_vs_domestic
 	}
@@ -1627,8 +1739,9 @@ country_event = {
 	id = 91669
 	title = "Colonial vs Domestic"
 	desc = "We have already chosen a category in this idea group."
-	
-	
+	picture = national_idea_choice
+
+
 	trigger = {
 		has_country_flag = choosing_colonial_vs_domestic
 		OR = {

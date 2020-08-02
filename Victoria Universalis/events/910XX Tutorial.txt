@@ -2,6 +2,7 @@ country_event = {
 	id = 91001
 	title = "EVTNAME91001"
 	desc = "EVTDESC91001"
+	picture = tutorial_welcome
 	
 
 	is_triggered_only = yes
@@ -23,6 +24,7 @@ country_event = {
 	id = 91002
 	title = "EVTNAME91002"
 	desc = "EVTDESC91002"
+	picture = tutorial_province_selector
 
 	
 	is_triggered_only = yes
@@ -43,7 +45,8 @@ country_event = {
 	id = 91003
 	title = "EVTNAME91003"
 	desc = "EVTDESC91003"
-
+	picture = tutorial_mines
+	
 	
 	is_triggered_only = yes
 	
@@ -63,7 +66,8 @@ country_event = {
 	id = 91004
 	title = "EVTNAME91004"
 	desc = "EVTDESC91004"
-
+	picture = tutorial_revanchism
+	
 	
 	is_triggered_only = yes
 	
@@ -83,7 +87,8 @@ country_event = {
 	id = 91005
 	title = "EVTNAME91005"
 	desc = "EVTDESC91005"
-
+	picture = tutorial_promotion
+	
 	
 	is_triggered_only = yes
 	
@@ -103,7 +108,7 @@ country_event = {
 	id = 91006
 	title = "EVTNAME91006"
 	desc = "EVTDESC91006"
-
+	picture = tutorial_economy
 
 	is_triggered_only = yes
 	
@@ -123,7 +128,7 @@ country_event = {
 	id = 91007
 	title = "EVTNAME91007"
 	desc = "EVTDESC91007"
-
+	picture = tutorial_combat
 
 	is_triggered_only = yes
 	
@@ -143,7 +148,7 @@ country_event = {
 	id = 91008
 	title = "EVTNAME91008"
 	desc = "EVTDESC91008"
-
+	picture = tutorial_generals
 
 	is_triggered_only = yes
 	
@@ -164,19 +169,70 @@ country_event = {
 	id = 91009
 	title = "EVTNAME91009"
 	desc = "EVTDESC91009"
-
+	picture = tutorial_healthcare
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = "EVTOPTA91009"
 	}
+
+	option = {
+		name = "EVTOPTA91009"
+		country_event = { 
+			id = 91010
+		}		
+	}
+}
+
+country_event = {
+	id = 91010
+	title = "EVTNAME91010"
+	desc = "EVTDESC91010"
+	picture = tutorial_research
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91010"
+	}
+
+	option = {
+		name = "EVTOPTB91010"
+		country_event = { 
+			id = 91011
+		}		
+	}
+}
+
+country_event = {
+	id = 91011
+	title = "EVTNAME91011"
+	desc = "EVTDESC91011"
+	picture = tutorial_admin_efficiency
+
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91011"
+	}
+
+	option = {
+		name = "EVTOPTB91011"
+#		country_event = { 
+#			id = 91012
+#		}		
+	}	
+	
 }
 
 #country_event = {
-#	id = 91010
-#	title = "EVTNAME91010"
-#	desc = "EVTDESC91010"
+#	id = 91012
+#	title = "EVTNAME91012"
+#	desc = "EVTDESC91012"
 #
 #
 #	fire_only_once = yes
@@ -184,30 +240,7 @@ country_event = {
 #	is_triggered_only = yes
 #	
 #	option = {
-#		name = "EVTOPTA91010"
-#	}
-#
-#	option = {
-#		name = "EVTOPTB91010"
-#		country_event = { 
-#			id = 91011
-#		}		
-#	}	
-#	
-#}
-
-#country_event = {
-#	id = 91011
-#	title = "EVTNAME91011"
-#	desc = "EVTDESC91011"
-#
-#
-#	fire_only_once = yes
-#	
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = "EVTOPTA91011"
+#		name = "EVTOPTA91012"
 #	}
 #}
 
@@ -215,6 +248,7 @@ country_event = {
 	id = 91051
 	title = "EVTNAME91051"
 	desc = "EVTDESC91051"
+	picture = the_great_war
 
 	
 	is_triggered_only = yes

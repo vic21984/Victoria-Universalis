@@ -2,7 +2,8 @@ country_event = {
 	title = EVTNAMErequestgrant
 	desc = EVTDESCrequestgrant
 	id = 91400
-	
+	picture = player_grants
+
 	is_triggered_only = yes
 	
 	option = {
@@ -55,7 +56,8 @@ country_event = {
 	title = EVTNAMEgivegrant
 	desc = EVTDESCgivegrant
 	id = 91401
-	
+	picture = player_grants
+
 	is_triggered_only = yes
 	
 	option = {
@@ -74,7 +76,8 @@ country_event = {
 	title = EVTNAMEgivegrant
 	desc = EVTDESCgivegrant
 	id = 91402
-	
+	picture = player_grants
+
 	is_triggered_only = yes
 	
 	option = {
@@ -93,7 +96,8 @@ country_event = {
 	title = EVTNAMEgivegrant
 	desc = EVTDESCgivegrant
 	id = 91403
-	
+	picture = player_grants
+
 	is_triggered_only = yes
 	
 	option = {
@@ -112,7 +116,8 @@ country_event = {
 	title = EVTNAMEgivegrant
 	desc = EVTDESCgivegrant
 	id = 91404
-	
+	picture = player_grants
+
 	is_triggered_only = yes
 	
 	option = {
@@ -131,7 +136,8 @@ country_event = {
 	title = "Grant Options"
 	desc = "In order to receive requests from player grants, select the enable giving grants option. If you wish to automatically deny player grants, select the deny giving grants option. If you are asking for a grant, select request grant."
 	id = 91405
-	
+	picture = player_grants
+
 	is_triggered_only = yes
 	
 	option = {

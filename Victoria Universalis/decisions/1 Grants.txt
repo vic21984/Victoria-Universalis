@@ -12,17 +12,34 @@ political_decisions = {
 			country_event = { id = 91405 }
 		}
 	}
-	zmining_focus = {
+	zcraftsmen_on = {
 		picture = craftsmen
 		alert = no
 		potential = {
 			ai = no
+			has_country_flag = disable_non_accepted_craftsmen
 		}
 		allow = {
 			ai = no
+			has_country_flag = disable_non_accepted_craftsmen
 		}
 		effect = {
-			country_event = { id = 91309 days = 0 }
+			clr_country_flag = disable_non_accepted_craftsmen
+		}
+	}
+	zcraftsmen_off = {
+		picture = craftsmen
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = disable_non_accepted_craftsmen }
+		}
+		allow = {
+			ai = no
+			NOT = { has_country_flag = disable_non_accepted_craftsmen }
+		}
+		effect = {
+			set_country_flag = disable_non_accepted_craftsmen
 		}
 	}
 }

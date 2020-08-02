@@ -721,7 +721,13 @@
     artisans = {
         culture = ukrainian
         religion = orthodox
-        size = 3858
+        size = 30000
+    }
+
+    artisans = {
+        culture = ukrainian
+        religion = orthodox
+        size = 28149
     }
 
     soldiers = {
@@ -730,10 +736,10 @@
         size = 13720
     }
 
-    farmers = {
+    labourers = {
         culture = ukrainian
         religion = orthodox
-        size = 62291
+        size = 8000
     }
 
     aristocrats = {
@@ -763,7 +769,7 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 992
+        size = 15419
     }
 
     soldiers = {
@@ -772,10 +778,10 @@
         size = 343
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 16427
+        size = 2000
     }
 
     aristocrats = {
@@ -793,7 +799,7 @@
     artisans = {
         culture = tatar
         religion = sunni
-        size = 220
+        size = 4133
     }
 
     soldiers = {
@@ -802,46 +808,22 @@
         size = 85
     }
 
-    farmers = {
-        culture = tatar
-        religion = sunni
-        size = 3913
-    }
-
     craftsmen = {
         culture = ukrainian
         religion = orthodox
-        size = 429
-    }
-
-    craftsmen = {
-        culture = ukrainian
-        religion = orthodox
-        size = 6921
+        size = 7350
     }
 
     craftsmen = {
         culture = russian
         religion = orthodox
-        size = 110
-    }
-
-    craftsmen = {
-        culture = russian
-        religion = orthodox
-        size = 1825
+        size = 1935
     }
 
     craftsmen = {
         culture = tatar
         religion = sunni
-        size = 25
-    }
-
-    craftsmen = {
-        culture = tatar
-        religion = sunni
-        size = 435
+        size = 460
     }
 
     capitalists = {
@@ -977,7 +959,7 @@
     artisans = {
         culture = ukrainian
         religion = orthodox
-        size = 1102
+        size = 16388
     }
 
     soldiers = {
@@ -986,10 +968,10 @@
         size = 343
     }
 
-    farmers = {
+    labourers = {
         culture = ukrainian
         religion = orthodox
-        size = 20286
+        size = 5000
     }
 
     aristocrats = {
@@ -1007,7 +989,7 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 882
+        size = 13923
     }
 
     soldiers = {
@@ -1016,10 +998,10 @@
         size = 343
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 16041
+        size = 3000
     }
 
     aristocrats = {
@@ -1037,7 +1019,7 @@
     artisans = {
         culture = mongol
         religion = gelugpa
-        size = 551
+        size = 8583
     }
 
     soldiers = {
@@ -1046,46 +1028,28 @@
         size = 171
     }
 
-    farmers = {
+    labourers = {
         culture = mongol
         religion = gelugpa
-        size = 10032
+        size = 2000
     }
 
     craftsmen = {
         culture = ukrainian
         religion = orthodox
-        size = 123
-    }
-
-    craftsmen = {
-        culture = ukrainian
-        religion = orthodox
-        size = 2254
+        size = 2377
     }
 
     craftsmen = {
         culture = russian
         religion = orthodox
-        size = 98
-    }
-
-    craftsmen = {
-        culture = russian
-        religion = orthodox
-        size = 1782
+        size = 1880
     }
 
     craftsmen = {
         culture = mongol
         religion = gelugpa
-        size = 61
-    }
-
-    craftsmen = {
-        culture = mongol
-        religion = gelugpa
-        size = 1115
+        size = 1176
     }
 
     capitalists = {
@@ -1440,10 +1404,10 @@
         size = 51
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 2943
+        size = 3288
     }
 
     clergymen = {
@@ -1452,28 +1416,10 @@
         size = 61
     }
 
-    farmers = {
+    labourers = {
         culture = ugrian
         religion = orthodox
-        size = 639
-    }
-
-    craftsmen = {
-        culture = russian
-        religion = orthodox
-        size = 18
-    }
-
-    craftsmen = {
-        culture = russian
-        religion = orthodox
-        size = 327
-    }
-
-    craftsmen = {
-        culture = ugrian
-        religion = orthodox
-        size = 71
+        size = 710
     }
 }
 #Kostomuksha (20000/5000 POPS)
@@ -4761,13 +4707,43 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 24500
+        size = 80000
     }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 4900
+        size = 80000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 80000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 80000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 80000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 80000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 77590
     }
 
     soldiers = {
@@ -4776,10 +4752,10 @@
         size = 8146
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 529690
+        size = 14999
     }
 
     clergymen = {
@@ -4791,19 +4767,13 @@
     artisans = {
         culture = tatar
         religion = sunni
-        size = 367
+        size = 4715
     }
 
     soldiers = {
         culture = tatar
         religion = sunni
         size = 85
-    }
-
-    farmers = {
-        culture = tatar
-        religion = sunni
-        size = 4348
     }
 }
 #Vetluga (308000/77000 POPS)
@@ -6479,13 +6449,49 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 24500
+        size = 64856
     }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 1225
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
     }
 
     soldiers = {
@@ -6494,10 +6500,10 @@
         size = 7203
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 462131
+        size = 3000
     }
 
     aristocrats = {
@@ -6521,7 +6527,31 @@
     artisans = {
         culture = tatar
         religion = sunni
-        size = 9800
+        size = 40000
+    }
+
+    artisans = {
+        culture = tatar
+        religion = sunni
+        size = 40000
+    }
+
+    artisans = {
+        culture = tatar
+        religion = sunni
+        size = 40000
+    }
+
+    artisans = {
+        culture = tatar
+        religion = sunni
+        size = 40000
+    }
+
+    artisans = {
+        culture = tatar
+        religion = sunni
+        size = 26170
     }
 
     soldiers = {
@@ -6530,10 +6560,10 @@
         size = 2744
     }
 
-    farmers = {
+    labourers = {
         culture = tatar
         religion = sunni
-        size = 177870
+        size = 1500
     }
 
     aristocrats = {
@@ -6557,7 +6587,7 @@
     artisans = {
         culture = tatar
         religion = orthodox
-        size = 1837
+        size = 34902
     }
 
     soldiers = {
@@ -6566,10 +6596,10 @@
         size = 514
     }
 
-    farmers = {
+    labourers = {
         culture = tatar
         religion = orthodox
-        size = 33565
+        size = 500
     }
 }
 #Busuluk (164000/41000 POPS)
@@ -6639,7 +6669,13 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 3797
+        size = 36907
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 30000
     }
 
     soldiers = {
@@ -6648,10 +6684,10 @@
         size = 3773
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 68110
+        size = 5000
     }
 }
 #Kuban Region (520000)
@@ -7519,7 +7555,13 @@
     artisans = {
         culture = north_caucasian
         religion = sunni
-        size = 2082
+        size = 20000
+    }
+
+    artisans = {
+        culture = north_caucasian
+        religion = sunni
+        size = 14995
     }
 
     soldiers = {
@@ -7528,10 +7570,10 @@
         size = 600
     }
 
-    farmers = {
+    labourers = {
         culture = north_caucasian
         religion = sunni
-        size = 37913
+        size = 5000
     }
 }
 #Pyatigorsk (136000/34000 POPS)
@@ -7557,7 +7599,13 @@
     artisans = {
         culture = north_caucasian
         religion = sunni
-        size = 3748
+        size = 36827
+    }
+
+    artisans = {
+        culture = north_caucasian
+        religion = sunni
+        size = 30000
     }
 
     soldiers = {
@@ -7566,22 +7614,16 @@
         size = 1200
     }
 
-    farmers = {
+    labourers = {
         culture = north_caucasian
         religion = sunni
-        size = 68079
+        size = 5000
     }
 
     craftsmen = {
         culture = north_caucasian
         religion = sunni
-        size = 417
-    }
-
-    craftsmen = {
-        culture = north_caucasian
-        religion = sunni
-        size = 7564
+        size = 7981
     }
 
     capitalists = {
@@ -7719,7 +7761,37 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 12127
+        size = 40000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 40000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 40000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 40000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 40000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 24464
     }
 
     soldiers = {
@@ -7728,10 +7800,10 @@
         size = 3773
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 222337
+        size = 10000
     }
 }
 #Chelyabinsk (180000/45000 POPS)
@@ -7859,7 +7931,7 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 612
+        size = 7004
     }
 
     soldiers = {
@@ -7868,10 +7940,10 @@
         size = 171
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 11392
+        size = 5000
     }
 
     clergymen = {
@@ -7883,19 +7955,13 @@
     artisans = {
         culture = tatar
         religion = sunni
-        size = 24
+        size = 1187
     }
 
     soldiers = {
         culture = tatar
         religion = sunni
         size = 34
-    }
-
-    farmers = {
-        culture = tatar
-        religion = sunni
-        size = 1163
     }
 }
 #Yugra Region (98500)
@@ -7973,7 +8039,7 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 1592
+        size = 26151
     }
 
     soldiers = {
@@ -7982,10 +8048,10 @@
         size = 514
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 29559
+        size = 5000
     }
 
     aristocrats = {
@@ -8003,19 +8069,13 @@
     artisans = {
         culture = ugrian
         religion = animist
-        size = 245
+        size = 4655
     }
 
     soldiers = {
         culture = ugrian
         religion = animist
         size = 85
-    }
-
-    farmers = {
-        culture = ugrian
-        religion = animist
-        size = 4410
     }
 }
 #Nizhnevartovsk (4000/1000 POPS)
@@ -8067,7 +8127,7 @@
     artisans = {
         culture = ugrian
         religion = animist
-        size = 122
+        size = 22
     }
 
     soldiers = {
@@ -8079,7 +8139,7 @@
     farmers = {
         culture = ugrian
         religion = animist
-        size = 2205
+        size = 2305
     }
 }
 #Bakchar (8500/2125 POPS)
@@ -8619,7 +8679,49 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 24500
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 60000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 51812
     }
 
     soldiers = {
@@ -8628,10 +8730,10 @@
         size = 6860
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 456312
+        size = 9000
     }
 
     clergymen = {
@@ -8643,7 +8745,7 @@
     artisans = {
         culture = tatar
         religion = sunni
-        size = 367
+        size = 6165
     }
 
     soldiers = {
@@ -8652,10 +8754,10 @@
         size = 85
     }
 
-    farmers = {
+    labourers = {
         culture = tatar
         religion = sunni
-        size = 6798
+        size = 1000
     }
 }
 #Omsk (223500/55878 POPS)
@@ -8675,7 +8777,25 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 6860
+        size = 47606
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 40000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 40000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 40000
     }
 
     soldiers = {
@@ -8684,10 +8804,10 @@
         size = 3773
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 125746
+        size = 5000
     }
 }
 #Slavgorod (60000/15000 POPS)
@@ -8701,7 +8821,7 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 1470
+        size = 20848
     }
 
     soldiers = {
@@ -8713,7 +8833,7 @@
     farmers = {
         culture = russian
         religion = orthodox
-        size = 27378
+        size = 8000
     }
 
     clergymen = {
@@ -8725,7 +8845,7 @@
     artisans = {
         culture = tatar
         religion = sunni
-        size = 367
+        size = 5165
     }
 
     soldiers = {
@@ -8737,7 +8857,7 @@
     farmers = {
         culture = tatar
         religion = sunni
-        size = 6798
+        size = 2000
     }
 }
 #Barnaul (116000/29000 POPS)
@@ -8757,7 +8877,13 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 3185
+        size = 30000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 24230
     }
 
     soldiers = {
@@ -8766,10 +8892,10 @@
         size = 857
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 59045
+        size = 8000
     }
 
     aristocrats = {
@@ -8787,7 +8913,7 @@
     artisans = {
         culture = tatar
         religion = sunni
-        size = 367
+        size = 5043
     }
 
     soldiers = {
@@ -8796,10 +8922,10 @@
         size = 85
     }
 
-    farmers = {
+    labourers = {
         culture = tatar
         religion = sunni
-        size = 6676
+        size = 2000
     }
 }
 #Ulala (36000/9000 POPS)
@@ -8813,7 +8939,7 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 367
+        size = 6165
     }
 
     soldiers = {
@@ -8825,7 +8951,7 @@
     farmers = {
         culture = russian
         religion = orthodox
-        size = 6798
+        size = 1000
     }
 
     aristocrats = {
@@ -8843,7 +8969,7 @@
     artisans = {
         culture = tatar
         religion = animist
-        size = 735
+        size = 5148
     }
 
     soldiers = {
@@ -8855,7 +8981,7 @@
     farmers = {
         culture = tatar
         religion = animist
-        size = 13413
+        size = 9000
     }
 }
 #Yakutsk Region (117000)
@@ -9648,22 +9774,16 @@
         size = 29
     }
 
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 24
-    }
-
     soldiers = {
         culture = siberian
         religion = animist
         size = 17
     }
 
-    farmers = {
+    labourers = {
         culture = siberian
         religion = animist
-        size = 551
+        size = 575
     }
 }
 #Uchami (2000/500 POPS)
@@ -10591,22 +10711,16 @@
         size = 61
     }
 
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 61
-    }
-
     soldiers = {
         culture = siberian
         religion = animist
         size = 17
     }
 
-    farmers = {
+    labourers = {
         culture = siberian
         religion = animist
-        size = 1102
+        size = 1163
     }
 
     aristocrats = {
@@ -10621,22 +10735,16 @@
         size = 61
     }
 
-    artisans = {
-        culture = yakut
-        religion = animist
-        size = 61
-    }
-
     soldiers = {
         culture = yakut
         religion = animist
         size = 17
     }
 
-    farmers = {
+    labourers = {
         culture = yakut
         religion = animist
-        size = 1102
+        size = 1163
     }
 }
 #Okhotsk Region (11000)
@@ -11349,22 +11457,16 @@
         size = 61
     }
 
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 61
-    }
-
     soldiers = {
         culture = siberian
         religion = animist
         size = 17
     }
 
-    farmers = {
+    labourers = {
         culture = siberian
         religion = animist
-        size = 1102
+        size = 1163
     }
 }
 #Surinda (1000/250 POPS)
@@ -11413,22 +11515,16 @@
         size = 29
     }
 
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 24
-    }
-
     soldiers = {
         culture = siberian
         religion = animist
         size = 9
     }
 
-    farmers = {
+    labourers = {
         culture = siberian
         religion = animist
-        size = 563
+        size = 587
     }
 }
 #Bratsk (2000/500 POPS)
@@ -11445,22 +11541,16 @@
         size = 61
     }
 
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 61
-    }
-
     soldiers = {
         culture = siberian
         religion = animist
         size = 17
     }
 
-    farmers = {
+    labourers = {
         culture = siberian
         religion = animist
-        size = 1102
+        size = 1163
     }
 }
 #Irkutsk Region (292000)
@@ -11494,7 +11584,31 @@
     artisans = {
         culture = russian
         religion = orthodox
-        size = 7350
+        size = 30000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 30000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 30000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 30000
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 16512
     }
 
     soldiers = {
@@ -11503,10 +11617,10 @@
         size = 3773
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
-        size = 134162
+        size = 5000
     }
 
     aristocrats = {
@@ -11524,7 +11638,7 @@
     artisans = {
         culture = mongol
         religion = gelugpa
-        size = 1470
+        size = 23358
     }
 
     soldiers = {
@@ -11533,10 +11647,10 @@
         size = 428
     }
 
-    farmers = {
+    labourers = {
         culture = mongol
         religion = gelugpa
-        size = 26888
+        size = 5000
     }
 
     aristocrats = {
@@ -11554,19 +11668,13 @@
     artisans = {
         culture = siberian
         religion = animist
-        size = 24
+        size = 587
     }
 
     soldiers = {
         culture = siberian
         religion = animist
         size = 9
-    }
-
-    farmers = {
-        culture = siberian
-        religion = animist
-        size = 563
     }
 }
 #Vanavara (1000/250 POPS)
@@ -11615,22 +11723,16 @@
         size = 29
     }
 
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 24
-    }
-
     soldiers = {
         culture = siberian
         religion = animist
         size = 9
     }
 
-    farmers = {
+    labourers = {
         culture = siberian
         religion = animist
-        size = 563
+        size = 587
     }
 }
 #Kirensk (1000/250 POPS)
@@ -12007,7 +12109,31 @@
     artisans = {
         culture = manchu
         religion = mahayana
-        size = 9555
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 13688
     }
 
     soldiers = {
@@ -12016,10 +12142,10 @@
         size = 4372
     }
 
-    farmers = {
+    labourers = {
         culture = manchu
         religion = mahayana
-        size = 174133
+        size = 10000
     }
 
     aristocrats = {
@@ -12037,19 +12163,13 @@
     artisans = {
         culture = korean
         religion = mahayana
-        size = 367
+        size = 7304
     }
 
     soldiers = {
         culture = korean
         religion = mahayana
         size = 173
-    }
-
-    farmers = {
-        culture = korean
-        religion = mahayana
-        size = 6737
     }
 
     aristocrats = {
@@ -12067,19 +12187,13 @@
     artisans = {
         culture = siberian
         religion = animist
-        size = 122
+        size = 2388
     }
 
     soldiers = {
         culture = siberian
         religion = animist
         size = 57
-    }
-
-    farmers = {
-        culture = siberian
-        religion = animist
-        size = 2266
     }
 }
 #Boli (328000/82000 POPS)
@@ -12099,7 +12213,31 @@
     artisans = {
         culture = manchu
         religion = mahayana
-        size = 9800
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 40000
+    }
+
+    artisans = {
+        culture = manchu
+        religion = mahayana
+        size = 18588
     }
 
     soldiers = {
@@ -12108,10 +12246,10 @@
         size = 4664
     }
 
-    farmers = {
+    labourers = {
         culture = manchu
         religion = mahayana
-        size = 178788
+        size = 10000
     }
 
     aristocrats = {
@@ -12129,19 +12267,13 @@
     artisans = {
         culture = siberian
         religion = animist
-        size = 245
+        size = 4961
     }
 
     soldiers = {
         culture = siberian
         religion = animist
         size = 115
-    }
-
-    farmers = {
-        culture = siberian
-        religion = animist
-        size = 4716
     }
 }
 #Utchan (18000 POPS)
@@ -12161,7 +12293,7 @@
     artisans = {
         culture = manchu
         religion = mahayana
-        size = 1960
+        size = 27668
     }
 
     soldiers = {
@@ -12170,10 +12302,10 @@
         size = 1020
     }
 
-    farmers = {
+    labourers = {
         culture = manchu
         religion = mahayana
-        size = 35708
+        size = 10000
     }
 
     aristocrats = {
@@ -12191,19 +12323,13 @@
     artisans = {
         culture = siberian
         religion = animist
-        size = 245
+        size = 4655
     }
 
     soldiers = {
         culture = siberian
         religion = animist
         size = 144
-    }
-
-    farmers = {
-        culture = siberian
-        religion = animist
-        size = 4410
     }
 }
 #Ulusamudan (372000/93000 POPS)
@@ -12352,22 +12478,16 @@
         size = 25
     }
 
-    artisans = {
-        culture = siberian
-        religion = animist
-        size = 50
-    }
-
     soldiers = {
         culture = siberian
         religion = animist
         size = 10
     }
 
-    farmers = {
+    labourers = {
         culture = siberian
         religion = animist
-        size = 900
+        size = 950
     }
 
     clergymen = {
@@ -12376,7 +12496,7 @@
         size = 2
     }
 
-    farmers = {
+    labourers = {
         culture = russian
         religion = orthodox
         size = 23
@@ -12396,25 +12516,19 @@
         size = 8
     }
 
-    artisans = {
-        culture = ainu
-        religion = animist
-        size = 50
-    }
-
     soldiers = {
         culture = ainu
         religion = animist
         size = 10
     }
 
-    farmers = {
+    labourers = {
         culture = ainu
         religion = animist
-        size = 925
+        size = 975
     }
 
-    farmers = {
+    labourers = {
         culture = japanese
         religion = mahayana
         size = 25
@@ -12434,22 +12548,16 @@
         size = 8
     }
 
-    artisans = {
-        culture = ainu
-        religion = animist
-        size = 50
-    }
-
     soldiers = {
         culture = ainu
         religion = animist
         size = 10
     }
 
-    farmers = {
+    labourers = {
         culture = ainu
         religion = animist
-        size = 925
+        size = 975
     }
 }
 #Etorofu (4000/1000 POPS)

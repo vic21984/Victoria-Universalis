@@ -9,7 +9,7 @@ nationalvalue = nv_order
 literacy = 0.60
 civilized = yes
 prestige = 10
-schools = naval_tech_school
+schools = commerce_tech_school
 
 # Political reforms
 slavery = yes_slavery
@@ -23,12 +23,12 @@ political_parties = underground_parties
 
 # Social Reforms
 wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
+work_hours = fourteen_hours
 safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
-school_reforms = no_schools
+school_reforms = good_schools
 
 ruling_party = HOL_conservative
 upper_house = {
@@ -185,7 +185,7 @@ school_reforms = acceptable_schools
 conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legal
+child_labor = child_labor_restricted
 citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = unitary
@@ -367,6 +367,6 @@ colonial_policy = no_colonies
 	citizens_rights=culture_voting_only
 	debt_law=bankruptcy
 	border_policy=open_borders
-	colonial_policy=exploitation
+	colonial_policy=indirect_rule
 	centralization=unitary
 }

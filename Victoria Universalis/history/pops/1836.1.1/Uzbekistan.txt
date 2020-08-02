@@ -283,7 +283,19 @@
 	artisans = {
 		culture = uzbek
 		religion = sunni
-		size = 7050
+		size = 20000
+	}
+
+	artisans = {
+		culture = uzbek
+		religion = sunni
+		size = 20000
+	}
+
+	artisans = {
+		culture = uzbek
+		religion = sunni
+		size = 11400
 	}
 
 	soldiers = {
@@ -292,10 +304,10 @@
 		size = 575
 	}
 
-	farmers = {
+	labourers = {
 		culture = uzbek
 		religion = sunni
-		size = 46350
+		size = 2000
 	}
 
 	aristocrats = {
@@ -313,7 +325,7 @@
 	artisans = {
 		culture = kirgiz
 		religion = sunni
-		size = 800
+		size = 12400
 	}
 
 	soldiers = {
@@ -322,10 +334,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = kirgiz
 		religion = sunni
-		size = 14600
+		size = 3000
 	}
 
 	aristocrats = {
@@ -343,19 +355,13 @@
 	artisans = {
 		culture = tajik
 		religion = sunni
-		size = 150
+		size = 2775
 	}
 
 	soldiers = {
 		culture = tajik
 		religion = sunni
 		size = 25
-	}
-
-	farmers = {
-		culture = tajik
-		religion = sunni
-		size = 2625
 	}
 }
 #under the rule of Bukhara in 1836  

@@ -53,6 +53,7 @@ romanticism = {
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
+			literacy = 0.5
 		}
 	}
 }
@@ -81,6 +82,7 @@ realism = {
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
+			literacy = 0.5
 		}
 	}
 }
@@ -108,6 +110,7 @@ impressionism = {
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
+			literacy = 0.5
 		}
 	}
 }
@@ -135,6 +138,7 @@ expressionism = {
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
+			literacy = 0.5
 		}
 	}
 }
@@ -162,6 +166,7 @@ mass_culture_n_the_avant_garde = {
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
+			literacy = 0.5
 		}
 	}
 }
@@ -189,6 +194,7 @@ modernism = {
 		modifier = {
 			factor = 2
 			tech_school = culture_tech_school
+			literacy = 0.5
 		}
 	}
 }
@@ -358,7 +364,7 @@ anti__rationalism = {
 		}
 	}
 }
-critical_theory = {
+quantum_mechanics = {
 	area = philosophy
 	year = 1910
 	cost = 21600
@@ -509,7 +515,7 @@ social_alienation = {
 		}
 	}
 }
-modern_sociology = {
+critical_theory = {
 	area = social_thought
 	year = 1920
 	cost = 21600
@@ -593,7 +599,10 @@ state_n_government = {
 			factor = 1.02
 			tech_school = culture_tech_school
 		}
-		
+		modifier = {
+			factor = 2
+			tag = ARG
+		}
 	}	
 }
 nationalism_n_imperialism = {

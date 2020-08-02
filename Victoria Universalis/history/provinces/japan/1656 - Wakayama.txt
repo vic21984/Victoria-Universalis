@@ -3,3 +3,41 @@ controller = JAP
 add_core = JAP
 trade_goods = tea_leaves
 life_rating = 35
+1914.1.1 = {
+	naval_base = 6
+	state_building = {
+		level = 5
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = winery
+		upgrade = yes
+	}
+}

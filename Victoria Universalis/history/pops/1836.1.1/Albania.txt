@@ -29,7 +29,19 @@
 	artisans = {
 		culture = albanian
 		religion = sunni
-		size = 3200
+		size = 20000
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 20000
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 16225
 	}
 
 	soldiers = {
@@ -38,10 +50,10 @@
 		size = 2000
 	}
 
-	farmers = {
+	labourers = {
 		culture = albanian
 		religion = sunni
-		size = 56025
+		size = 3000
 	}
 
 	clergymen = {
@@ -53,13 +65,13 @@
 	artisans = {
 		culture = albanian
 		religion = orthodox
-		size = 500
+		size = 7925
 	}
 
-	farmers = {
+	labourers = {
 		culture = albanian
 		religion = orthodox
-		size = 9425
+		size = 2000
 	}
 }
 #Shkoder (408000/102000 POPS)

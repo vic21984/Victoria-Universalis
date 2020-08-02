@@ -358,22 +358,46 @@
         size = 4873
     }
 
+    artisans = {
+        culture = dutch
+        religion = protestant
+        size = 37150
+    }
+
     soldiers = {
         culture = dutch
         religion = protestant
         size = 8462
     }
 
-    farmers = {
+    labourers = {
         culture = dutch
         religion = protestant
-        size = 101650
+        size = 9500
     }
 
-    farmers = {
+    artisans = {
+        culture = dutch
+        religion = protestant
+        size = 5295
+    }
+
+    labourers = {
         culture = flemish
         religion = catholic
-        size = 5795
+        size = 500
+    }
+
+    craftsmen = {
+        culture = dutch
+        religion = protestant
+        size = 50000
+    }
+
+    clerks = {
+        culture = dutch
+        religion = protestant
+        size = 5000
     }
 
 }
@@ -447,18 +471,53 @@
         size = 2737
     }
 
-    farmers = {
+    artisans = {
         culture = dutch
         religion = protestant
-        size = 73245
+        size = 30745
     }
 
-    farmers = {
+    labourers = {
+        culture = dutch
+        religion = protestant
+        size = 9500
+    }
+
+    artisans = {
         culture = flemish
         religion = catholic
-        size = 2090
+        size = 820
     }
 
+    labourers = {
+        culture = flemish
+        religion = catholic
+        size = 500
+    }
+
+    craftsmen = {
+        culture = dutch
+        religion = protestant
+        size = 30000
+    }
+
+    clerks = {
+        culture = dutch
+        religion = protestant
+        size = 3000
+    }
+
+    craftsmen = {
+        culture = flemish
+        religion = catholic
+        size = 700
+    }
+
+    clerks = {
+        culture = flemish
+        religion = catholic
+        size = 70
+    }
 
 }
 #Arnhem (412000/103000 POPS)
@@ -586,7 +645,7 @@
         size = 25258
     }
 
-    labourers = {
+    farmers = {
         culture = north_german
         religion = protestant
         size = 1358

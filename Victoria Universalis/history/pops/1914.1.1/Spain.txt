@@ -90,7 +90,7 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 8350
+        size = 20677
     }
 
     soldiers = {
@@ -99,18 +99,41 @@
         size = 3841
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 22527
+        size = 8000
     }
 
-    farmers = {
+    labourers = {
         culture = basque
         religion = catholic
-        size = 7431
+        size = 2000
     }
 
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 2000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 200
+    }
+
+    craftsmen = {
+        culture = basque
+        religion = catholic
+        size = 4931
+    }
+
+    clerks = {
+        culture = basque
+        religion = catholic
+        size = 500
+    }
 }
 #Vigo (328000/82000 POPS)
 476 = {
@@ -204,7 +227,19 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 5845
+        size = 31057
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
     }
 
     soldiers = {
@@ -213,10 +248,22 @@
         size = 2338
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 106212
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 10000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 1000
     }
 
     capitalists = {
@@ -242,7 +289,13 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 2505
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 20964
     }
 
     soldiers = {
@@ -251,10 +304,10 @@
         size = 1336
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 62959
+        size = 9000
     }
 
     clergymen = {
@@ -269,10 +322,34 @@
         size = 167
     }
 
-    farmers = {
+    labourers = {
         culture = basque
         religion = catholic
-        size = 6513
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 5000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 500
+    }
+
+    craftsmen = {
+        culture = basque
+        religion = catholic
+        size = 5013
+    }
+
+    clerks = {
+        culture = basque
+        religion = catholic
+        size = 500
     }
 
     capitalists = {
@@ -782,7 +859,19 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 4175
+        size = 20000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 20000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 17245
     }
 
     soldiers = {
@@ -791,10 +880,22 @@
         size = 1503
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 64670
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 6000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 600
     }
 
     capitalists = {
@@ -993,7 +1094,19 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 10020
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 28974
     }
 
     soldiers = {
@@ -1002,10 +1115,22 @@
         size = 16700
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 103874
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 9000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 900
     }
 
     capitalists = {
@@ -1145,40 +1270,42 @@
         culture = basque
         religion = catholic
         size = 751
-        militancy = 8
-        rebel_type = carlist_rebels
     }
 
     clergymen = {
         culture = basque
         religion = catholic
         size = 2939
-        militancy = 8
-        rebel_type = carlist_rebels
     }
 
     artisans = {
         culture = basque
         religion = catholic
-        size = 5010
-        militancy = 8
-        rebel_type = carlist_rebels
+        size = 30000
+    }
+
+    artisans = {
+        culture = basque
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = basque
+        religion = catholic
+        size = 17516
     }
 
     soldiers = {
         culture = basque
         religion = catholic
         size = 1837
-        militancy = 8
-        rebel_type = carlist_rebels
     }
 
-    farmers = {
+    labourers = {
         culture = basque
         religion = catholic
-        size = 86506
-        militancy = 8
-        rebel_type = carlist_rebels
+        size = 3000
     }
 
     aristocrats = {
@@ -1196,7 +1323,7 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 1837
+        size = 28016
     }
 
     soldiers = {
@@ -1205,18 +1332,40 @@
         size = 668
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 31479
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = basque
+        religion = catholic
+        size = 10000
+    }
+
+    clerks = {
+        culture = basque
+        religion = catholic
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 3000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 300
     }
 
     capitalists = {
         culture = basque
         religion = catholic
         size = 501
-        militancy = 8
-        rebel_type = carlist_rebels
     }
 
     capitalists = {
@@ -1275,7 +1424,7 @@
         rebel_type = carlist_rebels
     }
 
-    labourers = {
+    farmers = {
         culture = basque
         religion = catholic
         size = 32170
@@ -1630,7 +1779,7 @@
         size = 835
     }
 
-    labourers = {
+    farmers = {
         culture = catalan
         religion = catholic
         size = 14719
@@ -2447,7 +2596,7 @@
         size = 668
     }
 
-    labourers = {
+    farmers = {
         culture = spanish
         religion = catholic
         size = 14604
@@ -2856,7 +3005,7 @@
         size = 1336
     }
 
-    labourers = {
+    farmers = {
         culture = catalan
         religion = catholic
         size = 35179
@@ -2952,7 +3101,19 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 11690
+        size = 29756
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 20000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 20000
     }
 
     soldiers = {
@@ -2961,10 +3122,22 @@
         size = 1837
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 70766
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 7000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 700
     }
 
     capitalists = {
@@ -2990,7 +3163,7 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 1837
+        size = 28648
     }
 
     soldiers = {
@@ -2999,10 +3172,22 @@
         size = 835
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 35111
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 3000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 300
     }
 
     capitalists = {
@@ -3263,7 +3448,13 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 3340
+        size = 25236
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 20000
     }
 
     soldiers = {
@@ -3272,10 +3463,22 @@
         size = 1670
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 52396
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 5000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 500
     }
 
     capitalists = {
@@ -3394,13 +3597,25 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 16700
+        size = 37309
     }
 
     artisans = {
         culture = spanish
         religion = catholic
-        size = 8350
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
     }
 
     soldiers = {
@@ -3409,10 +3624,22 @@
         size = 10020
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 121659
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 14000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 1400
     }
 
     capitalists = {
@@ -3438,13 +3665,31 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 16700
+        size = 30000
     }
 
     artisans = {
         culture = spanish
         religion = catholic
-        size = 12525
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 13653
     }
 
     soldiers = {
@@ -3453,10 +3698,22 @@
         size = 3674
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 130928
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 15000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 1500
     }
 
     capitalists = {
@@ -3482,7 +3739,19 @@
     artisans = {
         culture = spanish
         religion = catholic
-        size = 8350
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 30000
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 21292
     }
 
     soldiers = {
@@ -3491,10 +3760,22 @@
         size = 3674
     }
 
-    farmers = {
+    labourers = {
         culture = spanish
         religion = catholic
-        size = 87842
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 9000
+    }
+
+    clerks = {
+        culture = spanish
+        religion = catholic
+        size = 900
     }
 
     capitalists = {

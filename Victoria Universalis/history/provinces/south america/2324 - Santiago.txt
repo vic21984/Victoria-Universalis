@@ -5,7 +5,7 @@ trade_goods = grain
 life_rating = 35
 1914.1.1 = {
 	state_building = {
-		level = 4
+		level = 2
 		building = steamer_shipyard
 		upgrade = yes
 	}
@@ -25,7 +25,7 @@ life_rating = 35
 		upgrade = yes
 	}
 	state_building = {
-		level = 6
+		level = 4
 		building = liquor_distillery
 		upgrade = yes
 	}
@@ -35,8 +35,13 @@ life_rating = 35
 		upgrade = yes
 	}
 	state_building = {
-		level = 4
+		level = 2
 		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = winery
 		upgrade = yes
 	}
 }

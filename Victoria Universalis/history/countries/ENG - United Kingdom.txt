@@ -5,6 +5,7 @@ government = hms_government
 plurality = 30
 nationalvalue = nv_order
 literacy = 0.55
+non_state_culture_literacy = 0.05
 civilized = yes
 decision = english_1836_setup
 
@@ -24,12 +25,12 @@ political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
+work_hours = twelve_hours
 safety_regulations = trinket_safety
 health_care = no_health_care
 unemployment_subsidies = trinket_subsidies
 pensions = no_pensions 
-school_reforms = low_schools
+school_reforms = good_schools
 
 # Technologies
 post_napoleonic_thought = 1
@@ -60,11 +61,9 @@ experimental_railroad = 1
 basic_chemistry = 1
 practical_steam_engine = 1
 mechanical_production = 1
-clean_coal = 1
 battleship_column_doctrine = 1
 naval_professionalism = 1
 stock_exchange = 1
-ad_hoc_money_bill_printing = 1
 market_structure = 1
 
 # Inventions
@@ -228,11 +227,12 @@ school_reforms = low_schools
 conscription = no_draft
 debt_law = debtors_prisons
 penal_system = punitive_labour
-child_labor = child_labor_legal
+child_labor = child_labor_restricted
 citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
+research_and_development = basic_rnd
 
 
 1914.1.1 = {
@@ -416,7 +416,7 @@ ruling_party = ENG_liberal_2
 	safety_regulations=low_safety
 	unemployment_subsidies=trinket_subsidies
 	pensions=acceptable_pensions
-	health_care=good_health_care
+	health_care=universal_health_care
 	school_reforms=good_schools
 	penal_system=punitive_labour
 	child_labor=child_labor_illegal

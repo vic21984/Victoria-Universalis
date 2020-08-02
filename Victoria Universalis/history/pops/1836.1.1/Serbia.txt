@@ -342,7 +342,7 @@
 	bureaucrats = {
 		culture = serb
 		religion = orthodox
-		size = 800
+		size = 1600
 	}
 
 	officers = {
@@ -360,7 +360,7 @@
 	artisans = {
 		culture = serb
 		religion = orthodox
-		size = 4000
+		size = 3200
 	}
 
 	soldiers = {
@@ -412,7 +412,13 @@
 	artisans = {
 		culture = serb
 		religion = orthodox
-		size = 2350
+		size = 20000
+	}
+
+	artisans = {
+		culture = serb
+		religion = orthodox
+		size = 15550
 	}
 
 	soldiers = {
@@ -421,10 +427,10 @@
 		size = 4700
 	}
 
-	farmers = {
+	labourers = {
 		culture = serb
 		religion = orthodox
-		size = 43200
+		size = 10000
 	}
 }
 #Uzice (72000/18000 POPS)
@@ -793,13 +799,13 @@
 	artisans = {
 		culture = serb
 		religion = orthodox
-		size = 400
+		size = 9400
 	}
 
-	farmers = {
+	labourers = {
 		culture = serb
 		religion = orthodox
-		size = 12000
+		size = 3000
 	}
 
 	aristocrats = {
@@ -817,7 +823,7 @@
 	artisans = {
 		culture = bosniak
 		religion = sunni
-		size = 500
+		size = 2050
 	}
 
 	soldiers = {
@@ -826,10 +832,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = bosniak
 		religion = sunni
-		size = 3550
+		size = 2000
 	}
 
 }

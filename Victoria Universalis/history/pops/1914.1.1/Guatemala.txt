@@ -115,7 +115,7 @@
     artisans = {
         culture = central_american
         religion = catholic
-        size = 692
+        size = 10386
     }
 
     soldiers = {
@@ -124,10 +124,10 @@
         size = 5126
     }
 
-    farmers = {
+    labourers = {
         culture = central_american
         religion = catholic
-        size = 10694
+        size = 1000
     }
 
     clergymen = {
@@ -139,7 +139,13 @@
     artisans = {
         culture = mayan
         religion = catholic
-        size = 2078
+        size = 20000
+    }
+
+    artisans = {
+        culture = mayan
+        religion = catholic
+        size = 16944
     }
 
     soldiers = {
@@ -148,40 +154,28 @@
         size = 1048
     }
 
-    farmers = {
+    labourers = {
         culture = mayan
         religion = catholic
-        size = 38866
+        size = 4000
+    }
+
+    craftsmen = {
+        culture = central_american
+        religion = catholic
+        size = 2010
+    }
+
+    craftsmen = {
+        culture = mayan
+        religion = catholic
+        size = 7227
     }
 
     capitalists = {
         culture = central_american
         religion = catholic
         size = 20
-    }
-
-    craftsmen = {
-        culture = central_american
-        religion = catholic
-        size = 123
-    }
-
-    craftsmen = {
-        culture = central_american
-        religion = catholic
-        size = 1887
-    }
-
-    craftsmen = {
-        culture = mayan
-        religion = catholic
-        size = 368
-    }
-
-    craftsmen = {
-        culture = mayan
-        religion = catholic
-        size = 6859
     }
 }
 #Puerto Barrios (72000/18000 POPS)

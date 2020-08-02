@@ -9,16 +9,20 @@ political_decisions = {
 				tag = NGF
 			}
 			exists = FRA
-			government = absolute_monarchy
+			#government = absolute_monarchy
 			owns = 570
 		}
 		
 		allow = {
 			prestige = 30
-			NOT = {
-				relation = {
-					who = FRA
-					value = 0
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
 				}
 			}
 		}
@@ -29,15 +33,30 @@ political_decisions = {
 				country_event = { id=19200 days=0 }
 			}
 			set_country_flag = ems_dispatch_sent
+			409 = { add_core = GER }
+			410 = { add_core = GER }
+			412 = { add_core = GER }
 		}
 		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = {
+				OR = {
 					war_exhaustion = 1
-					year = 1870
+					NOT = { year = 1870 }
+					NOT = {
+						GER = {
+							all_core = {
+								OR = {
+									owned_by = THIS
+									owner = {
+										in_sphere = THIS
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -287,13 +306,16 @@ political_decisions = {
 		
 		allow = {
 			is_greater_power = yes
+			533 = { owned_by = ENG }
 		}
 		
 		effect = {
 			533 = {
 				add_core = GER # Heligoland is my last territorial demand!
+				remove_core = ENG
 			}
 			set_country_flag = has_questioned_heligoland
+			ENG = { country_event = { id = 36949 } }
 		}
 	}
 	

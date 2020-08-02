@@ -646,6 +646,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -792,6 +793,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -939,6 +941,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -1086,6 +1089,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -1232,6 +1236,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -1377,6 +1382,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -1523,6 +1529,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -1668,6 +1675,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -1815,6 +1823,7 @@ country_event = {
 		political_reform = underground_parties
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -1997,6 +2006,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2144,6 +2154,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2292,6 +2303,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2440,6 +2452,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2587,6 +2600,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2733,6 +2747,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -2880,6 +2895,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -3026,6 +3042,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -3174,6 +3191,7 @@ country_event = {
 		primary_culture = beifaren
 		add_accepted_culture = nanfaren
 		add_accepted_culture = manchu
+		MCK = { add_accepted_culture = beifaren }
 		any_owned = {
 			limit = {
 				is_core = GNG
@@ -3435,7 +3453,8 @@ country_event = {	#Opium Addiction
 	id = 90820
 	title = "EVTNAME90820"
 	desc = "EVTDESC90820"
-		
+	picture = opium_addiction
+
 	trigger = {
 		has_country_flag = china
 		NOT = { has_country_modifier = opium_addiction }
@@ -3452,7 +3471,8 @@ country_event = {	#Opium Outlawed
 	id = 90821
 	title = "EVTNAME90821"
 	desc = "EVTDESC90821"
-		
+	picture = opium_addiction
+
 	trigger = {
 		has_country_modifier = opium_addiction
 		OR = {
@@ -3472,7 +3492,8 @@ country_event = {	#Gain Unequal China Treaty
 	id = 90822
 	title = "EVTNAME90822"
 	desc = "EVTDESC90822"
-		
+	picture = opium_monopoly
+
 	trigger = {
 		owns = 1247
 		owns = 1248
@@ -3494,7 +3515,8 @@ country_event = {	#Lose Unequal China Treaty
 	id = 90823
 	title = "EVTNAME90823"
 	desc = "EVTDESC90823"
-		
+	picture = opium_monopoly
+
 	trigger = {
 		OR = {
 			AND = {
@@ -3532,7 +3554,8 @@ country_event = {	#European Response to Opium Outlawed
 	id = 90824
 	title = "EVTNAME90824"
 	desc = "EVTDESC90824"
-		
+	picture = opium_war
+
 	is_triggered_only = yes
 
 	option = {
@@ -3551,4 +3574,379 @@ country_event = {	#European Response to Opium Outlawed
 		name = "EVTOPTB90824"
 		prestige = -25
 	}
+}
+
+country_event = {
+	id = 90825
+	title = "Chinese Farm Nerf"
+
+	trigger = {
+		tag = JAN
+		OR = {
+			CHI_1578 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1601 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1603 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1504 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1565 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1618 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1613 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1576 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_2062 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1557 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1577 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1499 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1487 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1539 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1607 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1490 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_2221 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1542 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1511 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1508 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1614 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1545 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1547 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1473 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1472 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1523 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1516 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1529 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1527 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+			CHI_1537 = {
+				NOT = { has_province_modifier = chinese_farm_size }
+			}
+		}
+	}
+
+	option = {
+		CHI_1578 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1601 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1603 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1504 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1565 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1618 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1613 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1576 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_2062 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1557 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1577 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1499 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1487 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1539 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1607 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1490 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_2221 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1542 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1511 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1508 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1614 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1545 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1547 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1473 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1472 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1523 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1516 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1529 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1527 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+		CHI_1537 = {
+			add_province_modifier = { name = chinese_farm_size duration = -1 }
+		}
+	}
+
+}
+
+country_event = {
+	id = 90826
+	title = "Chinese AI Farm Expansion"
+
+	trigger = {
+		has_country_flag = CHI
+		NOT = {
+			any_owned_province = {
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= oil
+					trade_goods= sulphur
+					trade_goods= precious_metal
+				}
+				NOT = {
+					has_province_modifier = mine_expansion
+				}
+			}
+		}
+		any_owned_province = {
+			NOT = {
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= oil
+					trade_goods= sulphur
+					trade_goods= precious_metal
+				}
+			}
+			NOT = { has_province_modifier = agriculture_expansion }
+		}
+		money = 750000
+	}
+
+	option = {
+		treasury = -750000
+		random_owned = {
+			limit = {
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= oil
+						trade_goods= sulphur
+						trade_goods= precious_metal
+						has_province_modifier = agriculture_expansion
+					}
+				}
+			}
+			add_province_modifier = { name = agriculture_expansion duration = -1 }
+		}
+	}
+
+}
+
+country_event = {
+	id = 90827
+	title = "Chinese Tuberculosis"
+
+	trigger = {
+		tag = JAN
+		year = 1860
+		NOT = { has_country_flag = chinese_tuberculosis }
+	}
+
+	option = {
+		set_country_flag = chinese_tuberculosis
+		any_country = {
+			limit = { has_country_flag = china }
+			country_event = { id = 21000 }
+		}
+	}
+
+}
+
+country_event = {
+	id = 90828
+	title = "Chinese Famine"
+
+	trigger = {
+		tag = JAN
+		year = 1855
+		NOT = { has_country_flag = chinese_famine }
+	}
+
+	option = {
+		set_country_flag = chinese_famine
+		any_country = {
+			limit = { has_country_flag = china }
+			country_event = { id = 21010 }
+		}
+	}
+
+}
+
+country_event = {
+	id = 90829
+	title = "Chinese Typhoid"
+
+	trigger = {
+		tag = JAN
+		year = 1850
+		NOT = { has_country_flag = chinese_typhoid }
+	}
+
+	option = {
+		set_country_flag = chinese_typhoid
+		any_country = {
+			limit = { has_country_flag = china }
+			country_event = { id = 21020 }
+		}
+	}
+
+}
+
+country_event = {
+	id = 90830
+	title = "Chinese Influenza"
+
+	trigger = {
+		tag = JAN
+		year = 1845
+		NOT = { has_country_flag = chinese_influenza }
+		CHI = {
+			NOT = { has_country_modifier = pandemic_influenza }
+			NOT = { has_country_modifier = immunity_from_influenza }
+		}
+	}
+
+	option = {
+		set_country_flag = chinese_influenza
+		any_country = {
+			limit = { has_country_flag = china }
+			country_event = { id = 21030 }
+		}
+	}
+
+}
+
+country_event = {
+	id = 90831
+	title = "Chinese Smallpox"
+
+	trigger = {
+		tag = JAN
+		year = 1840
+		NOT = { has_country_flag = chinese_smallpox }
+	}
+
+	option = {
+		set_country_flag = chinese_smallpox
+		any_country = {
+			limit = { has_country_flag = china }
+			country_event = { id = 21040 }
+		}
+	}
+
+}
+
+country_event = {
+	id = 90832
+	title = "Second Chinese Famine"
+
+	trigger = {
+		tag = JAN
+		year = 1865
+		NOT = { has_country_flag = second_chinese_famine }
+	}
+
+	option = {
+		set_country_flag = second_chinese_famine
+		any_country = {
+			limit = { has_country_flag = china }
+			country_event = { id = 21010 }
+		}
+	}
+
 }

@@ -111,10 +111,107 @@ political_decisions = {
 			ai = no
 		}	
 		allow = {
+			civilized = yes
 		}
 		effect = {
 			country_event = { id = 91705 }
 		}
+	}
+	
+#########################################################################
+# 					RESEARCH AND DEVELOPMENT							#
+#########################################################################
+	zcountry_decrease_rnd = {
+		picture = research_and_development
+		alert = no
+		potential = {
+			ai = no
+			NOT = { research_and_development = no_rnd }
+		}
+			
+		allow = {
+			NOT = { research_and_development = no_rnd }
+		}
+			
+		effect = {
+			random_owned = { limit = { owner = { research_and_development = rudimentary_rnd } } owner = { political_reform = no_rnd } }
+			random_owned = { limit = { owner = { research_and_development = very_low_rnd } } owner = { political_reform = rudimentary_rnd } }
+			random_owned = { limit = { owner = { research_and_development = low_rnd } } owner = { political_reform = very_low_rnd } }
+			random_owned = { limit = { owner = { research_and_development = basic_rnd } } owner = { political_reform = low_rnd } }
+			random_owned = { limit = { owner = { research_and_development = moderate_rnd } } owner = { political_reform = basic_rnd } }
+			random_owned = { limit = { owner = { research_and_development = acceptable_rnd } } owner = { political_reform = moderate_rnd } }
+			random_owned = { limit = { owner = { research_and_development = good_rnd } } owner = { political_reform = acceptable_rnd } }
+			random_owned = { limit = { owner = { research_and_development = very_good_rnd } } owner = { political_reform = good_rnd } }
+			random_owned = { limit = { owner = { research_and_development = advanced_rnd } } owner = { political_reform = very_good_rnd } }
+			random_owned = { limit = { owner = { research_and_development = futuristic_rnd } } owner = { political_reform = advanced_rnd } }
+		}		
+	}
+
+	zcountry_increase_rnd = {
+		picture = research_and_development
+		alert = yes
+		potential = {
+			NOT = { research_and_development = futuristic_rnd }
+		}
+			
+		allow = {
+			civilized = yes
+			OR = {
+				AND = {
+					research_and_development = no_rnd
+					literacy = 0.1
+				}
+				AND = {
+					research_and_development = rudimentary_rnd
+					literacy = 0.2
+				}
+				AND = {
+					research_and_development = very_low_rnd
+					literacy = 0.3
+				}
+				AND = {
+					research_and_development = low_rnd
+					literacy = 0.4
+				}
+				AND = {
+					research_and_development = basic_rnd
+					literacy = 0.5
+				}
+				AND = {
+					research_and_development = moderate_rnd
+					literacy = 0.6
+				}
+				AND = {
+					research_and_development = acceptable_rnd
+					literacy = 0.7
+				}
+				AND = {
+					research_and_development = good_rnd
+					literacy = 0.8
+				}
+				AND = {
+					research_and_development = very_good_rnd
+					literacy = 0.9
+				}
+				AND = {
+					research_and_development = advanced_rnd
+					literacy = 0.99
+				}
+			}
+		}
+			
+		effect = {
+			random_owned = { limit = { owner = { research_and_development = advanced_rnd } } owner = { political_reform = futuristic_rnd } }
+			random_owned = { limit = { owner = { research_and_development = very_good_rnd } } owner = { political_reform = advanced_rnd } }
+			random_owned = { limit = { owner = { research_and_development = good_rnd } } owner = { political_reform = very_good_rnd } }
+			random_owned = { limit = { owner = { research_and_development = acceptable_rnd } } owner = { political_reform = good_rnd } }
+			random_owned = { limit = { owner = { research_and_development = moderate_rnd } } owner = { political_reform = acceptable_rnd } }
+			random_owned = { limit = { owner = { research_and_development = basic_rnd } } owner = { political_reform = moderate_rnd } }
+			random_owned = { limit = { owner = { research_and_development = low_rnd } } owner = { political_reform = basic_rnd } }
+			random_owned = { limit = { owner = { research_and_development = very_low_rnd } } owner = { political_reform = low_rnd } }
+			random_owned = { limit = { owner = { research_and_development = rudimentary_rnd } } owner = { political_reform = very_low_rnd } }
+			random_owned = { limit = { owner = { research_and_development = no_rnd } } owner = { political_reform = rudimentary_rnd } }			
+		}		
 	}
 
 #########################################################################
@@ -583,7 +680,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -597,14 +694,16 @@ political_decisions = {
 		potential = {
 			ai = no
 			any_owned_province = {
-				has_building = province_selector 
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				NOT = { state_scope = { total_pops = 100000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 100000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				NOT = { state_scope = { total_pops = 100000 } }
 				NOT = {
 					state_scope = {
@@ -620,6 +719,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					NOT = { state_scope = { total_pops = 100000 } }
 					NOT = {
 						state_scope = {
@@ -636,7 +736,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -651,14 +751,16 @@ political_decisions = {
 			ai = no
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 100000 }
 				NOT = { state_scope = { total_pops = 200000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 200000
-			any_owned_province = { 
+			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 100000 }
 				NOT = { state_scope = { total_pops = 200000 } }
 					NOT = {
@@ -675,6 +777,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 100000 }
 					NOT = { state_scope = { total_pops = 200000 } }
 					NOT = {
@@ -692,7 +795,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -707,14 +810,16 @@ political_decisions = {
 			ai = no
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 200000 }
 				NOT = { state_scope = { total_pops = 300000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 300000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 200000 }
 				NOT = { state_scope = { total_pops = 300000 } }
 					NOT = {
@@ -731,6 +836,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 200000 }
 					NOT = { state_scope = { total_pops = 300000 } }
 					NOT = {
@@ -748,7 +854,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -761,16 +867,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 300000 }
 				NOT = { state_scope = { total_pops = 400000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 400000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 300000 }
 				NOT = { state_scope = { total_pops = 400000 } }
 					NOT = {
@@ -787,6 +895,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 300000 }
 					NOT = { state_scope = { total_pops = 400000 } }
 					NOT = {
@@ -804,7 +913,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -817,16 +926,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 400000 }
 				NOT = { state_scope = { total_pops = 500000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 500000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 400000 }
 				NOT = { state_scope = { total_pops = 500000 } }
 					NOT = {
@@ -843,6 +954,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 400000 }
 					NOT = { state_scope = { total_pops = 500000 } }
 					NOT = {
@@ -860,7 +972,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -873,16 +985,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 500000 }
 				NOT = { state_scope = { total_pops = 600000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 600000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 500000 }
 				NOT = { state_scope = { total_pops = 600000 } }
 					NOT = {
@@ -899,6 +1013,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 500000 }
 					NOT = { state_scope = { total_pops = 600000 } }
 					NOT = {
@@ -916,7 +1031,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -929,16 +1044,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 600000 }
 				NOT = { state_scope = { total_pops = 700000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 700000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 600000 }
 				NOT = { state_scope = { total_pops = 700000 } }
 					NOT = {
@@ -955,6 +1072,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 600000 }
 					NOT = { state_scope = { total_pops = 700000 } }
 					NOT = {
@@ -972,7 +1090,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -985,16 +1103,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 700000 }
 				NOT = { state_scope = { total_pops = 800000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 800000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 700000 }
 				NOT = { state_scope = { total_pops = 800000 } }
 					NOT = {
@@ -1011,6 +1131,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 700000 }
 					NOT = { state_scope = { total_pops = 800000 } }
 					NOT = {
@@ -1028,7 +1149,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1041,16 +1162,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 800000 }
 				NOT = { state_scope = { total_pops = 900000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 900000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 800000 }
 				NOT = { state_scope = { total_pops = 900000 } }
 					NOT = {
@@ -1067,6 +1190,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 800000 }
 					NOT = { state_scope = { total_pops = 900000 } }
 					NOT = {
@@ -1084,7 +1208,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1097,16 +1221,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 900000 }
 				NOT = { state_scope = { total_pops = 1000000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 1000000
 			any_owned_province = {
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 900000 }
 				NOT = { state_scope = { total_pops = 1000000 } }
 					NOT = {
@@ -1123,6 +1249,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 900000 }
 					NOT = { state_scope = { total_pops = 1000000 } }
 					NOT = {
@@ -1140,7 +1267,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1154,15 +1281,17 @@ political_decisions = {
 		potential = {
 			ai = no
 			any_owned_province = { 
-				has_building = province_selector 
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1000000 }
 				NOT = { state_scope = { total_pops = 1200000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 1200000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1000000 }
 				NOT = { state_scope = { total_pops = 1200000 } }
 					NOT = {
@@ -1179,6 +1308,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 1000000 }
 					NOT = { state_scope = { total_pops = 1200000 } }
 					NOT = {
@@ -1196,7 +1326,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1210,15 +1340,17 @@ political_decisions = {
 		potential = {
 			ai = no
 			any_owned_province = { 
-				has_building = province_selector 
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1200000 }
 				NOT = { state_scope = { total_pops = 1400000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 1400000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1200000 }
 				NOT = { state_scope = { total_pops = 1400000 } }
 					NOT = {
@@ -1235,6 +1367,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 1200000 }
 					NOT = { state_scope = { total_pops = 1400000 } }
 					NOT = {
@@ -1252,7 +1385,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1266,15 +1399,17 @@ political_decisions = {
 		potential = {
 			ai = no
 			any_owned_province = { 
-				has_building = province_selector 
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1400000 }
 				NOT = { state_scope = { total_pops = 1600000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 1600000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1400000 }
 				NOT = { state_scope = { total_pops = 1600000 } }
 					NOT = {
@@ -1291,6 +1426,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 1400000 }
 					NOT = { state_scope = { total_pops = 1600000 } }
 					NOT = {
@@ -1308,7 +1444,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1321,16 +1457,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1600000 }
 				NOT = { state_scope = { total_pops = 1800000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 1800000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1600000 }
 				NOT = { state_scope = { total_pops = 1800000 } }
 					NOT = {
@@ -1347,6 +1485,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 1600000 }
 					NOT = { state_scope = { total_pops = 1800000 } }
 					NOT = {
@@ -1364,7 +1503,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1377,16 +1516,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1800000 }
 				NOT = { state_scope = { total_pops = 2000000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 2000000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 1800000 }
 				NOT = { state_scope = { total_pops = 2000000 } }
 					NOT = {
@@ -1403,6 +1544,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 1800000 }
 					NOT = { state_scope = { total_pops = 2000000 } }
 					NOT = {
@@ -1420,7 +1562,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1433,16 +1575,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 2000000 }
 				NOT = { state_scope = { total_pops = 2500000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 2500000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 2000000 }
 				NOT = { state_scope = { total_pops = 2500000 } }
 					NOT = {
@@ -1460,6 +1604,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 2000000 }
 					NOT = { state_scope = { total_pops = 2500000 } }
 					NOT = {
@@ -1477,7 +1622,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1490,16 +1635,18 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 2500000 }
 				NOT = { state_scope = { total_pops = 3000000 } }
 			}
-		}	
+		}
 		allow = {
 			money = 3000000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 2500000 }
 				NOT = { state_scope = { total_pops = 3000000 } }
 					NOT = {
@@ -1517,6 +1664,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 2500000 }
 					NOT = { state_scope = { total_pops = 3000000 } }
 					NOT = {
@@ -1534,7 +1682,7 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1547,15 +1695,17 @@ political_decisions = {
 		picture = literacy
 		potential = {
 			ai = no
-			any_owned_province = { 
-				has_building = province_selector 
+			any_owned_province = {
+				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 3000000 }
 			}
-		}	
+		}
 		allow = {
 			money = 4000000
 			any_owned_province = { 
 				has_building = province_selector
+				NOT = { state_scope = { literacy = 0.25 } }
 				state_scope = { total_pops = 3000000 }
 					NOT = {
 						state_scope = {
@@ -1572,6 +1722,7 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					has_building = province_selector
+					NOT = { state_scope = { literacy = 0.25 } }
 					state_scope = { total_pops = 3000000 }
 					NOT = {
 						state_scope = {
@@ -1588,7 +1739,3304 @@ political_decisions = {
 					any_owned = {
 						add_province_modifier = {
 							name = literacy_campaign
-							duration = 7300
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+#########################################################################
+# 							25% LITERACY								#
+#########################################################################
+
+	z25state_literacy_campaign_100k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				NOT = { state_scope = { total_pops = 100000 } }
+			}
+		}
+		allow = {
+			money = 100000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				NOT = { state_scope = { total_pops = 100000 } }
+				NOT = {
+					state_scope = {
+						any_owned_province = {
+							has_province_modifier = literacy_campaign
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			money = -100000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					NOT = { state_scope = { total_pops = 100000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_200k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 100000 }
+				NOT = { state_scope = { total_pops = 200000 } }
+			}
+		}
+		allow = {
+			money = 200000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 100000 }
+				NOT = { state_scope = { total_pops = 200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 100000 }
+					NOT = { state_scope = { total_pops = 200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z25state_literacy_campaign_300k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 200000 }
+				NOT = { state_scope = { total_pops = 300000 } }
+			}
+		}
+		allow = {
+			money = 300000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 200000 }
+				NOT = { state_scope = { total_pops = 300000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -300000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 200000 }
+					NOT = { state_scope = { total_pops = 300000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z25state_literacy_campaign_400k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 300000 }
+				NOT = { state_scope = { total_pops = 400000 } }
+			}
+		}
+		allow = {
+			money = 400000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 300000 }
+				NOT = { state_scope = { total_pops = 400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -400000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 300000 }
+					NOT = { state_scope = { total_pops = 400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z25state_literacy_campaign_500k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 400000 }
+				NOT = { state_scope = { total_pops = 500000 } }
+			}
+		}
+		allow = {
+			money = 500000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 400000 }
+				NOT = { state_scope = { total_pops = 500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 400000 }
+					NOT = { state_scope = { total_pops = 500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_600k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 500000 }
+				NOT = { state_scope = { total_pops = 600000 } }
+			}
+		}
+		allow = {
+			money = 600000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 500000 }
+				NOT = { state_scope = { total_pops = 600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -600000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 500000 }
+					NOT = { state_scope = { total_pops = 600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z25state_literacy_campaign_700k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 600000 }
+				NOT = { state_scope = { total_pops = 700000 } }
+			}
+		}
+		allow = {
+			money = 700000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 600000 }
+				NOT = { state_scope = { total_pops = 700000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -700000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 600000 }
+					NOT = { state_scope = { total_pops = 700000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z25state_literacy_campaign_800k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 700000 }
+				NOT = { state_scope = { total_pops = 800000 } }
+			}
+		}
+		allow = {
+			money = 800000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 700000 }
+				NOT = { state_scope = { total_pops = 800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -800000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 700000 }
+					NOT = { state_scope = { total_pops = 800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_900k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 800000 }
+				NOT = { state_scope = { total_pops = 900000 } }
+			}
+		}
+		allow = {
+			money = 900000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 800000 }
+				NOT = { state_scope = { total_pops = 900000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -900000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 800000 }
+					NOT = { state_scope = { total_pops = 900000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_1M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 900000 }
+				NOT = { state_scope = { total_pops = 1000000 } }
+			}
+		}
+		allow = {
+			money = 1000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 900000 }
+				NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 900000 }
+					NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_1.2M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1000000 }
+				NOT = { state_scope = { total_pops = 1200000 } }
+			}
+		}
+		allow = {
+			money = 1200000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1000000 }
+				NOT = { state_scope = { total_pops = 1200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 1000000 }
+					NOT = { state_scope = { total_pops = 1200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z25state_literacy_campaign_1.4M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1200000 }
+				NOT = { state_scope = { total_pops = 1400000 } }
+			}
+		}
+		allow = {
+			money = 1400000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1200000 }
+				NOT = { state_scope = { total_pops = 1400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1400000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 1200000 }
+					NOT = { state_scope = { total_pops = 1400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_1.6M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1400000 }
+				NOT = { state_scope = { total_pops = 1600000 } }
+			}
+		}
+		allow = {
+			money = 1600000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1400000 }
+				NOT = { state_scope = { total_pops = 1600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1600000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 1400000 }
+					NOT = { state_scope = { total_pops = 1600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_1.8M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1600000 }
+				NOT = { state_scope = { total_pops = 1800000 } }
+			}
+		}
+		allow = {
+			money = 1800000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1600000 }
+				NOT = { state_scope = { total_pops = 1800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1800000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 1600000 }
+					NOT = { state_scope = { total_pops = 1800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_2M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1800000 }
+				NOT = { state_scope = { total_pops = 2000000 } }
+			}
+		}
+		allow = {
+			money = 2000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 1800000 }
+				NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 1800000 }
+					NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_2.5M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 2000000 }
+				NOT = { state_scope = { total_pops = 2500000 } }
+			}
+		}
+		allow = {
+			money = 2500000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 2000000 }
+				NOT = { state_scope = { total_pops = 2500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1250000
+			money = -1250000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 2000000 }
+					NOT = { state_scope = { total_pops = 2500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_3M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 2500000 }
+				NOT = { state_scope = { total_pops = 3000000 } }
+			}
+		}
+		allow = {
+			money = 3000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 2500000 }
+				NOT = { state_scope = { total_pops = 3000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1500000
+			money = -1500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 2500000 }
+					NOT = { state_scope = { total_pops = 3000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z25state_literacy_campaign_3M+ = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 3000000 }
+			}
+		}
+		allow = {
+			money = 4000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.25 }
+				NOT = { state_scope = { literacy = 0.5 } }
+				state_scope = { total_pops = 3000000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.25 }
+					NOT = { state_scope = { literacy = 0.5 } }
+					state_scope = { total_pops = 3000000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.075
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+#########################################################################
+# 							50% LITERACY								#
+#########################################################################
+
+	z50state_literacy_campaign_100k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				NOT = { state_scope = { total_pops = 100000 } }
+			}
+		}
+		allow = {
+			money = 100000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				NOT = { state_scope = { total_pops = 100000 } }
+				NOT = {
+					state_scope = {
+						any_owned_province = {
+							has_province_modifier = literacy_campaign
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			money = -100000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					NOT = { state_scope = { total_pops = 100000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_200k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 100000 }
+				NOT = { state_scope = { total_pops = 200000 } }
+			}
+		}
+		allow = {
+			money = 200000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 100000 }
+				NOT = { state_scope = { total_pops = 200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 100000 }
+					NOT = { state_scope = { total_pops = 200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z50state_literacy_campaign_300k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 200000 }
+				NOT = { state_scope = { total_pops = 300000 } }
+			}
+		}
+		allow = {
+			money = 300000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 200000 }
+				NOT = { state_scope = { total_pops = 300000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -300000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 200000 }
+					NOT = { state_scope = { total_pops = 300000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z50state_literacy_campaign_400k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 300000 }
+				NOT = { state_scope = { total_pops = 400000 } }
+			}
+		}
+		allow = {
+			money = 400000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 300000 }
+				NOT = { state_scope = { total_pops = 400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -400000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 300000 }
+					NOT = { state_scope = { total_pops = 400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z50state_literacy_campaign_500k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 400000 }
+				NOT = { state_scope = { total_pops = 500000 } }
+			}
+		}
+		allow = {
+			money = 500000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 400000 }
+				NOT = { state_scope = { total_pops = 500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 400000 }
+					NOT = { state_scope = { total_pops = 500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_600k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 500000 }
+				NOT = { state_scope = { total_pops = 600000 } }
+			}
+		}
+		allow = {
+			money = 600000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 500000 }
+				NOT = { state_scope = { total_pops = 600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -600000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 500000 }
+					NOT = { state_scope = { total_pops = 600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z50state_literacy_campaign_700k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 600000 }
+				NOT = { state_scope = { total_pops = 700000 } }
+			}
+		}
+		allow = {
+			money = 700000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 600000 }
+				NOT = { state_scope = { total_pops = 700000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -700000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 600000 }
+					NOT = { state_scope = { total_pops = 700000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z50state_literacy_campaign_800k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 700000 }
+				NOT = { state_scope = { total_pops = 800000 } }
+			}
+		}
+		allow = {
+			money = 800000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 700000 }
+				NOT = { state_scope = { total_pops = 800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -800000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 700000 }
+					NOT = { state_scope = { total_pops = 800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_900k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 800000 }
+				NOT = { state_scope = { total_pops = 900000 } }
+			}
+		}
+		allow = {
+			money = 900000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 800000 }
+				NOT = { state_scope = { total_pops = 900000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -900000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 800000 }
+					NOT = { state_scope = { total_pops = 900000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_1M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 900000 }
+				NOT = { state_scope = { total_pops = 1000000 } }
+			}
+		}
+		allow = {
+			money = 1000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 900000 }
+				NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 900000 }
+					NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_1.2M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1000000 }
+				NOT = { state_scope = { total_pops = 1200000 } }
+			}
+		}
+		allow = {
+			money = 1200000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1000000 }
+				NOT = { state_scope = { total_pops = 1200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 1000000 }
+					NOT = { state_scope = { total_pops = 1200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z50state_literacy_campaign_1.4M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1200000 }
+				NOT = { state_scope = { total_pops = 1400000 } }
+			}
+		}
+		allow = {
+			money = 1400000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1200000 }
+				NOT = { state_scope = { total_pops = 1400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1400000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 1200000 }
+					NOT = { state_scope = { total_pops = 1400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_1.6M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1400000 }
+				NOT = { state_scope = { total_pops = 1600000 } }
+			}
+		}
+		allow = {
+			money = 1600000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1400000 }
+				NOT = { state_scope = { total_pops = 1600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1600000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 1400000 }
+					NOT = { state_scope = { total_pops = 1600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_1.8M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1600000 }
+				NOT = { state_scope = { total_pops = 1800000 } }
+			}
+		}
+		allow = {
+			money = 1800000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1600000 }
+				NOT = { state_scope = { total_pops = 1800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1800000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 1600000 }
+					NOT = { state_scope = { total_pops = 1800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_2M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1800000 }
+				NOT = { state_scope = { total_pops = 2000000 } }
+			}
+		}
+		allow = {
+			money = 2000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 1800000 }
+				NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 1800000 }
+					NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_2.5M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 2000000 }
+				NOT = { state_scope = { total_pops = 2500000 } }
+			}
+		}
+		allow = {
+			money = 2500000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 2000000 }
+				NOT = { state_scope = { total_pops = 2500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1250000
+			money = -1250000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 2000000 }
+					NOT = { state_scope = { total_pops = 2500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_3M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 2500000 }
+				NOT = { state_scope = { total_pops = 3000000 } }
+			}
+		}
+		allow = {
+			money = 3000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 2500000 }
+				NOT = { state_scope = { total_pops = 3000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1500000
+			money = -1500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 2500000 }
+					NOT = { state_scope = { total_pops = 3000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z50state_literacy_campaign_3M+ = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 3000000 }
+			}
+		}
+		allow = {
+			money = 4000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.5 }
+				NOT = { state_scope = { literacy = 0.75 } }
+				state_scope = { total_pops = 3000000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.5 }
+					NOT = { state_scope = { literacy = 0.75 } }
+					state_scope = { total_pops = 3000000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.05
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+#########################################################################
+# 							75% LITERACY								#
+#########################################################################
+	
+	z75state_literacy_campaign_100k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				NOT = { state_scope = { total_pops = 100000 } }
+			}
+		}
+		allow = {
+			money = 100000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				NOT = { state_scope = { total_pops = 100000 } }
+				NOT = {
+					state_scope = {
+						any_owned_province = {
+							has_province_modifier = literacy_campaign
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			money = -100000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					NOT = { state_scope = { total_pops = 100000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_200k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 100000 }
+				NOT = { state_scope = { total_pops = 200000 } }
+			}
+		}
+		allow = {
+			money = 200000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 100000 }
+				NOT = { state_scope = { total_pops = 200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 100000 }
+					NOT = { state_scope = { total_pops = 200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z75state_literacy_campaign_300k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 200000 }
+				NOT = { state_scope = { total_pops = 300000 } }
+			}
+		}
+		allow = {
+			money = 300000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 200000 }
+				NOT = { state_scope = { total_pops = 300000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -300000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 200000 }
+					NOT = { state_scope = { total_pops = 300000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z75state_literacy_campaign_400k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 300000 }
+				NOT = { state_scope = { total_pops = 400000 } }
+			}
+		}
+		allow = {
+			money = 400000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 300000 }
+				NOT = { state_scope = { total_pops = 400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -400000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 300000 }
+					NOT = { state_scope = { total_pops = 400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z75state_literacy_campaign_500k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 400000 }
+				NOT = { state_scope = { total_pops = 500000 } }
+			}
+		}
+		allow = {
+			money = 500000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 400000 }
+				NOT = { state_scope = { total_pops = 500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 400000 }
+					NOT = { state_scope = { total_pops = 500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_600k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 500000 }
+				NOT = { state_scope = { total_pops = 600000 } }
+			}
+		}
+		allow = {
+			money = 600000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 500000 }
+				NOT = { state_scope = { total_pops = 600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -600000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 500000 }
+					NOT = { state_scope = { total_pops = 600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z75state_literacy_campaign_700k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 600000 }
+				NOT = { state_scope = { total_pops = 700000 } }
+			}
+		}
+		allow = {
+			money = 700000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 600000 }
+				NOT = { state_scope = { total_pops = 700000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -700000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 600000 }
+					NOT = { state_scope = { total_pops = 700000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z75state_literacy_campaign_800k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 700000 }
+				NOT = { state_scope = { total_pops = 800000 } }
+			}
+		}
+		allow = {
+			money = 800000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 700000 }
+				NOT = { state_scope = { total_pops = 800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -800000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 700000 }
+					NOT = { state_scope = { total_pops = 800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_900k = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 800000 }
+				NOT = { state_scope = { total_pops = 900000 } }
+			}
+		}
+		allow = {
+			money = 900000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 800000 }
+				NOT = { state_scope = { total_pops = 900000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -900000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 800000 }
+					NOT = { state_scope = { total_pops = 900000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_1M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 900000 }
+				NOT = { state_scope = { total_pops = 1000000 } }
+			}
+		}
+		allow = {
+			money = 1000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 900000 }
+				NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 900000 }
+					NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_1.2M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1000000 }
+				NOT = { state_scope = { total_pops = 1200000 } }
+			}
+		}
+		allow = {
+			money = 1200000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1000000 }
+				NOT = { state_scope = { total_pops = 1200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1200000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 1000000 }
+					NOT = { state_scope = { total_pops = 1200000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	z75state_literacy_campaign_1.4M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1200000 }
+				NOT = { state_scope = { total_pops = 1400000 } }
+			}
+		}
+		allow = {
+			money = 1400000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1200000 }
+				NOT = { state_scope = { total_pops = 1400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1400000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 1200000 }
+					NOT = { state_scope = { total_pops = 1400000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_1.6M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1400000 }
+				NOT = { state_scope = { total_pops = 1600000 } }
+			}
+		}
+		allow = {
+			money = 1600000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1400000 }
+				NOT = { state_scope = { total_pops = 1600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1600000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 1400000 }
+					NOT = { state_scope = { total_pops = 1600000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_1.8M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1600000 }
+				NOT = { state_scope = { total_pops = 1800000 } }
+			}
+		}
+		allow = {
+			money = 1800000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1600000 }
+				NOT = { state_scope = { total_pops = 1800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1800000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 1600000 }
+					NOT = { state_scope = { total_pops = 1800000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_2M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1800000 }
+				NOT = { state_scope = { total_pops = 2000000 } }
+			}
+		}
+		allow = {
+			money = 2000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 1800000 }
+				NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 1800000 }
+					NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_2.5M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 2000000 }
+				NOT = { state_scope = { total_pops = 2500000 } }
+			}
+		}
+		allow = {
+			money = 2500000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 2000000 }
+				NOT = { state_scope = { total_pops = 2500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1250000
+			money = -1250000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 2000000 }
+					NOT = { state_scope = { total_pops = 2500000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_3M = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 2500000 }
+				NOT = { state_scope = { total_pops = 3000000 } }
+			}
+		}
+		allow = {
+			money = 3000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 2500000 }
+				NOT = { state_scope = { total_pops = 3000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -1500000
+			money = -1500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 2500000 }
+					NOT = { state_scope = { total_pops = 3000000 } }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+	
+	z75state_literacy_campaign_3M+ = {
+		picture = literacy
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 3000000 }
+			}
+		}
+		allow = {
+			money = 4000000
+			any_owned_province = { 
+				has_building = province_selector
+				state_scope = { literacy = 0.75 }
+				state_scope = { total_pops = 3000000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { literacy = 0.75 }
+					state_scope = { total_pops = 3000000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				state_scope = {
+					any_pop = {
+						literacy = 0.025
+					}
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 5475
 						}
 						province_selector = -1
 					}
@@ -1600,8 +5048,739 @@ political_decisions = {
 #########################################################################
 # 							RGO EXPANSION								#
 #########################################################################
-	
-	zprovince_rgo_expansion = {
+
+	zprovince_mining = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			NOT = { any_owned_province = { has_building = province_selector	} }
+		}
+		allow = {
+			money = 1000000
+			any_owned_province = { 
+				has_building = province_selector
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= sulphur
+					trade_goods= oil
+				}
+				NOT = {
+					has_province_modifier = mine_expansion
+				}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+					}
+					NOT = {
+						has_province_modifier = mine_expansion
+					}
+					NOT = {
+						OR = {
+							province_id = 281
+							province_id = 280
+							province_id = 290
+							province_id = 435
+							province_id = 399
+							province_id = 404
+							province_id = 430
+							province_id = 387
+							province_id = 395
+							province_id = 572
+							province_id = 561
+							province_id = 575
+							province_id = 577
+							province_id = 627
+							province_id = 636
+							province_id = 628
+							province_id = 622
+							province_id = 727
+							province_id = 738
+							province_id = 763
+							province_id = 764
+							province_id = 306
+							province_id = 320
+							province_id = 321
+							province_id = 1026
+							province_id = 2686
+							province_id = 1184
+							province_id = 1249
+							province_id = 1272
+							province_id = 1303
+							province_id = 1561
+							province_id = 1573
+							province_id = 1532
+							province_id = 1515
+							province_id = 1528
+							province_id = 1507
+							province_id = 1353
+							province_id = 2062
+							province_id = 1642
+							province_id = 1661
+							province_id = 1670
+							province_id = 1671
+							province_id = 1418
+							province_id = 1421
+							province_id = 1420
+							province_id = 2217
+							province_id = 2264
+							province_id = 158
+							province_id = 177
+							province_id = 2237
+							province_id = 2264
+							province_id = 2305
+							province_id = 2307
+							province_id = 2309
+							province_id = 2312
+							province_id = 2331
+							province_id = 2332
+							province_id = 84
+							province_id = 89
+							province_id = 132
+							province_id = 134
+							province_id = 126
+						}
+					}
+				}
+				add_province_modifier = { name = mine_expansion duration = -1 }
+				province_selector = -1
+			}
+		}
+	}
+
+
+	zprovince_mining_expansion = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = { 
+				has_building = province_selector
+			}
+		}	
+		allow = {
+			money = 1000000
+			any_owned_province = { 
+				has_building = province_selector
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= sulphur
+					trade_goods= oil
+				}
+				NOT = {
+					has_province_modifier = mine_expansion
+				}
+				NOT = {
+					OR = {
+						province_id = 281
+						province_id = 280
+						province_id = 290
+						province_id = 435
+						province_id = 399
+						province_id = 404
+						province_id = 430
+						province_id = 387
+						province_id = 395
+						province_id = 572
+						province_id = 561
+						province_id = 575
+						province_id = 577
+						province_id = 627
+						province_id = 636
+						province_id = 628
+						province_id = 622
+						province_id = 727
+						province_id = 738
+						province_id = 763
+						province_id = 764
+						province_id = 306
+						province_id = 320
+						province_id = 321
+						province_id = 1026
+						province_id = 2686
+						province_id = 1184
+						province_id = 1249
+						province_id = 1272
+						province_id = 1303
+						province_id = 1561
+						province_id = 1573
+						province_id = 1532
+						province_id = 1515
+						province_id = 1528
+						province_id = 1507
+						province_id = 1353
+						province_id = 2062
+						province_id = 1642
+						province_id = 1661
+						province_id = 1670
+						province_id = 1671
+						province_id = 1418
+						province_id = 1421
+						province_id = 1420
+						province_id = 2217
+						province_id = 2264
+						province_id = 158
+						province_id = 177
+						province_id = 2237
+						province_id = 2264
+						province_id = 2305
+						province_id = 2307
+						province_id = 2309
+						province_id = 2312
+						province_id = 2331
+						province_id = 2332
+						province_id = 84
+						province_id = 89
+						province_id = 132
+						province_id = 134
+						province_id = 126
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+					}
+					NOT = {
+						has_province_modifier = mine_expansion
+					}
+					NOT = {
+						OR = {
+							province_id = 281
+							province_id = 280
+							province_id = 290
+							province_id = 435
+							province_id = 399
+							province_id = 404
+							province_id = 430
+							province_id = 387
+							province_id = 395
+							province_id = 572
+							province_id = 561
+							province_id = 575
+							province_id = 577
+							province_id = 627
+							province_id = 636
+							province_id = 628
+							province_id = 622
+							province_id = 727
+							province_id = 738
+							province_id = 763
+							province_id = 764
+							province_id = 306
+							province_id = 320
+							province_id = 321
+							province_id = 1026
+							province_id = 2686
+							province_id = 1184
+							province_id = 1249
+							province_id = 1272
+							province_id = 1303
+							province_id = 1561
+							province_id = 1573
+							province_id = 1532
+							province_id = 1515
+							province_id = 1528
+							province_id = 1507
+							province_id = 1353
+							province_id = 2062
+							province_id = 1642
+							province_id = 1661
+							province_id = 1670
+							province_id = 1671
+							province_id = 1418
+							province_id = 1421
+							province_id = 1420
+							province_id = 2217
+							province_id = 2264
+							province_id = 158
+							province_id = 177
+							province_id = 2237
+							province_id = 2264
+							province_id = 2305
+							province_id = 2307
+							province_id = 2309
+							province_id = 2312
+							province_id = 2331
+							province_id = 2332
+							province_id = 84
+							province_id = 89
+							province_id = 132
+							province_id = 134
+							province_id = 126
+						}
+					}
+				}
+				add_province_modifier = { name = mine_expansion duration = -1 }
+				province_selector = -1
+			}
+		}
+	}
+
+	zprovince_large_mining_expansion = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= sulphur
+					trade_goods= oil
+				}
+				OR = {
+					province_id = 281
+					province_id = 280
+					province_id = 290
+					province_id = 435
+					province_id = 399
+					province_id = 404
+					province_id = 430
+					province_id = 387
+					province_id = 395
+					province_id = 572
+					province_id = 561
+					province_id = 575
+					province_id = 577
+					province_id = 627
+					province_id = 636
+					province_id = 628
+					province_id = 622
+					province_id = 727
+					province_id = 738
+					province_id = 763
+					province_id = 764
+					province_id = 306
+					province_id = 320
+					province_id = 321
+					province_id = 1026
+					province_id = 2686
+					province_id = 1184
+					province_id = 1249
+					province_id = 1272
+					province_id = 1303
+					province_id = 1561
+					province_id = 1573
+					province_id = 1532
+					province_id = 1515
+					province_id = 1528
+					province_id = 1507
+					province_id = 1353
+					province_id = 2062
+					province_id = 1642
+					province_id = 1661
+					province_id = 1670
+					province_id = 1671
+					province_id = 1418
+					province_id = 1421
+					province_id = 1420
+					province_id = 2217
+					province_id = 2264
+					province_id = 158
+					province_id = 177
+					province_id = 2237
+					province_id = 2264
+					province_id = 2305
+					province_id = 2307
+					province_id = 2309
+					province_id = 2312
+					province_id = 2331
+					province_id = 2332
+					province_id = 84
+					province_id = 89
+					province_id = 132
+					province_id = 134
+					province_id = 126
+				}
+				NOT = {
+					has_province_modifier = mine_expansion
+				}
+			}
+		}
+		allow = {
+			money = 2000000
+			any_owned_province = {
+				has_building = province_selector
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= sulphur
+					trade_goods= oil
+				}
+				OR = {
+					province_id = 281
+					province_id = 280
+					province_id = 290
+					province_id = 435
+					province_id = 399
+					province_id = 404
+					province_id = 430
+					province_id = 387
+					province_id = 395
+					province_id = 572
+					province_id = 561
+					province_id = 575
+					province_id = 577
+					province_id = 627
+					province_id = 636
+					province_id = 628
+					province_id = 622
+					province_id = 727
+					province_id = 738
+					province_id = 763
+					province_id = 764
+					province_id = 306
+					province_id = 320
+					province_id = 321
+					province_id = 1026
+					province_id = 2686
+					province_id = 1184
+					province_id = 1249
+					province_id = 1272
+					province_id = 1303
+					province_id = 1561
+					province_id = 1573
+					province_id = 1532
+					province_id = 1515
+					province_id = 1528
+					province_id = 1507
+					province_id = 1353
+					province_id = 2062
+					province_id = 1642
+					province_id = 1661
+					province_id = 1670
+					province_id = 1671
+					province_id = 1418
+					province_id = 1421
+					province_id = 1420
+					province_id = 2217
+					province_id = 2264
+					province_id = 158
+					province_id = 177
+					province_id = 2237
+					province_id = 2264
+					province_id = 2305
+					province_id = 2307
+					province_id = 2309
+					province_id = 2312
+					province_id = 2331
+					province_id = 2332
+					province_id = 84
+					province_id = 89
+					province_id = 132
+					province_id = 134
+					province_id = 126
+				}
+				NOT = {
+					has_province_modifier = mine_expansion
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+					}
+					NOT = {
+						has_province_modifier = mine_expansion
+					}
+				}
+				add_province_modifier = { name = mine_expansion duration = -1 }
+				province_selector = -1
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_500k = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				NOT = {
+					state_scope = { total_pops = 500000 }
+				}
+			}
+		}
+		allow = {
+			money = 500000
+			any_owned_province = {
+				has_building = province_selector
+				NOT = {
+					state_scope = { total_pops = 500000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -500000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					NOT = { state_scope = { total_pops = 500000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_1M = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 500000 }
+				NOT = {
+					state_scope = { total_pops = 1000000 }
+				}
+			}
+		}
+		allow = {
+			money = 1000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 500000 }
+				NOT = {
+					state_scope = { total_pops = 1000000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -1000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 500000 }
+					NOT = { state_scope = { total_pops = 1000000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_2M = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 1000000 }
+				NOT = {
+					state_scope = { total_pops = 2000000 }
+				}
+			}
+		}
+		allow = {
+			money = 2000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 1000000 }
+				NOT = {
+					state_scope = { total_pops = 2000000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 1000000 }
+					NOT = { state_scope = { total_pops = 2000000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_4M = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 2000000 }
+				NOT = {
+					state_scope = { total_pops = 4000000 }
+				}
+			}
+		}
+		allow = {
+			money = 4000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 2000000 }
+				NOT = {
+					state_scope = { total_pops = 4000000 }
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 2000000 }
+					NOT = { state_scope = { total_pops = 4000000 } }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zstate_agriculture_expansion_4M+ = {
+		picture = rgo_expansion
+		potential = {
+			ai = no
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 4000000 }
+			}
+		}
+		allow = {
+			money = 6000000
+			any_owned_province = {
+				has_building = province_selector
+				state_scope = { total_pops = 4000000 }
+				NOT = {
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
+			}
+		}
+		effect = {
+			money = -2000000
+			money = -2000000
+			money = -2000000
+			random_owned = {
+				limit = {
+					has_building = province_selector
+					state_scope = { total_pops = 4000000 }
+					NOT = { has_province_modifier = agriculture_expansion }
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = agriculture_expansion
+							duration = -1
+						}
+						province_selector = -1
+					}
+				}
+			}
+		}
+	}
+
+	zprovince_agriculture_expansion = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1610,7 +5789,16 @@ political_decisions = {
 		allow = {
 			any_owned_province = {
 				has_building = province_selector
-				NOT = { has_province_modifier = rgo_expansion }
+				NOT = { has_province_modifier = agriculture_expansion }
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
+				}
 			}
 		}
 		effect = {
@@ -1618,13 +5806,13 @@ political_decisions = {
 				limit = {
 					has_building = province_selector
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_100k = {
+	zprovince_agriculture_expansion_100k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1637,11 +5825,20 @@ political_decisions = {
 		}	
 		allow = {
 			money = 100000
-			any_owned_province = { 
+			any_owned_province = {
 				has_building = province_selector
 				NOT = {
 					total_pops = 100000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1651,17 +5848,24 @@ political_decisions = {
 				limit = {
 					has_building = province_selector
 					NOT = {
-						total_pops = 100000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 100000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_200k = {
+	zprovince_agriculture_expansion_200k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1680,7 +5884,16 @@ political_decisions = {
 				total_pops = 100000
 				NOT = {
 					total_pops = 200000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1691,17 +5904,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 100000
 					NOT = {
-						total_pops = 200000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 200000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_300k = {
+	zprovince_agriculture_expansion_300k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1720,7 +5940,16 @@ political_decisions = {
 				total_pops = 200000
 				NOT = {
 					total_pops = 300000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1731,17 +5960,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 200000
 					NOT = {
-						total_pops = 300000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 300000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_400k = {
+	zprovince_agriculture_expansion_400k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1760,7 +5996,16 @@ political_decisions = {
 				total_pops = 300000
 				NOT = {
 					total_pops = 400000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1771,17 +6016,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 300000
 					NOT = {
-						total_pops = 400000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 400000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_500k = {
+	zprovince_agriculture_expansion_500k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1800,7 +6052,16 @@ political_decisions = {
 				total_pops = 400000
 				NOT = {
 					total_pops = 500000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1811,17 +6072,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 400000
 					NOT = {
-						total_pops = 500000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 500000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_600k = {
+	zprovince_agriculture_expansion_600k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1840,7 +6108,16 @@ political_decisions = {
 				total_pops = 500000
 				NOT = {
 					total_pops = 600000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1851,17 +6128,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 500000
 					NOT = {
-						total_pops = 600000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 600000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_700k = {
+	zprovince_agriculture_expansion_700k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1880,7 +6164,16 @@ political_decisions = {
 				total_pops = 600000
 				NOT = {
 					total_pops = 700000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1891,17 +6184,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 600000
 					NOT = {
-						total_pops = 700000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 1000000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 
-	zprovince_rgo_expansion_800k = {
+	zprovince_agriculture_expansion_800k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1920,7 +6220,16 @@ political_decisions = {
 				total_pops = 700000
 				NOT = {
 					total_pops = 800000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1931,17 +6240,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 700000
 					NOT = {
-						total_pops = 800000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 800000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_900k = {
+	zprovince_agriculture_expansion_900k = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -1960,7 +6276,16 @@ political_decisions = {
 				total_pops = 800000
 				NOT = {
 					total_pops = 900000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -1971,17 +6296,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 800000
 					NOT = {
-						total_pops = 900000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 900000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_1M = {
+	zprovince_agriculture_expansion_1M = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -2000,7 +6332,16 @@ political_decisions = {
 				total_pops = 900000
 				NOT = {
 					total_pops = 1000000
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -2011,17 +6352,24 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 900000
 					NOT = {
-						total_pops = 1000000
-						has_province_modifier = rgo_expansion
+						OR = {
+							total_pops = 1000000
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
 	
-	zprovince_rgo_expansion_1M+ = {
+	zprovince_agriculture_expansion_1M+ = {
 		picture = rgo_expansion
 		potential = {
 			ai = no
@@ -2036,7 +6384,16 @@ political_decisions = {
 				has_building = province_selector
 				total_pops = 1000000
 				NOT = {
-					has_province_modifier = rgo_expansion
+					has_province_modifier = agriculture_expansion
+				}
+				NOT = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= sulphur
+						trade_goods= oil
+						trade_goods= precious_metal
+					}
 				}
 			}
 		}
@@ -2047,53 +6404,21 @@ political_decisions = {
 					has_building = province_selector
 					total_pops = 1000000
 					NOT = {
-						has_province_modifier = rgo_expansion
+						OR = {
+							has_province_modifier = agriculture_expansion
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+						}
 					}
 				}
-				add_province_modifier = { name = rgo_expansion duration = -1 }
+				add_province_modifier = { name = agriculture_expansion duration = -1 }
 				province_selector = -1
 			}
 		}
 	}
-	
-#########################################################################
-# 							BLOOD AND IRON								#
-#########################################################################
-
-	zprovince_blood_and_iron = {
-		picture = blood_and_iron
-		potential = {
-			ai = no
-			NOT = { has_country_modifier = blood_and_iron }
-		}	
-		allow = {
-			any_owned_province = {
-				has_building = province_selector 
-				NOT = {
-					trade_goods= precious_metal
-					has_province_modifier = blood_and_iron_mine
-				}
-			}
-		}
-		effect = {
-			clr_country_flag = blood_and_iron_reminder
-			add_country_modifier = {
-				name = blood_and_iron
-				duration = 3650
-			}
-			random_owned = {
-				limit = {
-					has_building = province_selector
-				}
-				add_province_modifier = {
-					name = blood_and_iron_mine
-					duration = -1
-				}
-				province_selector = -1
-			}
-		}
-	}
-
 
 #########################################################################
 # 						CHANGE AGRICULTURE RGO							#
@@ -3143,42 +7468,6 @@ political_decisions = {
 	}
 
 #########################################################################
-# 							FINANCIAL CENTER							#
-#########################################################################
-
-	zprovince_establish_financial_center = {
-		picture = wall_street
-		potential = {
-			ai = no
-			NOT = { has_country_flag = financial_center_established }
-		}	
-		allow = {
-			modern_central_bank_system = 1
-			NOT = { has_country_flag = financial_center_established }
-			any_owned_province = {
-				has_building = province_selector
-				literacy = 0.90
-				is_core = THIS
-				NOT = { trade_goods = precious_metal }
-			}
-		}
-		effect = {
-			set_country_flag = financial_center_established
-			random_owned = {
-				limit = {
-					has_building = province_selector
-					is_core = THIS
-					NOT = { trade_goods = precious_metal }
-				}
-				trade_goods = precious_metal
-				add_province_modifier = { name = financial_center duration = -1 }
-				remove_province_modifier = blood_and_iron_mine
-				province_selector = -1
-			}
-		}
-	}
-
-#########################################################################
 # 							PROVINCE MIGRATION							#
 #########################################################################
 
@@ -3209,6 +7498,7 @@ political_decisions = {
 	
 	zprovince_migration_reset = {
 		picture = attract_immigrants
+		alert = no
 		potential = {
 			ai = no
 			OR = {

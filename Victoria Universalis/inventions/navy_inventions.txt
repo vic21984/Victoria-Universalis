@@ -39,7 +39,7 @@ mechanized_fishing_vessels = {
 	}
 	effect = {
 		rgo_goods_output = {
-			fish = 0.2
+			fish = 0.1
 		}
 	}
 }
@@ -90,21 +90,17 @@ ironclads = {
 	}
 }
 #steel_steamers
-protected_cruisers = {
+pre_dreadnought = {
 	limit = { steel_steamers = 1 }
 	chance = {
-		base = 3
+		base = 1
 		modifier = {
-			factor = 2
+			factor = 5
 			invention = ironclads
-		}
-		modifier = {
-			factor = 2
-			cheap_steel = 1
 		}
 	}
 	effect = {
-		activate_unit = cruiser 
+		activate_unit = battleship 
 	}
 }
 #destroyers = {
@@ -132,13 +128,17 @@ protected_cruisers = {
 #	}
 #}
 #steam_turbine_ships
-submarines = {
+dreadnoughts = {
 	limit = { steam_turbine_ships = 1 }
 	chance = {
-		base = 5
+		base = 1
+		modifier = {
+			factor = 10
+			invention = pre_dreadnought
+		}
 	}
 	effect = {
-		activate_unit = monitor 
+		activate_unit = dreadnought 
 	}
 }
 #light_cruisers = {
@@ -493,17 +493,21 @@ monitors = {
 #	}
 #}
 #main_armament
-pre_dreadnought = {
+protected_cruisers = {
 	limit = { main_armament = 1 }
 	chance = {
-		base = 1
+		base = 3
 		modifier = {
-			factor = 5
+			factor = 2
 			invention = ironclads
+		}
+		modifier = {
+			factor = 2
+			cheap_steel = 1
 		}
 	}
 	effect = {
-		activate_unit = battleship 
+		activate_unit = cruiser 
 	}
 }
 #bomb_guns = {
@@ -603,17 +607,13 @@ pre_dreadnought = {
 #	}
 #}
 #advanced_naval_design
-dreadnoughts = {
+submarines = {
 	limit = { advanced_naval_design = 1 }
 	chance = {
-		base = 1
-		modifier = {
-			factor = 10
-			invention = pre_dreadnought
-		}
+		base = 5
 	}
 	effect = {
-		activate_unit = dreadnought 
+		activate_unit = monitor 
 	}
 }
 #on_board_recon_aircraft = {

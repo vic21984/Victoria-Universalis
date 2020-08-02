@@ -67,7 +67,7 @@
 	artisans = {
 		culture = mossi
 		religion = animist
-		size = 2500
+		size = 36525
 	}
 
 	soldiers = {
@@ -76,16 +76,10 @@
 		size = 1500
 	}
 
-	farmers = {
+	labourers = {
 		culture = mossi
 		religion = animist
-		size = 26525
-	}
-
-	slaves = {
-		culture = mossi
-		religion = animist
-		size = 10000
+		size = 2500
 	}
 
 	aristocrats = {
@@ -103,7 +97,7 @@
 	artisans = {
 		culture = gur
 		religion = animist
-		size = 1650
+		size = 37200
 	}
 
 	soldiers = {
@@ -112,17 +106,12 @@
 		size = 325
 	}
 
-	farmers = {
+	labourers = {
 		culture = gur
 		religion = animist
-		size = 30050
+		size = 2500
 	}
 
-	slaves = {
-		culture = gur
-		religion = animist
-		size = 8000
-	}
 }
 #Dori (268000/67000 POPS)
 1903 = {

@@ -1,6 +1,103 @@
-# Version 0.2 - 6/18/2020
+# Version 0.3 - 8/2/2020
+## Bug Fixes:
+* Fixed South East England and Ile de France states starting with their 1914 factories in the 1836 scenario.
+* Fixed incorrect graphics icon in healthcare, pension, and school system reforms.
+* Fixed a bug that would sometimes cause the game to crash when a province was occupied.
+
+## Interface changes:
+* Made event title font easier to read.
+* Made the enact decision button easier to see.
+* Color coded the titles of decisions. Historical decisions are white, generic country decisions are yellow, and province or state specific decisions are green.
+* Added pictures to most events.
+
 ## General gameplay changes:
-* Touched up the 1914 and WW1 scenarios and fixed some bugs.
+* Changed base maximum sizes for coal, iron, precious metals, sulphur, and oil RGOs to anywhere from 5k-30k and greatly increased their output efficiency. Mine sizes should reflect reality more and small POP provinces that historically had large levels of production can now achieve their historical levels of output. The starting POPs in these provinces that don't work in the mines have been converted to artisans. This change, combined with the decision to stop promotion of select mining RGO labourers, should reflect more historical levels of employment in mines as well. Mining employment went up over time during this period but in vanilla Victoria 2 it was the opposite.
+* Labourers won't promote into craftsmen unless their RGO is full.
+* Literacy decay has been introduced at a rate of 0.1% for every 10% literacy per year. A POP with 50% literacy will lose 0.5% annually and a POP with 100% literacy will lose 1%. High starting literacy nations need to promote clergy, pass reforms, and research education techs if they want to maintain or grow their literacy.
+* Renamed clergymen to teachers and and reworked school reform mechanics. The base cap on teachers is now 2% and each level of school reform raises the cap by 0.5% up to 4% max.
+* Reduced average literacy research point bonus from 4 to 2.
+* Added extra reform category called Research and Development. There are 10 levels of R&D and each level gives +0.2 research points and -1% tax efficiency. The reform level can be chosen via new decisions.
+* Removed neglected education triggered modifier.
+* Replaced all crime modifiers with corruption modifiers. Corruption lowers local RGO efficiency and factory output. You can lower the chance of a province getting corruption by keeping your administration slider fully funded and raising state admin efficiency.
+* Lowered base crime fighting % to 0 and raised max to 100.
+* Reduced RGO size modifiers from techs.
+* Split the expand RGO size province selector decisions into separate mining and agriculture expansion decisions. Agriculture works the same way as before, but mining costs a flat 1 million pounds regardless of the population size of the province.
+* Added new statewide expand agriculture rgo decision.
+* Removed establish financial center decision.
+* Removed blood and iron decision.
+* Removed tariff nerf to nations with 7.5M POPs or more.
+* Reduced protectionism max tariffs from 100% to 50% and free trade factory input bonus from 10% to 5%.
+* Removed modifiers for POPs located in their core provinces to assimilate to the current owner of the province.
+* Renamed some culture techs and removed consciousness modifiers from the social thought tech line.
+* Rebalanced airplanes by buffing attack, nerfing defense, increasing supply cost, and requiring primary culture POPs to recruit.
+* Tweaked global assimilation rate modifiers for party and political issues.
+* Tax malus slightly increased for settlement colonial policy.
+* Indirect rule colonial policy no longer gives reduced non-accepted militancy.
+* Army tech bonus to non-colonial nation removed.
+* Removed tax malus for the recently passed reform modifier.
+* Removed great power requirement for unification cb.
+* Rebalanced pop promotion factors.
+* Rebalanced POP needs.
+* Made craftsmen and clerks not migrate to countries below 40% literacy.
+* Nerfed prestige national idea from +1 monlthy prestige to +0.5 monthly prestige.
+* Halved research point gain from conquest.
+* Removed tax and admin efficiency nerfs based on population size modifiers.
+* Added acquire siberian state wargoal that requires half the warscore and infamy of normal acquire state wargoal. This wargoal can be used only on the states of Tomsk, Irkutsk, Trans-Baikal, and Kamchatka.
+* Imported HPM neighbouring provinces clause to all demand state wargoals. A player can only take neighbouring states, states neighboring a neighboring state, and coastal states as long as the player owns a port.
+* Moved battleships and dreadnoughts to the construction and propulsion tech line and cruisers and submarines to the naval engineering tech line.
+* Changed healthcare reform unlock dates from 1855/1870/1895/1910 to 1855/1870/1885/1900/1915.
+
+## Map changes:
+* Removed straits from Busan to Kyushu, Granada and Gibraltar to al Rif, and Yemen to Eritrea.
+* Split and combined several states across the world to be more balanced.
+* Rebalanced goods across the world.
+
+## Music changes:
+* Replaced some HOI2 tracks with EU4 tracks.
+
+## Country Balance Changes:
+###### Civilized Nations:
+* Increased starting school reform level of several countries in Europe/America.
+* Set starting R&D level to match starting literacy levels.
+
+###### Balkans:
+* Removed Balkan pop growth and RGO size modifiers from starting Balkan provinces.
+* Increased most balkan provinces' liferating to 40.
+* Removed truces from 1836 scenario.
+
+###### United Kingdom:
+* The Indian provinces of Dehli, Meerut, and Agra now start under the control of the Mughal Empire, which is a puppet of the UK.
+
+###### Germany:
+* Added Bismarck's socialist reforms event.
+* Removed starting cores on Alsace-Lorraine. The cores are re-added in the Ems Dispatch decision. 
+
+###### Austria:
+* Removed ashkenazi from accepted culture.
+
+###### USA:
+* The Homestead Act now gives negative migration attraction to provinces located in east/south USA and a migration buff to provinces in the midwest/west.
+
+###### Netherlands:
+* Created a decision that annexes Luxembourg if the Netherlands owns the state of Wallonie.
+
+###### Sardinia-Piedmont:
+* Created a decision that adds south italian as an accepted culture.
+
+###### China:
+* Gave Taiping more starting provinces and split up the taiping civil war into two events. The first event releases Taiping, and the second event triggers the civil war one year later.
+* Added 60% farm size nerf to every core province in mainland China.
+
+###### Ethiopia:
+* Reduced starting pop from 2.05M to 1.23M.
+
+###### Sub-Saharan Africa:
+* Reduced starting population of Sub-Saharan African nations by 50% and increased liferating from 32 to 35.
+
+
+# Version 0.21 - 6/18/2020
+## General gameplay changes:
+* Fixed some bugs in the Gathering Storm and Great War scenarios.
 
 ## Interface changes:
 * New UI design.

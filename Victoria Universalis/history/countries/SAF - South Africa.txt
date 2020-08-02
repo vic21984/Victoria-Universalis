@@ -26,7 +26,7 @@ safety_regulations = low_safety
 health_care = no_health_care
 unemployment_subsidies = trinket_subsidies
 pensions = trinket_pensions 
-school_reforms = no_schools
+school_reforms = low_schools
 
 ruling_party = SAF_conservative_2
 upper_house = {
@@ -196,7 +196,7 @@ reinforce_rate_idea = yes
 	safety_regulations=no_safety
 	unemployment_subsidies=no_subsidies
 	pensions=no_pensions
-	health_care=good_health_care
+	health_care=universal_health_care
 	school_reforms=low_schools
 	penal_system=punitive_labour
 	child_labor=child_labor_illegal

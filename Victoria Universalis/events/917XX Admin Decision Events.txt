@@ -2,6 +2,7 @@ country_event = {
 	id = 91700
 	title = "EVTNAME91700"
 	desc = "EVTDESC91700"
+	picture = Demonstration
 
 	is_triggered_only = yes
 	
@@ -26,6 +27,7 @@ country_event = {
 	id = 91701
 	title = "EVTNAME91700"
 	desc = "EVTDESC91700"
+	picture = Demonstration
 
 	is_triggered_only = yes
 	
@@ -64,6 +66,7 @@ country_event = {
 	id = 91702
 	title = "EVTNAME91700"
 	desc = "EVTDESC91700"
+	picture = Demonstration
 
 	is_triggered_only = yes
 	
@@ -120,6 +123,7 @@ country_event = {
 	id = 91703
 	title = "EVTNAME91700"
 	desc = "EVTDESC91700"
+	picture = Demonstration
 
 	is_triggered_only = yes
 	
@@ -198,6 +202,7 @@ country_event = {
 	id = 91704
 	title = "EVTNAME91704"
 	desc = "EVTDESC91704"
+	picture = upper_house
 
 	trigger = {
 		has_country_flag = reform_passed
@@ -217,6 +222,7 @@ country_event = {
 	id = 91705
 	title = "EVTNAME91705"
 	desc = "EVTDESC91705"
+	picture = Police
 
 	is_triggered_only = yes
 	
@@ -242,6 +248,7 @@ country_event = {
 	id = 91706
 	title = "EVTNAME91706"
 	desc = "EVTDESC91706"
+	picture = upper_house
 
 	trigger = {
 		has_country_flag = force_reform
@@ -260,47 +267,47 @@ country_event = {
 
 ########## RECRUITMENT DRIVE AND MIGRATION ##########
 
-country_event = {
-	id = 91708
-	title = "EVTNAME91708"
-	desc = "EVTDESC91708"
+#country_event = {
+#	id = 91708
+#	title = "EVTNAME91708"
+#	desc = "EVTDESC91708"
+#
+#	trigger = {
+#		has_country_flag = recruitment_drive
+#		NOT = { has_country_modifier = recruitment_drive }
+#	}
+#	
+#		
+#	immediate = {
+#		clr_country_flag = recruitment_drive
+#	}
+#	
+#	option = {
+#		name = "EVTOPTA91708"
+#	}
+#}
 
-	trigger = {
-		has_country_flag = recruitment_drive
-		NOT = { has_country_modifier = recruitment_drive }
-	}
-	
-		
-	immediate = {
-		clr_country_flag = recruitment_drive
-	}
-	
-	option = {
-		name = "EVTOPTA91708"
-	}
-}
-
-country_event = {
-	id = 91709
-	title = "EVTNAME91709"
-	desc = "EVTDESC91709"
-
-	trigger = {
-		has_country_flag = province_migration
-		NOT = {
-			any_owned_province = { has_province_modifier = province_attract_immigrants }
-		}
-	}
-	
-		
-	immediate = {
-		clr_country_flag = province_migration
-	}
-	
-	option = {
-		name = "EVTOPTA91709"
-	}
-}
+#country_event = {
+#	id = 91709
+#	title = "EVTNAME91709"
+#	desc = "EVTDESC91709"
+#
+#	trigger = {
+#		has_country_flag = province_migration
+#		NOT = {
+#			any_owned_province = { has_province_modifier = province_attract_immigrants }
+#		}
+#	}
+#	
+#		
+#	immediate = {
+#		clr_country_flag = province_migration
+#	}
+#	
+#	option = {
+#		name = "EVTOPTA91709"
+#	}
+#}
 
 ########## RGO CHANGE EVENTS ##########
 
@@ -310,7 +317,7 @@ province_event = {
 	picture = farming
 	title = "EVTNAME91737"
 	desc = "EVTDESC91737"
-	
+
 	is_triggered_only = yes
 	
 	fire_only_once = yes

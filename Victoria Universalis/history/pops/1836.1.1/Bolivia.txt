@@ -29,7 +29,7 @@
 	artisans = {
 		culture = south_andean
 		religion = catholic
-		size = 5825
+		size = 18825
 	}
 
 	soldiers = {
@@ -38,10 +38,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
-		size = 18000
+		size = 5000
 	}
 
 	clergymen = {
@@ -53,7 +53,19 @@
 	artisans = {
 		culture = aimara
 		religion = catholic
-		size = 2525
+		size = 20625
+	}
+
+	artisans = {
+		culture = aimara
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = aimara
+		religion = catholic
+		size = 20000
 	}
 
 	soldiers = {
@@ -62,10 +74,10 @@
 		size = 1075
 	}
 
-	farmers = {
+	labourers = {
 		culture = aimara
 		religion = catholic
-		size = 63100
+		size = 5000
 	}
 
 	clergymen = {
@@ -77,7 +89,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 150
+		size = 2925
 	}
 
 	soldiers = {
@@ -86,11 +98,6 @@
 		size = 50
 	}
 
-	farmers = {
-		culture = quechua
-		religion = catholic
-		size = 2775
-	}
 }
 #Cochabamba (352000/88000 POPS)
 2311 = {
@@ -174,7 +181,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
 		size = 2525
@@ -198,7 +205,7 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = aimara
 		religion = catholic
 		size = 6500

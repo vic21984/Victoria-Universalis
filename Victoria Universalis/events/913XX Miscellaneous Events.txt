@@ -35,7 +35,9 @@ country_event = {
 	id = 91302
 	title = "EVTNAME91302"
 	desc = "EVTDESC91302"
-	
+	picture = colonial_factory
+
+
 	trigger = {
 		any_owned_province = {
 			OR = {
@@ -71,7 +73,7 @@ country_event = {
 				}
 				NOT = { life_rating = 11 }
 			}
-			life_rating = 22
+			life_rating = 25
 		}
 		any_owned = {
 			limit = {
@@ -90,7 +92,7 @@ country_event = {
 				}
 				NOT = { life_rating = 16 }
 			}
-			life_rating = 17
+			life_rating = 20
 		}
 		any_owned = {
 			limit = {
@@ -109,7 +111,7 @@ country_event = {
 				}
 				NOT = { life_rating = 21 }
 			}
-			life_rating = 12
+			life_rating = 15
 		}
 		any_owned = {
 			limit = {
@@ -128,7 +130,7 @@ country_event = {
 				}
 				NOT = { life_rating = 26 }
 			}
-			life_rating = 7
+			life_rating = 10
 		}
 	}
 }
@@ -148,13 +150,15 @@ country_event = {
 	}
 
 	immediate = {
-		add_country_modifier = { name = ghost_country duration = 180 }
+		add_country_modifier = { name = ghost_country duration = 90 }
 	}
 	option = {
 		any_country = {
 			limit = {
-				total_amount_of_divisions = 1
-				is_mobilised = yes
+				OR = {
+					total_amount_of_divisions = 1
+					war = yes
+				}
 				exists = no
 			}
 			country_event = 91304
@@ -171,6 +175,268 @@ country_event = {
 	option = {
 		add_country_modifier = { name = ghost_country duration = 30 }
 		2133 = { secede_province = THIS }
+		end_war = ABU
+		end_war = AFG
+		end_war = ALB
+		end_war = ALD
+		end_war = ANH
+		end_war = ARG
+		end_war = ARM
+		end_war = ARO
+		end_war = ASH
+		end_war = AST
+		end_war = ATJ
+		end_war = AUS
+		end_war = AWA
+		end_war = AZB
+		end_war = BAB
+		end_war = BAD
+		end_war = BAL
+		end_war = BAS
+		end_war = BAV
+		end_war = BEL
+		end_war = BEN
+		end_war = BER
+		end_war = BHO
+		end_war = BHU
+		end_war = BIK
+		end_war = BOH
+		end_war = BOL
+		end_war = BOS
+		end_war = BRA
+		end_war = BRE
+		end_war = BRG
+		end_war = BRU
+		end_war = BRZ
+		end_war = BUK
+		end_war = BUL
+		end_war = BUN
+		end_war = BUR
+		end_war = BYE
+		end_war = BYZ
+		end_war = CAL
+		end_war = CAM
+		end_war = CAN
+		end_war = CAT
+		end_war = CHE
+		end_war = CHI
+		end_war = CHL
+		end_war = CLM
+		end_war = CLM
+		end_war = CNG
+		end_war = COB
+		end_war = COL
+		end_war = COS
+		end_war = CRE
+		end_war = CRI
+		end_war = CRO
+		end_war = CSA
+		end_war = CUB
+		end_war = CYP
+		end_war = CYR
+		end_war = CZH
+		end_war = DAH
+		end_war = DAI
+		end_war = DAM
+		end_war = DAR
+		end_war = DEN
+		end_war = DES
+		end_war = DOM
+		end_war = DZG
+		end_war = ECU
+		end_war = EGY
+		end_war = ELS
+		end_war = ENG
+		end_war = EST
+		end_war = ETH
+		end_war = FIN
+		end_war = FLA
+		end_war = FRA
+		end_war = FRM
+		end_war = GBU
+		end_war = GCO
+		end_war = GEO
+		end_war = GER
+		end_war = GLM
+		end_war = GNG
+		end_war = GRE
+		end_war = GUA
+		end_war = GUY
+		end_war = GWA
+		end_war = GXI
+		end_war = HAI
+		end_war = HAM
+		end_war = HAN
+		end_war = HAW
+		end_war = HDJ
+		end_war = HEK
+		end_war = HES
+		end_war = HND
+		end_war = HNN
+		end_war = HOL
+		end_war = HON
+		end_war = HUI
+		end_war = HUN
+		end_war = HYD
+		end_war = ICL
+		end_war = IND
+		end_war = ION
+		end_war = IRE
+		end_war = IRQ
+		end_war = ISR
+		end_war = ITA
+		end_war = JAI
+		end_war = JAL
+		end_war = JAM
+		end_war = JAN
+		end_war = JAP
+		end_war = JAS
+		end_war = JAV
+		end_war = JOD
+		end_war = JOH
+		end_war = KAL
+		end_war = KAS
+		end_war = KAZ
+		end_war = KBO
+		end_war = KGR
+		end_war = KHI
+		end_war = KMT
+		end_war = KNG
+		end_war = KOK
+		end_war = KON
+		end_war = KOR
+		end_war = KRA
+		end_war = KUK
+		end_war = KUT
+		end_war = KYR
+		end_war = LAD
+		end_war = LAT
+		end_war = LIB
+		end_war = LIP
+		end_war = LIT
+		end_war = LOA
+		end_war = LOM
+		end_war = LUA
+		end_war = LUB
+		end_war = LUC
+		end_war = LUX
+		end_war = MAD
+		end_war = MAK
+		end_war = MAN
+		end_war = MAS
+		end_war = MCK
+		end_war = MEC
+		end_war = MEI
+		end_war = MEW
+		end_war = MEX
+		end_war = MGL
+		end_war = MOD
+		end_war = MOL
+		end_war = MON
+		end_war = MOR
+		end_war = MOS
+		end_war = MTC
+		end_war = MUG
+		end_war = MYS
+		end_war = NAG
+		end_war = NAL
+		end_war = NAS
+		end_war = NEJ
+		end_war = NEN
+		end_war = NEP
+		end_war = NET
+		end_war = NEW
+		end_war = NGF
+		end_war = NIC
+		end_war = NOR
+		end_war = NZL
+		end_war = OLD
+		end_war = OMA
+		end_war = ORA
+		end_war = ORI
+		end_war = OYO
+		end_war = PAK
+		end_war = PAP
+		end_war = PAR
+		end_war = PER
+		end_war = PEU
+		end_war = PHL
+		end_war = PLC
+		end_war = PLS
+		end_war = PNJ
+		end_war = PNM
+		end_war = POL
+		end_war = POR
+		end_war = PRG
+		end_war = PRU
+		end_war = QUE
+		end_war = RHO
+		end_war = ROM
+		end_war = RUS
+		end_war = RUT
+		end_war = SAF
+		end_war = SAR
+		end_war = SAX
+		end_war = SCA
+		end_war = SCH
+		end_war = SCO
+		end_war = SEG
+		end_war = SER
+		end_war = SGF
+		end_war = SHI
+		end_war = SIA
+		end_war = SIC
+		end_war = SIE
+		end_war = SIK
+		end_war = SIN
+		end_war = SLO
+		end_war = SLV
+		end_war = SOK
+		end_war = SOM
+		end_war = SPA
+		end_war = SRI
+		end_war = SUD
+		end_war = SWE
+		end_war = SWI
+		end_war = SXI
+		end_war = SYR
+		end_war = SZC
+		end_war = TAJ
+		end_war = TEX
+		end_war = TIB
+		end_war = TKM
+		end_war = TOO
+		end_war = TPG
+		end_war = TRA
+		end_war = TRE
+		end_war = TRI
+		end_war = TRN
+		end_war = TTB
+		end_war = TUN
+		end_war = TUR
+		end_war = TUS
+		end_war = UBD
+		end_war = UCA
+		end_war = UKR
+		end_war = USA
+		end_war = UZB
+		end_war = VEN
+		end_war = VNZ
+		end_war = WAL
+		end_war = WEI
+		end_war = WIA
+		end_war = WIF
+		end_war = WLL
+		end_war = WOL
+		end_war = WRI
+		end_war = WUR
+		end_war = XBI
+		end_war = XIN
+		end_war = YEM
+		end_war = YNN
+		end_war = YUG
+		end_war = ZAN
+		end_war = ZUL
 	}
 }
 
@@ -203,7 +469,9 @@ country_event = {
 	id = 91309
 	title = "EVTNAME91309"
 	desc = "EVTDESC91309"
-	
+	picture = factory
+
+
 	is_triggered_only = yes
 
 	option = {
@@ -211,43 +479,8 @@ country_event = {
 		set_country_flag = disable_non_accepted_craftsmen
 	}
 	option = {
-		name = "EVTOPTB91309"
-		set_country_flag = coal_mining_focus
-	}
-	option = {
-		name = "EVTOPTC91309"
-		set_country_flag = iron_mining_focus
-	}
-	option = {
-		name = "EVTOPTD91309"
-		set_country_flag = sulphur_mining_focus
-	}
-	option = {
-		name = "EVTOPTE91309"
-		set_country_flag = rubber_mining_focus
-	}
-	option = {
-		name = "EVTOPTF91309"
-		set_country_flag = oil_mining_focus
-	}
-	option = {
-		name = "EVTOPTG91309"
-		set_country_flag = timber_mining_focus
-	}
-	option = {
-		name = "EVTOPTH91309"
-		set_country_flag = tropical_wood_mining_focus
-	}
-	option = {
 		name = "EVTOPTI91309"
 		clr_country_flag = disable_non_accepted_craftsmen
-		clr_country_flag = coal_mining_focus
-		clr_country_flag = iron_mining_focus
-		clr_country_flag = sulphur_mining_focus
-		clr_country_flag = rubber_mining_focus
-		clr_country_flag = oil_mining_focus
-		clr_country_flag = timber_mining_focus
-		clr_country_flag = tropical_wood_mining_focus
 	}
 }
 
@@ -258,7 +491,9 @@ country_event = {
 	id = 91310
 	title = "Baby Boom Reminder"
 	desc = "Your baby boom cooldown timer has expired. You can now use another baby boom decision."
-	
+	picture = assimilation
+
+
 	trigger = {
 		ai = no
 		year = 1837
@@ -268,6 +503,11 @@ country_event = {
 		}
 		NOT = { has_country_modifier = baby_booming }
 		NOT = { has_country_flag = baby_boom_reminder }
+		any_owned_province = {
+			state_scope = {
+				NOT = { total_pops = 1000000 }
+			}
+		}
 	}
 
 	option = {
@@ -276,28 +516,364 @@ country_event = {
 	}
 }
 
+#########################################################################
+# 						AI MINE EXPANSION								#
+#########################################################################
 country_event = {
 	id = 91311
-	title = "Blood and Iron Reminder"
-	desc = "Your blood and iron cooldown timer has expired. You can now use another blood and iron decision."
-	
+	title = "AI Mine Expansion Trigger"
+
+
 	trigger = {
-		ai = no
 		year = 1837
-		NOT = {
-			year = 1914
-			has_global_flag = 1914_bookmark
-		}
-		NOT = { has_country_modifier = blood_and_iron }
-		NOT = { has_country_flag = blood_and_iron_reminder }
+		tag = JAN
+		NOT = { has_country_modifier = admin_counter }
 	}
 
 	option = {
-		name = "OK."
-		set_country_flag = blood_and_iron_reminder
+		any_country = {
+			limit = {
+				ai = yes
+				money = 1000000
+				any_owned_province = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= oil
+						trade_goods= sulphur
+						trade_goods= precious_metal
+					}
+					NOT = { has_province_modifier = mine_expansion }
+					NOT = {
+						OR = {
+							province_id = 281
+							province_id = 280
+							province_id = 290
+							province_id = 435
+							province_id = 399
+							province_id = 404
+							province_id = 430
+							province_id = 387
+							province_id = 395
+							province_id = 572
+							province_id = 561
+							province_id = 575
+							province_id = 577
+							province_id = 627
+							province_id = 636
+							province_id = 628
+							province_id = 622
+							province_id = 727
+							province_id = 738
+							province_id = 763
+							province_id = 764
+							province_id = 306
+							province_id = 320
+							province_id = 321
+							province_id = 1026
+							province_id = 2686
+							province_id = 1184
+							province_id = 1249
+							province_id = 1272
+							province_id = 1303
+							province_id = 1561
+							province_id = 1573
+							province_id = 1532
+							province_id = 1515
+							province_id = 1528
+							province_id = 1507
+							province_id = 1353
+							province_id = 2062
+							province_id = 1642
+							province_id = 1661
+							province_id = 1670
+							province_id = 1671
+							province_id = 1418
+							province_id = 1421
+							province_id = 1420
+							province_id = 2217
+							province_id = 2264
+							province_id = 158
+							province_id = 177
+							province_id = 2237
+							province_id = 2264
+							province_id = 2305
+							province_id = 2307
+							province_id = 2309
+							province_id = 2312
+							province_id = 2331
+							province_id = 2332
+							province_id = 84
+							province_id = 89
+							province_id = 132
+							province_id = 134
+							province_id = 126
+						}
+					}
+				}
+			}
+			country_event = { id = 91312 }
+		}
+		any_country = {
+			limit = {
+				ai = yes
+				money = 2000000
+				any_owned_province = {
+					OR = {
+						trade_goods= coal
+						trade_goods= iron
+						trade_goods= oil
+						trade_goods= sulphur
+						trade_goods= precious_metal
+					}
+					NOT = { has_province_modifier = mine_expansion }
+					OR = {
+						province_id = 281
+						province_id = 280
+						province_id = 290
+						province_id = 435
+						province_id = 399
+						province_id = 404
+						province_id = 430
+						province_id = 387
+						province_id = 395
+						province_id = 572
+						province_id = 561
+						province_id = 575
+						province_id = 577
+						province_id = 627
+						province_id = 636
+						province_id = 628
+						province_id = 622
+						province_id = 727
+						province_id = 738
+						province_id = 763
+						province_id = 764
+						province_id = 306
+						province_id = 320
+						province_id = 321
+						province_id = 1026
+						province_id = 2686
+						province_id = 1184
+						province_id = 1249
+						province_id = 1272
+						province_id = 1303
+						province_id = 1561
+						province_id = 1573
+						province_id = 1532
+						province_id = 1515
+						province_id = 1528
+						province_id = 1507
+						province_id = 1353
+						province_id = 2062
+						province_id = 1642
+						province_id = 1661
+						province_id = 1670
+						province_id = 1671
+						province_id = 1418
+						province_id = 1421
+						province_id = 1420
+						province_id = 2217
+						province_id = 2264
+						province_id = 158
+						province_id = 177
+						province_id = 2237
+						province_id = 2264
+						province_id = 2305
+						province_id = 2307
+						province_id = 2309
+						province_id = 2312
+						province_id = 2331
+						province_id = 2332
+						province_id = 84
+						province_id = 89
+						province_id = 132
+						province_id = 134
+						province_id = 126
+					}
+				}
+			}
+			country_event = { id = 91313 }
+		}
 	}
 }
 
-#########################################################################
-# 							AI HEALTHCARE								#
-#########################################################################
+country_event = {
+	id = 91312
+	title = "AI Mine Expansion"
+
+
+	is_triggered_only = yes
+
+	option = {
+		treasury = -1000000
+		random_owned = {
+			limit = {
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= oil
+					trade_goods= sulphur
+					trade_goods= precious_metal
+				}
+				NOT = { has_province_modifier = mine_expansion }
+				NOT = {
+					OR = {
+						province_id = 281
+						province_id = 280
+						province_id = 290
+						province_id = 435
+						province_id = 399
+						province_id = 404
+						province_id = 430
+						province_id = 387
+						province_id = 395
+						province_id = 572
+						province_id = 561
+						province_id = 575
+						province_id = 577
+						province_id = 627
+						province_id = 636
+						province_id = 628
+						province_id = 622
+						province_id = 727
+						province_id = 738
+						province_id = 763
+						province_id = 764
+						province_id = 306
+						province_id = 320
+						province_id = 321
+						province_id = 1026
+						province_id = 2686
+						province_id = 1184
+						province_id = 1249
+						province_id = 1272
+						province_id = 1303
+						province_id = 1561
+						province_id = 1573
+						province_id = 1532
+						province_id = 1515
+						province_id = 1528
+						province_id = 1507
+						province_id = 1353
+						province_id = 2062
+						province_id = 1642
+						province_id = 1661
+						province_id = 1670
+						province_id = 1671
+						province_id = 1418
+						province_id = 1421
+						province_id = 1420
+						province_id = 2217
+						province_id = 2264
+						province_id = 158
+						province_id = 177
+						province_id = 2237
+						province_id = 2264
+						province_id = 2305
+						province_id = 2307
+						province_id = 2309
+						province_id = 2312
+						province_id = 2331
+						province_id = 2332
+						province_id = 84
+						province_id = 89
+						province_id = 132
+						province_id = 134
+						province_id = 126
+					}
+				}
+			}
+			add_province_modifier = { name = mine_expansion duration = -1 }
+		}
+	}
+}
+
+country_event = {
+	id = 91313
+	title = "AI Large Mine Expansion"
+
+
+	is_triggered_only = yes
+
+	option = {
+		treasury = -2000000
+		random_owned = {
+			limit = {
+				OR = {
+					trade_goods= coal
+					trade_goods= iron
+					trade_goods= oil
+					trade_goods= sulphur
+					trade_goods= precious_metal
+				}
+				NOT = { has_province_modifier = mine_expansion }
+				OR = {
+					province_id = 281
+					province_id = 280
+					province_id = 290
+					province_id = 435
+					province_id = 399
+					province_id = 404
+					province_id = 430
+					province_id = 387
+					province_id = 395
+					province_id = 572
+					province_id = 561
+					province_id = 575
+					province_id = 577
+					province_id = 627
+					province_id = 636
+					province_id = 628
+					province_id = 622
+					province_id = 727
+					province_id = 738
+					province_id = 763
+					province_id = 764
+					province_id = 306
+					province_id = 320
+					province_id = 321
+					province_id = 1026
+					province_id = 2686
+					province_id = 1184
+					province_id = 1249
+					province_id = 1272
+					province_id = 1303
+					province_id = 1561
+					province_id = 1573
+					province_id = 1532
+					province_id = 1515
+					province_id = 1528
+					province_id = 1507
+					province_id = 1353
+					province_id = 2062
+					province_id = 1642
+					province_id = 1661
+					province_id = 1670
+					province_id = 1671
+					province_id = 1418
+					province_id = 1421
+					province_id = 1420
+					province_id = 2217
+					province_id = 2264
+					province_id = 158
+					province_id = 177
+					province_id = 2237
+					province_id = 2264
+					province_id = 2305
+					province_id = 2307
+					province_id = 2309
+					province_id = 2312
+					province_id = 2331
+					province_id = 2332
+					province_id = 84
+					province_id = 89
+					province_id = 132
+					province_id = 134
+					province_id = 126
+				}
+			}
+			add_province_modifier = { name = mine_expansion duration = -1 }
+		}
+	}
+}

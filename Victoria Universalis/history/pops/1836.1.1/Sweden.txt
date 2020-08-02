@@ -10,7 +10,7 @@
 	bureaucrats = {
 		culture = swedish
 		religion = protestant
-		size = 300
+		size = 600
 	}
 
 	officers = {
@@ -28,7 +28,13 @@
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 2000
+		size = 10000
+	}
+
+	artisans = {
+		culture = swedish
+		religion = protestant
+		size = 8825
 	}
 
 	soldiers = {
@@ -37,10 +43,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 22125
+		size = 5000
 	}
 }
 #Sundsvall (80000/20000 POPS)
@@ -95,13 +101,13 @@
 		size = 100
 	}
 
-	labourers = {
+	farmers = {
 		culture = swedish
 		religion = protestant
 		size = 9350
 	}
 
-	labourers = {
+	farmers = {
 		culture = norwegian
 		religion = protestant
 		size = 1100
@@ -118,7 +124,7 @@
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 750
+		size = 3775
 	}
 
 	soldiers = {
@@ -130,10 +136,10 @@
 	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 11925
+		size = 8900
 	}
 
-	farmers = {
+	labourers = {
 		culture = finnish
 		religion = protestant
 		size = 1100
@@ -147,40 +153,34 @@
 		size = 50
 	}
 
-	artisans = {
-		culture = swedish
-		religion = protestant
-		size = 400
-	}
-
 	soldiers = {
 		culture = swedish
 		religion = protestant
-		size = 1100
+		size = 900
+	}
+
+	artisans = {
+		culture = swedish
+		religion = protestant
+		size = 50
 	}
 
 	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 6250
+		size = 6800
 	}
 
-	artisans = {
-		culture = finnish
-		religion = protestant
-		size = 100
-	}
-
-	farmers = {
+	labourers = {
 		culture = sami
 		religion = protestant
 		size = 2000
 	}
 
-	farmers = {
+	labourers = {
 		culture = finnish
 		religion = protestant
-		size = 1100
+		size = 1200
 	}
 
 }
@@ -196,7 +196,7 @@
 	bureaucrats = {
 		culture = swedish
 		religion = protestant
-		size = 750
+		size = 1500
 	}
 
 	officers = {
@@ -214,7 +214,13 @@
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 5000
+		size = 20000
+	}
+
+	artisans = {
+		culture = swedish
+		religion = protestant
+		size = 15600
 	}
 
 	soldiers = {
@@ -223,10 +229,10 @@
 		size = 4000
 	}
 
-	farmers = {
+	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 41350
+		size = 10000
 	}
 }
 #Falun (144000/36000 POPS)
@@ -246,7 +252,13 @@
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 1750
+		size = 19500
+	}
+
+	artisans = {
+		culture = swedish
+		religion = protestant
+		size = 10000
 	}
 
 	soldiers = {
@@ -255,10 +267,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 32750
+		size = 5000
 	}
 }
 #Uppsala (88000/22000 POPS)
@@ -342,7 +354,13 @@
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 2750
+		size = 26500
+	}
+
+	artisans = {
+		culture = swedish
+		religion = protestant
+		size = 20000
 	}
 
 	soldiers = {
@@ -351,10 +369,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = swedish
 		religion = protestant
-		size = 48750
+		size = 5000
 	}
 }
 #Orebro (127000/31750 POPS)
@@ -434,7 +452,7 @@
 	bureaucrats = {
 		culture = swedish
 		religion = protestant
-		size = 150
+		size = 300
 	}
 
 	officers = {
@@ -452,7 +470,7 @@
 	artisans = {
 		culture = swedish
 		religion = protestant
-		size = 5000
+		size = 4850
 	}
 
 	soldiers = {

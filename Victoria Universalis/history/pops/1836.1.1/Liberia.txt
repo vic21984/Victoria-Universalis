@@ -214,7 +214,13 @@
 	artisans = {
 		culture = mande
 		religion = sunni
-		size = 1250
+		size = 20000
+	}
+
+	artisans = {
+		culture = mande
+		religion = sunni
+		size = 11525
 	}
 
 	soldiers = {
@@ -223,12 +229,12 @@
 		size = 250
 	}
 
-	farmers = {
+	labourers = {
 		culture = mande
 		religion = sunni
-		size = 32775
+		size = 2500
 	}
-	#was african minor
+
 	aristocrats = {
 		culture = mande
 		religion = animist
@@ -244,7 +250,13 @@
 	artisans = {
 		culture = mande
 		religion = animist
-		size = 300
+		size = 20000
+	}
+
+	artisans = {
+		culture = mande
+		religion = animist
+		size = 13275
 	}
 
 	soldiers = {
@@ -253,10 +265,10 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = mande
 		religion = animist
-		size = 35475
+		size = 2500
 	}
 }
 #Gbarnga (132000/33000 POPS) 

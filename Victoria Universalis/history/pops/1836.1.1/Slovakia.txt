@@ -401,7 +401,13 @@
 	artisans = {
 		culture = slovak
 		religion = catholic
-		size = 2650
+		size = 22025
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 20000
 	}
 
 	soldiers = {
@@ -410,10 +416,10 @@
 		size = 500 
 	}
 
-	farmers = {
+	labourers = {
 		culture = slovak
 		religion = catholic
-		size = 49375 
+		size = 10000 
 	}
 
 	clergymen = {
@@ -425,7 +431,7 @@
 	artisans = {
 		culture = ashkenazi
 		religion = jewish
-		size = 1600
+		size = 2925
 	}
 
 	soldiers = {
@@ -434,11 +440,6 @@
 		size = 25 
 	}
 
-	farmers = {
-		culture = ashkenazi
-		religion = jewish
-		size = 1325    
-	}
 }
 #Felvidek Region (860000) #see Hungary.txt and Ukraine.txt for balance of Region
 #under the rule of Austria in 1836  
@@ -465,7 +466,31 @@
 	artisans = {
 		culture = slovak
 		religion = catholic
-		size = 5000
+		size = 20000
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 20000
+	}
+
+	artisans = {
+		culture = slovak
+		religion = catholic
+		size = 12875
 	}
 
 	soldiers = {
@@ -474,10 +499,10 @@
 		size = 1100 
 	}
 
-	farmers = {
+	labourers = {
 		culture = slovak
 		religion = catholic
-		size = 93875 
+		size = 6000 
 	}
 
 	aristocrats = {
@@ -507,7 +532,7 @@
 	artisans = {
 		culture = hungarian
 		religion = catholic
-		size = 1100
+		size = 14925
 	}
 
 	soldiers = {
@@ -516,10 +541,10 @@
 		size = 250  
 	}
 
-	farmers = {
+	labourers = {
 		culture = hungarian
 		religion = catholic
-		size = 14825  
+		size = 1000  
 	}
 
 	clergymen = {
@@ -531,7 +556,7 @@
 	artisans = {
 		culture = hungarian
 		religion = protestant
-		size = 1100
+		size = 18625
 	}
 
 	soldiers = {
@@ -540,10 +565,10 @@
 		size = 200  
 	}
 
-	farmers = {
+	labourers = {
 		culture = hungarian
 		religion = protestant
-		size = 18525
+		size = 1000
 	}
 
 	clergymen = {
@@ -555,19 +580,13 @@
 	artisans = {
 		culture = ashkenazi
 		religion = jewish
-		size = 1100
+		size = 1925
 	}
 
 	soldiers = {
 		culture = ashkenazi
 		religion = jewish
 		size = 25 
-	}
-
-	farmers = {
-		culture = ashkenazi
-		religion = jewish
-		size = 825    
 	}
 
 	bureaucrats = {
@@ -591,7 +610,7 @@
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 1250
+		size = 22175
 	}
 
 	soldiers = {
@@ -600,10 +619,10 @@
 		size = 250  
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_german
 		religion = catholic
-		size = 22925  
+		size = 2000  
 	}
 
 	clergymen = {
@@ -615,19 +634,13 @@
 	artisans = {
 		culture = ukrainian
 		religion = orthodox
-		size = 400
+		size = 8850
 	}
 
 	soldiers = {
 		culture = ukrainian
 		religion = orthodox
 		size = 75  
-	}
-
-	farmers = {
-		culture = ukrainian
-		religion = orthodox
-		size = 8450
 	}
 
 	clergymen = {
@@ -639,7 +652,7 @@
 	artisans = {
 		culture = polish
 		religion = catholic
-		size = 50
+		size = 950
 	}
 
 	soldiers = {
@@ -648,11 +661,6 @@
 		size = 25 
 	}
 
-	farmers = {
-		culture = polish
-		religion = catholic
-		size = 900 
-	}
 }
 #Roznava (148000/37000 POPS)
 638 = {
@@ -665,7 +673,7 @@
 	artisans = {
 		culture = slovak
 		religion = catholic
-		size = 1100
+		size = 13725
 	}
 
 	soldiers = {
@@ -674,10 +682,10 @@
 		size = 200 
 	}
 
-	farmers = {
+	labourers = {
 		culture = slovak
 		religion = catholic
-		size = 18625 
+		size = 6000 
 	}
 
 	aristocrats = {
@@ -695,7 +703,7 @@
 	artisans = {
 		culture = hungarian
 		religion = catholic
-		size = 400
+		size = 5075
 	}
 
 	soldiers = {
@@ -704,10 +712,10 @@
 		size = 100 
 	}
 
-	farmers = {
+	labourers = {
 		culture = hungarian
 		religion = catholic
-		size = 6675 
+		size = 2000 
 	}
 
 	clergymen = {
@@ -719,7 +727,7 @@
 	artisans = {
 		culture = hungarian
 		religion = protestant
-		size = 400
+		size = 4875
 	}
 
 	soldiers = {
@@ -728,10 +736,10 @@
 		size = 75  
 	}
 
-	farmers = {
+	labourers = {
 		culture = hungarian
 		religion = protestant
-		size = 6475    
+		size = 2000    
 	}
 
 	clergymen = {
@@ -743,7 +751,7 @@
 	artisans = {
 		culture = ashkenazi
 		religion = jewish
-		size = 1100
+		size = 1925
 	}
 
 	soldiers = {
@@ -752,9 +760,4 @@
 		size = 25 
 	}
 
-	farmers = {
-		culture = ashkenazi
-		religion = jewish
-		size = 825    
-	}
 }

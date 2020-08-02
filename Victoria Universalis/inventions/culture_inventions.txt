@@ -633,8 +633,9 @@ nihilism_and_the_will = {
 		shared_prestige = 25 
 	}
 }
+#quantum_mechanics
 quantum_theory = {
-	limit = { anti__rationalism = 1 }
+	limit = { quantum_mechanics = 1 }
 	news = no
 	chance = {
 		base = 2
@@ -648,7 +649,7 @@ quantum_theory = {
 		}
 	}
 	effect = {
-		shared_prestige = 25
+		shared_prestige = 50
 	}
 }
 #biologism
@@ -663,7 +664,7 @@ darwinism = {
 		}
 	}
 	effect = {
-		education_efficiency = 0.2
+		education_efficiency = 0.1
 	}
 }
 social_darwinism = {
@@ -696,7 +697,6 @@ sociology = {
 		}
 	}
 	effect = { plurality = 0.05 }
-	core_pop_consciousness_modifier = 0.01
 }
 social_psychology = {
 	limit = { social_science = 1 }
@@ -713,7 +713,6 @@ social_psychology = {
 		}
 	}
 	effect = { plurality = 0.05 }
-	core_pop_consciousness_modifier = 0.01
 }
 political_science = {
 	limit = { social_science = 1 }
@@ -730,7 +729,6 @@ political_science = {
 		}
 	}
 	effect = { plurality = 0.05 }
-	core_pop_consciousness_modifier = 0.01
 }
 social_anthropology = {
 	limit = { social_science = 1 }
@@ -767,10 +765,10 @@ the_revolt_of_the_masses = {
 		}
 	}
 	effect = {
-		plurality = 0.10
 		war_exhaustion = -0.25
-		core_pop_consciousness_modifier = 0.05
 	}
+	social_reform_desire = 0.2
+	political_reform_desire = 0.2
 }
 
 #modern_sociology

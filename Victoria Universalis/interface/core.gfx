@@ -1212,13 +1212,21 @@ bitmapfont = {
 		fontname = "mapfont_56"
 		color = 0xffffffff	
 	}
-
-	bitmapfont = {
-		name = "mapfont_56_small"
-		fontname = "vic_22_bl"
-		color = 0xff000000	
+bitmapfont = {
+	name = "mapfont_56_small"
+	fontname = "vic_22_bl"
+	color = 0xff000000	
 	}
-
+bitmapfont = {
+		name = "kart_font"
+		fontname = "kart_font"
+		color = 0xffffffff	
+	}
+bitmapfont = {
+	name = "true_mapfont_56_small"
+	fontname = "mapfont_56_small"
+	color = 0xff000000	
+	}
 
 }
 

@@ -2,14 +2,16 @@
 daimlers_automobile = {
 	limit = { combustion_engine = 1 }
 	chance = {
-		base = 2
+		base = 0
 		modifier = {
 			factor = 2
 			electricity = 1
+			year = 1886
 		}
 		modifier = {
 			factor = 2
 			average_consciousness = 3
+			year = 1886
 		}
 		modifier = {
 			factor = -6
@@ -21,21 +23,23 @@ daimlers_automobile = {
 	effect = {
 		activate_building = automobile_factory 
 		factory_goods_output = {
-			machine_parts = 0.01 
+			machine_parts = 0.02 
 		}
 	}
 }
 wright_n_langleys_aeroplanes = {
 	limit = { combustion_engine = 1 }
 	chance = {
-		base = 2
+		base = 0
 		modifier = {
 			factor = 2
 			electricity = 1
+			year = 1903
 		}
 		modifier = {
 			factor = 2
 			average_consciousness = 4
+			year = 1903
 		}
 		modifier = {
 			factor = -6
@@ -84,8 +88,8 @@ direct_current = {
 		}
 	}
 	effect = {
-		rgo_output = 0.05
-		factory_throughput = 0.05
+		rgo_output = 0.02
+		factory_throughput = 0.02
 	}
 }
 alternating_current = {
@@ -102,12 +106,41 @@ alternating_current = {
 		}
 	}
 	effect = {
-		rgo_output = 0.05
+		rgo_output = 0.02
 		factory_throughput = 0.02
 	}
 }
-polyphase_system = {
+national_radio_networks = {
 	limit = { electrical_power_generation = 1 }
+	news = no
+	chance = {
+		base = 6
+		modifier = {
+			factor = 4
+			government = democracy
+		}
+		modifier = {
+			factor = -4
+			NOT = {
+				press_rights = free_press
+			}
+		}
+		modifier = {
+			factor = -6
+			NOT = {
+				invention = edison_light_bulb
+			}
+		}
+	}
+	effect = { 
+		activate_building = radio_factory 
+		suppression_points_modifier = -0.05
+	}
+	core_pop_consciousness_modifier = 0.01
+}
+#modern_power_generation
+polyphase_system = {
+	limit = { modern_power_generation = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -120,8 +153,30 @@ polyphase_system = {
 		}
 	}
 	effect = {
-		rgo_output = 0.05
+		rgo_output = 0.02
 		factory_throughput = 0.02
+	}
+}
+vacuum_tube = {
+	limit = { 
+		electricity = 1
+		modern_power_generation = 1
+	}
+	chance = {
+		base = 1
+		modifier = {
+			factor = 5
+			invention = direct_current
+		}
+		modifier = {
+			factor = 5
+			invention = alternating_current
+		}			
+	}
+	effect = {
+		factory_goods_output = { radio = 0.03 } 
+		factory_goods_output = { telephones = 0.03 } 
+		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }
 #mechanical_production
@@ -168,10 +223,10 @@ mechanical_saw = {
 	}
 	effect = {
 		rgo_goods_output = {
-			timber = 0.2
+			timber = 0.1
 		}
 		rgo_goods_output = {
-			tropical_wood = 0.2
+			tropical_wood = 0.1
 		}
 	}
 }
@@ -193,7 +248,7 @@ hussey_n_mccormicks_reaping_machine = {
 			grain = 0.2
 		}
 		rgo_goods_output = {
-			fruit = 0.2
+			fruit = 0.1
 		}
 	}
 }
@@ -209,7 +264,7 @@ precision_work = {
 	}
 	effect = {
 		factory_goods_output = {
-			glass = 0.1
+			glass = 0.05
 		} 
 		factory_goods_output = {
 			ammunition = 0.1
@@ -477,13 +532,13 @@ refrigerator_technology = {
 	}
 	effect = {
 		rgo_goods_output = {
-			cattle = 0.4
+			cattle = 0.2
 		}
 		rgo_goods_output = {
-			fruit = 0.2
+			fruit = 0.1
 		}
 		rgo_goods_output = {
-			fish = 0.2
+			fish = 0.1
 		}
 		factory_goods_output = {
 			liquor = 0.02
@@ -578,7 +633,7 @@ coke = {
 	}
 	effect = {
 		rgo_goods_output = {
-			coal = 0.25
+			coal = 0.2
 		}
 	}
 }
@@ -599,9 +654,6 @@ bessemer_steel = {
 		factory_goods_output = {
 			steel = 0.05
 		}
-		factory_goods_input = {
-			steel = -0.05
-		}
 	}
 }
 #cheap_iron
@@ -620,7 +672,7 @@ advanced_ore_roasting_processes = {
 	}
 	effect = {
 		rgo_goods_output = {
-			iron = 0.25
+			iron = 0.2
 		}
 	}
 }
@@ -641,9 +693,6 @@ martin_steel = {
 		factory_goods_output = {
 			steel = 0.05
 		}
-		factory_goods_input = {
-			steel = -0.05
-		}
 	}
 }
 #cheap_steel
@@ -663,9 +712,6 @@ thomas_steel = {
 	effect = {
 		factory_goods_output = {
 			steel = 0.05
-		}
-		factory_goods_input = {
-			steel = -0.05
 		}
 	}
 }
@@ -706,9 +752,6 @@ steel_alloys = {
 		factory_goods_output = {
 			steel = 0.05
 		}
-		factory_goods_input = {
-			steel = -0.05
-		}
 	}
 }
 rotary_kiln = {
@@ -727,8 +770,8 @@ rotary_kiln = {
 		}
 	}
 	effect = {
-		factory_goods_input = {
-			cement = -0.05
+		factory_goods_output = {
+			cement = 0.05
 		}
 	}
 }
@@ -750,9 +793,6 @@ electric_rolling_techniques = {
 		factory_goods_output = {
 			steel = 0.05
 		}
-		factory_goods_input = {
-			steel = -0.05
-		}
 	}
 }
 #modern_metallurgy
@@ -772,9 +812,6 @@ stainless_steel = {
 	effect = {
 		factory_goods_output = {
 			steel = 0.05
-		}
-		factory_goods_input = {
-			steel = -0.05
 		}
 	}
 }
@@ -1150,32 +1187,6 @@ bell_n_greys_telephones = {
 		activate_building = telephone_factory 
 	}
 }
-national_radio_networks = {
-	limit = { electricity = 1 }
-	news = no
-	chance = {
-		base = 0
-		modifier = {
-			factor = 5
-			year = 1900
-		}
-		modifier = {
-			factor = 2
-			government = democracy
-		}
-		modifier = {
-			factor = -1
-			NOT = {
-				press_rights = free_press
-			}
-		}
-	}
-	effect = { 
-		activate_building = radio_factory 
-		suppression_points_modifier = -0.05
-	}
-	core_pop_consciousness_modifier = 0.01
-}
 electrical_lighting = {
 	limit = { electricity = 1 }
 	chance = {
@@ -1224,8 +1235,8 @@ bakelite = {
 		}
 	}
 	effect = {
-		factory_goods_input = {
-			glass  = -0.1
+		factory_goods_output = {
+			glass  = 0.03
 		} 
 	}
 }
@@ -1247,27 +1258,5 @@ rayon = {
 		factory_goods_output = {
 			fabric = 0.05
 		} 
-	}
-}
-vacuum_tube = {
-	limit = { 
-		electricity = 1
-		electrical_power_generation = 1
-	}
-	chance = {
-		base = 1
-		modifier = {
-			factor = 5
-			invention = direct_current
-		}
-		modifier = {
-			factor = 5
-			invention = alternating_current
-		}			
-	}
-	effect = {
-		factory_goods_output = { radio = 0.03 } 
-		factory_goods_output = { telephones = 0.03 } 
-		factory_goods_output = { electric_gear = 0.03 } 
 	}
 }

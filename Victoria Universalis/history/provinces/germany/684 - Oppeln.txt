@@ -3,10 +3,15 @@ controller = PRU
 add_core = PRU
 add_core = GER
 add_core = POL
-trade_goods = coal
+trade_goods = wool
 life_rating = 40
 1914.1.1 = {
 	fort = 5
 	owner = GER
 	controller = GER
+	state_building = {
+		level = 5
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
 }

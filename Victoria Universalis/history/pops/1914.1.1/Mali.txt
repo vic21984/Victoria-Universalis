@@ -1123,7 +1123,7 @@
 	artisans = {
 		culture = tuareg
 		religion = sunni
-		size = 750
+		size = 6550
 	}
 
 	soldiers = {
@@ -1132,10 +1132,10 @@
 		size = 400
 	}
 
-	farmers = {
+	labourers = {
 		culture = tuareg
 		religion = sunni
-		size = 6300
+		size = 500
 	}
 
 	aristocrats = {
@@ -1153,7 +1153,7 @@
 	artisans = {
 		culture = fulbe
 		religion = sunni
-		size = 1000
+		size = 10000
 	}
 
 	soldiers = {
@@ -1162,10 +1162,10 @@
 		size = 2000
 	}
 
-	farmers = {
+	labourers = {
 		culture = fulbe
 		religion = sunni
-		size = 10000
+		size = 1000
 	}
 
 	clergymen = {
@@ -1177,7 +1177,7 @@
 	artisans = {
 		culture = songhai
 		religion = sunni
-		size = 1900
+		size = 34400
 	}
 
 	soldiers = {
@@ -1186,18 +1186,12 @@
 		size = 2000
 	}
 
-	farmers = {
+	labourers = {
 		culture = songhai
 		religion = sunni
-		size = 24000
+		size = 3500
 	}
 
-	slaves = {
-		culture = mande
-		religion = animist
-		size = 12000
-	}
-	
 	clergymen = {
 		culture = maghrebi
 		religion = sunni
@@ -1207,19 +1201,13 @@
 	artisans = {
 		culture = maghrebi
 		religion = sunni
-		size = 100
+		size = 400
 	}
 
 	soldiers = {
 		culture = maghrebi
 		religion = sunni
 		size = 100
-	}
-
-	farmers = {
-		culture = maghrebi
-		religion = sunni
-		size = 300
 	}
 }
 #Azawad Region (36000)  

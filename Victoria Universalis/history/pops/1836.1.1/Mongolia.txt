@@ -251,7 +251,13 @@
 	artisans = {
 		culture = mongol
 		religion = gelugpa
-		size = 1500
+		size = 20000
+	}
+
+	artisans = {
+		culture = mongol
+		religion = gelugpa
+		size = 11500
 	}
 
 	soldiers = {
@@ -260,10 +266,10 @@
 		size = 375
 	}
 
-	farmers = {
+	labourers = {
 		culture = mongol
 		religion = gelugpa
-		size = 35000
+		size = 5000
 	}
 }
 #Bulgan (84000/21000 POPS)   
@@ -386,7 +392,7 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = tatar
 		religion = gelugpa
 		size = 7300

@@ -323,7 +323,6 @@ province_event = {
 			province_id = 1321
 			province_id = 1398
 			province_id = 1414
-			province_id = 1421
 			province_id = 1985
 			province_id = 1406
 			province_id = 1318
@@ -487,7 +486,6 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
-		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -531,7 +529,6 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
-		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -668,7 +665,6 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
-		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -711,7 +707,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		add_province_modifier = { name = strategic_rgo duration = -1 }
 		# life_rate = 5
 	}
 }
@@ -896,7 +891,6 @@ province_event = {
 		year = 1882
 		or = {
 			province_id = 89		# Los Angeles
-			province_id = 133		# Austin
 			province_id = 126		# Topeka
 		}
 		not = { trade_goods = oil }
@@ -932,7 +926,6 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
-		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -1262,6 +1255,7 @@ province_event = {
 			province_id = 87		# Monterey
 			province_id = 2162		# Veracruz
 			province_id = 2163		# Tampico
+			province_id = 702		# Lvov
 		}
 		not = { trade_goods = oil }
 		OR = {
@@ -1382,7 +1376,6 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
-		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -1524,7 +1517,6 @@ province_event = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
 		# life_rate = 5
-		add_province_modifier = { name = strategic_rgo duration = -1 }
 	}
 }
 
@@ -1869,22 +1861,8 @@ province_event = {
 			province_id = 1374		#Thanh Hoa
 			province_id = 1375		#Hue
 			province_id = 1382		#Hatien
-			province_id = 1852		#Gonder
 			province_id = 1899		#Bondouku
 			province_id = 1910		#Kumasi
-			province_id = 2064		#Nampula
-			province_id = 2117		#Ampanihy
-			province_id = 2115		#Tananarive
-			province_id = 2120		#Antsiranana
-			province_id = 2188		#Puerto Barrios
-			province_id = 2197		#Managua
-			province_id = 2267		#Cumana
-			province_id = 2283		#Zamora
-			province_id = 2256		#Cali
-			province_id = 2258		#Buenaventura
-			province_id = 2249		#Vitoria
-			province_id = 2450		#Sao Paulo
-			province_id = 2462		#Sao Miguel
 		}
 		not = { trade_goods = coffee_beans }
 		OR = {
@@ -1930,9 +1908,7 @@ province_event = {
 			province_id = 1491		#Ningxia
 			province_id = 1501		#Zhaoqing
 			province_id = 1558		#Kegudo
-			province_id = 1576		#Opium
 			province_id = 1603		#Puer
-			province_id = 1616		#Puer
 		}
 		not = { trade_goods = opium }
 	}

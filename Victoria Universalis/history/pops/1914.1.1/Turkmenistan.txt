@@ -107,7 +107,13 @@
     artisans = {
         culture = turkmen
         religion = sunni
-        size = 2082
+        size = 20712
+    }
+
+    artisans = {
+        culture = turkmen
+        religion = sunni
+        size = 20000
     }
 
     soldiers = {
@@ -116,10 +122,10 @@
         size = 686
     }
 
-    farmers = {
+    labourers = {
         culture = turkmen
         religion = sunni
-        size = 42630
+        size = 2000
     }
 
     clergymen = {
@@ -131,7 +137,7 @@
     artisans = {
         culture = persian
         religion = shiite
-        size = 367
+        size = 6227
     }
 
     soldiers = {
@@ -140,10 +146,10 @@
         size = 85
     }
 
-    farmers = {
+    labourers = {
         culture = persian
         religion = shiite
-        size = 6860
+        size = 1000
     }
 }
 #under the rule of Bukhara in 1836

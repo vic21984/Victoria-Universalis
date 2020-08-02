@@ -3825,7 +3825,25 @@
     artisans = {
         culture = romanian
         religion = orthodox
-        size = 5246
+        size = 30000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 30000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 30000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 10715
     }
 
     soldiers = {
@@ -3834,10 +3852,16 @@
         size = 5734
     }
 
-    farmers = {
+    labourers = {
         culture = romanian
         religion = orthodox
-        size = 105469
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 5000
     }
 
     capitalists = {
@@ -3863,7 +3887,25 @@
     artisans = {
         culture = romanian
         religion = orthodox
-        size = 5295
+        size = 30000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 30000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 30000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 11319
     }
 
     soldiers = {
@@ -3872,22 +3914,16 @@
         size = 8296
     }
 
-    farmers = {
+    labourers = {
         culture = romanian
         religion = orthodox
-        size = 106024
+        size = 10000
     }
 
     craftsmen = {
         culture = romanian
         religion = orthodox
-        size = 2269
-    }
-
-    craftsmen = {
-        culture = romanian
-        religion = orthodox
-        size = 45439
+        size = 47708
     }
 
     capitalists = {
@@ -3913,7 +3949,7 @@
     artisans = {
         culture = romanian
         religion = orthodox
-        size = 3904
+        size = 63581
     }
 
     soldiers = {
@@ -3922,10 +3958,16 @@
         size = 4514
     }
 
-    farmers = {
+    labourers = {
         culture = romanian
         religion = orthodox
-        size = 76677
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 7000
     }
 
     capitalists = {
@@ -4077,7 +4119,31 @@
     artisans = {
         culture = romanian
         religion = orthodox
-        size = 13420
+        size = 50000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 50000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 50000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 50000
+    }
+
+    artisans = {
+        culture = romanian
+        religion = orthodox
+        size = 31078
     }
 
     soldiers = {
@@ -4086,10 +4152,16 @@
         size = 13420
     }
 
-    farmers = {
+    labourers = {
         culture = romanian
         religion = orthodox
-        size = 242658
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 20000
     }
 
     capitalists = {
@@ -4301,13 +4373,13 @@
     artisans = {
         culture = romanian
         religion = orthodox
-        size = 610
+        size = 3578
     }
 
-    farmers = {
+    labourers = {
         culture = romanian
         religion = orthodox
-        size = 11468
+        size = 8500
     }
 
     aristocrats = {
@@ -4325,7 +4397,7 @@
     artisans = {
         culture = turkish
         religion = sunni
-        size = 488
+        size = 1489
     }
 
     soldiers = {
@@ -4334,10 +4406,10 @@
         size = 2684
     }
 
-    farmers = {
+    labourers = {
         culture = turkish
         religion = sunni
-        size = 1464
+        size = 500
     }
 
     clergymen = {
@@ -4349,18 +4421,12 @@
     artisans = {
         culture = ukrainian
         religion = orthodox
-        size = 366
+        size = 6259
     }
 
-    farmers = {
+    labourers = {
         culture = ukrainian
         religion = orthodox
-        size = 6893
-    }
-
-    capitalists = {
-        culture = turkish
-        religion = sunni
-        size = 37
+        size = 1000
     }
 }

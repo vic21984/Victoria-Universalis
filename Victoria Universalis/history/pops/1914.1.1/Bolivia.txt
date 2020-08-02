@@ -29,7 +29,13 @@
     artisans = {
         culture = south_andean
         religion = catholic
-        size = 7359
+        size = 20000
+    }
+
+    artisans = {
+        culture = south_andean
+        religion = catholic
+        size = 14594
     }
 
     soldiers = {
@@ -38,10 +44,16 @@
         size = 3118
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 22744
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = south_andean
+        religion = catholic
+        size = 2000
     }
 
     clergymen = {
@@ -53,7 +65,25 @@
     artisans = {
         culture = aimara
         religion = catholic
-        size = 3189
+        size = 20000
+    }
+
+    artisans = {
+        culture = aimara
+        religion = catholic
+        size = 20000
+    }
+
+    artisans = {
+        culture = aimara
+        religion = catholic
+        size = 20000
+    }
+
+    artisans = {
+        culture = aimara
+        religion = catholic
+        size = 12310
     }
 
     soldiers = {
@@ -62,10 +92,16 @@
         size = 3047
     }
 
-    farmers = {
+    labourers = {
         culture = aimara
         religion = catholic
-        size = 79733
+        size = 7000
+    }
+
+    craftsmen = {
+        culture = aimara
+        religion = catholic
+        size = 7000
     }
 
     clergymen = {
@@ -77,7 +113,7 @@
     artisans = {
         culture = quechua
         religion = catholic
-        size = 189
+        size = 2876
     }
 
     soldiers = {
@@ -86,46 +122,16 @@
         size = 140
     }
 
-    farmers = {
+    labourers = {
         culture = quechua
         religion = catholic
-        size = 3505
+        size = 1000
     }
 
-    farmers = {
-        culture = south_andean
-        religion = catholic
-        size = 2076
-    }
-
-    farmers = {
-        culture = south_andean
-        religion = catholic
-        size = 6415
-    }
-
-    farmers = {
-        culture = aimara
-        religion = catholic
-        size = 900
-    }
-
-    farmers = {
-        culture = aimara
-        religion = catholic
-        size = 22488
-    }
-
-    farmers = {
+    craftsmen = {
         culture = quechua
         religion = catholic
-        size = 53
-    }
-
-    farmers = {
-        culture = quechua
-        religion = catholic
-        size = 989
+        size = 1000
     }
 
     capitalists = {
@@ -246,10 +252,10 @@
         size = 140
     }
 
-    farmers = {
+    labourers = {
         culture = south_andean
         religion = catholic
-        size = 3189
+        size = 4142
     }
 
     clergymen = {
@@ -270,34 +276,10 @@
         size = 212
     }
 
-    farmers = {
+    labourers = {
         culture = aimara
         religion = catholic
-        size = 8213
-    }
-
-    craftsmen = {
-        culture = south_andean
-        religion = catholic
-        size = 53
-    }
-
-    craftsmen = {
-        culture = south_andean
-        religion = catholic
-        size = 900
-    }
-
-    craftsmen = {
-        culture = aimara
-        religion = catholic
-        size = 124
-    }
-
-    craftsmen = {
-        culture = aimara
-        religion = catholic
-        size = 2316
+        size = 10653
     }
 
     capitalists = {

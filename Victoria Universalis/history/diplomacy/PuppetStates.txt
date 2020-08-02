@@ -57,6 +57,13 @@ vassal = {
 	end_date = 1864.10.30
 }
 
+# NET-LUX
+vassal = {
+	first = NET
+	second = LUX
+	start_date = 1815.1.1
+	end_date = 1890.11.23
+}
 
 # USA-Liberia
 vassal = {
@@ -234,6 +241,14 @@ vassal = {
 	first = ENG
 	second = KUT
 	start_date = 1815.1.1
+	end_date = 1949.1.1
+}
+
+# United Kingdom-Mughalistan
+vassal = {
+	first = ENG
+	second = MUG
+	start_date = 1836.1.1
 	end_date = 1949.1.1
 }
 

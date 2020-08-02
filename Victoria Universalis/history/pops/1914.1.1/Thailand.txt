@@ -621,7 +621,19 @@
     artisans = {
         culture = thai
         religion = theravada
-        size = 3510
+        size = 20000
+    }
+
+    artisans = {
+        culture = thai
+        religion = theravada
+        size = 20000
+    }
+
+    artisans = {
+        culture = thai
+        religion = theravada
+        size = 11920
     }
 
     soldiers = {
@@ -630,10 +642,10 @@
         size = 7507
     }
 
-    farmers = {
+    labourers = {
         culture = thai
         religion = theravada
-        size = 61410
+        size = 12999
     }
 
     aristocrats = {
@@ -651,7 +663,7 @@
     artisans = {
         culture = yue
         religion = mahayana
-        size = 2925
+        size = 10604
     }
 
     soldiers = {
@@ -660,10 +672,10 @@
         size = 510
     }
 
-    farmers = {
+    labourers = {
         culture = yue
         religion = mahayana
-        size = 9679
+        size = 2000
     }
 
     craftsmen = {

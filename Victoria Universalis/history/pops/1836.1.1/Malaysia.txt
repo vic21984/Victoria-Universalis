@@ -225,7 +225,7 @@
 	artisans = {
 		culture = malay
 		religion = sunni
-		size = 750
+		size = 3700
 	}
 
 	soldiers = {
@@ -237,7 +237,7 @@
 	labourers = {
 		culture = malay
 		religion = sunni
-		size = 12950
+		size = 10000
 	}
 
 	clergymen = {
@@ -249,14 +249,9 @@
 	artisans = {
 		culture = yue
 		religion = mahayana
-		size = 950
+		size = 2050
 	}
 
-	farmers = {
-		culture = yue
-		religion = mahayana
-		size = 1100
-	}
 }
 #Kuantan (32000/8000 POPS)
 1390 = {
@@ -307,7 +302,7 @@
 	artisans = {
 		culture = malay
 		religion = sunni
-		size = 1500
+		size = 17400
 	}
 
 	soldiers = {
@@ -319,7 +314,7 @@
 	labourers = {
 		culture = malay
 		religion = sunni
-		size = 25900
+		size = 10000
 	}
 
 	clergymen = {
@@ -331,14 +326,9 @@
 	artisans = {
 		culture = yue
 		religion = mahayana
-		size = 925
+		size = 2925
 	}
 
-	farmers = {
-		culture = yue
-		religion = mahayana
-		size = 2000
-	}
 }
 #under Overlordship of Siam 1836 (284000)
 #Alor Setar (116000/29000 POPS)
@@ -470,22 +460,16 @@
 		size = 50
 	}
 
-	artisans = {
-		culture = malay
-		religion = sunni
-		size = 300
-	}
-
 	soldiers = {
 		culture = malay
 		religion = sunni
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = malay
 		religion = sunni
-		size = 5425
+		size = 5725
 	}
 }
 #Kuching (88000/22000 POPS)
@@ -728,7 +712,7 @@
 	artisans = {
 		culture = asian_minor
 		religion = animist
-		size = 300
+		size = 5300
 	}
 
 	soldiers = {
@@ -737,10 +721,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = asian_minor
 		religion = animist
-		size = 6475
+		size = 1475
 	}
 
 	aristocrats = {
@@ -767,7 +751,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = malay
 		religion = sunni
 		size = 2750

@@ -72,8 +72,8 @@
 759;763;sea;2757;0;Strait of Messina
 837;827;sea;2765;0;Ionian Islands Strait
 966;1049;sea;2776;0;Strait of Azov
-1686;512;sea;2746;0;Strait of Gibraltar
-1687;517;sea;2746;0;Strait of Gibraltar
+#1686;512;sea;2746;0;Strait of Gibraltar
+#1687;517;sea;2746;0;Strait of Gibraltar
 301;400;sea;2724;0;Calais-Canterbury
 502;498;sea;2752;0;Balearic Islands to Barcelona
 
@@ -84,6 +84,8 @@
 1084;1086;sea;2832;0;Tatar Straits
 #1087;1643;sea;2831;0;La Perouse Strait#removed
 #1087;1643;sea;2839;0;La Perouse Strait#removed
+1089;1088;sea;2839;0;Soya Straits
+1089;1064;sea;2839;0;Soya Straits
 1162;1165;sea;2788;0;Bahrain Strait
 1168;1145;sea;2787;0;Straits of Hormuz
 1309;1322;sea;2794;0;Palk Strait #Ceylon-S India
@@ -91,8 +93,8 @@
 1384;1402;sea;2814;0;Straits of Johore
 1385;1402;sea;2814;0;Straits of Johore
 1403;1413;sea;2805;0;Sunda Strait
-1412;1851;sea;2782;0;Aden Strait
-1412;1875;sea;2782;0;Aden Strait
+#1412;1851;sea;2782;0;Aden Strait
+#1412;1875;sea;2782;0;Aden Strait
 1418;1421;sea;2811;0;Strait of Madura
 1420;1438;sea;2811;0;Bali Strait
 1438;1442;sea;2811;0;Lombok Strait
@@ -101,7 +103,6 @@
 1457;1461;sea;2849;0;Tacloban Strait
 1640;1660;sea;2843;0;Fukuoka Strait
 1642;1672;sea;2841;0;Hakodate Strait
-1643;1087;sea;2831;0;Sakhalin Strait
 1664;1666;sea;2843;0;Matsuyama Strait
 1667;1659;sea;2843;0;Setto Strait
 #Philippines
@@ -112,9 +113,6 @@
 2565;1460;sea;2850;0;Tanon Strait #Cebu to Iloilo
 1462;1464;sea;2851;0;Sulu Sea #Zamboanga to Sulu
 1464;1397;sea;2851;0;Sulu Sea #Jolo to Sandakan
-#Korea
-1635;1637;sea;2829;0;South Korean Sea #Kwangju to Cheju
-1637;1661;sea;2829;0;South Korean Sea #Cheju to Nagasaki
 #Indonesia
 1434;1447;sea;2852;0;#Luwuk to Ternate
 1447;1448;sea;2853;0;#Ternate to Jilolo

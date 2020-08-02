@@ -71,6 +71,7 @@ political_decisions = {
 				owner = { political_reform = state_equal_weight }
 			}
 			political_reform = federalism
+			political_reform = no_slavery
 			set_country_flag = argentianian_constitution_enacted
 			any_pop = {
 				limit = {

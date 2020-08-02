@@ -4,18 +4,19 @@ add_core = JAP
 trade_goods = tea_leaves
 life_rating = 35
 1914.1.1 = {
+	naval_base = 6
 	state_building = {
-		level = 10
+		level = 5
 		building = steel_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 10
+		level = 5
 		building = cement_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 10
+		level = 5
 		building = machine_parts_factory
 		upgrade = yes
 	}
@@ -35,14 +36,13 @@ life_rating = 35
 		upgrade = yes
 	}
 	state_building = {
-		level = 10
+		level = 5
 		building = winery
 		upgrade = yes
 	}
 	state_building = {
-		level = 10
+		level = 5
 		building = tea_packaging_factory
 		upgrade = yes
 	}
-	naval_base = 6
 }

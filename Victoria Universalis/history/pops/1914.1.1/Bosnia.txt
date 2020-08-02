@@ -661,7 +661,7 @@
     artisans = {
         culture = bosniak
         religion = sunni
-        size = 775
+        size = 7466
     }
 
     soldiers = {
@@ -670,10 +670,16 @@
         size = 1845
     }
 
-    farmers = {
+    labourers = {
         culture = bosniak
         religion = sunni
-        size = 7394
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = bosniak
+        religion = sunni
+        size = 2500
     }
 
     clergymen = {
@@ -685,74 +691,27 @@
     artisans = {
         culture = serb
         religion = orthodox
-        size = 710
+        size = 19492
     }
 
-    farmers = {
+    labourers = {
         culture = serb
         religion = orthodox
-        size = 19760
+        size = 8000
+    }
+
+    craftsmen = {
+        culture = serb
+        religion = orthodox
+        size = 5000
     }
 
     capitalists = {
         culture = bosniak
         religion = sunni
-        size = 205
+        size = 267
     }
 
-    labourers = {
-        culture = bosniak
-        religion = sunni
-        size = 409
-    }
-
-    labourers = {
-        culture = bosniak
-        religion = sunni
-        size = 3908
-    }
-
-    labourers = {
-        culture = serb
-        religion = orthodox
-        size = 375
-    }
-
-    labourers = {
-        culture = serb
-        religion = orthodox
-        size = 10444
-    }
-
-    labourers = {
-        culture = bosniak
-        religion = sunni
-        size = 46
-    }
-
-    labourers = {
-        culture = bosniak
-        religion = sunni
-        size = 434
-    }
-
-    labourers = {
-        culture = serb
-        religion = orthodox
-        size = 42
-    }
-
-    labourers = {
-        culture = serb
-        religion = orthodox
-        size = 1161
-    }
-
-    capitalists = {
-        culture = bosniak
-        religion = sunni
-        size = 62
-    }
 }
 #Mostar (104000/26000 POPS)
 788 = {

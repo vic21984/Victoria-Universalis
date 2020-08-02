@@ -24,4 +24,9 @@ life_rating = 35
 		building = regular_clothes_factory
 		upgrade = yes
 	}
+	state_building = {
+		level = 3
+		building = fuel_refinery
+		upgrade = yes
+	}
 }

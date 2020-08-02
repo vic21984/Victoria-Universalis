@@ -23,7 +23,6 @@ military_goods = {
 	canned_food = { 
 		cost = 16.00 
 		color = { 255 39 12 }
-		overseas_penalty = yes
 	}
 	barrels = {	
 		cost = 98.00 
@@ -70,7 +69,7 @@ raw_material_goods = {
 		color = { 146 72 17 }
 	}
 	tropical_wood = { 
-		cost = 2.7
+		cost = 6
 		color = { 213 177 118 }
 	}
 	rubber = { 
@@ -82,8 +81,8 @@ raw_material_goods = {
 		color = { 0 0 0 }
 	}
 	precious_metal = { 
-		cost = 10
-		tradeable = no
+		cost = 15
+		#tradeable = no
 		money = yes	
 		color = { 253 199 110 }
 	}
@@ -125,14 +124,12 @@ industrial_and_consumer_goods = {
 	}
 	clipper_convoy = { 
 		cost = 42.00 
-		overseas_penalty = yes
 		available_from_start = no
 		color = { 21 65 30 }
 	}
 	steamer_convoy = { 
 		cost = 65.00
 		available_from_start = no
-		overseas_penalty = yes
 		color = { 76 18 0 }
 	}
 	electric_gear = { 
@@ -157,7 +154,7 @@ industrial_and_consumer_goods = {
 		color = { 100 69 30 }
 	}
 	wool = { 
-		cost = 0.8
+		cost = 1.6
 		color = { 234 195 158 }
 	}
 	opium = { 
@@ -181,7 +178,7 @@ industrial_and_consumer_goods = {
 		color = { 219 157 36 }
 	}
 	automobiles = {	
-		cost = 70.00 
+		cost = 140.00 
 		available_from_start = no
 		color = { 61 67 64 }
 	}
@@ -191,7 +188,7 @@ industrial_and_consumer_goods = {
 		color = { 123 112 54 }
 	}
 	wine = { 
-		cost = 9.7
+		cost = 10
 		color = { 123 0 54 }
 	}
 	liquor = {
@@ -211,7 +208,7 @@ industrial_and_consumer_goods = {
 		color = { 173 129 40 }
 	}
 	luxury_furniture = { 
-		cost = 45
+		cost = 65
 		color = { 255 140 184 }
 	}
 	radio = { 

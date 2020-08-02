@@ -226,7 +226,7 @@
 	artisans = {
 		culture = south_andean
 		religion = catholic
-		size = 600
+		size = 7650
 	}
 
 	soldiers = {
@@ -235,10 +235,10 @@
 		size = 125
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
-		size = 10050
+		size = 3000
 	}
 
 	clergymen = {
@@ -250,7 +250,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 1300
+		size = 18625
 	}
 
 	soldiers = {
@@ -259,10 +259,10 @@
 		size = 250
 	}
 
-	farmers = {
+	labourers = {
 		culture = quechua
 		religion = catholic
-		size = 24325
+		size = 7000
 	}
 }
 #Piura (60000/15000 POPS)
@@ -282,7 +282,7 @@
 	artisans = {
 		culture = south_andean
 		religion = catholic
-		size = 150
+		size = 525
 	}
 
 	soldiers = {
@@ -291,10 +291,10 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
-		size = 2375
+		size = 2000
 	}
 
 	clergymen = {
@@ -306,7 +306,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 500
+		size = 9350
 	}
 
 	soldiers = {
@@ -315,10 +315,10 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = quechua
 		religion = catholic
-		size = 10000
+		size = 1150
 	}
 
 	clergymen = {
@@ -339,16 +339,10 @@
 		size = 25
 	}
 
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1100
-	}
-
 	slaves = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 750
+		size = 1850
 	}
 }
 #Trujillo (68000/17000 POPS)
@@ -368,7 +362,7 @@
 	artisans = {
 		culture = south_andean
 		religion = catholic
-		size = 300
+		size = 3375
 	}
 
 	soldiers = {
@@ -377,10 +371,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
-		size = 5075
+		size = 2000
 	}
 
 	clergymen = {
@@ -392,7 +386,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 450
+		size = 2825
 	}
 
 	soldiers = {
@@ -401,40 +395,16 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = quechua
 		religion = catholic
-		size = 8375
-	}
-
-	clergymen = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 100
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1100
+		size = 6000
 	}
 
 	slaves = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 750
+		size = 2000
 	}
 }
 #Moyobamba (24000/6000 POPS)
@@ -742,7 +712,13 @@
 	artisans = {
 		culture = south_andean
 		religion = catholic
-		size = 2200
+		size = 20000
+	}
+
+	artisans = {
+		culture = south_andean
+		religion = catholic
+		size = 19275
 	}
 
 	soldiers = {
@@ -751,10 +727,10 @@
 		size = 4000
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
-		size = 42075
+		size = 5000
 	}
 
 	clergymen = {
@@ -766,7 +742,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 800
+		size = 13650
 	}
 
 	soldiers = {
@@ -775,10 +751,10 @@
 		size = 175
 	}
 
-	farmers = {
+	labourers = {
 		culture = quechua
 		religion = catholic
-		size = 14950
+		size = 2100
 	}
 
 	clergymen = {
@@ -799,16 +775,10 @@
 		size = 50
 	}
 
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1400
-	}
-
 	slaves = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 1500
+		size = 2900
 	}
 }
 #Ica (60000/15000 POPS)
@@ -914,7 +884,7 @@
 	artisans = {
 		culture = south_andean
 		religion = catholic
-		size = 300
+		size = 4250
 	}
 
 	soldiers = {
@@ -923,10 +893,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
-		size = 4950
+		size = 1000
 	}
 
 	clergymen = {
@@ -938,7 +908,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 850
+		size = 14750
 	}
 
 	soldiers = {
@@ -947,40 +917,16 @@
 		size = 175
 	}
 
-	farmers = {
+	labourers = {
 		culture = quechua
 		religion = catholic
-		size = 15900
-	}
-
-	clergymen = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	artisans = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 100
-	}
-
-	soldiers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 25
-	}
-
-	farmers = {
-		culture = afro_caribeno
-		religion = catholic
-		size = 1100
+		size = 2000
 	}
 
 	slaves = {
 		culture = afro_caribeno
 		religion = catholic
-		size = 750
+		size = 2000
 	}
 }
 #Ucayali Region (32000)
@@ -1181,7 +1127,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
 		size = 2075
@@ -1196,7 +1142,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 1150
+		size = 17650
 	}
 
 	soldiers = {
@@ -1205,10 +1151,10 @@
 		size = 250
 	}
 
-	farmers = {
+	labourers = {
 		culture = quechua
 		religion = catholic
-		size = 21500
+		size = 2925
 	}
 }
 #Arequipa (72000/18000 POPS)
@@ -1237,7 +1183,7 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = south_andean
 		religion = catholic
 		size = 3250
@@ -1252,7 +1198,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 700
+		size = 12050
 	}
 
 	soldiers = {
@@ -1261,10 +1207,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = quechua
 		religion = catholic
-		size = 13100
+		size = 1750
 	}
 }
 #Atacama Region (100000) #see Chile.txt for balance of Region

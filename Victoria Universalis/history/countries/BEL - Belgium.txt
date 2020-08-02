@@ -24,12 +24,12 @@ political_parties = non_secret_ballots
 
 # Social Reforms
 wage_reform = no_minimum_wage
-work_hours = fourteen_hours
+work_hours = twelve_hours
 safety_regulations = trinket_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
-school_reforms = no_schools
+school_reforms = good_schools
 
 ruling_party = BEL_conservative
 last_election = 1834.1.1
@@ -165,7 +165,7 @@ ruling_party = BEL_liberal
 conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legal
+child_labor = child_labor_restricted
 citizens_rights = all_voting_pops
 border_policy = open_borders
 centralization = unitary

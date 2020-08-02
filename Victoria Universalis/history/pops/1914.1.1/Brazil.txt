@@ -608,7 +608,7 @@
     artisans = {
         culture = brazilian
         religion = catholic
-        size = 944
+        size = 16801
     }
 
     soldiers = {
@@ -617,10 +617,10 @@
         size = 410
     }
 
-    farmers = {
+    labourers = {
         culture = brazilian
         religion = catholic
-        size = 20857
+        size = 5000
     }
 
     clergymen = {
@@ -632,7 +632,7 @@
     artisans = {
         culture = afro_brazilian
         religion = catholic
-        size = 727
+        size = 7337
     }
 
     soldiers = {
@@ -641,16 +641,10 @@
         size = 205
     }
 
-    farmers = {
+    labourers = {
         culture = afro_brazilian
         religion = catholic
-        size = 3343
-    }
-
-    farmers = {
-        culture = afro_brazilian
-        religion = catholic
-        size = 7267
+        size = 4000
     }
 
     aristocrats = {
@@ -668,7 +662,7 @@
     artisans = {
         culture = amazonian
         religion = animist
-        size = 436
+        size = 7285
     }
 
     soldiers = {
@@ -677,52 +671,28 @@
         size = 102
     }
 
-    farmers = {
+    labourers = {
         culture = amazonian
         religion = animist
-        size = 7849
+        size = 1000
     }
 
     craftsmen = {
         culture = brazilian
         religion = catholic
-        size = 167
-    }
-
-    craftsmen = {
-        culture = brazilian
-        religion = catholic
-        size = 3681
+        size = 3848
     }
 
     craftsmen = {
         culture = afro_brazilian
         religion = catholic
-        size = 128
-    }
-
-    craftsmen = {
-        culture = afro_brazilian
-        religion = catholic
-        size = 590
-    }
-
-    craftsmen = {
-        culture = afro_brazilian
-        religion = catholic
-        size = 1283
+        size = 2001
     }
 
     craftsmen = {
         culture = amazonian
         religion = animist
-        size = 77
-    }
-
-    craftsmen = {
-        culture = amazonian
-        religion = animist
-        size = 1385
+        size = 1462
     }
 
     capitalists = {
@@ -1630,7 +1600,7 @@
     artisans = {
         culture = brazilian
         religion = catholic
-        size = 342
+        size = 4583
     }
 
     soldiers = {
@@ -1639,10 +1609,10 @@
         size = 102
     }
 
-    farmers = {
+    labourers = {
         culture = brazilian
         religion = catholic
-        size = 6241
+        size = 2000
     }
 
     aristocrats = {
@@ -1660,7 +1630,7 @@
     artisans = {
         culture = guarani
         religion = animist
-        size = 513
+        size = 6747
     }
 
     soldiers = {
@@ -1669,10 +1639,10 @@
         size = 102
     }
 
-    farmers = {
+    labourers = {
         culture = guarani
         religion = animist
-        size = 9234
+        size = 3000
     }
 
     capitalists = {
@@ -3829,7 +3799,13 @@
     artisans = {
         culture = brazilian
         religion = catholic
-        size = 1795
+        size = 20000
+    }
+
+    artisans = {
+        culture = brazilian
+        religion = catholic
+        size = 14939
     }
 
     soldiers = {
@@ -3838,10 +3814,10 @@
         size = 513
     }
 
-    farmers = {
+    labourers = {
         culture = brazilian
         religion = catholic
-        size = 45144
+        size = 2000
     }
 
     clergymen = {
@@ -3853,7 +3829,19 @@
     artisans = {
         culture = afro_brazilian
         religion = catholic
-        size = 2223
+        size = 25061
+    }
+
+    artisans = {
+        culture = afro_brazilian
+        religion = catholic
+        size = 20000
+    }
+
+    artisans = {
+        culture = afro_brazilian
+        religion = catholic
+        size = 20000
     }
 
     soldiers = {
@@ -3862,16 +3850,22 @@
         size = 513
     }
 
-    farmers = {
+    labourers = {
         culture = afro_brazilian
         religion = catholic
-        size = 14278
+        size = 3000
     }
 
-    farmers = {
+    craftsmen = {
+        culture = brazilian
+        religion = catholic
+        size = 10000
+    }
+
+    craftsmen = {
         culture = afro_brazilian
         religion = catholic
-        size = 61560
+        size = 10000
     }
 
     capitalists = {
@@ -5561,7 +5555,7 @@
     artisans = {
         culture = brazilian
         religion = catholic
-        size = 855
+        size = 14267
     }
 
     soldiers = {
@@ -5570,10 +5564,10 @@
         size = 307
     }
 
-    farmers = {
+    labourers = {
         culture = brazilian
         religion = catholic
-        size = 18382
+        size = 3000
     }
 
     clergymen = {
@@ -5585,7 +5579,7 @@
     artisans = {
         culture = afro_brazilian
         religion = catholic
-        size = 684
+        size = 8338
     }
 
     soldiers = {
@@ -5594,59 +5588,66 @@
         size = 205
     }
 
-    farmers = {
+    labourers = {
         culture = afro_brazilian
         religion = catholic
-        size = 4104
-    }
-
-    farmers = {
-        culture = afro_brazilian
-        religion = catholic
-        size = 8550
+        size = 3000
     }
 
     aristocrats = {
         culture = guarani
-        religion = animist
+        religion = catholic
         size = 243
     }
 
     clergymen = {
         culture = guarani
-        religion = animist
+        religion = catholic
         size = 564
     }
 
     artisans = {
         culture = guarani
-        religion = animist
-        size = 855
+        religion = catholic
+        size = 10501
     }
 
     soldiers = {
         culture = guarani
-        religion = animist
+        religion = catholic
         size = 205
     }
 
-    farmers = {
+    labourers = {
         culture = guarani
-        religion = animist
-        size = 15646
+        religion = catholic
+        size = 4000
+    }
+
+    craftsmen = {
+        culture = brazilian
+        religion = catholic
+        size = 4000
+    }
+
+    craftsmen = {
+        culture = afro_brazilian
+        religion = catholic
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = guarani
+        religion = catholic
+        size = 2000
     }
 
     capitalists = {
         culture = brazilian
         religion = catholic
-        size = 38
+        size = 51
     }
 
-    capitalists = {
-        culture = guarani
-        religion = animist
-        size = 13
-    }
 }
 #Castro (72000/18000 POPS)
 2460 = {
@@ -6113,7 +6114,7 @@
     artisans = {
         culture = brazilian
         religion = catholic
-        size = 1026
+        size = 8706
     }
 
     soldiers = {
@@ -6122,10 +6123,10 @@
         size = 9849
     }
 
-    farmers = {
+    labourers = {
         culture = brazilian
         religion = catholic
-        size = 13680
+        size = 5000
     }
 
     clergymen = {
@@ -6137,7 +6138,7 @@
     artisans = {
         culture = afro_brazilian
         religion = catholic
-        size = 684
+        size = 7338
     }
 
     soldiers = {
@@ -6146,16 +6147,22 @@
         size = 205
     }
 
-    farmers = {
+    labourers = {
         culture = afro_brazilian
         religion = catholic
-        size = 4104
+        size = 5000
     }
 
-    farmers = {
+    craftsmen = {
+        culture = brazilian
+        religion = catholic
+        size = 1000
+    }
+
+    craftsmen = {
         culture = afro_brazilian
         religion = catholic
-        size = 8550
+        size = 1000
     }
 
     capitalists = {

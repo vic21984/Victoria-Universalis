@@ -72,7 +72,7 @@
     artisans = {
         culture = norwegian
         religion = protestant
-        size = 1432
+        size = 1243
     }
 
     soldiers = {
@@ -81,17 +81,36 @@
         size = 529
     }
 
-    farmers = {
+    labourers = {
         culture = norwegian
         religion = protestant
-        size = 23111
+        size = 14499
     }
 
-    farmers = {
+    artisans = {
         culture = finnish
         religion = protestant
-        size = 2101
+        size = 1601
     }
+
+    labourers = {
+        culture = finnish
+        religion = protestant
+        size = 500
+    }
+
+    craftsmen = {
+        culture = norwegian
+        religion = protestant
+        size = 8000
+    }
+
+    clerks = {
+        culture = norwegian
+        religion = protestant
+        size = 800
+    }
+
 }
 #Hammerfest (36000/9000 POPS)
 307 = {
@@ -233,8 +252,8 @@
 3246 = {
     bankers = {
         culture = illuminati
-        religion = jewish
-        size = 10000
+        religion = animist
+        size = 25000
     }
 }
 #Vestlandet-Sorlandet Region : 544000
@@ -411,7 +430,7 @@
     artisans = {
         culture = norwegian
         religion = protestant
-        size = 2865
+        size = 14268
     }
 
     soldiers = {
@@ -423,31 +442,19 @@
     labourers = {
         culture = norwegian
         religion = protestant
-        size = 44586
+        size = 4999
     }
 
     craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 812
-    }
-
-    craftsmen = {
-        culture = norwegian
-        religion = protestant
-        size = 12633
+        size = 40000
     }
 
     clerks = {
         culture = norwegian
         religion = protestant
-        size = 143
-    }
-
-    clerks = {
-        culture = norwegian
-        religion = protestant
-        size = 2229
+        size = 4000
     }
 }
 #Ostlandet Region - 352000
@@ -474,7 +481,7 @@
     artisans = {
         culture = norwegian
         religion = protestant
-        size = 10027
+        size = 7475
     }
 
     soldiers = {
@@ -483,34 +490,22 @@
         size = 5819
     }
 
-    farmers = {
+    labourers = {
         culture = norwegian
         religion = protestant
-        size = 26179
+        size = 10000
     }
 
     craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 2842
-    }
-
-    craftsmen = {
-        culture = norwegian
-        religion = protestant
-        size = 7417
+        size = 28000
     }
 
     clerks = {
         culture = norwegian
         religion = protestant
-        size = 501
-    }
-
-    clerks = {
-        culture = norwegian
-        religion = protestant
-        size = 1309
+        size = 2800
     }
 }
 #Hamar (80000/20000 POPS)
@@ -524,7 +519,7 @@
     artisans = {
         culture = norwegian
         religion = protestant
-        size = 1576
+        size = 8113
     }
 
     soldiers = {
@@ -533,34 +528,22 @@
         size = 792
     }
 
-    farmers = {
+    labourers = {
         culture = norwegian
         religion = protestant
-        size = 26859
+        size = 10000
     }
 
     craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 446
-    }
-
-    craftsmen = {
-        culture = norwegian
-        religion = protestant
-        size = 7610
+        size = 18000
     }
 
     clerks = {
         culture = norwegian
         religion = protestant
-        size = 79
-    }
-
-    clerks = {
-        culture = norwegian
-        religion = protestant
-        size = 1343
+        size = 1800
     }
 }
 #Lillehammer (96000/24000 POPS)

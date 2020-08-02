@@ -124,40 +124,10 @@
         size = 60
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 1822
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 83
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 1495
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 18
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 328
-    }
-
-    capitalists = {
-        culture = yankee
-        religion = protestant
-        size = 12
+        size = 3758
     }
 }
 #Kenai (2400/600 POPS)
@@ -409,64 +379,64 @@
 #Fairbanks (2000/500 POPS)
 2599 = {
     aristocrats = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 5
     }
 
     clergymen = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 10
     }
 
     artisans = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 25
     }
 
     soldiers = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 5
     }
 
-    farmers = {
-        culture = native_american_minor
-        religion = animist
+    labourers = {
+        culture = yankee
+        religion = protestant
         size = 450
     }
 }
 #Cordova (1600/360 POPS)
 2630 = {
     aristocrats = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 5
     }
 
     clergymen = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 10
     }
 
     artisans = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 20
     }
 
     soldiers = {
-        culture = native_american_minor
-        religion = animist
+        culture = yankee
+        religion = protestant
         size = 5
     }
 
-    farmers = {
-        culture = native_american_minor
-        religion = animist
+    labourers = {
+        culture = yankee
+        religion = protestant
         size = 360
     }
 }
@@ -705,7 +675,7 @@
     bureaucrats = {
         culture = yankee
         religion = protestant
-        size = 0
+        size = 100
     }
 
     craftsmen = {
@@ -834,7 +804,7 @@
         size = 518
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
         size = 15600
@@ -849,25 +819,13 @@
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 711
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 12793
+        size = 13504
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 156
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 2808
+        size = 2964
     }
 
     capitalists = {
@@ -950,146 +908,50 @@
 84 = {
     aristocrats = {
         culture = yankee
-        religion = catholic
-        size = 218
-    }
-
-    clergymen = {
-        culture = yankee
-        religion = catholic
-        size = 405
-    }
-
-    artisans = {
-        culture = yankee
-        religion = catholic
-        size = 457
-    }
-
-    soldiers = {
-        culture = yankee
-        religion = catholic
-        size = 457
-    }
-
-    farmers = {
-        culture = yankee
-        religion = catholic
-        size = 8110
-    }
-
-    aristocrats = {
-        culture = yankee
         religion = protestant
-        size = 606
-    }
-
-    clergymen = {
-        culture = yankee
-        religion = protestant
-        size = 3179
-    }
-
-    artisans = {
-        culture = yankee
-        religion = protestant
-        size = 2316
-    }
-
-    soldiers = {
-        culture = yankee
-        religion = protestant
-        size = 1158
-    }
-
-    farmers = {
-        culture = yankee
-        religion = protestant
-        size = 20853
-    }
-
-    farmers = {
-        culture = yankee
-        religion = protestant
-        size = 20853
-    }
-
-    bureaucrats = {
-        culture = yankee
-        religion = catholic
-        size = 518
+        size = 824
     }
 
     bureaucrats = {
         culture = yankee
         religion = protestant
-        size = 1101
+        size = 1619
+    }
+
+    clergymen = {
+        culture = yankee
+        religion = protestant
+        size = 3584
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 11589
+    }
+
+    soldiers = {
+        culture = yankee
+        religion = protestant
+        size = 1615
+    }
+
+    labourers = {
+        culture = yankee
+        religion = protestant
+        size = 29999
     }
 
     craftsmen = {
         culture = yankee
         religion = catholic
-        size = 376
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = catholic
-        size = 6650
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 1900
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 17099
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 17099
+        size = 53124
     }
 
     clerks = {
         culture = yankee
         religion = catholic
-        size = 82
-    }
-
-    clerks = {
-        culture = yankee
-        religion = catholic
-        size = 1460
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 417
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 3754
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 3754
-    }
-
-    capitalists = {
-        culture = yankee
-        religion = catholic
-        size = 93
+        size = 10560
     }
 
     capitalists = {
@@ -1245,7 +1107,7 @@
     bureaucrats = {
         culture = yankee
         religion = catholic
-        size = 518
+        size = 1036
     }
 
     clergymen = {
@@ -1257,7 +1119,7 @@
     artisans = {
         culture = yankee
         religion = catholic
-        size = 1615
+        size = 21243
     }
 
     soldiers = {
@@ -1266,16 +1128,22 @@
         size = 457
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = catholic
-        size = 24328
+        size = 2500
     }
 
     aristocrats = {
         culture = yankee
         religion = protestant
         size = 311
+    }
+
+    bureaucrats = {
+        culture = yankee
+        religion = protestant
+        size = 518
     }
 
     clergymen = {
@@ -1287,7 +1155,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 2316
+        size = 37122
     }
 
     soldiers = {
@@ -1296,23 +1164,36 @@
         size = 684
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 41706
+        size = 2500
     }
 
-    bureaucrats = {
+    craftsmen = {
         culture = yankee
         religion = catholic
-        size = 518
+        size = 2000
     }
 
-    bureaucrats = {
+    clerks = {
+        culture = yankee
+        religion = catholic
+        size = 200
+    }
+
+    craftsmen = {
         culture = yankee
         religion = protestant
-        size = 518
+        size = 4000
     }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 400
+    }
+
 }
 #Mariposa (8000/2000 POPS)
 88 = {
@@ -1320,6 +1201,12 @@
         culture = yankee
         religion = protestant
         size = 606
+    }
+
+    bureaucrats = {
+        culture = yankee
+        religion = protestant
+        size = 1101
     }
 
     clergymen = {
@@ -1331,7 +1218,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 2316
+        size = 34024
     }
 
     soldiers = {
@@ -1340,40 +1227,22 @@
         size = 1158
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 41708
-    }
-
-    bureaucrats = {
-        culture = yankee
-        religion = protestant
-        size = 1101
+        size = 10000
     }
 
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 1900
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 34201
+        size = 36101
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 417
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 7508
+        size = 7925
     }
 
     capitalists = {
@@ -1399,7 +1268,7 @@
     artisans = {
         culture = yankee
         religion = catholic
-        size = 1158
+        size = 17011
     }
 
     soldiers = {
@@ -1408,10 +1277,10 @@
         size = 684
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = catholic
-        size = 20853
+        size = 4999
     }
 
     aristocrats = {
@@ -1429,7 +1298,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 2316
+        size = 34024
     }
 
     soldiers = {
@@ -1438,10 +1307,10 @@
         size = 1158
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 41708
+        size = 10000
     }
 
     bureaucrats = {
@@ -1459,49 +1328,25 @@
     craftsmen = {
         culture = yankee
         religion = catholic
-        size = 950
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = catholic
-        size = 17099
+        size = 18049
     }
 
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 1900
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 34201
+        size = 36101
     }
 
     clerks = {
         culture = yankee
         religion = catholic
-        size = 208
-    }
-
-    clerks = {
-        culture = yankee
-        religion = catholic
-        size = 3754
+        size = 3962
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 417
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 7508
+        size = 7925
     }
 
     capitalists = {
@@ -1793,7 +1638,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 1063
+        size = 10198
     }
 
     soldiers = {
@@ -1802,52 +1647,22 @@
         size = 352
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 18427
-    }
-
-    farmers = {
-        culture = yankee
-        religion = protestant
-        size = 708
+        size = 10000
     }
 
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 872
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 15111
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 581
+        size = 16564
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 191
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 3317
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 128
+        size = 3636
     }
 
     capitalists = {
@@ -1875,7 +1690,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 838
+        size = 10964
     }
 
     soldiers = {
@@ -1884,10 +1699,10 @@
         size = 251
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 15126
+        size = 5000
     }
 }
 #Elko (4000/1000 POPS)
@@ -1907,7 +1722,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 838
+        size = 10964
     }
 
     soldiers = {
@@ -1916,10 +1731,10 @@
         size = 251
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 15126
+        size = 5000
     }
 }
 #Las Vegas (4000/1000 POPS)
@@ -1939,7 +1754,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 838
+        size = 10964
     }
 
     soldiers = {
@@ -1948,10 +1763,10 @@
         size = 251
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 15126
+        size = 5000
     }
 }
 #Utah Region (16000)
@@ -1973,7 +1788,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 1680
+        size = 16433
     }
 
     soldiers = {
@@ -1982,11 +1797,24 @@
         size = 417
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 30253
+        size = 10000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 5000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 500
+    }
+
 }
 #Loa (4000/1000 POPS)
 98 = {
@@ -2131,7 +1959,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 866
+        size = 11503
     }
 
     soldiers = {
@@ -2140,10 +1968,10 @@
         size = 141
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 15637
+        size = 5000
     }
 }
 #Flagstaff (12000/3000 POPS)
@@ -3040,7 +2868,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 546
+        size = 5387
     }
 
     soldiers = {
@@ -3049,10 +2877,10 @@
         size = 133
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 9841
+        size = 5000
     }
 }
 #Cody (12000/3000 POPS)
@@ -3072,7 +2900,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 818
+        size = 5580
     }
 
     soldiers = {
@@ -3081,10 +2909,10 @@
         size = 133
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 14762
+        size = 10000
     }
 }
 #Casper (8000/2000 POPS)
@@ -3538,7 +3366,7 @@
     artisans = {
         culture = dakota
         religion = protestant
-        size = 2551
+        size = 35178
     }
 
     soldiers = {
@@ -3547,11 +3375,24 @@
         size = 635
     }
 
-    farmers = {
+    labourers = {
         culture = dakota
         religion = protestant
-        size = 45927
+        size = 10000
     }
+
+    craftsmen = {
+        culture = dakota
+        religion = protestant
+        size = 3000
+    }
+
+    clerks = {
+        culture = dakota
+        religion = protestant
+        size = 300
+    }
+
 }
 #Minot (8000/2000 POPS)
 118 = {
@@ -3570,7 +3411,7 @@
     artisans = {
         culture = dakota
         religion = protestant
-        size = 1275
+        size = 19238
     }
 
     soldiers = {
@@ -3579,10 +3420,10 @@
         size = 380
     }
 
-    farmers = {
+    labourers = {
         culture = dakota
         religion = protestant
-        size = 22963
+        size = 5000
     }
 
     aristocrats = {
@@ -3600,7 +3441,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 1275
+        size = 13738
     }
 
     soldiers = {
@@ -3609,10 +3450,22 @@
         size = 380
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 22963
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 5000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 500
     }
 }
 #Dickinson (8000/2000 POPS)
@@ -3878,7 +3731,7 @@
     artisans = {
         culture = dakota
         religion = protestant
-        size = 2551
+        size = 34078
     }
 
     soldiers = {
@@ -3887,11 +3740,24 @@
         size = 635
     }
 
-    farmers = {
+    labourers = {
         culture = dakota
         religion = protestant
-        size = 45927
+        size = 10000
     }
+
+    craftsmen = {
+        culture = dakota
+        religion = protestant
+        size = 4000
+    }
+
+    clerks = {
+        culture = dakota
+        religion = protestant
+        size = 400
+    }
+
 }
 #Rapid City (8000/2000 POPS)
 122 = {
@@ -4282,7 +4148,13 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 3685
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 25024
     }
 
     soldiers = {
@@ -4291,34 +4163,22 @@
         size = 1842
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 66339
+        size = 14999
     }
 
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 3023
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 54398
+        size = 57421
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 663
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 11941
+        size = 12604
     }
 
     capitalists = {
@@ -4479,13 +4339,13 @@
         size = 360
     }
 
-    farmers = {
+    artisans = {
         culture = cherokee
         religion = protestant
         size = 19310
     }
 
-    slaves = {
+    artisans = {
         culture = afro_american
         religion = protestant
         size = 2413
@@ -4506,7 +4366,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 2413
+        size = 29861
     }
 
     soldiers = {
@@ -4515,11 +4375,24 @@
         size = 603
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 43448
+        size = 5000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 10000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 1000
+    }
+
 }
 #Tahlequah (12000/3000 POPS)
 130 = {
@@ -4730,22 +4603,28 @@
     artisans = {
         culture = texan
         religion = protestant
-        size = 3487
+        size = 30000
+    }
+
+    artisans = {
+        culture = texan
+        religion = protestant
+        size = 27172
     }
 
     soldiers = {
         culture = texan
         religion = protestant
-        size = 51143
+        size = 11143
     }
 
-    farmers = {
+    labourers = {
         culture = texan
         religion = protestant
-        size = 62185
+        size = 14499
     }
 
-    slaves = {
+    artisans = {
         culture = afro_american
         religion = protestant
         size = 34870
@@ -4766,7 +4645,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 348
+        size = 5078
     }
 
     soldiers = {
@@ -4775,58 +4654,34 @@
         size = 230
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 5230
+        size = 500
     }
 
     craftsmen = {
         culture = texan
         religion = protestant
-        size = 2859
-    }
-
-    craftsmen = {
-        culture = texan
-        religion = protestant
-        size = 50993
+        size = 83852
     }
 
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 285
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 4289
+        size = 8574
     }
 
     clerks = {
         culture = texan
         religion = protestant
-        size = 628
-    }
-
-    clerks = {
-        culture = texan
-        religion = protestant
-        size = 11193
+        size = 11821
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 63
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 942
+        size = 1005
     }
 
     capitalists = {
@@ -5355,64 +5210,77 @@
 #Dallas (4400/1100 POPS)
 134 = {
     clergymen = {
-        culture = texan
+        culture = yankee
         religion = protestant
         size = 445
     }
 
     artisans = {
-        culture = texan
+        culture = yankee
         religion = protestant
-        size = 230
+        size = 3214
     }
 
     soldiers = {
-        culture = texan
+        culture = yankee
         religion = protestant
         size = 230
     }
 
-    farmers = {
-        culture = texan
+    labourers = {
+        culture = yankee
         religion = protestant
-        size = 3487
+        size = 500
     }
 
-    slaves = {
+    artisans = {
         culture = afro_american
         religion = protestant
         size = 461
     }
 
     aristocrats = {
-        culture = yankee
+        culture = texan
         religion = protestant
         size = 461
     }
 
     clergymen = {
-        culture = yankee
+        culture = texan
         religion = protestant
         size = 2551
     }
 
     artisans = {
-        culture = yankee
+        culture = texan
         religion = protestant
-        size = 2324
+        size = 18668
     }
 
     soldiers = {
-        culture = yankee
+        culture = texan
         religion = protestant
         size = 696
     }
 
-    farmers = {
-        culture = yankee
+    labourers = {
+        culture = texan
         religion = protestant
-        size = 41844
+        size = 14499
     }
+
+    craftsmen = {
+        culture = texan
+        religion = protestant
+        size = 10000
+    }
+
+    clerks = {
+        culture = texan
+        religion = protestant
+        size = 1000
+    }
+
 }
 #Lubbock (8000/2000 POPS)
 135 = {
@@ -5431,7 +5299,19 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 4649
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 12338
     }
 
     soldiers = {
@@ -5440,11 +5320,24 @@
         size = 1162
     }
 
-    farmers = {
+    labourers = {
         culture = texan
         religion = protestant
-        size = 83689
+        size = 5000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 10000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 1000
+    }
+
 }
 #El Paso (9000/2250 POPS)
 136 = {
@@ -5969,7 +5862,7 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 1012
+        size = 18924
     }
 
     soldiers = {
@@ -5978,10 +5871,10 @@
         size = 579
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 20412
+        size = 2500
     }
 
     clergymen = {
@@ -5993,19 +5886,13 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 433
+        size = 26367
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 56
-    }
-
-    slaves = {
-        culture = afro_american
-        religion = protestant
-        size = 28378
+        size = 2500
     }
 }
 #Shreveport (44000/11000 POPS)
@@ -6025,7 +5912,7 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 1158
+        size = 25007
     }
 
     soldiers = {
@@ -6034,10 +5921,10 @@
         size = 720
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 26349
+        size = 2500
     }
 
     clergymen = {
@@ -6049,19 +5936,13 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 579
+        size = 32159
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 56
-    }
-
-    slaves = {
-        culture = afro_american
-        religion = protestant
-        size = 34024
+        size = 2500
     }
 }
 #Arkansas Region (88000)
@@ -6919,7 +6800,13 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 2770
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 14509
     }
 
     soldiers = {
@@ -6928,10 +6815,10 @@
         size = 692
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 50139
+        size = 4000
     }
 
     aristocrats = {
@@ -6961,7 +6848,7 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 1846
+        size = 35406
     }
 
     soldiers = {
@@ -6970,10 +6857,10 @@
         size = 692
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 40860
+        size = 4000
     }
 
     clergymen = {
@@ -6985,20 +6872,39 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 1385
+        size = 25239
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 923
+        size = 2000
     }
 
-    slaves = {
-        culture = afro_american
+    craftsmen = {
+        culture = yankee
         religion = protestant
-        size = 24931
+        size = 4000
     }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 400
+    }
+
+    craftsmen = {
+        culture = dixie
+        religion = protestant
+        size = 3000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 300
+    }
+
 }
 #Kansas City (56000/14000 POPS)
 150 = {
@@ -7561,7 +7467,19 @@
     artisans = {
         culture = dakota
         religion = protestant
-        size = 6682
+        size = 34967
+    }
+
+    artisans = {
+        culture = dakota
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = dakota
+        religion = protestant
+        size = 30000
     }
 
     soldiers = {
@@ -7570,11 +7488,24 @@
         size = 1668
     }
 
-    farmers = {
+    labourers = {
         culture = dakota
         religion = protestant
-        size = 120285
+        size = 10000
     }
+
+    craftsmen = {
+        culture = dakota
+        religion = protestant
+        size = 20000
+    }
+
+    clerks = {
+        culture = dakota
+        religion = protestant
+        size = 2000
+    }
+
 }
 #Moorhead (8000/2000 POPS)
 157 = {
@@ -7715,7 +7646,19 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 6682
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 29967
     }
 
     soldiers = {
@@ -7724,11 +7667,24 @@
         size = 1668
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 120285
+        size = 14999
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 20000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 2000
+    }
+
 }
 #Wisconsin Region (36000)
 #ruled by the USA/parts under de facto under Native Control
@@ -7971,7 +7927,19 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 6682
+        size = 37303
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
     }
 
     soldiers = {
@@ -7980,10 +7948,22 @@
         size = 1668
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 122621
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 20000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 2000
     }
 }
 #Illinois Region (452000)
@@ -7999,7 +7979,31 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 13670
+        size = 58803
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 50000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 50000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 50000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 50000
     }
 
     soldiers = {
@@ -8008,34 +8012,22 @@
         size = 5722
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 255133
+        size = 10000
     }
 
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 11210
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 209210
+        size = 220420
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 2461
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 45924
+        size = 48385
     }
 }
 #Rockford (44000/11000 POPS)
@@ -8049,7 +8041,25 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 6994
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 15343
     }
 
     soldiers = {
@@ -8058,11 +8068,24 @@
         size = 1587
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 130349
+        size = 10000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 20000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 2000
+    }
+
 }
 #Champaign (36000/9000 POPS)
 165 = {
@@ -8075,7 +8098,19 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 5722
+        size = 31544
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
     }
 
     soldiers = {
@@ -8084,11 +8119,24 @@
         size = 1271
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 106822
+        size = 10000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 10000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 1000
+    }
+
 }
 #Peoria (100000/25000 POPS)
 166 = {
@@ -9000,29 +9048,6 @@
 }
 #Marquette (POPS)
 177 = {
-    clergymen = {
-        culture = yankee
-        religion = protestant
-        size = 972
-    }
-
-    artisans = {
-        culture = yankee
-        religion = protestant
-        size = 976
-    }
-
-    soldiers = {
-        culture = yankee
-        religion = protestant
-        size = 291
-    }
-
-    farmers = {
-        culture = yankee
-        religion = protestant
-        size = 18091
-    }
 
     aristocrats = {
         culture = yankee
@@ -9033,26 +9058,39 @@
     clergymen = {
         culture = yankee
         religion = protestant
-        size = 4880
+        size = 2852
     }
 
     artisans = {
         culture = yankee
         religion = protestant
-        size = 1956
+        size = 36189
     }
 
     soldiers = {
         culture = yankee
         religion = protestant
-        size = 486
+        size = 777
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 35210
+        size = 14999
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 10000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 1000
+    }
+
 }
 #Ohio Region (1344000)
 #ruled by the USA
@@ -9067,7 +9105,19 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 8565
+        size = 33847
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
     }
 
     soldiers = {
@@ -9076,10 +9126,10 @@
         size = 3280
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 148282
+        size = 8000
     }
 
     clergymen = {
@@ -9091,14 +9141,27 @@
     artisans = {
         culture = irish
         religion = catholic
-        size = 1332
+        size = 24458
     }
 
-    farmers = {
+    labourers = {
         culture = irish
         religion = catholic
-        size = 25126
+        size = 2000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 50000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 5000
+    }
+
 }
 #Columbus (268000/67000 POPS)
 179 = {
@@ -9923,7 +9986,25 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 7423
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 29548
     }
 
     soldiers = {
@@ -9932,10 +10013,10 @@
         size = 1498
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 138125
+        size = 4000
     }
 
     aristocrats = {
@@ -9965,7 +10046,13 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 3001
+        size = 31344
+    }
+
+    artisans = {
+        culture = dixie
+        religion = protestant
+        size = 30000
     }
 
     soldiers = {
@@ -9974,10 +10061,10 @@
         size = 1105
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 68943
+        size = 4000
     }
 
     clergymen = {
@@ -9989,20 +10076,39 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 2527
+        size = 35591
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 2685
+        size = 2000
     }
 
-    slaves = {
-        culture = afro_american
+    craftsmen = {
+        culture = yankee
         religion = protestant
-        size = 32379
+        size = 20000
     }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = dixie
+        religion = protestant
+        size = 6000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 600
+    }
+
 }
 #Bowling Green (144000/36000 POPS)
 186 = {
@@ -10233,13 +10339,7 @@
     farmers = {
         culture = afro_american
         religion = protestant
-        size = 157
-    }
-
-    slaves = {
-        culture = afro_american
-        religion = protestant
-        size = 23692
+        size = 23849
     }
 
     craftsmen = {
@@ -10251,67 +10351,37 @@
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 5989
+        size = 6313
     }
 
     craftsmen = {
         culture = dixie
         religion = protestant
-        size = 713
-    }
-
-    craftsmen = {
-        culture = dixie
-        religion = protestant
-        size = 16644
+        size = 17357
     }
 
     craftsmen = {
         culture = afro_american
         religion = protestant
-        size = 453
-    }
-
-    craftsmen = {
-        culture = afro_american
-        religion = protestant
-        size = 130
+        size = 583
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 71
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 1315
+        size = 1386
     }
 
     clerks = {
         culture = dixie
         religion = protestant
-        size = 156
-    }
-
-    clerks = {
-        culture = dixie
-        religion = protestant
-        size = 3653
+        size = 3809
     }
 
     clerks = {
         culture = afro_american
         religion = protestant
-        size = 100
-    }
-
-    clerks = {
-        culture = afro_american
-        religion = protestant
-        size = 28
+        size = 128
     }
 
     capitalists = {
@@ -10673,7 +10743,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 1032
+        size = 12265
     }
 
     soldiers = {
@@ -10682,10 +10752,10 @@
         size = 218
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 16333
+        size = 4000
     }
 
     aristocrats = {
@@ -10703,7 +10773,7 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 1401
+        size = 21659
     }
 
     soldiers = {
@@ -10712,10 +10782,10 @@
         size = 664
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 26458
+        size = 4000
     }
 
     clergymen = {
@@ -10727,13 +10797,13 @@
     artisans = {
         culture = irish
         religion = catholic
-        size = 737
+        size = 13555
     }
 
-    farmers = {
+    labourers = {
         culture = irish
         religion = catholic
-        size = 13818
+        size = 1000
     }
 
     clergymen = {
@@ -10745,20 +10815,39 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 1478
+        size = 22424
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 1032
+        size = 1000
     }
 
-    slaves = {
-        culture = afro_american
+    craftsmen = {
+        culture = yankee
         religion = protestant
-        size = 20914
+        size = 1000
     }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 100
+    }
+
+    craftsmen = {
+        culture = dixie
+        religion = protestant
+        size = 2000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 2000
+    }
+
 }
 #Chattanooga (132000/33000 POPS)
 191 = {
@@ -10771,7 +10860,7 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 1182
+        size = 16122
     }
 
     soldiers = {
@@ -10780,10 +10869,10 @@
         size = 218
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 19140
+        size = 2000
     }
 
     aristocrats = {
@@ -10801,7 +10890,7 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 2438
+        size = 28669
     }
 
     soldiers = {
@@ -10810,10 +10899,10 @@
         size = 591
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 32521
+        size = 4000
     }
 
     clergymen = {
@@ -10825,13 +10914,13 @@
     artisans = {
         culture = irish
         religion = catholic
-        size = 737
+        size = 12555
     }
 
-    farmers = {
+    labourers = {
         culture = irish
         religion = catholic
-        size = 13818
+        size = 2000
     }
 
     clergymen = {
@@ -10843,19 +10932,13 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 1032
+        size = 15587
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 1182
-    }
-
-    slaves = {
-        culture = afro_american
-        religion = protestant
-        size = 15373
+        size = 2000
     }
 
     aristocrats = {
@@ -10873,7 +10956,7 @@
     artisans = {
         culture = cherokee
         religion = protestant
-        size = 295
+        size = 5025
     }
 
     soldiers = {
@@ -10882,10 +10965,28 @@
         size = 72
     }
 
-    farmers = {
-        culture = cherokee
+    craftsmen = {
+        culture = dixie
         religion = protestant
-        size = 4730
+        size = 2000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 200
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 2000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 200
     }
 }
 #Mississippi Region (340000)
@@ -11433,7 +11534,19 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 4187
+        size = 30000
+    }
+
+    artisans = {
+        culture = dixie
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = dixie
+        religion = protestant
+        size = 21293
     }
 
     soldiers = {
@@ -11442,10 +11555,10 @@
         size = 1615
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 90606
+        size = 2500
     }
 
     clergymen = {
@@ -11457,20 +11570,39 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 2187
+        size = 30000
     }
 
-    farmers = {
+    artisans = {
         culture = afro_american
         religion = protestant
-        size = 190
+        size = 23124
     }
 
-    slaves = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 58247
+        size = 2500
     }
+
+    craftsmen = {
+        culture = dixie
+        religion = protestant
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = afro_american
+        religion = protestant
+        size = 5000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 1000
+    }
+
 }
 #Mobile (140000/35000 POPS)
 197 = {
@@ -12471,7 +12603,13 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 2494
+        size = 22366
+    }
+
+    artisans = {
+        culture = dixie
+        religion = protestant
+        size = 20000
     }
 
     soldiers = {
@@ -12480,10 +12618,10 @@
         size = 4536
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 49272
+        size = 5000
     }
 
     artisans = {
@@ -12501,19 +12639,49 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 1530
+        size = 30000
     }
 
-    farmers = {
+    artisans = {
         culture = afro_american
         religion = protestant
-        size = 20
+        size = 30000
     }
 
-    slaves = {
+    artisans = {
         culture = afro_american
         religion = protestant
-        size = 80060
+        size = 11110
+    }
+
+    labourers = {
+        culture = afro_american
+        religion = protestant
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = dixie
+        religion = protestant
+        size = 4000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 400
+    }
+
+    craftsmen = {
+        culture = afro_american
+        religion = protestant
+        size = 5000
+    }
+
+    clerks = {
+        culture = afro_american
+        religion = protestant
+        size = 500
     }
 }
 #Columbia (340000/85000 POPS)
@@ -13960,7 +14128,13 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 2997
+        size = 33524
+    }
+
+    artisans = {
+        culture = dixie
+        religion = protestant
+        size = 30000
     }
 
     soldiers = {
@@ -13969,10 +14143,10 @@
         size = 1048
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 72227
+        size = 4000
     }
 
     aristocrats = {
@@ -13990,7 +14164,7 @@
     artisans = {
         culture = dixie
         religion = catholic
-        size = 1198
+        size = 20926
     }
 
     soldiers = {
@@ -13999,10 +14173,10 @@
         size = 299
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = catholic
-        size = 21728
+        size = 2000
     }
 
     clergymen = {
@@ -14014,20 +14188,45 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 2997
+        size = 30000
     }
 
-    farmers = {
+    artisans = {
         culture = afro_american
         religion = protestant
-        size = 8541
+        size = 21090
     }
 
-    slaves = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 47952
+        size = 4000
     }
+
+    craftsmen = {
+        culture = dixie
+        religion = protestant
+        size = 7000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 700
+    }
+
+    craftsmen = {
+        culture = afro_american
+        religion = protestant
+        size = 4000
+    }
+
+    clerks = {
+        culture = afro_american
+        religion = protestant
+        size = 400
+    }
+
 }
 #Huntington (100000/25000 POPS)
 218 = {
@@ -14046,7 +14245,13 @@
     artisans = {
         culture = dixie
         religion = protestant
-        size = 2997
+        size = 30000
+    }
+
+    artisans = {
+        culture = dixie
+        religion = protestant
+        size = 29630
     }
 
     soldiers = {
@@ -14055,10 +14260,10 @@
         size = 1048
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = protestant
-        size = 66233
+        size = 3000
     }
 
     aristocrats = {
@@ -14076,7 +14281,7 @@
     artisans = {
         culture = dixie
         religion = catholic
-        size = 749
+        size = 14082
     }
 
     soldiers = {
@@ -14085,10 +14290,10 @@
         size = 299
     }
 
-    farmers = {
+    labourers = {
         culture = dixie
         religion = catholic
-        size = 16333
+        size = 3000
     }
 
     clergymen = {
@@ -14100,20 +14305,45 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 2997
+        size = 29990
     }
 
-    farmers = {
+    artisans = {
         culture = afro_american
         religion = protestant
-        size = 14535
+        size = 20000
     }
 
-    slaves = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 41958
+        size = 4000
     }
+
+    craftsmen = {
+        culture = dixie
+        religion = protestant
+        size = 6000
+    }
+
+    clerks = {
+        culture = dixie
+        religion = protestant
+        size = 600
+    }
+
+    craftsmen = {
+        culture = afro_american
+        religion = protestant
+        size = 5000
+    }
+
+    clerks = {
+        culture = afro_american
+        religion = protestant
+        size = 500
+    }
+
 }
 #Maryland Region (452000)
 #ruled by the USA
@@ -14635,28 +14865,34 @@
         size = 14033
     }
 
-    clerks = {
+    artisans = {
         culture = yankee
         religion = protestant
-        size = 303
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 6123
+        size = 60000
     }
 
     artisans = {
         culture = yankee
         religion = protestant
-        size = 51030
+        size = 60000
     }
 
     artisans = {
         culture = yankee
         religion = protestant
-        size = 3774
+        size = 60000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 60000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 49875
     }
 
     soldiers = {
@@ -14665,10 +14901,10 @@
         size = 10206
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 341645
+        size = 3000
     }
 
     bureaucrats = {
@@ -14689,22 +14925,16 @@
         size = 3179
     }
 
-    clerks = {
+    artisans = {
         culture = yankee
         religion = catholic
-        size = 24
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = catholic
-        size = 510
+        size = 36552
     }
 
     artisans = {
         culture = yankee
         religion = catholic
-        size = 10432
+        size = 30000
     }
 
     soldiers = {
@@ -14713,10 +14943,10 @@
         size = 891
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = catholic
-        size = 78586
+        size = 1000
     }
 
     clergymen = {
@@ -14728,13 +14958,13 @@
     artisans = {
         culture = irish
         religion = catholic
-        size = 25515
+        size = 40068
     }
 
-    farmers = {
+    labourers = {
         culture = irish
         religion = catholic
-        size = 15053
+        size = 500
     }
 
     clergymen = {
@@ -14746,13 +14976,13 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 10206
+        size = 40068
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 30362
+        size = 500
     }
 
     clergymen = {
@@ -14766,6 +14996,31 @@
         religion = jewish
         size = 2498
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 100000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = catholic
+        size = 20000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = catholic
+        size = 2000
+    }
+
 }
 #Scranton (164000/41000 POPS)
 224 = {
@@ -14796,25 +15051,13 @@
     craftsmen = {
         culture = yankee
         religion = protestant
-        size = 4289
-    }
-
-    craftsmen = {
-        culture = yankee
-        religion = protestant
-        size = 79975
+        size = 84264
     }
 
     clerks = {
         culture = yankee
         religion = protestant
-        size = 942
-    }
-
-    clerks = {
-        culture = yankee
-        religion = protestant
-        size = 17555
+        size = 18497
     }
 }
 #Williamsport (172000/43000 POPS)
@@ -14828,7 +15071,25 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 10971
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 27601
     }
 
     soldiers = {
@@ -14837,11 +15098,24 @@
         size = 2166
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 204630
+        size = 10000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 80000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 8000
+    }
+
 }
 #Harrisburg (292000/73000 POPS)
 226 = {
@@ -14904,7 +15178,25 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 14033
+        size = 40000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 40000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 40000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 17816
     }
 
     soldiers = {
@@ -14913,10 +15205,10 @@
         size = 2806
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 261783
+        size = 6000
     }
 
     clergymen = {
@@ -14928,7 +15220,7 @@
     artisans = {
         culture = yankee
         religion = catholic
-        size = 4592
+        size = 44192
     }
 
     soldiers = {
@@ -14937,10 +15229,10 @@
         size = 891
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = catholic
-        size = 85600
+        size = 2000
     }
 
     clergymen = {
@@ -14952,13 +15244,13 @@
     artisans = {
         culture = irish
         religion = catholic
-        size = 1786
+        size = 34081
     }
 
-    farmers = {
+    labourers = {
         culture = irish
         religion = catholic
-        size = 33295
+        size = 1000
     }
 
     clergymen = {
@@ -14970,13 +15262,37 @@
     artisans = {
         culture = afro_american
         religion = protestant
-        size = 765
+        size = 14053
     }
 
-    farmers = {
+    labourers = {
         culture = afro_american
         religion = protestant
-        size = 14288
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 120000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 12000
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = catholic
+        size = 40000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = catholic
+        size = 4000
     }
 }
 #Erie (108000/27000 POPS)
@@ -15702,7 +16018,31 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 12656
+        size = 40194
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 40000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 40000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 40000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 40000
     }
 
     soldiers = {
@@ -15711,10 +16051,10 @@
         size = 4050
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 278538
+        size = 3000
     }
 
     bureaucrats = {
@@ -15738,7 +16078,7 @@
     artisans = {
         culture = yankee
         religion = catholic
-        size = 1012
+        size = 12735
     }
 
     soldiers = {
@@ -15747,10 +16087,34 @@
         size = 48
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = catholic
-        size = 18123
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 80000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 8000
+    }
+
+    craftsmen = {
+        culture = yankee
+        religion = catholic
+        size = 4000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = catholic
+        size = 400
     }
 }
 #Binghamton (352000/88000 POPS)
@@ -15964,7 +16328,19 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 5872
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 24273
     }
 
     soldiers = {
@@ -15973,11 +16349,24 @@
         size = 1316
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 105401
+        size = 5000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 20000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 2000
+    }
+
 }
 #Plattsburgh (76000/19000 POPS)
 240 = {
@@ -16678,7 +17067,19 @@
     artisans = {
         culture = yankee
         religion = protestant
-        size = 5159
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 30000
+    }
+
+    artisans = {
+        culture = yankee
+        religion = protestant
+        size = 25366
     }
 
     soldiers = {
@@ -16687,11 +17088,24 @@
         size = 1101
     }
 
-    farmers = {
+    labourers = {
         culture = yankee
         religion = protestant
-        size = 96207
+        size = 5000
     }
+
+    craftsmen = {
+        culture = yankee
+        religion = protestant
+        size = 10000
+    }
+
+    clerks = {
+        culture = yankee
+        religion = protestant
+        size = 1000
+    }
+
 }
 #Vermont Region (284000)
 #ruled by the USA

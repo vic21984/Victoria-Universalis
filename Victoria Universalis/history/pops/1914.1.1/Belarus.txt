@@ -801,7 +801,13 @@
     artisans = {
         culture = lithuanian
         religion = catholic
-        size = 1764
+        size = 29927
+    }
+
+    artisans = {
+        culture = lithuanian
+        religion = catholic
+        size = 20000
     }
 
     soldiers = {
@@ -810,10 +816,10 @@
         size = 857
     }
 
-    farmers = {
+    labourers = {
         culture = lithuanian
         religion = catholic
-        size = 50163
+        size = 2000
     }
 
     aristocrats = {
@@ -831,7 +837,7 @@
     artisans = {
         culture = polish
         religion = catholic
-        size = 882
+        size = 11458
     }
 
     soldiers = {
@@ -840,10 +846,10 @@
         size = 257
     }
 
-    farmers = {
+    labourers = {
         culture = polish
         religion = catholic
-        size = 11576
+        size = 1000
     }
 
     clergymen = {
@@ -855,7 +861,7 @@
     artisans = {
         culture = byelorussian
         religion = catholic
-        size = 992
+        size = 20663
     }
 
     soldiers = {
@@ -864,10 +870,10 @@
         size = 343
     }
 
-    farmers = {
+    labourers = {
         culture = byelorussian
         religion = catholic
-        size = 20671
+        size = 1000
     }
 
     clergymen = {
@@ -879,7 +885,7 @@
     artisans = {
         culture = ashkenazi
         religion = jewish
-        size = 1653
+        size = 14158
     }
 
     soldiers = {
@@ -888,64 +894,40 @@
         size = 257
     }
 
-    farmers = {
+    labourers = {
         culture = ashkenazi
         religion = jewish
-        size = 13505
+        size = 1000
     }
 
     craftsmen = {
         culture = lithuanian
         religion = catholic
-        size = 196
-    }
-
-    craftsmen = {
-        culture = lithuanian
-        religion = catholic
-        size = 5574
+        size = 5770
     }
 
     craftsmen = {
         culture = polish
         religion = catholic
-        size = 98
-    }
-
-    craftsmen = {
-        culture = polish
-        religion = catholic
-        size = 1286
+        size = 1384
     }
 
     craftsmen = {
         culture = byelorussian
         religion = catholic
-        size = 110
-    }
-
-    craftsmen = {
-        culture = byelorussian
-        religion = catholic
-        size = 2297
+        size = 2407
     }
 
     craftsmen = {
         culture = ashkenazi
         religion = jewish
-        size = 184
-    }
-
-    craftsmen = {
-        culture = ashkenazi
-        religion = jewish
-        size = 1501
+        size = 1685
     }
 
     capitalists = {
         culture = polish
         religion = catholic
-        size = 294
+        size = 290
     }
 }
 #Baranovichi (196000/49000 POPS)

@@ -26,8 +26,6 @@ state_building = {
 }
 1914.1.1 = {
 	fort = 5
-	trade_goods = precious_metal
-	add_province_modifier = { name = financial_center duration = -1 }
 	state_building = {
 		level = 45
 		building = tea_packaging_factory

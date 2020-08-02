@@ -1087,7 +1087,25 @@
     artisans = {
         culture = sudanese
         religion = sunni
-        size = 2629
+        size = 49250
+    }
+
+    artisans = {
+        culture = sudanese
+        religion = sunni
+        size = 40000
+    }
+
+    artisans = {
+        culture = sudanese
+        religion = sunni
+        size = 40000
+    }
+
+    artisans = {
+        culture = sudanese
+        religion = sunni
+        size = 40000
     }
 
     soldiers = {
@@ -1096,16 +1114,10 @@
         size = 1075
     }
 
-    farmers = {
+    labourers = {
         culture = sudanese
         religion = sunni
-        size = 57121
-    }
-
-    slaves = {
-        culture = sudanese
-        religion = animist
-        size = 119500
+        size = 10000
     }
 }
 #Nuhud (164000/41000 POPS)

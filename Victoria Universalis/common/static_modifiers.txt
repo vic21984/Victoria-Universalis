@@ -68,6 +68,7 @@ very_hard_ai = {
 ##########################################################################
 
 overseas = {
+	farm_rgo_eff = -0.2
 }
 
 coastal = {
@@ -195,10 +196,8 @@ unciv_nation = {
 
 
 average_literacy = {
-	research_points = 4
+	research_points = 2
 	leadership = 2
-	self_unciv_economic_modifier = -0.5
-	self_unciv_military_modifier = -0.5
 }
 
 plurality = { 

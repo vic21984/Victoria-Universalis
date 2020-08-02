@@ -20,22 +20,12 @@ state_building = {
 	controller = GER
 	state_building = {
 		level = 10
-		building = ammunition_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 10
-		building = small_arms_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 10
 		building = fertilizer_factory
 		upgrade = yes
 	}
 	state_building = {
 		level = 10
-		building = cement_factory
+		building = radio_factory
 		upgrade = yes
 	}
 	state_building = {

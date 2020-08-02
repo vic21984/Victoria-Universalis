@@ -3,7 +3,7 @@ controller = AUS
 add_core = AUS
 add_core = BOH
 add_core = CZH
-trade_goods = coal
+trade_goods = grain
 life_rating = 35
 1914.1.1 = {
 	owner = KUK
@@ -21,12 +21,12 @@ life_rating = 35
 		upgrade = yes
 	}
 	state_building = {
-		level = 15
+		level = 20
 		building = artillery_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 5
+		level = 10
 		building = liquor_distillery
 		upgrade = yes
 	}

@@ -31,18 +31,23 @@ colonial = 0
 		upgrade = yes
 	}
 	state_building = {
-		level = 1
+		level = 2
 		building = automobile_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 3
+		level = 2
 		building = telephone_factory
 		upgrade = yes
 	}
 	state_building = {
 		level = 2
 		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = lumber_mill
 		upgrade = yes
 	}
 	naval_base = 5

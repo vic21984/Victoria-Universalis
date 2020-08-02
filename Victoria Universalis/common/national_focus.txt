@@ -73,7 +73,7 @@ promotion_focus =
 
 	promote_craftsmen =
 	{
-		craftsmen = 0.30 #30% more likeley to become this type
+		craftsmen = 0.15 #15% more likeley to become this type
 		icon = 11
 		outliner_show_as_percent = yes
 		limit = {
@@ -93,7 +93,7 @@ promotion_focus =
 	
 	promote_labourers =
 	{
-		labourers = 0.30 #30% more likeley to become this type
+		labourers = 2 #200% more likeley to become this type
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
@@ -160,7 +160,7 @@ large_promotion_focus =
 			state_scope = {
 				total_pops = 2000000
 				NOT = { total_pops = 4000000 }
-			}			
+			}
 		}
 
 	}
@@ -194,7 +194,7 @@ large_promotion_focus =
 
 	large_promote_craftsmen =
 	{
-		craftsmen = 0.20 #20% more likeley to become this type
+		craftsmen = 0.10 #10% more likeley to become this type
 		icon = 11
 		outliner_show_as_percent = yes
 		limit = { 
@@ -221,7 +221,7 @@ large_promotion_focus =
 	
 	large_promote_labourers =
 	{
-		labourers = 0.20 #20% more likeley to become this type
+		labourers = 2 #200% more likeley to become this type
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
@@ -294,7 +294,7 @@ massive_promotion_focus =
 			civilized = yes
 			state_scope = {
 				total_pops = 4000000
-			}			
+			}
 		}
 
 	}
@@ -326,7 +326,7 @@ massive_promotion_focus =
 
 	massive_promote_craftsmen =
 	{
-		craftsmen = 0.10 #10% more likeley to become this type
+		craftsmen = 0.05 #5% more likeley to become this type
 		icon = 11
 		outliner_show_as_percent = yes
 		limit = { 
@@ -351,7 +351,7 @@ massive_promotion_focus =
 	
 	massive_promote_labourers =
 	{
-		labourers = 0.10 #10% more likeley to become this type
+		labourers = 2 #200% more likeley to become this type
 		icon = 13
 		outliner_show_as_percent = yes
 		limit = {
@@ -410,8 +410,10 @@ production_focus =
 	{
 		fuel = 30
 		oil = 30
-		cigarettes = 15
-		pharmaceuticals = 15
+		cigarettes = 20
+		pharmaceuticals = 20
+		sulphur = 30
+		rubber = 30
 		icon = 18
 	}
 
@@ -454,7 +456,7 @@ production_focus =
 	{
 		steel = 30
 		machine_parts = 30
-		cement = 15
+		cement = 20
 		icon = 22
 		#limit = { 
 		#	civilized = yes
@@ -479,9 +481,9 @@ production_focus =
 	{
 		liquor = 30
 		wine = 30
-		glass = 15
-		tea = 15
-		coffee = 15
+		glass = 30
+		tea = 20
+		coffee = 20
 		icon = 24
 		#limit = { 
 		#	civilized = yes

@@ -445,7 +445,7 @@
     artisans = {
         culture = croat
         religion = catholic
-        size = 1596
+        size = 23132
     }
 
     soldiers = {
@@ -454,10 +454,10 @@
         size = 7375
     }
 
-    farmers = {
+    labourers = {
         culture = croat
         religion = catholic
-        size = 28536
+        size = 7000
     }
 
     clergymen = {
@@ -469,7 +469,7 @@
     artisans = {
         culture = serb
         religion = orthodox
-        size = 563
+        size = 8006
     }
 
     soldiers = {
@@ -478,10 +478,10 @@
         size = 1005
     }
 
-    farmers = {
+    labourers = {
         culture = serb
         religion = orthodox
-        size = 10443
+        size = 3000
     }
 
     capitalists = {
@@ -493,50 +493,27 @@
     craftsmen = {
         culture = croat
         religion = catholic
-        size = 843
-    }
-
-    craftsmen = {
-        culture = croat
-        religion = catholic
-        size = 15084
+        size = 15927
     }
 
     craftsmen = {
         culture = serb
         religion = orthodox
-        size = 298
-    }
-
-    craftsmen = {
-        culture = serb
-        religion = orthodox
-        size = 5520
+        size = 5818
     }
 
     clerks = {
         culture = croat
         religion = catholic
-        size = 94
-    }
-
-    clerks = {
-        culture = croat
-        religion = catholic
-        size = 1676
+        size = 1770
     }
 
     clerks = {
         culture = serb
         religion = orthodox
-        size = 33
+        size = 646
     }
 
-    clerks = {
-        culture = serb
-        religion = orthodox
-        size = 613
-    }
 }
 #Senj (96000/24000 POPS)
 774 = {
@@ -555,7 +532,7 @@
     artisans = {
         culture = croat
         religion = catholic
-        size = 610
+        size = 14640
     }
 
     soldiers = {
@@ -564,10 +541,10 @@
         size = 837
     }
 
-    farmers = {
+    labourers = {
         culture = croat
         religion = catholic
-        size = 10818
+        size = 2500
     }
 
     clergymen = {
@@ -579,7 +556,7 @@
     artisans = {
         culture = serb
         religion = orthodox
-        size = 516
+        size = 12554
     }
 
     soldiers = {
@@ -588,64 +565,27 @@
         size = 837
     }
 
-    farmers = {
+    labourers = {
         culture = serb
         religion = orthodox
-        size = 9598
+        size = 2500
     }
 
+    craftsmen = {
+        culture = croat
+        religion = catholic
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = serb
+        religion = orthodox
+        size = 1000
+    }
     capitalists = {
         culture = croat
         religion = catholic
         size = 102
-    }
-
-    farmers = {
-        culture = croat
-        religion = catholic
-        size = 322
-    }
-
-    farmers = {
-        culture = croat
-        religion = catholic
-        size = 5719
-    }
-
-    farmers = {
-        culture = serb
-        religion = orthodox
-        size = 273
-    }
-
-    farmers = {
-        culture = serb
-        religion = orthodox
-        size = 5073
-    }
-
-    farmers = {
-        culture = croat
-        religion = catholic
-        size = 36
-    }
-
-    farmers = {
-        culture = croat
-        religion = catholic
-        size = 635
-    }
-
-    farmers = {
-        culture = serb
-        religion = orthodox
-        size = 30
-    }
-
-    farmers = {
-        culture = serb
-        religion = orthodox
-        size = 564
     }
 }
 #Varadzin (68000/17000 POPS)

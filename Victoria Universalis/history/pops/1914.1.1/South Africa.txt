@@ -661,25 +661,19 @@
     clergymen = {
         culture = boer
         religion = protestant
-        size = 187
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 351
+        size = 235
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 58
+        size = 70
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 2395
+        size = 3836
     }
 
     clergymen = {
@@ -688,19 +682,13 @@
         size = 374
     }
 
-    craftsmen = {
-        culture = british
-        religion = protestant
-        size = 351
-    }
-
     soldiers = {
         culture = british
         religion = protestant
         size = 58
     }
 
-    farmers = {
+    labourers = {
         culture = british
         religion = protestant
         size = 2738
@@ -709,133 +697,43 @@
     clergymen = {
         culture = khoisan
         religion = protestant
-        size = 210
+        size = 359
     }
 
-    craftsmen = {
+    artisans = {
         culture = khoisan
         religion = protestant
-        size = 93
+        size = 2341
     }
 
     soldiers = {
         culture = khoisan
         religion = protestant
-        size = 46
+        size = 92
     }
 
-    farmers = {
+    labourers = {
         culture = khoisan
         religion = protestant
-        size = 3516
-    }
-
-    clergymen = {
-        culture = khoisan
-        religion = protestant
-        size = 149
-    }
-
-    craftsmen = {
-        culture = khoisan
-        religion = protestant
-        size = 187
-    }
-
-    soldiers = {
-        culture = khoisan
-        religion = protestant
-        size = 46
-    }
-
-    farmers = {
-        culture = khoisan
-        religion = protestant
-        size = 2251
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 51
+        size = 3426
     }
 
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 23
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 11
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 879
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 37
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 46
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 11
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 562
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 1290
+        size = 2486
     }
 
     craftsmen = {
         culture = british
         religion = protestant
-        size = 1474
+        size = 1825
     }
 
     craftsmen = {
         culture = khoisan
         religion = protestant
-        size = 1894
-    }
-
-    craftsmen = {
-        culture = khoisan
-        religion = protestant
-        size = 1212
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 473
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 303
+        size = 3386
     }
 }
 #Namaqualand Region (12000) #see Namibia.txt for balance of region
@@ -943,34 +841,22 @@
         size = 187
     }
 
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 351
-    }
-
     soldiers = {
         culture = boer
         religion = protestant
-        size = 58
+        size = 81
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 3726
+        size = 5186
     }
 
     clergymen = {
         culture = british
         religion = protestant
-        size = 112
-    }
-
-    craftsmen = {
-        culture = british
-        religion = protestant
-        size = 468
+        size = 188
     }
 
     soldiers = {
@@ -979,7 +865,7 @@
         size = 23
     }
 
-    farmers = {
+    labourers = {
         culture = british
         religion = protestant
         size = 1178
@@ -991,70 +877,40 @@
         size = 299
     }
 
-    craftsmen = {
-        culture = khoisan
-        religion = protestant
-        size = 187
-    }
-
     soldiers = {
         culture = khoisan
         religion = protestant
         size = 93
     }
 
-    farmers = {
+    artisans = {
         culture = khoisan
         religion = protestant
-        size = 5840
+        size = 3636
     }
 
-    clergymen = {
-        culture = boer
+    labourers = {
+        culture = khoisan
         religion = protestant
-        size = 74
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 46
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 23
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 1460
+        size = 2204
     }
 
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 2007
+        size = 3190
     }
 
     craftsmen = {
         culture = british
         religion = protestant
-        size = 635
+        size = 1103
     }
 
     craftsmen = {
         culture = khoisan
         religion = protestant
-        size = 3145
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 786
+        size = 3332
     }
 }
 #Calvinia (23300/5825 POPS)
@@ -1451,10 +1307,10 @@
         size = 299
     }
 
-    craftsmen = {
+    artisans = {
         culture = tswana
         religion = protestant
-        size = 374
+        size = 6078
     }
 
     soldiers = {
@@ -1463,10 +1319,10 @@
         size = 93
     }
 
-    farmers = {
+    labourers = {
         culture = tswana
         religion = protestant
-        size = 8704
+        size = 3000
     }
 
     aristocrats = {
@@ -1481,34 +1337,28 @@
         size = 74
     }
 
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 93
-    }
-
     soldiers = {
         culture = boer
         religion = protestant
         size = 23
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 2176
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = boer
+        religion = protestant
+        size = 269
     }
 
     capitalists = {
-        culture = tswana
-        religion = protestant
-        size = 5
-    }
-
-    capitalists = {
         culture = boer
         religion = protestant
-        size = 1
+        size = 6
     }
 }
 #Eastern Cape Region (232000)
@@ -1770,7 +1620,7 @@
     capitalists = {
         culture = boer
         religion = protestant
-        size = 0
+        size = 10
     }
 }
 #Graaf Reinet (36000/9000 POPS)
@@ -1781,22 +1631,16 @@
         size = 74
     }
 
-    craftsmen = {
-        culture = british
-        religion = protestant
-        size = 351
-    }
-
     soldiers = {
         culture = british
         religion = protestant
         size = 35
     }
 
-    farmers = {
+    labourers = {
         culture = british
         religion = protestant
-        size = 13422
+        size = 2422
     }
 
     aristocrats = {
@@ -1811,22 +1655,16 @@
         size = 149
     }
 
-    craftsmen = {
-        culture = xhosa
-        religion = protestant
-        size = 187
-    }
-
     soldiers = {
         culture = xhosa
         religion = protestant
         size = 93
     }
 
-    farmers = {
+    labourers = {
         culture = xhosa
         religion = protestant
-        size = 4623
+        size = 2623
     }
 
     aristocrats = {
@@ -1841,19 +1679,13 @@
         size = 88
     }
 
-    craftsmen = {
-        culture = nguni
-        religion = protestant
-        size = 187
-    }
-
     soldiers = {
         culture = nguni
         religion = protestant
         size = 46
     }
 
-    farmers = {
+    labourers = {
         culture = nguni
         religion = protestant
         size = 1034
@@ -1865,172 +1697,76 @@
         size = 149
     }
 
-    craftsmen = {
-        culture = khoisan
-        religion = protestant
-        size = 187
-    }
-
     soldiers = {
         culture = khoisan
         religion = protestant
         size = 46
     }
 
-    farmers = {
+    labourers = {
         culture = khoisan
         religion = protestant
-        size = 4685
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 37
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 46
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 11
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 1171
+        size = 2685
     }
 
     aristocrats = {
         culture = boer
         religion = protestant
-        size = 10
+        size = 14
     }
 
     clergymen = {
         culture = boer
         religion = protestant
-        size = 37
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 46
+        size = 87
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 23
+        size = 45
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 1156
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 4
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 23
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 46
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 11
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 258
+        size = 1236
     }
 
     craftsmen = {
         culture = british
         religion = protestant
-        size = 7228
+        size = 19576
     }
 
     craftsmen = {
         culture = xhosa
         religion = protestant
-        size = 2490
+        size = 4677
     }
 
     craftsmen = {
         culture = nguni
         religion = protestant
-        size = 557
+        size = 744
     }
 
     craftsmen = {
         culture = khoisan
         religion = protestant
-        size = 2522
+        size = 4709
     }
 
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 630
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 622
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 139
-    }
-
-    capitalists = {
-        culture = xhosa
-        religion = protestant
-        size = 2
-    }
-
-    capitalists = {
-        culture = nguni
-        religion = protestant
-        size = 1
+        size = 2892
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 1
-    }
-
-    capitalists = {
-        culture = boer
-        religion = protestant
-        size = 0
+        size = 7
     }
 }
 #uncolonized/ruled by the Xhosa 1836
@@ -2425,28 +2161,28 @@
 }
 #Winburg (102000/25500 POPS)
 2102 = {
+    aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 188
+    }
+
     clergymen = {
         culture = boer
         religion = protestant
-        size = 37
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 58
+        size = 447
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 2574
+        size = 2690
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 982
+        size = 2000
     }
 
     aristocrats = {
@@ -2461,10 +2197,10 @@
         size = 1347
     }
 
-    craftsmen = {
+    artisans = {
         culture = sotho
         religion = protestant
-        size = 2059
+        size = 27117
     }
 
     soldiers = {
@@ -2473,10 +2209,10 @@
         size = 374
     }
 
-    farmers = {
+    labourers = {
         culture = sotho
         religion = protestant
-        size = 34117
+        size = 7000
     }
 
     aristocrats = {
@@ -2491,132 +2227,72 @@
         size = 299
     }
 
+    artisans = {
+        culture = nguni
+        religion = protestant
+        size = 7564
+    }
+
+    soldiers = {
+        culture = nguni
+        religion = protestant
+        size = 93
+    }
+
+    labourers = {
+        culture = nguni
+        religion = protestant
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = boer
+        religion = protestant
+        size = 10283
+    }
+
+    craftsmen = {
+        culture = sotho
+        religion = protestant
+        size = 2059
+    }
+
     craftsmen = {
         culture = nguni
         religion = protestant
         size = 468
     }
 
-    soldiers = {
-        culture = nguni
-        religion = protestant
-        size = 93
-    }
-
-    farmers = {
-        culture = nguni
-        religion = protestant
-        size = 8564
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 155
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 336
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 514
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 93
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 8529
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 33
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 74
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 117
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 23
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 2141
-    }
-
-    capitalists = {
-        culture = sotho
-        religion = protestant
-        size = 33
-    }
-
-    capitalists = {
-        culture = nguni
-        religion = protestant
-        size = 7
-    }
-
     capitalists = {
         culture = boer
         religion = protestant
-        size = 8
-    }
-
-    capitalists = {
-        culture = boer
-        religion = protestant
-        size = 2
+        size = 50
     }
 }
 #Philippolis (85000/21250 POPS)
 2103 = {
+    aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 178
+    }
+
     clergymen = {
         culture = boer
         religion = protestant
-        size = 74
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 117
+        size = 373
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 210
+        size = 303
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 1404
+        size = 2500
     }
 
     aristocrats = {
@@ -2631,64 +2307,40 @@
         size = 1198
     }
 
-    craftsmen = {
-        culture = sotho
-        religion = protestant
-        size = 1918
-    }
-
     soldiers = {
         culture = sotho
         religion = protestant
         size = 374
     }
 
-    farmers = {
+    artisans = {
         culture = sotho
         religion = protestant
-        size = 34959
+        size = 32459
     }
 
-    aristocrats = {
-        culture = boer
+    labourers = {
+        culture = sotho
         religion = protestant
-        size = 178
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 299
+        size = 2500
     }
 
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 479
+        size = 8239
     }
 
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 93
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 8739
-    }
-
-    capitalists = {
+    craftsmen = {
         culture = sotho
         religion = protestant
-        size = 37
+        size = 1918
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 9
+        size = 46
     }
 }
 #Thaba Bosiu (128000/32000 POPS) #now Lesotho
@@ -2717,10 +2369,16 @@
         size = 1946
     }
 
-    craftsmen = {
+    artisans = {
         culture = sotho
         religion = protestant
-        size = 2995
+        size = 26241
+    }
+
+    artisans = {
+        culture = sotho
+        religion = protestant
+        size = 20000
     }
 
     soldiers = {
@@ -2729,10 +2387,10 @@
         size = 608
     }
 
-    farmers = {
+    labourers = {
         culture = sotho
         religion = protestant
-        size = 54241
+        size = 8000
     }
 
     aristocrats = {
@@ -2753,34 +2411,34 @@
         size = 486
     }
 
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 748
-    }
-
     soldiers = {
         culture = boer
         religion = protestant
         size = 152
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 13560
+        size = 2000
     }
 
-    capitalists = {
+    craftsmen = {
         culture = sotho
         religion = protestant
-        size = 59
+        size = 2995
+    }
+
+    craftsmen = {
+        culture = boer
+        religion = protestant
+        size = 12308
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 15
+        size = 74
     }
 }
 #Transvaal Region (349000)
@@ -2916,28 +2574,28 @@
 }
 #Johannesburg (102400/25600 POPS)
 2106 = {
+    aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 188
+    }
+
     clergymen = {
         culture = boer
         religion = protestant
-        size = 74
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 58
+        size = 448
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 152
+        size = 269
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 760
+        size = 4000
     }
 
     aristocrats = {
@@ -2952,10 +2610,10 @@
         size = 1497
     }
 
-    craftsmen = {
+    artisans = {
         culture = sotho
         religion = protestant
-        size = 2340
+        size = 24052
     }
 
     soldiers = {
@@ -2964,46 +2622,10 @@
         size = 468
     }
 
-    farmers = {
+    labourers = {
         culture = sotho
         religion = protestant
-        size = 27712
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 188
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 374
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 585
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 117
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 6928
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 410
+        size = 6000
     }
 
     craftsmen = {
@@ -3015,46 +2637,40 @@
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 3730
-    }
-
-    capitalists = {
-        culture = sotho
-        religion = protestant
-        size = 40
+        size = 8471
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 10
+        size = 50
     }
 }
 #uncolonized in 1836/dominated by the Ndebele
 #Klerksdorp (109000/27250 POPS)
 2107 = {
+    aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 222
+    }
+
     clergymen = {
         culture = boer
         religion = protestant
-        size = 37
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 35
+        size = 448
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 58
+        size = 186
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 311
+        size = 2000
     }
 
     aristocrats = {
@@ -3069,10 +2685,10 @@
         size = 748
     }
 
-    craftsmen = {
+    artisans = {
         culture = tswana
         religion = protestant
-        size = 1123
+        size = 15500
     }
 
     soldiers = {
@@ -3081,10 +2697,10 @@
         size = 234
     }
 
-    farmers = {
+    labourers = {
         culture = tswana
         religion = protestant
-        size = 19377
+        size = 5000
     }
 
     aristocrats = {
@@ -3099,10 +2715,10 @@
         size = 898
     }
 
-    craftsmen = {
+    artisans = {
         culture = nguni
         religion = protestant
-        size = 1123
+        size = 8861
     }
 
     soldiers = {
@@ -3111,76 +2727,16 @@
         size = 280
     }
 
-    farmers = {
+    labourers = {
         culture = nguni
         religion = protestant
-        size = 10738
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 100
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 187
+        size = 3000
     }
 
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 280
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 58
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 4844
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 122
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 224
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 280
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 70
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 2684
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 168
+        size = 10646
     }
 
     craftsmen = {
@@ -3195,40 +2751,10 @@
         size = 5782
     }
 
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 2608
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 1446
-    }
-
-    capitalists = {
-        culture = tswana
-        religion = protestant
-        size = 21
-    }
-
-    capitalists = {
-        culture = nguni
-        religion = protestant
-        size = 26
-    }
-
     capitalists = {
         culture = boer
         religion = protestant
-        size = 5
-    }
-
-    capitalists = {
-        culture = boer
-        religion = protestant
-        size = 6
+        size = 49
     }
 }
 #Limpopo Region (129000)
@@ -3236,28 +2762,28 @@
 #Boer POPs represent post-Great Trek migration
 #Mosega (48200/12050 POPS)
 2108 = {
+    aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 88
+    }
+
     clergymen = {
         culture = boer
         religion = protestant
-        size = 7
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 7
+        size = 193
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 14
+        size = 71
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 60
+        size = 1000
     }
 
     aristocrats = {
@@ -3272,10 +2798,10 @@
         size = 299
     }
 
-    craftsmen = {
+    artisans = {
         culture = nguni
         religion = protestant
-        size = 374
+        size = 1568
     }
 
     soldiers = {
@@ -3284,10 +2810,10 @@
         size = 93
     }
 
-    farmers = {
+    labourers = {
         culture = nguni
         religion = protestant
-        size = 3194
+        size = 2000
     }
 
     aristocrats = {
@@ -3302,10 +2828,10 @@
         size = 449
     }
 
-    craftsmen = {
+    artisans = {
         culture = sotho
         religion = protestant
-        size = 655
+        size = 3846
     }
 
     soldiers = {
@@ -3314,76 +2840,16 @@
         size = 140
     }
 
-    farmers = {
+    labourers = {
         culture = sotho
         religion = protestant
-        size = 10191
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 55
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 112
+        size = 7000
     }
 
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 163
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 35
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 2547
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 33
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 74
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 93
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 23
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 798
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 33
+        size = 4503
     }
 
     craftsmen = {
@@ -3398,67 +2864,37 @@
         size = 5487
     }
 
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 1372
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 430
-    }
-
-    capitalists = {
-        culture = nguni
-        religion = protestant
-        size = 7
-    }
-
-    capitalists = {
-        culture = sotho
-        religion = protestant
-        size = 12
-    }
-
     capitalists = {
         culture = boer
         religion = protestant
-        size = 3
-    }
-
-    capitalists = {
-        culture = boer
-        religion = protestant
-        size = 2
+        size = 24
     }
 }
 #uncolonized in 1836/dominated by the Zulu
 #Lydenburg (52600/13150 POPS)
 2109 = {
+    aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 100
+    }
+
     clergymen = {
         culture = boer
         religion = protestant
-        size = 21
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 28
+        size = 208
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 35
+        size = 105
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 280
+        size = 2000
     }
 
     aristocrats = {
@@ -3476,7 +2912,7 @@
     craftsmen = {
         culture = nguni
         religion = protestant
-        size = 1216
+        size = 14173
     }
 
     soldiers = {
@@ -3485,52 +2921,28 @@
         size = 280
     }
 
-    farmers = {
+    labourers = {
         culture = nguni
         religion = protestant
-        size = 22183
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 100
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 187
+        size = 8000
     }
 
     craftsmen = {
         culture = boer
         religion = protestant
-        size = 304
+        size = 4157
     }
 
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 70
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 5545
-    }
-
-    capitalists = {
+    craftsmen = {
         culture = nguni
         religion = protestant
-        size = 21
+        size = 1216
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 5
+        size = 26
     }
 }
 #uncolonized in 1836/dominated by the Gaza Nguni
@@ -3909,10 +3321,16 @@
         size = 2396
     }
 
-    craftsmen = {
+    artisans = {
         culture = zulu
         religion = protestant
-        size = 3650
+        size = 26100
+    }
+
+    artisans = {
+        culture = zulu
+        religion = protestant
+        size = 20000
     }
 
     soldiers = {
@@ -3921,10 +3339,10 @@
         size = 13104
     }
 
-    farmers = {
+    labourers = {
         culture = zulu
         religion = protestant
-        size = 54100
+        size = 8000
     }
 
     aristocrats = {
@@ -3939,34 +3357,34 @@
         size = 599
     }
 
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 912
-    }
-
     soldiers = {
         culture = boer
         religion = protestant
         size = 3276
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 13525
+        size = 2000
     }
 
-    capitalists = {
+    craftsmen = {
         culture = zulu
         religion = protestant
-        size = 70
+        size = 3650
+    }
+
+    craftsmen = {
+        culture = boer
+        religion = protestant
+        size = 12437
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 18
+        size = 88
     }
 }
 #Ulundi (320000/80000 POPS)
@@ -4081,10 +3499,10 @@
         size = 449
     }
 
-    craftsmen = {
+    artisans = {
         culture = zulu
         religion = protestant
-        size = 655
+        size = 8934
     }
 
     soldiers = {
@@ -4093,10 +3511,10 @@
         size = 140
     }
 
-    farmers = {
+    labourers = {
         culture = zulu
         religion = protestant
-        size = 11934
+        size = 3000
     }
 
     aristocrats = {
@@ -4111,10 +3529,10 @@
         size = 748
     }
 
-    craftsmen = {
+    artisans = {
         culture = nguni
         religion = protestant
-        size = 1216
+        size = 17183
     }
 
     soldiers = {
@@ -4123,93 +3541,57 @@
         size = 234
     }
 
-    farmers = {
+    labourers = {
         culture = nguni
         religion = protestant
-        size = 22183
+        size = 5000
     }
 
     aristocrats = {
         culture = boer
         religion = protestant
-        size = 55
+        size = 166
     }
 
     clergymen = {
         culture = boer
         religion = protestant
-        size = 112
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 163
+        size = 299
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 35
+        size = 93
     }
 
-    farmers = {
+    labourers = {
         culture = boer
         religion = protestant
-        size = 2983
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 111
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 187
+        size = 2000
     }
 
     craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 304
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 58
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 5545
-    }
-
-    capitalists = {
         culture = zulu
         religion = protestant
-        size = 12
+        size = 655
     }
 
-    capitalists = {
+    craftsmen = {
         culture = nguni
         religion = protestant
-        size = 23
+        size = 1216
+    }
+
+    craftsmen = {
+        culture = boer
+        religion = protestant
+        size = 6995
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 3
-    }
-
-    capitalists = {
-        culture = boer
-        religion = protestant
-        size = 6
+        size = 44
     }
 }

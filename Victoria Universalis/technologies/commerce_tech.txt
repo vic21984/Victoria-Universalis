@@ -67,7 +67,7 @@ business_banks = {
 	year = 1850
 	cost = 10800
 
-	tax_eff = 4
+	tax_eff = 3
 	
 	ai_chance = {
 		factor = 1.1
@@ -98,7 +98,7 @@ investment_banks = {
 	year = 1870
 	cost = 14400
 
-	tax_eff = 3
+	tax_eff = 2
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -352,7 +352,7 @@ fiat_based_monetary_system = {
 
 	administrative_efficiency = 0.05
 	rgo_goods_output = {
-		precious_metal = 2
+		precious_metal = 1.5
 	}
 	ai_chance = {
 		factor = 1.1
@@ -448,7 +448,7 @@ freedom_of_trade = {
 	activate_building = luxury_clothes_factory  
 
 	influence = 0.1
-	farm_rgo_eff = 0.2
+	farm_rgo_eff = 0.1
 	ai_chance = {
 		factor = 11
 		modifier = {
@@ -535,8 +535,6 @@ market_regulations = {
 	cost = 14400
 
 	influence = 0.2
-	farm_rgo_size = 0.1
-	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -564,8 +562,6 @@ economic_responsibility = {
 	cost = 18000
 
 	influence = 0.2
-	farm_rgo_size = 0.1
-	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -593,8 +589,8 @@ government_interventionism = {
 	cost = 21600
 
 	influence = 0.2
-	farm_rgo_size = 0.1
-	mine_rgo_size = 0.1
+	farm_rgo_size = 0.15
+	mine_rgo_size = 0.15
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -621,8 +617,8 @@ keynesianism = {
 	cost = 21600
 
 	influence = 0.2
-	farm_rgo_size = 0.5
-	mine_rgo_size = 0.5
+	farm_rgo_size = 0.35
+	mine_rgo_size = 0.35
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -651,8 +647,7 @@ guild_based_production = {
 	year = 1836
 	cost = 3600
 	activate_building = canned_food_factory 
-	factory_output = 0.01
-	factory_input = -0.01
+	factory_input = -0.02
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -686,8 +681,7 @@ organized_factories = {
 	year = 1836
 	cost = 7200
 
-	factory_output = 0.01
-	factory_input = -0.01
+	factory_input = -0.02
 		ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -725,8 +719,7 @@ scientific_management = {
 	year = 1836
 	cost = 10800
 
-	factory_output = 0.01
-	factory_input = -0.01
+	factory_input = -0.02
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -764,8 +757,7 @@ time_saving_measures = {
 	year = 1850
 	cost = 14400
 
-	factory_output = 0.01
-	factory_input = -0.01
+	factory_input = -0.02
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -791,8 +783,7 @@ management_strategy = {
 	year = 1870
 	cost = 18000
 
-	factory_output = 0.01
-	factory_input = -0.01
+	factory_input = -0.02
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -818,8 +809,7 @@ organizational_development = {
 	year = 1900
 	cost = 21600
 
-	factory_output = 0.01
-	factory_input = -0.01
+	factory_input = -0.02
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -845,8 +835,8 @@ modern_business_management = {
 	year = 1920
 	cost = 21600
 
-	factory_output = 0.03
-	factory_input = -0.01
+	factory_output = 0.02
+	factory_input = -0.02
 	ai_chance = {
 		factor = 1.05
 		modifier = {

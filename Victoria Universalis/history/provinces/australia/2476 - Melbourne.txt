@@ -11,7 +11,7 @@ colonial = 0
 }
 1914.1.1 = {
 	state_building = {
-		level = 2
+		level = 4
 		building = cement_factory
 		upgrade = yes
 	}
@@ -28,6 +28,16 @@ colonial = 0
 	state_building = {
 		level = 2
 		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = artillery_factory
 		upgrade = yes
 	}
 	naval_base = 5

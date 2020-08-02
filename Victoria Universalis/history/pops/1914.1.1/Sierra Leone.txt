@@ -24,7 +24,7 @@
 	artisans = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 250
+		size = 4450
 	}
 
 	soldiers = {
@@ -33,10 +33,10 @@
 		size = 100
 	}
 
-	farmers = {
+	labourers = {
 		culture = afro_caribbean
 		religion = protestant
-		size = 4700
+		size = 500
 	}
 
 	aristocrats = {
@@ -60,7 +60,7 @@
 	artisans = {
 		culture = mande
 		religion = sunni
-		size = 1650
+		size = 29775
 	}
 
 	soldiers = {
@@ -69,10 +69,10 @@
 		size = 350
 	}
 
-	farmers = {
+	labourers = {
 		culture = mande
 		religion = sunni
-		size = 32125
+		size = 4000
 	}
 
 	aristocrats = {
@@ -96,7 +96,13 @@
 	artisans = {
 		culture = western_nigritic
 		religion = sunni
-		size = 2300
+		size = 30000
+	}
+
+	artisans = {
+		culture = western_nigritic
+		religion = sunni
+		size = 15575
 	}
 
 	soldiers = {
@@ -105,10 +111,10 @@
 		size = 450
 	}
 
-	farmers = {
+	labourers = {
 		culture = western_nigritic
 		religion = sunni
-		size = 48275
+		size = 5000
 	}
 
 	aristocrats = {
@@ -126,7 +132,7 @@
 	artisans = {
 		culture = western_nigritic
 		religion = animist
-		size = 700
+		size = 7000
 	}
 
 	soldiers = {
@@ -135,10 +141,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = western_nigritic
 		religion = animist
-		size = 6800
+		size = 500
 	}
 }
 #uncolonized in 1836

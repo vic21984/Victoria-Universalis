@@ -25,8 +25,7 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
-
-school_reforms = no_schools
+school_reforms = good_schools
 
 ruling_party = KGR_conservative
 upper_house = {
@@ -286,7 +285,7 @@ colonial_policy = no_colonies
 	safety_regulations=no_safety
 	unemployment_subsidies=no_subsidies
 	pensions=no_pensions
-	health_care=good_health_care
+	health_care=universal_health_care
 	school_reforms=acceptable_schools
 	penal_system=capital_punishment
 	child_labor=child_labor_legal

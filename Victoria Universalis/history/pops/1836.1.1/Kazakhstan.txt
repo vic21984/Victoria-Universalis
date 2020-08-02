@@ -26,7 +26,7 @@
 		size = 15
 	}
 
-	farmers = {
+	labourers = {
 		culture = russian
 		religion = orthodox
 		size = 665
@@ -56,7 +56,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
 		size = 3625
@@ -201,7 +201,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 650
+		size = 3525
 	}
 
 	soldiers = {
@@ -210,10 +210,10 @@
 		size = 125
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 12875
+		size = 10000
 	}
 }
 #Kokshetau (96000/24000 POPS)
@@ -233,19 +233,13 @@
 	artisans = {
 		culture = russian
 		religion = orthodox
-		size = 150
+		size = 2850
 	}
 
 	soldiers = {
 		culture = russian
 		religion = orthodox
 		size = 25
-	}
-
-	farmers = {
-		culture = russian
-		religion = orthodox
-		size = 2700
 	}
 
 	aristocrats = {
@@ -263,7 +257,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 1100
+		size = 10150
 	}
 
 	soldiers = {
@@ -272,10 +266,10 @@
 		size = 225
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 19050
+		size = 10000
 	}
 }
 #Yasi (80000/20000 POPS)
@@ -327,7 +321,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 950
+		size = 8275
 	}
 
 	soldiers = {
@@ -336,10 +330,10 @@
 		size = 200
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 17325
+		size = 10000
 	}
 }
 #Aktash (68000/17000 POPS)
@@ -359,7 +353,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 850
+		size = 6325
 	}
 
 	soldiers = {
@@ -368,10 +362,10 @@
 		size = 175
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 15475
+		size = 10000
 	}
 }
 #Semireche Region (276000) #see Kirghizstan.txt for balance of region 
@@ -488,7 +482,7 @@
 	artisans = {
 		culture = kirgiz
 		religion = sunni
-		size = 300
+		size = 3275
 	}
 
 	soldiers = {
@@ -497,10 +491,10 @@
 		size = 75
 	}
 
-	farmers = {
+	labourers = {
 		culture = kirgiz
 		religion = sunni
-		size = 5475
+		size = 2500
 	}
 
 	aristocrats = {
@@ -518,7 +512,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 800
+		size = 10375
 	}
 
 	soldiers = {
@@ -527,10 +521,10 @@
 		size = 175
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 14575
+		size = 2500
 	}
 }
 #Khwarazm Region (168000) #see Uzbekistan.txt and Turkmenistan.txt for balance of region 
@@ -552,7 +546,7 @@
 	artisans = {
 		culture = uzbek
 		religion = sunni
-		size = 700
+		size = 8475
 	}
 
 	soldiers = {
@@ -561,10 +555,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = uzbek
 		religion = sunni
-		size = 12775
+		size = 5000
 	}
 
 	aristocrats = {
@@ -582,7 +576,7 @@
 	artisans = {
 		culture = kazak
 		religion = sunni
-		size = 600
+		size = 7500
 	}
 
 	soldiers = {
@@ -591,10 +585,10 @@
 		size = 125
 	}
 
-	farmers = {
+	labourers = {
 		culture = kazak
 		religion = sunni
-		size = 11900
+		size = 5000
 	}
 }
 #Aqtau (32000/8000 POPS)

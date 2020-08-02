@@ -326,7 +326,7 @@
     aristocrats = {
         culture = swiss
         religion = protestant
-        size = 550
+        size = 250
     }
 
     officers = {
@@ -347,22 +347,22 @@
         size = 4700
     }
 
-    farmers = {
+    artisans = {
         culture = swiss
         religion = protestant
-        size = 141
+        size = 30941
     }
 
-    farmers = {
+    artisans = {
         culture = swiss
         religion = protestant
-        size = 2397
+        size = 30000
     }
 
-    farmers = {
+    artisans = {
         culture = swiss
         religion = protestant
-        size = 7191
+        size = 30000
     }
 
     soldiers = {
@@ -371,47 +371,30 @@
         size = 3432
     }
 
-    farmers = {
+    labourers = {
         culture = swiss
         religion = protestant
-        size = 55695
+        size = 5000
     }
 
-    capitalists = {
+    craftsmen = {
         culture = swiss
         religion = protestant
-        size = 296
+        size = 60000
     }
 
-    farmers = {
+    clerks = {
         culture = swiss
         religion = protestant
-        size = 63121
+        size = 6000
     }
 
-    farmers = {
+    aristocrats = {
         culture = swiss
         religion = protestant
-        size = 423
+        size = 200
     }
 
-    farmers = {
-        culture = swiss
-        religion = protestant
-        size = 1269
-    }
-
-    farmers = {
-        culture = swiss
-        religion = protestant
-        size = 11139
-    }
-
-    farmers = {
-        culture = swiss
-        religion = protestant
-        size = 18565
-    }
 }
 #Lucerne (204000/51000 POPS)
 606 = {
@@ -636,10 +619,10 @@
         size = 940
     }
 
-    farmers = {
+    artisans = {
         culture = swiss
         religion = protestant
-        size = 4794
+        size = 10115
     }
 
     soldiers = {
@@ -648,40 +631,28 @@
         size = 468
     }
 
-    farmers = {
+    labourers = {
         culture = swiss
         religion = protestant
-        size = 7490
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = swiss
+        religion = protestant
+        size = 5000
+    }
+
+    clerks = {
+        culture = swiss
+        religion = protestant
+        size = 500
     }
 
     capitalists = {
         culture = swiss
         religion = protestant
         size = 66
-    }
-
-    farmers = {
-        culture = swiss
-        religion = protestant
-        size = 8490
-    }
-
-    farmers = {
-        culture = swiss
-        religion = protestant
-        size = 846
-    }
-
-    farmers = {
-        culture = swiss
-        religion = protestant
-        size = 1498
-    }
-
-    farmers = {
-        culture = swiss
-        religion = protestant
-        size = 2497
     }
 }
 #Sitten (72000/18000) POPS
@@ -698,10 +669,10 @@
         size = 1316
     }
 
-    farmers = {
+    artisans = {
         culture = swiss
         religion = catholic
-        size = 1758
+        size = 13837
     }
 
     soldiers = {
@@ -710,10 +681,10 @@
         size = 3432
     }
 
-    farmers = {
+    labourers = {
         culture = swiss
         religion = catholic
-        size = 11050
+        size = 10000
     }
 
     capitalists = {
@@ -722,29 +693,18 @@
         size = 99
     }
 
-    farmers = {
+    craftsmen = {
         culture = swiss
         religion = catholic
-        size = 12525
+        size = 7000
     }
 
-    farmers = {
+    clerks = {
         culture = swiss
         religion = catholic
-        size = 310
+        size = 700
     }
 
-    farmers = {
-        culture = swiss
-        religion = catholic
-        size = 2210
-    }
-
-    farmers = {
-        culture = swiss
-        religion = catholic
-        size = 3684
-    }
 }
 #Ticino & Grisons Region (188000)
 #Lugano (108000/27000 POPS)

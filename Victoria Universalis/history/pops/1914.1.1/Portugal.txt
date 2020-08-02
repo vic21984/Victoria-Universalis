@@ -917,7 +917,7 @@
     artisans = {
         culture = portuguese
         religion = catholic
-        size = 1756
+        size = 27782
     }
 
     soldiers = {
@@ -926,100 +926,28 @@
         size = 6940
     }
 
-    farmers = {
+    labourers = {
         culture = portuguese
         religion = catholic
-        size = 13371
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = portuguese
+        religion = catholic
+        size = 4000
+    }
+
+    clerks = {
+        culture = portuguese
+        religion = catholic
+        size = 400
     }
 
     capitalists = {
         culture = portuguese
         religion = catholic
         size = 90
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 1302
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 9919
-    }
-
-    artisans = {
-        culture = portuguese
-        religion = catholic
-        size = 945
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 7197
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 441
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 3383
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 237
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 1821
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 136
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 1054
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 46
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 359
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 24
-    }
-
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 191
     }
 }
 #Alentejo-Algarve Region (372000)
@@ -1174,7 +1102,7 @@
     artisans = {
         culture = portuguese
         religion = catholic
-        size = 1818
+        size = 25166
     }
 
     soldiers = {
@@ -1183,10 +1111,22 @@
         size = 727
     }
 
-    farmers = {
+    labourers = {
         culture = portuguese
         religion = catholic
-        size = 31648
+        size = 5000
+    }
+
+    craftsmen = {
+        culture = portuguese
+        religion = catholic
+        size = 3000
+    }
+
+    clerks = {
+        culture = portuguese
+        religion = catholic
+        size = 300
     }
 
     capitalists = {

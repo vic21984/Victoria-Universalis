@@ -26,7 +26,7 @@ safety_regulations = no_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions 
-school_reforms = no_schools
+school_reforms = low_schools
 
 ruling_party = POR_liberal
 last_election = 1834.1.1
@@ -296,7 +296,7 @@ colonial_policy = no_colonies
 	safety_regulations=trinket_safety
 	unemployment_subsidies=no_subsidies
 	pensions=trinket_pensions
-	health_care=good_health_care
+	health_care=universal_health_care
 	school_reforms=low_schools
 	penal_system=capital_punishment
 	child_labor=child_labor_restricted
@@ -312,6 +312,6 @@ colonial_policy = no_colonies
 	citizens_rights=culture_voting_only
 	debt_law=bankruptcy
 	border_policy=open_borders
-	colonial_policy=exploitation
+	colonial_policy=indirect_rule
 	centralization=unitary
 }

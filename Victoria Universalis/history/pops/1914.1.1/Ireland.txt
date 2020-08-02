@@ -674,30 +674,54 @@
         culture = irish
         religion = catholic
         size = 345
-    }
+	}
 
     clergymen = {
         culture = irish
         religion = catholic
         size = 4140
-    }
+	}
 
     artisans = {
         culture = irish
         religion = catholic
-        size = 10000
-    }
+        size = 28905
+	}
+
+    artisans = {
+        culture = irish
+        religion = catholic
+        size = 20000
+	}
+
+    artisans = {
+        culture = irish
+        religion = catholic
+        size = 20000
+	}
 
     soldiers = {
         culture = irish
         religion = catholic
         size = 1518
-    }
+	}
 
-    farmers = {
+    labourers = {
         culture = irish
         religion = catholic
-        size = 90905
+        size = 10000
+	}
+
+    craftsmen = {
+        culture = irish
+        religion = catholic
+        size = 20000
+	}
+
+    clerks = {
+        culture = irish
+        religion = catholic
+        size = 2000
     }
 
 }
@@ -979,7 +1003,7 @@
         size = 1518
     }
 
-    labourers = {
+    farmers = {
         culture = irish
         religion = catholic
         size = 73276

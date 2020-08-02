@@ -17,7 +17,7 @@
 	artisans = {
 		culture = shona
 		religion = animist
-		size = 750
+		size = 6225
 	}
 
 	soldiers = {
@@ -26,10 +26,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = shona
 		religion = animist
-		size = 13675
+		size = 8200
 	}
 
 	aristocrats = {
@@ -56,7 +56,7 @@
 		size = 25
 	}
 
-	farmers = {
+	labourers = {
 		culture = sena
 		religion = animist
 		size = 1800
@@ -279,7 +279,7 @@
 	artisans = {
 		culture = nguni
 		religion = animist
-		size = 1200
+		size = 27200
 	}
 
 	soldiers = {
@@ -288,10 +288,10 @@
 		size = 8050
 	}
 
-	farmers = {
+	labourers = {
 		culture = nguni
 		religion = animist
-		size = 29000
+		size = 3000
 	}
 
 	aristocrats = {
@@ -309,7 +309,7 @@
 	artisans = {
 		culture = shona
 		religion = animist
-		size = 300
+		size = 4700
 	}
 
 	soldiers = {
@@ -318,16 +318,16 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = shona
 		religion = animist
-		size = 5400
+		size = 1000
 	}
 
 	artisans = {
 		culture = sotho
 		religion = animist
-		size = 200
+		size = 5850
 	}
 
 	soldiers = {
@@ -336,10 +336,10 @@
 		size = 50
 	}
 
-	farmers = {
+	labourers = {
 		culture = sotho
 		religion = animist
-		size = 6650
+		size = 1000
 	}
 }
 #Hwange (96000/24000 POPS)
@@ -451,19 +451,13 @@
 	artisans = {
 		culture = shona
 		religion = animist
-		size = 100
+		size = 1900
 	}
 
 	soldiers = {
 		culture = shona
 		religion = animist
 		size = 25
-	}
-
-	farmers = {
-		culture = shona
-		religion = animist
-		size = 1800
 	}
 
 	aristocrats = {
@@ -481,7 +475,7 @@
 	artisans = {
 		culture = southern_bantu
 		religion = animist
-		size = 800
+		size = 10375
 	}
 
 	soldiers = {
@@ -490,10 +484,10 @@
 		size = 175
 	}
 
-	farmers = {
+	labourers = {
 		culture = southern_bantu
 		religion = animist
-		size = 14575
+		size = 5000
 	}
 
 }

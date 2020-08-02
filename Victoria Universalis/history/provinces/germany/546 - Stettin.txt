@@ -14,7 +14,7 @@ naval_base = 1
 		upgrade = yes
 	}
 	state_building = {
-		level = 15
+		level = 10
 		building = winery
 		upgrade = yes
 	}
@@ -34,13 +34,13 @@ naval_base = 1
 		upgrade = yes
 	}
 	state_building = {
-		level = 15
+		level = 5
 		building = cement_factory
 		upgrade = yes
 	}
 	state_building = {
-		level = 10
-		building = cigarette_factory
+		level = 5
+		building = synthetic_oil_factory
 		upgrade = yes
 	}
 	naval_base = 6

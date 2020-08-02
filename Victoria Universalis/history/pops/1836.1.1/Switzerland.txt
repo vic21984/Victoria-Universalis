@@ -182,7 +182,7 @@
 	aristocrats = {
 		culture = swiss
 		religion = protestant
-		size = 450
+		size = 1800
 	}
 
 	officers = {
@@ -194,7 +194,7 @@
 	bureaucrats = {
 		culture = swiss
 		religion = protestant
-		size = 800
+		size = 2400
 	}
 
 	clergymen = {
@@ -218,7 +218,25 @@
 	artisans = {
 		culture = swiss
 		religion = protestant
-		size = 4500
+		size = 20000
+	}
+
+	artisans = {
+		culture = swiss
+		religion = protestant
+		size = 20000
+	}
+
+	artisans = {
+		culture = swiss
+		religion = protestant
+		size = 20000
+	}
+
+	artisans = {
+		culture = swiss
+		religion = protestant
+		size = 15550
 	}
 
 	soldiers = {
@@ -227,10 +245,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = swiss
 		religion = protestant
-		size = 79000
+		size = 5000
 	}
 }
 #Lucerne (204000/51000 POPS)
@@ -278,7 +296,7 @@
 	bureaucrats = {
 		culture = swiss
 		religion = protestant
-		size = 120
+		size = 1200
 	}
 
 	officers = {
@@ -296,7 +314,7 @@
 	artisans = {
 		culture = swiss
 		religion = protestant
-		size = 4000
+		size = 2920
 	}
 
 	soldiers = {
@@ -320,7 +338,7 @@
 	bureaucrats = {
 		culture = swiss
 		religion = catholic
-		size = 80
+		size = 800
 	}
 
 	officers = {
@@ -338,7 +356,7 @@
 	artisans = {
 		culture = swiss
 		religion = catholic
-		size = 3000
+		size = 2280
 	}
 
 	soldiers = {
@@ -370,7 +388,7 @@
 	artisans = {
 		culture = swiss
 		religion = protestant
-		size = 3000
+		size = 3625
 	}
 
 	soldiers = {
@@ -379,10 +397,10 @@
 		size = 150
 	}
 
-	farmers = {
+	labourers = {
 		culture = swiss
 		religion = protestant
-		size = 10625
+		size = 10000
 	}
 }
 #Sitten (72000/18000) POPS
@@ -402,7 +420,7 @@
 	artisans = {
 		culture = swiss
 		religion = catholic
-		size = 1100
+		size = 6775
 	}
 
 	soldiers = {
@@ -411,10 +429,10 @@
 		size = 1100
 	}
 
-	farmers = {
+	labourers = {
 		culture = swiss
 		religion = catholic
-		size = 15675
+		size = 10000
 	}
 
 }

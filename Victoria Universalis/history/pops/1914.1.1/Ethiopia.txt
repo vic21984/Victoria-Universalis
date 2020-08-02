@@ -1360,7 +1360,13 @@
     artisans = {
         culture = amhara
         religion = coptic
-        size = 1800
+        size = 21075
+    }
+
+    artisans = {
+        culture = amhara
+        religion = coptic
+        size = 20000
     }
 
     soldiers = {
@@ -1369,16 +1375,10 @@
         size = 1650
     }
 
-    farmers = {
+    labourers = {
         culture = amhara
         religion = coptic
-        size = 31275
-    }
-
-    slaves = {
-        culture = amhara
-        religion = coptic
-        size = 9000
+        size = 1000
     }
 
     aristocrats = {
@@ -1396,7 +1396,31 @@
     artisans = {
         culture = oromo
         religion = sunni
-        size = 5025
+        size = 38412
+    }
+
+    artisans = {
+        culture = oromo
+        religion = sunni
+        size = 30000
+    }
+
+    artisans = {
+        culture = oromo
+        religion = sunni
+        size = 30000
+    }
+
+    artisans = {
+        culture = oromo
+        religion = sunni
+        size = 30000
+    }
+
+    artisans = {
+        culture = oromo
+        religion = sunni
+        size = 30000
     }
 
     soldiers = {
@@ -1405,16 +1429,10 @@
         size = 360
     }
 
-    farmers = {
+    labourers = {
         culture = oromo
         religion = sunni
-        size = 86250
-    }
-
-    slaves = {
-        culture = oromo
-        religion = sunni
-        size = 74137
+        size = 7000
     }
 
     clergymen = {
@@ -1423,10 +1441,22 @@
         size = 1305
     }
 
-    farmers = {
+    artisans = {
         culture = cushitic
         religion = animist
-        size = 61500
+        size = 30000
+    }
+
+    artisans = {
+        culture = cushitic
+        religion = animist
+        size = 29500
+    }
+
+    labourers = {
+        culture = cushitic
+        religion = animist
+        size = 2000
     }
 }
 #Negele (720000/180000 POPS)

@@ -1926,7 +1926,7 @@ country_event = {
 	
 	trigger = {
 		ai = yes
-		year = 1890
+		year = 1870
 		OR = {
 			tag = CAN
 			tag = AST
@@ -1938,6 +1938,30 @@ country_event = {
 	
 	option = {
 		political_reform = open_borders	
+	}
+}
+
+country_event = {
+	id = 36949
+	title = "EVTNAME36949"
+	desc = "EVTDESC36949"
+	picture = "bismarck_reforms"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA36949"
+		533 = { secede_province = GER }
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB36949"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -1967,26 +1991,30 @@ country_event = {
 		ENG_254 = {
 			add_province_modifier = {
 				name = irish_potato_blight
-				duration = 1460
+				duration = 1825
 			}
+			remove_province_modifier = province_attract_immigrants
 		}
 		ENG_258 = {
 			add_province_modifier = {
 				name = irish_potato_blight
-				duration = 1460
+				duration = 1825
 			}
+			remove_province_modifier = province_attract_immigrants
 		}
 		ENG_260 = {
 			add_province_modifier = {
 				name = irish_potato_blight
-				duration = 1460
+				duration = 1825
 			}
+			remove_province_modifier = province_attract_immigrants
 		}
 		ENG_263 = {
 			add_province_modifier = {
 				name = irish_potato_blight
-				duration = 1460
+				duration = 1825
 			}
+			remove_province_modifier = province_attract_immigrants
 		}
 		any_pop = {
 			limit = {
