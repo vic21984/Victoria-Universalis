@@ -1,13 +1,14 @@
 # Victoria Universalis Mod
 
-*Remember to completely delete both the Victoria Univeralis folders in your steam/steamapps/common/Victoria 2/mod and documents/Paradox Interactive/Victoria II directories before installing a new version of this mod.
+This mod completely reworks the gameplay of vanilla Victoria 2 and introduces entirely new mechanics, such as the ability to dynamically target provinces for province events and a national idea system that allows players to choose from a list of bonuses to their country.
 
-This mod was created to showcase a new feature that could dynamically target provinces or states for events and decisions. I removed almost all random events and replaced their effects with my new targeted decision system. It was made mostly from the ground up from vanilla with a few things included from other mods that I liked, namely the reforms and African nations from HPM, art assets from PDM, and a few event files from various other mods.
+The economy has been completely overhauled as well, with most RGO unemployment and economic crashes being eliminated by the addition of a world bank reserve. The world bank is an unplayable country that has banker POPs which have almost unlimited demand for RGO goods and an almost infinite gold income. These POPs will buy any excess RGO goods that get produced from the rest of the world, thereby eliminating unemployment due to overproduction of goods from the game. The world bank is set to always be last in the rankings, which forces their POPs to buy goods only after every other country has gotten a chance to buy goods.
 
-The secondary goal in creating this mod was to solve the liquidity crisis that plagued the economy in the base game due to numerous money sinks that destroy money instead of transferring it back into the market. I chose to make the pop growth bonus from healthcare reform based entirely on social spending funding and then make the reforms massively expensive in order to put money from national banks back into the hands of POPs. I know this isn't historical or realistic, but it rewards players for managing their economy well and leads to some interesting gameplay choices when combined with my new decision system.
+Mine RGO output is now mostly determined by mine size, with every mine in the world only starting with between 5-30k max RGO size. Mining provinces with high populations won't necessarily output more goods than provinces with small populations anymore and provinces that historically had small populations but high output are now accurately represented.
 
-Finally, being an avid player of multiplayer vicky 2 games, I wanted to create both a balanced singleplayer and multiplayer experience. You should still see a somewhat historical great powers ranking list in single player games, but I've given numerous buffs to smaller nations and uncivs that make them more fun to play. I've also reworked nearly all country specific events and decisions and made them more impactful.
+Many flavor countries and decisions have been imported over from HPM, with the decisions and events being modified to be more impactful in terms of gameplay and faster in terms of game performance.
+
 
 ### Credits
 
-Thanks to the creators of HPM and PDM for the reforms, localizations, population statistics, and art assets. Thanks to God of Cheese for his RGO changing events in PIUR, which is what gave me the idea to create my new targeting system.
+Thanks to the creators of HPM and PDM for historical databases and art assets. Thanks to God of Cheese for his RGO changing events in PIUR.
