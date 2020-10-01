@@ -1,0 +1,22 @@
+owner = SIA
+controller = SIA
+add_core = SIA
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+}

@@ -1,3 +1,80 @@
+# Version 0.4 - 10/1/2020
+## General gameplay changes:
+* Added new supply depot and scorched earth decisions province selector decisions. A province with a supply depot will never suffer attrition. You can have up to a max of 1 supply depot per country and if a battle occurs in a province with a supply depot or that province gets occupied, that supply depot will be destroyed. The scorched earth decision lowers supply and raises attrition in the targetted state. Scorched earth lasts for 1 year, has a 6 month cooldown and can only be done by absolute monarchies and dictatorships during war.
+* National idea techs are now free to research and you no longer have to choose between 2 different ideas in a group.
+* Reworked and rebalanced literacy, emigration, migration, and colonial migration.
+* Rebalanced several techs and decisions.
+* Lowered cost of mine expansion to 500K to 1.5M pounds per province.
+* Cruiser and submarine activation inventions moved back to the ship construction tech line.
+* Gold mines that are not located in the world bank will run out of gold in ~25 years and revert back to whatever RGO they were producing before gold was discovered.
+* New market goods RGO added and placed in newly created treaty ports in Asia.
+* 2nd Grand campaign scenario removed.
+* Added theorcracy and autonomous dependency government types.
+* Removed GP requirement for the crown from the gutter event when pan nationalists win and allowed the country that falls to pan nationalist rebels to form the culturial union country as well.
+* Added Partisan Rebels from HPM. Partisans spawn in occupied provinces during war and they flip provinces back to the original owner.
+
+## Map Changes:
+* Added more states and consolidated some in Italy, Africa, Russia, India, and China.
+
+## Country Balance Changes:
+###### United Kingdom:
+* Canada, South Africa, India, Australia, and New Zealand start as dominions of the UK in the grand campaign scenario.
+
+###### Commonwealth:
+* New decision trees for all commonwealth nations.
+
+###### Russia:
+* Finland, Baltic States, and several Caucasian states start out as puppets of Russia in the 1836 scenario, with new decisions to eventually re-annex all of them.
+* Tsar of all Slavs cb will release all Ottoman held cores to Serbia, Romania, Bulgaria, Montengro, and Greece instead of only partial cores.
+* Added Circassion genocide event that causes mass transfer of north caucasian POPs from Russia to the Ottoman Empire.
+
+###### Japan:
+* Split Japan into the Shogunate Japan and Imperial Japan in the 1836 scenario.
+* Completely reworked decision trees for both, with a new unique path towards civilization in Japan.
+* Added ability to diplo annex Korea via decisions.
+
+###### Germany:
+* Germany doesn't start with cores on Alsace Lorraine anymore, it can gain them via the Ems dispatch decision.
+
+###### Sweden:
+* Norway starts out as a puppet, with a decision added to annex them later.
+
+###### Netherlands:
+* Added several decisions related to colonizing the East Indies.
+
+###### Mexico:
+* Included 2nd Mexican Empire civil war events and rebels.
+
+###### Egypt:
+* Added Mashriqi as an accepted culture.
+* Removed ability to become Arabia or add Sudanese as an accepted culture.
+* Increased liferating in all provinces in Alexandria, Cairo, and Upper Egypt states to 40.
+* Added Mahdist Uprising events.
+* Darfur starts out as an independent kingdom and an event to create a South Sudanese kingdom in Equatoria will trigger in the 1850s.
+
+###### Ottoman Empire:
+* Added Population Exchange event when Ottomans lose control of the Balkans. A mass exchange of Greek, Turkish, and Bulgarian POPs will occur between Greece, Ottomans, and Bulgaria.
+
+###### Ethiopia:
+* Increased starting POP to 2M.
+* Split Ethiopia into several tribal factions in the 1836 scenario.
+* Added new formation of Ethiopia decisions to the new Ethiopian tribal factions.
+
+###### Somalia:
+* Added several playable Somali countries to the 1836 scenario.
+
+###### South Africa:
+* Three new South African tribal nations added to the 1836 scenario.
+* Orange and Transvaal start out as OPMs with a new event/decision chain to gain their historical borders.
+* Boer Trek decision causes mass migration of Boer POPs from South Africa to Orange and Trasnvaal.
+
+###### East Africa:
+* Two new East African tribal nations added to the 1836 scenario.
+
+###### West Africa:
+* Two new West African tribal nations added to the 1836 scenario.
+
+
 # Version 0.3 - 8/2/2020
 ## Bug Fixes:
 * Fixed South East England and Ile de France states starting with their 1914 factories in the 1836 scenario.

@@ -1,0 +1,47 @@
+EGY = {
+	value = 30
+}
+
+SHW = {
+	value = 50
+	truce_until="1841.1.1"
+}
+
+SID = {
+	value = 75
+	truce_until="1841.1.1"
+}
+
+HAR = {
+	value = -100
+	truce_until="1841.1.1"
+}
+
+AWS = {
+	value = -100
+	truce_until="1841.1.1"
+}
+
+
+army = {
+	name = "Army of the Kingdom of Kaffa"
+	location = 1862
+	regiment = {
+		name= "King's Warriors"
+		type = irregular
+		home = 1862
+	}
+
+	regiment = {
+		name= "Bonga Warriors"
+		type = irregular
+		home = 1862
+	}
+	regiment = {
+		name= "Moti's Guards"
+		type = irregular
+		home = 1862
+	}
+	
+}
+

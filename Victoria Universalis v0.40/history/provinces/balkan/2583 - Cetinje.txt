@@ -1,0 +1,27 @@
+owner = MON
+controller = MON
+add_core = MON
+add_core = YUG
+trade_goods = fruit
+life_rating = 40
+1913.1.1 = {
+	fort = 4
+	owner = MON
+	controller = MON
+	remove_core = TUR
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

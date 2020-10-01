@@ -1,0 +1,21 @@
+owner = TCA
+controller = TCA
+add_core = TCA
+add_core = ARM
+trade_goods = iron
+life_rating = 35
+1913.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = furniture_factory
+		upgrade = yes
+	}
+}

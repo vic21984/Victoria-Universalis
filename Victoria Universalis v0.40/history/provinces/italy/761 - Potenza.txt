@@ -1,0 +1,50 @@
+owner = SIC
+controller = SIC
+add_core = SIC
+add_core = ITA
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	owner = ITA
+	controller = ITA
+	state_building = {
+		level = 7
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

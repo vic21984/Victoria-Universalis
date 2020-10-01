@@ -1,0 +1,48 @@
+owner = NOR
+controller = NOR
+add_core = NOR
+add_core = SCA
+trade_goods = coal
+life_rating = 40
+1913.1.1 = {
+	owner = NOR
+	controller = NOR
+	remove_core = SWE
+}
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = automobile_factory
+		upgrade = yes
+	}
+}
