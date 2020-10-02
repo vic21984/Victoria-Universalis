@@ -376,7 +376,7 @@ country_event = {
 		ENG = {
 			any_owned = {
 				limit = {
-					
+					is_core = DAR
 				}
 				secede_province = DAR
 			}

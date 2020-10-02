@@ -1,3 +1,8 @@
+# Version 0.41 - 10/1/2020
+## Bug Fixes:
+* Fixed a game breaking bug in the WW1 bookmark that resulted in Darfur annexing the UK.
+
+
 # Version 0.4 - 10/1/2020
 ## General gameplay changes:
 * Added new supply depot and scorched earth decisions province selector decisions. A province with a supply depot will never suffer attrition. You can have up to a max of 1 supply depot per country and if a battle occurs in a province with a supply depot or that province gets occupied, that supply depot will be destroyed. The scorched earth decision lowers supply and raises attrition in the targetted state. Scorched earth lasts for 1 year, has a 6 month cooldown and can only be done by absolute monarchies and dictatorships during war.
