@@ -232,10 +232,10 @@ political_decisions = {
 		}
 
 		allow = {
-			#OR = {
-				#year = 1864
-				#army_decision_making = 1
-			#}
+			OR = {
+				year = 1864
+				army_decision_making = 1
+			}
 			war = no
 		}
 
