@@ -1,3 +1,97 @@
+# Version 0.43 - 10/16/2020
+## Bug Fixes:
+* Fixed bugged ?s appearing in text where it shouldn't be.
+
+## General gameplay changes:
+* Redid a bunch of POPs and factories in the WW1 scenario to fix certain resource shortages.
+* Lowered army and industry score requirements for tech school changes.
+* Rebels will now get army techs via event 20 years after the the tech is unlocked.
+* Lowered nerf to army experience from conscription laws.
+* Slave POPs are set to be unemployed in all mining RGOs. This is necessary due to a bug in the base game which causes any province with a slave employed to be able to go over 100% RGO employment.
+* Slave POPs now grow at a rate of 1% per year.
+
+## Map Changes:
+* Renamed Spa province to Eupen-Malmedy, changed its border, and moved it from Wallonie region to West Rhineland region.
+* Created states out of the provinces of Danzig and Hamburg.
+* Created Grão-Pará state out of provinces from Amazonas and Maranhão states.
+* Split Santa Fe state into Córdoba and Chaco states.
+* Added some more rivers around Paraguay.
+
+## Country Balance Changes:
+###### Latin America:
+* Added Caudillos modifier to every latino country in the 1836 bookmark. Caudillos gives a malus to tech bonus and education efficiency and +0.02 mobilization pool. The modifier can be removed by decision once enough reforms are done or analytic philosophy is researched.
+* Added Naval Arms Race events for Chile, Argentina, and Brazil.
+
+###### Argentina:
+* Argentina has been split up into Argentine Confederation, Entre Rios, and Corrientes in the 1836 start.
+* Added platine war event that lets Argentine Confederation form Argentina.
+* New alternative decision chain to fight Argentine civil wars and form Argentina.
+* Patagonia and Chaco now start as uncolonized land. Decisions have been added to take them before colonial negotiations are unlocked.
+* Can form United Provinces of La Plata via decision.
+* Argentinian Constitution decision now gives temporary boost to immigration.
+
+###### Brazil:
+* Brazil starts the 1836 bookmark in a unification war with the newly created Piratini Republic in Rio Grande do Sul, and Grão-Pará in the states of Amazonas and Grão-Pará.
+* New events for Bahia, Maranhão, Riograndense, and Canudas revolts.
+* Added a decision to become a democracy and gain a temporary boost to immigration.
+
+###### Bolivia:
+* Peru starts as a puppet of Bolivia.
+* A triggered war occurs between Bolivia and Chile in 1836, if Bolivia wins it annexes Peru and forms Peru-Bolivia, if Chile wins then Peru gains its independence.
+* Alto Paraguay starts as uncolonized land. A decision has been added to claim it before colonial negotiations are unlocked.
+
+###### Paraguay:
+* Added events and decisions that give army tech bonuses, builds forts, and increases mobilization pool.
+* Added Paraguayan War decision, which triggers the War of the Triple Alliance. If Paraguay wins, it annexes and gains cores on Rio Grande do Sul, Paraná, and Corrientes.
+
+###### Chile:
+* Most of Araucanía starts as uncolonized land. A decision has been added to claim it before colonial negotiations are unlocked.
+* Added Found University of Santiago decision that increases school reform.
+* Added Valparaiso harbour decision that gives temporary boost to immigration.
+* Added Chilean Revolution event.
+
+###### Colombia:
+* Added Colombian civil war event.
+* The Panama canal decision now triggers an event grants independence to Panama. Colombia can accept Panamanian independence or go to war.
+
+###### Uruguay:
+* Added Uruguayan civil war events.
+
+###### Venezuela:
+* Added Federal War event.
+
+###### Ecuador:
+* Added Ecuadorean civil war event.
+
+###### Haiti:
+* Added Dominican Republic independence event.
+
+###### Spain:
+* Added Chincha Islands War event.
+
+###### Italy:
+* Added Expedition of the Thousand decision for North Italian countries. The decision spawns a 4/4 Guiseppe Garibaldi general and gives high militancy to Sicilian cored provinces.
+
+###### China:
+* Increased draft law to two year draft in 1913 and WW1 bookmarks.
+
+###### Japan:
+* Decreased draft law to two year draft in 1913 and WW1 bookmarks.
+
+###### Ottoman Empire:
+* Starts with Kurdish accepted in 1913 and WW1 bookmarks.
+
+
+# Version 0.42 - 10/16/2020
+## Bug Fixes:
+* Fixed a bug that allowed instant free building of ships.
+
+## General gameplay changes:
+* The World Bank will now buy excess military goods from the WM and ensure that military factories can remain profitable even during peacetime.
+* Tripled the amount of military goods factories  and rebalanced consumer goods factories in 1913 and WW1 bookmarks.
+* Tweaked techs and OOBS for some minor nations in 1913 and WW1 bookmarks.
+
+
 # Version 0.41 - 10/1/2020
 ## Bug Fixes:
 * Fixed a game breaking bug in the WW1 bookmark that resulted in Darfur annexing the UK.

@@ -1,0 +1,199 @@
+political_decisions = {
+	1850_ai_mobilization_boost = {
+		potential = {
+			tag = JAN
+			year = 1850
+			NOT = { has_global_flag = 1850_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1850_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1870_ai_mobilization_boost = {
+		potential = {
+			tag = JAN
+			year = 1870
+			NOT = { has_global_flag = 1870_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1870_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1890_ai_mobilization_boost = {
+		potential = {
+			tag = JAN
+			year = 1890
+			NOT = { has_global_flag = 1890_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1890_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	1910_ai_mobilization_boost = {
+		potential = {
+			tag = JAN
+			year = 1910
+			NOT = { has_global_flag = 1910_ai_mobilization_boost }
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = yes
+					civilized = yes
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = four_year_draft }
+					}	
+					owner = { political_reform = mandatory_service }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = two_year_draft }
+					}	
+					owner = { political_reform = four_year_draft }
+				}				
+				random_owned = {
+					limit = {
+						owner = { conscription = one_year_draft }
+					}	
+					owner = { political_reform = two_year_draft }
+				}
+				random_owned = {
+					limit = {
+						owner = { conscription = no_draft }
+					}	
+					owner = { political_reform = one_year_draft }
+				}
+			}		
+			set_global_flag = 1910_ai_mobilization_boost			
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+#	1870_money_injection = {
+#		potential = {
+#			tag = JAN
+#			ai = yes
+#			year = 1872
+#			NOT = { has_global_flag = 1870_money_injection }
+#		}
+#		allow = {
+#		}
+#		effect = {
+#			any_country = {
+#				any_pop = {
+#					money = 500
+#				}			
+#			}				
+#			set_global_flag = 1870_money_injection			
+#		}
+#		ai_will_do = { factor = 1 }
+#	}
+
+
+}

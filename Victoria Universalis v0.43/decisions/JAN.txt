@@ -1,0 +1,14 @@
+political_decisions = {
+	uncivilize_CIV = {
+		potential = {
+			tag = JAN
+			NOT = { exists = CIV }
+			CIV = { civilized = yes }
+		}
+		allow = {
+		}
+		effect = {
+			CIV = { civilized = no }
+		}
+	}
+}

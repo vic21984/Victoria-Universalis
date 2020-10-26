@@ -1,0 +1,35 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = GRE
+trade_goods = sulphur
+life_rating = 35
+1913.1.1 = {
+	owner = GRE
+	controller = GRE
+	remove_core = TUR
+	state_building = {
+		level = 1
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+	naval_base = 5
+}
+1914.7.28 = {
+add_core = KGR
+}

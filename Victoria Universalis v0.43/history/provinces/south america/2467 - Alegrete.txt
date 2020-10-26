@@ -1,0 +1,28 @@
+owner = RGS
+controller = RGS
+add_core = RGS
+add_core = BRZ
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	owner = BRZ
+	controller = BRZ
+	remove_core = RGS
+}

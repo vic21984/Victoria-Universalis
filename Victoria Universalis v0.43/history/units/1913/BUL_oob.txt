@@ -1,0 +1,310 @@
+ROM = {
+	truce_until = 1915.1.1
+}
+
+SER = {
+	truce_until = 1915.1.1
+}
+
+GRE = {
+	truce_until = 1915.1.1
+}
+
+leader = {
+	name = "Nikola Zhekov"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_3.1
+}
+leader = {
+	name = "Georgi Todorov"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Konstantin Zhostov"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ivan Lukov"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Hristo Burmov"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Kliment Boyadzhiev"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_3.1
+}
+leader = {
+	name = "Dimitar Geshov"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Stefan Toshev"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Stefan Nerezov"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_2.1
+}
+leader = {
+	name = "Vladimir Vazov"
+	type = land
+	date = 1914.1.1
+	personality = defence_4.1
+	background = attack_2.1
+}
+leader = {
+	name = "Panteley Kiselov"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_4.1
+}
+leader = {
+	name = "Ivan Kolev"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_3.1
+}
+
+navy = {
+	name = "Voennomorski sili na Tsarstvo Balgariya"
+	location = 829
+
+	ship = {
+		name= "Vasil Levsk"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Khristo Botev"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Druzki"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Smeli"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Khrabri"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Strogi"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Letyashchi"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Shumni"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Nadezhda"
+		type = commerce_raider
+	}
+
+}
+
+army = {
+	name = "1st Army"
+	location = 809
+	regiment = {
+		name= "1st Sofia Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "6th Bdinska Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "8th Tundzha Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "9th Pleven Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "Sofia Division Artillery"
+		type = artillery
+		home = 809
+	}
+	regiment = {
+		name= "Bdin Division Artillery"
+		type = artillery
+		home = 809
+	}
+	regiment = {
+		name= "Tundzha Division Artillery"
+		type = artillery
+		home = 809
+	}
+	regiment = {
+		name= "Pleven Division Artillery"
+		type = artillery
+		home = 809
+	}
+	regiment = {
+		name= "1st Cavalry Brigade"
+		type = hussar
+		home = 809
+	}
+}
+army = {
+	name = "2nd Army"
+	location = 810
+	regiment = {
+		name= "3rd Balkan Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "7th Rila Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "7th Rila Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "2nd Cavalry Brigade"
+		type = hussar
+		home = 809
+	}
+	regiment = {
+		name= "Balkan Division Artillery"
+		type = artillery
+		home = 809
+	}
+	regiment = {
+		name= "Rila Division Artillery"
+		type = artillery
+		home = 812
+	}
+	regiment = {
+		name= "Horse Artillery Battery"
+		type = artillery
+		home = 812
+	}
+}
+army = {
+	name = "3rd Army"
+	location = 814
+	regiment = {
+		name= "4th Preslav Division"
+		type = infantry
+		home = 809
+	}
+	regiment = {
+		name= "5th Danube Division"
+		type = infantry
+		home = 814
+	}
+	regiment = {
+		name= "3rd Cavalry Brigade"
+		type = hussar
+		home = 809
+	}
+	regiment = {
+		name= "Perslav Division Artillery"
+		type = artillery
+		home = 814
+	}
+	regiment = {
+		name= "Danube Division Artillery"
+		type = artillery
+		home = 814
+	}
+}
+army = {
+	name = "2nd Thracian Infantry Division"
+	location = 817
+	regiment = {
+		name= "2nd Thracian Division"
+		type = infantry
+		home = 817
+
+	}
+	regiment = {
+		name= "Thracian Division Artillery"
+		type = artillery
+		home = 814
+	}
+}
+army = {
+	name = "10th Aegean Infantry Division"
+	location = 829
+	regiment = {
+		name= "10th Aegean Division"
+		type = infantry
+		home = 829
+
+	}
+	regiment = {
+		name= "Aegean Division Artillery"
+		type = artillery
+		home = 829
+	}
+}
+army = {
+	name = "11th Macedonian Infantry Division"
+	location = 808
+	regiment = {
+		name= "11th Macedonian Division"
+		type = infantry
+		home = 808
+
+	}
+	regiment = {
+		name= "Macedonian Division Artillery"
+		type = artillery
+		home = 808
+	}
+}

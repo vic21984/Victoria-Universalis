@@ -1,0 +1,101 @@
+political_decisions = {
+	hellenic_parliament = {
+		potential = {
+			tag = GRE
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = voule_ton_ellinon
+			}
+		}
+	
+		allow = {
+			plurality = 3
+			prestige = 1
+		}
+		
+		effect = {
+			set_country_flag = voule_ton_ellinon
+			political_reform = wealth_weighted_voting
+			government = hms_government
+			any_pop = {
+				militancy = -2
+			}
+		}
+	}
+	
+	megali_idea = {
+		potential = {
+			tag = GRE
+			NOT = {
+				has_country_flag = greece_has_got_a_brand_new_bag
+			}
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			GRE = {
+				all_core = { owned_by = THIS }
+			}	
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -5
+			TUR_860 = {
+				add_core = GRE
+			}
+			TUR_869 = {
+				add_core = GRE
+			}
+			set_country_flag = greece_has_got_a_brand_new_bag
+		}
+	}
+	
+	form_byzantine_empire = {
+		potential = {
+			tag = GRE
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			has_country_flag = greece_has_got_a_brand_new_bag		
+		}
+		
+		allow = {
+			GRE = {
+				all_core = { owned_by = THIS }
+			}	
+		}
+		
+		effect = {
+			change_tag = BYZ
+			capital = 860
+			860 = {
+				change_province_name = "Constantinople"
+			}
+			TUR_863 = {
+				add_core = BYZ
+			}
+			TUR_873 = {
+				add_core = BYZ
+			}
+			TUR_876 = {
+				add_core = BYZ
+			}
+			TUR_882 = {
+				add_core = BYZ
+			}
+			TUR_885 = {
+				add_core = BYZ
+			}
+			TUR_889 = {
+				add_core = BYZ
+			}
+			TUR_894 = {
+				add_core = BYZ
+			}
+			prestige = 50
+		}
+	}
+}

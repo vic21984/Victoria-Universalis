@@ -1,0 +1,33 @@
+owner = BRZ
+controller = BRZ
+add_core = RGS
+add_core = BRZ
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = winery
+		upgrade = yes
+	}
+}
