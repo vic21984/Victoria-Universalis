@@ -1,0 +1,2058 @@
+political_decisions = {
+
+	global_1836_setup = {
+		potential = {
+			tag = JAN
+			NOT = { has_global_flag = global_1836_setup }
+			NOT = { has_global_flag = 1913_bookmark }
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = global_1836_setup
+			any_country = {
+				limit = { ai = no }
+				country_event = { id = 91001 }
+			}
+			any_country = {
+				activate_technology = early_classical_theory_and_critique
+				leadership = 40
+			}
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					NOT = { tag = AUS }
+				}
+				set_country_flag = south_german
+			}
+			any_country = {
+				limit = { primary_culture = south_italian }
+				set_country_flag = south_italian
+			}
+			EIC = {
+				add_country_modifier = { name = direct_rule duration = -1 }
+			}
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = platinean
+						primary_culture = south_andean
+						primary_culture = north_andean
+						primary_culture = central_american
+						primary_culture = mexican
+					}
+				}
+				add_country_modifier = { name = caudillos duration = -1 }
+			}
+			any_country = {
+				limit = { primary_culture = japanese }
+				any_pop = {
+					limit = {
+						has_pop_culture = japanese
+					}
+					ideology = {
+						factor = 0.1
+						value = reactionary
+					}
+				}
+				add_country_modifier = { name = sakoku duration = -1 }
+			}
+			URU = {
+				2344 = {
+					party_loyalty = {
+						ideology = liberal
+						loyalty_value = 30
+					}
+					any_pop = {
+						ideology = {
+							factor = 0.3
+							value = liberal
+						}
+					}
+				}
+				2345 = {
+					party_loyalty = {
+						ideology = conservative
+						loyalty_value = 25
+					}
+				}
+				2347 = {
+					party_loyalty = {
+						ideology = conservative
+						loyalty_value = 25
+					}
+				}
+				2346 = {
+					party_loyalty = {
+						ideology = conservative
+						loyalty_value = 25
+					}
+				}
+			}
+			any_country = {
+				limit = {
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				political_reform = rudimentary_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				political_reform = very_low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				political_reform = low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				political_reform = basic_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				political_reform = moderate_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				political_reform = acceptable_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				political_reform = good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				political_reform = very_good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.9
+					NOT = { literacy = 0.99 }
+				}
+				political_reform = advanced_rnd
+			}
+			any_country = {
+				limit = { literacy = 0.99 }
+				political_reform = futuristic_rnd
+			}
+			SOK = { set_country_flag = sub_saharan_africa }
+			OYO = { set_country_flag = sub_saharan_africa }
+			BEN = { set_country_flag = sub_saharan_africa }
+			ARO = { set_country_flag = sub_saharan_africa }
+			WRI = { set_country_flag = sub_saharan_africa }
+			ASH = { set_country_flag = sub_saharan_africa }
+			DAH = { set_country_flag = sub_saharan_africa }
+			KNG = { set_country_flag = sub_saharan_africa }
+			JAL = { set_country_flag = sub_saharan_africa }
+			MOS = { set_country_flag = sub_saharan_africa }
+			MAS = { set_country_flag = sub_saharan_africa }
+			DAM = { set_country_flag = sub_saharan_africa }
+			KBO = { set_country_flag = sub_saharan_africa }
+			TOO = { set_country_flag = sub_saharan_africa }
+			GBU = { set_country_flag = sub_saharan_africa }
+			SEG = { set_country_flag = sub_saharan_africa }
+			KON = { set_country_flag = sub_saharan_africa }
+			WOL = { set_country_flag = sub_saharan_africa }
+			LOA = { set_country_flag = sub_saharan_africa }
+			TRZ = { set_country_flag = sub_saharan_africa }
+			ADR = { set_country_flag = sub_saharan_africa }
+			84 = {
+				farmers = {
+					reduce_pop = 0.1
+				}
+			}
+			89 = {
+				farmers = {
+					reduce_pop = 0.04
+				}
+			}
+			132 = {
+				farmers = {
+					reduce_pop = 0.05
+				}
+			}
+			134 = {
+				farmers = {
+					reduce_pop = 0.02
+				}
+			}
+			135 = {
+				labourers = {
+					reduce_pop = 0.34
+				}
+			}
+			126 = {
+				farmers = {
+					reduce_pop = 0.04
+				}
+			}
+			158 = {
+				labourers = {
+					reduce_pop = 0.34
+				}
+			}
+			177 = {
+				labourers = {
+					reduce_pop = 0.5
+				}
+			}
+			1102 = {
+				farmers = {
+					reduce_pop = 0.2
+				}
+			}
+			1496 = {
+				labourers = {
+					reduce_pop = 0.025
+				}
+			}
+			2237 = {
+				farmers = {
+					reduce_pop = 0.25
+				}
+			}
+			2264 = {
+				farmers = {
+					reduce_pop = 0.2
+				}
+			}
+			country_event = { id = 90031 days = 1}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	global_1913_setup = {
+
+		potential = {
+			tag = JAN
+			has_global_flag = 1913_bookmark
+			NOT = { has_global_flag = global_1913_setup }
+		}
+		
+		allow = { }
+		
+		effect = {
+			set_global_flag = global_1913_setup
+			any_country = {
+				limit = { invention = mob1 }
+				set_country_flag = mob1_invented
+			}
+			any_country = {
+				limit = { invention = mob2 }
+				set_country_flag = mob2_invented
+			}
+			any_country = {
+				limit = { invention = mob3 }
+				set_country_flag = mob3_invented
+			}
+			any_country = {
+				limit = { invention = mob4 }
+				set_country_flag = mob4_invented
+			}
+			any_country = {
+				limit = { invention = mob5 }
+				set_country_flag = mob5_invented
+			}
+			any_country = {
+				limit = { medicine = 1 }
+				set_country_flag = medicine_invented
+			}
+			any_country = {
+				limit = { inorganic_chemistry = 1 }
+				set_country_flag = inorganic_chemistry_invented
+			}
+			any_country = {
+				limit = { organic_chemistry = 1 }
+				set_country_flag = organic_chemistry_invented
+			}
+			any_country = {
+				limit = { electricity = 1 }
+				set_country_flag = electricity_invented
+			}
+			any_country = {
+				limit = { revolution_n_counterrevolution = 1 }
+				set_country_flag = revolution_n_counterrevolution_invented
+			}
+			any_country = {
+				limit = { invention = colonial_negotiations }
+				set_country_flag = colonial_negotiations_invented
+			}
+			any_country = {
+				limit = { synthetic_polymers = 1 }
+				set_country_flag = synthetic_polymers_invented
+			}
+			any_country = {
+				limit = { invention = tractors }
+				set_country_flag = tractors
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = electrical_lighting }
+				set_country_flag = electrical_lighting
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = nitroglycerin }
+				set_country_flag = nitroglycerin
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = distribution_channels }
+				set_country_flag = distribution_channels
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = machine_tools }
+				set_country_flag = machine_tools
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = haber_bosch_process }
+				set_country_flag = haber_bosch_process
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = national_idea1 }
+				set_country_flag = national_idea1
+			}
+			any_country = {
+				limit = { invention = national_idea2 }
+				set_country_flag = national_idea2
+			}
+			any_country = {
+				limit = { invention = national_idea3 }
+				set_country_flag = national_idea3
+			}
+			any_country = {
+				limit = { invention = national_idea4 }
+				set_country_flag = national_idea4
+			}
+			any_country = {
+				limit = { invention = national_idea5 }
+				set_country_flag = national_idea5
+			}
+			any_country = {
+				limit = { invention = national_idea6 }
+				set_country_flag = national_idea6
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+							trade_goods= market_goods
+						}
+					}
+					add_province_modifier = { name = mine_expansion duration = -1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods= coal
+							trade_goods= iron
+							trade_goods= sulphur
+							trade_goods= oil
+							trade_goods= precious_metal
+							trade_goods= market_goods
+						}
+					}
+					labourers = {
+						reduce_pop = 2
+					}
+				}
+			}
+			any_country = {
+				activate_technology = early_classical_theory_and_critique
+				leadership = 40
+				add_country_modifier = {
+					name = reform_passed
+					duration = 1825
+				}
+				money = 500000
+			}
+			USA = { money = 2000000 }
+			USA = { money = 2000000 }
+			ENG = { money = 2000000 }
+			ENG = { money = 2000000 }
+			GER = { money = 2000000 }
+			GER = { money = 2000000 }
+			RUS = { money = 2000000 }
+			KUK = { money = 2000000 }
+			KUK = { money = 1000000 }
+			ITA = { money = 2000000 }
+			JAP = { money = 2000000 }
+			FRA = { money = 2000000 }
+			TUR = { money = 500000 }
+			BUL = { money = 500000 }
+			SER = { money = 500000 }
+			ROM = { money = 500000 }
+			BEL = { money = 500000 }
+			GER = { all_core = { limit = { life_rating = 40  } life_rating = -5 } }
+			set_variable = {
+				which = brest_litovsk
+				value = 0
+			}
+			any_country = {
+				limit = {
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				political_reform = rudimentary_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				political_reform = very_low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				political_reform = low_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				political_reform = basic_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				political_reform = moderate_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				political_reform = acceptable_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				political_reform = good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				political_reform = very_good_rnd
+			}
+			any_country = {
+				limit = {
+					literacy = 0.9
+					NOT = { literacy = 0.99 }
+				}
+				political_reform = advanced_rnd
+			}
+			any_country = {
+				limit = {
+					has_country_flag = army_morale_idea
+				}
+				add_country_modifier = { name = army_morale_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = army_organisation_idea
+				}
+				add_country_modifier = { name = army_organisation_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = army_supply_idea
+				}
+				add_country_modifier = { name = army_supply_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = military_hospitals_idea
+				}
+				add_country_modifier = { name = military_hospitals_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = army_experience_idea
+				}
+				add_country_modifier = { name = army_experience_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = reinforce_rate_idea
+				}
+				add_country_modifier = { name = reinforce_rate_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = leadership_idea
+				}
+				add_country_modifier = { name = leadership_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = prestige_idea
+				}
+				add_country_modifier = { name = prestige_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = navy_build_speed_idea
+				}
+				add_country_modifier = { name = navy_build_speed_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = navy_organisation_idea
+				}
+				add_country_modifier = { name = navy_organisation_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = expansion_idea
+				}
+				add_country_modifier = { name = expansion_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = assimilation_idea
+				}
+				add_country_modifier = { name = assimilation_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = farming_idea
+				}
+				add_country_modifier = { name = farming_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = mining_idea
+				}
+				add_country_modifier = { name = mining_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = consumer_goods_idea
+				}
+				add_country_modifier = { name = consumer_goods_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = industrial_goods_idea
+				}
+				add_country_modifier = { name = industrial_goods_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = education_idea
+				}
+				add_country_modifier = { name = education_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					has_country_flag = domestic_idea
+				}
+				add_country_modifier = { name = domestic_idea duration = -1 }
+			}
+			any_country = {
+				limit = {
+					experimental_railroad = 1
+					NOT = { early_railroad = 1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = forest
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							
+						}
+					}
+					infrastructure = 1
+				}
+			}
+			any_country = {
+				limit = {
+					early_railroad = 1
+					NOT = { iron_railroad = 1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = forest
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							
+						}
+					}
+					infrastructure = 2
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = arctic
+							terrain = hills
+						}
+					}
+					infrastructure = 1
+				}
+			}
+			any_country = {
+				limit = {
+					iron_railroad = 1
+					NOT = { steel_railroad = 1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = forest
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							
+						}
+					}
+					infrastructure = 3
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = arctic
+							terrain = hills
+						}
+					}
+					infrastructure = 2
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = mountain
+							terrain = jungle
+							terrain = marsh
+							terrain = desert
+							terrain = coastal_desert
+						}
+					}
+					infrastructure = 1
+				}
+			}
+			any_country = {
+				limit = {
+					steel_railroad = 1
+					NOT = { integral_rail_system = 1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = forest
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							
+						}
+					}
+					infrastructure = 4
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = arctic
+							terrain = hills
+						}
+					}
+					infrastructure = 3
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = mountain
+							terrain = jungle
+							terrain = marsh
+							terrain = desert
+							terrain = coastal_desert
+						}
+					}
+					infrastructure = 2
+				}
+			}
+			any_country = {
+				limit = {
+					integral_rail_system = 1
+					NOT = { limited_access_roads = 1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = forest
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							
+						}
+					}
+					infrastructure = 5
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = arctic
+							terrain = hills
+						}
+					}
+					infrastructure = 4
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = mountain
+							terrain = jungle
+							terrain = marsh
+							terrain = desert
+							terrain = coastal_desert
+						}
+					}
+					infrastructure = 3
+				}
+			}
+			any_country = {
+				limit = {
+					limited_access_roads = 1
+					NOT = { modern_infrastructure = 1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = forest
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							
+						}
+					}
+					infrastructure = 6
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = arctic
+							terrain = hills
+						}
+					}
+					infrastructure = 5
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = mountain
+							terrain = jungle
+							terrain = marsh
+							terrain = desert
+							terrain = coastal_desert
+						}
+					}
+					infrastructure = 4
+				}
+			}
+			any_country = {
+				limit = {
+					modern_infrastructure = 1
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = forest
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							
+						}
+					}
+					infrastructure = 7
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = arctic
+							terrain = hills
+						}
+					}
+					infrastructure = 6
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = mountain
+							terrain = jungle
+							terrain = marsh
+							terrain = desert
+							terrain = coastal_desert
+						}
+					}
+					infrastructure = 5
+				}
+			}
+			any_country = {
+				limit = { ai = no }
+				country_event = { id = 91327 days = 0 }
+			}
+		}
+	}
+
+	global_ww1_setup = {
+
+		potential = {
+			tag = JAN
+			has_global_flag = ww1_bookmark
+			NOT = { has_global_flag = global_ww1_setup }
+		}
+		
+		allow = { }
+		
+		effect = {
+			set_global_flag = global_ww1_setup
+			any_country = {
+				limit = { ai = no }
+				country_event = { id = 91051 }
+			}
+			any_country = {
+				limit = { invention = mob1 }
+				set_country_flag = mob1_invented
+			}
+			any_country = {
+				limit = { invention = mob2 }
+				set_country_flag = mob2_invented
+			}
+			any_country = {
+				limit = { invention = mob3 }
+				set_country_flag = mob3_invented
+			}
+			any_country = {
+				limit = { invention = mob4 }
+				set_country_flag = mob4_invented
+			}
+			any_country = {
+				limit = { invention = mob5 }
+				set_country_flag = mob5_invented
+			}
+			any_country = {
+				limit = { medicine = 1 }
+				set_country_flag = medicine_invented
+			}
+			any_country = {
+				limit = { inorganic_chemistry = 1 }
+				set_country_flag = inorganic_chemistry_invented
+			}
+			any_country = {
+				limit = { organic_chemistry = 1 }
+				set_country_flag = organic_chemistry_invented
+			}
+			any_country = {
+				limit = { electricity = 1 }
+				set_country_flag = electricity_invented
+			}
+			any_country = {
+				limit = { revolution_n_counterrevolution = 1 }
+				set_country_flag = revolution_n_counterrevolution_invented
+			}
+			any_country = {
+				limit = { invention = colonial_negotiations }
+				set_country_flag = colonial_negotiations_invented
+			}
+			any_country = {
+				limit = { synthetic_polymers = 1 }
+				set_country_flag = synthetic_polymers_invented
+			}
+			any_country = {
+				limit = { invention = tractors }
+				set_country_flag = tractors
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = electrical_lighting }
+				set_country_flag = electrical_lighting
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = nitroglycerin }
+				set_country_flag = nitroglycerin
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = distribution_channels }
+				set_country_flag = distribution_channels
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = machine_tools }
+				set_country_flag = machine_tools
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = haber_bosch_process }
+				set_country_flag = haber_bosch_process
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = national_idea1 }
+				set_country_flag = national_idea1
+			}
+			any_country = {
+				limit = { invention = national_idea2 }
+				set_country_flag = national_idea2
+			}
+			any_country = {
+				limit = { invention = national_idea3 }
+				set_country_flag = national_idea3
+			}
+			any_country = {
+				limit = { invention = national_idea4 }
+				set_country_flag = national_idea4
+			}
+			any_country = {
+				limit = { invention = national_idea5 }
+				set_country_flag = national_idea5
+			}
+			any_country = {
+				limit = { invention = national_idea6 }
+				set_country_flag = national_idea6
+			}
+		}
+	}
+
+	jan_mayen_1836_setup = {
+
+		potential = {
+			tag = JAN
+			always = no
+		}
+		
+		allow = { }
+		
+		effect = {
+			JAN = {
+				set_country_flag = jan_mayen
+			}
+			any_country = {
+				limit = { invention = mob1 }
+				set_country_flag = mob1_invented
+			}
+			3246 = { add_province_modifier = { name = mine_expansion duration = -1 } }
+		}
+	}
+
+	jan_mayen_1913_setup = {
+
+		potential = {
+			tag = JAN
+			always = no
+		}
+		
+		allow = { }
+		
+		effect = {
+			JAN = {
+				set_country_flag = jan_mayen
+			}
+			any_country = {
+				limit = { invention = mob1 }
+				set_country_flag = mob1_invented
+			}
+			any_country = {
+				limit = { invention = mob2 }
+				set_country_flag = mob2_invented
+			}
+			any_country = {
+				limit = { invention = mob3 }
+				set_country_flag = mob3_invented
+			}
+			any_country = {
+				limit = { invention = mob4 }
+				set_country_flag = mob4_invented
+			}
+			any_country = {
+				limit = { invention = mob5 }
+				set_country_flag = mob5_invented
+			}
+			any_country = {
+				limit = { medicine = 1 }
+				set_country_flag = medicine_invented
+			}
+			any_country = {
+				limit = { inorganic_chemistry = 1 }
+				set_country_flag = inorganic_chemistry_invented
+			}
+			any_country = {
+				limit = { organic_chemistry = 1 }
+				set_country_flag = organic_chemistry_invented
+			}
+			any_country = {
+				limit = { electricity = 1 }
+				set_country_flag = electricity_invented
+			}
+			any_country = {
+				limit = { revolution_n_counterrevolution = 1 }
+				set_country_flag = revolution_n_counterrevolution_invented
+			}
+			any_country = {
+				limit = { invention = colonial_negotiations }
+				set_country_flag = colonial_negotiations_invented
+			}
+			any_country = {
+				limit = { synthetic_polymers = 1 }
+				set_country_flag = synthetic_polymers_invented
+			}
+			any_country = {
+				limit = { invention = tractors }
+				set_country_flag = tractors
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = electrical_lighting }
+				set_country_flag = electrical_lighting
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = nitroglycerin }
+				set_country_flag = nitroglycerin
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = distribution_channels }
+				set_country_flag = distribution_channels
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = machine_tools }
+				set_country_flag = machine_tools
+				change_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = haber_bosch_process }
+				set_country_flag = haber_bosch_process
+				change_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { invention = national_idea1 }
+				set_country_flag = national_idea1
+			}
+			any_country = {
+				limit = { invention = national_idea2 }
+				set_country_flag = national_idea2
+			}
+			any_country = {
+				limit = { invention = national_idea3 }
+				set_country_flag = national_idea3
+			}
+			any_country = {
+				limit = { invention = national_idea4 }
+				set_country_flag = national_idea4
+			}
+			any_country = {
+				limit = { invention = national_idea5 }
+				set_country_flag = national_idea5
+			}
+			any_country = {
+				limit = { invention = national_idea6 }
+				set_country_flag = national_idea6
+			}
+			6 = { trade_goods = precious_metal }
+			7 = { trade_goods = precious_metal }
+			2599 = { trade_goods = precious_metal }
+			2630 = { trade_goods = precious_metal }
+			2106 = { trade_goods = precious_metal }
+			1354 = { trade_goods = rubber }
+			1364 = { trade_goods = rubber }
+			1367 = { trade_goods = rubber }
+			1382 = { trade_goods = rubber }
+			1389 = { trade_goods = rubber }
+			1402 = { trade_goods = rubber }
+			1404 = { trade_goods = rubber }
+			1827 = { trade_goods = rubber }
+			1829 = { trade_goods = rubber }
+			1833 = { trade_goods = rubber }
+			1836 = { trade_goods = rubber }
+			1837 = { trade_goods = rubber }
+			1848 = { trade_goods = rubber }
+			1850 = { trade_goods = rubber }
+			1890 = { trade_goods = rubber }
+			1891 = { trade_goods = rubber }
+			1893 = { trade_goods = rubber }
+			1923 = { trade_goods = rubber }
+			1321 = { trade_goods = rubber }
+			1398 = { trade_goods = rubber }
+			1414 = { trade_goods = rubber }
+			1985 = { trade_goods = rubber }
+			1406 = { trade_goods = rubber }
+			1318 = { trade_goods = rubber }
+			2057 = { trade_goods = rubber }
+			2058 = { trade_goods = rubber }
+			1978 = { trade_goods = rubber }
+			1980 = { trade_goods = rubber }
+			1981 = { trade_goods = rubber }
+			2624 = { trade_goods = rubber }
+			1926 = { trade_goods = rubber }
+			1929 = { trade_goods = rubber }
+			1931 = { trade_goods = rubber }
+			1932 = { trade_goods = rubber }
+			1957 = { trade_goods = rubber }
+			1986 = { trade_goods = rubber }
+			1988 = { trade_goods = rubber }
+			1989 = { trade_goods = rubber }
+			1996 = { trade_goods = rubber }
+			2192 = { trade_goods = rubber }
+			2317 = { trade_goods = rubber }
+			2318 = { trade_goods = rubber }
+			2319 = { trade_goods = rubber }
+			2321 = { trade_goods = rubber }
+			2402 = { trade_goods = rubber }
+			2404 = { trade_goods = rubber }
+			2405 = { trade_goods = rubber }
+			2549 = { trade_goods = rubber }
+			2550 = { trade_goods = rubber }
+			2600 = { trade_goods = rubber }
+			1102 = { trade_goods = oil }
+			1104 = { trade_goods = oil }
+			1186 = { trade_goods = oil }
+			1182 = { trade_goods = oil }
+			1205 = { trade_goods = oil }
+			1202 = { trade_goods = oil }
+			1107 = { trade_goods = oil }
+			1393 = { trade_goods = oil }
+			132 = { trade_goods = oil }
+			667 = { trade_goods = oil }
+			672 = { trade_goods = oil }
+			702 = { trade_goods = oil }
+			1168 = { trade_goods = oil }
+			110 = { trade_goods = oil }
+			89 = { trade_goods = oil }
+			126 = { trade_goods = oil }
+			1399 = { trade_goods = oil }
+			1055 = { trade_goods = oil }
+			1401 = { trade_goods = oil }
+			1416 = { trade_goods = oil }
+			1425 = { trade_goods = oil }
+			1432 = { trade_goods = oil }
+			1335 = { trade_goods = oil }
+			134 = { trade_goods = oil }
+			1260 = { trade_goods = oil }
+			1086 = { trade_goods = oil }
+			129 = { trade_goods = oil }
+			1680 = { trade_goods = oil }
+			2173 = { trade_goods = oil }
+			87 = { trade_goods = oil }
+			2162 = { trade_goods = oil }
+			2163 = { trade_goods = oil }
+			1397 = { trade_goods = oil }
+			2237 = { trade_goods = oil }
+			2396 = { trade_goods = oil }
+			2361 = { trade_goods = oil }
+			2264 = { trade_goods = oil }
+			1131 = { trade_goods = oil }
+			1125 = { trade_goods = oil }
+			1135 = { trade_goods = oil }
+			1167 = { trade_goods = oil }
+			2234 = { trade_goods = oil }
+			2270 = { trade_goods = oil }
+			1163 = { trade_goods = oil }
+			1732 = { trade_goods = oil }
+			1720 = { trade_goods = oil }
+			2253 = { trade_goods = oil }
+			1132 = { trade_goods = oil }
+			1170 = { trade_goods = oil }
+			26 = { trade_goods = oil }
+			2575 = { trade_goods = rubber add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1385 = { trade_goods = rubber add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1386 = { trade_goods = rubber add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1394 = { trade_goods = rubber add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1395 = { trade_goods = rubber add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1426 = { trade_goods = rubber add_province_modifier = { name = strategic_rgo duration = -1 } }
+			1365 = { trade_goods = coffee_beans }
+			1368 = { trade_goods = coffee_beans }
+			1373 = { trade_goods = coffee_beans }
+			1374 = { trade_goods = coffee_beans }
+			1375 = { trade_goods = coffee_beans }
+			1382 = { trade_goods = coffee_beans }
+			1899 = { trade_goods = coffee_beans }
+			1910 = { trade_goods = coffee_beans }
+			1491 = { trade_goods = opium }
+			1501 = { trade_goods = opium }
+			558 = { trade_goods = opium }
+			1603 = { trade_goods = opium }
+			369 = { trade_goods = market_goods }
+			1481 = { trade_goods = market_goods }
+			1496 = { trade_goods = market_goods }
+			1538 = { trade_goods = market_goods }
+			1566 = { trade_goods = market_goods }
+			1569 = { trade_goods = market_goods }
+			1723 = { trade_goods = market_goods }
+			1755 = { trade_goods = market_goods }
+			3259 = { trade_goods = market_goods }
+			3260 = { trade_goods = market_goods }
+		}
+	}
+	
+	chinese_setup = {
+
+		potential = {
+			tag = CHI
+			always = no
+		}
+		
+		allow = { }
+		
+		effect = {
+			CHI = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = middle_kingdom duration = -1 }
+			}
+			TPG = {
+				set_country_flag = chinese
+			}
+			KMT = {
+				set_country_flag = chinese
+			}
+			XBI = {
+				set_country_flag = chinese
+			}
+			SXI = {
+				set_country_flag = chinese
+			}
+			MCK = {
+				set_country_flag = chinese
+			}
+			HUI = {
+				set_country_flag = chinese
+			}
+			HNN = {
+				set_country_flag = chinese
+			}
+			SZC = {
+				set_country_flag = chinese
+			}
+			YNN = {
+				set_country_flag = chinese
+			}
+			GXI = {
+				set_country_flag = chinese
+			}
+			GNG = {
+				set_country_flag = chinese
+			}
+			XIN = {
+				set_country_flag = chinese
+			}
+		}
+	}
+	
+	usa_1836_setup = {
+		potential = {
+			tag = USA
+			always = no
+		}
+		allow = {
+			tag = USA
+		}
+		effect = {
+			set_country_flag = the_slavery_debate
+				any_pop = {
+					limit = {
+						has_pop_culture = dixie
+					}
+					literacy = -0.1
+				}
+		}
+	}
+
+	usa_1913_setup = {
+		potential = {
+			tag = USA
+			always = no
+		}
+		allow = {
+			tag = USA
+		}
+		effect = {
+			USA = {
+				any_pop = {
+					limit = {
+						has_pop_culture = irish
+					}
+					literacy = 0.7
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_german
+					}
+					literacy = 0.7
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = spanish
+					}
+					literacy = 0.3
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = afro_american
+					}
+					literacy = -0.55
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = cherokee
+					}
+					literacy = -0.55
+				}
+			}
+		}
+	}
+	
+	prussian_1836_setup = {
+		potential = {
+			tag = PRU
+			always = no
+		}
+		allow = {
+			tag = PRU
+		}
+		effect = {
+			set_country_flag = prussia
+			PRU = {
+				any_pop = {
+					limit = {
+						has_pop_culture = czech
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					literacy = 0.4
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ashkenazi
+					}
+					literacy = 0.6
+				}
+			}
+		}
+	}
+
+	german_1913_setup = {
+		potential = {
+			tag = GER
+			always = no
+		}
+		allow = {
+			tag = GER
+		}
+		effect = {
+			GER = {
+				any_pop = {
+					limit = {
+						has_pop_culture = polish
+					}
+					literacy = -0.3
+				}
+			}
+		}
+	}
+
+	french_1836_setup = {
+		potential = {
+			tag = FRA
+			always = no
+		}
+		allow = {
+			tag = FRA
+		}
+		effect = {
+			FRA = {
+				any_pop = {
+					limit = {
+						has_pop_culture = basque
+					}
+					literacy = 0.03
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = flemish
+					}
+					literacy = 0.4
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+					}
+					literacy = 0.25
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = south_german
+					}
+					literacy = 0.6
+				}
+			}
+		}
+	}
+	
+	french_1913_setup = {
+		potential = {
+			tag = FRA
+			always = no
+		}
+		allow = {
+			tag = FRA
+		}
+		effect = {
+			FRA = {
+				any_pop = {
+					limit = {
+						has_pop_culture = basque
+					}
+					literacy = 0.37
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = flemish
+					}
+					literacy = 0.4
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+					}
+					literacy = 0.35
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = south_german
+					}
+					literacy = 0.25
+				}
+			}
+		}
+	}
+	
+	italian_1913_setup = {
+		potential = {
+			tag = ITA
+			always = no
+		}
+		allow = {
+			tag = ITA
+		}
+		effect = {
+			ITA = {
+				any_pop = {
+					limit = {
+						has_pop_culture = south_italian
+					}
+					literacy = -0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					literacy = 0.85
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = greek
+					}
+					literacy = 0.45
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = sephardic
+					}
+					literacy = 0.5
+				}
+			}
+		}
+	}
+	
+	austrian_1836_setup = {
+		potential = {
+			tag = AUS
+			always = no
+		}
+		
+		allow = {
+			tag = AUS
+		}
+		
+		effect = {
+			set_country_flag = austria
+			AUS = {
+				set_variable = {
+					which = commonarmy
+					value = 0
+				}
+				add_country_modifier = {
+					name = common_army_0
+					duration = -1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = czech
+					}
+					literacy = 0.3
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = hungarian
+					}
+					literacy = 0.05
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = polish
+					}
+					literacy = 0.05
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ashkenazi
+					}
+					literacy = 0.4
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ukrainian
+					}
+					literacy = -0.05
+				}
+			}
+		}
+	}
+
+	austro_hungarian_1913_setup = {
+		potential = {
+			tag = KUK
+			always = no
+		}
+		
+		allow = {
+			tag = KUK
+		}
+		
+		effect = {
+			set_country_flag = austria
+			KUK = {
+				set_variable = {
+					which = commonarmy
+					value = 4
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = czech
+					}
+					literacy = 0.7
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+					}
+					literacy = 0.5
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = hungarian
+					}
+					literacy = -0.3
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = polish
+					}
+					literacy = 0.3
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ashkenazi
+					}
+					literacy = 0.8
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = slovene
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = croat
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = slovak
+					}
+					literacy = 0.3
+				}
+			}
+		}
+	}
+	
+	ottoman_1836_setup = {
+		potential = {
+			tag = TUR
+			always = no
+		}
+		
+		allow = {
+			tag = TUR
+		}
+		
+		effect = {
+			TUR = {
+				add_country_modifier = {
+					name = christian_subjugation
+					duration = -1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = sephardic
+					}
+					literacy = 0.49
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = greek
+					}
+					literacy = 0.19
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = serb
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = bulgarian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = georgian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = romanian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = bosniak
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = albanian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = croat
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = armenian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ukrainian
+					}
+					literacy = 0.03
+				}
+			}
+		}
+	}
+
+	baltic_1836_setup = {
+		potential = {
+			tag = UBD
+			always = no
+		}
+
+		allow = {
+			tag = UBD
+		}
+
+		effect = {
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = russian
+						has_pop_culture = ugrian
+					}
+				}
+				literacy = -0.46
+			}
+		}
+	}
+
+	russian_1836_setup = {
+		potential = {
+			tag = RUS
+			always = no
+		}
+		
+		allow = {
+			tag = RUS
+		}
+		
+		effect = {
+			set_country_flag = russia
+			set_country_flag = serfdom_not_abolished
+			UBD = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = russian
+							has_pop_culture = ugrian
+						}
+					}
+					literacy = -0.46
+				}
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = polish
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = lithuanian
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = latvian
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = estonian
+				}
+				literacy = 0.1
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = ashkenazi
+				}
+				literacy = 0.75
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = finnish
+				}
+				literacy = 0.35
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = swedish
+				}
+				literacy = 0.75
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = sami
+				}
+				literacy = 0.35
+			}
+		}
+	}
+
+	english_1836_setup = {
+		potential = {
+			tag = ENG
+			always = no
+		}
+		
+		allow = {
+			tag = ENG
+		}
+		
+		effect = {
+			ENG = {
+				any_pop = {
+					limit = {
+						has_pop_culture = irish
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = maltese
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = boer
+					}
+					literacy = 0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = spanish
+					}
+					literacy = 0.08
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = anglo_canadian
+					}
+					literacy = 0.5
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = french_canadian
+					}
+					literacy = 0.5
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = australian
+					}
+					literacy = 0.5
+				}
+				add_country_modifier = { name = corn_laws duration = -1 }
+				add_country_modifier = { name = unequal_china_treaty duration = -1 }
+				add_country_modifier = { name = pax_britannica duration = -1 }
+				add_country_modifier = { name = crown_rule duration = -1 }
+			}
+		}
+	}
+	
+	english_1913_setup = {
+		potential = {
+			tag = ENG
+			always = no
+		}
+		
+		allow = {
+			tag = ENG
+		}
+		
+		effect = {
+			ENG = {
+				any_pop = {
+					limit = {
+						has_pop_culture = irish
+					}
+					literacy = 0.4
+				}
+				remove_country_modifier = unequal_china_treaty
+			}
+		}
+	}
+
+	sardinian_1836_setup = {
+		potential = {
+			tag = SAR
+			always = no
+		}
+		
+		allow = {
+			tag = SAR
+		}
+		
+		effect = {
+			SAR = {
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					literacy = 0.32
+				}
+			}
+		}
+	}
+	
+	egypt_1836_setup = {
+		potential = {
+			tag = EGY
+			always = no
+		}
+		allow = {
+			tag = EGY
+		}
+		effect = {
+			EGY = {
+				any_pop = {
+					limit = {
+						has_pop_culture = sephardic
+					}
+					literacy = 0.49
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_caucasian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = greek
+					}
+					literacy = 0.19
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = armenian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = turkish
+					}
+					literacy = 0.03
+				}
+			}
+		}
+	}
+
+	dutch_1836_setup = {
+		potential = {
+			tag = NET
+			always = no
+		}
+		allow = {
+			tag = NET
+		}
+		effect = {
+			NET = {
+				any_owned = {
+					limit = { continent = asia }
+					add_province_modifier = { name = cultuurstelsel duration = -1 }
+				}
+			}
+		}
+	}
+}

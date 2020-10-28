@@ -1,3 +1,11 @@
+# Version 0.44 - 10/28/2020
+## Bug Fixes:
+* Fixed broken Peru-Bolivian Confederation events.
+
+## General gameplay changes:
+* Added an event to enable or disable crises at the start of a campaign.
+
+
 # Version 0.43 - 10/16/2020
 ## Bug Fixes:
 * Fixed bugged ?s appearing in text where it shouldn't be.
