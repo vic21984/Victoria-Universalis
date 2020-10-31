@@ -1,0 +1,33 @@
+country_event = {
+	id = 19500
+	title = "EVTNAME19500"
+	desc  = "EVTDESC19500"
+	news = yes
+	news_desc_long = "EVTDESC19500_NEWS_LONG"
+	news_desc_medium = "EVTDESC19500_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC19500_NEWS_SHORT"
+	picture = "zulu"
+	
+	trigger = {
+		OR = {
+			tag = ORA
+			tag = TRN
+		}
+		exists = ZUL
+		has_global_flag = piet_retief_massacre
+		NOT = { has_country_flag = zul_cb_taken }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA19500"
+		casus_belli = {
+			target = ZUL
+			type = cut_down_to_size
+		}
+		set_country_flag = zul_cb_taken
+	}
+}

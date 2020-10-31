@@ -1,3 +1,24 @@
+# Version 0.45 - 10/31/2020
+## Bug Fixes:
+* Moved all ghost country related events from the World Bank to the newly created Ghost Country tag. Also fixed a bug where civilized countries would become uncivilized when they got annexed and triggered the ghost country event.
+
+## General gameplay changes:
+* Reduced immigrant attraction malus from from conscription laws to 0/0/-0.01/-0.02/-0.03.
+
+## Map Changes:
+* Added a strait between Oresund and Southern Baltic sea through Copenhagen. Ships cannot pass from one seazone to the other if they are at war with the controller of Copenhagen.
+* Re-arranged states in Brazil.
+
+## Country Balance Changes:
+###### Austria
+* Hungary starts the 1836 scenario as a puppet of Austria.
+* Events for Hungarian Revolution added.
+* Added a decision to form Danubian Federation, which turns the country into a democracy and gives Romanian, Slovak, Croat, and Slovene as accepted cultures.
+
+###### Brazil:
+* Amazonas state transfered from Grão-Pará to Brazil in the 1836 scenario.
+* Added an event that gives Brazil the modifier Dom Pedro II, which grants a research points modifier bonus and lowered militancy.
+
 # Version 0.44 - 10/28/2020
 ## Bug Fixes:
 * Fixed broken Peru-Bolivian Confederation events.

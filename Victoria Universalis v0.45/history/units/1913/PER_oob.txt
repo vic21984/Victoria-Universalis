@@ -1,0 +1,205 @@
+leader = {
+	name = "Reza Shah Pahlavi"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.5
+}
+leader = {
+	name = "Ghassem Khan Vali"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Amir Abdollah Tahmasebi"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ahmad Amir-Ahmadi"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Karim Buzarjomehri"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Mohammad-Hosayn Ayrom"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Mahmud Khan Puladee"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Teymur Khan Ayromlou"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+
+army = {
+	name = "I Corps"
+	location = 1121
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 1121
+	}
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 1121
+	}
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 1124
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 1124
+	}
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 1118
+	}
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 1113
+	}
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 1113
+	}
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 1122
+	}
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 1122
+	}
+}
+army = {
+	name = "II Corps"
+	location = 1119
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 1117
+	}
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 1117
+	}
+	regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 1120
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 1120
+	}
+	regiment = {
+		name= "5th Battery Royal Artillery"
+		type = artillery
+		home = 1125
+	}
+	regiment = {
+		name= "6th Battery Royal Artillery"
+		type = artillery
+		home = 1125
+	}
+	regiment = {
+		name= "7th Battery Royal Artillery"
+		type = artillery
+		home = 1129
+	}
+	regiment = {
+		name= "8th Battery Royal Artillery"
+		type = artillery
+		home = 1129
+	}
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 1127
+	}
+}
+army = {
+	name = "III Corps"
+	location = 1135
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 1127
+	}
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 1127
+	}
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 1127
+	}
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 1127
+	}
+	regiment = {
+		name= "9th Battery Royal Artillery"
+		type = artillery
+		home = 1137
+	}
+	regiment = {
+		name= "10th Battery Royal Artillery"
+		type = artillery
+		home = 1137
+	}
+	regiment = {
+		name= "11th Battery Royal Artillery"
+		type = artillery
+		home = 1135
+	}
+	regiment = {
+		name= "12th Battery Royal Artillery"
+		type = artillery
+		home = 1135
+	}
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 1136
+	}
+}

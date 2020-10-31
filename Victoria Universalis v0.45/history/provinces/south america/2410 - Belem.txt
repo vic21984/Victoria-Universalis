@@ -1,0 +1,34 @@
+owner = GRP
+controller = GRP
+add_core = GRP
+add_core = BRZ
+trade_goods = coal
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = telephone_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}
+1913.1.1 = {
+	owner = BRZ
+	controller = BRZ
+	remove_core = GRP
+}

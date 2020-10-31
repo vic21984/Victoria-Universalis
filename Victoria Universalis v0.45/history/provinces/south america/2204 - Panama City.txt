@@ -1,0 +1,24 @@
+owner = CLM
+controller = CLM
+add_core = CLM
+add_core = PNM
+add_core = GCO
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	owner = PNM
+	controller = PNM
+	remove_core = CLM
+	remove_core = GCO
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	naval_base = 2
+}

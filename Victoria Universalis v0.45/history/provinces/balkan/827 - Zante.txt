@@ -1,0 +1,14 @@
+owner = ION
+controller = ION
+add_core = ION
+add_core = GRE
+trade_goods = fish
+life_rating = 40
+1913.1.1 = {
+owner = GRE
+controller = GRE
+remove_core = ION
+}
+1914.7.28 = {
+add_core = KGR
+}

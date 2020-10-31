@@ -1,0 +1,40 @@
+leader = {
+	name = "von Leysser"
+	date = 1829.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.1
+}
+
+leader = {
+	name = "von Zezschwitz"
+	date = 1817.1.1
+	type = land
+	personality = defence_5.1
+	background = attack_1.1
+	prestige = 0.2
+}
+
+army = {
+	name = "Königlich Sächsische Armee"
+	location = 558
+	regiment = {
+		name= "1. Infanteriebrigade"
+		type = infantry
+		home = 558
+	}
+
+	regiment = {
+		name= "2. Infanteriebrigade"
+		type = infantry
+		home = 559
+	}
+
+	regiment = {
+		name= "3. Infanteriebrigade"
+		type = infantry
+		home = 560
+	}
+
+}

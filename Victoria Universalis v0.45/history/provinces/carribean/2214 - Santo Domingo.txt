@@ -1,0 +1,22 @@
+owner = HAI
+controller = HAI
+add_core = HAI
+add_core = DOM
+trade_goods = tobacco
+life_rating = 35
+1913.1.1 = {
+	owner = DOM
+	controller = DOM
+	remove_core = HAI
+	state_building = {
+		level = 4
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+	naval_base = 2
+}
