@@ -1,0 +1,28 @@
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	colony = 0
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cigarette_factory
+		upgrade = yes
+	}
+}

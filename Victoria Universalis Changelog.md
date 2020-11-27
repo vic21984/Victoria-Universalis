@@ -1,3 +1,61 @@
+# Version 0.47 - 11/27/2020
+## General gameplay changes:
+* Changed the way increase state literacy decisions works. It now gives a bonus to each POP in a state that's based on that own POP's literacy level and not the average literacy level of the state.
+* Added -0.01 infamy decay to manifest destiny invention.
+* Demand concession cb can now target capital states.
+* Lower R&D level decision now instantly lowers R&D to lowest possible level instead of one at a time. Raise R&D level decision still only raises R&D level by one at a time.
+* Slightly lowered unciv military reform cost and slightly increased unciv economic reform cost.
+* Uncivilized East African countries can now be targeted by the Scramble for Africa cb once colonial negotiations are invented.
+
+## Map Changes:
+* Added a strait between Straits of Gibraltar and Gulf of Almería through Gibraltar. Ships cannot pass from one seazone to the other if they are at war with the controller of Gibraltar.
+* Re-added the adjacency between Gibraltar and Tetouan.
+* Removed adjacency between Calais and Canterbury.
+* Combined Bukovina and Moldavia into one state.
+* Gave provinces of Kursten and Deutsch Krone to Stettin state.
+* Combined Emilia and Romagna into one state. Gave back Ancona to Lazio state and Lucca to Toscana state.
+* Created new Rzeszow province in Lodomeria state.
+* Made Luneburg a coastal province and created new state of Oldenburg from provinces from Hannover state.
+
+## Country Balance Changes:
+###### Southeast Asia:
+* Siam and Vietnam can annex Cambodia and the Laotian kingdoms via decision if they are puppets.
+* Added an event for the Siamese-Vietnamese war for control over Cambodia.
+* Siam can add Lao as an accepted culture via decision.
+* Great and Secondary Powers can annex uncivilized Vietnamese/Cambodian/Loatian territory via decision if they are neighbours and have certain techs.
+
+###### Indonesia:
+* Added several new Indonesian countries to the 1836 start.
+* Added events and decisions for Great and Secondary Powers to annex these new countries.
+
+###### France:
+* Added a decision to go to war over Cochinchina if it's controlled by an uncivilized Vietnam.
+
+###### Netherlands:
+* Gave Maastricht to Belgium in 1836, province gets ceded back to Netherlands if the Treaty of London decision is enacted.
+* Starts with a truce with Belgium until 1839.
+
+###### Prussia:
+* Added an event for AI Prussia/NGF that causes Austria/Austria-Hungary to lose its GP alliances around the time the Brother's War starts.
+* EMS Dispatch decision will make France break alliances with Russia and Austria when Prussia/NGF is AI controlled.
+
+###### United Kingdom:
+* Added a decision to annex North Borneo and Malaya if they are controlled by an AI unciv.
+
+###### Romania:
+* Increased starting pop in 1836 and lowered liferating from 40 to 35 in all provinces except Bucharest.
+
+###### China:
+* Yunnan and Qinghai start as puppets of China.
+* Added events for Panthay rebellion and first and second Dungan revolts.
+
+###### Japan:
+* Added "Invest in Korea" decision that increases relations/influence in Korea by 400 and grants Korea 5000 research points.
+
+###### Sardinia:
+* Removed starting cores from Lombardia.
+
+
 # Version 0.45 - 10/31/2020
 ## Bug Fixes:
 * Moved all ghost country related events from the World Bank to the newly created Ghost Country tag. Also fixed a bug where civilized countries would become uncivilized when they got annexed and triggered the ghost country event.
@@ -18,6 +76,7 @@
 ###### Brazil:
 * Amazonas state transfered from Grão-Pará to Brazil in the 1836 scenario.
 * Added an event that gives Brazil the modifier Dom Pedro II, which grants a research points modifier bonus and lowered militancy.
+
 
 # Version 0.44 - 10/28/2020
 ## Bug Fixes:

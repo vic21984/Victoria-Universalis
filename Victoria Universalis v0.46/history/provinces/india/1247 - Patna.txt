@@ -1,0 +1,28 @@
+owner = EIC
+controller = EIC
+add_core = BIH
+add_core = HND
+trade_goods = opium
+life_rating = 32
+1913.1.1 = {
+	owner = EIC
+	controller = EIC
+	colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+}

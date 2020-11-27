@@ -1,0 +1,110 @@
+leader = {
+	name = "von Heideck"
+	type = land
+	date="1833.1.1"
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Demetrios Kalergis"
+	type = land
+	date="1836.1.1"
+	personality = defence_1.1
+	background = attack_2.1
+}
+
+leader = {
+	name = "Ioannis Kolokotronis"
+	type = land
+	date="1833.1.1"
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Antonios Kriezis"
+	type = sea
+	date="1836.1.1"
+	personality = defence_4.1
+	background = attack_4.1
+}
+
+army = {
+	name = "Stratós Thessalías"
+	location = 836
+	regiment = {
+		name= "1st Greek Infantry"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "2nd Greek Infantry"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "3rd Greek Infantry"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "4th Greek Infantry"
+		type = infantry
+		home = 837
+	}
+	
+	regiment = {
+		name= "1st Greek Cavalry"
+		type = dragoon
+		home = 837
+	}
+	
+	regiment = {
+		name= "1st Greek Artillery"
+		type = artillery
+		home = 845
+	}
+	
+	regiment = {
+		name= "2nd Greek Artillery"
+		type = artillery
+		home = 842
+	}
+	
+	regiment = {
+		name= "3rd Greek Artillery"
+		type = artillery
+		home = 841
+	}
+
+	regiment = {
+		name= "4th Greek Artillery"
+		type = artillery
+		home = 840
+	}
+
+	regiment = {
+		name= "5th Greek Artillery"
+		type = artillery
+		home = 836
+	}		
+}
+
+
+navy = {
+	name = "Hellenic Navy"
+	location = 834
+
+	ship = {
+		name= "Leda"
+		type = clipper_transport
+	}
+
+}
+

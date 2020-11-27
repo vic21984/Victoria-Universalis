@@ -1,0 +1,39 @@
+army = {
+	name = "1st Carlist Army"
+	location = 487
+	regiment = {
+		name = "1. Regiment"
+		type = infantry
+		home = 493
+	}
+	regiment = {
+		name = "2. Regiment"
+		type = infantry
+		home = 493
+	}
+	regiment = {
+		name = "3. Regiment"
+		type = infantry
+		home = 493
+	}
+	regiment = {
+		name = "4. Regiment"
+		type = infantry
+		home = 493
+	}
+	regiment = {
+		name = "5. Regiment"
+		type = irregular
+		home = 493
+	}
+	regiment = {
+		name = "6. Regiment"
+		type = irregular
+		home = 493
+	}
+	regiment = {
+		name = "7. Regiment"
+		type = irregular
+		home = 493
+	}
+}

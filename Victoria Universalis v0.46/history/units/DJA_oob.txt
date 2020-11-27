@@ -1,0 +1,17 @@
+army = {
+	name = "Army of the Sultan of Jambi"
+	location = 1398
+		regiment = {
+		name= "Sultan Guards"		
+			type = irregular	
+			home = 1398
+		}
+	}
+
+leader = {
+	name = "Sultan Facharudin"
+	date = 1836.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_1.1
+}

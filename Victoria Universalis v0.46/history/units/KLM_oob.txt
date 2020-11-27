@@ -1,0 +1,15 @@
+army = {
+	name = "Army of Kalimintan"
+	location = 1422
+	regiment = {
+		name= "1st irregular"
+		type = irregular
+		home = 1422
+	}
+	
+	regiment = {
+		name= "2nd irregular"
+		type = irregular
+		home = 1425
+	}
+}

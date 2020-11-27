@@ -1,0 +1,267 @@
+KUK = {
+	truce_until = 1915.1.1
+}
+
+RUS = {
+	truce_until = 1915.1.1
+}
+
+leader = {
+	name = "Ioan Culcer"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Eremia Grigorescu"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_3.1
+}
+leader = {
+	name = "Alexandru Averescu"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Artur Vaitoianu"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Mihail Aslan"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Constantin Cristescu"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ion Dragalina"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Constantin Prezan"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Vasile Zottu"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Eustace Sebastian"
+	type = sea
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+navy = {
+	name = "Fortele Navale Române"
+	location = 674
+
+	ship = {
+		name= "NMS Elisabeta"
+		type = cruiser
+	}
+
+	ship = {
+		name= "NMS Naluca"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "NMS Sborul"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "NMS Smeul"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "NMS Viforul"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "NMS Vartejul"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "NMS Vijelia"
+		type = commerce_raider
+	}
+
+}
+
+army = {
+	name = "I Armee"
+	location = 664
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 664
+	}
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 664
+	}
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 666
+	}
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 666
+	}
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 818
+	}
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 674
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 664
+	}
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 665
+	}
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 665
+	}
+}
+army = {
+	name = "II Armee"
+	location = 668
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 668
+	}
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 668
+	}
+	regiment = {
+		name= "5th Battery Royal Artillery"
+		type = artillery
+		home = 668
+	}
+	regiment = {
+		name= "6th Battery Royal Artillery"
+		type = artillery
+		home = 675
+	}
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 667
+	}
+	regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 667
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 669
+	}
+	regiment = {
+		name= "7th Battery Royal Artillery"
+		type = artillery
+		home = 669
+	}
+	regiment = {
+		name= "8th Battery Royal Artillery"
+		type = artillery
+		home = 673
+	}
+}
+army = {
+	name = "III Armee"
+	location = 671
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 671
+	}
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 671
+	}
+	regiment = {
+		name= "9th Battery Royal Artillery"
+		type = artillery
+		home = 672
+	}
+	regiment = {
+		name= "10th Battery Royal Artillery"
+		type = artillery
+		home = 672
+	}
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 672
+	}
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 672
+	}
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 672
+	}
+	regiment = {
+		name= "11th Battery Royal Artillery"
+		type = artillery
+		home = 670
+	}
+	regiment = {
+		name= "12th Battery Royal Artillery"
+		type = artillery
+		home = 670
+	}
+}
