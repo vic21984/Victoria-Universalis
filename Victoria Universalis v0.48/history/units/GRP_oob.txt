@@ -1,0 +1,28 @@
+leader = {
+	name = "João Batista Gonçalves Campos"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "Exército Gaucho"
+	location = 2410
+
+	regiment = {
+			name= "1. Divisão Gaucha"
+			type = irregular
+			home = 2410
+	}
+	regiment = {
+			name= "2. Divisão Gaucha"
+			type = irregular
+			home = 2410
+	}
+	regiment = {
+			name= "5. Divisão Gaucha"
+			type = cavalry
+			home = 2411
+	}
+}

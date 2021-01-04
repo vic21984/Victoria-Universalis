@@ -1,0 +1,48 @@
+owner = USA
+controller = USA
+add_core = USA
+trade_goods = coal
+life_rating = 35
+railroad = 1
+1913.1.1 = {
+	state_building = {
+		level = 10
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = aeroplane_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,14 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+add_core = ZAN
+trade_goods = cattle
+life_rating = 35
+naval_base = 1
+1913.1.1 = {
+	owner = ENG
+	controller = ENG
+	remove_core = OMA
+	naval_base = 6
+	colonial = 2
+}

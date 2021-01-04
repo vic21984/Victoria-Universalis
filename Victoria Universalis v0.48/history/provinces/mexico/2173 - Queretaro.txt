@@ -1,0 +1,32 @@
+owner = MEX
+controller = MEX
+add_core = MEX
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

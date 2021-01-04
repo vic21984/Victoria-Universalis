@@ -1,0 +1,27 @@
+owner = UCA
+controller = UCA
+add_core = UCA
+add_core = ELS
+trade_goods = coffee_beans
+life_rating = 35
+1913.1.1 = {
+	owner = ELS
+	controller = ELS
+	remove_core = UCA
+	state_building = {
+		level = 2
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+	naval_base = 2
+}

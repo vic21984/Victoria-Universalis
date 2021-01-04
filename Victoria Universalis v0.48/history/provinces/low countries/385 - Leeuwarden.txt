@@ -1,0 +1,44 @@
+owner = NET
+controller = NET
+add_core = NET
+trade_goods = cattle
+life_rating = 35
+naval_base = 2
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fuel_refinery
+		upgrade = yes
+	}
+	naval_base = 6
+}

@@ -1,0 +1,27 @@
+owner = PER
+controller = PER
+add_core = PER
+trade_goods = opium
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fuel_refinery
+		upgrade = yes
+	}
+}

@@ -1,0 +1,47 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = grain
+life_rating = 31
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = aeroplane_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = telephone_factory
+		upgrade = yes
+	}
+}

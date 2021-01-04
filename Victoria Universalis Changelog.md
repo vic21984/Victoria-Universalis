@@ -1,4 +1,80 @@
-# Version 0.47 - 11/27/2020
+# Version 0.48 - 1/4/2020
+## Bug Fixes:
+* Fixed existing countries sometimes inheriting and keeping the ghost province.
+
+## General gameplay changes:
+* Added a -2 attack modifier to all naval invasions. The value was bugged in base Vic2 HOD expansion and only applied to canal and strait crossings instead of coastal invasions.
+* Rebalanced 1913 and WW1 factories to be more profitable.
+* Lowered prestige monthly gain from the prestige national idea from 0.5 to 0.3.
+* All existing countries in 1913 and WW1 scenarios have been given pre-selected national ideas.
+* Doubled war exhaustion from combat losses.
+
+## Map Changes:
+* Re-split Patagonia state back to Patagonia Septentrional and Patagonia Meridional.
+* Combined Corsica and Sardegna states into new Thyrrenian Islands state.
+* Created 2 new provinces in Alsace-Lorraine and 1 new province in Franche-Comte.
+* Created 1 new province each in Lombardia, Veneto, Molise, and Toscana states.
+* Combined several provinces in Northern Canada.
+
+## Country Balance Changes:
+###### Germany:
+* Forming NGF or Germany via decision will remove Prussian cores in all German cored territory. Forming Germany via nationalist rebels does not remove Prussian cores.
+
+###### Russia:
+* Removed starting cores in Congress Poland, Moldavia, and Lithuania.
+* The October Revolution event now triggers a civil war between the Soviet Union and Russian Republic.
+
+###### Poland:
+* Polish minor countries can now become Poland if Poland doesn't exist and they own Warsaw and Lublin.
+* Removed starting cores for PLC and added a decision to reform the PLC and gain the old cores.
+
+###### USA:
+* Nerfed USA mobilization in 1913 and WW1.
+
+###### Austria-Hungary:
+* Added Slovak as an accepted culture in 1913 and WW1 bookmarks
+
+###### Heavenly Kingdom:
+* Added Middle Kingdom modifier that prevents RP gain from conquest.
+* The event that causes all chinese cliques to civilize once the main China civilizes now fires if Taiping civilizes.
+* Will no longer turn into Beiyang or Nationalist China after the warlord event fires.
+
+###### Finland:
+* Reduced starting pop in 1913 and WW1 by 45%.
+
+###### Haiti:
+* Reduced starting POP of Dominican Republic and changed liferating of all Hispaniola to 40.
+
+
+# Version 0.471 - 12/4/2020
+## Bug Fixes:
+* Fixed possible crash occuring with ghost country events.
+
+
+# Version 0.47 - 12/2/2020
+## General gameplay changes:
+* Removed 1 army speed bonus from the Army Leadership tech line.
+* Added tank and plane speed bonuses to military science tech line.
+* Decreased base cost of forts and railroads, but added a scaling cost that doubles every additional level. When your POPs build railroads or you fund railroad projects built by POPs, you will not pay the scaling cost and only pay the base cost.
+* Absorbed several cultures in Africa and Southeast Asia with <200K POPs into their neighbouring cultures in the 1836 starting scenario.
+
+## Map Changes:
+* Increased  movement penalty for mountain, hills, desert, marsh, jungle, forest, and arctic terrain.
+* Increased railroad penalty for mountain, desert, marsh, jungle, and arctic terrain.
+* Increased defense bonus to mountain terrain from 2 to 3.
+* Changed terrain of several provinces in Siberia from forest to arctic.
+* Changed Alsace-Lorraine provinces from woods to forest.
+
+## Country Balance Changes:
+###### Serbia:
+* Removed Organize Greater Serbia and Organize Yugoslavia decisions.
+* Claim Greater Serbia decision adds bosniak as an accepted culture.
+* Added Become Greater Serbia decision that changes tag to Great Serbia.
+
+###### Siam:
+* Added Shan as an accepted culture.
+
+# Version 0.46 - 11/27/2020
 ## General gameplay changes:
 * Changed the way increase state literacy decisions works. It now gives a bonus to each POP in a state that's based on that own POP's literacy level and not the average literacy level of the state.
 * Added -0.01 infamy decay to manifest destiny invention.
