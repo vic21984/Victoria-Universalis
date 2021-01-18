@@ -1,3 +1,43 @@
+# Version 0.49 - 1/18/2020
+## Interface changes:
+* Assigned the hotkey "e" to the naval base construction button. The tooltip will incorrectly show "e" as the hotkey for all province building buttons, but it only works for naval bases.
+
+## Bug fixes:
+* Added naval invasion penalty to a few provinces in Persia that were missed in 0.48.
+* Fixed naval icons erroneously showing fort icons and vice versa when looking at the province tab of another country.
+* Added Champassak to the release vassal decision.
+
+## General gameplay changes:
+* Request grant decision will now only ask human players you are not war with.
+* Lowered supply consumption from several army techs and inventions.
+* Slightly increased output of automobile factories.
+
+## Map Changes:
+* Made London a naval province.
+
+## Country balance changes:
+###### United Kingdom:
+* Can no longer regain the Pax Britannica event modifier if it is lost.
+* Lowered draft law to no draft in 1913 and 1914 scenarios.
+
+###### British Raj:
+* Lowered starting soldier POPS by 50% in 1913 and 1914 bookmarks.
+* Increased British bureaucrat sizes by 3000% in 1913 and 1914 bookmarks. Raj now has enough British pops to have 3 national focuses.
+
+###### India:
+* Uncivilized India gets a modifier that prevents it from gaining research points from conquest.
+* Starts with Foreign Weapons and Pre-Industrialization reforms.
+
+##### United States:
+* Lowered Statue of Liberty assimilation bonus to 50% and monthly prestige gain to 0.2.
+
+##### Japan:
+*Shogunate Japan and Imperial Japan will lose all their cores if one of them exists and the other doesn't.
+
+##### Ottoman Empire:
+* Halved assimilation bonus from Embrace Ottomanism decision in provinces that have a culture core.
+
+
 # Version 0.48 - 1/4/2020
 ## Bug Fixes:
 * Fixed existing countries sometimes inheriting and keeping the ghost province.

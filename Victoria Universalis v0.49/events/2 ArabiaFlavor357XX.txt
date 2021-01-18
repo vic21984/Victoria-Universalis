@@ -1,0 +1,42 @@
+country_event = {
+	id = 35710
+	title = "EVTNAME35710"
+	desc = "EVTDESC35710"
+	picture = stone_town
+
+	trigger = {
+		tag = OMA
+		owns = 2048
+		NOT = { has_country_flag = zanzibar_sultanate }
+		NOT = { has_leader = "Said bin Sultan Al-Said" }
+	}
+
+	option = {
+		name = "EVTOPTA35710"
+		set_country_flag = zanzibar_sultanate
+		any_owned = {
+			limit = { is_core = ZAN }
+			secede_province = ZAN
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "EVTOPTB35710"
+		set_country_flag = zanzibar_sultanate
+		any_owned = {
+			limit = { is_core = ZAN }
+			secede_province = ZAN
+		}
+		war = {
+			target = ZAN
+			attacker_goal = { casus_belli = annex_core_country }
+			call_ally = yes
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}

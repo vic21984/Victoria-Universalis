@@ -1,0 +1,31 @@
+owner = MEX
+controller = MEX
+add_core = MEX
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	remove_core = MEX
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+}

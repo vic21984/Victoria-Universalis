@@ -1,0 +1,21 @@
+1914.7.28 = {
+	add_attacker = GRE
+	add_defender = KGR
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = civil_war
+		actor = GRE
+		receiver = KGR
+	}
+	war_goal = {
+		casus_belli = civil_war
+		actor = KGR
+		receiver = GRE
+	}
+
+}

@@ -1,0 +1,53 @@
+owner = BEL
+controller = BEL
+add_core = NET
+add_core = BEL
+trade_goods = coal
+life_rating = 35
+1913.1.1 = {
+	owner = NET
+	controller = NET
+	remove_core = BEL
+}
+1913.1.1 = {
+	state_building = {
+		level = 6
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

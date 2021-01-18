@@ -1,0 +1,89 @@
+political_decisions = {
+	the_golden_law = {
+		picture = golden_law
+		potential = {
+			tag = BRZ
+			OR = {
+				government = hms_government
+				government = democracy
+			}
+			NOT = { has_country_flag = free_at_last }
+		}
+		allow = {
+			OR = {
+				analytic_philosophy = 1
+				AND = {
+					citizens_rights = all_voting_pops
+					government = democracy
+				}
+			}
+			NOT = { ruling_party_ideology = reactionary }
+		}
+		effect = {
+			set_country_flag = free_at_last
+			add_accepted_culture = afro_brazilian
+			any_pop = {
+				limit = {
+					pop_type = aristocrats
+				}
+				consciousness = 5
+				militancy = 10
+			}
+			political_reform = no_slavery	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	republica_velha = {
+		picture = republica_velha
+		potential = {
+			tag = BRZ
+			OR = {
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			NOT = { has_country_flag = republica_velha }
+		}
+		allow = {
+			has_country_flag = dom_pedro_ii
+			OR = {
+				revolution_n_counterrevolution = 1
+				NOT = { has_country_modifier = dom_pedro_ii }
+			}
+		}
+		effect = {
+			set_country_flag = republica_velha
+			government = democracy
+			add_country_modifier = { name = small_immigration_boom duration = 1825 }
+			remove_country_modifier = dom_pedro_ii
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fatherland_volunteers = {
+		potential = {
+			tag = BRZ
+			government = hms_government
+			NOT = {
+				has_country_flag = pedro_said_it_best
+			}
+		}
+		allow = {
+			army_decision_making = 1
+			war = yes
+		}
+		effect = {
+			war_exhaustion = -1
+			prestige = 10
+			random_owned = { limit = { owner = { conscription = four_year_draft } } owner = { political_reform = mandatory_service } }
+			random_owned = { limit = { owner = { conscription = two_year_draft } } owner = { political_reform = four_year_draft } }
+			random_owned = { limit = { owner = { conscription = one_year_draft } } owner = { political_reform = two_year_draft } }
+			random_owned = { limit = { owner = { conscription = no_draft } } owner = { political_reform = one_year_draft } }
+			set_country_flag = pedro_said_it_best
+		}
+	}
+}
