@@ -1,0 +1,30 @@
+owner = KOR
+controller = KOR
+add_core = KOR
+trade_goods = grain
+life_rating = 35
+1913.1.1 = {
+	owner = JAP
+	controller = JAP
+	colonial = 0
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

@@ -1,0 +1,51 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+trade_goods = grain
+life_rating = 35
+fort = 1
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	add_core = KUK
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,22 @@
+trade_goods = grain
+life_rating = 35
+1913.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	state_building = {
+		level = 9
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = small_arms_factory
+		upgrade = yes
+	}
+}

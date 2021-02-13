@@ -1,0 +1,14 @@
+owner = CHI
+controller = CHI
+add_core = CHI
+add_core = MGL
+add_core = XBI
+trade_goods = iron
+life_rating = 32
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+}

@@ -1,3 +1,88 @@
+# Version 0.50 - 2/13/2020
+## Bug Fixes:
+* Fixed a bug in the base game where several slave countries started the game with no slaves even if they had slavery allowed and slaves in the starting pop files.
+* Fixed Modern Naval Doctrine missing naval base increase.
+* Added Italian and German cores to the new provinces created in v0.49.
+
+## General gameplay changes:
+* Added the Request Trade Deal decision that creates a trade agreement between two human players. Players with an active trade agreement can automatically send goods to each other once their stockpile of the chosen goods reaches 2000. A player may only have one trading partner at a time.
+* Enabled "Allow pops/factories to buy from stockpile" button in the trade screen. NEVER enable this feature while you are manually buying goods or it will glitch the world market. In order to utilize the goods received from the new Trade Agreement system, the nation receiving the goods must enable the "Allow pops/factories to buy from stockpile" button and NOT manually buy or sell anything. The nation sending the goods must manually buy the goods it is sending and must have this button turned OFF.
+* Increased max stockpile from 2000 to 2925.
+* The Request Grant decision can now also be used to request a one time shipment of ammunition, artillery, canned food, and small arms. The player giving the resources must have set their stockpile to manually buy more than the requested amount in order for the decision to work.
+* Added penalties to going over 25 infamy. The malus is -10% admin efficiency and +0.04 non-accepted pop militancy for every 5 infamy above 25, with the penalties maxing out at -60% admin efficiency and +0.24 militancy at 50 infamy.
+* Changed the way the release vassal decision works. Instead of being able to choose to release each vassal individually, you now can only release all vassals at once. This was changed in order to increase performance because the old system required a separate decision for each of the 300+ country tags.
+* Buffed submarine regular attack from 4 to 8.
+* Replaced lumber with machine parts as an input good for steamer factories.
+* Moved Synthetic Oil factory invention from Government Intervetionism tech to Synthetic Polymers tech.
+* Colonial migration from colonial policy now scales down with higher country population.
+
+## Map Changes:
+* Changed starting borders and terrain of Afghanistan.
+* Created Dagestan state out of part of North Caucasus state.
+* Added a sulphur province to India.
+
+## Country balance changes:
+###### United Kingdom:
+* Added decisions to annex commonwealth members at the cost of infamy. Canada, South Africa, Australia, and New Zealand can only be annexed while their governments are autonomous dependencies. British Raj can be annexed only while they are still uncivilized and after the Sepoy Rebellion has fired.
+
+###### Boer Republics:
+* Added permanent "Kommandos" country modifier that gives +10% mobilization pool.
+* Added decisions to instantly civilize the states of Zululand and Eastern Cape, and remove Matabele, Basotho, Zulu and Xhosa cores once they are annexed by a Boer Republic.
+* Added a decision to gain cores on all of South Africa once the states of Transvaal, Vrystaat, and Zululand are owned.
+
+###### CSA:
+* The A House Divided event removes USA cores on CSA and triggers another event in 6 months that begins the actual civil war. USA can only regain cores on the CSA by winning the scripted civil war event and annexing all of the CSA.
+* Raise the Bonnie Blue Flag decision now spawns several historical confederate generals.
+* Kelly's Irish Brigade decision turns 5 random Irish farmer POPs into soldiers.
+* Added Confederate Manifest Destiny decision that gives cores on Chihuahua and Sonora.
+* Added Complete The Golden Circle decision that gives cores on all of Mexico, Central America, parts of Colombia and Venezuela, and all of the Caribbean. The conditions for enacting this decision require owning all of Mexico.
+
+###### Texas:
+* Increased stats of Sam Houston to +5 attack and +5 defense.
+* Added "Remember the Alamo!" country modifier that lasts for 30 days and gives +100% mobilization pool.
+
+###### Mexico:
+* Added an event to change Mexico from a presidential dictatorship to a democracy if it does not control Dallas and San Francisco.
+
+###### Central America:
+* All of Central America except for Guatemala spawn nationalist rebels at the start.
+* Added an event to convert Federal Republic of Central America to Guatemala if the various nationalist rebels win.
+* Created a decision to reform the USCA if it breaks apart.
+
+###### Brazil:
+* Added Praieira Revolt event.
+
+###### Afghanistan:
+* Imported HPM pop history files.
+* Changed starting borders.
+* Added a decision to accept Baluchi.
+* Added Jezail Gunsmiths decision that unlocks local firearm production economic reform.
+* Added Claim Greater Afghanistan decision that gives cores on Pakistan and Western Persia.
+
+###### British Raj:
+* Added a decision to go to war with Afghanistan over Baluchistan.
+* State of Ceylon given to the UK.
+* Reduced starting farm size by 60%. This was done by reducing farmer pop size in the history file by 60% and then increasing them back to their starting population when the game starts.
+
+###### China:
+* Removed the chinese farm modifier that gives -60% farm size and instead reduced farmer pop size by 60% in the history files and increased them back to their starting population when the game starts. This has the same effect of reducing farm size by 60%.
+
+###### Central Asia:
+* Imported HPM pop history files.
+* Added a decision for Turkic Central Asian nations to form Turkestan. All Turkic speaking cultures will be added as an accepted culture and Turkestan will gain cores on all of Central Asia.
+
+###### Persia:
+* Imported HPM pop history files.
+* Removed Hazara and Baluchi as accepted cultures.
+* Begins the 1836 bookmark with slavery allowed.
+
+###### Japan:
+* Reduced starting techs in 1913 and WW1 bookmarks.
+
+###### Hawaii:
+* Reduced starting literacy to 2%.
+
+
 # Version 0.49 - 1/18/2020
 ## Interface changes:
 * Assigned the hotkey "e" to the naval base construction button. The tooltip will incorrectly show "e" as the hotkey for all province building buttons, but it only works for naval bases.

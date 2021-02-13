@@ -1,0 +1,22 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = timber
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = electric_gear_factory
+		upgrade = yes
+	}
+}

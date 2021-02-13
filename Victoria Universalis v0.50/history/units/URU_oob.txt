@@ -1,0 +1,26 @@
+BRZ = {
+	value = 100
+}
+
+leader = {
+	name = "José Fructuoso Rivera"
+	date = 1814.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_2.1
+}
+
+army = {
+	name = "Ejército del Uruguay"
+	location = 2344
+	regiment = {
+		name= "1. División de Infantería"
+		type = irregular
+		home = 2344
+	}
+	regiment = {
+		name= "2. División de Infantería"
+		type = irregular
+		home = 2344
+	}
+}

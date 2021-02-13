@@ -1,0 +1,12 @@
+owner = PER
+controller = PER
+add_core = PER
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+}
