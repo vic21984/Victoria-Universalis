@@ -20,7 +20,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -223,7 +223,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -426,7 +426,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -629,7 +629,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -832,7 +832,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -1035,7 +1035,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -1238,7 +1238,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -1441,7 +1441,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -1644,7 +1644,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -1847,7 +1847,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -2050,7 +2050,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -2253,7 +2253,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -2456,7 +2456,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -2659,7 +2659,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -2862,7 +2862,7 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = sending_coal
+				set_country_flag = receiving_coal
 			}
 		}
 	}
@@ -3047,8 +3047,8 @@ province_event = {
 }
 
 country_event = {
-	title = "Â§R$FROMCOUNTRY$Â§b Requests Trade Deal"
-	desc = "Â§R$FROMCOUNTRY$Â§b has approached us with an offer to create a trade agreement. Enact the Accept Trade Deal decision to create a trade agreement with Â§R$FROMCOUNTRY$Â§b. You are only allowed to have one active trade agreement at a time."
+	title = "§R$FROMCOUNTRY$§b Requests Trade Deal"
+	desc = "§R$FROMCOUNTRY$§b has approached us with an offer to create a trade agreement. Enact the Accept Trade Deal decision to create a trade agreement with §R$FROMCOUNTRY$§b. You are only allowed to have one active trade agreement at a time."
 	id = 92116
 	picture = trade_agreement
 	
@@ -3060,8 +3060,8 @@ country_event = {
 }
 
 country_event = {
-	title = "Â§R$FROMCOUNTRY$Â§b Accepts Trade Deal"
-	desc = "Â§R$FROMCOUNTRY$Â§b has accepted our offer to create a trade agreement."
+	title = "§R$FROMCOUNTRY$§b Accepts Trade Deal"
+	desc = "§R$FROMCOUNTRY$§b has accepted our offer to create a trade agreement."
 	id = 92117
 	picture = trade_agreement
 	
@@ -3074,8 +3074,8 @@ country_event = {
 
 country_event = {
 	id = 92110
-	title = "Â§R$FROMCOUNTRY$Â§b Cancels Trade Agreement"
-	desc = "Â§R$FROMCOUNTRY$Â§b has discontinued our trade deal."
+	title = "§R$FROMCOUNTRY$§b Cancels Trade Agreement"
+	desc = "§R$FROMCOUNTRY$§b has discontinued our trade deal."
 	picture = trade_agreement
 	
 	is_triggered_only = yes
