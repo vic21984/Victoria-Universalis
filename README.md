@@ -8,7 +8,7 @@ Mine RGO output is now mostly determined by mine size, with every mine in the wo
 
 Many flavor countries and decisions have been imported over from HPM, with the decisions and events being modified to be more impactful in terms of gameplay and faster in terms of game performance.
 
-Generals traits have been replaced by color coded + Attack and + Defense bonuses that you can clearly see while scrolling through the list of generals.
+Generals traits have been replaced by color coded + Attack and + Defense bonuses that are clearly visible while scrolling through the list of generals.
 
 2 new starting dates have been added: 1913 and 1914. The 1914 scenario starts with the Great War already underway and includes an entire event/decision chain to simulate the end of the war.
 
