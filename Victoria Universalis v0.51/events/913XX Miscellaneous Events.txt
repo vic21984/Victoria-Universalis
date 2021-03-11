@@ -3860,3 +3860,55 @@ country_event = {
 		set_country_flag = crises_enabled
 	}
 }
+
+
+#########################################################################
+# 							AI MIL ACCESS								#
+#########################################################################
+
+
+country_event = {
+	id = 91330
+	title = "Cancel AI Mil Access"
+
+	trigger = {
+		ai = yes
+		any_neighbor_country = {
+			any_neighbor_country = {
+				exists = yes
+				ai = yes
+				military_access = THIS
+				NOT = {
+					OR = {
+						alliance_with = THIS
+						in_sphere = THIS
+						is_sphere_leader_of = THIS
+						vassal_of = THIS
+						is_our_vassal = THIS
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		any_country = {
+			limit = {
+				exists = yes
+				ai = yes
+				military_access = THIS
+				NOT = {
+					OR = {
+						alliance_with = THIS
+						in_sphere = THIS
+						is_sphere_leader_of = THIS
+						vassal_of = THIS
+						is_our_vassal = THIS
+					}
+				}
+			}
+			end_military_access = THIS
+		}
+	}
+}
+

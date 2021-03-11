@@ -57,6 +57,12 @@ centralization = regionalism
 colonial_policy = no_colonies
 
 
+govt_flag = 
+{
+	government = democracy
+	flag = presidential_dictatorship
+}
+
 1913.1.1 = {
 	oob = "/1913/CHI_oob.txt"
 	government = presidential_dictatorship

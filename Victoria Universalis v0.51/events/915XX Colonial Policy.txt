@@ -881,9 +881,12 @@ country_event = {
 	title = "Colony to State"
 
 	is_triggered_only = yes
-
-	option = {
+	
+	immediate = {
 		civilized = yes
 		annex_to = FROM
+	}
+
+	option = {
 	}
 }

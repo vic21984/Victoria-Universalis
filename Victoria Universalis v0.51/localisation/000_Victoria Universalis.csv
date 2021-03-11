@@ -3,6 +3,7 @@ EVNTNAME1;Placeholder;;;;;;;;;;;;x
 EVNTDESC1;Placeholder;;;;;;;;;;;;x
 EVNTOPTA1;Placeholder;;;;;;;;;;;;x
 EVNTOPTB1;Placeholder;;;;;;;;;;;;x
+UNIT_BUILD_TIME_IW;$VAL$ days.;$VAL$ jours.;$VAL$ Tage.;;$VAL$ días.;;;;;;;;;x;
 TRIGMOD_HEADER;Our government reports that we have gained;;;;;;;;;;;;;;
 TRIGMODLOST_HEADER;Our government reports that we have lost;;;;;;;;;;;;;;
 POLITICS_DECISIONS2;§YYellow§g decisions are generic, §Ggreen§g decisions require a province selector, and §Wwhite§g decisions are historical.;;;;;;;;;;;;;;
@@ -2321,6 +2322,9 @@ EVTOPTB90030;We will decide our own fate;;;;;;;;;;;;;x
 EVTNAME90037;The Anglo-Sikh War;;;;;;;;;;;;;x
 EVTDESC90037;News of the death of the venerable Ranjit Singh has reached the British Viceroy in Calcutta, and now they seek to move against us in our moment of weakness.;;;;;;;;;;;;;x
 EVTOPTA90037;Those vultures!;;;;;;;;;;;;;x
+EVTNAME90038;End of the East India Company;;;;;;;;;;;;;x
+EVTDESC90038;The United Kingdom has abolished the East India Company and taken over their holdings in India. We report directly to Westminster now.;;;;;;;;;;;;;x
+EVTOPTA90038;The king is dead, long live the king!;;;;;;;;;;;;;x
 EVTNAME90041;Sepoy Rebellion Spreads;;;;;;;;;;;;;x
 EVTDESC90041;More local sepoys, dissatisfied with company rule, have joined in the rebellion.;;;;;;;;;;;;;x
 EVTOPTA90041;Onwards to Calcutta!;;;;;;;;;;;;;x

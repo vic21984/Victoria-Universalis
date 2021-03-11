@@ -1,149 +1,5 @@
 # Audax Validator "!" Ignore_NEXT
 
-#Leave Japan
-country_event = {
-	id = 91201
-	title = "Leave Japan"
-
-	trigger = {
-		tag = JAP
-		exists = JAP
-		ai = yes
-		part_of_sphere = yes
-		sphere_owner = { ai = yes }
-	}
-	
-	option = {
-		sphere_owner = {
-			diplomatic_influence = {
-				who = THIS
-				value = -400
-			}
-		}
-	}
-}
-
-#Leave Korea
-country_event = {
-	id = 91202
-	title = "Leave Korea"
-
-	trigger = {
-		tag = KOR
-		exists = KOR
-		ai = yes
-		part_of_sphere = yes
-		sphere_owner = {
-			NOT = { tag = JAP }
-			ai = yes
-		}
-	}
-	
-	option = {
-		sphere_owner = {
-			diplomatic_influence = {
-				who = THIS
-				value = -400
-			}
-		}
-	}
-}
-
-#Annex Johore
-#country_event = {
-#	id = 91206
-#	title = "Annex Johore"
-#	
-#	trigger = {
-#		exists = JOH
-#		is_greater_power = yes
-#		is_sphere_leader_of = JOH
-#		ai = yes
-#		JOH = { ai = yes }
-#		nationalism_n_imperialism = 1
-#	}
-#	
-#	option = {
-#		inherit = JOH
-#	}
-#}
-
-#Annex Brunei
-#country_event = {
-#	id = 91207
-#	title = "Annex Brunei"
-#	
-#	trigger = {
-#		exists = BRU
-#		is_greater_power = yes
-#		is_sphere_leader_of = BRU
-#		ai = yes
-#		BRU = { ai = yes }
-#		nationalism_n_imperialism = 1
-#	}
-#	
-#	option = {
-#		inherit = BRU
-#	}
-#}
-
-#Annex Atjeh
-#country_event = {
-#	id = 91209
-#	title = "Annex Atjeh"
-#	
-#	trigger = {
-#		exists = ATJ
-#		is_greater_power = yes
-#		is_sphere_leader_of = ATJ
-#		ai = yes
-#		ATJ = { ai = yes }
-#		nationalism_n_imperialism = 1
-#	}
-#	
-#	option = {
-#		inherit = ATJ
-#	}
-#}
-
-#Annex Cambodia
-#country_event = {
-#	id = 91210
-#	title = "Annex Cambodia"
-#	
-#	trigger = {
-#		exists = CAM
-#		is_greater_power = yes
-#		is_sphere_leader_of = CAM
-#		ai = yes
-#		CAM = { ai = yes }
-#		revolution_n_counterrevolution = 1
-#	}
-#	
-#	option = {
-#		inherit = CAM
-#	}
-#}
-
-#Annex Vietnam
-#country_event = {
-#	id = 91211
-#	title = "Annex Vietnam"
-#	
-#	trigger = {
-#		exists = DAI
-#		is_greater_power = yes
-#		is_sphere_leader_of = DAI
-#		ai = yes
-#		DAI = { ai = yes }
-#		revolution_n_counterrevolution = 1
-#	}
-#	
-#	option = {
-#		inherit = DAI
-#	}
-#}
-
 #Annex Kokand
 country_event = {
 	id = 91212
@@ -387,49 +243,6 @@ country_event = {
 	}
 }
 
-#Annex Egypt
-country_event = {
-	id = 91226
-	title = "Annex Egypt"
-	
-	trigger = {
-		exists = EGY
-		is_greater_power = yes
-		is_sphere_leader_of = EGY
-		ai = yes
-		EGY = {
-			ai = yes
-			civilized = no
-		}
-		revolution_n_counterrevolution = 1
-		capital_scope = { NOT = { continent = asia } }
-	}
-	
-	option = {
-		inherit = EGY
-	}
-}
-
-#Annex Luang Prabang
-#country_event = {
-#	id = 91230
-#	title = "Annex Luang Prabang"
-#	
-#	trigger = {
-#		exists = LUA
-#		is_greater_power = yes
-#		is_sphere_leader_of = LUA
-#		ai = yes
-#		LUA = { ai = yes }
-#		neighbour = LUA
-#		nationalism_n_imperialism = 1
-#	}
-#	
-#	option = {
-#		inherit = LUA
-#	}
-#}
-
 #Annex Morocco
 country_event = {
 	id = 91231
@@ -490,25 +303,6 @@ country_event = {
 	}
 }
 
-#Annex Java
-country_event = {
-	id = 91234
-	title = "Annex Java"
-	
-	trigger = {
-		exists = JAV
-		is_greater_power = yes
-		is_sphere_leader_of = JAV
-		ai = yes
-		JAV = { ai = yes }
-		nationalism_n_imperialism = 1
-	}
-	
-	option = {
-		inherit = JAV
-	}
-}
-
 #Leave Serbia
 country_event = {
 	id = 91235
@@ -558,25 +352,6 @@ country_event = {
 				value = -400
 			}
 		}
-	}
-}
-
-#Annex Bali
-country_event = {
-	id = 91237
-	title = "Annex Bali"
-	
-	trigger = {
-		exists = BAL
-		is_greater_power = yes
-		is_sphere_leader_of = BAL
-		ai = yes
-		BAL = { ai = yes }
-		nationalism_n_imperialism = 1
-	}
-	
-	option = {
-		inherit = BAL
 	}
 }
 
@@ -684,39 +459,6 @@ country_event = {
 			remove_core = ITA
 			remove_core = SAR
 			secede_province = FRA
-		}
-	}
-}
-
-#Leave Belgium
-country_event = {
-	id = 91241
-	title = "Leave Belgium"
-
-	trigger = {
-		ai = yes
-		tag = BEL
-		exists = BEL
-		any_greater_power = {
-			ai = yes
-			NOT = { tag = ENG }
-			diplomatic_influence = {
-				who = BEL
-				value = 50
-			}
-		}
-	}
-	
-	option = {
-		any_country = {
-			limit = {
-				ai = yes
-				NOT = { tag = ENG }
-			}
-			diplomatic_influence = {
-				who = BEL
-				value = -400
-			}
 		}
 	}
 }
@@ -1399,7 +1141,7 @@ country_event = {
 		any_country = {
 			relation = {
 				who = JAN
-				value = -200
+				value = -400
 			}
 		}
 	}
@@ -1415,7 +1157,7 @@ country_event = {
 		exists = JAN
 		part_of_sphere = yes
 	}
-	
+
 	option = {
 		sphere_owner = {
 			diplomatic_influence = {
@@ -1507,26 +1249,6 @@ country_event = {
 				NOT = { is_culture_group = east_asian }
 			}
 			leave_alliance = THIS
-		}
-	}
-}
-
-#Leave China
-country_event = {
-	id = 91297
-	title = "Leave China"
-
-	trigger = {
-		is_culture_group = east_asian
-		part_of_sphere = yes
-	}
-	
-	option = {
-		sphere_owner = {
-			diplomatic_influence = {
-				who = THIS
-				value = -400
-			}
 		}
 	}
 }

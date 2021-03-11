@@ -3864,47 +3864,65 @@
 #Corsica Region (210000)
 #Corsica (210000/52500 POPS)
 473 = {
-	aristocrats = {
-		culture = french
-		religion = catholic
-		size = 550
-	}
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 400
+    }
 
-	officers = {
-		culture = french
-		religion = catholic
-		size = 50
-	}
+    aristocrats = {
+        culture = north_italian
+        religion = catholic
+        size = 150
+    }
 
-	bureaucrats = {
-		culture = french
-		religion = catholic
-		size = 200
-	}
+    officers = {
+        culture = french
+        religion = catholic
+        size = 50
+    }
 
-	clergymen = {
-		culture = french
-		religion = catholic
-		size = 500
-	}
+    bureaucrats = {
+        culture = french
+        religion = catholic
+        size = 100
+    }
 
-	artisans = {
-		culture = french
-		religion = catholic
-		size = 2500
-	}
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 200
+    }
 
-	soldiers = {
-		culture = french
-		religion = catholic
-		size = 1100
-	}
+    artisans = {
+        culture = north_italian
+        religion = catholic
+        size = 1500
+    }
 
-	farmers = {
-		culture = french
-		religion = catholic
-		size = 47700
-	}
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 1100
+    }
+
+    soldiers = {
+        culture = french
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 4800
+    }
+
+    farmers = {
+        culture = north_italian
+        religion = catholic
+        size = 43300
+    }
 
 }
 

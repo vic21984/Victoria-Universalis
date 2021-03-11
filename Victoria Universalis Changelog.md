@@ -1,4 +1,18 @@
-# Version 0.50 - 2/13/2020
+# Version 0.51 - 3/11/2021
+## Bug Fixes:
+* Fixed broken missing build time localization in the build army screen.
+* Added missing SAF core to Durban.
+* Moved newly created provinces in France and Italy from previous versions to the continent of Europe instead of Asia.
+
+## General gameplay changes:
+* Created an event that cancels military access from AI nations to other AI nations that are not either part of its sphere or allied to it. This event does not fire for humans and does not prevent humans from gaining access to neutral AI nations.
+* Asking for military access now costs 5 diplo points in order to prevent AI from spamming it and firing the above event.
+
+## Country balance changes:
+###### France:
+* Corsica changed to majority North Italian POPs and a minority of French POPs.
+
+# Version 0.50 - 2/13/2021
 ## Bug Fixes:
 * Fixed a bug in the base game where several slave countries started the game with no slaves even if they had slavery allowed and slaves in the starting pop files.
 * Fixed Modern Naval Doctrine missing naval base increase.
@@ -83,7 +97,7 @@
 * Reduced starting literacy to 2%.
 
 
-# Version 0.49 - 1/18/2020
+# Version 0.49 - 1/18/2021
 ## Interface changes:
 * Assigned the hotkey "e" to the naval base construction button. The tooltip will incorrectly show "e" as the hotkey for all province building buttons, but it only works for naval bases.
 
@@ -123,7 +137,7 @@
 * Halved assimilation bonus from Embrace Ottomanism decision in provinces that have a culture core.
 
 
-# Version 0.48 - 1/4/2020
+# Version 0.48 - 1/4/2021
 ## Bug Fixes:
 * Fixed existing countries sometimes inheriting and keeping the ghost province.
 

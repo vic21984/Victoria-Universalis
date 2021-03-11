@@ -280,9 +280,7 @@ political_decisions = {
 				limit = { state_id = 2100 }
 				secede_province = CIV
 			}
-			CIV = {
-				country_event = { id = 91510 days = 0 }
-			}
+			CIV = { country_event = { id = 91510 days = 0 } }
 		}
 		ai_will_do = {
 			factor = 1
