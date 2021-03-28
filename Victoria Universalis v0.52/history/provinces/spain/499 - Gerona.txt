@@ -1,0 +1,12 @@
+owner = SPC
+controller = SPC
+add_core = SPA
+add_core = SPC
+add_core = CAT
+trade_goods = fish
+life_rating = 35
+1913.1.1 = {
+	owner = SPA
+	controller = SPA
+	remove_core = SPC
+}

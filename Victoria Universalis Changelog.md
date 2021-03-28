@@ -1,3 +1,79 @@
+# Version 0.52 - 3/28/2021
+## Interface changes:
+* Expanded the country modifier icon space in the politics tab. Country modifier icons are less likely to overlap now.
+
+## Bug Fixes:
+* Fixed 1836 starting OOB for China so it doesn't start with understrength divisions.
+* Coverted a few engineer brigades that were meant to be artillery to artillery brigades in the German WW1 OOB.
+* Nenetsia state now flips to the Russian Republic in the October Revolution event of the WW1 scenario.
+* Colonial Policy event will no longer fire multiple instances for the same nation in multiplayer games.
+* Can no longer use demand for ally cb for the World Bank or Ghostland.
+* Made Jan Mayen impassable terrain. Units should not be able to reach Jan Mayen even with military access.
+* Gwailor starts in the sphere of United Kingdom.
+* Cleaned up target country migration factors for the Great Trek and Turkish Population exchange events.
+* Fixed a typo in the Paraguayan victory event in the War of the Triple Alliance. Winning the war now annexes the state of Uruguay.
+* Fixed name of Gizab in Western Afghanistan.
+
+## General gameplay changes:
+* Enabled ability to grant independence to individual vassals again. When the "Manage Vassals" decision is enacted, it will trigger an event which then triggers another event in each vassal nation. Each of those vassals then triggers a separate event to the overlord, and each of those events gives the overlord the choice to free the vassal that sent the event.
+* Colonial migration nerfed by 40%.
+* Primary and accepted culture POPs only promote to bureaucrats or soldiers in colonial states.
+* Increased nerfs to tax efficiency, pop militancy, and added an event that triggers in the background that kills 1% of non-accepted POPs in colonial states every year for Settlement colonial policy.
+* Re-added the ability for non-core provinces that are bordering a core to get the coring event.
+* Increased MTTH for the coring event to 240 months and added a 60% reduction in time if the province has a plurality of accepted culture POPs. MTTH is increased by 200% if the province has 2 militancy, 400% for 5 militancy, and 1000% for 9 militancy.
+* Provinces below 1.5k POP will increase their pop by 1% every year until they hit 1.5k POP. In the base game, provinces with population below a certain threshold don't have enough POP growth from regular modifiers to equal 1 or greater.
+* Rebalanced naval stats so that early game ships give slightly more mil score. The balance of capital ships > light ships > torpedo boats/submarines > capital ships still remains the same.
+* Removed post 1900 population growth nerfs.
+* Rebalanced national values. Each national value gives a 5% bonus to research to either one or two tech trees and a 5% nerf to one or two tech trees. Organisation bonus removed from Order and +0.01 non-accepted militancy added to Liberty.
+* Removed several vanilla decisions whose only effect was to give small amounts of prestige.
+* Nerfed Education national idea from 20% to 15% education efficiency.
+* Changed Army Supply national idea to Military Supplies national idea. The old -50% additive army supply modifier was made into a -15% reduction to all military supply requirements. The way old modifier worked, if army supply cost was 250% from tech, it would reduce army supply costs to 200%. Now it would reduce 250% to 212.5% and also applies to naval supply as well.
+
+## Map Changes:
+* Re-split Alejento state into Alejento and Macaronesia states.
+* Re-added Extremadura state in Spain.
+* Moved Canary Islands province to Macaronesia state.
+* Moved Albacete province from Valencia state to Castilla la Nueva state.
+
+## Country balance changes:
+###### British Raj:
+* If the Raj or East India Company are not a puppet of the UK and not a Great Power, they will be dismantled and their land will be given away to the countries that have cores on it. If Raj or the EIC becomes a GP at any point, they will not be dismantled if they lose GP status.
+* Added -30% supply consumption and -3% tax efficiency to the Crown Rule modifier, the former of which makes Raj armies cheaper to supply but also lowers their military score by 30%. This should make the Raj less likely to become a GP once it civilizes.
+
+###### United Kingdom:
+* Added +0.01% global pop growth to the Pax Britannica modifier.
+* Introduced a 2 year grace period to the UK before it loses the Pax Britannica modifier if it isn't rank #1 anymore. During this time if the UK becomes #1 again, the timer is reset and doesn't start counting down until it loses the #1 spot again.
+* The event that breaks up the Raj/East India Company makes the UK lose 100 prestige.
+* Annex Raj decision removes crown rule modifier and gives 50 infamy instead of 40.
+
+###### Portugal:
+* Added decision chain to puppet and eventually annex Brazil. Brazilian POPs will begin migrating to Portugal and Portuguese POPs will migrate only to Brazil as long as Brazil is a puppet of Portugal. Brazilian will be added as an accepted culture upon annexation.
+* Added free restore order cb that allows Portugal to transfer Brazilian cores from other countries back to Brazil if Brazil is a puppet.
+* Increased starting colonial soldier POPs and added a few more starting brigades in the colonies.
+
+###### Spain:
+* Starts the 1836 scenario in a civil war with an independent Carlist Spain. Either side can automatically win the war via decision if they have a bigger army than the other side and they control the provinces of Madrid, Bilbao, Zaragoza, Barcelona, and Valencia.
+* Added decisions for Carlist Spain to recreate the old Viceroyalties of New Spain, New Granada, Peru, and Rio de la Plata. POPs from the Viceroyalties will begin to migrate to Spain and vice versa.
+* Removed Embrace Filippino decision.
+
+###### Iberia:
+* Any country in Iberia can enact the "Abandon Iberian Union" decision, which disables the Unite Iberia decision for all countries including the one enacting it. AI will not enact this decision.
+
+###### Brazil:
+* Changed starting national value to Liberty.
+
+###### Russia:
+* Tsar of All Slavs cb no longer gives parts of Thrace or West Macedonia to Bulgaria.
+
+###### Israel:
+* Added "The Right of Return" event that makes Ashkenazi and Sephardic POPs only migrate to Israel if Israel exists.
+
+###### Italy:
+* Reverted the Redshirt rebels to vanilla properties and effects. They can no longer spawn in Sardinia-Piedmont and countries can't let themselves be occupied by redshirts to trigger the Italian Unification for themselves.
+
+###### Sub-Saharan Africa:
+* Increased 1836 starting population by 50%.
+
 # Version 0.51 - 3/11/2021
 ## Bug Fixes:
 * Fixed broken missing build time localization in the build army screen.

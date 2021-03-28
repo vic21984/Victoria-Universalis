@@ -1,0 +1,407 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 91951
+	title = "Army Morale Idea"
+	desc = "Our armies have increased morale."
+	picture = generals
+
+
+	trigger = {
+		has_country_flag = choosing_army_morale
+		NOT = { has_country_flag = army_morale_idea }
+		NOT = { has_country_modifier = army_morale_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = army_morale_idea
+		clr_country_flag = choosing_army_morale
+		add_country_modifier = { name = army_morale_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91952
+	title = "Army Organisation Idea"
+	desc = "Our armies have increased organisation."
+	picture = generals
+
+
+	trigger = {
+		has_country_flag = choosing_army_organisation
+		NOT = { has_country_flag = army_organisation_idea }
+		NOT = { has_country_modifier = army_organisation_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = army_organisation_idea
+		clr_country_flag = choosing_army_organisation
+		add_country_modifier = { name = army_organisation_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91953
+	title = "Military Supplies Idea"
+	desc = "Our armies and navies have lowered supply consumption."
+	picture = generals
+
+
+	trigger = {
+		has_country_flag = choosing_military_supplies
+		NOT = { has_country_flag = military_supplies_idea }
+		NOT = { has_country_modifier = military_supplies_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = military_supplies_idea
+		clr_country_flag = choosing_military_supplies
+		add_country_modifier = { name = military_supplies_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91954
+	title = "Military Hospitals Idea"
+	desc = "Our armies have better military hospitals."
+	picture = generals
+
+
+	trigger = {
+		has_country_flag = choosing_military_hospitals
+		NOT = { has_country_flag = military_hospitals_idea }
+		NOT = { has_country_modifier = military_hospitals_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = military_hospitals_idea
+		clr_country_flag = choosing_military_hospitals
+		add_country_modifier = { name = military_hospitals_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91955
+	title = "Army Experience Idea"
+	desc = "Our armies start with more experience."
+	picture = generals
+
+
+	trigger = {
+		has_country_flag = choosing_army_experience
+		NOT = { has_country_flag = army_experience_idea }
+		NOT = { has_country_modifier = army_experience_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = army_experience_idea
+		clr_country_flag = choosing_army_experience
+		add_country_modifier = { name = army_experience_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91956
+	title = "Reinforce Rate Idea"
+	desc = "Our armies reinforce faster."
+	picture = generals
+
+
+	trigger = {
+		has_country_flag = choosing_reinforce_rate
+		NOT = { has_country_flag = reinforce_rate_idea }
+		NOT = { has_country_modifier = reinforce_rate_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = reinforce_rate_idea
+		clr_country_flag = choosing_reinforce_rate
+		add_country_modifier = { name = reinforce_rate_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91957
+	title = "Leadership Idea"
+	desc = "We have inreased leadership point generation."
+	picture = generals
+
+
+	trigger = {
+		has_country_flag = choosing_leadership
+		NOT = { has_country_flag = leadership_idea }
+		NOT = { has_country_modifier = leadership_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = leadership_idea
+		clr_country_flag = choosing_leadership
+		add_country_modifier = { name = leadership_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91958
+	title = "Prestige Idea"
+	desc = "We generate more prestige per month."
+	picture = Nobel_Literature
+
+
+	trigger = {
+		has_country_flag = choosing_prestige
+		NOT = { has_country_flag = prestige_idea }
+		NOT = { has_country_modifier = prestige_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = prestige_idea
+		clr_country_flag = choosing_prestige
+		add_country_modifier = { name = prestige_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91959
+	title = "Navy Build Speed Idea"
+	desc = "We build and repair ships faster."
+	picture = Nobel_Literature
+
+
+	trigger = {
+		has_country_flag = choosing_navy_build_speed
+		NOT = { has_country_flag = navy_build_speed_idea }
+		NOT = { has_country_modifier = navy_build_speed_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = navy_build_speed_idea
+		clr_country_flag = choosing_navy_build_speed
+		add_country_modifier = { name = navy_build_speed_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91960
+	title = "Navy Organisation Idea"
+	desc = "Our navies have increased organisation."
+	picture = tearace
+
+
+	trigger = {
+		has_country_flag = choosing_navy_organisation
+		NOT = { has_country_flag = navy_organisation_idea }
+		NOT = { has_country_modifier = navy_organisation_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = navy_organisation_idea
+		clr_country_flag = choosing_navy_organisation
+		add_country_modifier = { name = navy_organisation_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91961
+	title = "Expansion Idea"
+	desc = "We have increased infamy decay."
+	picture = Expansion
+
+
+	trigger = {
+		has_country_flag = choosing_expansion
+		NOT = { has_country_flag = expansion_idea }
+		NOT = { has_country_modifier = expansion_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = expansion_idea
+		clr_country_flag = choosing_expansion
+		add_country_modifier = { name = expansion_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91962
+	title = "Assimilation Idea"
+	desc = "We have increased assimilation rate."
+	picture = assimilation
+
+
+	trigger = {
+		has_country_flag = choosing_assimilation
+		NOT = { has_country_flag = assimilation_idea }
+		NOT = { has_country_modifier = assimilation_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = assimilation_idea
+		clr_country_flag = choosing_assimilation
+		add_country_modifier = { name = assimilation_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91963
+	title = "Farming Idea"
+	desc = "We have increased farming efficiency."
+	picture = farming
+
+
+	trigger = {
+		has_country_flag = choosing_farming
+		NOT = { has_country_flag = farming_idea }
+		NOT = { has_country_modifier = farming_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = farming_idea
+		clr_country_flag = choosing_farming
+		add_country_modifier = { name = farming_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91964
+	title = "Mining Idea"
+	desc = "We have increased mining efficiency."
+	picture = mining
+
+
+	trigger = {
+		has_country_flag = choosing_mining
+		NOT = { has_country_flag = mining_idea }
+		NOT = { has_country_modifier = mining_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = mining_idea
+		clr_country_flag = choosing_mining
+		add_country_modifier = { name = mining_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91965
+	title = "Consumer Goods Idea"
+	desc = "We have increased consumer goods output."
+	picture = factory
+
+
+	trigger = {
+		has_country_flag = choosing_consumer_goods
+		NOT = { has_country_flag = consumer_goods_idea }
+		NOT = { has_country_modifier = consumer_goods_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = consumer_goods_idea
+		clr_country_flag = choosing_consumer_goods
+		add_country_modifier = { name = consumer_goods_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91966
+	title = "Industrial Goods Idea"
+	desc = "We have increased industrial goods output."
+	picture = factory
+
+
+	trigger = {
+		has_country_flag = choosing_industrial_goods
+		NOT = { has_country_flag = industrial_goods_idea }
+		NOT = { has_country_modifier = industrial_goods_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = industrial_goods_idea
+		clr_country_flag = choosing_industrial_goods
+		add_country_modifier = { name = industrial_goods_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91967
+	title = "Migration Attraction Unlocked"
+	desc = "We have unlocked the Migration Attraction province selector decision, which redirects incoming immigrants and internal migrants to the targetted province. This decision DOES NOT increase outside immigration to your country."
+	picture = factory
+
+
+	trigger = {
+		has_country_flag = choosing_domestic
+		NOT = { has_country_flag = domestic_idea }
+		NOT = { has_country_modifier = domestic_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = domestic_idea
+		clr_country_flag = choosing_domestic
+		add_country_modifier = { name = domestic_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91968
+	title = "Education Idea"
+	desc = "We have increased education efficiency."
+	picture = factory
+
+
+	trigger = {
+		has_country_flag = choosing_education
+		NOT = { has_country_flag = education_idea }
+		NOT = { has_country_modifier = education_idea }
+	}
+
+	option = {
+		name = "Great!"
+		set_country_flag = education_idea
+		clr_country_flag = choosing_education
+		add_country_modifier = { name = education_idea duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91669
+	title = "Navy Build Speed National Idea"
+	desc = "This event gives +30% ship build speed and +50% repair to every province with a naval base."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = navy_build_speed_idea
+		any_owned_province = {
+			has_building = naval_base
+			NOT = { has_province_modifier = navy_build_speed_idea_modifier }
+		}
+	}
+
+	option = {
+		name = "We rule the waves!"
+		any_owned = {
+			limit = {
+				has_building = naval_base
+				NOT = { has_province_modifier = navy_build_speed_idea }
+			}
+			add_province_modifier = { name = navy_build_speed_idea_modifier duration = -1 }
+		}
+	}
+}

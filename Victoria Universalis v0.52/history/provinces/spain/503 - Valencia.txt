@@ -1,0 +1,43 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = SPC
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	owner = SPA
+	controller = SPA
+	remove_core = SPC
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = furniture_factory
+		upgrade = yes
+	}
+}
