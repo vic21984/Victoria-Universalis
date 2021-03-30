@@ -5,6 +5,8 @@
 * Revolution and counterrevolution condition was re-added to the Iberian Union decision.
 * Restored 1836 Manchuria oob.
 * Fixed a few localization errors.
+* Dominican independence event won't fire more than once anymore.
+* Disabled crisis temperature events from triggering when player chooses to disable crises at the start of the game.
 
 ## Map Changes:
 * Removed strait from Balearic Islands to Barcelona.

@@ -29,12 +29,15 @@ province_event = {
 	desc = "EVTDESC20100"
 	picture = "crisis"
 	trigger = {
-		owner = { is_greater_power = yes }
+		owner = {
+			is_greater_power = yes
+			NOT = { has_global_flag = disable_crisis }
+		}
 		state_scope = {
 			has_flashpoint = yes
 			flashpoint_tension = 5
 			NOT = { flashpoint_tension = 90 }
-			}
+		}
 	}
 	
 	mean_time_to_happen =  {
@@ -83,12 +86,15 @@ province_event = {
 	desc = "EVTDESC20101"
 	picture = "crisis"
 	trigger = {
-		owner = { is_greater_power = no }
+		owner = {
+			is_greater_power = no
+			NOT = { has_global_flag = disable_crisis }
+		}
 		state_scope = {
 			has_flashpoint = yes
-				flashpoint_tension = 5
-				NOT = { flashpoint_tension = 90 }
-			}
+			flashpoint_tension = 5
+			NOT = { flashpoint_tension = 90 }
+		}
 	}
 	
 	mean_time_to_happen =  {
@@ -141,6 +147,7 @@ country_event = {
 		involved_in_crisis = yes
 		is_greater_power = yes
 		is_claim_crisis = yes
+		NOT = { has_global_flag = disable_crisis }
 	}
 	
 	mean_time_to_happen =  {
@@ -191,6 +198,7 @@ country_event = {
 		involved_in_crisis = yes
 		is_greater_power = yes
 		is_liberation_crisis = yes
+		NOT = { has_global_flag = disable_crisis }
 	}
 	
 	mean_time_to_happen =  {
@@ -241,6 +249,7 @@ country_event = {
 		involved_in_crisis = yes
 		is_greater_power = no
 		is_claim_crisis = yes
+		NOT = { has_global_flag = disable_crisis }
 	}
 	
 	mean_time_to_happen =  {
@@ -291,6 +300,7 @@ country_event = {
 		involved_in_crisis = yes
 		is_greater_power = no
 		is_liberation_crisis = yes
+		NOT = { has_global_flag = disable_crisis }
 	}
 	
 	mean_time_to_happen =  {
