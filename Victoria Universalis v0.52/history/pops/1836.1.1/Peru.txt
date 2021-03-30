@@ -917,6 +917,44 @@
 		size = 2000
 	}
 }
+#Chincha Islands (18600/4650 POPS)
+2619 = {
+	aristocrats = {
+		culture = south_andean
+		religion = catholic
+		size = 150
+	}
+
+	clergymen = {
+		culture = south_andean
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = south_andean
+		religion = catholic
+		size = 100
+	}
+
+	soldiers = {
+		culture = south_andean
+		religion = catholic
+		size = 150
+	}
+
+	labourers = {
+		culture = south_andean
+		religion = catholic
+		size = 200
+	}
+
+	labourers = {
+		culture = yue
+		religion = mahayana
+		size = 4000
+	}
+}
 #Ucayali Region (32000)
 #Ruled by Peru 1836
 #Pucallpa (20000/5000 POPS)
@@ -1115,7 +1153,7 @@
 		size = 50
 	}
 
-	labourers = {
+	farmers = {
 		culture = south_andean
 		religion = catholic
 		size = 2075
@@ -1130,7 +1168,7 @@
 	artisans = {
 		culture = quechua
 		religion = catholic
-		size = 17650
+		size = 500
 	}
 
 	soldiers = {
@@ -1139,10 +1177,10 @@
 		size = 250
 	}
 
-	labourers = {
+	farmers = {
 		culture = quechua
 		religion = catholic
-		size = 2925
+		size = 20575
 	}
 }
 #Arequipa (72000/18000 POPS)

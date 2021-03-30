@@ -96,6 +96,7 @@ central_great_war_demands
 acquire_siberian_state
 puppet_acquire_state
 restore_brazilian_province
+chinca_war
 }
 
 gunboat = {
@@ -4969,5 +4970,54 @@ restore_brazilian_province = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+}
+
+
+#Chincha Islands War
+chincha_war = {
+	sprite_index = 7
+	is_triggered_only = yes
+	constructing_cb = no
+	crisis = no
+
+	badboy_factor = 0.5
+	prestige_factor = 0.1
+	peace_cost_factor = 50
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 60
+
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	always = no
+
+	can_use = {
+		tag = SPA
+		THIS = { civilized = yes }
+		2619 = { owned_by = PEU }
+	}
+
+	po_remove_prestige = yes
+	
+	tws_battle_factor = 2.0
+
+	war_name = CHINCHA_WAR_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+
+	on_po_accepted = {
+		2619 = { secede_province = SPA }
 	}
 }

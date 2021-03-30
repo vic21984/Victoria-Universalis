@@ -920,6 +920,7 @@ PROV1839;Fulah;;;;;;;;;;;;;x
 PROV2596;Pescara;;;;;;;;;;;;;x
 PROV2589;Gizab;;;;;;;;;;;;;x
 PROV2598;Belluno;;;;;;;;;;;;;x
+PROV2619;Chincha Islands;;;;;;;;;;;;;x
 PROV3249;Tonghua;;;;;;;;;;;;;x
 PROV3250;Jixi;;;;;;;;;;;;;x
 PROV3251;Daqing;;;;;;;;;;;;;x
@@ -1213,6 +1214,12 @@ platine_war_short;Establish control over Platinean breakaway states.;;;;;;;;;;;;
 platine_war_desc;This cb will annex the territoties of Entre Rios and Corrientes.;;;;;;;;;;;;;x
 NORMAL_PLATINE_WAR_NAME;The Platine War;;;;;;;;;;;;;;;;;;;;x
 AGRESSION_PLATINE_WAR_NAME;The Platine War;;;;;;;;;;;;;;;;;;;;x
+chincha_war;Chincha Islands War;;;;;;;;;;;;;x
+chincha_war_setup;Acquire Chincha Islands.;;;;;;;;;;;;;x
+chincha_war_short;Acquire Chincha Islands.;;;;;;;;;;;;;x
+chincha_war_desc;This cb will annex the Chincha Islands.;;;;;;;;;;;;;x
+NORMAL_CHINCHA_WAR_NAME;The Chincha Islands War;;;;;;;;;;;;;;;;;;;;x
+AGRESSION_CHINCHA_WAR_NAME;The Chincha Islands War;;;;;;;;;;;;;;;;;;;;x
 paraguayan_war;Paraguayan War;;;;;;;;;;;;;x
 paraguayan_war_setup;Establish dominance over Río de la Plata.;;;;;;;;;;;;;x
 paraguayan_war_short;Establish dominance over Río de la Plata.;;;;;;;;;;;;;x
@@ -1808,7 +1815,7 @@ release_vassals_title;§YManage Vassals;;;;;;;;;;;;;;;;;;;;;;;x
 release_vassals_desc;Trigger an event for each vassal which then triggers an event from them to us in which we can decide to free them or not.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91306;Manage Vassals;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC91306;Trigger an event for each vassal which then triggers an event from them to us in which we can decide to free them or not.;;;;;;;;;;;;;;;;;;;;;;;x
-EVTOPTA91306;Free vassals.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA91306;Make each vassal send an event to us that lets use choose to free them or not.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTB91306;Do nothing.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91307;Freedom?;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC91307;Our overlord is considering granting us our freedom.;;;;;;;;;;;;;;;;;;;;;;;x
@@ -1816,7 +1823,7 @@ EVTOPTA91307;One can only hope.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91308;$FROMCOUNTRY$ Requests Independence;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC91308;We can grant independence to $FROMCOUNTRY$.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA91308;Let them be free.;;;;;;;;;;;;;;;;;;;;;;;x
-EVTOPTA91308;Don't let them be free.;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTB91308;Don't let them be free.;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME91308;Geneva Convention Signed;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC91308;The geneva convention military hospital and infamy modifiers will be added to your country now;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA91308;Ok.;;;;;;;;;;;;;;;;;;;;;;;x
@@ -2743,7 +2750,7 @@ build_humaita_title;Build Humaitá Fortress;;;;;;;;;;;x
 build_humaita_desc;The easiest way for an invading army to reach our capital of Asunción is via the mouth of the River Paraguay, located between the border of Southern Paraguay and Corrientes. By constructing a fortress without equal at Humaitá we can secure our southern flank and deter any would be attackers from invading us.;;;;;;;;;;;x
 EVTNAME37711;Chincha Islands War;;;;;;;;;;;x
 EVTDESC37711;An incident recently took place at the Talambó hacienda, in Lambayeque, Peru. The details are fragmentary, but the episode involved a fight that broke out between two Spanish residents and 40 local citizens in which one Spaniard died. This could serve as a convenient cassus belli for an intervention in our former colony.;;;;;;;;;;;x
-EVTOPTA37711;Re-establish the Viceroyalty of Peru.;;;;;;;;;;;x
+EVTOPTA37711;Seize the Chinca Islands from Peru.;;;;;;;;;;;x
 EVTOPTB37711;Force them to pay reparations.;;;;;;;;;;;x
 EVTOPTC37711;Do nothing.;;;;;;;;;;;x
 EVTNAME37712;Chincha Islands War;;;;;;;;;;;x

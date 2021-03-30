@@ -1,3 +1,20 @@
+# Version 0.52b - 3/30/2021
+## Bug Fixes:
+* Sphereling tax efficiency bonus lowered from 40% to 4%.
+* Viceroyalty of Rio Plata will no longer break up into Argentina and Buenos Aires.
+* Revolution and counterrevolution condition was re-added to the Iberian Union decision.
+* Restored 1836 Manchuria oob.
+* Fixed a few localization errors.
+
+## Map Changes:
+* Removed strait from Balearic Islands to Barcelona.
+* Created Chinca Islands sulphur province in Ica state, Peru. It's population in 1836 is majority Yue labourers.
+* Changed trade goods of Puno province from sulphur to wool.
+
+## Country balance changes:
+###### Spain:
+* Chincha Islands war event no longer gives an option to puppet Peru, instead it gives an option to take Chincha Islands.
+
 # Version 0.52 - 3/28/2021
 ## Interface changes:
 * Expanded the country modifier icon space in the politics tab. Country modifier icons are less likely to overlap now.

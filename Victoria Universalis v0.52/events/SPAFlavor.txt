@@ -518,7 +518,7 @@ country_event = {
 		NOT = { has_country_flag = chincha_islands_war }
 		PEU = {
 			exists = yes
-			owns = 2295
+			owns = 2619
 			is_vassal = no
 		}
 	}
@@ -544,7 +544,7 @@ country_event = {
 		}
 		war = {
 			target = PEU
-			attacker_goal = { casus_belli = make_puppet }
+			attacker_goal = { casus_belli = chincha_war }
 		}
 		PEU = {
 			country_event = { id = 37712 days = 0 }

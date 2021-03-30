@@ -1,4 +1,25 @@
 political_decisions = {
+	#test1 = {
+	#	potential = { tag = SPC }
+	#	allow = {
+	#		ai = no
+	#	}
+	#	effect = {
+	#		create_vassal = MEX
+	#		create_vassal = UCA
+	#		create_vassal = CLM
+	#		create_vassal = ECU
+	#		create_vassal = VNZ
+	#		create_vassal = BOL
+	#		create_vassal = PEU
+	#		create_vassal = CHL
+	#		create_vassal = ARC
+	#		create_vassal = ENT
+	#		create_vassal = CRT
+	#		create_vassal = URU
+	#		create_vassal = PRG
+	#	}
+	#}
 	carlist_victory = {
 		picture = carlist_victory
 		potential = {
@@ -289,7 +310,7 @@ political_decisions = {
 						NOT = {
 							AND = {
 								owner = { tag = GCO }
-								state_id = 2286
+								state_id = 2288
 							}
 							AND = {
 								owner = { tag = LPL }
@@ -578,7 +599,7 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			#revolution_n_counterrevolution = 1
+			revolution_n_counterrevolution = 1
 			SPA = {
 				OR = {
 					exists = no

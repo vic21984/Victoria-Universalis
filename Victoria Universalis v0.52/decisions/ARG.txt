@@ -3,6 +3,7 @@ political_decisions = {
 		picture = restore_argentina
 		potential = {
 			primary_culture = platinean
+			NOT = { tag = LPL }
 			NOT = { has_global_flag = argentina_restored }
 			ARG = { exists = no }
 			NOT = {
