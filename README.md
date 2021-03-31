@@ -14,4 +14,4 @@ Generals traits have been replaced by color coded + Attack and + Defense bonuses
 
 ### Credits
 
-Thanks to the creators of HPM and PDM for historical databases and art assets. Thanks to God of Cheese for his RGO changing events in PIUR.
+Thanks to the creators of HPM and PDM for historical databases and art assets. Thanks to God of Cheese for his RGO changing events in PIUR. Thanks to General Townes for removing the menu tab backgrounds.
