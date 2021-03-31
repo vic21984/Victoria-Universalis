@@ -1,3 +1,15 @@
+# Version 0.52c - 3/30/2021
+## Interface Changes:
+* Removed background from the menu tabs.
+
+## Bug Fixes:
+* Fixed South German Confederation not having a primary culture.
+* Fixed Romania and Serbia not getting annexed by Austria-Hungary if the Allies lose WW1 and they surrendered previously and then Bulgaria surrendered after them.
+* Cleaned up history files.
+
+## General gameplay changes:
+* Assigned some leaders and moved some units around in the WW1 OOBs.
+
 # Version 0.52b - 3/30/2021
 ## Bug Fixes:
 * Sphereling tax efficiency bonus lowered from 40% to 4%.
