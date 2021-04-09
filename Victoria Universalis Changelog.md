@@ -1,3 +1,68 @@
+# Version 0.53 - 4/9/2021
+## Bug Fixes:
+* Fixed a bug that allowed clergymen in AI nations to go over 4%.
+* Fixed the event that is supposed to release all vassals from the Raj when the End of British India happens.
+* Removed missing -0.01 infamy decay modifier from manifest destiny due to infamy decay not working with inventions.
+* Removed port requirement for unciv naval reforms due to AI landlocked nations getting stuck on naval reforms because they are hardcoded to not switch to a different category of reforms until the current one is finished.
+* Carlist Victory decision moves capital of Carlist Spain to Madrid.
+
+## Map Changes:
+* Moved Cabinada province from Bas-Congo state to North Angola state.
+* Absorbed East Angola state into North Angola and South Angola states.
+* Cabinda, Boma, and Mocamedes provinces are uncolonized in 1836.
+
+## General gameplay changes:
+* Changed the name of Pax Britannica country modifier to Hegemon and added +20% leadership on top of the other bonuses. Any Hegemon can lose hegemony by dropping out of #1 rank for 2 years and any country can become the Hegemon by being rank #1 while no other country holds the Hegemon modifier.
+* Added Congo Conference decision for secondary powers which allows all GPs to vote yes or no for the creation of the Congo Free State. If yes gets 5 or more votes, the Congo Free State will inherit all of the Congo and become a puppet of the country that fired the decision. Every province in the new Congo Free State will receive the Force Publique modifier which lowers pop growth rate until either the Heart of Darkness event fires in the Free State's overlord or the Free state gains independence.
+* Reworked the Heart of Darkness event to only trigger for the overlord of Congo Free State and give the option of either +6 infamy or -20% prestige.
+* Added decision for the overlord of the Congo Free State to annex it if the overlord has triggered the Heart of Darkness event and researched government interventionism.
+* Added -0.05 Min. liferating colonization modifier to Prophylaxis against Malaria invention and moved +0.01 pop growth from Prophylaxis against Malaria to Aerial Bacteria and Antiseptic Principle.
+* Lowered starting liferating of the Congo basin to 10.
+* Lowered all positive discovery chance modifiers in Colonial Negotiations invention to 5 and added more potential bonuses.
+* Buffed infamy decay from expansion national idea from -0.02 to -0.03 per month.
+* The coring province event now requires nationalism and imperialism as a prerequisite and that a province is either coastal or adjacent to a cored province.
+* Added Acquire core state for puppet cb that allows a nation to transfer a core state from the target nation to a puppet of the attacking nation. This cb costs 5 infamy compared to the 10 infamy of regular Demand for ally cb.
+* Reverted Pan Nationalist rebels to vanilla properties and effects. The Crown from the Gutter event no longer triggers in the country that gets broken by pan nationalist rebels and only triggers for a great power of the same cultural union.
+* Removed province specific New World Farm modifier that gave new world provinces +200% farm size and re-added the 10x farm size modifier to all new world provinces from the base game.
+
+## Country balance changes:
+###### United Kingdom:
+* Changed the prestige loss from losing control of the Raj from -100 prestige to -25% prestige.
+* Lowered starting draft law to no draft.
+* Lowered infamy gain for annex Raj decision to 40.
+
+###### United States:
+* Lowered starting draft law to no draft.
+* Slightly reduced 1913 and WW1 scenario soldier pops.
+
+###### Austria-Hungary:
+* Added an event that reverts Austria-Hungary back to Austria and removes Hungarian as an accepted culture if it doesn't own any Hungarian cores.
+
+###### Congo Free State:
+* Increased 1836 starting population by 15%.
+
+###### Kongo:
+* Lost Cabinda and Boma provinces, gained Mbanza province from Portugal.
+* Added a decision to regain Cabinda and Boma provinces.
+
+###### Portugal:
+* Changed the Restore Order in Brazil decision to be able to be enacted once for each country that has Brazilian as a primary culture. The effects on each country remains the same, they will become an autonomous dependency of Portugal and their POPs will migrate to Portugal and vice versa.
+* Changed prerequisites for Reform Portugal-Brazil decision.
+* Removed free Restore Order in Brazil cb.
+* Added a decision to retake Mbanza.
+* Lost Mocamedes province in 1836 start.
+* Added a decision to colonize Mocamedes.
+
+###### South Asia:
+* Muslim Indian nations can now form Pakistan via decision. Pakistan can no longer form India. Sikh Empire is not a muslim nation.
+
+###### Egypt:
+* Mahdist revolt no longer triggers if slavery is outlawed and citizens rights is not primary culture only
+
+###### Balkans:
+* Added an event that triggers in 1880 that lowers liferating of all Balkan provinces down to 35 except for the provinces of Sarajevo, Belgrade, Athens, Bucharest, and Istanbul.
+
+
 # Version 0.52c - 3/30/2021
 ## Interface Changes:
 * Removed background from the menu tabs.
