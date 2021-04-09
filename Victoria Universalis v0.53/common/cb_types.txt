@@ -4927,7 +4927,7 @@ restore_puppet_province = {
 	sprite_index = 6
 	is_triggered_only = yes
 	months = 12
-	constructing_cb = 0.5
+	construction_speed = 0.5
 	
 	badboy_factor = 1
 	prestige_factor = 5
