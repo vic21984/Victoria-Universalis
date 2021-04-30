@@ -1,0 +1,18 @@
+owner = SHW
+controller = SHW
+add_core = SHW
+add_core = ETH
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+owner = ETH
+controller = ETH
+colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,42 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+add_core = GER
+trade_goods = grain
+life_rating = 40
+railroad = 1
+1913.1.1 = {
+	owner = GER
+	controller = GER
+	trade_goods = opium
+	state_building = {
+		level = 6
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = furniture_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,27 @@
+name = "The Cabanagem"
+
+1835.1.6 = {
+	add_attacker = BRZ
+	add_defender = GRP
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = annex_core_country
+		actor = BRZ
+		receiver = GRP
+	}
+	war_goal = {
+		casus_belli = remove_cores country = GRP
+		actor = GRP
+		receiver = BRZ
+	}
+}
+
+1840.1.1 = {
+	rem_attacker = BRZ
+	rem_defender = GRP
+}

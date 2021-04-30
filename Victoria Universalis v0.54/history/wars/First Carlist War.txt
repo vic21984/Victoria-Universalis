@@ -1,0 +1,28 @@
+name = "First Carlist War"
+
+1833.9.29 = {
+	add_attacker = SPA
+	add_defender = SPC
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = civil_war
+		actor = SPA
+		receiver = SPC
+	}
+	war_goal = {
+		casus_belli = civil_war
+		actor = SPC
+		receiver = SPA
+	}
+
+}
+
+1839.7.6 = {
+	rem_attacker = SPA
+	rem_defender = SPC
+}

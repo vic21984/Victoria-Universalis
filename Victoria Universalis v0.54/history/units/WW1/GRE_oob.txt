@@ -1,0 +1,332 @@
+leader = {
+	name = "Panagiotis Danglis"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Nikolaos Christodoulou"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Panagiotis Gargalidis"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Christos Hatzipetros"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ioannis Hatzopoulos"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Dimitrios Ioannou"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Emmanouil Zymvrakakis"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_3.1
+}
+leader = {
+	name = "Leonidas Paraskevopoulos"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Georgios Leonardopoulos"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Pavlos Kountouriotis"
+	type = sea
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Sofoklis Dousmanis"
+	type = sea
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+
+navy = {
+	name = "Vasilikón Naftikón"
+	location = 824
+
+	ship = {
+		name= "Limnos"
+		type = battleship
+	}
+
+	ship = {
+		name= "Psara"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Averof"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Elli"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Navarchos Miaoulis"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Delfin"
+		type = monitor
+	}
+
+	ship = {
+		name= "Xifias"
+		type = monitor
+	}
+
+	ship = {
+		name= "Nikopolis"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Tatoi"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Arethousa"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Doris"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Dafni"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Thetis"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Nymfen"
+		type = commerce_raider
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 824
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "II Corps"
+	location = 835
+	leader = {
+		name = "Ioannis Sotiris Alexakis"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_2.1
+	}
+
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 823
+	}
+
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 822
+	}
+
+	regiment = {
+		name= "5th Battery Royal Artillery"
+		type = artillery
+		home = 805
+	}
+
+	regiment = {
+		name= "6th Battery Royal Artillery"
+		type = artillery
+		home = 805
+	}
+
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 821
+	}
+	
+	regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 819
+	}
+
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 820
+	}
+	
+	regiment = {
+		name= "7th Battery Royal Artillery"
+		type = artillery
+		home = 831
+	
+	}
+	regiment = {
+		name= "8th Battery Royal Artillery"
+		type = artillery
+		home = 832
+	}
+}
+army = {
+	name = "III Corps"
+	location = 805
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 832
+	}
+
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 824
+	}
+
+	regiment = {
+		name= "9th Battery Royal Artillery"
+		type = artillery
+		home = 824
+	}
+
+	regiment = {
+		name= "10th Battery Royal Artillery"
+		type = artillery
+		home = 824
+	}
+	
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 824
+	}
+	
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 825
+	}
+
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 825
+	}
+	
+	regiment = {
+		name= "11th Battery Royal Artillery"
+		type = artillery
+		home = 845
+	}
+	
+	regiment = {
+		name= "12th Battery Royal Artillery"
+		type = artillery
+		home = 826
+	}
+}

@@ -1,0 +1,279 @@
+country_event = {
+	title = EVTNAMEsetgovernment
+	desc = EVTDESCsetgovernment
+	id = 91100
+	picture = Upperhouse
+
+
+	trigger = {
+		OR = {
+			government = proletarian_dictatorship
+			government = fascist_dictatorship
+		}
+		NOT = { has_country_flag = communist_or_fascist_dictatorship }
+	}
+	
+	option = {
+		name = "EVTOPTAsetgovernment"
+		set_country_flag = communist_or_fascist_dictatorship
+	}
+}
+
+country_event = {
+	title = EVTNAMEclrgovernment
+	desc = EVTDESCclrgovernment
+	id = 91101
+	picture = Upperhouse
+
+
+	trigger = {
+		NOT = {
+			OR = {
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+			}
+		}
+		has_country_flag = communist_or_fascist_dictatorship
+	}
+	
+	option = {
+		name = "EVTOPTAclrgovernment"
+		clr_country_flag = communist_or_fascist_dictatorship
+	}
+}
+
+country_event = {
+	title = EVTNAMEmedicine
+	desc = EVTDESCmedicine
+	id = 91102
+	picture = technology_flag
+
+
+	trigger = {
+		medicine = 1
+		NOT = { has_country_flag = medicine_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"
+		set_country_flag = medicine_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEinorganicchemistry
+	desc = EVTDESCinorganicchemistry
+	id = 91103
+	picture = technology_flag
+
+
+	trigger = {
+		inorganic_chemistry = 1
+		NOT = { has_country_flag = inorganic_chemistry_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = inorganic_chemistry_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEorganicchemistry
+	desc = EVTDESCorganicchemistry
+	id = 91104
+	picture = technology_flag
+
+
+	trigger = {
+		organic_chemistry = 1
+		NOT = { has_country_flag = organic_chemistry_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = organic_chemistry_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEelectricity
+	desc = EVTDESCelectricity
+	id = 91105
+	picture = technology_flag
+
+
+	trigger = {
+		electricity = 1
+		NOT = { has_country_flag = electricity_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = electricity_invented
+	}
+}
+
+#country_event = {
+#	id = 91106
+#	title = EVTNAMEnavallogistics
+#	desc = EVTDESCnavallogistics
+#	
+#	trigger = {
+#		naval_logistics = 1
+#		NOT = { has_country_flag = naval_logistics_invented }
+#	}
+#	
+#	option = {
+#		name = "EVTOPTAtechnologyflag"	
+#		set_country_flag = naval_logistics_invented
+#	}
+#}
+
+country_event = {
+	title = EVTNAMErevolutionncounterrevolution
+	desc = EVTDESCrevolutionncounterrevolution
+	id = 91107
+	picture = technology_flag
+
+
+	trigger = {
+		revolution_n_counterrevolution = 1
+		NOT = { has_country_flag = revolution_n_counterrevolution_invented }
+		centralization = regionalism
+		NOT = { has_country_flag = confederalism }
+		
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = revolution_n_counterrevolution_invented
+		political_reform = unitary
+	}
+}
+
+country_event = {
+	title = EVTNAMEcolonialnegotiations
+	desc = EVTDESCcolonialnegotiations
+	id = 91108
+	picture = technology_flag
+
+
+	trigger = {
+		invention = colonial_negotiations
+		NOT = { has_country_flag = colonial_negotiations_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = colonial_negotiations_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEmob1
+	desc = EVTDESCmob1
+	id = 91109
+	picture = technology_flag
+
+
+	trigger = {
+		invention = mob1
+		NOT = { has_country_flag = mob1_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = mob1_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEmob2
+	desc = EVTDESCmob2
+	id = 91110
+	picture = technology_flag
+
+
+	trigger = {
+		invention = mob2
+		NOT = { has_country_flag = mob2_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = mob2_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEmob3
+	desc = EVTDESCmob3
+	id = 91111
+	picture = technology_flag
+
+
+	trigger = {
+		invention = mob3
+		NOT = { has_country_flag = mob3_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = mob3_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEmob4
+	desc = EVTDESCmob4
+	id = 91112
+	picture = technology_flag
+
+
+	trigger = {
+		invention = mob4
+		NOT = { has_country_flag = mob4_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = mob4_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEmob5
+	desc = EVTDESCmob5
+	id = 91113
+	picture = technology_flag
+
+
+	trigger = {
+		invention = mob5
+		NOT = { has_country_flag = mob5_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = mob5_invented
+	}
+}
+
+country_event = {
+	title = EVTNAMEsyntheticpolymers
+	desc = EVTDESCsyntheticpolymers
+	id = 91114
+	picture = technology_flag
+
+
+	trigger = {
+		synthetic_polymers = 1
+		NOT = { has_country_flag = synthetic_polymers_invented }
+	}
+	
+	option = {
+		name = "EVTOPTAtechnologyflag"	
+		set_country_flag = synthetic_polymers_invented
+	}
+}

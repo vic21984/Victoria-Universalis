@@ -1,0 +1,43 @@
+owner = ZUL
+controller = ZUL
+add_core = ZUL
+add_core = SAF
+trade_goods = grain
+life_rating = 35
+1913.1.1 = {
+owner = SAF
+controller = SAF
+colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

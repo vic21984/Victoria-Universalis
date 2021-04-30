@@ -1,0 +1,327 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+
+	id = 31100
+
+	trigger = {
+		tag = TUR
+		year = 1872
+		owns = 865 #Canakkale, where Troy is located
+		NOT = {
+			year = 1875
+		}	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1873
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1874
+		}
+	}
+
+	title = "EVTNAME31100"
+	desc = "EVTDESC31100"
+	picture = "troy"
+
+	option = {
+		name = "EVTOPTA31100" 
+		prestige = 15
+	}
+}
+
+country_event = {
+	id = 31101 #setup by GER33005
+	trigger = {
+		tag = TUR 
+		war = no
+		year = 1903
+		owns = 926 #Baghdad
+		is_vassal = no
+		has_global_flag = BerlinBaghdadRail
+		OR = {
+			government = absolute_monarchy
+			government = hms_government
+			}
+		NOT = {
+			year = 1910
+			alliance_with = ENG
+			alliance_with = FRA
+			alliance_with = RUS
+			alliance_with = GER
+			has_country_flag = BerlinBaghdadRail
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1904
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1908
+		}
+	}
+
+	title = "EVTNAME33005"
+	desc = "EVTDESC33005"
+	picture = "bagdadrailway"
+
+	option = {
+		name = "EVTOPTA31101" 
+		prestige = 10
+		set_country_flag = BerlinBaghdadRail
+		relation = { who = GER value = 100 }
+		relation = { who = ENG value = -75 }
+		relation = { who = RUS value = -75 }
+	}
+}
+
+country_event = {
+		
+	id = 31102 # Flight to Ankara
+	
+	trigger = {
+		tag = TUR
+		NOT = { is_greater_power = yes }
+		NOT = { has_global_flag = 1913_bookmark }
+		capital = 860
+		NOT = { owns = 817 }
+		NOT = { owns = 816 }
+		NOT = { owns = 830 }
+		owns = 876
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	title = "EVTNAME31102" #Flight from Istanbul
+	desc = "EVTDESC31102" #Our position in Istanbul is no longer secure. We should move our government to a safer place.
+	picture = "administration"
+		
+	option = {
+		name = "EVTOPTA31102" #We have been ultimately driven from Europe...
+		prestige = -10
+		capital = 876
+		876 = {
+			life_rating = 5
+		}
+	}
+}
+
+country_event = {
+
+	id = 31103 # Turks rout Egyptians
+	title = "EVTNAME31103"
+	desc = "EVTDESC31103"
+	picture = ottoman_levant
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		has_global_flag = oriental_crisis
+		war_with = EGY
+		EGY = { national_provinces_occupied = 0.33 }
+		NOT = { has_global_flag = oriental_crisis_ended }
+	}
+
+	option = {
+		name = "EVTOPTA31103"
+		EGY = {
+			country_event = {
+				id = 31104
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31103"
+		ai_chance = {
+			factor = 0.5
+		}	
+	}	
+}
+
+country_event = {
+		
+	id = 31104 # Egypt Deliberates
+	title = "EVTNAME31104"
+	desc = "EVTDESC31104"
+	picture = egypt_deliberates
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31104"
+		TUR = {
+			country_event = {
+				id = 31105
+				days = 0
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTB31104"
+		TUR = {
+			country_event = {
+				id = 31106
+				days = 0
+			}
+		}		
+		ai_chance = {
+			factor = 0
+		}		
+	}	
+}
+
+country_event = {
+	id = 31105 # Egypt Surrenders
+	title = "EVTNAME31105"
+	desc = "EVTDESC31105"
+	picture = egypt_surrenders
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31105"
+		set_global_flag = oriental_crisis_ended
+		add_country_modifier = { name = oriental_truce duration = 1825 }
+		end_war = EGY
+		EGY = {
+			all_core = {
+				limit = { is_core = TUR }
+				remove_core = EGY
+			}
+		}
+		TUR = {
+			all_core = {
+				limit = { owned_by = EGY }
+				secede_province = THIS
+			}
+		}
+		relation = {
+			who = EGY
+			value = 200
+		}
+	}
+}
+
+country_event = {
+	id = 31106 # Egypt Refuses
+	title = "EVTNAME31106"
+	desc = "EVTDESC31106"
+	picture = egypt_refuses
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31106"
+	}
+}
+
+country_event = {
+	id = 31107 # End of the Oriental Crisis
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAN
+		has_global_flag = oriental_crisis
+		TUR = { NOT = { war_with = EGY } }
+		NOT = { has_global_flag = oriental_crisis_ended }
+	}
+
+	option = {
+		set_global_flag = oriental_crisis_ended
+	}
+}
+
+country_event = {
+	id = 31108 # Tsar of all Slavs
+	title = "EVTNAME31108"
+	desc = "EVTDESC31108"
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31108"
+	}
+}
+
+#Balkan Population Exchange
+country_event = {
+
+	id = 31120
+	title = "EVTNAME31120"
+	desc = "EVTDESC31120"
+	major = yes
+
+	trigger = {
+		tag = TUR
+		NOT = {
+			TUR_803 = { owned_by = THIS }
+			TUR_810 = { owned_by = THIS }
+			TUR_809 = { owned_by = THIS }
+			TUR_810 = { owned_by = THIS }
+			TUR_821 = { owned_by = THIS }
+			TUR_832 = { owned_by = THIS }
+		}
+		NOT = { has_global_flag = turkish_population_exchange }
+		NOT = { has_country_flag = embraced_ottomanism }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA31120"
+		set_global_flag = turkish_population_exchange
+		set_global_flag = population_exchange_in_progress
+		add_country_modifier = { name = turkish_population_exchange duration = 730 }
+	}
+}
+
+country_event = {
+
+	id = 31121
+
+	trigger = {
+		tag = JAN
+		has_global_flag = population_exchange_in_progress
+		TUR = {
+			NOT = { has_country_modifier = turkish_population_exchange }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		clr_global_flag = population_exchange_in_progress
+	}
+}

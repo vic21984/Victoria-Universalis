@@ -1,0 +1,96 @@
+political_decisions = {
+	jezail_gunsmiths = {
+		picture = afghan_jezail
+		potential = {
+			OR = {
+				tag = AFG
+				tag = KAL
+				tag = MAK
+			}
+			NOT = { firearms_production = yes_firearms_production }
+			civilized = no
+		}
+		allow = {
+			foreign_weapons = yes_foreign_weapons
+			military_constructions = yes_military_constructions
+			civilized = no
+			money = 10000
+		}
+		effect = {
+			treasury = -10000
+			economic_reform = yes_firearms_production
+			build_factory_in_capital_state = small_arms_factory
+			activate_technology = mechanized_mining
+		}
+	}
+	embrace_the_baloch = {
+		picture = baloch_khans
+		potential = {
+			tag = AFG
+			NOT = { accepted_culture = baluchi }
+		}
+		allow = {
+			KAL = { all_core = { owned_by = THIS } }
+			MAK = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			add_accepted_culture = baluchi
+		}
+	}
+	greater_afghanistan = {
+		picture = durrani_empire
+		potential = {
+			tag = AFG
+			NOT = { has_country_flag = greater_afghanistan }
+		}
+		allow = {
+			has_unclaimed_cores = no
+			rank = 24
+		}
+		effect = {
+			set_country_flag = greater_afghanistan
+			KAL_1221 = { add_core = THIS }
+			SIN_1288 = { add_core = THIS }
+			PAN_1227 = { add_core = THIS }
+			PAN_1224 = { add_core = THIS }
+			PER_1148 = { add_core = THIS }
+		}
+	}
+	form_turkestan = {
+		picture = turkestan
+		potential = {
+			OR = {
+				primary_culture = uzbek
+				primary_culture = tajik
+				primary_culture = kazak
+				primary_culture = kirgiz
+				primary_culture = tatar
+				primary_culture = turkmen
+				primary_culture = uighur
+			}
+			NOT = { has_global_flag = turkestan }
+		}
+		allow = {
+			KHI = { all_core = { owned_by = THIS } }
+			KOK = { all_core = { owned_by = THIS } }
+			BUK = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			set_global_flag = turkestan
+			change_tag = TRK
+			add_accepted_culture = uzbek
+			add_accepted_culture = tajik
+			add_accepted_culture = kazak
+			add_accepted_culture = kirgiz
+			add_accepted_culture = tatar
+			add_accepted_culture = turkmen
+			add_accepted_culture = uighur
+			RUS_1185 = { add_core = THIS }
+			RUS_1182 = { add_core = THIS }
+			KOK_1190 = { add_core = THIS }
+			KHI_1191 = { add_core = THIS }
+			RUS_1196 = { add_core = THIS }
+			CHI_1600 = { add_core = THIS }
+		}
+	}
+}

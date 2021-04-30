@@ -1,0 +1,3098 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+province_event = {
+	id = 92101
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_1
+						has_country_flag = receiver_1
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92102
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_2
+						has_country_flag = receiver_2
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92103
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_3
+						has_country_flag = receiver_3
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92104
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_4
+						has_country_flag = receiver_4
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92105
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_5
+						has_country_flag = receiver_5
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92106
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_6
+						has_country_flag = receiver_6
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92107
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_7
+						has_country_flag = receiver_7
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92108
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_8
+						has_country_flag = receiver_8
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92109
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_9
+						has_country_flag = receiver_9
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92110
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_10
+						has_country_flag = receiver_10
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92111
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_11
+						has_country_flag = receiver_11
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92112
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_12
+						has_country_flag = receiver_12
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92113
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_13
+						has_country_flag = receiver_13
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92114
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_14
+						has_country_flag = receiver_14
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 92115
+	title = "Choosing Trade Goods"
+	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Coal"
+		owner = {
+			set_country_flag = sending_coal
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_coal
+			}
+		}
+	}
+	option = {
+		name = "Sulphur"
+		owner = {
+			set_country_flag = sending_sulphur
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_sulphur
+			}
+		}
+	}
+	option = {
+		name = "Iron"
+		owner = {
+			set_country_flag = sending_iron
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_iron
+			}
+		}
+	}
+	option = {
+		name = "Timber"
+		owner = {
+			set_country_flag = sending_timber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_timber
+			}
+		}
+	}
+	option = {
+		name = "Cotton"
+		owner = {
+			set_country_flag = sending_cotton
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_cotton
+			}
+		}
+	}
+	option = {
+		name = "Dye"
+		owner = {
+			set_country_flag = sending_dye
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_dye
+			}
+		}
+	}
+	option = {
+		name = "Silk"
+		owner = {
+			set_country_flag = sending_silk
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_silk
+			}
+		}
+	}
+	option = {
+		name = "Tropical Wood"
+		owner = {
+			set_country_flag = sending_tropical_wood
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_tropical_wood
+			}
+		}
+	}
+	option = {
+		name = "Rubber"
+		owner = {
+			set_country_flag = sending_rubber
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_rubber
+			}
+		}
+	}
+	option = {
+		name = "Oil"
+		owner = {
+			set_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				set_country_flag = receiving_oil
+			}
+		}
+	}
+	option = {
+		name = "Stop sending goods."
+		owner = {
+			clr_country_flag = sending_coal
+			clr_country_flag = sending_sulphur
+			clr_country_flag = sending_iron
+			clr_country_flag = sending_timber
+			clr_country_flag = sending_cotton
+			clr_country_flag = sending_dye
+			clr_country_flag = sending_silk
+			clr_country_flag = sending_tropical_wood
+			clr_country_flag = sending_rubber
+			clr_country_flag = sending_oil
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = supplier_15
+						has_country_flag = receiver_15
+					}
+					NOT = { tag = THIS }
+				}
+				clr_country_flag = sending_coal
+				clr_country_flag = sending_sulphur
+				clr_country_flag = sending_iron
+				clr_country_flag = sending_timber
+				clr_country_flag = sending_cotton
+				clr_country_flag = sending_dye
+				clr_country_flag = sending_silk
+				clr_country_flag = sending_tropical_wood
+				clr_country_flag = sending_rubber
+				clr_country_flag = sending_oil
+			}
+		}
+	}
+}
+
+country_event = {
+	title = "§R$FROMCOUNTRY$§b Requests Trade Deal"
+	desc = "§R$FROMCOUNTRY$§b has approached us with an offer to create a trade agreement. Enact the Accept Trade Deal decision to create a trade agreement with §R$FROMCOUNTRY$§b. You are only allowed to have one active trade agreement at a time."
+	id = 92116
+	picture = trade_agreement
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will think about it."
+	}
+}
+
+country_event = {
+	title = "§R$FROMCOUNTRY$§b Accepts Trade Deal"
+	desc = "§R$FROMCOUNTRY$§b has accepted our offer to create a trade agreement."
+	id = 92117
+	picture = trade_agreement
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent."
+	}
+}
+
+country_event = {
+	id = 92110
+	title = "§R$FROMCOUNTRY$§b Cancels Trade Agreement"
+	desc = "§R$FROMCOUNTRY$§b has discontinued our trade deal."
+	picture = trade_agreement
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Understood."
+		clr_country_flag = receiving_coal
+		clr_country_flag = receiving_sulphur
+		clr_country_flag = receiving_iron
+		clr_country_flag = receiving_timber
+		clr_country_flag = receiving_cotton
+		clr_country_flag = receiving_dye
+		clr_country_flag = receiving_silk
+		clr_country_flag = receiving_tropical_wood
+		clr_country_flag = receiving_opium
+		clr_country_flag = receiving_rubber
+		clr_country_flag = receiving_oil
+	}
+	
+}

@@ -1,0 +1,47 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = iron
+life_rating = 30
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

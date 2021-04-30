@@ -1,0 +1,26 @@
+leader = {
+	name = "Jean-Pierre Boyer"
+	date = 1820.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.2
+}
+
+army = {
+	name = "Armée d'Haiti"
+	location = 2215
+	regiment = {
+		name= "1. Infanterie"
+		type = irregular
+		home = 2213
+	}
+
+	regiment = {
+		name= "2. Infanterie"
+		type = irregular
+		home = 2214
+	}
+
+}
+

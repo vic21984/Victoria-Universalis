@@ -1,3 +1,55 @@
+# Version 0.54 - 4/30/2021
+## Bug Fixes:
+* The Platine War and War of the Triple Alliance should no longer fire if Brazil is a puppet.
+* Fixed bugged Conquest of Sindh decision for East India Company.
+* Added status quo wargoal to both sides in the Great War scenario that prevents additional wargoals being added. This prevents some bugs that occur from non-scripted territory being transferred before the scripted surrender events fire.
+
+## Interface changes:
+* Added new settler province modifier icons for new colonial policy mechanic.
+
+## Map Changes:
+* Agadir province transferred from Western Sahara to Morocco state.
+* Split up Nevada-Utah states into Nevada and Utah. The AI in Vic2 prefers to take states have the most number of its own provinces bordering it, so splitting Nevada-Utah makes the US AI prioritize taking Texas.
+* Merged several provinces in Siberia.
+
+## General gameplay changes:
+* Added new 1836 Multiplayer Grand Campaign bookmark which features half as many cultures and 26% less individual POPs for increased stability.
+* Changed Colonial Policy reforms to Colonial Migration reforms. Each level adds a bonus to colonial migration at the cost of tax efficiency. Colonial Migration reform level can be raised or lowered at any time via decision.
+* Added a province selector decision that allows players to choose one of two colonial policies for individual colonial states. Indirect Rule prevents colonists from migrating to the chosen state while Settlement allows colonial migration but gives +0.05 militancy modifier and lowers the non-accepted population of the state by 1% annually. The colonial policy of a state can be changed at any time.
+* Added new tutorial section for colonial migration and colonial policy.
+* Lowered supply consumption of submarines, cruisers, and ironclads.
+* Autonomous dependencies, tribal societies, and theocracies can flip to other governments if they are broken by rebels of that type.
+* Made draft law reforms require the "Force through Reform" modifier to pass.
+* Increase R&D decision automatically raises R&D reform to the highest possible level based on literacy instead of step by step.
+* Added Yucatan tag and gave it cores on Yucatan state in Mexico.
+* Human controlled nations receive 2000 ammunition, canned food, small arms, and artillery at the start of the 1913 and WW1 bookmarks.
+* Merged Greek Civil War into The Great War in WW1 bookmark.
+* Moved around a few French and Italian armies closer to the front in 1914 scenario.
+
+
+## Country balance changes:
+###### CSA:
+* CSA Manifest destiny can't be enacted until the Civil War is over.
+
+###### Mexico:
+* Added an event that gives the option to end the war with Texas if Mexico has 3 war exhaustion. AI will always choose to end the war.
+* Added Yucatan revolt event.
+
+###### Brazil
+* Brazil will lose cores on countries that successfully win their independence wars against it.
+
+###### UCA:
+* Gained cores on Tapachula and Tuxtla provinces in Mexico.
+
+###### Austria:
+* Increased starting soldier POPs.
+
+###### Germany:
+* Added XVIII Army to the 1913 and WW1 oobs.
+
+###### Ottoman Empire:
+* Senussi Order is a vassal of OE in the 1914 bookmark.
+
 # Version 0.53 - 4/9/2021
 ## Bug Fixes:
 * Fixed a bug that allowed clergymen in AI nations to go over 4%.

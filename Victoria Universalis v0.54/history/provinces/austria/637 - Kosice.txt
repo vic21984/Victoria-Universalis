@@ -1,0 +1,23 @@
+owner = HUN
+controller = HUN
+add_core = SLV
+add_core = HUN
+add_core = CZH
+trade_goods = coal
+life_rating = 35
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	remove_core = AUS
+	add_core = KUK
+	state_building = {
+		level = 5
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fuel_refinery
+		upgrade = yes
+	}
+}

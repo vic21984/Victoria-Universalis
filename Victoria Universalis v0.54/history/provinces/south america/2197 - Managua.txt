@@ -1,0 +1,16 @@
+owner = UCA
+controller = UCAadd_core = UCA
+add_core = NIC
+trade_goods = coffee_beans
+life_rating = 351913.1.1 = {	owner = NIC	controller = NIC	remove_core = UCA
+	state_building = {
+		level = 2
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	naval_base = 2}

@@ -1,0 +1,19 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = IRQ
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	naval_base = 5
+}

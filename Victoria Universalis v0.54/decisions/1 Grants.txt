@@ -1,0 +1,46 @@
+political_decisions = {
+	z1manage_grants = {
+		picture = grant
+		alert = no
+		potential = {
+			ai = no
+		}
+		allow = {
+			ai = no
+			NOT = { has_country_modifier = requested_grant }
+		}
+		effect = {
+			country_event = { id = 91400 days = 0 }
+		}
+	}
+	zcraftsmen_on = {
+		picture = craftsmen
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = disable_non_accepted_craftsmen
+		}
+		allow = {
+			ai = no
+			has_country_flag = disable_non_accepted_craftsmen
+		}
+		effect = {
+			clr_country_flag = disable_non_accepted_craftsmen
+		}
+	}
+	zcraftsmen_off = {
+		picture = craftsmen
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = disable_non_accepted_craftsmen }
+		}
+		allow = {
+			ai = no
+			NOT = { has_country_flag = disable_non_accepted_craftsmen }
+		}
+		effect = {
+			set_country_flag = disable_non_accepted_craftsmen
+		}
+	}
+}
