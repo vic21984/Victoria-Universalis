@@ -1,0 +1,37 @@
+SHW = {
+	value = 40
+	truce_until="1841.1.1"
+}
+
+GEL = {
+	value = 50
+	truce_until="1841.1.1"
+}
+
+HAR = {
+	value = 30
+	truce_until="1841.1.1"
+}
+
+KAF = {
+	value = 75
+	truce_until="1841.1.1"
+}
+
+army = {
+	name = "Army of the Sidama Kingdoms"
+	location = 1864
+	regiment = {
+		name= "King's Guards"
+		type = irregular
+		home = 1864
+	}
+
+	regiment = {
+		name= "Sidama Warriors"
+		type = irregular
+		home = 1864
+	}
+
+}
+

@@ -1,0 +1,63 @@
+SHW = {
+	value = 40
+	truce_until="1841.1.1"
+}
+
+GON = {
+	truce_until="1841.1.1"
+	value = 40
+}
+
+TIG = {
+	truce_until="1841.1.1"
+	value = 30
+}
+
+AWS = {
+	truce_until="1841.1.1"
+	value = 100
+}
+
+SID = {
+	truce_until="1841.1.1"
+	value = 30
+}
+
+GEL = {
+	value = 50
+}
+
+MAJ = {
+	value = 75
+}
+
+leader = {
+   name = "Emir Abu Bakr II"
+   type = land
+   date = 1836.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+
+army = {
+	name = "Army of the Emir of Harar"
+	location = 1865
+	regiment = {
+		name= "Emir's Guards"
+		type = irregular
+		home = 1867
+	}
+
+	regiment = {
+		name= "Harari City Militia"
+		type = irregular
+		home = 1865
+	}
+
+	regiment = {
+		name= "Goba Tribesmen"
+		type = irregular
+		home = 1866
+	}
+}
+

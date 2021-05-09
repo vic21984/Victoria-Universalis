@@ -1,0 +1,176 @@
+leader = {
+	name = "Ioannis Metaxas"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Viktor Dousmanis"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Anastasios Papoulas"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+
+navy = {
+	name = "Vasilikón Naftikón"
+	location = 834
+
+	ship = {
+		name= "Kilkis"
+		type = battleship
+	}
+
+	ship = {
+		name= "Idra"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Spetsai"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Torpilovolo 11"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Torpilovolo 12"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Torpilovolo 13"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Torpilovolo 14"
+		type = commerce_raider
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 834
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 834
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 834
+	}
+
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 834
+	}
+	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 840
+	}
+	
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 839
+	}
+
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 842
+	}
+	
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 841
+	}
+	
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 838
+	}
+}

@@ -1,0 +1,42 @@
+owner = MEX
+controller = MEXadd_core = MEX
+add_core = CAL
+trade_goods = oil
+life_rating = 501913.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	remove_core = MEX
+	trade_goods = fish
+	state_building = {
+		level = 5
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	naval_base = 6
+}

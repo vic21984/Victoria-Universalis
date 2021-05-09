@@ -1,0 +1,23 @@
+owner = VNZ
+controller = VNZ
+add_core = VNZ
+add_core = GCO
+trade_goods = coffee_beans
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = paper_mill
+		upgrade = yes
+	}
+}

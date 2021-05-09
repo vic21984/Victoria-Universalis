@@ -1,0 +1,28 @@
+leader = {
+	name = "Federico Tinoco Granados"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+navy = {
+	name = "Coast Guard"
+	location = 2201
+
+	ship = {
+		name= "Branilio Garillo"
+		type = commerce_raider
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 2201
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2201
+	}
+}
+	

@@ -1,0 +1,286 @@
+political_decisions = {
+	restore_argentina = {
+		picture = restore_argentina
+		potential = {
+			primary_culture = platinean
+			NOT = { tag = LPL }
+			NOT = { has_global_flag = argentina_restored }
+			ARG = { exists = no }
+			NOT = {
+				OR = {
+					tag = PRG
+					tag = URU
+				}
+			}
+		}
+
+		allow = {
+			OR = {
+				AND = {
+					OR = {
+						nationalism_n_imperialism = 1
+						has_country_flag = argentianian_constitution_enacted
+					}
+					ARC = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = { vassal_of = THIS }
+								province_id = 2131
+							}
+						}
+					}
+					ENT = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = { vassal_of = THIS }
+							}
+						}
+					}
+					CRT = {
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = { vassal_of = THIS }
+							}
+						}
+					}
+					OR = {
+						SBA = { exists = no }
+						SBA = {
+							all_core = {
+								OR = {
+									owned_by = THIS
+									owner = { vassal_of = THIS }
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					ai = yes
+					year = 1861
+					OR = {
+						ENT = { exists = no }
+						ENT = { vassal_of = THIS }
+					}
+					OR = {
+						CRT = { exists = no }
+						CRT = { vassal_of = THIS }
+					}
+					OR = {
+						ARC = { exists = no }
+						SBA = { exists = no }
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = argentina_restored
+			prestige = 10
+			any_country = {
+				limit = {
+					OR = {
+						tag = ARC
+						tag = ENT
+						tag = CRT
+						tag = SBA
+					}
+				}
+				annex_to = THIS
+			}
+			ARC = {
+				all_core = {
+					add_core = ARG
+					remove_core = ARC
+				}
+			}
+			ENT = {
+				all_core = {
+					add_core = ARG
+					remove_core = ENT
+				}
+			}
+			CRT = {
+				all_core = {
+					add_core = ARG
+					remove_core = CRT
+				}
+			}
+			SBA = {
+				all_core = {
+					add_core = ARG
+					remove_core = SBA
+				}
+			}
+			capital = 2348
+			change_tag = ARG
+		}
+	}
+
+	argentianian_constitution = {
+		picture = argentianian_constitution
+		potential = {
+			OR = {
+				tag = ARG
+				tag = ARC
+				tag = SBA
+				tag = CRT
+				tag = ENT
+			}
+			NOT = {
+				has_country_flag = argentianian_constitution_enacted
+			}
+		}
+
+		allow = {
+			state_n_government = 1
+		}
+
+		effect = {
+			government = democracy
+			nationalvalue = nv_liberty
+			add_country_modifier = { name = small_immigration_boom duration = 1825 }
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							vote_franschise = none_voting
+							vote_franschise = landed_voting
+							vote_franschise = wealth_weighted_voting
+						}
+					}
+				}
+				owner = { political_reform = wealth_voting }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							debt_law = serfdom
+							debt_law = peonage
+						}
+					}
+				}	
+				owner = { political_reform = debtors_prisons }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							political_parties = underground_parties
+							political_parties = harassment
+							political_parties = gerrymandering
+						}
+					}
+				}	
+				owner = { political_reform = non_secret_ballots }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							citizens_rights = primary_culture_only
+							citizens_rights = culture_voting_only
+						}
+					}
+				}	
+				owner = { political_reform = culture_voting_only }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							upper_house_composition = party_appointed
+							upper_house_composition = appointed
+						}
+					}
+				}	
+				owner = { political_reform = state_equal_weight }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						press_rights = state_press
+					}
+				}	
+				owner = { political_reform = censored_press }
+			}
+			political_reform = federalism
+			political_reform = no_slavery
+			set_country_flag = argentianian_constitution_enacted
+			clr_country_flag = confederalism
+			any_pop = {
+				limit = {
+					location = {
+						NOT = { state_id = 2348 }
+					}
+				}	
+				ideology = { factor = 0.2 value = liberal }
+				consciousness = 2
+			}
+			any_country = {
+				limit = {
+					ai = yes
+					OR = {
+						tag = ARG
+						tag = ARC
+						tag = CRT
+						tag = ENT
+					}
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+			ARG_2355 = {
+				add_core = SBA
+				remove_core = ARC
+			}
+			2353 = { remove_core = SBA }
+			release = SBA
+		}
+	}
+
+	law_1420_of_general_common_education = {
+		potential = {
+			tag = ARG
+			NOT = {
+				has_country_flag = 1420_passed
+			}
+		}
+		allow = {
+			biologism = 1
+		}
+		effect = {
+			prestige = 5
+			random_owned = {
+				limit = {
+					owner = { school_reforms = good_schools }
+				}	
+				owner = { social_reform = compulsory_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = acceptable_schools }
+				}	
+				owner = { social_reform = good_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = low_schools }
+				}	
+				owner = { social_reform = acceptable_schools }
+			}				
+			random_owned = {
+				limit = {
+					owner = { school_reforms = no_schools }
+				}	
+				owner = { social_reform = low_schools }
+			}
+			any_pop = { literacy = 0.1 }
+			set_country_flag = 1420_passed
+		}
+	}
+}

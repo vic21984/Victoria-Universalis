@@ -1,0 +1,45 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+add_core = GER
+trade_goods = cattle
+life_rating = 40
+1913.1.1 = {
+	owner = GER
+	controller = GER
+	state_building = {
+		level = 3
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = synthetic_oil_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+}

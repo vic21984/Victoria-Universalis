@@ -1,0 +1,552 @@
+#Suriye Region (68000)  #see Syria.txt & Jordan.txt for balance of region
+#under the rule of Egypt in 1836
+#Baalbeck (68000/17000 POPS) #now part of Lebanon
+912 = {
+    aristocrats = {
+        culture = mashriqi
+        religion = sunni
+        size = 236
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = sunni
+        size = 412
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = sunni
+        size = 600
+    }
+
+    soldiers = {
+        culture = mashriqi
+        religion = sunni
+        size = 1377
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = sunni
+        size = 10860
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = shiite
+        size = 205
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = shiite
+        size = 360
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = shiite
+        size = 6540
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 102
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = orthodox
+        size = 60
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = orthodox
+        size = 1110
+    }
+
+    capitalists = {
+        culture = mashriqi
+        religion = sunni
+        size = 26
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = sunni
+        size = 150
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = sunni
+        size = 2715
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 90
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 1635
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 15
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 277
+    }
+}
+#Bayrut Region (260000)  #see Israel-Palestine.txt for balance of region
+#under the rule of Egypt in 1836
+#Beirut (128000/32000 POPS) #mashriqi-shiite = druze; mashriqi-catholic = maronites
+913 = {
+    aristocrats = {
+        culture = mashriqi
+        religion = sunni
+        size = 202
+    }
+
+    bureaucrats = {
+        culture = mashriqi
+        religion = sunni
+        size = 560
+    }
+
+    officers = {
+        culture = mashriqi
+        religion = sunni
+        size = 75
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = sunni
+        size = 618
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = sunni
+        size = 840
+    }
+
+    soldiers = {
+        culture = mashriqi
+        religion = sunni
+        size = 2559
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = sunni
+        size = 14460
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 309
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = orthodox
+        size = 300
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = orthodox
+        size = 5610
+    }
+
+    aristocrats = {
+        culture = mashriqi
+        religion = catholic
+        size = 135
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = catholic
+        size = 412
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = catholic
+        size = 540
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = catholic
+        size = 10020
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = shiite
+        size = 102
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = shiite
+        size = 120
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = shiite
+        size = 2250
+    }
+
+    clergymen = {
+        culture = armenian
+        religion = orthodox
+        size = 102
+    }
+
+    artisans = {
+        culture = armenian
+        religion = orthodox
+        size = 120
+    }
+
+    farmers = {
+        culture = armenian
+        religion = orthodox
+        size = 2250
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 40
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 588
+    }
+
+    capitalists = {
+        culture = mashriqi
+        religion = sunni
+        size = 23
+    }
+
+    capitalists = {
+        culture = mashriqi
+        religion = catholic
+        size = 15
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = sunni
+        size = 210
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = sunni
+        size = 3615
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 75
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 1402
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = catholic
+        size = 135
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = catholic
+        size = 2505
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 30
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 562
+    }
+
+    craftsmen = {
+        culture = armenian
+        religion = orthodox
+        size = 30
+    }
+
+    craftsmen = {
+        culture = armenian
+        religion = orthodox
+        size = 562
+    }
+
+    craftsmen = {
+        culture = sephardic
+        religion = jewish
+        size = 147
+    }
+}
+#Askaleh (48000/12000 POPS)
+914 = {
+    aristocrats = {
+        culture = mashriqi
+        religion = sunni
+        size = 168
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = sunni
+        size = 412
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = sunni
+        size = 9262
+    }
+
+    soldiers = {
+        culture = mashriqi
+        religion = sunni
+        size = 1537
+    }
+
+    labourers = {
+        culture = mashriqi
+        religion = sunni
+        size = 4500
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 102
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = orthodox
+        size = 2481
+    }
+
+    labourers = {
+        culture = mashriqi
+        religion = orthodox
+        size = 500
+    }
+}
+#Sidon (84000/21000 POPS)
+915 = {
+    aristocrats = {
+        culture = mashriqi
+        religion = sunni
+        size = 33
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = sunni
+        size = 205
+    }
+
+    soldiers = {
+        culture = mashriqi
+        religion = shiite
+        size = 2096
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = sunni
+        size = 2400
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 102
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = orthodox
+        size = 60
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = orthodox
+        size = 1110
+    }
+
+    aristocrats = {
+        culture = mashriqi
+        religion = catholic
+        size = 101
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = catholic
+        size = 205
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = catholic
+        size = 300
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = catholic
+        size = 6060
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = shiite
+        size = 309
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = shiite
+        size = 3470
+    }
+
+    aristocrats = {
+        culture = mashriqi
+        religion = shiite
+        size = 135
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = shiite
+        size = 309
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = shiite
+        size = 10020
+    }
+
+    capitalists = {
+        culture = mashriqi
+        religion = sunni
+        size = 4
+    }
+
+    capitalists = {
+        culture = mashriqi
+        religion = catholic
+        size = 11
+    }
+
+    capitalists = {
+        culture = mashriqi
+        religion = shiite
+        size = 15
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = sunni
+        size = 30
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = sunni
+        size = 600
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 15
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = orthodox
+        size = 277
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = catholic
+        size = 75
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = catholic
+        size = 1515
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 60
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 1117
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 135
+    }
+
+    craftsmen = {
+        culture = mashriqi
+        religion = shiite
+        size = 2505
+    }
+}

@@ -1,3 +1,29 @@
+# Version 0.55 - 5/9/2021
+## Bug Fixes:
+* Fixed a few broken surrender events in WW1 scenario.
+
+## Interface changes:
+* Moved the normal Grand Campaign bookmark to the top of the scenario list.
+
+## Map Changes:
+* Merged Oldenburg state with East Frisia state.
+* Changed shapes of Undine and Belluno provinces in Italy.
+* Added province named "AI English Channel Bridge" next to Cantebury. This province has a strait crossing with Dunkirk and allows the AI to move troops across the channel without transports. If a human player owns Cantebury or Dunkirk, the province will automatically flip over to the World Bank and the land bridge will be closed. If Cantebury and Dunkirk become owned by the AI, then the new province will flip to the owner of Cantebury.
+
+## General gameplay changes:
+* Added decision that allows players that own vassals to declare a fake war on a non-existant country tag so they can command their puppet's troops when not in a real war. The fake war can be ended at any time via decision.
+* Provinces with RGO expansion modifiers will now keep their modifiers if the province changes ownership or changes colonial status by the addition of a new province core mechanic. Provinces are hard coded in Vic2 to lose all province modifiers when they change owners or colonial status. The new mechanic works around this by adding a utility country core to any provinces that have received an RGO expansion, then a decision is enacted by the world bank which re-adds the relevant RGO expansion modifier to any provinces that have the new utility core tag and have lost their RGO expansions.
+* Tweaked army composition and locations for most major nations in the 1913 and WW1 scenarios to be even more historically accurate. Engineers were removed from most armies to keep their infantry to support ratio closer to even because of game mechanics.
+* Nerfed starting colonial soldier pops and colonial soldier pop promotion in 1913 and WW1 bookmarks because they were used much more rarely in real the real war than they are in game. Colonial soldier promotion remains the same in the 1836 starting bookmarks.
+
+## Country balance changes:
+###### West Africa:
+* Increased starting pop by 33%.
+
+###### South Africa:
+* Increased starting pop of Xhosa by 100% and Matabele by 200%.
+
+
 # Version 0.54 - 4/30/2021
 ## Bug Fixes:
 * The Platine War and War of the Triple Alliance should no longer fire if Brazil is a puppet.
@@ -26,7 +52,6 @@
 * Merged Greek Civil War into The Great War in WW1 bookmark.
 * Moved around a few French and Italian armies closer to the front in 1914 scenario.
 
-
 ## Country balance changes:
 ###### CSA:
 * CSA Manifest destiny can't be enacted until the Civil War is over.
@@ -49,6 +74,7 @@
 
 ###### Ottoman Empire:
 * Senussi Order is a vassal of OE in the 1914 bookmark.
+
 
 # Version 0.53 - 4/9/2021
 ## Bug Fixes:

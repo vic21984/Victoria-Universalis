@@ -1,0 +1,45 @@
+ZUL = {
+	value = -200
+}
+
+BSH = {
+	value = -200
+}
+
+MAT = {
+	value = -200
+}
+
+GAZ = {
+	value = -200
+}
+
+leader = {
+   name = "Maqoma"
+   type = land
+   date = 1836.1.1
+	personality = defence_2.1
+	background = attack_3.1
+}
+
+army = {
+	name = "Army of the Xhosa"
+	location = 2100	
+	regiment = {
+		name= "1st Xhosa Warriors"
+		type = irregular
+		home = 2100
+	}
+	regiment = {
+		name= "2nd Xhosa Warriors"
+		type = irregular
+		home = 2099
+	}
+	regiment = {
+		name= "3rd Xhosa Warriors"
+		type = irregular
+		home = 2098
+	}
+}
+
+

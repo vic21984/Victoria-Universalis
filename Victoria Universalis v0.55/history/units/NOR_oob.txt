@@ -1,0 +1,22 @@
+army = {
+	name = "Norsk Heimevernet"
+	location = 313
+	regiment = {
+		name= "Bergenhus Regiment"
+		type = infantry
+		home = 309
+	}
+
+	regiment = {
+		name= "Trondhjemske Regiment"
+		type = infantry
+		home = 305
+	}
+
+	regiment = {
+		name= "Akershusiske Regiment"
+		type = infantry
+		home = 310
+	}
+
+}

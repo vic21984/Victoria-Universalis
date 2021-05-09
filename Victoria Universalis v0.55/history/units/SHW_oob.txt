@@ -1,0 +1,91 @@
+
+EGY = {
+	value = 30
+}
+
+GON = {
+	value = 40
+	truce_until="1841.1.1"
+}
+
+TIG = {
+	value = 60
+	truce_until="1841.1.1"
+}
+
+KAF = {
+	value = 50
+	truce_until="1841.1.1"
+}
+
+SID = {
+	value = 40
+	truce_until="1841.1.1"
+}
+
+HAR = {
+	value = -100
+	truce_until="1841.1.1"
+}
+
+AWS = {
+	value = -100
+	truce_until="1841.1.1"
+}
+
+leader = {
+	name = "Ras Sahle Selassie"
+	type = land
+	date = 1836.1.1
+	personality = defence_2.1
+	background = attack_3.1
+	prestige = 0.5
+}
+
+army = {
+	name = "Army of the Negus of Shewa"
+	location = 1859
+	regiment = {
+		name= "Negus' Guards"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "Negus' Horsemen"
+		type = cavalry
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Shewa Division"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "2nd Shewa Division"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "3rd Shewa Division"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Hawassa Division"
+		type = irregular
+		home = 1860
+	}
+
+	regiment = {
+		name= "1st Aselia Division"
+		type = irregular
+		home = 1861
+	}
+
+}
+

@@ -1,0 +1,144 @@
+[systemsettings.cpp:184]: System memory (available/total):	10643/16270 MB
+[systemsettings.cpp:185]: Page file (available/total):		10947/18702 MB
+[systemsettings.cpp:186]: Virtual memory (available/total):	3978/4095 MB
+[systemsettings.cpp:203]: CPU speed:						3191 MHz
+[systemsettings.cpp:211]: Number of processors: 12
+[systemsettings.cpp:216]: CPU type: x64
+[systemsettings.cpp:295]: OS: Windows 8     Build: 9200
+[graphicssettings.cpp:132]: Graphic Adapters: 
+[graphicssettings.cpp:137]: 	0: NVIDIA GeForce GTX 1060 3GB
+[graphicssettings.cpp:154]: Checking for multi-sampling support:
+[graphicssettings.cpp:165]: 	2 samples supported.
+[graphicssettings.cpp:165]: 	4 samples supported.
+[graphicssettings.cpp:165]: 	8 samples supported.
+[graphicssettings.cpp:180]: Using Adapter [0]:
+[graphicssettings.cpp:186]: Succeeded to create a device [D3DCREATE_HARDWARE_VERTEXPROCESSING].
+[graphicssettings.cpp:228]: Graphics device: NVIDIA GeForce GTX 1060 3GB
+[graphicssettings.cpp:229]: Graphics driver: nvldumd.dll
+[graphicssettings.cpp:230]: Driver version:  26.21.14 build 4112
+[graphicssettings.cpp:248]: 
+
+
+Dumping all gfx info:
+DeviceIdentifier:	{D7B71E3E-5F42-11CF-8863-CC311BC2D735}
+VendorId:	4318
+DeviceId:	7170
+SubSysId:	297930792
+Revision:	161
+DriverVersion.HighPart:	1703957
+DriverVersion.LowPart:	921616
+
+
+[graphicssettings.cpp:298]: Instancing supported.
+[graphicssettings.cpp:316]: Video memory amount: 1342MB
+[graphicssettings.cpp:319]: Support for T&L found.
+[graphicssettings.cpp:322]: MaxSimultaneousTextures: 8
+[graphicssettings.cpp:323]: MaxVertexBlendMatrices: 4
+[graphicssettings.cpp:324]: MaxVertexBlendMatrixIndex: 8
+[graphicssettings.cpp:326]: MaxSimultaneousTextures: 8
+[graphicssettings.cpp:327]: MaxTextureBlendStages: 8
+[graphicssettings.cpp:328]: Support for Anisotropic filtering found.
+[graphicssettings.cpp:331]: 	Max Anisotropic filtering: 16
+[graphicssettings.cpp:332]: 	Anisotropic filtering set to: 0
+[graphicssettings.cpp:336]: Vertex Shader version: 3.0
+[graphicssettings.cpp:341]: Pixel Shader version: 3.0
+[main.cpp:400]: V2 Version Jan  4 2016 : 17:36:07
+[main.cpp:471]: Blobing files
+[main.cpp:492]: Init Text Database
+[internationalizedtext.cpp:1237]: Create table
+[internationalizedtext.cpp:1239]: Create text database
+[main.cpp:494]: Text Database Done
+[main.cpp:522]: Creating application...
+[main.cpp:582]: Init Application...
+[eu3application.cpp:226]: Initialise Defines
+[eu3application.cpp:233]: App Init
+[eu3application.cpp:248]: App Init
+[eu3application.cpp:274]: Cursors Defines
+[eu3application.cpp:302]: Sound...
+[dxmusic.cpp:40]: Init Music
+[dxmusic.cpp:51]: Graph done.
+[dxmusic.cpp:62]: Control done.
+[dxmusic.cpp:73]: Seeker done 
+[dxmusic.cpp:83]: Event done.
+[dxmusic.cpp:93]: Basic audio done.
+[dxmusic.cpp:95]: Music done.
+[DirectSound.cpp:37]: Init DirectSound
+[DirectSound.cpp:55]: Sound initialised with result 0
+[DirectSound.cpp:65]: Coop Level Set. Result: 0
+[DirectSound.cpp:88]: Sound Init Done
+[eu3application.cpp:351]: Initialise Graphics...
+[graphics.cpp:161]: Direct3D Created
+[graphicssettings.cpp:664]: Usable res: 1024 768 60
+[graphicssettings.cpp:664]: Usable res: 1024 768 70
+[graphicssettings.cpp:664]: Usable res: 1024 768 75
+[graphicssettings.cpp:664]: Usable res: 1152 864 75
+[graphicssettings.cpp:664]: Usable res: 1280 720 50
+[graphicssettings.cpp:664]: Usable res: 1280 720 60
+[graphicssettings.cpp:664]: Usable res: 1280 720 59
+[graphicssettings.cpp:664]: Usable res: 1280 768 60
+[graphicssettings.cpp:664]: Usable res: 1280 800 60
+[graphicssettings.cpp:664]: Usable res: 1280 960 60
+[graphicssettings.cpp:664]: Usable res: 1280 1024 60
+[graphicssettings.cpp:664]: Usable res: 1280 1024 75
+[graphicssettings.cpp:664]: Usable res: 1360 768 60
+[graphicssettings.cpp:664]: Usable res: 1366 768 60
+[graphicssettings.cpp:664]: Usable res: 1680 1050 59
+[graphicssettings.cpp:664]: Usable res: 1680 1050 60
+[graphicssettings.cpp:664]: Usable res: 1768 992 25
+[graphicssettings.cpp:664]: Usable res: 1768 992 30
+[graphicssettings.cpp:664]: Usable res: 1768 992 29
+[graphicssettings.cpp:664]: Usable res: 1920 1080 60
+[graphicssettings.cpp:664]: Usable res: 1920 1080 59
+[graphicssettings.cpp:664]: Usable res: 1920 1080 25
+[graphicssettings.cpp:664]: Usable res: 1920 1080 30
+[graphicssettings.cpp:664]: Usable res: 1920 1080 29
+[graphicssettings.cpp:664]: Usable res: 1920 1080 50
+[graphicssettings.cpp:664]: Usable res: 1440 900 60
+[graphics.cpp:279]: Not using multisampling.
+[graphics.cpp:302]: Creating device with: D3DCREATE_HARDWARE_VERTEXPROCESSING
+	Fullscreen=yes
+	RefreshRate=60
+	Borderless=yes
+	Resolution=1920x1080
+[graphics.cpp:383]: Done creating device.
+[eu3application.cpp:353]: Graphics Done
+[eu3graphics.cpp:265]: Load text  Loading Map-Sprites...
+[eu3graphics.cpp:265]: Load text  Loading GUI Definitions...
+[eu3graphics.cpp:265]: Load text  Loading Databases...
+[eu3graphics.cpp:265]: Load text  Initialising Maplogic...
+[eu3graphics.cpp:265]: Load text  Loading Databases II...
+[eu3graphics.cpp:265]: Load text  Loading History Files...
+[eu3graphics.cpp:265]: Load text  Loading Events...
+[eu3graphics.cpp:265]: Load text  Loading Sounds...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Loading Flags...
+[eu3graphics.cpp:265]: Load text  Executing History
+[eu3graphics.cpp:265]: Load text  Creating Checksum...
+[main.cpp:588]: Run Application...
+[frontend.cpp:430]: entering frontend...
+[eu3graphics.cpp:265]: Load text  Loading Graphics...
+[frontend.cpp:468]: entering frontend...init map
+[eu3application.cpp:776]: initialise map
+[eu3graphics.cpp:265]: Load text  Creating Province #
+[eu3graphics.cpp:265]: Load text  Creating Borders...
+[provincemanager.cpp:1559]: Creating province data
+[eu3graphics.cpp:265]: Load text  Creating Texts....
+[eu3graphics.cpp:265]: Load text  Creating Rivers...
+[eu3graphics.cpp:265]: Load text  Creating the World...
+[provincemanager.cpp:1636]: Creating meshes
+[provincemanager.cpp:1689]: vertex declarations done
+[provincemanager.cpp:1730]: done quads
+[provincemanager.cpp:1762]: border adjacencies done
+[eu3graphics.cpp:265]: Load text  Creating Waves
+[provincemanager.cpp:1808]: Create meshes done
+[eu3graphics.cpp:265]: Load text  Map Properly Initialised...
+[frontend.cpp:483]: eu3 idler restore
+[frontend.cpp:494]: reloaded
+[frontend.cpp:556]: done frontend

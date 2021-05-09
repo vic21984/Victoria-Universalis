@@ -1,0 +1,30 @@
+leader = {
+	name = "Kenneth Snodgrass"
+	date = 1836.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_2.1
+}
+
+army = {
+	name = "Royal Volunteer Militia"
+	location = 2468
+	regiment = {
+		name= "New South Wales Regiment"
+		type = infantry
+		home = 2468
+	}
+
+	regiment = {
+		name= "Victoria Regiment"
+		type = infantry
+		home = 2476
+	}
+
+	regiment = {
+		name= "Queensland Regiment"
+		type = infantry
+		home = 2483
+	}
+}
+

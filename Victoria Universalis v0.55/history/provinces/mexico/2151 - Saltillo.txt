@@ -1,0 +1,23 @@
+owner = MEX
+controller = MEX
+add_core = MEX
+trade_goods = dye
+life_rating = 35
+1913.1.1 = {
+	trade_goods = opium
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}

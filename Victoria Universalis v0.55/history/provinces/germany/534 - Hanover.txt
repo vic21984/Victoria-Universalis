@@ -1,0 +1,35 @@
+owner = HAN
+controller = HAN
+add_core = HAN
+add_core = GER
+trade_goods = fruit
+life_rating = 40
+1913.1.1 = {
+	owner = GER
+	controller = GER
+	state_building = {
+		level = 5
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = synthetic_rubber_factory
+		upgrade = yes
+	}
+}

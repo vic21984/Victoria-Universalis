@@ -1,0 +1,907 @@
+leader = {
+	name = "Yuan Shikai"
+	type = land
+	date = 1874.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Wu Peifu"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Feng Guozhang"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Sun Chuanfang"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Wang Shizhen"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Cao Kun"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Zhang Xun"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Feng Yuxiang"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Lu Yongxiang"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Zhang Zhizhong"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Song Zheyuan"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Qin Dechun"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Qi Xieyuan"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Lu Jianzhang"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Chen Guangyuan"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Wang Chengbin"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Cheng Biguang"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+navy = {
+	name = "Beiyang Fleet"
+	location = 1617
+
+	ship = {
+		name= "Hai Yung"
+		type = battleship
+	}
+
+	ship = {
+		name= "Hai Chou"
+		type = battleship
+	}
+
+	ship = {
+		name= "Hai Chen"
+		type = battleship
+	}
+
+	ship = {
+		name= "Hai Chi"
+		type = battleship
+	}
+
+	ship = {
+		name= "Ying Swei"
+		type = battleship
+	}
+
+	ship = {
+		name= "Chao Ho"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Nan Shui"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Tung Chi"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Fu An"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Fei Ying"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Chien Wei"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Chien An"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Fu"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Lung"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Chen"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Chung"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Kong"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Kwong"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Kung"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Li"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Sun"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Tsen"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lei Tui"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Chang Tze"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Lieh Tze"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Chen Tse"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Su Tse"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Hu Peng"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Hu Oah"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Hu Ying"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Hu Chen"
+		type = commerce_raider
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 1482
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "Capital Gaurds"
+	location = 1612
+	regiment = {
+		name= "1st Regiment"
+		type = guard
+		home = 1612
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = guard
+		home = 1612
+	}
+	regiment = {
+		name= "3rd Regiment"
+		type = guard
+		home = 1612
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = guard
+		home = 1612
+	}
+
+	regiment = {
+		name= "1st Battery Guards Artillery"
+		type = artillery
+		home = 1612
+	}
+
+	regiment = {
+		name= "2nd Battery Guards Artillery"
+		type = artillery
+		home = 1612
+	}	
+	regiment = {
+		name= "1st Guards Cavalry"
+		type = hussar
+		home = 1612
+	}	
+	regiment = {
+		name= "3rd Battery Guards Artillery"
+		type = artillery
+		home = 1618
+	}
+	regiment = {
+		name= "4th Battery Guards Artillery"
+		type = artillery
+		home = 1618
+	}
+	regiment = {
+		name= "Guards Engineer"
+		type = engineer
+		home = 1618
+	}	
+}
+army = {
+	name = "1st Division"
+	location = 2655
+	regiment = {
+		name= "1. Infantry Brigade"
+		type = infantry
+		home = 1617
+	}
+	regiment = {
+		name= "2. Infantry Brigade"
+		type = infantry
+		home = 1617
+	}
+	regiment = {
+		name= "3. Infantry Brigade"
+		type = infantry
+		home = 1616
+	}
+	regiment = {
+		name= "4. Infantry Brigade"
+		type = infantry
+		home = 1563
+	}
+	regiment = {
+		name= "1. Cavalry Battalion"
+		type = hussar
+		home = 1563
+	}
+	regiment = {
+		name= "1. Field Artillery Battalion"
+		type = artillery
+		home = 1613
+	}
+	regiment = {
+		name= "1. Engineer Battalion"
+		type = engineer
+		home = 1613
+	}	
+}
+army = {
+	name = "2nd Division"
+	location = 1565
+	regiment = {
+		name= "5. Infantry Brigade"
+		type = infantry
+		home = 1565
+	}
+	regiment = {
+		name= "6. Infantry Brigade"
+		type = infantry
+		home = 1565
+	}
+	regiment = {
+		name= "7. Infantry Brigade"
+		type = infantry
+		home = 1565
+	}
+	regiment = {
+		name= "8. Infantry Brigade"
+		type = infantry
+		home = 1567
+	}
+	regiment = {
+		name= "2. Cavalry Battalion"
+		type = hussar
+		home =1567
+	}
+	regiment = {
+		name= "2. Field Artillery Battalion"
+		type = artillery
+		home = 1567
+	}
+	regiment = {
+		name= "2. Engineer Battalion"
+		type = engineer
+		home = 1570
+	}	
+}
+army = {
+	name = "3rd Division"
+	location = 1538
+	regiment = {
+		name= "9. Infantry Brigade"
+		type = infantry
+		home = 1539
+	}
+	regiment = {
+		name= "10. Infantry Brigade"
+		type = infantry
+		home = 1539
+	}
+	regiment = {
+		name= "11. Infantry Brigade"
+		type = infantry
+		home = 1539
+	}
+	regiment = {
+		name= "12. Infantry Brigade"
+		type = infantry
+		home = 1539
+	}
+	regiment = {
+		name= "3. Cavalry Battalion"
+		type = hussar
+		home = 1537
+	}
+	regiment = {
+		name= "3. Field Artillery Battalion"
+		type = artillery
+		home = 1537
+	}
+	regiment = {
+		name= "3. Engineer Battalion"
+		type = engineer
+		home = 1537
+	}	
+}
+army = {
+	name = "4th Division"
+	location = 1493
+	regiment = {
+		name= "13. Infantry Brigade"
+		type = infantry
+		home = 1495
+	}
+	regiment = {
+		name= "14. Infantry Brigade"
+		type = infantry
+		home = 1495
+	}
+	regiment = {
+		name= "15. Infantry Brigade"
+		type = infantry
+		home = 1495
+	}
+	regiment = {
+		name= "16. Infantry Brigade"
+		type = infantry
+		home = 1499
+	}
+	regiment = {
+		name= "4. Cavalry Battalion"
+		type = hussar
+		home = 1499
+	}
+	regiment = {
+		name= "4. Field Artillery Battalion"
+		type = artillery
+		home = 1499
+	}
+	regiment = {
+		name= "4. Engineer Battalion"
+		type = engineer
+		home = 1501
+	}	
+}
+army = {
+	name = "5th Division"
+	location = 1601
+	regiment = {
+		name= "17. Infantry Brigade"
+		type = infantry
+		home = 1507
+	}
+	regiment = {
+		name= "18. Infantry Brigade"
+		type = infantry
+		home = 1580
+	}
+	regiment = {
+		name= "19. Infantry Brigade"
+		type = infantry
+		home = 1601
+	}
+	regiment = {
+		name= "20. Infantry Brigade"
+		type = infantry
+		home = 1601
+	}
+	regiment = {
+		name= "5. Cavalry Battalion"
+		type = hussar
+		home = 1602
+	}
+	regiment = {
+		name= "5. Field Artillery Battalion"
+		type = artillery
+		home = 1506
+	}
+	regiment = {
+		name= "5. Engineer Battalion"
+		type = engineer
+		home = 1505
+	}	
+}
+army = {
+	name = "6th Division"
+	location = 1586
+	regiment = {
+		name= "21. Infantry Brigade"
+		type = infantry
+		home = 1586
+	}
+	regiment = {
+		name= "22. Infantry Brigade"
+		type = infantry
+		home = 1586
+	}
+	regiment = {
+		name= "23. Infantry Brigade"
+		type = infantry
+		home = 1586
+	}
+	regiment = {
+		name= "24. Infantry Brigade"
+		type = infantry
+		home = 1582
+	}
+	regiment = {
+		name= "6. Cavalry Battalion"
+		type = hussar
+		home = 1585
+	}
+	regiment = {
+		name= "6. Field Artillery Battalion"
+		type = artillery
+		home = 1578
+	}
+	regiment = {
+		name= "6. Engineer Battalion"
+		type = engineer
+		home = 1578
+	}	
+}
+
+army = {
+	name = "7th Division"
+	location = 1494
+	regiment = {
+		name= "25. Infantry Brigade"
+		type = infantry
+		home = 1493
+	}
+	regiment = {
+		name= "26. Infantry Brigade"
+		type = infantry
+		home = 1493
+	}
+	regiment = {
+		name= "27. Infantry Brigade"
+		type = infantry
+		home = 1493
+	}
+	regiment = {
+		name= "28. Infantry Brigade"
+		type = infantry
+		home = 1493
+	}
+	regiment = {
+		name= "7. Cavalry Battalion"
+		type = hussar
+		home = 1501
+	}
+	regiment = {
+		name= "7. Field Artillery Battalion"
+		type = artillery
+		home = 1527
+	}
+	regiment = {
+		name= "7. Engineer Battalion"
+		type = engineer
+		home = 1494
+	}	
+}
+
+army = {
+	name = "8th Division"
+	location = 1482
+	regiment = {
+		name= "29. Infantry Brigade"
+		type = infantry
+		home = 1486
+	}
+	regiment = {
+		name= "30. Infantry Brigade"
+		type = infantry
+		home = 1486
+	}
+	regiment = {
+		name= "31. Infantry Brigade"
+		type = infantry
+		home = 1486
+	}
+	regiment = {
+		name= "32. Infantry Brigade"
+		type = infantry
+		home = 1486
+	}
+	regiment = {
+		name= "8. Cavalry Battalion"
+		type = hussar
+		home = 1486
+	}
+	regiment = {
+		name= "8. Field Artillery Battalion"
+		type = artillery
+		home = 1494
+	}
+	regiment = {
+		name= "8. Engineer Battalion"
+		type = engineer
+		home = 1494
+	}	
+}
+
+army = {
+	name = "9th Division"
+	location = 2221
+	regiment = {
+		name= "33. Infantry Brigade"
+		type = infantry
+		home = 1540
+	}
+	regiment = {
+		name= "34. Infantry Brigade"
+		type = infantry
+		home = 1540
+	}
+	regiment = {
+		name= "35. Infantry Brigade"
+		type = infantry
+		home = 1540
+	}
+	regiment = {
+		name= "36. Infantry Brigade"
+		type = infantry
+		home = 1540
+	}
+	regiment = {
+		name= "9. Cavalry Battalion"
+		type = hussar
+		home = 1541
+	}
+	regiment = {
+		name= "9. Field Artillery Battalion"
+		type = artillery
+		home = 1541
+	}
+	regiment = {
+		name= "9. Engineer Battalion"
+		type = engineer
+		home = 1541
+	}	
+}
+
+army = {
+	name = "10th Division"
+	location = 1519
+	regiment = {
+		name= "37. Infantry Brigade"
+		type = infantry
+		home = 1523
+	}
+	regiment = {
+		name= "38. Infantry Brigade"
+		type = infantry
+		home = 1523
+	}
+	regiment = {
+		name= "39. Infantry Brigade"
+		type = infantry
+		home = 1523
+	}
+	regiment = {
+		name= "40. Infantry Brigade"
+		type = infantry
+		home = 1523
+	}
+	regiment = {
+		name= "10. Cavalry Battalion"
+		type = hussar
+		home = 1516
+	}
+	regiment = {
+		name= "10. Field Artillery Battalion"
+		type = artillery
+		home = 1516
+	}
+	regiment = {
+		name= "10. Engineer Battalion"
+		type = engineer
+		home = 1516
+	}	
+}
+
+army = {
+	name = "10th Division"
+	location = 1577
+	regiment = {
+		name= "41. Infantry Brigade"
+		type = infantry
+		home = 1577
+	}
+	regiment = {
+		name= "42. Infantry Brigade"
+		type = infantry
+		home = 1577
+	}
+	regiment = {
+		name= "43. Infantry Brigade"
+		type = infantry
+		home = 1577
+	}
+	regiment = {
+		name= "44. Infantry Brigade"
+		type = infantry
+		home = 1583
+	}
+	regiment = {
+		name= "11. Cavalry Battalion"
+		type = hussar
+		home = 1583
+	}
+	regiment = {
+		name= "11. Field Artillery Battalion"
+		type = artillery
+		home = 1583
+	}
+	regiment = {
+		name= "11. Engineer Battalion"
+		type = engineer
+		home = 1584
+	}	
+}
+
+army = {
+	name = "12th Division"
+	location = 1575
+	regiment = {
+		name= "45. Infantry Brigade"
+		type = infantry
+		home = 1575
+	}
+	regiment = {
+		name= "46. Infantry Brigade"
+		type = infantry
+		home = 1575
+	}
+	regiment = {
+		name= "47. Infantry Brigade"
+		type = infantry
+		home = 1575
+	}
+	regiment = {
+		name= "48. Infantry Brigade"
+		type = infantry
+		home = 1574
+	}
+	regiment = {
+		name= "12. Cavalry Battalion"
+		type = hussar
+		home = 1574
+	}
+	regiment = {
+		name= "12. Field Artillery Battalion"
+		type = artillery
+		home = 1574
+	}
+	regiment = {
+		name= "12. Engineer Battalion"
+		type = engineer
+		home = 1573
+	}	
+}
+
+army = {
+	name = "13th Division"
+	location = 1557
+	regiment = {
+		name= "45. Infantry Brigade"
+		type = infantry
+		home = 1488
+	}
+	regiment = {
+		name= "46. Infantry Brigade"
+		type = infantry
+		home = 1488
+	}
+	regiment = {
+		name= "47. Infantry Brigade"
+		type = infantry
+		home = 1488
+	}
+	regiment = {
+		name= "48. Infantry Brigade"
+		type = infantry
+		home = 1488
+	}
+	regiment = {
+		name= "12. Cavalry Battalion"
+		type = hussar
+		home = 1488
+	}
+	regiment = {
+		name= "12. Field Artillery Battalion"
+		type = artillery
+		home = 1490
+	}
+	regiment = {
+		name= "12. Engineer Battalion"
+		type = engineer
+		home = 1490
+	}	
+}
