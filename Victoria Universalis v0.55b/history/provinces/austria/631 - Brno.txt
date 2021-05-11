@@ -1,0 +1,53 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = BOH
+add_core = CZH
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	remove_core = AUS
+	add_core = KUK
+	state_building = {
+		level = 4
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = fertilizer_factory
+		upgrade = yes
+	}
+}

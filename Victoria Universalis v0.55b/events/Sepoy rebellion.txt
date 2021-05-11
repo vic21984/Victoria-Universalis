@@ -1,0 +1,745 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+#Doctrine of Lapse
+country_event = {
+
+	id = 90030
+
+	title = "EVTNAME90030"
+	desc = "EVTDESC90030"
+	picture = sepoy_rebellion
+
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = MAH
+				year = 1843
+				EIC = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = JAI
+				year = 1849
+				EIC = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = ORI
+				year = 1849
+				EIC = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = MEW
+				year = 1852
+				EIC = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = JHA
+				year = 1853
+				EIC = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = NAG
+				year = 1854
+				EIC = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = KRN
+				year = 1855
+				EIC = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = AWA
+				year = 1856
+				EIC = { is_our_vassal = THIS }
+			}
+		}
+		NOT = { has_country_flag = doctrine_lapsed }
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA90030"
+		set_country_flag = doctrine_lapsed
+		any_pop = {
+			militancy = 4
+			consciousness = 1
+		}
+		country_event = { id=13357 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB90030"
+		set_country_flag = doctrine_lapsed
+		any_pop = {
+			militancy = 9
+			consciousness = 9
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#EIC Puppets
+country_event = {
+
+	id = 90031
+
+	title = "EIC Puppets"
+
+	is_triggered_only = yes
+
+	option = {
+		EIC = {
+			create_vassal = AWA
+			create_vassal = BAS
+			create_vassal = BER
+			create_vassal = BIK
+			create_vassal = BHO
+			create_vassal = BUN
+			create_vassal = HYD
+			create_vassal = IND
+			create_vassal = JAI
+			create_vassal = JAS
+			create_vassal = JOD
+			create_vassal = MEW
+			create_vassal = MYS
+			create_vassal = NAG
+			create_vassal = ORI
+			create_vassal = TRA
+			create_vassal = GWA
+			create_vassal = KUT
+			create_vassal = MUG
+			create_vassal = MAH
+			create_vassal = JHA
+			create_vassal = BHP
+			create_vassal = KRN
+			create_alliance = AWA
+			create_alliance = BAS
+			create_alliance = BER
+			create_alliance = BIK
+			create_alliance = BHO
+			create_alliance = BUN
+			create_alliance = HYD
+			create_alliance = IND
+			create_alliance = JAI
+			create_alliance = JAS
+			create_alliance = JOD
+			create_alliance = MEW
+			create_alliance = MYS
+			create_alliance = NAG
+			create_alliance = ORI
+			create_alliance = TRA
+			create_alliance = GWA
+			create_alliance = KUT
+			create_alliance = MUG
+			create_alliance = MAH
+			create_alliance = JHA
+			create_alliance = BHP
+			create_alliance = KRN
+		}
+	}
+}
+
+#Crown Rule
+country_event = {
+	id = 90032
+	title = "EVTNAME90032"
+	desc = "EVTDESC90032"
+	picture = british_india
+	
+	trigger = {
+		has_country_flag = indian
+		has_country_modifier = direct_rule
+		NOT = {
+			vassal_of = ENG
+			vassal_of = EIC
+		}
+	}
+
+	option = {
+		name = "EVTOPTA90032"
+		remove_country_modifier = direct_rule
+	}
+}
+
+#AI British India Giveaway
+country_event = {
+	id = 90033
+	title = "AI British India Giveaway"
+
+	trigger = {
+		ai = yes
+		tag = ENG
+		any_owned_province = {
+			OR = {
+				is_core = HND
+				is_core = PAK
+				is_core = BUR
+			}
+		}
+		is_our_vassal = EIC
+	}
+
+	option = {
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					is_core = PAK
+					is_core = BUR
+				}
+			}
+			secede_province = EIC
+		}
+	}
+}
+
+#Free India
+country_event = {
+	id = 90034
+	title = "EVTNAME90034"
+	desc = "EVTDESC90034"
+	major = yes
+
+	trigger = {
+		exists = yes
+		tag = EIC
+		NOT = { has_country_flag = became_gp }
+		NOT = { vassal_of = ENG }
+		NOT = { owns = 2133 }
+		NOT = { is_greater_power = yes }
+		NOT = { has_country_flag = dismantling_eic }
+	}
+
+	immediate = {
+		set_country_flag = dismantling_eic
+	}
+
+	option = {
+		name = "EVTOPTA90034"
+		any_owned = {
+			limit = { is_core = KRN }
+			secede_province = KRN
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+			}
+			country_event = { id = 90035 days = 0 }
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = HND }
+				NOT = { tag = PRO }
+				any_core = {
+					owned_by = THIS
+				}
+			}
+			country_event = { id = 90036 days = 0 }
+		}
+		ENG = {
+			country_event = { id = 36961 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 90035
+	title = "EVTNAME90035"
+	desc = "EVTDESC90035"
+	picture = "british_india"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90035"
+		release_vassal = THIS
+		ENG = {
+			diplomatic_influence = {
+				who = THIS
+				value = -300
+			}
+		}
+		EIC = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 90036
+	title = "EVTNAME90036"
+	desc = "EVTDESC90036"
+	picture = "british_india"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90036"
+		FROM = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+#Indian Isolationism
+country_event = {
+	id = 90037
+	title = "Indian Isolationism"
+
+	trigger = {
+		tag = JAN
+		HND = {
+			exists = yes
+			civilized = no
+			NOT = { has_country_modifier = indian_isolationism }
+		}
+	}
+
+	option = {
+		HND = { add_country_modifier = { name = indian_isolationism duration = -1 } }
+	}
+}
+
+#End of Indian Isolationism
+country_event = {
+	id = 90038
+	title = "Indian Isolationism"
+
+	trigger = {
+		tag = JAN
+		HND = {
+			exists = yes
+			civilized = yes
+			has_country_modifier = indian_isolationism
+		}
+	}
+
+	option = {
+		HND = { remove_country_modifier = indian_isolationism }
+	}
+}
+
+#Death of Ranjit Singh
+country_event = {
+	id = 90039
+	title = "EVTNAME90039"
+	desc = "EVTDESC90039"
+	picture = anglo_sikh_war
+
+	trigger = {
+		tag = PNJ
+		neighbour = EIC
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = { has_leader = "Ranjit Singh" }
+		NOT = { has_country_flag = death_of_ranjit_singh }
+		EIC = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA90039"
+		set_country_flag = death_of_ranjit_singh
+	}
+}
+
+country_event = {
+
+	id = 90040 # Sepoy Rebellion
+
+	title = "EVTNAME90040"
+	desc = "EVTDESC90040"
+	news = yes
+	news_desc_long = "EVTDESC90040_NEWS_LONG"
+	news_desc_medium = "EVTDESC90040_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90040_NEWS_SHORT"
+	picture = sepoy_rebellion
+	
+	major = yes
+
+	trigger = {
+		NOT = { has_country_flag = sepoy_rebellion }
+		tag = EIC
+		year = 1857
+		any_owned_province = { is_core = HND }
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA90040"
+		government = hms_government
+		any_country = {
+			limit = {
+				NOT = { tag = HND }
+				is_culture_group = south_asian
+			}
+			civilized = yes
+		}
+		inherit = HYD
+		inherit = MYS
+		inherit = TRA
+		inherit = BAS
+		inherit = BUN
+		inherit = JHA
+		inherit = MAH
+		inherit = KUT
+		inherit = BER
+		inherit = NAG
+		inherit = BHP
+		inherit = BIK
+		inherit = JAI
+		inherit = MEW
+		inherit = KRN
+		any_country = {
+			limit = {
+				vassal_of = EIC
+				OR = {
+					primary_culture = assamese
+					primary_culture = bengali
+					primary_culture = bihari
+					primary_culture = manipuri
+					primary_culture = nepali
+					primary_culture = oriya
+					primary_culture = sinhala
+					primary_culture = avadhi
+					primary_culture = kanauji
+					primary_culture = panjabi
+					primary_culture = kashmiri
+					primary_culture = gujarati
+					primary_culture = marathi
+					primary_culture = sindi
+					primary_culture = rajput
+					primary_culture = kannada
+					primary_culture = malayalam
+					primary_culture = tamil
+					primary_culture = telegu
+				}
+			}
+			country_event = { id = 90042 days = 0 }
+		}
+		set_country_flag = sepoy_rebellion
+		ENG = { country_event = { id = 36960 days = 0 } }
+		HND = {
+			leadership = 400
+			country_event = { id = 90041 days = 1 }
+			add_country_modifier = { name = indian_isolationism duration = -1 }
+		}
+	}
+}
+
+country_event = {
+	id = 90041
+	title = "EVTNAME90041"
+	desc = "EVTDESC90041"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		any_country = {
+			limit = {
+				OR = {
+					tag = ENG
+					tag = EIC
+					vassal_of = ENG
+					in_sphere = ENG
+				}
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = MUG
+						is_core = AWA
+						is_core = JOD
+						is_core = MEW
+						is_core = GWA
+						is_core = IND
+						is_core = BHP
+						is_core = PNJ
+						province_id = 1224
+						province_id = 1225
+						province_id = 1226
+						province_id = 1243
+						province_id = 1245
+						province_id = 1246
+						province_id = 1275
+						province_id = 1276
+						province_id = 1286
+						province_id = 1295
+					}
+					NOT = {
+						OR = {
+							is_core = KAS
+							province_id = 1238
+							province_id = 1245
+						}
+					}
+				}
+				secede_province = HND
+			}
+		}
+		HND = {
+			war = {
+				target = EIC
+				attacker_goal = { casus_belli = acquire_all_cores country = HND }
+				defender_goal = { casus_belli = establish_protectorate_casus_belli }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 90042
+	title = "EVTNAME90042"
+	desc = "EVTDESC90042"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90042"
+		leave_alliance = FROM
+		release_vassal = THIS
+		any_owned = {
+			secede_province = HND
+		}
+	}
+}
+
+country_event = {
+	id = 90043
+	title = "EVTNAME90043"
+	desc = "EVTDESC90043"
+
+	picture = "Rebellion"
+
+	trigger = {
+		tag = EIC
+		has_country_flag = sepoy_rebellion
+		NOT = { has_global_flag = sepoy_rebellion_ended }
+		war_with = HND
+		HND = { national_provinces_occupied = 0.9 }
+	}
+
+	option = {
+		name = "EVTOPTA90043"
+		end_war = HND
+		ENG = { end_war = HND }
+		inherit = HND
+	}
+}
+
+country_event = {
+
+	id = 90044 # Sepoys Win
+
+	title = "EVTNAME90044"
+	desc = "EVTDESC90044"
+	picture = sepoy_rebellion
+
+
+	trigger = {
+		has_country_flag = sepoy_rebellion
+		NOT = { has_global_flag = sepoy_rebellion_ended }
+		tag = EIC
+		NOT = { war_with = HND }
+		exists = HND
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA90044"
+		set_global_flag = sepoy_rebellion_ended
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					is_core = PAK
+				}
+			}
+			secede_province = HND
+		}
+		ENG = { inherit = THIS }
+	}
+}
+
+country_event = {
+
+	id = 90045 # Sepoys Lose
+
+	title = "Sepoys Lose"
+
+	trigger = {
+		tag = JAN
+		EIC = { has_country_flag = sepoy_rebellion }
+		NOT = { exists = HND }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		set_global_flag = sepoy_rebellion_ended
+	}
+}
+
+#Baluchistan Agency
+country_event = {
+
+	id = 90046
+
+	title = "EVTNAME90046"
+	desc = "EVTDESC90046"
+	picture = british_india
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90046"
+		EIC = { country_event = 90047 }
+	}
+
+	option = {
+		name = "EVTOPTB90046"
+		EIC = { country_event = 90048 }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+	id = 90047
+
+	title = "EVTNAME90047"
+	desc = "EVTDESC90047"
+	picture = british_india
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90047"
+		inherit = FROM
+	}
+}
+
+country_event = {
+
+	id = 90048
+
+	title = "EVTNAME90048"
+	desc = "EVTDESC90048"
+	picture = british_india
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90048"
+	}
+}
+
+country_event = {
+
+	id = 90049
+
+	title = "EVTNAME90049"
+	desc = "EVTDESC90049"
+	picture = Rebellion
+
+	trigger = {
+		OR = {
+			tag = PNJ
+			tag = SIN
+			tag = BUR
+		}
+		war_with = EIC
+		national_provinces_occupied = 0.65
+		NOT = { has_country_flag = defeated_by_eic }
+	}
+
+	option = {
+		name = "EVTOPTA90049"
+		set_country_flag = defeated_by_eic
+		war_exhaustion = 25
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90049"
+		set_country_flag = defeated_by_eic
+		any_country = {
+			limit = {
+				war_with = THIS
+				OR = {
+					tag = ENG
+					alliance_with = ENG
+					vassal_of = ENG
+					vassal_of = EIC
+				}
+			}
+			end_war = THIS
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					is_core = PAK
+					is_core = BUR
+				}
+			}
+			secede_province = EIC
+		}
+	}
+}
+
+#End of Sikh Empire
+country_event = {
+	id = 90050
+	title = "End of Sikh Empire"
+
+	trigger = {
+		tag = PNJ
+		ai = yes
+		NOT = {
+			any_owned_province = { is_core = THIS }
+		}
+	}
+
+	option = {
+		any_country = {
+			limit = {
+				NOT = { tag = HND }
+				NOT = { tag = PAK }
+				any_core = {
+					owned_by = THIS
+				}
+			}
+			country_event = { id = 90036 days = 0 }
+		}
+	}
+}
+

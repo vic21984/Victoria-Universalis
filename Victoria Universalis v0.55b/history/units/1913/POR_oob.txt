@@ -1,0 +1,295 @@
+SPA = {
+	value = 200		#relation
+}
+leader = {
+	name = "Fernando Tamagnini de Abreu e Silva"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Tomás António Garcia Rosado"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Manuel Gomes da Costa"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "José Augusto Alves Roçadas"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Joao José Sinel de Cordes"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Óscar Carmona"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "José César Ferreira Gil"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Fernando Tamagnini de Abreu e Silva"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Francisco Joaquim Ferreira do Amaral"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+navy = {
+	name = "Marinha Portuguesa"
+	location = 518
+
+	ship = {
+		name= "Vasco da Gama"
+		type = battleship
+	}
+
+	ship = {
+		name= "Dom Carlos I"
+		type = cruiser
+	}
+
+	ship = {
+		name= "São Gabriel"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Rainha Dona Amélia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Adamastor"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Espadarte"
+		type = monitor
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 521
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+}
+
+army = {
+	name = "I Corps"
+	location = 521
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 521
+	}
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 521
+	}
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 521
+	}
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 521
+	}
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 521
+	}
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 527
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 524
+	}
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 524
+	}
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 524
+	}
+}
+army = {
+	name = "II Corps"
+	location = 519
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 519
+	}
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 519
+	}
+	regiment = {
+		name= "5th Battery Royal Artillery"
+		type = artillery
+		home = 518
+	}
+	regiment = {
+		name= "6th Battery Royal Artillery"
+		type = artillery
+		home = 518
+	}
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 518
+	}
+	regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 518
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 522
+	}
+	regiment = {
+		name= "7th Battery Royal Artillery"
+		type = artillery
+		home = 522
+	}
+	regiment = {
+		name= "8th Battery Royal Artillery"
+		type = artillery
+		home = 522
+	}
+}
+army = {
+	name = "III Corps"
+	location = 520
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 522
+	}
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 520
+	}
+	regiment = {
+		name= "9th Battery Royal Artillery"
+		type = artillery
+		home = 520
+	}
+	regiment = {
+		name= "10th Battery Royal Artillery"
+		type = artillery
+		home = 520
+	}
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 525
+	}
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 525
+	}
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 523
+	}
+}

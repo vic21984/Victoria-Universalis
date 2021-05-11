@@ -1,0 +1,48 @@
+owner = CAN
+controller = CAN
+add_core = CAN
+add_core = QUE
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = winery
+		upgrade = yes
+	}
+}

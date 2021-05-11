@@ -1,0 +1,18 @@
+leader = {
+	name = "George Grey"
+	date = 1836.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_2.1
+}
+
+army = {
+	name = "Volunteer Militia Forces"
+	location = 2512
+	regiment = {
+		name= "New Zealand Rifles"
+		type = infantry
+		home = 2512
+	}
+}
+

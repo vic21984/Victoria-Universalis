@@ -1,0 +1,949 @@
+leader = {
+	name = "Enver Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.5
+}
+leader = {
+	name = "Fritz Bronsart von Schellendorf"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Colmar Freiherr von der Goltz"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_2.1
+}
+leader = {
+	name = "Mehmet Esat Bülkat"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_2.1
+}
+leader = {
+	name = "Ahmet Izzet Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Mustafa Kemal Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_4.1
+	background = attack_4.1
+}
+leader = {
+	name = "Ahmet Fevzi Big"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_3.1
+}
+leader = {
+	name = "Hafiz Hakki Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Abdul Kerim Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Mahmud Kamil Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Ali Fuad Bey"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Cemal Mersinli"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Galatal¹ Sevket Bey"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Yasin al-Hashimi"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Hans Kannengiesser"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ali Ihsan Sabis"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Selâhattin Köseoglu"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Halil Kut"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Nureddin Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_3.1
+}
+leader = {
+	name = "Ismet Inonu"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ali Fuat Cebesoy"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Yakup Sevki Subasi"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Kazim Karabekir"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Mustafa Hilmi Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Fakhri Pasha"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_1.1
+}
+leader = {
+	name = "Wilhelm Souchon"
+	type = sea
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_3.1
+}
+leader = {
+	name = "Hasan Rami Pasha"
+	type = sea
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Hubert von Rebeur-Paschwitz"
+	type = sea
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+
+navy = {
+	name = "Osmanli Donanmasi"
+	location = 860
+
+	ship = {
+		name= "Torgud Reis"
+		type = battleship
+	}
+
+	ship = {
+		name= "Barbaros Hayreddin"
+		type = battleship
+	}
+
+	ship = {
+		name= "Yavuz Sultan Selim"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Spetsai"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Mecidiye"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Hamidiye"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Midilli"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Müstecip Onbasi"
+		type = monitor
+	}
+
+	ship = {
+		name= "Peleng-i Derya"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Peyk-i Sevket"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Berk-i Satvet"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Berk Efsan"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Tayyar"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Abdül Mecid"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Akhisar"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Draç"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Kütahya"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Musul"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Demirhisar"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Sultanhisar"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Sivrihisar"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Hamidabad"
+		type = commerce_raider
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 880
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "11th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "12th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "13th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "14th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "15th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "16th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "17th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "18th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "19th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "20th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "I Army"
+	location = 858
+	leader = {
+		name = "Otto Liman von Sanders"
+		type = land
+		date = 1914.1.1
+		personality = defence_2.1
+		background = attack_1.1
+	}
+	regiment = {
+		name= "1st Division"
+		type = infantry
+		home = 858
+	}
+	regiment = {
+		name= "2nd Division"
+		type = infantry
+		home = 860
+	}
+	regiment = {
+		name= "3rd Division"
+		type = infantry
+		home = 860
+	}
+	regiment = {
+		name= "4th Division"
+		type = infantry
+		home = 860
+	}
+	regiment = {
+		name= "5th Division"
+		type = infantry
+		home = 860
+	}
+	regiment = {
+		name= "6th Division"
+		type = infantry
+		home = 860
+	}
+	regiment = {
+		name= "7th Division"
+		type = infantry
+		home = 860
+	}
+	regiment = {
+		name= "8th Division"
+		type = infantry
+		home = 859
+	}
+	regiment = {
+		name= "9th Division"
+		type = infantry
+		home = 894
+	}
+	regiment = {
+		name= "1st Artillery Regiment"
+		type = artillery
+		home = 919
+	}
+	regiment = {
+		name= "2nd Artillery Regiment"
+		type = artillery
+		home = 861
+	}
+	regiment = {
+		name= "3rd Artillery regiment"
+		type = artillery
+		home = 861
+	}
+	regiment = {
+		name= "4th Artillery regiment"
+		type = artillery
+		home = 862
+	}
+	regiment = {
+		name= "5th Artillery regiment"
+		type = artillery
+		home = 881
+	}
+	regiment = {
+		name= "6th Artillery regiment"
+		type = artillery
+		home = 880
+	}
+	regiment = {
+		name= "7th Artillery regiment"
+		type = artillery
+		home = 880
+	}
+	regiment = {
+		name= "8th Artillery regiment"
+		type = artillery
+		home = 867
+	}
+	regiment = {
+		name= "9th Artillery regiment"
+		type = artillery
+		home = 868
+	}
+	regiment = {
+		name= "1st Cavalry Brigade"
+		type = hussar
+		home = 862
+	}
+}
+army = {
+	name = "II Army"
+	location = 828
+	leader = {
+		name = "Wehib Pasha"
+		type = land
+		date = 1914.1.1
+		personality = defence_2.1
+		background = attack_2.1
+	}
+	regiment = {
+		name= "16th Division"
+		type = infantry
+		home = 865
+	}
+	regiment = {
+		name= "25th Division"
+		type = infantry
+		home = 864
+	}
+	regiment = {
+		name= "26th Division"
+		type = infantry
+		home = 863
+	}
+	regiment = {
+		name= "27th Division"
+		type = infantry
+		home = 863
+	}
+	regiment = {
+		name= "16th Artillery Regiment"
+		type = artillery
+		home = 869
+	}
+	regiment = {
+		name= "25th Artillery Regiment"
+		type = artillery
+		home = 869
+	}
+	regiment = {
+		name= "26th Artillery Regiment"
+		type = artillery
+		home = 870
+	}
+	regiment = {
+		name= "27th Artillery Regiment"
+		type = artillery
+		home = 870
+	}
+	regiment = {
+		name= "8th Cavalry Brigade"
+		type = hussar
+		home = 901
+	}
+}
+army = {
+	name = "III Army"
+	location = 882
+	leader = {
+		name = "Hasan Izzet Pasha"
+		type = land
+		date = 1914.1.1
+		personality = defence_3.1
+		background = attack_2.1
+	}
+	regiment = {
+		name= "17th Division"
+		type = infantry
+		home = 882
+	}
+	regiment = {
+		name= "18th Division"
+		type = infantry
+		home = 888
+	}
+	regiment = {
+		name= "28th Division"
+		type = infantry
+		home = 887
+	}
+	regiment = {
+		name= "29th Division"
+		type = infantry
+		home = 887
+	}
+	regiment = {
+		name= "30th Division"
+		type = infantry
+		home = 890
+	}
+	regiment = {
+		name= "31st Division"
+		type = infantry
+		home = 890
+	}
+	regiment = {
+		name= "32nd Division"
+		type = infantry
+		home = 888
+	}
+	regiment = {
+		name= "33rd Division"
+		type = infantry
+		home = 889
+	}
+	regiment = {
+		name= "34th Division"
+		type = infantry
+		home = 889
+	}
+	regiment = {
+		name= "17th Artillery Regiment"
+		type = artillery
+		home = 883
+	}
+	regiment = {
+		name= "18th Artillery Regiment"
+		type = artillery
+		home = 899
+	}
+	regiment = {
+		name= "28th Artillery Regiment"
+		type = artillery
+		home = 883
+	}
+	regiment = {
+		name= "29th Artillery Regiment"
+		type = artillery
+		home = 1156
+	}
+	regiment = {
+		name= "30th Artillery Regiment"
+		type = artillery
+		home = 884
+	}
+	regiment = {
+		name= "31st Artillery Regiment"
+		type = artillery
+		home = 879
+	}
+	regiment = {
+		name= "32nd Artillery Regiment"
+		type = artillery
+		home = 892
+	}
+	regiment = {
+		name= "33rd Artillery Regiment"
+		type = artillery
+		home = 893
+	}
+	regiment = {
+		name= "34th Artillery Regiment"
+		type = artillery
+		home = 893
+	}
+	regiment = {
+		name= "2nd Cavalry Brigade"
+		type = hussar
+		home = 879
+	}
+	regiment = {
+		name= "9th Cavalry Brigade"
+		type = hussar
+		home = 896
+	}
+	regiment = {
+		name= "Van Cavalry Brigade"
+		type = hussar
+		home = 890
+	}
+}
+army = {
+	name = "IV Army"
+	location = 902
+	leader = {
+		name = "Zeki Pasha"
+		type = land
+		date = 1914.1.1
+		personality = defence_2.1
+		background = attack_1.1
+	}
+	regiment = {
+		name= "23rd Division"
+		type = infantry
+		home = 902
+	}
+	regiment = {
+		name= "25th Division"
+		type = infantry
+		home = 902
+	}
+	regiment = {
+		name= "27th Division"
+		type = infantry
+		home = 902
+	}
+	regiment = {
+		name= "35th Division"
+		type = infantry
+		home = 913
+	}
+	regiment = {
+		name= "36th Division"
+		type = infantry
+		home = 912
+	}
+	regiment = {
+		name= "37th Division"
+		type = infantry
+		home = 903
+	}
+	regiment = {
+		name= "23rd Artillery Regiment"
+		type = artillery
+		home = 917
+	}
+	regiment = {
+		name= "25th Artillery Regiment"
+		type = artillery
+		home = 906
+	}
+	regiment = {
+		name= "27th Artillery Regiment"
+		type = artillery
+		home = 905
+	}
+	regiment = {
+		name= "35th Artillery Regiment"
+		type = artillery
+		home = 904
+	}
+	regiment = {
+		name= "36th Artillery Regiment"
+		type = artillery
+		home = 900
+	}
+	regiment = {
+		name= "37th Artillery Regiment"
+		type = artillery
+		home = 897
+	}
+	regiment = {
+		name= "13th Cavalry Brigade"
+		type = hussar
+		home = 897
+	}
+}
+
+army = {
+	name = "IV Corps"
+	location = 860
+	leader = {
+		name = "Pertev Pasha"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_2.1
+	}
+	regiment = {
+		name= "10th Division"
+		type = infantry
+		home = 869
+	}
+	regiment = {
+		name= "11th Division"
+		type = infantry
+		home = 869
+	}
+	regiment = {
+		name= "12th Division"
+		type = infantry
+		home = 876
+	}
+	regiment = {
+		name= "10th Artillery Regiment"
+		type = artillery
+		home = 872
+	}
+	regiment = {
+		name= "11th Artillery Regiment"
+		type = artillery
+		home = 895
+	}
+	regiment = {
+		name= "12th Artillery Regiment"
+		type = artillery
+		home = 878
+	}
+}
+
+army = {
+	name = "V Corps"
+	location = 876
+	leader = {
+		name = "Fevzi Cakmak"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_2.1
+	}
+	regiment = {
+		name= "13th Division"
+		type = infantry
+		home = 876
+	}
+	regiment = {
+		name= "14th Division"
+		type = infantry
+		home = 876
+	}
+	regiment = {
+		name= "15th Division"
+		type = infantry
+		home = 876
+	}
+	regiment = {
+		name= "13th Artillery Regiment"
+		type = artillery
+		home = 866
+	}
+	regiment = {
+		name= "14th Artillery Regiment"
+		type = artillery
+		home = 874
+	}
+	regiment = {
+		name= "15th Artillery Regiment"
+		type = artillery
+		home = 875
+	}
+}
+
+army = {
+	name = "VII Corps"
+	location = 1180
+	leader = {
+		name = "Ahmet Tevfik Pasha"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	regiment = {
+		name= "39th Division"
+		type = infantry
+		home = 1178
+	}
+	regiment = {
+		name= "40th Division"
+		type = infantry
+		home = 1178
+	}
+	regiment = {
+		name= "39th Field Artillery Regiment"
+		type = artillery
+		home = 1180
+	}
+	regiment = {
+		name= "40th Field Artillery Regiment"
+		type = artillery
+		home = 1151
+	}
+	regiment = {
+		name= "33rd Cavalry Regiment"
+		type = hussar
+		home = 1163
+	}
+}
+
+army = {
+	name = "XIII Corps"
+	location = 901
+	leader = {
+		name = "Hüsamettin Pasha"
+		type = land
+		date = 1914.1.1
+		personality = defence_2.1
+		background = attack_1.1
+	}
+	regiment = {
+		name= "37th Division"
+		type = infantry
+		home = 1151
+	}
+	regiment = {
+		name= "37th Field Artillery Regiment"
+		type = artillery
+		home = 1155
+	}
+	regiment = {
+		name= "34rd Cavalry Regiment"
+		type = hussar
+		home = 1153
+	}
+}
+
+army = {
+	name = "Iraq Area Command"
+	location = 927
+	leader = {
+		name = "Cavit Pasha"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	regiment = {
+		name= "38th Division"
+		type = infantry
+		home = 923
+	}
+	regiment = {
+		name= "38th Field Artillery Regiment"
+		type = artillery
+		home = 923
+	}
+	regiment = {
+		name= "35th Cavalry Regiment"
+		type = hussar
+		home = 925
+	}
+}

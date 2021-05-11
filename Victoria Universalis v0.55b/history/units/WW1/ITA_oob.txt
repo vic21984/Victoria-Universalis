@@ -1,0 +1,1135 @@
+KUK = {
+	truce_until = 1915.1.1
+}
+leader = {
+	name = "Luigi Cadorna"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.5
+}
+leader = {
+	name = "Luca Montuori"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Armando Diaz"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_3.1
+}
+leader = {
+	name = "Emanuele Filiberto"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Guglielmo Pecori Giraldi"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Luigi Capello"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_3.1
+}
+leader = {
+	name = "Gaetano Giardino"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_2.1
+}
+leader = {
+	name = "Mario Nicolis di Robilant"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Enrico Caviglia"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Settimio Piacentini"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ernesto Mombelli"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Luigi Nava"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Luciano Secco"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Ettore Mambretti"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Evaristo Mossolin"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Negri di Lamporo"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Francesco Saverio Grazioli"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Giuseppe Paolini"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Giovanni Castagnola"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+leader = {
+	name = "Paolo Thaon di Revel"
+	type = sea
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+leader = {
+	name = "Alfredo Acton"
+	type = sea
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Enrico Millo"
+	type = sea
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+leader = {
+	name = "Giulio Cesare Tassoni"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Vittorio Luigi Alfieri"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Vincenzo Garioni"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Gustavo Fara"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+navy = {
+	name = "Regia Marina"
+	location = 758
+
+	ship = {
+		name= "Dante Alighieri"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Giulio Cesare"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Leonardo da Vinci"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Ammiraglio di Saint Bon"
+		type = battleship
+	}
+
+	ship = {
+		name= "Emanuele Filiberto"
+		type = battleship
+	}
+
+	ship = {
+		name= "Regina Margherita"
+		type = battleship
+	}
+
+	ship = {
+		name= "Benedetto Brin"
+		type = battleship
+	}
+
+	ship = {
+		name= "Regina Elena"
+		type = battleship
+	}
+
+	ship = {
+		name= "Vittorio Emanuele"
+		type = battleship
+	}
+
+	ship = {
+		name= "Roma"
+		type = battleship
+	}
+
+	ship = {
+		name= "Napoli"
+		type = battleship
+	}
+
+	ship = {
+		name= "Giovanni Bausan"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Etna"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Piemonte"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Lombardia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Etruria"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Liguria"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Elba"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Puglia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Calabria"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Libia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Quarto"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Nino Bixio"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Marsala"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Campania"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Basilicata"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Marco Polo "
+		type = cruiser
+	}
+
+	ship = {
+		name= "Vettor Pisani"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Carlo Alberto"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Varese"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Giuseppe Garibaldi"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Francesco Ferruccio"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Pisa"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Amalfi"
+		type = cruiser
+	}
+
+	ship = {
+		name= "San Giorgio"
+		type = cruiser
+	}
+
+	ship = {
+		name= "San Marco"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Atropo"
+		type = monitor
+	}
+
+	ship = {
+		name= "Nautlius"
+		type = monitor
+	}
+
+	ship = {
+		name= "Nereide"
+		type = monitor
+	}
+
+	ship = {
+		name= "Galileo Ferraris"
+		type = monitor
+	}
+
+	ship = {
+		name= "Giacinto Pullino"
+		type = monitor
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 724
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+}
+
+army = {
+	name = "I Corps"
+	leader = {
+		name = "Ottavio Ragni"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 2598
+	regiment = {
+		name= "Parma Brigade"
+		type = infantry
+		home = 738
+	}
+	regiment = {
+		name= "Basilicata Brigade"
+		type = infantry
+		home = 738
+	}
+	regiment = {
+		name= "Como Brigade"
+		type = infantry
+		home = 739
+	}
+	regiment = {
+		name= "Umbria Brigade"
+		type = infantry
+		home = 739
+	}
+	regiment = {
+		name= "17th Field Artillery Regiment"
+		type = artillery
+		home = 739
+	}
+	regiment = {
+		name= "Marche Brigade"
+		type = infantry
+		home = 739
+	}
+	regiment = {
+		name= "Ancona Brigade"
+		type = infantry
+		home = 740
+	}
+	regiment = {
+		name= "20th Field Artillery Regiment"
+		type = artillery
+		home = 740
+	}
+	regiment = {
+		name= "8th Field Artillery Regiment"
+		type = artillery
+		home = 746
+	}
+}
+army = {
+	name = "II Corps"
+	leader = {
+		name = "Pietro Frugoni"
+		type = land
+		date = 1914.1.1
+		personality = defence_2.1
+		background = attack_2.1
+	}
+	location = 733
+	regiment = {
+		name= "Ravenna Brigade"
+		type = infantry
+		home = 743
+	}
+	regiment = {
+		name= "Forli Brigade"
+		type = infantry
+		home = 743
+	}
+	regiment = {
+		name= "23rd Field Artillery Regiment"
+		type = artillery
+		home = 741
+	}
+	regiment = {
+		name= "Livorno Brigade"
+		type = infantry
+		home = 741
+	}
+	regiment = {
+		name= "Lombardia Brigade"
+		type = infantry
+		home = 741
+	}
+	regiment = {
+		name= "26th Field Artillery Regiment"
+		type = artillery
+		home = 765
+	}
+	regiment = {
+		name= "Spezia Brigade"
+		type = infantry
+		home = 728
+		}
+	regiment = {
+		name= "Firenza Brigade"
+		type = infantry
+		home = 744
+	}
+	regiment = {
+		name= "48th Field Artillery Brigade"
+		type = artillery
+		home = 728
+	}
+	regiment = {
+		name= "11th Field Artillery Regiment"
+		type = artillery
+		home = 728
+	}
+}
+army = {
+	name = "III Corps"
+	leader = {
+		name = "Roberto Brusati"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 730
+	regiment = {
+		name= "Cuneo Brigade"
+		type = infantry
+		home = 762
+	}
+	regiment = {
+		name= "Palermo Brigade"
+		type = infantry
+		home = 762
+	}
+	regiment = {
+		name= "27th Field Artillery Regiment"
+		type = artillery
+		home = 762
+	}
+	regiment = {
+		name= "Toscana Brigade"
+		type = infantry
+		home = 763
+	}
+	regiment = {
+		name= "Sicilia Brigade"
+		type = infantry
+		home = 763
+	}
+	regiment = {
+		name= "16th Field Artillery Regiment"
+		type = artillery
+		home = 764
+	}
+	regiment = {
+		name= "Milano Brigade"
+		type = infantry
+		home = 726
+	}
+	regiment = {
+		name= "Novara Brigade"
+		type = infantry
+		home = 764
+	}
+	regiment = {
+		name= "42nd Field Artillery Regiment"
+		type = artillery
+		home = 764
+	}
+	regiment = {
+		name= "6th Field Artillery Regiment"
+		type = artillery
+		home = 759
+	}
+}
+army = {
+	name = "IV Corps"
+	leader = {
+		name = "Mario Nicolis de Robilant"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 733
+	regiment = {
+		name= "Bergamo Brigade"
+		type = infantry
+		home = 727
+	}
+	regiment = {
+		name= "Valtellina Brigade"
+		type = infantry
+		home = 727
+	}
+	regiment = {
+		name= "21st Field Artillery Regiment"
+		type = artillery
+		home = 726
+	}
+	regiment = {
+		name= "Modena Brigade"
+		type = infantry
+		home = 726
+		}
+	regiment = {
+		name= "Salerno Brigade"
+		type = infantry
+		home = 726
+	}
+	regiment = {
+		name= "28th Field Artillery Regiment"
+		type = artillery
+		home = 726
+	}
+	regiment = {
+		name= "Liguria Brigade"
+		type = infantry
+		home = 726
+		}
+	regiment = {
+		name= "Emilia Brigade"
+		type = infantry
+		home = 722
+	}
+	regiment = {
+		name= "40th Field Artillery Brigade"
+		type = artillery
+		home = 722
+	}
+	regiment = {
+		name= "Bersaglieri Division"
+		type = guard
+		home = 722
+	}
+	regiment = {
+		name= "Alpini Group A Division"
+		type = guard
+		home = 761
+	}
+	regiment = {
+		name= "Bergamo Group Mt. Artillery"
+		type = artillery
+		home = 727
+	}
+	regiment = {
+		name= "Alpini Group B Division"
+		type = guard
+		home = 753
+	}
+	regiment = {
+		name= "Pinerola Group Mt. Artillery"
+		type = artillery
+		home = 752
+	}
+	regiment = {
+		name= "Mondavi Group Mt. Artillery"
+		type = artillery
+		home = 725
+	}
+	regiment = {
+		name= "4th Field Artillery Regiment"
+		type = artillery
+		home = 724
+	}
+}
+army = {
+	name = "V Corps"
+	location = 730
+	leader = {
+		name = "Florenzio Aliprindi"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	regiment = {
+		name= "Roma Brigade"
+		type = infantry
+		home = 749
+	}
+	regiment = {
+		name= "Pugile Brigade"
+		type = infantry
+		home = 749
+	}
+	regiment = {
+		name= "29th Field Artillery Regiment"
+		type = artillery
+		home = 749
+	}
+	regiment = {
+		name= "Venezia Brigade"
+		type = infantry
+		home = 729
+	}
+	regiment = {
+		name= "Abruzzi Brigade"
+		type = infantry
+		home = 729
+	}
+	regiment = {
+		name= "19th Field Artillery Brigade"
+		type = artillery
+		home = 729
+	}
+	regiment = {
+		name= "Ivrea Brigade"
+		type = infantry
+		home = 749
+	}
+	regiment = {
+		name= "Treviso Brigade"
+		type = infantry
+		home = 749
+	}
+	regiment = {
+		name= "41st Field Artillery Regiment"
+		type = artillery
+		home = 750
+	}
+	regiment = {
+		name= "Oneglia Group Mt. Artillery"
+		type = artillery
+		home = 731
+	}
+	regiment = {
+		name= "Torino Aosta Group Mt. Artillery"
+		type = artillery
+		home = 732
+	}
+	regiment = {
+		name= "5th Field Artillery Regiment"
+		type = artillery
+		home = 731
+	}
+}
+army = {
+	name = "VI Corps"
+	location = 732
+	leader = {
+		name = "Carlo Ruelle"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	regiment = {
+		name= "Pistoia Brigade"
+		type = infantry
+		home = 720
+	}
+	regiment = {
+		name= "The King's Brigade"
+		type = infantry
+		home = 720
+	}
+	regiment = {
+		name= "14th Field Artillery Regiment"
+		type = artillery
+		home = 720
+	}
+	regiment = {
+		name= "Casale Brigade"
+		type = infantry
+		home = 720
+		}
+	regiment = {
+		name= "Pavia Brigade"
+		type = infantry
+		home = 720
+	}
+	regiment = {
+		name= "30th Field Artillery Regiment"
+		type = artillery
+		home = 720
+	}
+	regiment = {
+		name= "1st Cavalry Brigade"
+		type = hussar
+		home = 725
+	}
+	regiment = {
+		name= "2nd Cavarly Brigade"
+		type = hussar
+		home = 723
+	}
+	regiment = {
+		name= "3rd Field Artillery Regiment"
+		type = artillery
+		home = 724
+	}
+}
+army = {
+	name = "VII Corps"
+	leader = {
+		name = "Vincenzo Garioni"
+		type = land
+		date = 1914.1.1
+		personality = defence_2.1
+		background = attack_1.1
+	}
+	location = 732
+	regiment = {
+		name= "Messina Brigade"
+		type = infantry
+		home = 757
+	}
+	regiment = {
+		name= "Sardinia Brigade"
+		type = infantry
+		home = 757
+	}
+	regiment = {
+		name= "Pinerolo Brigade"
+		type = infantry
+		home = 766
+	}
+	regiment = {
+		name= "Acqui Brigade"
+		type = infantry
+		home = 753
+	}
+}
+army = {
+	name = "VIII Corps"
+	leader = {
+		name = "Ottavio Briccola"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_2.1
+	}
+	location = 755
+	regiment = {
+		name= "Fruli Brigade"
+		type = infantry
+		home = 751
+	}
+	regiment = {
+		name= "Cremona Brigade"
+		type = infantry
+		home = 751
+	}
+	regiment = {
+		name= "Perugia Brigade"
+		type = infantry
+		home = 747
+	}
+	regiment = {
+		name= "Lazio Brigade"
+		type = infantry
+		home = 747
+	}
+	regiment = {
+		name= "23rd Light Cavalry Regiment of Umberto"
+		type = artillery
+		home = 766
+	}
+}
+army = {
+	name = "IX Corps"
+	leader = {
+		name = "Pietro Marini"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 2598
+	regiment = {
+		name= "Reggio Brigade"
+		type = infantry
+		home = 759
+	}
+	regiment = {
+		name= "Torino Brigade"
+		type = infantry
+		home = 755
+	}
+	regiment = {
+		name= "Alpi Brigade"
+		type = infantry
+		home = 755
+	}
+	regiment = {
+		name= "Calabria Brigade"
+		type = infantry
+		home = 760
+	}
+	regiment = {
+		name= "33rd Field Artillery Regiment"
+		type = artillery
+		home = 760
+	}
+	regiment = {
+		name= "Belluno Group of Mt. Artillery"
+		type = artillery
+		home = 761
+	}
+	regiment = {
+		name= "Como Group of Mt. Artillery"
+		type = artillery
+		home = 761
+	}
+}
+
+army = {
+	name = "X Corps"
+	leader = {
+		name = "Domenico Grandi"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 762
+	regiment = {
+		name= "Siena Brigade"
+		type = infantry
+		home = 744
+	}
+	regiment = {
+		name= "Palermo Brigade"
+		type = infantry
+		home = 762
+	}
+	regiment = {
+		name= "Savona Brigade"
+		type = infantry
+		home = 756
+	}
+	regiment = {
+		name= "Cagliari Brigade"
+		type = infantry
+		home = 756
+	}
+}
+
+army = {
+	name = "XII Corps"
+	leader = {
+		name = "Luigi Segato"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 733
+	regiment = {
+		name= "Verona Brigade"
+		type = infantry
+		home = 730
+	}
+	regiment = {
+		name= "Aosta Brigade"
+		type = infantry
+		home = 720
+	}
+	regiment = {
+		name= "22nd Field Artillery Regiment"
+		type = artillery
+		home = 730
+	}
+	regiment = {
+		name= "Napoli Brigade"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name= "Piemonte Brigade"
+		type = infantry
+		home = 720
+	}
+	regiment = {
+		name= "36th Field Artillery Regiment"
+		type = artillery
+		home = 754
+	}
+}
+
+army = {
+	name = "XIII Corps"
+	leader = {
+		name = "Gaetano Zoppi"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 749
+	regiment = {
+		name= "Macerata Brigade"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name= "Sassari Brigade"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name= "46th Field Artillery Regiment"
+		type = artillery
+		home = 2567
+	}
+	regiment = {
+		name= "Piacenza Brigade"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name= "Alessandria Brigade"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name= "Chieti Brigade"
+		type = infantry
+		home = 754
+	}
+	regiment = {
+		name= "Barletta Brigade"
+		type = infantry
+		home = 754
+	}
+}
+
+army = {
+	name = "XIV Corps"
+	leader = {
+		name = "Paolo Morrone"
+		type = land
+		date = 1914.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	location = 743
+	regiment = {
+		name= "Caltanissetta Brigade"
+		type = infantry
+		home = 745
+	}
+	regiment = {
+		name= "Catania Brigade"
+		type = infantry
+		home = 2567
+	}
+	regiment = {
+		name= "16th Light Cavalry Regiment of Lucca"
+		type = hussar
+		home = 2596
+	}
+	regiment = {
+		name= "Benevento Brigade"
+		type = infantry
+		home = 757
+	}
+	regiment = {
+		name= "Campagnia Brigade"
+		type = infantry
+		home = 756
+	}
+	regiment = {
+		name= "Bari Brigade"
+		type = infantry
+		home = 756
+	}
+	regiment = {
+		name= "Catanzaro Brigade"
+		type = infantry
+		home = 758
+	}
+	regiment = {
+		name= "47th Field Artillery Regiment"
+		type = artillery
+		home = 758
+	}
+}

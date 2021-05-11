@@ -1,0 +1,23 @@
+leader = {
+	name = "Luis Mena"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "I Corps"
+	location = 2197
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2197
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2197
+	}
+}

@@ -1,0 +1,35 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+add_core = UKR
+trade_goods = fish
+life_rating = 35
+naval_base = 2
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = telephone_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

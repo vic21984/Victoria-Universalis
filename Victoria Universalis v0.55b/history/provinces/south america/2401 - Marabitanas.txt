@@ -1,0 +1,14 @@
+owner = CLM
+controller = CLM
+add_core = GRP
+add_core = BRZ
+add_core = CLM
+trade_goods = tobacco
+life_rating = 25
+1913.1.1 = {
+	owner = BRZ
+	controller = BRZ
+	remove_core = CLM
+	remove_core = GCO
+	remove_core = GRP
+}

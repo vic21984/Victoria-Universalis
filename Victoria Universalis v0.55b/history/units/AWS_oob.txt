@@ -1,0 +1,39 @@
+EGY = {
+	value = 75
+}
+
+SHW = {
+	value = 40
+	truce_until="1841.1.1"
+}
+
+GON = {
+	value = 50
+	truce_until="1841.1.1"
+}
+
+HAR = {
+	value = 100
+	truce_until="1841.1.1"
+}
+
+MAJ = {
+	value = 60
+}
+
+TIG = {
+	value = 40
+	truce_until="1841.1.1"
+}
+
+army = {
+	name = "Army of the Sultan of Awsa"
+	location = 1851
+	regiment = {
+		name= "Sultan's Guards"
+		type = irregular
+		home = 1851
+	}
+
+}
+

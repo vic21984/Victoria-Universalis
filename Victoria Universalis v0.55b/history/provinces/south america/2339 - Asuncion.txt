@@ -1,0 +1,27 @@
+owner = PRG
+controller = PRG
+add_core = PRG
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

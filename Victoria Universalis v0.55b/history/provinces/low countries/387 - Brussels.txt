@@ -1,0 +1,50 @@
+owner = BEL
+controller = BEL
+add_core = BEL
+add_core = NET
+add_core = PRO
+trade_goods = sulphur
+life_rating = 40
+railroad = 1
+state_building = {
+	level = 2
+	building = ammunition_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = canned_food_factory
+	upgrade = yes
+}
+1913.1.1 = { 
+	state_building = {
+		level = 6
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

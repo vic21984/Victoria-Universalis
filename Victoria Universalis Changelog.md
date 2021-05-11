@@ -1,3 +1,8 @@
+# Version 0.55b - 5/11/2021
+## Bug Fixes:
+* Fixed countries starting with incorrect starting cultures in the Multiplayer Grand Campaign bookmark.
+
+
 # Version 0.55 - 5/9/2021
 ## Bug Fixes:
 * Fixed a few broken surrender events in WW1 scenario.

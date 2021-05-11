@@ -1,0 +1,45 @@
+leader = {
+	name = "Maximiliano Hernández Martínez"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "I Corps"
+	location = 2191
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2191
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2191
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2191
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2191
+	}	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2192
+	}
+		regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2191
+	}
+}

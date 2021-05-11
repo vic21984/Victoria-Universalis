@@ -1,0 +1,147 @@
+leader = {
+	name = "Ramon Cabrera y Griñó"
+	date = 1836.1.1
+	type = land
+	personality = defence_3.1
+	background = attack_3.1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Rafael Maroto Yserns"
+	date = 1836.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_2.1
+}
+
+leader = {
+	name = "Vicente González Moreno"
+	date = 1836.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_2.1
+}
+
+leader = {
+	name = "Miguel Gómez Damas"
+	date = 1836.1.1
+	type = land
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+leader = {
+	name = "Sebastian Gabriel"
+	date = 1836.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_1.1
+}
+
+army = {
+	name = "Ejército del Navarra"
+	location = 494
+	regiment = {
+		name = "1. Brigada de Infantería"
+		type = infantry
+		home = 492
+	}
+	regiment = {
+		name = "2. Brigada de Infantería"
+		type = infantry
+		home = 492
+	}
+	regiment = {
+		name = "3. Brigada de Infantería"
+		type = infantry
+		home = 492
+	}
+	regiment = {
+		name = "4. Brigada de Infantería"
+		type = infantry
+		home = 493
+	}
+	regiment = {
+		name = "2. Brigada de Artillería"
+		type = artillery
+		home = 493
+	}
+	regiment = {
+		name = "1. Granaderos del Rey"
+		type = dragoon
+		home = 494
+	}
+	regiment = {
+		name = "2. Granaderos del Rey"
+		type = hussar
+		home = 494
+	}
+}
+
+army = {
+	name = "Ejército del Aragón"
+	location = 500
+	regiment = {
+		name = "5. Brigada de Infantería"
+		type = infantry
+		home = 495
+	}
+	regiment = {
+		name = "6. Brigada de Infantería"
+		type = infantry
+		home = 495
+	}
+	regiment = {
+		name = "7. Brigada de Infantería"
+		type = infantry
+		home = 497
+	}
+	regiment = {
+		name = "2. Brigada de Artillería"
+		type = artillery
+		home = 497
+	}
+}
+
+army = {
+	name = "Ejército del Cataluña"
+	location = 501
+	regiment = {
+		name = "8. Brigada de Infantería"
+		type = infantry
+		home = 498
+	}
+	regiment = {
+		name = "9. Brigada de Infantería"
+		type = infantry
+		home = 498
+	}
+	regiment = {
+		name = "10. Brigada de Infantería"
+		type = infantry
+		home = 499
+	}
+	regiment = {
+		name = "3. Granaderos del Rey"
+		type = hussar
+		home = 501
+	}
+}
+
+
+army = {
+	name = "Ejército del València"
+	location = 499
+	regiment = {
+		name= "11. Brigada de Infantería"
+		type = infantry
+		home = 504
+	}
+
+	regiment = {
+		name= "12. Brigada de Infantería"
+		type = infantry
+		home = 504
+	}
+}

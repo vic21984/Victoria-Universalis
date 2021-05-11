@@ -1,0 +1,112 @@
+leader = {
+	name = "Alexander Godley"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+leader = {
+	name = "Andrew Hamilton Russell"
+	type = land
+	date = 1914.1.1
+	personality = defence_3.1
+	background = attack_3.1
+}
+
+navy = {
+	name = "New Zealand Naval Forces"
+	location = 2512
+
+	ship = {
+		name= "HMNZS Philomel"
+		type = cruiser
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 2516
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "New Zealand Expenditionary Force"
+	location = 2512
+	regiment = {
+		name= "New Zealand Infantry Brigade"
+		type = infantry
+		home = 2512
+	}
+	regiment = {
+		name= "New Zealand Mounted Rifles Brigade"
+		type = dragoon
+		home = 2511
+	}
+	regiment = {
+		name= "1st Field Artillery Brigade"
+		type = artillery
+		home = 2510
+	}
+	regiment = {
+		name= "2nd Field Artillery Brigade"
+		type = artillery
+		home = 2509
+	}
+	regiment = {
+		name= "3rd Field Artillery Brigade"
+		type = artillery
+		home = 2515
+	}
+}

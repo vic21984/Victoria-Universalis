@@ -1,0 +1,44 @@
+color = { 217  225  248 }
+graphical_culture = EuropeanGC
+
+party = {
+	name = "JAN_anarcho_liberal"
+	start_date = 1830.1.1
+	end_date = 2000.1.1
+
+	ideology = liberal
+
+	economic_policy = planned_economy
+	trade_policy = globalism
+	religious_policy = pro_atheism
+	citizenship_policy = full_citizenship
+	war_policy = jingoism
+}
+
+unit_names = {
+	dreadnought = {
+		"Jan" "Mayern" "Jan Mayern" "Fisk" "Bjorntassen"
+	}
+	ironclad = {
+		"Jan" "Mayern" "Jan Mayern" "Fisk" "Bjorntassen"
+	}
+	manowar = {
+		"Jan" "Mayern" "Jan Mayern" "Fisk" "Bjorntassen"
+	}
+	cruiser = {
+		"Jan" "Mayern" "Jan Mayern" "Fisk" "Bjorntassen"
+	}
+	frigate = {
+		"Jan" "Mayern" "Jan Mayern" "Fisk" "Bjorntassen"
+	}
+	monitor = {
+		"Jan" "Mayern" "Jan Mayern" "Fisk" "Bjorntassen"
+	}
+	clipper_transport = {
+	}
+	steam_transport = { 
+	}
+	commerce_raider = {
+		"Jan" "Mayern" "Jan Mayern" "Fisk"
+	}
+}

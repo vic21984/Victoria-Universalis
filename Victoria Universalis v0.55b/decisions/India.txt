@@ -1,0 +1,309 @@
+political_decisions = {
+	establish_india_civil_service = {
+		picture = "covenanted_ics"
+		potential = { 
+			tag = EIC
+			NOT = { has_country_flag = ics_established }
+		}
+
+		allow = {
+			civilized = yes
+			money = 200000
+		}
+
+		effect = {
+			set_country_flag = ics_established
+			treasury = -200000
+			any_pop = {
+				limit = { 
+					culture = british
+					type = bureaucrats
+					OR = {
+						location = { is_core = HND }
+						location = { is_core = PAK }
+						location = { is_core = BNG }
+					}
+				}
+				reduce_pop = 10
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	expand_india_civil_service = {
+		picture = "uncovenanted_ics"
+		potential = { 
+			tag = EIC
+			has_country_flag = ics_established
+			NOT = { has_country_flag = ics_expanded }
+		}
+
+		allow = {
+			civilized = yes
+			NOT = { government = colonial_company }
+			analytic_philosophy = 1
+			money = 1000000
+		}
+
+		effect = {
+			set_country_flag = ics_expanded
+			treasury = -1000000
+			any_pop = {
+				limit = { 
+					type = bureaucrats
+					OR = {
+						location = { is_core = HND }
+						location = { is_core = PAK }
+						location = { is_core = BNG }
+					}
+				}
+				reduce_pop = 2
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	conquest_of_sindh = {
+		picture = "sindh"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = conquest_of_sindh }
+			exists = SIN
+		}
+
+		allow = {
+			SIN = {
+				exists = yes
+				is_vassal = no
+			}
+			war = no
+			year = 1842
+			NOT = { badboy = 0.6 }
+			OR = {
+				neighbour = SIN
+				JAS = {
+					overlord = { tag = THIS }
+					neighbour = SIN
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = conquest_of_sindh
+			war = {
+				target = SIN
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1288 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	conquest_of_punjab = {
+		picture = "punjab"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = conquest_of_punjab }
+			exists = PNJ
+		}
+
+		allow = {
+			PNJ = {
+				exists = yes
+				is_vassal = no
+				has_country_flag = death_of_ranjit_singh
+			}
+			war = no
+			NOT = { badboy = 0.2 }
+			neighbour = PNJ
+		}
+
+		effect = {
+			set_country_flag = conquest_of_punjab
+			badboy = 10
+			war = {
+				target = PNJ
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1227 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1225 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1218 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	anglo_afghan_war = {
+		picture = "bolan_pass"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = anglo_afghan_war }
+			exists = AFG
+			KAL_1221 = { owned_by = AFG }
+		}
+
+		allow = {
+			neighbour = AFG
+			AFG = {
+				exists = yes
+				is_vassal = no
+			}
+			owns = 1227
+			KAL_1221 = { owned_by = AFG }
+			war = no
+			NOT = { badboy = 0.2 }
+		}
+
+		effect = {
+			set_country_flag = anglo_afghan_war
+			war = {
+				target = AFG
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1219 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	baluchistan_agency = {
+		picture = "baluchistan_agency"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = organize_baluchistan_agency }
+			OR = {
+				exists = MAK
+				exists = KAL
+			}
+		}
+
+		allow = {
+			OR = {
+				KAL = {
+					exists = yes
+					is_vassal = no
+					war = no
+				}
+				MAK = {
+					exists = yes
+					is_vassal = no
+					war = no
+				}
+			}
+			war = no
+			has_country_flag = sepoy_rebellion
+			OR = {
+				neighbour = MAK
+				neighbour = KAL
+			}
+			NOT = { badboy = 0.8 }
+		}
+
+		effect = {
+			set_country_flag = organize_baluchistan_agency
+			KAL = { country_event = { id = 90046 days = 0 } }
+			MAK = { country_event = { id = 90046 days = 1 } }
+			badboy = 5
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	conquest_of_burma = {
+		picture = "indochina"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = conquest_of_burma }
+			exists = BUR
+		}
+
+		allow = {
+			neighbour = BUR
+			BUR = {
+				exists = yes
+				is_vassal = no
+			}
+			war = no
+			civilized = yes
+			nationalism_n_imperialism = 1
+			NOT = { badboy = 0.2 }
+		}
+
+		effect = {
+			set_country_flag = conquest_of_burma
+			badboy = 10
+			war = {
+				target = BUR
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1342 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1340 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1333 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	sikkim_protectorate = {
+		picture = "sikkim"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = sikkim_protectorate }
+			exists = SIK
+		}
+
+		allow = {
+			SIK = {
+				exists = yes
+				is_vassal = no
+				war = no
+			}
+			war = no
+			civilized = yes
+			owns = 1252
+			owns = 1334
+			NOT = { badboy = 1 }
+		}
+
+		effect = {
+			set_country_flag = sikkim_protectorate
+			SIK = { country_event = { id = 90046 days = 0 } }
+			badboy = 2.5
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	embrace_nepali = {
+		picture = gurkha
+		potential = {
+			tag = EIC
+			is_vassal = no
+			NOT = { has_country_flag = embrace_nepali }
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			OR = {
+				is_sphere_leader_of = NEP
+				owns = 1326
+				owns = 1327
+			}
+		}
+
+		effect = {
+			add_accepted_culture = nepali
+			set_country_flag = embrace_nepali
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,41 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+trade_goods = fruit
+life_rating = 40
+naval_base = 1
+fort = 1
+1913.1.1 = {
+	fort = 4
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

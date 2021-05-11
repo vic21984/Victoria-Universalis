@@ -1,0 +1,151 @@
+#Taiping Rebellion
+country_event = {
+	id = 160001
+	title = "EVTNAME160001"
+	desc = "EVTDESC160001"
+	picture = rebellion
+	news = yes
+	news_desc_long = "EVTDESC160001_NEWS_LONG"
+	news_desc_medium = "EVTDESC160001_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC160001_NEWS_SHORT"
+
+	major = yes	
+	trigger = {
+		tag = CHI
+		NOT = { has_global_flag = taiping_has_happened }
+		year = 1851
+		NOT = { year = 1861 }
+		civilized = no
+		TPG = {
+			any_core = {
+				owned_by = CHI
+			}
+		}
+	}
+	
+	
+	option = {
+		name = "EVTOPTA160001"
+		release = TPG
+		all_core = { add_core = TPG }
+		TPG = {
+			money = 200000
+			wool = 2000
+			capital = 2221
+			any_pop = {
+				consciousness = -5
+				militancy = -5
+			}
+			add_country_modifier = { name = middle_kingdom duration = -1 }
+			add_country_modifier = { name = taiping_mobilization duration = 730 }
+		}
+		soldiers = {
+			militancy = 8
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_religion = sunni
+					has_pop_culture = nanfaren
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		set_global_flag = taiping_has_happened
+		country_event = {
+			id = 160002
+			days = 365
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB160001"
+		release = TPG
+		all_core = { add_core = TPG }
+		TPG = {
+			money = 200000
+			wool = 2000
+			capital = 2221
+			any_pop = {
+				consciousness = -5
+				militancy = -5
+			}
+			add_country_modifier = { name = middle_kingdom duration = -1 }
+			add_country_modifier = { name = taiping_mobilization duration = 730 }
+		}
+		soldiers = {
+			militancy = 8
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_religion = sunni
+					has_pop_culture = nanfaren
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		set_global_flag = taiping_has_happened
+		change_tag_no_core_switch = TPG
+		country_event = {
+			id = 160003
+			days = 365
+		}
+	}
+}
+
+country_event = {
+	id = 160002
+	title = "EVTNAME160002"
+	desc = "EVTDESC160002"
+	picture = rebellion
+
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTOPTA160002"
+		set_global_flag = taiping_civil_war
+		war = {
+			target = TPG
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 160003
+	title = "EVTNAME160003"
+	desc = "EVTDESC160003"
+	picture = rebellion
+
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTOPTA160003"
+		set_global_flag = taiping_civil_war
+		war = {
+			target = CHI
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		}
+	}
+}

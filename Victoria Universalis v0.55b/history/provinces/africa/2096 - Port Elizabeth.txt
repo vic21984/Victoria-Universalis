@@ -1,0 +1,29 @@
+owner = SAF
+controller = SAF
+add_core = SAF
+trade_goods = fish
+life_rating = 35
+naval_base = 2
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	naval_base = 4
+}

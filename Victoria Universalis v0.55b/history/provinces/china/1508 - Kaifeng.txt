@@ -1,0 +1,17 @@
+owner = CHI
+controller = CHI
+add_core = CHI
+trade_goods = grain
+life_rating = 30
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+}

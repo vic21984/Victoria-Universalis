@@ -1,0 +1,34 @@
+owner = USA
+controller = USA
+add_core = USA
+trade_goods = oil
+life_rating = 35
+colony = 2
+1913.1.1 = {
+	colony = 0
+	state_building = {
+		level = 5
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}

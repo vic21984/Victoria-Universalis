@@ -1,0 +1,48 @@
+CHL = {
+	value = -100
+	truce_until="1836.12.28"
+}
+
+leader = {
+	name = "Andrés de Santa Cruz"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_2.1
+}
+
+leader = {
+	name = "Otto Philipp Braun"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "Ejército de Bolivia"
+	location = 2313 #Chuquisaca (Sucre)
+	regiment = {
+		name= "1. Brigada de Infanteria"
+		type = infantry
+		home = 2313
+	}
+
+	regiment = {
+		name= "2. Brigada de Infanteria"
+		type = infantry
+		home = 2310
+	}
+
+	regiment = {
+		name= "3. Brigada de Infanteria"
+		type = infantry
+		home = 2311
+	}
+}
+
+PEU=
+	{
+		value=200
+	}
+	
