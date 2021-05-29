@@ -1,0 +1,4403 @@
+#From;To;Type;Through;Data;Comment
+#
+# American Straits
+#
+13;14;sea;3011;0;Vancouver Crossing
+14;78;sea;3011;0;Vancouver Crossing
+62;75;sea;2946;0;Straits of Belle Isle
+68;70;sea;2944;0;Cabot Strait
+2237;2269;sea;2975;0;Strait of Trinidad
+2334;2335;sea;2992;0;Strait of Magellan
+2204;2206;sea;3001;0;Panama strait
+2212;2215;sea;2969;0;#Santiago de Cuba to Cap Haitien
+2214;2222;sea;2974;0;#Santo Domingo to Puerto Rico
+2233;2409;sea;2975;0;#Grenada to Saint Vincent
+2233;2231;sea;2975;0;#Saint Vincent to Saint Lucia
+2229;2231;sea;2975;0;#Barbados to Saint Lucia
+2231;2228;sea;2976;0;#Saint Lucia to Martinique
+2228;2232;sea;2976;0;#Martinique to Dominica
+2232;2230;sea;2976;0;#Dominica to Guadeloupe
+2230;2225;sea;2976;0;#Guadeloupe To Monsterrat
+2230;2228;sea;2976;0;#Guadeloupe To Martinique
+2225;2224;sea;2976;0;#Monsterrat to Antigua
+2225;2227;sea;2976;0;#Monsterrat to Saint Kitts
+2225;2232;sea;2976;0;#Monsterrat to Dominica
+2226;2227;sea;2976;0;#Tortola to Saint Kitts
+2227;2236;sea;2976;0;#Saint Kitts to Saint Martin
+2226;2236;sea;2976;0;#Tortola to Saint Martin
+2226;2223;sea;2976;0;#Tortola to Saint Thomas
+2223;2236;sea;2976;0;#Saint Thomas to Saint Martin
+2222;2226;sea;2976;0;#Puerto Rico to Tortola
+2222;2223;sea;2976;0;#Puerto Rico to Saint Thomas
+2237;2238;sea;2975;0;#Trinidad to Tobago
+2238;2233;sea;2975;0;#Tobago to Grenada
+2237;2276;sea;2975;0;#Trinidad to Curiapo
+2619;2297;sea;2998;0;#Chincha Islands to Ica
+
+#
+# African Straits
+#
+2036;2048;sea;2901;0;Zanzibar Strait
+2123;2124;sea;2902;0;Comoros-Mayotte
+1772;1756;sea;2781;0;Suez strait
+2136;1696;sea;2924;0;Canary Islands to Tarfaya
+2063;2123;sea;2902;0;#Ibo to Comoros
+2124;2121;sea;2902;0;#Mayotte to Mahajanga
+2126;2119;sea;2907;0;#Bourbon to Toamasina
+2125;2126;sea;2908;0;#Toamasina to Mauritus
+1177;1175;sea;2784;0;#Socotra to Ghayda
+1954;1955;sea;2918;0;#Sao Tome to Fernando Po
+1955;1957;sea;2918;0;#Fernando Po to Buea
+
+#
+# European Straits  
+#
+254;271;sea;2737;0;Irish Strait
+324;348;sea;2706;0;Aland Strait #Uppsala to Aland #these were in V1
+#334;372;sea;2711;0;Öresund
+335;374;sea;2710;0;Bornholmsfärjan
+348;345;sea;2706;0;Aland Strait #Aland to Turku 
+353;349;sea;2709;0;Öselsund
+353;358;sea;2709;0;Strait of Riga
+372;334;sea;2711;0;#Copenhagen to Malmo
+372;373;sea;2711;0;#Copenhagen to Odense
+2557;373;sea;2711;0;#Esbjerg to Odense
+375;385;sea;2722;0;Bay of Holland
+418;419;sea;2725;0;Channel Islands Strait
+473;766;sea;2751;0;Sassari Strait
+826;824;sea;2764;0;Corfu Strait
+838;845;sea;2772;0;Cyclades Strait
+843;869;sea;2772;0;Izmir Strait
+859;865;sea;2773;0;Dardanelles Strait
+860;861;sea;2773;0;Golden Horn
+759;763;sea;2760;0;Strait of Messina
+759;763;sea;2757;0;Strait of Messina
+837;827;sea;2765;0;Ionian Islands Strait
+966;1049;sea;2776;0;Strait of Azov
+#1686;512;sea;2746;0;Strait of Gibraltar
+1687;517;sea;2746;0;Strait of Gibraltar
+2666;400;sea;2724;0;Calais-Canterbury
+#502;498;sea;2752;0;Balearic Islands to Barcelona
+
+#
+# Asian Straits
+#
+1083;1086;sea;2832;0;Tatar Straits
+1084;1086;sea;2832;0;Tatar Straits
+#1087;1643;sea;2831;0;La Perouse Strait#removed
+#1087;1643;sea;2839;0;La Perouse Strait#removed
+1089;1088;sea;2839;0;Soya Straits
+1089;1064;sea;2839;0;Soya Straits
+1162;1165;sea;2788;0;Bahrain Strait
+1168;1145;sea;2787;0;Straits of Hormuz
+1309;1322;sea;2794;0;Palk Strait #Ceylon-S India
+1310;1322;sea;2794;0;Palk Strait #Ceylon-S India
+1384;1402;sea;2814;0;Straits of Johore
+1385;1402;sea;2814;0;Straits of Johore
+1403;1413;sea;2805;0;Sunda Strait
+#1412;1851;sea;2782;0;Aden Strait
+#1412;1875;sea;2782;0;Aden Strait
+1418;1421;sea;2811;0;Strait of Madura
+1420;1438;sea;2811;0;Bali Strait
+1438;1442;sea;2811;0;Lombok Strait
+1442;1440;sea;2811;0;Sumbawa Strait
+1495;1499;sea;2823;0;Hainan Strait
+1457;1461;sea;2849;0;Tacloban Strait
+1640;1660;sea;2843;0;Fukuoka Strait
+1642;1672;sea;2841;0;Hakodate Strait
+1664;1666;sea;2843;0;Matsuyama Strait
+1667;1659;sea;2843;0;Setto Strait
+1635;1637;sea;2829;0;Korean Sea Strait #Kwangju to Cheju
+#Philippines
+1455;1458;sea;2848;0;Isla Verde passages #Manila to Mindoro
+1458;1459;sea;2848;0;Mindoro Bay #Mindoro to Palawan
+1461;2565;sea;2850;0;Cebu Strait #Tacloban to Cebu
+1461;1463;sea;2850;0;Surigao Strait #Tacloban to Davao
+2565;1460;sea;2850;0;Tanon Strait #Cebu to Iloilo
+1462;1464;sea;2851;0;Sulu Sea #Zamboanga to Sulu
+1464;1397;sea;2851;0;Sulu Sea #Jolo to Sandakan
+#Indonesia
+1434;1447;sea;2852;0;#Luwuk to Ternate
+1436;1437;sea;2810;0;#Kendari to Bulon
+1447;1448;sea;2853;0;#Ternate to Jilolo
+1447;1449;sea;2853;0;#Ternate to Ambon
+1449;1450;sea;2853;0;#Ambon to Ceram
+1450;1453;sea;2853;0;#Ceram to Sorong
+1453;1451;sea;2862;0;#Sorong to Aru
+1454;1452;sea;2856;0;#Merah to Biak
+1430;1439;sea;2810;0;#Makassar to Flores
+1445;1443;sea;2809;0;#Kaupeng to Roti
+1443;1441;sea;2809;0;#Roti to Sumba
+1444;1439;sea;2809;0;#Alor to Flores
+1441;1439;sea;2809;0;#Sumba to Flores
+1439;1440;sea;2811;0;#Flores to Sumbawa
+1399;1404;sea;2813;0;#Palembang to Palak Pinang
+1411;1408;sea;2803;0;#Gunungsitoli to Padang
+1400;1402;sea;2814;0;#Inderagiri to Tanjungpinang
+1402;1385;sea;2814;0;#Tanjungpinang to Johore Bahru
+1404;1427;sea;2813;0;#Palak Pinang to Kota Waringin
+2576;1385;sea;2814;0;#Natuna to Johor Bahru
+2576;1394;sea;2816;0;#Natuna to Kuching
+1424;1432;sea;2812;0;#Pasir to Mamuju
+
+#
+# Oceanian Straits
+#
+2512;2516;sea;2876;0;Cook Strait #NZ
+2512;2516;sea;2881;0;Cook Strait #NZ
+2537;1531;sea;2858;0;Villan Strait #New Britain to New Ireland
+2530;2537;sea;2858;0;#Lae to New Britain
+2531;2539;sea;2858;0;#New Britain to Bougainville
+2539;2534;sea;2859;0;#Bougainville to Solomon Islands
+2534;2536;sea;2884;0;#Solomon Islands to Santa Cruz Islands
+2536;2535;sea;2884;0;#Santa Cruz Islands to New Hebrides
+2535;1097;sea;2882;0;#New Hebrides to New Caledonia
+
+#
+# Impassables
+#
+1326;1589;impassable;0;0;scary mountain
+1326;1592;impassable;0;0;scary mountain
+1328;1589;impassable;0;0;scary mountain
+1329;1589;impassable;0;0;scary mountain
+1329;1590;impassable;0;0;scary mountain
+1329;1590;impassable;0;0;scary mountain
+1329;1593;impassable;0;0;scary mountain
+1258;1593;impassable;0;0;scary mountain
+1260;1593;impassable;0;0;scary mountain
+1259;1593;impassable;0;0;scary mountain
+1238;1592;impassable;0;0;scary mountain
+1244;1592;impassable;0;0;scary mountain
+1235;1592;impassable;0;0;scary mountain
+1226;1592;impassable;0;0;scary mountain
+1327;1592;impassable;0;0;scary mountain
+1328;1592;impassable;0;0;scary mountain
+1225;1594;impassable;0;0;scary mountain
+1226;1594;impassable;0;0;scary mountain
+2927;3246;impassable;0;0;world bank
+###South African Adjacencies required for Great Trek Migration###
+2087;2111;impassable;0;0;Cape Town to Durban
+2087;2106;impassable;0;0;Cape Town to Witwatersand
+2087;2102;impassable;0;0;Cape Town to Vrystaat
+
+#
+# The canals  
+#
+2711;2721;canal;369;1;Kiel Canal
+2781;2769;canal;1755;2;Suez Canal
+2968;3001;canal;1723;3;Panama Canal
+2772;2773;canal;859;4;Bosphorus Canal
+2773;2774;canal;860;4;Bosphorus Canal
+2711;2710;canal;372;5;Copenhagen Canal
+2746;2747;canal;517;6;Copenhagen Canal
+
+#
+# Sea to Land
+#
+2705;318;sea;0;0;#Gulf of Bothnia
+2705;320;sea;0;0;#Gulf of Bothnia
+2705;321;sea;0;0;#Gulf of Bothnia
+2705;336;sea;0;0;#Gulf of Bothnia
+2705;338;sea;0;0;#Gulf of Bothnia
+2705;346;sea;0;0;#Gulf of Bothnia
+2706;317;sea;0;0;#Alands Hav
+2706;318;sea;0;0;#Alands Hav
+2706;324;sea;0;0;#Alands Hav
+2706;345;sea;0;0;#Alands Hav
+2706;348;sea;0;0;#Alands Hav
+2707;339;sea;0;0;#Gulf of Finland
+2707;340;sea;0;0;#Gulf of Finland
+2707;343;sea;0;0;#Gulf of Finland
+2707;349;sea;0;0;#Gulf of Finland
+2707;350;sea;0;0;#Gulf of Finland
+2707;353;sea;0;0;#Gulf of Finland
+2707;994;sea;0;0;#Gulf of Finland
+2707;996;sea;0;0;#Gulf of Finland
+2707;997;sea;0;0;#Gulf of Finland
+2707;349;sea;0;0;#Gulf of Finland
+2707;350;sea;0;0;#Gulf of Finland
+2708;322;sea;0;0;#Western Baltic Sea
+2708;325;sea;0;0;#Western Baltic Sea
+2708;326;sea;0;0;#Western Baltic Sea
+2708;331;sea;0;0;#Western Baltic Sea
+2708;353;sea;0;0;#Western Baltic Sea
+2709;331;sea;0;0;#Gulf of Riga
+2709;349;sea;0;0;#Gulf of Riga
+2709;351;sea;0;0;#Gulf of Riga
+2709;353;sea;0;0;#Gulf of Riga
+2709;354;sea;0;0;#Gulf of Riga
+2709;355;sea;0;0;#Gulf of Riga
+2709;357;sea;0;0;#Gulf of Riga
+2709;358;sea;0;0;#Gulf of Riga
+2709;359;sea;0;0;#Gulf of Riga
+2710;331;sea;0;0;#Southern Baltic Sea
+2710;332;sea;0;0;#Southern Baltic Sea
+2710;334;sea;0;0;#Southern Baltic Sea
+2710;335;sea;0;0;#Southern Baltic Sea
+2710;359;sea;0;0;#Southern Baltic Sea
+2710;365;sea;0;0;#Southern Baltic Sea
+2710;372;sea;0;0;#Southern Baltic Sea
+2710;374;sea;0;0;#Southern Baltic Sea
+2710;546;sea;0;0;#Southern Baltic Sea
+2710;547;sea;0;0;#Southern Baltic Sea
+2710;548;sea;0;0;#Southern Baltic Sea
+2710;679;sea;0;0;#Southern Baltic Sea
+2710;680;sea;0;0;#Southern Baltic Sea
+2710;690;sea;0;0;#Southern Baltic Sea
+2710;691;sea;0;0;#Southern Baltic Sea
+2710;693;sea;0;0;#Southern Baltic Sea
+2710;695;sea;0;0;#Southern Baltic Sea
+2710;698;sea;0;0;#Southern Baltic Sea
+2711;329;sea;0;0;#Oresund
+2711;334;sea;0;0;#Oresund
+2711;366;sea;0;0;#Oresund
+2711;367;sea;0;0;#Oresund
+2711;369;sea;0;0;#Oresund
+2711;370;sea;0;0;#Oresund
+2711;371;sea;0;0;#Oresund
+2711;372;sea;0;0;#Oresund
+2711;373;sea;0;0;#Oresund
+2711;530;sea;0;0;#Oresund
+2711;544;sea;0;0;#Oresund
+2711;2557;sea;0;0;#Oresund
+2712;310;sea;0;0;#Kattegat
+2712;311;sea;0;0;#Kattegat
+2712;312;sea;0;0;#Kattegat
+2712;313;sea;0;0;#Kattegat
+2712;316;sea;0;0;#Kattegat
+2712;329;sea;0;0;#Kattegat
+2712;367;sea;0;0;#Kattegat
+2716;307;sea;0;0;#White Sea
+2716;981;sea;0;0;#White Sea
+2716;982;sea;0;0;#White Sea
+2716;983;sea;0;0;#White Sea
+2716;984;sea;0;0;#White Sea
+2716;985;sea;0;0;#White Sea
+2716;986;sea;0;0;#White Sea
+2716;2587;sea;0;0;#White Sea
+2716;2588;sea;0;0;#White Sea
+2716;2589;sea;0;0;#White Sea
+2716;2614;sea;0;0;#White Sea
+2716;2684;sea;0;0;#White Sea
+2716;2687;sea;0;0;#White Sea
+2716;2688;sea;0;0;#White Sea
+2717;306;sea;0;0;#Lofoten Sea
+2717;307;sea;0;0;#Lofoten Sea
+2718;305;sea;0;0;#Northern Norwegian Sea
+2718;306;sea;0;0;#Northern Norwegian Sea
+2718;308;sea;0;0;#Northern Norwegian Sea
+2719;308;sea;0;0;#Southern Norwegian Sea
+2719;309;sea;0;0;#Southern Norwegian Sea
+2719;310;sea;0;0;#Southern Norwegian Sea
+2720;310;sea;0;0;#Skagerrack
+2720;367;sea;0;0;#Skagerrack
+2720;368;sea;0;0;#Skagerrack
+2720;2557;sea;0;0;#Skagerrack
+2721;368;sea;0;0;#Helgoland Blight
+2721;369;sea;0;0;#Helgoland Blight
+2721;370;sea;0;0;#Helgoland Blight
+2721;371;sea;0;0;#Helgoland Blight
+2721;383;sea;0;0;#Helgoland Blight
+2721;385;sea;0;0;#Helgoland Blight
+2721;528;sea;0;0;#Helgoland Blight
+2721;531;sea;0;0;#Helgoland Blight
+2721;532;sea;0;0;#Helgoland Blight
+2721;533;sea;0;0;#Helgoland Blight
+2721;539;sea;0;0;#Helgoland Blight
+2721;540;sea;0;0;#Helgoland Blight
+2721;543;sea;0;0;#Helgoland Blight
+2721;2557;sea;0;0;#Helgoland Blight
+2722;375;sea;0;0;#Coast of Holland
+2722;376;sea;0;0;#Coast of Holland
+2722;377;sea;0;0;#Coast of Holland
+2722;382;sea;0;0;#Coast of Holland
+2722;384;sea;0;0;#Coast of Holland
+2722;385;sea;0;0;#Coast of Holland
+2723;292;sea;0;0;#Dogger Bank
+2723;293;sea;0;0;#Dogger Bank
+2723;301;sea;0;0;#Dogger Bank
+2723;376;sea;0;0;#Dogger Bank
+2723;378;sea;0;0;#Dogger Bank
+2723;388;sea;0;0;#Dogger Bank
+2723;390;sea;0;0;#Dogger Bank
+2723;400;sea;0;0;#Dogger Bank
+2724;301;sea;0;0;#Straits of Dover
+2724;302;sea;0;0;#Straits of Dover
+2724;303;sea;0;0;#Straits of Dover
+2724;400;sea;0;0;#Straits of Dover
+2724;402;sea;0;0;#Straits of Dover
+2724;415;sea;0;0;#Straits of Dover
+2724;418;sea;0;0;#Straits of Dover
+2725;297;sea;0;0;#The Channel
+2725;299;sea;0;0;#The Channel
+2725;418;sea;0;0;#The Channel
+2725;419;sea;0;0;#The Channel
+2725;420;sea;0;0;#The Channel
+2725;421;sea;0;0;#The Channel
+2725;424;sea;0;0;#The Channel
+2726;273;sea;0;0;#Lands End
+2726;274;sea;0;0;#Lands End
+2726;296;sea;0;0;#Lands End
+2726;298;sea;0;0;#Lands End
+2726;299;sea;0;0;#Lands End
+2727;420;sea;0;0;#Coast of Brittany
+2727;422;sea;0;0;#Coast of Brittany
+2727;423;sea;0;0;#Coast of Brittany
+2728;423;sea;0;0;#Quiberon Bay
+2728;437;sea;0;0;#Quiberon Bay
+2728;442;sea;0;0;#Quiberon Bay
+2728;458;sea;0;0;#Quiberon Bay
+2729;458;sea;0;0;#Cote D'Argent
+2729;460;sea;0;0;#Cote D'Argent
+2729;492;sea;0;0;#Cote D'Argent
+2731;474;sea;0;0;#Cantabrian Sea
+2731;475;sea;0;0;#Cantabrian Sea
+2731;478;sea;0;0;#Cantabrian Sea
+2732;269;sea;0;0;#Tyne
+2732;272;sea;0;0;#Tyne
+2732;280;sea;0;0;#Tyne
+2732;281;sea;0;0;#Tyne
+2732;290;sea;0;0;#Tyne
+2732;292;sea;0;0;#Tyne
+2733;266;sea;0;0;#Firth of Forth
+2733;268;sea;0;0;#Firth of Forth
+2733;269;sea;0;0;#Firth of Forth
+2733;270;sea;0;0;#Firth of Forth
+2735;266;sea;0;0;#Moray Firth
+2735;267;sea;0;0;#Moray Firth
+2736;257;sea;0;0;#North Channel
+2736;267;sea;0;0;#North Channel
+2736;270;sea;0;0;#North Channel
+2737;254;sea;0;0;#Irish Sea
+2737;255;sea;0;0;#Irish Sea
+2737;256;sea;0;0;#Irish Sea
+2737;257;sea;0;0;#Irish Sea
+2737;263;sea;0;0;#Irish Sea
+2737;265;sea;0;0;#Irish Sea
+2737;270;sea;0;0;#Irish Sea
+2737;271;sea;0;0;#Irish Sea
+2737;272;sea;0;0;#Irish Sea
+2737;276;sea;0;0;#Irish Sea
+2737;277;sea;0;0;#Irish Sea
+2737;279;sea;0;0;#Irish Sea
+2737;285;sea;0;0;#Irish Sea
+2737;304;sea;0;0;#Irish Sea
+2738;260;sea;0;0;#St. George's Channel
+2738;262;sea;0;0;#St. George's Channel
+2738;265;sea;0;0;#St. George's Channel
+2738;274;sea;0;0;#St. George's Channel
+2738;276;sea;0;0;#St. George's Channel
+2739;257;sea;0;0;#Donegal Bay
+2739;258;sea;0;0;#Donegal Bay
+2739;259;sea;0;0;#Donegal Bay
+2740;258;sea;0;0;#Dingel Bay
+2740;260;sea;0;0;#Dingel Bay
+2740;261;sea;0;0;#Dingel Bay
+2741;260;sea;0;0;#Celtic Sea
+2743;474;sea;0;0;#Finisterre Bay
+2743;476;sea;0;0;#Finisterre Bay
+2744;476;sea;0;0;#Lusitanian Sea
+2744;518;sea;0;0;#Lusitanian Sea
+2744;521;sea;0;0;#Lusitanian Sea
+2744;522;sea;0;0;#Lusitanian Sea
+2744;524;sea;0;0;#Lusitanian Sea
+2745;511;sea;0;0;#Gulf of Cadiz
+2745;512;sea;0;0;#Gulf of Cadiz
+2745;524;sea;0;0;#Gulf of Cadiz
+2745;526;sea;0;0;#Gulf of Cadiz
+2745;527;sea;0;0;#Gulf of Cadiz
+2746;512;sea;0;0;#Straits of Gibraltar
+2746;517;sea;0;0;#Straits of Gibraltar
+2746;1685;sea;0;0;#Straits of Gibraltar
+2746;1686;sea;0;0;#Straits of Gibraltar
+2746;1687;sea;0;0;#Straits of Gibraltar
+2747;506;sea;0;0;#Gulf of Almeria
+2747;513;sea;0;0;#Gulf of Almeria
+2747;514;sea;0;0;#Gulf of Almeria
+2747;515;sea;0;0;#Gulf of Almeria
+2747;517;sea;0;0;#Gulf of Almeria
+2747;1684;sea;0;0;#Gulf of Almeria
+2747;1687;sea;0;0;#Gulf of Almeria
+2747;1688;sea;0;0;#Gulf of Almeria
+2747;1689;sea;0;0;#Gulf of Almeria
+2747;1704;sea;0;0;#Gulf of Almeria
+2747;1705;sea;0;0;#Gulf of Almeria
+2747;1706;sea;0;0;#Gulf of Almeria
+2748;501;sea;0;0;#Gulf of Valencia
+2748;502;sea;0;0;#Gulf of Valencia
+2748;503;sea;0;0;#Gulf of Valencia
+2748;504;sea;0;0;#Gulf of Valencia
+2748;505;sea;0;0;#Gulf of Valencia
+2748;506;sea;0;0;#Gulf of Valencia
+2749;461;sea;0;0;#Gulf of Lion
+2749;463;sea;0;0;#Gulf of Lion
+2749;464;sea;0;0;#Gulf of Lion
+2749;467;sea;0;0;#Gulf of Lion
+2749;498;sea;0;0;#Gulf of Lion
+2749;499;sea;0;0;#Gulf of Lion
+2749;501;sea;0;0;#Gulf of Lion
+2750;467;sea;0;0;#Cote D'Azur
+2750;470;sea;0;0;#Cote D'Azur
+2750;471;sea;0;0;#Cote D'Azur
+2750;472;sea;0;0;#Cote D'Azur
+2750;725;sea;0;0;#Cote D'Azur
+2751;9;sea;0;0;#Ligurian Sea
+2751;473;sea;0;0;#Ligurian Sea
+2751;725;sea;0;0;#Ligurian Sea
+2751;724;sea;0;0;#Ligurian Sea
+2751;725;sea;0;0;#Ligurian Sea
+2751;740;sea;0;0;#Ligurian Sea
+2751;745;sea;0;0;#Ligurian Sea
+2751;746;sea;0;0;#Ligurian Sea
+2751;748;sea;0;0;#Ligurian Sea
+2751;766;sea;0;0;#Ligurian Sea
+2752;502;sea;0;0;#Gulf of Mallorca
+2753;765;sea;0;0;#Western Mediterranean
+2753;766;sea;0;0;#Western Mediterranean
+2754;1700;sea;0;0;#Barbary Coast
+2754;1701;sea;0;0;#Barbary Coast
+2754;1706;sea;0;0;#Barbary Coast
+2755;1701;sea;0;0;#Cape Bon
+2755;1709;sea;0;0;#Cape Bon
+2755;1726;sea;0;0;#Cape Bon
+2756;748;sea;0;0;#Tyrrenian Sea
+2756;749;sea;0;0;#Tyrrenian Sea
+2756;750;sea;0;0;#Tyrrenian Sea
+2756;754;sea;0;0;#Tyrrenian Sea
+2756;755;sea;0;0;#Tyrrenian Sea
+2756;765;sea;0;0;#Tyrrenian Sea
+2756;766;sea;0;0;#Tyrrenian Sea
+2756;2567;sea;0;0;#Tyrrenian Sea
+2757;755;sea;0;0;#Bay of Naples
+2757;759;sea;0;0;#Bay of Naples
+2757;760;sea;0;0;#Bay of Naples
+2757;762;sea;0;0;#Bay of Naples
+2757;763;sea;0;0;#Bay of Naples
+2758;762;sea;0;0;#Gulf of Gabes
+2758;1725;sea;0;0;#Gulf of Gabes
+2758;1726;sea;0;0;#Gulf of Gabes
+2758;1728;sea;0;0;#Gulf of Gabes
+2758;1730;sea;0;0;#Gulf of Gabes
+2759;762;sea;0;0;#Malta Channel
+2759;764;sea;0;0;#Malta Channel
+2759;854;sea;0;0;#Malta Channel
+2759;1731;sea;0;0;#Malta Channel
+2759;1733;sea;0;0;#Malta Channel
+2759;1734;sea;0;0;#Malta Channel
+2760;759;sea;0;0;#Straits of Messina
+2760;760;sea;0;0;#Straits of Messina
+2760;763;sea;0;0;#Straits of Messina
+2760;764;sea;0;0;#Straits of Messina
+2761;729;sea;0;0;#Gulf of Venice
+2761;731;sea;0;0;#Gulf of Venice
+2761;733;sea;0;0;#Gulf of Venice
+2761;736;sea;0;0;#Gulf of Venice
+2761;742;sea;0;0;#Gulf of Venice
+2761;743;sea;0;0;#Gulf of Venice
+2761;752;sea;0;0;#Gulf of Venice
+2761;769;sea;0;0;#Gulf of Venice
+2761;770;sea;0;0;#Gulf of Venice
+2761;774;sea;0;0;#Gulf of Venice
+2761;778;sea;0;0;#Gulf of Venice
+2761;781;sea;0;0;#Gulf of Venice
+2762;752;sea;0;0;#Adriatic Sea
+2762;756;sea;0;0;#Adriatic Sea
+2762;757;sea;0;0;#Adriatic Sea
+2762;780;sea;0;0;#Adriatic Sea
+2762;781;sea;0;0;#Adriatic Sea
+2762;2596;sea;0;0;#Adriatic Sea
+2763;756;sea;0;0;#Straits of Otranto
+2763;758;sea;0;0;#Straits of Otranto
+2763;782;sea;0;0;#Straits of Otranto
+2763;800;sea;0;0;#Straits of Otranto
+2763;826;sea;0;0;#Straits of Otranto
+2763;850;sea;0;0;#Straits of Otranto
+2763;851;sea;0;0;#Straits of Otranto
+2763;852;sea;0;0;#Straits of Otranto
+2763;853;sea;0;0;#Straits of Otranto
+2763;2582;sea;0;0;#Straits of Otranto
+2764;758;sea;0;0;#Gulf of Taranto
+2764;760;sea;0;0;#Gulf of Taranto
+2764;761;sea;0;0;#Gulf of Taranto
+2764;824;sea;0;0;#Gulf of Taranto
+2764;826;sea;0;0;#Gulf of Taranto
+2764;853;sea;0;0;#Gulf of Taranto
+2765;824;sea;0;0;#Ionian Sea
+2765;825;sea;0;0;#Ionian Sea
+2765;827;sea;0;0;#Ionian Sea
+2765;837;sea;0;0;#Ionian Sea
+2765;839;sea;0;0;#Ionian Sea
+2765;841;sea;0;0;#Ionian Sea
+2765;842;sea;0;0;#Ionian Sea
+2766;1734;sea;0;0;#Gulf of Sirte
+2766;1735;sea;0;0;#Gulf of Sirte
+2766;1736;sea;0;0;#Gulf of Sirte
+2767;839;sea;0;0;#Gulf of Tobruk
+2767;847;sea;0;0;#Gulf of Tobruk
+2767;848;sea;0;0;#Gulf of Tobruk
+2767;1736;sea;0;0;#Gulf of Tobruk
+2767;1737;sea;0;0;#Gulf of Tobruk
+2768;1737;sea;0;0;#Bay of Alexandria
+2768;1746;sea;0;0;#Bay of Alexandria
+2768;1751;sea;0;0;#Bay of Alexandria
+2768;1752;sea;0;0;#Bay of Alexandria
+2768;1753;sea;0;0;#Bay of Alexandria
+2769;856;sea;0;0;#Palestinian Coast
+2769;915;sea;0;0;#Palestinian Coast
+2769;916;sea;0;0;#Palestinian Coast
+2769;919;sea;0;0;#Palestinian Coast
+2769;920;sea;0;0;#Palestinian Coast
+2769;1746;sea;0;0;#Palestinian Coast
+2769;1755;sea;0;0;#Palestinian Coast
+2769;1756;sea;0;0;#Palestinian Coast
+2770;855;sea;0;0;#Gulf of Cyprus
+2770;856;sea;0;0;#Gulf of Cyprus
+2770;857;sea;0;0;#Gulf of Cyprus
+2770;875;sea;0;0;#Gulf of Cyprus
+2770;895;sea;0;0;#Gulf of Cyprus
+2770;894;sea;0;0;#Gulf of Cyprus
+2770;900;sea;0;0;#Gulf of Cyprus
+2770;905;sea;0;0;#Gulf of Cyprus
+2770;913;sea;0;0;#Gulf of Cyprus
+2770;914;sea;0;0;#Gulf of Cyprus
+2771;846;sea;0;0;#Sea of Crete
+2771;847;sea;0;0;#Sea of Crete
+2771;848;sea;0;0;#Sea of Crete
+2771;872;sea;0;0;#Sea of Crete
+2771;875;sea;0;0;#Sea of Crete
+2772;805;sea;0;0;#Aegean Sea
+2772;821;sea;0;0;#Aegean Sea
+2772;822;sea;0;0;#Aegean Sea
+2772;823;sea;0;0;#Aegean Sea
+2772;828;sea;0;0;#Aegean Sea
+2772;829;sea;0;0;#Aegean Sea
+2772;830;sea;0;0;#Aegean Sea
+2772;832;sea;0;0;#Aegean Sea
+2772;834;sea;0;0;#Aegean Sea
+2772;835;sea;0;0;#Aegean Sea
+2772;836;sea;0;0;#Aegean Sea
+2772;836;sea;0;0;#Aegean Sea
+2772;838;sea;0;0;#Aegean Sea
+2772;839;sea;0;0;#Aegean Sea
+2772;840;sea;0;0;#Aegean Sea
+2772;843;sea;0;0;#Aegean Sea
+2772;844;sea;0;0;#Aegean Sea
+2772;845;sea;0;0;#Aegean Sea
+2772;859;sea;0;0;#Aegean Sea
+2772;864;sea;0;0;#Aegean Sea
+2772;865;sea;0;0;#Aegean Sea
+2772;869;sea;0;0;#Aegean Sea
+2772;872;sea;0;0;#Aegean Sea
+2773;858;sea;0;0;#Sea of Marmara
+2773;859;sea;0;0;#Sea of Marmara
+2773;860;sea;0;0;#Sea of Marmara
+2773;861;sea;0;0;#Sea of Marmara
+2773;863;sea;0;0;#Sea of Marmara
+2773;864;sea;0;0;#Sea of Marmara
+2773;865;sea;0;0;#Sea of Marmara
+2774;674;sea;0;0;#Gulf of Varna
+2774;675;sea;0;0;#Gulf of Varna
+2774;814;sea;0;0;#Gulf of Varna
+2774;817;sea;0;0;#Gulf of Varna
+2774;818;sea;0;0;#Gulf of Varna
+2774;858;sea;0;0;#Gulf of Varna
+2774;861;sea;0;0;#Gulf of Varna
+2774;862;sea;0;0;#Gulf of Varna
+2774;880;sea;0;0;#Gulf of Varna
+2774;881;sea;0;0;#Gulf of Varna
+2775;675;sea;0;0;#Gulf of Odessa
+2775;678;sea;0;0;#Gulf of Odessa
+2775;964;sea;0;0;#Gulf of Odessa
+2775;965;sea;0;0;#Gulf of Odessa
+2775;967;sea;0;0;#Gulf of Odessa
+2775;968;sea;0;0;#Gulf of Odessa
+2775;970;sea;0;0;#Gulf of Odessa
+2776;964;sea;0;0;#Sea of Azov
+2776;965;sea;0;0;#Sea of Azov
+2776;966;sea;0;0;#Sea of Azov
+2776;967;sea;0;0;#Sea of Azov
+2776;973;sea;0;0;#Sea of Azov
+2776;976;sea;0;0;#Sea of Azov
+2776;979;sea;0;0;#Sea of Azov
+2776;1047;sea;0;0;#Sea of Azov
+2776;1048;sea;0;0;#Sea of Azov
+2776;1049;sea;0;0;#Sea of Azov
+2777;880;sea;0;0;#Eastern Black Sea
+2777;882;sea;0;0;#Eastern Black Sea
+2777;883;sea;0;0;#Eastern Black Sea
+2777;884;sea;0;0;#Eastern Black Sea
+2777;886;sea;0;0;#Eastern Black Sea
+2777;1049;sea;0;0;#Eastern Black Sea
+2777;1094;sea;0;0;#Eastern Black Sea
+2777;1095;sea;0;0;#Eastern Black Sea
+2777;1096;sea;0;0;#Eastern Black Sea
+2781;921;sea;0;0;#Gulf of Suez
+2781;922;sea;0;0;#Gulf of Suez
+2781;1152;sea;0;0;#Gulf of Suez
+2781;1154;sea;0;0;#Gulf of Suez
+2781;1755;sea;0;0;#Gulf of Suez
+2781;1756;sea;0;0;#Gulf of Suez
+2781;1757;sea;0;0;#Gulf of Suez
+2781;1770;sea;0;0;#Gulf of Suez
+2781;1771;sea;0;0;#Gulf of Suez
+2781;1772;sea;0;0;#Gulf of Suez
+2781;1833;sea;0;0;#Gulf of Suez
+2781;1834;sea;0;0;#Gulf of Suez
+2782;1152;sea;0;0;#Red Sea
+2782;1155;sea;0;0;#Red Sea
+2782;1179;sea;0;0;#Red Sea
+2782;1180;sea;0;0;#Red Sea
+2782;1412;sea;0;0;#Red Sea
+2782;1833;sea;0;0;#Red Sea
+2782;1849;sea;0;0;#Red Sea
+2782;1851;sea;0;0;#Red Sea
+2782;1875;sea;0;0;#Red Sea
+2783;1176;sea;0;0;#Straits of Obokk
+2783;1412;sea;0;0;#Straits of Obokk
+2783;1872;sea;0;0;#Straits of Obokk
+2783;1873;sea;0;0;#Straits of Obokk
+2783;1874;sea;0;0;#Straits of Obokk
+2783;1875;sea;0;0;#Straits of Obokk
+2784;1173;sea;0;0;#Bal el Mandeb
+2784;1175;sea;0;0;#Bal el Mandeb
+2785;1172;sea;0;0;#Coast of Mascate
+2785;1174;sea;0;0;#Coast of Mascate
+2786;1171;sea;0;0;#Mascate Coast
+2786;1172;sea;0;0;#Mascate Coast
+2787;1141;sea;0;0;#Straits of Hormuz
+2787;1142;sea;0;0;#Straits of Hormuz
+2787;1145;sea;0;0;#Straits of Hormuz
+2787;1146;sea;0;0;#Straits of Hormuz
+2787;1166;sea;0;0;#Straits of Hormuz
+2787;1167;sea;0;0;#Straits of Hormuz
+2787;1168;sea;0;0;#Straits of Hormuz
+2787;1169;sea;0;0;#Straits of Hormuz
+2787;1171;sea;0;0;#Straits of Hormuz
+2788;932;sea;0;0;#Persian Gulf
+2788;935;sea;0;0;#Persian Gulf
+2788;1132;sea;0;0;#Persian Gulf
+2788;1136;sea;0;0;#Persian Gulf
+2788;1138;sea;0;0;#Persian Gulf
+2788;1141;sea;0;0;#Persian Gulf
+2788;1162;sea;0;0;#Persian Gulf
+2788;1163;sea;0;0;#Persian Gulf
+2788;1164;sea;0;0;#Persian Gulf
+2788;1165;sea;0;0;#Persian Gulf
+2788;1167;sea;0;0;#Persian Gulf
+2789;1146;sea;0;0;#Gulf of Indus
+2789;1222;sea;0;0;#Gulf of Indus
+2789;1288;sea;0;0;#Gulf of Indus
+2789;1293;sea;0;0;#Gulf of Indus
+2790;1291;sea;0;0;#Gulf of Gujarat
+2790;1292;sea;0;0;#Gulf of Gujarat
+2790;1293;sea;0;0;#Gulf of Gujarat
+2790;1295;sea;0;0;#Gulf of Gujarat
+2790;1296;sea;0;0;#Gulf of Gujarat
+2790;1297;sea;0;0;#Gulf of Gujarat
+2791;1297;sea;0;0;#Laquedive Islands
+2791;1301;sea;0;0;#Laquedive Islands
+2791;1302;sea;0;0;#Laquedive Islands
+2791;1303;sea;0;0;#Laquedive Islands
+2792;1302;sea;0;0;#Coast of Malabar
+2792;1316;sea;0;0;#Coast of Malabar
+2792;1317;sea;0;0;#Coast of Malabar
+2792;1318;sea;0;0;#Coast of Malabar
+2792;1319;sea;0;0;#Coast of Malabar
+2793;1310;sea;0;0;#Camorin Cape
+2793;1319;sea;0;0;#Camorin Cape
+2793;1321;sea;0;0;#Camorin Cape
+2793;1322;sea;0;0;#Camorin Cape
+2794;1304;sea;0;0;#Coast of Caramandel
+2794;1306;sea;0;0;#Coast of Caramandel
+2794;1307;sea;0;0;#Coast of Caramandel
+2794;1309;sea;0;0;#Coast of Caramandel
+2794;1310;sea;0;0;#Coast of Caramandel
+2794;1312;sea;0;0;#Coast of Caramandel
+2794;1322;sea;0;0;#Coast of Caramandel
+2795;1261;sea;0;0;#Coast of Orissa
+2795;1305;sea;0;0;#Coast of Orissa
+2795;1306;sea;0;0;#Coast of Orissa
+2796;1251;sea;0;0;#Ganges Delta
+2796;1256;sea;0;0;#Ganges Delta
+2796;1257;sea;0;0;#Ganges Delta
+2796;1261;sea;0;0;#Ganges Delta
+2796;1345;sea;0;0;#Ganges Delta
+2797;1330;sea;0;0;#Akyab Bay
+2797;1331;sea;0;0;#Akyab Bay
+2797;1345;sea;0;0;#Akyab Bay
+2798;1330;sea;0;0;#Irrawady Delta
+2798;1332;sea;0;0;#Irrawady Delta
+2798;1343;sea;0;0;#Irrawady Delta
+2798;1344;sea;0;0;#Irrawady Delta
+2799;1320;sea;0;0;#Andaman Sea
+2800;1344;sea;0;0;#Mergui Archipelago
+2800;1352;sea;0;0;#Mergui Archipelago
+2801;1352;sea;0;0;#Straits of Malacca
+2801;1387;sea;0;0;#Straits of Malacca
+2801;1388;sea;0;0;#Straits of Malacca
+2801;1389;sea;0;0;#Straits of Malacca
+2801;1401;sea;0;0;#Straits of Malacca
+2801;1405;sea;0;0;#Straits of Malacca
+2801;1406;sea;0;0;#Straits of Malacca
+2801;2575;sea;0;0;#Straits of Malacca
+2802;1405;sea;0;0;#Nicobar Isles
+2802;1407;sea;0;0;#Nicobar Isles
+2803;1407;sea;0;0;#Coast of Atjeh
+2803;1409;sea;0;0;#Coast of Atjeh
+2803;1411;sea;0;0;#Coast of Atjeh
+2804;1408;sea;0;0;#Coast of Sumatra
+2804;1410;sea;0;0;#Coast of Sumatra
+2804;1411;sea;0;0;#Coast of Sumatra
+2805;1403;sea;0;0;#Sunda Strait
+2805;1410;sea;0;0;#Sunda Strait
+2805;1413;sea;0;0;#Sunda Strait
+2805;1414;sea;0;0;#Sunda Strait
+2806;1414;sea;0;0;#Coast of Java
+2806;1416;sea;0;0;#Coast of Java
+2806;2244;sea;0;0;#Coast of Java
+2807;1416;sea;0;0;#Coast of Surabaya
+2807;1419;sea;0;0;#Coast of Surabaya
+2807;1420;sea;0;0;#Coast of Surabaya
+2807;1438;sea;0;0;#Coast of Surabaya
+2808;1438;sea;0;0;#Coast of Lombok
+2808;1439;sea;0;0;#Coast of Lombok
+2808;1440;sea;0;0;#Coast of Lombok
+2808;1441;sea;0;0;#Coast of Lombok
+2808;1442;sea;0;0;#Coast of Lombok
+2809;1439;sea;0;0;#Timor Sea
+2809;1441;sea;0;0;#Timor Sea
+2809;1443;sea;0;0;#Timor Sea
+2809;1444;sea;0;0;#Timor Sea
+2809;1445;sea;0;0;#Timor Sea
+2809;2501;sea;0;0;#Timor Sea
+2810;1430;sea;0;0;#The Moluccas
+2810;1431;sea;0;0;#The Moluccas
+2810;1436;sea;0;0;#The Moluccas
+2810;1437;sea;0;0;#The Moluccas
+2810;1439;sea;0;0;#The Moluccas
+2810;1444;sea;0;0;#The Moluccas
+2810;1449;sea;0;0;#The Moluccas
+2811;1418;sea;0;0;#Java Sea
+2811;1420;sea;0;0;#Java Sea
+2811;1421;sea;0;0;#Java Sea
+2811;1423;sea;0;0;#Java Sea
+2811;1424;sea;0;0;#Java Sea
+2811;1427;sea;0;0;#Java Sea
+2811;1430;sea;0;0;#Java Sea
+2811;1432;sea;0;0;#Java Sea
+2811;1438;sea;0;0;#Java Sea
+2811;1440;sea;0;0;#Java Sea
+2811;1442;sea;0;0;#Java Sea
+2812;1397;sea;0;0;#Straits of Makassar
+2812;1424;sea;0;0;#Straits of Makassar
+2812;1425;sea;0;0;#Straits of Makassar
+2812;1429;sea;0;0;#Straits of Makassar
+2812;1432;sea;0;0;#Straits of Makassar
+2812;1435;sea;0;0;#Straits of Makassar
+2813;1398;sea;0;0;#Karimata Strait
+2813;1399;sea;0;0;#Karimata Strait
+2813;1403;sea;0;0;#Karimata Strait
+2813;1404;sea;0;0;#Karimata Strait
+2813;1413;sea;0;0;#Karimata Strait
+2813;1415;sea;0;0;#Karimata Strait
+2813;1417;sea;0;0;#Karimata Strait
+2813;1418;sea;0;0;#Karimata Strait
+2813;1426;sea;0;0;#Karimata Strait
+2813;1427;sea;0;0;#Karimata Strait
+2814;1384;sea;0;0;#Straits of Johore
+2814;1385;sea;0;0;#Straits of Johore
+2814;1386;sea;0;0;#Straits of Johore
+2814;1387;sea;0;0;#Straits of Johore
+2814;1390;sea;0;0;#Straits of Johore
+2814;1398;sea;0;0;#Straits of Johore
+2814;1400;sea;0;0;#Straits of Johore
+2814;1401;sea;0;0;#Straits of Johore
+2814;1402;sea;0;0;#Straits of Johore
+2814;1426;sea;0;0;#Straits of Johore
+2814;2576;sea;0;0;#Straits of Johore
+2815;1390;sea;0;0;#Malayan Sea
+2815;1391;sea;0;0;#Malayan Sea
+2815;1392;sea;0;0;#Malayan Sea
+2815;2576;sea;0;0;#Malayan Sea
+2816;1394;sea;0;0;#Coast of Sarawak
+2816;1395;sea;0;0;#Coast of Sarawak
+2816;2576;sea;0;0;#Coast of Sarawak
+2817;1354;sea;0;0;#Mekong Delta
+2817;1367;sea;0;0;#Mekong Delta
+2817;1380;sea;0;0;#Mekong Delta
+2817;1382;sea;0;0;#Mekong Delta
+2817;1383;sea;0;0;#Mekong Delta
+2817;1392;sea;0;0;#Mekong Delta
+2818;1346;sea;0;0;#Gulf of Siam
+2818;1351;sea;0;0;#Gulf of Siam
+2818;1353;sea;0;0;#Gulf of Siam
+2818;1354;sea;0;0;#Gulf of Siam
+2818;1365;sea;0;0;#Gulf of Siam
+2818;1367;sea;0;0;#Gulf of Siam
+2819;1379;sea;0;0;#Cam Ranh Bay
+2819;1380;sea;0;0;#Cam Ranh Bay
+2819;1381;sea;0;0;#Cam Ranh Bay
+2820;2576;sea;0;0;#South China Sea
+2821;1393;sea;0;0;#Coast of Brunei
+2821;1395;sea;0;0;#Coast of Brunei
+2821;1396;sea;0;0;#Coast of Brunei
+2821;1397;sea;0;0;#Coast of Brunei
+2821;1459;sea;0;0;#Coast of Brunei
+2822;1375;sea;0;0;#Coast of Annam
+2822;1377;sea;0;0;#Coast of Annam
+2822;1379;sea;0;0;#Coast of Annam
+2823;1370;sea;0;0;#Gulf of Tonkin
+2823;1373;sea;0;0;#Gulf of Tonkin
+2823;1374;sea;0;0;#Gulf of Tonkin
+2823;1375;sea;0;0;#Gulf of Tonkin
+2823;1376;sea;0;0;#Gulf of Tonkin
+2823;1493;sea;0;0;#Gulf of Tonkin
+2823;1495;sea;0;0;#Gulf of Tonkin
+2823;1499;sea;0;0;#Gulf of Tonkin
+2823;2615;sea;0;0;#Gulf of Tonkin
+2823;1501;sea;0;0;#Gulf of Tonkin
+2824;1493;sea;0;0;#Guangzhou Bay
+2824;1494;sea;0;0;#Guangzhou Bay
+2824;1496;sea;0;0;#Guangzhou Bay
+2824;1497;sea;0;0;#Guangzhou Bay
+2824;1498;sea;0;0;#Guangzhou Bay
+2825;1482;sea;0;0;#Taiwan Strait
+2825;1484;sea;0;0;#Taiwan Strait
+2825;1485;sea;0;0;#Taiwan Strait
+2825;1487;sea;0;0;#Taiwan Strait
+2825;1494;sea;0;0;#Taiwan Strait
+2825;1611;sea;0;0;#Taiwan Strait
+2825;2562;sea;0;0;#Taiwan Strait
+2826;1538;sea;0;0;#Yang Tse Delta
+2826;1540;sea;0;0;#Yang Tse Delta
+2826;1641;sea;0;0;#Yang Tse Delta
+2826;1643;sea;0;0;#Yang Tse Delta
+2826;1604;sea;0;0;#Yang Tse Delta
+2826;1606;sea;0;0;#Yang Tse Delta
+2826;1608;sea;0;0;#Yang Tse Delta
+2826;1609;sea;0;0;#Yang Tse Delta
+2826;1610;sea;0;0;#Yang Tse Delta
+2826;1611;sea;0;0;#Yang Tse Delta
+2827;1536;sea;0;0;#Yellow Sea
+2827;1542;sea;0;0;#Yellow Sea
+2827;1543;sea;0;0;#Yellow Sea
+2827;1565;sea;0;0;#Yellow Sea
+2827;1566;sea;0;0;#Yellow Sea
+2827;1571;sea;0;0;#Yellow Sea
+2827;1628;sea;0;0;#Yellow Sea
+2827;1635;sea;0;0;#Yellow Sea
+2827;1636;sea;0;0;#Yellow Sea
+2828;1479;sea;0;0;#Korea Bay
+2828;1480;sea;0;0;#Korea Bay
+2828;1481;sea;0;0;#Korea Bay
+2828;1565;sea;0;0;#Korea Bay
+2828;1567;sea;0;0;#Korea Bay
+2828;1569;sea;0;0;#Korea Bay
+2828;1570;sea;0;0;#Korea Bay
+2828;1616;sea;0;0;#Korea Bay
+2828;1617;sea;0;0;#Korea Bay
+2828;1619;sea;0;0;#Korea Bay
+2828;1620;sea;0;0;#Korea Bay
+2828;1625;sea;0;0;#Korea Bay
+2828;1626;sea;0;0;#Korea Bay
+2828;1627;sea;0;0;#Korea Bay
+2828;1628;sea;0;0;#Korea Bay
+2828;1636;sea;0;0;#Korea Bay
+2828;2659;sea;0;0;#Korea Bay
+2828;2674;sea;0;0;#Korea Bay
+2829;1632;sea;0;0;#South Korean Sea
+2829;1634;sea;0;0;#South Korean Sea
+2829;1635;sea;0;0;#South Korean Sea
+2829;1637;sea;0;0;#South Korean Sea
+2829;1640;sea;0;0;#South Korean Sea
+2829;1641;sea;0;0;#South Korean Sea
+2829;1660;sea;0;0;#South Korean Sea
+2829;1661;sea;0;0;#South Korean Sea
+2829;1662;sea;0;0;#South Korean Sea
+2829;1664;sea;0;0;#South Korean Sea
+2830;1082;sea;0;0;#North Korean Sea
+2830;1621;sea;0;0;#North Korean Sea
+2830;1622;sea;0;0;#North Korean Sea
+2830;1623;sea;0;0;#North Korean Sea
+2830;1629;sea;0;0;#North Korean Sea
+2830;1630;sea;0;0;#North Korean Sea
+2830;1631;sea;0;0;#North Korean Sea
+2831;1082;sea;0;0;#Coast of Olga
+2831;1083;sea;0;0;#Coast of Olga
+2831;1087;sea;0;0;#Coast of Olga
+2831;1642;sea;0;0;#Coast of Olga
+2831;1643;sea;0;0;#Coast of Olga
+2832;1083;sea;0;0;#Tatar Straits
+2832;1084;sea;0;0;#Tatar Straits
+2832;1086;sea;0;0;#Tatar Straits
+2832;1087;sea;0;0;#Tatar Straits
+2833;1072;sea;0;0;#Amur Delta
+2833;1084;sea;0;0;#Amur Delta
+2833;2641;sea;0;0;#Amur Delta
+2834;1072;sea;0;0;#Bay of Ayan
+2834;2618;sea;0;0;#Bay of Ayan
+2834;2639;sea;0;0;#Bay of Ayan
+2835;1073;sea;0;0;#Bay of Komenskoie
+2835;1074;sea;0;0;#Bay of Komenskoie
+2835;2616;sea;0;0;#Bay of Komenskoie
+2835;2618;sea;0;0;#Bay of Komenskoie
+2835;2633;sea;0;0;#Bay of Komenskoie
+2835;2638;sea;0;0;#Bay of Komenskoie
+2835;2663;sea;0;0;#Bay of Komenskoie
+2836;1074;sea;0;0;#Coast of Kamchatska
+2837;1086;sea;0;0;#Okhotsk Sea
+2838;1086;sea;0;0;#Coast of Sakhalin
+2838;1087;sea;0;0;#Coast of Sakhalin
+2838;1088;sea;0;0;#Coast of Sakhalin
+2839;1043;sea;0;0;#Soya Strait
+2839;1044;sea;0;0;#Soya Strait
+2839;1087;sea;0;0;#Soya Strait
+2839;1088;sea;0;0;#Soya Strait
+2839;1089;sea;0;0;#Soya Strait
+2840;1642;sea;0;0;#Tsugaru Strait
+2840;1644;sea;0;0;#Tsugaru Strait
+2840;1668;sea;0;0;#Tsugaru Strait
+2840;1669;sea;0;0;#Tsugaru Strait
+2840;1670;sea;0;0;#Tsugaru Strait
+2840;1672;sea;0;0;#Tsugaru Strait
+2841;1641;sea;0;0;#Sea of Japan
+2841;1642;sea;0;0;#Sea of Japan
+2841;1645;sea;0;0;#Sea of Japan
+2841;1646;sea;0;0;#Sea of Japan
+2841;1647;sea;0;0;#Sea of Japan
+2841;1648;sea;0;0;#Sea of Japan
+2841;1657;sea;0;0;#Sea of Japan
+2841;1659;sea;0;0;#Sea of Japan
+2841;1671;sea;0;0;#Sea of Japan
+2841;1672;sea;0;0;#Sea of Japan
+2841;1673;sea;0;0;#Sea of Japan
+2842;1631;sea;0;0;#Amakusa Sea
+2842;1634;sea;0;0;#Amakusa Sea
+2842;1641;sea;0;0;#Amakusa Sea
+2843;1638;sea;0;0;#Setto Inland Sea
+2843;1639;sea;0;0;#Setto Inland Sea
+2843;1640;sea;0;0;#Setto Inland Sea
+2843;1655;sea;0;0;#Setto Inland Sea
+2843;1656;sea;0;0;#Setto Inland Sea
+2843;1659;sea;0;0;#Setto Inland Sea
+2843;1660;sea;0;0;#Setto Inland Sea
+2843;1662;sea;0;0;#Setto Inland Sea
+2843;1663;sea;0;0;#Setto Inland Sea
+2843;1664;sea;0;0;#Setto Inland Sea
+2843;1665;sea;0;0;#Setto Inland Sea
+2843;1666;sea;0;0;#Setto Inland Sea
+2843;1667;sea;0;0;#Setto Inland Sea
+2844;1649;sea;0;0;#Tokai Sea
+2844;1650;sea;0;0;#Tokai Sea
+2844;1651;sea;0;0;#Tokai Sea
+2844;1653;sea;0;0;#Tokai Sea
+2844;1656;sea;0;0;#Tokai Sea
+2844;1658;sea;0;0;#Tokai Sea
+2844;1669;sea;0;0;#Tokai Sea
+2844;1675;sea;0;0;#Tokai Sea
+2844;1676;sea;0;0;#Tokai Sea
+2845;1485;sea;0;0;#Ryukyu Islands
+2845;1678;sea;0;0;#Ryukyu Islands
+2845;1679;sea;0;0;#Ryukyu Islands
+2846;1456;sea;0;0;#Luzon Strait
+2846;1485;sea;0;0;#Luzon Strait
+2846;2562;sea;0;0;#Luzon Strait
+2847;1455;sea;0;0;#Paracel Islands
+2847;1456;sea;0;0;#Paracel Islands
+2848;1455;sea;0;0;#Manila Bay
+2848;1458;sea;0;0;#Manila Bay
+2848;1459;sea;0;0;#Manila Bay
+2849;1455;sea;0;0;#Coast of Luzon
+2849;1456;sea;0;0;#Coast of Luzon
+2849;1457;sea;0;0;#Coast of Luzon
+2849;1458;sea;0;0;#Coast of Luzon
+2849;1460;sea;0;0;#Coast of Luzon
+2849;1461;sea;0;0;#Coast of Luzon
+2850;1458;sea;0;0;#Gulf of Leyte
+2850;1459;sea;0;0;#Gulf of Leyte
+2850;1460;sea;0;0;#Gulf of Leyte
+2850;1461;sea;0;0;#Gulf of Leyte
+2850;1462;sea;0;0;#Gulf of Leyte
+2850;1463;sea;0;0;#Gulf of Leyte
+2850;1465;sea;0;0;#Gulf of Leyte
+2851;1397;sea;0;0;#Sulu Sea
+2851;1451;sea;0;0;#Sulu Sea
+2851;1462;sea;0;0;#Sulu Sea
+2851;1463;sea;0;0;#Sulu Sea
+2852;1433;sea;0;0;#Sea of Celebes
+2852;1434;sea;0;0;#Sea of Celebes
+2852;1435;sea;0;0;#Sea of Celebes
+2852;1436;sea;0;0;#Sea of Celebes
+2852;1447;sea;0;0;#Sea of Celebes
+2852;1449;sea;0;0;#Sea of Celebes
+2852;1463;sea;0;0;#Sea of Celebes
+2853;1447;sea;0;0;#Sea of Ternate
+2853;1448;sea;0;0;#Sea of Ternate
+2853;1449;sea;0;0;#Sea of Ternate
+2853;1450;sea;0;0;#Sea of Ternate
+2853;1453;sea;0;0;#Sea of Ternate
+2853;2518;sea;0;0;#Sea of Ternate
+2854;1444;sea;0;0;#Sea of Banda
+2854;1446;sea;0;0;#Sea of Banda
+2854;1449;sea;0;0;#Sea of Banda
+2854;1450;sea;0;0;#Sea of Banda
+2854;1451;sea;0;0;#Sea of Banda
+2855;1461;sea;0;0;#Philippine Sea
+2855;1463;sea;0;0;#Philippine Sea
+2856;1452;sea;0;0;#Palau Islands
+2856;1453;sea;0;0;#Palau Islands
+2856;1454;sea;0;0;#Palau Islands
+2856;2518;sea;0;0;#Palau Islands
+2856;2519;sea;0;0;#Palau Islands
+2857;1454;sea;0;0;#Biak Bay
+2857;2531;sea;0;0;#Biak Bay
+2858;1531;sea;0;0;#Vilian Strait
+2858;2528;sea;0;0;#Vilian Strait
+2858;2530;sea;0;0;#Vilian Strait
+2858;2531;sea;0;0;#Vilian Strait
+2858;2537;sea;0;0;#Vilian Strait
+2859;2528;sea;0;0;#Trobrian Islands
+2859;2534;sea;0;0;#Trobrian Islands
+2859;2539;sea;0;0;#Trobrian Islands
+2860;2488;sea;0;0;#Torres Strait
+2860;2528;sea;0;0;#Torres Strait
+2860;2529;sea;0;0;#Torres Strait
+2861;2501;sea;0;0;#Arafuam Sea
+2861;2505;sea;0;0;#Arafuam Sea
+2861;2506;sea;0;0;#Arafuam Sea
+2862;1451;sea;0;0;#Kolepom Bay
+2862;1453;sea;0;0;#Kolepom Bay
+2862;1454;sea;0;0;#Kolepom Bay
+2862;1560;sea;0;0;#Kolepom Bay
+2863;1560;sea;0;0;#Gulf of Carpentaria
+2863;2488;sea;0;0;#Gulf of Carpentaria
+2863;2505;sea;0;0;#Gulf of Carpentaria
+2863;2506;sea;0;0;#Gulf of Carpentaria
+2863;2529;sea;0;0;#Gulf of Carpentaria
+2863;2604;sea;0;0;#Gulf of Carpentaria
+2864;2484;sea;0;0;#Great Barrier Reef
+2864;2487;sea;0;0;#Great Barrier Reef
+2865;2469;sea;0;0;#Capricorn Bay
+2865;2470;sea;0;0;#Capricorn Bay
+2865;2483;sea;0;0;#Capricorn Bay
+2865;2484;sea;0;0;#Capricorn Bay
+2866;2468;sea;0;0;#Cape Howe
+2866;2469;sea;0;0;#Cape Howe
+2866;2472;sea;0;0;#Cape Howe
+2867;2472;sea;0;0;#Bass Strait
+2867;2476;sea;0;0;#Bass Strait
+2867;2477;sea;0;0;#Bass Strait
+2867;2479;sea;0;0;#Bass Strait
+2867;2482;sea;0;0;#Bass Strait
+2868;2477;sea;0;0;#Kangaroo Island
+2868;2482;sea;0;0;#Kangaroo Island
+2868;2491;sea;0;0;#Kangaroo Island
+2868;2492;sea;0;0;#Kangaroo Island
+2868;2493;sea;0;0;#Kangaroo Island
+2868;2494;sea;0;0;#Kangaroo Island
+2869;2492;sea;0;0;#Great Australian Bight
+2869;2496;sea;0;0;#Great Australian Bight
+2869;2504;sea;0;0;#Great Australian Bight
+2870;2497;sea;0;0;#Cape Leeuwin
+2870;2498;sea;0;0;#Cape Leeuwin
+2870;2504;sea;0;0;#Cape Leeuwin
+2871;2497;sea;0;0;#Shark Bay
+2871;2499;sea;0;0;#Shark Bay
+2872;2499;sea;0;0;#Northwest Cape
+2872;2502;sea;0;0;#Northwest Cape
+2872;2602;sea;0;0;#Northwest Cape
+2873;2501;sea;0;0;#King Sound
+2873;2602;sea;0;0;#King Sound
+2874;2482;sea;0;0;#Tasman Plateau
+2875;2482;sea;0;0;#Toogee Ridge
+2876;2510;sea;0;0;#Cook Strait
+2876;2512;sea;0;0;#Cook Strait
+2876;2513;sea;0;0;#Cook Strait
+2876;2514;sea;0;0;#Cook Strait
+2876;2516;sea;0;0;#Cook Strait
+2878;2509;sea;0;0;#Cape Farewell
+2878;2510;sea;0;0;#Cape Farewell
+2878;2571;sea;0;0;#Cape Farewell
+2879;2511;sea;0;0;#Coast of New Zealand
+2879;2512;sea;0;0;#Coast of New Zealand
+2879;2571;sea;0;0;#Coast of New Zealand
+2880;2513;sea;0;0;#Southern Tasman Sea
+2881;2512;sea;0;0;#Canterbury Bight
+2881;2513;sea;0;0;#Canterbury Bight
+2881;2515;sea;0;0;#Canterbury Bight
+2881;2516;sea;0;0;#Canterbury Bight
+2882;1097;sea;0;0;#New Caledonia Sea
+2882;2535;sea;0;0;#New Caledonia Sea
+2884;2534;sea;0;0;#Gilbert Sea
+2884;2535;sea;0;0;#Gilbert Sea
+2884;2536;sea;0;0;#Gilbert Sea
+2885;1531;sea;0;0;#Solomon Sea
+2885;2534;sea;0;0;#Solomon Sea
+2885;2539;sea;0;0;#Solomon Sea
+2886;2523;sea;0;0;#Nauru Island
+2887;610;sea;0;0;#Melanesia Sea
+2887;1531;sea;0;0;#Melanesia Sea
+2888;2517;sea;0;0;#Micronesia Sea
+2888;2519;sea;0;0;#Micronesia Sea
+2891;1654;sea;0;0;#Tinian Sea
+2891;2521;sea;0;0;#Tinian Sea
+2892;1654;sea;0;0;#Iwo Jima Sea
+2894;1074;sea;0;0;#The Kuriles
+2895;1074;sea;0;0;#Bay of Uka
+2895;2633;sea;0;0;#Bay of Uka
+2896;2616;sea;0;0;#Bay of Oljut
+2896;2633;sea;0;0;#Bay of Oljut
+2897;2590;sea;0;0;#Bay of Anadyr
+2897;2616;sea;0;0;#Bay of Anadyr
+2897;2634;sea;0;0;#Bay of Anadyr
+2897;2637;sea;0;0;#Bay of Anadyr
+2899;1177;sea;0;0;#Horn of Africa
+2899;1871;sea;0;0;#Horn of Africa
+2899;1872;sea;0;0;#Horn of Africa
+2900;1868;sea;0;0;#Coast of Pepper
+2900;1870;sea;0;0;#Coast of Pepper
+2900;1871;sea;0;0;#Coast of Pepper
+2900;2030;sea;0;0;#Coast of Pepper
+2901;2029;sea;0;0;#Zanzibar Strait
+2901;2030;sea;0;0;#Zanzibar Strait
+2901;2036;sea;0;0;#Zanzibar Strait
+2901;2037;sea;0;0;#Zanzibar Strait
+2901;2038;sea;0;0;#Zanzibar Strait
+2901;2039;sea;0;0;#Zanzibar Strait
+2901;2048;sea;0;0;#Zanzibar Strait
+2902;2039;sea;0;0;#Mozambique Channel
+2902;2060;sea;0;0;#Mozambique Channel
+2902;2061;sea;0;0;#Mozambique Channel
+2902;2063;sea;0;0;#Mozambique Channel
+2902;2120;sea;0;0;#Mozambique Channel
+2902;2121;sea;0;0;#Mozambique Channel
+2902;2122;sea;0;0;#Mozambique Channel
+2902;2123;sea;0;0;#Mozambique Channel
+2902;2124;sea;0;0;#Mozambique Channel
+2903;2120;sea;0;0;#Diego Suarez Bay
+2903;2127;sea;0;0;#Diego Suarez Bay
+2904;1177;sea;0;0;#Western Arabian Sea
+2907;2118;sea;0;0;#Coast of Tamatave
+2907;2119;sea;0;0;#Coast of Tamatave
+2907;2120;sea;0;0;#Coast of Tamatave
+2907;2126;sea;0;0;#Coast of Tamatave
+2908;2125;sea;0;0;#The Mascareignes
+2909;2059;sea;0;0;#Gulf of Zambeze
+2909;2061;sea;0;0;#Gulf of Zambeze
+2909;2117;sea;0;0;#Gulf of Zambeze
+2909;2122;sea;0;0;#Gulf of Zambeze
+2910;2049;sea;0;0;#Coast of Natal
+2910;2050;sea;0;0;#Coast of Natal
+2910;2051;sea;0;0;#Coast of Natal
+2910;2057;sea;0;0;#Coast of Natal
+2910;2059;sea;0;0;#Coast of Natal
+2910;2113;sea;0;0;#Coast of Natal
+2911;2098;sea;0;0;#Coast of Transkei
+2911;2100;sea;0;0;#Coast of Transkei
+2911;2111;sea;0;0;#Coast of Transkei
+2911;2113;sea;0;0;#Coast of Transkei
+2912;2091;sea;0;0;#Coast of Ciskei
+2912;2096;sea;0;0;#Coast of Ciskei
+2912;2098;sea;0;0;#Coast of Ciskei
+2913;2084;sea;0;0;#Cape of Good Hope
+2913;2087;sea;0;0;#Cape of Good Hope
+2913;2088;sea;0;0;#Cape of Good Hope
+2913;2090;sea;0;0;#Cape of Good Hope
+2913;2091;sea;0;0;#Cape of Good Hope
+2914;2083;sea;0;0;#Coast of Namibia
+2914;2084;sea;0;0;#Coast of Namibia
+2915;2004;sea;0;0;#Coast of Angola
+2915;2079;sea;0;0;#Coast of Angola
+2915;2083;sea;0;0;#Coast of Angola
+2916;1999;sea;0;0;#Gulf of Kongo
+2916;2001;sea;0;0;#Gulf of Kongo
+2916;2003;sea;0;0;#Gulf of Kongo
+2916;2004;sea;0;0;#Gulf of Kongo
+2917;1954;sea;0;0;#Coast of Cameroon
+2917;1972;sea;0;0;#Coast of Cameroon
+2917;1973;sea;0;0;#Coast of Cameroon
+2917;1974;sea;0;0;#Coast of Cameroon
+2917;1983;sea;0;0;#Coast of Cameroon
+2917;2000;sea;0;0;#Coast of Cameroon
+2917;2001;sea;0;0;#Coast of Cameroon
+2917;2624;sea;0;0;#Coast of Cameroon
+2918;1919;sea;0;0;#Bight of Benin
+2918;1923;sea;0;0;#Bight of Benin
+2918;1928;sea;0;0;#Bight of Benin
+2918;1931;sea;0;0;#Bight of Benin
+2918;1932;sea;0;0;#Bight of Benin
+2918;1934;sea;0;0;#Bight of Benin
+2918;1954;sea;0;0;#Bight of Benin
+2918;1955;sea;0;0;#Bight of Benin
+2918;1956;sea;0;0;#Bight of Benin
+2918;1957;sea;0;0;#Bight of Benin
+2918;1958;sea;0;0;#Bight of Benin
+2918;1973;sea;0;0;#Bight of Benin
+2919;1892;sea;0;0;#Gold Coast
+2919;1894;sea;0;0;#Gold Coast
+2919;1907;sea;0;0;#Gold Coast
+2919;1908;sea;0;0;#Gold Coast
+2919;1909;sea;0;0;#Gold Coast
+2919;1914;sea;0;0;#Gold Coast
+2919;1919;sea;0;0;#Gold Coast
+2920;1884;sea;0;0;#Ivory Coast
+2920;1887;sea;0;0;#Ivory Coast
+2920;1888;sea;0;0;#Ivory Coast
+2920;1892;sea;0;0;#Ivory Coast
+2920;1893;sea;0;0;#Ivory Coast
+2921;1877;sea;0;0;#Coast of Guinea
+2921;1879;sea;0;0;#Coast of Guinea
+2921;1884;sea;0;0;#Coast of Guinea
+2922;1783;sea;0;0;#Coast of Senegambia
+2922;1784;sea;0;0;#Coast of Senegambia
+2922;1785;sea;0;0;#Coast of Senegambia
+2922;1788;sea;0;0;#Coast of Senegambia
+2922;1792;sea;0;0;#Coast of Senegambia
+2922;1876;sea;0;0;#Coast of Senegambia
+2922;2573;sea;0;0;#Coast of Senegambia
+2923;1774;sea;0;0;#Mauritanian Coast
+2923;1775;sea;0;0;#Mauritanian Coast
+2923;1776;sea;0;0;#Mauritanian Coast
+2923;1784;sea;0;0;#Mauritanian Coast
+2924;1693;sea;0;0;#Canarian Sea
+2924;1694;sea;0;0;#Canarian Sea
+2924;1695;sea;0;0;#Canarian Sea
+2924;1696;sea;0;0;#Canarian Sea
+2924;1773;sea;0;0;#Canarian Sea
+2924;1774;sea;0;0;#Canarian Sea
+2924;2135;sea;0;0;#Canarian Sea
+2924;2136;sea;0;0;#Canarian Sea
+2925;1685;sea;0;0;#Coast of Morocco
+2925;1691;sea;0;0;#Coast of Morocco
+2925;1693;sea;0;0;#Coast of Morocco
+2925;2563;sea;0;0;#Coast of Morocco
+2927;2563;sea;0;0;#Spitzberg Sea
+2928;252;sea;0;0;#Icelandic Sea
+2929;252;sea;0;0;#Shetland Straits
+2929;253;sea;0;0;#Shetland Straits
+2930;252;sea;0;0;#Coast of Iceland
+2633;251;sea;0;0;#Denmark Strait
+2933;252;sea;0;0;#Denmark Strait
+2933;2632;sea;0;0;#Denmark Strait
+2934;251;sea;0;0;#Eastern Coast of Greenland
+2935;251;sea;0;0;#Western Coast of Greenland
+2936;76;sea;0;0;#Labrador Strait
+2936;2562;sea;0;0;#Labrador Strait
+2937;45;sea;0;0;#Baffin Bay
+2937;251;sea;0;0;#Baffin Bay
+2937;2591;sea;0;0;#Baffin Bay
+2937;2636;sea;0;0;#Baffin Bay
+2938;45;sea;0;0;#Hudson Straits
+2938;2592;sea;0;0;#Hudson Straits
+2938;2627;sea;0;0;#Hudson Straits
+2939;47;sea;0;0;#James Bay
+2939;48;sea;0;0;#James Bay
+2939;60;sea;0;0;#James Bay
+2939;2593;sea;0;0;#James Bay
+2939;2626;sea;0;0;#James Bay
+2939;2628;sea;0;0;#James Bay
+2940;37;sea;0;0;#Western Hudson Bay
+2940;44;sea;0;0;#Western Hudson Bay
+2940;47;sea;0;0;#Western Hudson Bay
+2940;2595;sea;0;0;#Western Hudson Bay
+2941;44;sea;0;0;#Eastern Hudson Bay
+2941;2592;sea;0;0;#Eastern Hudson Bay
+2941;2626;sea;0;0;#Eastern Hudson Bay
+2942;44;sea;0;0;#Foxe Basin
+2942;2592;sea;0;0;#Foxe Basin
+2943;61;sea;0;0;#Gulf of St. Lawrence
+2943;62;sea;0;0;#Gulf of St. Lawrence
+2943;65;sea;0;0;#Gulf of St. Lawrence
+2943;67;sea;0;0;#Gulf of St. Lawrence
+2943;69;sea;0;0;#Gulf of St. Lawrence
+2944;68;sea;0;0;#Cabot Strait
+2944;69;sea;0;0;#Cabot Strait
+2944;70;sea;0;0;#Cabot Strait
+2944;72;sea;0;0;#Cabot Strait
+2944;73;sea;0;0;#Cabot Strait
+2944;74;sea;0;0;#Cabot Strait
+2944;75;sea;0;0;#Cabot Strait
+2944;77;sea;0;0;#Cabot Strait
+2945;68;sea;0;0;#Bay of Fundy
+2945;71;sea;0;0;#Bay of Fundy
+2945;72;sea;0;0;#Bay of Fundy
+2945;249;sea;0;0;#Bay of Fundy
+2946;62;sea;0;0;#Strait of Belle Isle
+2946;75;sea;0;0;#Strait of Belle Isle
+2947;74;sea;0;0;#Fortune Bay
+2948;74;sea;0;0;#Notre Dame Bay
+2948;75;sea;0;0;#Notre Dame Bay
+2952;242;sea;0;0;#Massachusetts Bay
+2952;243;sea;0;0;#Massachusetts Bay
+2952;244;sea;0;0;#Massachusetts Bay
+2952;247;sea;0;0;#Massachusetts Bay
+2952;248;sea;0;0;#Massachusetts Bay
+2952;249;sea;0;0;#Massachusetts Bay
+2953;222;sea;0;0;#Chesapeake Bay
+2953;223;sea;0;0;#Chesapeake Bay
+2953;229;sea;0;0;#Chesapeake Bay
+2953;230;sea;0;0;#Chesapeake Bay
+2953;231;sea;0;0;#Chesapeake Bay
+2953;232;sea;0;0;#Chesapeake Bay
+2953;233;sea;0;0;#Chesapeake Bay
+2953;241;sea;0;0;#Chesapeake Bay
+2953;242;sea;0;0;#Chesapeake Bay
+2954;207;sea;0;0;#Cape Hatteras
+2954;210;sea;0;0;#Cape Hatteras
+2954;212;sea;0;0;#Cape Hatteras
+2954;213;sea;0;0;#Cape Hatteras
+2954;214;sea;0;0;#Cape Hatteras
+2954;219;sea;0;0;#Cape Hatteras
+2954;220;sea;0;0;#Cape Hatteras
+2954;222;sea;0;0;#Cape Hatteras
+2955;199;sea;0;0;#Coast of Carolina
+2955;204;sea;0;0;#Coast of Carolina
+2955;205;sea;0;0;#Coast of Carolina
+2955;210;sea;0;0;#Coast of Carolina
+2956;199;sea;0;0;#Coast of Florida
+2956;200;sea;0;0;#Coast of Florida
+2956;2219;sea;0;0;#Coast of Florida
+2957;2219;sea;0;0;#Coast of the Bahamas
+2958;200;sea;0;0;#Florida Straits
+2958;2209;sea;0;0;#Florida Straits
+2958;2210;sea;0;0;#Florida Straits
+2958;2219;sea;0;0;#Florida Straits
+2959;198;sea;0;0;#Apalachee Bay
+2959;199;sea;0;0;#Apalachee Bay
+2959;200;sea;0;0;#Apalachee Bay
+2960;139;sea;0;0;#Mobile Bay
+2960;140;sea;0;0;#Mobile Bay
+2960;141;sea;0;0;#Mobile Bay
+2960;194;sea;0;0;#Mobile Bay
+2960;197;sea;0;0;#Mobile Bay
+2960;198;sea;0;0;#Mobile Bay
+2961;132;sea;0;0;#Galveston Bay
+2961;133;sea;0;0;#Galveston Bay
+2961;137;sea;0;0;#Galveston Bay
+2961;138;sea;0;0;#Galveston Bay
+2961;141;sea;0;0;#Galveston Bay
+2961;2149;sea;0;0;#Galveston Bay
+2962;2149;sea;0;0;#Tampico Bay
+2962;2150;sea;0;0;#Tampico Bay
+2962;2163;sea;0;0;#Tampico Bay
+2963;2162;sea;0;0;#Yucatan Sea
+2963;2164;sea;0;0;#Yucatan Sea
+2963;2165;sea;0;0;#Yucatan Sea
+2963;2183;sea;0;0;#Yucatan Sea
+2963;2184;sea;0;0;#Yucatan Sea
+2964;2183;sea;0;0;#Gulf of Mexico
+2965;2183;sea;0;0;#Yucatan Channel
+2965;2185;sea;0;0;#Yucatan Channel
+2965;2209;sea;0;0;#Yucatan Channel
+2966;2185;sea;0;0;#Belize Bay
+2966;2188;sea;0;0;#Belize Bay
+2966;2190;sea;0;0;#Belize Bay
+2966;2194;sea;0;0;#Belize Bay
+2966;2195;sea;0;0;#Belize Bay
+2967;2196;sea;0;0;#Mosquito Coast
+2967;2200;sea;0;0;#Mosquito Coast
+2968;1723;sea;0;0;#Gulf of Darien
+2968;2198;sea;0;0;#Gulf of Darien
+2968;2200;sea;0;0;#Gulf of Darien
+2968;2203;sea;0;0;#Gulf of Darien
+2968;2204;sea;0;0;#Gulf of Darien
+2968;2205;sea;0;0;#Gulf of Darien
+2968;2206;sea;0;0;#Gulf of Darien
+2968;2208;sea;0;0;#Gulf of Darien
+2968;2253;sea;0;0;#Gulf of Darien
+2968;2254;sea;0;0;#Gulf of Darien
+2968;2255;sea;0;0;#Gulf of Darien
+2969;2212;sea;0;0;#Jamaica Channel
+2969;2213;sea;0;0;#Jamaica Channel
+2969;2215;sea;0;0;#Jamaica Channel
+2969;2217;sea;0;0;#Jamaica Channel
+2970;2217;sea;0;0;#Central Caribbean
+2971;2209;sea;0;0;#Northwestern Caribbean
+2971;2210;sea;0;0;#Northwestern Caribbean
+2971;2211;sea;0;0;#Northwestern Caribbean
+2971;2212;sea;0;0;#Northwestern Caribbean
+2971;2217;sea;0;0;#Northwestern Caribbean
+2971;2218;sea;0;0;#Northwestern Caribbean
+2972;2234;sea;0;0;#Venezuelan Gulf
+2972;2235;sea;0;0;#Venezuelan Gulf
+2972;2255;sea;0;0;#Venezuelan Gulf
+2972;2268;sea;0;0;#Venezuelan Gulf
+2972;2270;sea;0;0;#Venezuelan Gulf
+2972;2271;sea;0;0;#Venezuelan Gulf
+2972;2272;sea;0;0;#Venezuelan Gulf
+2973;2264;sea;0;0;#Venezuelan Sea
+2973;2267;sea;0;0;#Venezuelan Sea
+2973;2269;sea;0;0;#Venezuelan Sea
+2974;2214;sea;0;0;#Eastern Caribbean
+2974;2216;sea;0;0;#Eastern Caribbean
+2974;2222;sea;0;0;#Eastern Caribbean
+2975;2229;sea;0;0;#Windward Islands
+2975;2231;sea;0;0;#Windward Islands
+2975;2233;sea;0;0;#Windward Islands
+2975;2237;sea;0;0;#Windward Islands
+2975;2238;sea;0;0;#Windward Islands
+2975;2269;sea;0;0;#Windward Islands
+2975;2276;sea;0;0;#Windward Islands
+2975;2409;sea;0;0;#Windward Islands
+2976;2222;sea;0;0;#Lesser Antilles
+2976;2223;sea;0;0;#Lesser Antilles
+2976;2224;sea;0;0;#Lesser Antilles
+2976;2225;sea;0;0;#Lesser Antilles
+2976;2226;sea;0;0;#Lesser Antilles
+2976;2227;sea;0;0;#Lesser Antilles
+2976;2228;sea;0;0;#Lesser Antilles
+2976;2230;sea;0;0;#Lesser Antilles
+2976;2231;sea;0;0;#Lesser Antilles
+2976;2232;sea;0;0;#Lesser Antilles
+2976;2236;sea;0;0;#Lesser Antilles
+2977;2214;sea;0;0;#Turks & Caicos Sea
+2977;2215;sea;0;0;#Turks & Caicos Sea
+2977;2216;sea;0;0;#Turks & Caicos Sea
+2977;2220;sea;0;0;#Turks & Caicos Sea
+2978;2210;sea;0;0;#Coast of Cuba
+2978;2211;sea;0;0;#Coast of Cuba
+2978;2212;sea;0;0;#Coast of Cuba
+2978;2219;sea;0;0;#Coast of Cuba
+2979;2214;sea;0;0;#Coast of Hispaniola
+2979;2222;sea;0;0;#Coast of Hispaniola
+2979;2226;sea;0;0;#Coast of Hispaniola
+2980;2239;sea;0;0;#Guyana Coast
+2980;2240;sea;0;0;#Guyana Coast
+2980;2241;sea;0;0;#Guyana Coast
+2980;2243;sea;0;0;#Guyana Coast
+2980;2276;sea;0;0;#Guyana Coast
+2981;2241;sea;0;0;#Coast of Amapa
+2981;2414;sea;0;0;#Coast of Amapa
+2982;2214;sea;0;0;#Amazonas Gulf
+2982;2215;sea;0;0;#Amazonas Gulf
+2982;2410;sea;0;0;#Amazonas Gulf
+2982;2424;sea;0;0;#Amazonas Gulf
+2983;2424;sea;0;0;#Coast of Brazil
+2983;2426;sea;0;0;#Coast of Brazil
+2983;2429;sea;0;0;#Coast of Brazil
+2983;2431;sea;0;0;#Coast of Brazil
+2984;2428;sea;0;0;#Coast of Recife
+2984;2431;sea;0;0;#Coast of Recife
+2984;2432;sea;0;0;#Coast of Recife
+2984;2434;sea;0;0;#Coast of Recife
+2985;2434;sea;0;0;#Coast of Pernambuco
+2985;2435;sea;0;0;#Coast of Pernambuco
+2985;2436;sea;0;0;#Coast of Pernambuco
+2985;2439;sea;0;0;#Coast of Pernambuco
+2986;2439;sea;0;0;#Todos os Santos Bay
+2986;2448;sea;0;0;#Todos os Santos Bay
+2986;2449;sea;0;0;#Todos os Santos Bay
+2987;2447;sea;0;0;#Rio De Janeiro
+2987;2448;sea;0;0;#Rio De Janeiro
+2987;2451;sea;0;0;#Rio De Janeiro
+2987;2455;sea;0;0;#Rio De Janeiro
+2987;2457;sea;0;0;#Rio De Janeiro
+2987;2461;sea;0;0;#Rio De Janeiro
+2988;2347;sea;0;0;#Baia Paranagua
+2988;2461;sea;0;0;#Baia Paranagua
+2988;2463;sea;0;0;#Baia Paranagua
+2988;2464;sea;0;0;#Baia Paranagua
+2989;2344;sea;0;0;#Rio De La Plata
+2989;2345;sea;0;0;#Rio De La Plata
+2989;2347;sea;0;0;#Rio De La Plata
+2989;2348;sea;0;0;#Rio De La Plata
+2989;2351;sea;0;0;#Rio De La Plata
+2989;2352;sea;0;0;#Rio De La Plata
+2989;2359;sea;0;0;#Rio De La Plata
+2989;2360;sea;0;0;#Rio De La Plata
+2990;2352;sea;0;0;#Bahia Blanca
+2990;2354;sea;0;0;#Bahia Blanca
+2990;2355;sea;0;0;#Bahia Blanca
+2990;2392;sea;0;0;#Bahia Blanca
+2990;2393;sea;0;0;#Bahia Blanca
+2990;2396;sea;0;0;#Bahia Blanca
+2991;2398;sea;0;0;#Coast of Patagonia
+2991;2399;sea;0;0;#Coast of Patagonia
+2992;2334;sea;0;0;#Magellan Strait
+2992;2335;sea;0;0;#Magellan Strait
+2992;2399;sea;0;0;#Magellan Strait
+2992;2400;sea;0;0;#Magellan Strait
+2993;2333;sea;0;0;#South Chilean Coast
+2993;2334;sea;0;0;#South Chilean Coast
+2994;2328;sea;0;0;#Coast of Chile
+2994;2329;sea;0;0;#Coast of Chile
+2994;2332;sea;0;0;#Coast of Chile
+2994;2333;sea;0;0;#Coast of Chile
+2995;2325;sea;0;0;#Atacama Coast
+2995;2326;sea;0;0;#Atacama Coast
+2995;2329;sea;0;0;#Atacama Coast
+2995;2330;sea;0;0;#Atacama Coast
+2996;2305;sea;0;0;#Antofagasta Coast
+2996;2322;sea;0;0;#Antofagasta Coast
+2996;2323;sea;0;0;#Antofagasta Coast
+2996;2326;sea;0;0;#Antofagasta Coast
+2997;2297;sea;0;0;#Arequipa Bay
+2997;2304;sea;0;0;#Arequipa Bay
+2997;2305;sea;0;0;#Arequipa Bay
+2997;2307;sea;0;0;#Arequipa Bay
+2997;2308;sea;0;0;#Arequipa Bay
+2997;2309;sea;0;0;#Arequipa Bay
+2997;2578;sea;0;0;#Arequipa Bay
+2998;2292;sea;0;0;#Coast of Peru
+2998;2295;sea;0;0;#Coast of Peru
+2998;2297;sea;0;0;#Coast of Peru
+2998;2298;sea;0;0;#Coast of Peru
+2999;2280;sea;0;0;#Guayaquil Bay
+2999;2291;sea;0;0;#Guayaquil Bay
+2999;2292;sea;0;0;#Guayaquil Bay
+3000;2258;sea;0;0;#Coast of Ecuador
+3000;2281;sea;0;0;#Coast of Ecuador
+3001;1723;sea;0;0;#Gulf of Panama
+3001;2201;sea;0;0;#Gulf of Panama
+3001;2204;sea;0;0;#Gulf of Panama
+3001;2205;sea;0;0;#Gulf of Panama
+3001;2206;sea;0;0;#Gulf of Panama
+3001;2208;sea;0;0;#Gulf of Panama
+3001;2253;sea;0;0;#Gulf of Panama
+3001;2258;sea;0;0;#Gulf of Panama
+3002;2191;sea;0;0;#Bay of Costa Rica
+3002;2192;sea;0;0;#Bay of Costa Rica
+3002;2193;sea;0;0;#Bay of Costa Rica
+3002;2197;sea;0;0;#Bay of Costa Rica
+3002;2198;sea;0;0;#Bay of Costa Rica
+3002;2199;sea;0;0;#Bay of Costa Rica
+3002;2201;sea;0;0;#Bay of Costa Rica
+3002;2202;sea;0;0;#Bay of Costa Rica
+3003;2178;sea;0;0;#Acapulco Bay
+3003;2182;sea;0;0;#Acapulco Bay
+3003;2186;sea;0;0;#Acapulco Bay
+3003;2187;sea;0;0;#Acapulco Bay
+3003;2191;sea;0;0;#Acapulco Bay
+3004;2171;sea;0;0;#Manzanilla Bay
+3004;2178;sea;0;0;#Manzanilla Bay
+3004;2179;sea;0;0;#Manzanilla Bay
+3005;2161;sea;0;0;#Mazatlan Bay
+3005;2168;sea;0;0;#Mazatlan Bay
+3005;2169;sea;0;0;#Mazatlan Bay
+3005;2171;sea;0;0;#Mazatlan Bay
+3006;2137;sea;0;0;#Gulf of California
+3006;2138;sea;0;0;#Gulf of California
+3006;2139;sea;0;0;#Gulf of California
+3006;2140;sea;0;0;#Gulf of California
+3006;2141;sea;0;0;#Gulf of California
+3006;2156;sea;0;0;#Gulf of California
+3006;2157;sea;0;0;#Gulf of California
+3006;2161;sea;0;0;#Gulf of California
+3007;2138;sea;0;0;#Coast of Baja
+3007;2139;sea;0;0;#Coast of Baja
+3008;89;sea;0;0;#Coast of California
+3008;90;sea;0;0;#Coast of California
+3008;2139;sea;0;0;#Coast of California
+3009;84;sea;0;0;#Santa Catalina Islands
+3009;85;sea;0;0;#Santa Catalina Islands
+3009;87;sea;0;0;#Santa Catalina Islands
+3009;89;sea;0;0;#Santa Catalina Islands
+3010;81;sea;0;0;#Coast of Oregon
+3010;85;sea;0;0;#Coast of Oregon
+3011;13;sea;0;0;#Coast of Columbia
+3011;14;sea;0;0;#Coast of Columbia
+3011;15;sea;0;0;#Coast of Columbia
+3011;78;sea;0;0;#Coast of Columbia
+3011;81;sea;0;0;#Coast of Columbia
+3012;1;sea;0;0;#Hecate Strait
+3012;2;sea;0;0;#Hecate Strait
+3012;15;sea;0;0;#Hecate Strait
+3012;2630;sea;0;0;#Hecate Strait
+3013;3;sea;0;0;#Gulf of Alaska
+3013;4;sea;0;0;#Gulf of Alaska
+3013;2630;sea;0;0;#Gulf of Alaska
+3014;4;sea;0;0;#Coast of Alaska
+3014;5;sea;0;0;#Coast of Alaska
+3014;2631;sea;0;0;#Coast of Alaska
+3015;5;sea;0;0;#Kuskowim Bay
+3015;2631;sea;0;0;#Kuskowim Bay
+3020;2134;sea;0;0;#Sea of Azores
+3022;71;sea;0;0;#New England Seamounts
+3022;72;sea;0;0;#New England Seamounts
+3025;203;sea;0;0;#West Bermuda Sea
+3038;2129;sea;0;0;#East Guinea Basin
+3048;2131;sea;0;0;#Coast of Falklands
+3053;2130;sea;0;0;#West Coast of Ascension
+3054;2130;sea;0;0;#East Coast of Ascension
+3057;2132;sea;0;0;#Gough Island
+3058;2132;sea;0;0;#Coast of Tristan da Cunha
+3067;1321;sea;0;0;#Ceylon Sea
+3067;1322;sea;0;0;#Ceylon Sea
+3067;1324;sea;0;0;#Ceylon Sea
+3068;1325;sea;0;0;#Coast of Maldives
+3072;1325;sea;0;0;#One and a Half Degree Channel
+3072;2128;sea;0;0;#One and a Half Degree Channel
+3073;2128;sea;0;0;#Chagos Archipelago
+3076;2406;sea;0;0;#Coast of the Keelings
+3077;2406;sea;0;0;#Java Trench
+3080;2117;sea;0;0;#Cape Sainte Marie
+3080;2118;sea;0;0;#Cape Sainte Marie
+3126;2525;sea;0;0;#Coast of Marcus Island
+3127;2517;sea;0;0;#Coast of the Mariana Islands
+3127;2521;sea;0;0;#Coast of the Mariana Islands
+3130;5;sea;0;0;#North Bering Sea
+3132;4;sea;0;0;#Western Aleutian Islands
+3133;5;sea;0;0;#Pribilof Islands
+3134;4;sea;0;0;#Eastern Aleutian Islands
+3134;4;sea;0;0;#Eastern Aleutian Islands
+3135;3;sea;0;0;#Uminak Pass
+3135;4;sea;0;0;#Uminak Pass
+3150;658;sea;0;0;#Coast of Hawaii
+3153;2623;sea;0;0;#Coast of Midway Island
+3154;2168;sea;0;0;#Kepler Plain
+3157;2285;sea;0;0;#Coast of the Galapagos Islands
+3159;801;sea;0;0;#Coast of the Cook Islands
+3159;2545;sea;0;0;#Coast of the Cook Islands
+3169;686;sea;0;0;#Northern Line Islands
+3170;801;sea;0;0;#Coast of the Society Islands
+3170;2545;sea;0;0;#Coast of the Society Islands
+3170;2546;sea;0;0;#Coast of the Society Islands
+3170;2553;sea;0;0;#Coast of the Society Islands
+3175;2551;sea;0;0;#Southern Line Islands
+3176;686;sea;0;0;#Central Pacific Basin
+3176;2546;sea;0;0;#Central Pacific Basin
+3177;2520;sea;0;0;#Coast of Samoa
+3177;2540;sea;0;0;#Coast of Samoa
+3177;2542;sea;0;0;#Coast of Samoa
+3177;2543;sea;0;0;#Coast of Samoa
+3177;2544;sea;0;0;#Coast of Samoa
+3177;2547;sea;0;0;#Coast of Samoa
+3178;2526;sea;0;0;#Johnston Atoll
+3179;2520;sea;0;0;#Coast of Tonga
+3179;2540;sea;0;0;#Coast of Tonga
+3179;2544;sea;0;0;#Coast of Tonga
+3179;2545;sea;0;0;#Coast of Tonga
+3179;2548;sea;0;0;#Coast of Tonga
+3180;2551;sea;0;0;#Coast of the Marquesas
+3180;2553;sea;0;0;#Coast of the Marquesas
+3182;2552;sea;0;0;#Coast of the Tuamotus
+3182;2553;sea;0;0;#Coast of the Tuamotus
+3185;2545;sea;0;0;#Southwest Pacific Basin
+3187;2552;sea;0;0;#Coast of Pitcairn Island
+3190;2336;sea;0;0;#Coast of Easter Island
+3191;2541;sea;0;0;#Coast of the Ellice Islands
+3192;2535;sea;0;0;#New Caledonia Basin
+3197;2522;sea;0;0;#Syrus Reef
+3197;2524;sea;0;0;#Syrus Reef
+3200;2133;sea;0;0;#Coast of South Georgia
+3203;2129;sea;0;0;#West Coast of Saint Helena
+3218;610;sea;0;0;#Pisaros Pass
+3218;2579;sea;0;0;#Pisaros Pass
+3219;2454;sea;0;0;#Coast of Fiji
+3219;2520;sea;0;0;#Coast of Fiji
+3220;2508;sea;0;0;#Coast of Norfolk Island
+3221;2522;sea;0;0;#Coast of the Gilbert Islands
+3221;2527;sea;0;0;#Coast of the Gilbert Islands
+3222;2522;sea;0;0;#Mainu Reef
+3223;610;sea;0;0;#Tusei Bank
+3223;2522;sea;0;0;#Tusei Bank
+3244;610;sea;0;0;#Jaluit Passage
+3244;2522;sea;0;0;#Jaluit Passage
+3248;2334;sea;0;0;#West Magellan Strait
+
+#
+# Jan Mayen Neighbouring Provinces
+#
+
+1;3246;impassable;0;0;
+2;3246;impassable;0;0;
+3;3246;impassable;0;0;
+4;3246;impassable;0;0;
+5;3246;impassable;0;0;
+6;3246;impassable;0;0;
+7;3246;impassable;0;0;
+8;3246;impassable;0;0;
+9;3246;impassable;0;0;
+10;3246;impassable;0;0;
+11;3246;impassable;0;0;
+12;3246;impassable;0;0;
+13;3246;impassable;0;0;
+14;3246;impassable;0;0;
+15;3246;impassable;0;0;
+16;3246;impassable;0;0;
+17;3246;impassable;0;0;
+18;3246;impassable;0;0;
+19;3246;impassable;0;0;
+20;3246;impassable;0;0;
+21;3246;impassable;0;0;
+22;3246;impassable;0;0;
+23;3246;impassable;0;0;
+24;3246;impassable;0;0;
+25;3246;impassable;0;0;
+26;3246;impassable;0;0;
+27;3246;impassable;0;0;
+28;3246;impassable;0;0;
+29;3246;impassable;0;0;
+30;3246;impassable;0;0;
+31;3246;impassable;0;0;
+32;3246;impassable;0;0;
+33;3246;impassable;0;0;
+34;3246;impassable;0;0;
+35;3246;impassable;0;0;
+36;3246;impassable;0;0;
+37;3246;impassable;0;0;
+38;3246;impassable;0;0;
+39;3246;impassable;0;0;
+40;3246;impassable;0;0;
+41;3246;impassable;0;0;
+42;3246;impassable;0;0;
+43;3246;impassable;0;0;
+44;3246;impassable;0;0;
+45;3246;impassable;0;0;
+46;3246;impassable;0;0;
+47;3246;impassable;0;0;
+48;3246;impassable;0;0;
+49;3246;impassable;0;0;
+50;3246;impassable;0;0;
+51;3246;impassable;0;0;
+52;3246;impassable;0;0;
+53;3246;impassable;0;0;
+54;3246;impassable;0;0;
+55;3246;impassable;0;0;
+56;3246;impassable;0;0;
+57;3246;impassable;0;0;
+58;3246;impassable;0;0;
+59;3246;impassable;0;0;
+60;3246;impassable;0;0;
+61;3246;impassable;0;0;
+62;3246;impassable;0;0;
+63;3246;impassable;0;0;
+64;3246;impassable;0;0;
+65;3246;impassable;0;0;
+66;3246;impassable;0;0;
+67;3246;impassable;0;0;
+68;3246;impassable;0;0;
+69;3246;impassable;0;0;
+70;3246;impassable;0;0;
+71;3246;impassable;0;0;
+72;3246;impassable;0;0;
+73;3246;impassable;0;0;
+74;3246;impassable;0;0;
+75;3246;impassable;0;0;
+76;3246;impassable;0;0;
+77;3246;impassable;0;0;
+78;3246;impassable;0;0;
+79;3246;impassable;0;0;
+80;3246;impassable;0;0;
+81;3246;impassable;0;0;
+82;3246;impassable;0;0;
+83;3246;impassable;0;0;
+84;3246;impassable;0;0;
+85;3246;impassable;0;0;
+86;3246;impassable;0;0;
+87;3246;impassable;0;0;
+88;3246;impassable;0;0;
+89;3246;impassable;0;0;
+90;3246;impassable;0;0;
+91;3246;impassable;0;0;
+92;3246;impassable;0;0;
+93;3246;impassable;0;0;
+94;3246;impassable;0;0;
+95;3246;impassable;0;0;
+96;3246;impassable;0;0;
+97;3246;impassable;0;0;
+98;3246;impassable;0;0;
+99;3246;impassable;0;0;
+100;3246;impassable;0;0;
+101;3246;impassable;0;0;
+102;3246;impassable;0;0;
+103;3246;impassable;0;0;
+104;3246;impassable;0;0;
+105;3246;impassable;0;0;
+106;3246;impassable;0;0;
+107;3246;impassable;0;0;
+108;3246;impassable;0;0;
+109;3246;impassable;0;0;
+110;3246;impassable;0;0;
+111;3246;impassable;0;0;
+112;3246;impassable;0;0;
+113;3246;impassable;0;0;
+114;3246;impassable;0;0;
+115;3246;impassable;0;0;
+116;3246;impassable;0;0;
+117;3246;impassable;0;0;
+118;3246;impassable;0;0;
+119;3246;impassable;0;0;
+120;3246;impassable;0;0;
+121;3246;impassable;0;0;
+122;3246;impassable;0;0;
+123;3246;impassable;0;0;
+124;3246;impassable;0;0;
+125;3246;impassable;0;0;
+126;3246;impassable;0;0;
+127;3246;impassable;0;0;
+128;3246;impassable;0;0;
+129;3246;impassable;0;0;
+130;3246;impassable;0;0;
+131;3246;impassable;0;0;
+132;3246;impassable;0;0;
+133;3246;impassable;0;0;
+134;3246;impassable;0;0;
+135;3246;impassable;0;0;
+136;3246;impassable;0;0;
+137;3246;impassable;0;0;
+138;3246;impassable;0;0;
+139;3246;impassable;0;0;
+140;3246;impassable;0;0;
+141;3246;impassable;0;0;
+142;3246;impassable;0;0;
+143;3246;impassable;0;0;
+144;3246;impassable;0;0;
+145;3246;impassable;0;0;
+146;3246;impassable;0;0;
+147;3246;impassable;0;0;
+148;3246;impassable;0;0;
+149;3246;impassable;0;0;
+150;3246;impassable;0;0;
+151;3246;impassable;0;0;
+152;3246;impassable;0;0;
+153;3246;impassable;0;0;
+154;3246;impassable;0;0;
+155;3246;impassable;0;0;
+156;3246;impassable;0;0;
+157;3246;impassable;0;0;
+158;3246;impassable;0;0;
+159;3246;impassable;0;0;
+160;3246;impassable;0;0;
+161;3246;impassable;0;0;
+162;3246;impassable;0;0;
+163;3246;impassable;0;0;
+164;3246;impassable;0;0;
+165;3246;impassable;0;0;
+166;3246;impassable;0;0;
+167;3246;impassable;0;0;
+168;3246;impassable;0;0;
+169;3246;impassable;0;0;
+170;3246;impassable;0;0;
+171;3246;impassable;0;0;
+172;3246;impassable;0;0;
+173;3246;impassable;0;0;
+174;3246;impassable;0;0;
+175;3246;impassable;0;0;
+176;3246;impassable;0;0;
+177;3246;impassable;0;0;
+178;3246;impassable;0;0;
+179;3246;impassable;0;0;
+180;3246;impassable;0;0;
+181;3246;impassable;0;0;
+182;3246;impassable;0;0;
+183;3246;impassable;0;0;
+184;3246;impassable;0;0;
+185;3246;impassable;0;0;
+186;3246;impassable;0;0;
+187;3246;impassable;0;0;
+188;3246;impassable;0;0;
+189;3246;impassable;0;0;
+190;3246;impassable;0;0;
+191;3246;impassable;0;0;
+192;3246;impassable;0;0;
+193;3246;impassable;0;0;
+194;3246;impassable;0;0;
+195;3246;impassable;0;0;
+196;3246;impassable;0;0;
+197;3246;impassable;0;0;
+198;3246;impassable;0;0;
+199;3246;impassable;0;0;
+200;3246;impassable;0;0;
+201;3246;impassable;0;0;
+202;3246;impassable;0;0;
+203;3246;impassable;0;0;
+204;3246;impassable;0;0;
+205;3246;impassable;0;0;
+206;3246;impassable;0;0;
+207;3246;impassable;0;0;
+208;3246;impassable;0;0;
+209;3246;impassable;0;0;
+210;3246;impassable;0;0;
+211;3246;impassable;0;0;
+212;3246;impassable;0;0;
+213;3246;impassable;0;0;
+214;3246;impassable;0;0;
+215;3246;impassable;0;0;
+216;3246;impassable;0;0;
+217;3246;impassable;0;0;
+218;3246;impassable;0;0;
+219;3246;impassable;0;0;
+220;3246;impassable;0;0;
+221;3246;impassable;0;0;
+222;3246;impassable;0;0;
+223;3246;impassable;0;0;
+224;3246;impassable;0;0;
+225;3246;impassable;0;0;
+226;3246;impassable;0;0;
+227;3246;impassable;0;0;
+228;3246;impassable;0;0;
+229;3246;impassable;0;0;
+230;3246;impassable;0;0;
+231;3246;impassable;0;0;
+232;3246;impassable;0;0;
+233;3246;impassable;0;0;
+234;3246;impassable;0;0;
+235;3246;impassable;0;0;
+236;3246;impassable;0;0;
+237;3246;impassable;0;0;
+238;3246;impassable;0;0;
+239;3246;impassable;0;0;
+240;3246;impassable;0;0;
+241;3246;impassable;0;0;
+242;3246;impassable;0;0;
+243;3246;impassable;0;0;
+244;3246;impassable;0;0;
+245;3246;impassable;0;0;
+246;3246;impassable;0;0;
+247;3246;impassable;0;0;
+248;3246;impassable;0;0;
+249;3246;impassable;0;0;
+250;3246;impassable;0;0;
+251;3246;impassable;0;0;
+252;3246;impassable;0;0;
+253;3246;impassable;0;0;
+254;3246;impassable;0;0;
+255;3246;impassable;0;0;
+256;3246;impassable;0;0;
+257;3246;impassable;0;0;
+258;3246;impassable;0;0;
+259;3246;impassable;0;0;
+260;3246;impassable;0;0;
+261;3246;impassable;0;0;
+262;3246;impassable;0;0;
+263;3246;impassable;0;0;
+264;3246;impassable;0;0;
+265;3246;impassable;0;0;
+266;3246;impassable;0;0;
+267;3246;impassable;0;0;
+268;3246;impassable;0;0;
+269;3246;impassable;0;0;
+270;3246;impassable;0;0;
+271;3246;impassable;0;0;
+272;3246;impassable;0;0;
+273;3246;impassable;0;0;
+274;3246;impassable;0;0;
+275;3246;impassable;0;0;
+276;3246;impassable;0;0;
+277;3246;impassable;0;0;
+278;3246;impassable;0;0;
+279;3246;impassable;0;0;
+280;3246;impassable;0;0;
+281;3246;impassable;0;0;
+282;3246;impassable;0;0;
+283;3246;impassable;0;0;
+284;3246;impassable;0;0;
+285;3246;impassable;0;0;
+286;3246;impassable;0;0;
+287;3246;impassable;0;0;
+288;3246;impassable;0;0;
+289;3246;impassable;0;0;
+290;3246;impassable;0;0;
+291;3246;impassable;0;0;
+292;3246;impassable;0;0;
+293;3246;impassable;0;0;
+294;3246;impassable;0;0;
+295;3246;impassable;0;0;
+296;3246;impassable;0;0;
+297;3246;impassable;0;0;
+298;3246;impassable;0;0;
+299;3246;impassable;0;0;
+300;3246;impassable;0;0;
+301;3246;impassable;0;0;
+302;3246;impassable;0;0;
+303;3246;impassable;0;0;
+304;3246;impassable;0;0;
+305;3246;impassable;0;0;
+306;3246;impassable;0;0;
+307;3246;impassable;0;0;
+308;3246;impassable;0;0;
+309;3246;impassable;0;0;
+310;3246;impassable;0;0;
+311;3246;impassable;0;0;
+312;3246;impassable;0;0;
+313;3246;impassable;0;0;
+314;3246;impassable;0;0;
+315;3246;impassable;0;0;
+316;3246;impassable;0;0;
+317;3246;impassable;0;0;
+318;3246;impassable;0;0;
+319;3246;impassable;0;0;
+320;3246;impassable;0;0;
+321;3246;impassable;0;0;
+322;3246;impassable;0;0;
+323;3246;impassable;0;0;
+324;3246;impassable;0;0;
+325;3246;impassable;0;0;
+326;3246;impassable;0;0;
+327;3246;impassable;0;0;
+328;3246;impassable;0;0;
+329;3246;impassable;0;0;
+330;3246;impassable;0;0;
+331;3246;impassable;0;0;
+332;3246;impassable;0;0;
+333;3246;impassable;0;0;
+334;3246;impassable;0;0;
+335;3246;impassable;0;0;
+336;3246;impassable;0;0;
+337;3246;impassable;0;0;
+338;3246;impassable;0;0;
+339;3246;impassable;0;0;
+340;3246;impassable;0;0;
+341;3246;impassable;0;0;
+342;3246;impassable;0;0;
+343;3246;impassable;0;0;
+344;3246;impassable;0;0;
+345;3246;impassable;0;0;
+346;3246;impassable;0;0;
+347;3246;impassable;0;0;
+348;3246;impassable;0;0;
+349;3246;impassable;0;0;
+350;3246;impassable;0;0;
+351;3246;impassable;0;0;
+352;3246;impassable;0;0;
+353;3246;impassable;0;0;
+354;3246;impassable;0;0;
+355;3246;impassable;0;0;
+356;3246;impassable;0;0;
+357;3246;impassable;0;0;
+358;3246;impassable;0;0;
+359;3246;impassable;0;0;
+360;3246;impassable;0;0;
+361;3246;impassable;0;0;
+362;3246;impassable;0;0;
+363;3246;impassable;0;0;
+364;3246;impassable;0;0;
+365;3246;impassable;0;0;
+366;3246;impassable;0;0;
+367;3246;impassable;0;0;
+368;3246;impassable;0;0;
+369;3246;impassable;0;0;
+370;3246;impassable;0;0;
+371;3246;impassable;0;0;
+372;3246;impassable;0;0;
+373;3246;impassable;0;0;
+374;3246;impassable;0;0;
+375;3246;impassable;0;0;
+376;3246;impassable;0;0;
+377;3246;impassable;0;0;
+378;3246;impassable;0;0;
+379;3246;impassable;0;0;
+380;3246;impassable;0;0;
+381;3246;impassable;0;0;
+382;3246;impassable;0;0;
+383;3246;impassable;0;0;
+384;3246;impassable;0;0;
+385;3246;impassable;0;0;
+386;3246;impassable;0;0;
+387;3246;impassable;0;0;
+388;3246;impassable;0;0;
+389;3246;impassable;0;0;
+390;3246;impassable;0;0;
+391;3246;impassable;0;0;
+392;3246;impassable;0;0;
+393;3246;impassable;0;0;
+394;3246;impassable;0;0;
+395;3246;impassable;0;0;
+396;3246;impassable;0;0;
+397;3246;impassable;0;0;
+398;3246;impassable;0;0;
+399;3246;impassable;0;0;
+400;3246;impassable;0;0;
+401;3246;impassable;0;0;
+402;3246;impassable;0;0;
+403;3246;impassable;0;0;
+404;3246;impassable;0;0;
+405;3246;impassable;0;0;
+406;3246;impassable;0;0;
+407;3246;impassable;0;0;
+408;3246;impassable;0;0;
+409;3246;impassable;0;0;
+410;3246;impassable;0;0;
+411;3246;impassable;0;0;
+412;3246;impassable;0;0;
+413;3246;impassable;0;0;
+414;3246;impassable;0;0;
+415;3246;impassable;0;0;
+416;3246;impassable;0;0;
+417;3246;impassable;0;0;
+418;3246;impassable;0;0;
+419;3246;impassable;0;0;
+420;3246;impassable;0;0;
+421;3246;impassable;0;0;
+422;3246;impassable;0;0;
+423;3246;impassable;0;0;
+424;3246;impassable;0;0;
+425;3246;impassable;0;0;
+426;3246;impassable;0;0;
+427;3246;impassable;0;0;
+428;3246;impassable;0;0;
+429;3246;impassable;0;0;
+430;3246;impassable;0;0;
+431;3246;impassable;0;0;
+432;3246;impassable;0;0;
+433;3246;impassable;0;0;
+434;3246;impassable;0;0;
+435;3246;impassable;0;0;
+436;3246;impassable;0;0;
+437;3246;impassable;0;0;
+438;3246;impassable;0;0;
+439;3246;impassable;0;0;
+440;3246;impassable;0;0;
+441;3246;impassable;0;0;
+442;3246;impassable;0;0;
+443;3246;impassable;0;0;
+444;3246;impassable;0;0;
+445;3246;impassable;0;0;
+446;3246;impassable;0;0;
+447;3246;impassable;0;0;
+448;3246;impassable;0;0;
+449;3246;impassable;0;0;
+450;3246;impassable;0;0;
+451;3246;impassable;0;0;
+452;3246;impassable;0;0;
+453;3246;impassable;0;0;
+454;3246;impassable;0;0;
+455;3246;impassable;0;0;
+456;3246;impassable;0;0;
+457;3246;impassable;0;0;
+458;3246;impassable;0;0;
+459;3246;impassable;0;0;
+460;3246;impassable;0;0;
+461;3246;impassable;0;0;
+462;3246;impassable;0;0;
+463;3246;impassable;0;0;
+464;3246;impassable;0;0;
+465;3246;impassable;0;0;
+466;3246;impassable;0;0;
+467;3246;impassable;0;0;
+468;3246;impassable;0;0;
+469;3246;impassable;0;0;
+470;3246;impassable;0;0;
+471;3246;impassable;0;0;
+472;3246;impassable;0;0;
+473;3246;impassable;0;0;
+474;3246;impassable;0;0;
+475;3246;impassable;0;0;
+476;3246;impassable;0;0;
+477;3246;impassable;0;0;
+478;3246;impassable;0;0;
+479;3246;impassable;0;0;
+480;3246;impassable;0;0;
+481;3246;impassable;0;0;
+482;3246;impassable;0;0;
+483;3246;impassable;0;0;
+484;3246;impassable;0;0;
+485;3246;impassable;0;0;
+486;3246;impassable;0;0;
+487;3246;impassable;0;0;
+488;3246;impassable;0;0;
+489;3246;impassable;0;0;
+490;3246;impassable;0;0;
+491;3246;impassable;0;0;
+492;3246;impassable;0;0;
+493;3246;impassable;0;0;
+494;3246;impassable;0;0;
+495;3246;impassable;0;0;
+496;3246;impassable;0;0;
+497;3246;impassable;0;0;
+498;3246;impassable;0;0;
+499;3246;impassable;0;0;
+500;3246;impassable;0;0;
+501;3246;impassable;0;0;
+502;3246;impassable;0;0;
+503;3246;impassable;0;0;
+504;3246;impassable;0;0;
+505;3246;impassable;0;0;
+506;3246;impassable;0;0;
+507;3246;impassable;0;0;
+508;3246;impassable;0;0;
+509;3246;impassable;0;0;
+510;3246;impassable;0;0;
+511;3246;impassable;0;0;
+512;3246;impassable;0;0;
+513;3246;impassable;0;0;
+514;3246;impassable;0;0;
+515;3246;impassable;0;0;
+516;3246;impassable;0;0;
+517;3246;impassable;0;0;
+518;3246;impassable;0;0;
+519;3246;impassable;0;0;
+520;3246;impassable;0;0;
+521;3246;impassable;0;0;
+522;3246;impassable;0;0;
+523;3246;impassable;0;0;
+524;3246;impassable;0;0;
+525;3246;impassable;0;0;
+526;3246;impassable;0;0;
+527;3246;impassable;0;0;
+528;3246;impassable;0;0;
+529;3246;impassable;0;0;
+530;3246;impassable;0;0;
+531;3246;impassable;0;0;
+532;3246;impassable;0;0;
+533;3246;impassable;0;0;
+534;3246;impassable;0;0;
+535;3246;impassable;0;0;
+536;3246;impassable;0;0;
+537;3246;impassable;0;0;
+538;3246;impassable;0;0;
+539;3246;impassable;0;0;
+540;3246;impassable;0;0;
+541;3246;impassable;0;0;
+542;3246;impassable;0;0;
+543;3246;impassable;0;0;
+544;3246;impassable;0;0;
+545;3246;impassable;0;0;
+546;3246;impassable;0;0;
+547;3246;impassable;0;0;
+548;3246;impassable;0;0;
+549;3246;impassable;0;0;
+550;3246;impassable;0;0;
+551;3246;impassable;0;0;
+552;3246;impassable;0;0;
+553;3246;impassable;0;0;
+554;3246;impassable;0;0;
+555;3246;impassable;0;0;
+556;3246;impassable;0;0;
+557;3246;impassable;0;0;
+558;3246;impassable;0;0;
+559;3246;impassable;0;0;
+560;3246;impassable;0;0;
+561;3246;impassable;0;0;
+562;3246;impassable;0;0;
+563;3246;impassable;0;0;
+564;3246;impassable;0;0;
+565;3246;impassable;0;0;
+566;3246;impassable;0;0;
+567;3246;impassable;0;0;
+568;3246;impassable;0;0;
+569;3246;impassable;0;0;
+570;3246;impassable;0;0;
+571;3246;impassable;0;0;
+572;3246;impassable;0;0;
+573;3246;impassable;0;0;
+574;3246;impassable;0;0;
+575;3246;impassable;0;0;
+576;3246;impassable;0;0;
+577;3246;impassable;0;0;
+578;3246;impassable;0;0;
+579;3246;impassable;0;0;
+580;3246;impassable;0;0;
+581;3246;impassable;0;0;
+582;3246;impassable;0;0;
+583;3246;impassable;0;0;
+584;3246;impassable;0;0;
+585;3246;impassable;0;0;
+586;3246;impassable;0;0;
+587;3246;impassable;0;0;
+588;3246;impassable;0;0;
+589;3246;impassable;0;0;
+590;3246;impassable;0;0;
+591;3246;impassable;0;0;
+592;3246;impassable;0;0;
+593;3246;impassable;0;0;
+594;3246;impassable;0;0;
+595;3246;impassable;0;0;
+596;3246;impassable;0;0;
+597;3246;impassable;0;0;
+598;3246;impassable;0;0;
+599;3246;impassable;0;0;
+600;3246;impassable;0;0;
+601;3246;impassable;0;0;
+602;3246;impassable;0;0;
+603;3246;impassable;0;0;
+604;3246;impassable;0;0;
+605;3246;impassable;0;0;
+606;3246;impassable;0;0;
+607;3246;impassable;0;0;
+608;3246;impassable;0;0;
+609;3246;impassable;0;0;
+610;3246;impassable;0;0;
+611;3246;impassable;0;0;
+612;3246;impassable;0;0;
+613;3246;impassable;0;0;
+614;3246;impassable;0;0;
+615;3246;impassable;0;0;
+616;3246;impassable;0;0;
+617;3246;impassable;0;0;
+618;3246;impassable;0;0;
+619;3246;impassable;0;0;
+620;3246;impassable;0;0;
+621;3246;impassable;0;0;
+622;3246;impassable;0;0;
+623;3246;impassable;0;0;
+624;3246;impassable;0;0;
+625;3246;impassable;0;0;
+626;3246;impassable;0;0;
+627;3246;impassable;0;0;
+628;3246;impassable;0;0;
+629;3246;impassable;0;0;
+630;3246;impassable;0;0;
+631;3246;impassable;0;0;
+632;3246;impassable;0;0;
+633;3246;impassable;0;0;
+634;3246;impassable;0;0;
+635;3246;impassable;0;0;
+636;3246;impassable;0;0;
+637;3246;impassable;0;0;
+638;3246;impassable;0;0;
+639;3246;impassable;0;0;
+640;3246;impassable;0;0;
+641;3246;impassable;0;0;
+642;3246;impassable;0;0;
+643;3246;impassable;0;0;
+644;3246;impassable;0;0;
+645;3246;impassable;0;0;
+646;3246;impassable;0;0;
+647;3246;impassable;0;0;
+648;3246;impassable;0;0;
+649;3246;impassable;0;0;
+650;3246;impassable;0;0;
+651;3246;impassable;0;0;
+652;3246;impassable;0;0;
+653;3246;impassable;0;0;
+654;3246;impassable;0;0;
+655;3246;impassable;0;0;
+656;3246;impassable;0;0;
+657;3246;impassable;0;0;
+658;3246;impassable;0;0;
+659;3246;impassable;0;0;
+660;3246;impassable;0;0;
+661;3246;impassable;0;0;
+662;3246;impassable;0;0;
+663;3246;impassable;0;0;
+664;3246;impassable;0;0;
+665;3246;impassable;0;0;
+666;3246;impassable;0;0;
+667;3246;impassable;0;0;
+668;3246;impassable;0;0;
+669;3246;impassable;0;0;
+670;3246;impassable;0;0;
+671;3246;impassable;0;0;
+672;3246;impassable;0;0;
+673;3246;impassable;0;0;
+674;3246;impassable;0;0;
+675;3246;impassable;0;0;
+676;3246;impassable;0;0;
+677;3246;impassable;0;0;
+678;3246;impassable;0;0;
+679;3246;impassable;0;0;
+680;3246;impassable;0;0;
+681;3246;impassable;0;0;
+682;3246;impassable;0;0;
+683;3246;impassable;0;0;
+684;3246;impassable;0;0;
+685;3246;impassable;0;0;
+686;3246;impassable;0;0;
+687;3246;impassable;0;0;
+688;3246;impassable;0;0;
+689;3246;impassable;0;0;
+690;3246;impassable;0;0;
+691;3246;impassable;0;0;
+692;3246;impassable;0;0;
+693;3246;impassable;0;0;
+694;3246;impassable;0;0;
+695;3246;impassable;0;0;
+696;3246;impassable;0;0;
+697;3246;impassable;0;0;
+698;3246;impassable;0;0;
+699;3246;impassable;0;0;
+700;3246;impassable;0;0;
+701;3246;impassable;0;0;
+702;3246;impassable;0;0;
+703;3246;impassable;0;0;
+704;3246;impassable;0;0;
+705;3246;impassable;0;0;
+706;3246;impassable;0;0;
+707;3246;impassable;0;0;
+708;3246;impassable;0;0;
+709;3246;impassable;0;0;
+710;3246;impassable;0;0;
+711;3246;impassable;0;0;
+712;3246;impassable;0;0;
+713;3246;impassable;0;0;
+714;3246;impassable;0;0;
+715;3246;impassable;0;0;
+716;3246;impassable;0;0;
+717;3246;impassable;0;0;
+718;3246;impassable;0;0;
+719;3246;impassable;0;0;
+720;3246;impassable;0;0;
+721;3246;impassable;0;0;
+722;3246;impassable;0;0;
+723;3246;impassable;0;0;
+724;3246;impassable;0;0;
+725;3246;impassable;0;0;
+726;3246;impassable;0;0;
+727;3246;impassable;0;0;
+728;3246;impassable;0;0;
+729;3246;impassable;0;0;
+730;3246;impassable;0;0;
+731;3246;impassable;0;0;
+732;3246;impassable;0;0;
+733;3246;impassable;0;0;
+734;3246;impassable;0;0;
+735;3246;impassable;0;0;
+736;3246;impassable;0;0;
+737;3246;impassable;0;0;
+738;3246;impassable;0;0;
+739;3246;impassable;0;0;
+740;3246;impassable;0;0;
+741;3246;impassable;0;0;
+742;3246;impassable;0;0;
+743;3246;impassable;0;0;
+744;3246;impassable;0;0;
+745;3246;impassable;0;0;
+746;3246;impassable;0;0;
+747;3246;impassable;0;0;
+748;3246;impassable;0;0;
+749;3246;impassable;0;0;
+750;3246;impassable;0;0;
+751;3246;impassable;0;0;
+752;3246;impassable;0;0;
+753;3246;impassable;0;0;
+754;3246;impassable;0;0;
+755;3246;impassable;0;0;
+756;3246;impassable;0;0;
+757;3246;impassable;0;0;
+758;3246;impassable;0;0;
+759;3246;impassable;0;0;
+760;3246;impassable;0;0;
+761;3246;impassable;0;0;
+762;3246;impassable;0;0;
+763;3246;impassable;0;0;
+764;3246;impassable;0;0;
+765;3246;impassable;0;0;
+766;3246;impassable;0;0;
+767;3246;impassable;0;0;
+768;3246;impassable;0;0;
+769;3246;impassable;0;0;
+770;3246;impassable;0;0;
+771;3246;impassable;0;0;
+772;3246;impassable;0;0;
+773;3246;impassable;0;0;
+774;3246;impassable;0;0;
+775;3246;impassable;0;0;
+776;3246;impassable;0;0;
+777;3246;impassable;0;0;
+778;3246;impassable;0;0;
+779;3246;impassable;0;0;
+780;3246;impassable;0;0;
+781;3246;impassable;0;0;
+782;3246;impassable;0;0;
+783;3246;impassable;0;0;
+784;3246;impassable;0;0;
+785;3246;impassable;0;0;
+786;3246;impassable;0;0;
+787;3246;impassable;0;0;
+788;3246;impassable;0;0;
+789;3246;impassable;0;0;
+790;3246;impassable;0;0;
+791;3246;impassable;0;0;
+792;3246;impassable;0;0;
+793;3246;impassable;0;0;
+794;3246;impassable;0;0;
+795;3246;impassable;0;0;
+796;3246;impassable;0;0;
+797;3246;impassable;0;0;
+798;3246;impassable;0;0;
+799;3246;impassable;0;0;
+800;3246;impassable;0;0;
+801;3246;impassable;0;0;
+802;3246;impassable;0;0;
+803;3246;impassable;0;0;
+804;3246;impassable;0;0;
+805;3246;impassable;0;0;
+806;3246;impassable;0;0;
+807;3246;impassable;0;0;
+808;3246;impassable;0;0;
+809;3246;impassable;0;0;
+810;3246;impassable;0;0;
+811;3246;impassable;0;0;
+812;3246;impassable;0;0;
+813;3246;impassable;0;0;
+814;3246;impassable;0;0;
+815;3246;impassable;0;0;
+816;3246;impassable;0;0;
+817;3246;impassable;0;0;
+818;3246;impassable;0;0;
+819;3246;impassable;0;0;
+820;3246;impassable;0;0;
+821;3246;impassable;0;0;
+822;3246;impassable;0;0;
+823;3246;impassable;0;0;
+824;3246;impassable;0;0;
+825;3246;impassable;0;0;
+826;3246;impassable;0;0;
+827;3246;impassable;0;0;
+828;3246;impassable;0;0;
+829;3246;impassable;0;0;
+830;3246;impassable;0;0;
+831;3246;impassable;0;0;
+832;3246;impassable;0;0;
+833;3246;impassable;0;0;
+834;3246;impassable;0;0;
+835;3246;impassable;0;0;
+836;3246;impassable;0;0;
+837;3246;impassable;0;0;
+838;3246;impassable;0;0;
+839;3246;impassable;0;0;
+840;3246;impassable;0;0;
+841;3246;impassable;0;0;
+842;3246;impassable;0;0;
+843;3246;impassable;0;0;
+844;3246;impassable;0;0;
+845;3246;impassable;0;0;
+846;3246;impassable;0;0;
+847;3246;impassable;0;0;
+848;3246;impassable;0;0;
+849;3246;impassable;0;0;
+850;3246;impassable;0;0;
+851;3246;impassable;0;0;
+852;3246;impassable;0;0;
+853;3246;impassable;0;0;
+854;3246;impassable;0;0;
+855;3246;impassable;0;0;
+856;3246;impassable;0;0;
+857;3246;impassable;0;0;
+858;3246;impassable;0;0;
+859;3246;impassable;0;0;
+860;3246;impassable;0;0;
+861;3246;impassable;0;0;
+862;3246;impassable;0;0;
+863;3246;impassable;0;0;
+864;3246;impassable;0;0;
+865;3246;impassable;0;0;
+866;3246;impassable;0;0;
+867;3246;impassable;0;0;
+868;3246;impassable;0;0;
+869;3246;impassable;0;0;
+870;3246;impassable;0;0;
+871;3246;impassable;0;0;
+872;3246;impassable;0;0;
+873;3246;impassable;0;0;
+874;3246;impassable;0;0;
+875;3246;impassable;0;0;
+876;3246;impassable;0;0;
+877;3246;impassable;0;0;
+878;3246;impassable;0;0;
+879;3246;impassable;0;0;
+880;3246;impassable;0;0;
+881;3246;impassable;0;0;
+882;3246;impassable;0;0;
+883;3246;impassable;0;0;
+884;3246;impassable;0;0;
+885;3246;impassable;0;0;
+886;3246;impassable;0;0;
+887;3246;impassable;0;0;
+888;3246;impassable;0;0;
+889;3246;impassable;0;0;
+890;3246;impassable;0;0;
+891;3246;impassable;0;0;
+892;3246;impassable;0;0;
+893;3246;impassable;0;0;
+894;3246;impassable;0;0;
+895;3246;impassable;0;0;
+896;3246;impassable;0;0;
+897;3246;impassable;0;0;
+898;3246;impassable;0;0;
+899;3246;impassable;0;0;
+900;3246;impassable;0;0;
+901;3246;impassable;0;0;
+902;3246;impassable;0;0;
+903;3246;impassable;0;0;
+904;3246;impassable;0;0;
+905;3246;impassable;0;0;
+906;3246;impassable;0;0;
+907;3246;impassable;0;0;
+908;3246;impassable;0;0;
+909;3246;impassable;0;0;
+910;3246;impassable;0;0;
+911;3246;impassable;0;0;
+912;3246;impassable;0;0;
+913;3246;impassable;0;0;
+914;3246;impassable;0;0;
+915;3246;impassable;0;0;
+916;3246;impassable;0;0;
+917;3246;impassable;0;0;
+918;3246;impassable;0;0;
+919;3246;impassable;0;0;
+920;3246;impassable;0;0;
+921;3246;impassable;0;0;
+922;3246;impassable;0;0;
+923;3246;impassable;0;0;
+924;3246;impassable;0;0;
+925;3246;impassable;0;0;
+926;3246;impassable;0;0;
+927;3246;impassable;0;0;
+928;3246;impassable;0;0;
+929;3246;impassable;0;0;
+930;3246;impassable;0;0;
+931;3246;impassable;0;0;
+932;3246;impassable;0;0;
+933;3246;impassable;0;0;
+934;3246;impassable;0;0;
+935;3246;impassable;0;0;
+936;3246;impassable;0;0;
+937;3246;impassable;0;0;
+938;3246;impassable;0;0;
+939;3246;impassable;0;0;
+940;3246;impassable;0;0;
+941;3246;impassable;0;0;
+942;3246;impassable;0;0;
+943;3246;impassable;0;0;
+944;3246;impassable;0;0;
+945;3246;impassable;0;0;
+946;3246;impassable;0;0;
+947;3246;impassable;0;0;
+948;3246;impassable;0;0;
+949;3246;impassable;0;0;
+950;3246;impassable;0;0;
+951;3246;impassable;0;0;
+952;3246;impassable;0;0;
+953;3246;impassable;0;0;
+954;3246;impassable;0;0;
+955;3246;impassable;0;0;
+956;3246;impassable;0;0;
+957;3246;impassable;0;0;
+958;3246;impassable;0;0;
+959;3246;impassable;0;0;
+960;3246;impassable;0;0;
+961;3246;impassable;0;0;
+962;3246;impassable;0;0;
+963;3246;impassable;0;0;
+964;3246;impassable;0;0;
+965;3246;impassable;0;0;
+966;3246;impassable;0;0;
+967;3246;impassable;0;0;
+968;3246;impassable;0;0;
+969;3246;impassable;0;0;
+970;3246;impassable;0;0;
+971;3246;impassable;0;0;
+972;3246;impassable;0;0;
+973;3246;impassable;0;0;
+974;3246;impassable;0;0;
+975;3246;impassable;0;0;
+976;3246;impassable;0;0;
+977;3246;impassable;0;0;
+978;3246;impassable;0;0;
+979;3246;impassable;0;0;
+980;3246;impassable;0;0;
+981;3246;impassable;0;0;
+982;3246;impassable;0;0;
+983;3246;impassable;0;0;
+984;3246;impassable;0;0;
+985;3246;impassable;0;0;
+986;3246;impassable;0;0;
+987;3246;impassable;0;0;
+988;3246;impassable;0;0;
+989;3246;impassable;0;0;
+990;3246;impassable;0;0;
+991;3246;impassable;0;0;
+992;3246;impassable;0;0;
+993;3246;impassable;0;0;
+994;3246;impassable;0;0;
+995;3246;impassable;0;0;
+996;3246;impassable;0;0;
+997;3246;impassable;0;0;
+998;3246;impassable;0;0;
+999;3246;impassable;0;0;
+1000;3246;impassable;0;0;
+1001;3246;impassable;0;0;
+1002;3246;impassable;0;0;
+1003;3246;impassable;0;0;
+1004;3246;impassable;0;0;
+1005;3246;impassable;0;0;
+1006;3246;impassable;0;0;
+1007;3246;impassable;0;0;
+1008;3246;impassable;0;0;
+1009;3246;impassable;0;0;
+1010;3246;impassable;0;0;
+1011;3246;impassable;0;0;
+1012;3246;impassable;0;0;
+1013;3246;impassable;0;0;
+1014;3246;impassable;0;0;
+1015;3246;impassable;0;0;
+1016;3246;impassable;0;0;
+1017;3246;impassable;0;0;
+1018;3246;impassable;0;0;
+1019;3246;impassable;0;0;
+1020;3246;impassable;0;0;
+1021;3246;impassable;0;0;
+1022;3246;impassable;0;0;
+1023;3246;impassable;0;0;
+1024;3246;impassable;0;0;
+1025;3246;impassable;0;0;
+1026;3246;impassable;0;0;
+1027;3246;impassable;0;0;
+1028;3246;impassable;0;0;
+1029;3246;impassable;0;0;
+1030;3246;impassable;0;0;
+1031;3246;impassable;0;0;
+1032;3246;impassable;0;0;
+1033;3246;impassable;0;0;
+1034;3246;impassable;0;0;
+1035;3246;impassable;0;0;
+1036;3246;impassable;0;0;
+1037;3246;impassable;0;0;
+1038;3246;impassable;0;0;
+1039;3246;impassable;0;0;
+1040;3246;impassable;0;0;
+1041;3246;impassable;0;0;
+1042;3246;impassable;0;0;
+1043;3246;impassable;0;0;
+1044;3246;impassable;0;0;
+1045;3246;impassable;0;0;
+1046;3246;impassable;0;0;
+1047;3246;impassable;0;0;
+1048;3246;impassable;0;0;
+1049;3246;impassable;0;0;
+1050;3246;impassable;0;0;
+1051;3246;impassable;0;0;
+1052;3246;impassable;0;0;
+1053;3246;impassable;0;0;
+1054;3246;impassable;0;0;
+1055;3246;impassable;0;0;
+1056;3246;impassable;0;0;
+1057;3246;impassable;0;0;
+1058;3246;impassable;0;0;
+1059;3246;impassable;0;0;
+1060;3246;impassable;0;0;
+1061;3246;impassable;0;0;
+1062;3246;impassable;0;0;
+1063;3246;impassable;0;0;
+1064;3246;impassable;0;0;
+1065;3246;impassable;0;0;
+1066;3246;impassable;0;0;
+1067;3246;impassable;0;0;
+1068;3246;impassable;0;0;
+1069;3246;impassable;0;0;
+1070;3246;impassable;0;0;
+1071;3246;impassable;0;0;
+1072;3246;impassable;0;0;
+1073;3246;impassable;0;0;
+1074;3246;impassable;0;0;
+1075;3246;impassable;0;0;
+1076;3246;impassable;0;0;
+1077;3246;impassable;0;0;
+1078;3246;impassable;0;0;
+1079;3246;impassable;0;0;
+1080;3246;impassable;0;0;
+1081;3246;impassable;0;0;
+1082;3246;impassable;0;0;
+1083;3246;impassable;0;0;
+1084;3246;impassable;0;0;
+1085;3246;impassable;0;0;
+1086;3246;impassable;0;0;
+1087;3246;impassable;0;0;
+1088;3246;impassable;0;0;
+1089;3246;impassable;0;0;
+1090;3246;impassable;0;0;
+1091;3246;impassable;0;0;
+1092;3246;impassable;0;0;
+1093;3246;impassable;0;0;
+1094;3246;impassable;0;0;
+1095;3246;impassable;0;0;
+1096;3246;impassable;0;0;
+1097;3246;impassable;0;0;
+1098;3246;impassable;0;0;
+1099;3246;impassable;0;0;
+1100;3246;impassable;0;0;
+1101;3246;impassable;0;0;
+1102;3246;impassable;0;0;
+1103;3246;impassable;0;0;
+1104;3246;impassable;0;0;
+1105;3246;impassable;0;0;
+1106;3246;impassable;0;0;
+1107;3246;impassable;0;0;
+1108;3246;impassable;0;0;
+1109;3246;impassable;0;0;
+1110;3246;impassable;0;0;
+1111;3246;impassable;0;0;
+1112;3246;impassable;0;0;
+1113;3246;impassable;0;0;
+1114;3246;impassable;0;0;
+1115;3246;impassable;0;0;
+1116;3246;impassable;0;0;
+1117;3246;impassable;0;0;
+1118;3246;impassable;0;0;
+1119;3246;impassable;0;0;
+1120;3246;impassable;0;0;
+1121;3246;impassable;0;0;
+1122;3246;impassable;0;0;
+1123;3246;impassable;0;0;
+1124;3246;impassable;0;0;
+1125;3246;impassable;0;0;
+1126;3246;impassable;0;0;
+1127;3246;impassable;0;0;
+1128;3246;impassable;0;0;
+1129;3246;impassable;0;0;
+1130;3246;impassable;0;0;
+1131;3246;impassable;0;0;
+1132;3246;impassable;0;0;
+1133;3246;impassable;0;0;
+1134;3246;impassable;0;0;
+1135;3246;impassable;0;0;
+1136;3246;impassable;0;0;
+1137;3246;impassable;0;0;
+1138;3246;impassable;0;0;
+1139;3246;impassable;0;0;
+1140;3246;impassable;0;0;
+1141;3246;impassable;0;0;
+1142;3246;impassable;0;0;
+1143;3246;impassable;0;0;
+1144;3246;impassable;0;0;
+1145;3246;impassable;0;0;
+1146;3246;impassable;0;0;
+1147;3246;impassable;0;0;
+1148;3246;impassable;0;0;
+1149;3246;impassable;0;0;
+1150;3246;impassable;0;0;
+1151;3246;impassable;0;0;
+1152;3246;impassable;0;0;
+1153;3246;impassable;0;0;
+1154;3246;impassable;0;0;
+1155;3246;impassable;0;0;
+1156;3246;impassable;0;0;
+1157;3246;impassable;0;0;
+1158;3246;impassable;0;0;
+1159;3246;impassable;0;0;
+1160;3246;impassable;0;0;
+1161;3246;impassable;0;0;
+1162;3246;impassable;0;0;
+1163;3246;impassable;0;0;
+1164;3246;impassable;0;0;
+1165;3246;impassable;0;0;
+1166;3246;impassable;0;0;
+1167;3246;impassable;0;0;
+1168;3246;impassable;0;0;
+1169;3246;impassable;0;0;
+1170;3246;impassable;0;0;
+1171;3246;impassable;0;0;
+1172;3246;impassable;0;0;
+1173;3246;impassable;0;0;
+1174;3246;impassable;0;0;
+1175;3246;impassable;0;0;
+1176;3246;impassable;0;0;
+1177;3246;impassable;0;0;
+1178;3246;impassable;0;0;
+1179;3246;impassable;0;0;
+1180;3246;impassable;0;0;
+1181;3246;impassable;0;0;
+1182;3246;impassable;0;0;
+1183;3246;impassable;0;0;
+1184;3246;impassable;0;0;
+1185;3246;impassable;0;0;
+1186;3246;impassable;0;0;
+1187;3246;impassable;0;0;
+1188;3246;impassable;0;0;
+1189;3246;impassable;0;0;
+1190;3246;impassable;0;0;
+1191;3246;impassable;0;0;
+1192;3246;impassable;0;0;
+1193;3246;impassable;0;0;
+1194;3246;impassable;0;0;
+1195;3246;impassable;0;0;
+1196;3246;impassable;0;0;
+1197;3246;impassable;0;0;
+1198;3246;impassable;0;0;
+1199;3246;impassable;0;0;
+1200;3246;impassable;0;0;
+1201;3246;impassable;0;0;
+1202;3246;impassable;0;0;
+1203;3246;impassable;0;0;
+1204;3246;impassable;0;0;
+1205;3246;impassable;0;0;
+1206;3246;impassable;0;0;
+1207;3246;impassable;0;0;
+1208;3246;impassable;0;0;
+1209;3246;impassable;0;0;
+1210;3246;impassable;0;0;
+1211;3246;impassable;0;0;
+1212;3246;impassable;0;0;
+1213;3246;impassable;0;0;
+1214;3246;impassable;0;0;
+1215;3246;impassable;0;0;
+1216;3246;impassable;0;0;
+1217;3246;impassable;0;0;
+1218;3246;impassable;0;0;
+1219;3246;impassable;0;0;
+1220;3246;impassable;0;0;
+1221;3246;impassable;0;0;
+1222;3246;impassable;0;0;
+1223;3246;impassable;0;0;
+1224;3246;impassable;0;0;
+1225;3246;impassable;0;0;
+1226;3246;impassable;0;0;
+1227;3246;impassable;0;0;
+1228;3246;impassable;0;0;
+1229;3246;impassable;0;0;
+1230;3246;impassable;0;0;
+1231;3246;impassable;0;0;
+1232;3246;impassable;0;0;
+1233;3246;impassable;0;0;
+1234;3246;impassable;0;0;
+1235;3246;impassable;0;0;
+1236;3246;impassable;0;0;
+1237;3246;impassable;0;0;
+1238;3246;impassable;0;0;
+1239;3246;impassable;0;0;
+1240;3246;impassable;0;0;
+1241;3246;impassable;0;0;
+1242;3246;impassable;0;0;
+1243;3246;impassable;0;0;
+1244;3246;impassable;0;0;
+1245;3246;impassable;0;0;
+1246;3246;impassable;0;0;
+1247;3246;impassable;0;0;
+1248;3246;impassable;0;0;
+1249;3246;impassable;0;0;
+1250;3246;impassable;0;0;
+1251;3246;impassable;0;0;
+1252;3246;impassable;0;0;
+1253;3246;impassable;0;0;
+1254;3246;impassable;0;0;
+1255;3246;impassable;0;0;
+1256;3246;impassable;0;0;
+1257;3246;impassable;0;0;
+1258;3246;impassable;0;0;
+1259;3246;impassable;0;0;
+1260;3246;impassable;0;0;
+1261;3246;impassable;0;0;
+1262;3246;impassable;0;0;
+1263;3246;impassable;0;0;
+1264;3246;impassable;0;0;
+1265;3246;impassable;0;0;
+1266;3246;impassable;0;0;
+1267;3246;impassable;0;0;
+1268;3246;impassable;0;0;
+1269;3246;impassable;0;0;
+1270;3246;impassable;0;0;
+1271;3246;impassable;0;0;
+1272;3246;impassable;0;0;
+1273;3246;impassable;0;0;
+1274;3246;impassable;0;0;
+1275;3246;impassable;0;0;
+1276;3246;impassable;0;0;
+1277;3246;impassable;0;0;
+1278;3246;impassable;0;0;
+1279;3246;impassable;0;0;
+1280;3246;impassable;0;0;
+1281;3246;impassable;0;0;
+1282;3246;impassable;0;0;
+1283;3246;impassable;0;0;
+1284;3246;impassable;0;0;
+1285;3246;impassable;0;0;
+1286;3246;impassable;0;0;
+1287;3246;impassable;0;0;
+1288;3246;impassable;0;0;
+1289;3246;impassable;0;0;
+1290;3246;impassable;0;0;
+1291;3246;impassable;0;0;
+1292;3246;impassable;0;0;
+1293;3246;impassable;0;0;
+1294;3246;impassable;0;0;
+1295;3246;impassable;0;0;
+1296;3246;impassable;0;0;
+1297;3246;impassable;0;0;
+1298;3246;impassable;0;0;
+1299;3246;impassable;0;0;
+1300;3246;impassable;0;0;
+1301;3246;impassable;0;0;
+1302;3246;impassable;0;0;
+1303;3246;impassable;0;0;
+1304;3246;impassable;0;0;
+1305;3246;impassable;0;0;
+1306;3246;impassable;0;0;
+1307;3246;impassable;0;0;
+1308;3246;impassable;0;0;
+1309;3246;impassable;0;0;
+1310;3246;impassable;0;0;
+1311;3246;impassable;0;0;
+1312;3246;impassable;0;0;
+1313;3246;impassable;0;0;
+1314;3246;impassable;0;0;
+1315;3246;impassable;0;0;
+1316;3246;impassable;0;0;
+1317;3246;impassable;0;0;
+1318;3246;impassable;0;0;
+1319;3246;impassable;0;0;
+1320;3246;impassable;0;0;
+1321;3246;impassable;0;0;
+1322;3246;impassable;0;0;
+1323;3246;impassable;0;0;
+1324;3246;impassable;0;0;
+1325;3246;impassable;0;0;
+1326;3246;impassable;0;0;
+1327;3246;impassable;0;0;
+1328;3246;impassable;0;0;
+1329;3246;impassable;0;0;
+1330;3246;impassable;0;0;
+1331;3246;impassable;0;0;
+1332;3246;impassable;0;0;
+1333;3246;impassable;0;0;
+1334;3246;impassable;0;0;
+1335;3246;impassable;0;0;
+1336;3246;impassable;0;0;
+1337;3246;impassable;0;0;
+1338;3246;impassable;0;0;
+1339;3246;impassable;0;0;
+1340;3246;impassable;0;0;
+1341;3246;impassable;0;0;
+1342;3246;impassable;0;0;
+1343;3246;impassable;0;0;
+1344;3246;impassable;0;0;
+1345;3246;impassable;0;0;
+1346;3246;impassable;0;0;
+1347;3246;impassable;0;0;
+1348;3246;impassable;0;0;
+1349;3246;impassable;0;0;
+1350;3246;impassable;0;0;
+1351;3246;impassable;0;0;
+1352;3246;impassable;0;0;
+1353;3246;impassable;0;0;
+1354;3246;impassable;0;0;
+1355;3246;impassable;0;0;
+1356;3246;impassable;0;0;
+1357;3246;impassable;0;0;
+1358;3246;impassable;0;0;
+1359;3246;impassable;0;0;
+1360;3246;impassable;0;0;
+1361;3246;impassable;0;0;
+1362;3246;impassable;0;0;
+1363;3246;impassable;0;0;
+1364;3246;impassable;0;0;
+1365;3246;impassable;0;0;
+1366;3246;impassable;0;0;
+1367;3246;impassable;0;0;
+1368;3246;impassable;0;0;
+1369;3246;impassable;0;0;
+1370;3246;impassable;0;0;
+1371;3246;impassable;0;0;
+1372;3246;impassable;0;0;
+1373;3246;impassable;0;0;
+1374;3246;impassable;0;0;
+1375;3246;impassable;0;0;
+1376;3246;impassable;0;0;
+1377;3246;impassable;0;0;
+1378;3246;impassable;0;0;
+1379;3246;impassable;0;0;
+1380;3246;impassable;0;0;
+1381;3246;impassable;0;0;
+1382;3246;impassable;0;0;
+1383;3246;impassable;0;0;
+1384;3246;impassable;0;0;
+1385;3246;impassable;0;0;
+1386;3246;impassable;0;0;
+1387;3246;impassable;0;0;
+1388;3246;impassable;0;0;
+1389;3246;impassable;0;0;
+1390;3246;impassable;0;0;
+1391;3246;impassable;0;0;
+1392;3246;impassable;0;0;
+1393;3246;impassable;0;0;
+1394;3246;impassable;0;0;
+1395;3246;impassable;0;0;
+1396;3246;impassable;0;0;
+1397;3246;impassable;0;0;
+1398;3246;impassable;0;0;
+1399;3246;impassable;0;0;
+1400;3246;impassable;0;0;
+1401;3246;impassable;0;0;
+1402;3246;impassable;0;0;
+1403;3246;impassable;0;0;
+1404;3246;impassable;0;0;
+1405;3246;impassable;0;0;
+1406;3246;impassable;0;0;
+1407;3246;impassable;0;0;
+1408;3246;impassable;0;0;
+1409;3246;impassable;0;0;
+1410;3246;impassable;0;0;
+1411;3246;impassable;0;0;
+1412;3246;impassable;0;0;
+1413;3246;impassable;0;0;
+1414;3246;impassable;0;0;
+1415;3246;impassable;0;0;
+1416;3246;impassable;0;0;
+1417;3246;impassable;0;0;
+1418;3246;impassable;0;0;
+1419;3246;impassable;0;0;
+1420;3246;impassable;0;0;
+1421;3246;impassable;0;0;
+1422;3246;impassable;0;0;
+1423;3246;impassable;0;0;
+1424;3246;impassable;0;0;
+1425;3246;impassable;0;0;
+1426;3246;impassable;0;0;
+1427;3246;impassable;0;0;
+1428;3246;impassable;0;0;
+1429;3246;impassable;0;0;
+1430;3246;impassable;0;0;
+1431;3246;impassable;0;0;
+1432;3246;impassable;0;0;
+1433;3246;impassable;0;0;
+1434;3246;impassable;0;0;
+1435;3246;impassable;0;0;
+1436;3246;impassable;0;0;
+1437;3246;impassable;0;0;
+1438;3246;impassable;0;0;
+1439;3246;impassable;0;0;
+1440;3246;impassable;0;0;
+1441;3246;impassable;0;0;
+1442;3246;impassable;0;0;
+1443;3246;impassable;0;0;
+1444;3246;impassable;0;0;
+1445;3246;impassable;0;0;
+1446;3246;impassable;0;0;
+1447;3246;impassable;0;0;
+1448;3246;impassable;0;0;
+1449;3246;impassable;0;0;
+1450;3246;impassable;0;0;
+1451;3246;impassable;0;0;
+1452;3246;impassable;0;0;
+1453;3246;impassable;0;0;
+1454;3246;impassable;0;0;
+1455;3246;impassable;0;0;
+1456;3246;impassable;0;0;
+1457;3246;impassable;0;0;
+1458;3246;impassable;0;0;
+1459;3246;impassable;0;0;
+1460;3246;impassable;0;0;
+1461;3246;impassable;0;0;
+1462;3246;impassable;0;0;
+1463;3246;impassable;0;0;
+1464;3246;impassable;0;0;
+1465;3246;impassable;0;0;
+1466;3246;impassable;0;0;
+1467;3246;impassable;0;0;
+1468;3246;impassable;0;0;
+1469;3246;impassable;0;0;
+1470;3246;impassable;0;0;
+1471;3246;impassable;0;0;
+1472;3246;impassable;0;0;
+1473;3246;impassable;0;0;
+1474;3246;impassable;0;0;
+1475;3246;impassable;0;0;
+1476;3246;impassable;0;0;
+1477;3246;impassable;0;0;
+1478;3246;impassable;0;0;
+1479;3246;impassable;0;0;
+1480;3246;impassable;0;0;
+1481;3246;impassable;0;0;
+1482;3246;impassable;0;0;
+1483;3246;impassable;0;0;
+1484;3246;impassable;0;0;
+1485;3246;impassable;0;0;
+1486;3246;impassable;0;0;
+1487;3246;impassable;0;0;
+1488;3246;impassable;0;0;
+1489;3246;impassable;0;0;
+1490;3246;impassable;0;0;
+1491;3246;impassable;0;0;
+1492;3246;impassable;0;0;
+1493;3246;impassable;0;0;
+1494;3246;impassable;0;0;
+1495;3246;impassable;0;0;
+1496;3246;impassable;0;0;
+1497;3246;impassable;0;0;
+1498;3246;impassable;0;0;
+1499;3246;impassable;0;0;
+1500;3246;impassable;0;0;
+1501;3246;impassable;0;0;
+1502;3246;impassable;0;0;
+1503;3246;impassable;0;0;
+1504;3246;impassable;0;0;
+1505;3246;impassable;0;0;
+1506;3246;impassable;0;0;
+1507;3246;impassable;0;0;
+1508;3246;impassable;0;0;
+1509;3246;impassable;0;0;
+1510;3246;impassable;0;0;
+1511;3246;impassable;0;0;
+1512;3246;impassable;0;0;
+1513;3246;impassable;0;0;
+1514;3246;impassable;0;0;
+1515;3246;impassable;0;0;
+1516;3246;impassable;0;0;
+1517;3246;impassable;0;0;
+1518;3246;impassable;0;0;
+1519;3246;impassable;0;0;
+1520;3246;impassable;0;0;
+1521;3246;impassable;0;0;
+1522;3246;impassable;0;0;
+1523;3246;impassable;0;0;
+1524;3246;impassable;0;0;
+1525;3246;impassable;0;0;
+1526;3246;impassable;0;0;
+1527;3246;impassable;0;0;
+1528;3246;impassable;0;0;
+1529;3246;impassable;0;0;
+1530;3246;impassable;0;0;
+1531;3246;impassable;0;0;
+1532;3246;impassable;0;0;
+1533;3246;impassable;0;0;
+1534;3246;impassable;0;0;
+1535;3246;impassable;0;0;
+1536;3246;impassable;0;0;
+1537;3246;impassable;0;0;
+1538;3246;impassable;0;0;
+1539;3246;impassable;0;0;
+1540;3246;impassable;0;0;
+1541;3246;impassable;0;0;
+1542;3246;impassable;0;0;
+1543;3246;impassable;0;0;
+1544;3246;impassable;0;0;
+1545;3246;impassable;0;0;
+1546;3246;impassable;0;0;
+1547;3246;impassable;0;0;
+1548;3246;impassable;0;0;
+1549;3246;impassable;0;0;
+1550;3246;impassable;0;0;
+1551;3246;impassable;0;0;
+1552;3246;impassable;0;0;
+1553;3246;impassable;0;0;
+1554;3246;impassable;0;0;
+1555;3246;impassable;0;0;
+1556;3246;impassable;0;0;
+1557;3246;impassable;0;0;
+1558;3246;impassable;0;0;
+1559;3246;impassable;0;0;
+1560;3246;impassable;0;0;
+1561;3246;impassable;0;0;
+1562;3246;impassable;0;0;
+1563;3246;impassable;0;0;
+1564;3246;impassable;0;0;
+1565;3246;impassable;0;0;
+1566;3246;impassable;0;0;
+1567;3246;impassable;0;0;
+1568;3246;impassable;0;0;
+1569;3246;impassable;0;0;
+1570;3246;impassable;0;0;
+1571;3246;impassable;0;0;
+1572;3246;impassable;0;0;
+1573;3246;impassable;0;0;
+1574;3246;impassable;0;0;
+1575;3246;impassable;0;0;
+1576;3246;impassable;0;0;
+1577;3246;impassable;0;0;
+1578;3246;impassable;0;0;
+1579;3246;impassable;0;0;
+1580;3246;impassable;0;0;
+1581;3246;impassable;0;0;
+1582;3246;impassable;0;0;
+1583;3246;impassable;0;0;
+1584;3246;impassable;0;0;
+1585;3246;impassable;0;0;
+1586;3246;impassable;0;0;
+1587;3246;impassable;0;0;
+1588;3246;impassable;0;0;
+1589;3246;impassable;0;0;
+1590;3246;impassable;0;0;
+1591;3246;impassable;0;0;
+1592;3246;impassable;0;0;
+1593;3246;impassable;0;0;
+1594;3246;impassable;0;0;
+1595;3246;impassable;0;0;
+1596;3246;impassable;0;0;
+1597;3246;impassable;0;0;
+1598;3246;impassable;0;0;
+1599;3246;impassable;0;0;
+1600;3246;impassable;0;0;
+1601;3246;impassable;0;0;
+1602;3246;impassable;0;0;
+1603;3246;impassable;0;0;
+1604;3246;impassable;0;0;
+1605;3246;impassable;0;0;
+1606;3246;impassable;0;0;
+1607;3246;impassable;0;0;
+1608;3246;impassable;0;0;
+1609;3246;impassable;0;0;
+1610;3246;impassable;0;0;
+1611;3246;impassable;0;0;
+1612;3246;impassable;0;0;
+1613;3246;impassable;0;0;
+1614;3246;impassable;0;0;
+1615;3246;impassable;0;0;
+1616;3246;impassable;0;0;
+1617;3246;impassable;0;0;
+1618;3246;impassable;0;0;
+1619;3246;impassable;0;0;
+1620;3246;impassable;0;0;
+1621;3246;impassable;0;0;
+1622;3246;impassable;0;0;
+1623;3246;impassable;0;0;
+1624;3246;impassable;0;0;
+1625;3246;impassable;0;0;
+1626;3246;impassable;0;0;
+1627;3246;impassable;0;0;
+1628;3246;impassable;0;0;
+1629;3246;impassable;0;0;
+1630;3246;impassable;0;0;
+1631;3246;impassable;0;0;
+1632;3246;impassable;0;0;
+1633;3246;impassable;0;0;
+1634;3246;impassable;0;0;
+1635;3246;impassable;0;0;
+1636;3246;impassable;0;0;
+1637;3246;impassable;0;0;
+1638;3246;impassable;0;0;
+1639;3246;impassable;0;0;
+1640;3246;impassable;0;0;
+1641;3246;impassable;0;0;
+1642;3246;impassable;0;0;
+1643;3246;impassable;0;0;
+1644;3246;impassable;0;0;
+1645;3246;impassable;0;0;
+1646;3246;impassable;0;0;
+1647;3246;impassable;0;0;
+1648;3246;impassable;0;0;
+1649;3246;impassable;0;0;
+1650;3246;impassable;0;0;
+1651;3246;impassable;0;0;
+1652;3246;impassable;0;0;
+1653;3246;impassable;0;0;
+1654;3246;impassable;0;0;
+1655;3246;impassable;0;0;
+1656;3246;impassable;0;0;
+1657;3246;impassable;0;0;
+1658;3246;impassable;0;0;
+1659;3246;impassable;0;0;
+1660;3246;impassable;0;0;
+1661;3246;impassable;0;0;
+1662;3246;impassable;0;0;
+1663;3246;impassable;0;0;
+1664;3246;impassable;0;0;
+1665;3246;impassable;0;0;
+1666;3246;impassable;0;0;
+1667;3246;impassable;0;0;
+1668;3246;impassable;0;0;
+1669;3246;impassable;0;0;
+1670;3246;impassable;0;0;
+1671;3246;impassable;0;0;
+1672;3246;impassable;0;0;
+1673;3246;impassable;0;0;
+1674;3246;impassable;0;0;
+1675;3246;impassable;0;0;
+1676;3246;impassable;0;0;
+1677;3246;impassable;0;0;
+1678;3246;impassable;0;0;
+1679;3246;impassable;0;0;
+1680;3246;impassable;0;0;
+1681;3246;impassable;0;0;
+1682;3246;impassable;0;0;
+1683;3246;impassable;0;0;
+1684;3246;impassable;0;0;
+1685;3246;impassable;0;0;
+1686;3246;impassable;0;0;
+1687;3246;impassable;0;0;
+1688;3246;impassable;0;0;
+1689;3246;impassable;0;0;
+1690;3246;impassable;0;0;
+1691;3246;impassable;0;0;
+1692;3246;impassable;0;0;
+1693;3246;impassable;0;0;
+1694;3246;impassable;0;0;
+1695;3246;impassable;0;0;
+1696;3246;impassable;0;0;
+1697;3246;impassable;0;0;
+1698;3246;impassable;0;0;
+1699;3246;impassable;0;0;
+1700;3246;impassable;0;0;
+1701;3246;impassable;0;0;
+1702;3246;impassable;0;0;
+1703;3246;impassable;0;0;
+1704;3246;impassable;0;0;
+1705;3246;impassable;0;0;
+1706;3246;impassable;0;0;
+1707;3246;impassable;0;0;
+1708;3246;impassable;0;0;
+1709;3246;impassable;0;0;
+1710;3246;impassable;0;0;
+1711;3246;impassable;0;0;
+1712;3246;impassable;0;0;
+1713;3246;impassable;0;0;
+1714;3246;impassable;0;0;
+1715;3246;impassable;0;0;
+1716;3246;impassable;0;0;
+1717;3246;impassable;0;0;
+1718;3246;impassable;0;0;
+1719;3246;impassable;0;0;
+1720;3246;impassable;0;0;
+1721;3246;impassable;0;0;
+1722;3246;impassable;0;0;
+1723;3246;impassable;0;0;
+1724;3246;impassable;0;0;
+1725;3246;impassable;0;0;
+1726;3246;impassable;0;0;
+1727;3246;impassable;0;0;
+1728;3246;impassable;0;0;
+1729;3246;impassable;0;0;
+1730;3246;impassable;0;0;
+1731;3246;impassable;0;0;
+1732;3246;impassable;0;0;
+1733;3246;impassable;0;0;
+1734;3246;impassable;0;0;
+1735;3246;impassable;0;0;
+1736;3246;impassable;0;0;
+1737;3246;impassable;0;0;
+1738;3246;impassable;0;0;
+1739;3246;impassable;0;0;
+1740;3246;impassable;0;0;
+1741;3246;impassable;0;0;
+1742;3246;impassable;0;0;
+1743;3246;impassable;0;0;
+1744;3246;impassable;0;0;
+1745;3246;impassable;0;0;
+1746;3246;impassable;0;0;
+1747;3246;impassable;0;0;
+1748;3246;impassable;0;0;
+1749;3246;impassable;0;0;
+1750;3246;impassable;0;0;
+1751;3246;impassable;0;0;
+1752;3246;impassable;0;0;
+1753;3246;impassable;0;0;
+1754;3246;impassable;0;0;
+1755;3246;impassable;0;0;
+1756;3246;impassable;0;0;
+1757;3246;impassable;0;0;
+1758;3246;impassable;0;0;
+1759;3246;impassable;0;0;
+1760;3246;impassable;0;0;
+1761;3246;impassable;0;0;
+1762;3246;impassable;0;0;
+1763;3246;impassable;0;0;
+1764;3246;impassable;0;0;
+1765;3246;impassable;0;0;
+1766;3246;impassable;0;0;
+1767;3246;impassable;0;0;
+1768;3246;impassable;0;0;
+1769;3246;impassable;0;0;
+1770;3246;impassable;0;0;
+1771;3246;impassable;0;0;
+1772;3246;impassable;0;0;
+1773;3246;impassable;0;0;
+1774;3246;impassable;0;0;
+1775;3246;impassable;0;0;
+1776;3246;impassable;0;0;
+1777;3246;impassable;0;0;
+1778;3246;impassable;0;0;
+1779;3246;impassable;0;0;
+1780;3246;impassable;0;0;
+1781;3246;impassable;0;0;
+1782;3246;impassable;0;0;
+1783;3246;impassable;0;0;
+1784;3246;impassable;0;0;
+1785;3246;impassable;0;0;
+1786;3246;impassable;0;0;
+1787;3246;impassable;0;0;
+1788;3246;impassable;0;0;
+1789;3246;impassable;0;0;
+1790;3246;impassable;0;0;
+1791;3246;impassable;0;0;
+1792;3246;impassable;0;0;
+1793;3246;impassable;0;0;
+1794;3246;impassable;0;0;
+1795;3246;impassable;0;0;
+1796;3246;impassable;0;0;
+1797;3246;impassable;0;0;
+1798;3246;impassable;0;0;
+1799;3246;impassable;0;0;
+1800;3246;impassable;0;0;
+1801;3246;impassable;0;0;
+1802;3246;impassable;0;0;
+1803;3246;impassable;0;0;
+1804;3246;impassable;0;0;
+1805;3246;impassable;0;0;
+1806;3246;impassable;0;0;
+1807;3246;impassable;0;0;
+1808;3246;impassable;0;0;
+1809;3246;impassable;0;0;
+1810;3246;impassable;0;0;
+1811;3246;impassable;0;0;
+1812;3246;impassable;0;0;
+1813;3246;impassable;0;0;
+1814;3246;impassable;0;0;
+1815;3246;impassable;0;0;
+1816;3246;impassable;0;0;
+1817;3246;impassable;0;0;
+1818;3246;impassable;0;0;
+1819;3246;impassable;0;0;
+1820;3246;impassable;0;0;
+1821;3246;impassable;0;0;
+1822;3246;impassable;0;0;
+1823;3246;impassable;0;0;
+1824;3246;impassable;0;0;
+1825;3246;impassable;0;0;
+1826;3246;impassable;0;0;
+1827;3246;impassable;0;0;
+1828;3246;impassable;0;0;
+1829;3246;impassable;0;0;
+1830;3246;impassable;0;0;
+1831;3246;impassable;0;0;
+1832;3246;impassable;0;0;
+1833;3246;impassable;0;0;
+1834;3246;impassable;0;0;
+1835;3246;impassable;0;0;
+1836;3246;impassable;0;0;
+1837;3246;impassable;0;0;
+1838;3246;impassable;0;0;
+1839;3246;impassable;0;0;
+1840;3246;impassable;0;0;
+1841;3246;impassable;0;0;
+1842;3246;impassable;0;0;
+1843;3246;impassable;0;0;
+1844;3246;impassable;0;0;
+1845;3246;impassable;0;0;
+1846;3246;impassable;0;0;
+1847;3246;impassable;0;0;
+1848;3246;impassable;0;0;
+1849;3246;impassable;0;0;
+1850;3246;impassable;0;0;
+1851;3246;impassable;0;0;
+1852;3246;impassable;0;0;
+1853;3246;impassable;0;0;
+1854;3246;impassable;0;0;
+1855;3246;impassable;0;0;
+1856;3246;impassable;0;0;
+1857;3246;impassable;0;0;
+1858;3246;impassable;0;0;
+1859;3246;impassable;0;0;
+1860;3246;impassable;0;0;
+1861;3246;impassable;0;0;
+1862;3246;impassable;0;0;
+1863;3246;impassable;0;0;
+1864;3246;impassable;0;0;
+1865;3246;impassable;0;0;
+1866;3246;impassable;0;0;
+1867;3246;impassable;0;0;
+1868;3246;impassable;0;0;
+1869;3246;impassable;0;0;
+1870;3246;impassable;0;0;
+1871;3246;impassable;0;0;
+1872;3246;impassable;0;0;
+1873;3246;impassable;0;0;
+1874;3246;impassable;0;0;
+1875;3246;impassable;0;0;
+1876;3246;impassable;0;0;
+1877;3246;impassable;0;0;
+1878;3246;impassable;0;0;
+1879;3246;impassable;0;0;
+1880;3246;impassable;0;0;
+1881;3246;impassable;0;0;
+1882;3246;impassable;0;0;
+1883;3246;impassable;0;0;
+1884;3246;impassable;0;0;
+1885;3246;impassable;0;0;
+1886;3246;impassable;0;0;
+1887;3246;impassable;0;0;
+1888;3246;impassable;0;0;
+1889;3246;impassable;0;0;
+1890;3246;impassable;0;0;
+1891;3246;impassable;0;0;
+1892;3246;impassable;0;0;
+1893;3246;impassable;0;0;
+1894;3246;impassable;0;0;
+1895;3246;impassable;0;0;
+1896;3246;impassable;0;0;
+1897;3246;impassable;0;0;
+1898;3246;impassable;0;0;
+1899;3246;impassable;0;0;
+1900;3246;impassable;0;0;
+1901;3246;impassable;0;0;
+1902;3246;impassable;0;0;
+1903;3246;impassable;0;0;
+1904;3246;impassable;0;0;
+1905;3246;impassable;0;0;
+1906;3246;impassable;0;0;
+1907;3246;impassable;0;0;
+1908;3246;impassable;0;0;
+1909;3246;impassable;0;0;
+1910;3246;impassable;0;0;
+1911;3246;impassable;0;0;
+1912;3246;impassable;0;0;
+1913;3246;impassable;0;0;
+1914;3246;impassable;0;0;
+1915;3246;impassable;0;0;
+1916;3246;impassable;0;0;
+1917;3246;impassable;0;0;
+1918;3246;impassable;0;0;
+1919;3246;impassable;0;0;
+1920;3246;impassable;0;0;
+1921;3246;impassable;0;0;
+1922;3246;impassable;0;0;
+1923;3246;impassable;0;0;
+1924;3246;impassable;0;0;
+1925;3246;impassable;0;0;
+1926;3246;impassable;0;0;
+1927;3246;impassable;0;0;
+1928;3246;impassable;0;0;
+1929;3246;impassable;0;0;
+1930;3246;impassable;0;0;
+1931;3246;impassable;0;0;
+1932;3246;impassable;0;0;
+1933;3246;impassable;0;0;
+1934;3246;impassable;0;0;
+1935;3246;impassable;0;0;
+1936;3246;impassable;0;0;
+1937;3246;impassable;0;0;
+1938;3246;impassable;0;0;
+1939;3246;impassable;0;0;
+1940;3246;impassable;0;0;
+1941;3246;impassable;0;0;
+1942;3246;impassable;0;0;
+1943;3246;impassable;0;0;
+1944;3246;impassable;0;0;
+1945;3246;impassable;0;0;
+1946;3246;impassable;0;0;
+1947;3246;impassable;0;0;
+1948;3246;impassable;0;0;
+1949;3246;impassable;0;0;
+1950;3246;impassable;0;0;
+1951;3246;impassable;0;0;
+1952;3246;impassable;0;0;
+1953;3246;impassable;0;0;
+1954;3246;impassable;0;0;
+1955;3246;impassable;0;0;
+1956;3246;impassable;0;0;
+1957;3246;impassable;0;0;
+1958;3246;impassable;0;0;
+1959;3246;impassable;0;0;
+1960;3246;impassable;0;0;
+1961;3246;impassable;0;0;
+1962;3246;impassable;0;0;
+1963;3246;impassable;0;0;
+1964;3246;impassable;0;0;
+1965;3246;impassable;0;0;
+1966;3246;impassable;0;0;
+1967;3246;impassable;0;0;
+1968;3246;impassable;0;0;
+1969;3246;impassable;0;0;
+1970;3246;impassable;0;0;
+1971;3246;impassable;0;0;
+1972;3246;impassable;0;0;
+1973;3246;impassable;0;0;
+1974;3246;impassable;0;0;
+1975;3246;impassable;0;0;
+1976;3246;impassable;0;0;
+1977;3246;impassable;0;0;
+1978;3246;impassable;0;0;
+1979;3246;impassable;0;0;
+1980;3246;impassable;0;0;
+1981;3246;impassable;0;0;
+1982;3246;impassable;0;0;
+1983;3246;impassable;0;0;
+1984;3246;impassable;0;0;
+1985;3246;impassable;0;0;
+1986;3246;impassable;0;0;
+1987;3246;impassable;0;0;
+1988;3246;impassable;0;0;
+1989;3246;impassable;0;0;
+1990;3246;impassable;0;0;
+1991;3246;impassable;0;0;
+1992;3246;impassable;0;0;
+1993;3246;impassable;0;0;
+1994;3246;impassable;0;0;
+1995;3246;impassable;0;0;
+1996;3246;impassable;0;0;
+1997;3246;impassable;0;0;
+1998;3246;impassable;0;0;
+1999;3246;impassable;0;0;
+2000;3246;impassable;0;0;
+2001;3246;impassable;0;0;
+2002;3246;impassable;0;0;
+2003;3246;impassable;0;0;
+2004;3246;impassable;0;0;
+2005;3246;impassable;0;0;
+2006;3246;impassable;0;0;
+2007;3246;impassable;0;0;
+2008;3246;impassable;0;0;
+2009;3246;impassable;0;0;
+2010;3246;impassable;0;0;
+2011;3246;impassable;0;0;
+2012;3246;impassable;0;0;
+2013;3246;impassable;0;0;
+2014;3246;impassable;0;0;
+2015;3246;impassable;0;0;
+2016;3246;impassable;0;0;
+2017;3246;impassable;0;0;
+2018;3246;impassable;0;0;
+2019;3246;impassable;0;0;
+2020;3246;impassable;0;0;
+2021;3246;impassable;0;0;
+2022;3246;impassable;0;0;
+2023;3246;impassable;0;0;
+2024;3246;impassable;0;0;
+2025;3246;impassable;0;0;
+2026;3246;impassable;0;0;
+2027;3246;impassable;0;0;
+2028;3246;impassable;0;0;
+2029;3246;impassable;0;0;
+2030;3246;impassable;0;0;
+2031;3246;impassable;0;0;
+2032;3246;impassable;0;0;
+2033;3246;impassable;0;0;
+2034;3246;impassable;0;0;
+2035;3246;impassable;0;0;
+2036;3246;impassable;0;0;
+2037;3246;impassable;0;0;
+2038;3246;impassable;0;0;
+2039;3246;impassable;0;0;
+2040;3246;impassable;0;0;
+2041;3246;impassable;0;0;
+2042;3246;impassable;0;0;
+2043;3246;impassable;0;0;
+2044;3246;impassable;0;0;
+2045;3246;impassable;0;0;
+2046;3246;impassable;0;0;
+2047;3246;impassable;0;0;
+2048;3246;impassable;0;0;
+2049;3246;impassable;0;0;
+2050;3246;impassable;0;0;
+2051;3246;impassable;0;0;
+2052;3246;impassable;0;0;
+2053;3246;impassable;0;0;
+2054;3246;impassable;0;0;
+2055;3246;impassable;0;0;
+2056;3246;impassable;0;0;
+2057;3246;impassable;0;0;
+2058;3246;impassable;0;0;
+2059;3246;impassable;0;0;
+2060;3246;impassable;0;0;
+2061;3246;impassable;0;0;
+2062;3246;impassable;0;0;
+2063;3246;impassable;0;0;
+2064;3246;impassable;0;0;
+2065;3246;impassable;0;0;
+2066;3246;impassable;0;0;
+2067;3246;impassable;0;0;
+2068;3246;impassable;0;0;
+2069;3246;impassable;0;0;
+2070;3246;impassable;0;0;
+2071;3246;impassable;0;0;
+2072;3246;impassable;0;0;
+2073;3246;impassable;0;0;
+2074;3246;impassable;0;0;
+2075;3246;impassable;0;0;
+2076;3246;impassable;0;0;
+2077;3246;impassable;0;0;
+2078;3246;impassable;0;0;
+2079;3246;impassable;0;0;
+2080;3246;impassable;0;0;
+2081;3246;impassable;0;0;
+2082;3246;impassable;0;0;
+2083;3246;impassable;0;0;
+2084;3246;impassable;0;0;
+2085;3246;impassable;0;0;
+2086;3246;impassable;0;0;
+2087;3246;impassable;0;0;
+2088;3246;impassable;0;0;
+2089;3246;impassable;0;0;
+2090;3246;impassable;0;0;
+2091;3246;impassable;0;0;
+2092;3246;impassable;0;0;
+2093;3246;impassable;0;0;
+2094;3246;impassable;0;0;
+2095;3246;impassable;0;0;
+2096;3246;impassable;0;0;
+2097;3246;impassable;0;0;
+2098;3246;impassable;0;0;
+2099;3246;impassable;0;0;
+2100;3246;impassable;0;0;
+2101;3246;impassable;0;0;
+2102;3246;impassable;0;0;
+2103;3246;impassable;0;0;
+2104;3246;impassable;0;0;
+2105;3246;impassable;0;0;
+2106;3246;impassable;0;0;
+2107;3246;impassable;0;0;
+2108;3246;impassable;0;0;
+2109;3246;impassable;0;0;
+2110;3246;impassable;0;0;
+2111;3246;impassable;0;0;
+2112;3246;impassable;0;0;
+2113;3246;impassable;0;0;
+2114;3246;impassable;0;0;
+2115;3246;impassable;0;0;
+2116;3246;impassable;0;0;
+2117;3246;impassable;0;0;
+2118;3246;impassable;0;0;
+2119;3246;impassable;0;0;
+2120;3246;impassable;0;0;
+2121;3246;impassable;0;0;
+2122;3246;impassable;0;0;
+2123;3246;impassable;0;0;
+2124;3246;impassable;0;0;
+2125;3246;impassable;0;0;
+2126;3246;impassable;0;0;
+2127;3246;impassable;0;0;
+2128;3246;impassable;0;0;
+2129;3246;impassable;0;0;
+2130;3246;impassable;0;0;
+2131;3246;impassable;0;0;
+2132;3246;impassable;0;0;
+2133;3246;impassable;0;0;
+2134;3246;impassable;0;0;
+2135;3246;impassable;0;0;
+2136;3246;impassable;0;0;
+2137;3246;impassable;0;0;
+2138;3246;impassable;0;0;
+2139;3246;impassable;0;0;
+2140;3246;impassable;0;0;
+2141;3246;impassable;0;0;
+2142;3246;impassable;0;0;
+2143;3246;impassable;0;0;
+2144;3246;impassable;0;0;
+2145;3246;impassable;0;0;
+2146;3246;impassable;0;0;
+2147;3246;impassable;0;0;
+2148;3246;impassable;0;0;
+2149;3246;impassable;0;0;
+2150;3246;impassable;0;0;
+2151;3246;impassable;0;0;
+2152;3246;impassable;0;0;
+2153;3246;impassable;0;0;
+2154;3246;impassable;0;0;
+2155;3246;impassable;0;0;
+2156;3246;impassable;0;0;
+2157;3246;impassable;0;0;
+2158;3246;impassable;0;0;
+2159;3246;impassable;0;0;
+2160;3246;impassable;0;0;
+2161;3246;impassable;0;0;
+2162;3246;impassable;0;0;
+2163;3246;impassable;0;0;
+2164;3246;impassable;0;0;
+2165;3246;impassable;0;0;
+2166;3246;impassable;0;0;
+2167;3246;impassable;0;0;
+2168;3246;impassable;0;0;
+2169;3246;impassable;0;0;
+2170;3246;impassable;0;0;
+2171;3246;impassable;0;0;
+2172;3246;impassable;0;0;
+2173;3246;impassable;0;0;
+2174;3246;impassable;0;0;
+2175;3246;impassable;0;0;
+2176;3246;impassable;0;0;
+2177;3246;impassable;0;0;
+2178;3246;impassable;0;0;
+2179;3246;impassable;0;0;
+2180;3246;impassable;0;0;
+2181;3246;impassable;0;0;
+2182;3246;impassable;0;0;
+2183;3246;impassable;0;0;
+2184;3246;impassable;0;0;
+2185;3246;impassable;0;0;
+2186;3246;impassable;0;0;
+2187;3246;impassable;0;0;
+2188;3246;impassable;0;0;
+2189;3246;impassable;0;0;
+2190;3246;impassable;0;0;
+2191;3246;impassable;0;0;
+2192;3246;impassable;0;0;
+2193;3246;impassable;0;0;
+2194;3246;impassable;0;0;
+2195;3246;impassable;0;0;
+2196;3246;impassable;0;0;
+2197;3246;impassable;0;0;
+2198;3246;impassable;0;0;
+2199;3246;impassable;0;0;
+2200;3246;impassable;0;0;
+2201;3246;impassable;0;0;
+2202;3246;impassable;0;0;
+2203;3246;impassable;0;0;
+2204;3246;impassable;0;0;
+2205;3246;impassable;0;0;
+2206;3246;impassable;0;0;
+2207;3246;impassable;0;0;
+2208;3246;impassable;0;0;
+2209;3246;impassable;0;0;
+2210;3246;impassable;0;0;
+2211;3246;impassable;0;0;
+2212;3246;impassable;0;0;
+2213;3246;impassable;0;0;
+2214;3246;impassable;0;0;
+2215;3246;impassable;0;0;
+2216;3246;impassable;0;0;
+2217;3246;impassable;0;0;
+2218;3246;impassable;0;0;
+2219;3246;impassable;0;0;
+2220;3246;impassable;0;0;
+2221;3246;impassable;0;0;
+2222;3246;impassable;0;0;
+2223;3246;impassable;0;0;
+2224;3246;impassable;0;0;
+2225;3246;impassable;0;0;
+2226;3246;impassable;0;0;
+2227;3246;impassable;0;0;
+2228;3246;impassable;0;0;
+2229;3246;impassable;0;0;
+2230;3246;impassable;0;0;
+2231;3246;impassable;0;0;
+2232;3246;impassable;0;0;
+2233;3246;impassable;0;0;
+2234;3246;impassable;0;0;
+2235;3246;impassable;0;0;
+2236;3246;impassable;0;0;
+2237;3246;impassable;0;0;
+2238;3246;impassable;0;0;
+2239;3246;impassable;0;0;
+2240;3246;impassable;0;0;
+2241;3246;impassable;0;0;
+2242;3246;impassable;0;0;
+2243;3246;impassable;0;0;
+2244;3246;impassable;0;0;
+2245;3246;impassable;0;0;
+2246;3246;impassable;0;0;
+2247;3246;impassable;0;0;
+2248;3246;impassable;0;0;
+2249;3246;impassable;0;0;
+2250;3246;impassable;0;0;
+2251;3246;impassable;0;0;
+2252;3246;impassable;0;0;
+2253;3246;impassable;0;0;
+2254;3246;impassable;0;0;
+2255;3246;impassable;0;0;
+2256;3246;impassable;0;0;
+2257;3246;impassable;0;0;
+2258;3246;impassable;0;0;
+2259;3246;impassable;0;0;
+2260;3246;impassable;0;0;
+2261;3246;impassable;0;0;
+2262;3246;impassable;0;0;
+2263;3246;impassable;0;0;
+2264;3246;impassable;0;0;
+2265;3246;impassable;0;0;
+2266;3246;impassable;0;0;
+2267;3246;impassable;0;0;
+2268;3246;impassable;0;0;
+2269;3246;impassable;0;0;
+2270;3246;impassable;0;0;
+2271;3246;impassable;0;0;
+2272;3246;impassable;0;0;
+2273;3246;impassable;0;0;
+2274;3246;impassable;0;0;
+2275;3246;impassable;0;0;
+2276;3246;impassable;0;0;
+2277;3246;impassable;0;0;
+2278;3246;impassable;0;0;
+2279;3246;impassable;0;0;
+2280;3246;impassable;0;0;
+2281;3246;impassable;0;0;
+2282;3246;impassable;0;0;
+2283;3246;impassable;0;0;
+2284;3246;impassable;0;0;
+2285;3246;impassable;0;0;
+2286;3246;impassable;0;0;
+2287;3246;impassable;0;0;
+2288;3246;impassable;0;0;
+2289;3246;impassable;0;0;
+2290;3246;impassable;0;0;
+2291;3246;impassable;0;0;
+2292;3246;impassable;0;0;
+2293;3246;impassable;0;0;
+2294;3246;impassable;0;0;
+2295;3246;impassable;0;0;
+2296;3246;impassable;0;0;
+2297;3246;impassable;0;0;
+2298;3246;impassable;0;0;
+2299;3246;impassable;0;0;
+2300;3246;impassable;0;0;
+2301;3246;impassable;0;0;
+2302;3246;impassable;0;0;
+2303;3246;impassable;0;0;
+2304;3246;impassable;0;0;
+2305;3246;impassable;0;0;
+2306;3246;impassable;0;0;
+2307;3246;impassable;0;0;
+2308;3246;impassable;0;0;
+2309;3246;impassable;0;0;
+2310;3246;impassable;0;0;
+2311;3246;impassable;0;0;
+2312;3246;impassable;0;0;
+2313;3246;impassable;0;0;
+2314;3246;impassable;0;0;
+2315;3246;impassable;0;0;
+2316;3246;impassable;0;0;
+2317;3246;impassable;0;0;
+2318;3246;impassable;0;0;
+2319;3246;impassable;0;0;
+2320;3246;impassable;0;0;
+2321;3246;impassable;0;0;
+2322;3246;impassable;0;0;
+2323;3246;impassable;0;0;
+2324;3246;impassable;0;0;
+2325;3246;impassable;0;0;
+2326;3246;impassable;0;0;
+2327;3246;impassable;0;0;
+2328;3246;impassable;0;0;
+2329;3246;impassable;0;0;
+2330;3246;impassable;0;0;
+2331;3246;impassable;0;0;
+2332;3246;impassable;0;0;
+2333;3246;impassable;0;0;
+2334;3246;impassable;0;0;
+2335;3246;impassable;0;0;
+2336;3246;impassable;0;0;
+2337;3246;impassable;0;0;
+2338;3246;impassable;0;0;
+2339;3246;impassable;0;0;
+2340;3246;impassable;0;0;
+2341;3246;impassable;0;0;
+2342;3246;impassable;0;0;
+2343;3246;impassable;0;0;
+2344;3246;impassable;0;0;
+2345;3246;impassable;0;0;
+2346;3246;impassable;0;0;
+2347;3246;impassable;0;0;
+2348;3246;impassable;0;0;
+2349;3246;impassable;0;0;
+2350;3246;impassable;0;0;
+2351;3246;impassable;0;0;
+2352;3246;impassable;0;0;
+2353;3246;impassable;0;0;
+2354;3246;impassable;0;0;
+2355;3246;impassable;0;0;
+2356;3246;impassable;0;0;
+2357;3246;impassable;0;0;
+2358;3246;impassable;0;0;
+2359;3246;impassable;0;0;
+2360;3246;impassable;0;0;
+2361;3246;impassable;0;0;
+2362;3246;impassable;0;0;
+2363;3246;impassable;0;0;
+2364;3246;impassable;0;0;
+2365;3246;impassable;0;0;
+2366;3246;impassable;0;0;
+2367;3246;impassable;0;0;
+2368;3246;impassable;0;0;
+2369;3246;impassable;0;0;
+2370;3246;impassable;0;0;
+2371;3246;impassable;0;0;
+2372;3246;impassable;0;0;
+2373;3246;impassable;0;0;
+2374;3246;impassable;0;0;
+2375;3246;impassable;0;0;
+2376;3246;impassable;0;0;
+2377;3246;impassable;0;0;
+2378;3246;impassable;0;0;
+2379;3246;impassable;0;0;
+2380;3246;impassable;0;0;
+2381;3246;impassable;0;0;
+2382;3246;impassable;0;0;
+2383;3246;impassable;0;0;
+2384;3246;impassable;0;0;
+2385;3246;impassable;0;0;
+2386;3246;impassable;0;0;
+2387;3246;impassable;0;0;
+2388;3246;impassable;0;0;
+2389;3246;impassable;0;0;
+2390;3246;impassable;0;0;
+2391;3246;impassable;0;0;
+2392;3246;impassable;0;0;
+2393;3246;impassable;0;0;
+2394;3246;impassable;0;0;
+2395;3246;impassable;0;0;
+2396;3246;impassable;0;0;
+2397;3246;impassable;0;0;
+2398;3246;impassable;0;0;
+2399;3246;impassable;0;0;
+2400;3246;impassable;0;0;
+2401;3246;impassable;0;0;
+2402;3246;impassable;0;0;
+2403;3246;impassable;0;0;
+2404;3246;impassable;0;0;
+2405;3246;impassable;0;0;
+2406;3246;impassable;0;0;
+2407;3246;impassable;0;0;
+2408;3246;impassable;0;0;
+2409;3246;impassable;0;0;
+2410;3246;impassable;0;0;
+2411;3246;impassable;0;0;
+2412;3246;impassable;0;0;
+2413;3246;impassable;0;0;
+2414;3246;impassable;0;0;
+2415;3246;impassable;0;0;
+2416;3246;impassable;0;0;
+2417;3246;impassable;0;0;
+2418;3246;impassable;0;0;
+2419;3246;impassable;0;0;
+2420;3246;impassable;0;0;
+2421;3246;impassable;0;0;
+2422;3246;impassable;0;0;
+2423;3246;impassable;0;0;
+2424;3246;impassable;0;0;
+2425;3246;impassable;0;0;
+2426;3246;impassable;0;0;
+2427;3246;impassable;0;0;
+2428;3246;impassable;0;0;
+2429;3246;impassable;0;0;
+2430;3246;impassable;0;0;
+2431;3246;impassable;0;0;
+2432;3246;impassable;0;0;
+2433;3246;impassable;0;0;
+2434;3246;impassable;0;0;
+2435;3246;impassable;0;0;
+2436;3246;impassable;0;0;
+2437;3246;impassable;0;0;
+2438;3246;impassable;0;0;
+2439;3246;impassable;0;0;
+2440;3246;impassable;0;0;
+2441;3246;impassable;0;0;
+2442;3246;impassable;0;0;
+2443;3246;impassable;0;0;
+2444;3246;impassable;0;0;
+2445;3246;impassable;0;0;
+2446;3246;impassable;0;0;
+2447;3246;impassable;0;0;
+2448;3246;impassable;0;0;
+2449;3246;impassable;0;0;
+2450;3246;impassable;0;0;
+2451;3246;impassable;0;0;
+2452;3246;impassable;0;0;
+2453;3246;impassable;0;0;
+2454;3246;impassable;0;0;
+2455;3246;impassable;0;0;
+2456;3246;impassable;0;0;
+2457;3246;impassable;0;0;
+2458;3246;impassable;0;0;
+2459;3246;impassable;0;0;
+2460;3246;impassable;0;0;
+2461;3246;impassable;0;0;
+2462;3246;impassable;0;0;
+2463;3246;impassable;0;0;
+2464;3246;impassable;0;0;
+2465;3246;impassable;0;0;
+2466;3246;impassable;0;0;
+2467;3246;impassable;0;0;
+2468;3246;impassable;0;0;
+2469;3246;impassable;0;0;
+2470;3246;impassable;0;0;
+2471;3246;impassable;0;0;
+2472;3246;impassable;0;0;
+2473;3246;impassable;0;0;
+2474;3246;impassable;0;0;
+2475;3246;impassable;0;0;
+2476;3246;impassable;0;0;
+2477;3246;impassable;0;0;
+2478;3246;impassable;0;0;
+2479;3246;impassable;0;0;
+2480;3246;impassable;0;0;
+2481;3246;impassable;0;0;
+2482;3246;impassable;0;0;
+2483;3246;impassable;0;0;
+2484;3246;impassable;0;0;
+2485;3246;impassable;0;0;
+2486;3246;impassable;0;0;
+2487;3246;impassable;0;0;
+2488;3246;impassable;0;0;
+2489;3246;impassable;0;0;
+2490;3246;impassable;0;0;
+2491;3246;impassable;0;0;
+2492;3246;impassable;0;0;
+2493;3246;impassable;0;0;
+2494;3246;impassable;0;0;
+2495;3246;impassable;0;0;
+2496;3246;impassable;0;0;
+2497;3246;impassable;0;0;
+2498;3246;impassable;0;0;
+2499;3246;impassable;0;0;
+2500;3246;impassable;0;0;
+2501;3246;impassable;0;0;
+2502;3246;impassable;0;0;
+2503;3246;impassable;0;0;
+2504;3246;impassable;0;0;
+2505;3246;impassable;0;0;
+2506;3246;impassable;0;0;
+2507;3246;impassable;0;0;
+2508;3246;impassable;0;0;
+2509;3246;impassable;0;0;
+2510;3246;impassable;0;0;
+2511;3246;impassable;0;0;
+2512;3246;impassable;0;0;
+2513;3246;impassable;0;0;
+2514;3246;impassable;0;0;
+2515;3246;impassable;0;0;
+2516;3246;impassable;0;0;
+2517;3246;impassable;0;0;
+2518;3246;impassable;0;0;
+2519;3246;impassable;0;0;
+2520;3246;impassable;0;0;
+2521;3246;impassable;0;0;
+2522;3246;impassable;0;0;
+2523;3246;impassable;0;0;
+2524;3246;impassable;0;0;
+2525;3246;impassable;0;0;
+2526;3246;impassable;0;0;
+2527;3246;impassable;0;0;
+2528;3246;impassable;0;0;
+2529;3246;impassable;0;0;
+2530;3246;impassable;0;0;
+2531;3246;impassable;0;0;
+2532;3246;impassable;0;0;
+2533;3246;impassable;0;0;
+2534;3246;impassable;0;0;
+2535;3246;impassable;0;0;
+2536;3246;impassable;0;0;
+2537;3246;impassable;0;0;
+2538;3246;impassable;0;0;
+2539;3246;impassable;0;0;
+2540;3246;impassable;0;0;
+2541;3246;impassable;0;0;
+2542;3246;impassable;0;0;
+2543;3246;impassable;0;0;
+2544;3246;impassable;0;0;
+2545;3246;impassable;0;0;
+2546;3246;impassable;0;0;
+2547;3246;impassable;0;0;
+2548;3246;impassable;0;0;
+2549;3246;impassable;0;0;
+2550;3246;impassable;0;0;
+2551;3246;impassable;0;0;
+2552;3246;impassable;0;0;
+2553;3246;impassable;0;0;
+2554;3246;impassable;0;0;
+2555;3246;impassable;0;0;
+2556;3246;impassable;0;0;
+2557;3246;impassable;0;0;
+2558;3246;impassable;0;0;
+2559;3246;impassable;0;0;
+2560;3246;impassable;0;0;
+2561;3246;impassable;0;0;
+2562;3246;impassable;0;0;
+2563;3246;impassable;0;0;
+2564;3246;impassable;0;0;
+2565;3246;impassable;0;0;
+2566;3246;impassable;0;0;
+2567;3246;impassable;0;0;
+2568;3246;impassable;0;0;
+2569;3246;impassable;0;0;
+2570;3246;impassable;0;0;
+2571;3246;impassable;0;0;
+2572;3246;impassable;0;0;
+2573;3246;impassable;0;0;
+2574;3246;impassable;0;0;
+2575;3246;impassable;0;0;
+2576;3246;impassable;0;0;
+2577;3246;impassable;0;0;
+2578;3246;impassable;0;0;
+2579;3246;impassable;0;0;
+2580;3246;impassable;0;0;
+2581;3246;impassable;0;0;
+2582;3246;impassable;0;0;
+2583;3246;impassable;0;0;
+2584;3246;impassable;0;0;
+2585;3246;impassable;0;0;
+2586;3246;impassable;0;0;
+2587;3246;impassable;0;0;
+2588;3246;impassable;0;0;
+2589;3246;impassable;0;0;
+2590;3246;impassable;0;0;
+2591;3246;impassable;0;0;
+2592;3246;impassable;0;0;
+2593;3246;impassable;0;0;
+2594;3246;impassable;0;0;
+2595;3246;impassable;0;0;
+2596;3246;impassable;0;0;
+2597;3246;impassable;0;0;
+2598;3246;impassable;0;0;
+2599;3246;impassable;0;0;
+2600;3246;impassable;0;0;
+2601;3246;impassable;0;0;
+2602;3246;impassable;0;0;
+2603;3246;impassable;0;0;
+2604;3246;impassable;0;0;
+2605;3246;impassable;0;0;
+2606;3246;impassable;0;0;
+2607;3246;impassable;0;0;
+2608;3246;impassable;0;0;
+2609;3246;impassable;0;0;
+2610;3246;impassable;0;0;
+2611;3246;impassable;0;0;
+2612;3246;impassable;0;0;
+2613;3246;impassable;0;0;
+2614;3246;impassable;0;0;
+2615;3246;impassable;0;0;
+2616;3246;impassable;0;0;
+2617;3246;impassable;0;0;
+2618;3246;impassable;0;0;
+2619;3246;impassable;0;0;
+2620;3246;impassable;0;0;
+2621;3246;impassable;0;0;
+2622;3246;impassable;0;0;
+2623;3246;impassable;0;0;
+2624;3246;impassable;0;0;
+2625;3246;impassable;0;0;
+2626;3246;impassable;0;0;
+2627;3246;impassable;0;0;
+2628;3246;impassable;0;0;
+2629;3246;impassable;0;0;
+2630;3246;impassable;0;0;
+2631;3246;impassable;0;0;
+2632;3246;impassable;0;0;
+2633;3246;impassable;0;0;
+2634;3246;impassable;0;0;
+2635;3246;impassable;0;0;
+2636;3246;impassable;0;0;
+2637;3246;impassable;0;0;
+2638;3246;impassable;0;0;
+2639;3246;impassable;0;0;
+2640;3246;impassable;0;0;
+2641;3246;impassable;0;0;
+2642;3246;impassable;0;0;
+2643;3246;impassable;0;0;
+2644;3246;impassable;0;0;
+2645;3246;impassable;0;0;
+2646;3246;impassable;0;0;
+2647;3246;impassable;0;0;
+2648;3246;impassable;0;0;
+2649;3246;impassable;0;0;
+2650;3246;impassable;0;0;
+2651;3246;impassable;0;0;
+2652;3246;impassable;0;0;
+2653;3246;impassable;0;0;
+2654;3246;impassable;0;0;
+2655;3246;impassable;0;0;
+2656;3246;impassable;0;0;
+2657;3246;impassable;0;0;
+2658;3246;impassable;0;0;
+2659;3246;impassable;0;0;
+2660;3246;impassable;0;0;
+2661;3246;impassable;0;0;
+2662;3246;impassable;0;0;
+2663;3246;impassable;0;0;
+2664;3246;impassable;0;0;
+2665;3246;impassable;0;0;
+2666;3246;impassable;0;0;
+2667;3246;impassable;0;0;
+2668;3246;impassable;0;0;
+2669;3246;impassable;0;0;
+2670;3246;impassable;0;0;
+2671;3246;impassable;0;0;
+2672;3246;impassable;0;0;
+2673;3246;impassable;0;0;
+2674;3246;impassable;0;0;
+2675;3246;impassable;0;0;
+2676;3246;impassable;0;0;
+2677;3246;impassable;0;0;
+2678;3246;impassable;0;0;
+2679;3246;impassable;0;0;
+2680;3246;impassable;0;0;
+2681;3246;impassable;0;0;
+2682;3246;impassable;0;0;
+2683;3246;impassable;0;0;
+2684;3246;impassable;0;0;
+2685;3246;impassable;0;0;
+2686;3246;impassable;0;0;
+2687;3246;impassable;0;0;
+2688;3246;impassable;0;0;
+2689;3246;impassable;0;0;
+2690;3246;impassable;0;0;
+2691;3246;impassable;0;0;
+2692;3246;impassable;0;0;
+2693;3246;impassable;0;0;
+2694;3246;impassable;0;0;
+2695;3246;impassable;0;0;
+2696;3246;impassable;0;0;
+2697;3246;impassable;0;0;
+2698;3246;impassable;0;0;
+2699;3246;impassable;0;0;
+2700;3246;impassable;0;0;
+2701;3246;impassable;0;0;
+2702;3246;impassable;0;0;
