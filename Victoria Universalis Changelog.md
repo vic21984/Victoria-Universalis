@@ -1,3 +1,50 @@
+#Version 0.6 - 5/28/2021
+## Bug Fixes:
+* Fixed endless Russian Civil War in 1913 and WW1 scenarios.
+* Fixed requirements on the acquire state and demand concession cbs which allow it to only target coastal states, neighbouring states, or states that neighbour a neighbouring state.
+* Added missing cultures for Belgium in 1836 multiplayer start.
+* Fixed missing setup decisions for China and India in regular 1836 start. The lack of these decisions caused extremely fast Chinese and Indian westernization in v0.55 and v0.54.
+* Existing Balkan countries no longer get Russian tech after Russia wins the Russo-Turkish War.
+* Fixed Austrian cores not being removed from Hungary after Austria loses Hungarian War of Independence.
+
+## Map Changes:
+* A country has to either control or not be at war with the owner of Gallipoli in order to send navies through the Aegean Sea and Sea of Marmara. Enemies armies can land in Gallipoli from the Aegean Sea.
+* A country has to either control or not be at war with the owner of Istanbul in order to send navies through the Gulf of Varna and Sea of Marmara. Enemy armies can land in a province adjacent to Istanbul from the Gulf of Varna and occupy Istanbul from land.
+
+## General gameplay changes:
+* New dismantle nation cb is unlocked after great wars are invented.
+* Removed restrictions on acquire state and conquest cbs on west african countries at the start of the game. Colonial inventions still gives free no infamy conquest cbs on uncivilized african nations.
+* Disabled all historical disaster, botanical expedition, nobel prize, olypmic, sporting, suffragete, and political random events for nations at war during the 1913 and WW1 bookmarks.
+* Removed acquire massive state cb and allowed regular acquire state cb to target states over 4M pop.
+* Conquest and establish protectorate wargoals can only be used on coastal nations or neighbouring nations.
+* Total POP cap for make puppet cb increased from 2M to 5M after revolution and counterrevolution is researched.
+* AI will not use the acquire core cb unless it has more brigades than or is already at war with the target nation. This should help prevent some of the endless loops of AI nations deccing for cores and losing every 5 years.
+
+## USA:
+* USA AI will now take all of its manifest destiny cores in one war instead of declaring separate wars.
+
+## China:
+* Removed event that makes China instantly civilize if one of its substates civilizes.
+* Added nerf to tariff/tax efficiency.
+
+## Japan:
+* AI won't end sakoku on its own until 1860. USA can still force Japan to end sakoku through the Mathew Perry Expedition event.
+* Boshin War decision now requires 50% civilization progress and can be enacted before and after civilizing.
+* Imperial and Shogunate Japan don't start with cores on each other and only get the cores via the Boshin War decision.
+
+## Africa:
+* Added new West and Central African kingdoms to 1836 start date.
+
+## Italy:
+* Made Italian minors less likely to war each other at the start.
+
+## Austria
+* Added decision to give up cores on Italian land if Italy owns Lombardia, Venice, and either South Tirol or Fruili.
+
+## Germany:
+* Prussian AI won't fire ems decision until it has formed NGF.
+
+
 # Version 0.55b - 5/11/2021
 ## Bug Fixes:
 * Fixed countries starting with incorrect starting cultures in the Multiplayer Grand Campaign bookmark.
