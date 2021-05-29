@@ -570,7 +570,7 @@ acquire_core_state = {
 
 	can_use = {
 		OR = {
-			ai = no
+			THIS = { ai = no }
 			NOT = { brigades_compare = 1 }
 			war_with = THIS
 		}
@@ -4889,6 +4889,15 @@ dismantle_cb = {
 		}
 		is_greater_power = yes
 		great_wars_enabled = yes
+		OR = {
+			neighbour = THIS
+			AND = {
+				num_of_ports = 1
+				THIS = {
+					num_of_ports = 1
+				}
+			}
+		}
 	}
 
 	po_disarmament = yes

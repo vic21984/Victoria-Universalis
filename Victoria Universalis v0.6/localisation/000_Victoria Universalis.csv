@@ -1143,6 +1143,27 @@ central_great_war_demands_short;Dismantle Allied Powers;;;;;;;;;;;;;x
 central_great_war_demands_setup;Dismantle Allied Powers;;;;;;;;;;;;x
 NORMAL_GREAT_WAR_NAME;War of Austro-Hungarian Aggression;;;;;;;;;;;;x
 AGRESSION_GREAT_WAR_NAME;War of Austro-Hungarian Aggression;;;;;;;;;;;;x
+dismantle_cb;Dismantle Nation;;;;;;;;;;;;x
+dismantle_cb_desc;Take all colonies from a Great Power and force them to release all non-core territory.;;;;;;;;;;;;x
+dismantle_cb_short;Take all colonies from a Great Power and force them to release all non-core territory;;;;;;;;;;;;;x
+dismantle_cb_setup;Take all colonies from a Great Power and force them to release all non-core territory;;;;;;;;;;;;x
+NORMAL_WAR_DISMANTLE_NAME;$ORDER$$FIRST$ War to Dismantle the $SECOND$ Empire;;;;;;;;;;;;x
+AGRESSION_WAR_DISMANTLE_NAME;$ORDER$$FIRST$ War to Dismantle the $SECOND$ Empire;;;;;;;;;;;;x
+EVTNAME2580;The fall of $COUNTRY$;;;;;;;;;;;;x
+EVTDESC2580;The world has had enough of $COUNTRY$ and they have agreed to dismantle their empire.;;;;;;;;;;;;x
+EVTOPTA2580;This day will go down in history.;;;;;;;;;;;;x
+EVTNAME2581;Dismantling $COUNTRY$;;;;;;;;;;;;x
+EVTDESC2581;All colonies will be transferred to the victor and any nations with claims on our lands will take them.;;;;;;;;;;;;x
+EVTOPTA2581;Damn!;;;;;;;;;;;;x
+EVTNAME2582;Our claims in $FROMCOUNTRY$;;;;;;;;;;;;x
+EVTDESC2582;The Great Powers have agreed to give us our claims on $FROMCOUNTRY$.;;;;;;;;;;;;x
+EVTOPTA2582;Excellent!;;;;;;;;;;;;x
+EVTNAME2583;Freedom from $FROMCOUNTRY$;;;;;;;;;;;;x
+EVTDESC2583;The Great Powers have agreed to give us our freedom from $FROMCOUNTRY$.;;;;;;;;;;;;x
+EVTOPTA2583;Excellent!;;;;;;;;;;;;x
+EVTNAME2584;$FROMCOUNTRY$ Colonial Concessions;;;;;;;;;;;;x
+EVTDESC2584;As part of the terms of the peace treaty with $FROMCOUNTRY$, they are forced to surrender all their colonial possessions to us.;;;;;;;;;;;;x
+EVTOPTA2584;Excellent!;;;;;;;;;;;;x
 acquire_state_desc;Aquire an enemy §Ystate§W with between 150K and 4M population;;;;;;;;;;;;;;;;x
 mexican_american_war;Liberate all cores;;;;;;;;;;;;;;;;x
 mexican_american_war_desc;Liberate your country from its oppressors;;;;;;;;;;;;;x
