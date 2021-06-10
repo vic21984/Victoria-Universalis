@@ -1,0 +1,47 @@
+owner = TEX
+controller = TEX
+add_core = TEX
+add_core = MEX
+trade_goods = oil
+life_rating = 45
+1913.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	remove_core = MEX
+	state_building = {
+		level = 10
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
+}

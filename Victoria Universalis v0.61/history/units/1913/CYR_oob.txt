@@ -1,0 +1,97 @@
+leader = {
+	name = "Ahmed Sharif as-Senussi"
+	type = land
+	date = 1914.1.1
+	personality = defence_5.1
+	background = attack_4.1
+}
+
+leader = {
+	name = "Idris I of Libya"
+	type = land
+	date = 1914.1.1
+	personality = defence_2.1
+	background = attack_2.1
+}
+
+army = {
+	name = "Army of Ahmed Sharif"
+	location = 1738
+	regiment = {
+		name= "Desert Tribesmen"
+		type = infantry
+		home = 1744
+	}
+
+	regiment = {
+		name= "Desert Tribesmen"
+		type = infantry
+		home = 1744
+	}
+	
+	regiment = {
+		name= "Desert Tribesmen"
+		type = infantry
+		home = 1743
+	}
+
+	regiment = {
+		name= "Desert Tribesmen"
+		type = infantry
+		home = 1743
+	}
+
+	regiment = {
+		name= "Desert Tribesmen"
+		type = infantry
+		home = 1741
+	}
+
+	regiment = {
+		name= "Desert Tribesmen"
+		type = infantry
+		home = 1758
+	}
+
+	regiment = {
+		name= "Foreign Artillery Battery"
+		type = artillery
+		home = 1742
+	}
+
+	regiment = {
+		name= "Captured Artillery Battery"
+		type = artillery
+		home = 1742
+	}
+
+	regiment = {
+		name= "Captured Artillery Battery"
+		type = artillery
+		home = 2585
+	}
+
+	regiment = {
+		name= "Desert Horsemen"
+		type = dragoon
+		home = 1741
+	}
+	
+	regiment = {
+		name= "Desert Horsemen"
+		type = dragoon
+		home = 1740
+	}
+	
+	regiment = {
+		name= "Desert Raiders"
+		type = hussar
+		home = 1738
+	}
+
+	regiment = {
+		name= "Desert Raiders"
+		type = hussar
+		home = 1739
+	}
+}

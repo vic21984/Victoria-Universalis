@@ -1,3 +1,72 @@
+#Version 0.61 - 6/9/2021
+## Bug fixes:
+* Fixed Guangzhouwan and Tientsin not appearing in acquire chinese concession cb.
+* Fixed broken encourage craftsmen national focus bug for certain minor nations.
+* Fixed starting wallonian literacy in 1836 multiplayer bookmark.
+* Fixed a bugged condition in the form Rio Plata decision.
+* Fixed bugged condition in the Annex Cape Colony decision.
+* Fixed potetial exploit in the ask for grant decision that allowed the lender to hold multiple instances of the grant event and then pay more than they have in their treasury.
+
+## Interface changes:
+* Both naval mapmode and build naval base now use the "e" shortcut.
+* Listed the buffs next to each national idea in the choosing national idea event.
+
+## Map changes:
+* Changed province shapes around in Anatolia.
+* Moved a few provinces from Aydin state to Hudavendigar state.
+
+## General gameplay changes:
+* Removed truces from Scramble for Africa cbs.
+* Taking chinese treaty ports will increase population of provinces below 30k to 20-30k.
+* Halved bonus to attract immigrants province selector decision to new world nations.
+* Reduced ask military access diplomatic cost from 5 to 2.
+* All of North Angola reduced to 15 liferating, added a decision to colonize North Angola after mission to civilize is invented.
+* Added 0.04 assimilation chance to assimilation national idea.
+* Created cheat events 1-5. In order to use them, open the console and type "event x" replacing the x with the corresponding number. Event 1 increases literacy by 10%, 2 decreases MIL and CON by 5, 3 increases MIL and CON by 5, 4 assimilates all POPs, and 5 reduces infamy by 25.
+
+## Country balance changes:
+###### Egypt:
+* Changed orient crisis surrender events to a decision which can be enacted at any time during the oriental crisis. AI is scripted to not enact this decision until 33% of it's national provinces are occupied.
+
+###### Arabia:
+* Forming Arabia will no longer give cores on sub saharan african nations.
+
+###### USA:
+* Increased starting literacy
+
+###### France:
+* Decreased starting literacy.
+
+###### United Kingdom:
+* Increased starting literacy.
+
+###### Mexico:
+* Removed CSA must exist condition from the Mexican Empire decision, it can now be done anytime after 1861.
+
+###### Japan:
+* Can trigger Boshin War at 40% civilization progress now, also removed the must be at peace condition. AI is scripted to not enact it until 50% civilization progress.
+
+###### Sweden:
+* Made it easier to form Sweden-Norway.
+
+###### Denmark:
+* Added Norwegian to starting accepted cultures.
+
+###### Spain:
+* Does not need to own Falkland Islands to create Viceroyalty of Rio Plata anymore.
+* Cannot create a Viceroyalty via sphereing anymore unless the sphered nations are AI controlled. It is still possible to force human South American nations to become Viceroyalties if they are your puppet or you own all their core territory.
+
+###### Portugal:
+* Cannot use the Restore Order decision via sphereing anymore unless the sphered nations are AI controlled. It is still possible to use Restore Order decision on human Brazilian nations if they are your puppet or you own all their core territory.
+
+###### Iberia:
+* Removed Abandon Iberian Union decision.
+* Cannot use Iberian Union decision if more than one of the constituents is human controlled.
+
+###### Ottoman Empire:
+* Imported HPM populations for southern Balkans and Anatolia.
+
+
 #Version 0.6 - 5/28/2021
 ## Bug Fixes:
 * Fixed endless Russian Civil War in 1913 and WW1 scenarios.
@@ -20,28 +89,29 @@
 * Total POP cap for make puppet cb increased from 2M to 5M after revolution and counterrevolution is researched.
 * AI will not use the acquire core cb unless it has more brigades than or is already at war with the target nation. This should help prevent some of the endless loops of AI nations deccing for cores and losing every 5 years.
 
-## USA:
+## Country balance changes:
+###### USA:
 * USA AI will now take all of its manifest destiny cores in one war instead of declaring separate wars.
 
-## China:
+###### China:
 * Removed event that makes China instantly civilize if one of its substates civilizes.
 * Added nerf to tariff/tax efficiency.
 
-## Japan:
+###### Japan:
 * AI won't end sakoku on its own until 1860. USA can still force Japan to end sakoku through the Mathew Perry Expedition event.
 * Boshin War decision now requires 50% civilization progress and can be enacted before and after civilizing.
 * Imperial and Shogunate Japan don't start with cores on each other and only get the cores via the Boshin War decision.
 
-## Africa:
+###### Africa:
 * Added new West and Central African kingdoms to 1836 start date.
 
-## Italy:
+###### Italy:
 * Made Italian minors less likely to war each other at the start.
 
-## Austria
+###### Austria
 * Added decision to give up cores on Italian land if Italy owns Lombardia, Venice, and either South Tirol or Fruili.
 
-## Germany:
+###### Germany:
 * Prussian AI won't fire ems decision until it has formed NGF.
 
 

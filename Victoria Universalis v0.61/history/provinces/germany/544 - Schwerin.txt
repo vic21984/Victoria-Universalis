@@ -1,0 +1,21 @@
+owner = MEC
+controller = MEC
+add_core = MEC
+add_core = GER
+trade_goods = timber
+life_rating = 40
+1913.1.1 = {
+	owner = GER
+	controller = GER
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	naval_base = 6
+}

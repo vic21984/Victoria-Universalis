@@ -1,0 +1,243 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 44899
+	title = "End of Kongo"
+
+	trigger = {
+		tag = KON
+		ai = yes
+		owns = 1982
+		NOT = {
+			any_owned_province = { NOT = { province_id = 1982 } }
+		}
+	}
+
+	option = {
+		1982 = { life_rating = -25 }
+		annex_to = FROM
+	}
+}
+
+country_event = {
+	id = 44810
+	title = "EVTNAME44810"
+	desc = "EVTDESC44810"
+	picture = congo_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44810"
+		FROM = {
+			change_variable = {
+				which = yes_congo_state
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 10
+				OR = {
+					alliance_with = FROM
+					is_sphere_leader_of = FROM
+					relation = { who = FROM value = 199 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44810"
+		FROM = {
+			change_variable = {
+				which = no_congo_state
+				value = 1
+			}
+		}
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				OR = {
+					alliance_with = FROM
+					is_sphere_leader_of = FROM
+					relation = { who = FROM value = 199 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44811
+	title = "EVTNAME44811"
+	desc = "EVTDESC44811"
+	picture = congo_conference
+
+	trigger = {
+		has_country_flag = called_congo_conference
+		check_variable = {
+			which = yes_congo_state
+			value = 5
+		}
+		NOT = { has_country_flag = congo_conference_convened }
+	}
+
+	option = {
+		name = "EVTOPTA44811"
+		set_country_flag = congo_conference_convened
+		BEL_1977 = {
+			add_core = CNG
+			secede_province = THIS
+		}
+		BEL_1984 = {
+			add_core = CNG
+			secede_province = THIS
+		}
+		BEL_1987 = {
+			add_core = CNG
+			secede_province = THIS
+		}
+		BEL_1990 = {
+			add_core = CNG
+			secede_province = THIS
+		}
+		BEL_1992 = {
+			add_core = CNG
+			secede_province = THIS
+		}
+		release_vassal = CNG
+		CNG = {
+			government = colonial_company
+			any_owned = {
+				add_province_modifier = { name = force_publique duration = -1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44812
+	title = "EVTNAME44812"
+	desc = "EVTDESC44812"
+	picture = congo_conference
+
+	trigger = {
+		has_country_flag = called_congo_conference
+		check_variable = {
+			which = no_congo_state
+			value = 4
+		}
+		NOT = { has_country_flag = congo_conference_convened }
+	}
+
+	option = {
+		name = "EVTOPTA44812"
+		set_country_flag = congo_conference_convened
+	}
+}
+
+country_event = {
+	id = 44813
+	title = "EVTNAME44813"
+	desc = "EVTDESC44813"
+	major = yes
+
+	trigger = {
+		has_country_flag = called_congo_conference
+		is_our_vassal = CNG
+		NOT = { has_country_flag = heart_of_darkness }
+		year = 1894
+		CNG = {
+			any_owned_province = { has_province_modifier = force_publique }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			year = 1895
+		}
+		modifier = {
+			factor = 0.8
+			year = 1896
+		}
+		modifier = {
+			factor = 0.8
+			year = 1897
+		}
+		modifier = {
+			factor = 0.8
+			year = 1898
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44813"
+		set_country_flag = heart_of_darkness
+		badboy = 6
+		CNG = {
+			any_owned = {
+				limit = { has_province_modifier = force_publique }
+				remove_province_modifier = force_publique
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44813"
+		set_country_flag = heart_of_darkness
+		prestige_factor = -0.2
+		CNG = {
+			any_owned = {
+				limit = { has_province_modifier = force_publique }
+				remove_province_modifier = force_publique
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44814
+	title = "EVTNAME44814"
+	desc = "EVTDESC44814"
+	picture = celebration
+
+	trigger = {
+		tag = CNG
+		any_owned_province = { has_province_modifier = force_publique }
+		is_vassal = no
+	}
+
+	option = {
+		name = "EVTOPTA44814"
+		random_owned = {
+			limit = {
+				owner = { government = colonial_company }
+			}	
+			owner = { government = democracy }
+		}
+		any_owned = {
+			limit = { has_province_modifier = force_publique }
+			remove_province_modifier = force_publique
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44814"
+		random_owned = {
+			limit = {
+				owner = { government = colonial_company }
+			}	
+			owner = { government = presidential_dictatorship }
+		}
+		any_owned = {
+			limit = { has_province_modifier = force_publique }
+			remove_province_modifier = force_publique
+		}
+	}
+}

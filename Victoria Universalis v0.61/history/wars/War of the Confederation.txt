@@ -1,0 +1,41 @@
+name = "War of the Confederation"
+
+1836.1.1 = {
+	add_attacker = CHL
+	add_attacker = ARC
+	add_defender = BOL
+	add_defender = PEU
+
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = release_puppet country = PEU
+		actor = CHL
+		receiver = BOL
+	}
+	war_goal = {
+		casus_belli = acquire_core_state state_province_id = 2370
+		actor = ARC
+		receiver = BOL
+	}
+	war_goal = {
+		casus_belli = status_quo
+		actor = CHL
+		receiver = BOL
+	}
+	war_goal = {
+		casus_belli = status_quo
+		actor = BOL
+		receiver = CHL
+	}
+}
+
+1839.1.1 = {
+	rem_attacker = CHL
+	rem_attacker = ARG
+	rem_defender = BOL
+	rem_defender = PEU
+}

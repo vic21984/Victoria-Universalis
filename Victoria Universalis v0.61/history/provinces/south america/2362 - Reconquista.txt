@@ -1,0 +1,18 @@
+trade_goods = cattle
+life_rating = 101913.1.1 = {	owner = ARG	controller = ARG	add_core = ARG	life_rating = 35}1913.1.1 = {
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+}

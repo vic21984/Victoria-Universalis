@@ -1,0 +1,23 @@
+owner = EGY
+controller = EGY
+add_core = EGY
+add_core = TUR
+add_core = PLS
+trade_goods = grain
+life_rating = 35
+1913.1.1 = {
+owner = TUR
+controller = TUR
+remove_core = EGY
+colonial = 0
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,55 @@
+name = "The Great War "
+
+1914.7.28 = {
+	add_attacker = GER
+	add_attacker = KUK
+	add_attacker = TUR
+	add_attacker = BUL
+	add_attacker = KGR
+	add_attacker = CYR
+	add_attacker = SOM
+	add_defender = ENG
+	add_defender = FRA
+	add_defender = RUS
+	add_defender = ITA
+	add_defender = BEL
+	add_defender = LUX
+	add_defender = SER
+	add_defender = MON
+	add_defender = ROM
+	add_defender = GRE
+	add_defender = POR
+	add_defender = CAN
+	add_defender = SAF
+	add_defender = AST
+	add_defender = NZL
+	add_defender = EIC
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = central_great_war_demands
+		actor = GER
+		receiver = FRA
+		state_province_id = 425
+	}
+	war_goal = {
+		casus_belli = status_quo
+		actor = GER
+		receiver = FRA
+	}
+	war_goal = {
+		casus_belli = allied_great_war_demands
+		actor = FRA
+		receiver = GER
+		state_province_id = 549
+	}
+	war_goal = {
+		casus_belli = status_quo
+		actor = FRA
+		receiver = GER
+	}
+}

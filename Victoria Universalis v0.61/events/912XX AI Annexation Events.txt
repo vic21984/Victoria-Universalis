@@ -1,0 +1,1267 @@
+# Audax Validator "!" Ignore_NEXT
+
+#Annex Kokand
+country_event = {
+	id = 91212
+	title = "Annex Kokand"
+	
+	trigger = {
+		exists = KOK
+		is_greater_power = yes
+		is_sphere_leader_of = KOK
+		ai = yes
+		KOK = { ai = yes }
+		neighbour = KOK
+		nationalism_n_imperialism = 1
+	}
+	
+	option = {
+		inherit = KOK
+	}
+}
+
+#Annex Khiva
+country_event = {
+	id = 91213
+	title = "Annex Khiva"
+	
+	trigger = {
+		exists = KHI
+		is_greater_power = yes
+		is_sphere_leader_of = KHI
+		ai = yes
+		KHI = { ai = yes }
+		neighbour = KHI
+		nationalism_n_imperialism = 1
+	}
+	
+	option = {
+		inherit = KHI
+	}
+}
+
+#Annex Bukkhara
+country_event = {
+	id = 91214
+	title = "Annex Bukkhara"
+	
+	trigger = {
+		exists = BUK
+		is_greater_power = yes
+		is_sphere_leader_of = BUK
+		ai = yes
+		BUK = { ai = yes }
+		neighbour = BUK
+		nationalism_n_imperialism = 1
+	}
+	
+	option = {
+		inherit = BUK
+	}
+}
+
+#Annex Abu Dhabi
+country_event = {
+	id = 91215
+	title = "Annex Abu Dhabi"
+	
+	trigger = {
+		year = 1870
+		exists = ABU
+		is_greater_power = yes
+		is_sphere_leader_of = ABU
+		ai = yes
+		ABU = { ai = yes }
+		nationalism_n_imperialism = 1
+		capital_scope = { NOT = { continent = asia } }
+	}
+	
+	option = {
+		inherit = ABU
+	}
+}
+
+#Annex Hedjaz
+country_event = {
+	id = 91216
+	title = "Annex Hedjaz"
+	
+	trigger = {
+		year = 1870
+		exists = HDJ
+		is_greater_power = yes
+		is_sphere_leader_of = HDJ
+		ai = yes
+		HDJ = { ai = yes }
+		nationalism_n_imperialism = 1
+		capital_scope = { NOT = { continent = asia } }
+	}
+	
+	option = {
+		inherit = HDJ
+	}
+}
+
+#Annex Nejd
+country_event = {
+	id = 91217
+	title = "Annex Nejd"
+	
+	trigger = {
+		year = 1870
+		exists = NEJ
+		is_greater_power = yes
+		is_sphere_leader_of = NEJ
+		ai = yes
+		NEJ = { ai = yes }
+		nationalism_n_imperialism = 1
+		capital_scope = { NOT = { continent = asia } }
+	}
+	
+	option = {
+		inherit = NEJ
+	}
+}
+
+#Annex Yemen
+country_event = {
+	id = 91218
+	title = "Annex Yemen"
+	
+	trigger = {
+		year = 1870
+		exists = YEM
+		is_greater_power = yes
+		is_sphere_leader_of = YEM
+		ai = yes
+		YEM = { ai = yes }
+		nationalism_n_imperialism = 1
+		capital_scope = { NOT = { continent = asia } }
+	}
+	
+	option = {
+		inherit = YEM
+	}
+}
+
+#Annex Oman
+country_event = {
+	id = 91220
+	title = "Annex Oman"
+	
+	trigger = {
+		year = 1870
+		exists = OMA
+		is_greater_power = yes
+		is_sphere_leader_of = OMA
+		ai = yes
+		OMA = { ai = yes }
+		nationalism_n_imperialism = 1
+		capital_scope = { NOT = { continent = asia } }
+	}
+	
+	option = {
+		inherit = OMA
+	}
+}
+
+#Leave Manchuria
+country_event = {
+	id = 91221
+	title = "Leave Manchuria"
+
+	trigger = {
+		tag = MCK
+		exists = MCK
+		owns = 1082
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			NOT = { tag = RUS }
+			ai = yes
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#Leave Africa
+country_event = {
+	id = 91224
+	title = "Leave Africa"
+
+	trigger = {
+		has_country_flag = sub_saharan_africa
+		NOT = { tag = MAD }
+		exists = yes
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			ai = yes
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#African Isolationism
+country_event = {
+	id = 91225
+	title = "African Isolationism"
+
+	trigger = {
+		ai = yes
+		has_country_flag = sub_saharan_africa
+		NOT = { tag = MAD }
+		any_greater_power = {
+			ai = yes
+			alliance_with = THIS
+		}
+	}
+
+
+	option = {
+		any_country = {
+			limit = {
+				ai = yes
+				NOT = { has_country_flag = sub_saharan_africa }
+			}
+			leave_alliance = THIS
+		}
+	}
+}
+
+#Annex Morocco
+country_event = {
+	id = 91231
+	title = "Annex Morocco"
+	
+	trigger = {
+		exists = MOR
+		is_greater_power = yes
+		is_sphere_leader_of = MOR
+		ai = yes
+		MOR = { ai = yes }
+		nationalism_n_imperialism = 1
+		capital_scope = { NOT = { continent = asia } }
+	}
+	
+	option = {
+		inherit = MOR
+	}
+}
+
+#Annex Algeria
+country_event = {
+	id = 91232
+	title = "Annex Algeria"
+	
+	trigger = {
+		exists = ALD
+		is_greater_power = yes
+		is_sphere_leader_of = ALD
+		ai = yes
+		ALD = { ai = yes }
+		nationalism_n_imperialism =1
+		capital_scope = { NOT = { continent = asia } }		
+	}
+	
+	option = {
+		inherit = ALD
+	}
+}
+
+#Annex Tunis
+country_event = {
+	id = 91233
+	title = "Annex Tunis"
+	
+	trigger = {
+		exists = TUN
+		is_greater_power = yes
+		is_sphere_leader_of = TUN
+		ai = yes
+		TUN = { ai = yes }
+		nationalism_n_imperialism = 1
+		capital_scope = { NOT = { continent = asia } }
+	}
+	
+	option = {
+		inherit = TUN
+	}
+}
+
+#Leave Serbia
+country_event = {
+	id = 91235
+	title = "Leave Serbia"
+
+	trigger = {
+		tag = SER
+		exists = SER
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			ai = yes
+			tag = TUR
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#Leave Greece
+country_event = {
+	id = 91236
+	title = "Leave Greece"
+
+	trigger = {
+		tag = GRE
+		exists = GRE
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			ai = yes
+			tag = TUR
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#Leave Italy
+country_event = {
+	id = 91238
+	title = "Leave Italy"
+
+	trigger = {
+		OR = {
+			primary_culture = north_italian
+			primary_culture = south_italian
+		}
+		OR = {
+			exists = ITA
+			has_global_flag = north_italian_federation
+		}
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			ai = yes
+			NOT = { tag = ITA }
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+			leave_alliance = THIS
+		}
+	}
+}
+
+#Transfer Savoie and Nice
+country_event = {
+	id = 91239
+	title = "Sardinia Transfers Savoie and Nice to France"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAR
+		ai = yes
+		FRA = { ai = yes }
+		FRA_451 = { owned_by = FRA }
+		FRA_467 = { owned_by = FRA }
+		NOT = { owns = 720 }
+	}
+	
+	option = {
+		465 = {
+			add_core = FRA
+			remove_core = ITA
+			remove_core = SAR
+			secede_province = FRA
+		}
+		466 = {
+			add_core = FRA
+			remove_core = ITA
+			remove_core = SAR
+			secede_province = FRA
+		}
+		472 = {
+			add_core = FRA
+			remove_core = ITA
+			remove_core = SAR
+			secede_province = FRA
+		}
+	}
+}
+
+country_event = {
+	id = 91240
+	title = "Italy Transfers Savoie and Nice to France"
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		exists = ITA
+		ai = yes
+		FRA = { ai = yes }
+		FRA_451 = { owned_by = FRA }
+		FRA_467 = { owned_by = FRA }
+	}
+	
+	option = {
+		465 = {
+			add_core = FRA
+			remove_core = ITA
+			remove_core = SAR
+			secede_province = FRA
+		}
+		466 = {
+			add_core = FRA
+			remove_core = ITA
+			remove_core = SAR
+			secede_province = FRA
+		}
+		472 = {
+			add_core = FRA
+			remove_core = ITA
+			remove_core = SAR
+			secede_province = FRA
+		}
+	}
+}
+
+#Leave Burma
+country_event = {
+	id = 91242
+	title = "Leave Burma"
+
+	trigger = {
+		tag = BUR
+		exists = BUR
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			ai = yes
+			NOT = {
+				neighbour = BUR
+			}
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#Leave Sind
+country_event = {
+	id = 91243
+	title = "Leave Sind"
+
+	trigger = {
+		tag = SIN
+		exists = SIN
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			ai = yes
+			NOT = {
+				neighbour = SIN
+			}
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#Leave Kalat
+country_event = {
+	id = 91244
+	title = "Leave Kalat"
+
+	trigger = {
+		tag = KAL
+		exists = KAL
+		ai = yes
+		part_of_sphere = yes
+		sphere_owner = {
+			ai = yes
+			NOT = {
+				neighbour = KAL
+			}
+		}
+	}
+	
+	option = {
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+}
+
+#UK Africa
+country_event = {
+	id = 91270
+	title = "UK Conquest of Yoruba States"
+
+	trigger = {
+		owns = 1923
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_yoruba_states }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_yoruba_states
+		ENG = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91271
+	title = "UK Conquest of Benin"
+
+	trigger = {
+		owns = 1928
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_benin }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_benin
+		ENG = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91272
+	title = "UK Conquest of Niger Delta"
+
+	trigger = {
+		OR = {
+			owns = 1931
+			owns = 1932
+		}
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_niger_delta }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_niger_delta
+		ENG = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91273
+	title = "UK Conquest of Ghana"
+
+	trigger = {
+		owns = 1907
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_ghana }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_ghana
+		ENG = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+#French Africa
+country_event = {
+	id = 91274
+	title = "French Conquest of Ivory Coast"
+
+	trigger = {
+		owns = 1897
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		FRA = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_ivory_coast }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_ivory_coast
+		FRA = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91275
+	title = "French Conquest of Dahomey"
+
+	trigger = {
+		owns = 1919
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		FRA = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_dahomey }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_dahomey
+		FRA = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91276
+	title = "French Conquest of Senegal"
+
+	trigger = {
+		owns = 2573
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		FRA = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_senegal }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_senegal
+		FRA = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91277
+	title = "French Conquest of Gambia"
+
+	trigger = {
+		owns = 1792
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		FRA = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_gambia }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_gambia
+		FRA = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91278
+	title = "French Conquest of Guinea"
+
+	trigger = {
+		owns = 1879
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		FRA = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_guinea }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_guinea
+		FRA = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91279
+	title = "French Conquest of Mauritania"
+
+	trigger = {
+		owns = 1775
+		civilized = no
+		has_country_flag = sub_saharan_africa
+		FRA = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		NOT = { has_global_flag = conquest_of_mauritania }
+	}
+	
+	option = {
+		set_global_flag = conquest_of_mauritania
+		FRA = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = european_african_conquest }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = no
+			}
+		}
+	}
+}
+
+#East Africa
+country_event = {
+	id = 91281
+	title = "German East Africa"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 2038
+			owns = 2039
+		}
+		GER = {
+			exists = yes
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+	}
+
+	option = {
+		2038 = { secede_province = GER }
+		2039 = { secede_province = GER }
+	}
+}
+
+country_event = {
+	id = 91282
+	title = "German East Africa 2"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 2048
+			owns = 2036
+			owns = 2037
+		}
+		GER = {
+			exists = yes
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+	}
+
+	option = {
+		2048 = { secede_province = GER }
+		2036 = { secede_province = GER }
+		2037 = { secede_province = GER }
+	}
+}
+
+country_event = {
+	id = 91283
+	title = "British East Africa 1"
+
+	fire_only_once = yes
+
+	trigger = {
+		year = 1880
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 2038
+			owns = 2039
+		}
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		GER = {
+			OR = {
+				exists = no
+				AND = {
+					exists = yes
+					is_greater_power = no
+				}
+			}
+		}
+	}
+	
+	option = {
+		2038 = { secede_province = ENG }
+		2039 = { secede_province = ENG }
+	}
+}
+
+country_event = {
+	id = 91284
+	title = "British East Africa 2"
+
+	fire_only_once = yes
+
+	trigger = {
+		year = 1880
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 2048
+			owns = 2036
+			owns = 2037
+		}
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		GER = {
+			OR = {
+				exists = no
+				AND = {
+					exists = yes
+					is_greater_power = no
+				}
+			}
+		}
+	}
+	
+	option = {
+		2048 = { secede_province = ENG }
+		2036 = { secede_province = ENG }
+		2037 = { secede_province = ENG }
+	}
+}
+
+country_event = {
+	id = 91285
+	title = "British East Africa 3"
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 2030
+			owns = 2033
+			owns = 2029
+		}
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+	}
+	
+	option = {
+		2030 = { secede_province = ENG }
+		2033 = { secede_province = ENG }
+		2029 = { secede_province = ENG }
+	}
+}
+
+country_event = {
+	id = 91286
+	title = "Italian East Africa 1"
+	
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 1868
+			owns = 1869
+			owns = 1870
+			owns = 1871
+			owns = 1872
+		}
+		ITA = {
+			exists = yes
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+	}
+	
+	option = {
+		1868 = { secede_province = ITA }
+		1869 = { secede_province = ITA }
+		1870 = { secede_province = ITA }
+		1871 = { secede_province = ITA }
+		1872 = { secede_province = ITA }
+	}
+}
+
+country_event = {
+	id = 91287
+	title = "British East Africa 4"
+	
+	fire_only_once = yes
+
+	trigger = {
+		year = 1880
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 1868
+			owns = 1869
+			owns = 1870
+			owns = 1871
+			owns = 1872
+		}
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+		ITA = {
+			OR = {
+				exists = no
+				AND = {
+					exists = yes
+					NOT = { rank = 16 }
+				}
+			}
+		}
+	}
+
+	option = {
+		1868 = { secede_province = ENG }
+		1869 = { secede_province = ENG }
+		1870 = { secede_province = ENG }
+		1871 = { secede_province = ENG }
+		1872 = { secede_province = ENG }
+	}
+}
+
+country_event = {
+	id = 91288
+	title = "British East Africa 5"
+	
+	fire_only_once = yes
+
+	trigger = {
+		year = 1880
+		OR = {
+			civilized = no
+			tag = POR
+		}
+		ai = yes
+		OR = {
+			owns = 1873
+			owns = 1874
+		}
+		ENG = {
+			invention = colonial_negotiations
+			ai = yes
+			is_greater_power = yes
+		}
+	}
+	
+	option = {
+		1873 = { secede_province = ENG }
+		1874 = { secede_province = ENG }
+	}
+}
+
+#Jan Mayen Isolationism
+country_event = {
+	id = 91290
+	title = "Jan Mayen Isolationism"
+
+
+	trigger = {
+		tag = JAN
+		NOT = { has_country_modifier = jan_mayen_isolationism }
+	}
+
+
+	option = {
+		add_country_modifier = { name = jan_mayen_isolationism duration = 362 }
+		any_country = {
+			relation = {
+				who = JAN
+				value = -400
+			}
+		}
+	}
+}
+
+#Leave Jan Mayen
+country_event = {
+	id = 91291
+	title = "Leave World Bank"
+	desc = "Players are not allowed to interact with the World Bank"
+
+	trigger = {
+		OR = {
+			JAN = { in_sphere = THIS }
+			alliance_with = JAN
+			military_access = JAN
+		}
+	}
+
+	option = {
+		name = "I won't do it again."
+		diplomatic_influence = {
+			who = JAN
+			value = -400
+		}
+		end_military_access = JAN
+		leave_alliance = JAN
+		relation = {
+			who = JAN
+			value = -400
+		}
+	}
+}
+
+#South American Isolationism
+country_event = {
+	id = 91292
+	title = "South American Isolationism 1"
+
+	trigger = {
+		ai = yes
+		capital_scope = { continent = south_america }
+		any_greater_power = {
+			ai = yes
+			alliance_with = THIS
+		}
+	}
+
+
+	option = {
+		any_country = {
+			limit = {
+				ai = yes
+				capital_scope = { NOT = { continent = south_america } }
+			}
+			leave_alliance = THIS
+		}
+	}
+}
+
+#North American Isolationism
+country_event = {
+	id = 91294
+	title = "North American Isolationism 1"
+
+	trigger = {
+		ai = yes
+		capital_scope = { continent = north_america }
+		NOT = { is_vassal = yes }
+		any_greater_power = {
+			ai = yes
+			capital_scope = { NOT = { continent = north_america } }
+			capital_scope = { NOT = { continent = south_america } }
+			alliance_with = THIS
+		}
+	}
+
+
+	option = {
+		any_country = {
+			limit = {
+				ai = yes
+				capital_scope = { NOT = { continent = north_america } }
+				capital_scope = { NOT = { continent = south_america } }
+				NOT = { is_vassal = yes }
+			}
+			leave_alliance = THIS
+		}
+	}
+}
+
+#Chinese Isolationism
+country_event = {
+	id = 91296
+	title = "Chinese Isolationism"
+
+	trigger = {
+		ai = yes
+		is_culture_group = east_asian
+		any_greater_power = {
+			ai = yes
+			capital_scope = { NOT = { continent = asia } }
+			alliance_with = THIS
+		}
+	}
+
+
+	option = {
+		any_country = {
+			limit = {
+				ai = yes
+				capital_scope = { NOT = { continent = asia } }
+				NOT = { is_culture_group = east_asian }
+			}
+			leave_alliance = THIS
+		}
+	}
+}

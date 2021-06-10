@@ -1,0 +1,12 @@
+owner = MGL
+controller = MGL
+add_core = MGL
+trade_goods = cattle
+life_rating = 32
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+}

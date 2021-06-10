@@ -1,0 +1,33 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+add_core = UKR
+trade_goods = grain
+life_rating = 40
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

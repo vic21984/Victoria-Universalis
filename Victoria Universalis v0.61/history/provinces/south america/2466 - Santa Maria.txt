@@ -1,0 +1,11 @@
+owner = RGS
+controller = RGS
+add_core = RGS
+add_core = BRZ
+trade_goods = timber
+life_rating = 35
+1913.1.1 = {
+	owner = BRZ
+	controller = BRZ
+	remove_core = RGS
+}

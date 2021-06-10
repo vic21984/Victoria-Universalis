@@ -1,0 +1,563 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	title = "EVTNAMEgrantoptions"
+	desc = "EVTDESCgrantoptions"
+	id = 91400
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Enable Giving Grants and Military Supplies"
+		clr_country_flag = deny_grant
+	}
+	option = {
+		name = "Deny Giving Grants and Military Supplies"
+		set_country_flag = deny_grant
+	}
+	option = {
+		name = "Request Money Grant"
+		country_event = { id = 91401 days = 0 }
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Ammunition"
+		country_event = { id = 91406 days = 0 }
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Artillery"
+		country_event = { id = 91409 days = 0 }
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Canned Food"
+		country_event = { id = 91412 days = 0 }
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Small Arms"
+		country_event = { id = 91415 days = 0 }
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+}
+
+country_event = {
+	title = EVTNAMErequestgrant
+	desc = EVTDESCrequestgrant
+	id = 91401
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ask_0.1M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 100000
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91402 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_0.25M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 250000
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91403 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_0.5M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 500000
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91404 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_1M_Grant"
+		any_country = {
+			limit = {
+				ai = no
+				money = 1000000
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91405 days = 0}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91402
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+	
+	option = {
+		name = "Give_0.1M_Grant"
+		treasury = -100000
+		FROM = {
+			treasury = 100000
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91403
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+	
+	option = {
+		name = "Give_0.25M_Grant"
+		treasury = -250000
+		FROM = {
+			treasury = 250000
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91404
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+	
+	option = {
+		name = "Give_0.5M_Grant"
+		treasury = -500000
+		FROM = {
+			treasury = 500000
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivegrant
+	desc = EVTDESCgivegrant
+	id = 91405
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+	
+	option = {
+		name = "Give_1M_Grant"
+		treasury = -1000000
+		FROM = {
+			treasury = 1000000
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMErequestsupplies
+	desc = EVTDESCrequestsupplies
+	id = 91406
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ask_500_Ammunition"
+		any_country = {
+			limit = {
+				ai = no
+				ammunition = 500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91407 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_2500_Ammunition"
+		any_country = {
+			limit = {
+				ai = no
+				ammunition = 2500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91408 days = 0}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91407
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_500_Ammunition"
+		ammunition = -500
+		FROM = {
+			ammunition = 500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91408
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_2500_Ammunition"
+		ammunition = -2500
+		FROM = {
+			ammunition = 2500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMErequestsupplies
+	desc = EVTDESCrequestsupplies
+	id = 91409
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ask_500_Artillery"
+		any_country = {
+			limit = {
+				ai = no
+				artillery = 500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91410 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_2500_Artillery"
+		any_country = {
+			limit = {
+				ai = no
+				artillery = 2500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91411 days = 0}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91410
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_500_Artillery"
+		artillery = -500
+		FROM = {
+			artillery = 500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91411
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_2500_Artillery"
+		artillery = -2500
+		FROM = {
+			artillery = 2500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMErequestsupplies
+	desc = EVTDESCrequestsupplies
+	id = 91412
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ask_500_Canned_Food"
+		any_country = {
+			limit = {
+				ai = no
+				canned_food = 500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91413 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_2500_Canned_Food"
+		any_country = {
+			limit = {
+				ai = no
+				canned_food = 2500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91414 days = 0}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91413
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_500_Canned_Food"
+		canned_food = -500
+		FROM = {
+			canned_food = 500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91414
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_2500_Canned_Food"
+		canned_food = -2500
+		FROM = {
+			canned_food = 2500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMErequestsupplies
+	desc = EVTDESCrequestsupplies
+	id = 91415
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ask_500_Small_Arms"
+		any_country = {
+			limit = {
+				ai = no
+				small_arms = 500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91416 days = 0}
+		}
+	}
+	option = {
+		name = "Ask_2500_Small_Arms"
+		any_country = {
+			limit = {
+				ai = no
+				small_arms = 2500
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+				NOT = { has_country_flag = deciding_grant }
+			}
+			country_event = {id = 91417 days = 0}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91416
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_500_Small_Arms"
+		small_arms = -500
+		FROM = {
+			small_arms = 500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91417
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = deciding_grant
+	}
+
+	option = {
+		name = "Give_2500_Small_Arms"
+		small_arms = -2500
+		FROM = {
+			small_arms = 2500
+		}
+		clr_country_flag = deciding_grant
+	}
+	option = {
+		name = "Give_No_Grant"
+		clr_country_flag = deciding_grant
+	}
+}

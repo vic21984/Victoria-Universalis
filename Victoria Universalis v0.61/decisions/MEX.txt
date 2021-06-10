@@ -1,0 +1,135 @@
+political_decisions = {
+	restore_mexican_empire = {
+		potential = {
+			tag = MEX
+			government = democracy
+			NOT = {
+				has_country_flag = we_have_tried_this_once
+			}
+		}
+
+		allow = {
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+			}
+			year = 1861
+		}
+
+		effect = {
+			government = hms_government
+			any_pop = {
+				militancy = 9
+				consciousness = -9
+			}
+			set_country_flag = we_have_tried_this_once
+			add_country_modifier = { name = cannot_pass_reform duration = 1825 }
+			set_country_flag = cannot_pass_reform
+			political_reform = wealth_weighted_voting
+			political_reform = all_voting_pops
+			random_owned = {
+				limit = {
+					owner = { school_reforms = good_schools }
+				}	
+				owner = { social_reform = compulsory_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = acceptable_schools }
+				}	
+				owner = { social_reform = good_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = low_schools }
+				}	
+				owner = { social_reform = acceptable_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = no_schools }
+				}	
+				owner = { social_reform = low_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { debt_law = debtors_prisons }
+				}	
+				owner = { political_reform = bankruptcy }
+			}
+			random_owned = {
+				limit = {
+					owner = { debt_law = peonage }
+				}	
+				owner = { political_reform = debtors_prisons }
+			}
+			random_owned = {
+				limit = {
+					owner = { debt_law = serfdom }
+				}	
+				owner = { political_reform = peonage }
+			}
+			random_owned = {
+				limit = {
+					owner = { trade_unions = non_socialist }
+				}	
+				owner = { political_reform = all_trade_unions }
+			}
+			random_owned = {
+				limit = {
+					owner = { trade_unions = state_controlled }
+				}	
+				owner = { political_reform = non_socialist }
+			}
+			random_owned = {
+				limit = {
+					owner = { trade_unions = no_trade_unions }
+				}	
+				owner = { political_reform = state_controlled }
+			}
+			random_owned = {
+				limit = {
+					owner = { press_rights = censored_press }
+				}	
+				owner = { political_reform = free_press }
+			}
+			random_owned = {
+				limit = {
+					owner = { press_rights = state_press }
+				}	
+				owner = { political_reform = censored_press }
+			}
+			random_owned = {
+				limit = {
+					owner = { penal_system = incarceration }
+				}	
+				owner = { social_reform = rehabilitation }
+			}
+			random_owned = {
+				limit = {
+					owner = { penal_system = punitive_labour }
+				}	
+				owner = { social_reform = incarceration }
+			}
+			random_owned = {
+				limit = {
+					owner = { penal_system = capital_punishment }
+				}	
+				owner = { social_reform = punitive_labour }
+			}
+			any_owned = {
+				limit = {
+					is_core = MEX
+				}
+				add_province_modifier = { name = republican_rebels duration = 1825 }
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					CSA = { exists = no }
+				}
+			}
+		}
+	}
+}

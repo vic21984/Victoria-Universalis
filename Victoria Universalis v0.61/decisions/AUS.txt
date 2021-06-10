@@ -1,0 +1,296 @@
+political_decisions = {
+	form_danubian_federation = {
+		picture = danubian_federation
+		potential = {
+			tag = KUK
+			NOT = { has_country_flag = danubian_federation_formed }
+		}
+		allow = {
+			has_unclaimed_cores = no
+			vote_franschise = universal_voting
+			upper_house_composition = population_equal_weight
+			public_meetings = yes_meeting
+			press_rights = free_press
+			political_parties = secret_ballots
+			citizens_rights = all_voting_pops
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			prestige = 25
+			government = democracy
+			political_reform = federalism
+			clr_country_flag = confederalism
+			add_accepted_culture = slovak
+			add_accepted_culture = slovene
+			add_accepted_culture = croat
+			add_accepted_culture = hungarian
+			add_accepted_culture = romanian
+			change_tag = DNB
+		}
+	}
+
+	enact_dual_monarchy = {
+		potential = {
+			tag = AUS
+			war = no
+			any_owned_province = {
+				is_core = HUN
+			}
+			NOT = {
+				has_country_flag = dual_monarchy_done
+			}
+		}
+
+		allow = {
+			OR = {
+				ITA = { exists = yes }
+				NGF = { exists = yes }
+				GER = { exists = yes }
+				SGF = { exists = yes }
+			}
+			OR = {
+				HUN = { exists = no }
+				is_our_vassal = HUN
+			}
+			nationalism_n_imperialism = 1
+		}
+	
+		effect = {
+			political_reform = confederalism
+			set_country_flag = confederalism
+			all_core = {
+				add_core = KUK
+			}
+			HUN = {
+				all_core = { add_core = KUK }
+				annex_to = THIS
+			}
+			all_core = {
+				remove_core = AUS
+			}
+			AUS_619 = { add_core = AUS }
+			AUS_613 = { add_core = AUS }
+			AUS_612 = { add_core = AUS }
+			any_pop = {
+				limit = {
+					culture = hungarian
+				}
+				militancy = -2
+			}
+			any_pop = {
+				limit = {
+					NOT = {
+						OR = {
+							culture = hungarian
+							culture = south_german
+						}
+					}
+				}
+				militancy = 2
+			}
+						
+			add_accepted_culture = hungarian
+			change_tag = KUK
+			set_country_flag = dual_monarchy_done	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	the_grunderzeit = {
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+			}
+			owns = 619
+			NOT = {
+				has_country_flag = grunderzeit_we_have_done
+			}
+		}
+		allow = {
+			iron_railroad = 1
+			cheap_iron = 1
+			money = 500000
+		}
+		effect = {
+			treasury = -500000
+			619 = {
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.2
+					}
+				}
+				life_rating = 5
+			}
+			prestige = 10
+			set_country_flag = grunderzeit_we_have_done
+		}
+	}
+	
+	budapest_united = {
+		picture = budapest_city
+		potential = {
+			owns = 641
+			NOT = { has_global_flag = budapest_founded }
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+			money = 500000
+		}
+
+		effect = {
+			prestige = 10
+			treasury = -500000
+			set_global_flag = budapest_founded
+			641 = {
+				life_rating = 5
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	annex_krakow = {
+		potential = {
+			ai = yes
+			tag = AUS
+			year = 1840
+			NOT = { has_country_flag = krakow_annexed }
+			owns = 714
+			KRA = {
+				exists = yes
+				ai = yes
+			}
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			inherit = KRA
+			set_country_flag = krakow_annexed
+		}
+	}
+
+	embrace_slovak_minority = {
+		picture = embrace_slovaks
+		potential = {
+			tag = HUN
+			NOT = {
+				accepted_culture = slovak
+				has_country_flag = slovakians_embraced
+			}
+			OR = {
+				AUS_633 = {
+					owned_by = THIS
+				}
+				AUS_637 = {
+					owned_by = THIS
+				}
+			}
+		}
+		allow = {
+			citizens_rights = all_voting_pops
+			OR = {
+				government = hms_government
+				government = democracy
+			}
+			SLV = {
+				all_core = { owned_by = THIS }
+			}
+			NOT = {
+				OR = {
+					SLV = { exists = yes }
+					CZH = { exists = yes }
+				}
+			}
+			any_owned_province = {
+					is_core = SLV
+					state_scope = { 
+						NOT = {
+							average_militancy = 1
+						}
+					}
+			}
+		}
+		effect = {
+			set_country_flag = slovakians_embraced
+			add_accepted_culture = slovak
+			any_pop = {
+				limit = { has_pop_culture = slovak }
+				militancy = -4
+				consciousness = -4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	concede_italy = {
+		picture = north_italian_federation
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = DNB
+			}
+			NOT = {
+				has_country_flag = condeded_italy
+			}
+		}
+
+		allow = {
+			AUS_726 = {
+				NOT = { owned_by = THIS }
+				owned_by = ITA
+			}
+			AUS_729 = {
+				NOT = { owned_by = THIS }
+				owned_by = ITA
+			}
+			OR = {
+				AUS_734 = {
+					NOT = { owned_by = THIS }
+					owned_by = ITA
+				}
+				AUS_736 = {
+					NOT = { owned_by = THIS }
+					owned_by = ITA
+				}
+			}
+		}
+
+		effect = {
+			any_owned = {
+				limit = { is_core = ITA }
+				secede_province = ITA
+			}
+			AUS_726 = {
+				remove_core = THIS
+			}
+			AUS_729 = {
+				remove_core = THIS
+			}
+			AUS_734 = {
+				remove_core = THIS
+			}
+			AUS_736 = {
+				remove_core = THIS
+			}
+			relation = {
+				who = ITA
+				value = 300
+			}
+			set_country_flag = condeded_italy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

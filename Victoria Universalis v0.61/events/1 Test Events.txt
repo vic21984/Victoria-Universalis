@@ -1,0 +1,71 @@
+# Audax Validator "!" Ignore_ALL
+
+country_event = {
+	id = 1
+	title = "Literacy Increase"
+	is_triggered_only = yes
+	
+	option = {
+		any_pop = {
+			literacy = 0.10
+		}
+	}
+}
+
+country_event = {
+	id = 2
+	title = "MIL/CON Decrease"
+	is_triggered_only = yes
+	
+	option = {
+		any_pop = {
+			militancy = -5
+		}
+	}
+	
+	option = {
+		any_pop = {
+			consciousness = -5
+		}
+	}
+}
+
+country_event = {
+	id = 3
+	title = "MIL/CON Increase"
+	is_triggered_only = yes
+	
+	option = {
+		any_pop = {
+			militancy = 5
+		}
+	}
+	
+	option = {
+		any_pop = {
+			consciousness = 5
+		}
+	}
+}
+
+country_event = {
+	id = 4
+	title = "Assimilation"
+	is_triggered_only = yes
+	
+	option = {
+		any_owned = {
+			assimilate = yes
+		}
+	}
+}
+
+country_event = {
+	id = 5
+	title = "Badboy"
+	is_triggered_only = yes
+	
+	option = {
+		badboy = -25
+	}
+}

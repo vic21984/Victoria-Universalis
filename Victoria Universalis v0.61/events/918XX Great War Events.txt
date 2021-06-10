@@ -1,0 +1,3516 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+########## REPLENISH AI STOCKPILE ##########
+country_event = {
+	id = 91801
+	title = "AI WW1 Stockpile Counter"
+
+	trigger = {
+		has_global_flag = ww1_bookmark
+		ai = yes
+		war = yes
+		NOT = {
+			OR = {
+				has_global_flag = allied_victory
+				has_global_flag = central_victory
+			}
+		}
+		NOT = { has_country_flag = great_war_lost }
+		NOT = { has_country_modifier = monthly_timer }
+		tag = ENG
+	}
+
+	immediate = { add_country_modifier = { name = monthly_timer duration = 60 } }
+
+	option = {
+		barrels = 200
+		aeroplanes = 200
+		fuel = 200
+		canned_food = 1000
+		small_arms = 1000
+		artillery = 1000
+		ammunition = 1000
+	}
+}
+
+country_event = {
+	id = 91802
+	title = "AI WW1 Stockpile Counter"
+
+	trigger = {
+		has_global_flag = ww1_bookmark
+		ai = yes
+		war = yes
+		NOT = {
+			OR = {
+				has_global_flag = allied_victory
+				has_global_flag = central_victory
+			}
+		}
+		NOT = { has_country_flag = great_war_lost }
+		NOT = { has_country_modifier = monthly_timer }
+		OR = {
+			tag = FRA
+			tag = GER
+		}
+		NOT = { tag = ENG }
+	}
+
+	immediate = { add_country_modifier = { name = monthly_timer duration = 60 } }
+
+	option = {
+		aeroplanes = 200
+		fuel = 200
+		canned_food = 1000
+		small_arms = 1000
+		artillery = 1000
+		ammunition = 1000
+	}
+}
+
+country_event = {
+	id = 91803
+	title = "AI WW1 Stockpile Counter"
+
+	trigger = {
+		has_global_flag = ww1_bookmark
+		ai = yes
+		war = yes
+		NOT = {
+			OR = {
+				has_global_flag = allied_victory
+				has_global_flag = central_victory
+			}
+		}
+		NOT = { has_country_flag = great_war_lost }
+		NOT = { has_country_modifier = monthly_timer }
+		OR = {
+			tag = ITA
+			tag = EIC
+			tag = RUS
+			tag = KUK
+			tag = TUR
+		}
+		NOT = {
+			OR = {
+				tag = ENG
+				tag = FRA
+				tag = GER
+			}
+		}
+	}
+
+	immediate = { add_country_modifier = { name = monthly_timer duration = 60 } }
+
+	option = {
+		canned_food = 1000
+		small_arms = 1000
+		artillery = 1000
+		ammunition = 1000
+	}
+}
+
+########## GREEK NATIONAL SCHISM ##########
+country_event = {
+	id = 91807
+	title = "Venizelist Victory"
+	desc = "The Venizelist movement has succeeded in overthrowing the monarchy and instituting a provisional government to lead the war against the Central Powers."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = KGR
+		exists = GRE
+		NOT = { has_country_flag = venizelist_victory }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = ENG }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+
+	immediate = { set_country_flag = venizelist_victory }
+
+	option = {
+		name = "The fighting is not over."
+		KGR = { all_core = { remove_core = THIS } }
+		GRE = {
+			inherit = KGR
+			capital = 834
+		}
+	}
+}
+
+country_event = {
+	id = 91808
+	title = "Epistratoi Victory"
+	desc = "The Epistratoi have succeeded in defending the monarchy and crushing the rebellious Venizelos supporters. As part of our agreement with Germany we must return any territory claimed by the Central Powers."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = GRE
+		exists = KGR
+		NOT = { has_country_flag = epistratoi_victory }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+
+	immediate = { set_country_flag = epistratoi_victory }
+
+	option = {
+		name = "The fighting is not over."
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = BUL
+						is_core = TUR
+					}
+				}
+				remove_core = KGR
+			}
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = BUL
+					is_core = TUR
+				}
+			}
+			remove_core = KGR
+		}
+		GRE = { all_core = { remove_core = GRE } }
+		any_owned = {
+			limit = { is_core = TUR }
+			secede_province = TUR
+		}
+		any_owned = {
+			limit = { is_core = BUL }
+			secede_province = BUL
+		}
+		KGR = { inherit = GRE }
+	}
+}
+
+########## LUXEMBOURG SURRENDER ##########
+country_event = {
+	id = 91809
+	title = "Fall of Luxembourg"
+	desc = "We have become the first casualty of the Great War as a result of being in the unfortunate path of the Schlieffen Plan."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = LUX
+		NOT = { has_country_flag = lux_lost }
+		has_global_flag = ww1_bookmark
+		NOT = { war_with = GER }
+		NOT = {
+			OR = {
+				has_global_flag = allied_victory
+				has_global_flag = central_victory
+			}
+		}
+	}
+
+	immediate = { set_country_flag = lux_lost }
+
+	option = {
+		name = "The fighting is over."
+		GER = { inherit = THIS }
+	}
+}
+
+########## AFRICAN EVENTS ##########
+#country_event = {
+#	id = 91810
+#	title = "Senussi Jihad"
+#	desc = "The Grand Senussi Ahmed Sharif as-Senussi of Libya has allied himself with the Central Powers and declared Jihad against the European colonialists in North #Africa."
+#	
+#	
+#	trigger = {
+#		tag = ITA
+#		war = yes
+#		has_global_flag = 1914_bookmark
+#		NOT = { has_global_flag = senussi_jihad }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 3
+#	}
+#
+#	immediate = {
+#		set_global_flag = senussi_jihad
+#		CYR = {
+#			prestige = -500
+#			add_country_modifier = { name = senussi_jihad duration = 365 }
+#			money = 500000
+#			ammunition = 2000
+#			canned_food = 2000
+#			artillery = 1000
+#			small_arms = 2000
+#			war = {
+#				target = ITA
+#				attacker_goal = {
+#					casus_belli = acquire_core_state
+#					state_province_id = 1731
+#				}
+#				attacker_goal = {
+#					casus_belli = acquire_core_state
+#					state_province_id = 1733
+#				}
+#				defender_goal = { casus_belli = european_african_conquest }
+#				call_ally = yes
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = "We will put them down!"
+#	}
+#}
+
+country_event = {
+	id = 91811
+	title = "The Zaian War"
+	desc = "Zaian confederation of Berber tribes in Morocco have taken advantage of the war in europe and begun an open revolt against us."
+	picture = zaian_revolt
+	
+	trigger = {
+		tag = FRA
+		war = yes
+		has_global_flag = ww1_bookmark
+		year = 1914
+		NOT = { has_global_flag = zaian_war }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		set_global_flag = zaian_war
+		1680 = { secede_province = MOR }
+		1682 = { secede_province = MOR }
+		1683 = { secede_province = MOR }
+		1692 = { secede_province = MOR }
+		MOR = {
+			prestige = -500
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+		}
+		war = {
+			target = MOR
+			defender_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1685
+			}
+			defender_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1690
+			}
+			defender_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1694
+			}
+			attacker_goal = { casus_belli = european_african_conquest }
+		}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+country_event = {
+	id = 91812
+	title = "The Kaocen Revolt"
+	desc = "The Taureg leader, Ag Mohammed Wau Teguidda Kaocen, has taken up the call of the Senusiyan Jihad against all European colonialists."
+	picture = zaian_revolt
+	
+	trigger = {
+		tag = FRA
+		war = yes
+		has_global_flag = ww1_bookmark
+		has_global_flag = senussi_jihad
+		NOT = { has_global_flag = kaocen_revolt }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		set_global_flag = kaocen_revolt
+		1812 = { secede_province = NIG }
+		1813 = { secede_province = NIG }
+		1814 = { secede_province = NIG }
+		1817 = { secede_province = NIG }
+		NIG = {
+			prestige = -500
+			add_country_modifier = { name = senussi_jihad duration = 365 }
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+		}
+			war = {
+				target = NIG
+				defender_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1811
+				}
+				defender_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1825
+				}
+				attacker_goal = { casus_belli = european_african_conquest }
+			}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+country_event = {
+	id = 91813
+	title = "The Volta-Bani War"
+	desc = "The tribes of Volta region have taken advantage of our ongoing war in Europe and declared open revolt against us."
+	picture = zaian_revolt
+	
+	trigger = {
+		tag = FRA
+		war = yes
+		has_global_flag = ww1_bookmark
+		NOT = { has_global_flag = volta_bani_war }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		set_global_flag = volta_bani_war
+		FRA = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1902
+						province_id = 1903
+						province_id = 1905
+						province_id = 1906
+					}
+				}
+				secede_province = MOS
+			}
+		}
+		MOS = {
+			prestige = -500
+			add_country_modifier = { name = jihad duration = 365 }
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+		}
+			war = {
+				target = MOS
+				defender_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1901
+				}
+				attacker_goal = { casus_belli = european_african_conquest }
+			}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+country_event = {
+	id = 91814
+	title = "The Darfur Expedition"
+	desc = "The sultan of Darfur, Ali Dinar, has stopped paying his customary tribute and has aligned himself with the Central Powers."
+	picture = zaian_revolt
+	
+	trigger = {
+		tag = ENG
+		war = yes
+		has_global_flag = ww1_bookmark
+		NOT = { has_global_flag = darfur_expedition }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		set_global_flag = darfur_expedition
+		ENG = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1842
+						province_id = 1841
+					}
+				}
+				secede_province = DAR
+			}
+		}
+		DAR = {
+			prestige = -500
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+		}
+		war = {
+			target = DAR
+			attacker_goal = { casus_belli = european_african_conquest }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+#country_event = {
+#	id = 91815
+#	title = "The Dervish Movement"
+#	desc = "The Somali Dervish movement has taken up arms against our holdings along the coast of Somaliland."
+#	
+#	
+#	trigger = {
+#		tag = ENG
+#		war = yes
+#		has_global_flag = 1913_bookmark
+#		NOT = { has_global_flag = dervish_movement }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 3
+#	}
+#
+#	immediate = {
+#		set_global_flag = dervish_movement
+#		SOM = {
+#			ammunition = 2000
+#			canned_food = 2000
+#			artillery = 1000
+#			small_arms = 2000
+#			add_country_modifier = { name = jihad duration = 365 }
+#			war = {
+#				target = ENG
+#				attacker_goal = {
+#					casus_belli = acquire_core_state
+#					state_province_id = 1873
+#				}
+#				defender_goal = { casus_belli = status_quo }
+#				call_ally = yes
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = "We will put them down!"
+#	}
+#}
+
+country_event = {
+	id = 91816
+	title = "The Bussa Rebellion"
+	desc = "Sabukki, a local prince of Bussa, has expelled our administrators in Western Nigeria and seeks to create a new Borgu Emirate."
+	picture = zaian_revolt
+	
+	trigger = {
+		tag = ENG
+		war = yes
+		has_global_flag = ww1_bookmark
+		NOT = { has_global_flag = bussa_rebellion }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		set_global_flag = bussa_rebellion
+		ENG = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1946
+						province_id = 1940
+						province_id = 1927
+						province_id = 1938
+					}
+				}
+				secede_province = BRG
+			}
+		}
+		BRG = {
+			add_country_modifier = { name = jihad duration = 365 }
+			prestige = -1000
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+			war = {
+				target = ENG
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1948
+				}
+				defender_goal = { casus_belli = european_african_conquest }
+				call_ally = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+country_event = {
+	id = 91817
+	title = "The Egba Uprising"
+	desc = "Egba tribesmen of the Abeokuta province have rebelled against our rule."
+	picture = zaian_revolt
+	
+	trigger = {
+		tag = ENG
+		war = yes
+		has_global_flag = ww1_bookmark
+		NOT = { has_global_flag = egba_uprising }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		set_global_flag = egba_uprising
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1924
+					province_id = 1925
+				}
+			}
+			secede_province = OYO
+		}
+		OYO = {
+			prestige = -1000
+			money = 500000
+			ammunition = 2000
+			canned_food = 2000
+			artillery = 1000
+			small_arms = 2000
+			war = {
+				target = ENG
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1923
+				}
+				defender_goal = { casus_belli = european_african_conquest }
+				call_ally = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "We will put them down!"
+	}
+}
+
+country_event = {
+	id = 91818
+	title = "The death of Mohammed Abdullah Hassan"
+	desc = "The Allied powers have hunted down and killed the leader of the Dervish movement, Mohammed Abdullah Hassan. The British have agreed to Ethiopian annexation of the defunct Dervish state."
+	picture = ethiopian_empire
+	
+	trigger = {
+		tag = ETH
+		has_global_flag = allied_victory
+		has_global_flag = ww1_bookmark
+		NOT = { has_country_flag = annexation_of_somalia }
+		exists = SOM
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_global_flag = annexation_of_somalia
+		inherit = SOM
+	}
+
+	option = {
+		name = "Finally!"
+		1873 = { secede_province = ENG }
+	}
+}
+
+country_event = {
+	id = 91819
+	title = "The death of Mohammed Abdullah Hassan"
+	desc = "The leader of the Dervish movement, Mohammed Abdullah Hassan, has been hunted down and killed by a joint Anglo-Ethiopian task force. In exchange for their help, parliament has agreed to Ethiopian annexation of the defunct Dervish state."
+	picture = ethiopian_empire
+
+	trigger = {
+		has_global_flag = allied_victory
+		owns = 1866
+		owns = 1867
+		has_global_flag = ww1_bookmark
+		NOT = { has_global_flag = annexation_of_somalia }
+		NOT = { tag = SOM }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = annexation_of_somalia
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1866
+					province_id = 1867
+				}
+			}
+			secede_province = ETH
+		}
+	}
+
+	option = {
+		name = "Finally!"
+	}
+}
+
+########## ALLIED VICTORY ##########
+country_event = {
+	id = 91850
+	title = "Treaty of Neuilly"
+	desc = "Allied armies have reversed all our gains and now occupy our country. We will have to surrender our claims in Macedonia and Dobrudja."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = BUL
+		NOT = { has_country_flag = bul_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = ENG }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = bul_lost
+		prestige = -50
+		GRE = { prestige = 50 }
+		any_owned = {
+			limit = {
+				is_core = GRE
+			}
+			secede_province = GRE
+		}
+		any_owned = {
+			limit = {
+				is_core = ROM
+			}
+			secede_province = ROM
+		}
+		any_owned = {
+			limit = {
+				is_core = SER
+			}
+			secede_province = SER
+		}
+	}
+	
+	option = {
+		name = "This is a dark day for us."
+	}
+}
+
+country_event = {
+	id = 91851
+	title = "Treaty of Saint-Germain"
+	desc = "The various ethnic minorities within our empire have all declared independence and a liberal revolution has overthrown the Habsburg dynasty in Austria."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = KUK
+		NOT = { has_country_flag = kuk_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = ENG }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = kuk_lost
+		prestige = -300
+		ITA = { prestige = 100 }
+		ROM = { prestige = 100 }
+		SER = { prestige = 100 }
+		any_owned = {
+			remove_core = KUK
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = ITA
+					province_id = 769
+					province_id = 770
+					province_id = 778
+				}
+			}
+			secede_province = ITA
+		}
+		any_owned = {
+			limit = {
+				is_core = CZH
+			}
+			secede_province = CZH
+		}
+		any_owned = {
+			limit = {
+				is_core = GLM
+			}
+			secede_province = GLM
+		}
+		any_owned = {
+			limit = {
+				is_core = YUG
+			}
+			secede_province = SER
+		}
+		SER = {
+			inherit = MON
+			change_tag = YUG
+		}
+		any_owned = {
+			limit = {
+				is_core = ROM
+			}
+			secede_province = ROM
+		}
+		any_owned = {
+			limit = {
+				is_core = GRE
+			}
+			secede_province = GRE
+		}
+		any_owned = {
+			limit = {
+				is_core = ALB
+			}
+			secede_province = ALB
+		}
+		any_owned = {
+			limit = {
+				is_core = HUN
+			}
+			secede_province = HUN
+		}
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			secede_province = UKR
+		}
+		change_tag = AUS
+		government = democracy
+	}
+	
+	option = {
+		name = "The Habsburg Empire has come to an end."
+	}
+}
+
+country_event = {
+	id = 91852
+	title = "Treaty of Sèvres"
+	desc = "The Allies have carved out our holdings in the middle east for themselves and plan to divide the rest of our nation between the Greeks and Armenians."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = TUR
+		NOT = { has_country_flag = tur_lost }
+		exists = GRE
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = ENG }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = tur_lost
+		prestige = -100
+		ENG = { prestige = 50 }
+		GRE = { prestige = 50 }
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 897
+					province_id = 900
+					province_id = 901
+					province_id = 904
+					province_id = 905
+					province_id = 907
+					province_id = 903
+					province_id = 912
+					province_id = 914
+					province_id = 913
+					province_id = 915
+					province_id = 902
+					province_id = 906
+				}
+			}
+			remove_core = TUR
+			secede_province = FRA
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 916
+					province_id = 918
+					province_id = 919
+					province_id = 917
+					province_id = 920
+					province_id = 921
+					province_id = 922
+					province_id = 911
+					province_id = 908
+					province_id = 909
+					province_id = 910
+					is_core = IRQ
+					is_core = YEM
+				}
+			}
+			remove_core = TUR
+			secede_province = ENG
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 828
+					province_id = 858
+					province_id = 859
+					province_id = 869
+					province_id = 870
+					province_id = 871
+					province_id = 872
+				}
+			}
+			secede_province = GRE
+		}
+		any_owned = {
+			limit = {
+				is_core = ARM
+			}
+			secede_province = ARM
+		}
+		any_owned = {
+			limit = {
+				is_core = NEJ
+			}
+			remove_core = TUR
+			secede_province = NEJ
+		}
+		any_owned = {
+			limit = {
+				is_core = HDJ
+			}
+			remove_core = TUR
+			add_core = NEJ
+			secede_province = HDJ
+		}
+		government = presidential_dictatorship
+		vote_franschise = none_voting
+	}
+	
+	option = {
+		name = "This isn't over!"
+	}
+}
+
+country_event = {
+	id = 91853
+	title = "Treaty of Sèvres"
+	desc = "The Allies have carved out our holdings in the middle east for themselves and plan to create a new Armenian nation in our eastern lands."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = TUR
+		NOT = { has_country_flag = tur_lost }
+		NOT = { exists = GRE }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = ENG }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = tur_lost
+		prestige = -100
+		ENG = { prestige = 50 }
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 897
+					province_id = 900
+					province_id = 901
+					province_id = 904
+					province_id = 905
+					province_id = 907
+					province_id = 903
+					province_id = 912
+					province_id = 914
+					province_id = 913
+					province_id = 915
+					province_id = 902
+					province_id = 906
+				}
+			}
+			remove_core = TUR
+			secede_province = FRA
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 916
+					province_id = 918
+					province_id = 919
+					province_id = 917
+					province_id = 920
+					province_id = 921
+					province_id = 922
+					province_id = 911
+					province_id = 908
+					province_id = 909
+					province_id = 910
+					is_core = IRQ
+					is_core = YEM
+				}
+			}
+			remove_core = TUR
+			secede_province = ENG
+		}
+		any_owned = {
+			limit = {
+				is_core = ARM
+			}
+			secede_province = ARM
+		}
+		any_owned = {
+			limit = {
+				is_core = NEJ
+			}
+			remove_core = TUR
+			secede_province = NEJ
+		}
+		any_owned = {
+			limit = {
+				is_core = HDJ
+			}
+			remove_core = TUR
+			add_core = NEJ
+			secede_province = HDJ
+		}
+		ARM = { prestige = 50 }
+		government = presidential_dictatorship
+		vote_franschise = none_voting
+	}
+	
+	option = {
+		name = "This isn't over!"
+	}
+}
+
+country_event = {
+	id = 91854
+	title = "Treaty of Versailles"
+	desc = "We have been defeated on the field of battle and the Kaiser has abdicated. We are forced to give up our colonies and cede land to France, Russia, and Denmark."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = GER
+		NOT = { has_country_flag = ger_lost }
+		has_country_flag = great_war_lost
+		NOT = { has_global_flag = october_revolution }
+		has_global_flag = ww1_bookmark
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = ger_lost
+		prestige = -300
+		FRA = { prestige = 100 }
+		ENG = { prestige = 100 }
+		RUS = { prestige = 100 }
+		FRA = {
+			any_owned = {
+				limit = { is_core = GER }
+				secede_province = GER
+			}
+		}
+		any_owned = {
+			limit = {
+				is_core = DEN
+			}
+			remove_core = GER
+			secede_province = DEN
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = FRA
+					province_id = 1914
+					province_id = 1917
+					province_id = 1918
+				}
+			}
+			remove_core = GER
+			secede_province = FRA
+		}
+		any_owned = {
+			limit = {
+				NOT = {
+					OR = {
+						province_id = 1914
+						province_id = 1917
+						province_id = 1918
+					}
+				}
+				continent = africa
+			}
+			secede_province = ENG
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 690
+					province_id = 693
+					province_id = 694
+					province_id = 695
+					province_id = 696
+					province_id = 697
+					province_id = 698
+				}
+			}
+			secede_province = RUS
+		}
+		any_owned = {
+			limit = {
+				is_core = ITA
+			}
+			secede_province = ITA
+		}
+		any_owned = {
+			limit = {
+				province_id = 2543
+			}
+			secede_province = USA
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 610
+					province_id = 1566
+					province_id = 2579
+					province_id = 2518
+					province_id = 2519
+					province_id = 2521
+					province_id = 2522
+				}
+			}
+			secede_province = JAP
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1531
+					province_id = 2530
+					province_id = 2531
+					province_id = 2537
+					province_id = 2539
+					province_id = 2523
+				}
+			}
+			secede_province = AST
+		}
+		any_owned = {
+			limit = {
+				is_core = BEL
+			}
+			secede_province = BEL
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = KON
+					is_core = CNG
+				}
+			}
+			secede_province = BEL
+		}
+		any_owned = {
+			limit = {
+				is_core = LUX
+			}
+			secede_province = LUX
+		}
+		ENG = {
+			inherit = BRG
+			inherit = OYO
+			inherit = DAR
+		}
+		FRA = {
+			inherit = MOR
+			inherit = NIG
+			inherit = MOS
+		}
+		CYR = {
+			all_core = {
+				add_core = TRI
+				remove_core = CYR
+			}
+		}
+		ITA = { inherit = CYR }
+		KGR = { all_core = { remove_core = KGR } }
+		GRE = {
+			inherit = KGR
+			capital = 834
+			any_owned = { add_core = GRE }
+		}
+		1873 = { secede_province = THIS }
+		1873 = { secede_province = ENG }
+		1758 = { secede_province = THIS }
+		1758 = { secede_province = ENG }
+		government = democracy
+		vote_franschise = universal_voting
+		political_parties = non_secret_ballots
+	}
+	
+	option = {
+		name = "We've been stabbed in the back."
+	}
+}
+
+country_event = {
+	id = 91855
+	title = "Treaty of Versailles"
+	desc = "We have been defeated on the field of battle and the Kaiser has abdicated. We are forced to give up all our colonies and cede land to France, Denmark, and the new Polish and Lithuanian states."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = GER
+		NOT = { has_country_flag = ger_lost }
+		has_country_flag = great_war_lost
+		has_global_flag = october_revolution
+		has_global_flag = ww1_bookmark
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = ger_lost
+		prestige = -300
+		FRA = { prestige = 100 }
+		ENG = { prestige = 100 }
+		POL = { prestige = 100 }
+		FRA = {
+			any_owned = {
+				limit = { is_core = GER }
+				secede_province = GER
+			}
+		}
+		release_vassal = POL
+		any_owned = {
+			limit = {
+				is_core = POL
+				NOT = {
+					province_id = 682
+					province_id = 683
+					province_id = 684
+					province_id = 693
+					province_id = 694
+					province_id = 695
+					province_id = 696
+					province_id = 697
+				}
+			}
+			remove_core = GER
+			secede_province = POL
+		}
+		POL = { inherit = GLM }
+		any_owned = {
+			limit = {
+				is_core = DEN
+			}
+			remove_core = GER
+			secede_province = DEN
+		}
+		release_vassal = UBD
+		UBD = {
+			release = EST
+			change_tag = LAT
+		}
+		release_vassal = LIT
+		any_owned = {
+			limit = {
+				is_core = LIT
+			}
+			remove_core = GER
+			secede_province = LIT
+		}
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			secede_province = UKR
+		}
+		any_owned = {
+			limit = {
+				is_core = BYE
+			}
+			secede_province = BYE
+		}
+		any_owned = {
+			limit = {
+				is_core = BEL
+			}
+			secede_province = BEL
+		}
+		any_owned = {
+			limit = {
+				is_core = FIN
+			}
+			secede_province = FIN
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = FRA
+					province_id = 1914
+					province_id = 1917
+					province_id = 1918
+				}
+			}
+			remove_core = GER
+			secede_province = FRA
+		}
+		any_owned = {
+			limit = {
+				NOT = {
+					OR = {
+						province_id = 1914
+						province_id = 1917
+						province_id = 1918
+					}
+				}
+				continent = africa
+			}
+			secede_province = ENG
+		}
+		any_owned = {
+			limit = {
+				is_core = RUS
+			}
+			secede_province = RUS
+		}
+		any_owned = {
+			limit = {
+				is_core = ITA
+			}
+			secede_province = ITA
+		}
+		any_owned = {
+			limit = {
+				province_id = 2543
+			}
+			secede_province = USA
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 610
+					province_id = 1566
+					province_id = 2579
+					province_id = 2518
+					province_id = 2519
+					province_id = 2521
+					province_id = 2522
+				}
+			}
+			secede_province = JAP
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1531
+					province_id = 2530
+					province_id = 2531
+					province_id = 2537
+					province_id = 2539
+					province_id = 2523
+				}
+			}
+			secede_province = AST
+		}
+		any_owned = {
+			limit = {
+				is_core = BEL
+			}
+			secede_province = BEL
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = KON
+					is_core = CNG
+				}
+			}
+			secede_province = BEL
+		}
+		any_owned = {
+			limit = {
+				is_core = LUX
+			}
+			secede_province = LUX
+		}
+		ENG = {
+			inherit = BRG
+			inherit = OYO
+			inherit = DAR
+		}
+		FRA = {
+			inherit = MOR
+			inherit = NIG
+			inherit = MOS
+		}
+		CYR = {
+			all_core = {
+				add_core = TRI
+				remove_core = CYR
+			}
+		}
+		ITA = { inherit = CYR }
+		KGR = { all_core = { remove_core = KGR } }
+		GRE = {
+			inherit = KGR
+			capital = 834
+			any_owned = { add_core = GRE }
+		}
+		1873 = { secede_province = THIS }
+		1873 = { secede_province = ENG }
+		1758 = { secede_province = THIS }
+		1758 = { secede_province = ENG }
+		government = democracy
+		vote_franschise = universal_voting
+		political_parties = non_secret_ballots
+	}
+	
+	option = {
+		name = "We've been stabbed in the back."
+	}
+}
+
+country_event = {
+	id = 91856
+	title = "Anglo-Iranian Agreement"
+	desc = "We have agreed to withdraw from Iran in exchange for exclusive rights to their oil market."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = ENG
+		has_global_flag = allied_victory
+		NOT = { has_country_flag = anglo_iranian_agreement }
+		has_global_flag = ww1_bookmark
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = anglo_iranian_agreement
+		any_owned = {
+			limit = {
+				is_core = PER
+			}
+			secede_province = PER
+		}
+		diplomatic_influence = {
+			who = PER
+			value = 400
+		}
+	}
+
+	option = {
+		name = "Sounds fair."
+	}
+}
+
+
+########## CENTRAL VICTORY ##########
+
+country_event = {
+	id = 91861
+	title = "Treaty of Cologne"
+	desc = "Germany has annexed eastern Wallonie, taken all of our colonial possessions, and has forced us to become a vassal state."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = BEL
+		NOT = { has_country_flag = bel_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = bel_lost
+		prestige = -100
+		GER = { prestige = 100 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 398
+					province_id = 396
+					is_core = KON
+					is_core = CNG
+				}
+			}
+			secede_province = GER
+		}
+		GER = { 
+			create_vassal = BEL
+			inherit = LUX
+		}
+		sphere_owner = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+		GER = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+		}
+	}
+	
+	option = {
+		name = "C'est la vie."
+	}
+}
+
+country_event = {
+	id = 91862
+	title = "Treaty of Berlin"
+	desc = "Victorious German armies marched into Paris and dictated terms of surrender to us. We will have to cede border provinces in France and most of our African possessions to the new Kaiserreich."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = FRA
+		has_country_flag = great_war_lost
+		NOT = { has_country_flag = fra_lost }
+		has_global_flag = ww1_bookmark
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = fra_lost
+		prestige = -200
+		GER = { prestige = 200 }
+		GER = {
+			any_owned = {
+				limit = { is_core = FRA }
+				secede_province = FRA
+			}
+		}
+		capital = 425
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				is_core = SYR
+			}
+			secede_province = SYR
+		}
+		any_owned = {
+			limit = {
+				is_core = MOR
+			}
+			secede_province = MOR
+		}
+		any_owned = {
+			limit = {
+				is_core = MOS
+			}
+			secede_province = MOS
+		}
+		any_owned = {
+			limit = {
+				is_core = NIG
+			}
+			secede_province = NIG
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 8
+					province_id = 43
+					province_id = 45
+					province_id = 407
+					province_id = 409
+					province_id = 410
+					province_id = 411
+					province_id = 412
+					province_id = 413
+					province_id = 414
+					province_id = 432
+					province_id = 1976
+					province_id = 1972
+					province_id = 1975
+					province_id = 1974
+					province_id = 2624
+					province_id = 1978
+					province_id = 1977
+					province_id = 1980
+					province_id = 1981
+					province_id = 1966
+					province_id = 1967
+					province_id = 1965
+					province_id = 1968
+					province_id = 1971
+					province_id = 1970
+					province_id = 1969
+					province_id = 1819
+					province_id = 1820
+					province_id = 1818
+					province_id = 1823
+					province_id = 1822
+					province_id = 1875
+					province_id = 2123
+					province_id = 2124
+					province_id = 2126
+					is_core = MAD
+					is_core = DAH
+					continent = asia
+				}
+			}
+			secede_province = GER
+		}
+	}
+	
+	option = {
+		name = "A black day for France."
+	}
+}
+
+country_event = {
+	id = 91863
+	title = "Treaty of Berlin"
+	desc = "Our colonies in Africa and Asia have been are to be transferred to Germany and what was left of our empire has declared independence."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = ENG
+		has_country_flag = great_war_lost
+		NOT = { has_country_flag = eng_lost }
+		has_global_flag = ww1_bookmark
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = eng_lost
+		prestige = -400
+		GER = { prestige = 400 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1884
+					province_id = 1886
+					province_id = 1885
+				}
+			}
+			secede_province = LIB
+		}
+		any_owned = {
+			limit = {
+				province_id = 935
+			}
+			secede_province = TUR
+		}
+		any_owned = {
+			limit = {
+				province_id = 1785
+			}
+			secede_province = FRA
+		}
+		any_owned = {
+			limit = {
+				is_core = SOM
+			}
+			secede_province = SOM
+		}
+		any_owned = {
+			limit = {
+				is_core = CYR
+			}
+			secede_province = CYR
+		}
+		any_owned = {
+			limit = {
+				is_core = CYP
+			}
+			secede_province = TUR
+		}
+		any_owned = {
+			limit = {
+				is_core = IRQ
+			}
+			secede_province = IRQ
+		}
+		any_owned = {
+			limit = {
+				is_core = PLS
+			}
+			secede_province = PLS
+		}
+		any_owned = {
+			limit = {
+				province_id = 517
+			}
+			secede_province = SPA
+		}
+		any_owned = {
+			limit = {
+				province_id = 854
+			}
+			secede_province = ITA
+		}
+		any_owned = {
+			limit = {
+				is_core = YEM
+			}
+			secede_province = YEM
+		}
+		any_owned = {
+			limit = {
+				is_core = OMA
+			}
+			secede_province = OMA
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1162
+					province_id = 1165
+					province_id = 1167
+					province_id = 1168
+				}
+			}
+			secede_province = NEJ
+		}
+		any_owned = {
+			limit = {
+				is_core = PER
+			}
+			secede_province = PER
+		}
+		any_owned = {
+			limit = {
+				is_core = BUR
+			}
+			secede_province = BUR
+		}
+		any_owned = {
+			limit = {
+				is_core = PAK
+			}
+			secede_province = PAK
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					province_id = 1320
+				}
+			}
+			secede_province = HND
+		}
+		any_owned = {
+			limit = {
+				is_core = ARG
+			}
+			secede_province = ARG
+		}
+		any_owned = {
+			limit = {
+				is_core = GUA
+			}
+			secede_province = GUA
+		}
+		any_owned = {
+			limit = {
+				is_core = GUY
+			}
+			secede_province = GUY
+		}
+		any_owned = {
+			limit = {
+				is_core = TTB
+			}
+			secede_province = TTB
+		}
+		any_owned = {
+			limit = {
+				is_core = WIF
+			}
+			secede_province = WIF
+		}
+		any_owned = {
+			limit = {
+				is_core = JAM
+			}
+			secede_province = JAM
+		}
+		any_owned = {
+			limit = {
+				is_core = IRE
+				NOT = {
+					province_id = 255
+					province_id = 256
+					province_id = 254
+				}
+			}
+			remove_core = ENG
+			secede_province = IRE
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1843
+					province_id = 1845
+					province_id = 1844
+					province_id = 1846
+					province_id = 1847
+					province_id = 1842
+					province_id = 1841
+					AND = {
+						is_core = EGY
+						NOT = { province_id = 1755 }
+					}
+				}
+			}
+			secede_province = EGY
+		}
+		EGY = { civilized = yes }
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1755
+					province_id = 1909
+					province_id = 1908
+					province_id = 2077
+					province_id = 2076
+					province_id = 2074
+					province_id = 2574
+					province_id = 2075
+					province_id = 2013
+					province_id = 2015
+					province_id = 2014
+					province_id = 2012
+					province_id = 790
+					province_id = 2016
+					province_id = 2017
+					province_id = 2018
+					province_id = 2067
+					province_id = 2066
+					province_id = 2020
+					province_id = 2019
+					province_id = 2021
+					province_id = 2022
+					province_id = 2023
+					province_id = 2026
+					province_id = 2028
+					province_id = 2027
+					province_id = 2025
+					province_id = 2024
+					province_id = 2033
+					province_id = 2029
+					province_id = 2032
+					province_id = 2030
+					province_id = 2083
+					is_core = ASH
+					is_core = OYO
+					is_core = BEN
+					is_core = ARO
+					is_core = WRI
+					is_core = SOK
+					is_core = KBO
+					is_core = RHO
+					AND = {
+					continent = asia
+						NOT = {
+							is_core = PER
+							is_core = PAK
+							is_core = HND
+							is_core = BUR
+							is_core = ABU
+							is_core = YEM
+							is_core = OMA
+							is_core = IRQ
+						}
+					}
+					continent = oceania
+				}
+			}
+			secede_province = GER
+		}
+		GER = {	create_vassal = EGY }
+		GER = { inherit = BRG }
+		EGY = { inherit = DAR }
+		823 = {  secede_province = THIS }
+		823 = {  secede_province = BUL }
+		TUR_674 = { secede_province = THIS }
+		TUR_674 = { secede_province = BUL }
+		TUR_806 = { secede_province = THIS }
+		TUR_806 = { secede_province = BUL }
+		GRE = { all_core = { remove_core = GRE } }
+		KGR = {
+			inherit = GRE
+			any_owned = { add_core = KGR }
+		}
+		KUK = { inherit = ROM }
+		KUK = { inherit = SER }
+		KUK = { inherit = MON }
+		1758 = { secede_province = THIS }
+		1758 = { secede_province = EGY }
+		1864 = { secede_province = THIS }
+		1864 = { secede_province = SOM }
+	}
+	
+	option = {
+		name = "The sun has set on the British Empire."
+	}
+}
+
+country_event = {
+	id = 91864
+	title = "October Revolution"
+	desc = "The abysmal performance of the Tsardom in the great war has led to full blown rebellion among the masses. Several nations have already declared independence and a communist ferver is overtaking Russia."
+	picture = october_revolution
+
+	trigger = {
+		has_global_flag = 1913_bookmark
+		tag = RUS
+		NOT = { TUR = { has_country_flag = tur_lost } }
+		OR = {
+			has_country_flag = great_war_lost
+			war_exhaustion = 50
+			national_provinces_occupied = 0.29
+		}
+		NOT = { has_global_flag = october_revolution }
+	}
+
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_global_flag = october_revolution
+	}
+
+	option = {
+		name = "Continue as the Reds."
+		add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+		any_country = {
+			limit = {
+				war_with = THIS
+			}
+			end_war = THIS
+		}
+		979 = { add_core = WRS }
+		release = WRS
+		1035 = { secede_province = WRS }
+		1043 = { secede_province = WRS }
+		1045 = { secede_province = WRS }
+		1046 = { secede_province = WRS }
+		1047 = { secede_province = WRS }
+		1052 = { secede_province = WRS }
+		1053 = { secede_province = WRS }
+		1054 = { secede_province = WRS }
+		1055 = { secede_province = WRS }
+		1057 = { secede_province = WRS }
+		1086 = { secede_province = WRS }
+		1194 = { secede_province = WRS }
+		1205 = { secede_province = WRS }
+		RUS_981 = { secede_province = WRS }
+		RUS_1048 = { secede_province = WRS }
+		RUS_985 = { secede_province = WRS }
+		RUS_1182 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1060 = { secede_province = WRS }
+		RUS_1028 = { secede_province = WRS }
+		RUS_1026 = { secede_province = WRS }
+		RUS_2685 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1075 = { secede_province = WRS }
+		RUS_1469 = { secede_province = WRS }
+		RUS_1074 = { secede_province = WRS }
+		RUS_1079 = { secede_province = WRS }
+		CHI_1082 = { secede_province = WRS }
+		RUS_995 = { secede_province = WRS }
+		WRS = {
+			add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+			government = presidential_dictatorship
+			political_reform = none_voting
+			leadership = 600
+			money = 2000000
+			define_general = {
+				name = "§RAlexander Kolchak§W"
+				personality = defence_2.1
+				background = attack_1.1
+			}
+			define_general = {
+				name = "§RPyotr Wrangel§W"
+				personality = defence_3.1
+				background = attack_2.1
+			}
+			define_general = {
+				name = "§RAnton Denikin§W"
+				personality = defence_2.1
+				background = attack_4.1
+			}
+			ammunition = 2000
+			small_arms = 2000
+			artillery = 2000
+			canned_food = 2000
+			explosives = 200
+		}
+		RUS = { all_core = { add_core = WRS } }
+		any_owned = {
+			limit = {
+				is_core = FIN
+			}
+			secede_province = FIN
+		}
+		release_vassal = FIN
+		any_owned = {
+			limit = {
+				is_core = UBD
+			}
+			secede_province = UBD
+		}
+		any_owned = {
+			limit = {
+				is_core = LIT
+			}
+			secede_province = LIT
+		}
+		any_owned = {
+			limit = {
+				is_core = BYE
+			}
+			secede_province = BYE
+		}
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			secede_province = UKR
+		}
+		any_owned = {
+			limit = {
+				is_core = POL
+			}
+			secede_province = POL
+		}
+		any_owned = {
+			limit = {
+				is_core = TUR
+			}
+			secede_province = TUR
+		}
+		any_owned = {
+			limit = {
+				is_core = PER
+			}
+			secede_province = PER
+		}
+		any_owned = {
+			limit = {
+				is_core = ARM
+				NOT = { province_id = 1106 }
+			}
+			secede_province = ARM
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+		}
+		any_owned = {
+			limit = {
+				is_core = GEO
+			}
+			secede_province = GEO
+		}
+		any_owned = {
+			limit = {
+				is_core = KHI
+			}
+			secede_province = KHI
+		}
+		any_owned = {
+			limit = {
+				is_core = BUK
+			}
+			secede_province = BUK
+		}
+		any_owned = {
+			limit = {
+				is_core = KOK
+			}
+			secede_province = KOK
+		}
+		any_owned = {
+			limit = {
+				is_core = MOL
+			}
+			secede_province = MOL
+		}
+		GER = {
+			create_vassal = LIT
+			create_vassal = UBD
+		}
+		government = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = state_press
+		political_reform = underground_parties
+		ammunition = 2000
+		small_arms = 2000
+		artillery = 2000
+		canned_food = 2000
+		explosives = 200
+		any_country = {
+			leave_alliance = THIS
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+
+	option = {
+		name = "Continue as the Whites."
+		add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+		any_country = {
+			limit = {
+				war_with = THIS
+			}
+			end_war = THIS
+		}
+		979 = { add_core = WRS }
+		release = WRS
+		1035 = { secede_province = WRS }
+		1043 = { secede_province = WRS }
+		1045 = { secede_province = WRS }
+		1046 = { secede_province = WRS }
+		1047 = { secede_province = WRS }
+		1052 = { secede_province = WRS }
+		1053 = { secede_province = WRS }
+		1054 = { secede_province = WRS }
+		1055 = { secede_province = WRS }
+		1057 = { secede_province = WRS }
+		1086 = { secede_province = WRS }
+		1194 = { secede_province = WRS }
+		1205 = { secede_province = WRS }
+		RUS_981 = { secede_province = WRS }
+		RUS_1048 = { secede_province = WRS }
+		RUS_985 = { secede_province = WRS }
+		RUS_1182 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1060 = { secede_province = WRS }
+		RUS_1028 = { secede_province = WRS }
+		RUS_1026 = { secede_province = WRS }
+		RUS_2685 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1075 = { secede_province = WRS }
+		RUS_1469 = { secede_province = WRS }
+		RUS_1074 = { secede_province = WRS }
+		RUS_1079 = { secede_province = WRS }
+		CHI_1082 = { secede_province = WRS }
+		RUS_995 = { secede_province = WRS }
+		WRS = {
+			add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+			government = presidential_dictatorship
+			political_reform = none_voting
+			leadership = 600
+			money = 2000000
+			define_general = {
+				name = "§RAlexander Kolchak§W"
+				personality = defence_2.1
+				background = attack_1.1
+			}
+			define_general = {
+				name = "§RPyotr Wrangel§W"
+				personality = defence_3.1
+				background = attack_2.1
+			}
+			define_general = {
+				name = "§RAnton Denikin§W"
+				personality = defence_2.1
+				background = attack_4.1
+			}
+			ammunition = 2000
+			small_arms = 2000
+			artillery = 2000
+			canned_food = 2000
+			explosives = 200
+		}
+		RUS = { all_core = { add_core = WRS } }
+		any_owned = {
+			limit = {
+				is_core = FIN
+			}
+			secede_province = FIN
+		}
+		release_vassal = FIN
+		any_owned = {
+			limit = {
+				is_core = UBD
+			}
+			secede_province = UBD
+		}
+		any_owned = {
+			limit = {
+				is_core = LIT
+			}
+			secede_province = LIT
+		}
+		any_owned = {
+			limit = {
+				is_core = BYE
+			}
+			secede_province = BYE
+		}
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			secede_province = UKR
+		}
+		any_owned = {
+			limit = {
+				is_core = POL
+			}
+			secede_province = POL
+		}
+		any_owned = {
+			limit = {
+				is_core = TUR
+			}
+			secede_province = TUR
+		}
+		any_owned = {
+			limit = {
+				is_core = PER
+			}
+			secede_province = PER
+		}
+		any_owned = {
+			limit = {
+				is_core = ARM
+				NOT = { province_id = 1106 }
+			}
+			secede_province = ARM
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+		}
+		any_owned = {
+			limit = {
+				is_core = GEO
+			}
+			secede_province = GEO
+		}
+		any_owned = {
+			limit = {
+				is_core = KHI
+			}
+			secede_province = KHI
+		}
+		any_owned = {
+			limit = {
+				is_core = BUK
+			}
+			secede_province = BUK
+		}
+		any_owned = {
+			limit = {
+				is_core = KOK
+			}
+			secede_province = KOK
+		}
+		any_owned = {
+			limit = {
+				is_core = MOL
+			}
+			secede_province = MOL
+		}
+		GER = {
+			create_vassal = LIT
+			create_vassal = UBD
+		}
+		government = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = state_press
+		political_reform = underground_parties
+		ammunition = 2000
+		small_arms = 2000
+		artillery = 2000
+		canned_food = 2000
+		explosives = 200
+		any_country = {
+			leave_alliance = THIS
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		change_tag_no_core_switch = WRS
+	}
+}
+
+country_event = {
+	id = 91865
+	title = "October Revolution"
+	desc = "The abysmal performance of the Tsardom in the great war has led to full blown rebellion among the masses. Several nations have already declared independence and a communist ferver is overtaking Russia."
+	picture = october_revolution
+
+	trigger = {
+		has_global_flag = 1913_bookmark
+		tag = RUS
+		TUR = { has_country_flag = tur_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			war_exhaustion = 50
+			national_provinces_occupied = 0.29
+		}
+		NOT = { has_global_flag = october_revolution }
+	}
+
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_global_flag = october_revolution
+	}
+
+	option = {
+		name = "Continue as the Reds."
+		add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+		any_country = {
+			limit = {
+				war_with = THIS
+			}
+			end_war = THIS
+		}
+		979 = { add_core = WRS }
+		release = WRS
+		1035 = { secede_province = WRS }
+		1043 = { secede_province = WRS }
+		1045 = { secede_province = WRS }
+		1046 = { secede_province = WRS }
+		1047 = { secede_province = WRS }
+		1052 = { secede_province = WRS }
+		1053 = { secede_province = WRS }
+		1054 = { secede_province = WRS }
+		1055 = { secede_province = WRS }
+		1057 = { secede_province = WRS }
+		1086 = { secede_province = WRS }
+		1194 = { secede_province = WRS }
+		1205 = { secede_province = WRS }
+		RUS_981 = { secede_province = WRS }
+		RUS_1048 = { secede_province = WRS }
+		RUS_985 = { secede_province = WRS }
+		RUS_1182 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1060 = { secede_province = WRS }
+		RUS_1028 = { secede_province = WRS }
+		RUS_1026 = { secede_province = WRS }
+		RUS_2685 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1075 = { secede_province = WRS }
+		RUS_1469 = { secede_province = WRS }
+		RUS_1074 = { secede_province = WRS }
+		RUS_1079 = { secede_province = WRS }
+		CHI_1082 = { secede_province = WRS }
+		RUS_995 = { secede_province = WRS }
+		WRS = {
+			add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+			government = presidential_dictatorship
+			political_reform = none_voting
+			leadership = 600
+			money = 2000000
+			define_general = {
+				name = "§RAlexander Kolchak§W"
+				personality = defence_2.1
+				background = attack_1.1
+			}
+			define_general = {
+				name = "§RPyotr Wrangel§W"
+				personality = defence_3.1
+				background = attack_2.1
+			}
+			define_general = {
+				name = "§RAnton Denikin§W"
+				personality = defence_2.1
+				background = attack_4.1
+			}
+			ammunition = 2000
+			small_arms = 2000
+			artillery = 2000
+			canned_food = 2000
+			explosives = 200
+		}
+		RUS = { all_core = { add_core = WRS } }
+		any_owned = {
+			limit = {
+				is_core = FIN
+			}
+			secede_province = FIN
+		}
+		release_vassal = FIN
+		any_owned = {
+			limit = {
+				is_core = UBD
+			}
+			secede_province = UBD
+		}
+		any_owned = {
+			limit = {
+				is_core = LIT
+			}
+			secede_province = LIT
+		}
+		any_owned = {
+			limit = {
+				is_core = BYE
+			}
+			secede_province = BYE
+		}
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			secede_province = UKR
+		}
+		any_owned = {
+			limit = {
+				is_core = POL
+			}
+			secede_province = POL
+		}
+		any_owned = {
+			limit = {
+				is_core = PER
+			}
+			secede_province = PER
+		}
+		any_owned = {
+			limit = {
+				is_core = ARM
+				NOT = { province_id = 1106 }
+			}
+			secede_province = ARM
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+		}
+		any_owned = {
+			limit = {
+				is_core = GEO
+			}
+			secede_province = GEO
+		}
+		any_owned = {
+			limit = {
+				is_core = KHI
+			}
+			secede_province = KHI
+		}
+		any_owned = {
+			limit = {
+				is_core = BUK
+			}
+			secede_province = BUK
+		}
+		any_owned = {
+			limit = {
+				is_core = KOK
+			}
+			secede_province = KOK
+		}
+		any_owned = {
+			limit = {
+				is_core = MOL
+			}
+			secede_province = MOL
+		}
+		GER = {
+			create_vassal = LIT
+			create_vassal = UBD
+		}
+		government = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = state_press
+		political_reform = underground_parties
+		ammunition = 2000
+		small_arms = 2000
+		artillery = 2000
+		canned_food = 2000
+		explosives = 200
+		any_country = {
+			leave_alliance = THIS
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+	}
+
+	option = {
+		name = "Continue as the Whites."
+		add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+		any_country = {
+			limit = {
+				war_with = THIS
+			}
+			end_war = THIS
+		}
+		979 = { add_core = WRS }
+		release = WRS
+		1035 = { secede_province = WRS }
+		1043 = { secede_province = WRS }
+		1045 = { secede_province = WRS }
+		1046 = { secede_province = WRS }
+		1047 = { secede_province = WRS }
+		1052 = { secede_province = WRS }
+		1053 = { secede_province = WRS }
+		1054 = { secede_province = WRS }
+		1055 = { secede_province = WRS }
+		1057 = { secede_province = WRS }
+		1086 = { secede_province = WRS }
+		1194 = { secede_province = WRS }
+		1205 = { secede_province = WRS }
+		RUS_981 = { secede_province = WRS }
+		RUS_1048 = { secede_province = WRS }
+		RUS_985 = { secede_province = WRS }
+		RUS_1182 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1060 = { secede_province = WRS }
+		RUS_1028 = { secede_province = WRS }
+		RUS_1026 = { secede_province = WRS }
+		RUS_2685 = { secede_province = WRS }
+		RUS_1185 = { secede_province = WRS }
+		RUS_1075 = { secede_province = WRS }
+		RUS_1469 = { secede_province = WRS }
+		RUS_1074 = { secede_province = WRS }
+		RUS_1079 = { secede_province = WRS }
+		CHI_1082 = { secede_province = WRS }
+		RUS_995 = { secede_province = WRS }
+		WRS = {
+			add_country_modifier = { name = russian_civil_war_countdown duration = 150 }
+			government = presidential_dictatorship
+			political_reform = none_voting
+			leadership = 600
+			money = 2000000
+			define_general = {
+				name = "§RAlexander Kolchak§W"
+				personality = defence_2.1
+				background = attack_1.1
+			}
+			define_general = {
+				name = "§RPyotr Wrangel§W"
+				personality = defence_3.1
+				background = attack_2.1
+			}
+			define_general = {
+				name = "§RAnton Denikin§W"
+				personality = defence_2.1
+				background = attack_4.1
+			}
+			ammunition = 2000
+			small_arms = 2000
+			artillery = 2000
+			canned_food = 2000
+			explosives = 200
+		}
+		RUS = { all_core = { add_core = WRS } }
+		any_owned = {
+			limit = {
+				is_core = FIN
+			}
+			secede_province = FIN
+		}
+		release_vassal = FIN
+		any_owned = {
+			limit = {
+				is_core = UBD
+			}
+			secede_province = UBD
+		}
+		any_owned = {
+			limit = {
+				is_core = LIT
+			}
+			secede_province = LIT
+		}
+		any_owned = {
+			limit = {
+				is_core = BYE
+			}
+			secede_province = BYE
+		}
+		any_owned = {
+			limit = {
+				is_core = UKR
+			}
+			secede_province = UKR
+		}
+		any_owned = {
+			limit = {
+				is_core = POL
+			}
+			secede_province = POL
+		}
+		any_owned = {
+			limit = {
+				is_core = PER
+			}
+			secede_province = PER
+		}
+		any_owned = {
+			limit = {
+				is_core = ARM
+				NOT = { province_id = 1106 }
+			}
+			secede_province = ARM
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+		}
+		any_owned = {
+			limit = {
+				is_core = GEO
+			}
+			secede_province = GEO
+		}
+		any_owned = {
+			limit = {
+				is_core = KHI
+			}
+			secede_province = KHI
+		}
+		any_owned = {
+			limit = {
+				is_core = BUK
+			}
+			secede_province = BUK
+		}
+		any_owned = {
+			limit = {
+				is_core = KOK
+			}
+			secede_province = KOK
+		}
+		any_owned = {
+			limit = {
+				is_core = MOL
+			}
+			secede_province = MOL
+		}
+		GER = {
+			create_vassal = LIT
+			create_vassal = UBD
+		}
+		government = proletarian_dictatorship
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = state_press
+		political_reform = underground_parties
+		ammunition = 2000
+		small_arms = 2000
+		artillery = 2000
+		canned_food = 2000
+		explosives = 200
+		any_country = {
+			leave_alliance = THIS
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		change_tag_no_core_switch = WRS
+	}
+}
+
+country_event = {
+	id = 91866
+	title = "The Treaty of Trento"
+	desc = "The war has been a disaster and we are forced to sue for peace. We are to give up our colonial holdings and surrender Venice and Lombardia to Austria-Hungary."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = ITA
+		exists = KUK
+		NOT = { has_country_flag = ita_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = ita_lost
+		prestige = -150
+		KUK = { prestige = 150 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 6
+					province_id = 733
+					province_id = 729
+					province_id = 732
+					province_id = 731
+					province_id = 730
+					province_id = 728
+					province_id = 727
+					province_id = 726
+					province_id = 2598
+					is_core = KUK
+				}
+			}
+			secede_province = KUK
+		}
+		any_owned = {
+			limit = {
+				is_core = CYR
+			}
+			secede_province = CYR
+		}
+		any_owned = {
+			limit = {
+				is_core = SOM
+			}
+			secede_province = SOM
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1850
+					province_id = 1848
+					province_id = 1849
+					province_id = 1851
+				}
+			}
+			secede_province = ETH
+		}
+		any_owned = {
+			limit = {
+				province_id = 2659
+			}
+			secede_province = GER
+		}
+	}
+	
+	option = {
+		name = "Garibaldi would be ashamed."
+	}
+}
+
+country_event = {
+	id = 91867
+	title = "The Treaty of Trento"
+	desc = "The war has been a disaster and we are forced to sue for peace. We are to give up our colonial holdings and surrender Venice and Lombardia to the newly formed Austrian Republic."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = ITA
+		NOT = { exists = KUK }
+		NOT = { has_country_flag = ita_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = ita_lost
+		prestige = -150
+		AUS = { prestige = 150 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 6
+					province_id = 733
+					province_id = 729
+					province_id = 732
+					province_id = 731
+					province_id = 730
+					province_id = 728
+					province_id = 727
+					province_id = 726
+					province_id = 734
+					province_id = 735
+					province_id = 736
+					province_id = 737
+					province_id = 769
+					province_id = 770
+					province_id = 778
+					province_id = 2598
+					is_core = AUS
+				}
+			}
+			secede_province = AUS
+		}
+		any_owned = {
+			limit = {
+				is_core = CYR
+			}
+			secede_province = CYR
+		}
+		any_owned = {
+			limit = {
+				is_core = SOM
+			}
+			secede_province = SOM
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1850
+					province_id = 1848
+					province_id = 1849
+					province_id = 1851
+				}
+			}
+			secede_province = ETH
+		}
+	}
+	
+	option = {
+		name = "Garibaldi would be ashamed."
+	}
+}
+
+country_event = {
+	id = 91868
+	title = "Treaty of Graz"
+	desc = "Austria-Hungary is free to oppress us in the Balkans."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = SER
+		NOT = { has_country_flag = ser_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = ser_lost
+		prestige = -100
+		KUK = { prestige = 50 }
+		BUL = { prestige = 50 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				is_core = BUL
+			}
+			secede_province = BUL
+		}
+		KUK = {
+			inherit = MON
+			inherit = SER
+		}
+	}
+	
+	option = {
+		name = "The last hope of Serbian independence has died out."
+	}
+}
+
+country_event = {
+	id = 91869
+	title = "Treaty of Graz"
+	desc = "We are forced to give up territory to Austria, Hungary, and Bulgaria."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = YUG
+		AUS = {
+			NOT = { has_country_flag = kuk_lost }
+		}
+		NOT = { has_country_flag = yug_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = yug_lost
+		prestige = -100
+		HUN = { prestige = 50 }
+		BUL = { prestige = 50 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				is_core = BUL
+			}
+			secede_province = BUL
+		}
+		any_owned = {
+			limit = {
+				is_core = HUN
+			}
+			secede_province = HUN
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 768
+					province_id = 767
+				}
+			}
+			secede_province = AUS
+		}
+	}
+	
+	option = {
+		name = "At least we still have our independence."
+	}
+}
+
+country_event = {
+	id = 91870
+	title = "Treaty of Sofia"
+	desc = "We have lost our independence and are to be split up between the Habsburgs and Bulgarians."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = ROM
+		exists = KUK
+		NOT = { has_global_flag = allied_victory }
+		NOT = { has_country_flag = rom_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = rom_lost
+		prestige = -100
+		BUL = { prestige = 50 }
+		KUK = { prestige = 50 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 674
+					province_id = 675
+					province_id = 818
+				}
+			}
+			secede_province = BUL
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = KUK
+					is_core = WAL
+					is_core = MOL
+				}
+			}
+			secede_province = KUK
+		}
+	}
+	
+	option = {
+		name = "This is a dark day for us."
+	}
+}
+
+country_event = {
+	id = 91871
+	title = "Treaty of Temesvar"
+	desc = "We are forced to give up our gains in Transylvania to the new Hungarian Kingdom and Dobrudja to the Bulgarians."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = ROM
+		NOT = { exists = KUK }
+		NOT = { has_country_flag = rom_lost2 }
+		has_country_flag = great_war_lost
+		has_global_flag = ww1_bookmark
+		has_global_flag = central_victory
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = rom_lost2
+		prestige = -100
+		HUN = { prestige = 50 }
+		BUL = { prestige = 50 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 674
+					province_id = 675
+					is_core = BUL
+				}
+			}
+			secede_province = BUL
+		}
+		any_owned = {
+			limit = {
+				is_core = HUN
+			}
+			secede_province = HUN
+		}
+	}
+	
+	option = {
+		name = "This is a dark day for us."
+	}
+}
+
+country_event = {
+	id = 91872
+	title = "Treaty of Edirne"
+	desc = "We are forced to give up all of our recent gains in the Balkans and Anatolia."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = GRE
+		KGR = { exists = no }
+		NOT = { has_country_flag = gre_lost }
+		OR = {
+			has_country_flag = great_war_lost
+			AND = {
+				has_global_flag = ww1_bookmark
+				has_recently_lost_war = yes
+				NOT = { war_with = GER }
+				NOT = {
+					OR = {
+						has_global_flag = allied_victory
+						has_global_flag = central_victory
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = gre_lost
+		prestige = -100
+		TUR = { prestige = 50 }
+		BUL = { prestige = 50 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 805
+					province_id = 819
+					province_id = 821
+					province_id = 822
+					is_core = BUL
+				}
+			}
+			secede_province = BUL
+		}
+		any_owned = {
+			limit = {
+				is_core = TUR
+			}
+			secede_province = TUR
+		}
+	}
+	
+	option = {
+		name = "This is a dark day for us."
+	}
+}
+
+country_event = {
+	id = 91873
+	title = "Treaty of Istanbul"
+	desc = "The Entente has lost, and we are forced to give up all of our recent gains in the Balkans and Anatolia."
+	picture = great_war_surrender
+
+	trigger = {
+		tag = GRE
+		KGR = { exists = no }
+		has_country_flag = gre_lost
+		NOT = { has_country_flag = gre_lost2 }
+		has_country_flag = great_war_lost
+		has_global_flag = ww1_bookmark
+		has_global_flag = central_victory
+	}
+	
+	immediate = {
+		clr_country_flag = great_war_lost
+		set_country_flag = gre_lost2
+		prestige = -50
+		TUR = { prestige = 25 }
+		BUL = { prestige = 25 }
+		end_war = CYR
+		end_war = MOR
+		end_war = NIG
+		end_war = SOM
+		end_war = MOS
+		end_war = BRG
+		end_war = DAR
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 805
+					province_id = 819
+					province_id = 821
+					province_id = 822
+					is_core = BUL
+				}
+			}
+			secede_province = BUL
+		}
+		any_owned = {
+			limit = {
+				is_core = TUR
+			}
+			secede_province = TUR
+		}
+	}
+	
+	option = {
+		name = "This is a dark day for us."
+	}
+}
+
+########## VICTORY SCREENS ##########
+
+country_event = {
+	id = 91880
+	title = "EVTNAME91880"
+	desc = "EVTDESC91880"
+	picture = allied_victory
+
+	trigger = {
+		ai = no
+		has_global_flag = allied_victory
+		NOT = { has_global_flag = october_revolution }
+		NOT = { has_country_flag = great_war_victor }
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = BEL
+			tag = SER
+			tag = ROM
+			tag = GRE
+			tag = RUS
+		}
+	}
+	
+	immediate = {
+		set_country_flag = great_war_victor
+	}
+	
+	option = {
+		name = "EVTOPTA91880"
+	}
+}
+
+country_event = {
+	id = 91881
+	title = "EVTNAME91881"
+	desc = "EVTDESC91881"
+	picture = allied_victory
+
+	trigger = {
+		ai = no
+		has_global_flag = allied_victory
+		has_global_flag = october_revolution
+		NOT = { has_country_flag = great_war_victor }
+		OR = {
+			tag = ENG
+			tag = FRA
+			tag = BEL
+			tag = SER
+			tag = ROM
+			tag = GRE
+		}
+	}
+	
+	immediate = {
+		set_country_flag = great_war_victor
+	}
+	
+	option = {
+		name = "EVTOPTA91881"
+	}
+}
+
+country_event = {
+	id = 91882
+	title = "EVTNAME91882"
+	desc = "EVTDESC91882"
+	picture = central_victory
+
+	trigger = {
+		ai = no
+		has_global_flag = central_victory
+		exists = KUK
+		NOT = { has_country_flag = great_war_victor }
+		OR = {
+			tag = GER
+			tag = KUK
+			tag = BUL
+			tag = TUR
+		}
+	}
+	
+	immediate = {
+		set_country_flag = great_war_victor
+	}
+	
+	option = {
+		name = "EVTOPTA91882"
+	}
+}
+
+country_event = {
+	id = 91883
+	title = "EVTNAME91883"
+	desc = "EVTDESC91883"
+	picture = central_victory
+
+	trigger = {
+		ai = no
+		has_global_flag = central_victory
+		NOT = { exists = KUK }
+		NOT = { has_country_flag = great_war_victor }
+		OR = {
+			tag = GER
+			tag = AUS
+			tag = HUN
+			tag = BUL
+			tag = TUR
+		}
+	}
+	
+	immediate = {
+		set_country_flag = great_war_victor
+	}
+	
+	option = {
+		name = "EVTOPTA91882"
+	}
+}
+
+########## RUSSIAN CIVIL WAR ##########
+
+country_event = {
+	id = 91884
+	title = "EVTNAME91884"
+	desc = "EVTDESC91884"
+	picture = russian_civil_war
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		WRS = { exists = yes }
+		NOT = { war_with = WRS }
+		NOT = { has_country_modifier = russian_civil_war_countdown }
+	}
+
+	option = {
+		name = "EVTOPTA91884"
+		war = {
+			target = WRS
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+		}
+		WRS = { country_event = { id = 91885 days = 0 } }
+	}
+}
+
+country_event = {
+	id = 91885
+	title = "EVTNAME91885"
+	desc = "EVTDESC91885"
+	picture = russian_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91885"
+	}
+}
+
+country_event = {
+	id = 91886
+	title = "EVTNAME91886"
+	desc = "EVTDESC91886"
+	picture = soviet_victory
+
+	trigger = {
+		tag = RUS
+		has_global_flag = october_revolution
+		WRS = { exists = no }
+		NOT = { has_global_flag = soviet_victory }
+	}
+
+	option = {
+		name = "EVTOPTA91886"
+		set_global_flag = soviet_victory
+		WRS = { all_core = { remove_core = WRS } }
+		capital = 1008
+	}
+}
+
+country_event = {
+	id = 91887
+	title = "EVTNAME91887"
+	desc = "EVTDESC91887"
+	picture = white_army
+
+	trigger = {
+		tag = WRS
+		has_global_flag = october_revolution
+		RUS = { exists = no }
+		NOT = { has_global_flag = white_victory }
+	}
+
+	option = {
+		name = "EVTOPTA91887"
+		set_global_flag = white_victory
+		RUS = { all_core = { remove_core = RUS } }
+		capital = 1008
+	}
+}

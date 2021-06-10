@@ -1,0 +1,181 @@
+political_decisions = {
+	found_mocamedes = {
+		picture = map_angola
+		potential = {
+			civilized = yes
+			owns = 2003
+			2004 = { empty = yes }
+		}
+
+		allow = {
+			medicine = 1
+		}
+
+		effect = {
+			prestige = 5
+			2004 = { secede_province = THIS }
+		}
+	}
+	kongo_empire = {
+		picture = map_kongo
+		potential = {
+			tag = KON
+			2000 = { empty = yes }
+			1983 = { empty = yes }
+		}
+
+		allow = {
+			civilization_progress = 0.3
+			is_vassal = no
+			owns = 2001
+			owns = 1982
+		}
+
+		effect = {
+			prestige = 5
+			2000 = { secede_province = THIS }
+			1983 = { secede_province = THIS }
+		}
+	}
+	kongo_intervention = {
+		picture = map_kongo
+		potential = {
+			NOT = { owns = 3246 }
+			neighbour = KON
+			NOT = { owns = 2001 }
+			2001 = { owned_by = KON }
+			NOT = { has_country_flag = kongo_intervention }
+			NOT = { war_with = KON }
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			set_country_flag = kongo_intervention
+			KON = { neutrality = yes }
+			war = {
+				target = KON
+				attacker_goal = { casus_belli = demand_concession_casus_belli state_province_id = 2001 }
+				defender_goal = { casus_belli = status_quo }
+			}
+			badboy = -2.5
+		}
+	}
+	claim_angola = {
+		picture = map_angola
+		potential = {
+			2002 = { empty = yes }
+			2005 = { empty = yes }
+			owns = 2004
+		}
+		allow = {
+			owns = 1999
+			owns = 2003
+			invention = mission_to_civilize
+		}
+		effect = {
+			POR_1999 = { secede_province = THIS }
+			POR_2003 = { secede_province = THIS }
+		}
+	}
+	conquest_of_angoche = {
+		picture = map_mozambique
+		potential = {
+			NOT = { owns = 3246 }
+			neighbour = AGC
+			NOT = { owns = 2061 }
+			2061 = { owned_by = AGC }
+			NOT = { has_country_flag = conquest_of_angoche }
+			NOT = { war_with = AGC }
+		}
+
+		allow = {
+			slavery = no_slavery
+		}
+
+		effect = {
+			set_country_flag = conquest_of_angoche
+			AGC = { neutrality = yes }
+			war = {
+				target = AGC
+				attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+				defender_goal = { casus_belli = status_quo }
+			}
+			badboy = -5
+		}
+	}
+	end_gaza_kingdom = {
+		picture = map_africa
+		potential = {
+			NOT = { owns = 3246 }
+			neighbour = GAZ
+			OR = {
+				2057 = { owned_by = GAZ }
+				2049 = { owned_by = GAZ }
+			}
+			NOT = { has_country_flag = gaza_kingdom_ended }
+			NOT = { war_with = GAZ }
+		}
+
+		allow = {
+			OR = {
+				any_greater_power = {
+					invention = colonial_negotiations
+				}
+				invention = colonial_negotiations
+			}
+		}
+
+		effect = {
+			set_country_flag = gaza_kingdom_ended
+			GAZ = { neutrality = yes }
+			war = {
+				target = GAZ
+				attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+				defender_goal = { casus_belli = status_quo }
+			}
+			badboy = -5
+		}
+	}
+	congo_conference = {
+		picture = congo_conferece
+		potential = {
+			NOT = { has_global_flag = congo_conference_held }
+			rank = 16
+			is_greater_power = no
+			year = 1870
+			1983 = { empty = yes }
+			1985 = { empty = yes }
+			1988 = { empty = yes }
+			1990 = { empty = yes }
+			1993 = { empty = yes }
+		}
+		allow = {
+			phenomenology_n_hermeneutic = 1
+			invention = prophylaxis_against_malaria
+			total_num_of_ports = 1
+		}
+		effect = {
+			set_country_flag = called_congo_conference
+			set_global_flag = congo_conference_held
+			any_greater_power = { country_event = { id = 44810 days = 0 } }
+		}
+	}
+	annex_congo_free_state = {
+		picture = congo_free_state
+		potential = {
+			is_our_vassal = CNG
+			NOT = { has_global_flag = annex_congo_state }
+		}
+		allow = {
+			government_interventionism = 1
+			has_country_flag = heart_of_darkness
+		}
+		effect = {
+			set_global_flag = annex_congo_state
+			inherit = CNG
+		}
+	}
+}

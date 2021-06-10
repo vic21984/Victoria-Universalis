@@ -1,0 +1,43 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = BUL
+add_core = SER
+add_core = YUG
+trade_goods = timber
+life_rating = 40
+1913.1.1 = {
+	owner = SER
+	controller = SER
+	remove_core = TUR
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+}

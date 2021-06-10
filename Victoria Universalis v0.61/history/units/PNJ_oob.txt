@@ -1,0 +1,236 @@
+PER = {
+	value = -100
+}
+
+leader = {
+	name = "Ranjit Singh"
+	type = land
+	date = 1820.1.1
+	personality = defence_4.1
+	background = attack_4.1
+	prestige = 0.5
+}
+
+leader = {
+	name = "Zorawar Singh"
+	type = land
+	date = 1834.1.1
+	personality = defence_1.1
+	background = attack_1.1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Sher Singh"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+leader = {
+	name = "Paolo Avitabile"
+	type = land
+	date = 1827.1.1
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Jean-Francois Allard"
+	type = land
+	date = 1822.1.1
+	personality = defence_3.1
+	background = attack_3.1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Jean-Baptiste Ventura"
+	type = land
+	date = 1822.1.1
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Alexander Gardner"
+	type = land
+	date = 1831.1.1
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.1
+}
+
+army = {
+	name = "Fauj-i-Ain"
+	location = 1227
+	regiment = {
+		name= "5. Panjabi Infantry"
+		type = infantry
+		home = 1227
+	}
+
+	regiment = {
+		name= "6. Panjabi Infantry"
+		type = infantry
+		home = 1227
+	}
+
+	regiment = {
+		name= "7. Panjabi Infantry"
+		type = infantry
+		home = 1227
+	}
+
+	regiment = {
+		name= "8. Panjabi Infantry"
+		type = infantry
+		home = 1232
+	}
+
+	regiment = {
+		name= "1. Kashmiri Irregulars"
+		type = irregular
+		home = 1224
+	}
+
+	regiment = {
+		name= "9. Panjabi Irregulars"
+		type = irregular
+		home = 1228
+	}
+
+	regiment = {
+		name= "10. Panjabi Irregulars"
+		type = irregular
+		home = 1229
+	}
+
+	regiment = {
+		name= "11. Panjabi Irregulars"
+		type = irregular
+		home = 1229
+	}
+
+	regiment = {
+		name= "1. Sikh Cavalry"
+		type = cavalry
+		home = 1227
+	}
+
+	regiment = {
+		name= "2. Sikh Cavalry"
+		type = cavalry
+		home = 1233
+	}
+
+}
+
+army = {
+	name = "Fauj-i-Be Qawaid"
+	location = 1234
+	regiment = {
+		name= "1. Panjabi Irregulars"
+		type = irregular
+		home = 1234
+	}
+
+	regiment = {
+		name= "2. Panjabi Irregulars"
+		type = irregular
+		home = 1233
+	}
+
+	regiment = {
+		name= "3. Panjabi Irregulars"
+		type = irregular
+		home = 1233
+	}
+
+	regiment = {
+		name= "4. Panjabi Irregulars"
+		type = irregular
+		home = 1218
+	}
+
+	regiment = {
+		name= "5. Panjabi Irregulars"
+		type = irregular
+		home = 1233
+	}
+
+	regiment = {
+		name= "6. Panjabi Irregulars"
+		type = irregular
+		home = 1234
+	}
+	
+	regiment = {
+		name= "7. Panjabi Irregulars"
+		type = irregular
+		home = 1224
+	}
+
+	regiment = {
+		name= "8. Panjabi Irregulars"
+		type = irregular
+		home = 1224
+	}
+
+	regiment = {
+		name= "3. Panjabi Cavalry"
+		type = cavalry
+		home = 1225
+	}
+
+	regiment = {
+		name= "4. Panjabi Cavalry"
+		type = cavalry
+		home = 1218
+	}
+}
+
+army = {
+	name = "Fauj-i-Khas"
+	location = 1230
+	regiment = {
+		name= "1. Panjabi Infantry"
+		type = infantry
+		home = 1234
+	}
+
+	regiment = {
+		name= "2. Panjabi Infantry"
+		type = infantry
+		home = 1234
+	}
+
+	regiment = {
+		name= "3. Panjabi Infantry"
+		type = infantry
+		home = 1227
+	}
+
+	regiment = {
+		name= "1. Panjabi Artillery"
+		type = artillery
+		home = 1234
+	}
+
+	regiment = {
+		name= "2. Panjabi Artillery"
+		type = artillery
+		home = 1234
+	}
+
+	regiment = {
+		name= "1. Sikh Hussars"
+		type = hussar
+		home = 1229
+	}
+
+}
+

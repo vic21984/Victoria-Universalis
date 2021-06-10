@@ -1,0 +1,32 @@
+owner = BOL
+controller = BOL
+add_core = BOL
+add_core = CHL
+trade_goods = sulphur
+life_rating = 35
+1913.1.1 = {
+	owner = CHL
+	controller = CHL
+	remove_core = BOL
+	state_building = {
+		level = 1
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

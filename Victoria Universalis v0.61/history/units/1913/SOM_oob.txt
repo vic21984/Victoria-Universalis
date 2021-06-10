@@ -1,0 +1,46 @@
+army = {
+	name = "Army of Sayyid Mohamed"
+	leader = {
+		name = "Sayyid Mohamed"
+		type = land
+		date = 1836.1.1
+		personality = defence_3.1
+		background = attack_4.1
+	}
+	location = 1867
+	regiment = {
+		name= "Somali Tribesmen"
+		type = infantry
+		home = 1867
+	}
+	regiment = {
+		name= "Somali Tribesmen"
+		type = infantry
+		home = 1867
+	}
+	regiment = {
+		name= "Somali Tribesmen"
+		type = infantry
+		home = 1867
+	}
+	regiment = {
+		name= "Somali Horsemen"
+		type = hussar
+		home = 1866
+	}
+	regiment = {
+		name= "Somali Horsemen"
+		type = hussar
+		home = 1867
+	}
+	regiment = {
+		name= "Captured Artillery Battery"
+		type = artillery
+		home = 1866
+	}
+	regiment = {
+		name= "Foreign Artillery Battery"
+		type = artillery
+		home = 1873
+	}
+}

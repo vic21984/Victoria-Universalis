@@ -1,0 +1,986 @@
+political_decisions = {
+	unite_la_plata = {
+		picture = unite_la_plata
+		potential = {
+			primary_culture = platinean
+			NOT = { exists = LPL }
+		}
+
+		allow = {
+			war = no
+			prestige = 50
+			nationalism_n_imperialism = 1
+			romanticism = 1
+			2356 = {
+				OR = {
+					owned_by = THIS
+					owner = { vassal_of = THIS }
+				}
+			}
+			2359 = {
+				OR = {
+					owned_by = THIS
+					owner = { vassal_of = THIS }
+				}
+			}
+			OR = {
+				ARG = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									vassal_of = THIS
+								}
+								province_id = 2131
+							}
+						}
+					}
+				}
+				ARC = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+						all_core = {
+							OR = {
+								owned_by = THIS
+								owner = {
+									in_sphere = THIS
+									vassal_of = THIS
+								}
+								province_id = 2131
+							}
+						}
+					}
+				}
+			}
+			PRG = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+							province_id = 2420
+						}
+					}
+				}
+			}
+			URU = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 30
+			badboy = 10
+			random_country = {
+				limit = {
+					exists = yes
+					OR = {
+						tag = ARG
+						tag = ARC
+						}
+					}
+					all_core = { add_core = LPL }
+			}
+			PRG = { all_core = { add_core = LPL } }
+			URU = { all_core = { add_core = LPL } }
+			BOL = { all_core = { add_core = LPL } }
+			BRZ_2467 = { add_core = THIS }
+			change_tag = LPL
+			random_country = {
+				limit = {
+					tag = ARG
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = ARG }
+			}
+			random_country = {
+				limit = {
+					tag = ARC
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = ARC }
+			}
+			random_country = {
+				limit = {
+					tag = ENT
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = ENT }
+			}
+			random_country = {
+				limit = {
+					tag = CRT
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = CRT }
+			}
+			random_country = {
+				limit = {
+					tag = SBA
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = SBA }
+			}
+			random_country = {
+				limit = {
+					tag = PRG
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = PRG }
+			}
+			random_country = {
+				limit = {
+					tag = URU
+					exists = yes
+					ai = yes
+				}
+				THIS = { inherit = URU }
+			}
+		}
+	}
+
+	triple_alliance_war = {
+		picture = francisco_solano_lopez
+		potential = {
+			tag = PRG
+			has_country_flag = lopez_dynasty
+			government = presidential_dictatorship
+			NOT = { has_country_flag = triple_alliance_war }
+			OR = {
+				NOT = { owns = 2344 }
+				NOT = { owns = 2463 }
+				NOT = { owns = 2554 }
+			}
+			BRZ = {
+				NOT = { is_vassal = yes }
+				OR = {
+					owns = 2344
+					owns = 2463
+					owns = 2554
+				}
+			}
+			2344 = {
+				owner = {
+					OR = {
+						tag = BRZ
+						tag = ARG
+						tag = ARC
+						tag = CRT
+						tag = ENT
+						tag = SBA
+						tag = LPL
+						tag = URU
+					}
+				}
+			}
+			2463 = {
+				owner = {
+					OR = {
+						tag = BRZ
+						tag = ARG
+						tag = ARC
+						tag = CRT
+						tag = ENT
+						tag = SBA
+						tag = LPL
+						tag = URU
+					}
+				}
+			}
+			2554 = {
+				owner = {
+					OR = {
+						tag = BRZ
+						tag = ARG
+						tag = ARC
+						tag = CRT
+						tag = ENT
+						tag = SBA
+						tag = LPL
+						tag = URU
+					}
+				}
+			}
+		}
+
+		allow = {
+			OR = {
+				year = 1864
+				army_decision_making = 1
+			}
+			war = no
+		}
+
+		effect = {
+			set_country_flag = triple_alliance_war
+			add_country_modifier = { name = fatherland_volunteers_prg duration = 365 }
+			define_general = {
+				name = "§RFrancisco Solano López§W"
+				personality = defence_2.1
+				background = attack_2.1
+			}
+			2344 = {
+				owner = {
+					limit = { NOT = { tag = THIS } }
+					leave_alliance = THIS
+					create_alliance = BRZ
+					overlord = {
+						leave_alliance = THIS
+						create_alliance = BRZ
+					}
+				}
+			}
+			2463 = {
+				owner = {
+					limit = { NOT = { tag = THIS } }
+					leave_alliance = THIS
+					create_alliance = BRZ
+					overlord = {
+						leave_alliance = THIS
+						create_alliance = BRZ
+					}
+				}
+			}
+			2554 = {
+				owner = {
+					limit = { NOT = { tag = THIS } }
+					leave_alliance = THIS
+					create_alliance = BRZ
+					overlord = {
+						leave_alliance = THIS
+						create_alliance = BRZ
+					}
+				}
+			}
+			war = {
+				target = BRZ
+				attacker_goal = { casus_belli = paraguayan_war }
+				defender_goal = { casus_belli = paraguayan_war }
+			}
+		}
+	}
+
+	end_the_caudillos = {
+		picture = liberty
+		potential = {
+			has_country_modifier = caudillos
+		}
+
+		allow = {
+			OR = {
+				analytic_philosophy = 1
+				AND = {
+					OR = {
+						vote_franschise = wealth_voting
+						vote_franschise = universal_weighted_voting
+						vote_franschise = universal_voting
+					}
+					OR = {
+						political_parties = gerrymandering
+						political_parties = non_secret_ballots
+						political_parties = secret_ballots
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 5
+			remove_country_modifier = caudillos
+			add_country_modifier = { name = metropolitan_development duration = 7300 }
+		}
+	}
+
+	claim_alto_paraguay = {
+		picture = conquest_of_the_chaco
+		potential = {
+			OR = {
+				2337 = { empty = yes }
+				2338 = { empty = yes }
+			}
+			OR = {
+				owns = 2339
+				owns = 2318
+			}
+			NOT = { has_country_flag = claim_alto_paraguay }
+		}
+		allow = {
+			war = no
+			OR = {
+				is_greater_power = yes
+				military_plans = 1
+				year = 1861
+			}
+		}
+		effect = {
+			set_country_flag = claim_alto_paraguay
+			prestige = 3
+			random_owned = {
+				limit = {
+					2337 = { empty = yes }
+					2339 = { empty = no }
+					2342 = { empty = no }
+				}
+				2337 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2338 = { empty = yes }
+					2337 = { empty = no }
+				}
+				2338 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+		}
+	}
+
+	conquest_of_the_chaco = {
+		picture = conquest_of_the_chaco
+		potential = {
+			OR = {
+				2362 = { empty = yes }
+				2364 = { empty = yes }
+				2365 = { empty = yes }
+				2372 = { empty = yes }
+				2377 = { empty = yes }
+			}
+			OR = {
+				owns = 2356
+				owns = 2361
+			}
+			NOT = { has_country_flag = conquest_of_the_chaco }
+		}
+		allow = {
+			war = no
+			OR = {
+				is_greater_power = yes
+				nationalism_n_imperialism = 1
+				year = 1861
+			}
+		}
+		effect = {
+			set_country_flag = conquest_of_the_chaco
+			prestige = 5
+			random_owned = {
+				limit = {
+					2362 = { empty = yes }
+					2361 = { empty = no }
+					2356 = { empty = no }
+				}
+				2362 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2364 = { empty = yes }
+					2362 = { empty = no }
+					2356 = { empty = no }
+				}
+				2364 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+				
+			random_owned = {
+				limit = {
+					2365 = { empty = yes }
+					2362 = { empty = no }
+					2364 = { empty = no }
+				}
+				2365 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+				
+			random_owned = {
+				limit = {
+					2377 = { empty = yes }
+					2362 = { empty = no }
+					2365 = { empty = no }
+				}
+				2377 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+				
+			random_owned = {
+				limit = {
+					2372 = { empty = yes }
+					2377 = { empty = no }
+					2365 = { empty = no }
+				}
+				2372 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2366 = { empty = yes }
+					2364 = { empty = no }
+					2365 = { empty = no }
+				}
+				2366 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2367 = { empty = yes }
+					2366 = { empty = no }
+					2365 = { empty = no }
+				}
+				2367 = { 
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+		}
+	}
+
+	conquest_of_the_desert = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				2391 = { empty = yes }
+				2392 = { empty = yes }
+				2394 = { empty = yes }
+				2353 = { empty = yes }
+				2393 = { empty = yes }
+				2395 = { empty = yes }
+			}
+			OR = {
+				owns = 2350 #azul
+				owns = 2381 #rio cuarto
+			}
+			NOT = { has_country_flag = conquest_of_the_desert }
+		}
+		allow = {
+			war = no
+			OR = {
+				is_greater_power = yes
+				breech_loaded_rifles = 1
+				year = 1871
+			}
+		}
+		effect = {
+			set_country_flag = conquest_of_the_desert
+			prestige = 5
+			random_owned = {
+				limit = {
+					2390 = { empty = yes }
+					2389 = { empty = no }
+					2383 = { empty = no }
+				}
+				2390 = {
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					2384 = { empty = yes }
+					2381 = { empty = no }
+					2363 = { empty = no }
+				}
+				2384 = {
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					2382 = { empty = yes }
+					2381 = { empty = no }
+					2383 = { empty = no }
+				}
+				2382 = {
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					2353 = { empty = yes }
+					2354 = { empty = no }
+					2350 = { empty = no }
+				}
+				2353 = {
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2393 = { empty = yes }
+					2353 = { empty = no }
+					2354 = { empty = no }
+				}
+				2393 = {
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2395 = { empty = yes }
+					2393 = { empty = no }
+				}
+				2395 = {
+					secede_province = THIS
+					add_core = THIS
+					life_rating = 25
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2391 = { empty = yes }
+					2395 = { empty = no }
+				}
+				2391 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2392 = { empty = yes }
+					2391 = { empty = no }
+				}
+				2392 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2394 = { empty = yes }
+					2392 = { empty = no }
+					2391 = { empty = no }
+				}
+				2394 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2397 = { empty = yes }
+					2394 = { empty = no }
+				}
+				2397 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2396 = { empty = yes }
+					2392 = { empty = no }
+					2397 = { empty = no }
+				}
+				2396 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2398 = { empty = yes }
+					2397 = { empty = no }
+				}
+				2398 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2399 = { empty = yes }
+					2398 = { empty = no }
+				}
+				2399 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2400 = { empty = yes }
+					2399 = { empty = no }
+				}
+				2400 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+		}
+	}
+
+	occupation_of_araucania = {
+		picture = conquest_of_the_desert
+		potential = {
+			OR = {
+				2333 = { empty = yes }
+				2334 = { empty = yes }
+				2335 = { empty = yes }
+			}
+			owns = 2332
+			NOT = { has_country_flag = occupation_of_araucania }
+		}
+		allow = {
+			OR = {
+				is_greater_power = yes
+				nationalism_n_imperialism = 1
+				year = 1861
+			}
+		}
+		effect = {
+			set_country_flag = occupation_of_araucania
+			prestige = 5
+			random_owned = {
+				limit = {
+					2333 = { empty = yes }
+				}
+				2333 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2334 = { empty = yes }
+					2333 = { empty = no }
+				}
+				2334 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+			random_owned = {
+				limit = {
+					2335 = { empty = yes }
+					2333 = { empty = no }
+					2334 = { empty = no }
+					2332 = { empty = no }
+				}
+				2335 = {
+					secede_province = THIS
+					add_core = THIS
+					any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+				}
+			}
+		}
+	}
+
+	annex_easter_island = {
+		picture = annex_easter_island
+		potential = {
+			civilized = yes
+			owns = 2332
+			2336 = { empty = yes }
+		}
+
+		allow = {
+			war = no
+			raider_group_doctrine = 1
+		}
+
+		effect = {
+			prestige = 3
+			2336 = {
+				secede_province = THIS
+				add_core = THIS
+				any_pop = { limit = { is_primary_culture = no } literacy = -0.99 }
+			}
+		}
+	}
+
+	university_of_santiago = {
+		picture = university_of_santiago
+		potential = {
+			tag = CHL
+			NOT = { has_country_flag = university_of_santiago }
+		}
+
+		allow = {
+			positivism = 1
+		}
+
+		effect = {
+			prestige = 3
+			set_country_flag = university_of_santiago
+			random_owned = {
+				limit = {
+					owner = { school_reforms = good_schools }
+				}	
+				owner = { social_reform = compulsory_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = acceptable_schools }
+				}	
+				owner = { social_reform = good_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = low_schools }
+				}	
+				owner = { social_reform = acceptable_schools }
+			}				
+			random_owned = {
+				limit = {
+					owner = { school_reforms = no_schools }
+				}	
+				owner = { social_reform = low_schools }
+			}
+		}
+	}
+
+	valparaiso_harbor = {
+		picture = valparaiso_harbor
+			potential = {
+				NOT = { has_country_flag = valpariasoharbor_built }
+				tag = CHL
+				owns = 2325
+		}
+
+		allow = {
+			NOT = { is_canal_enabled = 3 }
+			battleship_column_doctrine = 1
+			war = no
+		}
+
+		effect = {
+			2325 = { life_rating = 5 }
+			add_country_modifier = { name = small_immigration_boom duration = 1825 }
+			prestige = 5
+			set_country_flag = valpariasoharbor_built
+		}
+	}
+
+	build_humaita = {
+		picture = humaita_fortress
+		potential = {
+			tag = PRG
+			has_country_flag = lopez_dynasty
+			NOT = { has_country_flag = built_humaita }
+			owns = 2340
+		}
+
+		allow = {
+			strategic_mobility = 1
+			money = 50000
+		}
+
+		effect = {
+			prestige = 10
+			treasury = -50000
+			set_country_flag = built_humaita
+			random_owned = {
+				limit = {
+					province_id = 2340
+				}
+				fort = -5
+				fort = 5
+			}
+			random_owned = {
+				limit = {
+					owner = { conscription = four_year_draft }
+				}	
+				owner = { political_reform = mandatory_service }
+			}
+			random_owned = {
+				limit = {
+					owner = { conscription = two_year_draft }
+				}	
+				owner = { political_reform = four_year_draft }
+			}				
+			random_owned = {
+				limit = {
+					owner = { conscription = one_year_draft }
+				}	
+				owner = { political_reform = two_year_draft }
+			}
+			random_owned = {
+				limit = {
+					owner = { conscription = no_draft }
+				}	
+				owner = { political_reform = one_year_draft }
+			}
+		}
+	}
+
+	treaty_of_bogota = {
+		picture = map_colombia
+		potential = {
+			OR = {
+				tag = CLM
+				tag = GCO
+			}
+			NOT = { has_country_flag = treaty_of_bogota }
+			2401 = { is_core = THIS }
+			OR = {
+				owns = 2401
+				BRZ = { owns = 2401 }
+			}
+			BRZ = { owns = 2403 }
+			BRZ = { war = no }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			set_country_flag = treaty_of_bogota
+			2401 = {
+				secede_province = BRZ
+				add_core = BRZ
+				remove_core = CLM
+				remove_core = GCO
+			}
+			relation = {
+				who = BRZ
+				value = 100
+			}
+			badboy = -5
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				owns = 2401
+				NOT = { BRZ = { brigades_compare = 2 } }
+			}
+		}
+	}
+
+	treaty_of_petropolis = {
+		picture = map_colombia
+		potential = {
+			OR = {
+				tag = BOL
+				tag = PBC
+			}
+			NOT = { has_country_flag = treaty_of_petropolis }
+			2549 = { is_core = THIS }
+			OR = {
+				owns = 2549
+				BRZ = { owns = 2549 }
+			}
+			BRZ = { owns = 2404 }
+			BRZ = { war = no }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			set_country_flag = treaty_of_petropolis
+			2549 = {
+				secede_province = BRZ
+				add_core = BRZ
+				remove_core = BOL
+				remove_core = PBC
+			}
+			relation = {
+				who = BRZ
+				value = 100
+			}
+			badboy = -5
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				owns = 2549
+				NOT = { BRZ = { brigades_compare = 2 } }
+			}
+		}
+	}
+}

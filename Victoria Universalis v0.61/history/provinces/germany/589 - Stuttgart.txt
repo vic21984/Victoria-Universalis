@@ -1,0 +1,45 @@
+owner = WUR
+controller = WUR
+add_core = WUR
+add_core = GER
+trade_goods = cattle
+life_rating = 40
+1913.1.1 = {
+	owner = GER
+	controller = GER
+	state_building = {
+		level = 8
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = aeroplane_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = synthetic_nitrate_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = machine_parts_factory
+		upgrade = yes
+	}
+}
