@@ -23,6 +23,7 @@
 * All of North Angola reduced to 15 liferating, added a decision to colonize North Angola after mission to civilize is invented.
 * Added 0.04 assimilation chance to assimilation national idea.
 * Created cheat events 1-5. In order to use them, open the console and type "event x" replacing the x with the corresponding number. Event 1 increases literacy by 10%, 2 decreases MIL and CON by 5, 3 increases MIL and CON by 5, 4 assimilates all POPs, and 5 reduces infamy by 25.
+* Removed regular clothes and luxury clothes from infantry and guards upkeep respectively.
 
 ## Country balance changes:
 ###### Egypt:
