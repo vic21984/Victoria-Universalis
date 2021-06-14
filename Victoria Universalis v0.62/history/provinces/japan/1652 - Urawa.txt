@@ -1,0 +1,39 @@
+owner = TKG
+controller = TKG
+#add_core = JAP
+add_core = TKG
+trade_goods = silk
+life_rating = 35
+1913.1.1 = {
+	owner = JAP
+	controller = JAP
+	colonial = 0
+}
+1913.1.1 = {
+	naval_base = 6
+	state_building = {
+		level = 5
+		building = synthetic_rubber_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = winery
+		upgrade = yes
+	}
+}

@@ -1,0 +1,267 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+
+country_event = {
+	id = 44401
+	title = "EVTNAME44401"
+	desc = "EVTDESC44401"
+	picture = "south_africa"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44401"
+	}
+}
+
+country_event = {
+	id = 44402
+	title = "EVTNAME44402"
+	desc = "EVTDESC44402"
+	picture = "blood_river"
+
+	trigger = {
+		tag = ZUL
+		has_global_flag = piet_retief_massacre
+		NOT = { has_country_flag = battle_of_blood_river }
+		neighbour = SAF
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA44402"
+		set_country_flag = battle_of_blood_river
+		2111 = { secede_province = SAF }
+		SAF = { country_event = { id = 44403 days = 0 } }
+	}
+}
+
+country_event = {
+	id = 44403
+	title = "EVTNAME44403"
+	desc = "EVTDESC44403"
+	picture = "south_africa"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44403"
+		release_vassal = NAL
+	}
+
+	option = {
+		name = "EVTOPTB44403"
+		release = NAL
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44404
+	title = "EVTNAME44404"
+	desc = "EVTDESC44404"
+	picture = "south_africa"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44404"
+		SAF = { country_event = { id = 44405 days = 0} }
+	}
+
+	option = {
+		name = "EVTOPTB44404"
+		SAF = { country_event = { id = 44406 days = 0} }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44405
+	title = "EVTNAME44405"
+	desc = "EVTDESC44405"
+	picture = "south_africa"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44405"
+		inherit = NAL
+	}
+}
+
+country_event = {
+	id = 44406
+	title = "EVTNAME44406"
+	desc = "EVTDESC44406"
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44406"
+		release_vassal = NAL
+		war = {
+			target = NAL
+			attacker_goal = { casus_belli = conquest }
+			call_ally = yes
+		}
+		ENG = { country_event = { id = 44401 days = 0 } }
+	}
+
+	option = {
+		name = "EVTOPTB44406"
+		release_vassal = NAL
+	}
+}
+
+country_event = {
+	id = 44407
+	title = "EVTNAME44407"
+	desc = "EVTDESC44407"
+	picture = "zulu"
+
+	trigger = {
+		tag = BSH
+		NOT = { num_of_cities = 2 }
+		neighbour = SAF
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44407"
+		SAF = { country_event = { id = 44408 days = 0 } }
+	}
+
+	option = {
+		name = "EVTOPTB44407"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44408
+	title = "EVTNAME44408"
+	desc = "EVTDESC44408"
+	picture = "blood_river"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44408"
+		BSH = { civilized = yes }
+		inherit = BSH
+	}
+
+	option = {
+		name = "EVTOPTB44408"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44409
+	title = "EVTNAME44409"
+	desc = "EVTDESC44409"
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA44409"
+	}
+}
+
+
+country_event = {
+	id = 44410
+	title = "End of Groot Trek"
+
+	trigger = {
+		tag = JAN
+		has_global_flag = die_groot_trek
+		OR = {
+			TRN = {
+				NOT = { has_country_modifier = trek_boers }
+			}
+			ORA = {
+				NOT = { has_country_modifier = trek_boers }
+			}
+		}
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		clr_global_flag = die_groot_trek
+	}
+}
+
+country_event = {
+	id = 44420
+	title = "EVTNAME90049"
+	desc = "EVTDESC90049"
+	picture = "blood_river"
+
+	trigger = {
+		OR = {
+			tag = ZUL
+			tag = XHO
+			tag = TRN
+			tag = ORA
+		}
+		war_with = SAF
+		national_provinces_occupied = 0.65
+		NOT = { has_country_flag = defeated_by_saf }
+	}
+
+	option = {
+		name = "EVTOPTA90049"
+		set_country_flag = defeated_by_saf
+		war_exhaustion = 25
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90049"
+		set_country_flag = defeated_by_saf
+		any_country = {
+			limit = {
+				war_with = THIS
+				OR = {
+					tag = ENG
+					alliance_with = ENG
+					vassal_of = ENG
+					vassal_of = EIC
+				}
+			}
+			end_war = THIS
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = SAF
+					province_id = 2111
+				}
+			}
+			secede_province = SAF
+		}
+	}
+}

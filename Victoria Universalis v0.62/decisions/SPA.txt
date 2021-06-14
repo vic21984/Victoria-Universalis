@@ -1,0 +1,810 @@
+political_decisions = {
+	#test1 = {
+	#	potential = { tag = SPC }
+	#	allow = {
+	#		ai = no
+	#		is_cultural_union = no
+	#	}
+	#	effect = {
+	#		create_vassal = MEX
+	#		create_vassal = UCA
+	#		create_vassal = ECU
+	#		create_vassal = VNZ
+	#		create_vassal = BOL
+	#		create_vassal = PEU
+	#		create_vassal = CHL
+	#		create_vassal = ARC
+	#		create_vassal = ENT
+	#		create_vassal = CRT
+	#		create_vassal = URU
+	#		create_vassal = PRG
+	#		diplomatic_influence = {
+	#			who = CLM
+	#			value = 400
+	#		}
+	#	}
+	#}
+	carlist_victory = {
+		picture = carlist_victory
+		potential = {
+			tag = SPC
+			NOT = {
+				OR = {
+					has_global_flag = carlist_victory
+					has_global_flag = cristino_victory
+				}
+			}
+		}
+		allow = {
+			487 = { controlled_by = THIS }
+			492 = { controlled_by = THIS }
+			495 = { controlled_by = THIS }
+			498 = { controlled_by = THIS }
+			503 = { controlled_by = THIS }
+			NOT = { SPA = { brigades_compare = 1 } }
+		}
+		effect = {
+			prestige = 30
+			SPA = {
+				all_core = {
+					add_core = THIS
+					remove_core = SPA
+				}
+				annex_to = THIS
+			}
+			set_global_flag = carlist_victory
+			capital = 487
+		}
+	}
+
+	cristino_victory = {
+		picture = cristino_victory
+		potential = {
+			tag = SPA
+			NOT = {
+				OR = {
+					has_global_flag = carlist_victory
+					has_global_flag = cristino_victory
+				}
+			}
+		}
+		allow = {
+			487 = { controlled_by = THIS }
+			492 = { controlled_by = THIS }
+			495 = { controlled_by = THIS }
+			498 = { controlled_by = THIS }
+			503 = { controlled_by = THIS }
+			NOT = { SPC = { brigades_compare = 1 } }
+		}
+		effect = {
+			prestige = 15
+			SPC = {
+				all_core = {
+					add_core = THIS
+					remove_core = SPC
+				}
+				annex_to = THIS
+			}
+			set_global_flag = cristino_victory
+		}
+	}
+
+	reconquista_mex = {
+		picture = reconquista_mex
+		potential = {
+			tag = SPC
+			government = absolute_monarchy
+			NOT = { has_country_flag = mex_reconquista'd }
+		}
+		allow = {
+			MEX = {
+				all_core = {
+					OR = {
+						owner = {
+							war = no
+							OR = {
+								tag = THIS
+								OR = {
+									AND = {
+										in_sphere = THIS
+										ai = yes
+									}
+									vassal_of = THIS
+								}
+							}
+						}
+						is_core = TEX
+						is_core = USA
+						owned_by = TEX
+						owned_by = USA
+					}
+				}
+			}
+			UCA = {
+				all_core = {
+					OR = {
+						owner = {
+							war = no
+							OR = {
+								tag = THIS
+								OR = {
+									AND = {
+										in_sphere = THIS
+										ai = yes
+									}
+									vassal_of = THIS
+								}
+							}
+						}
+						province_id = 2190
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = mex_reconquista'd
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = MEX
+							is_core = UCA
+						}
+					}
+					secede_province = THIS
+				}
+			}
+			release = MEX
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						primary_culture = central_american
+						primary_culture = mayan
+					}
+				}
+				annex_to = THIS
+			}
+			UCA = { all_core = { add_core = MEX } }
+			any_owned = {
+				limit = { is_core = MEX }
+				secede_province = MEX
+			}
+			create_vassal = MEX
+			MEX = {
+				set_country_flag = spanish_vassal
+				government = colonial_company
+			}
+		}
+	}
+
+	reconquista_gco = {
+		picture = reconquista_gco
+		potential = {
+			tag = SPC
+			government = absolute_monarchy
+			NOT = { has_country_flag = gco_reconquista'd }
+		}
+		allow = {
+			GCO = {
+				all_core = {
+					owner = {
+						war = no
+						OR = {
+							tag = THIS
+							OR = {
+								AND = {
+									in_sphere = THIS
+									ai = yes
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = gco_reconquista'd
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = CLM
+							is_core = ECU
+							is_core = VNZ
+						}
+					}
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					primary_culture = north_andean
+				}
+				annex_to = THIS
+			}
+			CLM = { all_core = { add_core = GCO } }
+			ECU = { all_core = { add_core = GCO } }
+			VNZ = { all_core = { add_core = GCO } }
+			release_vassal = GCO
+			GCO = {
+				set_country_flag = spanish_vassal
+				government = colonial_company
+			}
+		}
+	}
+
+	reconquista_pbc = {
+		picture = reconquista_pbc
+		potential = {
+			tag = SPC
+			government = absolute_monarchy
+			NOT = { has_country_flag = pbc_reconquista'd }
+		}
+		allow = {
+			PEU = {
+				all_core = {
+					owner = {
+						war = no
+						OR = {
+							tag = THIS
+							OR = {
+								AND = {
+									in_sphere = THIS
+									ai = yes
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			BOL = {
+				all_core = {
+					owner = {
+						war = no
+						OR = {
+							tag = THIS
+							OR = {
+								AND = {
+									in_sphere = THIS
+									ai = yes
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			CHL = {
+				all_core = {
+					owner = {
+						war = no
+						OR = {
+							tag = THIS
+							OR = {
+								AND = {
+									in_sphere = THIS
+									ai = yes
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = pbc_reconquista'd
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = BOL
+							is_core = PEU
+							is_core = CHL
+						}
+						NOT = {
+							AND = {
+								owner = { tag = GCO }
+								state_id = 2288
+							}
+							AND = {
+								owner = { tag = LPL }
+								state_id = 2371
+							}
+						}
+					}
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					primary_culture = south_andean
+				}
+				annex_to = THIS
+			}
+			BOL = { all_core = { add_core = PBC } }
+			PEU = { all_core = { add_core = PBC } }
+			CHL = { all_core = { add_core = PBC } }
+			release_vassal = PBC
+			PBC = {
+				set_country_flag = spanish_vassal
+				government = colonial_company
+				inherit = PEU
+				inherit = BOL
+				inherit = CHL
+			}
+		}
+	}
+
+	reconquista_lpl = {
+		picture = reconquista_lpl
+		potential = {
+			tag = SPC
+			government = absolute_monarchy
+			NOT = { has_country_flag = lpl_reconquista'd }
+		}
+		allow = {
+			PRG = {
+				all_core = {
+					OR = {
+						owner = {
+							war = no
+							OR = {
+								tag = THIS
+								OR = {
+									AND = {
+										in_sphere = THIS
+										ai = yes
+									}
+									vassal_of = THIS
+								}
+							}
+						}
+						province_id = 2420
+					}
+				}
+			}
+			URU = {
+				all_core = {
+					owner = {
+						war = no
+						OR = {
+							tag = THIS
+							OR = {
+								AND = {
+									in_sphere = THIS
+									ai = yes
+								}
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			ARG = {
+				OR = {
+					exists = no
+					all_core = {
+						OR = {
+							owner = {
+								war = no
+								OR = {
+									tag = THIS
+									OR = {
+										AND = {
+											in_sphere = THIS
+											ai = yes
+										}
+										vassal_of = THIS
+									}
+								}
+							}
+							province_id = 2131
+						}
+					}
+				}
+			}
+			ARC = {
+				OR = {
+					exists = no
+					all_core = {
+						OR = {
+							owner = {
+								war = no
+								OR = {
+									tag = THIS
+									OR = {
+										AND = {
+											in_sphere = THIS
+											ai = yes
+										}
+										vassal_of = THIS
+									}
+								}
+							}
+							province_id = 2131
+						}
+					}
+				}
+			}
+			CRT = {
+				OR = {
+					exists = no
+					all_core = {
+						owner = {
+							war = no
+							OR = {
+								tag = THIS
+								OR = {
+									AND = {
+										in_sphere = THIS
+										ai = yes
+									}
+									vassal_of = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+			ENT = {
+				OR = {
+					exists = no
+					all_core = {
+						owner = {
+							war = no
+							OR = {
+								tag = THIS
+								OR = {
+									AND = {
+										in_sphere = THIS
+										ai = yes
+									}
+									vassal_of = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+			SBA = {
+				OR = {
+					exists = no
+					all_core = {
+						owner = {
+							war = no
+							OR = {
+								tag = THIS
+								OR = {
+									AND = {
+										in_sphere = THIS
+										ai = yes
+									}
+									vassal_of = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = lpl_reconquista'd
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = ARC
+							is_core = ARG
+							is_core = CRT
+							is_core = ENT
+							is_core = PRG
+							is_core = SBA
+							is_core = URU
+						}
+						NOT = {
+							AND = {
+								owner = { tag = PBC }
+								state_id = 2315
+							}
+						}
+					}
+					secede_province = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					primary_culture = platinean
+				}
+				annex_to = THIS
+			}
+			ARC = { all_core = { add_core = LPL } }
+			ARG = { all_core = { add_core = LPL } }
+			CRT = { all_core = { add_core = LPL } }
+			ENT = { all_core = { add_core = LPL } }
+			PRG = { all_core = { add_core = LPL } }
+			SBA = { all_core = { add_core = LPL } }
+			URU = { all_core = { add_core = LPL } }
+			release_vassal = LPL
+			LPL = {
+				set_country_flag = spanish_vassal
+				government = colonial_company
+			}
+		}
+	}
+
+	confiscations_of_mendizabal = {
+		potential = {
+			tag = SPA
+			NOT = {
+				has_country_flag = mendizabal_confiscated
+			}
+		}
+
+		allow = {
+			ideological_thought = 1
+		}
+
+		effect = {
+			treasury = 50000
+			prestige = 10
+			relation = {
+				who = PAP
+				value = -50
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 4
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 4
+				}
+				dominant_issue = {
+					value = pro_atheism
+					factor = 0.15
+				}
+			}
+			set_country_flag = mendizabal_confiscated
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	#abandon_iberian_union = {
+	#	picture = abandon_iberia
+	#	alert = no
+	#	potential = {
+	#		is_culture_group = iberian
+	#		NOT = { has_global_flag = iberian_union_abandoned }
+	#		ai = no
+	#	}
+	#	allow = {
+	#	}
+	#	effect = {
+	#		set_global_flag = iberian_union_abandoned
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+
+	unite_iberia = {
+		picture = create_iberia
+		potential = {
+			is_culture_group = iberian
+			NOT = {
+				OR = {
+					has_global_flag = created_iberia
+					has_global_flag = iberian_union_abandoned
+				}
+			}
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			SPA = {
+				OR = {
+					exists = no
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								ai = yes
+								in_sphere = THIS
+								war = no
+							}
+						}
+					}
+				}
+			}
+			SPC = {
+				OR = {
+					exists = no
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								ai = yes
+								in_sphere = THIS
+								war = no
+							}
+						}
+					}
+				}
+			}
+			CAT = {
+				OR = {
+					exists = no
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								ai = yes
+								in_sphere = THIS
+								war = no
+							}
+						}
+					}
+				}
+			}
+			POR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							ai = yes
+							in_sphere = THIS
+							war = no
+						}
+						province_id = 1498
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = created_iberia
+			prestige = 10
+			SPA = {
+				all_core = { add_core = THIS }
+			}
+			SPC = {
+				all_core = { add_core = THIS }
+			}
+			CAT = {
+				all_core = { add_core = THIS }
+			}
+			POR = {
+				all_core = { add_core = THIS }
+			}
+			517 = { add_core = THIS }
+			add_accepted_culture = portuguese
+			add_accepted_culture = spanish
+			add_accepted_culture = catalan
+			add_accepted_culture = basque
+			random_country = {
+				limit = {
+					tag = SPA
+					exists = yes
+				}
+				THIS = { inherit = SPA }
+			}
+			random_country = {
+				limit = {
+					tag = POR
+					exists = yes
+				}
+				THIS = { inherit = POR }
+			}
+			random_country = {
+				limit = {
+					tag = CAT
+					exists = yes
+				}
+				THIS = { inherit = CAT }
+			}
+			random_country = {
+				limit = {
+					tag = SPC
+					exists = yes
+				}
+				THIS = { inherit = SPC }
+			}
+			any_country = {
+				limit = {
+					NOT = { is_culture_group = iberian }
+					in_sphere = THIS
+				}
+				any_owned = {
+					limit = { is_core = THIS }
+					secede_province = THIS
+				}
+			}
+			any_pop = {
+				limit = { is_culture_group = iberian }
+				militancy = -4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	madrid_protocol = {
+		picture = map_sulu
+		potential = {
+			owns = 1462
+			1464 = {
+				owner = {
+					ai = yes
+					civilized = no
+					owns = 1396
+					owns = 1397
+				}
+			}
+			NOT = { has_global_flag = madrid_protocol }
+		}
+		allow = {
+			war = no
+			invention = colonial_negotiations
+		}
+		effect = {
+			set_country_flag = madrid_protocol
+			1464 = { secede_province = THIS }
+			random_country = {
+				limit = {
+					NOT = { tag = THIS }
+					civilized = yes
+					owns = 1395
+				}
+				country_event = { id = 37720 days = 0 }
+			}
+		}
+	}
+}

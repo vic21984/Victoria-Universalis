@@ -1,0 +1,27 @@
+owner = LUX
+controller = LUX
+add_core = NET
+add_core = LUX
+trade_goods = iron
+life_rating = 35
+1913.1.1 = {
+	owner = LUX
+	controller = LUX
+	add_core = LUX
+	remove_core = BEL
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+}

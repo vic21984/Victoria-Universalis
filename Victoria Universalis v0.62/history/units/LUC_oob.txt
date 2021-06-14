@@ -1,0 +1,36 @@
+MOD = {
+	value = 200
+}
+
+TUS = {
+	value = 200
+}
+
+PAR = {
+	value = 200
+}
+
+PAP = {
+	value = 200
+}
+
+army = {
+	name = "Esercito di Lucca"
+	
+	leader = {
+		name = "Carlo di Borbone-Parma"
+		date = 1815.1.1
+		type = land
+		personality = defence_2.1
+		background = attack_2.1
+		prestige = 0.5
+	}
+	
+	location = 746
+	regiment = {
+		name= "1. Fanteria di Linea"
+		type = infantry
+		home = 746
+	}
+}
+

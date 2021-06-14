@@ -1,0 +1,15 @@
+owner = CLM
+controller = CLM
+add_core = CLM
+add_core = PNM
+add_core = GCO
+trade_goods = fish
+life_rating = 35
+1913.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CLM
+	remove_core = GCO
+	life_rating = 40
+	naval_base = 6
+}

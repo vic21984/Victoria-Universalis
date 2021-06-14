@@ -1,0 +1,228 @@
+political_decisions = {
+	torching_of_the_summer_palace = {
+		potential = {
+			NOT = {
+				tag = CHI
+			}
+			CHI = {
+				owns = 1612
+			}
+			civilized = yes
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			war_with = CHI
+			NOT = {
+				has_global_flag = summer_palace_torched
+			}
+		}
+		allow = {
+			controls = 1612
+		}
+		effect = {
+			badboy = 3
+			CHI = {
+				country_event = { id=13355 days=0 }
+			}
+			set_global_flag = summer_palace_torched
+		}
+	}
+
+	establish_the_dar_al_funun = {
+		potential = {
+			tag = PER
+			NOT = {
+				has_country_flag = dar_al_funun_built
+			}
+		}
+		allow = {
+			literacy = 0.1
+		}
+		effect = {
+			years_of_research = 5
+			any_pop = {
+				consciousness = 0.5
+			}
+			set_country_flag = dar_al_funun_built
+			add_country_modifier = {
+				name = dar_al_funun
+				duration = 14600
+			}
+		}
+	}
+	
+	invite_european_military_advisors = {
+		picture = marching_soldiers
+		potential = {
+			OR = {
+				capital_scope = { continent = africa }
+				capital_scope = { continent = asia }
+			}
+			NOT = { has_country_flag = foreign_military_advisors }
+			NOT = {
+				OR = {
+					has_global_flag = 1913_bookmark
+					has_global_flag = ww1_bookmark
+				}
+			}
+			NOT = {
+				OR = {
+					primary_culture = british
+					primary_culture = boer
+				}
+			}
+		}
+
+		allow = {
+			civilized = yes
+			money = 500000
+		}
+
+		effect = {
+			set_country_flag = foreign_military_advisors
+			add_country_modifier = { name = european_military_advisors duration = 7300 }
+			money = -500000
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	form_somalia = {
+		picture = greater_somalia
+		potential = {
+			primary_culture = somali
+			SOM = { exists = no }
+		}
+
+		allow = {
+			war = no
+			owns = 1869
+			owns = 1872
+			owns = 1873
+		}
+
+		effect = {
+			prestige = 10
+			change_tag = SOM
+			SOM = {
+				all_core = {
+					remove_core = WRL
+					remove_core = MAJ
+					remove_core = GEL
+				}
+			}
+			any_country = {
+				limit = {
+					any_owned_province = { is_core = SOM }
+					civilized = no
+					NOT = { tag = THIS }
+				}
+				relation = { who = THIS value = -400 }
+				leave_alliance = THIS
+			}
+			any_pop = { limit = { OR = { is_primary_culture = yes is_accepted_culture = yes } } militancy = -4 }
+		}
+	}
+
+	integrate_cambodia = {
+		picture = angkor_wat
+		potential = {
+			OR = {
+				tag = SIA
+				tag = DAI
+			}
+			CAM = { exists = yes }
+			is_our_vassal = CAM
+			NOT = { has_country_flag = cambodia_integrated }
+		}
+
+		allow = {
+			CAM = { ai = yes }
+			OR = {
+				civilized = yes
+				AND = {
+					civilized = no
+					land_reform = yes_land_reform
+					admin_reform = yes_admin_reform
+					transport_improv = yes_transport_improv
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = cambodia_integrated
+			random_country = {
+				limit = {
+					tag = CAM
+					ai = yes
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+		}
+	}
+
+	integrate_laos = {
+		picture = vientiane
+		potential = {
+			OR = {
+				tag = SIA
+				tag = DAI
+			}
+			OR = {
+				AND = {
+					LUA = { exists = yes }
+					is_our_vassal = LUA
+				}
+				AND = {
+					CHK = { exists = yes }
+					is_our_vassal = CHK
+				}
+			}
+			NOT = { has_country_flag = laos_integrated }
+		}
+
+		allow = {
+			OR = {
+				civilized = yes
+				AND = {
+					civilized = no
+					land_reform = yes_land_reform
+					admin_reform = yes_admin_reform
+					transport_improv = yes_transport_improv
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = laos_integrated
+			any_country = {
+				limit = {
+					OR = {
+						tag = CHK
+						tag = LUA
+					}
+					ai = yes
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+		}
+	}
+
+	embrace_the_lao = {
+		picture = embrace_lao
+		potential = {
+			tag = SIA
+			NOT = { accepted_culture = lao }
+			LUA = { all_core = { owned_by = THIS } }
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			add_accepted_culture = lao
+		}
+	}
+}

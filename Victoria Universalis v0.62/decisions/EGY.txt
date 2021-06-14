@@ -1,0 +1,84 @@
+political_decisions = {
+	peace_ottomans = {
+		picture = egypt_surrenders
+		potential = {
+			tag = EGY
+			has_global_flag = oriental_crisis
+			NOT = { has_global_flag = oriental_crisis_ended }
+			NOT = { has_country_flag = sued_for_peace }
+			war_with = TUR
+		}
+
+		allow = {
+		}
+
+		effect = {
+			set_country_flag = sued_for_peace
+			TUR = {
+				country_event = { id = 31103 days = 0 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { national_provinces_occupied = 0.33 }
+			}
+		}
+	}
+
+	enact_muhammad_alis_reforms = {
+		potential = {
+			tag = EGY
+			NOT = { has_country_flag = muhammad_alis_reforms_enacted }
+		}
+
+		allow = {
+		}
+
+		effect = {
+			years_of_research = 5
+			any_pop = {
+				consciousness = 0.5
+			}		
+			add_country_modifier = {
+				name = muhammad_alis_reforms
+				duration = 7300
+			}
+			set_country_flag = muhammad_alis_reforms_enacted
+		}
+	}
+
+	conquest_of_darfur = {
+		picture = darfur
+		potential = {
+			NOT = { has_global_flag = conquest_of_darfur }
+			exists = DAR
+			neighbour = DAR
+			EGY_1827 = { owned_by = THIS }
+		}
+
+		allow = {
+			DAR = {
+				NOT = { number_of_states = 2 }
+			}
+			neighbour = DAR
+			OR = {
+				ai = yes
+				nationalism_n_imperialism = 1
+			}
+			war = no
+		}
+
+		effect = {
+			set_global_flag = conquest_of_darfur
+			war = {
+				target = DAR
+				attacker_goal = { casus_belli = conquest }
+				call_ally = yes
+			}
+			badboy = -15
+		}
+	}
+}

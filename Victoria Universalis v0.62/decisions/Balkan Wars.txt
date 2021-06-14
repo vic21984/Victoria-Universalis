@@ -1,0 +1,114 @@
+political_decisions = {
+
+	form_romania = {
+		picture = form_romania
+		potential = {
+			OR = {
+				tag = MOL
+				tag = WAL
+			}
+			ROM = { exists = no }
+			NOT = { has_country_flag = romania_formed }
+		}
+		allow = {
+			WAL_665 = {
+				owned_by = THIS
+			}
+			MOL_673 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			set_country_flag = romania_formed
+			change_tag = ROM
+			inherit = MOL
+			inherit = WAL
+			MOL = {
+				all_core = {
+					limit = {
+						NOT = {
+							OR = {
+								province_id = 676
+								province_id = 677
+								province_id = 678
+							}
+						}
+					}
+					remove_core = MOL
+				}
+			}
+			WAL = {
+				all_core = { remove_core = WAL }
+			}
+		}
+	}
+
+	claim_greater_serbia = {
+		picture = serbia
+		potential = {
+			tag = SER
+			NOT = { has_country_flag = claimed_greater_serbia }
+		}
+		allow = {
+			SER = {
+				all_core = { owned_by = THIS }
+			}
+		}
+		effect = {
+			set_country_flag = claimed_greater_serbia
+			add_accepted_culture = bosniak
+			AUS_777 = { add_core = THIS }
+			MON_2582 = { add_core = THIS }
+		}
+	}
+
+	podgorica_assembly = {
+		picture = montenegro_flag
+		potential = {
+			MON = { exists = yes }
+			tag = SER
+			NOT = { has_country_flag = podgorica_assembly }
+		}
+		allow = {
+			is_vassal = no
+			neighbour = MON
+			war = no
+			MON = {
+				is_vassal = no
+				ai = yes
+				war = no
+			}
+			nationalism_n_imperialism = 1
+			rank = 16
+		}
+		effect = {
+			prestige = 10
+			inherit = MON
+		}
+	}
+
+	become_greater_serbia = {
+		picture = greater_serbia
+		potential = {
+			NOT = { has_country_flag = became_greater_serbia }
+			has_country_flag = claimed_greater_serbia
+			tag = SER
+		}
+		allow = {
+			SER = {
+				all_core = { owned_by = THIS }
+			}
+		}
+		effect = {
+			set_country_flag = became_greater_serbia
+			prestige = 25
+			change_tag = GSR
+			SER = {
+				all_core = {
+					add_core = THIS
+					remove_core = SER
+				}
+			}
+		}
+	}
+}

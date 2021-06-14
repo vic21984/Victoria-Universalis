@@ -1,0 +1,52 @@
+primary_culture = illuminati
+religion = animist
+government = absolute_monarchy
+plurality = 0.0
+nationalvalue = nv_order
+literacy = 0
+civilized = yes
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = state_equal_weight
+vote_franschise = universal_weighted_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = all_trade_unions
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = trinket_wage
+work_hours = ten_hours
+safety_regulations = no_safety
+health_care = universal_health_care
+unemployment_subsidies = trinket_subsidies
+pensions = low_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = no_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = closed_borders
+centralization = unitary
+colonial_migration = no_colonial_migration
+
+ruling_party = JAN_anarcho_liberal
+upper_house = {
+	fascist = 0
+	liberal = 65
+	conservative = 25
+	reactionary = 5
+	anarcho_liberal = 2
+	socialist = 3
+	communist = 0
+}
+
+
+1836.1.3 = {
+	set_global_flag = cultures_setup
+}

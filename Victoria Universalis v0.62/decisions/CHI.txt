@@ -1,0 +1,259 @@
+political_decisions = {
+	enact_early_qing_reforms = {
+		picture = lin_zexu
+		potential = {
+			tag = CHI
+			NOT = {
+				OR = {
+					has_country_flag = early_qing_reforms
+					has_country_flag = late_qing_reforms
+				}
+			}
+			civilized = no
+		}
+		allow = {
+			NOT = { has_country_flag = late_qing_reforms }
+			civilized = no
+		}
+		effect = {
+			set_country_flag = early_qing_reforms
+			add_country_modifier = { name = early_qing_reforms duration = -1 }
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	enact_late_qing_reforms = {
+		picture = guangxu_emperor
+		potential = {
+			tag = CHI
+			NOT = {
+				OR = {
+					has_country_flag = early_qing_reforms
+					has_country_flag = late_qing_reforms
+				}
+			}
+			civilized = no
+		}
+		allow = {
+			NOT = { has_country_flag = early_qing_reforms }
+			year = 1895
+			civilized = no
+		}
+		effect = {
+			set_country_flag = late_qing_reforms
+			add_country_modifier = { name = late_qing_reforms duration = -1 }
+			years_of_research = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	abolish_imperial_exams = {
+		picture = tongwen_guan
+		potential = {
+			tag = CHI
+			NOT = { has_country_flag = abolished_imperial_exams }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = abolished_imperial_exams
+			remove_country_modifier = imperial_examinations
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	chinese_diplomatic_isolationism = {
+		potential = {
+			tag = CHI
+			ai = yes
+			OR = {
+				any_neighbor_country = { alliance_with = THIS }
+				any_greater_power = { alliance_with = THIS }
+			}
+			civilized = no
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = { alliance_with = THIS }
+				any_greater_power = { alliance_with = THIS }
+			}
+		}
+		effect = {
+			any_country = { leave_alliance = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	china_democracy = {
+		picture = republic_of_china
+		potential = {
+			OR = {
+				tag = CHI
+				tag = TPG
+			}
+			civilized = yes
+			NOT = { has_global_flag = republic_of_china }
+			NOT = { has_global_flag = warlord_era_begun }
+		}
+		allow = {
+			OR = {
+				vote_franschise = universal_weighted_voting
+				vote_franschise = universal_voting
+			}
+			OR = {
+				political_parties = non_secret_ballots
+				political_parties = secret_ballots
+			}
+			OR = {
+				upper_house_composition = state_equal_weight
+				upper_house_composition = population_equal_weight
+			}
+		}
+		effect = {
+			government = democracy
+			remove_country_modifier = imperial_examinations
+			set_global_flag = republic_of_china
+			add_accepted_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = hakka
+			add_accepted_culture = min
+			add_accepted_culture = yue
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	outlaw_opium = {
+		picture = outlaw_opium
+		potential = {
+			OR = {
+				tag = CHI
+				tag = TPG
+			}
+			has_country_modifier = opium_addiction
+			NOT = { has_global_flag = opium_outlawed }
+			NOT = { has_global_flag = opium_war_happened }
+		}
+		allow = {
+			year = 1840
+			NOT = { year = 1900 }
+			war = no
+			num_of_cities = 50
+		}
+		effect = {
+			remove_country_modifier = opium_addiction
+			set_global_flag = opium_outlawed
+			any_country = {
+				limit = {
+					has_country_modifier = unequal_china_treaty
+				}
+				remove_country_modifier = unequal_china_treaty
+				country_event = {
+					id = 90824
+					days = 0
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				year = 1850
+			}
+		}
+	}
+
+	chinese_treaty_port = {
+		picture = treaty_port
+		potential = {
+			NOT = { is_culture_group = east_asian }
+			civilized = yes
+			OR = {
+				AND = {
+					owns = 1481
+					1481 = { is_colonial = yes }
+				}
+				AND = {
+					owns = 1496
+					1496 = { is_colonial = yes }
+				}
+				AND = {
+					owns = 1498
+					1498 = { is_colonial = yes }
+				}
+				AND = {
+					owns = 1538
+					1538 = { is_colonial = yes }
+				}
+				AND = {
+					owns = 1566
+					1566 = { is_colonial = yes }
+				}
+				AND = {
+					owns = 1569
+					1569 = { is_colonial = yes }
+				}
+				AND = {
+					owns = 2615
+					2615 = { is_colonial = yes }
+				}
+				AND = {
+					owns = 2659
+					2659 = { is_colonial = yes }
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					OR = {
+						province_id = 1481
+						province_id = 1496
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1569
+						province_id = 2615
+						province_id = 2659
+					}
+					is_colonial = yes
+				}
+				secede_province = CIV
+				trade_goods = market_goods
+			}
+			CIV = {
+				country_event = { id = 91510 days = 0 }
+			}
+		}
+	}
+
+}

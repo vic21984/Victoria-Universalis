@@ -1,0 +1,30 @@
+ORA = { value = 200 }
+
+army = {
+	name = "Army of Transvaal"
+	location = 2106
+	regiment = {
+		name= "1.Transvaal Commando"
+		type = infantry
+		home = 2106
+	}
+	regiment = {
+		name= "2.Transvaal Commando"
+		type = infantry
+		home = 2107
+	}
+	regiment = {
+		name= "1. Native Cavalry"
+		type = cavalry
+		home = 2107
+	}
+}
+
+leader = {
+	name = "Andries Pretorius"
+	type = land
+	date = 1836.1.1
+	personality = defence_5.1
+	background = attack_5.1
+	prestige = 0.9
+}

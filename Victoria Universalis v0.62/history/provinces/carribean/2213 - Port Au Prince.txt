@@ -1,0 +1,19 @@
+owner = HAI
+controller = HAI
+add_core = HAI
+trade_goods = grain
+naval_base = 1
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 7
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+	naval_base = 2
+}

@@ -1,0 +1,151 @@
+leader = {
+	name = "Carlos Cortés Vargas"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+leader = {
+	name = "Pedro Nel Ospina Vázquez"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+navy = {
+	name = "Armada Nacional"
+	location = 2253
+
+	ship = {
+		name= "Almirante Lezo"
+		type = cruiser
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 2247
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2247
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2247
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2247
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2248
+	}	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2256
+	}
+		regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2256
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 2256
+	}
+	regiment = {
+		name= "3rd Battery Republican Artillery"
+		type = artillery
+		home = 2250
+		}
+	regiment = {
+		name= "4th Battery Republican Artillery"
+		type = artillery
+		home = 2250
+	}
+}
+army = {
+	name = "II Corps"
+	location = 2253
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 2250
+	}
+
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 2252
+	}
+
+	regiment = {
+		name= "5th Battery Republican Artillery"
+		type = artillery
+		home = 2252
+	}
+
+	regiment = {
+		name= "6th Battery Republican Artillery"
+		type = artillery
+		home = 2252
+	}	
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 2254
+	}
+		regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 2254
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 2254
+	}
+	regiment = {
+		name= "7th Battery Republican Artillery"
+		type = artillery
+		home = 2254
+	}
+	regiment = {
+		name= "8th Battery Republican Artillery"
+		type = artillery
+		home = 2255
+	}
+}
+army = {
+	name = "III Corps"
+	location = 2255
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 2255
+	}
+
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 2255
+	}
+
+	regiment = {
+		name= "9th Battery Republican Artillery"
+		type = artillery
+		home = 2255
+	}
+}

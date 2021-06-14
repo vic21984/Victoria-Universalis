@@ -1,3 +1,27 @@
+#Version 0.62 - 6/14/2021
+## Bug fixes:
+* Removed extra naval base in New Brunswick state that prevented ports from being upgraded.
+* Claim Innger Angola decision will only transfer uncolonized land.
+* Turkish Population Exchange event will not cause Bulgarians or Greeks to migrate if their respective countries don't exist.
+* The Aceh Question decision no longer transfers Sekondi province to UK if it is not owned by Netherlands.
+* Ottoman Empire starts as a GP before game starts in 1836 bookmarks and Tunis, Moldovia, and Wallachia are in it's sphere of influence.
+
+## Map changes:
+* Merged Macaronesia state with Estremadura, Western Sahara, and Senegal states.
+* Created Eirunepé province in Amazonas state, in-between the border of Bolivia and Brazil. The province is owned by Bolivia in 1836 bookmarks.
+
+## General gameplay changes:
+* Buffed Martial Law negative militancy modifier from -0.07 to -0.1 per month.
+
+## Country balance changes:
+###### South America:
+* Created Treaty of Ayacucho decision that transfers cores and ownership of newly created Eirunepé province to the owner of Tefe province.
+* Reworked Treaty of Petrópolis and Vásquez Cobo–Martins Treaty decisions. Brazil does not start with cores on Taraucá or Marabitanas provinces and will gain cores on them only after enacting these decisions.
+
+###### Africa:
+* End Gaza Kingdom decision now requires inorganic chemistry instead of colonial negotiations.
+
+
 #Version 0.61 - 6/9/2021
 ## Bug fixes:
 * Fixed Guangzhouwan and Tientsin not appearing in acquire chinese concession cb.

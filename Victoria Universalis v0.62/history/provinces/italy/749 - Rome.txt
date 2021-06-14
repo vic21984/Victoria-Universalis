@@ -1,0 +1,47 @@
+owner = PAP
+controller = PAP
+add_core = PAP
+add_core = ITA
+trade_goods = grain
+life_rating = 40
+1913.1.1 = {
+	fort = 4
+	owner = ITA
+	controller = ITA
+	state_building = {
+		level = 6
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	naval_base = 6
+}

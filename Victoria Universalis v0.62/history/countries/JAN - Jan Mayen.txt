@@ -1,0 +1,82 @@
+capital = 3246
+primary_culture = illuminati
+religion = animist
+government = democracy
+plurality = 0
+nationalvalue = nv_liberty
+literacy = 0
+decision = jan_mayen_1836_setup
+decision = build_bosphorus_canal
+decision = build_copenhagen_canal
+decision = build_gibraltar_canal
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = state_equal_weight
+vote_franschise = universal_weighted_voting
+public_meetings = yes_meeting
+press_rights = free_press
+trade_unions = all_trade_unions
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = trinket_wage
+work_hours = ten_hours
+safety_regulations = no_safety
+health_care = universal_health_care
+unemployment_subsidies = trinket_subsidies
+pensions = low_pensions 
+school_reforms = no_schools
+
+# New Reforms
+conscription = no_draft
+debt_law = peonage
+penal_system = capital_punishment
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = closed_borders
+centralization = unitary
+colonial_migration = no_colonial_migration
+
+ruling_party = JAN_anarcho_liberal
+upper_house = {
+	fascist = 0
+	liberal = 65
+	conservative = 25
+	reactionary = 5
+	anarcho_liberal = 2
+	socialist = 3
+	communist = 0
+}
+
+1836.1.2 = {
+	set_global_flag = 1836_literacy_setup
+	set_global_flag = 1836_literacy_check
+}
+
+1836.1.3 = {
+	set_global_flag = mp_1836_literacy_setup
+}
+
+1913.1.1 = {
+	set_global_flag = conquest_of_yoruba_states
+	set_global_flag = conquest_of_benin
+	set_global_flag = conquest_of_niger_delta
+	set_global_flag = conquest_of_ghana
+	set_global_flag = conquest_of_ivory_coast
+	set_global_flag = conquest_of_dahomey
+	set_global_flag = conquest_of_senegal
+	set_global_flag = conquest_of_gambia
+	set_global_flag = conquest_of_guinea
+	set_global_flag = 1913_bookmark
+	set_global_flag = 1850_ai_mobilization_boost
+	set_global_flag = 1870_ai_mobilization_boost
+	set_global_flag = 1890_ai_mobilization_boost
+	set_global_flag = 1910_ai_mobilization_boost
+	decision = jan_mayen_1913_setup
+}
+
+1914.7.28 = {
+	set_global_flag = ww1_bookmark
+}

@@ -1,0 +1,42 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+trade_goods = coal
+life_rating = 35
+state_building = {
+	level = 4
+	building = fabric_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = dye_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fuel_refinery
+		upgrade = yes
+	}
+}

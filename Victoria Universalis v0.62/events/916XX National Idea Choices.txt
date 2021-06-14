@@ -1,0 +1,2004 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 91600
+	title = "EVTNAME91600"
+	desc = "EVTDESC91600"
+
+
+	trigger = {
+		tag = JAN
+		year = 1837
+		NOT = { has_country_modifier = admin_counter }
+	}
+
+	
+	immediate = {
+		add_country_modifier = {
+			name = admin_counter
+			duration = 362
+		}
+	}
+	
+	option = {
+		name = EVTOPTA91600
+		any_country = {
+			limit = {
+				ai = no
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				literacy = -0.001
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				literacy = -0.002
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				literacy = -0.003
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				literacy = -0.004
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				literacy = -0.005
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				literacy = -0.006
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				literacy = -0.007
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				literacy = -0.008
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.9
+					NOT = { literacy = 0.9 }
+				}
+				literacy = -0.009
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.99
+				}
+				literacy = -0.01
+			}
+		}
+		any_country = {
+			slaves = { reduce_pop = 1.01 }
+			any_owned = {
+				limit = {
+					NOT = { total_pops = 1500 }
+				}
+				any_pop = {
+					reduce_pop = 1.01
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_province_modifier = settlement
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					has_province_modifier = settlement
+				}
+				any_pop = {
+					limit = {
+						is_accepted_culture = no
+						is_primary_culture = no
+					}
+					reduce_pop = 0.99
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 91601
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+
+
+	trigger = {
+		owner = {
+			invention = national_idea1
+			NOT = { has_country_flag = national_idea1 }
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = national_idea1 }
+	}
+
+	option = {
+		name = "+50% Army Morale"
+		owner = { set_country_flag = choosing_army_morale }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_morale_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Army Organisation"
+		owner = { set_country_flag = choosing_army_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-15% Military Supplies"
+		owner = { set_country_flag = choosing_military_supplies }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_supplies_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Military Hospitals"
+		owner = { set_country_flag = choosing_military_hospitals }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_hospitals_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Army Experience"
+		owner = { set_country_flag = choosing_army_experience }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_experience_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Reinforce Rate"
+		owner = { set_country_flag = choosing_reinforce_rate }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = reinforce_rate_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+2 Monthly Leadership"
+		owner = { set_country_flag = choosing_leadership }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = leadership_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.3 Monthly Prestige"
+		owner = { set_country_flag = choosing_prestige }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = prestige_idea
+					owner = { is_culture_group = germanic }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "+30% Navy Build Speed & +50% Ship Repair"
+		owner = { set_country_flag = choosing_navy_build_speed }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_build_speed_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Navy Organisation"
+		owner = { set_country_flag = choosing_navy_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-0.03 Infamy Decay"
+		owner = { set_country_flag = choosing_expansion }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = expansion_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.04 Assimilation Chance & +50% Rate"
+		owner = {  set_country_flag = choosing_assimilation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = assimilation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Farming Efficiency"
+		owner = { set_country_flag = choosing_farming }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = farming_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Mining Efficiency"
+		owner = { set_country_flag = choosing_mining }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = mining_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Consumer Goods Factory Output"
+		owner = { set_country_flag = choosing_consumer_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = consumer_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Industrial Goods Factory Output"
+		owner = { set_country_flag = choosing_industrial_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = industrial_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "Unlock Domestic Migration Attraction Decision"
+		owner = { set_country_flag = choosing_domestic }
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "+15% Education Efficiency"
+		owner = { set_country_flag = choosing_education }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = education_idea
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 91602
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+
+
+	trigger = {
+		owner = {
+			invention = national_idea2
+			NOT = { has_country_flag = national_idea2 }
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = national_idea2 }
+	}
+
+	option = {
+		name = "Unlock Domestic Migration Attraction Decision"
+		owner = { set_country_flag = choosing_domestic }
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "+50% Army Morale"
+		owner = { set_country_flag = choosing_army_morale }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_morale_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Army Organisation"
+		owner = { set_country_flag = choosing_army_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-15% Military Supplies"
+		owner = { set_country_flag = choosing_military_supplies }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_supplies_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Military Hospitals"
+		owner = { set_country_flag = choosing_military_hospitals }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_hospitals_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Army Experience"
+		owner = { set_country_flag = choosing_army_experience }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_experience_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Reinforce Rate"
+		owner = { set_country_flag = choosing_reinforce_rate }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = reinforce_rate_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+2 Monthly Leadership"
+		owner = { set_country_flag = choosing_leadership }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = leadership_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.3 Monthly Prestige"
+		owner = { set_country_flag = choosing_prestige }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = prestige_idea
+					owner = { is_culture_group = germanic }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "+30% Navy Build Speed & +50% Ship Repair"
+		owner = { set_country_flag = choosing_navy_build_speed }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_build_speed_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Navy Organisation"
+		owner = { set_country_flag = choosing_navy_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-0.03 Infamy Decay"
+		owner = { set_country_flag = choosing_expansion }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = expansion_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.04 Assimilation Chance & +50% Rate"
+		owner = {  set_country_flag = choosing_assimilation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = assimilation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Farming Efficiency"
+		owner = { set_country_flag = choosing_farming }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = farming_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Mining Efficiency"
+		owner = { set_country_flag = choosing_mining }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = mining_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Consumer Goods Factory Output"
+		owner = { set_country_flag = choosing_consumer_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = consumer_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Industrial Goods Factory Output"
+		owner = { set_country_flag = choosing_industrial_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = industrial_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Education Efficiency"
+		owner = { set_country_flag = choosing_education }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = education_idea
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 91603
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+
+
+	trigger = {
+		owner = {
+			invention = national_idea3
+			NOT = { has_country_flag = national_idea3 }
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = national_idea3 }
+	}
+
+	option = {
+		name = "Unlock Domestic Migration Attraction Decision"
+		owner = { set_country_flag = choosing_domestic }
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "+50% Army Morale"
+		owner = { set_country_flag = choosing_army_morale }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_morale_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Army Organisation"
+		owner = { set_country_flag = choosing_army_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-15% Military Supplies"
+		owner = { set_country_flag = choosing_military_supplies }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_supplies_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Military Hospitals"
+		owner = { set_country_flag = choosing_military_hospitals }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_hospitals_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Army Experience"
+		owner = { set_country_flag = choosing_army_experience }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_experience_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Reinforce Rate"
+		owner = { set_country_flag = choosing_reinforce_rate }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = reinforce_rate_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+2 Monthly Leadership"
+		owner = { set_country_flag = choosing_leadership }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = leadership_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.3 Monthly Prestige"
+		owner = { set_country_flag = choosing_prestige }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = prestige_idea
+					owner = { is_culture_group = germanic }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "+30% Navy Build Speed & +50% Ship Repair"
+		owner = { set_country_flag = choosing_navy_build_speed }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_build_speed_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Navy Organisation"
+		owner = { set_country_flag = choosing_navy_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-0.03 Infamy Decay"
+		owner = { set_country_flag = choosing_expansion }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = expansion_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.04 Assimilation Chance & +50% Rate"
+		owner = {  set_country_flag = choosing_assimilation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = assimilation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Farming Efficiency"
+		owner = { set_country_flag = choosing_farming }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = farming_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Mining Efficiency"
+		owner = { set_country_flag = choosing_mining }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = mining_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Consumer Goods Factory Output"
+		owner = { set_country_flag = choosing_consumer_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = consumer_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Industrial Goods Factory Output"
+		owner = { set_country_flag = choosing_industrial_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = industrial_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Education Efficiency"
+		owner = { set_country_flag = choosing_education }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = education_idea
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 91604
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+
+
+	trigger = {
+		owner = {
+			invention = national_idea4
+			NOT = { has_country_flag = national_idea4 }
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = national_idea4 }
+	}
+
+	option = {
+		name = "Unlock Domestic Migration Attraction Decision"
+		owner = { set_country_flag = choosing_domestic }
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "+50% Army Morale"
+		owner = { set_country_flag = choosing_army_morale }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_morale_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Army Organisation"
+		owner = { set_country_flag = choosing_army_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-15% Military Supplies"
+		owner = { set_country_flag = choosing_military_supplies }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_supplies_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Military Hospitals"
+		owner = { set_country_flag = choosing_military_hospitals }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_hospitals_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Army Experience"
+		owner = { set_country_flag = choosing_army_experience }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_experience_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Reinforce Rate"
+		owner = { set_country_flag = choosing_reinforce_rate }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = reinforce_rate_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+2 Monthly Leadership"
+		owner = { set_country_flag = choosing_leadership }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = leadership_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.3 Monthly Prestige"
+		owner = { set_country_flag = choosing_prestige }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = prestige_idea
+					owner = { is_culture_group = germanic }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "+30% Navy Build Speed & +50% Ship Repair"
+		owner = { set_country_flag = choosing_navy_build_speed }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_build_speed_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Navy Organisation"
+		owner = { set_country_flag = choosing_navy_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-0.03 Infamy Decay"
+		owner = { set_country_flag = choosing_expansion }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = expansion_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.04 Assimilation Chance & +50% Rate"
+		owner = {  set_country_flag = choosing_assimilation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = assimilation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Farming Efficiency"
+		owner = { set_country_flag = choosing_farming }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = farming_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Mining Efficiency"
+		owner = { set_country_flag = choosing_mining }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = mining_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Consumer Goods Factory Output"
+		owner = { set_country_flag = choosing_consumer_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = consumer_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Industrial Goods Factory Output"
+		owner = { set_country_flag = choosing_industrial_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = industrial_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Education Efficiency"
+		owner = { set_country_flag = choosing_education }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = education_idea
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 91605
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+
+
+	trigger = {
+		owner = {
+			invention = national_idea5
+			NOT = { has_country_flag = national_idea5 }
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = national_idea5 }
+	}
+
+	option = {
+		name = "Unlock Domestic Migration Attraction Decision"
+		owner = { set_country_flag = choosing_domestic }
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "+50% Army Morale"
+		owner = { set_country_flag = choosing_army_morale }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_morale_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Army Organisation"
+		owner = { set_country_flag = choosing_army_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-15% Military Supplies"
+		owner = { set_country_flag = choosing_military_supplies }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_supplies_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Military Hospitals"
+		owner = { set_country_flag = choosing_military_hospitals }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_hospitals_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Army Experience"
+		owner = { set_country_flag = choosing_army_experience }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_experience_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Reinforce Rate"
+		owner = { set_country_flag = choosing_reinforce_rate }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = reinforce_rate_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+2 Monthly Leadership"
+		owner = { set_country_flag = choosing_leadership }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = leadership_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.3 Monthly Prestige"
+		owner = { set_country_flag = choosing_prestige }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = prestige_idea
+					owner = { is_culture_group = germanic }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "+30% Navy Build Speed & +50% Ship Repair"
+		owner = { set_country_flag = choosing_navy_build_speed }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_build_speed_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Navy Organisation"
+		owner = { set_country_flag = choosing_navy_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-0.03 Infamy Decay"
+		owner = { set_country_flag = choosing_expansion }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = expansion_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.04 Assimilation Chance & +50% Rate"
+		owner = {  set_country_flag = choosing_assimilation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = assimilation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Farming Efficiency"
+		owner = { set_country_flag = choosing_farming }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = farming_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Mining Efficiency"
+		owner = { set_country_flag = choosing_mining }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = mining_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Consumer Goods Factory Output"
+		owner = { set_country_flag = choosing_consumer_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = consumer_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Industrial Goods Factory Output"
+		owner = { set_country_flag = choosing_industrial_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = industrial_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Education Efficiency"
+		owner = { set_country_flag = choosing_education }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = education_idea
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 91606
+	title = "EVTNAME91601"
+	desc = "EVTDESC91601"
+
+
+	trigger = {
+		owner = {
+			invention = national_idea6
+			NOT = { has_country_flag = national_idea6 }
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = national_idea6 }
+	}
+
+	option = {
+		name = "Unlock Domestic Migration Attraction Decision"
+		owner = { set_country_flag = choosing_domestic }
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "+50% Army Morale"
+		owner = { set_country_flag = choosing_army_morale }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_morale_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Army Organisation"
+		owner = { set_country_flag = choosing_army_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-15% Military Supplies"
+		owner = { set_country_flag = choosing_military_supplies }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_supplies_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Military Hospitals"
+		owner = { set_country_flag = choosing_military_hospitals }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = military_hospitals_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Army Experience"
+		owner = { set_country_flag = choosing_army_experience }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = army_experience_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Reinforce Rate"
+		owner = { set_country_flag = choosing_reinforce_rate }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = reinforce_rate_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+2 Monthly Leadership"
+		owner = { set_country_flag = choosing_leadership }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = leadership_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.3 Monthly Prestige"
+		owner = { set_country_flag = choosing_prestige }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = prestige_idea
+					owner = { is_culture_group = germanic }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "+30% Navy Build Speed & +50% Ship Repair"
+		owner = { set_country_flag = choosing_navy_build_speed }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_build_speed_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Navy Organisation"
+		owner = { set_country_flag = choosing_navy_organisation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = navy_organisation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "-0.03 Infamy Decay"
+		owner = { set_country_flag = choosing_expansion }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = expansion_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+0.04 Assimilation Chance & +50% Rate"
+		owner = {  set_country_flag = choosing_assimilation }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = assimilation_idea
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Farming Efficiency"
+		owner = { set_country_flag = choosing_farming }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = farming_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+20% Mining Efficiency"
+		owner = { set_country_flag = choosing_mining }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = mining_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Consumer Goods Factory Output"
+		owner = { set_country_flag = choosing_consumer_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = consumer_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+8% Industrial Goods Factory Output"
+		owner = { set_country_flag = choosing_industrial_goods }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = industrial_goods_idea
+			}
+			modifier = {
+				factor = 10
+				tech_school = commerce_tech_school
+			}
+		}
+	}
+
+	option = {
+		name = "+15% Education Efficiency"
+		owner = { set_country_flag = choosing_education }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = education_idea
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91651
+	title = "+50% Army Morale"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_army_morale
+		has_country_flag = army_morale_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_army_morale
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91652
+	title = "+20% Army Organisation"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_army_organisation
+		has_country_flag = army_organisation_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_army_organisation
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91653
+	title = "-15% Military Supplies"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_military_supplies
+		has_country_flag = military_supplies_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_military_supplies
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91654
+	title = "+20% Military Hospitals"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_military_hospitals
+		has_country_flag = military_hospitals_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_military_hospitals
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91655
+	title = "+15% Army Experience"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_army_experience
+		has_country_flag = army_experience_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_army_experience
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91656
+	title = "+15% Reinforce Rate"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_reinforce_rate
+		has_country_flag = reinforce_rate_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_reinforce_rate
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91657
+	title = "+2 Monthly Leadership"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_leadership
+		has_country_flag = leadership_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_leadership
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91658
+	title = "+0.3 Monthly Prestige"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_prestige
+		has_country_flag = prestige_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_prestige
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91659
+	title = "+30% Navy Build Speed & +50% Ship Repair"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_navy_build_speed
+		has_country_flag = navy_build_speed_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_navy_build_speed
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91660
+	title = "+20% Navy Organisation"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_navy_organisation
+		has_country_flag = navy_organisation_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_navy_organisation
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91661
+	title = "-0.03 Infamy Decay"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_expansion
+		has_country_flag = expansion_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_expansion
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91662
+	title = "+0.04 Assimilation Chance & +50% Rate"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_assimilation
+		has_country_flag = assimilation_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_assimilation
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91663
+	title = "+20% Farming Efficiency"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_farming
+		has_country_flag = farming_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_farming
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91664
+	title = "+20% Mining Efficiency"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_mining
+		has_country_flag = mining_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_mining
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91665
+	title = "+8% Consumer Goods Factory Output"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_consumer_goods
+		has_country_flag = consumer_goods_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_consumer_goods
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91666
+	title = "+8% Industrial Goods Factory Output"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_industrial_goods
+		has_country_flag = industrial_goods_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_industrial_goods
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91667
+	title = "Unlock Domestic Migration Attraction Decision"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_domestic
+		has_country_flag = domestic_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_domestic
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91668
+	title = "+15% Education Efficiency"
+	desc = "We already have this national idea."
+	picture = national_idea_choice
+
+
+	trigger = {
+		has_country_flag = choosing_education
+		has_country_flag = education_idea
+	}
+
+	option = {
+		name = "Take me back to the national idea list."
+		clr_country_flag = choosing_education
+		random_owned = {
+			province_event = { id = 91601 days = 0 }
+		}
+	}
+}
