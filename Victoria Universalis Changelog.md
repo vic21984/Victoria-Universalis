@@ -1,3 +1,9 @@
+#Version 0.62b - 6/15/2021
+## Bug fixes:
+* Fixed infinite money glitch for one of the province selector decisions.
+* Fixed Russia not starting with the "Serfdom not abolished" flag in the regular 1836 grand campaign.
+
+
 #Version 0.62 - 6/14/2021
 ## Bug fixes:
 * Removed extra naval base in New Brunswick state that prevented ports from being upgraded.

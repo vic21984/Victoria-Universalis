@@ -3103,7 +3103,7 @@ EVTDESC44670;The provinces of Tarauacá and Eirunepé have long been claimed by §R
 EVTOPTA44670;Sign the treaty.;;;;;;;;;;;x
 EVTOPTB44670;Reject the treaty.;;;;;;;;;;;x
 EVTNAME44671;The Treaty of Petropolis;;;;;;;;;;;x
-EVTDESC44671;Although §R$FROMCOUNTRY$§b agreed to give up their demands on Tarauacá in the Treaty of Ayacucho,  $FROMCOUNTRY_ADJ$ immigrants have staged a revolt in Tarauacá and §R$FROMCOUNTRY$§b has threatened to support the the rebels if we do not hand the province over to them. §R$FROMCOUNTRY$§b has promised to pay us an indemnity if we give up Tarauacá peacefully.;;;;;;;;;;;x
+EVTDESC44671;Although §R$FROMCOUNTRY$§b agreed to give up their demands on Tarauacá in the Treaty of Ayacucho, $FROMCOUNTRY_ADJ$ immigrants have staged a revolt in Tarauacá and §R$FROMCOUNTRY$§b has threatened to support the the rebels if we do not hand the province over to them. §R$FROMCOUNTRY$§b has promised to pay us an indemnity if we give up Tarauacá peacefully.;;;;;;;;;;;x
 EVTOPTA44671;Sign the treaty.;;;;;;;;;;;x
 EVTOPTB44671;Reject the treaty.;;;;;;;;;;;x
 treaty_of_ayacucho_title;The Treaty of Ayacucho;;;;;;;;;;;x
@@ -3121,7 +3121,7 @@ EVTNAME44674;$FROMCOUNTRY$ Refuses;;;;;;;;;;;x
 EVTDESC44674;The delegation from §R$FROMCOUNTRY$§b has rejected our recent treaty offer.;;;;;;;;;;;x
 EVTOPTA44674;We will take our claims one way or another.;;;;;;;;;;;x
 treaty_of_ayacucho_title;The Treaty of Ayacucho;;;;;;;;;;;x
-treaty_of_ayacucho_desc;We can press the owners of Eirunepé to recognize our claims on the it in exchange for promising not to press for further claims in Tarauacá. If they refuse, we will claim both provinces.;;;;;;;;;;;x
+treaty_of_ayacucho_desc;We can ask the owner of Eirunepé to recognize our claims on it in exchange for promising not to press for further claims in Tarauacá. If they refuse, we will claim both provinces.;;;;;;;;;;;x
 treaty_of_petropolis_title;The Treaty of Petropolis;;;;;;;;;;;x
 treaty_of_petropolis_desc;Although we promised not to impede on Tarauacá in an earlier treaty, a local rebellion in that province gives us a convenient excuse to re-stake our claim on it.;;;;;;;;;;;x
 treaty_of_bogota_title;The Vásquez Cobo–Martins Treaty;;;;;;;;;;;x
@@ -3153,3 +3153,13 @@ annex_congo_free_state_desc;Recent news of the horrific brutality and slaughter 
 form_pakistan_title;Form Pakistan;;;;;;;;;;;;x
 form_pakistan_desc;Our dominant position among our muslim and cultural brethren puts us in a position to form Pakistan.;;;;;;;;;;;;x
 accepted_iberian_union;Accepted Iberian Union;;;;;;;;;;;;x
+EVTNAME91331;Overseas Coring Vote;;;;;;;;;;;;x
+EVTDESC91331;This is a multiplayer only event that allows players to choose whether or not the gain core event can trigger in overseas provinces. If yes wins by 1 or more votes, the gain core event will be allowed for overseas provinces. If it does not win by 1 or more votes, the gain core event will be disabled for overseas provinces.;;;;;;;;;;;;x
+EVTOPTA91331;Vote Yes;;;;;;;;;;;;x
+EVTOPTB91331;Vote No;;;;;;;;;;;;x
+EVTNAME91332;Overseas Coring - Allowed;;;;;;;;;;;;x
+EVTDESC91332;Enough players have voted yes to enable overseas coring.;;;;;;;;;;;;x
+EVTOPTA91332;OK;;;;;;;;;;;;x
+EVTNAME91333;Overseas Coring - Disallowed;;;;;;;;;;;;x
+EVTDESC91333;Not enough players voted yes to allow overseas coring.;;;;;;;;;;;;x
+EVTOPTA91333;OK;;;;;;;;;;;;x

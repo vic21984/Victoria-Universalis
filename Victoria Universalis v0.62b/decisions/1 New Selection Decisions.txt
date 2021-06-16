@@ -5320,8 +5320,9 @@ zscorch_earth = {
 			}
 		}
 		effect = {
-			money = -2500000
-			money = -2500000
+			money = -2000000
+			money = -2000000
+			money = -1000000
 			set_country_flag = deciding
 			random_owned = {
 				limit = {
