@@ -1,0 +1,12 @@
+owner = USAcontroller = USAadd_core = USA
+add_core = NEN
+trade_goods = fish
+life_rating = 40
+railroad = 1
+naval_base = 2
+state_building = {
+	level = 4
+	building = canned_food_factory
+	upgrade = yes
+}
+1913.1.1 = {	state_building = {		level = 10		building = liquor_distillery		upgrade = yes	}	state_building = {		level = 5		building = dye_factory		upgrade = yes	}	state_building = {		level = 5		building = steamer_shipyard		upgrade = yes	}	state_building = {		level = 10		building = artillery_factory		upgrade = yes	}	state_building = {		level = 10		building = pharmaceutical_plant		upgrade = yes	}	state_building = {		level = 10		building = fuel_refinery		upgrade = yes	}	state_building = {		level = 10		building = tea_packaging_factory		upgrade = yes	}	naval_base = 6}

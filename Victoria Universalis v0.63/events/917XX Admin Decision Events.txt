@@ -1,0 +1,786 @@
+country_event = {
+	id = 91699
+	title = "EVTNAME91700"
+	desc = "EVTDESC91700"
+	picture = Demonstration
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTC91700"
+		add_country_modifier = {
+			name = liberal_influence
+			duration = -1
+		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTB91700"
+		add_country_modifier = {
+			name = conservative_influence
+			duration = -1
+		}
+		set_country_flag = conservative_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTA91700"
+		add_country_modifier = {
+			name = reactionary_influence
+			duration = -1
+		}
+		set_country_flag = reactionary_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+	}
+	option = {
+		name = "EVTOPTZ91700"
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+}
+
+country_event = {
+	id = 91700
+	title = "EVTNAME91700"
+	desc = "EVTDESC91700"
+	picture = Demonstration
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTD91700"
+		add_country_modifier = {
+			name = anarcho_liberal_influence
+			duration = -1
+		}
+		set_country_flag = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTC91700"
+		add_country_modifier = {
+			name = liberal_influence
+			duration = -1
+		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTB91700"
+		add_country_modifier = {
+			name = conservative_influence
+			duration = -1
+		}
+		set_country_flag = conservative_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTA91700"
+		add_country_modifier = {
+			name = reactionary_influence
+			duration = -1
+		}
+		set_country_flag = reactionary_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+	}
+	option = {
+		name = "EVTOPTZ91700"
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+}
+
+country_event = {
+	id = 91701
+	title = "EVTNAME91700"
+	desc = "EVTDESC91700"
+	picture = Demonstration
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTE91700"
+		add_country_modifier = {
+			name = socialist_influence
+			duration = -1
+		}
+		set_country_flag = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTD91700"
+		add_country_modifier = {
+			name = anarcho_liberal_influence
+			duration = -1
+		}
+		set_country_flag = anarcho_liberal_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTC91700"
+		add_country_modifier = {
+			name = liberal_influence
+			duration = -1
+		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTB91700"
+		add_country_modifier = {
+			name = conservative_influence
+			duration = -1
+		}
+		set_country_flag = conservative_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTA91700"
+		add_country_modifier = {
+			name = reactionary_influence
+			duration = -1
+		}
+		set_country_flag = reactionary_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+	}
+	option = {
+		name = "EVTOPTZ91700"
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+}
+
+country_event = {
+	id = 91702
+	title = "EVTNAME91700"
+	desc = "EVTDESC91700"
+	picture = Demonstration
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTF91700"
+		add_country_modifier = {
+			name = communist_influence
+			duration = -1
+		}
+		set_country_flag = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTE91700"
+		add_country_modifier = {
+			name = socialist_influence
+			duration = -1
+		}
+		set_country_flag = socialist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTD91700"
+		add_country_modifier = {
+			name = anarcho_liberal_influence
+			duration = -1
+		}
+		set_country_flag = anarcho_liberal_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTC91700"
+		add_country_modifier = {
+			name = liberal_influence
+			duration = -1
+		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTB91700"
+		add_country_modifier = {
+			name = conservative_influence
+			duration = -1
+		}
+		set_country_flag = conservative_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTA91700"
+		add_country_modifier = {
+			name = reactionary_influence
+			duration = -1
+		}
+		set_country_flag = reactionary_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+	}
+	option = {
+		name = "EVTOPTZ91700"
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+}
+
+country_event = {
+	id = 91703
+	title = "EVTNAME91700"
+	desc = "EVTDESC91700"
+	picture = Demonstration
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTG91700"
+		add_country_modifier = {
+			name = fascist_influence
+			duration = -1
+		}
+		set_country_flag = fascist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTF91700"
+		add_country_modifier = {
+			name = communist_influence
+			duration = -1
+		}
+		set_country_flag = communist_influence
+		remove_country_modifier = fascist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = fascist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTE91700"
+		add_country_modifier = {
+			name = socialist_influence
+			duration = -1
+		}
+		set_country_flag = socialist_influence
+		remove_country_modifier = fascist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = fascist_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTD91700"
+		add_country_modifier = {
+			name = anarcho_liberal_influence
+			duration = -1
+		}
+		set_country_flag = anarcho_liberal_influence
+		remove_country_modifier = fascist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = fascist_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTC91700"
+		add_country_modifier = {
+			name = liberal_influence
+			duration = -1
+		}
+		set_country_flag = liberal_influence
+		remove_country_modifier = fascist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = fascist_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTB91700"
+		add_country_modifier = {
+			name = conservative_influence
+			duration = -1
+		}
+		set_country_flag = conservative_influence
+		remove_country_modifier = fascist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = fascist_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = reactionary_influence
+	}
+	option = {
+		name = "EVTOPTA91700"
+		add_country_modifier = {
+			name = reactionary_influence
+			duration = -1
+		}
+		set_country_flag = reactionary_influence
+		remove_country_modifier = fascist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		clr_country_flag = fascist_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+	}
+	option = {
+		name = "EVTOPTZ91700"
+		remove_country_modifier = fascist_influence
+		remove_country_modifier = communist_influence
+		remove_country_modifier = socialist_influence
+		remove_country_modifier = anarcho_liberal_influence
+		remove_country_modifier = liberal_influence
+		remove_country_modifier = conservative_influence
+		remove_country_modifier = reactionary_influence
+		clr_country_flag = fascist_influence
+		clr_country_flag = communist_influence
+		clr_country_flag = socialist_influence
+		clr_country_flag = anarcho_liberal_influence
+		clr_country_flag = liberal_influence
+		clr_country_flag = conservative_influence
+		clr_country_flag = reactionary_influence
+	}
+}
+
+country_event = {
+	id = 91704
+	title = "EVTNAME91704"
+	desc = "EVTDESC91704"
+	picture = upper_house
+
+	trigger = {
+		has_country_flag = reform_passed
+		NOT = { has_country_modifier = reform_passed }
+	}
+	
+	immediate = {
+		clr_country_flag = reform_passed
+	}
+	
+	option = {
+		name = "EVTOPTA91704"
+	}
+}
+
+country_event = {
+	id = 91705
+	title = "EVTNAME91705"
+	desc = "EVTDESC91705"
+	picture = Police
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	
+	option = {
+		name = "EVTOPTA91705"
+		add_country_modifier = {
+			name = country_suppression
+			duration = -1
+		}
+		set_country_flag = martial_law
+	}
+	option = {
+		name = "EVTOPTB91705"
+		remove_country_modifier = country_suppression
+		clr_country_flag = martial_law
+	}
+}
+
+country_event = {
+	id = 91706
+	title = "EVTNAME91706"
+	desc = "EVTDESC91706"
+	picture = upper_house
+
+	trigger = {
+		has_country_flag = force_reform
+		NOT = { has_country_modifier = force_reform }
+	}
+	
+	immediate = {
+		clr_country_flag = force_reform
+	}
+	
+	option = {
+		name = "EVTOPTA91706"
+	}
+}
+
+
+########## RECRUITMENT DRIVE AND MIGRATION ##########
+
+#country_event = {
+#	id = 91708
+#	title = "EVTNAME91708"
+#	desc = "EVTDESC91708"
+#
+#	trigger = {
+#		has_country_flag = recruitment_drive
+#		NOT = { has_country_modifier = recruitment_drive }
+#	}
+#	
+#		
+#	immediate = {
+#		clr_country_flag = recruitment_drive
+#	}
+#	
+#	option = {
+#		name = "EVTOPTA91708"
+#	}
+#}
+
+#country_event = {
+#	id = 91709
+#	title = "EVTNAME91709"
+#	desc = "EVTDESC91709"
+#
+#	trigger = {
+#		has_country_flag = province_migration
+#		NOT = {
+#			any_owned_province = { has_province_modifier = province_attract_immigrants }
+#		}
+#	}
+#	
+#		
+#	immediate = {
+#		clr_country_flag = province_migration
+#	}
+#	
+#	option = {
+#		name = "EVTOPTA91709"
+#	}
+#}
+
+########## RGO CHANGE EVENTS ##########
+
+
+province_event = {
+	id = 91737 #Agriculture Decision Change
+	picture = farming
+	title = "EVTNAME91737"
+	desc = "EVTDESC91737"
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+
+	option = {
+		name = "EVT91737OPTA" #WOOL
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = wool
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTB" #FRUIT
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = fruit
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTC" #COTTON
+		owner = { clr_country_flag = deciding }	
+		province_selector = -1
+		trade_goods = cotton
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTD" #CATTLE
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = cattle
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTE" #GRAIN
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = grain
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTF" #TEA LEAVES
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = tea_leaves
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTG" #COFFEE BEANS
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = coffee_beans
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTH" #OPIUM
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = opium
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTI" #DYE
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = dye
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTJ" #SILK
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = silk
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	option = {
+		name = "EVT91737OPTK" #TOBACCO
+		owner = { clr_country_flag = deciding }
+		province_selector = -1
+		trade_goods = tobacco
+		add_province_modifier = {
+			name = switched_production
+			duration = 5475
+		}
+	}
+	
+	option = {
+		name = "EVT91737OPTL"
+		owner = { clr_country_flag = deciding }
+	}
+}

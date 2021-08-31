@@ -1,0 +1,104 @@
+political_decisions = {
+	claim_negusa_nagast = {
+		picture = claim_negusa_nagast
+		potential = {
+			OR = {
+				tag = GON
+				tag = SHW
+				tag = TIG
+			}
+			ETH = { exists = no }
+		}
+
+		allow = {
+			war = no
+			owns = 1852
+			owns = 1853
+			owns = 1859
+		}
+
+		effect = {
+			prestige = 10
+			change_tag = ETH
+			any_country = {
+				limit = {
+					any_owned_province = { is_core = ETH }
+					civilized = no
+					NOT = { tag = EGY }
+					NOT = { tag = THIS }
+				}
+				relation = { who = THIS value = -400 }
+				leave_alliance = THIS
+			}
+			any_pop = { limit = { OR = { is_primary_culture = yes is_accepted_culture = yes } } militancy = -4 }
+		}
+	}
+
+	become_negusa_nagast = {
+		picture = become_negusa_nagast
+		potential = {
+			tag = ETH
+			NOT = { has_country_flag = is_negusa_nagast }
+		}
+
+		allow = {
+			war = no
+			has_unclaimed_cores = no
+		}
+
+		effect = {
+			set_country_flag = is_negusa_nagast
+			prestige = 25
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = GON
+						is_core = SHW
+						is_core = TIG
+						is_core = HAR
+						is_core = SID
+						is_core = KAF
+						is_core = AWS
+					}
+					is_core = ETH
+				}
+				remove_core = GON
+				remove_core = SHW
+				remove_core = TIG
+				remove_core = HAR
+				remove_core = SID
+				remove_core = KAF
+				remove_core = AWS
+			}
+			any_pop = { limit = { OR = { is_primary_culture = yes is_accepted_culture = yes } } militancy = -4 }
+		}
+	}
+
+	build_addis_ababa = {
+		picture = addis_ababa_building
+		potential = {
+			tag = ETH
+			owns = 1859
+			NOT = { has_country_flag = addis_ababa_built }
+		}
+
+		allow = {
+			war = no
+			OR = {
+				civilized = yes
+				civilization_progress = 0.5
+			}
+			owns = 1859
+		}
+
+		effect = {
+			set_country_flag = addis_ababa_built
+			prestige = 5
+			1859 = {
+				change_province_name = "Addis Ababa"
+				life_rating = 5
+			}
+			capital = 1859
+		}
+	}
+}

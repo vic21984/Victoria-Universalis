@@ -1,0 +1,12 @@
+owner = TEX
+controller = TEX
+add_core = TEX
+add_core = MEX
+trade_goods = oil
+life_rating = 45
+1913.1.1 = {
+	controller = USA
+	owner = USA
+	add_core = USA
+	remove_core = MEX
+}

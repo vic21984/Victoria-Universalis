@@ -1,0 +1,31 @@
+leader = {
+	name = "George Napier"
+	date = 1836.1.1
+	type = land
+	personality = defence_2.1
+	background = attack_2.1
+	prestige = 0.25
+}
+
+army = {
+	name = "Cape Colonial Forces"
+	location = 2087
+	regiment = {
+		name= "Cape Town Rifles"
+		type = infantry
+		home = 2087
+	}
+
+	regiment = {
+		name= "Cape Town Cavalry"
+		type = dragoon
+		home = 2087
+	}
+
+	regiment = {
+		name= "Cape Town Artillery"
+		type = artillery
+		home = 2087
+	}
+
+}

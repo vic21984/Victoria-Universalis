@@ -1,0 +1,162 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 31201
+	title = "EVTNAME31201"
+	desc = "EVTDESC31201"
+	picture = balkan_war_continues
+
+	trigger = {
+		tag = TUR
+		has_country_flag = lost_balkans
+		TUR_853 = { owned_by = THIS }
+		year = 1900
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.5
+			year = 1905
+		}
+
+		modifier = {
+			factor = 0.5
+			year = 1910
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31201"
+		release = ALB
+		war = {
+			target = ALB
+			attacker_goal = { casus_belli = annex_core_country }
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31201"
+		release = ALB
+		ai_chance = {
+			factor = 95
+		}
+	}
+}
+
+country_event = {
+	id = 31202
+	title = "Fix Kotor Bordergore"
+
+	trigger = {
+		ai = yes
+		owns = 2583
+		NOT = { owns = 2582 }
+		2582 = {
+			owner = {
+				ai = yes
+				NOT = {
+					owns = 782
+					owns = 788
+				}
+			}
+		}
+	}
+
+	option = {
+		2582 = { secede_province = THIS }
+	}
+}
+
+country_event = {
+	id = 31203
+	title = "EVTNAME31203"
+	desc = "EVTDESC31203"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = GRE
+			tag = BYZ
+		}
+		has_country_flag = greece_has_got_a_brand_new_bag
+		GRE = {
+			all_core = { owned_by = THIS }
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTA31203"
+		prestige = 50
+	}
+}
+
+country_event = {
+	id = 31204
+	title = "AI Romania Annexation"
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAN
+		exists = WAL
+		exists = MOL
+		NOT = { exists = ROM }
+		WAL = { ai = yes }
+		MOL = { ai = yes }
+		year = 1859
+	}
+
+	option = {
+		MOL = {
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 676
+							province_id = 677
+							province_id = 678
+						}
+					}
+				}
+				remove_core = MOL
+			}
+		}
+		WAL = {
+			all_core = { remove_core = WAL }
+			inherit = MOL
+			change_tag = culture
+		}
+	}
+}
+
+country_event = {
+	id = 31205
+	title = "Balkan Liferating"
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAN
+		year = 1880
+	}
+
+	option = {
+		TUR_788 = { limit = { NOT = { province_id = 783 } } life_rating = -5 }
+		SER_794 = { limit = { NOT = { province_id = 794 } } life_rating = -5 }
+		TUR_803 = { life_rating = -5 }
+		TUR_806 = { life_rating = -5 }
+		TUR_809 = { limit = { NOT = { province_id = 809 } } life_rating = -5 }
+		TUR_810 = { life_rating = -5 }
+		TUR_805 = { life_rating = -5 }
+		TUR_823 = { life_rating = -5 }
+		TUR_832 = { life_rating = -5 }
+		GRE_837 = { limit = { NOT = { province_id = 834 } } life_rating = -5 }
+		GRE_826 = { life_rating = -5 }
+		MON_2582 = { life_rating = -5 }
+	}
+}

@@ -1,0 +1,347 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 44451
+	title = "EVTNAME44451"
+	desc = "EVTDESC44451"
+	picture = "mahdist_rule"
+
+	trigger = {
+		owns = 1840
+		year = 1850
+		1843 = { empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			year = 1852
+		}
+		modifier = {
+			factor = 0.5
+			year = 1854
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44451"
+		1843 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1844 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1845 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1846 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1847 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1843 = {
+			secede_province = SSD
+		}
+		1844 = {
+			secede_province = SSD
+		}
+		1845 = {
+			secede_province = SSD
+		}
+		1846 = {
+			secede_province = SSD
+		}
+		1847 = {
+			secede_province = SSD
+		}
+	}
+}
+
+country_event = {
+	id = 44452
+	title = "AI Annex SSD"
+
+	trigger = {
+		ai = yes
+		year = 1870
+		NOT = { has_country_flag = ai_annex_ssd }
+		exists = SSD
+		neighbour = SSD
+		SSD = {
+			is_vassal = no
+			war = no
+		}
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		set_country_flag = ai_annex_ssd
+		war = {
+			target = SSD
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+			call_ally = yes
+		}
+	}
+}
+
+country_event = {
+	id = 44453
+	title = "EVTNAME44453"
+	desc = "EVTDESC44453"
+	picture = "Rebellion"
+
+	trigger = {
+		year = 1880
+		NOT = { year = 1890 }
+		NOT = {
+			exists = SUD
+			has_global_flag = mahdist_revolt
+		}
+		owns = 1827
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1881
+		}
+		modifier = {
+			factor = 0.5
+			year = 1882
+		}
+		modifier = {
+			factor = 0.1
+			year = 1883
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44453"
+		set_global_flag = mahdist_revolt
+		random_owned = {
+			limit = {
+				owner = { is_vassal = no }
+			}
+			owner = {
+				country_event = {
+					id = 44454 days = 150
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { is_vassal = yes }
+			}
+			owner = {
+				overlord = {
+					country_event = {
+						id = 44454 days = 150
+					}
+				}
+			}
+		}
+		any_owned = {
+			limit = { is_core = SUD }
+			remove_core = THIS
+			secede_province = SUD
+		}
+		SUD = {
+			government = theocracy
+			add_country_modifier = { name = jihad duration = 1825 }
+		}
+		SSD = {
+			limit = { ai = yes }
+			annex_to = SUD
+		}
+	}
+}
+
+country_event = {
+	id = 44454
+	title = "EVTNAME44454"
+	desc = "EVTDESC44454"
+	picture = "mahdist_war"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44454"
+		war = {
+			target = SUD
+			attacker_goal = { casus_belli = conquest }
+		}
+		badboy = -20
+		ai_chance = {
+			factor = 0.95
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44454"
+		ai_chance = {
+			factor = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = 44461
+	title = "EVTNAME44461"
+	desc = "EVTDESC44461"
+	picture = "meeting_ali"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44461"
+	}
+}
+
+country_event = {
+	id = 44462
+	title = "EVTNAME44462"
+	desc = "EVTDESC44462"
+	picture = "bank_loan"
+
+	is_triggered_only = yes
+
+	immediate = {
+		add_country_modifier = { name = foreign_debt_timer duration = 10950 }
+		treasury = 500000
+	}
+
+	option = {
+		name = "EVTOPTA44462"
+	}
+}
+
+country_event = {
+	id = 44463
+	title = "EVTNAME44463"
+	desc = "EVTDESC44463"
+	picture = "bank_loan"
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = lent_egypt
+		treasury = 750000
+	}
+
+	option = {
+		name = "EVTOPTA44463"
+	}
+}
+
+country_event = {
+	id = 44464
+	title = "EVTNAME44464"
+	desc = "EVTDESC44464"
+	picture = "suez_canal"
+
+	trigger = {
+		has_country_flag = lent_egypt
+		NOT = { has_country_flag = egypt_decision }
+		EGY = {
+			NOT = { has_country_modifier = foreign_debt_timer }
+			NOT = { has_country_flag = paid_off_debt }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44464"
+		set_country_flag = egypt_decision
+		EGY = {
+			country_event = { id = 44465 days = 0 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44464"
+		set_country_flag = egypt_decision
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44465
+	title = "EVTNAME44465"
+	desc = "EVTDESC44465"
+	picture = "suez_canal"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44465"
+		FROM = {
+			country_event = { id = 44466 days = 0 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44465"
+		FROM = {
+			country_event = { id = 44467 days = 0 }
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 44466
+	title = "EVTNAME44466"
+	desc = "EVTDESC44466"
+	picture = "cairo"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44466"
+		create_vassal = FROM
+	}
+}
+
+country_event = {
+	id = 44467
+	title = "EVTNAME44467"
+	desc = "EVTDESC44467"
+	picture = "tel_kebir"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44467"
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = anglo_egypt_war }
+		}
+	}
+}

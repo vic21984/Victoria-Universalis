@@ -1,0 +1,68 @@
+#Temperance League
+country_event = {
+	id = 100
+	title = "EVTNAME100"
+	desc = "EVTDESC100"
+	picture = "TemperanceLeague"
+	
+	trigger = {
+		OR = {
+			NOT = { has_global_flag = 1913_bookmark }
+			war = no
+		}
+		civilized = yes
+		NOT = {
+			OR = {
+				religion = sunni
+				religion = shiite
+			}
+		}
+		NOT = {
+			OR = {
+				has_country_modifier = libertine_culture
+				has_country_modifier = temperance_league
+				poor_strata_life_needs = 0.9
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.9
+			NOT = {
+				poor_strata_life_needs = 0.9
+			}
+		}
+		modifier = {
+			factor = 0.9
+			liquor = 50
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				average_consciousness = 5
+			}
+		}
+		modifier = {
+			factor = 1.5
+			average_consciousness = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTA100"
+		add_country_modifier = {
+			name = libertine_culture
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB100"
+		add_country_modifier = {
+			name = temperance_league
+			duration = -1
+		}
+	}
+}

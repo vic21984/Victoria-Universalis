@@ -1,0 +1,16 @@
+army = {
+	name = "Army of the Sultanate of Bagirmi"
+	location = 1818
+
+	regiment = {
+		name= "Bagirmi Warriors"
+		type = irregular
+		home = 1818
+	}
+	regiment = {
+		name= "Bagirmi Warriors"
+		type = irregular
+		home = 1820
+	}
+}
+

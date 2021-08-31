@@ -1,3 +1,80 @@
+#Version 0.63 - 8/30/2021
+## Bug fixes:
+* Fall of Punjab/Sind/Burma events won't fire anymore unless the East India Company has started their respective annexation wars.
+* Great War Reparations cannot be added onto a country that already has a Great War Reparations cb targeting them.
+* Fixed bugged mine expansion decision in Yazrd province.
+* Fixed bugged RGO in Harare province.
+* End of Reconquista event will no longer fire for Portugal if it enacts the Restore Portugal-Brazil decision.
+* Enacting the 1861 Consitution decision as Argentina will no longer cause Buenos Aires to secede. The secession will still occur if the decision is enacted by Argentine Confederation or any other Argentine minor.
+
+## Map changes:
+* Re-enabled Aden strait.
+* Moved Curacao province from Zulia state to Lesser Antilles state.
+* Moved Nice province from Provence state to Savoie state.
+* Created new Rügen island province in Germany and added it to the Baltic Islands region.
+
+## General gameplay changes:
+* Removed trade deals. Most people did not know how to use trade deals, and in reality the only resource that would ever need to be directly traded between nations was iron, so it was decided that this system was unecessary.
+* Removed "Allow POPs to buy from stockpile" button from the trade screen. Without trade deals, this button isn't needed anymore.
+* When Great Wars are invented, all human players will get an event to vote to enable or disable the Dismantle Nation cb. If yes gets more votes than no, the Dismantle Nation cb will be unlocked. If no wins or the vote is tied, then the cb will be disabled.
+* Changed healthcare reform to be decision based. It can be raised or lowered at any time if prerequisites are met, and the reform level fixes social spending at a set amount.
+* Reduced max province size of London, Vienna, Paris, Tokyo, Rome, Turin, Istanbul, Alexandria, and Cairo.
+* Added -2% tax penalty for every 5 infamy over 25, capped at -12% when above 50 infamy.
+* Increased peacetime infamy decay from -0.033 to -0.05.
+* Acquire small state and tiny conquest population threshold changed to <150k before 1860, <200k between 1860 and 1885, <300k between 1885 and 1910, and <450k after 1910.
+* Minor conquest population threshold changed to <400k before 1860, <550k between 1860 and 1885, <800k between 1885 and 1910, and <1.2M after 1910.
+* Chinese and Indian farmers are more likely to remain farmers when not targeted by a promotion national focus.
+* Converted all French, British, German, Italian, and Hungarian Jews into Ashkenazi Jews in regular 1836 start date.
+* Torpedo Boat gun and torpedo attack buffs from Main Armament inventions reduced from +3/+4 to +0/+2.
+* Slightly reduced consumption of Torpedo Boats.
+* All uncivilized nations except for China, India, and Japan get a +0.005 global population growth modifier for 5 years after civilizing.
+* Added sulphur RGO buffs to chemistry technology line.
+* Increased base iron rgo output from 2.2 to 2.5
+* Reduced base coal rgo output from 2.5 to 2
+* Buffed farming and mining idea RGO outputs from +20% to +30%.
+* Annexing a cultural union sphereling via event now gives all cores of the sphereling to the spherelord.
+* Install Communism cb can now be used against GPs.
+* Reduced New World RGO size bonus from 10x to 6x
+* Totalitarianism mobilization size modifier increased from +1% to 3% and added -30% mobilization economy impact buff.
+
+## Country changes:
+###### United Kingdom:
+* Annexing Commonwealth nations now costs money.
+* Refusing to fight the Opium War gives -20% prestige, choosing to fight and losing the war results in -30% prestige.
+* Added tax efficiency buff to Unequal Chinese Treaty modifier.
+* Reduced starting 1836 craftsmen POPs in London.
+
+###### Germany:
+* Bismarck's Reforms event now costs 500,000 to enact, also added a option to refuse the reforms.
+
+###### Egypt:
+* Removed 2 army reforms and added 1 economic reform to 1836 start.
+* Made Muhammad Ali's Reforms decision cost 500k, reduced years of RP gain from 5 to 1, increased +RP modifier from 30% to 60%, and increased duration from 20 years to 30 years.
+* Added decision to request 500k loan from human and ai civilized nations. Once a nation accepts the loan offer, a new decision called Repay Foreign Loans and a 30 year event modifier called Debt Timer will be added to Egypt. If Repay Foreign Debt isn't enacted before the Debt Timer modifier runs out, the nation that gave the loan gets an event to go to war and puppet Egypt.
+* If Egypt is a puppet when the Mahdist Revolt event happens, Egypt's overlord will get the event to go to war with and annex Mahdist Sudan instead of Egypt.
+* Added decision to add Sudanese as accepted culture.
+
+###### Austria:
+* Removed owns all cores requirement for Danubian Confederation decision.
+* Austrian Form South German Confederation decision now changes Austria's tag to SGF and annexes all the South German minors. Becoming the SGF this way makes Austria/SGF lose all cores on non-German/Czech land and disables the Form Austria-Hungary and Danubian Confederation decisions.
+
+###### Spain:
+* Added Battleship Column Doctrine tech to 1836 start.
+* Absolute monarchy requirement for reconquista decisions changed to absolute, semi-constitutional, or constitutional monarchy.
+
+###### Portugal:
+* Added Battleship Column Doctrine tech to 1836 start.
+
+###### Ottoman Empire:
+* Refusing the Egyptian Surrender event now gives +10 infamy.
+
+###### Peru-Bolivia:
+* Peru-Bolivia will become a democracy if it wins the War of the Confederation.
+
+###### Sweden:
+* Buffed Stockholm coal mine size.
+
+
 #Version 0.62b - 6/15/2021
 ## Bug fixes:
 * Fixed infinite money glitch for one of the province selector decisions.

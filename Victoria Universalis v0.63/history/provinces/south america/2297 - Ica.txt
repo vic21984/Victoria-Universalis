@@ -1,0 +1,28 @@
+owner = PEU
+controller = PEU
+add_core = PEU
+trade_goods = fish
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	naval_base = 4
+}

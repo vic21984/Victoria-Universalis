@@ -1,0 +1,125 @@
+# Tractors
+country_event = {
+	id = 29900
+	title = "EVTNAME29900"
+	desc = "EVTDESC29900"
+	
+	trigger = {
+		NOT = { has_country_flag = tractors }	
+		invention = tractors
+	}
+
+	option = {
+		name = "EVTOPTA29900"
+		set_country_flag = tractors
+		change_variable = {
+			which = colonial_farm_nerf
+			value = 1
+		}
+	}
+}
+
+# Electricity
+country_event = {
+	id = 29901
+	title = "EVTNAME29901"
+	desc = "EVTDESC29901"
+	
+	trigger = {
+		invention = electrical_lighting
+		NOT = { has_country_flag = electrical_lighting }
+	}
+	
+	option = {
+		name = "EVTOPTA29901"
+		set_country_flag = electrical_lighting
+		change_variable = {
+			which = colonial_mine_nerf
+			value = 1
+		}
+	}
+}
+
+# Nitroglycerin
+country_event = {
+	id = 29902
+	title = "EVTNAME29902"
+	desc = "EVTDESC29902"
+
+	trigger = {
+		invention = nitroglycerin
+		NOT = { has_country_flag = nitroglycerin }
+	}
+
+	option = {
+		name = "EVTOPTA29902"
+		set_country_flag = nitroglycerin
+		change_variable = {
+			which = colonial_mine_nerf
+			value = 1
+		}
+	}
+}
+
+# Distribution Channels
+country_event = {
+	id = 29903
+	title = "EVTNAME29903"
+	desc = "EVTDESC29903"
+
+	trigger = {
+		invention = distribution_channels
+		NOT = { has_country_flag = distribution_channels }
+	}
+
+	option = {
+		name = "EVTOPTA29903"
+		set_country_flag = distribution_channels
+		change_variable = {
+			which = colonial_farm_nerf
+			value = 1
+		}
+	}
+}
+
+# Machine Tools
+country_event = {
+	id = 29904
+	title = "EVTNAME29904"
+	desc = "EVTDESC29904"
+
+	trigger = {
+		invention = machine_tools
+		NOT = { has_country_flag = machine_tools }
+	}
+
+	option = {
+		name = "EVTOPTA29903"
+		set_country_flag = machine_tools
+		change_variable = {
+			which = colonial_mine_nerf
+			value = 1
+		}
+	}
+}
+
+# Artificial Nitrogen
+country_event = {
+	id = 29905
+	title = "EVTNAME29905"
+	desc = "EVTDESC29905"
+
+	trigger = {
+		invention = haber_bosch_process
+		NOT = { has_country_flag = haber_bosch_process }
+	}
+
+	option = {
+		name = "EVTOPTA29905"
+		set_country_flag = haber_bosch_process
+		change_variable = {
+			which = colonial_farm_nerf
+			value = 1
+		}
+	}
+}

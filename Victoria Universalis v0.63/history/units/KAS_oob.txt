@@ -1,0 +1,57 @@
+leader = {
+	name = "Zovawar Singh"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+leader = {
+	name = "Gulub Singh"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "Army of the Dogra Rajas"
+	location = 1224
+	regiment = {
+		name= "1.Sikh Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "2.Sikh Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "3.Sikh Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "1.Tibetan Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "2.Tibetan Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "3.Tibetan Division"
+		type = infantry
+		home = 1224
+	}
+
+}
+

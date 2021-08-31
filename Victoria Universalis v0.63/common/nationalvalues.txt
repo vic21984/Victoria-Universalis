@@ -1,0 +1,32 @@
+nv_order = {
+	mobilisation_economy_impact = 1.0
+	army_tech_research_bonus = 0.05
+	navy_tech_research_bonus = 0.05
+	culture_tech_research_bonus = -0.05
+	commerce_tech_research_bonus = -0.05
+	ruling_party_support = 0.5
+	political_reform_desire = -0.1
+	social_reform_desire = -0.1
+	global_pop_consciousness_modifier = -0.02
+}
+
+nv_liberty = {
+	mobilisation_economy_impact = 1.0
+	commerce_tech_research_bonus = 0.05
+	industry_tech_research_bonus = 0.05
+	army_tech_research_bonus = -0.05
+	navy_tech_research_bonus = -0.05
+	political_reform_desire = 0.2
+	non_accepted_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.02
+}
+
+nv_equality = {
+	mobilisation_economy_impact = 1.0
+	culture_tech_research_bonus = 0.05
+	commerce_tech_research_bonus = -0.05
+	assimilation_rate = 0.5
+	social_reform_desire = 0.2
+	non_accepted_pop_militancy_modifier = -0.01
+	global_pop_consciousness_modifier = 0.01
+}

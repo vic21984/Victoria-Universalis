@@ -1,0 +1,405 @@
+political_decisions = {
+	expedition_to_sicily = {
+		picture = garibaldi_redshirts
+		potential = {
+			OR = {
+				tag = SAR
+				tag = LOM
+				tag = VEN
+				tag = PAR
+				tag = MOD
+				tag = LUC
+				tag = TUS
+			}
+			NOT = { exists = ITA }
+			NOT = { has_global_flag = expedition_to_sicily }
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			set_global_flag = expedition_to_sicily
+			define_general = {
+				name = "§RGiuseppe Garibaldi§W"
+				personality = defence_4.1
+				background = attack_4.1
+				prestige = 1
+			}
+			any_country = {
+				limit = {
+					NOT = { tag = THIS }
+					is_culture_group = italian
+					any_owned_province = { is_core = SIC }
+				}
+				country_event = { id = 35305 days = 0 }
+			}
+		}
+	}
+
+	form_north_italy = {
+		picture = form_italy
+		news = yes
+		news_desc_long = "form_italy_NEWS_LONG"
+		news_desc_medium = "form_italy_NEWS_MEDIUM"
+		news_desc_short = "form_italy_NEWS_SHORT"
+		potential = {
+			OR = {
+				tag = SAR
+				tag = LOM
+				tag = VEN
+				tag = PAR
+				tag = MOD
+				tag = LUC
+				tag = TUS
+			}
+			NOT = {
+				exists = ITA
+			}
+		}
+		
+		allow = {
+			war = no
+			SAR_720 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			SAR_765 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}			
+			MOD_739 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}		
+			TUS_744 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			PAP_749 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITA
+			add_accepted_culture = south_italian
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_south_italy = {
+		picture = form_italy
+		news = yes
+		news_desc_long = "form_italy_NEWS_LONG"
+		news_desc_medium = "form_italy_NEWS_MEDIUM"
+		news_desc_short = "form_italy_NEWS_SHORT"
+		potential = {
+			OR = {
+				tag = SIC
+				tag = PAP
+			}
+			NOT = {
+				exists = ITA
+			}
+		}
+		
+		allow = {
+			war = no
+			PAP = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			SIC = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			change_tag = ITA
+			add_accepted_culture = north_italian
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unite_northern_italy = {
+		picture = north_italian_federation
+		potential = {
+			OR = {
+				tag = SAR
+				tag = LOM
+				tag = VEN
+				tag = PAR
+				tag = MOD
+				tag = LUC
+				tag = TUS
+			}
+			NOT = { exists = ITA }
+			NOT = {	has_global_flag = north_italian_federation }
+		}
+		allow = {
+			AUS_726 = { owned_by = THIS }
+			OR = {
+				SAR_720 = { owned_by = THIS }
+				MOD_739 = { owned_by = THIS }
+			}
+		}
+
+		effect = {
+			add_accepted_culture = north_italian
+			any_country = {
+				limit = {
+					OR = {
+						tag = SAR
+						tag = LOM
+						tag = VEN
+						tag = PAR
+						tag = MOD
+						tag = LUC
+						tag = TUS
+					}
+					ai = yes
+				}
+				annex_to = THIS
+			}
+			MOD_739 = { add_core = THIS }
+			TUS_744 = { add_core = THIS }
+			SAR_720 = { add_core = THIS }
+			765 = { add_core = THIS }
+			766 = { add_core = THIS }
+			AUS_726 = { add_core = THIS }
+			PAP_749 = { add_core = THIS }
+			set_global_flag = north_italian_federation	
+		}
+	}
+
+	cavours_diplomacy = {
+		potential = {
+			OR = {
+				AND = { 
+					tag = ITA
+					NOT = { exists = SAR }
+				}
+				AND = { 
+					tag = SAR
+					NOT = { exists = ITA }
+				}
+			}
+			NOT = {
+				has_country_flag = cavour_has_done_his
+			}
+			owns = 465
+			owns = 466
+			owns = 472
+			FRA = {
+				exists = yes
+				is_greater_power = yes
+			}
+		}
+		allow = {
+			relation = {
+				who = FRA
+				value = 150
+			}
+			owns = 6
+			owns = 726
+			owns = 727
+			owns = 728
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -10
+			relation = {
+				who = FRA
+				value = 50
+			}
+			465 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			466 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			472 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			set_country_flag = cavour_has_done_his
+		}
+	}
+
+	law_of_guarantees = {
+		potential = {
+			tag = ITA
+			NOT = { has_country_flag = law_of_guarantees }
+		}
+		
+		allow = {
+			SAR_720 = { owned_by = THIS }
+			SAR_765 = { owned_by = THIS }
+			AUS_726 = { owned_by = THIS }
+			MOD_739 = { owned_by = THIS }
+			TUS_744 = { owned_by = THIS }
+			PAP_749 = { owned_by = THIS }
+			SIC_754 = { owned_by = THIS }
+			SIC_753 = { owned_by = THIS }
+			SIC_756 = { owned_by = THIS }
+			SIC_755 = { owned_by = THIS }
+			SIC_763 = { owned_by = THIS }
+		}
+		
+		effect = {
+			set_country_flag = law_of_guarantees
+			capital = 749
+			prestige = 15
+			any_owned = {
+				remove_core = SAR
+				remove_core = PAR
+				remove_core = LUC
+				remove_core = MOD
+				remove_core = TUS
+				remove_core = PAP
+				remove_core = SIC
+				remove_core = LOM
+			}
+		}
+	}
+
+	italia_irredenta = {
+		potential = {
+			tag = ITA
+			NOT = {
+				has_country_flag = italia_ulterior
+			}
+		}
+		
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				is_greater_power = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = italia_ulterior
+			729 = {
+				add_core = ITA
+			}
+			730 = {
+				add_core = ITA
+			}
+			731 = {
+				add_core = ITA
+			}
+			732 = {
+				add_core = ITA
+			}
+			733 = {
+				add_core = ITA
+			}
+			734 = {
+				add_core = ITA
+			}
+			735 = {
+				add_core = ITA
+			}			
+			736 = {
+				add_core = ITA
+			}
+			737 = {
+				add_core = ITA
+			}
+			2598 = {
+				add_core = ITA
+			}
+		}
+	}
+
+	embrace_south_italians = {
+		picture = embrace_south_italians
+		potential = {
+			tag = SAR
+			NOT = { has_country_flag = embraced_south_italians }
+		}
+		
+		allow = {
+			state_n_government = 1
+			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+			765 = { owned_by = THIS }
+			766 = { owned_by = THIS }
+		}
+		
+		effect = {
+			add_accepted_culture = south_italian
+			set_country_flag = embraced_south_italians
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

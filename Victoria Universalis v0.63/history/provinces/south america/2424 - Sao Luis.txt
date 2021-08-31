@@ -1,0 +1,32 @@
+owner = BRZ
+controller = BRZ
+add_core = BRZ
+add_core = MRN
+trade_goods = tobacco
+life_rating = 35
+1913.1.1 = {
+	remove_core = MRN
+}
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

@@ -1,0 +1,61 @@
+leader = {
+	name = "Bogd Khaan"
+	type = land
+	date = 1914.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+army = {
+	name = "1st Division"
+	location = 1465
+	regiment = {
+		name= "1. Cavalry Battalion"
+		type = dragoon
+		home = 2679
+	}
+	regiment = {
+		name= "2. Cavalry Battalion"
+		type = hussar
+		home = 2608
+	}
+	regiment = {
+		name= "3. Cavalry Battalion"
+		type = cuirassier
+		home = 1468
+	}
+	regiment = {
+		name= "4. Cavalry Battalion"
+		type = cuirassier
+		home = 2678
+	}
+	regiment = {
+		name= "5. Cavalry Battalion"
+		type = cavalry
+		home = 1466
+	}
+	regiment = {
+		name= "6. Cavalry Battalion"
+		type = cavalry
+		home = 1466
+	}
+	regiment = {
+		name= "7. Cavalry Battalion"
+		type = cavalry
+		home = 2207
+	}
+	regiment = {
+		name= "8. Cavalry Battalion"
+		type = cavalry
+		home = 1467
+	}
+	regiment = {
+		name= "9. Cavalry Battalion"
+		type = cavalry
+		home = 1465
+	}
+	regiment = {
+		name= "10. Cavalry Battalion"
+		type = cavalry
+		home = 1465
+	}
+}

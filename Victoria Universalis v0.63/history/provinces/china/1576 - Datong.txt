@@ -1,0 +1,13 @@
+owner = CHI
+controller = CHI
+add_core = CHI
+add_core = SXI
+trade_goods = coal
+life_rating = 30
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = cement_factory
+		upgrade = yes
+	}
+}

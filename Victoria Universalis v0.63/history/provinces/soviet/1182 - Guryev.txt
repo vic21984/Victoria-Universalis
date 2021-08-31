@@ -1,0 +1,12 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = fish
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = fuel_refinery
+		upgrade = yes
+	}
+}

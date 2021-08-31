@@ -1,0 +1,50 @@
+owner = MOL
+controller = MOL
+add_core = MOL
+add_core = ROM
+trade_goods = fruit
+life_rating = 35
+1913.1.1 = {
+	owner = ROM
+	controller = ROM
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,33 @@
+owner = TCA
+controller = TCA
+add_core = TCA
+add_core = GEO
+trade_goods = grain
+life_rating = 35
+naval_base = 1
+1913.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}
