@@ -1,0 +1,33 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of the Maharaja of Travancore"
+	location = 1319
+	regiment = {
+		name= "1.Kerala Division"
+		type = irregular
+		home = 1319
+	}
+
+	regiment = {
+		name= "2.Kerala Division"
+		type = irregular
+		home = 1319
+	}
+
+	regiment = {
+		name= "3.Kerala Division"
+		type = irregular
+		home = 1319
+	}
+
+}
+

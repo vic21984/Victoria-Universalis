@@ -1,0 +1,41 @@
+owner = SIC
+controller = SIC
+add_core = SIC
+add_core = ITA
+trade_goods = wool
+life_rating = 35
+1913.1.1 = {
+	owner = ITA
+	controller = ITA
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	naval_base = 6
+}

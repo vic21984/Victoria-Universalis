@@ -1,0 +1,47 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+trade_goods = cattle
+life_rating = 35
+state_building = {
+	level = 2
+	building = pharmaceutical_plant
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 10
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+}

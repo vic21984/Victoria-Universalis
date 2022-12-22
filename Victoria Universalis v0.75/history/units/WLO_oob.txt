@@ -1,0 +1,58 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+
+EGY = {
+    value = 30
+}
+
+GON = {
+    truce_until = 1841.1.1
+    value = -200
+}
+
+SHW = {
+    truce_until = 1841.1.1
+    value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+HAR = {
+    value = -200
+}
+
+AWS = {
+    value = -200
+}
+
+TIG = {
+    truce_until = 1841.1.1
+    value = -200
+}
+
+GJM = {
+    truce_until = 1841.1.1
+    value = -200
+}
+
+army = {
+    name = "Army of the Ras of Wollo"
+    location = 1853
+
+    regiment = {
+        name = "Ras' Guards"
+        type = irregular
+        home = 1853
+    }
+
+}

@@ -1,3 +1,601 @@
+#Version 0.75 - 12/20/2022
+## Bug fixes:
+* Converted Ukrainian POPs in Przemysl to Russian in the multiplayer bookmark.
+* Added Sweden-Norwegian cores to Finland and starting OOB in multiplayer bookmark. 
+* Disabled The Great Trek Boer migration in 1913 and WW1 bookmarks.
+* Fixed the East India Company instantly peacing out of scripted wars due to it breaking its alliance with the UK while it was still a puppet.
+
+## Map changes:
+* Merged Southeast England and London states.
+* Merged Bohemia and Moravia states.
+* Added new provinces in Ethiopia.
+* Merged District of Columbia and Maryland states.
+* Renamed North Carolina to North & South Carolina and transferred two provinces from Georgia to North & South Carolina.
+* Reverted most Chinese states back to vanilla borders. Treaty ports are still separate states.
+* Introduced Middle East continental region.
+* Imported GFM shapes for provinces in Texas.
+
+## Gameplay changes:
+* Reworked Literacy Campaigns by halving the cost of the decision, reduced the province modifier from 15 years to 10, and removing the instant literacy gain. Now POPs located in a province with an active Literacy Campaign modifier will gain 1 - (POP Literacy Rate/100) at the beginning of every year, so a POP with 0% literacy will gain 1% per year for 10 years and a POP with 80% literacy will gain 0.2% per year.
+* Renamed Horse Artillery to Light Artillery, reduced manuever from 2 to 1, and reduced stats to 66% of regular artillery and supply cost to 50% of regular artillery.
+* All demand state cbs now have a fixed warscore cost that won't increase for the rest of the game.
+* Removed factory input bonus from free trade and replaced it with a 5% buff to craftsmen and clerk promotion chance.
+* Reduced max tax from laissez faire from 100% to 80% and introduced a 5% buff to craftsmen and clerk promotion chance.
+* Increased bonus to building specified goods when using the encourage industry national focuses and added new Encourage Beverage Industry category.
+* Increased minimum naval upkeep from 30% to 40%.
+* All countries start with compulsory school reform in the multiplayer bookmark.
+* Increased base supply of empty coastal provinces from 2 to 40 due to some nations with a small coast still having limited naval capacity in 1836.
+* Merged Add and Remove Cores province selector decision into Integrate State decision and added local +0.1 militancy modifier to the target state for the duration of the integration.
+* Reduced base cost of all uncivilized Military Reforms from 4000 to 3000 and increased cost of all uncivilized Economic Reforms from 4500 to 5000.
+* Constructing a canal now costs 2M pounds.
+* Added -30% ruling party support to the Reform Recently Passed modifier.
+* Reduced militancy from political reform desire by 25%.
+* Made pops in reform movements slightly less likely to become radical.
+* Liberal and conservative POPs can now vote for social reforms if they are part of a social reform movement.
+* Social Thought techs make POPs more likely to join school reform movements.
+* Added missing parameters for pops to support political rights reform.
+* Combined all the African desert decisions into one decision. Prerequisites and land transfers are still the same.
+
+## Country changes:
+###### USA:
+* Added "Revoke Homestead Act" decision.
+* Westward Migration province modifier now gives -90% migration attraction instead of -100%.
+* Increased liferating of all Midwest and West coast provinces by 5.
+* Gave AI buff to craftsmen promotion chance.
+
+###### Russia:
+* Milytun's Army Reforms decision now adds a -20% supply consumption modifier for 20 years.
+
+###### Germany:
+* Re-introduced South German culture in multiplayer bookmark.
+* Nerfed AI craftsmen promotion chance.
+* AI won't fire EMS dispatch decision until it either has more brigades than France or France is at war with another country, in order to increase the likelihood of a German victory.
+
+###### Italy:
+* Italian minors can use the unification restore order cb on other Italian minors after researching nationalism and imperialism.
+
+###### United Kingdom:
+* AI English Channel Crossing, Hong Kong Island, and Bombay will get a special modifier that increases movement speed when all are owned by the same AI country. Previously it would take over a year for troops to move between the AI English Channel land bridge and Hong Kong Island or Bombay and this would result in massive attrition for any troops making the year long trip.
+
+###### India:
+* Civilized British Raj will split up into India and Pakistan instead of Indian minor nations if the Raj gains independence without becoming a GP first. Uncivilized East India Company will still break up into various Indian minor nations if it becomes independent.
+
+###### Egypt:
+* Added decision for the nation that fired the Give Loan to Egypt decision to annex Egypt if Egypt is it's puppet.
+
+###### Korea:
+* Added Tonghak Reforms and Claim Greater Korea decisions.
+
+###### Persia:
+* Created an event to release starting puppets if Persia no longer shares a border with them.
+
+###### Algeria:
+* Changed starting Jihad modifier (+20% mobilization) to General Mobilization modifier (+10% mobilization).
+
+###### Ethiopia:
+* Added two new Ethiopian kingdoms.
+* Claim Imperial Throne decision now adds Amhara, Oromo, and Cushitic as accepted cultures.
+* Created Complete the Agar Maqnat decision that cedes uncolonized land in Somali and Gambela to Ethiopia.
+* Increased starting civilization level of East African countries.
+
+###### Sub-Saharan Africa:
+* Found the Tukulor Empire decision adds Mossi as an accepted culture.
+
+###### South America:
+* Forming Rio Plata now adds South Andean and Platinean as an accepted cultures.
+
+###### Austria:
+* Annexed Hungary in multiplayer bookmark.
+
+###### Netherlands:
+* Annexed Indonesian puppets in multiplayer bookmark.
+
+###### Spain:
+* Annexed Carlist Spain in multiplayer bookmark.
+
+###### Turkey:
+* Annexed Bohtan in multiplayer bookmark.
+
+
+#Version 0.74 - 7/29/2022
+## Bug fixes:
+* Fixed bugged liberate nation and free peoples cb in crises.
+* Province RGO Expansion Flag will be added to mines that the AI expands.
+* Replaced South Italian POPs in Rome with North Italian POPs in the multiplayer bookmark.
+* Banker POPs no longer work in gold mines and now get their income from a decision whenever their bank savings reaches 0. In earlier versions sometimes Banker POP's savings would get so large that it would interger overflow and become negative. This new system ensures that they will never have a high enough savings account to interger overflow while also always giving them enough money to spend on their needs.
+
+## Interface changes:
+* Swapped positions of the Tutorial and Exit buttons in the main menu screen. This allows 1028x768 resolution players to exit from the main menu instead of having to exit from within the game.
+* Added a brief explanation of how Torpedo Attacks work in the Build Navy section of the Military Tab.
+* All ships will have their ship type listed next to their name.
+* Replaced red country border lines with black lines.
+
+## Map changes:
+* Added 8 new provinces in Japan and merged 8 island provinces in the ROTW.
+* Created Seto Inland Sea strait between the coasts of Chugoku and Shikoku states with Sea Crossing Tiles in Yamaguchi, Matsuyama, and Tokushima. Seto Inland Sea cannot be entered from South Korean Sea unless Yamaguchi is captured and Seto Inland Sea cannot be entered from Shikoku Coast unless both Matsuyama and Tokushima are captured.
+* Added a crossing between Matsuyama and Hiroshima.
+* Added Strait of Bonifacio sea tile between Corsica and Sardinia with a Sea Crossing Tile in Sassari.
+* Merged Colmar and Mullhouse provinces in Germany and Epinal and Luneville provinces in France.
+* Combined several states in Germany, Austria, Persia, Turkey, and Japan, and Scandinavia.
+* Moved Parana province to Corrientes state.
+* Combined several provinces in Eastern Turkey and added extra provinces in Afghanistan and Pakistan.
+* The provinces of Telen, Postojna, Karlovac, and Mostar are no longer coastal.
+
+## Gameplay changes:
+* Re-enabled firing of RGO workers. This shouldn't change much due to the world bank buying up all excess RGO goods which should result in little to no RGO unemployment anyway.
+* Set supply cost of all ships to 1. The only limiting factor for the size of your navy is how much you can afford.
+* Heavily reduced stats of all naval units in order to nerf military score gain from late game navies. The balance between ships was kept - later tech units will beat earlier tech units of the same cost and submarines beat big ships but lose to small ships.
+* Raised minimum naval spending requirement from 20% to 30%.
+* Clipper and Steamer Transports require a level 1 port to build.
+* Modern Naval Doctrine now gives -50% naval attrition instead of +1 port level.
+* Reduced Artillery maximum support value to 200, increased stats, and made its attack and defense values equal at all levels of tech.
+* Replaced Cuirassiers with Horse Artillery that has 80% of the stats of normal Artillery but with 1 extra speed, 2 maneuver, and 25% less supply costs.
+* Rebalanced Dragoon stats to always have 1 higher or equal attack to infantry but about half as much defense.
+* Hussar attack and defense values changed to always be equal.
+* Reduced Airplane maximum support value to 200, rebalanced stats, removed "accepted culture only" build clause.
+* Increased Guard attack by 1 and removed "accepted culture only" build clause.
+* Removed Armor "accepted culture only" build clause and removed +25% support bonus from "Medium Tanks" invention.
+* Increased all promotion and demotion rates by 20%.
+* Created new Acquire medium state cb. Works on provinces <300K population before 1860, <400k between 1860-1885, <600k between 1885-1910, <900k after 1910.
+* Small State CB flag color changed to white background with red circular province in the middle and Medium State CB flag color is a white background with a green circular province in the middle.
+* Lowered Negotiated Transfer cb justification time to 3 days.
+* Reduced cost of Good Healthcare and Universal Healthcare by 10%.
+* Buffed monthly leadership gain from Leadership Idea from 2 to 3.
+* Every country has a truce with the World Bank and Ghostland until the end of the game in order to prevent GPs from wasting influence trying to sphere them.
+* Reduced Scorched Earth maximum attrition from +10% to +3%. With all of the minus attrition techs researched, the maximum attrition in a mild climate farmland or plains province with Scorched Earth will be reduced from 15% in previous versions to 8%.
+* Reduced max attrition from Combat Medicine invention from -10% to -5% and added -5% attrition to Basic Chemistry tech.
+* Change RGO province selector decision can now change the RGO of forest and woods tiles to timber and coastal tiles to fish.
+
+## Country changes:
+###### Scandinavia:
+* Increased liferating to 40 and merged Sweden and Norway into Kingdom of Sweden-Norway in multiplayer bookmark. Scandinavia will have 35 liferating and remain separate in the Grand Campaign, 1913, and WW1 bookmarks.
+
+###### United Kingdom:
+* Lowered infamy gain from Annex India decision from 30 to 20.
+* Great Irish Famine event won't affect Ulster state.
+
+###### Japan:
+* All Japanese cores are owned by Imperial Japan at the start of the multiplayer bookmark.
+* Removed -100% malus to Research points bonus when conquering from Sakoku.
+* Starts with 20% civilization progress.
+
+###### Central Asia:
+* Persia and Afghanistan start the multiplayer bookmark with all their cores under their control.
+* Starts with 45% civilization progress in the multiplayer bookmark.
+
+###### Egypt:
+* Starts with 50% civilization progress in the multiplayer bookmark.
+
+###### Portugal:
+* Changed ownership of Flores from Netherlands to Portugal in 1836. Created a decision for the owner of Sumbawa to purchase Flores for 200,000 pounds.
+* Angola and Mozambique are states in the multiplayer bookmark.
+
+###### Indonesia:
+* Imported GFM provinces and new Indonesian Sultanates in 1836 start date.
+
+###### Greece:
+* Owns Ionian Islands in the multiplayer bookmark.
+
+###### South Africa:
+* Transvaal and Orange no longer exist in the 1836 start date. South Africa gets an event to release them after they annex Xhosa.
+* Matabele and Basotho are replaced by Transvaal and Orange in the multiplayer bookmark.
+
+###### China:
+* Imported GFM population in North and South Manchuria.
+
+
+#Version 0.73 - 7/13/2022
+## Bug fixes:
+* Made soldiers middle class and disabled assimilation of middle classes. There is an assimilation glitch that can make POPs go past their limit, e.g. soldiers going above 5% and clergy going above 4%. Grouping soldiers with bureaucrats, clergy, and officers and then disabling middle class assimilation should completely stop this glitch from occuring.
+* Changed the event that force peaces AI nations with the Neutral flag into a decision instead. If all conditions are met for an event, the earliest it can fire is the beginning of the next month. This created a delay where players could call in Neutral flagged AI nations into wars for a month, then instantly call them in again because ending wars via event doesn't give a truce. Decisions can be fired the same day conditions are met, so players cannot abuse Neutral flagged AI nations this way anymore.
+* Death of Ranjit Singh event won't fire unless UK has no truce with Punjab. This prevents a bug that made UK unable to join the Anglo-Sikh war which would result in an immediate white peace.
+* Added missing naval invasion penalty to several coastal provinces.
+* Added missing ports to Calvinia, Nikolaev, and Narva.
+* Reduced Province Size modifier in Mosul sulphur mine to 3x.
+* Fixed broken Form Indonesia decision.
+
+## Interface changes:
+* Added a Strait Crossing Tile icon to the provinces of Copenhagen, Gibraltar, Messina, Gallipoli, Istanbul, and Kerch.
+
+## Map changes:
+* Added a strait across the Straits of Messina through the province of Messina and the Sea of Azov through the province of Kerch.
+* Re-arranged some sea tiles in the Mediterranean.
+* Added 3 extra provinces in Bohemia and Moravia, removed 3 provinces in Croatia and Romania.
+* Re-arranged Rovne and Kovel province borders.
+* Merged West Sahara and Sahara states.
+* Merged Mauritania and Inner Mauritania states.
+* Reduced mountain defense bonus from 3 to 2 and marsh defense bonus from 2 to 1.
+* Combined Apulia and Brasilicata states.
+
+## Gameplay changes:
+* Added Request Cease Fire decision for use in multiplayer games. This triggers an event for all human countries the player is at war with that gives them the option to return occupied (not owned) territory back to the player's control. This was added to speed up adding wargoals on nations after one side has surrendered.
+* Added "Remove Cores" and "Add Cores" province selector decisions. These allow the player to remove all other countries' cores or add their own cores to a state. Has a cooldown of 15 years and takes 15 years for the cores to be added or removed. If a province in the state is occupied or changes ownership before the 15 year timer is up then the addition and removal of cores will be cancelled for that province. Players will vote to enable these decisions or stick with the old RNG based event system of coring provinces at the start of a new game; the two are mutually exclusive.
+* Added an option to allow all economic policies to manually build factories. This feature will be voted on at the start of a new game.
+* Enable or Disable Crises event changed to be based on majority vote instead of automatically being disabled if a single player voted no.
+* China and East India Company start with mechanized mining researched in 1836. This allows their artisans to make military goods and greatly increases early military game supply.
+* Lowered base factory worker's paychecks from 98% to 80%. This lowers craftsmen and clerks income by almost 20% but it helps to display more green numbers in the factory menu and is less confusing to most players.
+* Rebalanced artisan goods so that they are all roughly equal in profitability if the artisan has access to inputs.
+* Canal decisions are no longer restricted to great powers.
+* Doubled province migration bonus from Migration Attraction province selector decision.
+* Made farmers, labourers, and artisans more likely to migrate to mining RGOs.
+* All countries that start at war in the WW1 scenario have health care set to No Healthcare.
+* Increased cooldown for Scorced Earth province selector decision from 6 months to 1 year and restricted use to states that have provinces neighbouring foreign occupied provinces.
+* Lowered upkeep cost of Man'o' Wars, Frigates, and Ironclads.
+* In 1900, all provinces with liferating of 35 will be lowered to 33 and all provinces above 35 will be lowered to 35.
+* Lowered cost of Large Mine Expansion decision from 1.5M to 750K and Mine Expansion from 500K to 250K.
+* Added 1 per port limit to Battleships, Dreadnoughts, and Carriers.
+* Increased pop limit for Declare Neutrality decision from 2M, 3M, and 4M for the years of 1860, 1885, and 1910 to 3M, 4M, and 6M.
+* Increased iron and coal rgo sizes in several provinces across the world.
+* Lowered warscore cost of acquire state and take capital by 20%.
+
+## Country changes:
+###### Austria:
+* Imported GFM starting populatoins for Czechia, Croatia, and Slovenia.
+
+###### Hungary:
+* Imported GFM starting population.
+
+###### Germany:
+* Forming the North German Confederation changes centralization level to federalism.
+
+###### Texas:
+* Added Texan Manifest Destiny decision.
+
+###### Africa:
+* Removed Adrar from 1836 start date.
+
+
+#Version 0.72 - 6/22/2022
+## Bug fixes:
+* Fixed a bug in the base game that resulted in AI countries spamming only one type of factory when they had State Capitalism or Planned Economy economic policies. An unintended consequence of fixing this bug is that player countries having to wait until the start of the next month in order to manually build factories upon switching to State Capitalism or Planned Economy.
+* Fixed a bug that caused the game to crash when AI France or UK unlocked colonial negotiations and declared war on Sokoto.
+* Disabled construction of 0 infamy Liberate Country cb.
+* Restored prerequisites for Megali Idea and Form Byzantine Empire decisions.
+* Set infrastructure of urban capital provinces to the appropriate level based on tech in the 1913 and WW1 bookmarks.
+* Removed leftover Ukrainian and Tatar pops in 1836 multiplayer bookmark.
+* Renamed starting Sikh Empire general "Ranjit Singh" to "Maharaja Ranjit Singh". The decision to begin the Anglo-Sikh war requires Ranjit Singh to have died, however Sikh Empire would sometimes roll another general named Ranjit Singh while the first was still alive which would result in the Anglo-Sikh war never being able to fire.
+* Fixed Congo Orientale going to Congo Free State if the Congo Conference event is successful.
+
+## Interface changes:
+* Added a Small State CB province flag to all provinces within the small state population threshold. Now players can see which states they are allowed to use the Acquire small state cb on by clicking on a province and looking for the Small State CB flag. This CB still cannot be used against capital states or Sub Saharan African uncivilized nations.
+
+## Map changes:
+* Imported GFM provinces for France, Italy, and Belgium.
+* Created Voronets state in between Kursk and Tartaria states.
+* Created Tobolsk state from eastern half of Ural state.
+* Created Okhotsk state from eastern half of Trans-Baikal and western half of Kamchatka states.
+* Created Celebes state from western half of Moluccas state.
+* Absorbed Vindhya Pradesh into Madhya Pradesh and Eastern Uttar Pradesh.
+* Absorbed East Bengal into Bangladesh.
+
+## Gameplay changes:
+* Nerfed artillery defense to always only be twice as high as artillery attack.
+* Increased tank base attack to 22, increased tank exploit invention attack bonus from 4 to 10, added +25% support to medium tank invention.
+* Screw-Propelled Steamer tech unlock date changed from 1860 to 1855.
+* Ticking warscore now ticks up or down every 2 days instead of every 10 days.
+* Added ticking battle warscore to Opium War and Demand Reparations cb.
+* Removed AI admin and education efficiency buffs.
+* Increased chance of AI promoting clergy and soldiers.
+* Made AI more likely to pick important techs.
+* AI nations cannot use national foci on states below 10,000 population and AI nations with a national population over 1,000,000 cannot use national foci on states below 150,000 population. This should help the AI choose better states to use it's national foci on.
+* Removed acquire Siberian state cb. The number of provinces in Siberian states was cut in half since the Siberian state cb was introduced, so it is no longer necessary to have a seperate cb with different warscore calculations for them.
+* Set max stockpile of goods from 3000 to 2000.
+* Added decisions for GPs to annex Lagos via decision before Colonial Negations is invented.
+* All provinces with liferating above 40 will be lowered to 35 in 1900.
+
+## Country changes:
+###### Austria:
+* Disabled the 1848 Hungarian Revolution and added an Annex Hungary decision for the multiplayer start date. The Annex Hungary decision can be enacted in 1848 and annexes Hungary without having to fight a war.
+
+###### North Africa:
+* Increased 1836 population of Morocco from 1.6M (400k pops) to 2.8M (700k pops). According to the source that lists Morocco's population in this wiki page: https://en.wikipedia.org/wiki/List_of_countries_by_population_in_1900#cite_note-10
+the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Morocco to reach it's historical 1905 population with its vanilla starting population.
+* Added decisions for Great Powers to go to war with and annex Tunis and Morocco.
+* Added decisions for Morocco, Algeria, and Tunis to increase school reform by 1 level and gain 2 years of research points.
+* Algeria starts with the Jihad modifier for one year.
+* Tripoli starts with the Full Mobilization modifier for one year.
+* Added generals for Morocco, Algeria, Tunis, and Tripoli.
+
+###### France:
+* Set all provinces to 31 liferating except Paris.
+* Starts at war with Algeria. An event fires that gives the option to continue to war or end the war with a mean time of 15 days.
+* Added decision chain to annex Algeria and take the province of Béchar from Morocco.
+* Added steamer shipyard in Normandie and replaced starting clipper transports with steamer transports. This was done because the AI kept deleting it's starting wooden transports which would cause it to lose it's 1839 war against Algeria.
+
+###### Italy:
+* Allowed the War of Unification cb to be used by Italian nations against other Italian nations. This CB requires nationalism and imperialism to unlock and normally it can't be used against nations in the same culture group.
+* Removed Form North Italy and Form South Italy decisions. These are redundant now that Italian countries can use the free War of Unification cb against each other. North Italian countries still have the Unite Northern Italy decision that annexes all the North Italian minors.
+* Added First Italian War of Independence event chain that triggers after the Hungarian Revolution happens in the normal 1836 bookmark and after Austria uses the Annex Hungary decision in the multiplayer bookmark.
+* The Expedition of the Thousand decision now starts a war against the country that owns Naples. If this war is won, Italy will be automatically formed by the country that fired the decision.
+* Imported GFM populations and increased starting soldier pops in Sardinia.
+* Sardinia starts with battleship column researched in 1836.
+
+###### Balkans:
+* If Russia agrees to the Treaty of Berlin in the Russo-Turkish war, the territory exchanged now matches historical borders.
+* Added decision for the puppet master of Bosnia to annex it if the Treaty of Berlin event fired.
+* Added First Balkan war decision chain. This decision is enabled for Bulgaria, Serbia, Montenegro, and Greece if Russia wins the Russo-Turkish war but agrees to limit it's demands in the Treaty of Berlin.
+* Turkish Population Exchange event only affects Turkey and Greece instead of all Balkan countries.
+
+###### United Kingdom
+* British Raj will leave it's sphere leader's sphere of influence upon civilizing. UK will still keep the Crown Rule modifier so long as the Raj is it's puppet. This will improve the income of both the UK and Raj.
+
+###### Russia:
+* Agreeing to limit demands in the Treaty of Berlin will reduce infamy by 5.
+
+###### Belgium:
+* Imported GFM starting population.
+
+###### Sweden:
+* Made it easier to form Sweden-Norway via reforms.
+
+###### Ottoman Empire:
+* Rise of the Bedr Khan event removes all other country's diplomatic influence in Bohtan before declaring war in order to not drag other great powers into the conflict.
+
+###### Ethiopia:
+* Disabled Scramble for Africa cb on Ethiopia. Can still use Scramble for Africa on Ethiopian minor nations that aren't Ethiopia, such as Gonder and Shewa.
+* Claim the Imperial Throne decision changes centralization level to Unitary.
+* Created a decision for great powers bordering uncivilized Ethiopia to annex it in one war at the cost of 10 infamy. If they enact this decision, Ethiopia gets +30% mobilization for the duration of the war.
+
+
+#Version 0.71 - 6/4/2022
+## Bug fixes:
+* Fixed bugged naval ports in Messina, Rügen, and Swinemünde.
+* Fixed Strait of Gibraltar name and unit placement.
+* Fixed several economic modifiers not being applied in the 1913 and WW1 scenario.
+* Choosing to liberate Herat via the Anglo-Persian War event no longer gives infamy to the UK.
+* The White Raja event for Brunei will only fire once now.
+
+## Map changes:
+* Imported GFM map for Germany, Balkans, Turkey, Iran, Poland, and Africa.
+* Combined several states in Germany
+* Split up a few states in Turkey, Persia, Syria, and Caucasus.
+
+## Gameplay changes:
+* Increased cap on non-cored soldier POPs from 2.5% to 5%.
+* Nerfed soldier promotion rate of Indian and Chinese POPs.
+* Converted Albanians to Turks, Walloons to French, Swiss to Germans/French/Italian, Norwegians to Danes, and Finns to Swedes in the multiplayer bookmark.
+* Converted all Shiite POPs and Shiite state religions to Sunni in the multiplayer bookmark.
+* Created Kurdistan formable nation.
+* Added decision for GPs to annex southern Yemen if all the southern Yemeni provinces are in their sphere.
+
+## Country changes:
+###### Balkans:
+* Liferating reduction from 40 to 35 happens in 1860 instead of 1880.
+* Imported GFM populations.
+
+###### West Africa:
+* Added extra cores for all Western African nations.
+* Created decisions to form Toucouleur Empire and Mali.
+* Created Adamawa as a puppet nation of Sokoto in 1836 and added a decision for Sokoto to annex it.
+* Lowered Congo starting population by about 20%.
+
+###### Ottoman Empire:
+* Imported GFM populations.
+* Most Kurdish populated provinces start under the control of the new Ottoman vassal Bohtan.
+* Added the Badir Massacre event which kills a potion of the Christian population under Bohtani rule and begins an annexation war against Bohtan.
+
+###### Mexico:
+* Created a decision to refute American Manifest Destiny which removes USA cores from the West Coast if Mexico beats USA in a war while having no unclaimed cores. A secondary decision called Fulfill Mexican Manifest Destiny gives Mexico cores on all land west of the Mississippi River and starts a war with USA.
+* Can gain cores on Central America, Philippines, Cuba, and Puerto Rico if Mexico is victorious over USA.
+* Added Adopt 1857 Constitution decision that grants several political reforms and increases education reform by 1.
+
+###### Persia:
+* Imported GFM populations.
+* Created several vassal states in 1836 and decisions to annex them.
+* Added an event for the Khorasan revolt.
+* Esablish the Dar al Funun decision now increases school reform by 1 level and gives 1 year of research points intead of 5.
+
+###### China:
+* Added Lost Substate modifier which gives +0.005 militancy per month and -1% tax efficiency for each substate that is not under the control of China. This modifier is removed by retaking the substates or westernizing.
+
+###### Prussia:
+* No longer owns Brunswick in 1836 scenario but still owns Brunswick in Multiplayer start scenario.
+
+###### United Kingdom:
+* Increased cost of Annex East India Company decision from 4 million pounds to 6 million pounds and reduced infamy gain from 40 to 30.
+
+###### Iberia:
+* Imported GFM populations.
+
+###### Scandinavia:
+* Imported GFM populations.
+
+###### Algeria:
+* Imported GFM populations.
+
+
+#Version 0.7 - 10/16/2021
+## Bug fixes:
+* Fixed AI exiled troops getting stuck after a war.
+* Irish POPs will be no longer migrate to Europe during the Irish Famine event when USA has lost a blockade war.
+* Fixed bugged naval port in Medan.
+* Event and decision tooltips now properly display the correct amount of infamy gained from acquire state, demand concession, and conquest cbs in scripted wars.
+* Universal healthcare reform now properly gives +0.05% pop growth instead of +0.01%.
+
+## Interface changes:
+* Increased zoom distance threshold for the political map to be displayed.
+
+## Map changes:
+* Imported HPM terrain map.
+* Reverted river thickness to normal levels so they look less ugly.
+* Created Hong Kong Island off the coast of Hong Kong province.
+* AI English Channel Crossing now connected to Hong Kong Island and Bombay. This helps the UK AI not be so useless in its Asian wars. Reminder that only AI can use this crossing and it is disabled for the player.
+* Split Baltic States back into Estonia and Latvia states.
+* Split Upper Egypt back into Middle and Upper Egypt states.
+* Added dozens of new provinces in the Middle East and Central Asia.
+* Split Arabia into Nejd, Trucial Coast, and Hedjaz states.
+* Split Arabian Coast into Oman and Yemen states.
+* Split West Afghanistan state into Herat and Kandahar states and split Eastern Afghanistan state into Qonduz and Pashtunistan states.
+* Created Sarhad state from upper half of Baluchistan state.
+* Created Tajikstan state from lower half of Kirghizia state.
+* Created Akmolinsk state from upper half of Semirechye state.
+* Removed strait from Jask to Dubai.
+* Created Orkey and Shetland Islands province off the coast of Scotland.
+* Changed trade goods in Zanzibar to market goods.
+* Partitioned Champagne state between Amiens, Picardie, and Franche-Comte. Renamed Alsace-Lorraine into Alsace and created new separate Lorraine State.
+
+## Gameplay changes:
+* Redid starting army stacks for all major Great War participants in 1913 and WW1 scenarios to follow the 4 infantry, 1 cavalry, 5 artillery template.
+* Added Declare Neutrality decision for small population non colonial nations. This sets a neutral country flag for the nation which prevents all wars and cbs to be used by and against the neutral nation. Except for Switzerland, AI nations will not enact this decision. A neutral country can cancel neutrality by enacting the Cancel Neutrality decision at the cost of 15 infamy.
+* Added new Violate Neutrality cb that can only be used against neutral nations. If war is declared against a neutral nation using this cb, the target nation's neutral status is instantly removed and wars and other cbs will function normally against them. This cb does not have to be enforced in a peace deal in order to take effect.
+* Made the bonus to internal migration attraction from the Migration Attraction province selector decision apply to an entire state instead of a singular province. This is a nerf as it makes it harder to move a mass amount of POPs to singular high liferating and gold provinces.
+* New Great Game cb is unlocked after manifest destiny is invented. It lets great powers acquire states in Central Asia at the cost of 2 infamy.
+* Lowered base supply cost of infantry by about 20%.
+* Military logistics is a prerequisite for enacting four year draft and mass politics is a prerequisite for enacting mandatory service.
+* Increased airplane base attack by 1.
+* Moved Haber-Bosch process invention to Organic Chemistry. Has starting base chance of 0, Electricity and Synthetic Polymers give +1 and +4 discovery chance respectively.
+* All government types can now use the Scorch Earth province selector decision when at war.
+* Caucasian POPs can now migrate to Ottoman Empire, Persia, and Egypt if they are civilized during the Circassian Genocide event instead of just Ottoman Empire.
+* Added new "Militancy Reduction" national idea that gives global -0.03 POP militancy.
+* Migration Attraction province selector decision no longer needs to be unlocked from the national idea list. All countries start with the ability to use this decision.
+* Removed -3% tax efficiency modifier from European Military Advisors modifier.
+
+
+## Country changes:
+###### Poland:
+* Austria, Prussia, and Russia will get a Polish Uprising event sometime between 1846-1849 that will add the Polish Nationalism modifier to Polish core provinces and increase the militancy and consciousness of all Poles by 5.
+* Neighbouring GPs can annex AI Krakow via decision after they get the Polish Uprising event.
+
+###### United Kingdom:
+* Irish Potato Famine modifier lasts 6 years instead of 5.
+* Created a decision to end the Irish Famine up to 4 years early at the cost of 3 million pounds. AI is scripted to not enact this decision.
+* Increased costs to annex Commonwealth nations.
+
+###### Russia:
+* Pyatigorsk, Vladikavkaz, and Åland provinces start under Russian control in 1836.
+* Pacification of Circassia and Integrate Transcaucasia decisions no longer give cores on the annexed land.
+* Provinces of Qaratal and Alma Ata start under the control of Xinjiang in 1836.
+* Added decision to annex provinces of Qaratal and Alma Ata from Xinjiang.
+
+###### Germany:
+* German nations can now benefit from tiny, small, and medium nation triggered modifier bonuses. They were prevoiusly excluded from these bonuses.
+* Sigmaringen province is its own seperate country under the sphere of influence and vassalage of Prussia in 1836. This allows AI Austria to instantly form the SGF if it wins the Brother's War against Prussia.
+
+###### Scandinavia:
+* Decision to form Scandinavia no longer requires owning Schleswig, Iceland, Greenland, or Faroe Islands.
+* Iceland & Greenland are states in 1836.
+* Created a decision that allows Sweden and Sweden-Norway to add Estonian as an accepted culture.
+
+###### Italy:
+* Added decision for Tuscany to annex Lucca in 1847.
+
+###### Ottoman Empire:
+* Added Mashriqi as an accepted culture in 1913 and WW1 scenarios in order to increase mobilization size.
+
+###### Chile:
+* Chile is now included in the list of countries that can form United Provinces of Río de la Plata.
+
+###### Middle East:
+* Redrew starting borders of Oman and Nejd.
+* Split Yemen up into several nations and added a decision to re-form Yemen.
+* Added a decision for GPs to annex Aden if it's owner is uncivilized and a vassal or sphereling of said GP.
+* Hedjaz exists as a puppet of Egypt in 1836.
+* Jabal Shammar and Annazah exist as new independent countries in 1836.
+* Added decisions for Egypt and Turkey to annex Hedjaz, Annazah, and Sana province.
+* Changed prerequisites for the Form Arabia decision to include owning all Arab culture group cores in the Middle East.
+* Oman and Trucial States own a few Persian provinces along the coast of the Straits of Hormuz in 1836.
+* Added Voyage to America decision for Oman that gives one year worth of research points.
+* Added decision to let Oman accepted Swahili if they win the succession war with Zanzibar.
+* Added extra 5% western civilization progress to most middle eastern nations.
+
+###### Persia:
+* Added decision to add cores on North Caucasus and Transcaucasia.
+* Added decision to add cores on and conquer Herat. UK will get an event to go to war to free Herat if Persia uses this decision and conquers Herat.
+* Provinces of Zahedan and Chabahar belong to Kalat in 1836.
+
+###### Afghanistan:
+* Split up western Afghanistan into the countries of Kandahar and Herat. Herat is independent and Kandahar is a puppet of Afghanistan.
+* Created decisions to annex Herat and Kandahar.
+* Added extra 10% civilization progress to Afghanistan.
+
+###### Central Asia:
+* New nations Kazakh Khanate and Akhal-Tekke exist in 1836.
+* Redrew borders of Khiva, Bukhara, Kokand, and Badakshan.
+* Changed prerequisites for Form Turkestan decision to include owning most states in Central Asia.
+
+###### Egypt:
+* Winning the 2nd Oriental War will remove Turkish cores from the Levant.
+
+###### Netherlands:
+* Batavia Reborn decision now turns West Java into a state.
+
+###### Switzerland:
+* Added Sonderbund civil war event.
+
+###### Baltics:
+* Increased liferating of Riga and Reval from 35 to 40.
+
+###### China:
+* Sichuan and Inner Mongolia are Chinese substates in 1836 instead of directly controlled by China.
+* Retaking a treaty port will convert the trade goods in that province from market goods into fish.
+
+
+#Version 0.65 - 10/16/2021
+## Bug fixes:
+* Fixed major immigration bug where a new world nation would be unable to receive any immigrants if a single province was blockaded.
+* Lend to Egypt decision will no longer appear if Egypt doesn't exist.
+* AI allies can no longer use the decision to end fake wars on behalf of the player.
+* Hungarian Revolution event will now re-trigger for Austria if the player doesn't choose an option while a save game is being created and rehosted.
+* Revolution and Counterrevolution technology flag event now triggers for all nations after researching Revolution and Counterrevolution.
+* Liberate Balkans cb will now correctly release Serbia, Montenegro, and Greece after the Ottomans have been defeated.
+
+## Interface changes:
+* New models for aircraft carriers and province selectors courtesy of Panzerfaust1 from https://www.moddb.com.
+
+## Gameplay changes:
+* Added Expansionism invention to Revolution and Counterrevolution tech. This invention gives -0.02 monthly infamy decay.
+* New World nations now get a small amount of base internal migration. This causes newly conquered provinces to fill with accepted culture POPs quickly so assimilation can occur.
+* Middle class will no longer internally migrate. This was changed to prevent weird cases where some low population provinces would become majority clerks, clergy, or officers.
+* Totalitarianism mobilization modifier lowered from +3% to +2%.
+* Moved Submarine invention from Steel Steamers tech to Screw-propelled Steamers tech and added a -10% discovery chance before 1870.
+
+## Country changes:
+###### Italy:
+* Added Italian cores to Venice in 1836.
+* Italia Irredenta decision requires Italy to own Milan and Venice to enact.
+
+###### Balkans:
+* Countries will now have a choice to become Russian puppets after Russia wins the Russo-Turkish war instead of being forced to. AI Serbia, Romania, Bulgaria, and Montenegro will always say yes.
+
+###### Danubian Confederation:
+* Changed country color to burgundy.
+
+
+#Version 0.64 - 10/16/2021
+## Bug fixes:
+* End of Reconquista event will no longer trigger for Portugal if the "Restore Order to Brazil" decision was used on a Brazilian nation that wasn't already a puppet.
+* Japan can no longer enact multiple Meiji Restoration decisions.
+* Dreadnoughts canned good cost increased to 120 from 12.
+* Moved 10 infamy gain from accepting Egyptian surrender to refusing Egyptian surrender during the Oriental War.
+* Mahdist Sudan will spawn as civilized if Kordofan is a state or uncivilized if Kordofan is a colony.
+* Converted South German and South Italian POPs in Vienna and Rome in 1836 multiplayer start to German and Italian.
+
+## Gameplay changes:
+* Modern Divisional Structure tech increases combat width by 5.
+* Consolidated several coal and iron RGOs across the world by increasing some mines and removing others. Total global and country production of coal and iron remains the same.
+* AI uncivilized nations will no longer use promote clergymen national focus until after 1870. This was changed to prevent African AI uncivs from civilizing before colonial negotiations are unlocked.
+* Increased base chance of discovering Wright & Langley's Aeroplanes invention.
+
+## Country changes:
+###### United Kingdom:
+* Sarawak no longer has to be uncivilized in order for the UK to enact the North Borneo Protectorate decision. Sarawak still has to be AI controlled to use the decision.
+* Indian states now start as vassals of the UK instead of the East India Company in 1836.
+
+###### China:
+* "Middle Kingdom" event will now annex both substates and Chinese culture vassal states instead of just substates.
+* Added new "Unequal Treaty" negative modifier. Every time a treaty port is lost, this modifier increases global pop militancy by +0.005 and reduces max tariffs by 1%. Westernizing will completely remove this modifier and prevent more Unequal Treaties from being signed even if additional treaty ports are lost.
+
+###### Scandinavia:
+* Removed "has no unclaimed cores" prerequisite for forming Scandinavia.
+
+###### Sarawak:
+* Reduced starting civilization progress to 20%.
+
+
+#Version 0.63b - 9/11/2021
+## Bug fixes:
+* Fixed Request Grants decision causing players to crash.
+
 #Version 0.63 - 8/30/2021
 ## Bug fixes:
 * Fall of Punjab/Sind/Burma events won't fire anymore unless the East India Company has started their respective annexation wars.
@@ -6,6 +604,7 @@
 * Fixed bugged RGO in Harare province.
 * End of Reconquista event will no longer fire for Portugal if it enacts the Restore Portugal-Brazil decision.
 * Enacting the 1861 Consitution decision as Argentina will no longer cause Buenos Aires to secede. The secession will still occur if the decision is enacted by Argentine Confederation or any other Argentine minor.
+* Fixed bug where a player couldn't receive anymore grant requests if they kept a previous grant request event popup open while a save was taken and a rehost occured.
 
 ## Map changes:
 * Re-enabled Aden strait.
@@ -19,6 +618,7 @@
 * When Great Wars are invented, all human players will get an event to vote to enable or disable the Dismantle Nation cb. If yes gets more votes than no, the Dismantle Nation cb will be unlocked. If no wins or the vote is tied, then the cb will be disabled.
 * Changed healthcare reform to be decision based. It can be raised or lowered at any time if prerequisites are met, and the reform level fixes social spending at a set amount.
 * Reduced max province size of London, Vienna, Paris, Tokyo, Rome, Turin, Istanbul, Alexandria, and Cairo.
+* Added new Urban terrain type.
 * Added -2% tax penalty for every 5 infamy over 25, capped at -12% when above 50 infamy.
 * Increased peacetime infamy decay from -0.033 to -0.05.
 * Acquire small state and tiny conquest population threshold changed to <150k before 1860, <200k between 1860 and 1885, <300k between 1885 and 1910, and <450k after 1910.

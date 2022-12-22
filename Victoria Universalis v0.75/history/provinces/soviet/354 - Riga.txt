@@ -1,0 +1,35 @@
+owner = UBD
+controller = UBD
+add_core = UBD
+add_core = LAT
+trade_goods = fish
+life_rating = 40
+fort = 1
+naval_base = 2
+1913.1.1 = {
+	owner = RUS
+	controller = RUS
+}
+1913.1.1 = { 
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

@@ -1,0 +1,36 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+POR = {
+	value = 75
+}
+
+NET = {
+	value = 30
+}
+
+KON = {
+	value = 200
+}
+
+army = {
+	name = "Army of the Loango Kingdom"
+	location = 2624
+regiment = {
+		name= "Ma Lw„„gu's Guards"	
+	type = irregular
+	home = 2624	}
+regiment = {
+		name= "Warriors of Loango"	
+	type = irregular
+	home = 1977	}
+}
+
+

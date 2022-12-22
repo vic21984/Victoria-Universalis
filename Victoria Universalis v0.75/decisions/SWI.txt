@@ -1,0 +1,77 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+political_decisions = {
+	declare_republic_of_neuchatel = {
+		potential = {
+			tag = SWI
+			owns = 608
+			608 = {
+				is_core = PRU
+			}
+		}
+		allow = {
+			prestige = 1
+			romanticism = 1
+		}
+		effect = {
+			prestige = 5
+			608 = {
+				remove_core = PRU
+				remove_core = NGF
+				remove_core = GER
+			}
+			relation = {
+				who = PRU
+				value = 20
+			}
+		}
+	}
+
+	call_geneva_convention = {
+		potential = {
+			tag = SWI
+			owns = 607
+			NOT = {
+				has_global_flag = geneva_convention_held
+			}
+		}
+		allow = {
+			any_greater_power = {
+				war_exhaustion = 5
+			}
+			empiricism = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = signed_the_geneva_convention
+				duration = -1
+			}
+			set_global_flag = geneva_convention_held
+			prestige = 10
+		}
+	}
+
+	great_war_neutrality = {
+		potential = {
+			tag = SWI
+			war = no
+			has_global_flag = 1913_bookmark
+			ai = yes
+			OR = {
+				any_neighbor_country = { military_access = THIS }
+				any_greater_power = { military_access = THIS }
+			}
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = { military_access = THIS }
+				any_greater_power = { military_access = THIS }
+			}
+		}
+		effect = {
+			any_country = {
+				end_military_access = THIS
+			}
+		}
+	}
+}

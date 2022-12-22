@@ -1,0 +1,27 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Royal Champasak Army"
+	location = 1362
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1362
+	}
+
+	regiment = {
+		name= "2. Brigade"
+		type = irregular
+		home = 1363
+	}
+}
+
+

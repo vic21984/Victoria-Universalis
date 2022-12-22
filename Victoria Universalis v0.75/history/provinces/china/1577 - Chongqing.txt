@@ -1,0 +1,17 @@
+owner = SZC
+controller = SZC
+add_core = CHI
+add_core = SZC
+trade_goods = fruit
+life_rating = 30
+1913.1.1 = {
+	owner = CHI
+	controller = CHI
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+}

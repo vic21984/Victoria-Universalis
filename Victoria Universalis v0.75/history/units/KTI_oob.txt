@@ -1,0 +1,26 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of Kutei"
+	location = 1424
+	regiment = {
+		name= "1st irregular"
+		type = irregular
+		home = 1424
+	}
+	
+	regiment = {
+		name= "2nd irregular"
+		type = irregular
+		home = 1424
+	}
+}
+

@@ -1,0 +1,33 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of Tibet"
+	location = 1587
+	regiment = {
+		name= "1st Infantry"
+		type = irregular
+		home = 1587
+	}
+
+	regiment = {
+		name= "2nd Infantry"
+		type = irregular
+		home = 1587
+	}
+
+	regiment = {
+		name= "3rd Infantry"
+		type = irregular
+		home = 1588
+	}
+
+}
+
