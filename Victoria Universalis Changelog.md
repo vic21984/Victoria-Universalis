@@ -1,3 +1,68 @@
+#Version 0.76 - 4/5/2023
+## Bug fixes:
+* Removed adjacency between Herat and Balkh.
+* Fixed Trinidad & Tobago localization.
+* Fixed ideologies sometimes taking too long to spawn.
+* Fixed naval exercises and modern naval exercises inventions not having any effect.
+
+## Map changes:
+* Created 2 new provinces in North Zhili/Innger Mongolia
+* Merged 2 provinces in the Caucasus.
+* Re-arranged a few states in China.
+* Created Biafra state out of the eastern half of Niger Delta state.
+
+## Gameplay changes:
+* Made all provinces start with a province size of 1. Farm RGOs have a a base of 40k workers and mining RGO have a base of 10k workers.
+* Added Farmland Expansion and Mine Expansion buildings that increase the size of an RGO by 100% per level. Farmland Expansion has 50 levels and doesn't require any tech, Mine Expansion has 6 levels and requires Metallurgy tech. Deserts are capped at 1 Farm Expansion and Arctic cannot build any Farm Expansions.
+* Made most countries start with enough Farmland Expansions to employ all of their workers while China, India, and most of Africa start with enough to employ only half their workers. Uncolonized land starts with 0 Farm Expansions.
+* Added University building that gives +0.05% RP generation per level with a max of 3 levels and 1 per state.
+* Created new inventions for several 1920s techs.
+* Made steel, machine parts, and steamer shipyards use slightly less coal and slightly more iron and/or steel.
+* Lowered increased factory maintenance cost of state capitalism and planned economy from 15% and 10% to 10% and 5%.
+* Reduced base cement maintenance cost of factories by 20%.
+* Buffed commerce tech bonus from Naval Tech School from 5% to 10%.
+* Removed terrain RGO nerfs.
+* Removed theocracy and tribal society government types to help with performance.
+* Doubled prestige gain from Aesthetics techs from 5% to 10%.
+* All shared prestige gain from techs now comes with a small amount of permanent prestige gain equal to 10% of the max shared prestige gain.
+* Made national idea selection events trigger every 15 years via event instead of by researching techs. Replaced national idea techs with the original Economic Theory and Critique techs.
+* Replaced Naval Build Speed national idea with Naval Experience national idea.
+* Nerfed most military national ideas.
+* Nerfed industrial and consumer goods output ideas.
+* Buffed infamy decay and militancy reduction national ideas.
+* Buffed expansionism invention from -0.02 to -0.05 and moved it from Revolution and Counterrevolution to Mass Politics.
+* Made war reparations give 10% of income instead of 20% and last 10 years instead of 5.
+* Disabled aristrocrat factory investments.
+
+###### United Kingdom:
+* Added the Lexy Taxes on India decision that declares war on EIC for reparations and re-puppets EIC when enforced. All of EIC's provinces are instantly occupied in order to allow instantaneous forced peace. The reparations last for 10 years and this decision must be taken every 10 years in order to keep the taxes flowing.
+* Increased tariff efficiency modifier from Unequal Chinese Treaty modifier from 5% to 10%.
+
+###### British Raj:
+* EIC will no longer disintegrate when released by the UK via the manage vassals decision.
+* Replaced Embrace Nepalis decision with Expand Indian Army decision that adds both Nepali and Panjabi as accepted cultures.
+* Created an event for the AI EIC that activates army techs that are 1 level below the current army tech of the UK, e.g. if UK has Breech-loaded Rifles and EIC does not have Muzzle-loaded Rifles then the event will activate Muzzle-loaded Rifles for EIC. This event fires whenever the UK researches a new army tech and EIC is a puppet of the UK. It will not fire when EIC is played by a player.
+
+###### Japan:
+* Countries can no longer use demand concession casus belli on Japan in the multiplayer bookmark and must use the regular acquire state cbs even when Japan is uncivilized.
+
+###### Ottoman Empire:
+* If the Egyptian Surrender event is accepted during the Oriental Crisis war, Syria will become a state after being transferred to Turkey instead of a colony.
+
+###### Spain:
+* Enabled Reconquista decisions for regular Spain in the multiplayer bookmark.
+
+###### Canada:
+* Annexed Rupert's Land in the multiplayer bookmark.
+
+###### South America:
+* Added a decision for North and South Andean culture countries to add the other Andean culture as accepted if they own all Venezulian, Colombian, Ecuadorian, Peruvian, and Bolivian cores.
+
+###### Great War Bookmark:
+* Improved economies of all central powers countries significantly. They should be able to afford to keep the war going for several more years than in previous versions.
+* Made the effects of the October revolution event fire immediately instead of after the player chooses an option.
+
+
 #Version 0.75 - 12/20/2022
 ## Bug fixes:
 * Converted Ukrainian POPs in Przemysl to Russian in the multiplayer bookmark.

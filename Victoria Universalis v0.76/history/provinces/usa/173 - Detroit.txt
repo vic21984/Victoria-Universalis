@@ -1,0 +1,38 @@
+owner = USA
+controller = USA
+add_core = USA
+trade_goods = timber
+life_rating = 50
+colony = 2
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 12
+		building = automobile_factory
+		upgrade = yes
+	}
+}
