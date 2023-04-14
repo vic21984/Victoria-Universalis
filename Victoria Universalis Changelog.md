@@ -28,7 +28,11 @@
 * Created the country of Hazaristan in central Afghanistan which starts out as a puppet of Afghanistan in 1836. Afghanistan gets an event to conquer them at 60% civilization progress.
 
 ###### South America:
-* Added Basic Chemistry and Military Staff System techs to all South American countries in 1836.
+* Added Basic Chemistry and Military Staff System techs to all South American countries in 1836
+
+###### Argentina:
+* Bahia Blance and Mar del Plata start uncolonized in 1836.
+
 
 #Version 0.76 - 4/5/2023
 ## Bug fixes:
