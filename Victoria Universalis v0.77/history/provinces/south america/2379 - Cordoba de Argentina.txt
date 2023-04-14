@@ -1,0 +1,49 @@
+owner = ARC
+controller = ARC
+add_core = ARC
+trade_goods = coal
+life_rating = 35
+terrain = steppe_mine
+1913.1.1 = {
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	remove_core = ARC
+}
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = machine_parts_factory
+		upgrade = yes
+	}
+}

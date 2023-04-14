@@ -1,0 +1,20 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Armia Krakówiej"
+	location = 703
+	
+	regiment = {
+		name = "1. Brygada"
+		type = infantry
+		home = 703
+	}
+}

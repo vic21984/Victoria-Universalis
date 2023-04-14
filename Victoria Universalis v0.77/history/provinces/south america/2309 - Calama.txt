@@ -1,0 +1,12 @@
+owner = BOL
+controller = BOL
+add_core = BOL
+add_core = CHL
+trade_goods = sulphur
+life_rating = 35
+terrain = mountain_mine
+1913.1.1 = {
+	owner = CHL
+	controller = CHL
+	remove_core = BOL
+}

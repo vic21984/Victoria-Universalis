@@ -1,0 +1,13 @@
+owner = RPL
+controller = RPL
+add_core = RPL
+add_core = CAN
+add_core = COL
+trade_goods = coal
+life_rating = 35
+terrain = forest_mine
+1836.1.2 = {
+	owner = CAN
+	controller = CAN
+	remove_core = RPL
+}

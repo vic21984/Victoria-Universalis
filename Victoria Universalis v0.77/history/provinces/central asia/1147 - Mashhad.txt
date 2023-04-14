@@ -1,0 +1,23 @@
+owner = PER
+controller = PER
+add_core = PER
+trade_goods = coal
+life_rating = 35
+terrain = hills_mine
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+}

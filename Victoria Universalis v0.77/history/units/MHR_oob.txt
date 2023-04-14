@@ -1,0 +1,52 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+#Relations
+NEJ = {
+	value = -150
+}
+
+HAL = {
+	value = -50
+}
+
+FDL = {
+	value = -200        #relation
+}
+
+QUA = {
+	value = -200        #relation
+}
+
+NYE = {
+	value = -50
+}
+
+ENG = {
+	value = 0        #relation
+}
+
+leader = {
+	name = "Amr bin Saad Tawari"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+	name = "Sultan's Army"
+	location = 1175
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1175
+	}
+}

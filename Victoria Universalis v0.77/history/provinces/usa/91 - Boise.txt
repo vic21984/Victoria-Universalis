@@ -1,0 +1,24 @@
+trade_goods = wool
+life_rating = 40
+owner = USA
+controller = USA
+add_core = USA
+colonial = 2
+1913.1.1 = {
+	colonial = 0
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+}

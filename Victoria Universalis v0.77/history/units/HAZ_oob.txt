@@ -1,0 +1,32 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Hazara Army"
+	location = 1213
+
+	regiment = {
+		name= "1. Popozai"
+		type = irregular
+		home = 2589
+	}
+
+	regiment = {
+		name= "2. Popozai"
+		type = irregular
+		home = 2655
+	}
+
+	regiment = {
+		name= "3. Popozai"
+		type = irregular
+		home = 1213
+	}
+}

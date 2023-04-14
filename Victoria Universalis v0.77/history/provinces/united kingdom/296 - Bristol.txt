@@ -1,0 +1,49 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+trade_goods = iron
+life_rating = 35
+terrain = farmlands_mine
+state_building = {
+	level = 2
+	building = regular_clothes_factory
+	upgrade = yes
+}
+
+1913.1.1 = {
+	state_building = {
+		level = 10
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+}

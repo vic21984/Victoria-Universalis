@@ -1,0 +1,60 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	leader = {
+		name = "Abdullah bin Khalifa"
+		type = land
+		date = 1836.1.1
+		personality = defence_1.1
+		background = attack_2.1
+	}
+	name = "Army of Bahrain"
+	location = 1162
+	regiment = {
+		name= "al Nahyah"
+		type = irregular
+		home = 1162
+	}
+}
+
+army = {
+	leader = {
+		name = "Khalifa bin Nahyan"
+		type = land
+		date = 1836.1.1
+		personality = defence_1.1
+		background = attack_1.1
+	}
+	name = "Army of Abu Dhabi"
+	location = 1167
+	regiment = {
+		name= "al Nahyah"
+		type = irregular
+		home = 1167
+	}
+}
+
+army = {
+	leader = {
+		name = "Mohammed bin Thani"
+		type = land
+		date = 1836.1.1
+		personality = defence_2.1
+		background = attack_1.1
+	}
+	name = "Army of Qatar"
+	location = 1165
+	regiment = {
+		name= "al Nahyah"
+		type = irregular
+		home = 1165
+	}
+}

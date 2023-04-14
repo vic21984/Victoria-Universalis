@@ -1,0 +1,21 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of the Emirate of Adrar"
+	location = 1780
+	regiment = {
+		name= "Emir's Guards"
+		type = irregular
+		home = 1780
+	}
+
+}
+

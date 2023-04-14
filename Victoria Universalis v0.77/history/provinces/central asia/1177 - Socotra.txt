@@ -1,0 +1,20 @@
+owner = MHR
+controller = MHR
+add_core = YEM
+add_core = LHJ
+add_core = FDL
+add_core = QUA
+add_core = MHR
+add_core = NYE
+trade_goods = fish
+life_rating = 35
+1913.1.1 = {
+owner = ENG
+controller = ENG
+remove_core = LHJ
+remove_core = FDL
+remove_core = QUA
+remove_core = MHR
+remove_core = NYE
+colonial = 2
+}

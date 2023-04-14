@@ -1,0 +1,104 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of The Manchu Blue Banner"
+	location = 2673
+
+	regiment = {
+		name= "1.Manchu Blue Banner"
+		type = infantry
+		home = 2673
+	}
+
+	regiment = {
+		name= "2.Manchu Blue Banner"
+		type = infantry
+		home = 2673
+	}
+
+	regiment = {
+		name= "3.Manchu Blue Banner"
+		type = infantry
+		home = 1533
+	}
+}
+
+
+army = {
+	name = "Army of The Manchu Red Banner"
+	location = 1479
+
+	regiment = {
+		name= "1.Manchu Red Banner"
+		type = infantry
+		home = 1479
+	}
+
+	regiment = {
+		name= "2.Manchu Red Banner"
+		type = infantry
+		home = 1552
+	}
+
+	regiment = {
+		name= "3.Manchu Red Banner"
+		type = infantry
+		home = 1479
+	}
+}
+
+
+army = {
+	name = "Army of The Manchu White Banner"
+	location = 1554
+
+	regiment = {
+		name= "1.Manchu White Banner"
+		type = infantry
+		home = 1554
+	}
+
+	regiment = {
+		name= "2.Manchu White Banner"
+		type = infantry
+		home = 1555
+	}
+
+	regiment = {
+		name= "3.Manchu White Banner"
+		type = infantry
+		home = 1480
+	}
+}
+
+
+army = {
+	name = "Army of The Manchu Yellow Banner"
+	location = 1002
+	
+	regiment = {
+		name= "1.Manchu Bordered Yellow Banner"
+		type = infantry
+		home = 1552
+	}
+
+	regiment = {
+		name= "2.Manchu Bordered Yellow Banner"
+		type = infantry
+		home = 1552
+	}
+
+	regiment = {
+		name= "3.Manchu Bordered Yellow Banner"
+		type = infantry
+		home = 1553
+	}
+}

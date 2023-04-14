@@ -1,0 +1,49 @@
+owner = MAT
+controller = MAT
+add_core = MAT
+add_core = TRN
+add_core = SAF
+trade_goods = coal
+life_rating = 35
+terrain = hills_mine
+1836.1.2 = {
+	owner = TRN
+	controller = TRN
+}
+1913.1.1 = {
+owner = SAF
+controller = SAF
+colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = machine_parts_factory
+		upgrade = yes
+	}
+}

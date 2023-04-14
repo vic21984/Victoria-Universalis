@@ -1,0 +1,20 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "I. Korps"
+	location = 354
+	regiment = {
+		name= "I. Linieninfanteriebrigade"
+		type = infantry
+		home = 349
+	}
+
+}

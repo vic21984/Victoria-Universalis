@@ -1,0 +1,61 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GON = {
+	value = -200
+}
+
+SHW = {
+	value = -200
+}
+
+TIG = {
+	value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+TUR = {
+	value = 50
+}
+
+EGY = {
+	value = 60
+}
+
+AWS = {
+	value = -200
+}
+
+HAR = {
+	value = -200
+}
+
+GEL = {
+	value = -200
+}
+
+MAJ = {
+	value = -200
+}
+
+army = {
+	name = "Army of the Warsangali Sultanate"
+	location = 1873	
+	regiment = {
+		name= "Shaykh's Guards"	
+		type = irregular
+		home = 1873
+	}
+}
+
+

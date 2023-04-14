@@ -1,0 +1,37 @@
+owner = CAN
+controller = CAN
+add_core = CAN
+trade_goods = timber
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+}

@@ -1,0 +1,49 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+trade_goods = iron
+life_rating = 35
+terrain = hills_mine
+state_building = {
+	level = 5
+	building = artillery_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 15
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 20
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+}
+ 

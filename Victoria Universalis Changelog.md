@@ -1,3 +1,35 @@
+#Version 0.77 - 4/14/2023
+## Bug fixes:
+* Fixed some slave provinces having extra province size modifiers they shouldn't have at the start.
+* Removed port from Telén province.
+* Made the "X = { exists = yes }" event condition display "X DOES EXIST" instead of "X DOES NOT EXIST"
+
+## Interface changes:
+* Reformatted the province window to be compatible with smaller resolutions.
+
+## Map changes:
+* Created East Indies and Polynesia continents.
+* Re-arranged province shapes in Poltava state.
+* Merged Herat and Sistan states and re-arranged a few provinces in Afghanistan.
+
+## Gameplay changes:
+* Disabled mine expansion buildings in agricultural RGOs and disabled farmland expansion buildings in mining RGOs.
+* Increase size of gold mines to 80,000 workers, increased output, and disabled mine expansion building.
+* Reworked Player Grants events. Now the player that receives the grant request can decide how much to give instead of the player asking for the grant deciding ahead of time how much other players will give.
+* Province selectors are no longer limited to one per state.
+* Province selectors will be automatically reset whenever a player enforces a transfer state cb at the end of a war.
+
+## Country changes:
+###### United Kingdom:
+* Reduced cost of the Help the Irish decision from 3,000,000 pounds to 2,000,000.
+
+###### Central Asia:
+* Mukriyan starts with 2 more provinces in 1836.
+* Created the country of Hazaristan in central Afghanistan which starts out as a puppet of Afghanistan in 1836. Afghanistan gets an event to conquer them at 60% civilization progress.
+
+###### South America:
+* Added Basic Chemistry and Military Staff System techs to all South American countries in 1836.
+
 #Version 0.76 - 4/5/2023
 ## Bug fixes:
 * Removed adjacency between Herat and Balkh.
@@ -34,6 +66,7 @@
 * Made war reparations give 10% of income instead of 20% and last 10 years instead of 5.
 * Disabled aristrocrat factory investments.
 
+## Country changes:
 ###### United Kingdom:
 * Added the Lexy Taxes on India decision that declares war on EIC for reparations and re-puppets EIC when enforced. All of EIC's provinces are instantly occupied in order to allow instantaneous forced peace. The reparations last for 10 years and this decision must be taken every 10 years in order to keep the taxes flowing.
 * Increased tariff efficiency modifier from Unequal Chinese Treaty modifier from 5% to 10%.

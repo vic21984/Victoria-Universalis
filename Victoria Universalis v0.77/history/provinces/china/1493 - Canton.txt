@@ -1,0 +1,21 @@
+owner = CHI
+controller = CHI
+add_core = CHI
+add_core = GNG
+trade_goods = tea_leaves
+life_rating = 30
+fort = 1
+naval_base = 1
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = paper_mill
+		upgrade = yes
+	}
+	naval_base = 4
+}

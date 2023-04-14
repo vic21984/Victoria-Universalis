@@ -1,0 +1,29 @@
+owner = CIV
+controller = CIV
+add_core = SAF
+trade_goods = grain
+life_rating = 15
+1913.1.1 = {
+owner = SAF
+controller = SAF
+life_rating = 35
+colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	naval_base = 4
+}
