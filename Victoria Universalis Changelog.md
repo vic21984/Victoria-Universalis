@@ -1,5 +1,5 @@
-##Version 0.78 - 4/20/2023
-### Bug fixes:
+# Version 0.78 - 4/20/2023
+## Bug fixes:
 * Fixed Chinese countries not being able to use acquire state and conquest cbs in 1913 and WW1.
 * Fixed missing ports in Haeju and Kaesong provinces.
 * Fixed demand for ally cb not working when using it on a country that's going to be annexed.
@@ -7,13 +7,13 @@
 * Fixed some provinces not being able to expand mines after switching to market goods.
 * Converted South Italian pops in Ancona to Italian in the multiplayer start.
 
-### Map changes:
+## Map changes:
 * Created Tillabéri state out of the western half of Outer Hausaland.
 
-### Gameplay changes:
+## Gameplay changes:
 * Player controlled uncivilized non-chinese countries with less than 30% civilization progress get 5000 free research points and all other player controlled uncivilized non-chinese countries get 15000 free research points in the multiplayer start.
 
-### Country changes:
+## Country changes:
 ###### Scandinavia:
 * Added Danish to Sweden-Norway's accepted cultures in multiplayer start.
 * Added Swedish to Denmark's accepted cultures in multiplayer start.
@@ -26,7 +26,7 @@
 * Made Carlist Spain the default Spanish nation in the multiplayer start.
 
 
-#Version 0.77 - 4/14/2023
+# Version 0.77 - 4/14/2023
 ## Bug fixes:
 * Fixed some slave provinces having extra province size modifiers they shouldn't have at the start.
 * Removed port from Telén province.
@@ -62,7 +62,7 @@
 * Bahia Blance and Mar del Plata start uncolonized in 1836.
 
 
-#Version 0.76 - 4/5/2023
+# Version 0.76 - 4/5/2023
 ## Bug fixes:
 * Removed adjacency between Herat and Balkh.
 * Fixed Trinidad & Tobago localization.
@@ -128,7 +128,7 @@
 * Made the effects of the October revolution event fire immediately instead of after the player chooses an option.
 
 
-#Version 0.75 - 12/20/2022
+# Version 0.75 - 12/20/2022
 ## Bug fixes:
 * Converted Ukrainian POPs in Przemysl to Russian in the multiplayer bookmark.
 * Added Sweden-Norwegian cores to Finland and starting OOB in multiplayer bookmark. 
@@ -227,7 +227,7 @@
 * Annexed Bohtan in multiplayer bookmark.
 
 
-#Version 0.74 - 7/29/2022
+# Version 0.74 - 7/29/2022
 ## Bug fixes:
 * Fixed bugged liberate nation and free peoples cb in crises.
 * Province RGO Expansion Flag will be added to mines that the AI expands.
@@ -314,7 +314,7 @@
 * Imported GFM population in North and South Manchuria.
 
 
-#Version 0.73 - 7/13/2022
+# Version 0.73 - 7/13/2022
 ## Bug fixes:
 * Made soldiers middle class and disabled assimilation of middle classes. There is an assimilation glitch that can make POPs go past their limit, e.g. soldiers going above 5% and clergy going above 4%. Grouping soldiers with bureaucrats, clergy, and officers and then disabling middle class assimilation should completely stop this glitch from occuring.
 * Changed the event that force peaces AI nations with the Neutral flag into a decision instead. If all conditions are met for an event, the earliest it can fire is the beginning of the next month. This created a delay where players could call in Neutral flagged AI nations into wars for a month, then instantly call them in again because ending wars via event doesn't give a truce. Decisions can be fired the same day conditions are met, so players cannot abuse Neutral flagged AI nations this way anymore.
@@ -375,7 +375,7 @@
 * Removed Adrar from 1836 start date.
 
 
-#Version 0.72 - 6/22/2022
+# Version 0.72 - 6/22/2022
 ## Bug fixes:
 * Fixed a bug in the base game that resulted in AI countries spamming only one type of factory when they had State Capitalism or Planned Economy economic policies. An unintended consequence of fixing this bug is that player countries having to wait until the start of the next month in order to manually build factories upon switching to State Capitalism or Planned Economy.
 * Fixed a bug that caused the game to crash when AI France or UK unlocked colonial negotiations and declared war on Sokoto.
@@ -467,7 +467,7 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * Created a decision for great powers bordering uncivilized Ethiopia to annex it in one war at the cost of 10 infamy. If they enact this decision, Ethiopia gets +30% mobilization for the duration of the war.
 
 
-#Version 0.71 - 6/4/2022
+# Version 0.71 - 6/4/2022
 ## Bug fixes:
 * Fixed bugged naval ports in Messina, Rügen, and Swinemünde.
 * Fixed Strait of Gibraltar name and unit placement.
@@ -534,7 +534,7 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * Imported GFM populations.
 
 
-#Version 0.7 - 10/16/2021
+# Version 0.7 - 10/16/2021
 ## Bug fixes:
 * Fixed AI exiled troops getting stuck after a war.
 * Irish POPs will be no longer migrate to Europe during the Irish Famine event when USA has lost a blockade war.
@@ -660,7 +660,7 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * Retaking a treaty port will convert the trade goods in that province from market goods into fish.
 
 
-#Version 0.65 - 10/16/2021
+# Version 0.65 - 10/16/2021
 ## Bug fixes:
 * Fixed major immigration bug where a new world nation would be unable to receive any immigrants if a single province was blockaded.
 * Lend to Egypt decision will no longer appear if Egypt doesn't exist.
@@ -691,7 +691,7 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * Changed country color to burgundy.
 
 
-#Version 0.64 - 10/16/2021
+# Version 0.64 - 10/16/2021
 ## Bug fixes:
 * End of Reconquista event will no longer trigger for Portugal if the "Restore Order to Brazil" decision was used on a Brazilian nation that wasn't already a puppet.
 * Japan can no longer enact multiple Meiji Restoration decisions.
@@ -722,11 +722,11 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * Reduced starting civilization progress to 20%.
 
 
-#Version 0.63b - 9/11/2021
+# Version 0.63b - 9/11/2021
 ## Bug fixes:
 * Fixed Request Grants decision causing players to crash.
 
-#Version 0.63 - 8/30/2021
+# Version 0.63 - 8/30/2021
 ## Bug fixes:
 * Fall of Punjab/Sind/Burma events won't fire anymore unless the East India Company has started their respective annexation wars.
 * Great War Reparations cannot be added onto a country that already has a Great War Reparations cb targeting them.
@@ -805,13 +805,13 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * Buffed Stockholm coal mine size.
 
 
-#Version 0.62b - 6/15/2021
+# Version 0.62b - 6/15/2021
 ## Bug fixes:
 * Fixed infinite money glitch for one of the province selector decisions.
 * Fixed Russia not starting with the "Serfdom not abolished" flag in the regular 1836 grand campaign.
 
 
-#Version 0.62 - 6/14/2021
+# Version 0.62 - 6/14/2021
 ## Bug fixes:
 * Removed extra naval base in New Brunswick state that prevented ports from being upgraded.
 * Claim Innger Angola decision will only transfer uncolonized land.
@@ -835,7 +835,7 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * End Gaza Kingdom decision now requires inorganic chemistry instead of colonial negotiations.
 
 
-#Version 0.61 - 6/9/2021
+# Version 0.61 - 6/9/2021
 ## Bug fixes:
 * Fixed Guangzhouwan and Tientsin not appearing in acquire chinese concession cb.
 * Fixed broken encourage craftsmen national focus bug for certain minor nations.
@@ -905,7 +905,7 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 * Imported HPM populations for southern Balkans and Anatolia.
 
 
-#Version 0.6 - 5/28/2021
+# Version 0.6 - 5/28/2021
 ## Bug Fixes:
 * Fixed endless Russian Civil War in 1913 and WW1 scenarios.
 * Fixed requirements on the acquire state and demand concession cbs which allow it to only target coastal states, neighbouring states, or states that neighbour a neighbouring state.
