@@ -1,5 +1,5 @@
-#Version 0.78 - 4/20/2023
-## Bug fixes:
+##Version 0.78 - 4/20/2023
+### Bug fixes:
 * Fixed Chinese countries not being able to use acquire state and conquest cbs in 1913 and WW1.
 * Fixed missing ports in Haeju and Kaesong provinces.
 * Fixed demand for ally cb not working when using it on a country that's going to be annexed.
@@ -7,13 +7,13 @@
 * Fixed some provinces not being able to expand mines after switching to market goods.
 * Converted South Italian pops in Ancona to Italian in the multiplayer start.
 
-## Map changes:
+### Map changes:
 * Created Tillabéri state out of the western half of Outer Hausaland.
 
-## Gameplay changes:
+### Gameplay changes:
 * Player controlled uncivilized non-chinese countries with less than 30% civilization progress get 5000 free research points and all other player controlled uncivilized non-chinese countries get 15000 free research points in the multiplayer start.
 
-## Country changes:
+### Country changes:
 ###### Scandinavia:
 * Added Danish to Sweden-Norway's accepted cultures in multiplayer start.
 * Added Swedish to Denmark's accepted cultures in multiplayer start.
