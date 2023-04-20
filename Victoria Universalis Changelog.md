@@ -15,8 +15,8 @@
 
 ## Country changes:
 ###### Scandinavia:
-* Added Danish to Sweden-Norway's accepted cultures.
-* Added Swedish to Denmark's accepted cultures.
+* Added Danish to Sweden-Norway's accepted cultures in multiplayer start.
+* Added Swedish to Denmark's accepted cultures in multiplayer start.
 
 ###### China & India:
 * Increased farmer promotion chance of player controlled Chinese and Indian pops from 20% to 30%. This makes it less likely for Chinese and Indian pops to promote into non farmer popytypes when not using a national focus.
