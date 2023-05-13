@@ -7,8 +7,7 @@
 
 ## Interface changes:
 * Renamed the general trait columns from Personality and Background to Combat Traits and Support Traits. Attack and defense values are listed in the combat column and all other traits are listed in the support column.
-* Expanded the general display list in the Military tab from 6 
-generals to 11 generals.
+* Expanded the general display list in the Military tab from 6 generals to 11 generals.
 * Brightened up the political map overlay and removed the filter.
 * Removed legacy Admin Points resource sprites and upscaled the rest of the resource sprites to their original quality.
 
@@ -45,6 +44,34 @@ generals to 11 generals.
 ###### South America:
 * Uncolonized most of the Amazon in 1836 and added decisions to explore it.
 * Peru and Bolivia are combined into the Andine Federation in the multiplayer bookmark.
+
+
+# Version 0.78 - 4/20/2023
+## Bug fixes:
+* Fixed Chinese countries not being able to use acquire state and conquest cbs in 1913 and WW1.
+* Fixed missing ports in Haeju and Kaesong provinces.
+* Fixed demand for ally cb not working when using it on a country that's going to be annexed.
+* Fixed military constructions uncivilized reform not unlocking the post-napoleonic thought tech.
+* Fixed some provinces not being able to expand mines after switching to market goods.
+* Converted South Italian pops in Ancona to Italian in the multiplayer start.
+
+## Map changes:
+* Created Tillabéri state out of the western half of Outer Hausaland.
+
+## Gameplay changes:
+* Player controlled uncivilized non-chinese countries with less than 30% civilization progress get 5000 free research points and all other player controlled uncivilized non-chinese countries get 15000 free research points in the multiplayer start.
+
+## Country changes:
+###### Scandinavia:
+* Added Danish to Sweden-Norway's accepted cultures in multiplayer start.
+* Added Swedish to Denmark's accepted cultures in multiplayer start.
+
+###### China & India:
+* Increased farmer promotion chance of player controlled Chinese and Indian pops from 20% to 30%. This makes it less likely for Chinese and Indian pops to promote into non farmer popytypes when not using a national focus.
+
+###### Spain:
+* Added decision for Carlist Spain to annex the viceroyalties.
+* Made Carlist Spain the default Spanish nation in the multiplayer start.
 
 
 # Version 0.77 - 4/14/2023
