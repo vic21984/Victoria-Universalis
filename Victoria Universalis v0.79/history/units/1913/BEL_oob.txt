@@ -1,0 +1,348 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "King Albert I"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Antonin de Selliers de Moranville"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Émile Jean Henri Dossin"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Gérard Leman"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a3d_1
+}
+leader = {
+	name = "Augustin Édouard Michel"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Albert Lantonnois van Rode"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Léon de Witte de Haelen"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a1d_1
+}
+leader = {
+	name = "Alphonse Jacques de Dixmude"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Charles Tombeur"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Armand Huyghé"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 390
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+}
+
+army = {
+	name = "1re Division d'Armee"
+	location = 389
+	regiment = {
+		name= "2e Brigade d'Infanterie"
+		type = infantry
+		home = 392
+	}
+
+	regiment = {
+		name= "3e Brigade d'Infanterie"
+		type = infantry
+		home = 393
+	}
+
+	regiment = {
+		name= "4e Brigade d'Infanterie"
+		type = infantry
+		home = 393
+	}
+
+	regiment = {
+		name= "1re Regiment de Artillerie"
+		type = artillery
+		home = 392
+	}
+	
+	regiment = {
+		name= "3e Regiment de Lanciers"
+		type = hussar
+		home = 390
+	}
+}
+army = {
+	name = "2e Division d'Armee"
+	location = 390
+	regiment = {
+		name= "5e Brigade d'Infanterie"
+		type = infantry
+		home = 388
+	}
+
+	regiment = {
+		name= "6e Brigade d'Infanterie"
+		type = infantry
+		home = 388
+	}
+	
+	regiment = {
+		name= "7e Brigade d'Infanterie"
+		type = infantry
+		home = 389
+	}
+
+	regiment = {
+		name= "2e Regiment de Artillerie"
+		type = artillery
+		home = 398
+	}
+
+	regiment = {
+		name= "4e Regiment de Chasseurs à Cheval"
+		type = dragoon
+		home = 395
+	}
+}
+army = {
+	name = "3e Division d'Armee"
+	location = 391
+	regiment = {
+		name= "9e Brigade d'Infanterie"
+		type = infantry
+		home = 395
+	}
+
+	regiment = {
+		name= "11e Brigade d'Infanterie"
+		type = infantry
+		home = 391
+	}
+
+	regiment = {
+		name= "12e Brigade d'Infanterie"
+		type = infantry
+		home = 1991
+	}
+	
+	regiment = {
+		name= "14e Brigade d'Infanterie"
+		type = infantry
+		home = 391
+	}
+
+	regiment = {
+		name= "3e Regiment de Artillerie"
+		type = artillery
+		home = 392
+	}
+	
+	regiment = {
+		name= "2e Regiment de Lanciers"
+		type = hussar
+		home = 1998
+	}
+}
+army = {
+	name = "4e Division d'Armee"
+	location = 392
+	regiment = {
+		name= "8e Brigade d'Infanterie"
+		type = infantry
+		home = 394
+	}
+
+	regiment = {
+		name= "10e Brigade d'Infanterie"
+		type = infantry
+		home = 394
+	}
+
+	regiment = {
+		name= "13e Brigade d'Infanterie"
+		type = infantry
+		home = 392
+	}
+	
+	regiment = {
+		name= "15e Brigade d'Infanterie"
+		type = infantry
+		home = 392
+	}
+
+	regiment = {
+		name= "4e Regiment de Artillerie"
+		type = artillery
+		home = 389
+	}
+	
+	regiment = {
+		name= "1re Regiment de Lanciers"
+		type = hussar
+		home = 389
+	}
+}
+
+army = {
+	name = "5e Division d'Armee"
+	location = 394
+	regiment = {
+		name= "1re Brigade d'Infanterie"
+		type = infantry
+		home = 394
+	}
+
+	regiment = {
+		name= "16e Brigade d'Infanterie"
+		type = infantry
+		home = 1982
+	}
+
+	regiment = {
+		name= "17e Brigade d'Infanterie"
+		type = infantry
+		home = 1982
+	}
+	
+	regiment = {
+		name= "5e Regiment de Artillerie"
+		type = artillery
+		home = 390
+	}
+	
+	regiment = {
+		name= "1re Regiment de Chasseurs à Pied"
+		type = dragoon
+		home = 398
+	}
+}
+
+army = {
+	name = "6e Division d'Armee"
+	location = 387
+	regiment = {
+		name= "18e Brigade d'Infanterie"
+		type = infantry
+		home = 387
+	}
+
+	regiment = {
+		name= "19e Brigade d'Infanterie"
+		type = infantry
+		home = 387
+	}
+
+	regiment = {
+		name= "20e Brigade d'Infanterie"
+		type = infantry
+		home = 387
+	}
+	
+	regiment = {
+		name= "6e Regiment de Artillerie"
+		type = artillery
+		home = 387
+	}
+	
+	regiment = {
+		name= "1re Regiment de Chasseurs à Cheval"
+		type = dragoon
+		home = 1989
+	}
+}

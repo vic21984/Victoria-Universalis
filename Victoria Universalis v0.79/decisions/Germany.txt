@@ -1,0 +1,309 @@
+## Audax Validator "!" Ignore_1004
+## Audax Validator "!" Ignore_1009
+political_decisions = {
+	ems_dispatch = {
+		potential = {
+			ai = no
+			NOT = {
+				has_country_flag = ems_dispatch_sent
+			}
+			is_culture_group = germanic
+			NOT = {
+				OR = {
+					tag = AUS
+					tag = KUK
+				}
+			}
+			exists = FRA
+		}
+
+		allow = {
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 5
+			FRA = {
+				country_event = { id=19200 days=0 }
+			}
+			set_country_flag = ems_dispatch_sent
+			FRA_412 = { add_core = GER }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					war_exhaustion = 1
+					NOT = {
+						GER = {
+							all_core = {
+								OR = {
+									owned_by = THIS
+									owner = {
+										in_sphere = THIS
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	ems_dispatch_ai = {
+		potential = {
+			ai = yes
+			NOT = {
+				has_country_flag = ems_dispatch_sent
+			}
+			is_culture_group = germanic
+			NOT = {
+				OR = {
+					tag = AUS
+					tag = KUK
+				}
+			}
+			exists = FRA
+		}
+
+		allow = {
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 5
+			FRA = {
+				country_event = { id=19200 days=0 }
+				relation = {
+					who = RUS
+					value = -200
+				}
+				relation = {
+					who = AUS
+					value = -200
+				}
+				relation = {
+					who = KUK
+					value = -200
+				}
+				leave_alliance = RUS
+				leave_alliance = AUS
+				leave_alliance = KUK
+			}
+			set_country_flag = ems_dispatch_sent
+			FRA_412 = { add_core = GER }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				FRA = { war = no }
+				OR = {
+					war_exhaustion = 1
+					FRA = { brigades_compare = 1 }
+				}
+			}
+		}
+	}
+
+	support_ruhr_industrialism = {
+		potential = {
+			has_global_flag = ruhr_boom_has_happened
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+			}
+		}
+
+		allow = {
+			cheap_steel = 1
+			iron_breech_loaded_artillery = 1
+			state_n_government = 1
+			industrial_score = 500
+			owns = 577
+			owns = 578
+			owns = 2561
+			owns = 576
+			owns = 575
+			575 = {
+				state_scope = {
+					has_building = steel_factory
+				}
+			}
+		}
+
+		effect = {
+			tech_school = prussian_tech_school
+			prestige = 5
+		}
+	}	
+
+	die_wacht_am_rhein = {
+		potential = {
+			OR = {
+				tag = GER
+				tag = NGF
+				tag = PRU
+			}
+			FRA = { exists = yes }
+			FRA = { has_country_flag = crisis_on_the_rhine }
+			NOT = { has_country_flag = watching_the_rhine }
+		}
+		allow = {
+			NOT = {
+				relation = {
+					who = FRA
+					value = 0
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = { name = die_wacht_am_rhein duration = 365 }
+			set_country_flag = watching_the_rhine
+		}
+	}
+
+	kaiser_wilhelms_land = {
+		potential = {
+			tag = GER
+			owns = 1531
+			owns = 2530
+			owns = 2531
+			owns = 2537
+			owns = 2539
+			NOT = {
+				has_country_flag = wir_wollen_unseren_alten_kaiser_wilhelm_wiederhaben
+			}
+		}
+
+		allow = {
+			invention = mission_to_civilize
+		}
+
+		effect = {
+			prestige = 10
+			2531 = {
+				change_province_name = "Friedrich-Wilhelmshafen"
+				state_scope = {
+					change_region_name = "Kaiser-Wilhelms-Land"
+				}
+			}
+			set_country_flag = wir_wollen_unseren_alten_kaiser_wilhelm_wiederhaben
+		}
+	}
+
+	the_heligoland_question = {
+		potential = {
+			tag = GER
+			NOT = {
+				has_country_flag = has_questioned_heligoland
+			}
+		}
+
+		allow = {
+			is_greater_power = yes
+			533 = { owned_by = ENG }
+		}
+		
+		effect = {
+			533 = {
+				add_core = GER # Heligoland is my last territorial demand!
+				remove_core = ENG
+			}
+			set_country_flag = has_questioned_heligoland
+			ENG = { country_event = { id = 36949 days = 0 } }
+		}
+	}
+
+	von_moltkes_staff_reforms = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			NOT = {
+				has_country_flag = von_moltke
+			}
+		}
+		allow = {
+			army_decision_making = 1
+		}
+		effect = {
+			define_general = {
+				name = "§WHelmuth von Moltke the Elder"
+				personality = spd20rec15
+				background = 4a4d_1
+			}
+			add_country_modifier = {
+				name = prussian_general_staff
+				duration = 10950
+			}
+			prestige = 5
+			set_country_flag = von_moltke
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = no
+			}
+		}
+	}
+
+	the_ruhr_boom = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			owns = 578
+			owns = 2561
+			owns = 575
+			NOT = {
+				has_global_flag = ruhr_boom_has_happened
+			}
+		}
+
+		allow = {
+			market_structure = 1
+			organized_factories = 1
+			early_railroad = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = ruhr_boom
+				duration = 3650
+			}
+			set_global_flag = ruhr_boom_has_happened
+		}
+	}
+}

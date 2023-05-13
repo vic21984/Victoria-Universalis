@@ -1,0 +1,186 @@
+country_event = {
+    id = 36001
+    title = "EVTNAME36001"
+    desc = "EVTDESC36001"
+    picture = "isfahan" 
+
+    trigger = {
+        tag = PER
+        year = 1846
+        owns = 1147
+		NOT = { has_country_flag = khorasan_uprising }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+		name = "EVTOPTA36001"
+		set_country_flag = khorasan_uprising
+		PER_1147 = {
+			add_core = KHR
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1116
+					province_id = 1149
+					province_id = 1147
+					province_id = 1150
+					is_core = TKM
+				}
+			}
+			secede_province = KHR
+		}
+		KHR = {
+			government = absolute_monarchy
+			capital = 1147
+			define_general = {
+				name = "Hasan Khan Salar"
+				personality = org10mor20
+				background = 2a2d_1
+			}
+			define_general = {
+				name = "Jafar Qoli Khan"
+				personality = org10mor20
+				background = 3a1d_1
+			}
+			treasury = 200000
+			ammunition = 500
+			small_arms = 500
+			canned_food = 500
+		}
+		country_event = { id = 36002 days = 180 }
+    }
+}
+country_event = {
+    id = 36002
+    title = "EVTNAME36002"
+    desc = "EVTDESC36002"
+    picture = "persian_cavalry" 
+
+    is_triggered_only = yes
+
+    option = {
+		name = "EVTOPTA36002"
+		release_vassal = KHR
+		any_country = {
+			limit = {
+				war_with = KHR
+			}
+			end_war = KHR
+		}
+        war = {
+			target = KHR
+			attacker_goal = { casus_belli = annex_core_country }
+            defender_goal = { casus_belli = acquire_all_cores }
+			defender_goal = { casus_belli = remove_cores country = KHR }
+			call_ally = yes
+        }
+    }
+}
+
+#Puppet Independence
+country_event = {
+	id = 36003
+	title = "EVTNAME36003" 
+	desc = "EVTDESC36003"
+	picture = "Rebellion"
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = KHT
+				overlord = {
+					NOT = { owns = 1072 }
+				}
+			}
+			AND = {
+				tag = BSR
+				overlord = {
+					NOT = { owns = 1135 }
+				}
+			}
+			AND = {
+				tag = KHZ
+				overlord = {
+					NOT = { owns = 1133 }
+				}
+			}
+			AND = {
+				tag = MKN
+				overlord = {
+					NOT = { owns = 1108 }
+				}
+			}
+		}
+		vassal_of = PER
+		NOT = { has_country_flag = rebelled_per }
+	}
+
+	option = {
+		name = "EVTOPTA36003"
+		set_country_flag = rebelled_per
+		leave_alliance = PER
+		PER = {
+			release_vassal = THIS
+			diplomatic_influence = { who = THIS value = -200 }
+			country_event = { id = 36004 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 36004
+	title = "EVTNAME36004" 
+	desc = "EVTDESC36004"
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA36004"
+	}
+}
+
+#Hazara Uprising
+country_event = {
+    id = 36005
+	picture = "hazara"
+    title = "EVTNAME36005"
+    desc = "EVTDESC36005"
+
+    trigger = {
+		tag = AFG
+		civilization_progress = 0.6
+		HAZ = { vassal_of = THIS exists = yes }
+		NOT = { has_country_flag = hazara_uprising }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+		name = "EVTOPTA36005"
+		set_country_flag = hazara_uprising
+		release_vassal = HAZ
+		random_owned = {
+			limit = {
+				owner = {
+					ai = yes
+					HAZ = { ai = yes }
+				}
+			}
+			owner = { inherit = HAZ }
+		}
+		random_owned = {
+			limit = {
+				owner = { ai = no }
+			}
+			owner = {
+				war = {
+					target = HAZ
+					attacker_goal = { casus_belli = conquest_free }
+				}
+			}
+		}
+    }
+}

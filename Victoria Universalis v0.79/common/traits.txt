@@ -1,0 +1,2179 @@
+#
+# Allowed variables 
+#
+# attack = + or - on dice roll in combat when attacking. (like skill in eu3)
+# defence = + or - on dice roll in combat. (like skill in eu3)
+# morale = % modifier on morale.
+# organisation = % bonus on org.
+# reconnaissance = % bonus on reconaissance.
+# speed = % bonus on movement
+# attrition = penalty on attrition. (negative is good)
+# experience = % bonus on experience gain.
+# reliability = mil gain or loss for pop associated.
+#
+
+
+
+personality = {
+	no_personality = {
+	}
+	spd20rec05 = {
+		speed = 0.2
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	spd20rec10 = {
+		speed = 0.2
+		reconnaissance = 0.1
+		reliability = 1
+	}
+	spd20rec15 = {
+		speed = 0.2
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	org05mor10 = {
+		organisation = 0.05
+		morale = 0.10
+		reliability = 1
+	}
+	org05mor10_2 = {
+		organisation = 0.05
+		morale = 0.10
+		reliability = 1
+	}
+	org05mor10_3 = {
+		organisation = 0.05
+		morale = 0.10
+		reliability = 1
+	}
+	org05mor10_4 = {
+		organisation = 0.05
+		morale = 0.10
+		reliability = 1
+	}
+	org05mor20 = {
+		organisation = 0.05
+		morale = 0.20
+		reliability = 1
+	}
+	org05mor30 = {
+		organisation = 0.05
+		morale = 0.30
+		reliability = 1
+	}
+	org05mor40 = {
+		organisation = 0.05
+		morale = 0.40
+		reliability = 1
+	}
+	org05rec05 = {
+		organisation = 0.05
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	org05rec05_2 = {
+		organisation = 0.05
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	org05rec05_3 = {
+		organisation = 0.05
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	org05rec05_4 = {
+		organisation = 0.05
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	org05rec10 = {
+		organisation = 0.05
+		reconnaissance = 0.10
+		reliability = 1
+	}
+	org05rec15 = {
+		organisation = 0.05
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	org05att05 = {
+		organisation = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	org05att05_2 = {
+		organisation = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	org05att05_3 = {
+		organisation = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	org05att05_4 = {
+		organisation = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	org05att10 = {
+		organisation = 0.05
+		attrition = -1
+		reliability = 1
+	}
+	org05att15 = {
+		organisation = 0.05
+		attrition = -1.5
+		reliability = 1
+	}
+	org05exp05 = {
+		organisation = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	org05exp05_2 = {
+		organisation = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	org05exp05_3 = {
+		organisation = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	org05exp05_4 = {
+		organisation = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	org05exp10 = {
+		organisation = 0.05
+		experience = 0.1
+		reliability = 1
+	}
+	org05exp15 = {
+		organisation = 0.05
+		experience = 0.15
+		reliability = 1
+	}
+	org10mor10 = {
+		organisation = 0.1
+		morale = 0.1
+		reliability = 1
+	}
+	org10mor20 = {
+		organisation = 0.1
+		morale = 0.2
+		reliability = 1
+	}
+	org10mor30 = {
+		organisation = 0.1
+		morale = 0.3
+		reliability = 1
+	}
+	org10mor40 = {
+		organisation = 0.1
+		morale = 0.4
+		reliability = 1
+	}
+	org10rec05 = {
+		organisation = 0.1
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	org10rec10 = {
+		organisation = 0.1
+		reconnaissance = 0.1
+		reliability = 1
+	}
+	org10rec15 = {
+		organisation = 0.1
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	org10att05 = {
+		organisation = 0.1
+		attrition = -0.5
+		reliability = 1
+	}
+	org10att10 = {
+		organisation = 0.1
+		attrition = -1
+		reliability = 1
+	}
+	org10att15 = {
+		organisation = 0.1
+		attrition = -1.5
+		reliability = 1
+	}
+	org10exp05 = {
+		organisation = 0.1
+		experience = 0.05
+		reliability = 1
+	}
+	org10exp10 = {
+		organisation = 0.1
+		experience = 0.1
+		reliability = 1
+	}
+	org10exp15 = {
+		organisation = 0.1
+		experience = 0.15
+		reliability = 1
+	}
+	org15mor10 = {
+		organisation = 0.15
+		morale = 0.1
+		reliability = 1
+	}
+	org15mor20 = {
+		organisation = 0.15
+		morale = 0.2
+		reliability = 1
+	}
+	org15mor30 = {
+		organisation = 0.15
+		morale = 0.3
+		reliability = 1
+	}
+	org15mor40 = {
+		organisation = 0.15
+		morale = 0.4
+		reliability = 1
+	}
+	org15rec05 = {
+		organisation = 0.15
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	org15rec10 = {
+		organisation = 0.15
+		reconnaissance = 0.1
+		reliability = 1
+	}
+	org15rec15 = {
+		organisation = 0.15
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	org15att05 = {
+		organisation = 0.15
+		attrition = -0.5
+		reliability = 1
+	}
+	org15att10 = {
+		organisation = 0.15
+		attrition = -1
+		reliability = 1
+	}
+	org15att15 = {
+		organisation = 0.15
+		attrition = -1.5
+		reliability = 1
+	}
+	org15exp05 = {
+		organisation = 0.15
+		experience = 0.05
+		reliability = 1
+	}
+	org15exp10 = {
+		organisation = 0.15
+		experience = 0.1
+		reliability = 1
+	}
+	org15exp15 = {
+		organisation = 0.15
+		experience = 0.15
+		reliability = 1
+	}
+	mor10rec05 = {
+		morale = 0.1
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor10rec05_2 = {
+		morale = 0.1
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor10rec05_3 = {
+		morale = 0.1
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor10rec05_4 = {
+		morale = 0.1
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor10rec10 = {
+		morale = 0.1
+		reconnaissance = 0.1
+		reliability = 1
+	}
+	mor10rec15 = {
+		morale = 0.1
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	mor10att05 = {
+		morale = 0.1
+		attrition = -0.5
+		reliability = 1
+	}
+	mor10att05_2 = {
+		morale = 0.1
+		attrition = -0.5
+		reliability = 1
+	}
+	mor10att05_3 = {
+		morale = 0.1
+		attrition = -0.5
+		reliability = 1
+	}
+	mor10att05_4 = {
+		morale = 0.1
+		attrition = -0.5
+		reliability = 1
+	}
+	mor10att10 = {
+		morale = 0.1
+		attrition = -1
+		reliability = 1
+	}
+	mor10att15 = {
+		morale = 0.1
+		attrition = -1.5
+		reliability = 1
+	}
+	mor10exp05 = {
+		morale = 0.1
+		experience = 0.05
+		reliability = 1
+	}
+	mor10exp05_2 = {
+		morale = 0.1
+		experience = 0.05
+		reliability = 1
+	}
+	mor10exp05_3 = {
+		morale = 0.1
+		experience = 0.05
+		reliability = 1
+	}
+	mor10exp05_4 = {
+		morale = 0.1
+		experience = 0.05
+		reliability = 1
+	}
+	mor10exp10 = {
+		morale = 0.1
+		experience = 0.1
+		reliability = 1
+	}
+	mor10exp15 = {
+		morale = 0.1
+		experience = 0.15
+		reliability = 1
+	}
+	mor20rec05 = {
+		morale = 0.2
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor20rec05_2 = {
+		morale = 0.2
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor20rec10 = {
+		morale = 0.2
+		reconnaissance = 0.1
+		reliability = 1
+	}
+	mor20rec15 = {
+		morale = 0.2
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	mor20att05 = {
+		morale = 0.2
+		attrition = -0.5
+		reliability = 1
+	}
+	mor20att05_2 = {
+		morale = 0.2
+		attrition = -0.5
+		reliability = 1
+	}
+	mor20att10 = {
+		morale = 0.2
+		attrition = -1
+		reliability = 1
+	}
+	mor20att15 = {
+		morale = 0.2
+		attrition = -1.5
+		reliability = 1
+	}
+	mor20exp05 = {
+		morale = 0.2
+		experience = 0.05
+		reliability = 1
+	}
+	mor20exp05_2 = {
+		morale = 0.2
+		experience = 0.05
+		reliability = 1
+	}
+	mor20exp10 = {
+		morale = 0.2
+		experience = 0.1
+		reliability = 1
+	}
+	mor20exp15 = {
+		morale = 0.2
+		experience = 0.15
+		reliability = 1
+	}
+	mor30rec05 = {
+		morale = 0.3
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor30rec10 = {
+		morale = 0.3
+		reconnaissance = 0.1
+		reliability = 1
+	}
+	mor30rec15 = {
+		morale = 0.3
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	mor30att05 = {
+		morale = 0.3
+		attrition = -0.5
+		reliability = 1
+	}
+	mor30att10 = {
+		morale = 0.3
+		attrition = -1
+		reliability = 1
+	}
+	mor30att15 = {
+		morale = 0.3
+		attrition = -1.5
+		reliability = 1
+	}
+	mor30exp05 = {
+		morale = 0.3
+		experience = 0.05
+		reliability = 1
+	}
+	mor30exp10 = {
+		morale = 0.3
+		experience = 0.1
+		reliability = 1
+	}
+	mor30exp15 = {
+		morale = 0.3
+		experience = 0.15
+		reliability = 1
+	}
+	mor40rec05 = {
+		morale = 0.4
+		reconnaissance = 0.05
+		reliability = 1
+	}
+	mor40rec10 = {
+		morale = 0.4
+		reconnaissance = 0.1
+		reliability = 1
+	}
+	mor40rec15 = {
+		morale = 0.4
+		reconnaissance = 0.15
+		reliability = 1
+	}
+	mor40att05 = {
+		morale = 0.4
+		attrition = -0.5
+		reliability = 1
+	}
+	mor40att10 = {
+		morale = 0.4
+		attrition = -1
+		reliability = 1
+	}
+	mor40att15 = {
+		morale = 0.4
+		attrition = -1.5
+		reliability = 1
+	}
+	mor40exp05 = {
+		morale = 0.3
+		experience = 0.05
+		reliability = 1
+	}
+	mor40exp10 = {
+		morale = 0.3
+		experience = 0.1
+		reliability = 1
+	}
+	mor40exp15 = {
+		morale = 0.3
+		experience = 0.15
+		reliability = 1
+	}
+	rec05att05 = {
+		reconnaissance = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	rec05att05_2 = {
+		reconnaissance = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	rec05att05_3 = {
+		reconnaissance = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	rec05att05_4 = {
+		reconnaissance = 0.05
+		attrition = -0.5
+		reliability = 1
+	}
+	rec05att10 = {
+		reconnaissance = 0.05
+		attrition = -1
+		reliability = 1
+	}
+	rec05att15 = {
+		reconnaissance = 0.05
+		attrition = -1.5
+		reliability = 1
+	}
+	rec05exp05 = {
+		reconnaissance = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	rec05exp05_2 = {
+		reconnaissance = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	rec05exp05_3 = {
+		reconnaissance = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	rec05exp05_4 = {
+		reconnaissance = 0.05
+		experience = 0.05
+		reliability = 1
+	}
+	rec05exp10 = {
+		reconnaissance = 0.05
+		experience = 0.1
+		reliability = 1
+	}
+	rec05exp15 = {
+		reconnaissance = 0.05
+		experience = 0.15
+		reliability = 1
+	}
+	rec10att05 = {
+		reconnaissance = 0.1
+		attrition = -0.5
+		reliability = 1
+	}
+	rec10att10 = {
+		reconnaissance = 0.1
+		attrition = -1
+		reliability = 1
+	}
+	rec10att15 = {
+		reconnaissance = 0.1
+		attrition = -1.5
+		reliability = 1
+	}
+	rec10exp05 = {
+		reconnaissance = 0.1
+		experience = 0.05
+		reliability = 1
+	}
+	rec10exp10 = {
+		reconnaissance = 0.1
+		experience = 0.1
+		reliability = 1
+	}
+	rec10exp15 = {
+		reconnaissance = 0.1
+		experience = 0.15
+		reliability = 1
+	}
+	rec15att05 = {
+		reconnaissance = 0.15
+		attrition = -0.5
+		reliability = 1
+	}
+	rec15att10 = {
+		reconnaissance = 0.15
+		attrition = -1
+		reliability = 1
+	}
+	rec15att15 = {
+		reconnaissance = 0.15
+		attrition = -1.5
+		reliability = 1
+	}
+	rec15exp05 = {
+		reconnaissance = 0.15
+		experience = 0.05
+		reliability = 1
+	}
+	rec15exp10 = {
+		reconnaissance = 0.15
+		experience = 0.1
+		reliability = 1
+	}
+	rec15exp15 = {
+		reconnaissance = 0.15
+		experience = 0.15
+		reliability = 1
+	}
+	att05exp05 = {
+		attrition = -0.5
+		experience = 0.05
+		reliability = 1
+	}
+	att05exp05_2 = {
+		attrition = -0.5
+		experience = 0.05
+		reliability = 1
+	}
+	att05exp05_3 = {
+		attrition = -0.5
+		experience = 0.05
+		reliability = 1
+	}
+	att05exp05_4 = {
+		attrition = -0.5
+		experience = 0.05
+		reliability = 1
+	}
+	att05exp10 = {
+		attrition = -0.5
+		experience = 0.1
+		reliability = 1
+	}
+	att05exp15 = {
+		attrition = -0.5
+		experience = 0.15
+		reliability = 1
+	}
+	att10exp05 = {
+		attrition = -1
+		experience = 0.05
+		reliability = 1
+	}
+	att10exp10 = {
+		attrition = -1
+		experience = 0.1
+		reliability = 1
+	}
+	att10exp15 = {
+		attrition = -1
+		experience = 0.15
+		reliability = 1
+	}
+	att15exp05 = {
+		attrition = -1.5
+		experience = 0.05
+		reliability = 1
+	}
+	att15exp10 = {
+		attrition = -1.5
+		experience = 0.1
+		reliability = 1
+	}
+	att15exp15 = {
+		attrition = -1.5
+		experience = 0.15
+		reliability = 1
+	}
+}
+
+background = {
+	no_background = {
+	}
+	5a4d_1 = {
+		attack = 5
+		defence = 4
+	}
+	5a3d_1 = {
+		attack = 5
+		defence = 3
+	}
+	4a5d_1 = {
+		attack = 4
+		defence = 5
+	}
+	4a4d_1 = {
+		attack = 4
+		defence = 4
+	}
+	4a4d_2 = {
+		attack = 4
+		defence = 4
+	}
+	4a3d_1 = {
+		attack = 4
+		defence = 3
+	}
+	4a3d_2 = {
+		attack = 4
+		defence = 3
+	}
+	4a2d_1 = {
+		attack = 4
+		defence = 2
+	}
+	4a2d_2 = {
+		attack = 4
+		defence = 2
+	}
+	3a5d_1 = {
+		attack = 3
+		defence = 5
+	}
+	3a4d_1 = {
+		attack = 3
+		defence = 4
+	}
+	3a4d_2 = {
+		attack = 3
+		defence = 4
+	}
+	3a3d_1 = {
+		attack = 3
+		defence = 3
+	}
+	3a3d_2 = {
+		attack = 3
+		defence = 3
+	}
+	3a3d_3 = {
+		attack = 3
+		defence = 3
+	}
+	3a3d_4 = {
+		attack = 3
+		defence = 3
+	}
+	3a3d_5 = {
+		attack = 3
+		defence = 3
+	}
+	3a3d_6 = {
+		attack = 3
+		defence = 3
+	}
+	3a3d_7 = {
+		attack = 3
+		defence = 3
+	}
+	3a3d_8 = {
+		attack = 3
+		defence = 3
+	}
+	3a2d_1 = {
+		attack = 3
+		defence = 2
+	}
+	3a2d_2 = {
+		attack = 3
+		defence = 2
+	}
+	3a2d_3 = {
+		attack = 3
+		defence = 2
+	}
+	3a2d_4 = {
+		attack = 3
+		defence = 2
+	}
+	3a2d_5 = {
+		attack = 3
+		defence = 2
+	}
+	3a2d_6 = {
+		attack = 3
+		defence = 2
+	}
+	3a2d_7 = {
+		attack = 3
+		defence = 2
+	}
+	3a2d_8 = {
+		attack = 3
+		defence = 2
+	}
+	3a1d_1 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_2 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_3 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_4 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_5 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_6 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_7 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_8 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_9 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_10 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_11 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_12 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_13 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_14 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_15 = {
+		attack = 3
+		defence = 1
+	}
+	3a1d_16 = {
+		attack = 3
+		defence = 1
+	}
+	2a4d_1 = {
+		attack = 2
+		defence = 4
+	}
+	2a4d_2 = {
+		attack = 2
+		defence = 4
+	}
+	2a3d_1 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_2 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_3 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_4 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_5 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_6 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_7 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_8 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_9 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_10 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_11 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_12 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_13 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_14 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_15 = {
+		attack = 2
+		defence = 3
+	}
+	2a3d_16 = {
+		attack = 2
+		defence = 3
+	}
+	2a2d_1 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_2 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_3 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_4 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_5 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_6 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_7 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_8 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_9 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_10 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_11 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_12 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_13 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_14 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_15 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_16 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_17 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_18 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_19 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_20 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_21 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_22 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_23 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_24 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_25 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_26 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_27 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_28 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_29 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_30 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_31 = {
+		attack = 2
+		defence = 2
+	}
+	2a2d_32 = {
+		attack = 2
+		defence = 2
+	}
+	2a1d_1 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_2 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_3 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_4 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_5 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_6 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_7 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_8 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_9 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_10 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_11 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_12 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_13 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_14 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_15 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_16 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_17 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_18 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_19 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_20 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_21 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_22 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_23 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_24 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_25 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_26 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_27 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_28 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_29 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_30 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_31 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_32 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_33 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_34 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_35 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_36 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_37 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_38 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_39 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_40 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_41 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_42 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_43 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_44 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_45 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_46 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_47 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_48 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_49 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_50 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_51 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_52 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_53 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_54 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_55 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_56 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_57 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_58 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_59 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_60 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_61 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_62 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_63 = {
+		attack = 2
+		defence = 1
+	}
+	2a1d_64 = {
+		attack = 2
+		defence = 1
+	}
+	1a3d_1 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_2 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_3 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_4 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_5 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_6 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_7 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_8 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_9 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_10 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_11 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_12 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_13 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_14 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_15 = {
+		attack = 1
+		defence = 3
+	}
+	1a3d_16 = {
+		attack = 1
+		defence = 3
+	}
+	1a2d_1 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_2 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_3 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_4 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_5 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_6 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_7 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_8 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_9 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_10 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_11 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_12 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_13 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_14 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_15 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_16 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_17 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_18 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_19 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_20 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_21 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_22 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_23 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_24 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_25 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_26 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_27 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_28 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_29 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_30 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_31 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_32 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_33 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_34 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_35 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_36 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_37 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_38 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_39 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_40 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_41 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_42 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_43 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_44 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_45 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_46 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_47 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_48 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_49 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_50 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_51 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_52 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_53 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_54 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_55 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_56 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_57 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_58 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_59 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_60 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_61 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_62 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_63 = {
+		attack = 1
+		defence = 2
+	}
+	1a2d_64 = {
+		attack = 1
+		defence = 2
+	}
+	1a1d_1 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_2 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_3 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_4 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_5 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_6 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_7 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_8 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_9 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_10 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_11 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_12 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_13 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_14 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_15 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_16 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_17 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_18 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_19 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_20 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_21 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_22 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_23 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_24 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_25 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_26 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_27 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_28 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_29 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_30 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_31 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_32 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_33 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_34 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_35 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_36 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_37 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_38 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_39 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_40 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_41 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_42 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_43 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_44 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_45 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_46 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_47 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_48 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_49 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_50 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_51 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_52 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_53 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_54 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_55 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_56 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_57 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_58 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_59 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_60 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_61 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_62 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_63 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_64 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_65 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_66 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_67 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_68 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_69 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_70 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_71 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_72 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_73 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_74 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_75 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_76 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_77 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_78 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_79 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_80 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_81 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_82 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_83 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_84 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_85 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_86 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_87 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_88 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_89 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_90 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_91 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_92 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_93 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_94 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_95 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_96 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_97 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_98 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_99 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_100 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_101 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_102 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_103 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_104 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_105 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_106 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_107 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_108 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_109 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_110 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_111 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_112 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_113 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_114 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_115 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_116 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_117 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_118 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_119 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_120 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_121 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_122 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_123 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_124 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_125 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_126 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_127 = {
+		attack = 1
+		defence = 1
+	}
+	1a1d_128 = {
+		attack = 1
+		defence = 1
+	}
+}

@@ -1,0 +1,413 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Knut Gillis Bildt"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Carl Gustaf Hammarskjöld"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Oscar Nygren"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Axel Rappe"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Olof Thörnell"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Lars Tingsten"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Samuel Akerhielm"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Erik af Edholm"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Ludvig Hammarskiöld"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Gösta Lilliehöök"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Bror Munck"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Karl Toll"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a3d_1
+}
+leader = {
+	name = "Carl Otto Nordensvan"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Carl August Ehrensvärd"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+navy = {
+	name = "Kungliga Flottan"
+	location = 322
+
+	ship = {
+		name= "HMS Svea"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Göta"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Thule"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Oden"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Thor"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Niord"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Dristigheten"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Äran"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Wasa"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Tapperheten"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Manligheten"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Oscar II"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Fylgia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Clas Fleming"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Hajen"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS Hvalen"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS N:r2"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS N:r3"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS N:r4"
+		type = monitor
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 335
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 322
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 322
+	}
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 322
+	}
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 322
+	}
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 322
+	}
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 322
+	}
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 324
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 324
+	}
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 326
+	}
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 326
+	}
+}
+army = {
+	name = "II Corps"
+	location = 334
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 334
+	}
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 334
+	}
+	regiment = {
+		name= "5th Battery Royal Artillery"
+		type = artillery
+		home = 329
+	}
+	regiment = {
+		name= "6th Battery Royal Artillery"
+		type = artillery
+		home = 329
+	}
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 330
+	}
+	regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 330
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 335
+	}
+	regiment = {
+		name= "7th Battery Royal Artillery"
+		type = artillery
+		home = 335
+	}
+	regiment = {
+		name= "8th Battery Royal Artillery"
+		type = artillery
+		home = 332
+	}
+}
+army = {
+	name = "III Corps"
+	location = 321
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 321
+	}
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 321
+	}
+	regiment = {
+		name= "9th Battery Royal Artillery"
+		type = artillery
+		home = 323
+	}
+	regiment = {
+		name= "10th Battery Royal Artillery"
+		type = artillery
+		home = 323
+	}	
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 325
+	}
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 325
+	}
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 327
+	}
+	regiment = {
+		name= "11th Battery Royal Artillery"
+		type = artillery
+		home = 327
+	}
+	regiment = {
+		name= "12th Battery Royal Artillery"
+		type = artillery
+		home = 333
+	}
+}

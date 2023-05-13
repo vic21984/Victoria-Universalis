@@ -1,0 +1,39 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Nurberdy Khan"
+	date = 1836.1.1
+	type = land
+	personality = att15exp15
+	background = 2a2d_1
+}
+
+army = {
+	name = "Army of Nurberdy Khan"
+	location = 1204
+	regiment = {
+		name= "Teke Tribesmen"
+		type = irregular
+		home = 1204
+	}
+
+	regiment = {
+		name= "Teke Tribesmen"
+		type = irregular
+		home = 2590
+	}
+
+	regiment = {
+		name= "Teke Raiders"
+		type = cavalry
+		home = 2590
+	}
+}

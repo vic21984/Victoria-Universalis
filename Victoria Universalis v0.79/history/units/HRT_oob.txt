@@ -1,0 +1,49 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Kamran Shah Durran"
+	type = land
+	date = 1830.1.1
+	personality = org05mor10
+	background = 1a2d_1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Yar Mohammad Khan Alakozai"
+	type = land
+	date = 1836.1.1
+	personality = rec10att10
+	background = 2a1d_1
+	prestige = 0.1
+}
+
+army = {
+    name = "Army of Kamran Shah"
+    location = 1212
+    regiment = {
+        name= "1. Tajiki"
+        type = irregular
+        home = 1212
+    }
+
+    regiment = {
+        name= "2. Tajiki"
+        type = irregular
+        home = 1214
+    }
+
+    regiment = {
+        name= "3. Tajiki"
+        type = irregular
+        home = 1214
+    }
+}

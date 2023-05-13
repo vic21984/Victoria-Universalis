@@ -1,0 +1,28 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Kavkazskii Korpus"
+	location = 1090
+	regiment = {
+		name = "1.1-ya Kavkazskii Pekhotnaya Diviziya"
+		type = infantry
+		home = 1090
+	}
+}
+
+leader = {
+	name = "Georg Andreas von Rosen"
+	picture = european_general_14
+	date = 1800.1.1
+	type = land
+	personality = org05mor10
+	background = 1a1d_1
+}

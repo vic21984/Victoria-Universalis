@@ -1,0 +1,81 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Juan Vicente Gómez"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+navy = {
+	name = "Armada Bolivariana de Venezuela"
+	location = 2264
+
+	ship = {
+		name= "Bolívar"
+		type = commerce_raider
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 2264
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2264
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2264
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2264
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2264
+	}	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2267
+	}
+		regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2269
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 2268
+	}
+	regiment = {
+		name= "3rd Battery Republican Artillery"
+		type = artillery
+		home = 2268
+		}
+	regiment = {
+		name= "4th Battery Republican Artillery"
+		type = artillery
+		home = 2268
+	}
+}

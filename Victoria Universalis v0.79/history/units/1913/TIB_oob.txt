@@ -1,0 +1,47 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Thubten Gyatso"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "1st Division"
+	location = 1587
+	regiment = {
+		name= "1. Infantry Brigade"
+		type = infantry
+		home = 1593
+	}
+	regiment = {
+		name= "2. Infantry Brigade"
+		type = infantry
+		home = 1593
+	}
+	regiment = {
+		name= "3. Infantry Brigade"
+		type = infantry
+		home = 1593
+	}
+	regiment = {
+		name= "4. Infantry Brigade"
+		type = infantry
+		home = 1593
+	}
+	regiment = {
+		name= "5. Infantry Brigade"
+		type = infantry
+		home = 1593
+	}
+}

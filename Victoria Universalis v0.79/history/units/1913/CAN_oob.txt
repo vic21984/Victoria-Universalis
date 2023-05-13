@@ -1,0 +1,231 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Julian Byng"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a3d_1
+}
+leader = {
+	name = "Arthur Currie"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 5a3d_1
+}
+leader = {
+	name = "Archibald Cameron Macdonell"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Richard Ernest William Turner"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Malcolm Mercer"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Louis Lipsett"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a2d_1
+}
+leader = {
+	name = "Frederick Oscar Warren Loomis"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "David Watson"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a1d_1
+}
+leader = {
+	name = "Garnet Hughes"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Russell Lambert Boyle"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Willoughby Gwatkin"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Charles Kingsmill"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+navy = {
+	name = "Royal Canadian Navy"
+	location = 71
+
+	ship = {
+		name= "HMCS Rainbow"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMCS Niobe"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMCS CC-1"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMCS CC-2"
+		type = monitor
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 65
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "1st Canadian Division"
+	location = 57
+	regiment = {
+		name= "1st Canadian Brigade"
+		type = infantry
+		home = 57
+	}
+	regiment = {
+		name= "2nd Canadian Brigade"
+		type = infantry
+		home = 58
+	}
+	regiment = {
+		name= "3rd Canadian Brigade"
+		type = infantry
+		home = 58
+	}
+	regiment = {
+		name= "4th Canadian Brigade"
+		type = infantry
+		home = 58
+	}
+	regiment = {
+		name= "1st Canadian Foot Artillery Brigade"
+		type = artillery
+		home = 66
+	}
+	regiment = {
+		name= "2nd Canadian Foot Artillery Brigade"
+		type = artillery
+		home = 66
+	}
+	regiment = {
+		name= "3rd Canadian Foot Artillery Brigade"
+		type = artillery
+		home = 46
+	}
+	regiment = {
+		name= "4th Canadian Foot Artillery Brigade"
+		type = artillery
+		home = 46
+	}
+	regiment = {
+		name= "Royal Canadian Horse Artillery"
+		type = artillery
+		home = 54
+	}
+	regiment = {
+		name= "Royal Canadian Dragoons"
+		type = dragoon
+		home = 46
+	}
+}

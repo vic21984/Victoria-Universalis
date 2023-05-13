@@ -1,0 +1,49 @@
+owner = VNZ
+controller = VNZ
+add_core = VNZ
+trade_goods = fish
+life_rating = 35
+terrain = hills_mine
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	naval_base = 4
+}

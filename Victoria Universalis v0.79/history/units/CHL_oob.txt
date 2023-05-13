@@ -1,0 +1,68 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Manuel Bulnes"
+	type = land
+	date = 1836.1.1
+	personality = org10mor20
+	background = 3a2d_1
+}
+
+leader = {
+	name = "José Joaquín Prieto"
+	type = land
+	date = 1836.1.1
+	personality = mor20exp10
+	background = 2a1d_1
+}
+
+leader = {
+	name = "Manuel Blanco Encalada"
+	type = sea
+	date = 1836.1.1
+	personality = rec15att10
+	background = 2a2d_1
+}
+
+army = {
+	name = "Ejército de Chile"
+	location = 2324
+	regiment = {
+		name= "1. Brigada de Infantería"
+		type = infantry
+		home = 2324
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 2325
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantería"
+		type = infantry
+		home = 2328
+	}
+
+	regiment = {
+		name= "1. Brigada de Caballería"
+		type = hussar
+		home = 2324
+	}
+
+	regiment = {
+		name= "2. Brigada de Caballería"
+		type = hussar
+		home = 2324
+	}
+
+}

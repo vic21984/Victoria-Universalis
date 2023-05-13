@@ -1,29 +1,50 @@
-# Version 0.78 - 4/20/2023
+# Version 0.79 - 5/10/2023
 ## Bug fixes:
-* Fixed Chinese countries not being able to use acquire state and conquest cbs in 1913 and WW1.
-* Fixed missing ports in Haeju and Kaesong provinces.
-* Fixed demand for ally cb not working when using it on a country that's going to be annexed.
-* Fixed military constructions uncivilized reform not unlocking the post-napoleonic thought tech.
-* Fixed some provinces not being able to expand mines after switching to market goods.
-* Converted South Italian pops in Ancona to Italian in the multiplayer start.
+* Fixed not being able to upgrade mines in Mandor province.
+* Removed Bolivian core from Mailin province.
+* Converted some POPs in the multiplayer bookmark to their correct cultures.
+* Removed starting Central American rebel brigades in 1913 and WW1.
+
+## Interface changes:
+* Renamed the general trait columns from Personality and Background to Combat Traits and Support Traits. Attack and defense values are listed in the combat column and all other traits are listed in the support column.
+* Expanded the general display list in the Military tab from 6 
+generals to 11 generals.
+* Brightened up the political map overlay and removed the filter.
+* Removed legacy Admin Points resource sprites and upscaled the rest of the resource sprites to their original quality.
 
 ## Map changes:
-* Created Tillabéri state out of the western half of Outer Hausaland.
+* Redrew province borders in the Middle East.
+* Redrew province borders in South America.
+* Merged Nunavut and Northwest Territories states.
+* Split Carolina state into North Carolina and South Carolina.
+* Created Pará state out of eastern half of Amazonas and Goiás state out of the eastern half of Mato Grosso.
+* Created Potosí state out of western half of Santa Cruz.
 
 ## Gameplay changes:
-* Player controlled uncivilized non-chinese countries with less than 30% civilization progress get 5000 free research points and all other player controlled uncivilized non-chinese countries get 15000 free research points in the multiplayer start.
+* Changed the odds of rolling attack and defense traits for generals. Now if a general rolls a high attack or defense stat they will have a much greater chance of rolling a high stat in the other.
+* Created an event that sets Research and Development, Healthcare, and Colonial Migration reform levels to No Research and Development, No Healthcare, and No Colonial Migration during a war if the player has less than 50,000 pounds in their treasury.
+* Created an event for countries with colonies but no active colonial settlement to automatically switch to No Colonial Migration.
+* When asking for a grant, other player nations will be able to see which country requested the grant in the event title.
+* Removed Convert Artisans province selector decision and made artisans automatically convert into labourers in mining provinces that have work available at the beginning of the year.
+* Reworked AI promotion weights. AI should be better at promoting industry and soldiers.
+* Craftsmen can't promote or demote to farmers anymore unless they are unemployed.
+* Moved the activation of regular artillery from Bronze Muzzle Loaded Artillery to Iron Breech Loaded Artillery tech.
+* Reduced speed of light artillery from 5 to 4.
+* Cleaned up Baby Boom, Literacy Campaign, and Change Agriculture decisions. Instead of having a decision for every size state there is now only one decision for each. Costs and effects still scale with the size of the selected province/state.
 
 ## Country changes:
-###### Scandinavia:
-* Added Danish to Sweden-Norway's accepted cultures in multiplayer start.
-* Added Swedish to Denmark's accepted cultures in multiplayer start.
+###### Russia:
+* Choosing to limit wargoals in the Congress of Berlin now gives -10 infamy instead of -5.
 
-###### China & India:
-* Increased farmer promotion chance of player controlled Chinese and Indian pops from 20% to 30%. This makes it less likely for Chinese and Indian pops to promote into non farmer popytypes when not using a national focus.
+###### China:
+* Added The Eight Banners modifier which gives large penalties to organisation, experience, morale, and supply consumption. This modifier is removed upon civilizing.
+* Increased max tariff penalty from losing a treaty port from -1% to -5%.
+* Increased tax efficiency penalty from losing substates from -1% to -2%.
+* China does not start with warlord cores anymore and gets them when the warlord era event fires. This makes revolts more likely due to POPs being forced into a singular reactionary movement instead of several different nationalist movements.
 
-###### Spain:
-* Added decision for Carlist Spain to annex the viceroyalties.
-* Made Carlist Spain the default Spanish nation in the multiplayer start.
+###### South America:
+* Uncolonized most of the Amazon in 1836 and added decisions to explore it.
+* Peru and Bolivia are combined into the Andine Federation in the multiplayer bookmark.
 
 
 # Version 0.77 - 4/14/2023

@@ -1,0 +1,67 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Zovawar Singh"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+
+leader = {
+	name = "Gulub Singh"
+	type = land
+	date = 1836.1.1
+	personality = org05exp10
+	background = 1a2d_1
+}
+
+army = {
+	name = "Army of the Dogra Rajas"
+	location = 1224
+	regiment = {
+		name= "1.Sikh Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "2.Sikh Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "3.Sikh Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "1.Tibetan Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "2.Tibetan Division"
+		type = infantry
+		home = 1224
+	}
+
+	regiment = {
+		name= "3.Tibetan Division"
+		type = infantry
+		home = 1224
+	}
+
+}
+

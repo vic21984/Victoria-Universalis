@@ -1,0 +1,37 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "The Great Jüz"
+	location = 1185
+	regiment = {
+		name= "Junior Jüz Cavalry"
+		type = cavalry
+		home = 1187
+	}
+	regiment = {
+		name= "Middle Jüz Cavalry"
+		type = cavalry
+		home = 2606
+	}
+	regiment = {
+		name= "Senior Jüz Cavalry"
+		type = cavalry
+		home = 1185
+	}
+}
+
+leader = {
+	name = "Kenesary Khan"
+	type = land
+	date = 1836.1.1
+	personality = spd20rec15
+	background = 4a2d_1
+}

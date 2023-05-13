@@ -1,0 +1,96 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Ulrich Wille"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a3d_1
+}
+leader = {
+	name = "Emil Sonderegger"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Henri Guisan"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Arthur Fonjallaz"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 605
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 605
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 605
+	}
+
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 607
+	}
+
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 607
+	}
+	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 606
+	}
+	
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 603
+	}
+
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 603
+	}
+	
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 604
+	}
+	
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 604
+	}
+}
