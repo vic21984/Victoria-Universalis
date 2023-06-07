@@ -1,3 +1,22 @@
+# Version 0.8 - 6/6/2023
+## Bug fixes:
+* Player factory construction no longer requires waiting until the start of the next month to be enabled when switching to State Capitalism or Planned Economy.
+* Fixed not being able to upgrade mines in Luxembourg province.
+* Fixed some provinces not going to the right owner in WW1 peace deal events.
+* Added missing port in Zadar.
+
+## Gameplay changes:
+* Added decisions to build multiple universities and naval bases at a time.
+* Brought back horse artillery units. They have the same stats as light artillery but are 50% faster and cost 50% more.
+* All provinces over 1M pops get an overcrowded modifier. Provinces with this modifier cannot be the target of the attract immigrants decision. At the start of every year, any provinces that have both the attract immigrants modifier and the overcrowded modifier will automatically lose the attract immigrants modifier.
+* Merged all technology flag events into one master event.
+* Modern Naval Doctrine tech gives +1 port level.
+* Carriers require level 7 ports to build.
+* Buffed base submarine gun attack from 1.5 to 2, base torpedo attack from 18 to 20, and torpedo attack from torpedo gyroscope and advanced fire control inventions from 2 to 3.
+* Working Board of Directors invention now gives -10% factory maintainence upkeep.
+* Added new Capital Supply Depot modifier that automatically gets added to a country's capital. Unlike a regular supply depot, this one does not get destroyed when a battle is fought in the province.
+
+
 # Version 0.79 - 5/10/2023
 ## Bug fixes:
 * Fixed not being able to upgrade mines in Mandor province.

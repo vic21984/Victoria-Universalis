@@ -6,7 +6,7 @@ The economy has been extensively overhauled as well, with economic crashes being
 
 Farm base RGO size is the the same as vanilla but mine base RGO size has been set to 10k. Provinces no longer start with a size multiplier based on population, instead their size can be increased by 100% per each level of their respective expansion building. Countries will have to spend money to increase the size of their farms as their population grows throughout the game.
 
-Many flavor countries and decisions have been imported over from HPM, with the decisions and events being modified to be more impactful in terms of gameplay and faster in terms of game performance.
+Many flavor countries and decisions have been imported over from HPM, GFM, and TGC with the decisions and events being modified to be more impactful in terms of gameplay and faster in terms of game performance.
 
 Generals traits have been replaced by color coded + Attack and + Defense bonuses that are clearly visible while scrolling through the list of generals.
 
@@ -14,4 +14,5 @@ Generals traits have been replaced by color coded + Attack and + Defense bonuses
 
 ### Credits
 
-Thanks to the creators of HPM and PDM for historical databases and art assets. Thanks to God of Cheese for his RGO changing events in PIUR. Thanks to General Townes for removing the menu tab backgrounds. Thanks to Panzerfaust1 for new carrier and province selector sprites. Thanks to Nurse Reno for the new fixed demand state warscore calculations. Thanks to wyrm for new TGC sprites.
+Thanks to the following people:
+The creators of HPM and PDM for historical databases and art assets. God of Cheese for his RGO changing events in PIUR. General Townes for removing the menu tab backgrounds. Panzerfaust1 for new carrier and province selector sprites. Nurse Reno for the new fixed demand state warscore calculations. Wyrm for new TGC sprites and the university building.

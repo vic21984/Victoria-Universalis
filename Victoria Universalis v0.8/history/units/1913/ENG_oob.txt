@@ -1,0 +1,2606 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+#Sphere of Influence
+EIC = {
+	value = 200
+	level = 4
+	influence_value = 50
+}
+
+CAN = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+AST = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+NZL = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+SAF = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+BEL = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+leader = {
+	name = "Herbert Kitchener"
+	type = land
+	date = 1914.1.1
+	prestige = 0.3
+	personality = org05mor10
+	background = 2a3d_1
+}
+leader = {
+	name = "James Wolfe Murray"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Charles W. H. Douglas"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "William Robertson"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Henry Wilson"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Archibald Murray"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Henry Horne"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Herbert Plumer"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a2d_1
+}
+leader = {
+	name = "Henry Rawlinson"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Hubert Gough"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "George Milne"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Rudolph Lambart"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Ian Hamilton"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Reginald Wingate"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Charles Macpherson Dobell"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Hastings Ismay"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Stanley Maude"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Prince Louis of Battenberg"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Aylmer Hunter-Weston"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Thomas Morland"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Walter Norris Congreve"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Richard Butler"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "William Peyton"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "William Birdwood"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Bryan Mahon"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Miles Dempsey"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Kenneth Anderson"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Charles Kavanagh"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "John Jellicoe"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a4d_1
+}
+leader = {
+	name = "Henry Jackson"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "John Fisher"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Rosslyn Wemyss"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "David Beatty"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a2d_1
+}
+leader = {
+	name = "John de Robeck"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Sackville Carden"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Cecil Burney"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Frederick Hamilton"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Rosslyn Wemyss"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a2d_1
+}
+leader = {
+	name = "Charles Madden"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+navy = {
+	name = "Grand Fleet"
+	location = 303
+	
+	ship = {
+		name= "HMS Iron Duke"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Dreadnought"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Neptune"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS King George"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Bellerophon"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Superb"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Temeraire"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Collingwood"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS St Vincent"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Vanguard"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Colossus"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Hercules"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Orion"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Monarch"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Conqueror"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Ajax"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Centurion"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Audacious"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "HMS Agamemnon"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Lord Nelson"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS King Edward VII"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Britannia"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Commonwealth"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Dominion"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Hibernia"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Hindustan"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Zealandia"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Duncan"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Exmouth"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Russell"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Cornwallis"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Hindustan"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Hindustan"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Hindustan"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Prince of Wales"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Queen"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Bulwark"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS London"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Venerable"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Formidable"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Implacable"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Irresistible"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Swiftsure"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Triumph"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Albemarle"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Caesar"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Jupiter"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Hannibal"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Illustrious"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Majestic"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Magnificent"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Mars"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Prince George"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Victorious"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Albion"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Canopus"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Glory"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Goliath"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Ocean"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Vengeance"
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Indefatigable"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Indomitable"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Inflexible"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Invincible"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Lion"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS New Zealand"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Princess Royal"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Tiger"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Queen Mary"
+		type = battleship
+	}
+	
+	ship = {
+		name= "HMS Aboukir"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Achilles"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Active"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Adventure"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Amethyst"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Amphion"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Amphitrite"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Andromache"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Andromeda"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Antrim"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Arethusa"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Argonaut"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Argyll"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Ariadne"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Astraea"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Attentive"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Aurora"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Bacchante"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Bedford"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Bellona"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Berwick"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Birmingham"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Black Prince"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Blake"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Blanche"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Blenheim"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Blonde"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Boadicea"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Bonaventure"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Bristol"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Carnarvon"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Challenger"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Chatham"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Cochrane"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Cordelia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Cornwall"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Crescent"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Cressy"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Cumberland"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Dartmouth"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Defence"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Devonshire"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Diadem"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Donegal"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Drake"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Dublin"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Duke of Edinburgh"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Edgar"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Endymion"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Essex"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Europa"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Euryalus"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Falmouth"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Fearless"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Foresight"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Forward"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Fox"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Galatea"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Gibraltar)"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Glasgow"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Gloucester"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Good Hope"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Grafton"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Hampshire"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Hawke"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Hermione"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Highflyer"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Inconstant"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Intrepid"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Iphigenia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Kent"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS King Alfred"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Lancaster"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Latona"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Leviathan"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Liverpool"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Lowestoft"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Melampus"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Minerva"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Minotaur"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Monmouth"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Naiad"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Natal"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Newcastle"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Nottingham"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Pathfinder"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Patrol"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Pegasus"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Pelorus"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Penelope"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Phaeton"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Powerful"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Proserpine"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Pyramus"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Roxburgh"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Royal Arthur"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Sapphire"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Sentinel"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Shannon"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Sirius"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Skirmisher"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Southampton"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Spartiate"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS St George"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Suffolk"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Sutlej"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Talbot"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Terrible"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Theseus"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Thetis"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Undaunted"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Vindictive"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Warrior"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Weymouth"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Yarmouth"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS C1"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C2"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C3"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C4"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C5"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C6"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C7"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C8"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C9"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C10"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C11"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C12"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C13"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C14"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C15"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C16"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C17"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C18"
+		type = monitor
+	}
+	
+	ship = {
+		name= "HMS C19"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C20"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C21"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C22"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C23"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C24"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C25"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C26"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C27"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C28"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C29"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS C30"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS A5"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS A6"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS A7"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS A8"
+		type = monitor
+	}
+	
+	ship = {
+		name= "HMS A9"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS A10"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS A11"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS A12"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS B1"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS B3"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS B4"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS B5"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D1"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D2"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D3"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D4"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D5"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D6"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D7"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS D8"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E1"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E2"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E3"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E4"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E5"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E6"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E7"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E8"
+		type = monitor
+	}
+
+	ship = {
+		name= "HMS E9"
+		type = monitor
+	}
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "11th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "12th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "13th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "14th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "15th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "16th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "17th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "18th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "19th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "20th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "21st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "22nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "23rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "24th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "25th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "26th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "27th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "28th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "29th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "30th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "31st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "32nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "33rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "34th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "35th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "36th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "37th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "38th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "39th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "40th Steam Transport"
+		type = steam_transport
+	}
+
+
+	ship = {
+		name= "41st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "42nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "43rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "44th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "45th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "46th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "47th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "48th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "49th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "50th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "51st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "52nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "53rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "54th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "55th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "56th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "57th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "58th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "59th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "60th Steam Transport"
+		type = steam_transport
+	}
+}
+
+
+army = {
+	name = "1st Division"
+	location = 300
+	leader = {
+		name = "Douglas Haig"
+		type = land
+		date = 1914.1.1
+		prestige = 0.2
+		personality = org05mor10
+		background = 2a1d_1
+	}
+
+	regiment = {
+		name= "1st (Guards) Brigade"
+		type = guard
+		home = 300
+	}
+
+	regiment = {
+		name= "2nd Infantry Brigade"
+		type = infantry
+		home = 269
+	}
+
+	regiment = {
+		name= "3rd Infantry Brigade"
+		type = infantry
+		home = 267
+	}
+
+	regiment = {
+		name= "A Squadron 15th Hussars"
+		type = hussar
+		home = 300
+	}
+
+	regiment = {
+		name= "XXV Brigade Royal Foot Artillery"
+		type = artillery
+		home = 300
+	}
+	
+	regiment = {
+		name= "XXVI Brigade Royal Foot Artillery"
+		type = artillery
+		home = 300
+	}
+
+	regiment = {
+		name= " XXXIX Brigade Royal Foot Artillery"
+		type = artillery
+		home = 300
+	}
+	
+	regiment = {
+		name= "XLIII (Howizter) Brigade Royal Foot Artillery"
+		type = artillery
+		home = 294
+	}
+
+	regiment = {
+		name= "26th Heavy Battery Royal Garrison Artillery"
+		type = artillery
+		home = 278
+	}
+
+	regiment = {
+		name= "23rd and 26th Field Company Royal Engineers"
+		type = infantry
+		home = 284
+
+	}
+}
+
+army = {
+	name = "2nd Division"
+	location = 302
+	leader = {
+		name = "Charles Monro"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+
+	regiment = {
+		name= "4th (Guards) Brigade"
+		type = guard
+		home = 300
+	}
+
+	regiment = {
+		name= "5th Infantry Brigade"
+		type = infantry
+		home = 294
+	}
+
+	regiment = {
+		name= "6th Infantry Brigade"
+		type = infantry
+		home = 277
+	}
+
+	regiment = {
+		name= "B Squadron 15th Hussars"
+		type = hussar
+		home = 303
+	}
+
+	regiment = {
+		name= "XXXIV Brigade Royal Foot Artillery"
+		type = artillery
+		home = 283
+	}
+
+	regiment = {
+		name= "XXXVI Brigade Royal Foot Artillery"
+		type = artillery
+		home = 271
+	}
+
+	regiment = {
+		name= "XLI Brigade Royal Foot Artillery"
+		type = artillery
+		home = 271
+	}
+
+	regiment = {
+		name= "XLIV (Howizter) Brigade Royal Foot Artillery"
+		type = artillery
+		home = 271
+	}
+
+	regiment = {
+		name= "35th Heavy Battery Royal Guards Artillery"
+		type = artillery
+		home = 277
+	}
+
+	regiment = {
+		name= "5th and 11th Field Companies Royal Engineers"
+		type = infantry
+		home = 299
+	}
+}
+army = {
+	name = "3rd Division"
+	location = 292
+	leader = {
+		name = "Horace Smith-Dorrien"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a1d_1
+	}
+
+	regiment = {
+		name= "7th Infantry Brigade"
+		type = infantry
+		home = 286
+	}
+
+	regiment = {
+		name= "8th Infantry Brigade"
+		type = infantry
+		home = 268
+	}
+
+	regiment = {
+		name= "9th Infantry Brigade"
+		type = infantry
+		home = 280
+	}
+
+	regiment = {
+		name= "A Squadron 15th Hussars"
+		type = hussar
+		home = 293
+	}
+
+	regiment = {
+		name= "XXIII Brigade Royal Foot Artillery"
+		type = artillery
+		home = 300
+	}
+
+	regiment = {
+		name= "XL Brigade Royal Foot Artillery"
+		type = artillery
+		home = 300
+	}
+
+	regiment = {
+		name= "XLII Brigade Royal Foot Artillery"
+		type = artillery
+		home = 278
+	}
+
+	regiment = {
+		name= "XXX(Howizter) Brigade Royal Foot Artillery"
+		type = artillery
+		home = 278
+	}
+
+	regiment = {
+		name= "48th Heavy Battery Royal Garrison Artillery"
+		type = artillery
+		home = 277
+	}
+
+	regiment = {
+		name= "56th and 57th Field Companies Royal Engineers"
+		type = infantry
+		home = 299
+	}
+}
+army = {
+	name = "4th Division"
+	location = 303
+	leader = {
+		name = "William Pulteney"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+
+	regiment = {
+		name= "10th Infantry Brigade"
+		type = infantry
+		home = 300
+	}
+
+	regiment = {
+		name= "11th Infantry Brigade"
+		type = infantry
+		home = 300
+	}
+
+	regiment = {
+		name= "12th Infantry Brigade"
+		type = infantry
+		home = 279
+	}
+
+	regiment = {
+		name= "B Squadron 19th Hussars"
+		type = hussar
+		home = 300
+	}
+
+	regiment = {
+		name= "XIV Brigade Royal Foot Artillery"
+		type = artillery
+		home = 300
+	}
+
+	regiment = {
+		name= "XXIX Brigade Royal Foot Artillery"
+		type = artillery
+		home = 300
+	}
+
+	regiment = {
+		name= "XXXII Brigade Royal Foot Artillery"
+		type = artillery
+		home = 278
+	}
+
+	regiment = {
+		name= "XXXVII(Howizter) Brigade Royal Foot Artillery"
+		type = artillery
+		home = 278
+	}
+
+	regiment = {
+		name= "31st Heavy Battery Royal Garrison Artillery"
+		type = artillery
+		home = 271
+	}
+
+	regiment = {
+		name= "7th and 9th Field Companies Royal Engineers"
+		type = infantry
+		home = 284
+	}
+}
+army = {
+	name = "5th Division"
+	location = 293
+	leader = {
+		name = "Charles Fergusson"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a2d_1
+	}
+
+	regiment = {
+		name= "13th Infantry Brigade"
+		type = infantry
+		home = 282
+	}
+
+	regiment = {
+		name= "14th Infantry Brigade"
+		type = infantry
+		home = 293
+	}
+
+	regiment = {
+		name= "15th Infantry Brigade"
+		type = infantry
+		home = 292
+	}
+
+	regiment = {
+		name= "A Squadron 19th Hussars"
+		type = hussar
+		home = 300
+	}
+
+	regiment = {
+		name= "XV Brigade Royal Foot Artillery"
+		type = artillery
+		home = 284
+	}
+
+	regiment = {
+		name= "XXVII Brigade Royal Foot Artillery"
+		type = artillery
+		home = 284
+	}
+
+	regiment = {
+		name= "XXVIII Brigade Royal Foot Artillery"
+		type = artillery
+		home = 278
+	}
+
+	regiment = {
+		name= "VIII(Howizter) Brigade Royal Foot Artillery"
+		type = artillery
+		home = 271
+	}
+
+	regiment = {
+		name= "108th Heavy Battery Royal Garrison Artillery"
+		type = artillery
+		home = 271
+	}
+
+	regiment = {
+		name= "17th and 59th Field Companies Royal Engineers"
+		type = infantry
+		home = 266
+	}
+}
+army = {
+	name = "6th Division"
+	location = 297
+	leader = {
+		name = "John Keir"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a2d_1
+	}
+
+	regiment = {
+		name= "16th Infantry Brigade"
+		type = infantry
+		home = 289
+	}
+
+	regiment = {
+		name= "17th Infantry Brigade"
+		type = infantry
+		home = 265
+	}
+
+	regiment = {
+		name= "18th Infantry Brigade"
+		type = infantry
+		home = 281
+	}
+
+	regiment = {
+		name= "C Squadron 19th Hussars"
+		type = hussar
+		home = 287
+	}
+
+	regiment = {
+		name= "II Brigade Royal Foot Artillery"
+		type = artillery
+		home = 284
+	}
+
+	regiment = {
+		name= "XXIV Brigade Royal Foot Artillery"
+		type = artillery
+		home = 266
+	}
+
+	regiment = {
+		name= "XXXVIII Brigade Royal Foot Artillery"
+		type = artillery
+		home = 268
+	}
+
+	regiment = {
+		name= "XII(Howizter) Brigade Royal Foot Artillery"
+		type = artillery
+		home = 268
+	}
+
+	regiment = {
+		name= "24th Heavy Battery Royal Garrison Artillery"
+		type = artillery
+		home = 277
+	}
+
+	regiment = {
+		name= "12th and 38th Field Companies Royal Engineers"
+		type = infantry
+		home = 277
+	}
+}
+army = {
+	name = "The Cavalry Division"
+	location = 301
+	leader = {
+		name = "Edmund Allenby"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 3a3d_1
+	}
+	regiment = {
+		name= "1st Cavalry Brigade"
+		type = dragoon
+		home = 273
+	}
+
+	regiment = {
+		name= "2nd Cavalry Brigade"
+		type = hussar
+		home = 294
+	}
+
+	regiment = {
+		name= "3rd Cavalry Brigade"
+		type = dragoon
+		home = 258
+	}
+
+	regiment = {
+		name= "4th Cavalry Brigade"
+		type = hussar
+		home = 295
+	}
+
+	regiment = {
+		name= "5th Cavalry Brigade"
+		type = dragoon
+		home = 270
+	}
+
+	regiment = {
+		name= "D Battery, Royal Horse Artillery"
+		type = horse_artillery
+		home = 297
+	}
+
+	regiment = {
+		name= "E Battery, Royal Horse Artillery"
+		type = horse_artillery
+		home = 283
+	}
+
+	regiment = {
+		name= "I Battery, Royal Horse Artillery"
+		type = horse_artillery
+		home = 297
+	}
+
+	regiment = {
+		name= "L Battery, Royal Horse Artillery"
+		type = horse_artillery
+		home = 283
+	}
+
+	regiment = {
+		name= "J Battery, Royal Horse Artillery"
+		type = horse_artillery
+		home = 301
+	}
+}
+
+army = {
+	name = "General Headquarters"
+	location = 284
+	leader = {
+		name = "John French"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a2d_1
+	}
+
+	regiment = {
+		name= "1st Queens Own Cameron Highlanders"
+		type = guard
+		home = 267
+	}
+	
+	regiment = {
+		name= "1st Devonshire Regiment"
+		type = infantry
+		home = 302
+	}
+	
+	regiment = {
+		name= "2nd Royal Welch Fusiliers"
+		type = infantry
+		home = 302
+	}
+		
+	regiment = {
+		name= "1st Cameronians (Scottish Rifles)"
+		type = infantry
+		home = 269
+	}
+		
+	regiment = {
+		name= "1st Duke of Cambridge's Own"
+		type = infantry
+		home = 291
+	}
+		
+	regiment = {
+		name= "2nd Princess Louise's Highlanders"
+		type = infantry
+		home = 299
+	}
+		
+	regiment = {
+		name= "The Border Regiment"
+		type = infantry
+		home = 282
+	}
+		
+	regiment = {
+		name= "Yorkshire Regiment"
+		type = infantry
+		home = 281
+	}
+
+	regiment = {
+		name= "North Irish Horse"
+		type = hussar
+		home = 254
+	}
+
+	regiment = {
+		name= "South Irish Horse"
+		type = hussar
+		home = 261
+	}
+
+	regiment = {
+		name= "1st Siege Battery Royal Garrison Artillery"
+		type = artillery
+		home = 298
+	}
+
+	regiment = {
+		name= "2nd Siege Battery Royal Garrison Artillery"
+		type = artillery
+		home = 298
+	}
+
+	regiment = {
+		name= "3rd Siege Battery Royal Garrison Artillery"
+		type = artillery
+		home = 285
+	}
+
+	regiment = {
+		name= "4th Siege Battery Royal Garrison Artillery"
+		type = artillery
+		home = 285
+	}
+
+	regiment = {
+		name= "5th Siege Battery Royal Garrison Artillery"
+		type = artillery
+		home = 280
+	}
+
+	regiment = {
+		name= "2nd Aeroplane Squadron"
+		type = plane
+		home = 288
+	}
+
+	regiment = {
+		name= "3rd Aeroplane Squadron"
+		type = plane
+		home = 288
+	}
+	
+	regiment = {
+		name= "4th Aeroplane Squadron"
+		type = plane
+		home = 290
+	}
+
+	regiment = {
+		name= "5th Aeroplane Squadron"
+		type = plane
+		home = 290
+	}
+
+	regiment = {
+		name= "6th Aeroplane Squadron"
+		type = plane
+		home = 280
+	}
+}
+army = {
+	name = "Force in Egypt"
+	location = 1745
+	leader = {
+		name = "Julian Byng"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+
+	regiment = {
+		name= "3rd Dragoon Guards"
+		type = dragoon
+		home = 297
+	}
+
+	regiment = {
+		name= "Imperial Service Cavalry Brigade"
+		type = hussar
+		home = 256
+	}
+
+	regiment = {
+		name= "Shah Sujah's Troop, Royal Artillery"
+		type = artillery
+		home = 1745
+	}
+	
+	regiment = {
+		name= "7th Mountain Battery"
+		type = artillery
+		home = 297
+	}
+	
+	regiment = {
+		name= "III Mountain Artillery Brigade"
+		type = artillery
+		home = 259
+	}
+	
+	regiment = {
+		name= "Argyll Battery"
+		type = artillery
+		home = 255
+	}
+	
+	regiment = {
+		name= "4th Highland Mountain Artillery Brigade"
+		type = artillery
+		home = 270
+	}
+
+	regiment = {
+		name= "Egyptian Army Artillery"
+		type = artillery
+		home = 1762
+	}
+			
+	regiment = {
+		name= "Egyptian Mountain Battery"
+		type = artillery
+		home = 1765
+	}
+				
+	regiment = {
+		name= "Berkshire Royal Horse Artillery"
+		type = artillery
+		home = 288
+	}
+				
+	regiment = {
+		name= "A Battery, Honourable Artillery Company"
+		type = artillery
+		home = 276
+	}
+				
+	regiment = {
+		name= "B Battery, Honourable Artillery Company"
+		type = artillery
+		home = 274
+	}
+
+	regiment = {
+		name= "2nd Battalion, Devonshire Regiment"
+		type = infantry
+		home = 296
+	}
+
+	regiment = {
+		name= "1st Battalion, Worcestshire Regiment"
+		type = infantry
+		home = 296
+	}
+
+	regiment = {
+		name= "2nd Battalion, Northamptonshire Regiment"
+		type = infantry
+		home = 296
+	}
+	
+	regiment = {
+		name= "2nd Battalion, Gordon Highlanders"
+		type = infantry
+		home = 267
+	}
+
+	regiment = {
+		name= "King's Own Scottish Borderers"
+		type = infantry
+		home = 282
+	}
+
+	regiment = {
+		name= "62nd Punjabis"
+		type = infantry
+		home = 1751
+	}
+		
+	regiment = {
+		name= "92nd Punjabis"
+		type = infantry
+		home = 1747
+	}
+		
+	regiment = {
+		name= "10th Ghurka Rifles"
+		type = infantry
+		home = 1746
+	}
+}

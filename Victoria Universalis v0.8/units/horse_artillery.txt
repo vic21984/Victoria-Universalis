@@ -1,0 +1,47 @@
+horse_artillery = {
+	icon = 23
+	
+	type = land
+	sprite = Artillery
+	active = no
+	unit_type = support
+	
+	#Avatar
+	#sprite_override = Cavalry
+	#sprite_mount = GenericMount
+	#sprite_mount_attach_node = Saddle_Node
+	floating_flag = yes
+	
+	
+	#Core Abilities
+	priority = 20
+	max_strength = 3
+	default_organisation = 30
+	maximum_speed = 6.00
+	weighted_value = 3.0
+
+
+	#Building Costs
+	build_time = 120
+	build_cost = {
+		artillery = 20
+		canned_food = 20
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		artillery = 0.16		#4.8
+		canned_food = 0.1		#0.8
+		grain = 0.8				#1.84
+	}							#7.44
+	
+
+	#Land Abilties
+	reconnaissance = 0
+	attack = 1
+	defence = 1
+	discipline = 1.0
+	support = 2
+	maneuver = 1
+	
+}
