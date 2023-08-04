@@ -1,3 +1,42 @@
+# Version 0.81 - 8/4/2023
+## Bug fixes:
+* Fixed non-upgradeable mine in Radom.
+* Raised diplomatic influence maximum population cap from 2M to 7M.
+
+## Gameplay changes:
+* Halved the building time of all factories.
+* Increased base tank defense by 4 and base attack by 2.
+* Increased bonus attack from Tank Exploits from +10 to +12
+* Increased bonus attack from Light Tanks from 3 to 4.
+* Increased bonus attack from Medium Tanks from 9 to 12.
+* Increased base airplane defense by 1.
+* Increased bonus attack from Early Interwar Bombers from +3 to +5.
+* Increased bonus defense from Early Interwar Fighters from +2 to +3.
+* Increased bonus attack from Late Interwar Bombers from +3 to +5.
+* Increased bonus defense from Late Interwar Fighters from +2 to +3.
+* Removed mobilization production impact modifiers from tech and conscription laws.
+* Increased base output of all early and midgame factories by about 4%.
+* Added 5% factory throughput bonuses to the Power column of industrial techs.
+* Added additional submarine inventions to the Oil-Driven Ships tech that give subs +1 max speed and +1 attack and +1 hull.
+
+## Country changes:
+###### China:
+* Replaced the China (CHI) tag with Qing (QNG) in 1836.
+* Annexed Yunnan, Guizhou, and Sichuan to Qing in 1836.
+* Added Xinhai Revolution event that triggers shortly after Qing westernizes. If Qing wins, the Warlord Era and subsequent Chinese Civil War will be avoided. If the Republic of China wins, China will be turned into a presidential dictatorship and the Warlord Era will commence normally.
+* Other countries cannot take Chinese states that are not treaty ports or substates until the end of the Xinhai Revolution. In previous versions, other countries could start taking states as soon as China civilized.
+* Treaty ports can now be established after China is civilized.
+
+###### United Kingdom:
+* Added decisions to sphere and unsphere India that can be enacted at any time.
+
+###### Korea:
+* Increased starting population from 2.5M to 4M and lowered liferating to 31 to match historical starting population and low population growth.
+
+###### Sokoto:
+* Added Bantoid as an accepted culture in the multiplayer bookmark.
+
+
 # Version 0.8 - 6/6/2023
 ## Bug fixes:
 * Player factory construction no longer requires waiting until the start of the next month to be enabled when switching to State Capitalism or Planned Economy.
