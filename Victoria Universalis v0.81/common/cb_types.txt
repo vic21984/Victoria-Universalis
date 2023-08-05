@@ -3766,6 +3766,12 @@ take_capital = {
 	allowed_states = {
 		is_colonial = no
 		any_owned_province = {
+			OR = {
+				NOT = { is_core = QNG }
+				owner = { has_global_flag = xinhai_ended }
+			}
+		}
+		any_owned_province = {
 			not = {	is_core = THIS }
 			is_colonial = no
 		}
