@@ -1,0 +1,37 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Prince Georg"
+	date = 1820.1.1
+	type = land
+	personality = org05exp15
+	background = 1a2d_1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Prince Karl"
+	date = 1836.1.1
+	type = land
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "Groﬂherzogliche Armee"
+	location = 2560
+	regiment = {
+		name= "1. Groﬂherzogliche Infanterie"
+		type = infantry
+		home = 2560
+	}
+
+}

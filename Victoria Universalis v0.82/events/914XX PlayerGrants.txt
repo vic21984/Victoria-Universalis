@@ -1,0 +1,608 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	title = "EVTNAMEgrantoptions"
+	desc = "EVTDESCgrantoptions"
+	id = 91400
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Enable Giving Grants and Military Supplies"
+		clr_country_flag = deny_grant
+	}
+	option = {
+		name = "Deny Giving Grants and Military Supplies"
+		set_country_flag = deny_grant
+	}
+	option = {
+		name = "Request Money"
+		any_country = {
+			limit = {
+				ai = no
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 91402 days = 0 }
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Artillery"
+		any_country = {
+			limit = {
+				ai = no
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 91403 days = 0 }
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Ammunition"
+		any_country = {
+			limit = {
+				ai = no
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 91404 days = 0 }
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Small Arms"
+		any_country = {
+			limit = {
+				ai = no
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 91405 days = 0 }
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Steamer Convoys"
+		any_country = {
+			limit = {
+				ai = no
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 91406 days = 0 }
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+}
+
+country_event = {
+	title = EVTNAMEinsufficientmoney
+	desc = EVTDESCinsufficientmoney
+	id = 91401
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAinsufficientmoney"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivemoney
+	desc = EVTDESCgivemoney
+	id = 91402
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_0.05M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 50000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 50000 }
+			}
+			owner = {
+				money = -50000
+				FROM = {
+					money = 50000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_0.1M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 100000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 100000 }
+			}
+			owner = {
+				money = -100000
+				FROM = {
+					money = 100000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_0.25M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 250000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 250000 }
+			}
+			owner = {
+				money = -250000
+				FROM = {
+					money = 250000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_0.5M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 500000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 500000 }
+			}
+			owner = {
+				money = -500000
+				FROM = {
+					money = 500000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_1M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 1000000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 1000000 }
+			}
+			owner = {
+				money = -1000000
+				FROM = {
+					money = 1000000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_2M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 2000000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 2000000 }
+			}
+			owner = {
+				money = -2000000
+				FROM = {
+					money = 2000000
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgiveartillery
+	desc = EVTDESCgiveartillery
+	id = 91403
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_200_Artillery"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { artillery = 200 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { artillery = 200 }
+			}
+			owner = {
+				artillery = -200
+				FROM = {
+					artillery = 200
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_600_Artillery"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { artillery = 600 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { artillery = 600 }
+			}
+			owner = {
+				artillery = -600
+				FROM = {
+					artillery = 600
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_1800_Artillery"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { artillery = 1800 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { artillery = 1800 }
+			}
+			owner = {
+				artillery = -1800
+				FROM = {
+					artillery = 1800
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgiveammunition
+	desc = EVTDESCgiveammunition
+	id = 91404
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_200_Ammunition"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { ammunition = 200 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { ammunition = 200 }
+			}
+			owner = {
+				ammunition = -200
+				FROM = {
+					ammunition = 200
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_600_Ammunition"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { ammunition = 600 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { ammunition = 600 }
+			}
+			owner = {
+				ammunition = -600
+				FROM = {
+					ammunition = 600
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_1800_Ammunition"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { ammunition = 1800 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { ammunition = 1800 }
+			}
+			owner = {
+				ammunition = -1800
+				FROM = {
+					ammunition = 1800
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesmallarms
+	desc = EVTDESCgivesmallarms
+	id = 91405
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_200_Small_Arms"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { small_arms = 200 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { small_arms = 200 }
+			}
+			owner = {
+				small_arms = -200
+				FROM = {
+					small_arms = 200
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_600_Small_Arms"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { small_arms = 600 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { small_arms = 600 }
+			}
+			owner = {
+				small_arms = -600
+				FROM = {
+					small_arms = 600
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_1800_Small_Arms"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { small_arms = 1800 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { small_arms = 1800 }
+			}
+			owner = {
+				small_arms = -1800
+				FROM = {
+					small_arms = 1800
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesteamerconvoys
+	desc = EVTDESCgivesteamerconvoys
+	id = 91406
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_200_Steamer_Convoys"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { steamer_convoy = 200 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { steamer_convoy = 200 }
+			}
+			owner = {
+				steamer_convoy = -200
+				FROM = {
+					steamer_convoy = 200
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_600_Steamer_Convoys"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { steamer_convoy = 600 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { steamer_convoy = 600 }
+			}
+			owner = {
+				steamer_convoy = -600
+				FROM = {
+					steamer_convoy = 600
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_1800_Steamer_Convoys"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { steamer_convoy = 1800 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { steamer_convoy = 1800 }
+			}
+			owner = {
+				steamer_convoy = -1800
+				FROM = {
+					steamer_convoy = 1800
+				}
+			}
+		}
+	}
+}

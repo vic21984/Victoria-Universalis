@@ -1,0 +1,35 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+TRN = { value = 200 }
+
+army = {
+	name = "Army of Oranje Vrij Staat"
+	location = 2102
+	regiment = {
+		name= "1. Oranje Commando"
+		type = infantry
+		home = 2102
+	}
+	regiment = {
+		name= "2. Oranje Commando"
+		type = infantry
+		home = 2102
+	}
+}
+
+leader = {
+	name = "Sarel Cilliers"
+	type = land
+	date = 1836.1.1
+	personality = org15mor40
+	background = 4a4d_1
+	prestige = 0.8
+}

@@ -1,0 +1,65 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+TUR = {
+	value = 100
+}
+
+leader = {
+	name = "Nurallah Bey"
+	date = 1836.1.1
+	type = land
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Han Mahmud"
+	date = 1836.1.1
+	type = land
+	personality = att10exp10
+	background = 1a1d_1
+}
+
+army = {
+	leader = {
+		name = "Bedir Khan Beg"
+		date = 1836.1.1
+		type = land
+		personality = spd20rec05
+		background = 2a2d_1
+	}
+	name = "Army of Bohtan"
+	location = 856
+	regiment = {
+		name = "1. Irregular"
+		type = irregular
+		home = 890
+	}
+	regiment = {
+		name = "2. Irregular"
+		type = irregular
+		home = 924
+	}
+	regiment = {
+		name = "3. Irregular"
+		type = irregular
+		home = 892
+	}
+	regiment = {
+		name = "1. Irregular"
+		type = irregular
+		home = 856
+	}
+	regiment = {
+		name = "1. Irregular"
+		type = cavalry
+		home = 925
+	}
+}

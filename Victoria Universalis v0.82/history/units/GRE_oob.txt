@@ -1,0 +1,120 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Carl Wilhelm von Heideck"
+	type = land
+	date="1833.1.1"
+	personality = org10mor20
+	background = 2a2d_1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Demetrios Kalergis"
+	type = land
+	date="1836.1.1"
+	personality = org05mor10
+	background = 1a2d_1
+}
+
+leader = {
+	name = "Theodoros Kolokotronis"
+	type = land
+	date="1833.1.1"
+	personality = spd20rec15
+	background = 3a2d_1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Antonios Kriezis"
+	type = sea
+	date="1836.1.1"
+	personality = org10mor20
+	background = 4a4d_1
+}
+
+army = {
+	name = "Stratós Thessalías"
+	location = 836
+	regiment = {
+		name= "1st Greek Infantry"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "2nd Greek Infantry"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "3rd Greek Infantry"
+		type = infantry
+		home = 834
+	}
+
+	regiment = {
+		name= "4th Greek Infantry"
+		type = infantry
+		home = 837
+	}
+	
+	regiment = {
+		name= "1st Greek Cavalry"
+		type = dragoon
+		home = 837
+	}
+	
+	regiment = {
+		name= "1st Greek Artillery"
+		type = cuirassier
+		home = 845
+	}
+	
+	regiment = {
+		name= "2nd Greek Artillery"
+		type = cuirassier
+		home = 842
+	}
+	
+	regiment = {
+		name= "3rd Greek Artillery"
+		type = cuirassier
+		home = 841
+	}
+
+	regiment = {
+		name= "4th Greek Artillery"
+		type = cuirassier
+		home = 840
+	}
+
+	regiment = {
+		name= "5th Greek Artillery"
+		type = cuirassier
+		home = 836
+	}		
+}
+
+
+navy = {
+	name = "Hellenic Navy"
+	location = 834
+
+	ship = {
+		name= "Leda"
+		type = clipper_transport
+	}
+
+}
+

@@ -1,3 +1,65 @@
+# Version 0.82 - 10/11/2023
+## Bug fixes:
+* Made treaty ports in Aden, Kiel, Panama City, and Suez upgradeable.
+* Fixed not being able to establish treaty ports after China civilized.
+
+## Map changes:
+* Removed Belluno province from Veneto state and created Benevento province in Molise state.
+* Enlarged the province borders of Bremen, Hamburg, Lubeck, Lucca, Gibraltar, Aden, and Fiume.
+* Merged Heligoland state with Schleswig-Holstein state.
+* Removed port from Nyda province so players don't accidently build a naval base in a province without access to the sea.
+* Merged Alamut state into neighbouring states.
+* Split Guangdong state into East and West Guangdong.
+* Created a crossing between Lahej and Djibuti across the Red Sea.
+
+## Gameplay changes:
+* Capitalists can now upgrade mines.
+* Added a decision to grant statehood to colonies with over 50% average literacy.
+* Reduced max intellectual cap of colonies to 2%.
+* Reduced upkeep cost of colonial migration laws by half.
+* Created Small State promotion national focus for states below 400k population.
+* Organic Chemistry activation year changed from 1870 to 1860.
+* Electricty activation year changed from 1880 to 1875.
+* Added 1880 activation date to X-rays invention.
+* Removed 1886 activation date from Daimler's Automobile invention.
+* Increased Colonial Negotiations invention chance from Machine Guns, Naval Logistics, Iron Steamers, and Organic Chemistry from 5 to 50.
+* Increased Prophylaxis Against Malaria invention chance from Phenomenology, Combustion Engine, and Electricity from 5 to 50.
+* Added strategic RGO modifier to Amazonian rubber provinces.
+* Added small nerf to soldier promotion and small buff to craftsmen promotion to the Liberty national value.
+* Removed commerce research nerf and added a -0.01 non-colonial militancy buff to the Order national value.
+* Added a decision to change your national value.
+
+## Country changes:
+###### Scandinavia:
+* Starts with 40 liferating in all 1836 start dates in order to match historical population growth.
+
+###### Netherlands:
+* Removed population growth buff from Liberal Period event modifier and set starting liferating of all Dutch provinces to 40 in order to match historical population growth.
+* Batavia Reborn decision will not turn West Java into a state anymore. Instead it costs 250k pounds and increases the liferating of Batavia by 5.
+
+###### West Africa:
+* Nerfed starting liferating to 30 for all West African and Congo provinces. The populations for these provinces were imported from HPM which uses the 1936 census sizes for 1836. Liferating was nerfed to keep population from growing too large by 1936.
+* Added Oyo Jihad war between Sokoto and Oyo in 1836.
+
+###### British Raj:
+* British Raj cores are added to India after the Sepoy Rebellion is put down. This increases the number of brigades that can be recruited.
+
+###### USA:
+* Lowered starting soldier pops in 1836.
+
+###### Mexico:
+* Increased starting draft law to two year draft in the multiplayer bookmark.
+
+###### Persia:
+* Increased starting draft law to two year draft in the multiplayer bookmark.
+
+###### Afghanistan:
+* Annexed Herat in the multiplayer bookmark.
+
+###### Yemen:
+* Removed the South Yemeni sultantes. Realistically no one would play them and removing more country tags improves performance.
+
+
 # Version 0.81 - 8/4/2023
 ## Bug fixes:
 * Fixed non-upgradeable mine in Radom.

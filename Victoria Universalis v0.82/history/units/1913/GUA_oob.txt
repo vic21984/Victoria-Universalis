@@ -1,0 +1,62 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "José María Orellana"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Jorge Ubico"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 2186
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2186
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2186
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2186
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2187
+	}	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2187
+	}
+		regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2187
+	}
+}

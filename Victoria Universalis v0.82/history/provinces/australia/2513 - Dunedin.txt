@@ -1,0 +1,29 @@
+owner = CIV
+controller = CIV
+trade_goods = fish
+life_rating = 15
+1913.1.1 = {
+owner = NZL
+controller = NZL
+add_core = NZL
+life_rating = 35
+colonial = 0
+}
+
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}

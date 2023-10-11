@@ -1,0 +1,51 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Wilhelm von Dörnberg"
+	date = 1807.1.1
+	type = land
+	personality = mor30rec10
+	background = 2a2d_1
+	prestige = 0.3
+}
+
+leader = {
+	name = "Wilhelm II"
+	date = 1813.1.1
+	type = land
+	personality = org05exp10
+	background = 1a2d_1
+	prestige = 0.3
+}
+
+leader = {
+	name = "Prince Friedrich"
+	date = 1831.1.1
+	type = land
+	personality = org05att10
+	background = 1a1d_1
+	prestige = 0.1
+}
+
+army = {
+	name = "Kurhessische Armee"
+	location = 566
+	regiment = {
+		name= "1. Kurhessisches Infanterie-Brigade"
+		type = infantry
+		home = 566
+	}
+    regiment = {
+		name= "2. Kurhessisches Infanterie-Brigade"
+		type = infantry
+		home = 566
+	}
+}

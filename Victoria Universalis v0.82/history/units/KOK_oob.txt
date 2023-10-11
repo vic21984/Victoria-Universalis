@@ -1,0 +1,68 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	leader = {
+		name = "Madali Khan"
+		type = land
+		date = 1825.1.1
+		personality = org10att10
+		background = 1a1d_1
+		prestige = 0.1
+	}
+	name = "Army of Madali Khan"
+	location = 1202
+	regiment = {
+		name= "1st Brigade"
+		type = irregular
+		home = 1202
+	}
+
+	regiment = {
+		name= "2nd Brigade"
+		type = irregular
+		home = 1202
+	}
+
+	regiment = {
+		name= "3rd Brigade"
+		type = irregular
+		home = 1203
+	}
+}
+
+army = {
+	leader = {
+		name = "Shir Ali Khan"
+		type = land
+		date = 1825.1.1
+		personality = org05mor10
+		background = 2a1d_1
+	}
+	name = "Army of The Khanate of Kokand"
+	location = 1208
+	regiment = {
+		name= "4th Brigade"
+		type = irregular
+		home = 1195
+	}
+
+	regiment = {
+		name= "5th Brigade"
+		type = irregular
+		home = 1189
+	}
+
+	regiment = {
+		name= "6th Brigade"
+		type = irregular
+		home = 1190
+	}
+}

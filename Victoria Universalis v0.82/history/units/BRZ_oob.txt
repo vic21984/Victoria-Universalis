@@ -1,0 +1,159 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+URU = {
+	value = 100
+}
+
+leader = {
+	name = "Luís Alves de Lima e Silva"
+	picture = southamerican_general_6
+	date = 1836.1.1
+	type = land
+	personality = org15mor30
+	background = 2a2d_1
+}
+
+leader = {
+	name = "Sebastião Pinto"
+	date = 1825.1.1
+	type = land
+	personality = mor10rec05
+	background = 1a1d_1
+}
+
+leader = {
+	name = "Barão de Tramandaí"
+	date = 1830.1.1
+	type = land
+	personality = att10exp05
+	background = 1a2d_1
+}
+
+leader = {
+	name = "Manuel Marques de Sousa"
+	date = 1833.1.1
+	type = land
+	personality = rec05att10
+	background = 2a1d_1
+}
+
+leader = {
+	name = "Frederico Mariath"
+	picture = european_admiral_0
+	date = 1830.1.1
+	type = sea
+	personality = mor10rec05
+	background = 1a1d_1
+}
+
+army = {
+	name = "I Corpo do exército"
+	location = 2447
+	regiment = {
+		name= "1. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+
+	regiment = {
+		name= "4. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+
+	regiment = {
+		name= "1. Brigada de Cavalaria"
+		type = cavalry
+		home = 2450
+	}
+}
+
+army = {
+	name = "II Corpo do exército"
+	location = 2457
+	regiment = {
+		name= "5. Brigada de Infantaria"
+		type = irregular
+		home = 2450
+	}
+
+	regiment = {
+		name= "6. Brigada de Infantaria"
+		type = irregular
+		home = 2457
+	}
+	
+	regiment = {
+		name= "2. Brigada de Cavalaria"
+		type = cavalry
+		home = 2441
+	}
+
+}
+
+army = {
+	name = "III Corpo do exército"
+	location = 2424
+	regiment = {
+		name= "7. Brigada de Infantaria"
+		type = irregular
+		home = 2434
+	}
+
+	regiment = {
+		name= "8. Brigada de Infantaria"
+		type = irregular
+		home = 2429
+	}
+
+	regiment = {
+		name= "3. Brigada de Cavalaria"
+		type = cavalry
+		home = 2432
+	}
+}
+
+navy = {
+	name = "Marinha do Brasil"
+	location = 2447
+	ship = {
+		name = "Pedro I"
+		type = manowar
+	}
+
+	ship = {
+		name = "Afonso de Albuquerque"
+		type = manowar
+	}
+
+	ship = {
+		name = "Imperatriz"
+		type = frigate
+	}
+
+	ship = {
+		name = "Dona Januária"
+		type = frigate
+	}
+
+}

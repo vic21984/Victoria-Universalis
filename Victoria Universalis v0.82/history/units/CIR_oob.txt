@@ -1,0 +1,69 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+
+army = {
+	name = "Circassian Army"
+	location = 1051
+	
+
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1051
+	}
+	
+	regiment = {
+		name= "2. Brigade"
+		type = irregular
+		home = 1051
+	}
+
+	regiment = {
+		name= "3. Brigade"
+		type = irregular
+		home = 1051
+	}
+
+	regiment = {
+		name= "4. Brigade"
+		type = irregular
+		home = 1056
+	}
+
+	regiment = {
+		name= "6. Brigade"
+		type = irregular
+		home = 1056
+	}
+
+	regiment = {
+		name= "1. Cavalry"
+		type = cavalry
+		home = 1049
+	}
+
+	regiment = {
+		name= "2. Cavalry"
+		type = cavalry
+		home = 1049
+	}
+
+	leader = {
+		name = "Tuguzhuko Kyzbech"
+		picture = arab_general_4
+		type = land
+		date = 1836.1.1
+		personality = org15att15
+		background = 2a4d_1
+		prestige = 0.9
+	}
+}
+

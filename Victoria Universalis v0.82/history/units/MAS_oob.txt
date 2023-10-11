@@ -1,0 +1,78 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+
+SOK = {
+	value = 100
+}
+
+KNG = {
+	value = 30
+}
+
+DAM = {
+	value = 20
+}
+
+JAL = {
+	value = 100
+}
+
+DAH = {
+	value = -5
+}
+
+BEN = {
+	value = -15
+}
+
+GBU = { value = -200 }
+SEG = { value = -200 }
+MOS = { value = -200 }
+ASH = { value = -200 }
+
+leader = {
+	name = "Seku Amadu"
+	type = land
+	date="1836.1.1"
+	personality = org05mor10
+	background = 2a1d_1
+}
+army = {
+	name = "Army of the Massina Jihad"
+	location = 1804
+	
+regiment = {
+		name= "Massina Cavalry"	
+		type = cavalry
+		home = 1804	}
+
+
+regiment = {
+		name= "1st Massina Jihadis"
+		type = irregular
+	home = 1804
+	}
+
+
+regiment = {
+		name= "2nd Massina Jihadis"
+		type = irregular
+	home = 1799
+	}
+
+
+regiment = {
+		name= "3rd Massina Jihadis"
+		type = irregular
+	home = 1906	}
+}
+
+

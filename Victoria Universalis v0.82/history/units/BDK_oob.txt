@@ -1,0 +1,57 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Mir Mohammad Murad Beg"
+	type = land
+	date = 1825.8.20
+	personality = rec10att15
+	background = 2a2d_1
+}
+
+army = {
+	name = "Army of Mir Mohammad"
+	location = 1210
+	regiment = {
+		name = "Khan's Warriors"
+		type = irregular
+		home = 1210
+	}
+	regiment = {
+		name = "Khan's Warriors"
+		type = irregular
+		home = 1210
+	}
+	regiment = {
+		name = "Khan's Warriors"
+		type = irregular
+		home = 1210
+	}
+	regiment = {
+		name = "Khan's Warriors"
+		type = irregular
+		home = 1071
+	}
+	regiment = {
+		name = "Khan's Warriors"
+		type = irregular
+		home = 2669
+	}
+	regiment = {
+		name = "Horse Raiders"
+		type = cavalry
+		home = 1071
+	}
+	regiment = {
+		name = "Horse Raiders"
+		type = cavalry
+		home = 2618
+	}
+}

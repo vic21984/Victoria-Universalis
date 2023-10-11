@@ -1,0 +1,43 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = fish
+life_rating = 31
+naval_base = 1
+state_building = {
+	level = 2
+	building = explosives_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	## Audax Validator "." Ignore_NEXT
+	trade_goods = opium
+	naval_base = 6
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+}

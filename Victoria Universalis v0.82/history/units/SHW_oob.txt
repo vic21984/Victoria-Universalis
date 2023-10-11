@@ -1,0 +1,99 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+
+EGY = {
+	value = 30
+}
+
+GON = {
+	value = -200
+}
+
+TIG = {
+	value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+GJM = {
+	value = -200
+}
+
+HAR = {
+	value = -200
+}
+
+AWS = {
+	value = -200
+}
+
+WLO = {
+	value = -200
+}
+
+leader = {
+	name = "Ras Sahle Selassie"
+	type = land
+	date = 1836.1.1
+	personality = spd20rec10
+	background = 3a2d_1
+	prestige = 0.5
+}
+
+army = {
+	name = "Army of the Negus of Shewa"
+	location = 1859
+	regiment = {
+		name= "Negus' Guards"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "Negus' Horsemen"
+		type = cavalry
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Shewa Division"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "2nd Shewa Division"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "3rd Shewa Division"
+		type = irregular
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Hawassa Division"
+		type = irregular
+		home = 1860
+	}
+
+	regiment = {
+		name= "1st Aselia Division"
+		type = irregular
+		home = 1861
+	}
+
+}
+

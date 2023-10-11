@@ -1,0 +1,45 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+ZUL = {
+	value = -200
+}
+
+GAZ = {
+	value = -200
+}
+
+AGC = {
+	value = -200
+}
+
+XHO = {
+	value = -200
+}
+
+BSH = {
+	value = -200
+}
+
+army = {
+	name = "Royal Army of Matabele"
+	location = 2108
+	regiment = {
+		name= "Chief's Warriors"
+		type = irregular
+		home = 2108
+	}
+	regiment = {
+		name= "Chief's Warriors"
+		type = irregular
+		home = 2114
+	}
+}
+

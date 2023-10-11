@@ -1,0 +1,22 @@
+owner = CHL
+controller = CHL
+add_core = CHL
+trade_goods = cattle
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = artillery_factory
+		upgrade = yes
+	}
+}

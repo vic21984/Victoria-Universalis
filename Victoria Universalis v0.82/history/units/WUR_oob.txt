@@ -1,0 +1,80 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Fredrich Wilhelm"
+	date = 1819.1.1
+	type = land
+	personality = org10mor30
+	background = 2a1d_1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Ferdinand Gottleb"
+	date = 1820.1.1
+	type = land
+	personality = org10exp10
+	background = 1a2d_1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Wilhelm I"
+	date = 1812.1.1
+	type = land
+	personality = mor20exp10
+	background = 1a1d_1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Prince Friedrich"
+	date = 1829.1.1
+	type = land
+	personality = org05mor10
+	background = 1a1d_1
+	prestige = 0.1
+}
+
+army = {
+	name = "1. Division"
+	location = 589
+	regiment = {
+		name = "1. Reiter-Regiment König Karl" #Anachronistic by 30 years
+		type = cavalry
+		home = 589
+	}
+	regiment = {
+		name = "1. Infanterie-Regiment Königin Olga" #Anachronistic by 30 years
+		type = infantry
+		home = 589
+	}
+	regiment = {
+		name = "2. Infanterie-Regiment"
+		type = infantry
+		home = 589
+	}
+}
+
+army = {
+	name = "2. Division"
+	location = 593
+	regiment = {
+		name = "7. Infanterie-Regiment"
+		type = infantry
+		home = 593
+	}
+	regiment = {
+		name = "1. Bataillon FußArtillerie"
+		type = cuirassier
+		home = 593
+	}
+}

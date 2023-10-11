@@ -1,0 +1,17 @@
+owner = HUN
+controller = HUN
+add_core = HUN
+trade_goods = iron
+life_rating = 35
+terrain = plains_mine
+1836.1.2 = {
+	owner = AUS
+	controller = AUS
+	add_core = AUS
+}
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	remove_core = AUS
+	add_core = KUK
+}

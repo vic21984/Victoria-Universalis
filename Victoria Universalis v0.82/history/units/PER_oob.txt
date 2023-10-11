@@ -1,0 +1,206 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+AFG = {
+	value = -100
+}
+
+OMA = {
+	truce_until = 1841.1.1
+}
+
+ABU = {
+	truce_until = 1841.1.1
+}
+
+KAL = {
+	truce_until = 1841.1.1
+}
+
+leader = {
+	name = "Mohammad Shah Qajar"
+	date = 1836.1.1
+	type = land
+	personality = mor20att15
+	background = 2a2d_1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Izydor Borowski"
+	date = 1833.1.1
+	type = land
+	personality = org15rec15
+	background = 2a2d_1
+	prestige = 0.3
+}
+
+leader = {
+	name = "Khosrow Khan Gorji"
+	date = 1836.1.1
+	type = land
+	personality = rec10att10
+	background = 1a2d_1
+}
+
+leader = {
+	name = "Haji Mirza Aqasi"
+	date = 1836.1.1
+	type = land
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "The Shah's Army"
+	location = 1120
+    regiment = {
+        name= "1. Royal Guard"
+        type = infantry
+        home = 1121
+    }
+
+    regiment = {
+        name= "2. Royal Guard"
+        type = infantry
+        home = 1121
+    }
+
+    regiment = {
+        name= "2. Nezam"
+        type = infantry
+        home = 1122
+    }
+
+    regiment = {
+        name= "1. Zamburak"
+        type = cuirassier
+        home = 1124
+    }
+
+    regiment = {
+        name= "1. Nezam-Atlin"
+        type = cavalry
+        home = 1125
+    }
+}
+
+army = {
+    location = 1135 #Shiraz
+    name = "Army of Fars"
+    regiment = {
+        name= "2. Nezam-Atlin"
+        type = cavalry
+        home = 1135
+    }
+
+    regiment = {
+        name= "7. Nezam"
+        type = irregular
+        home = 1127
+    }
+
+    regiment = {
+        name= "8. Nezam"
+        type = irregular
+        home = 1127
+    }
+}
+
+army = {
+    location = 1147 #Mashhad
+    name = "Army of Khorasan"
+    regiment = {
+        name= "3. Nezam-Atlin"
+        type = cavalry
+        home = 1147
+    }
+
+    regiment = {
+        name= "9. Nezam"
+        type = irregular
+        home = 1115
+    }
+
+    regiment = {
+        name= "10. Nezam"
+        type = irregular
+        home = 1116
+    }
+}
+
+army = {
+    location = 1140 #Kerman
+    name = "Army of Kerman"
+    regiment = {
+        name= "4. Nezam-Atlin"
+        type = cavalry
+        home = 1129
+    }
+
+    regiment = {
+        name= "11. Nezam"
+        type = irregular
+        home = 1130
+    }
+
+    regiment = {
+        name= "12. Nezam"
+        type = irregular
+        home = 1137
+    }
+}
+
+army = {
+    name = "Nezam-e Jadid"
+    location = 1108 #Tabriz
+    regiment = {
+        name= "1. Nezam"
+        type = infantry
+        home = 1113
+    }
+
+
+    regiment = {
+        name= "3. Nezam"
+        type = infantry
+        home = 1127
+    }
+
+    regiment = {
+        name= "4. Nezam"
+        type = infantry
+        home = 1108
+    }
+	
+	regiment = {
+        name= "5. Nezam"
+        type = infantry
+        home = 1112
+    }
+
+    regiment = {
+        name= "6. Nezam"
+        type = infantry
+        home = 1111
+    }
+	
+	regiment = {
+        name= "Bahadoran"
+        type = guard
+        home = 1108
+    }
+
+    regiment = {
+        name= "3. Zamburak"
+        type = cuirassier
+        home = 1128
+    }
+}

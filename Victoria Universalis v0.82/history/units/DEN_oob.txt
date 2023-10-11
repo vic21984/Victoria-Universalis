@@ -1,0 +1,148 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+ENG = {
+	value = 0
+}
+
+PRU = {
+	value = 49
+}
+
+leader = {
+	name = "Crown Prince Christian VIII"
+	date = 1836.1.1
+	type = land
+	personality = org10exp10
+	background = 1a2d_1
+}
+
+leader = {
+	name = "Landgrave Friedrich"
+	date = 1836.1.1
+	type = land
+	personality = org10mor20
+	background = 2a3d_1
+}
+
+leader = {
+	name = "Frederick Ferdinand"
+	date = 1836.1.1
+	type = land
+	personality = rec10exp10
+	background = 2a1d_1
+}
+
+army = {
+	name = "Danske Haeren"
+	location = 372
+	regiment = {
+		name= "1.1. Infanteridivision"
+		type = infantry
+		home = 372
+	}
+
+	regiment = {
+		name= "2.1. Infanteridivision"
+		type = infantry
+		home = 372
+	}
+
+	regiment = {
+		name= "3.1. Infanteridivision"
+		type = infantry
+		home = 372
+	}
+	
+	regiment = {
+		name= "1.2. Infanteridivision"
+		type = infantry
+		home = 366
+	}
+
+	regiment = {
+		name= "2.2. Infanteridivision"
+		type = infantry
+		home = 366
+	}
+
+	regiment = {
+		name= "3.2. Infanteridivision"
+		type = infantry
+		home = 373
+	}
+
+	regiment = {
+		name= "1.1. Kavalleridivision"
+		type = dragoon
+		home = 373
+	}
+
+}
+
+navy = {
+	name = "Royal Navy"
+	location = 372
+	ship = {
+		name= "Danmark"
+		type = manowar
+	}
+
+	ship = {
+		name= "Dronning Marie"
+		type = manowar
+	}
+
+	ship = {
+		name= "Frederik den sjette"
+		type = manowar
+	}
+
+
+	ship = {
+		name= "Bellona"
+		type = frigate
+	}
+
+	ship = {
+		name= "Diana"
+		type = frigate
+	}
+
+	ship = {
+		name= "Freja"
+		type = frigate
+	}
+
+	ship = {
+		name= "Fylla"
+		type = frigate
+	}
+
+
+
+
+	ship = {
+		name= "1st Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2nd Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3rd Transport Flotilla"
+		type = clipper_transport
+	}
+
+}
+

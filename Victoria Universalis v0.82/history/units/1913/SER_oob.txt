@@ -1,0 +1,276 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Radomir Putnik"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a3d_1
+}
+leader = {
+	name = "Petar Bojovic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a4d_1
+}
+leader = {
+	name = "Zivojin Misic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a4d_1
+}
+leader = {
+	name = "Stepa Stepanovic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a5d_1
+}
+leader = {
+	name = "Pavle Jurisic Sturm"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Milan Milovanovic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Miloa Bozanovic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "1st Army"
+	location = 794
+	regiment = {
+		name= "I Timok Division"
+		type = infantry
+		home = 794
+	}
+	regiment = {
+		name= "II Timok Division "
+		type = infantry
+		home = 794
+	}
+	regiment = {
+		name= "I Morava Infantry Division"
+		type = infantry
+		home = 794
+	}
+	regiment = {
+		name= "II Morava Infantry Division"
+		type = infantry
+		home = 803
+	}
+	regiment = {
+		name= "1st Cavalry Division"
+		type = hussar
+		home = 794
+	}
+	regiment = {
+		name= "I Branicevo Detachment"
+		type = artillery
+		home = 794
+	}
+	regiment = {
+		name= "II Branicevo Detachment"
+		type = artillery
+		home = 794
+	}
+	regiment = {
+		name= "III Branicevo Detachment"
+		type = artillery
+		home = 796
+	}
+	regiment = {
+		name= "IV Branicevo Detachment"
+		type = artillery
+		home = 803
+	}
+	regiment = {
+		name= "V Branicevo Detachment"
+		type = artillery
+		home = 803
+	}
+}
+army = {
+	name = "2nd Army"
+	location = 795
+	regiment = {
+		name= "I Sumadia Division"
+		type = infantry
+		home = 795
+	}
+	regiment = {
+		name= "I Danub Division "
+		type = infantry
+		home = 795
+	}
+	regiment = {
+		name= "I Morava Division 'Iron Regiment'"
+		type = infantry
+		home = 795
+	}
+	regiment = {
+		name= "Mixed Division"
+		type = infantry
+		home = 795
+	}
+	regiment = {
+		name= "I Artillery Detachment"
+		type = artillery
+		home = 796
+	}
+	regiment = {
+		name= "II Artillery Detachment"
+		type = artillery
+		home = 796
+	}
+	regiment = {
+		name= "III Artillery Detachment"
+		type = artillery
+		home = 796
+	}
+	regiment = {
+		name= "IV Artillery Detachment"
+		type = artillery
+		home = 802
+	}
+	regiment = {
+		name= "V Artillery Detachment"
+		type = artillery
+		home = 802
+	}
+	regiment = {
+		name= "2nd Cavalry Division"
+		type = hussar
+		home = 802
+	}
+}
+army = {
+	name = "3rd Army"
+	location = 806
+	regiment = {
+		name= "I Drina Division"
+		type = infantry
+		home = 806
+	}
+	regiment = {
+		name= "II Drina Division "
+		type = infantry
+		home = 806
+	}
+	regiment = {
+		name= "Debelo Brdo Detachment"
+		type = infantry
+		home = 806
+	}
+	regiment = {
+		name= "Ljubovije Detachment"
+		type = artillery
+		home = 806
+	}
+	regiment = {
+		name= "Loznica Detachment"
+		type = artillery
+		home = 806
+	}
+	regiment = {
+		name= "Lesnia Detachment"
+		type = artillery
+		home = 806
+	}
+	regiment = {
+		name= "Sabac Detachment"
+		type = artillery
+		home = 807
+	}
+	regiment = {
+		name= "Obrenovac Detachment"
+		type = artillery
+		home = 807
+	}
+	regiment = {
+		name= "Jadar Chetnik Detachment"
+		type = infantry
+		home = 807
+	}
+	regiment = {
+		name= "Rudnik Chetnik Detachment"
+		type = infantry
+		home = 807
+	}
+}
+army = {
+	name = "Uzice Army"
+	location = 797
+	regiment = {
+		name= "I Sumadia Division"
+		type = infantry
+		home = 797
+	}
+	regiment = {
+		name= "Uzice Brigade"
+		type = infantry
+		home = 797
+	}
+	regiment = {
+		name= "Lim Detachment"
+		type = infantry
+		home = 804
+	}
+	regiment = {
+		name= "I Drina Detachment"
+		type = artillery
+		home = 804
+	}
+	regiment = {
+		name= "II Drina Detachment"
+		type = artillery
+		home = 798
+	}
+	regiment = {
+		name= "III Drina Detachment"
+		type = artillery
+		home = 798
+	}
+	regiment = {
+		name= "IV Drina Detachment"
+		type = artillery
+		home = 803
+	}
+	regiment = {
+		name= "V Drina Detachment"
+		type = artillery
+		home = 802
+	}
+	regiment = {
+		name= "Gornjacki Chetnik Detachment"
+		type = infantry
+		home = 799
+	}
+	regiment = {
+		name= "Zlatibor Chetnik Detachment"
+		type = infantry
+		home = 799
+	}
+}

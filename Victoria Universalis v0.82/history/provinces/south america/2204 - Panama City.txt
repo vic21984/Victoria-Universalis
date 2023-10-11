@@ -1,0 +1,18 @@
+owner = CLM
+controller = CLM
+add_core = CLM
+add_core = PNM
+trade_goods = fruit
+life_rating = 35
+terrain = hills_mine
+1913.1.1 = {
+	owner = PNM
+	controller = PNM
+	remove_core = CLM
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+	naval_base = 2
+}

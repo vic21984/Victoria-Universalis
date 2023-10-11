@@ -1,0 +1,41 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Sam Houston"
+	type = land
+	date="1836.1.1"
+	personality = spd20rec15
+	background = 4a5d_1
+}
+
+
+army = {
+	name = "Army of Texas"
+	location = 133
+	regiment = {
+		name= "Travis' Command"
+		type = hussar
+		home = 133
+	}
+
+	regiment = {
+		name= "Fannin's Command"
+		type = guard
+		home = 132
+	}
+	
+	regiment = {
+		name = "Burleson's Command"
+		type = cuirassier
+		home = 137
+	}
+	
+}

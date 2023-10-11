@@ -1,0 +1,96 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GEL = {
+	value = -200
+}
+
+army = {
+	leader = {
+		name = "Said bin Sultan Al-Said"
+		date = 1816.1.1
+		type = land
+		personality = org10att15
+		background = 2a2d_1
+	}
+	name = "Army of Muscat"
+	location = 1166
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1166
+	}
+	regiment = {
+		name= "2. Brigade"
+		type = irregular
+		home = 1145
+	}
+	regiment = {
+		name= "3. Brigade"
+		type = cavalry
+		home = 2647
+	}
+}
+
+army = {
+	leader = {
+		name = "Thuwaini bin Said"
+		date = 1836.1.1
+		type = land
+		personality = rec10att15
+		background = 2a1d_1
+	}
+	name = "Army of Zanzibar"
+	location = 2048
+	regiment = {
+		name= "1. Askaris"
+		type = irregular
+		home = 2048
+	}
+}
+
+army = {
+	name = "Army of Mombasa"
+	location = 2029
+	regiment = {
+		name= "2. Askaris"
+		type = irregular
+		home = 2029
+	}
+}
+
+leader = {
+	name = "Ahmad bin Na'aman Al Kaabi"
+	date = 1836.1.1
+	type = sea
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+navy = {
+	name = "Omani Fleet"
+	location = 1166
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Frigate"
+		type = frigate
+	}
+	ship = {
+		name= "Sultanah"
+		type = clipper_transport
+	}
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+}

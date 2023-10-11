@@ -1,0 +1,47 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+
+	name = "Army of the Sultan of Bone"
+
+	location = 1431
+
+	regiment = {
+
+		name= "1st irregular"
+
+		type = irregular
+
+		home = 1431
+
+	}
+
+
+	regiment = {
+
+		name= "2nd irregular"
+
+		type = irregular
+		home = 1432
+
+	}
+
+	regiment = {
+
+		name= "3rd irregular"
+
+		type = irregular
+		home = 1435
+	}
+
+
+}
+

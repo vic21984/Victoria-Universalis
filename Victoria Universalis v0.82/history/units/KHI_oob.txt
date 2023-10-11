@@ -1,0 +1,58 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Allah Quli Khan"
+	type = land
+	date = 1825.1.1
+	personality = org10att10
+	background = 1a2d_1
+}
+
+army = {
+	name = "Army of the Khanate of Khiva"
+	location = 1191
+	regiment = {
+		name= "1.Yomud"
+		type = irregular
+		home = 1191
+	}
+
+	regiment = {
+		name= "2.Yomud"
+		type = irregular
+		home = 1191
+	}
+
+	regiment = {
+		name= "3.Yomud"
+		type = cavalry
+		home = 1192
+	}
+
+	regiment = {
+		name= "1.Kirgiz"
+		type = irregular
+		home = 1192
+	}
+
+	regiment = {
+		name= "2.Kirgiz"
+		type = irregular
+		home = 1196
+	}
+
+	regiment = {
+		name= "3.Kirgiz"
+		type = cavalry
+		home = 1196
+	}
+
+}

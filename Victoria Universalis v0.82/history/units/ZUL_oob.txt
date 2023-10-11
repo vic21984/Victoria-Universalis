@@ -1,0 +1,68 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+XHO = {
+	value = -200
+}
+
+BSH = {
+	value = -200
+}
+
+MAT = {
+	value = -200
+}
+
+GAZ = {
+	value = -200
+}
+
+
+army = {
+	name = "Impi of the Zulu"
+	location = 2113
+	regiment = {
+		name= "1.Fasimba"
+		type = irregular
+		home = 2113
+	}
+
+	regiment = {
+		name= "2.Fasimba"
+		type = irregular
+		home = 2113
+	}
+
+	regiment = {
+		name= "1.Thulwana"
+		type = irregular
+		home = 2113
+	}
+
+	regiment = {
+		name= "2.Thulwana"
+		type = irregular
+		home = 2113
+	}
+
+	regiment = {
+		name= "1.Gobamakhosi"
+		type = irregular
+		home = 2112
+	}
+
+	regiment = {
+		name= "2.Gobamakhosi"
+		type = irregular
+		home = 2112
+	}
+
+}
+

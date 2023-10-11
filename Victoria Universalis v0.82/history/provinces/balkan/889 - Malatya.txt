@@ -1,0 +1,25 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = ARM
+add_core = KDS
+trade_goods = iron
+life_rating = 35
+terrain = mountain_mine
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

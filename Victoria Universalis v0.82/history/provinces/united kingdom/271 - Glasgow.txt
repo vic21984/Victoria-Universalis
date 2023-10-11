@@ -1,0 +1,46 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = SCO
+trade_goods = coal
+naval_base = 2 
+life_rating = 35
+terrain = hills_mine
+state_building = {
+	level = 2
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = canned_food_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = aeroplane_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	naval_base = 6
+}

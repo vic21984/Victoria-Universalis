@@ -1,0 +1,53 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Mehreb Khan"
+	date = 1836.1.1
+	type = land
+	personality = org05exp10
+	background = 2a2d_1
+}
+
+army = {
+	name = "Army of Mehred Khan"
+	location = 1221
+	regiment = {
+		name= "1.Ghilzye"
+		type = irregular
+		home = 1222
+	}
+
+	regiment = {
+		name= "2.Ghilzye"
+		type = irregular
+		home = 1146
+	}
+
+	regiment = {
+		name= "1.Baluchye"
+		type = irregular
+		home = 1221
+	}
+
+	regiment = {
+		name= "2.Baluchye"
+		type = irregular
+		home = 1221
+	}
+
+	regiment = {
+		name= "3.Baluchye"
+		type = cavalry
+		home = 1221
+	}
+
+}
+

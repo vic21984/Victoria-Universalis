@@ -1,0 +1,25 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = IRQ
+add_core = KDS
+trade_goods = sulphur
+life_rating = 35
+terrain = steppe_mine
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = artillery_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,68 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+NET = {
+	value = 50
+}
+
+POR = {
+	value = 35
+}
+
+BEN = {
+	value = 30
+}
+
+DAH = {
+	value = 40
+}
+
+ASH = {
+	value = 35
+}
+
+SOK = {
+	value = -30
+}
+
+ARO = {
+	value = 25
+}
+
+leader = {
+	name = "Oyo Amepo"
+	date = 1820.1.1
+	type = land
+	personality = org15mor40
+	background = 4a3d_1
+	prestige = 0.5
+}
+
+army = {
+	name = "Army of the Oyo Empire"
+	location = 1925
+	regiment = {
+		name= "Alaafin of Oyo's Guards"
+		type = cavalry
+		home = 1926
+	}
+	regiment = {
+		name= "1st Yoruba Warriors"
+		type = irregular
+		home = 1924
+	}
+	regiment = {
+		name= "2nd Yoruba Warriors"
+		type = irregular
+		home = 1925
+	}
+}
+
+

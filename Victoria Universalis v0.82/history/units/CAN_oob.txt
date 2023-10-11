@@ -1,0 +1,41 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Gordon Drummond"
+	date = 1836.1.1
+	type = land
+	personality = org10exp15
+	background = 2a2d_1
+}
+
+army = {
+	name = "Canadian Militia"
+	location = 57
+	regiment = {
+		name= "40th Regiment of Foot"
+		type = infantry
+		home = 46
+	}
+
+	regiment = {
+		name= "100th Regiment of Foot"
+		type = infantry
+		home = 56
+	}
+
+	regiment = {
+		name= "Quebec Artillery Regiment"
+		type = cuirassier
+		home = 65
+	}
+
+}
+

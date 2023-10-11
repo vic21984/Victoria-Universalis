@@ -1,0 +1,75 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+EGY = {
+	value = 30
+}
+
+GON = {
+	value = -200
+}
+
+SHW = {
+	value = -200
+}
+
+HAR = {
+	value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+GJM = {
+	value = -200
+}
+
+AWS = {
+	value = -200
+}
+
+leader = {
+	name = "Ras Wube Haile Mariam"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+
+army = {
+	name = "Army of the Ras of Tigray"
+	location = 1857
+	regiment = {
+		name= "Ras' Guards"
+		type = irregular
+		home = 1853
+	}
+
+	regiment = {
+		name= "Aksum Irregular"
+		type = irregular
+		home = 1856
+	}
+
+	regiment = {
+		name= "Antalo Irregular"
+		type = irregular
+		home = 1857
+	}
+
+	regiment = {
+		name= "Debre Tabor Irregular"
+		type = irregular
+		home = 1853
+	}
+
+}
+

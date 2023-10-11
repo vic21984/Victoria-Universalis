@@ -1,0 +1,15 @@
+owner = USA
+controller = USA
+add_core = USA
+trade_goods = grain
+life_rating = 40
+colony = 2
+terrain = hills_mine
+1913.1.1 = {
+	colony = 0
+	state_building = {
+		level = 1
+		building = fuel_refinery
+		upgrade = yes
+	}
+}

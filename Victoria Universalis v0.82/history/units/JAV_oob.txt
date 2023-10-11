@@ -1,0 +1,31 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+NET = {
+	value = -100
+}
+
+army = {
+	name = "Army of the Sultan of Java"
+	location = 1416
+	regiment = {
+		name= "1st irregular"
+		type = irregular
+		home = 1416
+	}
+
+	regiment = {
+		name= "2nd irregular"
+		type = irregular
+		home = 1419
+	}
+
+}
+

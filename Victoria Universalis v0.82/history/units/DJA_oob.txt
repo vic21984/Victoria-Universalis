@@ -1,0 +1,27 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of the Sultan of Jambi"
+	location = 1398
+		regiment = {
+		name= "Sultan Guards"		
+			type = irregular	
+			home = 1398
+		}
+	}
+
+leader = {
+	name = "Sultan Facharudin"
+	date = 1836.1.1
+	type = land
+	personality = org05mor10
+	background = 1a1d_1
+}
