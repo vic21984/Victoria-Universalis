@@ -135,6 +135,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = yugoslavia_formed
 			change_tag = YUG
+			add_accepted_culture = union
 			prestige = 50
 		}
 	}
