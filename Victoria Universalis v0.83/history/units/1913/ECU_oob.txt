@@ -1,0 +1,71 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Leónidas Plaza"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+navy = {
+	name = "Armada del Ecuador"
+	location = 2281
+
+	ship = {
+		name= "Libertador Bolívar"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Tungurahua"
+		type = commerce_raider
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 2279
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2279
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2279
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2279
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2279
+	}	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2283
+	}
+		regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2283
+	}
+}

@@ -1,0 +1,1036 @@
+political_decisions = {
+	sphere_eic = {
+		picture = star_of_india
+		alert = no
+		potential = {
+			tag = ENG
+			EIC = {
+				exists = yes
+				vassal_of = THIS
+				NOT = { in_sphere = THIS }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			diplomatic_influence = {
+				who = EIC
+				value = 400
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	unsphere_eic = {
+		picture = star_of_india
+		alert = no
+		potential = {
+			tag = ENG
+			EIC = {
+				exists = yes
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+		}
+		allow = {
+		}
+		effect = {
+			diplomatic_influence = {
+				who = EIC
+				value = -200
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	irish_famine_aid = {
+		picture = irish_famine
+		potential = {
+			tag = ENG
+			any_owned_province = {
+				has_province_modifier = irish_potato_blight
+			}
+		}
+		allow = {
+			year = 1847
+			money = 2000000
+		}
+		## Audax Validator "." Ignore_NEXT
+		effect = {
+			treasury = -2000000
+			any_owned = {
+				remove_province_modifier = irish_potato_blight
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+
+	repeal_the_corn_laws = {
+		potential = {
+			tag = ENG
+			NOT = {
+				has_country_flag = corn_laws_repealed_flag
+			}
+		}
+		allow = {
+			OR = {
+				average_militancy = 2
+				average_consciousness = 3
+			}
+		}
+
+		effect = {
+			remove_country_modifier = corn_laws
+			any_pop = {
+				militancy = -1
+				consciousness = 1
+			}
+			set_country_flag = corn_laws_repealed_flag
+		}
+	}
+
+#	annex_india = {
+#		picture = east_india_company
+#		alert = no
+#		potential = {
+#			ai = no
+#			tag = ENG
+#			EIC = {
+#				exists = yes
+#				vassal_of = THIS
+#				civilized = no
+#			}
+#			NOT = { has_country_flag = india_annexed }
+#		}
+#
+#		allow = {
+#			EIC = { civilized = no }
+#			has_global_flag = sepoy_rebellion_ended
+#			OR = {
+#				money = 6000000
+#				AND = {
+#					ai = yes
+#					money = 2000000
+#				}
+#			}
+#		}
+#
+#		effect = {
+#			random_owned = {
+#				limit = {
+#					owner = { ai = yes }
+#				}
+#				treasury = -2000000
+#			}
+#			## Audax Validator "." Ignore_NEXT
+#			random_owned = {
+#				limit = {
+#					owner = { ai = no }
+#				}
+#				treasury = -2000000
+#				treasury = -2000000
+#				treasury = -2000000
+#			}
+#			inherit = EIC
+#			any_owned = {
+#				limit = { has_building = province_selector }
+#				province_selector = -1
+#			}
+#			remove_country_modifier = crown_rule
+#			set_country_flag = india_annexed
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+
+	annex_canada = {
+		picture = canadian_confederation
+		alert = no
+		potential = {
+			ai = no
+			tag = ENG
+			OR = {
+				CAN = {
+					exists = yes
+					vassal_of = THIS
+					government = colonial_company
+				}
+				RPL = {
+					exists = yes
+					vassal_of = THIS
+					government = colonial_company
+				}
+			}
+			NOT = { has_country_flag = canada_annexed }
+		}
+
+		allow = {
+			CAN = { government = colonial_company }
+			money = 1500000
+		}
+
+		effect = {
+			treasury = -1500000
+			inherit = CAN
+			inherit = RPL
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_country_flag = canada_annexed
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	annex_south_africa = {
+		picture = south_africa_union
+		alert = no
+		potential = {
+			ai = no
+			tag = ENG
+			SAF = {
+				exists = yes
+				vassal_of = THIS
+				government = colonial_company
+			}
+			NOT = { has_country_flag = south_africa_annexed }
+		}
+
+		allow = {
+			SAF = { government = colonial_company }
+			money = 1000000
+		}
+
+		effect = {
+			treasury = -1000000
+			inherit = SAF
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_country_flag = south_africa_annexed
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	annex_australia = {
+		picture = australian_federation
+		alert = no
+		potential = {
+			ai = no
+			tag = ENG
+			AST = {
+				exists = yes
+				vassal_of = THIS
+				government = colonial_company
+			}
+			NOT = { has_country_flag = australia_annexed }
+		}
+
+		allow = {
+			AST = { government = colonial_company }
+			money = 1000000
+		}
+
+		effect = {
+			treasury = -1000000
+			inherit = AST
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_country_flag = australia_annexed
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	annex_new_zealand = {
+		picture = new_zealand_proclamation
+		alert = no
+		potential = {
+			ai = no
+			tag = ENG
+			NZL = {
+				exists = yes
+				vassal_of = THIS
+				government = colonial_company
+			}
+			NOT = { has_country_flag = new_zealand_annexed }
+		}
+
+		allow = {
+			NZL = { government = colonial_company }
+			money = 500000
+		}
+
+		effect = {
+			treasury = -500000
+			inherit = NZL
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_country_flag = new_zealand_annexed
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	tax_eic = {
+		picture = levy_taxes
+		potential = {
+			is_our_vassal = EIC
+		}
+		allow = {
+			war = no
+			NOT = { has_country_modifier = taxing_eic }
+		}
+		effect = {
+			add_country_modifier = { name = taxing_eic duration = 3650 }
+			release_vassal = EIC
+			leave_alliance = EIC
+			war = {
+				target = EIC
+				attacker_goal = { casus_belli = vassal_tax }
+				attacker_goal = { casus_belli = status_quo }
+			}
+			EIC = {
+				set_country_flag = tax_war
+				any_owned = {
+					change_controller = ENG
+				}
+			}
+		}
+	}
+
+	expand_eic_rgo = {
+		picture = calcutta_farm
+		potential = {
+			is_our_vassal = EIC
+			NOT = { has_country_flag = expanded_eic_rgo }
+			has_global_flag = sepoy_rebellion_ended
+		}
+		allow = {
+			money = 1000000
+		}
+		effect = {
+			set_country_flag = expanded_eic_rgo
+			EIC = {
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1600000
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 20
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1520000
+						NOT = { total_pops = 1600000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 19
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1440000
+						NOT = { total_pops = 1520000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 18
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1360000
+						NOT = { total_pops = 1440000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 17
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1280000
+						NOT = { total_pops = 1360000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 16
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1200000
+						NOT = { total_pops = 1280000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 15
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1120000
+						NOT = { total_pops = 1200000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 14
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 1040000
+						NOT = { total_pops = 1120000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 13
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 960000
+						NOT = { total_pops = 1040000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 12
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 880000
+						NOT = { total_pops = 960000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 11
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 800000
+						NOT = { total_pops = 880000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 10
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 720000
+						NOT = { total_pops = 800000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 9
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 640000
+						NOT = { total_pops = 720000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 8
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 560000
+						NOT = { total_pops = 640000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 7
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 480000
+						NOT = { total_pops = 560000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 6
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 400000
+						NOT = { total_pops = 480000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 5
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 320000
+						NOT = { total_pops = 400000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 4
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 240000
+						NOT = { total_pops = 320000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 3
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 160000
+						NOT = { total_pops = 240000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 2
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fruit
+							trade_goods = cattle
+							trade_goods = fish
+							trade_goods = wool
+							trade_goods = cotton
+							trade_goods = dye
+							trade_goods = tea_leaves
+							trade_goods = coffee_beans
+							trade_goods = silk
+							trade_goods = timber
+							trade_goods = tropical_wood
+							trade_goods = rubber
+							trade_goods = opium
+							trade_goods = tobacco
+						}
+						total_pops = 80000
+						NOT = { total_pops = 160000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 1
+				}
+			}
+		}
+	}
+
+	ionian_islands_question = {
+		potential = {
+			tag = ENG
+			ION = {
+				vassal_of = ENG
+			}
+			ION = { ai = yes }
+			NOT = {
+				truce_with = GRE
+			}			
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+		}
+
+		effect = {
+			relation = {
+				who = GRE
+				value = 50
+			}
+			diplomatic_influence = {
+				who = GRE
+				value = 50
+			}
+			prestige = 10
+			badboy = -4
+			GRE = {
+				inherit = ION
+				## Audax Validator "." Ignore_NEXT
+				any_owned = {
+					limit = { has_building = province_selector }
+					province_selector = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					AND = {
+						year = 1864 
+						month = 4
+					}
+				}
+			}
+		}
+	}
+
+	rhodesia_charter = {
+		potential = {
+			tag = ENG
+			owns = 2068
+			owns = 2069
+			owns = 2070
+			owns = 2071
+			owns = 2072
+			owns = 2073
+			owns = 2635
+			NOT = {
+				has_country_flag = ian_would_be_proud
+			}
+		}
+
+		allow = {
+			invention = mission_to_civilize
+		}
+
+		effect = {
+			prestige = 10
+			2068 = {
+				change_province_name = "Salisbury"
+				state_scope = {
+					change_region_name = "Southern Rhodesia"
+					any_owned = {
+						add_core = RHO
+						life_rating = 5
+					}
+				}
+			}
+			set_country_flag = ian_would_be_proud
+		}
+	}
+
+	north_borneo_protectorate = {
+		picture = map_borneo
+		potential = {
+			tag = ENG
+			NOT = {
+				owns = 1394
+				owns = 1395
+				owns = 1396
+			}
+			OR = {
+				1393 = {
+					owner = {
+						tag = SWK
+						ai = yes
+					}
+				}
+				1394 = {
+					owner = {
+						tag = SWK
+						ai = yes
+					}
+				}
+				1395 = {
+					owner = {
+						tag = SWK
+						ai = yes
+					}
+				}
+				1396 = {
+					owner = {
+						tag = SWK
+						ai = yes
+					}
+				}
+			}
+			NOT = { has_country_flag = north_borneo_protectorate }
+		}
+
+		allow = {
+			invention = prophylaxis_against_malaria
+			OR = {
+				ai = yes
+				1394 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+				1395 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+				1396 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = north_borneo_protectorate
+			badboy = 2
+			any_country = {
+				limit = {
+					NOT = { tag = THIS }
+					OR = {
+						owns = 1393
+						owns = 1394
+						owns = 1395
+						owns = 1396
+						owns = 1397
+					}
+					ai = yes
+				}
+				country_event = { id = 36973 days = 0 }
+			}
+		}
+	}
+
+	federated_malay_states = {
+		picture = map_malaysia
+		potential = {
+			tag = ENG
+			NOT = { owns = 1390 }
+			owns = 1384
+			1390 = {
+				owner = {
+					ai = yes
+					civilized = no
+				}
+			}
+			NOT = { has_country_flag = federated_malay_states }
+		}
+
+		allow = {
+			invention = colonial_negotiations
+			war = no
+			OR = {
+				ai = yes
+				1390 = {
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = federated_malay_states
+			badboy = 2
+			random_country = {
+				limit = {
+					NOT = { tag = THIS }
+					owns = 1390
+					ai = yes
+					civilized = no
+				}
+				country_event = { id = 36974 days = 0 }
+			}
+		}
+	}
+
+}

@@ -1,0 +1,59 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "José Antonio Páez"
+	date = 1836.1.1
+	type = land
+	personality = org05att05
+	background = 2a1d_1
+}
+
+army = {
+	name = "Ejército de Venezuela"
+	location = 2264
+	regiment = {
+		name= "1. División de Infantería"
+		type = infantry
+		home = 2264
+	}
+
+	regiment = {
+		name= "2. División de Infantería"
+		type = infantry
+		home = 2264
+	}
+
+	regiment = {
+		name= "3. División de Infantería"
+		type = infantry
+		home = 2267
+	}
+
+	regiment = {
+		name= "1. División de Caballería"
+		type = cavalry
+		home = 2268
+	}
+
+	regiment = {
+		name= "2. División de Caballería"
+		type = cavalry
+		home = 2269
+	}
+
+	regiment = {
+		name= "3. División de Caballería"
+		type = cavalry
+		home = 2271
+	}
+
+}
+

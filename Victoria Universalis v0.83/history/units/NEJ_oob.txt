@@ -1,0 +1,36 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Faisal bin Saud"
+	date = 1836.1.1
+	type = land
+	personality = rec10att15
+	background = 2a2d_1
+}
+army = {
+	name = "Saudi Army"
+	location = 1157
+	regiment = {
+		name = "1.Saudi"
+		type = cavalry
+		home = 1157
+	}
+	regiment = {
+		name = "2.Saudi"
+		type = cavalry
+		home = 1157
+	}
+	regiment = {
+		name = "3.Saudi"
+		type = cavalry
+		home = 1163
+	}
+}

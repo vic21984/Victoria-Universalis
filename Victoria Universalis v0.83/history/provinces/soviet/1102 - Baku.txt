@@ -1,0 +1,24 @@
+owner = TCA
+controller = TCA
+add_core = TCA
+add_core = AZB
+trade_goods = wool
+life_rating = 35
+terrain = steppe_mine
+1913.1.1 = {
+owner = RUS
+controller = RUS
+add_core = RUS
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+}

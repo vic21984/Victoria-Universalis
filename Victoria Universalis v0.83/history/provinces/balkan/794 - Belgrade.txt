@@ -1,0 +1,34 @@
+owner = SER
+controller = SER
+add_core = SER
+add_core = YUG
+trade_goods = grain
+life_rating = 40
+1913.1.1 = {
+	fort = 4
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,69 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of Cyrenaica"
+	location = 1740
+
+	leader = {
+		name = "Abd al-Jalil"
+		date = 1836.1.1
+		type = land
+		personality = mor30att15
+		background = 2a2d_1
+		prestige = 0.1
+	}
+
+	regiment = {
+		name= "1.Ihajenem"
+		type = irregular
+		home = 1734
+	}
+	regiment = {
+		name= "2.Ihajenem"
+		type = irregular
+		home = 1735
+	}
+	regiment = {
+		name= "Desert Cavalry"
+		type = cavalry
+		home = 1744
+	}
+}
+
+army = {
+	name = "Army of Tripoli"
+	location = 1744
+
+	leader = {
+		name = "Ghuma al-Mahmudi"
+		date = 1836.1.1
+		type = land
+		personality = rec05att15
+		background = 2a2d_1
+		prestige = 0.1
+	}
+
+	regiment = {
+		name= "1.Imazighen"
+		type = irregular
+		home = 1731
+	}
+	regiment = {
+		name= "1.Imazighen"
+		type = irregular
+		home = 1733
+	}
+	regiment = {
+		name= "Desert Cavalry"
+		type = cavalry
+		home = 1732
+	}
+}

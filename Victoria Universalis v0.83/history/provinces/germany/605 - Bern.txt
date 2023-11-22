@@ -1,0 +1,44 @@
+owner = SWI
+controller = SWI
+add_core = SWI
+trade_goods = iron
+life_rating = 35
+fort = 1
+terrain = mountain_mine
+1913.1.1 = {
+	state_building = {
+		level = 7
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = cigarette_factory
+		upgrade = yes
+	}
+}

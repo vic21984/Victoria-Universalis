@@ -1,0 +1,789 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+
+	id = 31501
+
+	trigger = {
+		has_country_flag = austria
+		year = 1836
+		tobacco = 100
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1837
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1838
+		}
+	}
+
+	title = "EVTNAME31501"
+	desc = "EVTDESC31501"
+	picture = "smoking"
+
+	option = {
+		name = "EVTOPTA31501" 
+		tobacco = -100
+	}
+}
+
+country_event = {
+
+	id = 31502
+	news = yes
+	news_desc_long = "EVTDESC31502_NEWS_LONG"
+	news_desc_medium = "EVTDESC31502_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31502_NEWS_SHORT"
+
+	trigger = {
+		has_country_flag = austria
+		year = 1842
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+		NOT = {
+			year = 1845		
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1843
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1844
+		}
+	}
+
+	title = "EVTNAME31502"
+	desc = "EVTDESC31502"
+	picture = "Ferdinand"
+
+	option = {
+		name = "EVTOPTA31502" 
+		any_pop = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+			scaled_consciousness = {
+				factor = 3
+				ideology = liberal
+			}
+		}
+	}
+}
+
+
+country_event = {
+
+	id = 31503
+
+	trigger = {
+		has_country_flag = austria
+		year = 1842
+		NOT = {
+			exists = HUN
+			year = 1845
+			has_country_flag = HungarianLanguage
+			}
+		}
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1843
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1844
+		}
+	}
+
+	title = "EVTNAME31503"
+	desc = "EVTDESC31503"
+	picture = "Budapest"
+
+	option = {
+		name = "EVTOPTA31503" 
+		set_country_flag = HungarianLanguage
+		any_pop = {
+			limit = {
+				has_pop_culture = hungarian
+			}
+			militancy = -1
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = slovak
+					has_pop_culture = croat
+					has_pop_culture = romanian
+				}
+			}
+			consciousness = 2
+		}
+	}
+}
+
+country_event = {
+
+	id = 31504
+	news = yes
+	news_desc_long = "EVTDESC31504_NEWS_LONG"
+	news_desc_medium = "EVTDESC31504_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31504_NEWS_SHORT"
+
+	trigger = {
+		has_country_flag = austria
+		year = 1843
+		OR = {
+			ruling_party_ideology = reactionary
+			ruling_party_ideology = conservative
+			}
+		NOT = {
+			exists = CRO
+			exists = SLO #Slovenia
+			year = 1846
+			has_country_flag = IlyaGarashinin
+			}
+	}
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1844
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1845
+		}
+	}
+
+	title = "EVTNAME31504"
+	desc = "EVTDESC31504"
+	picture = "Ilija"
+
+	option = {
+		name = "EVTOPTA31504" 
+		set_country_flag = IlyaGarashinin
+		any_pop = {
+			limit = {
+				has_pop_culture = serb
+			}
+			militancy = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = croat
+					has_pop_culture = serb
+					has_pop_culture = slovene
+				}
+			}
+			consciousness  =1
+		}
+	}
+}
+
+country_event = {
+
+	id = 31505
+	news = yes
+	news_desc_long = "EVTDESC31505_NEWS_LONG"
+	news_desc_medium = "EVTDESC31505_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC31505_NEWS_SHORT"
+
+	trigger = {
+		has_country_flag = austria
+		year = 1897
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			}
+		NOT = {
+			year = 1900
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1898
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1899
+		}
+	}
+
+	title = "EVTNAME31505"
+	desc = "EVTDESC31505"
+	picture = "Sisi"
+
+	option = {
+		name = "EVTOPTA31505" 
+		any_pop = {
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = reactionary
+			}
+			militancy = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 31506
+
+	trigger = {
+		has_country_flag = austria
+		year = 1911
+		expressionism = 1 #has the expressionism tech
+		NOT = {
+			year = 1914
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1912
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1913
+		}
+	}
+
+	title = "EVTNAME31506"
+	desc = "EVTDESC31506"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA31502" 
+		prestige = 3
+	}
+}
+
+country_event = {
+
+	id = 31507 #see 35400 for LOM parallel event
+
+	trigger = {
+		has_country_flag = austria
+		year = 1842
+		NOT = {
+			year = 1845
+			exists = LOM
+			has_global_flag = Nabucco
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1843
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1844
+		}
+	}
+
+	title = "EVTNAME35400"
+	desc = "EVTDESC35400"
+	picture = "Verdi"
+
+	option = {
+		name = "EVTOPTA35400" 
+		prestige = 3
+		any_pop = { 
+			limit = { 
+				has_pop_culture = north_italian 
+			} 
+			consciousness = 1 
+		}
+		set_global_flag = Nabucco
+	}
+}
+
+country_event = {
+	picture = polish_uprising
+
+	id = 31508 #see PRU34610 and RUS32501 for parallel events
+
+	trigger = {
+		NOT = {
+			OR = {
+				has_global_flag = 1913_bookmark
+				has_country_flag = 1848_polish_uprising
+			}
+		}
+		OR = {
+			owns = 699 # Posen - PRU
+			owns = 706 # Warsaw - RUS
+			owns = 714 # Tarnow - AUS
+		}
+		year = 1846
+		war = no
+		NOT = {
+			year = 1849
+			exists = POL
+		}	
+	}
+
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1847
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1848
+		}
+	}
+
+	title = "EVTNAME32501"
+	desc = "EVTDESC32501"
+
+	option = {
+		name = "EVTOPTA32501" 
+		set_country_flag = 1848_polish_uprising
+		any_owned = {
+			limit = {
+				is_core = POL
+			}
+			add_province_modifier = { name = polish_nationalism duration = 1095 }
+		}
+		any_pop = {
+			limit = { has_pop_culture = polish }
+			militancy = 5
+			consciousness = 5
+		}
+	}
+}
+
+
+country_event = {
+	title = EVTNAME31514
+	desc = EVTDESC31514
+	id = 31514 #Forming Germany
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = austria
+		tag = GER
+	}
+
+	option = {	
+		name = "EVTOPTA31514"
+		remove_accepted_culture = czech
+		remove_accepted_culture = hungarian
+		remove_accepted_culture = polish
+		remove_accepted_culture = croat
+		remove_accepted_culture = slovene
+		remove_accepted_culture = romanian
+	}
+}
+ 
+country_event = {
+	title = "AI Austria loses Brothers' War"
+	id = 31515 #Lost Brothers' War
+	
+	fire_only_once = yes
+
+	trigger = {
+		ai = yes
+		exists = yes
+		has_country_flag = austria
+		has_country_flag = lost_hegemony_war
+	}
+
+	option = {
+		relation = {
+			who = NGF
+			value = 400
+		}
+		relation = {
+			who = PRU
+			value = 400
+		}
+		relation = {
+			who = GER
+			value = 400
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME31520"
+	desc = "EVTDESC31520"
+	picture = "hungarian_revolution_1848"
+	id = 31520
+
+	trigger = {
+		tag = HUN
+		overlord = {
+			has_country_flag = austria
+		}
+		owns = 641
+		year = 1848
+		NOT = { year = 1850 }
+		NOT = { has_country_flag = hungarian_revolution_1848 }
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = { has_global_flag = cultures_setup }
+	}
+
+	option = {
+		name = "EVTOPTA31520"
+		set_country_flag = hungarian_revolution_1848
+		government = democracy
+		political_reform = no_slavery
+		political_reform = universal_weighted_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_secret_ballots
+		define_general = {
+			name = "§RArtúr Görgei§W"
+			personality = org15mor40
+			background = 4a4d_1
+		}
+		define_general = {
+			name = "§RGyörgy Klapka§W"
+			personality = mor40rec15
+			background = 3a3d_1
+		}
+		overlord = {
+			release_vassal = HUN
+			country_event = { id = 31521 days = 1 }
+			diplomatic_influence = {
+				who = HUN
+				value = -400
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31520"
+		set_country_flag = hungarian_revolution_1848
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME31521"
+	desc = "EVTDESC31521"
+	picture = "hungarian_revolution_1848"
+	id = 31521
+
+	trigger = {
+		has_country_flag = austria
+		HUN = { has_country_flag = hungarian_revolution_1848 }
+		NOT = { has_country_flag = hungarian_revolution_1848 }
+	}
+
+	option = {
+		name = "EVTOPTA31521"
+		set_country_flag = hungarian_revolution_1848
+		HUN = {
+			set_country_flag = hungarian_war_of_independence
+		}
+		any_country = {
+			end_war = HUN
+		}
+		leave_alliance = HUN
+		random_country = {
+			limit = {
+				NOT = { war_with = THIS }
+				tag = RUS
+				ai = yes
+			}
+			relation = {
+				who = THIS
+				value = 400
+			}
+			relation = {
+				who = HUN
+				value = -400
+			}
+			create_alliance = THIS
+		}
+		HUN = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = acquire_all_cores country = HUN }
+				attacker_goal = { casus_belli = status_quo }
+				defender_goal = { casus_belli = annex_core_country }
+				defender_goal = { casus_belli = status_quo }
+				call_ally = yes
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31521"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME31522"
+	desc = "EVTDESC31522"
+	picture = "hungarian_revolution_1848"
+	id = 31522
+
+	trigger = {
+		has_country_flag = austria
+		has_country_flag = hungarian_revolution_1848
+		HUN = { exists = no }
+		NOT = { war_with = HUN }
+		NOT = { has_global_flag = habsburg_victory }
+		NOT = { has_global_flag = hungarian_victory }
+	}
+
+	option = {
+		name = "EVTOPTA31522"
+		set_global_flag = habsburg_victory
+		random_owned = {
+			limit = {
+				owner = { tag = AUS }
+			}
+			owner = {
+				HUN = {
+					all_core = { add_core = THIS }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME31523"
+	desc = "EVTDESC31523"
+	picture = "hungarian_revolution_1848"
+	id = 31523
+
+	trigger = {
+		tag = HUN
+		exists = yes
+		has_country_flag = hungarian_war_of_independence
+		NOT = {
+			war_with = AUS
+			war_with = SGF
+		}
+		NOT = { has_global_flag = habsburg_victory }
+		NOT = { has_global_flag = hungarian_victory }
+	}
+
+	option = {
+		name = "EVTOPTA31523"
+		set_global_flag = hungarian_victory
+		HUN = {
+			all_core = {
+				remove_core = AUS
+				remove_core = SGF
+			}
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME31524"
+	desc = "EVTDESC31524"
+	picture = "hungarian_revolution_1848"
+	id = 31524
+
+	trigger = {
+		tag = KUK
+		NOT = { any_owned_province = { is_core = HUN } }
+	}
+
+	option = {
+		name = "EVTOPTA31524"
+		change_tag = AUS
+		KUK = { all_core = { remove_core = KUK } }
+		remove_accepted_culture = hungarian
+	}
+}
+
+country_event = {
+	title = "EVTNAME31525"
+	desc = "EVTDESC31525"
+	picture = "porta_tosa"
+	id = 31525
+
+	trigger = {
+		tag = AUS
+		OR = {
+			has_country_flag = annexed_hungary
+			has_country_flag = hungarian_revolution_1848
+		}
+		NOT = { has_global_flag = five_days_milan }
+		owns = 726
+		owns = 729
+	}
+
+	option = {
+		name = "EVTOPTA31525"
+		set_global_flag = five_days_milan
+		726 =  {
+			secede_province = LOM
+		}
+		any_owned = {
+			limit = {
+				is_core = VEN
+				NOT = {
+					OR = {
+						is_core = AUS
+						is_core = HUN
+					}
+				}
+			}
+			secede_province = VEN
+		}
+		LOM = { add_country_modifier = { name = general_mobilization duration = 365 } }
+		VEN = { add_country_modifier = { name = general_mobilization duration = 365 } }
+		random_country = {
+			limit = {
+				tag = SAR
+				owns = 720
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 31526 days = 5 }
+		}
+		war = {
+			target = VEN
+			attacker_goal = { casus_belli = annex_core_country }
+		}
+		war = {
+			target = LOM
+			attacker_goal = { casus_belli = annex_core_country }
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME31526"
+	desc = "EVTDESC31526"
+	picture = "battle_of_goito"
+	id = 31526
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31526"
+		inherit = LOM
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		create_alliance = VEN
+		relation = {
+			who = VEN
+			value = 200
+		}
+		military_access = VEN
+		random_country = {
+			limit = {
+				tag = AUS
+				ai = yes
+			}
+			leave_alliance = RUS
+		}
+		war = {
+			target = AUS
+			attacker_goal = { casus_belli = acquire_state_free state_province_id = 727 }
+			defender_goal = { casus_belli = acquire_state_free state_province_id = 726 }
+		}
+		ai_chance = {
+			factor = 0.7
+		}
+		AUS = {
+			country_event = { id = 31527 days = 0 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31526"
+		ai_chance = {
+			factor = 0.3
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME31527"
+	desc = "EVTDESC31527"
+	picture = "battle_of_goito"
+	id = 31527
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31527"
+	}
+}

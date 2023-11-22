@@ -1,0 +1,171 @@
+#Uman Region (116000) #see Trucial States.txt for balance of region
+#under the rule of Oman in 1836
+#Muscat (32000/8000 POPS)
+1166 = {
+    aristocrats = {
+        culture = bedouin
+        religion = shiite
+        size = 400
+    }
+
+    bureaucrats = {
+        culture = bedouin
+        religion = shiite
+        size = 50
+    }
+
+    officers = {
+        culture = bedouin
+        religion = shiite
+        size = 100
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = shiite
+        size = 400
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = shiite
+        size = 1600
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = shiite
+        size = 1200
+    }
+
+    zbankers = {
+        culture = bedouin
+        religion = shiite
+        size = 36600
+    }
+}
+#Nizwa (24000/6000 POPS)
+1170 = {
+    aristocrats = {
+        culture = bedouin
+        religion = shiite
+        size = 225
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = shiite
+        size = 300
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = shiite
+        size = 1200
+    }
+
+    zbankers = {
+        culture = bedouin
+        religion = shiite
+        size = 15600
+    }
+}
+#Sur (24000/6000 POPS)
+1171 = {
+    aristocrats = {
+        culture = bedouin
+        religion = shiite
+        size = 50
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = shiite
+        size = 150
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = shiite
+        size = 400
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = shiite
+        size = 150
+    }
+
+    zbankers = {
+        culture = bedouin
+        religion = shiite
+        size = 12000
+    }
+}
+#Duqm (20000/5000 POPS)
+1172 = {
+    aristocrats = {
+        culture = bedouin
+        religion = shiite
+        size = 144
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = shiite
+        size = 192
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = shiite
+        size = 482
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = shiite
+        size = 96
+    }
+
+    zbankers = {
+        culture = bedouin
+        religion = shiite
+        size = 8733
+    }
+}
+#Hadramaut Region (36000) #see Yemen.txt for balance of region
+#under the rule of Oman in 1836
+#Gwadar - Ziryanka (1000/250 POPS)
+2633 = {
+    aristocrats = {
+        culture = bedouin
+        religion = sunni
+        size = 15
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = sunni
+        size = 75
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = sunni
+        size = 300
+    }
+
+    zbankers = {
+        culture = baluchi
+        religion = sunni
+        size = 1450
+    }
+
+}

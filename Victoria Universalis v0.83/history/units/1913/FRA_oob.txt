@@ -1,0 +1,2131 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GER = {
+	truce_until = 1914.6.28
+}
+
+leader = {
+	name = "Adolphe Messimy"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Joseph Joffre"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a3d_1
+	prestige = 0.2
+}
+leader = {
+	name = "Ferdinand Foch"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a3d_1
+}
+leader = {
+	name = "Victor-Constant Michel"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Robert Nivelle"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Philippe Pétain"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a4d_1
+}
+leader = {
+	name = "Maxime Weygand"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a3d_1
+}
+leader = {
+	name = "Charles Lanrezac"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Victor d'Urbal"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Maurice Sarrail"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Adolphe Guillaumat"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Louis Franchet d'Espèrey"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a1d_1
+}
+leader = {
+	name = "Joseph Gallieni"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Michel-Joseph Maunoury"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Pierre Roques"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Marie-Eugène Debeney"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Paul André Marie Maistre"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Henri Putz"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Louis de Maud'huy"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Georges Louis Humbert"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Denis Auguste Duchêne"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Charles Mangin"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Henri Gouraud"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "François Anthoine"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Henri Mathias Berthelot"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Hubert Lyautey"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Jean César Graziani"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Émile Fayolle"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Milan Rastislav Stefánik"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Édouard Barès"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Marie-Jean-Lucien Lacaze"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Augustin Boué de Lapeyrère"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Louis Dartige du Fournet"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+
+navy = {
+	name = "1st Armée Navale"
+	location = 420
+
+	ship = {
+		name= "Courbet"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Jean Bart"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Paris"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "France"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Brennus"
+		type = battleship
+	}
+
+	ship = {
+		name= "Charles Martel"
+		type = battleship
+	}
+
+	ship = {
+		name= "Carnot"
+		type = battleship
+	}
+
+	ship = {
+		name= "Jauréguiberry"
+		type = battleship
+	}
+
+	ship = {
+		name= "Masséna"
+		type = battleship
+	}
+
+	ship = {
+		name= "Bouvet"
+		type = battleship
+	}
+
+	ship = {
+		name= "Charlemagne"
+		type = battleship
+	}
+
+	ship = {
+		name= "Saint Louis"
+		type = battleship
+	}
+
+	ship = {
+		name= "Gaulois"
+		type = battleship
+	}
+
+	ship = {
+		name= "Iéna"
+		type = battleship
+	}
+
+	ship = {
+		name= "Suffren"
+		type = battleship
+	}
+
+	ship = {
+		name= "République"
+		type = battleship
+	}
+
+	ship = {
+		name= "Patrie"
+		type = battleship
+	}
+
+	ship = {
+		name= "Liberté"
+		type = battleship
+	}
+
+	ship = {
+		name= "Justice"
+		type = battleship
+	}
+
+	ship = {
+		name= "Vérité"
+		type = battleship
+	}
+
+	ship = {
+		name= "Démocratie"
+		type = battleship
+	}
+
+	ship = {
+		name= "Danton"
+		type = battleship
+	}
+
+	ship = {
+		name= "Condorcet"
+		type = battleship
+	}
+
+	ship = {
+		name= "Diderot"
+		type = battleship
+	}
+
+	ship = {
+		name= "Mirabeau"
+		type = battleship
+	}
+
+	ship = {
+		name= "Vergniaud"
+		type = battleship
+	}
+
+	ship = {
+		name= "Voltaire"
+		type = battleship
+	}
+
+	ship = {
+		name= "Amiral Cécille"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Forbin"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Cosmao"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Lavoisier"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Descartes"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Du Chayla"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Cassard"
+		type = cruiser
+	}
+
+	ship = {
+		name= "D'Entrecasteaux"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Guichen"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Châteaurenault"
+		type = cruiser
+	}
+
+	ship = {
+		name= "D'Estrées"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Jurien de la Gravière"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Amiral Charner"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Bruix"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Latouche-Tréville"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Pothuau"
+		type = cruiser
+	}
+
+	ship = {
+		name= " Jeanne d'Arc"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Gueydon"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Montcalm"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Dupetit-Thouars"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Dupleix"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Desaix"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Kléber"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Gloire"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Marseillaise"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Condé"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Amiral Aube"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Léon Gambetta"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Jules Ferry"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Victor Hugo"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Jules Michelet"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Ernest Renan"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Edgar Quinet"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Waldeck-Rousseau"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Aigrette"
+		type = monitor
+	}
+
+	ship = {
+		name= "Amiral Bourgois"
+		type = monitor
+	}
+
+	ship = {
+		name= "Ampère"
+		type = monitor
+	}
+
+	ship = {
+		name= "Antigone"
+		type = monitor
+	}
+
+	ship = {
+		name= "Arago"
+		type = monitor
+	}
+
+	ship = {
+		name= "Archimède"
+		type = monitor
+	}
+
+	ship = {
+		name= "Argonaute"
+		type = monitor
+	}
+
+	ship = {
+		name= "Bernouilli"
+		type = monitor
+	}
+
+	ship = {
+		name= "Berthelot"
+		type = monitor
+	}
+
+	ship = {
+		name= "Brumaire"
+		type = monitor
+	}
+
+	ship = {
+		name= "Calypso"
+		type = monitor
+	}
+
+	ship = {
+		name= "Charles Brun"
+		type = monitor
+	}
+
+	ship = {
+		name= "Cigogne"
+		type = monitor
+	}
+
+	ship = {
+		name= "Circé"
+		type = monitor
+	}
+
+	ship = {
+		name= "Coulomb"
+		type = monitor
+	}
+
+	ship = {
+		name= "Cugnot"
+		type = monitor
+	}
+
+	ship = {
+		name= "Émeraude"
+		type = monitor
+	}
+
+	ship = {
+		name= "Euler"
+		type = monitor
+	}
+
+	ship = {
+		name= "Faraday"
+		type = monitor
+	}
+
+	ship = {
+		name= "Floréal"
+		type = monitor
+	}
+
+	ship = {
+		name= "Foucault"
+		type = monitor
+	}
+
+	ship = {
+		name= "Franklin"
+		type = monitor
+	}
+
+	ship = {
+		name= "Fresnel"
+		type = monitor
+	}
+
+	ship = {
+		name= "Frimaire"
+		type = monitor
+	}
+
+	ship = {
+		name= "Fructidor"
+		type = monitor
+	}
+
+	ship = {
+		name= "Gay-Lussac"
+		type = monitor
+	}
+
+	ship = {
+		name= "Germinal"
+		type = monitor
+	}
+
+	ship = {
+		name= "Giffard"
+		type = monitor
+	}
+
+	ship = {
+		name= "Joule"
+		type = monitor
+	}
+
+	ship = {
+		name= "Le Verrier"
+		type = monitor
+	}
+
+	ship = {
+		name= "Mariotte"
+		type = monitor
+	}
+
+	ship = {
+		name= "Messidor"
+		type = monitor
+	}
+
+	ship = {
+		name= "Monge"
+		type = monitor
+	}
+
+	ship = {
+		name= "Montgolfier"
+		type = monitor
+	}
+
+	ship = {
+		name= "Newton"
+		type = monitor
+	}
+
+	ship = {
+		name= "Nivôse"
+		type = monitor
+	}
+
+	ship = {
+		name= "Opale"
+		type = monitor
+	}
+
+	ship = {
+		name= "Papin"
+		type = monitor
+	}
+
+	ship = {
+		name= "Pluviôse"
+		type = monitor
+	}
+
+	ship = {
+		name= "Prairial"
+		type = monitor
+	}
+
+	ship = {
+		name= "Rubis"
+		type = monitor
+	}
+
+	ship = {
+		name= "Saphir"
+		type = monitor
+	}
+
+	ship = {
+		name= "Thermidor"
+		type = monitor
+	}
+
+	ship = {
+		name= "Topaze"
+		type = monitor
+	}
+
+	ship = {
+		name= "Turquoise"
+		type = monitor
+	}
+
+	ship = {
+		name= "Ventôse"
+		type = monitor
+	}
+
+	ship = {
+		name= "Volta"
+		type = monitor
+	}
+
+	ship = {
+		name= "Watt"
+		type = monitor
+	}
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 1700
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "11th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "12th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "13th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "14th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "15th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "16th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "17th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "18th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "19th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "20th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+navy = {
+	name = "2nd Transport Squadron"
+	location = 1367
+
+	ship = {
+		name= "21st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "22nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "23rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "24th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "25th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "26th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "27th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "28th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "29th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "30th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "31st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "32nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "33rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "34th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "35th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "36th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "37th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "38th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "39th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "40th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "1re Corps d'Armee"
+	location = 399
+	leader = {
+		name = "Charles Lanrezac"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "1er Brigade d'Infanterie"
+		type = infantry
+		home = 399
+	}
+	regiment = {
+		name= "2e Brigade d'Infanterie"
+		type = infantry
+		home = 399
+	}
+	regiment = {
+		name= "3e Brigade d'Infanterie"
+		type = infantry
+		home = 401
+	}
+	regiment = {
+		name= "4e Brigade d'Infanterie"
+		type = infantry
+		home = 401
+	}
+	regiment = {
+		name= "8e Regiment d'Artillerie"
+		type = artillery
+		home = 406
+	}
+	regiment = {
+		name= "13e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 426
+	}
+	regiment = {
+		name= "15e Regiment d'Artillerie"
+		type = artillery
+		home = 400
+	}
+	regiment = {
+		name= "27e Regiment d'Artillerie"
+		type = artillery
+		home = 399
+	}
+	regiment = {
+		name= "41e Regiment d'Artillerie"
+		type = artillery
+		home = 400
+	}
+	regiment = {
+		name= "5e Brigade de Dragons"
+		type = dragoon
+		home = 402
+	}
+}
+army = {
+	name = "2e Corps d'Armee"
+	location = 402
+	regiment = {
+		name= "5e Brigade d'Infanterie"
+		type = infantry
+		home = 402
+	}
+	regiment = {
+		name= "6e Brigade d'Infanterie"
+		type = infantry
+		home = 402
+	}
+	regiment = {
+		name= "7e Brigade d'Infanterie"
+		type = infantry
+		home = 404
+	}
+	regiment = {
+		name= "8e Brigade d'Infanterie"
+		type = infantry
+		home = 404
+	}
+	regiment = {
+		name= "8e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 453
+	}
+	regiment = {
+		name= "17e Regiment d'Artillerie"
+		type = artillery
+		home = 460
+	}
+	regiment = {
+		name= "29e Regiment d'Artillerie"
+		type = artillery
+		home = 447
+	}
+	regiment = {
+		name= "39e Regiment d'Artillerie"
+		type = artillery
+		home = 406
+	}
+	regiment = {
+		name= "42e Regiment d'Artillerie"
+		type = artillery
+		home = 435
+	}
+	regiment = {
+		name= "2e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 453
+	}
+}
+army = {
+	name = "3e Corps d'Armee"
+	location = 413
+	regiment = {
+		name= "9e Brigade d'Infanterie"
+		type = infantry
+		home = 415
+	}
+	regiment = {
+		name= "10e Brigade d'Infanterie"
+		type = infantry
+		home = 415
+	}
+	regiment = {
+		name= "11e Brigade d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name= "12e Brigade d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name= "11e Regiment d'Artillerie"
+		type = artillery
+		home = 415
+	}
+	regiment = {
+		name= "22e Regiment d'Artillerie"
+		type = artillery
+		home = 415
+	}
+	regiment = {
+		name= "42e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 417
+	}
+	regiment = {
+		name= "43e Regiment d'Artillerie"
+		type = artillery
+		home = 426
+	}
+	regiment = {
+		name= "60e Regiment d'Artillerie"
+		type = artillery
+		home = 413
+	}
+	regiment = {
+		name= "3e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 404
+	}
+}
+army = {
+	name = "4e Corps d'Armee"
+	location = 436
+	leader = {
+		name = "Pierre Ruffey"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a1d_1
+	}
+	regiment = {
+		name= "13e Brigade d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name= "14e Brigade d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name= "15e Brigade d'Infanterie"
+		type = infantry
+		home = 436
+	}
+	regiment = {
+		name= "16e Brigade d'Infanterie"
+		type = infantry
+		home = 436
+	}
+	regiment = {
+		name= "12e Regiment d'Artillerie"
+		type = artillery
+		home = 451
+	}
+	regiment = {
+		name= "26e Regiment d'Artillerie"
+		type = artillery
+		home = 436
+	}
+	regiment = {
+		name= "31e Regiment d'Artillerie"
+		type = artillery
+		home = 418
+	}
+	regiment = {
+		name= "40e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 453
+	}
+	regiment = {
+		name= "44e Regiment d'Artillerie"
+		type = artillery
+		home = 418
+	}
+	regiment = {
+		name= "1er Brigade de Cavalerie Legere"
+		type = hussar
+		home = 417
+	}
+}
+army = {
+	name = "5e Corps d'Armee"
+	location = 438
+	regiment = {
+		name= "17e Brigade d'Infanterie"
+		type = infantry
+		home = 438
+	}
+	regiment = {
+		name= "18e Brigade d'Infanterie"
+		type = infantry
+		home = 438
+	}
+	regiment = {
+		name= "19e Brigade d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name= "20e Brigade d'Infanterie"
+		type = infantry
+		home = 425
+	}
+	regiment = {
+		name= "30e Regiment d'Artillerie"
+		type = artillery
+		home = 427
+	}
+	regiment = {
+		name= "32e Regiment d'Artillerie"
+		type = artillery
+		home = 440
+	}
+	regiment = {
+		name= "45e Regiment d'Artillerie"
+		type = artillery
+		home = 440
+	}
+	regiment = {
+		name= "59e Regiment d'Artillerie"
+		type = artillery
+		home = 431
+	}
+	regiment = {
+		name= "61e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 435
+	}
+	regiment = {
+		name= "5e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 435
+	}
+}
+army = {
+	name = "6e Corps d'Armee"
+	location = 408
+	regiment = {
+		name= "23e Brigade d'Infanterie"
+		type = infantry
+		home = 403
+	}
+	regiment = {
+		name= "24e Brigade d'Infanterie"
+		type = infantry
+		home = 403
+	}
+	regiment = {
+		name= "79e Brigade d'Infanterie"
+		type = infantry
+		home = 408
+	}
+	regiment = {
+		name= "80e Brigade d'Infanterie"
+		type = infantry
+		home = 408
+	}
+	regiment = {
+		name= "25e Regiment d'Artillerie"
+		type = artillery
+		home = 427
+	}
+	regiment = {
+		name= "40e Regiment d'Artillerie"
+		type = artillery
+		home = 405
+	}
+	regiment = {
+		name= "46e Regiment d'Artillerie"
+		type = artillery
+		home = 413
+	}
+	regiment = {
+		name= "54e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 473
+	}
+	regiment = {
+		name= "61e Regiment d'Artillerie"
+		type = artillery
+		home = 403
+	}
+	regiment = {
+		name= "6e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 473
+	}
+}
+army = {
+	name = "7e Corps d'Armee"
+	location = 432
+	leader = {
+		name = "Augustin Dubail"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "27e Brigade d'Infanterie"
+		type = infantry
+		home = 432
+	}
+	regiment = {
+		name= "28e Brigade d'Infanterie"
+		type = infantry
+		home = 432
+	}
+	regiment = {
+		name= "81e Brigade d'Infanterie"
+		type = infantry
+		home = 414
+	}
+	regiment = {
+		name= "82e Brigade d'Infanterie"
+		type = infantry
+		home = 414
+	}
+	regiment = {
+		name= "4e Regiment d'Artillerie"
+		type = artillery
+		home = 432
+	}
+	regiment = {
+		name= "5e Regiment d'Artillerie"
+		type = artillery
+		home = 433
+	}
+	regiment = {
+		name= "30e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 420
+	}
+	regiment = {
+		name= "47e Regiment d'Artillerie"
+		type = artillery
+		home = 433
+	}
+	regiment = {
+		name= "62e Regiment d'Artillerie"
+		type = artillery
+		home = 431
+	}
+	regiment = {
+		name= "7e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 421
+	}
+}
+army = {
+	name = "8e Corps d'Armee"
+	location = 439
+	regiment = {
+		name= "29e Brigade d'Infanterie"
+		type = infantry
+		home = 428
+	}
+	regiment = {
+		name= "30e Brigade d'Infanterie"
+		type = infantry
+		home = 428
+	}
+	regiment = {
+		name= "31e Brigade d'Infanterie"
+		type = infantry
+		home = 439
+	}	
+	regiment = {
+		name= "32e Brigade d'Infanterie"
+		type = infantry
+		home = 439
+	}
+	regiment = {
+		name= "1er Regiment d'Artillerie"
+		type = artillery
+		home = 430
+	}
+	regiment = {
+		name= "4e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 450
+	}
+	regiment = {
+		name= "37e Regiment d'Artillerie"
+		type = artillery
+		home = 430
+	}
+	regiment = {
+		name= "48e Regiment d'Artillerie"
+		type = artillery
+		home = 430
+	}
+	regiment = {
+		name= "63e Regiment d'Artillerie"
+		type = artillery
+		home = 429
+	}
+	regiment = {
+		name= "8e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 450
+	}
+}
+army = {
+	name = "9e Corps d'Armee"
+	location = 441
+	leader = {
+		name = "Noël Édouard Marie Joseph"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "33e Brigade d'Infanterie"
+		type = infantry
+		home = 446
+	}
+	regiment = {
+		name= "34e Brigade d'Infanterie"
+		type = infantry
+		home = 446
+	}
+	regiment = {
+		name= "35e Brigade d'Infanterie"
+		type = infantry
+		home = 434
+	}	
+	regiment = {
+		name= "36e Brigade d'Infanterie"
+		type = infantry
+		home = 434
+	}
+	regiment = {
+		name= "20e Regiment d'Artillerie"
+		type = artillery
+		home = 443
+	}
+	regiment = {
+		name= "33e Regiment d'Artillerie"
+		type = artillery
+		home = 443
+	}
+	regiment = {
+		name= "33e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 442
+	}
+	regiment = {
+		name= "49e Regiment d'Artillerie"
+		type = artillery
+		home = 446
+	}
+	regiment = {
+		name= "64e Regiment d'Artillerie"
+		type = artillery
+		home = 429
+	}
+	regiment = {
+		name= "16e Brigade de Dragons"
+		type = dragoon
+		home = 442
+	}
+}
+army = {
+	name = "10e Corps d'Armee"
+	location = 414
+	leader = {
+		name = "Fernand de Langle de Cary"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "37e Brigade d'Infanterie"
+		type = infantry
+		home = 424
+	}
+	regiment = {
+		name= "38e Brigade d'Infanterie"
+		type = infantry
+		home = 424
+	}
+	regiment = {
+		name= "39e Brigade d'Infanterie"
+		type = infantry
+		home = 421
+	}	
+	regiment = {
+		name= "40e Brigade d'Infanterie"
+		type = infantry
+		home = 421
+	}
+	regiment = {
+		name= "7e Regiment d'Artillerie"
+		type = artillery
+		home = 424
+	}
+	regiment = {
+		name= "10e Regiment d'Artillerie"
+		type = artillery
+		home = 418
+	}
+	regiment = {
+		name= "14e regiment d'Artillerie de campagne"
+		type = artillery
+		home = 445
+	}
+	regiment = {
+		name= "50e Regiment d'Artillerie"
+		type = artillery
+		home = 418
+	}
+	regiment = {
+		name= "65e Regiment d'Artillerie"
+		type = artillery
+		home = 407
+	}
+	regiment = {
+		name= "9e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 457
+	}
+}
+army = {
+	name = "11re Corps d'Armee"
+	location = 423
+	regiment = {
+		name= "41e Brigade d'Infanterie"
+		type = infantry
+		home = 423
+	}
+	regiment = {
+		name= "42e Brigade d'Infanterie"
+		type = infantry
+		home = 423
+	}
+	regiment = {
+		name= "43e Brigade d'Infanterie"
+		type = infantry
+		home = 422
+	}	
+	regiment = {
+		name= "44e Brigade d'Infanterie"
+		type = infantry
+		home = 422
+	}
+	regiment = {
+		name= "28e Regiment d'Artillerie"
+		type = artillery
+		home = 423
+	}
+	regiment = {
+		name= "35e Regiment d'Artillerie"
+		type = artillery
+		home = 420
+	}
+	regiment = {
+		name= "51e Regiment d'Artillerie"
+		type = artillery
+		home = 420
+	}
+	regiment = {
+		name= "66e Regiment d'Artillerie"
+		type = artillery
+		home = 407
+	}
+	regiment = {
+		name= "67e Regiment d'Artillerie"
+		type = artillery
+		home = 405
+	}
+	regiment = {
+		name= "11e Brigade de Dragons"
+		type = dragoon
+		home = 1705
+	}
+}
+army = {
+	name = "12e Corps d'Armee"
+	location = 445
+	leader = {
+		name = "André Sordet"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a1d_1
+	}
+	regiment = {
+		name= "45e Brigade d'Infanterie"
+		type = infantry
+		home = 444
+	}
+	regiment = {
+		name= "46e Brigade d'Infanterie"
+		type = infantry
+		home = 444
+	}
+	regiment = {
+		name= "47e Brigade d'Infanterie"
+		type = infantry
+		home = 447
+	}	
+	regiment = {
+		name= "48e Brigade d'Infanterie"
+		type = infantry
+		home = 447
+	}
+	regiment = {
+		name= "21e Regiment d'Artillerie"
+		type = artillery
+		home = 447
+	}
+	regiment = {
+		name= "34e Regiment d'Artillerie"
+		type = artillery
+		home = 447
+	}
+	regiment = {
+		name= "52e Regiment d'Artillerie"
+		type = artillery
+		home = 445
+	}
+	regiment = {
+		name= "68e Regiment d'Artillerie"
+		type = artillery
+		home = 411
+	}
+	regiment = {
+		name= "69e Regiment d'Artillerie"
+		type = artillery
+		home = 441
+	}
+	regiment = {
+		name= "2e Brigade de Dragons"
+		type = dragoon
+		home = 418
+	}
+}
+army = {
+	name = "13e Corps d'Armee"
+	location = 448
+	regiment = {
+		name= "49e Brigade d'Infanterie"
+		type = infantry
+		home = 452
+	}
+	regiment = {
+		name= "50e Brigade d'Infanterie"
+		type = infantry
+		home = 452
+	}
+	regiment = {
+		name= "51e Brigade d'Infanterie"
+		type = infantry
+		home = 448
+	}	
+	regiment = {
+		name= "52e Brigade d'Infanterie"
+		type = infantry
+		home = 448
+	}
+	regiment = {
+		name= "16e Regiment d'Artillerie"
+		type = artillery
+		home = 448
+	}
+	regiment = {
+		name= "36e Regiment d'Artillerie"
+		type = artillery
+		home = 448
+	}
+	regiment = {
+		name= "53e Regiment d'Artillerie"
+		type = artillery
+		home = 449
+	}
+	regiment = {
+		name= "70e Regiment d'Artillerie"
+		type = artillery
+		home = 1702
+	}
+	regiment = {
+		name= "71e Regiment d'Artillerie"
+		type = artillery
+		home = 2570
+	}
+	regiment = {
+		name= "12e Brigade de Dragons"
+		type = dragoon
+		home = 465
+	}
+}
+army = {
+	name = "14e Corps d'Armee"
+	location = 451
+	regiment = {
+		name= "53e Brigade d'Infanterie"
+		type = infantry
+		home = 454
+	}
+	regiment = {
+		name= "54e Brigade d'Infanterie"
+		type = infantry
+		home = 454
+	}
+	regiment = {
+		name= "55e Brigade d'Infanterie"
+		type = infantry
+		home = 464
+	}	
+	regiment = {
+		name= "56e Brigade d'Infanterie"
+		type = infantry
+		home = 465
+	}
+	regiment = {
+		name= "2e Regiment d'Artillerie"
+		type = artillery
+		home = 454
+	}
+	regiment = {
+		name= "6e Regiment d'Artillerie"
+		type = artillery
+		home = 451
+	}
+	regiment = {
+		name= "54e Regiment d'Artillerie"
+		type = artillery
+		home = 451
+	}
+	regiment = {
+		name= "1er Regiment de Montagne"
+		type = artillery
+		home = 451
+	}
+	regiment = {
+		name= "72e Regiment de Montagne"
+		type = artillery
+		home = 459
+	}
+	regiment = {
+		name= "3e Brigade de Cavalerie Legere"
+		type = hussar
+		home = 418
+	}
+}
+army = {
+	name = "15e Corps d'Armee"
+	location = 467
+	regiment = {
+		name= "57e Brigade d'Infanterie"
+		type = infantry
+		home = 472
+	}
+	regiment = {
+		name= "58e Brigade d'Infanterie"
+		type = infantry
+		home = 472
+	}
+	regiment = {
+		name= "59e Brigade d'Infanterie"
+		type = infantry
+		home = 468
+	}	
+	regiment = {
+		name= "60e Brigade d'Infanterie"
+		type = infantry
+		home = 468
+	}
+	regiment = {
+		name= "19e Regiment d'Artillerie"
+		type = artillery
+		home = 467
+	}
+	regiment = {
+		name= "38e Regiment d'Artillerie"
+		type = artillery
+		home = 467
+	}
+	regiment = {
+		name= "55e Regiment d'Artillerie"
+		type = artillery
+		home = 449
+	}
+	regiment = {
+		name= "2e Regiment de Montagne"
+		type = artillery
+		home = 469
+	}
+	regiment = {
+		name= "73e Regiment de Montagne"
+		type = artillery
+		home = 458
+	}
+	regiment = {
+		name= "4e Brigade de Dragons"
+		type = dragoon
+		home = 417
+	}
+}
+army = {
+	name = "16e Corps d'Armee"
+	location = 461
+	regiment = {
+		name= "61e Brigade d'Infanterie"
+		type = infantry
+		home = 461
+	}
+	regiment = {
+		name= "62e Brigade d'Infanterie"
+		type = infantry
+		home = 461
+	}
+	regiment = {
+		name= "63e Brigade d'Infanterie"
+		type = infantry
+		home = 463
+	}	
+	regiment = {
+		name= "64e Brigade d'Infanterie"
+		type = infantry
+		home = 462
+	}
+	regiment = {
+		name= "3e Regiment d'Artillerie"
+		type = artillery
+		home = 461
+	}
+	regiment = {
+		name= "9e Regiment d'Artillerie"
+		type = artillery
+		home = 461
+	}
+	regiment = {
+		name= "56e Regiment d'Artillerie"
+		type = artillery
+		home = 462
+	}
+	regiment = {
+		name= "72e Regiment d'Artillerie"
+		type = artillery
+		home = 437
+	}
+	regiment = {
+		name= "74e Regiment d'Artillerie"
+		type = artillery
+		home = 437
+	}
+	regiment = {
+		name= "7e Brigade de Dragons"
+		type = dragoon
+		home = 441
+	}
+}
+army = {
+	name = "17e Corps d'Armee"
+	location = 455
+	regiment = {
+		name= "65e Brigade d'Infanterie"
+		type = infantry
+		home = 456
+	}
+	regiment = {
+		name= "66e Brigade d'Infanterie"
+		type = infantry
+		home = 456
+	}
+	regiment = {
+		name= "67e Brigade d'Infanterie"
+		type = infantry
+		home = 455
+	}	
+	regiment = {
+		name= "68e Brigade d'Infanterie"
+		type = infantry
+		home = 455
+	}
+	regiment = {
+		name= "18e Regiment d'Artillerie"
+		type = artillery
+		home = 455
+	}
+	regiment = {
+		name= "23e Regiment d'Artillerie"
+		type = artillery
+		home = 456
+	}
+	regiment = {
+		name= "57e Regiment d'Artillerie"
+		type = artillery
+		home = 457
+	}
+	regiment = {
+		name= "75e Regiment d'Artillerie"
+		type = artillery
+		home = 471
+	}
+	regiment = {
+		name= "76e Regiment d'Artillerie"
+		type = artillery
+		home = 462
+	}
+	regiment = {
+		name= "6e Brigade de Dragons"
+		type = dragoon
+		home = 470
+	}
+}
+army = {
+	name = "18e Corps d'Armee"
+	location = 458
+	regiment = {
+		name= "69e Brigade d'Infanterie"
+		type = infantry
+		home = 458
+	}
+	regiment = {
+		name= "70e Brigade d'Infanterie"
+		type = infantry
+		home = 458
+	}
+	regiment = {
+		name= "71e Brigade d'Infanterie"
+		type = infantry
+		home = 459
+	}	
+	regiment = {
+		name= "72e Brigade d'Infanterie"
+		type = infantry
+		home = 459
+	}
+	regiment = {
+		name= "14e Regiment d'Artillerie"
+		type = artillery
+		home = 460
+	}
+	regiment = {
+		name= "24e Regiment d'Artillerie"
+		type = artillery
+		home = 460
+	}
+	regiment = {
+		name= "58e Regiment d'Artillerie"
+		type = artillery
+		home = 460
+	}
+	regiment = {
+		name= "77e Regiment d'Artillerie"
+		type = artillery
+		home = 434
+	}
+	regiment = {
+		name= "78e Regiment d'Artillerie"
+		type = artillery
+		home = 470
+	}
+	regiment = {
+		name= "1er Brigade de Dragons"
+		type = dragoon
+		home = 434
+	}
+}
+army = {
+	name = "19e Corps d'Armee"
+	location = 1700
+	regiment = {
+		name= "1er Brigade d'Infanterie d'Algerie"
+		type = infantry
+		home = 1700
+	}
+	regiment = {
+		name= "2e Brigade d'Infanterie d'Algerie"
+		type = infantry
+		home = 1704
+	}
+	regiment = {
+		name= "3e Brigade d'Infanterie d'Algerie"
+		type = infantry
+		home = 1708
+	}
+	regiment = {
+		name= "4e Brigade d'Infanterie d'Algerie"
+		type = infantry
+		home = 1705
+	}
+	regiment = {
+		name= "1er Groupe d'Artillerie d'Afrique"
+		type = artillery
+		home = 1700
+	}
+	regiment = {
+		name= "2e Groupe d'Artillerie d'Afrique"
+		type = artillery
+		home = 1715
+	}
+	regiment = {
+		name= "3e Groupe d'Artillerie d'Afrique"
+		type = artillery
+		home = 1709
+	}
+	regiment = {
+		name= "6e Groupe d'Artillerie a Pied d'Afrique"
+		type = artillery
+		home = 1708
+	}
+	regiment = {
+		name= "1er Brigade de Cavalerie d'Algerie"
+		type = hussar
+		home = 1703
+	}
+	regiment = {
+		name= "2e Brigade de Cavalerie d'Algerie"
+		type = hussar
+		home = 1707
+	}
+}
+army = {
+	name = "Divison d'occupation de Tunisie"
+	location = 1725
+	regiment = {
+		name= "1er Brigade d'Infanterie de Tunisie"
+		type = infantry
+		home = 1725
+	}
+	regiment = {
+		name= "2e Brigade d'Infanterie de Tunisie"
+		type = infantry
+		home = 1726
+	}
+	regiment = {
+		name= "78e Brigade d'Infanterie"
+		type = infantry
+		home = 2570
+	}
+	regiment = {
+		name= "83e Brigade d'Infanterie"
+		type = infantry
+		home = 416
+	}
+	regiment = {
+		name= "84e Brigade d'Infanterie"
+		type = infantry
+		home = 463
+	}
+	regiment = {
+		name= "5e Groupe d'Artillerie a Pied"
+		type = artillery
+		home = 416
+	}
+	regiment = {
+		name= "6e Groupe d'Artillerie a Pied"
+		type = artillery
+		home = 425
+	}
+	regiment = {
+		name= "4e Groupe d'Artillerie d'Afrique"
+		type = artillery
+		home = 1728
+	}
+	regiment = {
+		name= "5e Groupe d'Artillerie d'Afrique"
+		type = artillery
+		home = 1701
+	}
+	regiment = {
+		name= "Brigade de Cavalerie de Tunisie"
+		type = hussar
+		home = 1727
+	}
+}

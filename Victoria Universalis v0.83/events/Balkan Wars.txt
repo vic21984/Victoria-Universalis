@@ -1,0 +1,391 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 31201
+	title = "EVTNAME31201"
+	desc = "EVTDESC31201"
+	picture = first_balkan_war
+
+	trigger = {
+		tag = TUR
+		has_country_flag = lost_first_balkan_war
+		TUR_853 = { owned_by = THIS }
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.5
+			year = 1905
+		}
+
+		modifier = {
+			factor = 0.5
+			year = 1910
+		}
+	}
+
+	option = {
+		name = "EVTOPTA31201"
+		release = ALB
+		war = {
+			target = ALB
+			attacker_goal = { casus_belli = annex_core_country }
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31201"
+		release = ALB
+		ai_chance = {
+			factor = 95
+		}
+	}
+}
+
+country_event = {
+	id = 31204
+	title = "AI Romania Annexation"
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAN
+		exists = WAL
+		exists = MOL
+		NOT = { exists = ROM }
+		WAL = { ai = yes }
+		MOL = { ai = yes }
+		year = 1859
+	}
+
+	option = {
+		MOL = {
+			all_core = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 676
+							province_id = 677
+							province_id = 678
+						}
+					}
+				}
+				remove_core = MOL
+			}
+		}
+		WAL = {
+			all_core = { remove_core = WAL }
+			inherit = MOL
+			change_tag = culture
+		}
+	}
+}
+
+country_event = {
+	id = 31205
+	title = "Balkan Liferating"
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAN
+		year = 1860
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		TUR_788 = {
+			limit = {
+				NOT = {
+					## Audax Validator "." Ignore_NEXT
+					province_id = 783
+				}
+			}
+			life_rating = -5
+		}
+		SER_794 = {
+			limit = {
+				NOT = {
+					## Audax Validator "." Ignore_NEXT
+					province_id = 794
+				}
+			}
+			life_rating = -5
+		}
+		TUR_803 = { life_rating = -5 }
+		TUR_806 = { life_rating = -5 }
+		TUR_809 = {
+			limit = {
+				NOT = {
+					## Audax Validator "." Ignore_NEXT
+					province_id = 809
+				}
+			}
+			life_rating = -5
+		}
+		TUR_810 = { life_rating = -5 }
+		TUR_805 = { life_rating = -5 }
+		TUR_823 = { life_rating = -5 }
+		TUR_832 = { life_rating = -5 }
+		GRE_837 = {
+			limit = {
+				NOT = {
+					## Audax Validator "." Ignore_NEXT
+					province_id = 834
+				}
+			}
+			life_rating = -5
+		}
+		MON_2582 = { life_rating = -5 }
+	}
+}
+
+country_event = {
+	id = 31206
+	title = "EVTNAME31206"
+	desc = "EVTDESC31206"
+	picture = congress_of_berlin
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA31206"
+		RUS = {
+			create_vassal = THIS
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					tag = GRE
+					tag = ALB
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB31206"
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					tag = GRE
+					tag = ALB
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 31210
+	title = "EVTNAME31210"
+	desc = "EVTDESC31210"
+	picture = first_balkan_war
+
+	is_triggered_only = yes
+
+	option = {
+        name = "EVTOPTA31210"
+        relation = {
+            who = FROM
+            value = 400
+        }
+        create_alliance = FROM
+        leave_alliance = TUR
+        relation = {
+            who = TUR
+            value = -400
+        }
+        set_country_flag = balkan_league_member
+		JAN = {
+			change_variable = {
+				which = balkan_league
+				value = 1
+			}
+		}
+        ai_chance = {
+               factor = 0.95
+        }
+    }
+    option = {
+        name = "EVTOPTB31210"
+        relation = {
+            who = FROM
+            value = -50
+        }
+        relation = {
+            who = TUR
+            value = 50
+        }
+        ai_chance = {
+               factor = 0.05
+            modifier = {
+                factor = 10
+                relation = {
+                    who = TUR
+                    value = 150
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 31211 #balkan war start
+    title = "EVTNAME31211"
+    desc = "EVTDESC31211"
+    major = yes
+
+    trigger = {
+        has_country_flag = balkan_league_leader
+        has_global_flag = first_balkan_war
+		NOT = { has_global_flag = first_balkan_war_start }
+		JAN = {
+			check_variable = {
+				which = balkan_league
+				value = 1
+			}
+		}
+    }
+
+    option = {
+        name = "EVTOPTA31211"
+		set_global_flag = first_balkan_war_start
+		any_greater_power = {
+			leave_alliance = THIS
+		}
+        any_country = {
+            limit = {
+                is_sphere_leader_of = THIS
+                NOT = { has_country_flag = balkan_league_member }
+            }
+            diplomatic_influence = { who = THIS value = -150 }
+            country_event = { id = 31212 days = 2 }
+        }
+        any_country = {
+            limit = {
+                alliance_with = THIS
+                has_country_flag = balkan_league_member
+            }
+            relation = { who = TUR value = -400 }
+            relation = { who = THIS value = 400 }
+            add_country_modifier = {
+                name = general_mobilization
+                duration = 365
+            }
+        }
+        add_country_modifier = {
+            name = general_mobilization
+            duration = 365
+        }
+        relation = { who = TUR value = -400 }
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = BUL
+                    has_country_flag = balkan_league_leader
+                }
+            }
+            TUR = {
+                war = {
+                    target = BUL
+                    attacker_goal = { casus_belli = cut_down_to_size }
+                    defender_goal = { casus_belli = first_balkan_war country = BUL }
+					defender_goal = { casus_belli = status_quo }
+                    call_ally = no
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = SER
+                    has_country_flag = balkan_league_leader
+                }
+            }
+            TUR = {
+                war = {
+                    target = SER
+                    attacker_goal = { casus_belli = cut_down_to_size }
+                    defender_goal = { casus_belli = first_balkan_war country = SER }
+					defender_goal = { casus_belli = status_quo }
+                    call_ally = no
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = GRE
+                    has_country_flag = balkan_league_leader
+                }
+            }
+            TUR = {
+                war = {
+                    target = GRE
+                    attacker_goal = { casus_belli = cut_down_to_size }
+                    defender_goal = { casus_belli = first_balkan_war country = GRE }
+					defender_goal = { casus_belli = status_quo }
+                    call_ally = no
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = MON
+                    has_country_flag = balkan_league_leader
+                }
+            }
+            TUR = {
+                war = {
+                    target = MON
+                    attacker_goal = { casus_belli = cut_down_to_size }
+                    defender_goal = { casus_belli = first_balkan_war country = MON }
+					defender_goal = { casus_belli = status_quo }
+                    call_ally = no
+                }
+            }
+        }
+		TUR = { country_event = { id = 31213 days = 0 } }
+    }
+}
+
+country_event = {
+    id = 31212 #balkan league member readded to GP's sphere
+    title = "EVTNAME31212"
+    desc = "EVTDESC31212"
+    picture = "first_balkan_war"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTDESC31212"
+        diplomatic_influence = { who = FROM value = 150 }
+    }
+}
+
+country_event = {
+    id = 31213
+    title = "EVTNAME31213"
+    desc = "EVTDESC31213"
+    picture = "bulgarian_attack"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA31213"
+    }
+}

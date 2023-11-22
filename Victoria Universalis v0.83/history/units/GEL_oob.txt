@@ -1,0 +1,68 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GON = {
+	value = -200
+}
+
+SHW = {
+	value = -200
+}
+
+TIG = {
+	value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+TUR = {
+	value = 40
+}
+
+EGY = {
+	value = 60
+}
+
+HAR = {
+	value = -200
+}
+
+GJM = {
+	value = -200
+}
+
+MAJ = {
+	value = -200
+}
+
+WRL = {
+	value = -200
+}
+
+OMA = {
+	value = -200
+}
+
+army = {
+	name = "Army of the Geledi Sultanate"
+	location = 1869
+	regiment = {
+		name= "Sultan's Guards"
+		type = irregular		
+		home = 1870
+	}
+	regiment = {
+		name= "Baidoa Tribesmen"
+		type = irregular
+		home = 1869
+	}
+}

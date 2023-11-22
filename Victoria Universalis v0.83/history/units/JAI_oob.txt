@@ -1,0 +1,33 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Jaipur State Troops"
+	location = 1268
+	regiment = {
+		name= "1.Jaipur Contingent"
+		type = irregular
+		home = 1268
+	}
+
+	regiment = {
+		name= "2.Jaipur Contingent"
+		type = irregular
+		home = 1268
+	}
+
+	regiment = {
+		name= "3.Jaipur Contingent"
+		type = irregular
+		home = 1268
+	}
+
+}
+

@@ -1,0 +1,28 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "George Grey"
+	date = 1836.1.1
+	type = land
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+army = {
+	name = "Volunteer Militia Forces"
+	location = 2512
+	regiment = {
+		name= "New Zealand Rifles"
+		type = infantry
+		home = 2512
+	}
+}
+

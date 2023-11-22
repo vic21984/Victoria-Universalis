@@ -1,0 +1,1622 @@
+## Audax Validator "!" Ignore_1004
+## Audax Validator "!" Ignore_1009
+political_decisions = {
+	enact_early_qing_reforms = {
+		picture = lin_zexu
+		potential = {
+			tag = QNG
+			NOT = {
+				OR = {
+					has_country_flag = early_qing_reforms
+					has_country_flag = late_qing_reforms
+				}
+			}
+			civilized = no
+		}
+		allow = {
+			NOT = { has_country_flag = late_qing_reforms }
+			civilized = no
+		}
+		effect = {
+			set_country_flag = early_qing_reforms
+			add_country_modifier = { name = early_qing_reforms duration = -1 }
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	enact_late_qing_reforms = {
+		picture = guangxu_emperor
+		potential = {
+			tag = QNG
+			NOT = {
+				OR = {
+					has_country_flag = early_qing_reforms
+					has_country_flag = late_qing_reforms
+				}
+			}
+			civilized = no
+		}
+		allow = {
+			NOT = { has_country_flag = early_qing_reforms }
+			year = 1880
+			civilized = no
+		}
+		effect = {
+			set_country_flag = late_qing_reforms
+			add_country_modifier = { name = late_qing_reforms duration = -1 }
+			years_of_research = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	abolish_imperial_exams = {
+		picture = tongwen_guan
+		potential = {
+			tag = QNG
+			NOT = { has_country_flag = abolished_imperial_exams }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = abolished_imperial_exams
+			remove_country_modifier = imperial_examinations
+			any_country = {
+				limit = {
+					has_country_modifier = imperial_examinations
+				}
+				remove_country_modifier = imperial_examinations
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = conservative
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	outlaw_opium = {
+		picture = outlaw_opium
+		potential = {
+			OR = {
+				tag = QNG
+				tag = TPG
+			}
+			has_country_modifier = opium_addiction
+			NOT = { has_global_flag = opium_outlawed }
+			NOT = { has_global_flag = opium_war_happened }
+		}
+		allow = {
+			year = 1840
+			NOT = { year = 1900 }
+			war = no
+			num_of_cities = 50
+		}
+		effect = {
+			remove_country_modifier = opium_addiction
+			set_global_flag = opium_outlawed
+			any_country = {
+				limit = {
+					has_country_modifier = unequal_china_treaty
+				}
+				country_event = {
+					id = 90825
+					days = 0
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				year = 1850
+			}
+		}
+	}
+
+	chinese_treaty_port = {
+		picture = treaty_port
+		potential = {
+			NOT = { is_culture_group = east_asian }
+			civilized = yes
+			OR = {
+				AND = {
+					owns = 1481
+					1481 = { NOT = { trade_goods = market_goods } }
+				}
+				AND = {
+					owns = 1496
+					1496 = { NOT = { trade_goods = market_goods } }
+				}
+				AND = {
+					owns = 1498
+					1498 = { NOT = { trade_goods = market_goods } }
+				}
+				AND = {
+					owns = 1538
+					1538 = { NOT = { trade_goods = market_goods } }
+				}
+				AND = {
+					owns = 1566
+					1566 = { NOT = { trade_goods = market_goods } }
+				}
+				AND = {
+					owns = 1569
+					1569 = { NOT = { trade_goods = market_goods } }
+				}
+				AND = {
+					owns = 2615
+					2615 = { NOT = { trade_goods = market_goods } }
+				}
+				AND = {
+					owns = 2659
+					2659 = { NOT = { trade_goods = market_goods } }
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					OR = {
+						province_id = 1481
+						province_id = 1496
+						province_id = 1498
+						province_id = 1538
+						province_id = 1566
+						province_id = 1569
+						province_id = 2615
+						province_id = 2659
+					}
+					NOT = { trade_goods = market_goods }
+				}
+				remove_core = QNG
+				secede_province = CIV
+				trade_goods = market_goods
+				## Audax Validator "." Ignore_NEXT
+				mines = 2
+			}
+			random_owned = {
+				limit = {
+					province_id = 2701
+					is_colonial = yes
+				}
+				remove_core = QNG
+				secede_province = CIV
+			}
+			CIV = {
+				country_event = { id = 91510 days = 0 }
+			}
+		}
+	}
+
+	lose_treaty_port = {
+		picture = treaty_port
+		potential = {
+			tag = JAN
+			QNG = { exists = yes }
+			OR = {
+				QNG = {
+					NOT = {
+						owns = 1481
+						has_country_flag = lost_port_arthur
+					}
+				}
+				QNG = {
+					NOT = {
+						owns = 1496
+						has_country_flag = lost_hong_kong
+					}
+				}
+				QNG = {
+					NOT = {
+						owns = 1498
+						has_country_flag = lost_macao
+					}
+				}
+				QNG = {
+					NOT = {
+						owns = 1538
+						has_country_flag = lost_shanghai
+					}
+				}
+				QNG = {
+					NOT = {
+						owns = 1566
+						has_country_flag = lost_qingdao
+					}
+				}
+				QNG = {
+					NOT = {
+						owns = 1569
+						has_country_flag = lost_weihaiwei
+					}
+				}
+				QNG = {
+					NOT = {
+						owns = 2615
+						has_country_flag = lost_guangzhouwan
+					}
+				}
+				QNG = {
+					NOT = {
+						owns = 2659
+						has_country_flag = lost_tientsin
+					}
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 1481
+						has_country_flag = lost_port_arthur
+					}
+				}
+				set_country_flag = lost_port_arthur
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 1496
+						has_country_flag = lost_hong_kong
+					}
+				}
+				set_country_flag = lost_hong_kong
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 1498
+						has_country_flag = lost_macao
+					}
+				}
+				set_country_flag = lost_macao
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 1538
+						has_country_flag = lost_shanghai
+					}
+				}
+				set_country_flag = lost_shanghai
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 1566
+						has_country_flag = lost_qingdao
+					}
+				}
+				set_country_flag = lost_qingdao
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 1569
+						has_country_flag = lost_weihaiwei
+					}
+				}
+				set_country_flag = lost_weihaiwei
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 2615
+						has_country_flag = lost_guangzhouwan
+					}
+				}
+				set_country_flag = lost_guangzhouwan
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						owns = 2659
+						has_country_flag = lost_tientsin
+					}
+				}
+				set_country_flag = lost_tientsin
+				change_variable = {
+					which = lost_treaty_ports
+					value = 1
+				}
+			}
+		}
+	}
+
+	unequal_treaty_modifiers = {
+		potential = {
+			tag = JAN
+			OR = {
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 2
+						}
+					}
+					NOT = { has_country_modifier = treaty_port1 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 3
+						}
+					}
+					NOT = { has_country_modifier = treaty_port2 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 4
+						}
+					}
+					NOT = { has_country_modifier = treaty_port3 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 5
+						}
+					}
+					NOT = { has_country_modifier = treaty_port4 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 6
+						}
+					}
+					NOT = { has_country_modifier = treaty_port5 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 7
+						}
+					}
+					NOT = { has_country_modifier = treaty_port6 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 8
+						}
+					}
+					NOT = { has_country_modifier = treaty_port7 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 8
+					}
+					NOT = { has_country_modifier = treaty_port8 }
+				}
+			}
+		}
+
+		allow = { }
+
+		effect = {
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 2
+						}
+					}
+					NOT = { has_country_modifier = treaty_port1 }
+				}
+				add_country_modifier = { name = treaty_port1 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 3
+						}
+					}
+					NOT = { has_country_modifier = treaty_port2 }
+				}
+				remove_country_modifier = treaty_port1
+				add_country_modifier = { name = treaty_port2 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 4
+						}
+					}
+					NOT = { has_country_modifier = treaty_port3 }
+				}
+				remove_country_modifier = treaty_port1
+				remove_country_modifier = treaty_port2
+				add_country_modifier = { name = treaty_port3 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 5
+						}
+					}
+					NOT = { has_country_modifier = treaty_port4 }
+				}
+				remove_country_modifier = treaty_port1
+				remove_country_modifier = treaty_port2
+				remove_country_modifier = treaty_port3
+				add_country_modifier = { name = treaty_port4 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 6
+						}
+					}
+					NOT = { has_country_modifier = treaty_port5 }
+				}
+				remove_country_modifier = treaty_port1
+				remove_country_modifier = treaty_port2
+				remove_country_modifier = treaty_port3
+				remove_country_modifier = treaty_port4
+				add_country_modifier = { name = treaty_port5 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 7
+						}
+					}
+					NOT = { has_country_modifier = treaty_port6 }
+				}
+				remove_country_modifier = treaty_port1
+				remove_country_modifier = treaty_port2
+				remove_country_modifier = treaty_port3
+				remove_country_modifier = treaty_port4
+				remove_country_modifier = treaty_port5
+				add_country_modifier = { name = treaty_port6 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = lost_treaty_ports
+							value = 8
+						}
+					}
+					NOT = { has_country_modifier = treaty_port7 }
+				}
+				remove_country_modifier = treaty_port1
+				remove_country_modifier = treaty_port2
+				remove_country_modifier = treaty_port3
+				remove_country_modifier = treaty_port4
+				remove_country_modifier = treaty_port5
+				remove_country_modifier = treaty_port6
+				add_country_modifier = { name = treaty_port7 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = lost_treaty_ports
+						value = 8
+					}
+					NOT = { has_country_modifier = treaty_port8 }
+				}
+				remove_country_modifier = treaty_port1
+				remove_country_modifier = treaty_port2
+				remove_country_modifier = treaty_port3
+				remove_country_modifier = treaty_port4
+				remove_country_modifier = treaty_port5
+				remove_country_modifier = treaty_port6
+				remove_country_modifier = treaty_port7
+				add_country_modifier = { name = treaty_port8 duration = -1 }
+			}
+		}
+	}
+
+	imperial_decay = {
+		picture = treaty_port
+		potential = {
+			tag = JAN
+			QNG = { exists = yes }
+			OR = {
+				AND = {
+					1600 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_xinjiang }
+					}
+				}
+				AND = {
+					1465 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_outer_mongolia }
+					}
+				}
+				AND = {
+					1534 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_inner_mongolia }
+					}
+				}
+				AND = {
+					1555 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_manchuria }
+					}
+				}
+				AND = {
+					1556 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_qinghai }
+					}
+				}
+				AND = {
+					1578 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_sichuan }
+					}
+				}
+				AND = {
+					1601 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_yunnan }
+					}
+				}
+				AND = {
+					1505 = {
+						owner = {
+							NOT = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+					}
+					QNG = {
+						NOT = { has_country_flag = lost_guizhou }
+					}
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1600 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_xinjiang
+					}
+				}
+				set_country_flag = lost_xinjiang
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1465 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_outer_mongolia
+					}
+				}
+				set_country_flag = lost_outer_mongolia
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1534 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_inner_mongolia
+					}
+				}
+				set_country_flag = lost_inner_mongolia
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1555 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_manchuria
+					}
+				}
+				set_country_flag = lost_manchuria
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1556 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_qinghai
+					}
+				}
+				set_country_flag = lost_qinghai
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1578 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_sichuan
+					}
+				}
+				set_country_flag = lost_sichuan
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1601 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_yunnan
+					}
+				}
+				set_country_flag = lost_yunnan
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					NOT = {
+						1505 = {
+							owner = {
+								OR = {
+									tag = QNG
+									vassal_of = QNG
+								}
+							}
+						}
+						has_country_flag = lost_guizhou
+					}
+				}
+				set_country_flag = lost_guizhou
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = 1
+				}
+			}
+		}
+	}
+
+	remove_imperial_decay = {
+		picture = treaty_port
+		potential = {
+			tag = JAN
+			OR = {
+				AND = {
+					1600 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_xinjiang
+					}
+				}
+				AND = {
+					1465 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_outer_mongolia
+					}
+				}
+				AND = {
+					1534 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_inner_mongolia
+					}
+				}
+				AND = {
+					1555 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_manchuria
+					}
+				}
+				AND = {
+					1556 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_qinghai
+					}
+				}
+				AND = {
+					1578 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_sichuan
+					}
+				}
+				AND = {
+					1601 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_yunnan
+					}
+				}
+				AND = {
+					1505 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					QNG = {
+						has_country_flag = lost_guizhou
+					}
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					tag = QNG
+					1600 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_xinjiang
+				}
+				clr_country_flag = lost_xinjiang
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					1465 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_outer_mongolia
+				}
+				clr_country_flag = lost_outer_mongolia
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					1534 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_inner_mongolia
+				}
+				clr_country_flag = lost_inner_mongolia
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					1555 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_manchuria
+				}
+				clr_country_flag = lost_manchuria
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					1556 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_qinghai
+				}
+				clr_country_flag = lost_qinghai
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					1578 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_sichuan
+				}
+				clr_country_flag = lost_sichuan
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					1601 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_yunnan
+				}
+				clr_country_flag = lost_yunnan
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					1505 = {
+						owner = {
+							OR = {
+								tag = QNG
+								vassal_of = QNG
+							}
+						}
+					}
+					has_country_flag = lost_guizhou
+				}
+				clr_country_flag = lost_guizhou
+				prestige = 1
+				change_variable = {
+					which = imperial_decay
+					value = -1
+				}
+			}
+		}
+	}
+
+	imperial_decay_modifiers = {
+		potential = {
+			tag = JAN
+			OR = {
+				QNG = {
+					civilized = no
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 1
+						}
+					}
+					OR = {
+						has_country_modifier = imperial_decay1
+						has_country_modifier = imperial_decay2
+						has_country_modifier = imperial_decay3
+						has_country_modifier = imperial_decay4
+						has_country_modifier = imperial_decay5
+						has_country_modifier = imperial_decay6
+						has_country_modifier = imperial_decay7
+						has_country_modifier = imperial_decay8
+					}
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 2
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay1 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 3
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay2 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 4
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay3 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 5
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay4 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 6
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay5 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 7
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay6 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 8
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay7 }
+				}
+				QNG = {
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 8
+					}
+					NOT = { has_country_modifier = imperial_decay8 }
+				}
+			}
+		}
+
+		allow = { }
+
+		effect = {
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 1
+						}
+					}
+					OR = {
+						has_country_modifier = imperial_decay1
+						has_country_modifier = imperial_decay2
+						has_country_modifier = imperial_decay3
+						has_country_modifier = imperial_decay4
+						has_country_modifier = imperial_decay5
+						has_country_modifier = imperial_decay6
+						has_country_modifier = imperial_decay7
+						has_country_modifier = imperial_decay8
+					}
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay7
+				remove_country_modifier = imperial_decay8
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 2
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay1 }
+				}
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay7
+				remove_country_modifier = imperial_decay8
+				add_country_modifier = { name = imperial_decay1 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 3
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay2 }
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay7
+				remove_country_modifier = imperial_decay8
+				add_country_modifier = { name = imperial_decay2 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 4
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay3 }
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay7
+				remove_country_modifier = imperial_decay8
+				add_country_modifier = { name = imperial_decay3 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 5
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay4 }
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay7
+				remove_country_modifier = imperial_decay8
+				add_country_modifier = { name = imperial_decay4 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 6
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay5 }
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay7
+				remove_country_modifier = imperial_decay8
+				add_country_modifier = { name = imperial_decay5 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 7
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay6 }
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay7
+				remove_country_modifier = imperial_decay8
+				add_country_modifier = { name = imperial_decay6 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = imperial_decay
+							value = 8
+						}
+					}
+					NOT = { has_country_modifier = imperial_decay7 }
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay8
+				add_country_modifier = { name = imperial_decay7 duration = -1 }
+			}
+			random_country = {
+				limit = {
+					tag = QNG
+					civilized = no
+					check_variable = {
+						which = imperial_decay
+						value = 8
+					}
+					NOT = { has_country_modifier = imperial_decay8 }
+				}
+				remove_country_modifier = imperial_decay1
+				remove_country_modifier = imperial_decay2
+				remove_country_modifier = imperial_decay3
+				remove_country_modifier = imperial_decay4
+				remove_country_modifier = imperial_decay5
+				remove_country_modifier = imperial_decay6
+				remove_country_modifier = imperial_decay7
+				add_country_modifier = { name = imperial_decay8 duration = -1 }
+			}
+		}
+	}
+}

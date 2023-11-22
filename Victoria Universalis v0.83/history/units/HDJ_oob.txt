@@ -1,0 +1,37 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Muhammad ibn Awn"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "Army of Mecca"
+	location = 1151
+	regiment = {
+		name= "1.Beni Atiya"
+		type = irregular
+		home = 1151
+	}
+	regiment = {
+		name= "2.Beni Atiya"
+		type = irregular
+		home = 1152
+	}
+	regiment = {
+		name= "1.Harb"
+		type = cavalry
+		home = 1155
+	}
+}

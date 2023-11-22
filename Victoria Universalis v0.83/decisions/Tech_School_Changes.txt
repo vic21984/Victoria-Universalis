@@ -1,0 +1,191 @@
+political_decisions = {
+	switch_to_army_tech = {
+		alert = no
+		potential = {
+			OR = {
+				ai = no
+				year = 1850
+			}
+			civilized = yes
+			NOT = { tech_school = army_tech_school }
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			military_score = 50
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = army_tech_school
+		}
+	}
+	switch_to_navy_tech = {
+		alert = no
+		potential = {
+			OR = {
+				ai = no
+				year = 1850
+			}
+			civilized = yes
+			NOT = { tech_school = naval_tech_school }
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			military_score = 50
+			total_amount_of_ships = 20
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = naval_tech_school
+		}
+	}
+	switch_to_culture_tech = {
+		alert = no
+		potential = {
+			OR = {
+				ai = no
+				year = 1850
+			}
+			civilized = yes
+			NOT = { tech_school = culture_tech_school }
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = fascist
+				ruling_party_ideology = communist
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			average_consciousness = 2
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = culture_tech_school
+		}
+	}
+	switch_to_trade_tech = {
+		alert = no
+		potential = {
+			OR = {
+				ai = no
+				year = 1850
+			}
+			civilized = yes
+			NOT = { tech_school = commerce_tech_school }
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			industrial_score = 50
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = commerce_tech_school
+		}
+	}
+	switch_to_industry_tech = {
+		alert = no
+		potential = {
+			OR = {
+				ai = no
+				year = 1850
+			}
+			civilized = yes
+			NOT = { tech_school = industrial_tech_school }
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = socialist
+				ruling_party_ideology = communist
+			}
+			NOT = {
+				tech_school = prussian_tech_school
+				has_country_modifier = academic_confusion
+			}
+		}
+		allow = {
+			industrial_score = 50
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = industrial_tech_school
+		}
+	}
+	switch_to_traditional_academic = {
+		alert = no
+		potential = {
+			OR = {
+				ai = no
+				year = 1850
+			}
+			NOT = {
+				tech_school = traditional_academic
+				has_country_modifier = academic_confusion
+			}
+			civilized = yes
+		}
+		
+		allow = {
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = traditional_academic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		#news = yes
+		#news_title = "SOME_TEXT_TITLE"
+		#news_desc_long = "SOME_TEXT_LONG"
+		#news_desc_medium = "SOME_TEXT_MEDIUM"
+		#news_desc_short = "SOME_TEXT_SHORT"
+	}
+}

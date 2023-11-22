@@ -1,0 +1,54 @@
+owner = MCK
+controller = MCK
+add_core = QNG
+add_core = MCK
+trade_goods = timber
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 6
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = lumber_mill
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = QNG
+}

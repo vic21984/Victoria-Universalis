@@ -1,0 +1,31 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of Kalimintan"
+	location = 1422
+	regiment = {
+		name= "1st irregular"
+		type = irregular
+		home = 1423
+	}
+	
+	regiment = {
+		name= "2nd irregular"
+		type = irregular
+		home = 1427
+	}
+
+	regiment = {
+		name= "3rd irregular"
+		type = irregular
+		home = 1422
+	}
+}

@@ -1,0 +1,163 @@
+country_event = {
+	id = 44701
+	title = "EVTNAME44701"
+	desc = "EVTDESC44701"
+	picture = angkor_wat
+
+	trigger = {
+		tag = SIA
+		year = 1840
+		NOT = { year = 1845 }
+		neighbour = CAM
+		war = no
+		NOT = { has_country_flag = siamese_vietnamese_war }
+	}
+
+	option = {
+		name = "EVTOPTA44701"
+		set_country_flag = siamese_vietnamese_war
+		DAI = {
+			release_vassal = CAM
+			country_event = { id = 44702 days = 0 }
+		}
+		create_vassal = CAM
+		create_alliance = CAM
+	}
+
+	option = {
+		name = "EVTOPTB44701"
+		set_country_flag = siamese_vietnamese_war
+	}
+
+}
+
+country_event = {
+	id = 44702
+	title = "EVTNAME44702"
+	desc = "EVTDESC44702"
+	picture = Rebellion
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44702"
+		war = {
+			target = CAM
+			attacker_goal = { casus_belli = annex_core_country country = CAM }
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = {
+			factor = 0.9
+		}
+	}
+	option = {
+		name = "EVTOPTB44702"
+		ai_chance = {
+			factor = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = 44710
+	title = "EVTNAME44710"
+	desc = "EVTDESC44710"
+	picture = treaty_of_labuan
+
+	trigger = {
+		tag = BRU
+		owns = 1394
+		year = 1841
+		NOT = { has_country_flag = treaty_of_labuan }
+	}
+
+	option = {
+		name = "EVTOPTA44710"
+		set_country_flag = treaty_of_labuan
+		1394 = {
+			secede_province = SWK
+			add_core = SWK
+		}
+		1395 = { add_core = SWK }
+		1396 = { add_core = SWK }
+	}
+
+	option = {
+		name = "EVTOPTB44710"
+		set_country_flag = treaty_of_labuan
+		1394 = {
+			secede_province = SWK
+			add_core = SWK
+		}
+		1395 = { add_core = SWK }
+		1396 = { add_core = SWK }
+		change_tag_no_core_switch = SWK
+	}
+}
+
+country_event = {
+    id = 44711
+    title = "EVTNAME44711" #Flores Purchase
+    desc = "EVTDESC44711"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA44711"
+        relation = {
+            who = FROM
+            value = 20
+        }
+		FROM = { country_event = { id = 44712 days = 0 } }
+        ai_chance = {
+            factor = 1
+        }
+    }
+
+    option = {
+        name = "EVTOPTB44711"
+        relation = {
+            who = FROM
+            value = -20
+        }
+		FROM = { country_event = { id = 44713 days = 0 } }
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+    id = 44712
+    title = "EVTNAME44712" #Flores Purchase
+    desc = "EVTDESC44712"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA44712"
+		money = -200000
+		FROM = { money = 200000 }
+		1439 = { secede_province = THIS }
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+    }
+}
+
+country_event = {
+    id = 44713
+    title = "EVTNAME44713" #Flores Purchase
+    desc = "EVTDESC44713"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTB44711"
+    }
+}

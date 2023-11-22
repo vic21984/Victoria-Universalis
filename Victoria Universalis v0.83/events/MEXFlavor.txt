@@ -1,0 +1,454 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+
+	id = 44800
+
+	trigger = {
+		tag = MEX
+		year = 1909
+		war = no
+		NOT = {
+			year = 1913
+			government = democracy
+			government = hms_government
+			poor_strata_everyday_needs = 0.75 #will not fire if poor are getting 75%+ everyday needs
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1911
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1912
+		}
+	}
+
+	title = "EVTNAME44800"
+	desc = "EVTDESC44800"
+	picture = "Madero"
+
+	option = {
+		name = "EVTOPTA44800" 
+		farmers = {
+			militancy = 3
+			consciousness = 3
+		}
+		labourers = {
+			militancy = 3
+			consciousness = 3
+		}
+		craftsmen = {
+			militancy = 3
+			consciousness = 3
+		}
+		artisans = {
+			militancy = 3
+			consciousness = 3
+		}
+		set_country_flag = Madero
+	}
+
+	option = {
+		name = "EVTOPTB44800" 
+		prestige = -50
+		officers = {
+			militancy = 3
+			consciousness = 3
+		}
+		aristocrats = {
+			militancy = 3
+			consciousness = 3
+		}
+		capitalists = {
+			militancy = 3
+			consciousness = 3
+		}
+	}
+}
+
+country_event = {
+
+	id = 44801
+
+	trigger = {
+		tag = MEX
+		year = 1911
+		war = no
+		has_country_flag = Madero
+		NOT = {
+			year = 1914
+			government = democracy
+			government = hms_government
+			poor_strata_everyday_needs = 0.95 #will not fire if poor are getting 95%+ everyday needs
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1912
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1913
+		}
+	}
+
+	title = "EVTNAME44801"
+	desc = "EVTDESC44801"
+	picture = "Riot"
+
+	option = {
+		name = "EVTOPTA44801" 
+		2137 = { #Hermosillo Sonora
+			any_pop = {
+				militancy = 8
+			}
+		}
+		2139 = { #N Baja 
+			any_pop = {
+				militancy = 8
+			}
+		}
+		2142 = { #Chihuahua
+			any_pop = {
+				militancy = 8
+			}
+		}
+		2143 = { #Nogales
+			any_pop = {
+				militancy = 8
+			}
+		}
+		set_country_flag = MaderoRevolt
+	}
+}
+
+country_event = {
+
+	id = 44802
+
+	trigger = {
+		tag = MEX
+		year = 1911
+		has_country_flag = MaderoRevolt
+		NOT = {
+			year = 1915
+		}
+	}
+ 
+ 	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1912
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1913
+		}
+	}
+
+	title = "EVTNAME44802"
+	desc = "EVTDESC44802"
+	picture = "churchmexico"
+
+	option = {
+		name = "EVTOPTA44802" 
+		2177 = { # N Oaxaca
+			any_pop = {
+				militancy = 8
+			}
+		}
+		2178 = { #S Oaxaca
+			any_pop = {
+				militancy = 8
+			}
+		}
+	}
+
+}
+
+country_event = {
+
+	id = 44803
+
+	trigger = {
+		tag = MEX
+		has_country_flag = MaderoRevolt
+		year = 1911
+		NOT = {
+			year = 1915
+			}
+	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1912
+		}
+		
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1913
+		}
+	}
+
+	title = "EVTNAME44803"
+	desc = "EVTDESC44803"
+	picture = "Posada"
+
+	option = {
+		name = "EVTOPTA44803" 
+		farmers = {
+			consciousness = 1
+		}
+		labourers = {
+			consciousness = 1
+		}
+		craftsmen = {
+			consciousness = 1
+		}
+		artisans = {
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+	id = 44804
+	title = "EVTNAME44804"
+	desc = "EVTDESC44804"
+	picture = "battle_of_san_jacinto"
+
+	trigger = {
+		tag = MEX
+		war_exhaustion = 3
+		war_with = TEX
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA44804"
+		war_exhaustion = 10
+		kill_leader = 196
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44804"
+		any_country = {
+			limit = {
+				war_with = THIS
+				OR = {
+					tag = TEX
+					tag = USA
+				}
+			}
+			end_war = MEX
+		}
+	}
+}
+
+country_event = {
+	id = 44805
+	title = "EVTNAME44805"
+	desc = "EVTDESC44805"
+	picture = generic_congress
+
+	trigger = {
+		NOT = { has_global_flag = 1913_bookmark }
+		tag = MEX
+		war = no
+		government = presidential_dictatorship
+		NOT = {
+			owns = 84
+			owns = 133
+		}
+		NOT = { has_country_flag = la_reforma }
+	}
+
+	option = {
+		name = "EVTOPTA44805"
+		set_country_flag = la_reforma
+		government = democracy
+		random_owned = {
+			limit = {
+				owner = { vote_franschise = none_voting }
+			}	
+			owner = { political_reform = landed_voting }
+		}
+		random_owned = {
+			limit = {
+				owner = { political_parties = harassment }
+			}	
+			owner = { political_reform = gerrymandering }
+		}
+		random_owned = {
+			limit = {
+				owner = { political_parties = underground_parties }
+			}	
+			owner = { political_reform = harassment }
+		}
+		random_owned = {
+			limit = {
+				owner = { upper_house_composition = appointed }
+			}	
+			owner = { political_reform = state_equal_weight }
+		}
+		random_owned = {
+			limit = {
+				owner = { upper_house_composition = party_appointed }
+			}	
+			owner = { political_reform = appointed }
+		}
+	}
+}
+
+country_event = {
+
+	id = 44806
+	title = "EVTNAME44806"
+	desc = "EVTDESC44806"
+	picture = caste_war
+
+	trigger = {
+		NOT = { has_global_flag = 1913_bookmark }
+		tag = MEX
+		NOT = { owns = 133 }
+		NOT = { year = 1847 }
+		war = no
+		government = presidential_dictatorship
+		NOT = { has_country_flag = yucatan_republic }
+		any_owned_province = { is_core = YUC }
+	}
+
+	option = {
+		name = "EVTOPTA44806"
+		set_country_flag = yucatan_republic
+		release = YUC
+		YUC = {
+			add_country_modifier = { name = fatherland_volunteers_prg duration = 365 }
+			leadership = 120
+			money = 50000
+			small_arms = 500
+			canned_food = 500
+			ammunition = 500
+			artillery = 250
+			government = democracy
+			vote_franschise = wealth_voting
+			upper_house_composition = state_equal_weight
+			centralization = federalism
+			set_country_flag = federalism
+		}
+		war = {
+			target = YUC
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = YUC }
+			defender_goal = { casus_belli = status_quo }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44806"
+		set_country_flag = yucatan_republic
+		release = YUC
+		YUC = {
+			add_country_modifier = { name = fatherland_volunteers_prg duration = 365 }
+			leadership = 120
+			money = 50000
+			small_arms = 500
+			canned_food = 500
+			ammunition = 500
+			artillery = 250
+			government = democracy
+			vote_franschise = wealth_voting
+			upper_house_composition = state_equal_weight
+			centralization = federalism
+		}
+		war = {
+			target = YUC
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = YUC }
+			defender_goal = { casus_belli = status_quo }
+		}
+		change_tag_no_core_switch = YUC
+	}
+}
+
+country_event = {
+
+	id = 44807
+	title = "End of the 2nd Mexican Empire"
+
+	trigger = {
+		tag = JAN
+		MEX = {
+			government = democracy
+			any_owned_province = { has_province_modifier = republican_rebels }
+		}
+	}
+
+	option = {
+		MEX = {
+			any_owned = { remove_province_modifier = republican_rebels }
+		}
+	}
+}
+
+country_event = {
+	id = 44820
+	title = "EVTNAME44820"
+	desc = "EVTDESC44820"
+	picture = "manifest_destiny"
+
+	trigger = {
+		tag = MEX
+		has_country_flag = mexican_manifest_destiny
+		USA = {
+			NOT = {
+				any_owned_province = { is_core = MEX }
+				has_country_flag = usa_destiny_manifested
+			}
+		}
+		NOT = { has_country_flag = mex_destiny_manifested }
+	}
+
+	option = {
+		name = "EVTOPTA44820" 
+		set_country_flag = mex_destiny_manifested
+		any_owned = {
+			limit = { is_core = THIS }
+			remove_core = USA
+		}
+	}
+}

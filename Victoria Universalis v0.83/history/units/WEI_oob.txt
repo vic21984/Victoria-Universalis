@@ -1,0 +1,19 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Sächsische Armee"
+	location = 561
+	regiment = {
+		name = "1. Linieninfanteri"
+		type = infantry
+		home = 561
+	}
+}

@@ -1,0 +1,14 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = sulphur
+life_rating = 35
+naval_base = 1
+terrain = steppe_mine
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = dye_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,71 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Bento Gonçalves"
+	type = land
+	date = 1836.1.1
+	personality = org10mor10
+	background = 1a2d_1
+}
+
+leader = {
+	name = "Antônio de Sousa Neto"
+	type = land
+	date = 1836.1.1
+	personality = rec10exp10
+	background = 2a1d_1
+}
+
+leader = {
+	name = "Giuseppe Garibaldi"
+	type = land
+	date = 1836.1.1
+	personality = mor40exp15
+	background = 3a3d_1
+	picture = european_general_46
+}
+
+army = {
+	name = "Exército Gaucho"
+	location = 2463
+
+	regiment = {
+			name= "1. Divisão Gaucha"
+			type = irregular
+			home = 2463
+	}
+	regiment = {
+			name= "2. Divisão Gaucha"
+			type = irregular
+			home = 2463
+	}
+	regiment = {
+			name= "3. Divisão Gaucha"
+			type = irregular
+			home = 2463
+	}
+	regiment = {
+			name= "3. Divisão Gaucha"
+			type = irregular
+			home = 2463
+	}
+	regiment = {
+			name= "4. Divisão Gaucha"
+			type = irregular
+			home = 2466
+	}
+	regiment = {
+			name= "5. Divisão Gaucha"
+			type = cavalry
+			home = 2467
+	}
+}
+

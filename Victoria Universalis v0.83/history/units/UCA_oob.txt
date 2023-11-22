@@ -1,0 +1,41 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Francisco Morazán"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+
+army = {
+	name = "Ejército Federal"
+	location = 2187
+	regiment = {
+		name= "1. División de Infantería"
+		type = infantry
+		home = 2187
+	}
+
+	regiment = {
+		name= "2. División de Infantería"
+		type = infantry
+		home = 2191
+	}
+
+	regiment = {
+		name= "3. División de Infantería"
+		type = infantry
+		home = 2186
+	}
+
+}
+

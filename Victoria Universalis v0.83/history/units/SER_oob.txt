@@ -1,0 +1,59 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Miloš Obrenovic I"
+	type = land
+	date="1836.1.1"
+	personality = org15exp10
+	background = 2a2d_1
+}
+
+army = {
+	name = "Army of the Principality of Serbia"
+	location = 794
+	regiment = {
+		name= "1st Serbian Infantry"
+		type = infantry
+		home = 794
+	}
+
+	regiment = {
+		name= "2nd Serbian Infantry"
+		type = infantry
+		home = 794
+	}
+
+	regiment = {
+		name= "3rd Serbian Infantry"
+		type = infantry
+		home = 795
+	}
+
+	regiment = {
+		name= "4th Serbian Infantry"
+		type = infantry
+		home = 795
+	}
+
+	regiment = {
+		name= "1st Serbian Cavalry"
+		type = dragoon
+		home = 796
+	}
+	
+	regiment = {
+		name= "1st Serbian Artillery"
+		type = cuirassier
+		home = 796
+	}		
+		
+}
+

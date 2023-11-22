@@ -1,0 +1,186 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+#Taiping Rebellion
+country_event = {
+	id = 160001
+	title = "EVTNAME160001"
+	desc = "EVTDESC160001"
+	picture = rebellion
+	news = yes
+	news_desc_long = "EVTDESC160001_NEWS_LONG"
+	news_desc_medium = "EVTDESC160001_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC160001_NEWS_SHORT"
+
+	major = yes
+	trigger = {
+		tag = QNG
+		NOT = { has_global_flag = taiping_has_happened }
+		year = 1851
+		NOT = { year = 1861 }
+		civilized = no
+	}
+	
+	immediate = {
+		1528 = { add_core = TPG }
+		1522 = { add_core = TPG }
+		1474 = { add_core = TPG }
+		1477 = { add_core = TPG }
+		1540 = { add_core = TPG }
+		1541 = { add_core = TPG }
+		CHI_1545 = { add_core = TPG }
+		CHI_1547 = { add_core = TPG }
+		CHI_1473 = { add_core = TPG }
+		CHI_1539 = { add_core = TPG }
+		CHI_2221 = { add_core = TPG }
+		1538 = {
+			limit = { owned_by = THIS }
+			add_core = TPG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA160001"
+		release = TPG
+		all_core = { add_core = TPG }
+		add_country_modifier = {  name = scripted_truce duration = 180 }
+		TPG = {
+			money = 200000
+			wool = 2000
+			capital = 2221
+			any_pop = {
+				consciousness = -5
+				militancy = -5
+			}
+			add_country_modifier = {  name = scripted_truce duration = 180 }
+			add_country_modifier = { name = middle_kingdom duration = -1 }
+			add_country_modifier = { name = taiping_mobilization duration = 730 }
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_religion = sunni
+					has_pop_culture = nanfaren
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		set_global_flag = taiping_has_happened
+		country_event = {
+			id = 160002
+			days = 180
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB160001"
+		release = TPG
+		all_core = { add_core = TPG }
+		add_country_modifier = {  name = scripted_truce duration = 180 }
+		TPG = {
+			money = 200000
+			wool = 2000
+			capital = 2221
+			any_pop = {
+				consciousness = -5
+				militancy = -5
+			}
+			add_country_modifier = {  name = scripted_truce duration = 180 }
+			add_country_modifier = { name = middle_kingdom duration = -1 }
+			add_country_modifier = { name = taiping_mobilization duration = 730 }
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_religion = sunni
+					has_pop_culture = nanfaren
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		set_global_flag = taiping_has_happened
+		change_tag_no_core_switch = TPG
+		country_event = {
+			id = 160003
+			days = 180
+		}
+	}
+}
+
+country_event = {
+	id = 160002
+	title = "EVTNAME160002"
+	desc = "EVTDESC160002"
+	picture = rebellion
+
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTOPTA160002"
+		war = {
+			target = TPG
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			call_ally = yes
+			defender_goal = {
+				casus_belli = annex_core_country
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 160003
+	title = "EVTNAME160003"
+	desc = "EVTDESC160003"
+	picture = rebellion
+
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTOPTA160003"
+		QNG = {
+			war = {
+				target = TPG
+				attacker_goal = {
+					casus_belli = annex_core_country
+				}
+				call_ally = yes
+				defender_goal = {
+					casus_belli = annex_core_country
+				}
+			}
+		}
+	}
+}
+
+#Remove TPG cores
+country_event = {
+	id = 160004
+	title = "Remove Taiping Cores"
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAN
+		has_global_flag = taiping_has_happened
+		TPG = { exists = no }
+	}
+	
+	option = {
+		TPG = {
+			all_core = {
+				remove_core = TPG
+			}
+		}
+	}
+}

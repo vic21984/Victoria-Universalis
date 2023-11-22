@@ -1,0 +1,395 @@
+### UNCIV FLAVOR ###
+#QNG -- Torching of The Summer Palace
+country_event = {
+	id = 13355
+	title = "EVTNAME13355"
+	desc = "EVTDESC13355"
+	news = yes
+	news_desc_long = "EVTDESC13355_NEWS_LONG"
+	news_desc_medium = "EVTDESC13355_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13355_NEWS_SHORT"
+	major = yes
+	picture = "cityfire"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13355"
+		prestige = -25
+		war_exhaustion = 5
+	}
+}
+
+#Boxers Burn something
+country_event = {
+	id = 13356
+	title = "EVTNAME13356"
+	desc = "EVTDESC13356"
+	news = yes
+	news_desc_long = "EVTDESC13356_NEWS_LONG"
+	news_desc_medium = "EVTDESC13356_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13356_NEWS_SHORT"
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13356"
+		prestige = -5
+		casus_belli = {
+			target = FROM
+			type = cut_down_to_size_boxer
+			months = 12
+		}
+	}
+}
+
+#Doctrine of Lapse 1/2
+country_event = {
+	id = 13357
+	title = "EVTNAME13357"
+	desc = "EVTDESC13357"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13357"
+		release_vassal = THIS
+		any_pop = {
+			militancy = 4
+			consciousness = 1
+		}
+		EIC = {
+			country_event = { id=13358 days=0 }
+		}
+	}
+}
+
+# Doctrine of Lapse 2/2
+country_event = {
+	id = 13358
+	title = "EVTNAME13358"
+	desc = "EVTDESC13358"
+	news = yes
+	news_desc_long = "EVTDESC13358_NEWS_LONG"
+	news_desc_medium = "EVTDESC13358_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC13358_NEWS_SHORT"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA13358"
+		inherit = FROM
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		set_global_flag = doctrine_of_lapse_has_been_used
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB13358"
+		prestige = -2
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	title = "westernize_nation_title"
+	desc = "westernize_nation_desc"
+	news = yes
+	news_desc_long = "westernize_nation_desc_NEWS_LONG"
+	news_desc_medium = "westernize_nation_desc_NEWS_MEDIUM"
+	news_desc_short = "westernize_nation_desc_NEWS_SHORT"
+	picture = "Prosper"
+
+	id = 90910
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { tag = QNG }
+	}
+
+	option = {				
+		name = "EVTOPTA90910"
+		prestige = 10
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						tag = EIC
+						tag = HND
+					}
+				}
+			}
+			owner = {
+				sphere_owner = {
+					diplomatic_influence = {
+						who = THIS
+						value = -101
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						is_culture_group = best_asian
+						tag = EIC
+						tag = HND
+					}
+				}
+			}
+			owner = {
+				add_country_modifier = { name = unciv_population_boom duration = 1825 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { land_reform = yes_land_reform }
+			}	
+			owner = {
+				activate_technology = freedom_of_trade
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { admin_reform = yes_admin_reform }
+			}	
+			owner = {
+				activate_technology = enlightenment_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { finance_reform = yes_finance_reform }
+			}	
+			owner = {
+				activate_technology = private_banks
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { monetary_reform = yes_monetary_reform }
+			}	
+			owner = {
+				activate_technology = no_standard
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { education_reform = yes_education_reform }
+			}	
+			owner = {
+				activate_technology = malthusian_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { research_reform = yes_research_reform }
+			}	
+			owner = {
+				activate_technology = late_enlightenment_philosophy
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { transport_improv = yes_transport_improv }
+			}	
+			owner = {
+				activate_technology = experimental_railroad
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { firearms_production = yes_firearms_production }
+			}	
+			owner = {
+				activate_technology = mechanized_mining
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { pre_indust = yes_pre_indust }
+			}	
+			owner = {
+				activate_technology = water_wheel_power
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { pre_indust = yes_pre_indust2 }
+			}	
+			owner = {
+				activate_technology = water_wheel_power
+				activate_technology = guild_based_production
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { industrial_construction = yes_industrial_construction }
+			}	
+			owner = {
+				activate_technology = industrial_revolution
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { industrial_construction = yes_industrial_construction2 }
+			}	
+			owner = {
+				activate_technology = industrial_revolution
+				activate_technology = basic_chemistry
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_training = yes_foreign_training }
+			}	
+			owner = {
+				activate_technology = introspectionism
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_weapons = yes_foreign_weapons }
+			}	
+			owner = {
+				activate_technology = flintlock_rifles
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { military_constructions = yes_military_constructions }
+			}	
+			owner = {
+				activate_technology = post_napoleonic_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_officers = yes_foreign_officers }
+			}	
+			owner = {
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { army_schools = yes_army_schools }
+			}	
+			owner = {
+				activate_technology = army_command_principle
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_naval_officers = yes_foreign_naval_officers }
+			}	
+			owner = {
+				activate_technology = alphabetic_flag_signaling
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { naval_schools = yes_naval_schools }
+			}	
+			owner = {
+				activate_technology = the_command_principle
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_navies = yes_foreign_navies }
+			}	
+			owner = {
+				activate_technology = clipper_design
+				activate_technology = steamers
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { western_shipyards = yes_western_shipyards }
+			}	
+			owner = {
+				activate_technology = post_nelsonian_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_artillery = yes_foreign_artillery }
+			}	
+			owner = {
+				activate_technology = bronze_muzzle_loaded_artillery
+			}
+		}
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = extraterritoriality_granted
+		remove_country_modifier = meiji_restoration_boost
+		remove_country_modifier = sakoku
+		remove_country_modifier = rangaku
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME90950"
+	desc = "EVTDESC90950"
+	picture = "Prosper"
+
+	id = 90950
+
+	is_triggered_only = yes
+	
+
+	option = {				
+		name = "EVTOPTA90950"
+		casus_belli = {
+			target = FROM
+			type = make_puppet
+			months = 12
+		}
+		
+		relation = {
+			who = FROM
+			value = -100
+		}
+		
+	}
+	
+	option = {				
+		name = "EVTOPTB90950"
+
+		relation = {
+			who = FROM
+			value = 100
+		}
+		
+	}
+
+}

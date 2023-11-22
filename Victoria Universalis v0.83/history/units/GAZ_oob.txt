@@ -1,0 +1,54 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+TRN = { value = 125 }
+
+leader = {
+	name = "Soshangane"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+army = {
+	name = "Army of the Gaza Empire"
+	location = 2049
+	regiment = {
+		name= "King's Guard"
+		type = irregular
+		home = 2049
+	}
+
+	regiment = {
+		name= "Gaza Warriors"
+		type = irregular
+		home = 2049
+	}
+
+	regiment = {
+		name= "Nguni Warriors"
+		type = irregular
+		home = 2049
+	}
+
+	regiment = {
+		name= "Maputo Warriors"
+		type = irregular
+		home = 2049
+	}
+
+	regiment = {
+		name= "Massekisse Warriors"
+		type = irregular
+		home = 2050
+	}
+
+}

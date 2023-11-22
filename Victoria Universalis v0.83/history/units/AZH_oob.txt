@@ -1,0 +1,19 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Ruwallah Army"
+	location = 1156
+	regiment = {
+		name = "Ruwallah Raiders"
+		type = cavalry
+		home = 1156
+	}
+}

@@ -1,0 +1,45 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+MAT = {
+	value = -200
+}
+
+ZUL = {
+	value = -200
+}
+
+AGC = {
+	value = -200
+}
+
+GAZ = {
+	value = -200
+}
+
+XHO = {
+	value = -200
+}
+
+army = {
+	name = "Royal army of Basotho"
+	location = 2104
+	regiment = {
+		name= "Basotho Warriors"
+		type = irregular
+		home = 2104
+	}
+	regiment = {
+		name= "Basotho Warriors"
+		type = irregular
+		home = 2101
+	}
+}
+

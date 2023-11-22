@@ -1,0 +1,38 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "João Batista Gonçalves Campos"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "Exército Gaucho"
+	location = 2410
+
+	regiment = {
+			name= "1. Divisão Gaucha"
+			type = irregular
+			home = 2410
+	}
+	regiment = {
+			name= "2. Divisão Gaucha"
+			type = irregular
+			home = 2410
+	}
+	regiment = {
+			name= "5. Divisão Gaucha"
+			type = cavalry
+			home = 2411
+	}
+}

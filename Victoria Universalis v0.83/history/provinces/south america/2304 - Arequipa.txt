@@ -1,0 +1,16 @@
+owner = PEU
+controller = PEU
+add_core = PEU
+trade_goods = sulphur
+life_rating = 35
+terrain = mountain_mine
+1836.1.2 = {
+	owner = PBC
+	controller = PBC
+	add_core = PBC
+}
+1913.1.1 = {
+	owner = PEU
+	controller = PEU
+	remove_core = PBC
+}

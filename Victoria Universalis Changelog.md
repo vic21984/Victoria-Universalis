@@ -1,3 +1,19 @@
+# Version 0.83 - 11/22/2023
+## Bug fixes:
+* Eisenstadt starts under the control of Hungary in 1836.
+
+## Map changes:
+* Imported GFM province shapes in Mozambique, Madagascar, and Tanzania.
+* Merged Rift Valley and Kenya states.
+
+## Interface changes:
+* Province selector decisions have been replaced by province selector events. When a province selector is built it will trigger a province event that contain all the old province selector decisions as options.
+
+## Gameplay changes:
+* Number of possible mobilized brigades is now always 100% of the mobilization pool and no longer dependent on standing brigade count.
+* Literacy campaign now gives 1% - (pop literacy/200) extra literacy per year instead of 1% - (pop literacy/100). Previously, a literacy campaign would give 0.5% extra per year literacy to a pop with 50% literacy, now it gives 0.75% per year to the same pop.
+
+
 # Version 0.82 - 10/11/2023
 ## Bug fixes:
 * Made treaty ports in Aden, Kiel, Panama City, and Suez upgradeable.
@@ -8,7 +24,7 @@
 * Enlarged the province borders of Bremen, Hamburg, Lubeck, Lucca, Gibraltar, Aden, and Fiume.
 * Merged Heligoland state with Schleswig-Holstein state.
 * Removed port from Nyda province so players don't accidently build a naval base in a province without access to the sea.
-* Merged Alamut state into neighbouring states.
+* Merged Alamut state into neighboring states.
 * Split Guangdong state into East and West Guangdong.
 * Created a crossing between Lahej and Djibuti across the Red Sea.
 
@@ -19,7 +35,7 @@
 * Reduced upkeep cost of colonial migration laws by half.
 * Created Small State promotion national focus for states below 400k population.
 * Organic Chemistry activation year changed from 1870 to 1860.
-* Electricty activation year changed from 1880 to 1875.
+* Electricity activation year changed from 1880 to 1875.
 * Added 1880 activation date to X-rays invention.
 * Removed 1886 activation date from Daimler's Automobile invention.
 * Increased Colonial Negotiations invention chance from Machine Guns, Naval Logistics, Iron Steamers, and Organic Chemistry from 5 to 50.
@@ -57,7 +73,7 @@
 * Annexed Herat in the multiplayer bookmark.
 
 ###### Yemen:
-* Removed the South Yemeni sultantes. Realistically no one would play them and removing more country tags improves performance.
+* Removed the South Yemeni sultanates Realistically no one would play them and removing more country tags improves performance.
 
 
 # Version 0.81 - 8/4/2023

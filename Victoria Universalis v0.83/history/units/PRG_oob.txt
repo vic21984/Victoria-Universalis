@@ -1,0 +1,35 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Carlos Antonio López"
+	date = 1836.1.1
+	type = land
+	personality = org10mor20
+	background = 2a2d_1
+}
+
+army = {
+	name = "Ejército del Paraguay"
+	location = 2339
+	regiment = {
+		name= "1.1ra División de Infantería"
+		type = infantry
+		home = 2339
+	}
+
+	regiment = {
+		name= "2.1ra División de Infantería"
+		type = infantry
+		home = 2341
+	}
+
+}
+

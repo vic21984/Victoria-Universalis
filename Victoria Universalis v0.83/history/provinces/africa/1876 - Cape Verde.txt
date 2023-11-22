@@ -1,0 +1,19 @@
+owner = POR
+controller = POR
+add_core = POR
+trade_goods = coffee_beans
+life_rating = 35
+colonial = 2
+naval_base = 1
+1836.1.2 = {
+	colonial = 0
+}
+1913.1.1 = {
+	naval_base = 5
+	colonial = 0
+	state_building = {
+		level = 2
+		building = winery
+		upgrade = yes
+	}
+}

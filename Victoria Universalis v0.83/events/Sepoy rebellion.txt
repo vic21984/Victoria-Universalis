@@ -1,0 +1,1295 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+#AI Weapons Upgrade
+country_event = {
+	id = 90029
+	title = "EVTNAME90029"
+	desc = "EVTDESC90029"
+	picture = british_india
+	
+	trigger = {
+		tag = EIC
+		vassal_of = ENG
+		OR = {
+			AND = {
+				NOT = { post_napoleonic_thought = 1 }
+				ENG = { strategic_mobility = 1 }
+			}
+			AND = {
+				NOT = { strategic_mobility = 1 }
+				ENG = { point_defense_system = 1 }
+			}
+			AND = {
+				NOT = { point_defense_system = 1 }
+				ENG = { deep_defense_system = 1 }
+			}
+			AND = {
+				NOT = { deep_defense_system = 1 }
+				ENG = { trench_systems = 1 }
+			}
+			AND = {
+				NOT = { trench_systems = 1 }
+				ENG = { infiltration = 1 }
+			}
+			AND = {
+				NOT = { infiltration = 1 }
+				ENG = { modern_army_doctrine = 1 }
+			}
+			AND = {
+				NOT = { flintlock_rifles = 1 }
+				ENG = { muzzle_loaded_rifles = 1 }
+			}
+			AND = {
+				NOT = { muzzle_loaded_rifles = 1 }
+				ENG = { breech_loaded_rifles = 1 }
+			}
+			AND = {
+				NOT = { breech_loaded_rifles = 1 }
+				ENG = { machine_guns = 1 }
+			}
+			AND = {
+				NOT = { machine_guns = 1 }
+				ENG = { bolt_action_rifles = 1 }
+			}
+			AND = {
+				NOT = { bolt_action_rifles = 1 }
+				ENG = { chemical_weapons = 1 }
+			}
+			AND = {
+				NOT = { chemical_weapons = 1 }
+				ENG = { modern_divisional_structure = 1 }
+			}
+			AND = {
+				NOT = { bronze_muzzle_loaded_artillery = 1 }
+				ENG = { iron_muzzle_loaded_artillery = 1 }
+			}
+			AND = {
+				NOT = { iron_muzzle_loaded_artillery = 1 }
+				ENG = { iron_breech_loaded_artillery = 1 }
+			}
+			AND = {
+				NOT = { iron_breech_loaded_artillery = 1 }
+				ENG = { steel_breech_loaded_artillery = 1 }
+			}
+			AND = {
+				NOT = { steel_breech_loaded_artillery = 1 }
+				ENG = { indirect_artillery_fire = 1 }
+			}
+			AND = {
+				NOT = { indirect_artillery_fire = 1 }
+				ENG = { creeping_barrage = 1 }
+			}
+			AND = {
+				NOT = { creeping_barrage = 1 }
+				ENG = { railway_gun = 1 }
+			}
+			AND = {
+				NOT = { military_staff_system = 1 }
+				ENG = { military_plans = 1 }
+			}
+			AND = {
+				NOT = { military_plans = 1 }
+				ENG = { military_statistics = 1 }
+			}
+			AND = {
+				NOT = { military_statistics = 1 }
+				ENG = { military_logistics = 1 }
+			}
+			AND = {
+				NOT = { military_logistics = 1 }
+				ENG = { aeronautics = 1 }
+			}
+			AND = {
+				NOT = { aeronautics = 1 }
+				ENG = { barrel_experiments = 1 }
+			}
+			AND = {
+				NOT = { barrel_experiments = 1 }
+				ENG = { combined_arms_experiments = 1 }
+			}
+			AND = {
+				NOT = { army_command_principle = 1 }
+				ENG = { army_professionalism = 1 }
+			}
+			AND = {
+				NOT = { army_professionalism = 1 }
+				ENG = { army_decision_making = 1 }
+			}
+			AND = {
+				NOT = { army_decision_making = 1 }
+				ENG = { army_risk_management = 1 }
+			}
+			AND = {
+				NOT = { army_risk_management = 1 }
+				ENG = { army_nco_training = 1 }
+			}
+			AND = {
+				NOT = { army_nco_training = 1 }
+				ENG = { great_war_experience = 1 }
+			}
+			AND = {
+				NOT = { great_war_experience = 1 }
+				ENG = { total_war_philosophy = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA90029"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { post_napoleonic_thought = 1 }
+					overlord = { strategic_mobility = 1 }
+				}
+			}	
+			owner = { activate_technology = post_napoleonic_thought }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { strategic_mobility = 1 }
+					overlord = { point_defense_system = 1 }
+				}
+			}	
+			owner = { activate_technology = strategic_mobility }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { point_defense_system = 1 }
+					overlord = { deep_defense_system = 1 }
+				}
+			}	
+			owner = { activate_technology = point_defense_system }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { deep_defense_system = 1 }
+					overlord = { trench_systems = 1 }
+				}
+			}	
+			owner = { activate_technology = deep_defense_system }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { trench_systems = 1 }
+					overlord = { infiltration = 1 }
+				}
+			}	
+			owner = { activate_technology = trench_systems }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { infiltration = 1 }
+					overlord = { modern_army_doctrine = 1 }
+				}
+			}	
+			owner = { activate_technology = infiltration }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { flintlock_rifles = 1 }
+					overlord = { muzzle_loaded_rifles = 1 }
+				}
+			}	
+			owner = { activate_technology = flintlock_rifles }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { muzzle_loaded_rifles = 1 }
+					overlord = { breech_loaded_rifles = 1 }
+				}
+			}	
+			owner = { activate_technology = muzzle_loaded_rifles }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { breech_loaded_rifles = 1 }
+					overlord = { machine_guns = 1 }
+				}
+			}	
+			owner = { activate_technology = breech_loaded_rifles }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { machine_guns = 1 }
+					overlord = { bolt_action_rifles = 1 }
+				}
+			}	
+			owner = { activate_technology = machine_guns }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { bolt_action_rifles = 1 }
+					overlord = { chemical_weapons = 1 }
+				}
+			}	
+			owner = { activate_technology = bolt_action_rifles }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { chemical_weapons = 1 }
+					overlord = { modern_divisional_structure = 1 }
+				}
+			}	
+			owner = { activate_technology = chemical_weapons }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { bronze_muzzle_loaded_artillery = 1 }
+					overlord = { iron_muzzle_loaded_artillery = 1 }
+				}
+			}	
+			owner = { activate_technology = bronze_muzzle_loaded_artillery }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { iron_muzzle_loaded_artillery = 1 }
+					overlord = { iron_breech_loaded_artillery = 1 }
+				}
+			}	
+			owner = { activate_technology = iron_muzzle_loaded_artillery }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { iron_breech_loaded_artillery = 1 }
+					overlord = { steel_breech_loaded_artillery = 1 }
+				}
+			}	
+			owner = { activate_technology = iron_breech_loaded_artillery }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { steel_breech_loaded_artillery = 1 }
+					overlord = { indirect_artillery_fire = 1 }
+				}
+			}	
+			owner = { activate_technology = steel_breech_loaded_artillery }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { indirect_artillery_fire = 1 }
+					overlord = { creeping_barrage = 1 }
+				}
+			}	
+			owner = { activate_technology = indirect_artillery_fire }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { creeping_barrage = 1 }
+					overlord = { railway_gun = 1 }
+				}
+			}	
+			owner = { activate_technology = creeping_barrage }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { military_staff_system = 1 }
+					overlord = { military_plans = 1 }
+				}
+			}	
+			owner = { activate_technology = military_staff_system }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { military_plans = 1 }
+					overlord = { military_statistics = 1 }
+				}
+			}	
+			owner = { activate_technology = military_plans }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { military_statistics = 1 }
+					overlord = { military_logistics = 1 }
+				}
+			}	
+			owner = { activate_technology = military_statistics }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { military_logistics = 1 }
+					overlord = { aeronautics = 1 }
+				}
+			}	
+			owner = { activate_technology = military_logistics }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { aeronautics = 1 }
+					overlord = { barrel_experiments = 1 }
+				}
+			}	
+			owner = { activate_technology = aeronautics }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { barrel_experiments = 1 }
+					overlord = { combined_arms_experiments = 1 }
+				}
+			}	
+			owner = { activate_technology = barrel_experiments }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { army_command_principle = 1 }
+					overlord = { army_professionalism = 1 }
+				}
+			}	
+			owner = { activate_technology = army_command_principle }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { army_professionalism = 1 }
+					overlord = { army_decision_making = 1 }
+				}
+			}	
+			owner = { activate_technology = army_professionalism }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { army_decision_making = 1 }
+					overlord = { army_risk_management = 1 }
+				}
+			}	
+			owner = { activate_technology = army_decision_making }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { army_risk_management = 1 }
+					overlord = { army_nco_training = 1 }
+				}
+			}	
+			owner = { activate_technology = army_risk_management }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { army_nco_training = 1 }
+					overlord = { great_war_experience = 1 }
+				}
+			}	
+			owner = { activate_technology = army_nco_training }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { great_war_experience = 1 }
+					overlord = { total_war_philosophy = 1 }
+				}
+			}	
+			owner = { activate_technology = great_war_experience }
+		}
+	}
+}
+
+#Doctrine of Lapse
+country_event = {
+
+	id = 90030
+
+	title = "EVTNAME90030"
+	desc = "EVTDESC90030"
+	picture = sepoy_rebellion
+
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = MAH
+				year = 1837
+				ENG = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = JAI
+				year = 1849
+				ENG = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = ORI
+				year = 1849
+				ENG = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = MEW
+				year = 1852
+				ENG = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = JHA
+				year = 1853
+				ENG = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = NAG
+				year = 1854
+				ENG = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = KRN
+				year = 1855
+				ENG = { is_our_vassal = THIS }
+			}
+			AND = {
+				tag = AWA
+				year = 1856
+				ENG = { is_our_vassal = THIS }
+			}
+		}
+		NOT = { has_country_flag = doctrine_lapsed }
+	}
+
+	mean_time_to_happen =  {
+		months = 3
+	}
+
+	option = {
+		name = "EVTOPTA90030"
+		set_country_flag = doctrine_lapsed
+		any_pop = {
+			militancy = 4
+			consciousness = 1
+		}
+		country_event = { id=13357 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB90030"
+		set_country_flag = doctrine_lapsed
+		any_pop = {
+			militancy = 9
+			consciousness = 9
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#EIC Puppets
+#country_event = {
+#
+#	id = 90031
+#
+#	title = "EIC Puppets"
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		EIC = {
+#			create_vassal = AWA
+#			create_vassal = BAS
+#			create_vassal = BER
+#			create_vassal = BIK
+#			create_vassal = BHO
+#			create_vassal = BUN
+#			create_vassal = HYD
+#			create_vassal = IND
+#			create_vassal = JAI
+#			create_vassal = JAS
+#			create_vassal = JOD
+#			create_vassal = MEW
+#			create_vassal = MYS
+#			create_vassal = NAG
+#			create_vassal = ORI
+#			create_vassal = TRA
+#			create_vassal = GWA
+#			create_vassal = KUT
+#			create_vassal = MUG
+#			create_vassal = MAH
+#			create_vassal = JHA
+#			create_vassal = BHP
+#			create_vassal = KRN
+#			create_alliance = AWA
+#			create_alliance = BAS
+#			create_alliance = BER
+#			create_alliance = BIK
+#			create_alliance = BHO
+#			create_alliance = BUN
+#			create_alliance = HYD
+#			create_alliance = IND
+#			create_alliance = JAI
+#			create_alliance = JAS
+#			create_alliance = JOD
+#			create_alliance = MEW
+#			create_alliance = MYS
+#			create_alliance = NAG
+#			create_alliance = ORI
+#			create_alliance = TRA
+#			create_alliance = GWA
+#			create_alliance = KUT
+#			create_alliance = MUG
+#			create_alliance = MAH
+#			create_alliance = JHA
+#			create_alliance = BHP
+#			create_alliance = KRN
+#		}
+#	}
+#}
+
+#Crown Rule
+country_event = {
+	id = 90032
+	title = "EVTNAME90032"
+	desc = "EVTDESC90032"
+	picture = british_india
+	
+	trigger = {
+		has_country_flag = indian
+		has_country_modifier = direct_rule
+		NOT = {
+			vassal_of = ENG
+			vassal_of = EIC
+		}
+	}
+
+	option = {
+		name = "EVTOPTA90032"
+		remove_country_modifier = direct_rule
+	}
+}
+
+#AI British India Giveaway
+country_event = {
+	id = 90033
+	title = "AI British India Giveaway"
+
+	trigger = {
+		ai = yes
+		tag = ENG
+		any_owned_province = {
+			OR = {
+				is_core = HND
+				is_core = PAK
+				is_core = BUR
+			}
+		}
+		is_our_vassal = EIC
+	}
+
+	option = {
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					is_core = PAK
+					is_core = BUR
+				}
+			}
+			secede_province = EIC
+		}
+	}
+}
+
+#Fall of British Raj
+country_event = {
+	id = 90034
+	title = "EVTNAME90034"
+	desc = "EVTDESC90034"
+	major = yes
+
+	trigger = {
+		tag = EIC
+		exists = yes
+		NOT = { has_country_flag = became_gp }
+		NOT = { vassal_of = ENG }
+		NOT = { owns = 2133 }
+		NOT = { is_greater_power = yes }
+		NOT = { has_country_flag = dismantling_eic }
+		NOT = { has_country_flag = tax_war }
+		NOT = { has_country_flag = granted_independence }
+	}
+
+	immediate = {
+		set_country_flag = dismantling_eic
+	}
+
+	option = {
+		name = "EVTOPTA90034"
+		all_core = {
+			remove_core = EIC
+		}
+		random_owned = {
+			limit = { owner = { civilized = no } }
+			owner = {
+				any_owned = {
+					limit = { is_core = KRN }
+					secede_province = KRN
+				}
+				any_country = {
+					limit = {
+						vassal_of = ENG
+						is_culture_group = south_asian
+					}
+					country_event = { id = 90035 days = 0 }
+				}
+				any_country = {
+					limit = {
+						NOT = { tag = HND }
+						any_core = {
+							owned_by = THIS
+						}
+					}
+					country_event = { id = 90036 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = { owner = { civilized = yes } }
+			owner = {
+				any_owned = {
+					limit = { is_core = HND }
+					secede_province = HND
+				}
+				any_owned = {
+					limit = { is_core = PAK }
+					secede_province = PAK
+				}
+				any_country = {
+					limit = {
+						vassal_of = ENG
+						is_culture_group = south_asian
+					}
+					country_event = { id = 90035 days = 0 }
+				}
+				any_country = {
+					limit = {
+						NOT = { tag = HND }
+						any_core = {
+							owned_by = THIS
+						}
+					}
+					country_event = { id = 90036 days = 0 }
+				}
+			}
+		}
+		ENG = {
+			country_event = { id = 36961 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 90035
+	title = "EVTNAME90035"
+	desc = "EVTDESC90035"
+	picture = "british_india"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90035"
+		release_vassal = THIS
+		ENG = {
+			diplomatic_influence = {
+				who = THIS
+				value = -300
+			}
+		}
+		EIC = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 90036
+	title = "EVTNAME90036"
+	desc = "EVTDESC90036"
+	picture = "british_india"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90036"
+		FROM = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+	}
+}
+
+#Indian Isolationism
+country_event = {
+	id = 90037
+	title = "Indian Isolationism"
+
+	trigger = {
+		tag = JAN
+		HND = {
+			exists = yes
+			civilized = no
+			NOT = { has_country_modifier = indian_isolationism }
+		}
+	}
+
+	option = {
+		HND = { add_country_modifier = { name = indian_isolationism duration = -1 } }
+	}
+}
+
+#End of Indian Isolationism
+country_event = {
+	id = 90038
+	title = "Indian Isolationism"
+
+	trigger = {
+		tag = JAN
+		HND = {
+			exists = yes
+			civilized = yes
+			has_country_modifier = indian_isolationism
+		}
+	}
+
+	option = {
+		HND = { remove_country_modifier = indian_isolationism }
+	}
+}
+
+#Death of Ranjit Singh
+country_event = {
+	id = 90039
+	title = "EVTNAME90039"
+	desc = "EVTDESC90039"
+	picture = anglo_sikh_war
+
+	trigger = {
+		tag = PNJ
+		neighbour = EIC
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = { has_leader = "Maharaja Ranjit Singh" }
+		NOT = { has_country_flag = death_of_ranjit_singh }
+		NOT = { war_with = ENG }
+		NOT = { truce_with = ENG }
+		EIC = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "EVTOPTA90039"
+		set_country_flag = death_of_ranjit_singh
+	}
+}
+
+country_event = {
+
+	id = 90040 # Sepoy Rebellion
+
+	title = "EVTNAME90040"
+	desc = "EVTDESC90040"
+	news = yes
+	news_desc_long = "EVTDESC90040_NEWS_LONG"
+	news_desc_medium = "EVTDESC90040_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90040_NEWS_SHORT"
+	picture = sepoy_rebellion
+	
+	major = yes
+
+	trigger = {
+		NOT = { has_country_flag = sepoy_rebellion }
+		tag = EIC
+		year = 1857
+		any_owned_province = { is_core = HND }
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "EVTOPTA90040"
+		government = hms_government
+		inherit = HYD
+		inherit = MYS
+		inherit = TRA
+		inherit = BAS
+		inherit = BUN
+		inherit = JHA
+		inherit = MAH
+		inherit = KUT
+		inherit = BER
+		inherit = NAG
+		inherit = BHP
+		inherit = BIK
+		inherit = JAI
+		inherit = MEW
+		inherit = KRN
+		any_country = {
+			limit = {
+				vassal_of = ENG
+				OR = {
+					primary_culture = assamese
+					primary_culture = bengali
+					primary_culture = bihari
+					primary_culture = manipuri
+					primary_culture = nepali
+					primary_culture = oriya
+					primary_culture = sinhala
+					primary_culture = avadhi
+					primary_culture = kanauji
+					primary_culture = panjabi
+					primary_culture = kashmiri
+					primary_culture = gujarati
+					primary_culture = marathi
+					primary_culture = sindi
+					primary_culture = rajput
+					primary_culture = kannada
+					primary_culture = malayalam
+					primary_culture = tamil
+					primary_culture = telegu
+				}
+			}
+			country_event = { id = 90042 days = 0 }
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		set_country_flag = sepoy_rebellion
+		ENG = { country_event = { id = 36960 days = 0 } }
+		HND = {
+			leadership = 400
+			country_event = { id = 90041 days = 1 }
+			add_country_modifier = { name = indian_isolationism duration = -1 }
+		}
+	}
+}
+
+country_event = {
+	id = 90041
+	title = "EVTNAME90041"
+	desc = "EVTDESC90041"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		any_country = {
+			limit = {
+				OR = {
+					tag = ENG
+					tag = EIC
+					vassal_of = ENG
+					in_sphere = ENG
+				}
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = MUG
+						is_core = AWA
+						is_core = JOD
+						is_core = MEW
+						is_core = GWA
+						is_core = IND
+						is_core = BHP
+						is_core = PNJ
+						province_id = 1224
+						province_id = 1225
+						province_id = 1226
+						province_id = 1243
+						province_id = 1245
+						province_id = 1246
+						province_id = 1275
+						province_id = 1276
+						province_id = 1286
+						province_id = 1295
+					}
+					NOT = {
+						OR = {
+							is_core = KAS
+							province_id = 1238
+							province_id = 1245
+						}
+					}
+				}
+				secede_province = HND
+			}
+		}
+		HND = {
+			war = {
+				target = EIC
+				attacker_goal = { casus_belli = acquire_all_cores country = HND }
+				defender_goal = { casus_belli = establish_protectorate_casus_belli }
+			}
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+	id = 90042
+	title = "EVTNAME90042"
+	desc = "EVTDESC90042"
+
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90042"
+		leave_alliance = FROM
+		release_vassal = THIS
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		any_owned = {
+			secede_province = HND
+		}
+	}
+}
+
+country_event = {
+	id = 90043
+	title = "EVTNAME90043"
+	desc = "EVTDESC90043"
+
+	picture = "Rebellion"
+
+	trigger = {
+		tag = EIC
+		has_country_flag = sepoy_rebellion
+		NOT = { has_global_flag = sepoy_rebellion_ended }
+		war_with = HND
+		HND = { national_provinces_occupied = 0.9 }
+	}
+
+	option = {
+		name = "EVTOPTA90043"
+		end_war = HND
+		ENG = { end_war = HND }
+		inherit = HND
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 90044 # Sepoys Win
+
+	title = "EVTNAME90044"
+	desc = "EVTDESC90044"
+	picture = sepoy_rebellion
+
+
+	trigger = {
+		has_country_flag = sepoy_rebellion
+		NOT = { has_global_flag = sepoy_rebellion_ended }
+		tag = EIC
+		NOT = { war_with = HND }
+		exists = HND
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "EVTOPTA90044"
+		set_global_flag = sepoy_rebellion_ended
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					is_core = PAK
+				}
+			}
+			secede_province = HND
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		ENG = { inherit = THIS }
+	}
+}
+
+country_event = {
+
+	id = 90045 # Sepoys Lose
+
+	title = "Sepoys Lose"
+
+	trigger = {
+		tag = JAN
+		EIC = { has_country_flag = sepoy_rebellion }
+		NOT = { exists = HND }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		set_global_flag = sepoy_rebellion_ended
+		HND = {
+			all_core = { add_core = EIC }
+		}
+		PAK = {
+			all_core = { add_core = EIC }
+		}
+		random_country = {
+			limit = {
+				tag = EIC
+				owns = 1288
+				owns = 1289
+				owns = 1290
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+				}
+				secede_province = THIS
+			}
+		}
+		any_owned = {
+			limit = {
+				NOT = { province_id = 3246 }
+			}
+			secede_province = CIV
+		}
+		## Audax Validator "." Ignore_NEXT
+		CIV = {
+			civilized = no
+			civilized = yes
+		}
+		EIC = { inherit = CIV }
+	}
+}
+
+#Baluchistan Agency
+country_event = {
+
+	id = 90046
+
+	title = "EVTNAME90046"
+	desc = "EVTDESC90046"
+	picture = british_india
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90046"
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		any_owned = {
+			limit = {
+				region = KAL_1221
+			}
+			secede_province = EIC
+		}
+		EIC = { country_event = { id = 90047 days = 0 } }
+		ai_chance = {
+			factor = 0.9
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90046"
+		EIC = { country_event = { id = 90048 days = 0 } }
+		ai_chance = {
+			factor = 0.1
+		}
+	}
+}
+
+country_event = {
+
+	id = 90047
+
+	title = "EVTNAME90047"
+	desc = "EVTDESC90047"
+	picture = british_india
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90047"
+	}
+}
+
+country_event = {
+
+	id = 90048
+
+	title = "EVTNAME90048"
+	desc = "EVTDESC90048"
+	picture = british_india
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90048"
+			war = {
+				target = FROM
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1221 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+	}
+}
+
+country_event = {
+
+	id = 90049
+
+	title = "EVTNAME90049"
+	desc = "EVTDESC90049"
+	picture = Rebellion
+
+	trigger = {
+		OR = {
+				AND = {
+					tag = PNJ
+					EIC = { has_country_flag = conquest_of_punjab }
+				}
+				AND = {
+					tag = SIN
+					EIC = { has_country_flag = conquest_of_sindh }
+				}
+				AND = {
+					tag = BUR
+					EIC = { has_country_flag = conquest_of_burma }
+				}
+		}
+		capital_scope = {
+			controller = {
+				war_with = THIS
+				OR = {
+					tag = EIC
+					tag = ENG
+					vassal_of = ENG
+					vassal_of = EIC
+				}
+			}
+		}
+		war_with = EIC
+		national_provinces_occupied = 0.65
+		NOT = { has_country_flag = defeated_by_eic }
+	}
+
+	option = {
+		name = "EVTOPTA90049"
+		set_country_flag = defeated_by_eic
+		war_exhaustion = 25
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90049"
+		set_country_flag = defeated_by_eic
+		any_country = {
+			limit = {
+				war_with = THIS
+				OR = {
+					tag = ENG
+					alliance_with = ENG
+					vassal_of = ENG
+					vassal_of = EIC
+				}
+			}
+			end_war = THIS
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = HND
+					is_core = PAK
+					is_core = BUR
+				}
+			}
+			secede_province = EIC
+		}
+	}
+}
+
+#End of Sikh Empire
+country_event = {
+	id = 90050
+	title = "End of Sikh Empire"
+
+	trigger = {
+		tag = PNJ
+		ai = yes
+		NOT = {
+			any_owned_province = { is_core = THIS }
+		}
+	}
+
+	option = {
+		any_country = {
+			limit = {
+				NOT = { tag = HND }
+				NOT = { tag = PAK }
+				any_core = {
+					owned_by = THIS
+				}
+			}
+			country_event = { id = 90036 days = 0 }
+		}
+	}
+}
+

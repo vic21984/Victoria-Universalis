@@ -1,0 +1,190 @@
+country_event = {
+	id = 35810
+	title = "EVTNAME35810"
+	desc = "EVTDESC35810"
+	picture = ganghwa_treaty
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35810"
+		set_country_flag = treaty_of_ganghwa_signed
+		any_greater_power = {
+			limit = {
+				NOT = { tag = FROM }
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+		FROM = { country_event = 35811 }
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "EVTOPTB35810"
+		FROM = { country_event = 35812 }
+		relation = {
+			who = FROM
+			value = -100
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = 35811
+	title = "EVTNAME35811"
+	desc = "EVTDESC35811"
+	picture = ganghwa_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35811"
+		prestige = 10
+		create_vassal = KOR
+		military_access = FROM
+	}
+}
+
+country_event = {
+	id = 35812
+	title = "EVTNAME35812"
+	desc = "EVTDESC35812"
+	picture = ganghwa_treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35812"
+		prestige = -10
+		war = {
+			target = KOR
+			attacker_goal = { casus_belli = make_puppet_free }
+			call_ally = yes
+		}
+		badboy = 5
+	}
+
+	option = {
+		name = "EVTOPTB35812"
+		prestige = -10
+	}
+}
+
+country_event = {
+	id = 35813
+	title = "EVTNAME35813"
+	desc = "EVTDESC35813"
+	picture = ganghwa_treaty
+
+	trigger = {
+		tag = JAN
+		KOR = {
+			exists = yes
+			OR = {
+				vassal_of = JAP
+				vassal_of = TKG
+			}
+			NOT = { has_country_flag = treaty_of_ganghwa_signed }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA35812"
+		KOR = {
+			set_country_flag = treaty_of_ganghwa_signed
+		}
+	}
+}
+
+country_event = {
+	id = 35814
+	title = "EVTNAME35814"
+	desc = "EVTDESC35814"
+	picture = annex_korea
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35814"
+		FROM = { country_event = 35815 }
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "EVTOPTB35814"
+		FROM = {
+			release_vassal = THIS
+			country_event = 35816
+		}
+		relation = {
+			who = FROM
+			value = -200
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = 35815
+	title = "EVTNAME35815"
+	desc = "EVTDESC35815"
+	picture = annex_korea
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35815"
+		prestige = 30
+		inherit = KOR
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+	id = 35816
+	title = "EVTNAME35816"
+	desc = "EVTDESC35816"
+	picture = annex_korea
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35816"
+		prestige = -30
+		diplomatic_influence = {
+			who = KOR
+			value = -200
+		}
+		war = {
+			target = KOR
+			attacker_goal = { casus_belli = conquest_free }
+			call_ally = yes
+		}
+		badboy = 10
+	}
+
+	option = {
+		name = "EVTOPTB35816"
+		prestige = -30
+		diplomatic_influence = {
+			who = KOR
+			value = -200
+		}
+	}
+}

@@ -1,0 +1,275 @@
+## Audax Validator "!" Ignore_1004
+## Audax Validator "!" Ignore_1009
+political_decisions = {
+	attack_the_laagers = {
+		potential = {
+			tag = ZUL
+			NOT = { has_global_flag = piet_retief_massacre }
+			OR = {
+				exists = ORA
+				exists = TRN
+			}
+		}
+		allow = {
+			XHO = { exists = no }
+		}
+
+		effect = {
+			prestige = 5
+			badboy = 5
+			set_global_flag = piet_retief_massacre
+			2111 = {
+				any_pop = {
+					limit = {
+						culture = boer
+					}
+					reduce_pop = 0.6
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sand_river_convention = {
+		potential = {
+			OR = {
+				tag = TRN
+				tag = ORA
+			}
+			owns = 2106
+			NOT = {
+				has_country_flag = had_sand_river_convention
+			}
+		}
+		allow = {
+			state_n_government = 1
+			owns = 2105
+			owns = 2106
+			owns = 2107
+			owns = 2108
+			owns = 2109
+			owns = 2110
+			owns = 2114
+		}
+		effect = {
+			political_reform = no_slavery
+			set_country_flag = had_sand_river_convention
+			relation = {
+				who = ENG
+				value = 25
+			}
+			MAT = {
+				remove_core = 2105
+				remove_core = 2106
+				remove_core = 2107
+				remove_core = 2108
+				remove_core = 2109
+				remove_core = 2110
+				remove_core = 2114
+			}
+		}
+	}
+
+	orange_river_convention = {
+		potential = {
+			OR = {
+				tag = ORA
+				tag = TRN
+			}
+			owns = 2102
+			NOT = {
+				has_country_flag = had_orange_river_convention
+			}
+		}
+
+		allow = {
+			state_n_government = 1
+			owns = 2101
+			owns = 2102
+			owns = 2103
+		}
+		
+		effect = {
+			political_reform = no_slavery
+			set_country_flag = had_orange_river_convention
+			relation = {
+				who = ENG
+				value = 25
+			}
+			BSH = {
+				remove_core = 2101
+				remove_core = 2102
+				remove_core = 2103
+				remove_core = 2104
+			}
+		}
+	}
+
+	orange_capital = {
+		picture = pretoria
+		potential = {
+			tag = ORA
+			NOT = {
+				has_country_flag = orange_capital
+				capital = 2101
+			}
+		}
+		
+		allow = {
+			owns = 2101
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			set_country_flag = orange_capital
+			capital = 2101
+			2101 = { life_rating = 5 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	transvaal_capital = {
+		picture = pretoria
+		potential = {
+			tag = TRN
+			NOT = {
+				has_country_flag = transvaal_capital
+				capital = 2105
+			}
+		}
+		
+		allow = {
+			owns = 2105
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = {
+			set_country_flag = transvaal_capital
+			capital = 2105
+			2105 = { life_rating = 5 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	graaff_reinet = {
+		picture = voortrekker
+		potential = {
+			OR = {
+				tag = TRN
+				tag = ORA
+			}
+			#NOT = {
+			#	has_country_flag = graaff_reinet
+			#}
+			OR = {
+				2100 = {
+					owner = { civilized = no }
+				}
+				2100 = { is_colonial = yes }
+			}
+		}
+		
+		allow = {
+			owns = 2100
+			2100 = { is_colonial = yes }
+		}
+		
+		effect = {
+			#set_country_flag = graaff_reinet
+			2098 = { remove_core = XHO add_core = THIS }
+			2099 = { remove_core = XHO add_core = THIS }
+			2100 = { remove_core = XHO add_core = THIS }
+			any_owned = {
+				limit = { state_id = 2100 }
+				secede_province = CIV
+			}
+			CIV = { country_event = { id = 91510 days = 0 } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	nieuwe_republiek = {
+		picture = nieuwe_republiek
+		potential = {
+			OR = {
+				tag = TRN
+				tag = ORA
+			}
+			NOT = {
+				has_country_flag = nieuwe_republiek
+			}
+			OR = {
+				2113 = {
+					owner = { civilized = no }
+				}
+				2113 = { is_colonial = yes }
+			}
+		}
+		
+		allow = {
+			owns = 2113
+			2113 = { is_colonial = yes }
+		}
+		
+		effect = {
+			set_country_flag = nieuwe_republiek
+			2111 = { remove_core = ZUL add_core = THIS }
+			2112 = { remove_core = ZUL add_core = THIS }
+			2113 = { remove_core = ZUL add_core = THIS }
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2111
+						province_id = 2112
+						province_id = 2113
+					}
+				}
+				secede_province = CIV
+			}
+			CIV = {
+				country_event = { id = 91510 days = 0 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	claim_south_africa = {
+		picture = cape_colony
+		potential = {
+			OR = {
+				tag = TRN
+				tag = ORA
+			}
+			NOT = {
+				has_country_flag = south_africa_claimed
+			}
+		}
+		
+		allow = {
+			owns = 2105
+			owns = 2101
+			owns = 2113
+		}
+		
+		effect = {
+			set_country_flag = south_africa_claimed
+			SAF = { all_core = { add_core = THIS } }
+			NAL = { all_core = { add_core = THIS } }
+			ORA = { all_core = { add_core = THIS } }
+			TRN = { all_core = { add_core = THIS } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

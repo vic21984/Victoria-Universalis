@@ -1,0 +1,19 @@
+owner = QNG
+controller = QNG
+add_core = QNG
+trade_goods = coal
+life_rating = 30
+terrain = hills_mine
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = cement_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = QNG
+}

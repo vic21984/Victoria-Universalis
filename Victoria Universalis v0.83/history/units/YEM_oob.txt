@@ -1,0 +1,44 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+#Relations
+NEJ = {
+	value = -150
+}
+
+HAL = {
+	value = -50
+}
+
+NYE = {
+	value = -50        #relation
+}
+
+ENG = {
+	value = 125        #relation
+}
+
+leader = {
+	name = "Muhsin bin Abdali"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "Sultan's Army"
+	location = 1412
+	regiment = {
+		name= "1. Brigade"
+		type = irregular
+		home = 1412
+	}
+}

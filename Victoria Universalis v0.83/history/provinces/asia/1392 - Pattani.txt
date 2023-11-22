@@ -1,0 +1,28 @@
+owner = SIA
+controller = SIA
+add_core = SIA
+trade_goods = tropical_wood
+life_rating = 35
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	naval_base = 2
+}

@@ -1,0 +1,23 @@
+owner = ARC
+controller = ARC
+add_core = ARC
+trade_goods = grain
+life_rating = 35
+1913.1.1 = {
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	remove_core = ARC
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+}

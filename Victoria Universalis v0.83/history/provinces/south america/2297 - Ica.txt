@@ -1,0 +1,38 @@
+owner = PEU
+controller = PEU
+add_core = PEU
+trade_goods = fish
+life_rating = 35
+1836.1.2 = {
+	owner = PBC
+	controller = PBC
+	add_core = PBC
+}
+1913.1.1 = {
+	owner = PEU
+	controller = PEU
+	remove_core = PBC
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	naval_base = 4
+}

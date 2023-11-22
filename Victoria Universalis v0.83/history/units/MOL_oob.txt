@@ -1,0 +1,51 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Armata Principatul Moldovei"
+	location = 673
+	regiment = {
+		name= "1. Infanterie Moldovei"
+		type = infantry
+		home = 670
+	}
+
+	regiment = {
+		name= "2. Infanterie Moldovei"
+		type = infantry
+		home = 672
+	}
+
+	regiment = {
+		name= "3. Infanterie Moldovei"
+		type = infantry
+		home = 673
+	}
+	
+	regiment = {
+		name= "4. Infanterie Moldovei"
+		type = infantry
+		home = 670
+	}
+
+	regiment = {
+		name= "1. Cavalrie Moldovei"
+		type = dragoon
+		home = 671
+	}
+
+	regiment = {
+		name= "1. Artillerie Moldovei"
+		type = cuirassier
+		home = 673
+	}	
+
+}
+

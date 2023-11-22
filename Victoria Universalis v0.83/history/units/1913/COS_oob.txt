@@ -1,0 +1,38 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Federico Tinoco Granados"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+navy = {
+	name = "Coast Guard"
+	location = 2201
+
+	ship = {
+		name= "Branilio Garillo"
+		type = commerce_raider
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 2201
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2201
+	}
+}
+	

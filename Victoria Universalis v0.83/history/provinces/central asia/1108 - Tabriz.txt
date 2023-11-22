@@ -1,0 +1,47 @@
+owner = PER
+controller = PER
+add_core = PER
+add_core = AZB
+trade_goods = coal
+life_rating = 35
+terrain = mountain_mine
+1913.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = 0
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+}

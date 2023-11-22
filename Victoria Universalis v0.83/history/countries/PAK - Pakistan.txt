@@ -1,0 +1,150 @@
+1836.1.2 = {
+	capital = 1230
+	primary_culture = panjabi
+	culture = pashtun
+	religion = sunni
+	government = democracy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.02
+	non_state_culture_literacy = 0.01
+	is_releasable_vassal = no
+
+	# Political reforms
+	slavery = no_slavery
+	upper_house_composition = population_equal_weight
+	vote_franschise = universal_weighted_voting
+	public_meetings = yes_meeting
+	press_rights = free_press
+	trade_unions = state_controlled
+	voting_system = first_past_the_post
+	political_parties = gerrymandering
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = peonage
+	penal_system = capital_punishment
+	child_labor = child_labor_legal
+	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	colonial_migration = no_colonial_migration
+	centralization = unitary
+
+	ruling_party = PAK_conservative
+	upper_house = {
+		fascist = 0
+		liberal = 15
+		conservative = 75
+		reactionary = 10
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+
+	# Technologies
+
+	# Inventions
+
+	# Starting Consciousness
+	consciousness = 0
+	nonstate_consciousness = 0
+}
+
+1836.1.1 = {
+	capital = 1230
+	primary_culture = panjabi
+	culture = baluchi
+	culture = pashtun
+	culture = sindi
+	culture = kashmiri
+	religion = sunni
+	government = democracy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.02
+	non_state_culture_literacy = 0.01
+	is_releasable_vassal = no
+
+	# Political reforms
+	slavery = no_slavery
+	upper_house_composition = population_equal_weight
+	vote_franschise = universal_weighted_voting
+	public_meetings = yes_meeting
+	press_rights = free_press
+	trade_unions = state_controlled
+	voting_system = first_past_the_post
+	political_parties = gerrymandering
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = peonage
+	penal_system = capital_punishment
+	child_labor = child_labor_legal	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	colonial_migration = no_colonial_migration
+	centralization = unitary
+
+	ruling_party = PAK_conservative
+	upper_house = {
+		fascist = 0
+		liberal = 15
+		conservative = 75
+		reactionary = 10
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+
+	# Technologies
+
+	# Inventions
+
+	# Starting Consciousness
+	consciousness = 0
+	nonstate_consciousness = 0
+}
+
+1913.1.1 = {
+	oob = "/1913/PAK_oob.txt"
+	prestige = 25
+	plurality = 25
+	government = absolute_monarchy
+	ruling_party = PAK_conservative
+	literacy = 0.05
+	civilized = yes
+
+# Technologies
+		post_napoleonic_thought = 1
+		strategic_mobility = 1
+		flintlock_rifles = 1
+		muzzle_loaded_rifles = 1
+		breech_loaded_rifles = 1
+		machine_guns = 1
+		bolt_action_rifles = 1
+		bronze_muzzle_loaded_artillery = 1
+		iron_muzzle_loaded_artillery = 1
+		iron_breech_loaded_artillery = 1
+		steel_breech_loaded_artillery = 1
+		military_staff_system = 1
+		army_command_principle = 1
+		basic_chemistry = 1
+		medicine = 1
+}

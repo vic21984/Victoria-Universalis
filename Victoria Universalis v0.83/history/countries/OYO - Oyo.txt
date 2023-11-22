@@ -1,0 +1,163 @@
+1836.1.2 = {
+	capital = 1926
+	primary_culture = yoruba
+	religion = animist
+	government = absolute_monarchy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.01
+	non_state_culture_literacy = 0.01
+
+	# Political reforms
+	slavery = yes_slavery
+	upper_house_composition = appointed
+	vote_franschise = none_voting
+	public_meetings = no_meeting
+	press_rights = state_press
+	trade_unions = no_trade_unions
+	voting_system = first_past_the_post
+	political_parties = underground_parties
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = serfdom
+	penal_system = capital_punishment
+	child_labor = child_labor_legal
+	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	centralization = regionalism
+	colonial_migration = no_colonial_migration
+
+	ruling_party = OYO_conservative
+	upper_house = {
+		fascist = 0
+		liberal = 16
+		conservative = 63
+		reactionary = 21
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+
+
+	# Technologies
+
+	# Inventions
+
+	# Starting Consciousness
+	consciousness = 0
+	nonstate_consciousness = 0
+
+	oob = "OYO_oob.txt"
+}
+
+1836.1.1 = {
+	capital = 1926
+	primary_culture = yoruba
+	culture = fon
+	religion = animist
+	government = absolute_monarchy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.01
+	non_state_culture_literacy = 0.01
+
+	# Political reforms
+	slavery = yes_slavery
+	upper_house_composition = appointed
+	vote_franschise = none_voting
+	public_meetings = no_meeting
+	press_rights = state_press
+	trade_unions = no_trade_unions
+	voting_system = first_past_the_post
+	political_parties = underground_parties
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = serfdom
+	penal_system = capital_punishment
+	child_labor = child_labor_legal	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	centralization = regionalism
+	colonial_migration = no_colonial_migration
+
+	ruling_party = OYO_conservative
+	upper_house = {
+		fascist = 0
+		liberal = 16
+		conservative = 63
+		reactionary = 21
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+
+
+	# Technologies
+
+	# Inventions
+
+	# Starting Consciousness
+	consciousness = 0
+	nonstate_consciousness = 0
+
+	oob = "OYO_oob.txt"
+}
+
+1913.1.1 = {
+	oob = "/1913/OYO_oob.txt"
+	prestige = 25
+	plurality = 25
+	government = absolute_monarchy
+	ruling_party = OYO_conservative
+	literacy = 0.05
+	
+# New Reforms
+	conscription = mandatory_service
+
+# Technologies
+		post_napoleonic_thought = 1
+		strategic_mobility = 1
+		point_defense_system = 1
+		deep_defense_system = 1
+		trench_systems = 1
+		flintlock_rifles = 1
+		muzzle_loaded_rifles = 1
+		breech_loaded_rifles = 1
+		machine_guns = 1
+		bolt_action_rifles = 1
+		bronze_muzzle_loaded_artillery = 1
+		iron_muzzle_loaded_artillery = 1
+		iron_breech_loaded_artillery = 1
+		steel_breech_loaded_artillery = 1
+		indirect_artillery_fire = 1
+		military_staff_system = 1
+		military_plans = 1
+		military_statistics = 1
+		military_logistics = 1
+		army_command_principle = 1
+		army_professionalism = 1
+		army_decision_making = 1
+		army_risk_management = 1
+		army_nco_training = 1
+		basic_chemistry = 1
+		medicine = 1
+}

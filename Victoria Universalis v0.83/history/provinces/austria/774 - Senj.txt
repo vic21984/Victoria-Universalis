@@ -1,0 +1,16 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = CRO
+add_core = HUN
+add_core = YUG
+trade_goods = iron
+life_rating = 35
+terrain = hills_mine
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	remove_core = AUS
+	add_core = KUK
+	naval_base = 6
+}

@@ -1,0 +1,33 @@
+owner = FIN
+controller = FIN
+add_core = FIN
+add_core = SWE
+trade_goods = fish
+life_rating = 40
+1836.1.2 = {
+	add_core = KSN
+}
+1913.1.1 = {
+	owner = RUS
+	controller = RUS
+	remove_core = SWE
+	remove_core = KSN
+}
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+}
+

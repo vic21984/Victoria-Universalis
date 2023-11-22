@@ -1,0 +1,55 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+ZUL = {
+	value = -200
+}
+
+BSH = {
+	value = -200
+}
+
+MAT = {
+	value = -200
+}
+
+GAZ = {
+	value = -200
+}
+
+leader = {
+	name = "Maqoma"
+	type = land
+	date = 1836.1.1
+	personality = mor20rec15
+	background = 3a2d_1
+}
+
+army = {
+	name = "Army of the Xhosa"
+	location = 2100	
+	regiment = {
+		name= "1st Xhosa Warriors"
+		type = irregular
+		home = 2100
+	}
+	regiment = {
+		name= "2nd Xhosa Warriors"
+		type = irregular
+		home = 2099
+	}
+	regiment = {
+		name= "3rd Xhosa Warriors"
+		type = irregular
+		home = 2098
+	}
+}
+
+

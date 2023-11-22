@@ -1,0 +1,292 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "King Rama VI"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Phraya Bijai Janriddhi"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Phin Choonhavan"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Chakrabongse Bhuvanath"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+navy = {
+	name = "Kong Thap Ruea Thai"
+	location = 1346
+
+	ship = {
+		name= "No1"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "No2"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "No3"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "No4"
+		type = commerce_raider
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 1346
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 1346
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 1346
+	}
+
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 1346
+	}
+
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 1346
+	}
+	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 1346
+	}
+	
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 1346
+	}
+
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 1346
+	}
+	
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 1346
+		}
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 1347
+	}
+	}
+army = {
+	name = "II Corps"
+	location = 1392
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 1347
+	}
+
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 1347
+	}
+
+	regiment = {
+		name= "5th Battery Royal Artillery"
+		type = artillery
+		home = 1392
+	}
+
+	regiment = {
+		name= "6th Battery Royal Artillery"
+		type = artillery
+		home = 1352
+	}
+
+	
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 1352
+	}
+	
+	regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 1352
+	}
+
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 1354
+	}
+	
+	regiment = {
+		name= "7th Battery Royal Artillery"
+		type = artillery
+		home = 1354
+		}
+	regiment = {
+		name= "8th Battery Royal Artillery"
+		type = artillery
+		home = 1354
+	}
+	}
+army = {
+	name = "III Corps"
+	location = 1353
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 1353
+	}
+
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 1353
+	}
+
+	regiment = {
+		name= "9th Battery Royal Artillery"
+		type = artillery
+		home = 1353
+	}
+
+	regiment = {
+		name= "10th Battery Royal Artillery"
+		type = artillery
+		home = 1348
+	}
+
+	
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 1348
+	}
+	
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 1348
+	}
+
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 1349
+	}
+	
+	regiment = {
+		name= "11th Battery Royal Artillery"
+		type = artillery
+		home = 1349
+		}
+	regiment = {
+		name= "12th Battery Royal Artillery"
+		type = artillery
+		home = 1349
+	}
+	}
+army = {
+	name = "IV Corps"
+	location = 1359
+	regiment = {
+		name= "13th Regiment"
+		type = infantry
+		home = 1359
+	}
+
+	regiment = {
+		name= "14th Regiment"
+		type = infantry
+		home = 1359
+	}
+
+	regiment = {
+		name= "13th Battery Royal Artillery"
+		type = artillery
+		home = 1358
+	}
+
+	regiment = {
+		name= "14th Battery Royal Artillery"
+		type = artillery
+		home = 1358
+	}
+
+	
+	regiment = {
+		name= "4th Hussar"
+		type = hussar
+		home = 1358
+	}
+	
+	regiment = {
+		name= "15th Regiment"
+		type = infantry
+		home = 1358
+	}
+
+	regiment = {
+		name= "16th Regiment"
+		type = infantry
+		home = 1350
+	}
+	
+	regiment = {
+		name= "15th Battery Royal Artillery"
+		type = artillery
+		home = 1350
+		}
+	regiment = {
+		name= "16th Battery Royal Artillery"
+		type = artillery
+		home = 1350
+	}
+	}

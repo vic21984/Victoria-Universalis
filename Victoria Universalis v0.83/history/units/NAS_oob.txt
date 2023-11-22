@@ -1,0 +1,20 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Nassauische Heer"
+	location = 565
+	
+	regiment = {
+		name = "1. Infanteriebrigade"
+		type = infantry
+		home = 565
+	}
+}

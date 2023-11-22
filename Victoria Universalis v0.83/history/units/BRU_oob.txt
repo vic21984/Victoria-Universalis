@@ -1,0 +1,20 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of the Sultan of Brunei"
+	location = 1394
+	regiment = {
+		name= "1.Sultan's Guard"
+		type = irregular
+		home = 1394
+	}
+}
+

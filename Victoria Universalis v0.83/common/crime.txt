@@ -1,0 +1,28 @@
+corruption1 = {
+	active = yes
+	
+	local_rgo_output = -0.2
+	local_factory_output = -0.03
+	icon = 1	
+	
+	trigger = {
+	}
+}
+
+terrorist_cells = {
+	local_rgo_output = -0.4
+	local_factory_output = -0.1
+	icon = 8	
+
+	trigger = {
+	}
+}
+
+anarchic_bomb_throwers = {
+	local_rgo_output = -0.3
+	local_factory_output = -0.06
+	icon = 1
+	
+	trigger = {
+	}
+}

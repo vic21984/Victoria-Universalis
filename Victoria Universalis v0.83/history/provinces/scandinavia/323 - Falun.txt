@@ -1,0 +1,17 @@
+owner = SWE
+controller = SWE
+add_core = SWE
+add_core = SCA
+trade_goods = iron
+life_rating = 40
+terrain = forest_mine
+1836.1.2 = {
+	owner = KSN
+	controller = KSN
+	add_core = KSN
+}
+1913.1.1 = {
+	owner = SWE
+	controller = SWE
+	remove_core = KSN
+}
