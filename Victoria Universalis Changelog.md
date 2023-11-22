@@ -7,11 +7,11 @@
 * Merged Rift Valley and Kenya states.
 
 ## Interface changes:
-* Province selector decisions have been replaced by province selector events. When a province selector is built it will trigger a province event that contain all the old province selector decisions as options.
+* Province selector decisions have been replaced by province selector events. When a province selector is built it will trigger a province event that contains all the old province selector decisions as options.
 
 ## Gameplay changes:
 * Number of possible mobilized brigades is now always 100% of the mobilization pool and no longer dependent on standing brigade count.
-* Literacy campaign now gives 1% - (pop literacy/200) extra literacy per year instead of 1% - (pop literacy/100). Previously, a literacy campaign would give 0.5% extra per year literacy to a pop with 50% literacy, now it gives 0.75% per year to the same pop.
+* Literacy gain from literacy campaign buffed from 1% - (pop literacy/100) per year to 1% - (pop literacy/200) per year. Previously, a literacy campaign would give 0.5% extra per year literacy to a pop with 50% literacy, now it gives 0.75% per year to the same pop.
 
 
 # Version 0.82 - 10/11/2023
