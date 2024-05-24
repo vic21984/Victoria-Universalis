@@ -1,0 +1,59 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Ibn Saud"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "William Shakespear"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+army = {
+	name = "Nejd Bedoiuns"
+	location = 1157
+	regiment = {
+		name= "1st Bedoiuns"
+		type = cavalry
+		home = 1157
+	}
+	regiment = {
+		name= "2nd Bedoiuns"
+		type = cavalry
+		home = 1157
+	}
+	regiment = {
+		name= "3rd Bedoiuns"
+		type = cavalry
+		home = 1157
+	}
+	regiment = {
+		name= "4th Bedoiuns"
+		type = cavalry
+		home = 1158
+	}
+	regiment = {
+		name= "5th Bedoiuns"
+		type = cavalry
+		home = 1159
+	}
+	regiment = {
+		name= "6th Bedoiuns"
+		type = cavalry
+		home = 1161
+	}
+	}

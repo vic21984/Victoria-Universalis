@@ -1,0 +1,33 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of the Maharajah of Bikaner"
+	location = 1267
+	regiment = {
+		name= "1.Dungar Cavalry"
+		type = cavalry
+		home = 1267
+	}
+
+	regiment = {
+		name= "1.Bikaner Sadul Infantry"
+		type = irregular
+		home = 1267
+	}
+
+	regiment = {
+		name= "2.Bikaner Sadul Infantry"
+		type = irregular
+		home = 1267
+	}
+
+}
+

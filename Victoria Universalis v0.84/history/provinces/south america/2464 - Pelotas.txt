@@ -1,0 +1,16 @@
+owner = RGS
+controller = RGS
+add_core = RGS
+add_core = BRZ
+trade_goods = coal
+life_rating = 35
+terrain = plains_mine
+1836.1.2 = {
+	owner = BRZ
+	controller = BRZ
+}
+1913.1.1 = {
+	owner = BRZ
+	controller = BRZ
+	remove_core = RGS
+}

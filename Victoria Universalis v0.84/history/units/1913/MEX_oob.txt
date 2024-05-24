@@ -1,0 +1,555 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Miguel Alemán González"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Vito Alessio Robles"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Joaquín Amaro"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Juan Andreu Almazán"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Felipe Ángeles"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Domingo Arrieta León"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Lucio Blanco"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Aureliano Blanquet"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Máximo Castillo"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Félix Díaz"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Pablo González Garza"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Enrique Gorostieta"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Pancho Villa"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a2d_1
+}
+leader = {
+	name = "Emiliano Zapata"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+navy = {
+	name = "Armada de México"
+	location = 2163
+
+	ship = {
+		name= "Anáhuac"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Porfirio Díaz"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Progreso"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Vincente Guerrero"
+		type = cruiser
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 2162
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 2172
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2172
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2172
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2172
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2172
+	}	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2172
+	}
+		regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2174
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 2174
+	}
+	regiment = {
+		name= "3rd Battery Republican Artillery"
+		type = artillery
+		home = 2174
+		}
+	regiment = {
+		name= "4th Battery Republican Artillery"
+		type = artillery
+		home = 2174
+	}
+}
+army = {
+	name = "II Corps"
+	location = 2148
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 2174
+	}
+
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 2174
+	}
+
+	regiment = {
+		name= "5th Battery Republican Artillery"
+		type = artillery
+		home = 2174
+	}
+
+	regiment = {
+		name= "6th Battery Republican Artillery"
+		type = artillery
+		home = 2174
+	}	
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 2170
+	}
+		regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 2175
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 2175
+	}
+	regiment = {
+		name= "7th Battery Republican Artillery"
+		type = artillery
+		home = 2174
+	}
+	regiment = {
+		name= "8th Battery Republican Artillery"
+		type = artillery
+		home = 2174
+	}
+}
+army = {
+	name = "III Corps"
+	location = 2144
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 2158
+	}
+
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 2158
+	}
+
+	regiment = {
+		name= "9th Battery Republican Artillery"
+		type = artillery
+		home = 2158
+	}
+
+	regiment = {
+		name= "10th Battery Republican Artillery"
+		type = artillery
+		home = 2158
+	}	
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 2158
+	}
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 2159
+	}
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 2159
+	}
+	regiment = {
+		name= "11th Battery Republican Artillery"
+		type = artillery
+		home = 2159
+		}
+	regiment = {
+		name= "12th Battery Republican Artillery"
+		type = artillery
+		home = 2159
+	}
+}
+army = {
+	name = "IV Corps"
+	location = 2140
+	regiment = {
+		name= "13th Regiment"
+		type = infantry
+		home = 2167
+	}
+
+	regiment = {
+		name= "14th Regiment"
+		type = infantry
+		home = 2167
+	}
+
+	regiment = {
+		name= "13th Battery Republican Artillery"
+		type = artillery
+		home = 2167
+	}
+
+	regiment = {
+		name= "14th Battery Republican Artillery"
+		type = artillery
+		home = 2167
+	}	
+	regiment = {
+		name= "4th Hussar"
+		type = hussar
+		home = 2167
+	}
+		regiment = {
+		name= "15th Regiment"
+		type = infantry
+		home = 2167
+	}
+	regiment = {
+		name= "16th Regiment"
+		type = infantry
+		home = 2167
+	}
+	regiment = {
+		name= "15th Battery Republican Artillery"
+		type = artillery
+		home = 2167
+	}
+	regiment = {
+		name= "16th Battery Republican Artillery"
+		type = artillery
+		home = 2167
+	}
+}
+army = {
+	name = "V Corps"
+	location = 2181
+	regiment = {
+		name= "17th Regiment"
+		type = infantry
+		home = 2177
+	}
+
+	regiment = {
+		name= "18th Regiment"
+		type = infantry
+		home = 2177
+	}
+
+	regiment = {
+		name= "17th Battery Republican Artillery"
+		type = artillery
+		home = 2177
+	}
+
+	regiment = {
+		name= "18th Battery Republican Artillery"
+		type = artillery
+		home = 2177
+	}	
+	regiment = {
+		name= "5th Hussar"
+		type = hussar
+		home = 2177
+	}
+		regiment = {
+		name= "19th Regiment"
+		type = infantry
+		home = 2177
+	}
+	regiment = {
+		name= "20th Regiment"
+		type = infantry
+		home = 2177
+	}
+	regiment = {
+		name= "19th Battery Republican Artillery"
+		type = artillery
+		home = 2177
+		}
+	regiment = {
+		name= "20th Battery Republican Artillery"
+		type = artillery
+		home = 2183
+	}
+}
+army = {
+	name = "VI Corps"
+	location = 2185
+	regiment = {
+		name= "17th Regiment"
+		type = infantry
+		home = 2179
+	}
+
+	regiment = {
+		name= "18th Regiment"
+		type = infantry
+		home = 2176
+	}
+
+	regiment = {
+		name= "17th Battery Republican Artillery"
+		type = artillery
+		home = 2176
+	}
+
+	regiment = {
+		name= "18th Battery Republican Artillery"
+		type = artillery
+		home = 2176
+	}	
+	regiment = {
+		name= "5th Hussar"
+		type = hussar
+		home = 2176
+	}
+		regiment = {
+		name= "19th Regiment"
+		type = infantry
+		home = 2176
+	}
+	regiment = {
+		name= "20th Regiment"
+		type = infantry
+		home = 2176
+	}
+	regiment = {
+		name= "19th Battery Republican Artillery"
+		type = artillery
+		home = 2176
+		}
+	regiment = {
+		name= "20th Battery Republican Artillery"
+		type = artillery
+		home = 2176
+	}
+}
+army = {
+	name = "VII Corps"
+	location = 2147
+	regiment = {
+		name= "21st Regiment"
+		type = infantry
+		home = 2173
+	}
+
+	regiment = {
+		name= "22nd Regiment"
+		type = infantry
+		home = 2173
+	}
+
+	regiment = {
+		name= "21st Battery Republican Artillery"
+		type = artillery
+		home = 2173
+	}
+
+	regiment = {
+		name= "22nd Battery Republican Artillery"
+		type = artillery
+		home = 2173
+	}	
+	regiment = {
+		name= "6th Hussar"
+		type = hussar
+		home = 2173
+	}
+		regiment = {
+		name= "23rd Regiment"
+		type = infantry
+		home = 2159
+	}
+	regiment = {
+		name= "24th Regiment"
+		type = infantry
+		home = 2160
+	}
+	regiment = {
+		name= "23rd Battery Republican Artillery"
+		type = artillery
+		home = 2166
+		}
+	regiment = {
+		name= "24th Battery Republican Artillery"
+		type = artillery
+		home = 2179
+	}
+}

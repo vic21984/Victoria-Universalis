@@ -1,0 +1,28 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = coal
+life_rating = 35
+terrain = forest_mine
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = ammunition_factory
+		upgrade = yes
+	}
+}

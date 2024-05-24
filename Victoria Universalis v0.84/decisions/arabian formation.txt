@@ -1,0 +1,146 @@
+political_decisions = {
+
+	form_arabia = {
+
+		potential = {
+			ARA = { exists = no }
+			is_culture_group = arab
+		}
+		
+		allow = {
+			civilized = yes
+			YEM = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						empty = yes
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			HDJ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			NEJ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						empty = yes
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			OMA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						empty = yes
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+						continent = africa
+					}
+				}
+			}
+			SYR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			JOR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			PLS = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			IRQ = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						empty = yes
+						owner = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			all_core = {
+				limit = {
+					owned_by = THIS
+				}
+				remove_core = THIS 
+				add_core = ARA
+			}
+			change_tag = ARA
+			random_country = {
+				limit = {
+					is_culture_group = THIS
+					in_sphere = THIS
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+				}
+				country_event = 111011928
+			}
+			add_accepted_culture = union
+			any_country = {
+				limit = {
+					is_culture_group = THIS
+					NOT = { has_country_flag = sub_saharan_africa }
+				}
+				all_core = {
+					limit = {
+						NOT = { is_core = ZAN }
+					}
+					add_core = ARA
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,29 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of the Prince-Bishop"
+	
+	leader = {
+		name = "Mirko Petrovic"
+		type = land
+		date="1830.1.1"
+		personality = org05mor10
+		background = 2a2d_1
+	}
+
+	location = 2583
+	regiment = {
+		name= "1st Montenegrin Infantry"
+		type = irregular
+		home = 2583
+	}
+}
+

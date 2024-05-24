@@ -1,0 +1,32 @@
+owner = BOL
+controller = BOL
+add_core = BOL
+trade_goods = wool
+life_rating = 35
+1836.1.2 = {
+	owner = PBC
+	controller = PBC
+	add_core = PBC
+}
+1913.1.1 = {
+	owner = BOL
+	controller = BOL
+	remove_core = PBC
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+}

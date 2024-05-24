@@ -1,0 +1,42 @@
+political_decisions = {
+	reform_usca = {
+		potential = {
+			primary_culture = central_american
+			NOT = { exists = UCA }
+		}
+
+		allow = {
+			GUA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			ELS = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			HON = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			NIC = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			COS = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+
+		effect = {
+			prestige = 20
+			change_tag = UCA
+		}
+	}
+}
+

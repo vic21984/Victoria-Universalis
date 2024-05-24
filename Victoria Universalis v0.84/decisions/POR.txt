@@ -1,0 +1,284 @@
+political_decisions = {
+	retake_brazil = {
+		picture = brazil
+		potential = {
+			tag = POR
+			NOT = { has_country_flag = portugal_brazil_restored }
+		}
+		allow = {
+			war = no
+			OR = {
+				BRZ = {
+					war = no
+					NOT = { has_country_flag = portuguese_vassal }
+					OR = {
+						AND = {
+							in_sphere = THIS
+							ai = yes
+							NOT = { nationalism_n_imperialism = 1 }
+						}
+						vassal_of = THIS
+					}
+				}
+				MRN = {
+					war = no
+					NOT = { has_country_flag = portuguese_vassal }
+					OR = {
+						AND = {
+							in_sphere = THIS
+							ai = yes
+							NOT = { nationalism_n_imperialism = 1 }
+						}
+						vassal_of = THIS
+					}
+				}
+				GRP = {
+					war = no
+					NOT = { has_country_flag = portuguese_vassal }
+					OR = {
+						AND = {
+							in_sphere = THIS
+							ai = yes
+							NOT = { nationalism_n_imperialism = 1 }
+						}
+						vassal_of = THIS
+					}
+				}
+				PNB = {
+					war = no
+					NOT = { has_country_flag = portuguese_vassal }
+					OR = {
+						AND = {
+							in_sphere = THIS
+							ai = yes
+							NOT = { nationalism_n_imperialism = 1 }
+						}
+						vassal_of = THIS
+					}
+				}
+				BAH = {
+					war = no
+					NOT = { has_country_flag = portuguese_vassal }
+					OR = {
+						AND = {
+							in_sphere = THIS
+							ai = yes
+							NOT = { nationalism_n_imperialism = 1 }
+						}
+						vassal_of = THIS
+					}
+				}
+				RGS = {
+					war = no
+					NOT = { has_country_flag = portuguese_vassal }
+					OR = {
+						AND = {
+							in_sphere = THIS
+							ai = yes
+							NOT = { nationalism_n_imperialism = 1 }
+						}
+						vassal_of = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					primary_culture = brazilian
+					NOT = { has_country_flag = portuguese_vassal }
+				}
+				set_country_flag = portuguese_vassal
+				government = colonial_company
+				create_alliance = THIS
+				relation = {
+					who = THIS
+					value = 400
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						BRZ = {
+							in_sphere = THIS
+							NOT = { vassal_of = THIS }
+						}
+					}
+				}
+				owner = {
+					create_vassal = BRZ
+					BRZ = {
+						government = colonial_company
+						create_alliance = THIS
+						relation = {
+							who = THIS
+							value = 400
+						}
+						set_country_flag = portuguese_vassal
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						GRP = {
+							in_sphere = THIS
+							NOT = { vassal_of = THIS }
+						}
+					}
+				}
+				owner = {
+					create_vassal = GRP
+					GRP = {
+						government = colonial_company
+						create_alliance = THIS
+						relation = {
+							who = THIS
+							value = 400
+						}
+						set_country_flag = portuguese_vassal
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						MRN = {
+							in_sphere = THIS
+							NOT = { vassal_of = THIS }
+						}
+					}
+				}
+				owner = {
+					create_vassal = MRN
+					MRN = {
+						government = colonial_company
+						create_alliance = THIS
+						relation = {
+							who = THIS
+							value = 400
+						}
+						set_country_flag = portuguese_vassal
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						PNB = {
+							in_sphere = THIS
+							NOT = { vassal_of = THIS }
+						}
+					}
+				}
+				owner = {
+					create_vassal = PNB
+					PNB = {
+						government = colonial_company
+						create_alliance = THIS
+						relation = {
+							who = THIS
+							value = 400
+						}
+						set_country_flag = portuguese_vassal
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						BAH = {
+							in_sphere = THIS
+							NOT = { vassal_of = THIS }
+						}
+					}
+				}
+				owner = {
+					create_vassal = BAH
+					BAH = {
+						government = colonial_company
+						create_alliance = THIS
+						relation = {
+							who = THIS
+							value = 400
+						}
+						set_country_flag = portuguese_vassal
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						RGS = {
+							in_sphere = THIS
+							NOT = { vassal_of = THIS }
+						}
+					}
+				}
+				owner = {
+					create_vassal = RGS
+					RGS = {
+						government = colonial_company
+						create_alliance = THIS
+						relation = {
+							who = THIS
+							value = 400
+						}
+						set_country_flag = portuguese_vassal
+					}
+				}
+			}
+		}
+	}
+	restore_portugal_brazil = {
+		picture = portugal_brazil
+		potential = {
+			tag = POR
+			has_country_flag = portuguese_reconquista
+			NOT = { has_country_flag = portugal_brazil_restored }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+			citizens_rights = all_voting_pops
+			war = no
+			BRZ = {
+				all_core = {
+					owner = {
+						OR = {
+							vassal_of = THIS
+							tag = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			clr_country_flag = portuguese_reconquista
+			set_country_flag = portugal_brazil_restored
+			prestige = 50
+			any_country = {
+				limit = {
+					primary_culture = brazilian
+					vassal_of = THIS
+					government = colonial_company
+				}
+				all_core = { add_core = THIS }
+				annex_to = THIS
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			add_accepted_culture = brazilian
+			set_country_flag = confederalism
+			political_reform = confederalism
+		}
+	}
+}

@@ -1,0 +1,24 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = POL
+add_core = GLM
+trade_goods = grain
+life_rating = 35
+1913.1.1 = {
+	fort = 3
+	owner = KUK
+	controller = KUK
+	remove_core = AUS
+	add_core = KUK
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+}

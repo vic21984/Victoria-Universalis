@@ -1,0 +1,24 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = coal
+life_rating = 31
+terrain = woods_mine
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+	fort = 1
+}

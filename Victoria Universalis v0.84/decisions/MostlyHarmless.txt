@@ -1,0 +1,334 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+political_decisions = {
+	province_selector_event = {
+		potential = {
+			tag = JAN
+			META_1 = {
+				owner = {
+					ai = no
+					any_owned_province = { has_building = province_selector }
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					ai = no
+					any_owned_province = { has_building = province_selector }
+				}
+				random_owned = {
+					limit = {
+						has_building = province_selector
+					}
+					province_event = {
+						## Audax Validator "." Ignore_NEXT
+						id = 92101 days = 0
+					}
+				}
+			}
+		}
+	}
+
+	factory_construction_off = {
+		potential = {
+			tag = JAN
+			OR = {
+				AND = {
+					ai = yes
+					factory_construction = yes_allow_building
+				}
+				AND = {
+					NOT = { has_global_flag = manual_control_enabled }
+					META_1 = {
+						owner = {
+							exists = yes
+							OR = {
+								AND = {
+									ai = yes
+									factory_construction = yes_allow_building
+								}
+								AND = {
+									economic_policy = laissez_faire
+									factory_construction = yes_allow_building
+								}
+								AND = {
+									economic_policy = interventionism
+									factory_construction = yes_allow_building
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					exists = yes
+					OR = {
+						AND = {
+							ai = yes
+							factory_construction = yes_allow_building
+						}
+						AND = {
+							NOT = { has_global_flag = manual_control_enabled }
+							economic_policy = laissez_faire
+							factory_construction = yes_allow_building
+						}
+						AND = {
+							NOT = { has_global_flag = manual_control_enabled }
+							economic_policy = interventionism
+							factory_construction = yes_allow_building
+						}
+					}
+				}
+				political_reform = no_allow_building
+			}
+			random_owned = {
+				owner = {
+					limit = {
+						OR = {
+							AND = {
+								ai = yes
+								factory_construction = yes_allow_building
+							}
+							AND = {
+								economic_policy = laissez_faire
+								factory_construction = yes_allow_building
+							}
+							AND = {
+								economic_policy = interventionism
+								factory_construction = yes_allow_building
+							}
+						}
+					}
+					political_reform = no_allow_building
+				}
+			}
+		}
+	}
+
+	factory_construction_on = {
+		potential = {
+			tag = JAN
+			META_1 = {
+				owner = {
+					exists = yes
+					OR = {
+						AND = {
+							ai = no
+							economic_policy = state_capitalism
+							factory_construction = no_allow_building
+						}
+						AND = {
+							ai = no
+							economic_policy = planned_economy
+							factory_construction = no_allow_building
+						}
+						AND = {
+							ai = no
+							has_global_flag = manual_control_enabled
+							factory_construction = no_allow_building
+						}
+					}
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = {
+					exists = yes
+					OR = {
+						AND = {
+							ai = no
+							economic_policy = state_capitalism
+							factory_construction = no_allow_building
+						}
+						AND = {
+							ai = no
+							economic_policy = planned_economy
+							factory_construction = no_allow_building
+						}
+						AND = {
+							ai = no
+							has_global_flag = manual_control_enabled
+							factory_construction = no_allow_building
+						}
+					}
+				}
+				political_reform = yes_allow_building
+			}
+		}
+	}
+
+	english_channel_crossing_off = {
+		potential = {
+			tag = JAN
+			NOT = { owns = 2666 }
+		}
+		allow = {
+			OR = {
+				301 = { owner = { ai = no } }
+				2666 = { owner = { ai = no } }
+			}
+		}
+		effect = {
+			2666 = {
+				secede_province = THIS
+			}
+		}
+	}
+
+	english_channel_crossing_on = {
+		potential = {
+			NOT = { tag = JAN }
+			ai = yes
+			owns = 301
+			NOT = { owns = 2666 }
+		}
+		allow = {
+		}
+		effect = {
+			2666 = {
+				secede_province = THIS
+			}
+		}
+	}
+
+	english_channel_land_bridges = {
+		potential = {
+			NOT = { tag = JAN }
+			ai = yes
+			owns = 2666
+		}
+		allow = {
+			OR = {
+				AND = {
+					owns = 2666
+					2666 = {
+						NOT = { has_province_modifier = land_bridge }
+					}
+				}
+				AND = {
+					owns = 2701
+					2701 = {
+						NOT = { has_province_modifier = land_bridge }
+					}
+				}
+				AND = {
+					owns = 1297
+					1297 = {
+						NOT = { has_province_modifier = land_bridge }
+					}
+				}
+				AND = {
+					1297 = { owner = { vassal_of = THIS } }
+					1297 = {
+						NOT = { has_province_modifier = land_bridge }
+					}
+				}
+			}
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2701
+						province_id = 1297
+						province_id = 2666
+					}
+				}
+				add_province_modifier = { name = land_bridge duration = -1 }
+			}
+			random_country = {
+				limit = {
+					vassal_of = THIS
+					owns = 1297
+				}
+				random_owned = {
+					limit = { province_id = 1297 }
+					add_province_modifier = { name = land_bridge duration = -1 }
+				}
+			}
+		}
+	}
+
+	strait_crossings = {
+		potential = {
+			tag = JAN
+			OR = {
+				372 = { NOT = { has_province_modifier = strait_crossing } }
+				517 = { NOT = { has_province_modifier = strait_crossing } }
+				763 = { NOT = { has_province_modifier = strait_crossing } }
+				766 = { NOT = { has_province_modifier = strait_crossing } }
+				859 = { NOT = { has_province_modifier = strait_crossing } }
+				860 = { NOT = { has_province_modifier = strait_crossing } }
+				966 = { NOT = { has_province_modifier = strait_crossing } }
+				1640 = { NOT = { has_province_modifier = strait_crossing } }
+				1666 = { NOT = { has_province_modifier = strait_crossing } }
+				1667 = { NOT = { has_province_modifier = strait_crossing } }
+			}
+		}
+		allow = {
+		}
+		effect = {
+			372 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			517 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			763 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			766 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			859 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			860 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			966 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			1640 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			1666 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			1667 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+		}
+	}
+
+	banker_income = {
+		potential = {
+			tag = JAN
+		}
+		
+		allow = {
+			NOT = {
+				any_owned_province = {
+					any_pop = {
+						cash_reserves = 0.1
+					}
+				}
+			}
+			NOT = { has_country_flag = banker_income_timer }
+		}
+		
+		effect = {
+			set_country_flag = banker_income_timer
+			add_country_modifier = { name = banker_income_timer duration = 5 }
+			any_pop = {
+				money = 2000000
+			}
+		}
+	}
+
+	banker_income_timer = {
+		potential = {
+			tag = JAN
+		}
+		
+		allow = {
+			has_country_flag = banker_income_timer
+			NOT = { has_country_modifier = banker_income_timer }
+		}
+		
+		effect = {
+			clr_country_flag = banker_income_timer
+		}
+	}
+}

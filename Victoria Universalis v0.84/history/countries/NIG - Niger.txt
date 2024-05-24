@@ -1,0 +1,210 @@
+1836.1.2 = {
+	capital = 1812
+	primary_culture = hausa
+	culture = fulbe
+	culture = berber
+	religion = sunni
+	government = absolute_monarchy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.04
+
+	# Political reforms
+	slavery = no_slavery
+	upper_house_composition = appointed
+	vote_franschise = landed_voting
+	public_meetings = no_meeting
+	press_rights = state_press
+	trade_unions = no_trade_unions
+	voting_system = first_past_the_post
+	political_parties = harassment
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = peonage
+	penal_system = capital_punishment
+	child_labor = child_labor_legal	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	colonial_migration = no_colonial_migration
+	centralization = unitary
+
+	ruling_party = NIG_reactionary
+	upper_house = {
+		fascist = 0
+		liberal = 16
+		conservative = 63
+		reactionary = 21
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+}
+
+1836.1.1 = {
+	capital = 1812
+	primary_culture = hausa
+	culture = songhai
+	culture = fulbe
+	culture = tuareg
+	culture = kanuri
+	culture = dyula
+	culture = teda
+	culture = gur
+	culture = baguirmi
+	religion = sunni
+	government = absolute_monarchy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.04
+
+	# Political reforms
+	slavery = no_slavery
+	upper_house_composition = appointed
+	vote_franschise = landed_voting
+	public_meetings = no_meeting
+	press_rights = state_press
+	trade_unions = no_trade_unions
+	voting_system = first_past_the_post
+	political_parties = harassment
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = peonage
+	penal_system = capital_punishment
+	child_labor = child_labor_legal
+	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	colonial_migration = no_colonial_migration
+	centralization = unitary
+
+	ruling_party = NIG_reactionary
+	upper_house = {
+		fascist = 0
+		liberal = 16
+		conservative = 63
+		reactionary = 21
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+}
+
+1913.1.1 = {
+	oob = "/1913/NIG_oob.txt"
+	government = absolute_monarchy
+	prestige = 25
+	plurality = 80
+	literacy = 0.05
+	set_country_flag = army_experience_idea
+
+# New Reforms
+	conscription = mandatory_service
+
+# Technologies
+		post_napoleonic_thought = 1
+		strategic_mobility = 1
+		point_defense_system = 1
+		deep_defense_system = 1
+		trench_systems = 1
+		flintlock_rifles = 1
+		muzzle_loaded_rifles = 1
+		breech_loaded_rifles = 1
+		machine_guns = 1
+		bolt_action_rifles = 1
+		bronze_muzzle_loaded_artillery = 1
+		iron_muzzle_loaded_artillery = 1
+		iron_breech_loaded_artillery = 1
+		steel_breech_loaded_artillery = 1
+		indirect_artillery_fire = 1
+		military_staff_system = 1
+		military_plans = 1
+		military_statistics = 1
+		military_logistics = 1
+		army_command_principle = 1
+		army_professionalism = 1
+		army_decision_making = 1
+		army_risk_management = 1
+		army_nco_training = 1
+		private_banks = 1
+		no_standard = 1
+		ad_hoc_money_bill_printing = 1
+		late_classical_theory = 1
+		freedom_of_trade = 1
+		market_structure = 1
+		guild_based_production = 1
+		classicism_n_early_romanticism = 1
+		late_enlightenment_philosophy = 1
+		idealism = 1
+		empiricism = 1
+		malthusian_thought = 1
+		positivism = 1
+		functionalism = 1
+		enlightenment_thought = 1
+		ideological_thought = 1
+		state_n_government = 1
+		introspectionism = 1
+		water_wheel_power = 1
+		practical_steam_engine = 1
+		high_n_low_pressure_steam_engines = 1
+		industrial_revolution = 1
+		mechanical_production = 1
+		mechanized_mining = 1
+		clean_coal = 1
+		cheap_iron = 1
+		experimental_railroad = 1
+		early_railroad = 1
+		basic_chemistry = 1
+		medicine = 1
+		inorganic_chemistry = 1
+		organic_chemistry = 1
+		post_nelsonian_thought = 1
+		clipper_design = 1
+		naval_design_bureaus = 1
+		alphabetic_flag_signaling = 1
+		the_command_principle = 1
+
+#Inventions
+
+#Reforms
+	wage_reform=no_minimum_wage
+	work_hours=no_work_hour_limit
+	safety_regulations=no_safety
+	unemployment_subsidies=no_subsidies
+	pensions=no_pensions
+	health_care=no_health_care
+	school_reforms=no_schools
+	penal_system=capital_punishment
+	child_labor=child_labor_legal
+	slavery=no_slavery
+	vote_franschise=none_voting
+	upper_house_composition=appointed
+	voting_system=first_past_the_post
+	public_meetings=yes_meeting
+	press_rights=state_press
+	trade_unions=no_trade_unions
+	political_parties=underground_parties
+	conscription=mandatory_service
+	citizens_rights=primary_culture_only
+	debt_law=peonage
+	border_policy=open_borders
+	colonial_migration=no_colonial_migration
+	centralization=unitary
+}

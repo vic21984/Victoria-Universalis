@@ -1,0 +1,33 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Horacio Vásquez"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 2214
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2214
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2214
+	}
+}

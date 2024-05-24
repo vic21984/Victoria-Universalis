@@ -1,0 +1,1974 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+#Sphere of Influence
+SER = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+MON = {
+	value = 200
+	level = 5
+	influence_value = 100
+}
+
+leader = {
+	name = "Tsar Nikolai II"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+	prestige = 0.3
+}
+leader = {
+	name = "Alexander Kerensky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+	prestige = 0.2
+}
+leader = {
+	name = "Grand Duke Nicholas Nikolaevich"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Vladimir Sukhomlinov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Alexei Polivanov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Dmitry Shuvayev"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Mikhail Belyaev"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Nikolai Yanushkevich"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Pyotr Averyanov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Ivan Romanovsky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Vladimir Marushevsky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Mikhail Alekseyev"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a2d_1
+}
+leader = {
+	name = "Yakov Zhilinsky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Alexander Samsonov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Paul von Rennenkampf"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Nikolai Iudovich Ivanov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Aleksei Brusilov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 4a3d_1
+}
+leader = {
+	name = "Anton Yegorovich von Saltza"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Lavr Kornilov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Vladislav Klembovsky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Nikolai Ruzsky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Sergei Sheydeman"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Paul von Plehwe"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Aleksei Evert"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Anton Denikin"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Illarion Vorontsov-Dashkov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Alexander Myshlayevsky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Nikolai Yudenich"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a2d_1
+}
+leader = {
+	name = "Andrei Zayonchkovski"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Vladimir Viktorovich Sakharov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Dmitry Shcherbachev"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Andrey Selivanov"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Mikhail Diterikhs"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Grand Duke Alexander Mikhailovich"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Ivan Grigorovich"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Andrei Eberhardt"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Alexander Kolchak"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Nikolai Ottovich von Essen"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+
+navy = {
+	name = "Rossiyskiy Imperatorskiy Flot"
+	location = 976
+
+	ship = {
+		name= "Gangut"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Petropavlovsk"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Sevastopol"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Poltava"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Imperatritsa Mariya"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Imperatritsa Ekaterina Velikaya"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Imperator Aleksandr III"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "Andrei Pervozvanny"
+		type = battleship
+	}
+
+	ship = {
+		name= "Imperator Paul I"
+		type = battleship
+	}
+
+	ship = {
+		name= "Slava"
+		type = battleship
+	}
+
+	ship = {
+		name= "Tsessarevich"
+		type = battleship
+	}
+
+	ship = {
+		name= "Evstafi"
+		type = battleship
+	}
+
+	ship = {
+		name= "Ioann Zlatoust"
+		type = battleship
+	}
+
+	ship = {
+		name= "Potemkin"
+		type = battleship
+	}
+
+	ship = {
+		name= "Rostislav"
+		type = battleship
+	}
+
+	ship = {
+		name= "Tri Sviatitelia"
+		type = battleship
+	}
+
+	ship = {
+		name= "Rurik"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Admiral Makarov"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Bayan"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Gromoboi"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Pallada"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Rossia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Aurora"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Bogatyr"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Diana"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Oleg"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Pamiat Mercuria"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Kagul"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Delfin"
+		type = monitor
+	}
+
+	ship = {
+		name= "Som"
+		type = monitor
+	}
+
+	ship = {
+		name= "Beluga"
+		type = monitor
+	}
+
+	ship = {
+		name= "Losos"
+		type = monitor
+	}
+
+	ship = {
+		name= "Peskar"
+		type = monitor
+	}
+
+	ship = {
+		name= "Schuka"
+		type = monitor
+	}
+
+	ship = {
+		name= "Sterlyad"
+		type = monitor
+	}
+
+	ship = {
+		name= "Sudak"
+		type = monitor
+	}
+
+	ship = {
+		name= "Kasatka"
+		type = monitor
+	}
+
+	ship = {
+		name= "Keta"
+		type = monitor
+	}
+
+	ship = {
+		name= "Makrel"
+		type = monitor
+	}
+
+	ship = {
+		name= "Nalim"
+		type = monitor
+	}
+
+	ship = {
+		name= "Okun"
+		type = monitor
+	}
+
+	ship = {
+		name= "Skat"
+		type = monitor
+	}
+
+	ship = {
+		name= "Minoga"
+		type = monitor
+	}
+
+	ship = {
+		name= "Akula"
+		type = monitor
+	}
+
+	ship = {
+		name= "Karp"
+		type = monitor
+	}
+
+	ship = {
+		name= "Kambala"
+		type = monitor
+	}
+
+	ship = {
+		name= "Karas"
+		type = monitor
+	}
+
+	ship = {
+		name= "Kaiman"
+		type = monitor
+	}
+
+	ship = {
+		name= "Alligator"
+		type = monitor
+	}
+
+	ship = {
+		name= "Krokodil"
+		type = monitor
+	}
+
+	ship = {
+		name= "Drakon"
+		type = monitor
+	}
+
+	ship = {
+		name= "Krab"
+		type = monitor
+	}
+
+	ship = {
+		name= "Morzh"
+		type = monitor
+	}
+
+	ship = {
+		name= "Nerpa"
+		type = monitor
+	}
+
+	ship = {
+		name= "Tyulen"
+		type = monitor
+	}
+
+}
+
+army = {
+	name = "Gvardeiskii Korpus"
+	location = 711
+	regiment = {
+		name= "1-ya Brigada 1-ya Gvardeiskaya Pekhotnaya"
+		type = guard
+		home = 994
+	}
+	regiment = {
+		name= "2-ya Brigada 1-ya Gvardeiskaya Pekhotnaya"
+		type = guard
+		home = 994
+	}
+	regiment = {
+		name= "1-ya Brigada 2-ya Gvardeiskaya Pekhotnaya"
+		type = guard
+		home = 994
+	}
+	regiment = {
+		name= "2-ya Brigada 2-ya Gvardeiskaya Pekhotnaya"
+		type = guard
+		home = 994
+	}
+	regiment = {
+		name= "1-ya Gvardeiskii Strelkovyi Brigada"
+		type = guard
+		home = 1060
+	}
+	regiment = {
+		name= "2-ya Gvardeiskii Strelkovyi Brigada"
+		type = guard
+		home = 1059
+	}
+	regiment = {
+		name= "1-ya Polk 1-ya Leib-Gvardii Artilleriiskii"
+		type = artillery
+		home = 994
+	}
+	regiment = {
+		name= "2-ya Polk 1-ya Leib-Gvardii Artilleriiskii"
+		type = artillery
+		home = 997
+	}
+	regiment = {
+		name= "1-ya Polk 2-ya Leib-Gvardii Artilleriiskii"
+		type = artillery
+		home = 945
+	}
+	regiment = {
+		name= "2-ya Polk 2-ya Leib-Gvardii Artilleriiskii"
+		type = artillery
+		home = 949
+	}
+	regiment = {
+		name= "1-ya Divizion Leib-Gvardii Konno-Artilleriiskii"
+		type = artillery
+		home = 994
+	}
+	regiment = {
+		name= "2-ya Divizion Leib-Gvardii Konno-Artilleriiskii"
+		type = artillery
+		home = 996
+	}
+	regiment = {
+		name= "1-ya Gvardeiskaya Mortirnyi Artilleriiskii Batalion"
+		type = artillery
+		home = 1035
+	}
+	regiment = {
+		name= "2-ya Gvardeiskaya Mortirnyi Artilleriiskii Batalion"
+		type = artillery
+		home = 1004
+	}
+	regiment = {
+		name= " Gvardeiskaya Sapernyi Batalion"
+		type = artillery
+		home = 1035
+	}
+	regiment = {
+		name= "Gvardeiskaya Aviatsionnaya Rota"
+		type = plane
+		home = 997
+	}
+	regiment = {
+		name= "1-ya Brigada 1-ya Gvardeiskaya Kavaleriiskaya"
+		type = hussar
+		home = 994
+	}
+	regiment = {
+		name= "2-ya Brigada 1-ya Gvardeiskaya Kavaleriiskaya"
+		type = hussar
+		home = 994
+	}
+	regiment = {
+		name= "1-ya Brigada 2-ya Gvardeiskaya Kavaleriiskaya"
+		type = hussar
+		home = 994
+	}
+	regiment = {
+		name= "2-ya Brigada 2-ya Gvardeiskaya Kavaleriiskaya"
+		type = hussar
+		home = 994
+	}	
+}
+army = {
+	name = "Grenaderskii Korpus"
+	location = 715
+	regiment = {
+		name= "1-ya Brigada 1-ya Grenaderskaya Pekhotnaya"
+		type = infantry
+		home = 1008
+	}
+	regiment = {
+		name= "2-ya Brigada 1-ya Grenaderskaya Pekhotnaya"
+		type = infantry
+		home = 1008
+	}
+	regiment = {
+		name= "1-ya Brigada 2-ya Grenaderskaya Pekhotnaya"
+		type = infantry
+		home = 1008
+	}
+	regiment = {
+		name= "2-ya Brigada 2-ya Grenaderskaya Pekhotnaya"
+		type = infantry
+		home = 1008
+	}
+	regiment = {
+		name= "1-ya Grenaderskaya Artilleriiskii Brigada"
+		type = artillery
+		home = 1008
+	}
+	regiment = {
+		name= "2-ya Grenaderskaya Artilleriiskii Brigada"
+		type = artillery
+		home = 1008
+	}
+	regiment = {
+		name= "Grenaderskaya Mortirnyi Batalion"
+		type = artillery
+		home = 1008
+	}
+	regiment = {
+		name= "1-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 1008
+	}
+	regiment = {
+		name= "Grenaderskaya Sapernyi Batalion"
+		type = artillery
+		home = 1013
+	}
+	regiment = {
+		name= "Grenaderskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1013
+	}
+}
+army = {
+	name = "I-i Armeiskii Korpus"
+	location = 707
+	regiment = {
+		name= "1-ya Brigada 22-ya Pekhotnaya"
+		type = infantry
+		home = 1003
+	}
+	regiment = {
+		name= "2-ya Brigada 22-ya Pekhotnaya"
+		type = infantry
+		home = 1003
+	}
+	regiment = {
+		name= "1-ya Brigada 24-ya Pekhotnaya"
+		type = infantry
+		home = 1006
+	}
+	regiment = {
+		name= "2-ya Brigada 24-ya Pekhotnaya"
+		type = infantry
+		home = 1006
+	}
+	regiment = {
+		name= "1-ya Polk 22-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1005
+	}
+	regiment = {
+		name= "2-ya Polk 22-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 360
+	}
+	regiment = {
+		name= "1-ya Polk 24-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1007
+	}
+	regiment = {
+		name= "2-ya Polk 24-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 942
+	}
+	regiment = {
+		name= "1-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1005
+	}
+	regiment = {
+		name= "1-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 994
+	}
+}
+army = {
+	name = "II-i Armeiskii Korpus"
+	location = 357
+	regiment = {
+		name= "1-ya Brigada 26-ya Pekhotnaya"
+		type = infantry
+		home = 936
+	}
+	regiment = {
+		name= "2-ya Brigada 26-ya Pekhotnaya"
+		type = infantry
+		home = 939
+	}
+	regiment = {
+		name= "1-ya Brigada 43-ya Pekhotnaya"
+		type = infantry
+		home = 937
+	}
+	regiment = {
+		name= "2-ya Brigada 43-ya Pekhotnaya"
+		type = infantry
+		home = 937
+	}
+	regiment = {
+		name= "26-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 940
+	}
+	regiment = {
+		name= "43-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 937
+	}
+	regiment = {
+		name= "2-ya Mortirnyi Batalion"
+		type = artillery
+		home = 719
+	}
+	regiment = {
+		name= "2-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 709
+	}
+	regiment = {
+		name= "5-ya Vozdukhoplavatel'nyi Batalion"
+		type = plane
+		home = 718
+	}
+	regiment = {
+		name= "2-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 707
+	}
+}
+army = {
+	name = "III-i Armeiskii Korpus"
+	location = 363
+	regiment = {
+		name= "1-ya Brigada 25-ya Pekhotnaya"
+		type = infantry
+		home = 1075
+	}
+	regiment = {
+		name= "2-ya Brigada 25-ya Pekhotnaya"
+		type = infantry
+		home = 1082
+	}
+	regiment = {
+		name= "1-ya Brigada 27-ya Pekhotnaya"
+		type = infantry
+		home = 1063
+	}
+	regiment = {
+		name= "2-ya Brigada 27-ya Pekhotnaya"
+		type = infantry
+		home = 1063
+	}
+	regiment = {
+		name= "25-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1077
+	}
+	regiment = {
+		name= "27-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1075
+	}
+	regiment = {
+		name= "3-ya Mortirnyi Batalion"
+		type = artillery
+		home = 992
+	}
+	regiment = {
+		name= "3-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 1011
+	}
+	regiment = {
+		name= "9-ya Vozdukhoplavatel'nyi Batalion"
+		type = plane
+		home = 1011
+	}
+	regiment = {
+		name= "3-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1011
+	}
+}
+army = {
+	name = "IV-i Armeiskii Korpus"
+	location = 361
+	regiment = {
+		name= "1-ya Brigada 30-ya Pekhotnaya"
+		type = infantry
+		home = 718
+	}
+	regiment = {
+		name= "2-ya Brigada 30-ya Pekhotnaya"
+		type = infantry
+		home = 941
+	}
+	regiment = {
+		name= "1-ya Brigada 40-ya Pekhotnaya"
+		type = infantry
+		home = 946
+	}
+	regiment = {
+		name= "2-ya Brigada 40-ya Pekhotnaya"
+		type = infantry
+		home = 948
+	}
+	regiment = {
+		name= "1-ya Polk 30-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 946
+	}
+	regiment = {
+		name= "2-ya Polk 30-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 940
+	}
+	regiment = {
+		name= "1-ya Polk 40th Artilleriiskii Brigada"
+		type = artillery
+		home = 948
+	}
+	regiment = {
+		name= "2-ya Polk 40th Artilleriiskii Brigada"
+		type = artillery
+		home = 345
+	}
+	regiment = {
+		name= "4-ya Mortirnyi Batalion"
+		type = artillery
+		home = 947
+	}
+	regiment = {
+		name= "2-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 977
+	}
+}
+army = {
+	name = "V-i Armeiskii Korpus"
+	location = 957
+	regiment = {
+		name= "1-ya Brigada 7-ya Pekhotnaya"
+		type = infantry
+		home = 1019
+	}
+	regiment = {
+		name= "2-ya Brigada 7-ya Pekhotnaya"
+		type = infantry
+		home = 1019
+	}
+	regiment = {
+		name= "1-ya Brigada 10-ya Pekhotnaya"
+		type = infantry
+		home = 1019
+	}
+	regiment = {
+		name= "2-ya Brigada 10-ya Pekhotnaya"
+		type = infantry
+		home = 1019
+	}
+	regiment = {
+		name= "1-ya Polk 7-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1019
+	}
+	regiment = {
+		name= "2-ya Polk 7-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 981
+	}
+	regiment = {
+		name= "1-ya Polk 10-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1019
+	}
+	regiment = {
+		name= "2-ya Polk 10-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1043
+	}
+	regiment = {
+		name= "5-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1019
+	}
+	regiment = {
+		name= "3-ya Otdel'nyi Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1045
+	}
+}
+army = {
+	name = "VI-i Armeiskii Korpus"
+	location = 709
+	regiment = {
+		name= "1-ya Brigada 4-ya Pekhotnaya"
+		type = infantry
+		home = 708
+	}
+	regiment = {
+		name= "2-ya Brigada 4-ya Pekhotnaya"
+		type = infantry
+		home = 1090
+	}
+	regiment = {
+		name= "1-ya Brigada 16-ya Pekhotnaya"
+		type = infantry
+		home = 710
+	}
+	regiment = {
+		name= "2-ya Brigada 16-ya Pekhotnaya"
+		type = infantry
+		home = 1189
+	}
+	regiment = {
+		name= "4-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 706
+	}
+	regiment = {
+		name= "16-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 711
+	}
+	regiment = {
+		name= "6-ya Mortirnyi Batalion"
+		type = artillery
+		home = 945
+	}
+	regiment = {
+		name= "4-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 343
+	}
+	regiment = {
+		name= "10-ya Sapernyi Batalion"
+		type = artillery
+		home = 364
+	}
+	regiment = {
+		name= "4-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 363
+	}
+}
+army = {
+	name = "VII-i Armeiskii Korpus"
+	location = 955
+	regiment = {
+		name= "1-ya Brigada 13-ya Pekhotnaya"
+		type = infantry
+		home = 964
+	}
+	regiment = {
+		name= "2-ya Brigada 13-ya Pekhotnaya"
+		type = infantry
+		home = 964
+	}
+	regiment = {
+		name= "1-ya Brigada 34-ya Pekhotnaya"
+		type = infantry
+		home = 970
+	}
+	regiment = {
+		name= "2-ya Brigada 34-ya Pekhotnaya"
+		type = infantry
+		home = 971
+	}
+	regiment = {
+		name= "13-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 361
+	}
+	regiment = {
+		name= "34-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 719
+	}
+	regiment = {
+		name= "7-ya Mortirnyi Batalion"
+		type = artillery
+		home = 972
+	}
+	regiment = {
+		name= "7-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 955
+	}
+	regiment = {
+		name= "12-ya Sapernyi Batalion"
+		type = artillery
+		home = 954
+	}
+	regiment = {
+		name= "7-ya Donskoi Kazachii Polk"
+		type = hussar
+		home = 1047
+	}
+}
+army = {
+	name = "VIII-i Armeiskii Korpus"
+	location = 955
+	regiment = {
+		name= "1-ya Brigada 14-ya Pekhotnaya"
+		type = infantry
+		home = 968
+	}
+	regiment = {
+		name= "2-ya Brigada 14-ya Pekhotnaya"
+		type = infantry
+		home = 968
+	}
+	regiment = {
+		name= "1-ya Brigada 15-ya Pekhotnaya"
+		type = infantry
+		home = 969
+	}
+	regiment = {
+		name= "2-ya Brigada 15-ya Pekhotnaya"
+		type = infantry
+		home = 678
+	}
+	regiment = {
+		name= "14-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 969
+	}
+	regiment = {
+		name= "15-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 676
+	}
+	regiment = {
+		name= "8-ya Mortirnyi Batalion"
+		type = artillery
+		home = 954
+	}
+	regiment = {
+		name= "8-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 677
+	}
+	regiment = {
+		name= "11-ya Sapernyi Batalion"
+		type = artillery
+		home = 979
+	}
+	regiment = {
+		name= "8-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 955
+	}
+}
+army = {
+	name = "IX-i Armeiskii Korpus"
+	location = 956
+	regiment = {
+		name= "1-ya Brigada 5-ya Pekhotnaya"
+		type = infantry
+		home = 958
+	}
+	regiment = {
+		name= "2-ya Brigada 5-ya Pekhotnaya"
+		type = infantry
+		home = 958
+	}
+	regiment = {
+		name= "1-ya Brigada 42-ya Pekhotnaya"
+		type = infantry
+		home = 959
+	}
+	regiment = {
+		name= "2-ya Brigada 42-ya Pekhotnaya"
+		type = infantry
+		home = 960
+	}
+	regiment = {
+		name= "5-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 959
+	}
+	regiment = {
+		name= "42-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 961
+	}
+	regiment = {
+		name= "9-ya Mortirnyi Batalion"
+		type = artillery
+		home = 962
+	}
+	regiment = {
+		name= "9-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 960
+	}
+	regiment = {
+		name= "2-ya Konno-Mountian-Artilleriiskii"
+		type = artillery
+		home = 961
+	}
+	regiment = {
+		name= "9-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 963
+	}
+}
+army = {
+	name = "X-i Armeiskii Korpus"
+	location = 956
+	regiment = {
+		name= "1-ya Brigada 9-ya Pekhotnaya"
+		type = infantry
+		home = 1012
+	}
+	regiment = {
+		name= "2-ya Brigada 9-ya Pekhotnaya"
+		type = infantry
+		home = 1012
+	}
+	regiment = {
+		name= "1-ya Brigada 31-ya Pekhotnaya"
+		type = infantry
+		home = 1021
+	}
+	regiment = {
+		name= "2-ya Brigada 31-ya Pekhotnaya"
+		type = infantry
+		home = 1021
+	}
+	regiment = {
+		name= "9-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 980
+	}
+	regiment = {
+		name= "31-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 974
+	}
+	regiment = {
+		name= "10-ya Mortirnyi Batalion"
+		type = artillery
+		home = 979
+	}
+	regiment = {
+		name= "10-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 1058
+	}
+	regiment = {
+		name= "7-ya Sapernyi Batalion"
+		type = artillery
+		home = 1024
+	}
+	regiment = {
+		name= "10-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1090
+	}
+}
+army = {
+	name = "XI-i Armeiskii Korpus"
+	location = 956
+	regiment = {
+		name= "1-ya Brigada 9-ya Pekhotnaya"
+		type = infantry
+		home = 978
+	}
+	regiment = {
+		name= "2-ya Brigada 9-ya Pekhotnaya"
+		type = infantry
+		home = 978
+	}
+	regiment = {
+		name= "1-ya Brigada 31-ya Pekhotnaya"
+		type = infantry
+		home = 980
+	}
+	regiment = {
+		name= "2-ya Brigada 31-ya Pekhotnaya"
+		type = infantry
+		home = 976
+	}
+	regiment = {
+		name= "9-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 991
+	}
+	regiment = {
+		name= "31-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 991
+	}
+	regiment = {
+		name= "10-ya Mortirnyi Batalion"
+		type = artillery
+		home = 979
+	}
+	regiment = {
+		name= "11-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 979
+	}
+	regiment = {
+		name= "21-ya Sapernyi Batalion"
+		type = artillery
+		home = 992
+	}
+	regiment = {
+		name= "11-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 979
+	}
+}
+army = {
+	name = "XII-i Armeiskii Korpus"
+	location = 677
+	regiment = {
+		name= "1-ya Brigada 12-ya Pekhotnaya"
+		type = infantry
+		home = 963
+	}
+	regiment = {
+		name= "2-ya Brigada 12-ya Pekhotnaya"
+		type = infantry
+		home = 362
+	}
+	regiment = {
+		name= "1-ya Brigada 19-ya Pekhotnaya"
+		type = infantry
+		home = 1040
+	}
+	regiment = {
+		name= "2-ya Brigada 19-ya Pekhotnaya"
+		type = infantry
+		home = 1040
+	}
+	regiment = {
+		name= "12-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 354
+	}
+	regiment = {
+		name= "32-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1047
+	}
+	regiment = {
+		name= "12-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1047
+	}
+	regiment = {
+		name= "5-ya Sapernyi Batalion"
+		type = artillery
+		home = 1058
+	}
+	regiment = {
+		name= "10-ya Vozdukhoplavatel'nyi Rota"
+		type = plane
+		home = 962
+	}
+	regiment = {
+		name= "2-ya Sostavnoye Kazach'ya Divizion"
+		type = hussar
+		home = 1041
+	}
+}
+army = {
+	name = "XIII-i Armeiskii Korpus"
+	location = 362
+	regiment = {
+		name= "1-ya Brigada 1-ya Pekhotnaya"
+		type = infantry
+		home = 943
+	}
+	regiment = {
+		name= "2-ya Brigada 1-ya Pekhotnaya"
+		type = infantry
+		home = 943
+	}
+	regiment = {
+		name= "1-ya Brigada 36-ya Pekhotnaya"
+		type = infantry
+		home = 1014
+	}
+	regiment = {
+		name= "2-ya Brigada 36-ya Pekhotnaya"
+		type = infantry
+		home = 999
+	}
+	regiment = {
+		name= "1-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1014
+	}
+	regiment = {
+		name= "36nd Artilleriiskii Brigada"
+		type = artillery
+		home = 999
+	}
+	regiment = {
+		name= "13-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1010
+	}
+	regiment = {
+		name= "5-ya Batareinaya Artilleriiskii Batalion"
+		type = artillery
+		home = 1015
+	}
+	regiment = {
+		name= "5-ya Vozdukhoplavatel'nyi Rota"
+		type = plane
+		home = 1016
+	}
+	regiment = {
+		name= "2-ya Otdel'nyi Kavaleriiskaya Brigada"
+		type = hussar
+		home = 1010
+	}
+}
+army = {
+	name = "XIV-i Armeiskii Korpus"
+	location = 713
+	regiment = {
+		name= "1-ya Brigada 18-ya Pekhotnaya"
+		type = infantry
+		home = 715
+	}
+	regiment = {
+		name= "2-ya Brigada 18-ya Pekhotnaya"
+		type = infantry
+		home = 957
+	}
+	regiment = {
+		name= "1-ya Strelkovaya Brigada"
+		type = infantry
+		home = 1042
+	}
+	regiment = {
+		name= "2-ya Strelkovaya Brigada"
+		type = infantry
+		home = 1042
+	}
+	regiment = {
+		name= "1-ya Polk 18-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 957
+	}
+	regiment = {
+		name= "2-ya Polk 18-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1038
+	}
+	regiment = {
+		name= "14-ya Mortirnyi Batalion"
+		type = artillery
+		home = 713
+	}
+	regiment = {
+		name= "13-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 716
+	}
+	regiment = {
+		name= "8-ya Sapernyi Batalion"
+		type = artillery
+		home = 1189
+	}
+	regiment = {
+		name= "13-ya Kavaleriiskaya Divizion"
+		type = hussar
+		home = 1064
+	}
+}
+army = {
+	name = "XV-i Armeiskii Korpus"
+	location = 706
+	regiment = {
+		name= "1-ya Brigada 6-ya Pekhotnaya"
+		type = infantry
+		home = 1026
+	}
+	regiment = {
+		name= "2-ya Brigada 6-ya Pekhotnaya"
+		type = infantry
+		home = 949
+	}
+	regiment = {
+		name= "1-ya Brigada 8-ya Pekhotnaya"
+		type = infantry
+		home = 944
+	}
+	regiment = {
+		name= "2-ya Brigada 8-ya Pekhotnaya"
+		type = infantry
+		home = 977
+	}
+	regiment = {
+		name= "6-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1016
+	}
+	regiment = {
+		name= "8-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 977
+	}
+	regiment = {
+		name= "15-ya Mortirnyi Batalion"
+		type = artillery
+		home = 977
+	}
+	regiment = {
+		name= "15-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 1017
+	}
+	regiment = {
+		name= "15-ya Sapernyi Batalion"
+		type = artillery
+		home = 1017
+	}
+	regiment = {
+		name= "15-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1018
+	}
+}
+army = {
+	name = "XVI-i Armeiskii Korpus"
+	location = 716
+	regiment = {
+		name= "1-ya Brigada 41-ya Pekhotnaya"
+		type = infantry
+		home = 1030
+	}
+	regiment = {
+		name= "2-ya Brigada 41-ya Pekhotnaya"
+		type = infantry
+		home = 1030
+	}
+	regiment = {
+		name= "1-ya Brigada 45-ya Pekhotnaya"
+		type = infantry
+		home = 1032
+	}
+	regiment = {
+		name= "2-ya Brigada 45-ya Pekhotnaya"
+		type = infantry
+		home = 1028
+	}
+	regiment = {
+		name= "41th Artilleriiskii Brigada"
+		type = artillery
+		home = 1032
+	}
+	regiment = {
+		name= "45th Artilleriiskii Brigada"
+		type = artillery
+		home = 1027
+	}
+	regiment = {
+		name= "16-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1020
+	}
+	regiment = {
+		name= "1-ya Astrakhanskii Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 1029
+	}
+	regiment = {
+		name= "16-ya Sapernyi Batalion"
+		type = artillery
+		home = 1026
+	}
+	regiment = {
+		name= "1-ya Astrakhanskii Kazach'ya Polk"
+		type = hussar
+		home = 1031
+	}
+}
+army = {
+	name = "XVII-i Armeiskii Korpus"
+	location = 957
+	regiment = {
+		name= "1-ya Brigada 3-ya Pekhotnaya"
+		type = infantry
+		home = 1025
+	}
+	regiment = {
+		name= "2-ya Brigada 3-ya Pekhotnaya"
+		type = infantry
+		home = 1025
+	}
+	regiment = {
+		name= "1-ya Brigada 35-ya Pekhotnaya"
+		type = infantry
+		home = 1025
+	}
+	regiment = {
+		name= "2-ya Brigada 35-ya Pekhotnaya"
+		type = infantry
+		home = 1039
+	}
+	regiment = {
+		name= "3th Artilleriiskii Brigada"
+		type = artillery
+		home = 1025
+	}
+	regiment = {
+		name= "35-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1039
+	}
+	regiment = {
+		name= "17-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1039
+	}
+	regiment = {
+		name= "5-ya Konno-Artilleriiskii Batalion"
+		type = artillery
+		home = 1039
+	}
+	regiment = {
+		name= "17-ya Sapernyi Batalion"
+		type = artillery
+		home = 1039
+	}
+	regiment = {
+		name= "5-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1033
+	}
+}
+army = {
+	name = "XVIII-i Armeiskii Korpus"
+	location = 719
+	regiment = {
+		name= "1-ya Brigada 23-ya Pekhotnaya"
+		type = infantry
+		home = 1000
+	}
+	regiment = {
+		name= "2-ya Brigada 23-ya Pekhotnaya"
+		type = infantry
+		home = 998
+	}
+	regiment = {
+		name= "1-ya Brigada 37-ya Pekhotnaya"
+		type = infantry
+		home = 1009
+	}
+	regiment = {
+		name= "2-ya Brigada 37-ya Pekhotnaya"
+		type = infantry
+		home = 1009
+	}
+	regiment = {
+		name= "23rd Artilleriiskii Brigada"
+		type = artillery
+		home = 998
+	}
+	regiment = {
+		name= "37th Artilleriiskii Brigada"
+		type = artillery
+		home = 998
+	}
+	regiment = {
+		name= "50th Artilleriiskii Brigada"
+		type = artillery
+		home = 989
+	}
+	regiment = {
+		name= "18-ya Mortirnyi Batalion"
+		type = artillery
+		home = 989
+	}
+	regiment = {
+		name= "18-ya Sapernyi Batalion"
+		type = artillery
+		home = 1001
+	}
+	regiment = {
+		name= "18-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1001
+	}
+}
+army = {
+	name = "XIX-i Armeiskii Korpus"
+	location = 937
+	regiment = {
+		name= "1-ya Brigada 17-ya Pekhotnaya"
+		type = infantry
+		home = 717
+	}
+	regiment = {
+		name= "2-ya Brigada 17-ya Pekhotnaya"
+		type = infantry
+		home = 956
+	}
+	regiment = {
+		name= "1-ya Brigada 38-ya Pekhotnaya"
+		type = infantry
+		home = 1022
+	}
+	regiment = {
+		name= "2-ya Brigada 38-ya Pekhotnaya"
+		type = infantry
+		home = 1022
+	}
+	regiment = {
+		name= "17-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 956
+	}
+	regiment = {
+		name= "38th Artilleriiskii Brigada"
+		type = artillery
+		home = 963
+	}
+	regiment = {
+		name= "1-ya Donskaya Kazach'ya Artilleriiskii Regiment"
+		type = artillery
+		home = 1037
+	}
+	regiment = {
+		name= "2-ya Batareinaya Artilleriiskii Brigada"
+		type = artillery
+		home = 1037
+	}
+	regiment = {
+		name= "19-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1012
+	}
+	regiment = {
+		name= "7-ya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1018
+	}
+}
+army = {
+	name = "XX-i Armeiskii Korpus"
+	location = 364
+	regiment = {
+		name= "1-ya Brigada 28-ya Pekhotnaya"
+		type = infantry
+		home = 355
+	}
+	regiment = {
+		name= "2-ya Brigada 28-ya Pekhotnaya"
+		type = infantry
+		home = 1023
+	}
+	regiment = {
+		name= "1-ya Brigada 29-ya Pekhotnaya"
+		type = infantry
+		home = 350
+	}
+	regiment = {
+		name= "2-ya Brigada 29-ya Pekhotnaya"
+		type = infantry
+		home = 349
+	}
+	regiment = {
+		name= "28-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 352
+	}
+	regiment = {
+		name= "29-ya Artilleriiskii Brigada"
+		type = artillery
+		home = 1026
+	}
+	regiment = {
+		name= "1-ya Batareinaya Artilleriiskii Brigada"
+		type = artillery
+		home = 1192
+	}
+	regiment = {
+		name= "20-ya Mortirnyi Batalion"
+		type = artillery
+		home = 1060
+	}
+	regiment = {
+		name= "1-ya Batareinaya Batalion"
+		type = artillery
+		home = 1191
+	}
+	regiment = {
+		name= "1-ya Otdel'nyi Kavaleriiskaya Brigada"
+		type = hussar
+		home = 1044
+	}
+}
+army = {
+	name = "Kavkazskii Armeiskii"
+	location = 1093
+	regiment = {
+		name= "20-ya Kavkazskii Pekhotnaya Divizion"
+		type = infantry
+		home = 1050
+	}
+	regiment = {
+		name= "30-ya Kavkazskii Pekhotnaya Divizion"
+		type = infantry
+		home = 1050
+	}
+	regiment = {
+		name= "Kavkazskii Grenaderskaya Divizion"
+		type = infantry
+		home = 886
+	}
+	regiment = {
+		name= "51-ya Kavkazskii Pekhotnaya Divizion"
+		type = infantry
+		home = 885
+	}
+	regiment = {
+		name= "1-ya Kavkazskii Mortirnyi Artilleriiskii"
+		type = artillery
+		home = 1051
+	}
+	regiment = {
+		name= "2-ya Kavkazskii Mortirnyi Artilleriiskii"
+		type = artillery
+		home = 1092
+	}
+	regiment = {
+		name= "3-ya Kavkazskii Mortirnyi Artilleriiskii"
+		type = artillery
+		home = 1048
+	}
+	regiment = {
+		name= "1-ya Kavkazskii Sapernyi Batalion"
+		type = artillery
+		home = 1054
+	}
+	regiment = {
+		name= "2-ya Kavkazskii Sapernyi Batalion"
+		type = artillery
+		home = 1051
+	}
+	regiment = {
+		name= "Kavkazskii Kavaleriiskaya Divizion"
+		type = hussar
+		home = 1053
+	}
+}
+
+army = {
+	name = "Turkestanskii Armeiskii"
+	location = 1109
+	regiment = {
+		name= "1-ya Turkestanskaya Strelkovaya Brigada"
+		type = infantry
+		home = 1198
+	}
+	regiment = {
+		name= "2-ya Turkestanskaya Strelkovaya Brigada"
+		type = infantry
+		home = 1198
+	}
+	regiment = {
+		name= "3-ya Turkestanskaya Strelkovaya Brigada"
+		type = infantry
+		home = 1198
+	}
+	regiment = {
+		name= "4-ya Turkestanskaya Strelkovaya Brigada"
+		type = infantry
+		home = 1199
+	}
+	regiment = {
+		name= "1-ya Turkestanskaya Artilleriiskii Brigada"
+		type = artillery
+		home = 1196
+	}
+	regiment = {
+		name= "2-ya Turkestanskaya Artilleriiskii Brigada"
+		type = artillery
+		home = 1198
+	}
+	regiment = {
+		name= "3-ya Turkestanskaya Artilleriiskii Divizion"
+		type = artillery
+		home = 1198
+	}
+	regiment = {
+		name= "4-ya Turkestanskaya Artilleriiskii Divizion"
+		type = artillery
+		home = 1199
+	}
+	regiment = {
+		name= "Turkestanskaya Konno-Gornyi Artilleriiskii"
+		type = artillery
+		home = 1199
+	}
+	regiment = {
+		name= "Tamanskii Kazachii Brigada"
+		type = hussar
+		home = 1199
+	}
+}
+army = {
+	name = "Sibirskii Korpus"
+	location = 1084
+	regiment = {
+		name= "1-ya Sibirskii Strelkovaya Brigada"
+		type = infantry
+		home = 1084
+	}
+	regiment = {
+		name= "2-ya Sibirskii Strelkovaya Brigada"
+		type = infantry
+		home = 2617
+	}
+	regiment = {
+		name= "3-ya Sibirskii Strelkovaya Brigada"
+		type = infantry
+		home = 1199
+	}
+	regiment = {
+		name= "4-ya Sibirskii Strelkovaya Brigada"
+		type = infantry
+		home = 1199
+	}
+	regiment = {
+		name= "1-ya Sibirskii Mortirnyi Artilleriiskii"
+		type = artillery
+		home = 1198
+	}
+	regiment = {
+		name= "2-ya Sibirskii Mortirnyi Artilleriiskii"
+		type = artillery
+		home = 1199
+	}
+	regiment = {
+		name= "1-ya Sibirskii Batareinaya Artilleriiskii Divizion"
+		type = artillery
+		home = 1085
+	}
+	regiment = {
+		name= "2-ya Sibirskii Batareinaya Artilleriiskii Divizion"
+		type = artillery
+		home = 1199
+	}
+	regiment = {
+		name= "Sibirskii Vozdukhoplavatel'nyi Batalion"
+		type = plane
+		home = 1078
+	}
+	regiment = {
+		name= "Ussari Konnaya Brigada"
+		type = hussar
+		home = 1083
+	}
+}

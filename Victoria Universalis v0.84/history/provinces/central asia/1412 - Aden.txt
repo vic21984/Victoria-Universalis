@@ -1,0 +1,15 @@
+owner = YEM
+controller = YEM
+add_core = YEM
+add_core = NYE
+trade_goods = market_goods
+life_rating = 35
+terrain = coastal_desert_mine
+naval_base = 1
+1913.1.1 = {
+	owner = ENG
+	controller = ENG
+	remove_core = NYE
+	naval_base = 6
+	colonial = 2
+}

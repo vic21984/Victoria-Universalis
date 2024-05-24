@@ -1,0 +1,1082 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 91501 #Deciding a Colonial Policy
+	title = "EVTNAME91501"
+	desc = "EVTDESC91501"
+	picture = colonial_policy
+
+	trigger = {
+		civilized = yes
+		colonial_migration = no_colonial_migration
+		colonial_nation = yes
+		NOT = { has_country_flag = is_now_colonial }
+		NOT = { has_country_flag = deciding_colonial_migration }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	immediate = {
+		set_country_flag = deciding_colonial_migration
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA91501"
+		clr_country_flag = deciding_colonial_migration
+		political_reform = high_colonial_migration
+		set_country_flag = is_now_colonial
+		any_owned = {
+			limit = {
+				is_colonial = yes
+				NOT = {
+					OR = {
+						has_province_modifier = indirect_rule
+						has_province_modifier = civilizing
+						has_province_modifier = settlement
+					}
+				}
+			}
+			add_province_modifier = { name = settlement duration = -1 }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				OR = {
+					tag = ENG
+					tag = FRA
+					tag = USA
+					is_culture_group = germanic
+				}
+			}
+			modifier = {
+				factor = 0
+				is_greater_power = no
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91501"
+		clr_country_flag = deciding_colonial_migration
+		political_reform = medium_colonial_migration
+		set_country_flag = is_now_colonial 
+		any_owned = {
+			limit = {
+				is_colonial = yes
+				NOT = {
+					OR = {
+						has_province_modifier = indirect_rule
+						has_province_modifier = civilizing
+						has_province_modifier = settlement
+					}
+				}
+			}
+			add_province_modifier = { name = settlement duration = -1 }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { rank = 12 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTC91501"
+		clr_country_flag = deciding_colonial_migration
+		political_reform = low_colonial_migration
+		set_country_flag = is_now_colonial 
+		any_owned = {
+			limit = {
+				is_colonial = yes
+				NOT = {
+					OR = {
+						has_province_modifier = indirect_rule
+						has_province_modifier = civilizing
+						has_province_modifier = settlement
+					}
+				}
+			}
+			add_province_modifier = { name = settlement duration = -1 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTD91501"
+		clr_country_flag = deciding_colonial_migration
+		political_reform = no_colonial_migration
+		set_country_flag = is_now_colonial 
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				exists = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91502 #No Colonies Colonial Policy
+	title = "EVTNAME91502"
+	desc = "EVTDESC91502"
+	picture = colonial_policy
+
+	trigger = {
+		civilized = yes
+		ai = no
+		OR = {
+			colonial_migration = high_colonial_migration
+			colonial_migration = medium_colonial_migration
+			colonial_migration = low_colonial_migration
+			has_country_flag = is_now_colonial
+		}
+		colonial_nation = no
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVT91502OPTA"
+		political_reform = no_colonial_migration
+		clr_country_flag = is_now_colonial
+	}
+}
+
+country_event = {
+	id = 91503 #No Settlement
+	title = "EVTNAME91503"
+	desc = "EVTDESC91503"
+	picture = colonial_policy
+
+	trigger = {
+		ai = no
+		OR = {
+			colonial_migration = high_colonial_migration
+			colonial_migration = medium_colonial_migration
+			colonial_migration = low_colonial_migration
+		}
+		NOT = {
+			any_owned_province = {
+				has_province_modifier = settlement
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA91503"
+		political_reform = no_colonial_migration
+	}
+}
+
+country_event = {
+	id = 91504 #Austerity
+	title = "EVTNAME91504"
+	desc = "EVTDESC91504"
+	picture = austerity
+
+	trigger = {
+		ai = no
+		OR = {
+			NOT = { colonial_migration = no_colonial_migration }
+			NOT = { research_and_development = no_rnd }
+			NOT = { health_care = no_health_care }
+		}
+		NOT = { money = 50000 }
+		war = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA91504"
+		political_reform = no_rnd
+		political_reform = no_colonial_migration
+		social_reform = no_health_care
+	}
+}
+
+country_event = {
+	id = 91509
+	title = "Colonial Nerf Counter"
+	
+	trigger = {
+		tag = JAN
+		NOT = { has_country_modifier = colonial_nerf_counter }
+		OR = {
+			NOT = { year = 1875 }
+			year = 1885
+		}
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = colonial_nerf_counter
+			duration = 365
+		}
+	}
+	
+	option = {
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2475
+						province_id = 2489
+						province_id = 2490
+						province_id = 2495
+						province_id = 2507
+						province_id = 2601
+						province_id = 2605
+						province_id = 2603
+					}
+					NOT = { has_province_modifier = outback }
+				}
+				add_province_modifier = { name = outback duration = -1 }
+			}
+		}
+		any_country = {
+			limit = { has_global_flag = atacama_saltpeter_discovered }
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2309
+						province_id = 2308
+						province_id = 2307
+						province_id = 2305
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = sulphur
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 763
+						province_id = 764
+						province_id = 2523
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = sulphur
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					province_id = 227
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = coal
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 158
+						province_id = 177
+						province_id = 306
+						province_id = 321
+						province_id = 320
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = iron
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2264
+						province_id = 2270
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = oil
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1387
+						province_id = 1385
+						province_id = 1386
+						province_id = 1388
+						province_id = 1389
+						province_id = 1390
+						province_id = 1391
+						province_id = 1394
+						province_id = 1395
+						province_id = 2575
+						province_id = 1426
+						province_id = 2600
+						province_id = 2402
+						province_id = 2403
+						province_id = 2404
+						province_id = 2405
+						province_id = 2407
+						province_id = 2401
+						province_id = 2671
+						province_id = 2550
+						province_id = 2417
+						province_id = 2549
+						province_id = 2321
+						province_id = 2320
+						province_id = 2301
+						province_id = 2319
+						province_id = 2317
+						province_id = 2318
+					}
+					NOT = { has_province_modifier = strategic_rgo }
+					trade_goods = rubber
+				}
+				add_province_modifier = { name = strategic_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				experimental_railroad = 1
+				NOT = { early_railroad = 1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						terrain = farmlands
+						terrain = woods
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				add_province_modifier = { name = colonial_railroad_nerf1 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				early_railroad = 1
+				NOT = { iron_railroad = 1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						terrain = farmlands
+						terrain = woods
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				add_province_modifier = { name = colonial_railroad_nerf2 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = forest
+							terrain = hills
+							terrain = coastal_desert
+					}
+				}
+				add_province_modifier = { name = colonial_railroad_nerf1 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				iron_railroad = 1
+				NOT = { steel_railroad = 1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						terrain = farmlands
+						terrain = woods
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				add_province_modifier = { name = colonial_railroad_nerf3 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = forest
+							terrain = hills
+							terrain = coastal_desert
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				add_province_modifier = { name = colonial_railroad_nerf2 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					terrain = marsh
+				}
+				add_province_modifier = { name = colonial_railroad_nerf1 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				steel_railroad = 1
+				NOT = { integral_rail_system = 1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						terrain = farmlands
+						terrain = woods
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				add_province_modifier = { name = colonial_railroad_nerf4 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = forest
+							terrain = hills
+							terrain = coastal_desert
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				add_province_modifier = { name = colonial_railroad_nerf3 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					terrain = marsh
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				add_province_modifier = { name = colonial_railroad_nerf2 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = jungle
+							terrain = mountain
+					}
+				}
+				add_province_modifier = { name = colonial_railroad_nerf1 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				integral_rail_system = 1
+				NOT = { limited_access_roads = 1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						terrain = farmlands
+						terrain = woods
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				remove_province_modifier = colonial_railroad_nerf4
+				add_province_modifier = { name = colonial_railroad_nerf5 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = forest
+							terrain = hills
+							terrain = coastal_desert
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				add_province_modifier = { name = colonial_railroad_nerf4 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					terrain = marsh
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				add_province_modifier = { name = colonial_railroad_nerf3 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = jungle
+							terrain = mountain
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				add_province_modifier = { name = colonial_railroad_nerf2 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = desert
+							terrain = arctic
+						}
+				}
+				add_province_modifier = { name = colonial_railroad_nerf1 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				limited_access_roads = 1
+				NOT = { modern_infrastructure = 1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						terrain = farmlands
+						terrain = woods
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				remove_province_modifier = colonial_railroad_nerf4
+				remove_province_modifier = colonial_railroad_nerf5
+				add_province_modifier = { name = colonial_railroad_nerf6 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = forest
+							terrain = hills
+							terrain = coastal_desert
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				remove_province_modifier = colonial_railroad_nerf4
+				add_province_modifier = { name = colonial_railroad_nerf5 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					terrain = marsh
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				add_province_modifier = { name = colonial_railroad_nerf4 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = jungle
+							terrain = mountain
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				add_province_modifier = { name = colonial_railroad_nerf3 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = desert
+							terrain = arctic
+						}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				add_province_modifier = { name = colonial_railroad_nerf2 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				limited_access_roads = 1
+				NOT = { modern_infrastructure = 1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						terrain = farmlands
+						terrain = woods
+						terrain = steppe
+						terrain = plains
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				remove_province_modifier = colonial_railroad_nerf4
+				remove_province_modifier = colonial_railroad_nerf5
+				remove_province_modifier = colonial_railroad_nerf6
+				add_province_modifier = { name = colonial_railroad_nerf7 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = forest
+							terrain = hills
+							terrain = coastal_desert
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				remove_province_modifier = colonial_railroad_nerf4
+				remove_province_modifier = colonial_railroad_nerf5
+				add_province_modifier = { name = colonial_railroad_nerf6 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					terrain = marsh
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				remove_province_modifier = colonial_railroad_nerf4
+				add_province_modifier = { name = colonial_railroad_nerf5 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = jungle
+							terrain = mountain
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				add_province_modifier = { name = colonial_railroad_nerf4 duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+							terrain = desert
+							terrain = arctic
+						}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				add_province_modifier = { name = colonial_railroad_nerf3 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				check_variable = {
+					which = colonial_farm_nerf
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = colonial_farm_nerf
+						value = 2
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						trade_goods = cotton
+						trade_goods = dye
+						trade_goods = wool
+						trade_goods = silk
+						trade_goods = cattle
+						trade_goods = fish
+						trade_goods = fruit
+						trade_goods = grain
+						trade_goods = tobacco
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
+						trade_goods = opium
+						trade_goods = timber
+						trade_goods = tropical_wood
+						trade_goods = rubber
+					}
+					NOT = { has_province_modifier = colonial_farm_nerf1 }
+				}
+				add_province_modifier = { name = colonial_farm_nerf1 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				check_variable = {
+					which = colonial_farm_nerf
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = colonial_farm_nerf
+						value = 3
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						trade_goods = cotton
+						trade_goods = dye
+						trade_goods = wool
+						trade_goods = silk
+						trade_goods = cattle
+						trade_goods = fish
+						trade_goods = fruit
+						trade_goods = grain
+						trade_goods = tobacco
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
+						trade_goods = opium
+						trade_goods = timber
+						trade_goods = tropical_wood
+						trade_goods = rubber
+					}
+					NOT = { has_province_modifier = colonial_farm_nerf2 }
+				}
+				remove_province_modifier = colonial_farm_nerf1
+				add_province_modifier = { name = colonial_farm_nerf2 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				check_variable = {
+					which = colonial_farm_nerf
+					value = 3
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						trade_goods = cotton
+						trade_goods = dye
+						trade_goods = wool
+						trade_goods = silk
+						trade_goods = cattle
+						trade_goods = fish
+						trade_goods = fruit
+						trade_goods = grain
+						trade_goods = tobacco
+						trade_goods = tea_leaves
+						trade_goods = coffee_beans
+						trade_goods = opium
+						trade_goods = timber
+						trade_goods = tropical_wood
+						trade_goods = rubber
+					}
+					NOT = { has_province_modifier = colonial_farm_nerf3 }
+				}
+				remove_province_modifier = colonial_farm_nerf1
+				remove_province_modifier = colonial_farm_nerf2
+				add_province_modifier = { name = colonial_farm_nerf3 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				check_variable = {
+					which = colonial_mine_nerf
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = colonial_mine_nerf
+						value = 2
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = precious_metal
+						trade_goods = oil
+					}
+					NOT = { has_province_modifier = colonial_mine_nerf1 }
+				}
+				add_province_modifier = { name = colonial_mine_nerf1 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				check_variable = {
+					which = colonial_mine_nerf
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = colonial_mine_nerf
+						value = 3
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = precious_metal
+						trade_goods = oil
+					}
+					NOT = { has_province_modifier = colonial_mine_nerf2 }
+				}
+				remove_province_modifier = colonial_mine_nerf1
+				add_province_modifier = { name = colonial_mine_nerf2 duration = -1 }
+			}
+		}
+		any_country = {
+			limit = {
+				check_variable = {
+					which = colonial_mine_nerf
+					value = 3
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					OR = {
+						trade_goods = coal
+						trade_goods = sulphur
+						trade_goods = iron
+						trade_goods = precious_metal
+						trade_goods = oil
+					}
+					NOT = { has_province_modifier = colonial_mine_nerf3 }
+				}
+				remove_province_modifier = colonial_mine_nerf1
+				remove_province_modifier = colonial_mine_nerf2
+				add_province_modifier = { name = colonial_mine_nerf3 duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					is_colonial = no
+					OR = {
+						has_province_modifier = colonial_railroad_nerf1
+						has_province_modifier = colonial_railroad_nerf2
+						has_province_modifier = colonial_railroad_nerf3
+						has_province_modifier = colonial_railroad_nerf4
+						has_province_modifier = colonial_railroad_nerf5
+						has_province_modifier = colonial_railroad_nerf6
+						has_province_modifier = colonial_railroad_nerf7
+						has_province_modifier = colonial_farm_nerf1
+						has_province_modifier = colonial_farm_nerf2
+						has_province_modifier = colonial_farm_nerf3
+						has_province_modifier = colonial_mine_nerf1
+						has_province_modifier = colonial_mine_nerf2
+						has_province_modifier = colonial_mine_nerf3
+					}
+				}
+				remove_province_modifier = colonial_railroad_nerf1
+				remove_province_modifier = colonial_railroad_nerf2
+				remove_province_modifier = colonial_railroad_nerf3
+				remove_province_modifier = colonial_railroad_nerf4
+				remove_province_modifier = colonial_railroad_nerf5
+				remove_province_modifier = colonial_railroad_nerf6
+				remove_province_modifier = colonial_railroad_nerf7
+				remove_province_modifier = colonial_farm_nerf1
+				remove_province_modifier = colonial_farm_nerf2
+				remove_province_modifier = colonial_farm_nerf3
+				remove_province_modifier = colonial_mine_nerf1
+				remove_province_modifier = colonial_mine_nerf2
+				remove_province_modifier = colonial_mine_nerf3
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 91520
+	title = "EVTNAME91520"
+	desc = "EVTDESC91520"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91520"
+		state_scope = {
+			any_owned = {
+				remove_province_modifier = civilizing
+				remove_province_modifier = settlement
+				add_province_modifier = { name = indirect_rule duration = -1 }
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTC91520"
+		state_scope = {
+			any_owned = {
+				remove_province_modifier = civilizing
+				remove_province_modifier = indirect_rule
+				add_province_modifier = { name = settlement duration = -1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91521
+	title = "EVTNAME91521"
+	desc = "EVTDESC91521"
+	picture = "colonial_policy"
+
+	trigger = {
+		any_owned_province = {
+			is_colonial = yes
+			NOT = {
+				OR = {
+					has_province_modifier = indirect_rule
+					has_province_modifier = civilizing
+					has_province_modifier = settlement
+				}
+			}
+		}
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		name = "EVTOPTA91521"
+		any_owned = {
+			limit = {
+				is_colonial = yes
+				NOT = {
+					OR = {
+						has_province_modifier = indirect_rule
+						has_province_modifier = civilizing
+						has_province_modifier = settlement
+					}
+				}
+			}
+			add_province_modifier = { name = indirect_rule duration = -1 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = "EVTOPTC91521"
+		any_owned = {
+			limit = {
+				is_colonial = yes
+				NOT = {
+					OR = {
+						has_province_modifier = indirect_rule
+						has_province_modifier = civilizing
+						has_province_modifier = settlement
+					}
+				}
+			}
+			add_province_modifier = { name = settlement duration = -1 }
+		}
+	}
+}
+
+country_event = {
+	id = 91510
+	title = "Colony to State"
+
+	is_triggered_only = yes
+	## Audax Validator "." Ignore_NEXT
+	option = {
+		civilized = no
+		civilized = yes
+		annex_to = FROM
+	}
+}
+
+## Audax Validator "." Ignore_NEXT
+country_event = {
+	id = 91511
+	title = "Colony Literacy Check"
+
+	is_triggered_only = yes
+
+	## Audax Validator "." Ignore_NEXT
+	option = {
+		civilized = no
+		civilized = yes
+		random_owned = {
+			limit = {
+				## Audax Validator "." Ignore_NEXT
+				state_scope = {
+					literacy = 0.5
+				}
+			}
+			owner = {
+				## Audax Validator "." Ignore_NEXT
+				annex_to = FROM
+			}
+		}
+		random_owned = {
+			limit = {
+				state_scope = {
+					## Audax Validator "." Ignore_NEXT
+					NOT = { literacy = 0.5 }
+				}
+			}
+			owner = {
+				civilized = no
+				## Audax Validator "." Ignore_NEXT
+				annex_to = FROM
+			}
+		}
+	}
+}

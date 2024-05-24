@@ -1,0 +1,36 @@
+owner = EIC
+controller = EIC
+add_core = BNG
+add_core = HND
+trade_goods = grain
+life_rating = 32
+naval_base = 2
+fort = 1
+1913.1.1 = {
+	owner = EIC
+	controller = EIC
+	colonial = 0
+}
+1913.1.1 = {
+	naval_base = 6
+	## Audax Validator "." Ignore_NEXT
+	trade_goods = fruit
+}
+1913.1.1 = {
+	fort = 4
+	state_building = {
+		level = 5
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = tea_packaging_factory
+		upgrade = yes
+	}
+}

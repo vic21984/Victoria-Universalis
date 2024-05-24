@@ -1,0 +1,544 @@
+political_decisions = {
+	voyage_to_america = {
+		picture = ahmad_bin_kaabi
+		potential = {
+			tag = OMA
+			NOT = { has_country_flag = voyage_to_america }
+		}
+
+		allow = {
+			money = 10000
+			year = 1839
+		}
+
+		effect = {
+			set_country_flag = voyage_to_america
+			prestige = 5
+			treasury = -10000
+			years_of_research = 1
+		}
+	}
+
+	exile_house_of_saud = {
+		picture = ibn_saud
+		potential = {
+			OR = {
+				tag = HAL
+				tag = HDJ
+			}
+			any_owned_province = { is_core = NEJ }
+			NOT = { has_global_flag = house_of_saud_exiled }
+		}
+
+		allow = {
+			NEJ = {
+				exists = no
+			}
+			1157 = { owned_by = THIS }
+		}
+
+		effect = {
+			set_global_flag = house_of_saud_exiled
+			prestige = 5
+			NEJ = {
+				all_core = {
+					remove_core = NEJ
+				}
+			}
+		}
+	}
+
+	exile_house_of_rashid = {
+		picture = exile_house_of_rashid
+		potential = {
+			OR = {
+				tag = NEJ
+				tag = HDJ
+			}
+			any_owned_province = { is_core = HAL }
+			NOT = { has_global_flag = house_of_rashid_exiled }
+		}
+
+		allow = {
+			HAL = { exists = no }
+			1160 = { owned_by = THIS }
+		}
+
+		effect = {
+			set_global_flag = house_of_rashid_exiled
+			prestige = 5
+			HAL = {
+				all_core = {
+					remove_core = HAL
+				}
+			}
+		}
+	}
+
+	annex_hedjaz = {
+		picture = hedjaz
+		potential = {
+			NOT = { has_country_flag = reclaim_hedjaz }
+			OR = {
+				tag = EGY
+				tag = TUR
+			}
+			HDJ = { vassal_of = THIS }
+		}
+
+		allow = {
+			war = no
+			neighbour = HDJ
+			is_our_vassal = HDJ
+			OR = {
+				year = 1860
+				nationalism_n_imperialism = 1
+			}
+		}
+
+		effect = {
+			prestige = 5
+			badboy = 2
+			inherit = HDJ
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_country_flag = reclaim_hedjaz
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.9
+			}	
+		}
+	}
+
+	occupy_sanaa = {
+		picture = the_holy_city
+		potential = {
+			NOT = { has_country_flag = occupied_sanaa }
+			OR = {
+				tag = EGY
+				tag = TUR
+			}
+			1178 = {
+				owner = {
+					NOT = { tag = THIS }
+					civilized = no
+				}
+			}
+			1155 = {
+				owner = {
+					OR = {
+						tag = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			1178 = {
+				owner = {
+					neighbour = THIS
+					ai = yes
+					civilized = no
+				}
+			}
+		}
+
+		effect = {
+			prestige = 5
+			badboy = 1
+			1178 = { secede_province = THIS }
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_country_flag = occupied_sanaa
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.96
+			}	
+		}
+	}
+
+	aden_settlement = {
+		picture = aden_port
+		potential = {
+			NOT = { has_global_flag = aden_settled }
+			is_greater_power = yes
+			1412 = {
+				owner = {
+					civilized = no
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			OR = {
+				1412 = {
+					owner = {
+						ai = yes
+						OR = {
+							vassal_of = THIS
+							in_sphere = THIS
+						}
+					}
+				}
+				AND = {
+					1412 = {
+						owner = { ai = yes }
+					}
+					year = 1839
+					tag = ENG
+					ai = yes
+				}
+			}
+		}
+
+		effect = {
+			prestige = 5
+			badboy = 1
+			1412 = { secede_province = THIS }
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_global_flag = aden_settled
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.96
+			}	
+		}
+	}
+
+	unite_yemen = {
+		picture = yemen
+		potential = {
+			OR = {
+				tag = YEM
+				tag = NYE
+			}
+			NOT = { has_global_flag = yemen_united }
+		}
+
+		allow = {
+			OR = {
+				AND = {
+					tag = YEM
+					NYE = { exists = no }
+				}
+				AND = {
+					tag = NYE
+					YEM = { exists = no }
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = yemen_united
+			prestige = 10
+			any_country = {
+				limit = {
+					exists = yes
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					OR = {
+						tag = YEM
+						tag = NYE
+					}
+					ai = yes
+				}
+				annex_to = THIS
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = YEM
+					}
+				}
+				owner = {
+					NYE = {
+						all_core = { remove_core = NYE }
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = NYE
+					}
+				}
+				owner = {
+					YEM = {
+						all_core = { remove_core = YEM }
+					}
+				}
+			}
+		}
+	}
+
+	embrace_swahili = {
+		picture = sudanese_merchant
+		potential = {
+			tag = OMA
+			NOT = { accepted_culture = swahili }
+			owns = 2048
+		}
+
+		allow = {
+			has_country_flag = zanzibar_sultanate
+			owns = 2048
+		}
+
+		effect = {
+			add_accepted_culture = swahili
+		}
+	}
+
+    #Generic Decision#
+    occupation_of_the_arabian_desert = {
+        picture = map_arabia
+        potential = {
+            OR = {
+                AND = { #Trucial States
+                    owns = 1167 #Abu Dhabi
+                    1161 = { empty = yes } #Liwa
+                }
+                AND = { #Yemen
+                    OR = {
+                        owns = 1175
+                        owns = 1173
+                        owns = 1176
+                    }
+                    1169 = { empty = yes } #Rumah
+                }
+                AND = { #Oman
+                    owns = 1166 #Muscat
+					1170 = { empty = yes } #Nizwa
+                }
+                AND = { #Arabia
+                    owns = 1157 #Riyadh
+                    2586 = { empty = yes } #Al-Ahsa
+                }
+				AND = { #Ha'il
+                    owns = 1160 #Ha'il
+                    2683 = { empty = yes } #al-Salman
+                    1158 = { empty = yes } #al-Nefud
+                }
+            }
+        }
+
+        allow = {
+            OR = {
+                AND = { #Trucial States
+                    owns = 1167 #Abu Dhabi
+                    1161 = { empty = yes } #Liwa
+                    OR = {
+                        year = 1860
+                        organic_chemistry = 1
+                    }
+                }
+                AND = { #Yemen
+                    OR = {
+                        owns = 1175
+                        owns = 1173
+                        owns = 1176
+                    }
+                    1169 = { empty = yes } #Rumah
+                    OR = {
+                        year = 1880
+                        AND = {
+                            organic_chemistry = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+                AND = { #Oman
+                    owns = 1166 #Muscat
+					1170 = { empty = yes } #Nizwa
+                    OR = {
+                        year = 1880
+                        AND = {
+                            organic_chemistry = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+                AND = { #Arabia
+                    owns = 1157 #Riyadh
+                    2586 = { empty = yes } #Al-Ahsa
+                    OR = {
+                        year = 1880
+                        AND = {
+                            organic_chemistry = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Ha'il
+                    owns = 1160 #Ha'il
+                    2683 = { empty = yes } #al-Salman
+                    1158 = { empty = yes } #al-Nefud
+                    OR = {
+                        year = 1880
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            #Trucial#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1167 #Abu Dhabi
+                        1161 = { empty = yes }
+                    }
+                }
+                1161 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 30 }
+                owner = { prestige = 1 }
+            }
+            #Yemen#
+            random_owned = {
+                limit = {
+                    owner = {
+                        OR = {
+                            owns = 1175
+                            owns = 1173
+                            owns = 1176
+                        }
+                        1169 = { empty = yes } #Rumah
+                    }
+                }
+                1169 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 30 }
+                owner = { prestige = 1 }
+            }
+            #Oman#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1166 #Muscat
+						1170 = { empty = yes } #Nizwa
+                    }
+                }
+				1170 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 30 }
+                owner = { prestige = 1 }
+            }
+            #Arabia#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1157 #Riyadh
+                        2586 = { empty = yes } #Al-Ahsa
+                    }
+                }
+                2586 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 30 }
+                owner = { prestige = 1 }
+            }
+			#Ha'il#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1160 #Hail
+                        2683 = { empty = yes } #al-Salman
+						1158 = { empty = yes } #al-Nefud
+                    }
+                }
+                2683 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 30 }
+				1158 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 30 }
+                owner = { prestige = 1 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+
+	unite_south_yemeni_colonies = {
+        picture = map_arabia
+        potential = {
+           has_global_flag = aden_settled
+			24 = {
+				owner = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+			NOT = { has_global_flag = south_yemen_organized }
+        }
+
+        allow = {
+            nationalism_n_imperialism = 1
+			year = 1861
+            war = no
+            YEM = {
+                all_core = {
+                    OR = {
+						province_id = 1169
+						province_id = 1178
+						province_id = 1179
+						province_id = 1412
+                        owned_by = THIS
+                        owner = { in_sphere = THIS ai = yes }
+                        owner = { vassal_of = THIS ai = yes }
+                    }
+                }
+            }
+        }
+
+        effect = {
+			set_global_flag = south_yemen_organized
+            prestige = 5
+			badboy = 2.5
+			YEM = {
+				all_core = {
+					limit = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS ai = yes }
+							owner = { vassal_of = THIS ai = yes }
+						}
+					}
+					secede_province = THIS
+				}
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+}

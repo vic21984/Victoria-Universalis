@@ -1,0 +1,206 @@
+# Pan-Nationalist
+country_event = {
+	title = "EVTNAME11100"
+	desc = "EVTDESC11100"
+	picture = "Celebration"
+
+	id = 11100
+
+	is_triggered_only = yes
+
+	option = {				# Accept inheritance
+		name = "EVTOPTA11100"
+		change_tag = culture
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				is_culture_group = THIS
+				is_greater_power = no
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					AND = {
+						is_vassal = no
+						NOT = {
+							OR = {
+								tag = AUS
+								tag = KUK
+							}
+						}
+					}
+					tag = NOR
+					tag = WAL
+					tag = MOL
+					tag = MON
+					tag = BOS
+					tag = SER
+					tag = SLO
+					AND = {
+						OR = {
+							tag = AUS
+							tag = KUK
+						}
+						exists = HUN
+						part_of_sphere = no
+					}
+				}
+				num_of_cities = 1
+			}
+			country_event = { id=11101 days=0 }
+		}
+		political_reform = wealth_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = secret_ballots
+		political_reform = confederalism
+		set_country_flag = confederalism
+		government = hms_government
+		add_accepted_culture = union
+		prestige = -15
+		badboy = 10
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				exists = no
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11100"
+		prestige = 2
+		any_pop = {
+			militancy = 1
+		}
+	}
+}
+
+# Event to Inherit
+country_event = {
+	id = 11101
+	title = "EVTNAME11101"
+	desc = "EVTDESC11101"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA11101"
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11101"
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -100
+		}
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Italian Red Shirt Unification
+country_event = {
+	title = "EVTNAME11103"
+	desc = "EVTDESC11103"
+	picture = "Celebration"
+
+	id = 11103
+
+	is_triggered_only = yes
+
+	option = {				# Accept inheritance
+		name = "EVTOPTA11103"
+		change_tag = culture
+		add_accepted_culture = north_italian
+		add_accepted_culture = south_italian
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				is_culture_group = THIS
+				is_greater_power = no
+				num_of_cities = 1
+			}
+			country_event = { id=11101 days=0 }
+		}
+		prestige = 10
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				exists = no
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB11103"
+		prestige = 5
+		set_country_flag = does_not_want_to_be_unified
+		any_pop = {
+			militancy = 2
+		}
+	}
+}
+
+#Israel Events
+country_event = {
+	title = "EVTNAME11104"
+	desc = "EVTDESC11104"
+	picture = "Celebration"
+
+	id = 11104
+
+	trigger = {
+		tag = ISR
+		NOT = { has_global_flag = israel_exists }
+	}
+
+	option = {
+		name = "EVTOPTA11104"
+		set_global_flag = israel_exists
+	}
+}
+
+country_event = {
+	title = "EVTNAME11105"
+	desc = "EVTDESC11105"
+	picture = "Celebration"
+
+	id = 11105
+
+	trigger = {
+		tag = JAN
+		has_global_flag = israel_exists
+		ISR = { exists = no }
+	}
+
+	option = {
+		name = "EVTOPTA11105"
+		clr_global_flag = israel_exists
+	}
+}

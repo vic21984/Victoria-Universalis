@@ -1,0 +1,28 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of Daji Krishna Pandit"
+	location = 1301
+	regiment = {
+		name= "1.Kohlapur Irregular"
+		type = irregular
+		home = 1301
+	}
+}
+
+leader = {
+	name = "Daji Krishna Pandit"
+	type = land
+	date = 1800.12.14
+	personality = org05mor10
+	background = 1a1d_1
+}
+

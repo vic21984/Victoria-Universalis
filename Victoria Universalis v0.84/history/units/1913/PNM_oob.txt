@@ -1,0 +1,28 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Nicanor de Obarrio"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 2204
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2204
+	}
+}
+	

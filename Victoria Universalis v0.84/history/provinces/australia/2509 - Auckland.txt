@@ -1,0 +1,28 @@
+owner = NZL
+controller = NZL
+add_core = NZL
+trade_goods = coal
+life_rating = 35
+terrain = woods_mine
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = dye_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

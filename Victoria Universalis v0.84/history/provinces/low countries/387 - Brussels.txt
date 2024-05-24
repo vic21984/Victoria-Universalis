@@ -1,0 +1,45 @@
+owner = BEL
+controller = BEL
+add_core = BEL
+add_core = NET
+trade_goods = grain
+life_rating = 40
+terrain = urban_mine
+railroad = 1
+state_building = {
+	level = 3
+	building = cement_factory
+	upgrade = yes
+}
+1913.1.1 = { 
+	state_building = {
+		level = 6
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+}

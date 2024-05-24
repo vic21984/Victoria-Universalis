@@ -1,0 +1,36 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+BRZ = {
+	value = 100
+}
+
+leader = {
+	name = "José Fructuoso Rivera"
+	date = 1814.1.1
+	type = land
+	personality = org10mor20
+	background = 2a2d_1
+}
+
+army = {
+	name = "Ejército del Uruguay"
+	location = 2344
+	regiment = {
+		name= "1. División de Infantería"
+		type = irregular
+		home = 2344
+	}
+	regiment = {
+		name= "2. División de Infantería"
+		type = irregular
+		home = 2344
+	}
+}

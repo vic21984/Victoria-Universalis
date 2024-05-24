@@ -1,0 +1,19 @@
+owner = XBI
+controller = XBI
+add_core = QNG
+add_core = XBI
+trade_goods = grain
+life_rating = 30
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = QNG
+}

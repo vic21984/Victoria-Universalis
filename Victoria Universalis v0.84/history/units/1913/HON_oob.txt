@@ -1,0 +1,37 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Tiburcio Carías Andino"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 2193
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2193
+	}
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2194
+	}
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2195
+	}
+}

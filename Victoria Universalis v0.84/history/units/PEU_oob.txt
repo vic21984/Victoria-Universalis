@@ -1,0 +1,63 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Domingo Nieto"
+	type = land
+	date = 1836.1.1
+	personality = mor10rec05
+	background = 2a1d_1
+}
+
+leader = {
+	name = "Luis José de Orbegoso"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+navy = {
+	name = "Marina de Guerra del Perú"
+	location = 2295
+	ship = {
+		name= "Monteagudo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Santa Cruz"
+		type = frigate
+	}
+
+}
+
+army = {
+	name = "Ejército del Perú"
+	location = 2295
+	regiment = {
+		name= "1. Brigada de Infantería"
+		type = infantry
+		home = 2295
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 2295
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantería"
+		type = infantry
+		home = 2290
+	}
+
+}

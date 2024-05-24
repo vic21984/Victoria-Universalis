@@ -1,0 +1,65 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Bozidar Jankovic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Janko Vukotic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a4d_1
+}
+leader = {
+	name = "Krsto Popovic"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a3d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 2583
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2583
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2583
+	}
+
+	regiment = {
+		name= "1st Hussar Regiment"
+		type = hussar
+		home = 2569
+	}
+
+	regiment = {
+		name= "1st Artillery Regiment"
+		type = artillery
+		home = 2577
+	}
+	
+	regiment = {
+		name= "1st Artillery Regiment"
+		type = artillery
+		home = 800
+	}
+}

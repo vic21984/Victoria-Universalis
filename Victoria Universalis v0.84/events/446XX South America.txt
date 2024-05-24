@@ -1,0 +1,2054 @@
+###The Peru-Bolivian Confederation###
+#country_event = {
+#	id = 44601
+#	title = "EVTNAME44601"
+#	desc = "EVTDESC44601"
+#	picture = battle_of_yungay
+#
+#	trigger = {
+#		tag = CHL
+#		NOT = { truce_with = BOL }
+#		NOT = { has_global_flag = war_of_the_confederation }
+#		war = no
+#	}
+#
+#	option = {
+#		name = "EVTOPTA44601"
+#		war = {
+#			target = BOL
+#			attacker_goal = { casus_belli = release_puppet country = PEU }
+#			defender_goal = { casus_belli = status_quo }
+#			#call_ally = yes
+#		}
+#		BOL = {
+#			country_event = { id = 44602 days = 0 }
+#		}
+#		ai_chance = {
+#			factor = 100
+#		}
+#	}
+#
+#	option = {
+#		name = "EVTOPTB44601"
+#		set_global_flag = war_of_the_confederation
+#		ai_chance = {
+#			factor = 0
+#		}
+#	}
+#}
+
+#country_event = {
+#	id = 44602
+#	title = "EVTNAME44602"
+#	desc = "EVTDESC44602"
+#	picture = battle_of_yungay
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA44602"
+#	}
+#}
+
+country_event = {
+	id = 44603
+	title = "EVTNAME44603"
+	desc = "EVTDESC44603"
+	picture = peru_bolivian_confederation
+
+	trigger = {
+		tag = BOL
+		war = no
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = { has_global_flag = cultures_setup }
+		is_our_vassal = PEU
+		NOT = { has_country_flag = peru_bolivian_union }
+		NOT = { has_country_flag = peru_bolivian_union_dismantled }
+	}
+
+	option = {
+		name = "EVTOPTA44603"
+		set_country_flag = peru_bolivian_union
+		prestige = 10
+		PEU = {
+			all_core = { add_core = PBC }
+		}
+		inherit = PEU
+		change_tag = PBC
+		government = democracy
+		political_reform = wealth_weighted_voting
+		nationalvalue = nv_equality
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+	id = 44604
+	title = "EVTNAME44604"
+	desc = "EVTDESC44604"
+	picture = surrender_of_uruguaiana
+
+	trigger = {
+		tag = BOL
+		war = no
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = { is_our_vassal = PEU }
+		NOT = { has_country_flag = peru_bolivian_union_dismantled }
+	}
+
+	option = {
+		name = "EVTOPTA44604"
+		set_country_flag = peru_bolivian_union_dismantled
+	}
+}
+
+country_event = {
+	id = 44605
+	title = "EVTNAME44605"
+	desc = "EVTDESC44605"
+	picture = pbc_argentina_border_treaty
+
+	trigger = {
+		OR = {
+			tag = BOL
+			tag = PBC
+		}
+		NOT = { owns = 2370 }
+		owns = 2315
+		NOT = { has_country_flag = bolivia_argentine_border }
+	}
+
+	option = {
+		name = "EVTOPTA44605"
+		set_country_flag = bolivia_argentine_border
+		2368 = { remove_core = BOL remove_core = PBC }
+		2369 = { remove_core = BOL remove_core = PBC }
+		2375 = { remove_core = BOL remove_core = PBC }
+		2370 = { remove_core = BOL remove_core = PBC }
+		2371 = { remove_core = BOL remove_core = PBC }
+		2315 = { remove_core = ARC remove_core = ARG }
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44605"
+		set_country_flag = bolivia_argentine_border
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+###Brazilian Rebellions###
+#country_event = {
+#	id = 44610
+#	title = "EVTNAME44610"
+#	desc = "EVTDESC44610"
+#	picture = surrender_of_uruguaiana
+#
+#	trigger = {
+#		tag = GRP
+#		war_with = BRZ
+#		NOT = { has_country_flag = end_of_cabanagem }
+#		NOT = { total_amount_of_divisions = 1 }
+#		owns = 2410
+#		2410 = { controlled_by = BRZ }
+#	}
+#
+#	option = {
+#		name = "EVTOPTA44610"
+#		set_country_flag = end_of_cabanagem
+#		any_owned = {
+#			limit = { has_building = province_selector }
+#			province_selector = -1
+#		}
+#		annex_to = BRZ
+#		ai_chance = {
+#			factor = 100
+#		}
+#	}
+#
+#	option = {
+#		name = "EVTOPTB44610"
+#		set_country_flag = end_of_cabanagem
+#		war_exhaustion = 30
+#		ai_chance = {
+#			factor = 0
+#		}
+#	}
+#}
+
+country_event = {
+	id = 44611
+	title = "EVTNAME44611"
+	desc = "EVTDESC44611"
+	picture = surrender_of_uruguaiana
+
+	trigger = {
+		tag = RGS
+		war_with = BRZ
+		NOT = { has_country_flag = end_of_piratini }
+		NOT = { total_amount_of_divisions = 1 }
+		owns = 2463
+		2463 = { controlled_by = BRZ }
+	}
+
+	option = {
+		name = "EVTOPTA44611"
+		set_country_flag = end_of_piratini
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		annex_to = BRZ
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44611"
+		set_country_flag = end_of_piratini
+		war_exhaustion = 30
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44612
+	title = "EVTNAME44612"
+	desc = "EVTDESC44612"
+	picture = sabinada
+
+	trigger = {
+		tag = BRZ
+		NOT = { has_country_flag = sabinada }
+		NOT = { year = 1842 }
+		NOT = { government = democracy }
+		any_owned_province = { is_core = BAH }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1837
+		}
+		modifier = {
+			factor = 0.5
+			year = 1838
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44612"
+		set_country_flag = sabinada
+		any_owned = {
+			limit = { is_core = BAH }
+			secede_province = BAH
+		}
+		war = {
+			target = BAH
+			call_ally = yes
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = BAH }
+			defender_goal = { casus_belli = status_quo }
+		}
+		overlord = { country_event = { id = 44617 days = 0 } }
+	}
+
+	option = {
+		name = "EVTOPTB44612"
+		set_country_flag = sabinada
+		any_owned = {
+			limit = { is_core = BAH }
+			secede_province = BAH
+		}
+		war = {
+			target = BAH
+			call_ally = yes
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = BAH }
+			defender_goal = { casus_belli = status_quo }
+		}
+		overlord = { country_event = { id = 44617 days = 0 } }
+		change_tag_no_core_switch = BAH
+	}
+}
+
+country_event = {
+	id = 44613
+	title = "EVTNAME44613"
+	desc = "EVTDESC44613"
+	picture = balaiada
+
+	trigger = {
+		tag = BRZ
+		NOT = { has_country_flag = balaiada }
+		year = 1838
+		NOT = { year = 1842 }
+		any_owned_province = { is_core = MRN }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1838
+		}
+		modifier = {
+			factor = 0.5
+			year = 1839
+		}
+		modifier = {
+			factor = 0.5
+			year = 1840
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44613"
+		set_country_flag = balaiada
+		any_owned = {
+			limit = { is_core = MRN }
+			secede_province = MRN
+		}
+		war = {
+			target = MRN
+			call_ally = yes
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = MRN }
+			defender_goal = { casus_belli = status_quo }
+		}
+		overlord = { country_event = { id = 44617 days = 0 } }
+	}
+
+	option = {
+		name = "EVTOPTB44613"
+		set_country_flag = balaiada
+		any_owned = {
+			limit = { is_core = MRN }
+			secede_province = MRN
+		}
+		war = {
+			target = MRN
+			call_ally = yes
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = MRN }
+			defender_goal = { casus_belli = status_quo }
+		}
+		overlord = { country_event = { id = 44617 days = 0 } }
+		change_tag_no_core_switch = MRN
+	}
+}
+
+
+country_event = {
+	id = 44614
+	title = "EVTNAME44614"
+	desc = "EVTDESC44614"
+	picture = surrender_of_uruguaiana
+
+	trigger = {
+		tag = BAH
+		war_with = BRZ
+		NOT = { has_country_flag = end_of_bahia }
+		OR = {
+			NOT = { total_amount_of_divisions = 1 }
+			AND = {
+				ai = yes
+				BRZ = { ai = yes }
+			}
+		}
+		owns = 2436
+		2436 = { controlled_by = BRZ }
+	}
+
+	option = {
+		name = "EVTOPTA44614"
+		set_country_flag = end_of_bahia
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		annex_to = BRZ
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44614"
+		set_country_flag = end_of_bahia
+		war_exhaustion = 30
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44615
+	title = "EVTNAME44615"
+	desc = "EVTDESC44615"
+	picture = surrender_of_uruguaiana
+
+	trigger = {
+		tag = MRN
+		war_with = BRZ
+		NOT = { has_country_flag = end_of_maranhao }
+		OR = {
+			NOT = { total_amount_of_divisions = 1 }
+			AND = {
+				ai = yes
+				BRZ = { ai = yes }
+			}
+		}
+		owns = 2423
+		2423 = { controlled_by = BRZ }
+	}
+
+	option = {
+		name = "EVTOPTA44615"
+		set_country_flag = end_of_maranhao
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		annex_to = BRZ
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44615"
+		set_country_flag = end_of_maranhao
+		war_exhaustion = 30
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44616
+	title = "EVTNAME44616"
+	desc = "EVTDESC44616"
+	picture = balaiada
+
+	trigger = {
+		tag = BRZ
+		NOT = { has_country_flag = praieira_revolt  }
+		year = 1840
+		NOT = { year = 1848 }
+		any_owned_province = { is_core = PNB }
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "EVTOPTA44616"
+		set_country_flag = praieira_revolt
+		any_owned = {
+			limit = { is_core = PNB }
+			secede_province = PNB
+		}
+		war = {
+			target = PNB
+			call_ally = yes
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = PNB }
+			defender_goal = { casus_belli = status_quo }
+		}
+		overlord = { country_event = { id = 44617 days = 0 } }
+	}
+
+	option = {
+		name = "EVTOPTB44616"
+		set_country_flag = praieira_revolt
+		any_owned = {
+			limit = { is_core = PNB }
+			secede_province = PNB
+		}
+		war = {
+			target = PNB
+			call_ally = yes
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = remove_cores country = PNB }
+			defender_goal = { casus_belli = status_quo }
+		}
+		overlord = { country_event = { id = 44617 days = 0 } }
+		change_tag_no_core_switch = PNB
+	}
+}
+
+country_event = {
+	id = 44617
+	title = "EVTNAME44617"
+	desc = "EVTDESC44617"
+	picture = balaiada
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44617"
+	}
+}
+
+
+
+###Platine War###
+country_event = {
+	id = 44620
+	title = "EVTNAME44620"
+	desc = "EVTDESC44620"
+	picture = uruguayan_civil_war
+
+	trigger = {
+		tag = ARC
+		NOT = { has_country_flag = platine_war }
+		war = no
+		OR = {
+			neighbour = BRZ
+			CRT = {
+				neighbour = BRZ
+				vassal_of = THIS
+			}
+			BRZ = { NOT = { is_vassal = yes } }
+		}
+		NOT = { war_exhaustion = 5 }
+		year = 1845
+		NOT = { year = 1855 }
+		SBA = { exists = no }
+		OR = {
+			CRT = { exists = yes }
+			ENT = { exists = yes }
+			URU = { exists = yes }
+		}
+	}
+
+
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 0.5
+			year = 1847
+		}
+		modifier = {
+			factor = 0.5
+			year = 1849
+		}
+		modifier = {
+			factor = 0.1
+			year = 1851
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				tag = CRT
+			}
+			overlord = {
+				release_vassal = CRT
+				leave_alliance = CRT
+			}
+			relation = {
+				who = BRZ
+				value = 200
+			}
+			create_alliance = BRZ
+		}
+		random_country = {
+			limit = {
+				tag = ENT
+			}
+			overlord = {
+				release_vassal = ENT
+				leave_alliance = ENT
+			}
+			relation = {
+				who = BRZ
+				value = 200
+			}
+			create_alliance = BRZ
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44620"
+		set_country_flag = platine_war
+		ENT = { create_alliance = BRZ }
+		CRT = { create_alliance = BRZ }
+		URU = { create_alliance = BRZ }
+		BRZ = {
+			country_event = { id = 44621 days = 0 }
+		}
+		war = {
+			target = BRZ
+			attacker_goal = { casus_belli = platine_war }
+			defender_goal = { casus_belli = platine_war }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44620"
+		set_country_flag = platine_war
+		release = URU
+		URU = { create_alliance = BRZ }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44621
+	title = "EVTNAME44621"
+	desc = "EVTDESC44621"
+	picture = uruguayan_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44621"
+	}
+}
+
+country_event = {
+	id = 44622
+	title = "EVTNAME44622"
+	desc = "EVTDESC44622"
+	picture = viva_argentina
+
+	trigger = {
+		tag = ARC
+		BRZ = { has_country_flag = lost_platine_war }
+		NOT = { has_country_flag = platine_war_victory }
+	}
+
+	option = {
+		name = "EVTOPTA44622"
+		set_country_flag = platine_war_victory
+		inherit = ENT
+		inherit = CRT
+		URU_2344 = { secede_province = THIS }
+		change_tag = ARG
+		ENT = {
+			all_core = {
+				add_core = ARG
+				remove_core = ENT
+			}
+		}
+		CRT = {
+			all_core = {
+				add_core = ARG
+				remove_core = CRT
+			}
+		}
+		ARC = {
+			all_core = {
+				add_core = ARG
+				remove_core = ARC
+			}
+		}
+		URU = {
+			all_core = { add_core = THIS }
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+	id = 44623
+	title = "EVTNAME44623"
+	desc = "EVTDESC44623"
+	picture = platine_war
+
+	trigger = {
+		tag = ARC
+		NOT = { has_global_flag = cultures_setup }
+		has_country_flag = lost_platine_war
+		NOT = { has_country_flag = buenos_aires_independence }
+		owns = 2348
+	}
+
+	option = {
+		name = "EVTOPTA44623"
+		set_country_flag = buenos_aires_independence
+		capital = 2360
+		ARG_2355 = {
+			add_core = SBA
+			remove_core = ARC
+		}
+		2353 = { remove_core = SBA }
+		release = SBA
+		random_country = {
+			limit = {
+				exists = yes
+				tag = ENT
+				ai = no
+			}
+			inherit = ARC
+			inherit = CRT
+			change_tag = ARC
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				tag = CRT
+				ai = no
+			}
+			inherit = ARC
+			inherit = ENT
+			change_tag = ARC
+		}
+		inherit = ENT
+		inherit = CRT
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44623"
+		set_country_flag = buenos_aires_independence
+		capital = 2360
+		ARG_2355 = {
+			add_core = SBA
+			remove_core = ARC
+		}
+		release = SBA
+		random_country = {
+			limit = {
+				exists = yes
+				tag = ENT
+				ai = no
+			}
+			inherit = ARC
+			inherit = CRT
+			change_tag = ARC
+		}
+		random_country = {
+			limit = {
+				exists = yes
+				tag = CRT
+				ai = no
+			}
+			inherit = ARC
+			inherit = ENT
+			change_tag = ARC
+		}
+		inherit = ENT
+		inherit = CRT
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		change_tag_no_core_switch = SBA
+	}
+}
+
+country_event = {
+	id = 44624
+	title = "EVTNAME44624"
+	desc = "EVTDESC44624"
+	picture = battle_of_pavon
+
+	trigger = {
+		tag = SBA
+		war = no
+		ARC = { exists = yes }
+		NOT = { has_country_flag = argentine_civil_war }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44624"
+		set_country_flag = argentine_civil_war
+		war = {
+			target = ARC
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = annex_core_country }
+		}
+		ARC = {
+			country_event = { id = 44625 days = 0 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44624"
+		set_country_flag = argentine_civil_war
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44625
+	title = "EVTNAME44625"
+	desc = "EVTDESC44625"
+	picture = battle_of_pavon
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44625"
+	}
+}
+
+###Uruguayan Civil War###
+country_event = {
+	id = 44626
+	title = "EVTNAME44626"
+	desc = "EVTDESC44626"
+	picture = uruguayan_civil_war
+
+	trigger = {
+		year = 1839
+		tag = URU
+		NOT = { has_country_flag = uruguayan_civil_war }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			year = 1840
+		}
+		modifier = {
+			factor = 0.5
+			year = 1841
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44626"
+		set_country_flag = uruguayan_civil_war
+		ruling_party_ideology = conservative
+		add_country_modifier = { name = colorado_rebels duration = -1 }
+		set_country_flag = colorado_rebels
+	}
+
+	option = {
+		name = "EVTOPTB44626"
+		set_country_flag = uruguayan_civil_war
+		ruling_party_ideology = liberal
+		add_country_modifier = { name = blanco_rebels duration = -1 }
+		set_country_flag = blanco_rebels
+	}
+}
+
+country_event = {
+	id = 44627
+	title = "EVTNAME44627"
+	desc = "EVTDESC44627"
+	picture = Upperhouse
+
+	trigger = {
+		tag = URU
+		ruling_party_ideology = conservative
+		NOT = { has_country_flag = colorado_rebels }
+		has_country_flag = uruguayan_civil_war
+	}
+
+	option = {
+		name = "EVTOPTA44627"
+		set_country_flag = colorado_rebels
+		clr_country_flag = blanco_rebels
+		add_country_modifier = { name = colorado_rebels duration = -1 }
+		remove_country_modifier = blanco_rebels
+	}
+}
+
+country_event = {
+	id = 44628
+	title = "EVTNAME44628"
+	desc = "EVTDESC44628"
+	picture = Upperhouse
+
+	trigger = {
+		tag = URU
+		ruling_party_ideology = liberal
+		NOT = { has_country_flag = blanco_rebels }
+		has_country_flag = uruguayan_civil_war
+	}
+
+	option = {
+		name = "EVTOPTA44628"
+		set_country_flag = blanco_rebels
+		clr_country_flag = colorado_rebels
+		add_country_modifier = { name = blanco_rebels duration = -1 }
+		remove_country_modifier = colorado_rebels
+	}
+}
+
+country_event = {
+	id = 44629
+	title = "EVTNAME44629"
+	desc = "EVTDESC44629"
+	picture = Administration
+
+	trigger = {
+		tag = URU
+		OR = {
+			has_country_flag = blanco_rebels
+			has_country_flag = colorado_rebels
+		}
+		OR = {
+			political_parties = gerrymandering
+			political_parties = non_secret_ballots
+			political_parties = secret_ballots
+		}
+		OR = {
+			vote_franschise = wealth_voting
+			vote_franschise = universal_weighted_voting
+			vote_franschise = universal_voting
+		}
+		NOT = { has_country_flag = uruguayan_civil_war_ended }
+	}
+
+	option = {
+		name = "EVTOPTA44629"
+		set_country_flag = uruguayan_civil_war_ended
+		clr_country_flag = blanco_rebels
+		clr_country_flag = colorado_rebels
+		remove_country_modifier = blanco_rebels
+		remove_country_modifier = colorado_rebels
+	}
+}
+
+###War of the Triple Alliance###
+country_event = {
+	id = 44630
+	title = "EVTNAME44630"
+	desc = "EVTDESC44630"
+	picture = paraguayan_war
+
+	trigger = {
+		tag = PRG
+		has_country_flag = won_paraguayan_war
+		NOT = { has_country_flag = rise_of_paraguay }
+	}
+
+	option = {
+		name = "EVTOPTA44630"
+		set_country_flag = rise_of_paraguay
+		BRZ_2467 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		BRZ_2462 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		ARG_2357 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		URU_2344 = {
+			add_core = THIS
+			secede_province = THIS
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+	id = 44631
+	title = "EVTNAME44631"
+	desc = "EVTDESC44631"
+	picture = death_of_solano_lopez
+
+	trigger = {
+		tag = PRG
+		NOT = { has_country_flag = fall_of_paraguay }
+		BRZ = { has_country_flag = won_paraguayan_war }
+	}
+
+	option = {
+		name = "EVTOPTA44631"
+		set_country_flag = fall_of_paraguay
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		BRZ = {
+			all_core = { remove_core = THIS }
+		}
+		2420 = { add_core = BRZ remove_core = THIS }
+		ARG = {
+			all_core = { remove_core = THIS }
+		}
+		URU = {
+			all_core = { remove_core = THIS }
+		}
+		any_owned = {
+			limit = { is_core = BRZ }
+			secede_province = BRZ
+		}
+		any_owned = {
+			limit = { is_core = ARG }
+			secede_province = ARG
+		}
+		any_owned = {
+			limit = { is_core = URU }
+			secede_province = URU
+		}
+	}
+}
+
+###Brazilian Riograndense Revolt###
+country_event = {
+	id = 44632
+	title = "EVTNAME44632"
+	desc = "EVTDESC44632"
+	picture = riograndense_revolt
+
+	trigger = {
+		tag = BRZ
+		government = democracy
+		NOT = { has_country_flag = riograndense_revolt }
+		any_owned_province = { is_core = RGS }
+		RGS = { exists = no }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44632"
+		set_country_flag = riograndense_revolt
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 2463
+					province_id = 2464
+					province_id = 2465
+					province_id = 2466
+					province_id = 2467
+				}
+			}
+			add_core = RGS
+			secede_province = RGS
+		}
+		war = {
+			target = RGS
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44632"
+		set_country_flag = riograndense_revolt
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 2463
+					province_id = 2464
+					province_id = 2465
+					province_id = 2466
+					province_id = 2467
+				}
+			}
+			add_core = RGS
+			secede_province = RGS
+		}
+		war = {
+			target = RGS
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		change_tag_no_core_switch = RGS
+	}
+}
+
+country_event = {
+	id = 44633
+	title = "EVTNAME44633"
+	desc = "EVTDESC44633"
+	picture = canudos_rebels
+
+	trigger = {
+		tag = BRZ
+		government = democracy
+		NOT = { has_country_flag = canudo_war }
+		owns = 2437
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44633"
+		set_country_flag = canudo_war
+		any_owned = {
+			limit = {
+				province_id = 2437
+			}
+			any_pop = {
+				militancy = 10
+				consciousness = 10
+				reduce_pop = 0.5
+			}
+		}
+	}
+}
+
+###Chilean Civil War###
+country_event = {
+	id = 44640
+	title = "EVTNAME44640"
+	desc = "EVTDESC44640"
+	picture = generic_congress
+
+	trigger = {
+		tag = CHL
+		NOT = { has_country_flag = jose_manuel_balmaceda }
+		year = 1886
+		government = democracy
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.8
+			year = 1887
+		}
+		modifier = {
+			factor = 0.7
+			year = 1888
+		}
+		modifier = {
+			factor = 0.6
+			year = 1889
+		}
+		modifier = {
+			factor = 0.1
+			year = 1890
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44640"
+		set_country_flag = jose_manuel_balmaceda
+		add_country_modifier = { name = cannot_pass_reform duration = 1825 }
+		set_country_flag = cannot_pass_reform
+		any_owned = {
+			limit = {
+				is_core = THIS
+			}
+			any_pop = {
+				militancy = 5
+				consciousness = 5
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44640"
+		set_country_flag = jose_manuel_balmaceda
+		government = presidential_dictatorship
+		political_reform = underground_parties
+		political_reform = appointed
+		political_reform = none_voting
+		political_reform = unitary
+		ruling_party_ideology = liberal
+	}
+}
+###South American Battleship Race###
+country_event = {
+	id = 44641
+	title = "EVTNAME44641"
+	desc = "EVTDESC44641"
+	picture = battleship
+
+	trigger = {
+		exists = yes
+		OR = {
+			tag = CHL
+			tag = ARG
+			tag = ARC
+			tag = LPL
+			tag = BRZ
+		}
+		any_greater_power = { invention = pre_dreadnought }
+		NOT = { has_country_flag = drop_arms_race }
+		NOT = { has_country_modifier = recently_purchased_warship }
+		NOT = { any_greater_power = { invention = dreadnoughts } }
+		any_owned_province = { has_building = naval_base }
+		money = 200000
+	}
+
+	option = {
+		name = "EVTOPTA44641"
+		prestige = 10
+		treasury = -200000
+		remove_country_modifier = recently_purchased_warship
+		add_country_modifier = { name = recently_purchased_warship duration = 1095 }
+		random_owned = {
+			limit = {
+				has_building = naval_base
+				is_core = THIS
+			}
+			sub_unit = { type = battleship value = current }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44641"
+		set_country_flag = drop_arms_race
+		prestige = -10
+	}
+}
+
+country_event = {
+	id = 44642
+	title = "EVTNAME44642"
+	desc = "EVTDESC44642"
+	picture = battleship
+
+	trigger = {
+		exists = yes
+		OR = {
+			tag = CHL
+			tag = ARG
+			tag = ARC
+			tag = LPL
+			tag = BRZ
+		}
+		any_greater_power = { invention = dreadnoughts }
+		NOT = { has_country_flag = drop_arms_race }
+		NOT = { has_country_modifier = recently_purchased_warship }
+		any_owned_province = { has_building = naval_base }
+		money = 300000
+	}
+
+	option = {
+		name = "EVTOPTA44642"
+		prestige = 10
+		treasury = -300000
+		remove_country_modifier = recently_purchased_warship
+		add_country_modifier = { name = recently_purchased_warship duration = 1095 }
+		random_owned = {
+			limit = {
+				has_building = naval_base
+				is_core = THIS
+			}
+			sub_unit = { type = dreadnought value = current }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44642"
+		set_country_flag = drop_arms_race
+		prestige = -10
+	}
+}
+
+###Carlos Antonio Lopez###
+country_event = {
+	id = 44643
+	title = "EVTNAME44643"
+	desc = "EVTDESC44643"
+	picture = carlos_antonio_lopez
+
+	trigger = {
+		tag = PRG
+		NOT = { has_country_flag = carlos_antonio_lopez }
+		year = 1841
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			year = 1842
+		}
+		modifier = {
+			factor = 0.5
+			year = 1843
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44643"
+		set_country_flag = carlos_antonio_lopez
+		set_country_flag = lopez_dynasty
+		tech_school = army_tech_school
+		random_owned = {
+			limit = {
+				owner = { conscription = four_year_draft }
+			}	
+			owner = { political_reform = mandatory_service }
+		}
+		random_owned = {
+			limit = {
+				owner = { conscription = two_year_draft }
+			}	
+			owner = { political_reform = four_year_draft }
+		}				
+		random_owned = {
+			limit = {
+				owner = { conscription = one_year_draft }
+			}	
+			owner = { political_reform = two_year_draft }
+		}
+		random_owned = {
+			limit = {
+				owner = { conscription = no_draft }
+			}	
+			owner = { political_reform = one_year_draft }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = good_schools }
+			}	
+			owner = { social_reform = compulsory_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = acceptable_schools }
+			}	
+			owner = { social_reform = good_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = low_schools }
+			}	
+			owner = { social_reform = acceptable_schools }
+		}				
+		random_owned = {
+			limit = {
+				owner = { school_reforms = no_schools }
+			}	
+			owner = { social_reform = low_schools }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44643"
+		set_country_flag = carlos_antonio_lopez
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+###Federal War###
+country_event = {
+	id = 44644
+	title = "EVTNAME44644"
+	desc = "EVTDESC44644"
+	picture = generic_congress
+
+	trigger = {
+		tag = VNZ
+		NOT = { has_country_flag = federal_war }
+		year = 1859
+		government = democracy
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44644"
+		government = presidential_dictatorship
+		set_country_flag = federal_war
+		political_reform = none_voting
+		political_reform = underground_parties
+		political_reform = appointed
+		add_country_modifier = { name = cannot_pass_reform duration = 1460 }
+		set_country_flag = cannot_pass_reform
+		any_owned = {
+			limit = { is_core = THIS }
+			any_pop = {
+				militancy = 6
+				consciousness = 6
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44644"
+		set_country_flag = federal_war
+		add_country_modifier = { name = cannot_pass_reform duration = 1460 }
+		set_country_flag = cannot_pass_reform
+		any_owned = {
+			limit = { is_core = THIS }
+			any_pop = {
+				militancy = 6
+				consciousness = 6
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+###Ecuadorean Civil War###
+country_event = {
+	id = 44645
+	title = "EVTNAME44645"
+	desc = "EVTDESC44645"
+	picture = generic_congress
+
+	trigger = {
+		tag = ECU
+		NOT = { has_country_flag = ecuadorean_civil_war }
+		year = 1842
+		government = democracy
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44645"
+		government = presidential_dictatorship
+		set_country_flag = ecuadorean_civil_war
+		political_reform = none_voting
+		political_reform = underground_parties
+		political_reform = appointed
+		political_reform = unitary
+		add_country_modifier = { name = cannot_pass_reform duration = 1460 }
+		set_country_flag = cannot_pass_reform
+		any_owned = {
+			limit = { is_core = THIS }
+			any_pop = {
+				militancy = 6
+				consciousness = 6
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44645"
+		set_country_flag = ecuadorean_civil_war
+		add_country_modifier = { name = cannot_pass_reform duration = 1460 }
+		set_country_flag = cannot_pass_reform
+		any_owned = {
+			limit = { is_core = THIS }
+			any_pop = {
+				militancy = 6
+				consciousness = 6
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+###Colombian Civil War###
+country_event = {
+	id = 44646
+	title = "EVTNAME44646"
+	desc = "EVTDESC44646"
+	picture = generic_congress
+
+	trigger = {
+		tag = CLM
+		NOT = { has_country_flag = colombian_civil_war }
+		year = 1860
+		government = democracy
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44646"
+		government = presidential_dictatorship
+		set_country_flag = colombian_civil_war
+		political_reform = none_voting
+		political_reform = underground_parties
+		political_reform = appointed
+		political_reform = unitary
+		add_country_modifier = { name = cannot_pass_reform duration = 1460 }
+		set_country_flag = cannot_pass_reform
+		any_owned = {
+			limit = { is_core = THIS }
+			any_pop = {
+				militancy = 6
+				consciousness = 6
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44646"
+		set_country_flag = colombian_civil_war
+		add_country_modifier = { name = cannot_pass_reform duration = 1460 }
+		set_country_flag = cannot_pass_reform
+		any_owned = {
+			limit = { is_core = THIS }
+			any_pop = {
+				militancy = 6
+				consciousness = 6
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+###Dominican Independence War###
+country_event = {
+	id = 44647
+	title = "EVTNAME44647"
+	desc = "EVTDESC44647"
+	picture = generic_congress
+
+	trigger = {
+		tag = HAI
+		NOT = { government = democracy }
+		NOT = { has_country_flag = dominican_independence }
+		year = 1844
+		owns = 2216
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "EVTOPTA44647"
+		set_country_flag = dominican_independence
+		release = DOM
+		2214 = { remove_core = THIS }
+		2216 = { remove_core = THIS }
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44646"
+		set_country_flag = dominican_independence
+		release = DOM
+		2214 = { remove_core = THIS }
+		2216 = { remove_core = THIS }
+		change_tag_no_core_switch = DOM
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+###Panama Canal###
+country_event = {
+	id = 44650
+	title = "EVTNAME44650"
+	desc = "EVTDESC44650"
+	picture = panama_canal_construction
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = panama_revolt
+	}
+
+	option = {
+		name = "EVTOPTA44650"
+		enable_canal = 3
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		release = PNM
+		1723 = { set_province_flag = panama_canal }
+		FROM = {
+			create_vassal = PNM
+			create_alliance = PNM
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+			diplomatic_influence = {
+				who = PNM
+				value = 400
+			}
+		}
+		war = {
+			target = PNM
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44650"
+		enable_canal = 3
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		release = PNM
+		1723 = {
+			set_province_flag = panama_canal
+			secede_province = FROM
+		}
+		FROM = {
+			create_vassal = PNM
+			create_alliance = PNM
+			diplomatic_influence = {
+				who = PNM
+				value = 400
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 44651
+	title = "EVTNAME44651"
+	desc = "EVTDESC44651"
+	picture = panama_canal_finished
+
+	trigger = {
+		has_global_flag = panama_revolt
+		is_canal_enabled = 3
+		OR = {
+			AND = {
+				owns = 1723
+				is_vassal = no
+			}
+			1723 = {
+				owner = {
+					war = no
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		NOT = { has_global_flag = panama_secured }
+	}
+
+	option = {
+		name = "EVTOPTA44651"
+		set_global_flag = panama_secured
+		1723 = {
+			secede_province = THIS
+			set_province_flag = panama_canal
+			trade_goods = market_goods
+			life_rating = 5
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+	id = 44652
+	title = "EVTNAME44652"
+	desc = "EVTDESC44652"
+	picture = generic_congress
+
+	trigger = {
+		tag = UCA
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			owns = 2201
+			owns = 2199
+			owns = 2193
+			owns = 2191
+		}
+		NOT = { has_country_flag = uca_dissolved }
+	}
+
+	option = {
+		name = "EVTOPTA44652"
+		set_country_flag = uca_dissolved
+		change_tag = GUA
+		2191 = { remove_core = GUA }
+		2192 = { remove_core = GUA }
+		2193 = { remove_core = GUA }
+		2194 = { remove_core = GUA }
+		2195 = { remove_core = GUA }
+		2196 = { remove_core = GUA }
+		2197 = { remove_core = GUA }
+		2198 = { remove_core = GUA }
+		2199 = { remove_core = GUA }
+		2200 = { remove_core = GUA }
+		2201 = { remove_core = GUA }
+		2202 = { remove_core = GUA }
+		2203 = { remove_core = GUA }
+		any_owned = { remove_province_modifier = nationalist_agitation }
+	}
+}
+
+country_event = {
+	id = 44653
+	title = "EVTNAME44653"
+	desc = "EVTDESC44653"
+	picture = antofagasta
+
+	trigger = {
+		NOT = { has_country_flag = saltpeter_rush }
+		OR = {
+			owns = 2309
+			owns = 2308
+			owns = 2307
+			owns = 2305
+		}
+		OR = {
+			year = 1870
+			cheap_steel = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44653"
+		set_country_flag = saltpeter_rush
+		set_global_flag = atacama_saltpeter_discovered
+		add_country_modifier = { name = small_immigration_boom duration = 1825 }
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 2309
+					province_id = 2308
+					province_id = 2307
+					province_id = 2305
+				}
+			}
+			add_province_modifier = { name = strategic_rgo duration = -1 }
+			add_province_modifier = { name = gold_rush duration = 1825 }
+		}
+		random_owned = {
+			limit = {
+				owner = { ai = yes }
+			}
+			owner = {
+				any_owned = {
+					limit = {
+						OR = {
+							province_id = 2309
+							province_id = 2308
+							province_id = 2307
+							province_id = 2305
+						}
+					}
+					mines = 1
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = 44660
+	title = "EVTNAME44660"
+	desc = "EVTDESC44660"
+	picture = celebration
+
+	trigger = {
+		primary_culture = portuguese
+		is_our_vassal = BRZ
+		BRZ = { government = colonial_company }
+		NOT = { has_country_flag = portuguese_reconquista }
+	}
+
+	option = {
+		name = "EVTOPTA44660"
+		prestige = 10
+		set_country_flag = portuguese_reconquista
+	}
+}
+
+country_event = {
+	id = 44663
+	title = "EVTNAME44663"
+	desc = "EVTDESC44663"
+	picture = treaty
+
+	trigger = {
+		tag = POR
+		NOT = {
+			is_our_vassal = BRZ
+			BRZ = { government = colonial_company }
+		}
+		has_country_flag = portuguese_reconquista
+	}
+
+	option = {
+		name = "EVTOPTA44663"
+		clr_country_flag = portuguese_reconquista
+	}
+}
+
+country_event = {
+	id = 44664
+	title = "EVTNAME44664"
+	desc = "EVTDESC44664"
+	picture = "celebration"
+
+	trigger = {
+		has_country_flag = portuguese_vassal
+		NOT = { vassal_of = POR }
+	}
+
+	option = {
+		name = "EVTOPTA44664"
+		clr_country_flag = portuguese_vassal
+		random_owned = {
+			limit = {
+				owner = { government = colonial_company }
+			}	
+			owner = { government = hms_government }
+		}
+	}
+	option = {
+		name = "EVTOPTB44664"
+		clr_country_flag = portuguese_vassal
+		random_owned = {
+			limit = {
+				owner = { government = colonial_company }
+			}	
+			owner = { government = presidential_dictatorship }
+		}
+	}
+	option = {
+		name = "EVTOPTC44664"
+		clr_country_flag = portuguese_vassal
+		random_owned = {
+			limit = {
+				owner = { government = colonial_company }
+			}	
+			owner = { government = democracy }
+		}
+	}
+}
+
+
+###Amazon Treaties###
+country_event = {
+	id = 44670
+	title = "EVTNAME44670"
+	desc = "EVTDESC44670"
+	picture = "generic_congress"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA44670"
+		FROM = {
+			add_core = 2671
+			country_event = { id = 44673 days = 0 }
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		2671 = {
+			remove_core = THIS
+			secede_province = FROM
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB44670"
+		FROM = {
+			add_core = 2671
+			add_core = 2549
+			country_event = { id = 44674 days = 0 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44671
+	title = "EVTNAME44671"
+	desc = "EVTDESC44671"
+	picture = "generic_congress"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA44671"
+		FROM = {
+			add_core = 2549
+			money = -250000
+			country_event = { id = 44673 days = 0 }
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		2549 = {
+			remove_core = THIS
+			secede_province = FROM
+		}
+		money = 250000
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB44671"
+		FROM = {
+			add_core = 2549
+			country_event = { id = 44674 days = 0 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44672
+	title = "EVTNAME44672"
+	desc = "EVTDESC44672"
+	picture = "generic_congress"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA44672"
+		FROM = {
+			add_core = 2401
+			money = -250000
+			country_event = { id = 44673 days = 0 }
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		2401 = {
+			remove_core = THIS
+			secede_province = FROM
+		}
+		money = 250000
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB44672"
+		FROM = {
+			add_core = 2401
+			country_event = { id = 44674 days = 0 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44673
+	title = "EVTNAME44673"
+	desc = "EVTDESC44673"
+	picture = "generic_congress"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44673"
+	}
+}
+
+country_event = {
+	id = 44674
+	title = "EVTNAME44674"
+	desc = "EVTDESC44674"
+	picture = "generic_congress"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44674"
+	}
+}

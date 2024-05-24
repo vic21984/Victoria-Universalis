@@ -1,0 +1,51 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+PAP = {
+	value = 200
+}
+
+TUS = {
+	value = 200
+}
+
+PAR = {
+	value = 200
+}
+
+LUC = {
+	value = 200
+}
+
+army = {
+	name = "Esercito di Modena"
+	
+	leader = {
+		name = "Francesco IV"
+		date = 1815.1.1
+		type = land
+		personality = org05mor10
+		background = 1a1d_1
+	}
+
+	location = 739
+	regiment = {
+		name= "1. Fanteria di Linea"
+		type = infantry
+		home = 739
+	}
+
+	regiment = {
+		name= "2. Fanteria di Linea"
+		type = infantry
+		home = 740
+	}
+}
+

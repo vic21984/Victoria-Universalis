@@ -1,0 +1,40 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = WAL
+add_core = ROM
+add_core = BUL 
+trade_goods = fish
+life_rating = 35
+naval_base = 1
+1913.1.1 = {
+owner = ROM
+controller = ROM
+remove_core = TUR
+	state_building = {
+		level = 1
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = ammunition_factory
+		upgrade = yes
+	}
+	naval_base = 4
+}

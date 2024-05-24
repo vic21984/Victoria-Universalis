@@ -1,0 +1,1100 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+
+	id = 32500
+	news = yes
+	news_desc_long = "EVTDESC32500_NEWS_LONG"
+	news_desc_medium = "EVTDESC32500_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC32500_NEWS_SHORT"
+
+	trigger = {
+		tag = RUS
+		year = 1837
+		war = no
+		NOT = {
+			year = 1840
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1838
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1839
+		}
+	}
+
+	title = "EVTNAME32500"
+	desc = "EVTDESC32500"
+	picture = "Pushkin"
+
+	option = {
+		name = "EVTOPTA32500" 
+		prestige = 3
+	}
+}
+
+country_event = {
+
+	id = 32502
+
+	trigger = {
+		tag = RUS
+		year = 1849
+		war = no
+		NOT = {
+			year = 1852
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1850
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1851
+		}
+	}
+
+	title = "EVTNAME32502"
+	desc = "EVTDESC32502"
+	picture = "Execution"
+
+	option = {
+		name = "EVTOPTA32502"
+		plurality = -2 
+		capitalists = {
+			consciousness = -1
+		}	
+		aristocrats = {
+			consciousness = -1
+		}	
+		bureaucrats = {
+			consciousness = -1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 32503
+
+	trigger = {
+		tag = RUS
+		year = 1852
+		NOT = {
+			year = 1855
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1853
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1854
+		}
+	}
+
+	title = "EVTNAME32503"
+	desc = "EVTDESC32503"
+	picture = "hermitage"
+
+	option = {
+		name = "EVTOPTA32503" 
+		prestige = 5
+	}
+}
+
+country_event = {
+
+	id = 32504
+
+	trigger = {
+		tag = RUS
+		year = 1874
+		NOT = {
+			year = 1877
+			}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1875
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1876
+		}
+	}
+
+	title = "EVTNAME32504"
+	desc = "EVTDESC32504"
+	picture = "Godunov"
+
+	option = {
+		name = "EVTOPTA32504" 
+		prestige = 5
+		any_pop = {
+			limit = { has_pop_culture = russian }
+			consciousness = 1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 32505
+	news = yes
+	news_desc_long = "EVTDESC32505_NEWS_LONG"
+	news_desc_medium = "EVTDESC32505_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC32505_NEWS_SHORT"
+
+	trigger = {
+		tag = RUS
+		year = 1880
+		NOT = {
+			year = 1883
+			}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1881
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1882
+		}
+	}
+
+	title = "EVTNAME32505"
+	desc = "EVTDESC32505"
+	picture = "Dostoevsky"
+
+	option = {
+		name = "EVTOPTA32505" 
+		prestige = 5
+		any_pop = {
+			limit = { has_pop_culture = russian }
+			consciousness = 1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 32506
+	trigger = {
+		tag = RUS
+		year = 1837
+		experimental_railroad = 1
+		994 = {
+			has_building = railroad
+		}
+		NOT = {
+			year = 1850
+		}
+		
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1839
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1842
+		}
+	}
+
+	title = "EVTNAME32506"
+	desc = "EVTDESC32506"
+	picture = "train"
+
+	option = {
+		name = "EVTOPTA32506" 
+		prestige = 2
+	}
+}
+
+country_event = {
+
+	id = 32507
+
+	trigger = {
+		tag = RUS
+		year = 1855
+		owns = 1072 #Okhotsk
+		NOT = {
+			year = 1858
+			war_with = JAP
+			JAP = {
+				part_of_sphere = no
+				is_independant = yes
+			}
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1856
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1857
+		}
+	}
+
+	title = "EVTNAME32507"
+	desc = "EVTDESC32507"
+	picture = "kurils"
+
+	option = {
+		name = "EVTOPTA32506" 
+		relation = { who = JAP value = 50 }
+	}
+}
+
+country_event = {
+
+	id = 32508
+
+	trigger = {
+		tag = RUS
+		year = 1899
+		NOT = {
+			year = 1902
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1900
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1901
+		}
+	}
+
+	title = "EVTNAME32508"
+	desc = "EVTDESC32508"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA32508" 
+		prestige = 5
+	}
+}
+
+# Alaska Purchase 1/3
+country_event = {
+	id = 32509
+	title = "EVTNAME32509"
+	desc = "EVTDESC32509"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA32509"
+		USA = {
+			country_event = { id=32510 days=0 }
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			## Audax Validator "." Ignore_NEXT
+			province_selector = -1
+		}
+		USA_1 = {
+			secede_province = USA
+			remove_core = RUS
+		}
+		any_owned = {
+			limit = {
+				continent = north_america
+			}
+			secede_province = USA
+			remove_core = RUS
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB32509"
+		USA = {
+			set_country_flag = you_did_try
+			country_event = { id=32511 days=0 }
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+# Alaska Purchase 2/3 Russia Accepts 
+country_event = {
+	id = 32510
+	title = "EVTNAME32510"
+	desc = "EVTDESC32510"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA32510"
+		money = -72000
+		any_pop = {
+				consciousness = -1
+		}
+		RUS = {
+			money = 72000
+		}
+	}
+}
+
+# Alaska Purchase 3/3 Russia Denies
+country_event = {
+	id = 32511
+	title = "EVTNAME32511"
+	desc = "EVTDESC32511"
+	picture = "alaska"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA32511"
+		relation = {
+			who = FROM
+			value = -100
+		}
+	}
+}
+
+# Convention of Peking
+country_event = {
+	id = 80000
+	title = "EVTNAME80000"
+	desc = "EVTDESC80000"
+	picture = "expansion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA80000"
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		CHI_1082 = {
+			secede_province = RUS
+		}
+		ai_chance = {
+			factor = 99
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB80000"
+		RUS = {
+			country_event = { id=80001 days=0 }
+		}
+		add_casus_belli = {
+				target = RUS
+				type = acquire_core_state
+				months = 60
+		}		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# China refuses
+country_event = {
+	id = 80001
+	title = "EVTNAME80001"
+	desc = "EVTDESC80000"
+	picture = "expansion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA80001"
+		relation = { who = QNG value = -200 }
+		release_vassal = QNG
+		diplomatic_influence = {
+			who = QNG
+			value = -200
+		}
+	}
+}
+
+country_event = {
+	title = "EVTNAME32512"
+	desc = "EVTDESC32512"
+	picture = "january_uprising"
+	id = 32512
+
+
+	trigger = {
+		tag = RUS
+		owns = 706
+		year = 1863
+		NOT = {
+			POL = { involved_in_crisis = yes }
+			exists = POL
+		}
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+	
+	fire_only_once = yes
+ 
+	
+	option = {
+		name = "EVTOPTA32512" 	
+		any_pop = {
+			limit = { has_pop_culture = polish }
+			militancy = 10
+			consciousness = 10
+		}
+		any_owned = {
+			limit = {
+				pop_majority_culture = polish
+			}
+			add_province_modifier = { name = nationalist_agitation duration = 730 }
+		}
+	}
+}
+
+country_event = {
+		
+	id = 32513 # Congress of Berlin
+	title = "EVTNAME32513"
+	desc = "EVTDESC32513"
+	picture = balkan_victory
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RUS
+		has_global_flag = tsar_of_all_slavs
+		NOT = { has_global_flag = 1913_bookmark }
+		war_with = TUR
+		OR = {
+			TUR = { national_provinces_occupied = 0.3 }
+			TUR = { capital_scope = { controlled_by = THIS } }
+		}
+		NOT = { has_global_flag = congress_of_berlin }
+	}
+
+	option = {
+		name = "EVTOPTA32513"
+		badboy = -10
+		TUR = {
+			country_event = {
+				id = 32514
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+	option = {
+		name = "EVTOPTB32513"
+		ai_chance = {
+			factor = 5
+		}		
+	}	
+}
+
+country_event = {
+
+	id = 32514 # Ottomans Deliberate
+	title = "EVTNAME32514"
+	desc = "EVTDESC32514"
+	picture = congress_of_berlin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32514"
+		RUS = {
+			country_event = {
+				id = 32515
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "EVTOPTB32514"
+		RUS = {
+			country_event = {
+				id = 32516
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+	id = 32515 # Ottomans Surrender
+	title = "EVTNAME32515"
+	desc = "EVTDESC32515"
+	picture = congress_of_berlin
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32515"
+		end_war = TUR
+		set_global_flag = congress_of_berlin
+		add_country_modifier = { name = scripted_truce duration = 1825 }
+		847 = { remove_core = TUR }
+		848 = { remove_core = TUR }
+		855 = { remove_core = TUR }
+		857 = { remove_core = TUR }
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						owns = 1092
+						owns = 1098
+					}
+				}
+			}
+			owner = {
+				TUR = {
+					885 = { secede_province = THIS }
+					886 = { secede_province = THIS }
+					1096 = { secede_province = THIS }
+				}
+			}
+		}
+		TUR = {
+			add_country_modifier = { name = scripted_truce duration = 1825 }
+			set_country_flag = lost_balkans
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						AND = {
+							is_core = GRE
+							continent = europe
+							NOT = {
+								province_id = 843
+								province_id = 846
+								province_id = 855
+								province_id = 857
+							}
+						}
+						is_core = ALB
+						is_core = BUL
+						is_core = MON
+						is_core = ROM
+						is_core = SER
+					}
+				}
+				remove_core = TUR
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = ROM
+						AND = {
+							is_core = MON
+							NOT = {
+								province_id = 2577
+							}
+						}
+						AND = {
+							is_core = BUL
+							NOT = {
+								OR = {
+									province_id = 806
+									province_id = 807
+									province_id = 808
+									province_id = 823
+									province_id = 829
+									province_id = 830
+									province_id = 844
+								}
+							}
+						}
+						AND = {
+							is_core = SER
+							NOT = {
+								OR = {
+									province_id = 802
+									province_id = 803
+									province_id = 804
+									province_id = 806
+									province_id = 807
+									province_id = 2577
+								}
+							}
+						}
+						AND = {
+							is_core = GRE
+							continent = europe
+							NOT = {
+								OR = {
+									
+									province_id = 805
+									province_id = 819
+									province_id = 820
+									province_id = 821
+									province_id = 822
+									province_id = 823
+									province_id = 824
+									province_id = 825
+									province_id = 829
+									province_id = 830
+									province_id = 843
+									province_id = 846
+								}
+							}
+						}
+					}
+				}
+				secede_province = THIS
+			}
+		}
+		#release = BUL
+		any_owned = {
+			limit = {
+				is_core = BUL
+				NOT = {
+					OR = {
+						province_id = 674
+						province_id = 675
+						is_core = SER
+					}
+				}
+			}
+			secede_province = BUL
+		}
+		#release = ROM
+		any_owned = {
+			limit = {
+				is_core = ROM
+				NOT = {
+					OR = {
+						province_id = 676
+						province_id = 677
+						province_id = 678
+					}
+				}
+			}
+			secede_province = ROM
+		}
+		ROM = {
+			inherit = WAL
+			inherit = MOL
+			capital = 664
+		}
+		#release = MON
+		any_owned = {
+			limit = {
+				is_core = MON
+			}
+			secede_province = MON
+		}
+		#release = SER
+		any_owned = {
+			limit = {
+				is_core = SER
+				NOT = { is_core = BOS }
+			}
+			secede_province = SER
+		}
+		#release = GRE
+		any_owned = {
+			limit = {
+				is_core = GRE
+				continent = europe
+				NOT = {
+					OR = {
+						province_id = 843
+						province_id = 846
+					}
+				}
+			}
+			secede_province = GRE
+		}
+		#release = CRO
+		any_owned = {
+			limit = {
+				is_core = CRO
+			}
+			secede_province = CRO
+		}
+		#release = SLO
+		any_owned = {
+			limit = {
+				is_core = SLO
+			}
+			secede_province = SLO
+		}
+		#release = BOS
+		random_owned = {
+			limit = {
+				owner = { owns = 783 }
+			}
+			owner = {
+				any_owned = {
+					limit = {
+						is_core = BOS
+					}
+					secede_province = BOS
+				}
+				771 = {
+					owner = {
+						country_event = { id = 32517 days = 0 }
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				tag = TUR
+				owns = 855
+				owns = 857
+			}
+			ENG = {
+				country_event = { id = 32518 days = 0 }
+			}
+		}
+		create_alliance = BUL
+		any_greater_power = {
+			limit = {
+				NOT = { tag = THIS }
+			}
+			diplomatic_influence = {
+				who = BUL
+				value = -100
+			}
+			diplomatic_influence = {
+				who = SER
+				value = -100
+			}
+			diplomatic_influence = {
+				who = MON
+				value = -100
+			}
+			diplomatic_influence = {
+				who = ROM
+				value = -100
+			}
+		}
+		diplomatic_influence = {
+			who = BUL
+			value = 400
+		}
+		create_alliance = SER
+		diplomatic_influence = {
+			who = SER
+			value = 400
+		}
+		create_alliance = MON
+		diplomatic_influence = {
+			who = MON
+			value = 400
+		}
+		diplomatic_influence = {
+			who = ROM
+			value = 400
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 32516 # Ottomans Refuse
+	title = "EVTNAME32516"
+	desc = "EVTDESC32516"
+	picture = crossing_the_danube
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32516"
+	}
+}
+
+country_event = {
+		
+	id = 32517 # Fate of Bosnia
+	title = "EVTNAME32517"
+	desc = "EVTDESC32517"
+	picture = congress_of_berlin
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32517"
+		create_vassal = BOS
+		diplomatic_influence = {
+			who = BOS
+			value = 400
+		}
+		ai_chance = {
+			factor = 0.9
+		}	
+	}
+	option = {
+		name = "EVTOPTB32517"
+		ai_chance = {
+			factor = 0.1
+		}	
+	}
+}
+
+country_event = {
+
+	id = 32518 # Fate of Cyprus
+	title = "EVTNAME32518"
+	desc = "EVTDESC32518"
+	picture = congress_of_berlin
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA32518"
+		855 = { secede_province = THIS }
+		857 = { secede_province = THIS }
+		ai_chance = {
+			factor = 0.7
+		}
+	}
+
+	option = {
+		name = "EVTOPTB32518"
+		855 = { secede_province = THIS }
+		857 = { secede_province = THIS }
+		855 = { secede_province = GRE }
+		857 = { secede_province = GRE }
+		ai_chance = {
+			factor = 0.3
+		}	
+	}
+}
+
+country_event = {
+		
+	id = 32519 # End of the Russo-Turk War
+	title = "AI END RUSSO-TURK WAR"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAN
+		has_global_flag = tsar_of_all_slavs
+		RUS = { NOT = { war_with = TUR } }
+		NOT = { has_global_flag = congress_of_berlin }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		set_global_flag = congress_of_berlin
+	}
+}
+
+country_event = {
+	id = 32520
+	title = "AI Medicine Buff"
+	
+	trigger = {
+		tag = RUS
+		ai = yes
+		year = 1845
+		NOT = { medicine = 1 }
+	}
+	
+	fire_only_once = yes
+ 
+	
+	option = {
+		activate_technology = medicine
+	}
+}
+
+country_event = {
+	id = 32521
+	title = "AI Inorganic Chemistry Buff"
+	
+	trigger = {
+		tag = RUS
+		ai = yes
+		year = 1855
+		NOT = { inorganic_chemistry = 1 }
+	}
+	
+	fire_only_once = yes
+ 
+	
+	option = {
+		activate_technology = inorganic_chemistry
+	}
+}
+
+country_event = {
+	id = 32522
+	title = "EVTNAME32522"
+	desc = "EVTDESC32522"
+	major = yes
+
+	trigger = {
+		tag = RUS
+		NOT = { has_country_flag = circassian_genocide }
+		NOT = { has_global_flag = 1913_bookmark }
+		owns = 1049
+		owns = 1051
+		owns = 1052
+		owns = 1053
+		owns = 1054
+		owns = 1055
+		owns = 1056
+	}
+
+
+	option = {
+		name = "EVTOPTA32522"
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 1049
+					province_id = 1051
+					province_id = 1052
+					province_id = 1053
+					province_id = 1054
+					province_id = 1055
+					province_id = 1056
+				}
+			}
+			any_pop = {
+				limit = { has_pop_culture = north_caucasian }
+				reduce_pop = 0.8
+			}
+			add_province_modifier = { name = circassian_genocide duration = 1095 }
+		}
+		set_country_flag = circassian_genocide
+		set_global_flag = circassian_genocide_in_progress
+	}
+}
+
+country_event = {
+	id = 32523
+	title = "End of Circassian Genocide"
+
+	trigger = {
+		tag = JAN
+		RUS = { has_country_flag = circassian_genocide }
+		1056 = { NOT = { has_province_modifier = circassian_genocide } }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		clr_global_flag = circassian_genocide_in_progress
+	}
+}
+
+
+country_event = {
+	id = 32524
+	title = "AI Revolution & Counterrevolution Buff"
+	
+	trigger = {
+		tag = RUS
+		ai = yes
+		year = 1880
+		NOT = { revolution_n_counterrevolution = 1 }
+	}
+	
+	fire_only_once = yes
+ 
+	
+	option = {
+		activate_technology = revolution_n_counterrevolution
+	}
+}

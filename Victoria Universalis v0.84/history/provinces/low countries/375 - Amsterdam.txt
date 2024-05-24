@@ -1,0 +1,48 @@
+owner = NET
+controller = NET
+add_core = NET
+trade_goods = cattle
+life_rating = 40
+terrain = urban
+state_building = {
+	level = 2
+	building = clipper_shipyard
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 6
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = coffee_packaging_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}

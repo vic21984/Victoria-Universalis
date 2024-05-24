@@ -1,0 +1,48 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = SCO
+trade_goods = fish
+life_rating = 35
+state_building = {
+	level = 3
+	building = clipper_shipyard
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = barrel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = cigarette_factory
+		upgrade = yes
+	}
+}

@@ -1,3 +1,135 @@
+# Version 0.84 - 5/24/2024
+## Bug fixes:
+* Made treaty port in Singapore upgradeable.
+* Fixed glitched unit location when moving units or ships to the island of Tanjungpinang.
+* Removed puppet status of non-existant countries in multiplayer bookmark.
+* Steamer shipyard throughput bonus from having a machine parts factory in the same state works properly now.
+* Fixed a bug that made Small State and Medium State flags releasable as countries.
+* CSA will no longer be annexed by USA if it is sphered by USA.
+* Etorofu province now correctly connects to Nemuru instead of Omsk.
+
+## Map changes:
+* Added adjacencies between the island of Khalkis and the provinces of Athens and Amfissa.
+* Added adjacencies between the island of Dodecanese and the provinces of Mugla and Chios.
+* Added more tobacco RGOs to the Caribbean, Middle East, and East Africa.
+* Removed a few coal, iron, and sulphur mines around the world.
+* Added strategic RGO modifiers to a few iron, sulphur, and oil provinces.
+* Atacama sulphur provinces will get the strategic RGO modifier buff after 1870.
+* Restored the island of South Georgia, split Jan Mayen into 2 provinces, and moved Ghostland to the western half of Jan Mayen.
+* Re-arranged Russian and Persian states.
+* Redrew most province borders in provinces that had a one pixel connection to another province so that a province border is at least 2 pixels wide and easier to see on the map.
+
+## Interface changes:
+* Made province and state border lines thinner than previous versions of VU, but still darker than vanilla. Red Country borders and blue impassable border lines were reverted to vanilla sprites.
+* Expanded the available country modifier icon space in the politics tab.
+* Added new icons for national ideas and companies.
+* Switched locations of the options and exit button in the opening screen.
+
+## Gameplay changes:
+* Introduced company country modifiers that grant a throughput bonus to specific types of factories. Company slots are unlocked at 300, 1000, and 2500 industry scores. Some countries have access to unique historical companies that grant stronger bonuses.
+* Replaced Universities with Urban Centers. Urban Centers give +8% factory throughput per level and are unlocked via infrastructure techs.
+* Lowered laissez-faire max tax rate from 80% to 75%.
+* Allowed factory open/close/deletion under laissez-faire policy. Building new factories is still prohibited unless always allow factory building is turned on at the start of the game.
+* Nerfed free trade pop promotion bonus from +10% to +5%.
+* Removed decreased goods consumption from social reforms.
+* Increased dominant issue changes in election events.
+* Nerfed Industrial Goods and Consumer Goods national idea bonuses from +6% to +5%.
+* Nerfed Farming and Mining national idea bonuses from +30% to +25%.
+* Slightly increased price of steel and machine parts. Rebalanced factory inputs and outputs to account for the increase in price.
+* Added Derivatives, Money Markets, Transformers, Electical Grid, Shift Schedule, and Control Theory inventions to lategame commerce and industry techs.
+* Allowed craftsmen and clerks to migrate to mining provinces with RGO unemployment. Previously all POPs were prohibited from migrating to provinces with any RGO unemployment.
+* Imported End of Natural Dyes event from HPM.
+* Nerfed Great Power immigration bonus from 50% to 25%.
+* Nerfed Liberty national value max soldier cap to 4% (revanchism still allows the cap to go higher).
+* Lowered literacy threshold for futuristic research & development from 99% to 97%.
+* Lowered unlock date of tier 7 army techs from 1925 to 1920.
+* Moved combat width reduction from Light Armament to Army Doctrine tech column.
+* Infiltration and Modern Army Doctrine techs increase combat width.
+* Halved aeroplane and fuel upkeep costs of Airplane brigades and halved tank and fuel upkeep costs of Tank brigades.
+* Increased Tank siege values.
+* Increased Airplane reconnaissance values.
+* Halved stats of all pre-dreadnought ships.
+* Doubled building and upkeep cost of dreadnoughts and carriers.
+* Increased building cost of advanced factories.
+* Decreased telephone/radio/automobile demand and increased other consumer goods demand.
+* Congo conference decision won't be enabled unless Kinhasa province is empty.
+* Attract migrants province selector decision now only adds the modifier to a single province instead of the whole state.
+
+## Country changes:
+###### United Kingdom:
+* Feed the Irish enable date changed from 1847 to 1845.
+* New Companies: Thames Ironworks & Shipbuilding Company, Joseph Tetley & Company
+
+###### United States:
+* Created "American Isolationism" modifier that prevents the raising of conscription laws. This modifier is removed if revanchism goes over 10.
+* Nerfed Homestead Act immigration bonus from 50% to 25%.
+* Nerfed research point gain from Horace Mann and Smithsonian Institution events.
+* Lowered starting literacy rate of yankee pops from 75% to 70%.
+* New Companies: Ford Motor Company, Carnegie Steel Co.
+
+###### Germany:
+* New Companies: Krupp Steelworks, Badische Anilin und Sodafabrik
+
+###### Austria:
+* New Companies: Škoda Works, Manfréd Weiss Steel and Metal Works
+
+###### Russia:
+* Made October Revolution event only trigger in the ww1 bookmark and not 1913 bookmark.
+* New Companies: Vodka State Monopoly, Putilov Company
+
+###### France:
+* New Companies: House of Worth, Confédération Générale des Vignerons
+
+###### Italy:
+* New Companies: Fabbrica Italiana Automobili di Torino, Fabbrica d'Armi Beretta
+
+###### Japan:
+* New Companies: Mitsui, Mitsubishi
+
+###### Spain:
+* New Companies: La España Industrial, Altos Hornos de Vizcaya
+
+###### Portugal:
+* New Company: Companhia de Moçambique
+
+###### Sweden:
+* New Company: IKEA
+
+###### Belgium:
+* New Company: John Cockerill & Cie
+
+###### Netherlands:
+* New Company: Koninklijke Philips
+
+###### Ottoman Empire:
+* New Company: Ottoman Tobacco Company
+
+###### Canada:
+* New Company: Hudson Bay Company
+
+###### Australia:
+* New Company: William Sandford Limited
+
+###### Argentina:
+* New Company: Bunge & Born
+
+###### Brazil:
+* Nerfed Dom Pedro II research point bonus from 0.2 to 0.1.
+* New Company: Fazenda Ambiental Fortaleza
+
+###### Persia:
+* New Company: Anglo-Persian Oil Company
+
+###### Venezuela:
+* New Company: Caribbean Petroleum Company
+
+###### Mexico:
+* New Company: El Águila
+
+###### Peru:
+* New Company: Monopolio del Salitre
+
+
 # Version 0.83 - 11/22/2023
 ## Bug fixes:
 * Eisenstadt starts under the control of Hungary in 1836.

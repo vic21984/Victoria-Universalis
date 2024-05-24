@@ -1,0 +1,878 @@
+political_decisions = {
+#########################################################################
+# 							NAVAL BASES									#
+#########################################################################
+	expand_naval_base = {
+		picture = beiyang_fleet
+		alert = no
+		potential = {
+			ai = no
+			OR = {
+				AND = {
+					battleship_column_doctrine = 1
+					NOT = { raider_group_doctrine = 1 }
+					has_country_flag = battleship_column_doctrine_invented
+				}
+				AND = {
+					raider_group_doctrine = 1
+					NOT = { blue_and_brown_water_schools = 1 }
+					has_country_flag = raider_group_doctrine_invented
+				}
+				AND = {
+					blue_and_brown_water_schools = 1
+					NOT = { high_sea_battle_fleet = 1 }
+					has_country_flag = blue_and_brown_water_schools_invented
+				}
+				AND = {
+					high_sea_battle_fleet = 1
+					NOT = { early_modern_naval_doctrine = 1 }
+					has_country_flag = high_sea_battle_fleet_invented
+				}
+				AND = {
+					early_modern_naval_doctrine = 1
+					NOT = { modern_naval_doctrine = 1 }
+					has_country_flag = early_modern_naval_doctrine_invented
+				}
+				AND = {
+					modern_naval_doctrine = 1
+					has_country_flag = modern_naval_doctrine_invented
+				}
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 25750
+						battleship_column_doctrine = 1
+						NOT = { raider_group_doctrine = 1 }
+					}
+				}
+				owner = { money = -25750 }
+				naval_base = 3
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 40750
+						raider_group_doctrine = 1
+						NOT = { blue_and_brown_water_schools = 1 }
+					}
+				}
+				owner = { money = -40750 }
+				naval_base = 4
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 70750
+						blue_and_brown_water_schools = 1
+						NOT = { high_sea_battle_fleet = 1 }
+					}
+				}
+				owner = { money = -70750 }
+				naval_base = 5
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 130750
+						high_sea_battle_fleet = 1
+						NOT = { early_modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -130750 }
+				naval_base = 6
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 250750
+						early_modern_naval_doctrine = 1
+						NOT = { modern_naval_doctrine = 1 }
+					}
+				}
+				owner = { money = -250750 }
+				naval_base = 7
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+			random_owned = {
+				limit = {
+					has_building = naval_base
+					NOT = { has_province_modifier = built_naval_base }
+					owner = {
+						money = 490750
+						modern_naval_doctrine = 1
+					}
+				}
+				owner = { money = -490750 }
+				naval_base = 8
+				add_province_modifier = { name = built_naval_base duration = -1 }
+			}
+		}
+	}
+}

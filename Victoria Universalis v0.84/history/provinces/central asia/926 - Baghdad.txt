@@ -1,0 +1,24 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = IRQ
+trade_goods = grain
+life_rating = 35
+1913.1.1 = {
+	fort = 4
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = artillery_factory
+		upgrade = yes
+	}
+}

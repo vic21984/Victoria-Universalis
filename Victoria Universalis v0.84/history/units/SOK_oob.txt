@@ -1,0 +1,56 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Muhammed Bello"
+	date = 1836.1.1
+	type = land
+	personality = rec05att05
+	background = 1a1d_1
+}
+
+army = {
+	name = "Army of the Sultan of Sokoto"
+	location = 1948
+	regiment = {
+		name= "1.Fulbe"
+		type = cavalry
+		home = 1948
+	}
+
+	regiment = {
+		name= "2.Fulbe"
+		type = irregular
+		home = 1945
+	}
+
+	regiment = {
+		name= "3.Fulbe"
+		type = irregular
+		home = 1947
+	}
+
+}
+
+army = {
+	name = "Army of the Emir of Ilorin"
+	location = 1925
+	regiment = {
+		name= "1. Yoruba"
+		type = cavalry
+		home = 1927
+	}
+
+	regiment = {
+		name= "4. Fulbe"
+		type = irregular
+		home = 1939
+	}
+}

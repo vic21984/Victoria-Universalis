@@ -1,0 +1,47 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Chandra Shumsher Jang Bahadur Rana"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "1st Division"
+	location = 1326
+	regiment = {
+		name= "1. Infantry Brigade"
+		type = infantry
+		home = 1326
+	}
+	regiment = {
+		name= "2. Infantry Brigade"
+		type = infantry
+		home = 1326
+	}
+	regiment = {
+		name= "3. Infantry Brigade"
+		type = infantry
+		home = 1326
+	}
+	regiment = {
+		name= "1. Cavalry Battalion"
+		type = hussar
+		home = 1326
+	}
+	regiment = {
+		name= "1. Field Artillery Battalion"
+		type = artillery
+		home = 1327
+	}
+}

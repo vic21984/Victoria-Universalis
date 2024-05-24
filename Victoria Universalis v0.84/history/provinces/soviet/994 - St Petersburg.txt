@@ -1,0 +1,43 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = fish
+life_rating = 40
+terrain = urban
+naval_base = 2
+fort = 1
+railroad = 1
+1913.1.1 = {
+	fort = 4
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	naval_base = 5
+}

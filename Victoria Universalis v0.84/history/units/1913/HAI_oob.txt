@@ -1,0 +1,45 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Emmanuel Oreste Zamor"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 2213
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2213
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2213
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2215
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2215
+	}
+}

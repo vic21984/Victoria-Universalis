@@ -1,0 +1,77 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Dost Mohammed Khan"
+	type = land
+	date = 1836.1.1
+	personality = org15att15
+	background = 2a2d_1
+	prestige = 0.2
+}
+
+leader = {
+	name = "Wazir Akbar Khan"
+	type = land
+	date = 1836.1.1
+	personality = mor20att15
+	background = 2a2d_1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Hyder Khan"
+	type = land
+	date = 1836.1.1
+	personality = rec10att15
+	background = 1a2d_1
+}
+
+army = {
+	name = "Army of Dost Mohammed"
+	location = 1209
+	
+	regiment = {
+		name= "1. Mohammedzi"
+		type = irregular
+		home = 1209
+	}
+
+	regiment = {
+		name= "2. Mohammedzi"
+		type = irregular
+		home = 1209
+	}
+
+	regiment = {
+		name= "3. Mohammedzi"
+		type = irregular
+		home = 1209
+	}
+
+	regiment = {
+		name= "4. Barakzai"
+		type = irregular
+		home = 1216
+	}
+
+	regiment = {
+		name= "1. Barakzai"
+		type = cavalry
+		home = 1217
+	}
+
+	regiment = {
+		name= "2. Barakzai"
+		type = cavalry
+		home = 1219
+	}
+
+}

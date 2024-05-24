@@ -1,0 +1,48 @@
+owner = HUN
+controller = HUN
+add_core = HUN
+add_core = ROM
+add_core = SIE
+trade_goods = cattle
+life_rating = 35
+1836.1.2 = {
+	owner = AUS
+	controller = AUS
+	add_core = AUS
+}
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	remove_core = AUS
+	add_core = KUK
+	state_building = {
+		level = 4
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+}

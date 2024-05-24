@@ -1,0 +1,14 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = SPC
+trade_goods = wool
+life_rating = 35
+colonial = 2
+naval_base = 1
+1836.1.2 = {
+	remove_core = SPC
+}
+1913.1.1 = {
+	naval_base = 5
+}

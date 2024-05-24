@@ -1,0 +1,150 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Óscar R. Benavides"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Melitón Carvajal"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+navy = {
+	name = "Marina de Guerra del Perú"
+	location = 2295
+
+	ship = {
+		name= "Almirante Grau"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Coronel Bolognesi"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Ferré"
+		type = monitor
+	}
+
+	ship = {
+		name= "Palacios"
+		type = monitor
+	}
+
+}
+
+army = {
+	name = "I Corps"
+	location = 2295
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 2295
+	}
+
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 2295
+	}
+
+	regiment = {
+		name= "1st Battery Republican Artillery"
+		type = artillery
+		home = 2295
+	}
+
+	regiment = {
+		name= "2nd Battery Republican Artillery"
+		type = artillery
+		home = 2295
+	}	
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 2295
+	}
+		regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 2295
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 2295
+	}
+	regiment = {
+		name= "3rd Battery Republican Artillery"
+		type = artillery
+		home = 2295
+		}
+	regiment = {
+		name= "4th Battery Republican Artillery"
+		type = artillery
+		home = 2299
+	}
+}
+army = {
+	name = "II Corps"
+	location = 2302
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 2302
+	}
+
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 2302
+	}
+
+	regiment = {
+		name= "5th Battery Republican Artillery"
+		type = artillery
+		home = 2299
+	}
+
+	regiment = {
+		name= "6th Battery Republican Artillery"
+		type = artillery
+		home = 2304
+	}	
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 2303
+	}
+		regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 2578
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 2290
+	}
+	regiment = {
+		name= "7th Battery Republican Artillery"
+		type = artillery
+		home = 2302
+	}
+}

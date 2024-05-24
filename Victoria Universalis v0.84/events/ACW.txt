@@ -1,0 +1,954 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+#A House Divided
+country_event = {
+	id = 16000
+	title = "EVTNAME16000"
+	desc = "EVTDESC16000"
+	major = yes
+	
+	
+	trigger = {
+		tag = USA
+		year = 1860
+		slavery = yes_slavery
+		NOT = {
+			has_global_flag = american_civil_war_has_happened
+		}	
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1861
+		}
+		modifier = {
+			factor = 0.1
+			year = 1862
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA16000"
+		political_reform = federalism
+		set_country_flag = federalism
+		country_event = { id = 16001 days = 180 }
+		any_pop = {
+			consciousness = -7
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				is_core = CSA
+				NOT = {
+					province_id = 146
+					province_id = 147
+					province_id = 148
+					province_id = 149
+					province_id = 150
+					province_id = 217
+					province_id = 218
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			remove_core = USA
+			secede_province = CSA
+		}
+		CSA = {
+			capital = 211
+			leadership = 400
+			money = 500000
+			artillery = 2000
+			canned_food = 2000
+			small_arms = 2000
+			ammunition = 2000
+			set_country_flag = the_slavery_debate
+			set_country_flag = confederalism
+		}
+		capital = 220
+		set_global_flag = american_civil_war_has_happened
+		clr_country_flag = the_slavery_debate
+	}
+	
+	option = {
+		name = "EVTOPTB16000"
+		political_reform = federalism
+		set_country_flag = federalism
+		country_event = { id = 16001 days = 180 }
+		any_pop = {
+			consciousness = -7
+			militancy = -3
+		}
+		any_owned = {
+			limit = {
+				is_core = CSA
+				NOT = {
+					province_id = 146
+					province_id = 147
+					province_id = 148
+					province_id = 149
+					province_id = 150
+					province_id = 217
+					province_id = 218
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+				}
+			}
+			remove_core = USA
+			secede_province = CSA
+		}
+		CSA = {
+			capital = 211
+			leadership = 400
+			money = 500000
+			artillery = 2000
+			canned_food = 2000
+			small_arms = 2000
+			ammunition = 2000
+			set_country_flag = the_slavery_debate
+			set_country_flag = confederalism
+		}
+		capital = 220
+		change_tag_no_core_switch = CSA
+		set_global_flag = american_civil_war_has_happened
+		clr_country_flag = the_slavery_debate
+	}
+}
+
+country_event = {
+	id = 16001
+	title = "EVTNAME16001"
+	desc = "EVTDESC16001"
+	major = yes
+	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA16001"
+		CSA = { set_country_flag = acw_happened }
+		war = {
+			target = CSA
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+	}
+}
+
+#Secessionist Sentiments
+province_event = {
+	id = 16250
+	title = "EVTNAME16250"
+	desc = "EVTDESC16250"
+	
+	trigger = {
+		year = 1836
+		NOT = {
+			is_core = CSA
+			state_id = 220
+			state_id = 219
+			state_id = 217
+			state_id = 185 
+			state_id = 146
+		}
+		owner = {
+			tag = USA
+			slavery = yes_slavery
+			NOT = {
+				has_global_flag = american_civil_war_has_happened
+			}
+		}
+		state_scope = {
+			is_slave = yes
+		}
+		continent = north_america	
+	}
+	
+	immediate = {
+		owner = {
+		set_country_flag = the_slavery_debate
+			any_owned = {
+				limit = {
+					state_scope = { is_slave = yes }
+					NOT = { state_id = 220 }
+					NOT = { state_id = 219 }
+					NOT = { state_id = 217 }
+					NOT = { state_id = 185 }
+					NOT = { state_id = 146 }
+				}
+				add_core = CSA
+				any_pop = {
+					dominant_issue = {
+						value = yes_slavery
+						factor = 0.2
+					}
+					militancy = 1
+				}
+			}
+		}
+	}
+
+	
+	option = {
+		name = "EVTOPTA16250"
+	}
+}
+
+### Fire-only-once ###
+
+
+#Special
+#American minors apply for statehood
+country_event = {
+	id = 16400
+	title = "EVTNAME16400"
+	desc = "EVTDESC16400"
+	picture = "Administration"
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "EVTOPTA16400"
+		FROM = {
+			any_owned = {
+				add_core = USA
+			}
+		}
+		inherit = FROM
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB16400"
+		relation = {
+			who = FROM
+			value = -100
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#End Of The Anaconda Plan
+country_event = {
+	id = 16410
+	title = "EVTNAME16410"
+	desc = "EVTDESC16410"
+	picture = "Anaconda"
+	
+	trigger = {
+		has_country_modifier = anaconda_plan
+		OR = {
+			NOT = {
+				blockade = 0.8
+			}
+			war = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA16410"
+		remove_country_modifier = anaconda_plan
+	}
+}
+
+
+
+##### Indian Wars #####
+country_event = {
+	id = 16420
+	title = "EVTNAME16420"
+	desc = "EVTDESC16420"
+	picture = "Sioux"
+	
+	trigger = {
+		has_country_flag = custers_expedition_sent
+		owns = 122
+		122 = {
+			trade_goods = precious_metal
+		}
+		NOT = {
+			has_country_flag = sioux_wars
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA16420"
+		any_pop = {
+			limit = {
+				culture = dakota
+			}
+			militancy = 8
+		}
+		set_country_flag = sioux_wars
+	}
+}
+
+country_event = {
+	id = 16425
+	title = "Little Bighorn"
+	desc = "EVTDESC16430"
+	picture = "sittingbull"
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = sioux_wars
+		NOT = { has_country_flag = sioux_wars_over }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA16430"
+		prestige = -5
+		any_pop = {
+			limit = {
+				culture = dakota
+			}
+			militancy = 10
+			consciousness = 10
+		}
+	}
+}
+
+#End of The Sioux Wars
+country_event = {
+	id = 16430
+	title = "EVTNAME16430"
+	desc = "EVTDESC16430"
+	picture = "sittingbull"
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = sioux_wars
+		num_of_revolts = 0
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "EVTOPTA16430"
+		any_pop = {
+			limit = {
+				culture = dakota
+			}
+			militancy = -10
+			consciousness = -10
+			reduce_pop = 0.5
+		}
+		add_accepted_culture = dakota
+		set_country_flag = sioux_wars_over
+	}
+}
+
+#Apache Wars
+country_event = {
+	id = 16440
+	title = "EVTNAME16440"
+	desc = "EVTDESC16440"
+	picture = "Sioux"
+	
+	trigger = {
+		owns = 105
+		year = 1840
+		tag = USA
+		NOT = {
+			has_country_flag = apache_wars
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "EVTOPTA16440"
+		105 = {
+			state_scope = {
+				any_pop = {
+					limit = {
+						culture = native_american_minor
+					}
+					militancy = 8
+				}
+				any_pop = {
+					limit = {
+						not = {
+							is_culture_group = native_american
+						}
+					}
+					reduce_pop = 0.5
+				}
+			}
+		}
+		set_country_flag = apache_wars
+	}
+}
+
+province_event = {
+	id = 16445
+	title = "Apache Raiders"
+	desc = "Local native groups are raiding our settlements in $PROVINCENAME$"
+	picture = "Sioux"
+	
+	trigger = {
+		is_colonial = yes
+		has_country_flag = apache_wars
+		has_pop_culture = native_american_minor
+		not = { has_country_flag = apache_wars_over }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "Blast them!"
+		state_scope = {
+			any_pop = {
+				limit = {
+					culture = native_american_minor
+				}
+				militancy = 10
+			}
+		}
+		add_province_modifier = {
+			name = "apache_raiders"
+			duration = 730
+		}
+	}
+}
+
+
+
+#Apprehending Geronimo
+country_event = {
+	id = 16450
+	title = "EVTNAME16450"
+	desc = "EVTDESC16450"
+	picture = "geronimo"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = USA
+		year = 1886
+		has_country_flag = apache_wars
+	}
+	
+	mean_time_to_happen = {
+		months = 96
+	}
+	
+	option = {
+		name = "EVTOPTA16450"
+		any_pop = {
+			limit = {
+				culture = native_american_minor
+			}
+			militancy = -10
+			consciousness = -10
+			reduce_pop = 0.8
+		}
+		add_accepted_culture = native_american_minor
+		set_country_flag = apache_wars_over
+	}
+}
+
+# Texas goods
+country_event = {
+	id = 16451
+	title = "EVTNAME16451"
+	desc = "EVTDESC16451"
+	picture = "dixie"
+	
+ 	trigger = {
+		tag = TEX
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "EVTOPTA1206" #Ok
+		small_arms = 200
+		canned_food = 400
+		artillery = 100
+		luxury_clothes = 100
+		wine = 100
+		liquor = 100
+		ammunition = 200
+		money = 10000
+	}
+}
+
+# CSA cleanup
+country_event = {
+	id = 16452
+	title = "CSA Cleanup"
+
+ 	trigger = {
+		tag = JAN
+		CSA = { exists = no }
+		has_global_flag = american_civil_war_has_happened
+		NOT = { has_global_flag = csa_annexed }
+	}
+
+	option = {
+		set_global_flag = csa_annexed
+		CSA = {
+			all_core = {
+				add_core = USA
+				remove_core = CSA
+			}
+		}
+	}
+}
+
+# Homestead Act
+country_event = {
+	id = 16453
+	title = "Homestead"
+
+ 	trigger = {
+		tag = JAN
+		USA = {
+			has_country_modifier = the_homestead_act
+			any_owned_province = {
+				OR = {
+					province_id = 78
+					province_id = 79
+					province_id = 80
+					province_id = 81
+					province_id = 82
+					province_id = 83
+					province_id = 84
+					province_id = 85
+					province_id = 86
+					province_id = 87
+					province_id = 88
+					province_id = 89
+					province_id = 90
+					province_id = 91
+					province_id = 92
+					province_id = 93
+					province_id = 94
+					province_id = 95
+					province_id = 96
+					province_id = 97
+					province_id = 98
+					province_id = 99
+					province_id = 100
+					province_id = 101
+					province_id = 102
+					province_id = 103
+					province_id = 104
+					province_id = 105
+					province_id = 106
+					province_id = 107
+					province_id = 108
+					province_id = 109
+					province_id = 110
+					province_id = 111
+					province_id = 112
+					province_id = 113
+					province_id = 114
+					province_id = 115
+					province_id = 116
+					province_id = 117
+					province_id = 118
+					province_id = 119
+					province_id = 120
+					province_id = 121
+					province_id = 122
+					province_id = 123
+					province_id = 124
+					province_id = 125
+					province_id = 126
+					province_id = 127
+					province_id = 128
+					province_id = 129
+					province_id = 130
+					province_id = 131
+					province_id = 132
+					province_id = 133
+					province_id = 134
+					province_id = 135
+					province_id = 136
+					province_id = 137
+					province_id = 138
+					province_id = 143
+					province_id = 144
+					province_id = 145
+					province_id = 151
+					province_id = 152
+					province_id = 153
+					province_id = 154
+					province_id = 155
+					province_id = 156
+					province_id = 157
+					province_id = 158
+					province_id = 173
+					province_id = 174
+					province_id = 175
+					province_id = 176
+					province_id = 177
+					province_id = 198
+					province_id = 199
+					province_id = 200
+				}
+				NOT = { has_province_modifier = homestead }
+			}
+		}
+	}
+	
+	option = {
+		USA = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 78
+						province_id = 79
+						province_id = 80
+						province_id = 81
+						province_id = 82
+						province_id = 83
+						province_id = 84
+						province_id = 85
+						province_id = 86
+						province_id = 87
+						province_id = 88
+						province_id = 89
+						province_id = 90
+						province_id = 91
+						province_id = 92
+						province_id = 93
+						province_id = 94
+						province_id = 95
+						province_id = 96
+						province_id = 97
+						province_id = 98
+						province_id = 99
+						province_id = 100
+						province_id = 101
+						province_id = 102
+						province_id = 103
+						province_id = 104
+						province_id = 105
+						province_id = 106
+						province_id = 107
+						province_id = 108
+						province_id = 109
+						province_id = 110
+						province_id = 111
+						province_id = 112
+						province_id = 113
+						province_id = 114
+						province_id = 115
+						province_id = 116
+						province_id = 117
+						province_id = 118
+						province_id = 119
+						province_id = 120
+						province_id = 121
+						province_id = 122
+						province_id = 123
+						province_id = 124
+						province_id = 125
+						province_id = 126
+						province_id = 127
+						province_id = 128
+						province_id = 129
+						province_id = 130
+						province_id = 131
+						province_id = 132
+						province_id = 133
+						province_id = 134
+						province_id = 135
+						province_id = 136
+						province_id = 137
+						province_id = 138
+						province_id = 143
+						province_id = 144
+						province_id = 145
+						province_id = 151
+						province_id = 152
+						province_id = 153
+						province_id = 154
+						province_id = 155
+						province_id = 156
+						province_id = 157
+						province_id = 158
+						province_id = 173
+						province_id = 174
+						province_id = 175
+						province_id = 176
+						province_id = 177
+						province_id = 198
+						province_id = 199
+						province_id = 200
+					}
+				}
+				add_province_modifier = { name = homestead duration = -1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 16454
+	title = "Westward Migration"
+
+ 	trigger = {
+		tag = JAN
+		USA = {
+			has_country_modifier = the_homestead_act
+			any_owned_province = {
+				OR = {
+					province_id = 139
+					province_id = 140
+					province_id = 141
+					province_id = 142
+					province_id = 146
+					province_id = 147
+					province_id = 148
+					province_id = 149
+					province_id = 150
+					province_id = 159
+					province_id = 160
+					province_id = 161
+					province_id = 162
+					province_id = 169
+					province_id = 170
+					province_id = 171
+					province_id = 172
+					province_id = 178
+					province_id = 179
+					province_id = 180
+					province_id = 181
+					province_id = 182
+					province_id = 183
+					province_id = 184
+					province_id = 185
+					province_id = 186
+					province_id = 187
+					province_id = 188
+					province_id = 189
+					province_id = 190
+					province_id = 191
+					province_id = 192
+					province_id = 193
+					province_id = 194
+					province_id = 195
+					province_id = 196
+					province_id = 197
+					province_id = 201
+					province_id = 202
+					province_id = 204
+					province_id = 205
+					province_id = 206
+					province_id = 2555
+					province_id = 2556
+					province_id = 207
+					province_id = 208
+					province_id = 209
+					province_id = 210
+					province_id = 211
+					province_id = 212
+					province_id = 213
+					province_id = 214
+					province_id = 215
+					province_id = 216
+					province_id = 217
+					province_id = 218
+					province_id = 219
+					province_id = 220
+					province_id = 221
+					province_id = 222
+					province_id = 223
+					province_id = 224
+					province_id = 225
+					province_id = 226
+					province_id = 227
+					province_id = 228
+					province_id = 229
+					province_id = 230
+					province_id = 231
+					province_id = 232
+					province_id = 233
+					province_id = 234
+					province_id = 235
+					province_id = 236
+					province_id = 237
+					province_id = 238
+					province_id = 239
+					province_id = 240
+					province_id = 241
+					province_id = 242
+					province_id = 243
+					province_id = 244
+					province_id = 245
+					province_id = 246
+					province_id = 247
+					province_id = 248
+					province_id = 249
+					province_id = 250
+				}
+				NOT = { has_province_modifier = westward_migration }
+			}
+		}
+	}
+	
+	option = {
+		USA = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 139
+						province_id = 140
+						province_id = 141
+						province_id = 142
+						province_id = 146
+						province_id = 147
+						province_id = 148
+						province_id = 149
+						province_id = 150
+						province_id = 159
+						province_id = 160
+						province_id = 161
+						province_id = 162
+						province_id = 169
+						province_id = 170
+						province_id = 171
+						province_id = 172
+						province_id = 178
+						province_id = 179
+						province_id = 180
+						province_id = 181
+						province_id = 182
+						province_id = 183
+						province_id = 184
+						province_id = 185
+						province_id = 186
+						province_id = 187
+						province_id = 188
+						province_id = 189
+						province_id = 190
+						province_id = 191
+						province_id = 192
+						province_id = 193
+						province_id = 194
+						province_id = 195
+						province_id = 196
+						province_id = 197
+						province_id = 201
+						province_id = 202
+						province_id = 204
+						province_id = 205
+						province_id = 206
+						province_id = 2555
+						province_id = 2556
+						province_id = 207
+						province_id = 208
+						province_id = 209
+						province_id = 210
+						province_id = 211
+						province_id = 212
+						province_id = 213
+						province_id = 214
+						province_id = 215
+						province_id = 216
+						province_id = 217
+						province_id = 218
+						province_id = 219
+						province_id = 220
+						province_id = 221
+						province_id = 222
+						province_id = 223
+						province_id = 224
+						province_id = 225
+						province_id = 226
+						province_id = 227
+						province_id = 228
+						province_id = 229
+						province_id = 230
+						province_id = 231
+						province_id = 232
+						province_id = 233
+						province_id = 234
+						province_id = 235
+						province_id = 236
+						province_id = 237
+						province_id = 238
+						province_id = 239
+						province_id = 240
+						province_id = 241
+						province_id = 242
+						province_id = 243
+						province_id = 244
+						province_id = 245
+						province_id = 246
+						province_id = 247
+						province_id = 248
+						province_id = 249
+						province_id = 250
+					}
+				}
+				add_province_modifier = { name = westward_migration duration = -1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 16455
+	title = "Mexican American War"
+
+ 	trigger = {
+		tag = USA
+		ai = yes
+		war = no
+		NOT = { war_exhaustion = 5 }
+		has_country_flag = mex_usa_war
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		war = {
+			target = MEX
+			attacker_goal = { casus_belli = mexican_american_war country = USA }
+		}
+		clr_country_flag = mex_usa_war
+	}
+}

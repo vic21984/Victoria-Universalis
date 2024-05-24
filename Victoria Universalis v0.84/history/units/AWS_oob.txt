@@ -1,0 +1,57 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+EGY = {
+	value = 75
+}
+
+SHW = {
+	value = -200
+}
+
+GON = {
+	value = -200
+}
+
+HAR = {
+	value = -200
+}
+
+MAJ = {
+	value = -200
+}
+
+TIG = {
+	value = -200
+}
+
+GJM = {
+	value = -200
+}
+
+WLO = {
+	value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+army = {
+	name = "Army of the Sultan of Awsa"
+	location = 1851
+	regiment = {
+		name= "Sultan's Guards"
+		type = irregular
+		home = 1851
+	}
+
+}
+

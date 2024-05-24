@@ -1,0 +1,589 @@
+country_event = {
+	title = EVTNAMEsetgovernment
+	desc = EVTDESCsetgovernment
+	id = 91100
+	picture = Upperhouse
+
+	trigger = {
+		OR = {
+			government = proletarian_dictatorship
+			government = fascist_dictatorship
+		}
+		NOT = { has_country_flag = communist_or_fascist_dictatorship }
+	}
+	
+	option = {
+		name = "EVTOPTAsetgovernment"
+		set_country_flag = communist_or_fascist_dictatorship
+	}
+}
+
+country_event = {
+	title = EVTNAMEclrgovernment
+	desc = EVTDESCclrgovernment
+	id = 91101
+	picture = Upperhouse
+
+	trigger = {
+		NOT = {
+			OR = {
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+			}
+		}
+		has_country_flag = communist_or_fascist_dictatorship
+	}
+	
+	option = {
+		name = "EVTOPTAclrgovernment"
+		clr_country_flag = communist_or_fascist_dictatorship
+	}
+}
+
+country_event = {
+	title = EVTNAME91102
+	desc = EVTDESC91102
+	id = 91102
+	picture = technology_flag
+
+	trigger = {
+		OR = {
+			AND = {
+				invention = mob1
+				NOT = { has_country_flag = mob1_invented }
+			}
+			AND = {
+				invention = mob2
+				NOT = { has_country_flag = mob2_invented }
+			}
+			AND = {
+				invention = mob3
+				NOT = { has_country_flag = mob3_invented }
+			}
+			AND = {
+				invention = mob4
+				NOT = { has_country_flag = mob4_invented }
+			}
+			AND = {
+				invention = mob5
+				NOT = { has_country_flag = mob5_invented }
+			}
+			AND = {
+				medicine = 1
+				NOT = { has_country_flag = medicine_invented }
+			}
+			AND = {
+				inorganic_chemistry = 1
+				NOT = { has_country_flag = inorganic_chemistry_invented }
+			}
+			AND = {
+				organic_chemistry = 1
+				NOT = { has_country_flag = organic_chemistry_invented }
+			}
+			AND = {
+				electricity = 1
+				NOT = { has_country_flag = electricity_invented }
+			}
+			AND = {
+				revolution_n_counterrevolution = 1
+				NOT = { has_country_flag = revolution_n_counterrevolution_invented }
+			}
+			AND = {
+				invention = colonial_negotiations
+				NOT = { has_country_flag = colonial_negotiations_invented }
+			}
+			AND = {
+				synthetic_polymers = 1
+				NOT = { has_country_flag = synthetic_polymers_invented }
+			}
+			AND = {
+				invention = expansionism
+				NOT = { has_country_flag = expansionism_invented }
+			}
+			AND = {
+				military_logistics = 1
+				NOT = { has_country_flag = military_logistics_invented }
+			}
+			AND = {
+				mass_politics = 1
+				NOT = { has_country_flag = mass_politics_invented }
+			}
+			AND = {
+				invention = manifest_destiny
+				NOT = { has_country_flag = manifest_destiny_invented }
+				is_greater_power = yes
+				OR = {
+					RUS_1182 = {
+						owner = {
+							civilized = no
+							neighbour = THIS
+						}
+					}
+					RUS_1185 = {
+						owner = {
+							civilized = no
+							neighbour = THIS
+						}
+					}
+					RUS_2611 = {
+						owner = {
+							civilized = no
+							neighbour = THIS
+						}
+					}
+					KHI_1191 = {
+						owner = {
+							civilized = no
+							neighbour = THIS
+						}
+					}
+					RUS_1196 = {
+						owner = {
+							civilized = no
+							neighbour = THIS
+						}
+					}
+					BUK_1207 = {
+						owner = {
+							civilized = no
+							neighbour = THIS
+						}
+					}
+					KOK_1190 = {
+						owner = {
+							civilized = no
+							neighbour = THIS
+						}
+					}
+				}
+			}
+			AND = {
+				malthusian_thought = 1
+				NOT = { has_country_flag = malthusian_thought_invented }
+			}
+			AND = {
+				positivism = 1
+				NOT = { has_country_flag = positivism_invented }
+			}
+			AND = {
+				functionalism = 1
+				NOT = { has_country_flag = functionalism_invented }
+			}
+			AND = {
+				biologism = 1
+				NOT = { has_country_flag = biologism_invented }
+			}
+			AND = {
+				social_science = 1
+				NOT = { has_country_flag = social_science_invented }
+			}
+			AND = {
+				social_alienation = 1
+				NOT = { has_country_flag = social_alienation_invented }
+			}
+			AND = {
+				invention = working_board_of_directors
+				NOT = { has_country_flag = working_board_of_directors_invented }
+			}
+			AND = {
+				invention = centralized_economic_planning
+				NOT = { has_country_flag = centralized_economic_planning_invented }
+			}
+			AND = {
+				invention = mixed_economy
+				NOT = { has_country_flag = mixed_economy_invented }
+			}
+			AND = {
+				battleship_column_doctrine = 1
+				NOT = { has_country_flag = battleship_column_doctrine_invented }
+			}
+			AND = {
+				raider_group_doctrine = 1
+				NOT = { has_country_flag = raider_group_doctrine_invented }
+			}
+			AND = {
+				blue_and_brown_water_schools = 1
+				NOT = { has_country_flag = blue_and_brown_water_schools_invented }
+			}
+			AND = {
+				high_sea_battle_fleet = 1
+				NOT = { has_country_flag = high_sea_battle_fleet_invented }
+			}
+			AND = {
+				early_modern_naval_doctrine = 1
+				NOT = { has_country_flag = early_modern_naval_doctrine_invented }
+			}
+			AND = {
+				modern_naval_doctrine = 1
+				NOT = { has_country_flag = modern_naval_doctrine_invented }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91102"
+		random_owned = {
+			limit = {
+				owner = {
+					invention = mob1
+					NOT = { has_country_flag = mob1_invented }
+				}
+			}
+			owner = { set_country_flag = mob1_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = mob2
+					NOT = { has_country_flag = mob2_invented }
+				}
+			}
+			owner = { set_country_flag = mob2_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = mob3
+					NOT = { has_country_flag = mob3_invented }
+				}
+			}
+			owner = { set_country_flag = mob3_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = mob4
+					NOT = { has_country_flag = mob4_invented }
+				}
+			}
+			owner = { set_country_flag = mob4_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = mob5
+					NOT = { has_country_flag = mob5_invented }
+				}
+			}
+			owner = { set_country_flag = mob5_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					medicine = 1
+					NOT = { has_country_flag = medicine_invented }
+				}
+			}
+			owner = { set_country_flag = medicine_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					inorganic_chemistry = 1
+					NOT = { has_country_flag = inorganic_chemistry_invented }
+				}
+			}
+			owner = { set_country_flag = inorganic_chemistry_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					organic_chemistry = 1
+					NOT = { has_country_flag = organic_chemistry_invented }
+				}
+			}
+			owner = { set_country_flag = organic_chemistry_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					electricity = 1
+					NOT = { has_country_flag = electricity_invented }
+				}
+			}
+			owner = { set_country_flag = electricity_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					revolution_n_counterrevolution = 1
+					NOT = { has_country_flag = revolution_n_counterrevolution_invented }
+				}
+			}
+			owner = { set_country_flag = revolution_n_counterrevolution_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = revolution_n_counterrevolution_invented
+					centralization = regionalism
+				}
+			}
+			owner = { political_reform = unitary }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = colonial_negotiations
+					NOT = { has_country_flag = colonial_negotiations_invented }
+				}
+			}
+			owner = { set_country_flag = colonial_negotiations_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					synthetic_polymers = 1
+					NOT = { has_country_flag = synthetic_polymers_invented }
+				}
+			}
+			owner = { set_country_flag = synthetic_polymers_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = expansionism
+					NOT = { has_country_flag = expansionism_invented }
+				}
+			}
+			owner = { set_country_flag = expansionism_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					military_logistics = 1
+					NOT = { has_country_flag = military_logistics_invented }
+				}
+			}
+			owner = { set_country_flag = military_logistics_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					mass_politics = 1
+					NOT = { has_country_flag = mass_politics_invented }
+				}
+			}
+			owner = { set_country_flag = mass_politics_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = manifest_destiny
+					NOT = { has_country_flag = manifest_destiny_invented }
+					is_greater_power = yes
+					OR = {
+						RUS_1182 = {
+							owner = {
+								civilized = no
+								neighbour = THIS
+							}
+						}
+						RUS_1185 = {
+							owner = {
+								civilized = no
+								neighbour = THIS
+							}
+						}
+						RUS_2611 = {
+							owner = {
+								civilized = no
+								neighbour = THIS
+							}
+						}
+						KHI_1191 = {
+							owner = {
+								civilized = no
+								neighbour = THIS
+							}
+						}
+						RUS_1196 = {
+							owner = {
+								civilized = no
+								neighbour = THIS
+							}
+						}
+						BUK_1207 = {
+							owner = {
+								civilized = no
+								neighbour = THIS
+							}
+						}
+						KOK_1190 = {
+							owner = {
+								civilized = no
+								neighbour = THIS
+							}
+						}
+					}
+				}
+			}
+			owner = { set_country_flag = manifest_destiny_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					malthusian_thought = 1
+					NOT = { has_country_flag = malthusian_thought_invented }
+				}
+			}
+			owner = { set_country_flag = malthusian_thought_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					positivism = 1
+					NOT = { has_country_flag = positivism_invented }
+				}
+			}
+			owner = { set_country_flag = positivism_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					functionalism = 1
+					NOT = { has_country_flag = functionalism_invented }
+				}
+			}
+			owner = { set_country_flag = functionalism_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					biologism = 1
+					NOT = { has_country_flag = biologism_invented }
+				}
+			}
+			owner = { set_country_flag = biologism_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					social_science = 1
+					NOT = { has_country_flag = social_science_invented }
+				}
+			}
+			owner = { set_country_flag = social_science_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					social_alienation = 1
+					NOT = { has_country_flag = social_alienation_invented }
+				}
+			}
+			owner = { set_country_flag = social_alienation_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = working_board_of_directors
+					NOT = { has_country_flag = working_board_of_directors_invented }
+				}
+			}
+			owner = { set_country_flag = working_board_of_directors_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = centralized_economic_planning
+					NOT = { has_country_flag = centralized_economic_planning_invented }
+				}
+			}
+			owner = { set_country_flag = centralized_economic_planning_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = mixed_economy
+					NOT = { has_country_flag = mixed_economy_invented }
+				}
+			}
+			owner = { set_country_flag = mixed_economy_invented }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					battleship_column_doctrine = 1
+					NOT = { has_country_flag = battleship_column_doctrine_invented }
+				}
+			}
+			owner = {
+				set_country_flag = battleship_column_doctrine_invented
+				any_owned = {
+					remove_province_modifier = built_naval_base
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					raider_group_doctrine = 1
+					NOT = { has_country_flag = raider_group_doctrine_invented }
+				}
+			}
+			owner = {
+				set_country_flag = raider_group_doctrine_invented
+				any_owned = {
+					remove_province_modifier = built_naval_base
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					blue_and_brown_water_schools = 1
+					NOT = { has_country_flag = blue_and_brown_water_schools_invented }
+				}
+			}
+			owner = {
+				set_country_flag = blue_and_brown_water_schools_invented
+				any_owned = {
+					remove_province_modifier = built_naval_base
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					high_sea_battle_fleet = 1
+					NOT = { has_country_flag = high_sea_battle_fleet_invented }
+				}
+			}
+			owner = {
+				set_country_flag = high_sea_battle_fleet_invented
+				any_owned = {
+					remove_province_modifier = built_naval_base
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					early_modern_naval_doctrine = 1
+					NOT = { has_country_flag = early_modern_naval_doctrine_invented }
+				}
+			}
+			owner = {
+				set_country_flag = early_modern_naval_doctrine_invented
+				any_owned = {
+					remove_province_modifier = built_naval_base
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					modern_naval_doctrine = 1
+					NOT = { has_country_flag = modern_naval_doctrine_invented }
+				}
+			}
+			owner = {
+				set_country_flag = modern_naval_doctrine_invented
+				any_owned = {
+					remove_province_modifier = built_naval_base
+				}
+			}
+		}
+	}
+}

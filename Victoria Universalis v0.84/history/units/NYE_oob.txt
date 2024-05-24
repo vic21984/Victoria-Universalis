@@ -1,0 +1,48 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+TUR = {
+	value = -100
+}
+
+LHJ = {
+	value = -50
+}
+
+NEJ = {
+	value = -150
+}
+
+HAL = {
+	value = -50
+}
+
+leader = {
+	name = "Al-Mansur Ali II"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+
+army = {
+	name = "Army of the Zaydi"
+	location = 1178
+	regiment = {
+		name= "1. Abdali"
+		type = cavalry
+		home = 1178
+	}
+	regiment = {
+		name= "2. Abdali"
+		type = irregular
+		home = 1178
+	}
+}

@@ -1,0 +1,48 @@
+
+# Arabian Event to Inherit
+country_event = {
+	id = 111011928
+	title = "EVTNAME111011928"
+	desc = "EVTDESC111011928"
+	picture = "Celebration"
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA111011928"
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "EVTOPTB111011928"
+		prestige = 1
+		relation = {
+			who = FROM
+			value = -100
+		}
+		any_pop = {
+			militancy = 3
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				NOT = {
+					relation = { who = FROM value = 100 }
+				}
+			}
+		}
+	}
+}

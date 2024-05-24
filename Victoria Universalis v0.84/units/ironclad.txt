@@ -1,0 +1,48 @@
+ironclad = {
+	icon = 9
+	naval_icon = 6
+	
+	type = naval
+	sprite = Ironclad
+	unit_type = big_ship
+	capital = yes
+	move_sound = steam_move
+	select_sound = steam_selected
+	active = no
+	floating_flag = yes
+	colonial_points = 16
+
+
+	#Core Abilities
+	priority = 35
+	max_strength = 100
+	default_organisation = 40
+	maximum_speed = 6
+	weighted_value = 6.0
+
+
+	#Building Costs
+	build_time = 360
+	build_cost = {	
+		steamer_convoy = 20
+		artillery = 12
+		canned_food = 20
+	}
+	min_port_level = 2
+	limit_per_port = -1
+	supply_consumption_score = 1
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		steamer_convoy = 0.24	#15.6
+		artillery = 0.24		#7.2
+		coal = 1				#4.6
+	}							#27.4
+	
+	#Naval Abilties
+	hull = 1.5
+	gun_power = 1.5
+	fire_range = 0.4
+	evasion = 0
+}
+

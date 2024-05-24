@@ -1,0 +1,36 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+EGY = {
+	value = -200
+}
+
+army = {
+	name = "Holy Shilluk Army"
+	location = 1832	
+
+	regiment = {
+		name= "1st Shilluk Warriors"
+		type = irregular
+		home = 1832
+	}
+	
+	regiment = {
+		name= "2nd Shilluk Warriors"
+		type = irregular
+		home = 1832
+	}
+
+	regiment = {
+		name= "3rd Shilluk Warriors"
+		type = irregular
+		home = 1832
+	}
+}

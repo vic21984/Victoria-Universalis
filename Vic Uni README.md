@@ -1,6 +1,6 @@
 # Victoria Universalis Mod
 
-This mod reworks the core gameplay of vanilla Victoria 2 and introduces new mechanics, such as the ability to dynamically target provinces for province events, a national idea system that allows players to choose from a list of bonuses to their country, and the addition of several generic decisions available to every country that give the player a greater degree of control over the economy and population.
+This mod reworks the core gameplay of vanilla Victoria 2 and introduces new mechanics, such as the ability to dynamically target provinces for province events, a national idea system that allows players to choose from a list of bonuses to their country, companies that grant bonuses to specific industries, and the addition of several generic decisions available to every country that give the player a greater degree of control over the economy and population.
 
 The economy has been extensively overhauled as well, with economic crashes being eliminated by the addition of a world bank reserve. The world bank is an unplayable country that has banker POPs which have almost unlimited demand for RGO goods. These POPs will buy any excess RGO goods that get produced from the rest of the world, thereby injecting money into the economy that directly scales with productivity. The world bank is set to always be last in the rankings, which forces their POPs to buy goods only after every other country has gotten a chance to buy goods.
 
@@ -15,4 +15,4 @@ Generals traits have been replaced by color coded + Attack and + Defense bonuses
 ### Credits
 
 Thanks to the following people:
-The creators of HPM and PDM for historical databases and art assets. God of Cheese for his RGO changing events in PIUR. General Townes for removing the menu tab backgrounds. Panzerfaust1 for new carrier and province selector sprites. Nurse Reno for the new fixed demand state warscore calculations. Wyrm for new TGC sprites and the university building.
+The creators of HPM and PDM for historical databases and art assets. God of Cheese for his RGO changing events in PIUR. General Townes for removing the menu tab backgrounds. Panzerfaust1 for new carrier and province selector sprites. Nurse Reno for the new fixed demand state warscore calculations. Wyrm for new TGC sprites.

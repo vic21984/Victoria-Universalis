@@ -1,0 +1,160 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+
+#Commodore Perry's Expedition events
+country_event = {
+	id = 35601
+	title = "EVTNAME35601" #Kurofune
+	desc = "EVTDESC35601"
+	picture = "commodore_perry"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35601"
+		prestige = -10
+		remove_country_modifier = sakoku
+		add_country_modifier = {
+			name = "western_influences"
+			duration = -1
+		}
+		any_country = {
+			limit = {
+				primary_culture = japanese
+				substate_of = THIS
+			}
+			remove_country_modifier = sakoku
+			add_country_modifier = {
+				name = "western_influences"
+				duration = -1
+			}
+		}
+		FROM = { country_event = 35602 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB35601"
+		leave_alliance = USA
+		relation = { who = USA value = -200 }
+		add_casus_belli = {
+			target = USA
+			type = add_to_sphere
+			months = 12
+		}
+		add_casus_belli = {
+			target = USA
+			type = humiliate
+			months = 12
+		}
+		FROM = { country_event = 35603 }
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 35602
+	title = "EVTNAME35602" #Commodore Perry Successful
+	desc = "EVTDESC35602"
+	picture = "commodore_perry"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35602"
+		prestige = 20
+		random_country = {
+			limit = {
+				is_sphere_leader_of = TKG
+				NOT = { tag = THIS }
+			}
+			diplomatic_influence = { who = TKG value = -100 }
+		}
+		diplomatic_influence = { who = TKG value = 100 }
+		relation = { who = TKG value = 100 }
+	}
+}
+
+country_event = {
+	id = 35603
+	title = "EVTNAME35603" #The Japanese Are Defiant
+	desc = "EVTDESC35603"
+	picture = "commodore_perry"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35603"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+		}
+		diplomatic_influence = { who = TKG value = -200 }
+		war = {
+			target = TKG
+			attacker_goal = {
+				casus_belli = add_to_sphere
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB35603"
+		prestige = -20
+		any_pop = {
+			dominant_issue = {
+				factor = 0.05
+				value = pacifism
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+country_event = {
+	id = 35604
+	title = "End of Shogunate Japan"
+	
+	trigger = {
+		tag = JAN
+		JAP = { exists = yes }
+		TKG = { exists = no }
+		NOT = { has_global_flag = japan_united }
+	}
+	
+	option = {
+		TKG = { all_core = { remove_core = TKG } }
+		set_global_flag = japan_united
+	}
+
+}
+
+country_event = {
+	id = 35605
+	title = "End of Imperial Japan"
+	
+	trigger = {
+		tag = JAN
+		TKG = { exists = yes }
+		JAP = { exists = no }
+		NOT = { has_global_flag = japan_united }
+	}
+	
+	option = {
+		JAP = { all_core = { remove_core = JAP } }
+		set_global_flag = japan_united
+	}
+
+}

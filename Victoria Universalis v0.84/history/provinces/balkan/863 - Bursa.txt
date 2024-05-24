@@ -1,0 +1,27 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+trade_goods = tobacco
+life_rating = 35
+state_building = {
+	level = 1
+	building = small_arms_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = artillery_factory
+		upgrade = yes
+	}
+}

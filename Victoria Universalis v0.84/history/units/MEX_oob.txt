@@ -1,0 +1,143 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Antonio Santa Ana"
+	type = land
+	date="1836.1.1"
+	personality = mor10exp05
+	background = 1a1d_1
+	prestige = 0.1
+}
+
+leader = {
+	name = "Martin de Cos"
+	type = land
+	date="1836.1.1"
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+leader = {
+	name = "Nicolas Bravo"
+	type = land
+	date="1836.1.1"
+	personality = rec05exp05
+	background = 1a1d_1
+}
+
+leader = {
+	name = "Mariano Arista"
+	type = land
+	date="1836.1.1"
+	personality = mor20rec10
+	background = 2a1d_1
+}
+
+leader = {
+	name = "Juan Álvarez"
+	type = land
+	date="1836.1.1"
+	personality = org05mor10
+	background = 1a2d_1
+}
+
+leader = {
+	name = "José de Herrera"
+	type = land
+	date="1836.1.1"
+	personality = rec05att05
+	background = 1a1d_1
+}
+
+army = {
+	name = "Ejército del Norte"
+	location = 2146
+	regiment = {
+		name= "1.Division Cos"
+		type = infantry
+		home = 2174
+	}
+
+	regiment = {
+		name= "2.Division Cos"
+		type = infantry
+		home = 2167
+	}
+
+	regiment = {
+		name= "3.Division Cos"
+		type = infantry
+		home = 2167
+	}
+
+}
+
+army = {
+	name = "Activo Oajaca"
+	location = 2177
+	regiment = {
+		name= "1.Oajaca y Tlaxcala"
+		type = infantry
+		home = 2177
+	}
+
+	regiment = {
+		name= "2.Oajaca y Tlaxcala"
+		type = infantry
+		home = 2177
+	}
+
+	regiment = {
+		name= "3.Oajaca y Tlaxcala"
+		type = infantry
+		home = 2177
+	}
+
+}
+
+army = {
+	name = "Ejército del Ciudad Mejico"
+	location = 2172
+	regiment = {
+		name= "1.Division Comonfort"
+		type = infantry
+		home = 2176
+	}
+
+	regiment = {
+		name= "2.Division Comonfort"
+		type = infantry
+		home = 2176
+	}
+
+	regiment = {
+		name= "3.Division Comonfort"
+		type = infantry
+		home = 2176
+	}
+
+}
+
+navy = {
+	name = "Armada de Mexico"
+	location = 2162
+	ship = {
+		name= "Vencedor del Alamo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Matilda"
+		type = clipper_transport
+	}
+
+}
+

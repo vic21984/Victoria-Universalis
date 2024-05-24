@@ -1,0 +1,49 @@
+battleship = {
+	icon = 21
+	naval_icon = 10
+	
+	type = naval
+	sprite = Battleship
+	unit_type = big_ship
+	capital = yes
+	active = no
+	move_sound = steam_move
+	select_sound = steam_selected
+	floating_flag = yes
+	colonial_points = 25
+	
+	#Core Abilities
+	priority = 40
+	max_strength = 125
+	default_organisation = 150
+	maximum_speed = 9
+	weighted_value = 50.0
+	can_build_overseas = yes
+
+
+	#Building Costs
+	build_time = 900
+	build_cost = {
+		steamer_convoy = 1000	#65000
+		artillery = 1000		#30000
+		canned_food = 500		#4000
+		steel = 2000			#10000
+	}							#109000
+	min_port_level = 4
+	limit_per_port = -1
+	supply_consumption_score = 1
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		steamer_convoy = 1.5	#97.5
+		artillery = 1.2			#36
+		coal = 3				#11.5
+		fuel = 0.5				#13.8
+	}							#161.1
+	
+	#Naval Abilties
+	hull = 15
+	gun_power = 15
+	fire_range = 0.75
+	evasion = 0
+}

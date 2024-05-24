@@ -1,0 +1,80 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+SHW = {
+	value = -200
+}
+
+GON = {
+	value = -200
+}
+
+TIG = {
+	value = -200
+}
+
+AWS = {
+	value = -200
+}
+
+GJM = {
+	value = -200
+}
+
+GEL = {
+	value = -200
+}
+
+MAJ = {
+	value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+GJM = {
+	value = -200
+}
+
+WLO = {
+	value = -200
+}
+
+leader = {
+	name = "Emir Abu Bakr II"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+
+army = {
+	name = "Army of the Emir of Harar"
+	location = 1865
+	regiment = {
+		name= "Emir's Guards"
+		type = irregular
+		home = 1867
+	}
+
+	regiment = {
+		name= "Harari City Militia"
+		type = irregular
+		home = 1865
+	}
+
+	regiment = {
+		name= "Goba Tribesmen"
+		type = irregular
+		home = 1866
+	}
+}
+

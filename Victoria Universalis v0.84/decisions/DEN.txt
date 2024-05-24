@@ -1,0 +1,85 @@
+political_decisions = {
+	danmarks_riges_grundlov = {
+		potential = {
+			tag = DEN
+			government = absolute_monarchy
+			NOT = {
+				has_country_flag = danish_constitutionalism
+			}
+		}
+		
+		allow = {
+			state_n_government = 1
+			NOT = {
+				average_militancy = 3
+			}
+		}
+		
+		effect = {
+			political_reform = landed_voting
+			government = hms_government
+			prestige = 5
+			set_country_flag = danish_constitutionalism
+		}
+	}
+	integrate_the_duchies = {
+		picture = duchy_of_holstein
+		potential = {
+			tag = DEN
+			NOT = { 
+				has_country_flag = duchies_integrated 
+			}
+			DEN = { owns = 370 }
+			DEN = { owns = 371 }
+		}
+		
+		allow = {
+			NOT = { government = absolute_monarchy }
+			war = no
+			nationalism_n_imperialism = 1	
+			HOL = { ai = yes }
+			OR = {
+				is_our_vassal = HOL
+				is_sphere_leader_of = HOL
+			}
+		}
+
+		effect = {
+			set_country_flag = duchies_integrated
+			add_accepted_culture = north_german
+			prestige = 20
+			inherit = HOL
+			inherit = SCH
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			369 = { add_core = DEN }
+			529 = { add_core = DEN }
+			any_country = { 
+				limit = {
+					OR = { 
+						primary_culture = north_german
+						primary_culture = south_german
+					}
+				}
+				relation = {
+					who = THIS
+					value = -200
+				}
+			}
+					
+
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				factor = 0
+				NOT = { 
+					year = 1863
+				}
+			}
+		}
+	}
+}

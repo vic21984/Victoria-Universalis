@@ -1,0 +1,15 @@
+owner = QNG
+controller = QNG
+add_core = QNG
+trade_goods = dye
+life_rating = 30
+1913.1.1 = {
+	## Audax Validator "." Ignore_NEXT
+	trade_goods = opium
+}
+1913.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = QNG
+}

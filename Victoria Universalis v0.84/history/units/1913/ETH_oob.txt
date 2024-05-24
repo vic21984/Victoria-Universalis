@@ -1,0 +1,190 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+SOM = {
+	truce_until = 1920.1.1
+}
+
+leader = {
+	name = "Balcha Safo"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1.1
+}
+leader = {
+	name = "Kassa Haile Darge"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Seyoum Mengesha"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Mulugeta Yeggazu"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+army = {
+	name = "I Corps"
+	location = 1852
+	regiment = {
+		name= "1st Regiment"
+		type = infantry
+		home = 1852
+	}
+	regiment = {
+		name= "2nd Regiment"
+		type = infantry
+		home = 1852
+	}
+	regiment = {
+		name= "1st Battery Royal Artillery"
+		type = artillery
+		home = 1852
+	}
+	regiment = {
+		name= "2nd Battery Royal Artillery"
+		type = artillery
+		home = 1852
+	}
+	regiment = {
+		name= "1st Hussar"
+		type = hussar
+		home = 1852
+	}
+	regiment = {
+		name= "3rd Regiment"
+		type = infantry
+		home = 1852
+	}
+	regiment = {
+		name= "4th Regiment"
+		type = infantry
+		home = 1856
+	}
+	regiment = {
+		name= "3rd Battery Royal Artillery"
+		type = artillery
+		home = 1856
+		}
+	regiment = {
+		name= "4th Battery Royal Artillery"
+		type = artillery
+		home = 1857
+	}
+}
+army = {
+	name = "II Corps"
+	location = 1862
+	regiment = {
+		name= "5th Regiment"
+		type = infantry
+		home = 1862
+	}
+	regiment = {
+		name= "6th Regiment"
+		type = infantry
+		home = 1862
+	}
+	regiment = {
+		name= "5th Battery Royal Artillery"
+		type = artillery
+		home = 1862
+	}
+	regiment = {
+		name= "6th Battery Royal Artillery"
+		type = artillery
+		home = 1862
+	}
+	regiment = {
+		name= "2nd Hussar"
+		type = hussar
+		home = 1862
+	}
+	regiment = {
+		name= "7th Regiment"
+		type = infantry
+		home = 1862
+	}
+	regiment = {
+		name= "8th Regiment"
+		type = infantry
+		home = 182
+	}
+	regiment = {
+		name= "7th Battery Royal Artillery"
+		type = artillery
+		home = 1863
+		}
+	regiment = {
+		name= "8th Battery Royal Artillery"
+		type = artillery
+		home = 1861
+	}
+}
+army = {
+	name = "III Corps"
+	location = 1859
+	regiment = {
+		name= "9th Regiment"
+		type = infantry
+		home = 1859
+	}
+	regiment = {
+		name= "10th Regiment"
+		type = infantry
+		home = 1859
+	}
+	regiment = {
+		name= "9th Battery Royal Artillery"
+		type = artillery
+		home = 1859
+	}
+	regiment = {
+		name= "10th Battery Royal Artillery"
+		type = artillery
+		home = 1859
+	}
+	regiment = {
+		name= "3rd Hussar"
+		type = hussar
+		home = 1859
+	}
+	regiment = {
+		name= "11th Regiment"
+		type = infantry
+		home = 1859
+	}
+	regiment = {
+		name= "12th Regiment"
+		type = infantry
+		home = 1859
+	}
+	regiment = {
+		name= "11th Battery Royal Artillery"
+		type = artillery
+		home = 1859
+	}
+	regiment = {
+		name= "12th Battery Royal Artillery"
+		type = artillery
+		home = 1859
+	}
+}

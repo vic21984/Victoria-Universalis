@@ -1,0 +1,49 @@
+carrier = {
+	icon = 22
+	naval_icon = 11
+	
+	type = naval
+	sprite = Carrier
+	unit_type = big_ship
+	capital = yes
+	active = no
+	move_sound = steam_move
+	select_sound = steam_selected
+	floating_flag = yes
+	colonial_points = 15
+	
+	#Core Abilities
+	priority = 60
+	max_strength = 150
+	default_organisation = 200
+	maximum_speed = 9
+	weighted_value = 100.0
+
+
+	#Building Costs
+	build_time = 1260
+	build_cost = {
+		steamer_convoy = 2000	#130000
+		canned_food = 500		#4000
+		radio = 200				#3200
+		aeroplanes = 1000		#110000
+		steel = 4000			#20000
+	}							#267200
+	min_port_level = 7
+	limit_per_port = -1
+	supply_consumption_score = 1
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		steamer_convoy = 3		#195
+		radio = 1				#16
+		fuel = 2				#50
+		aeroplanes = 2			#220
+	}							#481
+	
+	#Naval Abilties
+	hull = 30
+	gun_power = 35
+	fire_range = 1
+	evasion = 0
+}

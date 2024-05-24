@@ -1,0 +1,1922 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+leader = {
+	name = "Archduke Karl Franz Joseph"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Archduke Joseph August"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Archduke Eugen Ferdinand"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Archduke Joseph Ferdinand"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Franz Conrad von Hötzendorf"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a2d_1
+}
+leader = {
+	name = "Arthur Arz von Straußenburg"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a3d_1
+}
+leader = {
+	name = "Franz Rohr von Denta"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Alfred Krauss"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Artur von Mecenseffy"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Alfred Kochanovsky von Korwinau"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Hermann Sallagar"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Rudolf von Brudermann"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Karl von Kirchbach auf Lauterbach"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Karl Køitek"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Adolf von Boog"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Theodor Konopicky"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Moritz von Auffenberg"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Karl Graf von Kirchbach"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Liborius Ritter von Frank"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Oskar Potiorek"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Alois Schönburg-Hartenstein"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Karl Kritek"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Karl Scotti"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Viktor Graf von Scheuchenstuel"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Hermann Kusmanek von Burgneustädten"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Alfred von Waldstätten"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Hans von Seeckt"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Karol Durski-Trzaska"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a2d_1
+}
+leader = {
+	name = "Stanislaw Puchalski"
+	type = land
+	date = 1914.1.1
+	personality = org05mor10
+	background = 3a3d_1
+}
+leader = {
+	name = "Miklós Horthy"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 4a2d_1
+}
+leader = {
+	name = "Maximilian Njegovan"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+leader = {
+	name = "Anton Haus"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+leader = {
+	name = "Paul Pachner"
+	type = sea
+	date = 1914.1.1
+	personality = org05mor10
+	background = 1a1d_1
+}
+
+navy = {
+	name = "First Battle Squadron"
+	location = 770
+
+	ship = {
+		name= "SMS Viribus Unitis"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "SMS Tegetthoff"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "SMS Prinz Eugen"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "SMS Szent István"
+		type = dreadnought
+	}
+
+	ship = {
+		name= "SMS Habsburg"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Árpád"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Babenberg"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Erzherzog Karl"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Erzherzog Friedrich"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Erzherzog Ferdinand Max"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Erzherzog Franz Ferdinand"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Radetzky"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Zrínyi"
+		type = battleship
+	}
+
+	ship = {
+		name= "SMS Zara"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Spalato"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Sebenico"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Lussin"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Panther"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Leopard"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Tiger"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Kaiser Franz Joseph I"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Kaiserin Elisabeth"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Zenta"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Aspern"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Szigetvár"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Kaiserin und Königin Maria Theresia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Kaiser Karl VI"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Sankt Georg"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Admiral Spaun"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Saida"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Helgoland"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SMS Novara"
+		type = cruiser
+	}
+
+	ship = {
+		name= "SM U-1"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-2"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-3"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-4"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-5"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-6"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-7"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-8"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-9"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-10"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-11"
+		type = monitor
+	}
+
+	ship = {
+		name= "SM U-12"
+		type = monitor
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 774
+
+	ship = {
+		name= "1st Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "5th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "11th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "12th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "13th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "14th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "15th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "16th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "17th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "18th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "19th Steam Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "20th Steam Transport"
+		type = steam_transport
+	}
+
+}
+
+army = {
+	name = "1. Korpskommando"
+	location = 703
+	leader = {
+		name = "Eduard von Böhm-Ermolli"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a1d_1
+	}
+	regiment = {
+		name= "9. Infanteriebrigade"
+		type = infantry
+		home = 703
+	}
+	regiment = {
+		name= "10. Infanteriebrigade"
+		type = infantry
+		home = 714
+	}
+	regiment = {
+		name= "23. Infanteriebrigade"
+		type = infantry
+		home = 714
+	}
+	regiment = {
+		name= "24. Infanteriebrigade"
+		type = infantry
+		home = 714
+	}
+	regiment = {
+		name= "10. Dragonerregiment"
+		type = dragoon
+		home = 704
+	}
+	regiment = {
+		name= "1. Feldkanonenregiment"
+		type = artillery
+		home = 704
+	}
+	regiment = {
+		name= "2. Feldkanonenregiment"
+		type = artillery
+		home = 736
+	}
+	regiment = {
+		name= "3. Feldkanonenregiment"
+		type = artillery
+		home = 663
+	}
+	regiment = {
+		name= "1. Feldhaubitzregiment"
+		type = artillery
+		home = 2584
+	}
+	regiment = {
+		name= "2. Festungsartillerieregiment"
+		type = artillery
+		home = 2584
+	}
+}
+army = {
+	name = "2. Korpskommando"
+	location = 619
+	leader = {
+		name = "Alfred Ritter von Ziegler"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "7. Infanteriebrigade"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name= "8. Infanteriebrigade"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name= "49. Infanteriebrigade"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name= "50. Infanteriebrigade"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name= "97. Infanteriebrigade"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name= "98. Infanteriebrigade"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name= "49. Infanteriebrigade"
+		type = infantry
+		home = 619
+	}
+	regiment = {
+		name= "50. Infanteriebrigade"
+		type = infantry
+		home = 656
+	}
+	regiment = {
+		name= "1. Husarenregiment"
+		type = hussar
+		home = 647
+	}
+	regiment = {
+		name= "11. Dragonerregiment"
+		type = dragoon
+		home = 647
+	}
+	regiment = {
+		name= "4. Feldkanonenregiment"
+		type = artillery
+		home = 631
+	}
+	regiment = {
+		name= "5. Feldkanonenregiment"
+		type = artillery
+		home = 631
+	}
+	regiment = {
+		name= "6. Feldkanonenregiment"
+		type = artillery
+		home = 631
+	}
+	regiment = {
+		name= "2. Feldhaubitzregiment"
+		type = artillery
+		home = 631
+	}
+	regiment = {
+		name= "13. Schützen Feldhaubitzregiment"
+		type = artillery
+		home = 618
+	}
+	regiment = {
+		name= "13. Schützen Feldhaubitzregiment"
+		type = artillery
+		home = 614
+	}
+	regiment = {
+		name= "2. Schwere Haubitzdivision"
+		type = artillery
+		home = 631
+	}
+	regiment = {
+		name= "2. Reitende Artilleriedivision"
+		type = artillery
+		home = 631
+	}
+	regiment = {
+		name= "1. Festungsartillerieregiment"
+		type = artillery
+		home = 688
+	}
+	regiment = {
+		name= "5. Pionierbataillone"
+		type = artillery
+		home = 614
+	}
+}
+army = {
+	name = "3. Korpskommando"
+	location = 616
+	leader = {
+		name = "Emil Colerus von Geldern"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a1d_1
+	}
+	regiment = {
+		name= "11. Infanteriebrigade"
+		type = infantry
+		home = 616
+	}
+	regiment = {
+		name= "12. Infanteriebrigade"
+		type = infantry
+		home = 952
+	}
+	regiment = {
+		name= "55. Infanteriebrigade"
+		type = infantry
+		home = 616
+	}
+	regiment = {
+		name= "56. Infanteriebrigade"
+		type = infantry
+		home = 616
+	}
+	regiment = {
+		name= "3. Schützenregiment"
+		type = infantry
+		home = 624
+	}
+	regiment = {
+		name= "26. Schützenregiment"
+		type = infantry
+		home = 631
+	}
+	regiment = {
+		name= "1. Gebirgsschützenregiment"
+		type = infantry
+		home = 953
+	}
+	regiment = {
+		name= "2. Gebirgsschützenregiment"
+		type = infantry
+		home = 656
+	}
+	regiment = {
+		name= "6. Husarenregiment"
+		type = hussar
+		home = 626
+	}
+	regiment = {
+		name= "16. Husarenregiment"
+		type = hussar
+		home = 626
+	}
+	regiment = {
+		name= "7. Feldkanonenregiment"
+		type = artillery
+		home = 624
+	}
+	regiment = {
+		name= "8. Feldkanonenregiment"
+		type = artillery
+		home = 620
+	}
+	regiment = {
+		name= "9. Feldkanonenregiment"
+		type = artillery
+		home = 618
+	}
+	regiment = {
+		name= "3. Feldhaubitzregiment"
+		type = artillery
+		home = 618
+	}
+	regiment = {
+		name= "3. Schwere Haubitzdivision"
+		type = artillery
+		home = 617
+	}
+	regiment = {
+		name= "4. Festungsartillerieregiment"
+		type = artillery
+		home = 618
+	}
+	regiment = {
+		name= "3. Festungsartilleriebataillon"
+		type = artillery
+		home = 636
+	}
+	regiment = {
+		name= "8. Festungsartilleriebataillon"
+		type = artillery
+		home = 950
+	}
+	regiment = {
+		name= "22. Schützen Feldhaubitzregiment"
+		type = artillery
+		home = 950
+	}
+	regiment = {
+		name= "22. Schützen Feldkanonenregiment"
+		type = artillery
+		home = 950
+	}
+}
+army = {
+	name = "4. Korpskommando"
+	location = 641
+	leader = {
+		name = "Karl Tersztyánszky von Nádas"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a1d_1
+	}
+	regiment = {
+		name= "61. Infanteriebrigade"
+		type = infantry
+		home = 641
+	}
+	regiment = {
+		name= "62. Infanteriebrigade"
+		type = infantry
+		home = 641
+	}
+	regiment = {
+		name= "63. Infanteriebrigade"
+		type = infantry
+		home = 641
+	}
+	regiment = {
+		name= "64. Infanteriebrigade"
+		type = infantry
+		home = 641
+	}
+	regiment = {
+		name= "8. Husarenregiment"
+		type = hussar
+		home = 626
+	}
+	regiment = {
+		name= "10. Feldkanonenregiment"
+		type = artillery
+		home = 641
+	}
+	regiment = {
+		name= "11. Feldkanonenregiment"
+		type = artillery
+		home = 646
+	}
+	regiment = {
+		name= "12. Feldkanonenregiment"
+		type = artillery
+		home = 646
+	}
+	regiment = {
+		name= "4. Feldhaubitzregiment"
+		type = artillery
+		home = 646
+	}
+	regiment = {
+		name= "4. Schwere Haubitzdivision"
+		type = artillery
+		home = 653
+	}
+}
+army = {
+	name = "5. Korpskommando"
+	location = 633
+	leader = {
+		name = "Paul Puhallo von Brlog"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a1d_1
+	}
+	regiment = {
+		name= "27. Infanteriebrigade"
+		type = infantry
+		home = 633
+	}
+	regiment = {
+		name= "28. Infanteriebrigade"
+		type = infantry
+		home = 633
+	}
+	regiment = {
+		name= "65. Infanteriebrigade"
+		type = infantry
+		home = 633
+	}
+	regiment = {
+		name= "66. Infanteriebrigade"
+		type = infantry
+		home = 633
+	}
+	regiment = {
+		name= "3. Husarenregiment"
+		type = hussar
+		home = 628
+	}
+	regiment = {
+		name= "13. Feldkanonenregiment"
+		type = artillery
+		home = 633
+	}
+	regiment = {
+		name= "14. Feldkanonenregiment"
+		type = artillery
+		home = 633
+	}
+	regiment = {
+		name= "15. Feldkanonenregiment"
+		type = artillery
+		home = 634
+	}
+	regiment = {
+		name= "5. Feldhaubitzregiment"
+		type = artillery
+		home = 634
+	}
+	regiment = {
+		name= "5. Schwere Haubitzdivision"
+		type = artillery
+		home = 636
+	}
+}
+army = {
+	name = "6. Korpskommando"
+	location = 637
+	leader = {
+		name = "Svetozar Boroevic"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 4a4d_1
+	}
+	regiment = {
+		name= "29. Infanteriebrigade"
+		type = infantry
+		home = 637
+	}
+	regiment = {
+		name= "30. Infanteriebrigade"
+		type = infantry
+		home = 637
+	}
+	regiment = {
+		name= "53. Infanteriebrigade"
+		type = infantry
+		home = 637
+	}
+	regiment = {
+		name= "54. Infanteriebrigade"
+		type = infantry
+		home = 637
+	}
+	regiment = {
+		name= "14. Husarenregiment"
+		type = hussar
+		home = 637
+	}
+	regiment = {
+		name= "16. Feldkanonenregiment"
+		type = artillery
+		home = 637
+	}
+	regiment = {
+		name= "17. Feldkanonenregiment"
+		type = artillery
+		home = 650
+	}
+	regiment = {
+		name= "18. Feldkanonenregiment"
+		type = artillery
+		home = 650
+	}
+	regiment = {
+		name= "6. Feldhaubitzregiment"
+		type = artillery
+		home = 648
+	}
+	regiment = {
+		name= "6. Schwere Haubitzdivision"
+		type = artillery
+		home = 647
+	}
+}
+army = {
+	name = "7. Korpskommando"
+	location = 652
+	leader = {
+		name = "Otto Meixner von Zweienstamm"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a1d_1
+	}
+	regiment = {
+		name= "33. Infanteriebrigade"
+		type = infantry
+		home = 652
+	}
+	regiment = {
+		name= "34. Infanteriebrigade"
+		type = infantry
+		home = 652
+	}
+	regiment = {
+		name= "67. Infanteriebrigade"
+		type = infantry
+		home = 652
+	}
+	regiment = {
+		name= "68. Infanteriebrigade"
+		type = infantry
+		home = 652
+	}
+	regiment = {
+		name= "7. Husarenregiment"
+		type = hussar
+		home = 629
+	}
+	regiment = {
+		name= "19. Feldkanonenregiment"
+		type = artillery
+		home = 652
+	}
+	regiment = {
+		name= "20. Feldkanonenregiment"
+		type = artillery
+		home = 652
+	}
+	regiment = {
+		name= "21. Feldkanonenregiment"
+		type = artillery
+		home = 653
+	}
+	regiment = {
+		name= "7. Feldhaubitzregiment"
+		type = artillery
+		home = 653
+	}
+	regiment = {
+		name= "7. Schwere Haubitzdivision"
+		type = artillery
+		home = 657
+	}
+}
+army = {
+	name = "8. Korpskommando"
+	location = 625
+	leader = {
+		name = "Artur Giesl von Gieslingen"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a1d_1
+	}
+	regiment = {
+		name= "17. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "18. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "37. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "38. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "13. Dragonerregiment"
+		type = dragoon
+		home = 625
+	}
+	regiment = {
+		name= "22. Feldkanonenregiment"
+		type = artillery
+		home = 625
+	}
+	regiment = {
+		name= "23. Feldkanonenregiment"
+		type = artillery
+		home = 630
+	}
+	regiment = {
+		name= "24. Feldkanonenregiment"
+		type = artillery
+		home = 630
+	}
+	regiment = {
+		name= "8. Feldhaubitzregiment"
+		type = artillery
+		home = 630
+	}
+	regiment = {
+		name= "8. Schwere Haubitzdivision"
+		type = artillery
+		home = 651
+	}
+}
+army = {
+	name = "9. Korpskommando"
+	location = 628
+	leader = {
+		name = "Lothar Edler von Hortstein"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "19. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "20. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "57. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "58. Infanteriebrigade"
+		type = infantry
+		home = 625
+	}
+	regiment = {
+		name= "1. Dragonerregiment"
+		type = hussar
+		home = 628
+	}
+	regiment = {
+		name= "25. Feldkanonenregiment"
+		type = artillery
+		home = 628
+	}
+	regiment = {
+		name= "26. Feldkanonenregiment"
+		type = artillery
+		home = 627
+	}
+	regiment = {
+		name= "27. Feldkanonenregiment"
+		type = artillery
+		home = 627
+	}
+	regiment = {
+		name= "9. Feldhaubitzregiment"
+		type = artillery
+		home = 613
+	}
+	regiment = {
+		name= "9. Schwere Haubitzdivision"
+		type = artillery
+		home = 768
+	}
+}
+army = {
+	name = "10. Korpskommando"
+	location = 705
+	leader = {
+		name = "Hugo Meixner von Zweienstamm"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "3. Infanteriebrigade"
+		type = infantry
+		home = 705
+	}
+	regiment = {
+		name= "4. Infanteriebrigade"
+		type = infantry
+		home = 705
+	}
+	regiment = {
+		name= "47. Infanteriebrigade"
+		type = infantry
+		home = 705
+	}
+	regiment = {
+		name= "48. Infanteriebrigade"
+		type = infantry
+		home = 648
+	}
+	regiment = {
+		name= "11. Husarenregiment"
+		type = hussar
+		home = 950
+	}
+	regiment = {
+		name= "28. Feldkanonenregiment"
+		type = artillery
+		home = 950
+	}
+	regiment = {
+		name= "29. Feldkanonenregiment"
+		type = artillery
+		home = 951
+	}
+	regiment = {
+		name= "30. Feldkanonenregiment"
+		type = artillery
+		home = 951
+	}
+	regiment = {
+		name= "10. Feldhaubitzregiment"
+		type = artillery
+		home = 951
+	}
+	regiment = {
+		name= "10. Schwere Haubitzdivision"
+		type = artillery
+		home = 635
+	}
+}
+army = {
+	name = "11. Korpskommando"
+	location = 702
+	leader = {
+		name = "Desiderius Kolossváry de Kolosvár"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a1d_1
+	}
+	regiment = {
+		name= "30. Infanterieregiment"
+		type = infantry
+		home = 702
+	}
+	regiment = {
+		name= "80. Infanterieregiment"
+		type = infantry
+		home = 702
+	}
+	regiment = {
+		name= "24. Feldjägerbataillone"
+		type = infantry
+		home = 702
+	}
+	regiment = {
+		name= "60. Feldjägerbataillone"
+		type = infantry
+		home = 702
+	}
+	regiment = {
+		name= "19. Schützenregiment"
+		type = infantry
+		home = 950
+	}
+	regiment = {
+		name= "35. Schützenregiment"
+		type = infantry
+		home = 702
+	}
+	regiment = {
+		name= "19. Landsturmregiment"
+		type = infantry
+		home = 651
+	}
+	regiment = {
+		name= "35. Landsturmregiment"
+		type = infantry
+		home = 651
+	}
+	regiment = {
+		name= "9. Dragonerregiment"
+		type = dragoon
+		home = 950
+	}
+	regiment = {
+		name= "15. Dragonerregiment"
+		type = dragoon
+		home = 651
+	}
+	regiment = {
+		name= "31. Feldkanonenbatterie"
+		type = artillery
+		home = 950
+	}
+	regiment = {
+		name= "32. Feldkanonenbatterie"
+		type = artillery
+		home = 952
+	}
+	regiment = {
+		name= "33. Feldkanonenbatterie"
+		type = artillery
+		home = 952
+	}
+	regiment = {
+		name= "11. Feldhaubitzregiment"
+		type = artillery
+		home = 952
+	}
+	regiment = {
+		name= "11. Schwere Haubitzdivision"
+		type = artillery
+		home = 640
+	}
+	regiment = {
+		name= "11. Reitende Artilleriedivision"
+		type = artillery
+		home = 952
+	}
+	regiment = {
+		name= "32. Schützen Feldkanonenregiment"
+		type = artillery
+		home = 639
+	}
+	regiment = {
+		name= "11. Schützen Feldhaubitzregiment"
+		type = artillery
+		home = 614
+	}
+	regiment = {
+		name= "32. Landsturm Artilleriebatterie"
+		type = artillery
+		home = 633
+	}
+	regiment = {
+		name= "10. Pionierbataillone"
+		type = artillery
+		home = 792
+	}
+}
+army = {
+	name = "12. Korpskommando"
+	location = 657
+	leader = {
+		name = "Hermann Kövess von Kövessháza"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 4a2d_1
+	}
+	regiment = {
+		name= "31. Infanteriebrigade"
+		type = infantry
+		home = 657
+	}
+	regiment = {
+		name= "32. Infanteriebrigade"
+		type = infantry
+		home = 659
+	}
+	regiment = {
+		name= "69. Infanteriebrigade"
+		type = infantry
+		home = 660
+	}
+	regiment = {
+		name= "70. Infanteriebrigade"
+		type = infantry
+		home = 660
+	}
+	regiment = {
+		name= "2. Husarenregiment"
+		type = hussar
+		home = 2533
+	}
+	regiment = {
+		name= "34. Feldkanonenregiment"
+		type = artillery
+		home = 2533
+	}
+	regiment = {
+		name= "35. Feldkanonenregiment"
+		type = artillery
+		home = 654
+	}
+	regiment = {
+		name= "36. Feldkanonenregiment"
+		type = artillery
+		home = 655
+	}
+	regiment = {
+		name= "12. Feldhaubitzregiment"
+		type = artillery
+		home = 655
+	}
+	regiment = {
+		name= "12. Schwere Haubitzdivision"
+		type = artillery
+		home = 644
+	}
+}
+army = {
+	name = "13. Korpskommando"
+	location = 771
+	leader = {
+		name = "Adolf Freiherr von Rhemen"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "13. Infanteriebrigade"
+		type = infantry
+		home = 771
+	}
+	regiment = {
+		name= "14. Infanteriebrigade"
+		type = infantry
+		home = 771
+	}
+	regiment = {
+		name= "71. Infanteriebrigade"
+		type = infantry
+		home = 771
+	}
+	regiment = {
+		name= "72. Infanteriebrigade"
+		type = infantry
+		home = 775
+	}
+	regiment = {
+		name= "9. Husarenregiment"
+		type = hussar
+		home = 773
+	}
+	regiment = {
+		name= "37. Feldkanonenregiment"
+		type = artillery
+		home = 767
+	}
+	regiment = {
+		name= "38. Feldkanonenregiment"
+		type = artillery
+		home = 767
+	}
+	regiment = {
+		name= "39. Feldkanonenregiment"
+		type = artillery
+		home = 768
+	}
+	regiment = {
+		name= "13. Feldhaubitzregiment"
+		type = artillery
+		home = 773
+	}
+	regiment = {
+		name= "13. Schwere Haubitzdivision"
+		type = artillery
+		home = 644
+	}
+}
+army = {
+	name = "14. Korpskommando"
+	location = 612
+	leader = {
+		name = "Viktor Dankl von Krasnik"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 3a3d_1
+	}
+	regiment = {
+		name= "88. Tiroler Kaiserjägerbrigade"
+		type = infantry
+		home = 734
+	}
+	regiment = {
+		name= "5. Infanteriebrigade"
+		type = infantry
+		home = 642
+	}
+	regiment = {
+		name= "15. Infanteriebrigade"
+		type = infantry
+		home = 639
+	}
+	regiment = {
+		name= "16. Infanteriebrigade"
+		type = infantry
+		home = 2684
+	}
+	regiment = {
+		name= "96. Infanteriebrigade"
+		type = infantry
+		home = 639
+	}
+	regiment = {
+		name= "121. Infanteriebrigade"
+		type = infantry
+		home = 639
+	}
+	regiment = {
+		name= "87. Infanteriebrigade"
+		type = infantry
+		home = 2684
+	}
+	regiment = {
+		name= "122. Infanteriebrigade"
+		type = infantry
+		home = 652
+	}
+	regiment = {
+		name= "6. Dragonerregiment"
+		type = dragoon
+		home = 735
+	}
+	regiment = {
+		name= "6. Schützen Dragonerregiment"
+		type = dragoon
+		home = 617
+	}
+	regiment = {
+		name= "40. Feldkanonenregiment"
+		type = artillery
+		home = 622
+	}
+	regiment = {
+		name= "44. Schützen Feldkanonenregiment"
+		type = artillery
+		home = 638
+	}
+	regiment = {
+		name= "41. Feldkanonenregiment"
+		type = artillery
+		home = 622
+	}
+	regiment = {
+		name= "42. Feldkanonenregiment"
+		type = artillery
+		home = 622
+	}
+	regiment = {
+		name= "14. Feldhaubitzregiment"
+		type = artillery
+		home = 622
+	}
+	regiment = {
+		name= "14. Schwere Haubitzdivision"
+		type = artillery
+		home = 639
+	}
+	regiment = {
+		name= "8. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 629
+	}
+	regiment = {
+		name= "14. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 629
+	}
+	regiment = {
+		name= "10. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 642
+	}
+	regiment = {
+		name= "3. Festungsartilleriebrigade"
+		type = artillery
+		home = 623
+	}
+}
+army = {
+	name = "15. Korpskommando"
+	location = 783
+	leader = {
+		name = "Michael Edler von Appel"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 3a3d_1
+	}
+	regiment = {
+		name= "7. Gebirgsbrigade"
+		type = guard
+		home = 783
+	}
+	regiment = {
+		name= "8. Gebirgsbrigade"
+		type = guard
+		home = 629
+	}
+	regiment = {
+		name= "9. Gebirgsbrigade"
+		type = guard
+		home = 786
+	}
+	regiment = {
+		name= "10. Gebirgsbrigade"
+		type = guard
+		home = 791
+	}
+	regiment = {
+		name= "11. Gebirgsbrigade"
+		type = guard
+		home = 2538
+	}
+	regiment = {
+		name= "6. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 2538
+	}
+	regiment = {
+		name= "10. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 787
+	}
+	regiment = {
+		name= "11. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 788
+	}
+	regiment = {
+		name= "12. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 785
+	}
+	regiment = {
+		name= "5. Festungsartilleriebrigade"
+		type = artillery
+		home = 647
+	}
+}
+army = {
+	name = "16. Korpskommando"
+	location = 780
+	leader = {
+		name = "Blasius Schemua"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 1a2d_1
+	}
+	regiment = {
+		name= "1. Gebirgsbrigade"
+		type = guard
+		home = 780
+	}
+	regiment = {
+		name= "2. Gebirgsbrigade"
+		type = guard
+		home = 781
+	}
+	regiment = {
+		name= "3. Gebirgsbrigade"
+		type = guard
+		home = 770
+	}
+	regiment = {
+		name= "4. Gebirgsbrigade"
+		type = guard
+		home = 645
+	}
+	regiment = {
+		name= "5. Gebirgsbrigade"
+		type = guard
+		home = 649
+	}
+	regiment = {
+		name= "4. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 649
+	}
+	regiment = {
+		name= "5. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 649
+	}
+	regiment = {
+		name= "7. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 773
+	}
+	regiment = {
+		name= "13. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 773
+	}
+	regiment = {
+		name= "5. Gebirgskanonendivision"
+		type = artillery
+		home = 643
+	}
+}
+army = {
+	name = "17. Korpskommando"
+	location = 737
+	leader = {
+		name = "Karl Graf Huyn"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a1d_1
+	}
+	regiment = {
+		name= "37. Infanteriebrigade"
+		type = infantry
+		home = 953
+	}
+	regiment = {
+		name= "38. Infanteriebrigade"
+		type = infantry
+		home = 714
+	}
+	regiment = {
+		name= "2. Marschbrigade"
+		type = infantry
+		home = 643
+	}
+	regiment = {
+		name= "9. Marschbrigade"
+		type = infantry
+		home = 663
+	}
+	regiment = {
+		name= "14. Reserveschwadron Dragonerregiment"
+		type = dragoon
+		home = 642
+	}
+	regiment = {
+		name= "19. Feldartilleriebrigade"
+		type = artillery
+		home = 662
+	}
+	regiment = {
+		name= "22. Feldkanonenregiment"
+		type = artillery
+		home = 952
+	}
+	regiment = {
+		name= "8. Feldhaubitzregiment"
+		type = artillery
+		home = 952
+	}
+	regiment = {
+		name= "8. Sappeurbataillone"
+		type = artillery
+		home = 734
+	}
+	regiment = {
+		name= "9. Pionierbataillone"
+		type = artillery
+		home = 789
+	}
+}
+army = {
+	name = "Armeegruppe Kummer"
+	location = 952
+	leader = {
+		name = "Heinrich von Kummer"
+		type = land
+		date = 1914.1.1
+		personality = org05mor10
+		background = 2a2d_1
+	}
+	regiment = {
+		name= "6. Landsturm Infanterieregiment"
+		type = infantry
+		home = 653
+	}
+	regiment = {
+		name= "8. Landsturm Infanterieregiment"
+		type = infantry
+		home = 644
+	}
+	regiment = {
+		name= "28. Landsturm Infanterieregiment"
+		type = infantry
+		home = 644
+	}
+	regiment = {
+		name= "29. Landsturm Infanterieregiment"
+		type = infantry
+		home = 624
+	}
+	regiment = {
+		name= "13. Landsturm Infanterieregiment"
+		type = infantry
+		home = 2533
+	}
+	regiment = {
+		name= "15. Landsturm Infanterieregiment"
+		type = infantry
+		home = 650
+	}
+	regiment = {
+		name= "31. Landsturm Infanterieregiment"
+		type = infantry
+		home = 657
+	}
+	regiment = {
+		name= "25. Landsturm Infanterieregiment"
+		type = infantry
+		home = 661
+	}
+	regiment = {
+		name= "10. Reserveschwadron Dragonerregiment"
+		type = dragoon
+		home = 661
+	}
+	regiment = {
+		name= "5. Reserveschwadron Husarenregiment"
+		type = dragoon
+		home = 951
+	}
+	regiment = {
+		name= "1. Reitende Artilleriedivisionen"
+		type = artillery
+		home = 704
+	}
+	regiment = {
+		name= "3. Gebirgsartillerieregiment"
+		type = artillery
+		home = 689
+	}
+	regiment = {
+		name= "4. Gebirgsartillerieregiment"
+		type = artillery
+		home = 952
+	}
+	regiment = {
+		name= "9. Gebirgsartilleriebrigade"
+		type = artillery
+		home = 768
+	}
+	regiment = {
+		name= "95. Feldkanonenregiment"
+		type = artillery
+		home = 770
+	}
+	regiment = {
+		name= "106. Feldkanonenregiment"
+		type = artillery
+		home = 769
+	}
+	regiment = {
+		name= "100. Feldkanonenregiment"
+		type = artillery
+		home = 737
+	}
+	regiment = {
+		name= "22. Reserveschwadron Artilleriebatterie"
+		type = artillery
+		home = 2684
+	}
+	regiment = {
+		name= "39. Reserveschwadron Artilleriebatterie"
+		type = artillery
+		home = 772
+	}
+	regiment = {
+		name= "13. Reserveschwadron Artilleriebatterie"
+		type = artillery
+		home = 779
+	}
+}

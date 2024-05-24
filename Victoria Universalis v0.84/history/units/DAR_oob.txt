@@ -1,0 +1,25 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+army = {
+	name = "Army of Darfur"
+	location = 1841
+	regiment = {
+		name= "Fur Warriors"
+		type = irregular
+		home = 1841
+	}
+
+	regiment = {
+		name= "Fur Warriors"
+		type = irregular
+		home = 1842
+	}
+}

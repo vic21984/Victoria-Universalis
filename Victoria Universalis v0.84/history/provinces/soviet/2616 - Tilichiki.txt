@@ -1,0 +1,22 @@
+owner = KND
+controller = KND
+add_core = AFG
+add_core = KND
+trade_goods = opium
+life_rating = 35
+1836.1.2 = {
+	owner = AFG
+	controller = AFG
+}
+1913.1.1 = {
+	owner = AFG
+	controller = AFG
+	colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+}

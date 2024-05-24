@@ -1,0 +1,47 @@
+###########################################################################
+#Colonial Uprisings
+# 
+#14500 - 14990
+#
+###########################################################################
+
+
+#Colonial Recruitment
+#country_event = {
+#	id = 14680
+#	title = "EVTNAME14680"
+#	desc = "EVTDESC14680"
+#	picture = "emigration"
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA14680"
+#		random_state = {
+#			limit = {
+#				is_colonial = yes
+#			}
+#			any_owned = {
+#				add_province_modifier = {
+#					name = colonial_recruitment
+#					duration = 7300
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = "EVTOPTB14680"
+#		random_state = {
+#			limit = {
+#				is_colonial = no
+#			}
+#			any_owned = {
+#				add_province_modifier = {
+#					name = baby_boom
+#					duration = 1825
+#				}
+#			}
+#		}
+#	}
+#}

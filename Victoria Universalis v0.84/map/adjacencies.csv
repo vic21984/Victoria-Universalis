@@ -1,0 +1,1725 @@
+#From;To;Type;Through;Data;Comment
+#
+# American Straits
+#
+62;75;sea;2946;0;Straits of Belle Isle
+68;70;sea;2944;0;Cabot Strait
+2237;2269;sea;2975;0;Strait of Trinidad
+2334;2335;sea;2992;0;Strait of Magellan
+2204;2206;sea;3001;0;Panama strait
+2212;2215;sea;2969;0;#Santiago de Cuba to Cap Haitien
+2214;2222;sea;2974;0;#Santo Domingo to Puerto Rico
+2229;2231;sea;2975;0;#Barbados to Saint Lucia
+2231;2228;sea;2976;0;#Saint Lucia to Martinique
+2228;2232;sea;2976;0;#Martinique to Dominica
+2232;2230;sea;2976;0;#Dominica to Guadeloupe
+2230;2228;sea;2976;0;#Guadeloupe To Martinique
+2226;2227;sea;2976;0;#Tortola to Saint Kitts
+2227;2236;sea;2976;0;#Saint Kitts to Saint Martin
+2226;2236;sea;2976;0;#Tortola to Saint Martin
+2226;2223;sea;2976;0;#Tortola to Saint Thomas
+2223;2236;sea;2976;0;#Saint Thomas to Saint Martin
+2222;2226;sea;2976;0;#Puerto Rico to Tortola
+2222;2223;sea;2976;0;#Puerto Rico to Saint Thomas
+2237;2276;sea;2975;0;#Trinidad to Curiapo
+2619;2297;sea;2998;0;#Chincha Islands to Ica
+
+#
+# African Straits
+#
+2036;2048;sea;2901;0;#Zanzibar Strait
+2136;1696;sea;2924;0;#Canary Islands to Tarfaya
+2063;2123;sea;2902;0;#Ibo to Comoros
+2126;2119;sea;2907;0;#Bourbon to Toamasina
+2125;2126;sea;2908;0;#Toamasina to Mauritus
+1177;1175;sea;2784;0;#Socotra to Ghayda
+1954;1955;sea;2918;0;#Sao Tome to Fernando Po
+1955;1957;sea;2918;0;#Fernando Po to Buea
+24;1875;sea;2782;0;#Lahej to Djibuti
+
+#
+# European Straits  
+#
+254;271;sea;2737;0;Irish Strait
+324;348;sea;2706;0;Aland Strait #Uppsala to Aland #these were in V1
+#334;372;sea;2711;0;Öresund
+335;374;sea;2710;0;Bornholmsfärjan
+348;345;sea;2706;0;Aland Strait #Aland to Turku 
+353;349;sea;2709;0;Öselsund
+353;358;sea;2709;0;Strait of Riga
+372;334;sea;2711;0;#Copenhagen to Malmo
+372;373;sea;2711;0;#Copenhagen to Odense
+2557;373;sea;2711;0;#Esbjerg to Odense
+375;385;sea;2722;0;Bay of Holland
+418;419;sea;2725;0;Channel Islands Strait
+267;368;sea;2735;0;#Inverness to Orkey Islands
+473;766;sea;2758;0;Sassari Strait
+826;824;sea;2764;0;Corfu Strait
+838;845;sea;2772;0;Cyclades Strait
+843;846;sea;2771;0;Chios Strait
+846;872;sea;2771;0;Mugla Strait
+843;869;sea;2772;0;Izmir Strait
+859;865;sea;2773;0;Dardanelles Strait
+860;861;sea;2773;0;Golden Horn
+759;763;sea;2760;0;Strait of Messina
+834;838;sea;2772;0;Khalkis Strait
+835;838;sea;2772;0;Khalkis Strait
+837;827;sea;2765;0;Ionian Islands Strait
+966;1049;sea;2776;0;Strait of Azov
+1687;512;sea;2746;0;Strait of Gibraltar
+#502;498;sea;2752;0;Balearic Islands to Barcelona
+
+###AI English Channel Crossing###
+2666;400;sea;2724;0;Canterbury to Dunkirk
+2666;2701;sea;2724;0;Canterbury to Hong Kong Island
+2666;1297;sea;2724;0;Canterbury to Bombay
+
+
+#
+# Asian Straits
+#
+1083;1086;sea;2832;0;Tatar Straits
+1084;1086;sea;2832;0;Tatar Straits
+#1087;1643;sea;2831;0;La Perouse Strait#removed
+#1087;1643;sea;2839;0;La Perouse Strait#removed
+1089;1088;sea;2839;0;Soya Straits
+1089;1644;sea;2839;0;Soya Straits
+1162;1165;sea;2788;0;Bahrain Strait
+1310;1322;sea;2794;0;Palk Strait #Ceylon-S India
+1403;1413;sea;2805;0;Sunda Strait
+#1412;1851;sea;2782;0;Aden Strait
+1412;1875;sea;2782;0;Aden Strait
+1418;1421;sea;2811;0;Strait of Madura
+1420;1438;sea;2811;0;Bali Strait
+1438;1442;sea;2811;0;Lombok Strait
+1442;1440;sea;2811;0;Sumbawa Strait
+1495;1499;sea;2823;0;Hainan Strait
+1457;1461;sea;2849;0;Tacloban Strait
+#Japan
+2218;1660;sea;2829;0;#Tsushima to Fukuoka
+1640;1660;sea;2965;0;#Yamaguchi to Fukuoka
+1638;1666;sea;2965;0;#Hiroshima to Matsuyama
+2224;1666;sea;2965;0;#Oita to Matsuyama
+1667;1659;sea;2965;0;#Tokushima to Kobe
+1642;1672;sea;2841;0;#Hakodate to Aomori
+#Korea
+2218;1632;sea;2829;0;#Tsushima to Fukuoka
+1635;1637;sea;2829;0;Korean Sea Strait #Kwangju to Cheju
+#China
+1496;2701;sea;2824;0;Guangzhou Bay #Hong Kong to Hong Kong Island
+#Philippines
+1455;1458;sea;2848;0;Isla Verde passages #Manila to Mindoro
+1458;1459;sea;2848;0;Mindoro Bay #Mindoro to Palawan
+1461;2565;sea;2850;0;Cebu Strait #Tacloban to Cebu
+1461;1463;sea;2850;0;Surigao Strait #Tacloban to Davao
+2565;1460;sea;2850;0;Tanon Strait #Cebu to Iloilo
+1462;1464;sea;2851;0;Sulu Sea #Zamboanga to Sulu
+1464;1397;sea;2851;0;Sulu Sea #Jolo to Sandakan
+#Indonesia
+1434;1447;sea;2852;0;#Luwuk to Ternate
+1436;1437;sea;2810;0;#Kendari to Bulon
+1447;1448;sea;2853;0;#Ternate to Jilolo
+1447;1449;sea;2853;0;#Ternate to Ambon
+1449;1450;sea;2853;0;#Ambon to Ceram
+1450;1453;sea;2853;0;#Ceram to Sorong
+1453;1451;sea;2862;0;#Sorong to Aru
+1451;1446;sea;2854;0;#Aru to Dili
+1444;1446;sea;2809;0;#Alor to Dili
+1441;1439;sea;2809;0;#Sumba to Flores
+1439;1440;sea;2811;0;#Flores to Sumbawa
+1399;1404;sea;2813;0;#Palembang to Palak Pinang
+1411;1408;sea;2803;0;#Gunungsitoli to Padang
+1400;1402;sea;2814;0;#Inderagiri to Tanjungpinang
+1402;1384;sea;2814;0;#Tanjungpinang to Singapore
+1404;1427;sea;2813;0;#Palak Pinang to Kota Waringin
+2576;1385;sea;2814;0;#Natuna to Johor Bahru
+2576;2629;sea;2816;0;#Natuna to Sambas
+1424;1432;sea;2812;0;#Pasir to Mamuju
+
+#
+# Oceanian Straits
+#
+2512;2516;sea;2876;0;Cook Strait #NZ
+2512;2516;sea;2881;0;Cook Strait #NZ
+2537;1531;sea;2858;0;Villan Strait #New Britain to New Ireland
+2530;2537;sea;2858;0;#Lae to New Britain
+2531;2539;sea;2858;0;#New Britain to Bougainville
+2539;2534;sea;2859;0;#Bougainville to Solomon Islands
+2534;2536;sea;2884;0;#Solomon Islands to Santa Cruz Islands
+2536;2535;sea;2884;0;#Santa Cruz Islands to New Hebrides
+2535;1097;sea;2882;0;#New Hebrides to New Caledonia
+
+#
+# Impassables
+#
+1326;1589;impassable;0;0;scary mountain
+1326;1592;impassable;0;0;scary mountain
+1328;1589;impassable;0;0;scary mountain
+1329;1589;impassable;0;0;scary mountain
+1329;1590;impassable;0;0;scary mountain
+1329;1590;impassable;0;0;scary mountain
+1329;1593;impassable;0;0;scary mountain
+1258;1593;impassable;0;0;scary mountain
+1260;1593;impassable;0;0;scary mountain
+1259;1593;impassable;0;0;scary mountain
+1238;1592;impassable;0;0;scary mountain
+1244;1592;impassable;0;0;scary mountain
+1235;1592;impassable;0;0;scary mountain
+1226;1592;impassable;0;0;scary mountain
+1327;1592;impassable;0;0;scary mountain
+1328;1592;impassable;0;0;scary mountain
+1225;1594;impassable;0;0;scary mountain
+1226;1594;impassable;0;0;scary mountain
+1123;2779;impassable;0;0;scary mountain
+1072;2779;impassable;0;0;scary mountain
+1122;2779;impassable;0;0;scary mountain
+1128;2779;impassable;0;0;scary mountain
+1120;2779;impassable;0;0;scary mountain
+1118;2779;impassable;0;0;scary mountain
+1117;2779;impassable;0;0;scary mountain
+1119;2779;impassable;0;0;scary mountain
+1140;2779;impassable;0;0;scary mountain
+1150;2779;impassable;0;0;scary mountain
+###South African Adjacencies required for Great Trek Migration###	
+2087;2106;impassable;0;0;Cape Town to Witwatersand
+2087;2102;impassable;0;0;Cape Town to Vrystaat
+###Ottoman Name Placement###
+862;860;impassable;0;0;Izmit to Istanbul
+###Ghostland###
+2927;2133;impassable;0;0;Spitzberg Sea to Ghost Harbor
+
+#
+# The canals  
+#
+2711;2721;canal;369;1;Kiel Canal
+2781;2769;canal;1755;2;Suez Canal
+2968;3001;canal;1723;3;Panama Canal
+2772;2773;canal;859;4;Bosphorus Canal
+2773;2774;canal;860;4;Bosphorus Canal
+2711;2710;canal;372;5;Copenhagen Canal
+2746;2747;canal;517;6;Gibraltar Canal
+2746;2925;canal;517;6;Gibraltar Canal
+2760;2757;canal;763;7;Sicily Canal
+2760;2765;canal;763;7;Sicily Canal
+2777;2776;canal;966;8;Azov Canal
+2758;2753;canal;766;9;Strait of Bonifacio
+2758;2756;canal;766;9;Strait of Bonifacio
+2965;2829;canal;1640;10;Seto Inland Sea
+2965;2843;canal;1666;10;Seto Inland Sea
+2965;2843;canal;1667;10;Seto Inland Sea
+
+#
+# Sea to Land
+#
+2705;318;sea;0;0;#Gulf of Bothnia
+2705;320;sea;0;0;#Gulf of Bothnia
+2705;321;sea;0;0;#Gulf of Bothnia
+2705;336;sea;0;0;#Gulf of Bothnia
+2705;338;sea;0;0;#Gulf of Bothnia
+2705;346;sea;0;0;#Gulf of Bothnia
+2706;317;sea;0;0;#Alands Hav
+2706;318;sea;0;0;#Alands Hav
+2706;324;sea;0;0;#Alands Hav
+2706;345;sea;0;0;#Alands Hav
+2706;348;sea;0;0;#Alands Hav
+2707;339;sea;0;0;#Gulf of Finland
+2707;340;sea;0;0;#Gulf of Finland
+2707;343;sea;0;0;#Gulf of Finland
+2707;349;sea;0;0;#Gulf of Finland
+2707;350;sea;0;0;#Gulf of Finland
+2707;353;sea;0;0;#Gulf of Finland
+2707;994;sea;0;0;#Gulf of Finland
+2707;996;sea;0;0;#Gulf of Finland
+2707;997;sea;0;0;#Gulf of Finland
+2707;349;sea;0;0;#Gulf of Finland
+2707;350;sea;0;0;#Gulf of Finland
+2708;322;sea;0;0;#Western Baltic Sea
+2708;325;sea;0;0;#Western Baltic Sea
+2708;326;sea;0;0;#Western Baltic Sea
+2708;331;sea;0;0;#Western Baltic Sea
+2708;353;sea;0;0;#Western Baltic Sea
+2709;331;sea;0;0;#Gulf of Riga
+2709;349;sea;0;0;#Gulf of Riga
+2709;351;sea;0;0;#Gulf of Riga
+2709;353;sea;0;0;#Gulf of Riga
+2709;354;sea;0;0;#Gulf of Riga
+2709;355;sea;0;0;#Gulf of Riga
+2709;357;sea;0;0;#Gulf of Riga
+2709;358;sea;0;0;#Gulf of Riga
+2709;359;sea;0;0;#Gulf of Riga
+2710;331;sea;0;0;#Southern Baltic Sea
+2710;332;sea;0;0;#Southern Baltic Sea
+2710;334;sea;0;0;#Southern Baltic Sea
+2710;335;sea;0;0;#Southern Baltic Sea
+2710;359;sea;0;0;#Southern Baltic Sea
+2710;365;sea;0;0;#Southern Baltic Sea
+2710;372;sea;0;0;#Southern Baltic Sea
+2710;374;sea;0;0;#Southern Baltic Sea
+2710;546;sea;0;0;#Southern Baltic Sea
+2710;547;sea;0;0;#Southern Baltic Sea
+2710;548;sea;0;0;#Southern Baltic Sea
+2710;679;sea;0;0;#Southern Baltic Sea
+2710;680;sea;0;0;#Southern Baltic Sea
+2710;690;sea;0;0;#Southern Baltic Sea
+2710;691;sea;0;0;#Southern Baltic Sea
+2710;693;sea;0;0;#Southern Baltic Sea
+2710;695;sea;0;0;#Southern Baltic Sea
+2710;698;sea;0;0;#Southern Baltic Sea
+2711;329;sea;0;0;#Oresund
+2711;334;sea;0;0;#Oresund
+2711;366;sea;0;0;#Oresund
+2711;367;sea;0;0;#Oresund
+2711;369;sea;0;0;#Oresund
+2711;370;sea;0;0;#Oresund
+2711;371;sea;0;0;#Oresund
+2711;372;sea;0;0;#Oresund
+2711;373;sea;0;0;#Oresund
+2711;530;sea;0;0;#Oresund
+2711;544;sea;0;0;#Oresund
+2711;2557;sea;0;0;#Oresund
+2712;310;sea;0;0;#Kattegat
+2712;311;sea;0;0;#Kattegat
+2712;312;sea;0;0;#Kattegat
+2712;313;sea;0;0;#Kattegat
+2712;316;sea;0;0;#Kattegat
+2712;329;sea;0;0;#Kattegat
+2712;367;sea;0;0;#Kattegat
+2716;307;sea;0;0;#White Sea
+2716;981;sea;0;0;#White Sea
+2716;982;sea;0;0;#White Sea
+2716;983;sea;0;0;#White Sea
+2716;984;sea;0;0;#White Sea
+2716;985;sea;0;0;#White Sea
+2716;986;sea;0;0;#White Sea
+2716;2587;sea;0;0;#White Sea
+2716;2588;sea;0;0;#White Sea
+2716;2589;sea;0;0;#White Sea
+2716;2614;sea;0;0;#White Sea
+2716;2684;sea;0;0;#White Sea
+2716;2687;sea;0;0;#White Sea
+2716;2688;sea;0;0;#White Sea
+2717;306;sea;0;0;#Lofoten Sea
+2717;307;sea;0;0;#Lofoten Sea
+2718;305;sea;0;0;#Northern Norwegian Sea
+2718;306;sea;0;0;#Northern Norwegian Sea
+2718;308;sea;0;0;#Northern Norwegian Sea
+2719;308;sea;0;0;#Southern Norwegian Sea
+2719;309;sea;0;0;#Southern Norwegian Sea
+2719;310;sea;0;0;#Southern Norwegian Sea
+2720;310;sea;0;0;#Skagerrack
+2720;367;sea;0;0;#Skagerrack
+2720;2557;sea;0;0;#Skagerrack
+2721;369;sea;0;0;#Helgoland Blight
+2721;370;sea;0;0;#Helgoland Blight
+2721;371;sea;0;0;#Helgoland Blight
+2721;383;sea;0;0;#Helgoland Blight
+2721;385;sea;0;0;#Helgoland Blight
+2721;528;sea;0;0;#Helgoland Blight
+2721;531;sea;0;0;#Helgoland Blight
+2721;532;sea;0;0;#Helgoland Blight
+2721;533;sea;0;0;#Helgoland Blight
+2721;539;sea;0;0;#Helgoland Blight
+2721;540;sea;0;0;#Helgoland Blight
+2721;543;sea;0;0;#Helgoland Blight
+2721;2557;sea;0;0;#Helgoland Blight
+2722;375;sea;0;0;#Coast of Holland
+2722;376;sea;0;0;#Coast of Holland
+2722;377;sea;0;0;#Coast of Holland
+2722;382;sea;0;0;#Coast of Holland
+2722;384;sea;0;0;#Coast of Holland
+2722;385;sea;0;0;#Coast of Holland
+2723;292;sea;0;0;#Dogger Bank
+2723;293;sea;0;0;#Dogger Bank
+2723;300;sea;0;0;#Dogger Bank
+2723;301;sea;0;0;#Dogger Bank
+2723;376;sea;0;0;#Dogger Bank
+2723;378;sea;0;0;#Dogger Bank
+2723;388;sea;0;0;#Dogger Bank
+2723;390;sea;0;0;#Dogger Bank
+2723;400;sea;0;0;#Dogger Bank
+2724;301;sea;0;0;#Straits of Dover
+2724;302;sea;0;0;#Straits of Dover
+2724;303;sea;0;0;#Straits of Dover
+2724;400;sea;0;0;#Straits of Dover
+2724;402;sea;0;0;#Straits of Dover
+2724;415;sea;0;0;#Straits of Dover
+2724;418;sea;0;0;#Straits of Dover
+2725;297;sea;0;0;#The Channel
+2725;299;sea;0;0;#The Channel
+2725;418;sea;0;0;#The Channel
+2725;419;sea;0;0;#The Channel
+2725;420;sea;0;0;#The Channel
+2725;421;sea;0;0;#The Channel
+2725;424;sea;0;0;#The Channel
+2726;273;sea;0;0;#Lands End
+2726;274;sea;0;0;#Lands End
+2726;296;sea;0;0;#Lands End
+2726;298;sea;0;0;#Lands End
+2726;299;sea;0;0;#Lands End
+2727;420;sea;0;0;#Coast of Brittany
+2727;422;sea;0;0;#Coast of Brittany
+2727;423;sea;0;0;#Coast of Brittany
+2728;423;sea;0;0;#Quiberon Bay
+2728;437;sea;0;0;#Quiberon Bay
+2728;442;sea;0;0;#Quiberon Bay
+2728;458;sea;0;0;#Quiberon Bay
+2729;458;sea;0;0;#Cote D'Argent
+2729;460;sea;0;0;#Cote D'Argent
+2729;492;sea;0;0;#Cote D'Argent
+2731;474;sea;0;0;#Cantabrian Sea
+2731;475;sea;0;0;#Cantabrian Sea
+2731;478;sea;0;0;#Cantabrian Sea
+2732;269;sea;0;0;#Tyne
+2732;272;sea;0;0;#Tyne
+2732;280;sea;0;0;#Tyne
+2732;281;sea;0;0;#Tyne
+2732;290;sea;0;0;#Tyne
+2732;292;sea;0;0;#Tyne
+2733;266;sea;0;0;#Firth of Forth
+2733;268;sea;0;0;#Firth of Forth
+2733;269;sea;0;0;#Firth of Forth
+2733;270;sea;0;0;#Firth of Forth
+2735;266;sea;0;0;#Moray Firth
+2735;267;sea;0;0;#Moray Firth
+2735;368;sea;0;0;#Moray Firth
+2736;257;sea;0;0;#North Channel
+2736;267;sea;0;0;#North Channel
+2736;270;sea;0;0;#North Channel
+2737;254;sea;0;0;#Irish Sea
+2737;255;sea;0;0;#Irish Sea
+2737;256;sea;0;0;#Irish Sea
+2737;257;sea;0;0;#Irish Sea
+2737;263;sea;0;0;#Irish Sea
+2737;265;sea;0;0;#Irish Sea
+2737;270;sea;0;0;#Irish Sea
+2737;271;sea;0;0;#Irish Sea
+2737;272;sea;0;0;#Irish Sea
+2737;276;sea;0;0;#Irish Sea
+2737;277;sea;0;0;#Irish Sea
+2737;279;sea;0;0;#Irish Sea
+2737;285;sea;0;0;#Irish Sea
+2737;304;sea;0;0;#Irish Sea
+2738;260;sea;0;0;#St. George's Channel
+2738;262;sea;0;0;#St. George's Channel
+2738;265;sea;0;0;#St. George's Channel
+2738;274;sea;0;0;#St. George's Channel
+2738;276;sea;0;0;#St. George's Channel
+2739;257;sea;0;0;#Donegal Bay
+2739;258;sea;0;0;#Donegal Bay
+2739;259;sea;0;0;#Donegal Bay
+2740;258;sea;0;0;#Dingel Bay
+2740;260;sea;0;0;#Dingel Bay
+2740;261;sea;0;0;#Dingel Bay
+2741;260;sea;0;0;#Celtic Sea
+2743;474;sea;0;0;#Finisterre Bay
+2743;476;sea;0;0;#Finisterre Bay
+2744;476;sea;0;0;#Lusitanian Sea
+2744;518;sea;0;0;#Lusitanian Sea
+2744;521;sea;0;0;#Lusitanian Sea
+2744;522;sea;0;0;#Lusitanian Sea
+2744;523;sea;0;0;#Lusitanian Sea
+2744;524;sea;0;0;#Lusitanian Sea
+2745;511;sea;0;0;#Gulf of Cadiz
+2745;512;sea;0;0;#Gulf of Cadiz
+2745;524;sea;0;0;#Gulf of Cadiz
+2745;526;sea;0;0;#Gulf of Cadiz
+2745;527;sea;0;0;#Gulf of Cadiz
+2746;517;sea;0;0;#Straits of Gibraltar
+2746;1687;sea;0;0;#Straits of Gibraltar
+2747;506;sea;0;0;#Gulf of Almeria
+2747;512;sea;0;0;#Gulf of Almeria
+2747;513;sea;0;0;#Gulf of Almeria
+2747;514;sea;0;0;#Gulf of Almeria
+2747;515;sea;0;0;#Gulf of Almeria
+2747;517;sea;0;0;#Gulf of Almeria
+2747;1684;sea;0;0;#Gulf of Almeria
+2747;1687;sea;0;0;#Gulf of Almeria
+2747;1688;sea;0;0;#Gulf of Almeria
+2747;1689;sea;0;0;#Gulf of Almeria
+2747;1704;sea;0;0;#Gulf of Almeria
+2747;1705;sea;0;0;#Gulf of Almeria
+2747;1706;sea;0;0;#Gulf of Almeria
+2748;501;sea;0;0;#Gulf of Valencia
+2748;502;sea;0;0;#Gulf of Valencia
+2748;503;sea;0;0;#Gulf of Valencia
+2748;504;sea;0;0;#Gulf of Valencia
+2748;505;sea;0;0;#Gulf of Valencia
+2748;506;sea;0;0;#Gulf of Valencia
+2749;461;sea;0;0;#Gulf of Lion
+2749;463;sea;0;0;#Gulf of Lion
+2749;464;sea;0;0;#Gulf of Lion
+2749;467;sea;0;0;#Gulf of Lion
+2749;498;sea;0;0;#Gulf of Lion
+2749;499;sea;0;0;#Gulf of Lion
+2749;501;sea;0;0;#Gulf of Lion
+2750;467;sea;0;0;#Cote D'Azur
+2750;470;sea;0;0;#Cote D'Azur
+2750;471;sea;0;0;#Cote D'Azur
+2750;472;sea;0;0;#Cote D'Azur
+2750;725;sea;0;0;#Cote D'Azur
+2751;9;sea;0;0;#Ligurian Sea
+2751;473;sea;0;0;#Ligurian Sea
+2751;725;sea;0;0;#Ligurian Sea
+2751;724;sea;0;0;#Ligurian Sea
+2751;725;sea;0;0;#Ligurian Sea
+2751;740;sea;0;0;#Ligurian Sea
+2751;745;sea;0;0;#Ligurian Sea
+2751;746;sea;0;0;#Ligurian Sea
+2751;748;sea;0;0;#Ligurian Sea
+2751;766;sea;0;0;#Ligurian Sea
+2752;502;sea;0;0;#Gulf of Mallorca
+2753;765;sea;0;0;#Western Mediterranean
+2753;766;sea;0;0;#Western Mediterranean
+2754;1700;sea;0;0;#Barbary Coast
+2754;1701;sea;0;0;#Barbary Coast
+2754;1702;sea;0;0;#Barbary Coast
+2754;1706;sea;0;0;#Barbary Coast
+2754;1717;sea;0;0;#Barbary Coast
+2754;1721;sea;0;0;#Barbary Coast
+2755;765;sea;0;0;#Cape Bon
+2755;1701;sea;0;0;#Cape Bon
+2755;1709;sea;0;0;#Cape Bon
+2755;1726;sea;0;0;#Cape Bon
+2756;748;sea;0;0;#Tyrrenian Sea
+2756;749;sea;0;0;#Tyrrenian Sea
+2756;750;sea;0;0;#Tyrrenian Sea
+2756;754;sea;0;0;#Tyrrenian Sea
+2756;755;sea;0;0;#Tyrrenian Sea
+2756;765;sea;0;0;#Tyrrenian Sea
+2756;766;sea;0;0;#Tyrrenian Sea
+2756;2567;sea;0;0;#Tyrrenian Sea
+2757;755;sea;0;0;#Bay of Naples
+2757;760;sea;0;0;#Bay of Naples
+2757;761;sea;0;0;#Bay of Naples
+2757;762;sea;0;0;#Bay of Naples
+2757;763;sea;0;0;#Bay of Naples
+2758;473;sea;0;0;#Strait of Bonifacio
+2758;766;sea;0;0;#Strait of Bonifacio
+2759;762;sea;0;0;#Gulf of Gabes
+2759;764;sea;0;0;#Gulf of Gabes
+2759;854;sea;0;0;#Gulf of Gabes
+2759;1728;sea;0;0;#Gulf of Gabes
+2759;1730;sea;0;0;#Gulf of Gabes
+2759;1731;sea;0;0;#Gulf of Gabes
+2760;759;sea;0;0;#Straits of Messina
+2760;760;sea;0;0;#Straits of Messina
+2760;763;sea;0;0;#Straits of Messina
+2761;729;sea;0;0;#Gulf of Venice
+2761;731;sea;0;0;#Gulf of Venice
+2761;733;sea;0;0;#Gulf of Venice
+2761;736;sea;0;0;#Gulf of Venice
+2761;737;sea;0;0;#Gulf of Venice
+2761;742;sea;0;0;#Gulf of Venice
+2761;743;sea;0;0;#Gulf of Venice
+2761;752;sea;0;0;#Gulf of Venice
+2761;769;sea;0;0;#Gulf of Venice
+2761;770;sea;0;0;#Gulf of Venice
+2761;773;sea;0;0;#Gulf of Venice
+2761;774;sea;0;0;#Gulf of Venice
+2761;778;sea;0;0;#Gulf of Venice
+2761;781;sea;0;0;#Gulf of Venice
+2762;752;sea;0;0;#Adriatic Sea
+2762;756;sea;0;0;#Adriatic Sea
+2762;757;sea;0;0;#Adriatic Sea
+2762;780;sea;0;0;#Adriatic Sea
+2762;781;sea;0;0;#Adriatic Sea
+2762;782;sea;0;0;#Adriatic Sea
+2762;2596;sea;0;0;#Adriatic Sea
+2763;756;sea;0;0;#Straits of Otranto
+2763;758;sea;0;0;#Straits of Otranto
+2763;782;sea;0;0;#Straits of Otranto
+2763;800;sea;0;0;#Straits of Otranto
+2763;826;sea;0;0;#Straits of Otranto
+2763;850;sea;0;0;#Straits of Otranto
+2763;851;sea;0;0;#Straits of Otranto
+2763;852;sea;0;0;#Straits of Otranto
+2763;853;sea;0;0;#Straits of Otranto
+2763;2582;sea;0;0;#Straits of Otranto
+2764;1733;sea;0;0;#Gulf of Sirte
+2764;1734;sea;0;0;#Gulf of Sirte
+2764;1735;sea;0;0;#Gulf of Sirte
+2764;1736;sea;0;0;#Gulf of Sirte
+2765;758;sea;0;0;#Ionian Sea
+2765;759;sea;0;0;#Ionian Sea
+2765;760;sea;0;0;#Ionian Sea
+2765;761;sea;0;0;#Ionian Sea
+2765;763;sea;0;0;#Ionian Sea
+2765;764;sea;0;0;#Ionian Sea
+2765;824;sea;0;0;#Ionian Sea
+2765;826;sea;0;0;#Ionian Sea
+2765;827;sea;0;0;#Ionian Sea
+2765;834;sea;0;0;#Ionian Sea
+2765;835;sea;0;0;#Ionian Sea
+2765;837;sea;0;0;#Ionian Sea
+2765;839;sea;0;0;#Ionian Sea
+2765;840;sea;0;0;#Ionian Sea
+2765;841;sea;0;0;#Ionian Sea
+2765;842;sea;0;0;#Ionian Sea
+2766;764;sea;0;0;#Libyan Sea
+2766;1731;sea;0;0;#Libyan Sea
+2766;1733;sea;0;0;#Libyan Sea
+2766;1736;sea;0;0;#Libyan Sea
+2767;839;sea;0;0;#Gulf of Tobruk
+2767;847;sea;0;0;#Gulf of Tobruk
+2767;848;sea;0;0;#Gulf of Tobruk
+2767;1736;sea;0;0;#Gulf of Tobruk
+2767;1737;sea;0;0;#Gulf of Tobruk
+2768;1737;sea;0;0;#Bay of Alexandria
+2768;1746;sea;0;0;#Bay of Alexandria
+2768;1751;sea;0;0;#Bay of Alexandria
+2768;1752;sea;0;0;#Bay of Alexandria
+2768;1753;sea;0;0;#Bay of Alexandria
+2769;855;sea;0;0;#Palestinian Coast
+2769;915;sea;0;0;#Palestinian Coast
+2769;916;sea;0;0;#Palestinian Coast
+2769;919;sea;0;0;#Palestinian Coast
+2769;920;sea;0;0;#Palestinian Coast
+2769;1746;sea;0;0;#Palestinian Coast
+2769;1755;sea;0;0;#Palestinian Coast
+2769;1756;sea;0;0;#Palestinian Coast
+2770;855;sea;0;0;#Gulf of Cyprus
+2770;857;sea;0;0;#Gulf of Cyprus
+2770;875;sea;0;0;#Gulf of Cyprus
+2770;894;sea;0;0;#Gulf of Cyprus
+2770;895;sea;0;0;#Gulf of Cyprus
+2770;900;sea;0;0;#Gulf of Cyprus
+2770;905;sea;0;0;#Gulf of Cyprus
+2770;909;sea;0;0;#Gulf of Cyprus
+2770;913;sea;0;0;#Gulf of Cyprus
+2770;914;sea;0;0;#Gulf of Cyprus
+2771;843;sea;0;0;#Sea of Crete
+2771;845;sea;0;0;#Sea of Crete
+2771;846;sea;0;0;#Sea of Crete
+2771;847;sea;0;0;#Sea of Crete
+2771;848;sea;0;0;#Sea of Crete
+2771;872;sea;0;0;#Sea of Crete
+2771;875;sea;0;0;#Sea of Crete
+2772;805;sea;0;0;#Aegean Sea
+2772;821;sea;0;0;#Aegean Sea
+2772;822;sea;0;0;#Aegean Sea
+2772;823;sea;0;0;#Aegean Sea
+2772;828;sea;0;0;#Aegean Sea
+2772;829;sea;0;0;#Aegean Sea
+2772;830;sea;0;0;#Aegean Sea
+2772;832;sea;0;0;#Aegean Sea
+2772;834;sea;0;0;#Aegean Sea
+2772;835;sea;0;0;#Aegean Sea
+2772;836;sea;0;0;#Aegean Sea
+2772;838;sea;0;0;#Aegean Sea
+2772;839;sea;0;0;#Aegean Sea
+2772;840;sea;0;0;#Aegean Sea
+2772;843;sea;0;0;#Aegean Sea
+2772;845;sea;0;0;#Aegean Sea
+2772;859;sea;0;0;#Aegean Sea
+2772;865;sea;0;0;#Aegean Sea
+2772;869;sea;0;0;#Aegean Sea
+2772;872;sea;0;0;#Aegean Sea
+2773;859;sea;0;0;#Sea of Marmara
+2773;860;sea;0;0;#Sea of Marmara
+2773;861;sea;0;0;#Sea of Marmara
+2773;862;sea;0;0;#Sea of Marmara
+2773;863;sea;0;0;#Sea of Marmara
+2773;865;sea;0;0;#Sea of Marmara
+2774;674;sea;0;0;#Western Black Sea
+2774;675;sea;0;0;#Western Black Sea
+2774;814;sea;0;0;#Western Black Sea
+2774;817;sea;0;0;#Western Black Sea
+2774;818;sea;0;0;#Western Black Sea
+2774;858;sea;0;0;#Western Black Sea
+2774;860;sea;0;0;#Western Black Sea
+2774;861;sea;0;0;#Western Black Sea
+2774;862;sea;0;0;#Western Black Sea
+2774;881;sea;0;0;#Western Black Sea
+2774;968;sea;0;0;#Western Black Sea
+2775;880;sea;0;0;#Central Black Sea
+2775;881;sea;0;0;#Central Black Sea
+2775;883;sea;0;0;#Central Black Sea
+2775;964;sea;0;0;#Central Black Sea
+2775;965;sea;0;0;#Central Black Sea
+2775;966;sea;0;0;#Central Black Sea
+2775;967;sea;0;0;#Central Black Sea
+2775;968;sea;0;0;#Central Black Sea
+2775;970;sea;0;0;#Central Black Sea
+2776;964;sea;0;0;#Sea of Azov
+2776;966;sea;0;0;#Sea of Azov
+2776;967;sea;0;0;#Sea of Azov
+2776;973;sea;0;0;#Sea of Azov
+2776;976;sea;0;0;#Sea of Azov
+2776;979;sea;0;0;#Sea of Azov
+2776;1047;sea;0;0;#Sea of Azov
+2776;1048;sea;0;0;#Sea of Azov
+2777;882;sea;0;0;#Eastern Black Sea
+2777;883;sea;0;0;#Eastern Black Sea
+2777;884;sea;0;0;#Eastern Black Sea
+2777;886;sea;0;0;#Eastern Black Sea
+2777;966;sea;0;0;#Eastern Black Sea
+2777;1048;sea;0;0;#Eastern Black Sea
+2777;1049;sea;0;0;#Eastern Black Sea
+2777;1094;sea;0;0;#Eastern Black Sea
+2777;1095;sea;0;0;#Eastern Black Sea
+2777;1096;sea;0;0;#Eastern Black Sea
+2781;922;sea;0;0;#Gulf of Suez
+2781;1152;sea;0;0;#Gulf of Suez
+2781;1153;sea;0;0;#Gulf of Suez
+2781;1154;sea;0;0;#Gulf of Suez
+2781;1755;sea;0;0;#Gulf of Suez
+2781;1757;sea;0;0;#Gulf of Suez
+2781;1770;sea;0;0;#Gulf of Suez
+2781;1771;sea;0;0;#Gulf of Suez
+2781;1772;sea;0;0;#Gulf of Suez
+2781;1833;sea;0;0;#Gulf of Suez
+2781;1834;sea;0;0;#Gulf of Suez
+2782;1152;sea;0;0;#Red Sea
+2782;1155;sea;0;0;#Red Sea
+2782;1178;sea;0;0;#Red Sea
+2782;1179;sea;0;0;#Red Sea
+2782;1833;sea;0;0;#Red Sea
+2782;1849;sea;0;0;#Red Sea
+2782;1851;sea;0;0;#Red Sea
+2782;1875;sea;0;0;#Red Sea
+2783;1176;sea;0;0;#Straits of Obokk
+2783;1412;sea;0;0;#Straits of Obokk
+2783;1872;sea;0;0;#Straits of Obokk
+2783;1873;sea;0;0;#Straits of Obokk
+2783;1874;sea;0;0;#Straits of Obokk
+2783;1875;sea;0;0;#Straits of Obokk
+2784;1173;sea;0;0;#Bal el Mandeb
+2784;1175;sea;0;0;#Bal el Mandeb
+2784;1177;sea;0;0;#Bal el Mandeb
+2784;1872;sea;0;0;#Bal el Mandeb
+2785;1171;sea;0;0;#Coast of Mascate
+2785;1172;sea;0;0;#Coast of Mascate
+2786;1145;sea;0;0;#Mascate Coast
+2786;1146;sea;0;0;#Mascate Coast
+2786;1166;sea;0;0;#Mascate Coast
+2786;1168;sea;0;0;#Mascate Coast
+2786;1172;sea;0;0;#Mascate Coast
+2787;1141;sea;0;0;#Straits of Hormuz
+2787;1142;sea;0;0;#Straits of Hormuz
+2787;1145;sea;0;0;#Straits of Hormuz
+2787;1168;sea;0;0;#Straits of Hormuz
+2787;1171;sea;0;0;#Straits of Hormuz
+2787;2640;sea;0;0;#Straits of Hormuz
+2787;2699;sea;0;0;#Straits of Hormuz
+2788;932;sea;0;0;#Persian Gulf
+2788;935;sea;0;0;#Persian Gulf
+2788;1132;sea;0;0;#Persian Gulf
+2788;1135;sea;0;0;#Persian Gulf
+2788;1136;sea;0;0;#Persian Gulf
+2788;1138;sea;0;0;#Persian Gulf
+2788;1141;sea;0;0;#Persian Gulf
+2788;1162;sea;0;0;#Persian Gulf
+2788;1163;sea;0;0;#Persian Gulf
+2788;1164;sea;0;0;#Persian Gulf
+2788;1165;sea;0;0;#Persian Gulf
+2788;1167;sea;0;0;#Persian Gulf
+2788;2690;sea;0;0;#Persian Gulf
+2789;1146;sea;0;0;#Gulf of Indus
+2789;1222;sea;0;0;#Gulf of Indus
+2789;1288;sea;0;0;#Gulf of Indus
+2789;1293;sea;0;0;#Gulf of Indus
+2789;2238;sea;0;0;#Gulf of Indus
+2789;2633;sea;0;0;#Gulf of Indus
+2790;1291;sea;0;0;#Gulf of Gujarat
+2790;1292;sea;0;0;#Gulf of Gujarat
+2790;1293;sea;0;0;#Gulf of Gujarat
+2790;1295;sea;0;0;#Gulf of Gujarat
+2790;1296;sea;0;0;#Gulf of Gujarat
+2790;1297;sea;0;0;#Gulf of Gujarat
+2791;1297;sea;0;0;#Laquedive Islands
+2791;1301;sea;0;0;#Laquedive Islands
+2791;1302;sea;0;0;#Laquedive Islands
+2791;1303;sea;0;0;#Laquedive Islands
+2792;1302;sea;0;0;#Coast of Malabar
+2792;1316;sea;0;0;#Coast of Malabar
+2792;1317;sea;0;0;#Coast of Malabar
+2792;1318;sea;0;0;#Coast of Malabar
+2792;1319;sea;0;0;#Coast of Malabar
+2793;1310;sea;0;0;#Camorin Cape
+2793;1319;sea;0;0;#Camorin Cape
+2793;1321;sea;0;0;#Camorin Cape
+2793;1322;sea;0;0;#Camorin Cape
+2794;1304;sea;0;0;#Coast of Caramandel
+2794;1306;sea;0;0;#Coast of Caramandel
+2794;1307;sea;0;0;#Coast of Caramandel
+2794;1309;sea;0;0;#Coast of Caramandel
+2794;1310;sea;0;0;#Coast of Caramandel
+2794;1312;sea;0;0;#Coast of Caramandel
+2794;1322;sea;0;0;#Coast of Caramandel
+2795;1261;sea;0;0;#Coast of Orissa
+2795;1305;sea;0;0;#Coast of Orissa
+2795;1306;sea;0;0;#Coast of Orissa
+2796;1251;sea;0;0;#Ganges Delta
+2796;1256;sea;0;0;#Ganges Delta
+2796;1257;sea;0;0;#Ganges Delta
+2796;1261;sea;0;0;#Ganges Delta
+2796;1345;sea;0;0;#Ganges Delta
+2797;1330;sea;0;0;#Akyab Bay
+2797;1331;sea;0;0;#Akyab Bay
+2797;1345;sea;0;0;#Akyab Bay
+2798;1330;sea;0;0;#Irrawady Delta
+2798;1332;sea;0;0;#Irrawady Delta
+2798;1343;sea;0;0;#Irrawady Delta
+2798;1344;sea;0;0;#Irrawady Delta
+2799;1320;sea;0;0;#Andaman Sea
+2800;1344;sea;0;0;#Mergui Archipelago
+2800;1352;sea;0;0;#Mergui Archipelago
+2801;1352;sea;0;0;#Straits of Malacca
+2801;1387;sea;0;0;#Straits of Malacca
+2801;1388;sea;0;0;#Straits of Malacca
+2801;1389;sea;0;0;#Straits of Malacca
+2801;1401;sea;0;0;#Straits of Malacca
+2801;1405;sea;0;0;#Straits of Malacca
+2801;1406;sea;0;0;#Straits of Malacca
+2801;2575;sea;0;0;#Straits of Malacca
+2802;1405;sea;0;0;#Nicobar Isles
+2802;1407;sea;0;0;#Nicobar Isles
+2803;1407;sea;0;0;#Coast of Atjeh
+2803;1409;sea;0;0;#Coast of Atjeh
+2803;1411;sea;0;0;#Coast of Atjeh
+2804;1408;sea;0;0;#Coast of Sumatra
+2804;1410;sea;0;0;#Coast of Sumatra
+2804;1411;sea;0;0;#Coast of Sumatra
+2805;1403;sea;0;0;#Sunda Strait
+2805;1410;sea;0;0;#Sunda Strait
+2805;1413;sea;0;0;#Sunda Strait
+2805;1414;sea;0;0;#Sunda Strait
+2806;1414;sea;0;0;#Coast of Java
+2806;1416;sea;0;0;#Coast of Java
+2806;2244;sea;0;0;#Coast of Java
+2807;1416;sea;0;0;#Coast of Surabaya
+2807;1419;sea;0;0;#Coast of Surabaya
+2807;1420;sea;0;0;#Coast of Surabaya
+2807;1438;sea;0;0;#Coast of Surabaya
+2808;1438;sea;0;0;#Coast of Lombok
+2808;1439;sea;0;0;#Coast of Lombok
+2808;1440;sea;0;0;#Coast of Lombok
+2808;1441;sea;0;0;#Coast of Lombok
+2808;1442;sea;0;0;#Coast of Lombok
+2809;1439;sea;0;0;#Timor Sea
+2809;1441;sea;0;0;#Timor Sea
+2809;1444;sea;0;0;#Timor Sea
+2809;1445;sea;0;0;#Timor Sea
+2809;2501;sea;0;0;#Timor Sea
+2810;1430;sea;0;0;#The Moluccas
+2810;1431;sea;0;0;#The Moluccas
+2810;1436;sea;0;0;#The Moluccas
+2810;1437;sea;0;0;#The Moluccas
+2810;1439;sea;0;0;#The Moluccas
+2810;1444;sea;0;0;#The Moluccas
+2810;1449;sea;0;0;#The Moluccas
+2811;1418;sea;0;0;#Java Sea
+2811;1420;sea;0;0;#Java Sea
+2811;1421;sea;0;0;#Java Sea
+2811;1423;sea;0;0;#Java Sea
+2811;1424;sea;0;0;#Java Sea
+2811;1427;sea;0;0;#Java Sea
+2811;1430;sea;0;0;#Java Sea
+2811;1432;sea;0;0;#Java Sea
+2811;1438;sea;0;0;#Java Sea
+2811;1440;sea;0;0;#Java Sea
+2811;1442;sea;0;0;#Java Sea
+2812;14;sea;0;0;#Straits of Makassar
+2812;1397;sea;0;0;#Straits of Makassar
+2812;1423;sea;0;0;#Straits of Makassar
+2812;1424;sea;0;0;#Straits of Makassar
+2812;1425;sea;0;0;#Straits of Makassar
+2812;1429;sea;0;0;#Straits of Makassar
+2812;1432;sea;0;0;#Straits of Makassar
+2812;1435;sea;0;0;#Straits of Makassar
+2812;1464;sea;0;0;#Straits of Makassar
+2813;1398;sea;0;0;#Karimata Strait
+2813;1399;sea;0;0;#Karimata Strait
+2813;1403;sea;0;0;#Karimata Strait
+2813;1404;sea;0;0;#Karimata Strait
+2813;1413;sea;0;0;#Karimata Strait
+2813;1415;sea;0;0;#Karimata Strait
+2813;1417;sea;0;0;#Karimata Strait
+2813;1418;sea;0;0;#Karimata Strait
+2813;1426;sea;0;0;#Karimata Strait
+2813;1427;sea;0;0;#Karimata Strait
+2813;2626;sea;0;0;#Karimata Strait
+2814;1384;sea;0;0;#Straits of Johore
+2814;1385;sea;0;0;#Straits of Johore
+2814;1386;sea;0;0;#Straits of Johore
+2814;1387;sea;0;0;#Straits of Johore
+2814;1390;sea;0;0;#Straits of Johore
+2814;1398;sea;0;0;#Straits of Johore
+2814;1400;sea;0;0;#Straits of Johore
+2814;1401;sea;0;0;#Straits of Johore
+2814;1402;sea;0;0;#Straits of Johore
+2814;2576;sea;0;0;#Straits of Johore
+2814;2626;sea;0;0;#Straits of Johore
+2814;2629;sea;0;0;#Straits of Johore
+2815;1390;sea;0;0;#Malayan Sea
+2815;1391;sea;0;0;#Malayan Sea
+2815;1392;sea;0;0;#Malayan Sea
+2815;2576;sea;0;0;#Malayan Sea
+2816;18;sea;0;0;#Coast of Sarawak
+2816;1393;sea;0;0;#Coast of Sarawak
+2816;1394;sea;0;0;#Coast of Sarawak
+2816;1395;sea;0;0;#Coast of Sarawak
+2817;1354;sea;0;0;#Mekong Delta
+2817;1367;sea;0;0;#Mekong Delta
+2817;1380;sea;0;0;#Mekong Delta
+2817;1382;sea;0;0;#Mekong Delta
+2817;1383;sea;0;0;#Mekong Delta
+2817;1392;sea;0;0;#Mekong Delta
+2818;1346;sea;0;0;#Gulf of Siam
+2818;1351;sea;0;0;#Gulf of Siam
+2818;1353;sea;0;0;#Gulf of Siam
+2818;1354;sea;0;0;#Gulf of Siam
+2818;1365;sea;0;0;#Gulf of Siam
+2818;1367;sea;0;0;#Gulf of Siam
+2819;1379;sea;0;0;#Cam Ranh Bay
+2819;1380;sea;0;0;#Cam Ranh Bay
+2819;1381;sea;0;0;#Cam Ranh Bay
+2820;2576;sea;0;0;#South China Sea
+2821;18;sea;0;0;#Coast of Brunei
+2821;1393;sea;0;0;#Coast of Brunei
+2821;1397;sea;0;0;#Coast of Brunei
+2821;1459;sea;0;0;#Coast of Brunei
+2822;1375;sea;0;0;#Coast of Annam
+2822;1377;sea;0;0;#Coast of Annam
+2822;1379;sea;0;0;#Coast of Annam
+2823;1370;sea;0;0;#Gulf of Tonkin
+2823;1373;sea;0;0;#Gulf of Tonkin
+2823;1374;sea;0;0;#Gulf of Tonkin
+2823;1375;sea;0;0;#Gulf of Tonkin
+2823;1376;sea;0;0;#Gulf of Tonkin
+2823;1493;sea;0;0;#Gulf of Tonkin
+2823;1495;sea;0;0;#Gulf of Tonkin
+2823;1499;sea;0;0;#Gulf of Tonkin
+2823;2615;sea;0;0;#Gulf of Tonkin
+2823;1501;sea;0;0;#Gulf of Tonkin
+2824;1493;sea;0;0;#Guangzhou Bay
+2824;1494;sea;0;0;#Guangzhou Bay
+2824;1496;sea;0;0;#Guangzhou Bay
+2824;1497;sea;0;0;#Guangzhou Bay
+2824;1498;sea;0;0;#Guangzhou Bay
+2825;1482;sea;0;0;#Taiwan Strait
+2825;1484;sea;0;0;#Taiwan Strait
+2825;1485;sea;0;0;#Taiwan Strait
+2825;1487;sea;0;0;#Taiwan Strait
+2825;1494;sea;0;0;#Taiwan Strait
+2825;1611;sea;0;0;#Taiwan Strait
+2825;2562;sea;0;0;#Taiwan Strait
+2826;1538;sea;0;0;#Yang Tse Delta
+2826;1540;sea;0;0;#Yang Tse Delta
+2826;1641;sea;0;0;#Yang Tse Delta
+2826;1643;sea;0;0;#Yang Tse Delta
+2826;1604;sea;0;0;#Yang Tse Delta
+2826;1606;sea;0;0;#Yang Tse Delta
+2826;1608;sea;0;0;#Yang Tse Delta
+2826;1609;sea;0;0;#Yang Tse Delta
+2826;1610;sea;0;0;#Yang Tse Delta
+2826;1611;sea;0;0;#Yang Tse Delta
+2827;1536;sea;0;0;#Yellow Sea
+2827;1542;sea;0;0;#Yellow Sea
+2827;1543;sea;0;0;#Yellow Sea
+2827;1565;sea;0;0;#Yellow Sea
+2827;1566;sea;0;0;#Yellow Sea
+2827;1571;sea;0;0;#Yellow Sea
+2827;1628;sea;0;0;#Yellow Sea
+2827;1635;sea;0;0;#Yellow Sea
+2827;1636;sea;0;0;#Yellow Sea
+2828;1479;sea;0;0;#Korea Bay
+2828;1480;sea;0;0;#Korea Bay
+2828;1481;sea;0;0;#Korea Bay
+2828;1565;sea;0;0;#Korea Bay
+2828;1567;sea;0;0;#Korea Bay
+2828;1569;sea;0;0;#Korea Bay
+2828;1570;sea;0;0;#Korea Bay
+2828;1616;sea;0;0;#Korea Bay
+2828;1617;sea;0;0;#Korea Bay
+2828;1619;sea;0;0;#Korea Bay
+2828;1620;sea;0;0;#Korea Bay
+2828;1625;sea;0;0;#Korea Bay
+2828;1626;sea;0;0;#Korea Bay
+2828;1627;sea;0;0;#Korea Bay
+2828;1628;sea;0;0;#Korea Bay
+2828;1636;sea;0;0;#Korea Bay
+2828;2659;sea;0;0;#Korea Bay
+2828;2674;sea;0;0;#Korea Bay
+2829;1632;sea;0;0;#South Korean Sea
+2829;1634;sea;0;0;#South Korean Sea
+2829;1635;sea;0;0;#South Korean Sea
+2829;1637;sea;0;0;#South Korean Sea
+2829;1640;sea;0;0;#South Korean Sea
+2829;1641;sea;0;0;#South Korean Sea
+2829;1660;sea;0;0;#South Korean Sea
+2829;1661;sea;0;0;#South Korean Sea
+2829;1662;sea;0;0;#South Korean Sea
+2829;1664;sea;0;0;#South Korean Sea
+2829;2218;sea;0;0;#South Korean Sea
+2829;2235;sea;0;0;#South Korean Sea
+2830;1082;sea;0;0;#North Korean Sea
+2830;1621;sea;0;0;#North Korean Sea
+2830;1622;sea;0;0;#North Korean Sea
+2830;1623;sea;0;0;#North Korean Sea
+2830;1629;sea;0;0;#North Korean Sea
+2830;1630;sea;0;0;#North Korean Sea
+2830;1631;sea;0;0;#North Korean Sea
+2831;1082;sea;0;0;#Coast of Olga
+2831;1083;sea;0;0;#Coast of Olga
+2831;1087;sea;0;0;#Coast of Olga
+2831;1642;sea;0;0;#Coast of Olga
+2831;1643;sea;0;0;#Coast of Olga
+2832;1083;sea;0;0;#Tatar Straits
+2832;1084;sea;0;0;#Tatar Straits
+2832;1086;sea;0;0;#Tatar Straits
+2832;1087;sea;0;0;#Tatar Straits
+2833;1084;sea;0;0;#Amur Delta
+2833;1086;sea;0;0;#Amur Delta
+2833;2641;sea;0;0;#Amur Delta
+2834;2639;sea;0;0;#Bay of Ayan
+2834;2641;sea;0;0;#Bay of Ayan
+2835;1073;sea;0;0;#Bay of Komenskoie
+2835;1074;sea;0;0;#Bay of Komenskoie
+2835;2634;sea;0;0;#Bay of Komenskoie
+2835;2639;sea;0;0;#Bay of Komenskoie
+2836;1074;sea;0;0;#Coast of Kamchatska
+2836;2639;sea;0;0;#Coast of Kamchatska
+2837;1086;sea;0;0;#Okhotsk Sea
+2838;1074;sea;0;0;#Coast of Sakhalin
+2838;1086;sea;0;0;#Coast of Sakhalin
+2838;1087;sea;0;0;#Coast of Sakhalin
+2838;1088;sea;0;0;#Coast of Sakhalin
+2839;1043;sea;0;0;#Soya Strait
+2839;1044;sea;0;0;#Soya Strait
+2839;1087;sea;0;0;#Soya Strait
+2839;1088;sea;0;0;#Soya Strait
+2839;1089;sea;0;0;#Soya Strait
+2840;1642;sea;0;0;#Tsugaru Strait
+2840;1644;sea;0;0;#Tsugaru Strait
+2840;1668;sea;0;0;#Tsugaru Strait
+2840;1669;sea;0;0;#Tsugaru Strait
+2840;1670;sea;0;0;#Tsugaru Strait
+2840;1672;sea;0;0;#Tsugaru Strait
+2841;1641;sea;0;0;#Sea of Japan
+2841;1642;sea;0;0;#Sea of Japan
+2841;1645;sea;0;0;#Sea of Japan
+2841;1646;sea;0;0;#Sea of Japan
+2841;1647;sea;0;0;#Sea of Japan
+2841;1648;sea;0;0;#Sea of Japan
+2841;1657;sea;0;0;#Sea of Japan
+2841;1659;sea;0;0;#Sea of Japan
+2841;1671;sea;0;0;#Sea of Japan
+2841;1672;sea;0;0;#Sea of Japan
+2841;1673;sea;0;0;#Sea of Japan
+2841;2220;sea;0;0;#Sea of Japan
+2841;2503;sea;0;0;#Sea of Japan
+2842;1631;sea;0;0;#Amakusa Sea
+2842;1634;sea;0;0;#Amakusa Sea
+2842;1641;sea;0;0;#Amakusa Sea
+2842;2235;sea;0;0;#Amakusa Sea
+2842;2503;sea;0;0;#Amakusa Sea
+2843;1656;sea;0;0;#Setto Inland Sea
+2843;1662;sea;0;0;#Setto Inland Sea
+2843;1663;sea;0;0;#Setto Inland Sea
+2843;1665;sea;0;0;#Setto Inland Sea
+2843;1666;sea;0;0;#Setto Inland Sea
+2843;1667;sea;0;0;#Setto Inland Sea
+2843;2224;sea;0;0;#Setto Inland Sea
+2844;1452;sea;0;0;#Tokai Sea
+2844;1649;sea;0;0;#Tokai Sea
+2844;1650;sea;0;0;#Tokai Sea
+2844;1651;sea;0;0;#Tokai Sea
+2844;1653;sea;0;0;#Tokai Sea
+2844;1656;sea;0;0;#Tokai Sea
+2844;1658;sea;0;0;#Tokai Sea
+2844;1669;sea;0;0;#Tokai Sea
+2844;1675;sea;0;0;#Tokai Sea
+2844;1676;sea;0;0;#Tokai Sea
+2845;1485;sea;0;0;#Ryukyu Islands
+2845;1678;sea;0;0;#Ryukyu Islands
+2845;1679;sea;0;0;#Ryukyu Islands
+2846;1456;sea;0;0;#Luzon Strait
+2846;1485;sea;0;0;#Luzon Strait
+2846;2562;sea;0;0;#Luzon Strait
+2847;1455;sea;0;0;#Paracel Islands
+2847;1456;sea;0;0;#Paracel Islands
+2848;1455;sea;0;0;#Manila Bay
+2848;1458;sea;0;0;#Manila Bay
+2849;1455;sea;0;0;#Coast of Luzon
+2849;1456;sea;0;0;#Coast of Luzon
+2849;1457;sea;0;0;#Coast of Luzon
+2849;1458;sea;0;0;#Coast of Luzon
+2849;1460;sea;0;0;#Coast of Luzon
+2849;1461;sea;0;0;#Coast of Luzon
+2850;1458;sea;0;0;#Gulf of Leyte
+2850;1460;sea;0;0;#Gulf of Leyte
+2850;1461;sea;0;0;#Gulf of Leyte
+2850;1462;sea;0;0;#Gulf of Leyte
+2850;1463;sea;0;0;#Gulf of Leyte
+2850;2565;sea;0;0;#Gulf of Leyte
+2851;1459;sea;0;0;#Sulu Sea
+2851;1462;sea;0;0;#Sulu Sea
+2851;1463;sea;0;0;#Sulu Sea
+2851;1464;sea;0;0;#Sulu Sea
+2852;1433;sea;0;0;#Sea of Celebes
+2852;1434;sea;0;0;#Sea of Celebes
+2852;1435;sea;0;0;#Sea of Celebes
+2852;1436;sea;0;0;#Sea of Celebes
+2852;1447;sea;0;0;#Sea of Celebes
+2852;1449;sea;0;0;#Sea of Celebes
+2852;1463;sea;0;0;#Sea of Celebes
+2853;1447;sea;0;0;#Sea of Ternate
+2853;1448;sea;0;0;#Sea of Ternate
+2853;1449;sea;0;0;#Sea of Ternate
+2853;1450;sea;0;0;#Sea of Ternate
+2853;1453;sea;0;0;#Sea of Ternate
+2853;2518;sea;0;0;#Sea of Ternate
+2854;1444;sea;0;0;#Sea of Banda
+2854;1446;sea;0;0;#Sea of Banda
+2854;1449;sea;0;0;#Sea of Banda
+2854;1450;sea;0;0;#Sea of Banda
+2854;1451;sea;0;0;#Sea of Banda
+2855;1461;sea;0;0;#Philippine Sea
+2855;1463;sea;0;0;#Philippine Sea
+2856;1453;sea;0;0;#Palau Islands
+2856;2518;sea;0;0;#Palau Islands
+2856;2519;sea;0;0;#Palau Islands
+2857;1453;sea;0;0;#Biak Bay
+2857;1454;sea;0;0;#Biak Bay
+2857;2531;sea;0;0;#Biak Bay
+2858;1531;sea;0;0;#Vilian Strait
+2858;2528;sea;0;0;#Vilian Strait
+2858;2530;sea;0;0;#Vilian Strait
+2858;2531;sea;0;0;#Vilian Strait
+2858;2537;sea;0;0;#Vilian Strait
+2859;2528;sea;0;0;#Trobrian Islands
+2859;2534;sea;0;0;#Trobrian Islands
+2859;2539;sea;0;0;#Trobrian Islands
+2860;2488;sea;0;0;#Torres Strait
+2860;2528;sea;0;0;#Torres Strait
+2860;2529;sea;0;0;#Torres Strait
+2861;2501;sea;0;0;#Arafuam Sea
+2861;2505;sea;0;0;#Arafuam Sea
+2861;2506;sea;0;0;#Arafuam Sea
+2862;1450;sea;0;0;#Kolepom Bay
+2862;1451;sea;0;0;#Kolepom Bay
+2862;1453;sea;0;0;#Kolepom Bay
+2862;1560;sea;0;0;#Kolepom Bay
+2863;1560;sea;0;0;#Gulf of Carpentaria
+2863;2488;sea;0;0;#Gulf of Carpentaria
+2863;2505;sea;0;0;#Gulf of Carpentaria
+2863;2506;sea;0;0;#Gulf of Carpentaria
+2863;2529;sea;0;0;#Gulf of Carpentaria
+2863;2604;sea;0;0;#Gulf of Carpentaria
+2864;2484;sea;0;0;#Great Barrier Reef
+2864;2487;sea;0;0;#Great Barrier Reef
+2865;2469;sea;0;0;#Capricorn Bay
+2865;2470;sea;0;0;#Capricorn Bay
+2865;2483;sea;0;0;#Capricorn Bay
+2865;2484;sea;0;0;#Capricorn Bay
+2866;2468;sea;0;0;#Cape Howe
+2866;2469;sea;0;0;#Cape Howe
+2866;2472;sea;0;0;#Cape Howe
+2867;2472;sea;0;0;#Bass Strait
+2867;2476;sea;0;0;#Bass Strait
+2867;2477;sea;0;0;#Bass Strait
+2867;2479;sea;0;0;#Bass Strait
+2867;2482;sea;0;0;#Bass Strait
+2868;2477;sea;0;0;#Kangaroo Island
+2868;2482;sea;0;0;#Kangaroo Island
+2868;2491;sea;0;0;#Kangaroo Island
+2868;2492;sea;0;0;#Kangaroo Island
+2868;2493;sea;0;0;#Kangaroo Island
+2868;2494;sea;0;0;#Kangaroo Island
+2869;2492;sea;0;0;#Great Australian Bight
+2869;2496;sea;0;0;#Great Australian Bight
+2869;2504;sea;0;0;#Great Australian Bight
+2870;2497;sea;0;0;#Cape Leeuwin
+2870;2498;sea;0;0;#Cape Leeuwin
+2870;2504;sea;0;0;#Cape Leeuwin
+2871;2497;sea;0;0;#Shark Bay
+2871;2499;sea;0;0;#Shark Bay
+2872;2499;sea;0;0;#Northwest Cape
+2872;2502;sea;0;0;#Northwest Cape
+2872;2602;sea;0;0;#Northwest Cape
+2873;2501;sea;0;0;#King Sound
+2873;2602;sea;0;0;#King Sound
+2874;2482;sea;0;0;#Tasman Plateau
+2875;2482;sea;0;0;#Toogee Ridge
+2876;2510;sea;0;0;#Cook Strait
+2876;2512;sea;0;0;#Cook Strait
+2876;2513;sea;0;0;#Cook Strait
+2876;2514;sea;0;0;#Cook Strait
+2876;2516;sea;0;0;#Cook Strait
+2878;2509;sea;0;0;#Cape Farewell
+2878;2510;sea;0;0;#Cape Farewell
+2878;2571;sea;0;0;#Cape Farewell
+2879;2511;sea;0;0;#Coast of New Zealand
+2879;2512;sea;0;0;#Coast of New Zealand
+2879;2571;sea;0;0;#Coast of New Zealand
+2880;2513;sea;0;0;#Southern Tasman Sea
+2881;2512;sea;0;0;#Canterbury Bight
+2881;2513;sea;0;0;#Canterbury Bight
+2881;2515;sea;0;0;#Canterbury Bight
+2881;2516;sea;0;0;#Canterbury Bight
+2882;1097;sea;0;0;#New Caledonia Sea
+2882;2535;sea;0;0;#New Caledonia Sea
+2884;2534;sea;0;0;#Gilbert Sea
+2884;2535;sea;0;0;#Gilbert Sea
+2884;2536;sea;0;0;#Gilbert Sea
+2885;1531;sea;0;0;#Solomon Sea
+2885;2534;sea;0;0;#Solomon Sea
+2885;2539;sea;0;0;#Solomon Sea
+2886;2523;sea;0;0;#Nauru Island
+2887;610;sea;0;0;#Melanesia Sea
+2887;1531;sea;0;0;#Melanesia Sea
+2888;2517;sea;0;0;#Micronesia Sea
+2888;2519;sea;0;0;#Micronesia Sea
+2891;1654;sea;0;0;#Tinian Sea
+2891;2521;sea;0;0;#Tinian Sea
+2892;1654;sea;0;0;#Iwo Jima Sea
+2894;1074;sea;0;0;#The Kuriles
+2895;1074;sea;0;0;#Bay of Uka
+2896;1074;sea;0;0;#Bay of Oljut
+2896;2634;sea;0;0;#Bay of Oljut
+2897;2634;sea;0;0;#Bay of Anadyr
+2897;2637;sea;0;0;#Bay of Anadyr
+2898;1074;sea;0;0;#Yekaterina Plains
+2899;1177;sea;0;0;#Horn of Africa
+2899;1871;sea;0;0;#Horn of Africa
+2899;1872;sea;0;0;#Horn of Africa
+2900;1868;sea;0;0;#Coast of Pepper
+2900;1870;sea;0;0;#Coast of Pepper
+2900;1871;sea;0;0;#Coast of Pepper
+2900;2030;sea;0;0;#Coast of Pepper
+2901;2029;sea;0;0;#Zanzibar Strait
+2901;2030;sea;0;0;#Zanzibar Strait
+2901;2036;sea;0;0;#Zanzibar Strait
+2901;2037;sea;0;0;#Zanzibar Strait
+2901;2038;sea;0;0;#Zanzibar Strait
+2901;2039;sea;0;0;#Zanzibar Strait
+2901;2048;sea;0;0;#Zanzibar Strait
+2901;2127;sea;0;0;#Zanzibar Strait
+2902;2039;sea;0;0;#Mozambique Channel
+2902;2060;sea;0;0;#Mozambique Channel
+2902;2061;sea;0;0;#Mozambique Channel
+2902;2063;sea;0;0;#Mozambique Channel
+2902;2120;sea;0;0;#Mozambique Channel
+2902;2121;sea;0;0;#Mozambique Channel
+2902;2122;sea;0;0;#Mozambique Channel
+2902;2123;sea;0;0;#Mozambique Channel
+2903;2120;sea;0;0;#Diego Suarez Bay
+2903;2125;sea;0;0;#Diego Suarez Bay
+2903;2127;sea;0;0;#Diego Suarez Bay
+2904;1177;sea;0;0;#Western Arabian Sea
+2907;2118;sea;0;0;#Coast of Tamatave
+2907;2119;sea;0;0;#Coast of Tamatave
+2907;2120;sea;0;0;#Coast of Tamatave
+2907;2126;sea;0;0;#Coast of Tamatave
+2908;2125;sea;0;0;#The Mascareignes
+2909;2059;sea;0;0;#Gulf of Zambeze
+2909;2061;sea;0;0;#Gulf of Zambeze
+2909;2117;sea;0;0;#Gulf of Zambeze
+2909;2122;sea;0;0;#Gulf of Zambeze
+2910;2049;sea;0;0;#Coast of Natal
+2910;2050;sea;0;0;#Coast of Natal
+2910;2051;sea;0;0;#Coast of Natal
+2910;2057;sea;0;0;#Coast of Natal
+2910;2059;sea;0;0;#Coast of Natal
+2910;2113;sea;0;0;#Coast of Natal
+2911;2098;sea;0;0;#Coast of Transkei
+2911;2100;sea;0;0;#Coast of Transkei
+2911;2111;sea;0;0;#Coast of Transkei
+2911;2113;sea;0;0;#Coast of Transkei
+2912;2091;sea;0;0;#Coast of Ciskei
+2912;2096;sea;0;0;#Coast of Ciskei
+2912;2098;sea;0;0;#Coast of Ciskei
+2913;2084;sea;0;0;#Cape of Good Hope
+2913;2087;sea;0;0;#Cape of Good Hope
+2913;2088;sea;0;0;#Cape of Good Hope
+2913;2090;sea;0;0;#Cape of Good Hope
+2913;2091;sea;0;0;#Cape of Good Hope
+2914;2083;sea;0;0;#Coast of Namibia
+2914;2084;sea;0;0;#Coast of Namibia
+2915;2004;sea;0;0;#Coast of Angola
+2915;2079;sea;0;0;#Coast of Angola
+2915;2083;sea;0;0;#Coast of Angola
+2916;1999;sea;0;0;#Gulf of Kongo
+2916;2001;sea;0;0;#Gulf of Kongo
+2916;2003;sea;0;0;#Gulf of Kongo
+2916;2004;sea;0;0;#Gulf of Kongo
+2917;1954;sea;0;0;#Coast of Cameroon
+2917;1972;sea;0;0;#Coast of Cameroon
+2917;1973;sea;0;0;#Coast of Cameroon
+2917;1974;sea;0;0;#Coast of Cameroon
+2917;1983;sea;0;0;#Coast of Cameroon
+2917;2000;sea;0;0;#Coast of Cameroon
+2917;2001;sea;0;0;#Coast of Cameroon
+2917;2624;sea;0;0;#Coast of Cameroon
+2918;1919;sea;0;0;#Bight of Benin
+2918;1923;sea;0;0;#Bight of Benin
+2918;1928;sea;0;0;#Bight of Benin
+2918;1931;sea;0;0;#Bight of Benin
+2918;1932;sea;0;0;#Bight of Benin
+2918;1934;sea;0;0;#Bight of Benin
+2918;1954;sea;0;0;#Bight of Benin
+2918;1955;sea;0;0;#Bight of Benin
+2918;1956;sea;0;0;#Bight of Benin
+2918;1957;sea;0;0;#Bight of Benin
+2918;1958;sea;0;0;#Bight of Benin
+2918;1973;sea;0;0;#Bight of Benin
+2919;1892;sea;0;0;#Gold Coast
+2919;1894;sea;0;0;#Gold Coast
+2919;1907;sea;0;0;#Gold Coast
+2919;1908;sea;0;0;#Gold Coast
+2919;1909;sea;0;0;#Gold Coast
+2919;1914;sea;0;0;#Gold Coast
+2919;1919;sea;0;0;#Gold Coast
+2920;1884;sea;0;0;#Ivory Coast
+2920;1887;sea;0;0;#Ivory Coast
+2920;1888;sea;0;0;#Ivory Coast
+2920;1892;sea;0;0;#Ivory Coast
+2920;1893;sea;0;0;#Ivory Coast
+2921;1877;sea;0;0;#Coast of Guinea
+2921;1879;sea;0;0;#Coast of Guinea
+2921;1884;sea;0;0;#Coast of Guinea
+2922;1783;sea;0;0;#Coast of Senegambia
+2922;1784;sea;0;0;#Coast of Senegambia
+2922;1785;sea;0;0;#Coast of Senegambia
+2922;1788;sea;0;0;#Coast of Senegambia
+2922;1792;sea;0;0;#Coast of Senegambia
+2922;1876;sea;0;0;#Coast of Senegambia
+2922;2573;sea;0;0;#Coast of Senegambia
+2923;1774;sea;0;0;#Mauritanian Coast
+2923;1775;sea;0;0;#Mauritanian Coast
+2923;1776;sea;0;0;#Mauritanian Coast
+2923;1784;sea;0;0;#Mauritanian Coast
+2924;1693;sea;0;0;#Canarian Sea
+2924;1694;sea;0;0;#Canarian Sea
+2924;1695;sea;0;0;#Canarian Sea
+2924;1696;sea;0;0;#Canarian Sea
+2924;1773;sea;0;0;#Canarian Sea
+2924;1774;sea;0;0;#Canarian Sea
+2924;2135;sea;0;0;#Canarian Sea
+2924;2136;sea;0;0;#Canarian Sea
+2925;512;sea;0;0;#Coast of Morocco
+2925;517;sea;0;0;#Coast of Morocco
+2925;1685;sea;0;0;#Coast of Morocco
+2925;1686;sea;0;0;#Coast of Morocco
+2925;1687;sea;0;0;#Coast of Morocco
+2925;1691;sea;0;0;#Coast of Morocco
+2925;1693;sea;0;0;#Coast of Morocco
+2925;2563;sea;0;0;#Coast of Morocco
+2928;252;sea;0;0;#Icelandic Sea
+2929;252;sea;0;0;#Shetland Straits
+2929;253;sea;0;0;#Shetland Straits
+2930;252;sea;0;0;#Coast of Iceland
+2933;251;sea;0;0;#Denmark Strait
+2933;252;sea;0;0;#Denmark Strait
+2933;2632;sea;0;0;#Denmark Strait
+2934;251;sea;0;0;#Eastern Coast of Greenland
+2935;251;sea;0;0;#Western Coast of Greenland
+2936;76;sea;0;0;#Labrador Strait
+2936;2562;sea;0;0;#Labrador Strait
+2937;251;sea;0;0;#Baffin Bay
+2937;2591;sea;0;0;#Baffin Bay
+2937;2636;sea;0;0;#Baffin Bay
+2938;2592;sea;0;0;#Hudson Straits
+2938;2627;sea;0;0;#Hudson Straits
+2939;47;sea;0;0;#James Bay
+2939;48;sea;0;0;#James Bay
+2939;60;sea;0;0;#James Bay
+2939;2593;sea;0;0;#James Bay
+2939;2628;sea;0;0;#James Bay
+2940;37;sea;0;0;#Western Hudson Bay
+2940;44;sea;0;0;#Western Hudson Bay
+2940;47;sea;0;0;#Western Hudson Bay
+2940;2595;sea;0;0;#Western Hudson Bay
+2941;44;sea;0;0;#Eastern Hudson Bay
+2941;2592;sea;0;0;#Eastern Hudson Bay
+2942;44;sea;0;0;#Foxe Basin
+2942;2592;sea;0;0;#Foxe Basin
+2943;61;sea;0;0;#Gulf of St. Lawrence
+2943;62;sea;0;0;#Gulf of St. Lawrence
+2943;65;sea;0;0;#Gulf of St. Lawrence
+2943;67;sea;0;0;#Gulf of St. Lawrence
+2943;69;sea;0;0;#Gulf of St. Lawrence
+2944;68;sea;0;0;#Cabot Strait
+2944;69;sea;0;0;#Cabot Strait
+2944;70;sea;0;0;#Cabot Strait
+2944;72;sea;0;0;#Cabot Strait
+2944;73;sea;0;0;#Cabot Strait
+2944;74;sea;0;0;#Cabot Strait
+2944;75;sea;0;0;#Cabot Strait
+2944;77;sea;0;0;#Cabot Strait
+2945;68;sea;0;0;#Bay of Fundy
+2945;71;sea;0;0;#Bay of Fundy
+2945;72;sea;0;0;#Bay of Fundy
+2945;249;sea;0;0;#Bay of Fundy
+2946;62;sea;0;0;#Strait of Belle Isle
+2946;75;sea;0;0;#Strait of Belle Isle
+2947;74;sea;0;0;#Fortune Bay
+2948;74;sea;0;0;#Notre Dame Bay
+2948;75;sea;0;0;#Notre Dame Bay
+2952;242;sea;0;0;#Massachusetts Bay
+2952;243;sea;0;0;#Massachusetts Bay
+2952;244;sea;0;0;#Massachusetts Bay
+2952;247;sea;0;0;#Massachusetts Bay
+2952;248;sea;0;0;#Massachusetts Bay
+2952;249;sea;0;0;#Massachusetts Bay
+2953;222;sea;0;0;#Chesapeake Bay
+2953;223;sea;0;0;#Chesapeake Bay
+2953;229;sea;0;0;#Chesapeake Bay
+2953;230;sea;0;0;#Chesapeake Bay
+2953;231;sea;0;0;#Chesapeake Bay
+2953;232;sea;0;0;#Chesapeake Bay
+2953;233;sea;0;0;#Chesapeake Bay
+2953;241;sea;0;0;#Chesapeake Bay
+2953;242;sea;0;0;#Chesapeake Bay
+2954;207;sea;0;0;#Cape Hatteras
+2954;210;sea;0;0;#Cape Hatteras
+2954;212;sea;0;0;#Cape Hatteras
+2954;213;sea;0;0;#Cape Hatteras
+2954;214;sea;0;0;#Cape Hatteras
+2954;219;sea;0;0;#Cape Hatteras
+2954;220;sea;0;0;#Cape Hatteras
+2954;222;sea;0;0;#Cape Hatteras
+2955;199;sea;0;0;#Coast of Carolina
+2955;204;sea;0;0;#Coast of Carolina
+2955;205;sea;0;0;#Coast of Carolina
+2955;210;sea;0;0;#Coast of Carolina
+2956;199;sea;0;0;#Coast of Florida
+2956;200;sea;0;0;#Coast of Florida
+2956;2219;sea;0;0;#Coast of Florida
+2957;2219;sea;0;0;#Coast of the Bahamas
+2958;200;sea;0;0;#Florida Straits
+2958;2209;sea;0;0;#Florida Straits
+2958;2210;sea;0;0;#Florida Straits
+2958;2219;sea;0;0;#Florida Straits
+2959;198;sea;0;0;#Apalachee Bay
+2959;199;sea;0;0;#Apalachee Bay
+2959;200;sea;0;0;#Apalachee Bay
+2960;139;sea;0;0;#Mobile Bay
+2960;140;sea;0;0;#Mobile Bay
+2960;141;sea;0;0;#Mobile Bay
+2960;194;sea;0;0;#Mobile Bay
+2960;197;sea;0;0;#Mobile Bay
+2960;198;sea;0;0;#Mobile Bay
+2961;132;sea;0;0;#Galveston Bay
+2961;133;sea;0;0;#Galveston Bay
+2961;137;sea;0;0;#Galveston Bay
+2961;138;sea;0;0;#Galveston Bay
+2961;141;sea;0;0;#Galveston Bay
+2961;2149;sea;0;0;#Galveston Bay
+2962;2149;sea;0;0;#Tampico Bay
+2962;2150;sea;0;0;#Tampico Bay
+2962;2163;sea;0;0;#Tampico Bay
+2963;2162;sea;0;0;#Yucatan Sea
+2963;2164;sea;0;0;#Yucatan Sea
+2963;2165;sea;0;0;#Yucatan Sea
+2963;2183;sea;0;0;#Yucatan Sea
+2963;2184;sea;0;0;#Yucatan Sea
+2964;2183;sea;0;0;#Gulf of Mexico
+2964;2185;sea;0;0;#Gulf of Mexico
+2964;2209;sea;0;0;#Gulf of Mexico
+2965;1638;sea;0;0;#Strait of Shikoku
+2965;1639;sea;0;0;#Strait of Shikoku
+2965;1640;sea;0;0;#Strait of Shikoku
+2965;1655;sea;0;0;#Strait of Shikoku
+2965;1659;sea;0;0;#Strait of Shikoku
+2965;1660;sea;0;0;#Strait of Shikoku
+2965;1666;sea;0;0;#Strait of Shikoku
+2965;1667;sea;0;0;#Strait of Shikoku
+2965;2224;sea;0;0;#Strait of Shikoku
+2966;2185;sea;0;0;#Belize Bay
+2966;2188;sea;0;0;#Belize Bay
+2966;2190;sea;0;0;#Belize Bay
+2966;2194;sea;0;0;#Belize Bay
+2966;2195;sea;0;0;#Belize Bay
+2967;2196;sea;0;0;#Mosquito Coast
+2967;2200;sea;0;0;#Mosquito Coast
+2968;1723;sea;0;0;#Gulf of Darien
+2968;2198;sea;0;0;#Gulf of Darien
+2968;2200;sea;0;0;#Gulf of Darien
+2968;2203;sea;0;0;#Gulf of Darien
+2968;2204;sea;0;0;#Gulf of Darien
+2968;2205;sea;0;0;#Gulf of Darien
+2968;2206;sea;0;0;#Gulf of Darien
+2968;2208;sea;0;0;#Gulf of Darien
+2968;2253;sea;0;0;#Gulf of Darien
+2968;2254;sea;0;0;#Gulf of Darien
+2968;2255;sea;0;0;#Gulf of Darien
+2969;2212;sea;0;0;#Jamaica Channel
+2969;2213;sea;0;0;#Jamaica Channel
+2969;2215;sea;0;0;#Jamaica Channel
+2969;2217;sea;0;0;#Jamaica Channel
+2970;2217;sea;0;0;#Central Caribbean
+2971;2209;sea;0;0;#Northwestern Caribbean
+2971;2210;sea;0;0;#Northwestern Caribbean
+2971;2211;sea;0;0;#Northwestern Caribbean
+2971;2212;sea;0;0;#Northwestern Caribbean
+2971;2217;sea;0;0;#Northwestern Caribbean
+2972;2234;sea;0;0;#Venezuelan Gulf
+2972;2255;sea;0;0;#Venezuelan Gulf
+2972;2268;sea;0;0;#Venezuelan Gulf
+2972;2270;sea;0;0;#Venezuelan Gulf
+2972;2271;sea;0;0;#Venezuelan Gulf
+2972;2272;sea;0;0;#Venezuelan Gulf
+2973;2234;sea;0;0;#Venezuelan Sea
+2973;2264;sea;0;0;#Venezuelan Sea
+2973;2267;sea;0;0;#Venezuelan Sea
+2973;2269;sea;0;0;#Venezuelan Sea
+2974;2214;sea;0;0;#Eastern Caribbean
+2974;2216;sea;0;0;#Eastern Caribbean
+2974;2222;sea;0;0;#Eastern Caribbean
+2975;2229;sea;0;0;#Windward Islands
+2975;2231;sea;0;0;#Windward Islands
+2975;2233;sea;0;0;#Windward Islands
+2975;2237;sea;0;0;#Windward Islands
+2975;2269;sea;0;0;#Windward Islands
+2975;2276;sea;0;0;#Windward Islands
+2976;2222;sea;0;0;#Lesser Antilles
+2976;2223;sea;0;0;#Lesser Antilles
+2976;2226;sea;0;0;#Lesser Antilles
+2976;2227;sea;0;0;#Lesser Antilles
+2976;2228;sea;0;0;#Lesser Antilles
+2976;2230;sea;0;0;#Lesser Antilles
+2976;2231;sea;0;0;#Lesser Antilles
+2976;2232;sea;0;0;#Lesser Antilles
+2976;2236;sea;0;0;#Lesser Antilles
+2977;2214;sea;0;0;#Turks & Caicos Sea
+2977;2215;sea;0;0;#Turks & Caicos Sea
+2977;2216;sea;0;0;#Turks & Caicos Sea
+2977;2219;sea;0;0;#Turks & Caicos Sea
+2978;2210;sea;0;0;#Coast of Cuba
+2978;2211;sea;0;0;#Coast of Cuba
+2978;2212;sea;0;0;#Coast of Cuba
+2978;2219;sea;0;0;#Coast of Cuba
+2979;2214;sea;0;0;#Coast of Hispaniola
+2979;2222;sea;0;0;#Coast of Hispaniola
+2979;2226;sea;0;0;#Coast of Hispaniola
+2980;2239;sea;0;0;#Guyana Coast
+2980;2240;sea;0;0;#Guyana Coast
+2980;2241;sea;0;0;#Guyana Coast
+2980;2243;sea;0;0;#Guyana Coast
+2980;2276;sea;0;0;#Guyana Coast
+2981;2241;sea;0;0;#Coast of Amapa
+2981;2415;sea;0;0;#Coast of Amapa
+2982;2214;sea;0;0;#Amazonas Gulf
+2982;2215;sea;0;0;#Amazonas Gulf
+2982;2410;sea;0;0;#Amazonas Gulf
+2982;2424;sea;0;0;#Amazonas Gulf
+2983;2424;sea;0;0;#Coast of Brazil
+2983;2426;sea;0;0;#Coast of Brazil
+2983;2429;sea;0;0;#Coast of Brazil
+2983;2431;sea;0;0;#Coast of Brazil
+2984;2428;sea;0;0;#Coast of Recife
+2984;2431;sea;0;0;#Coast of Recife
+2984;2432;sea;0;0;#Coast of Recife
+2984;2434;sea;0;0;#Coast of Recife
+2985;2434;sea;0;0;#Coast of Pernambuco
+2985;2435;sea;0;0;#Coast of Pernambuco
+2985;2436;sea;0;0;#Coast of Pernambuco
+2985;2439;sea;0;0;#Coast of Pernambuco
+2986;2439;sea;0;0;#Todos os Santos Bay
+2986;2448;sea;0;0;#Todos os Santos Bay
+2986;2449;sea;0;0;#Todos os Santos Bay
+2987;2447;sea;0;0;#Rio De Janeiro
+2987;2448;sea;0;0;#Rio De Janeiro
+2987;2451;sea;0;0;#Rio De Janeiro
+2987;2455;sea;0;0;#Rio De Janeiro
+2987;2457;sea;0;0;#Rio De Janeiro
+2987;2461;sea;0;0;#Rio De Janeiro
+2988;2347;sea;0;0;#Baia Paranagua
+2988;2461;sea;0;0;#Baia Paranagua
+2988;2463;sea;0;0;#Baia Paranagua
+2988;2464;sea;0;0;#Baia Paranagua
+2989;2344;sea;0;0;#Rio De La Plata
+2989;2345;sea;0;0;#Rio De La Plata
+2989;2347;sea;0;0;#Rio De La Plata
+2989;2348;sea;0;0;#Rio De La Plata
+2989;2351;sea;0;0;#Rio De La Plata
+2989;2352;sea;0;0;#Rio De La Plata
+2989;2359;sea;0;0;#Rio De La Plata
+2989;2360;sea;0;0;#Rio De La Plata
+2990;2352;sea;0;0;#Bahia Blanca
+2990;2354;sea;0;0;#Bahia Blanca
+2990;2355;sea;0;0;#Bahia Blanca
+2990;2392;sea;0;0;#Bahia Blanca
+2990;2393;sea;0;0;#Bahia Blanca
+2990;2396;sea;0;0;#Bahia Blanca
+2991;2398;sea;0;0;#Coast of Patagonia
+2991;2399;sea;0;0;#Coast of Patagonia
+2992;2334;sea;0;0;#Magellan Strait
+2992;2335;sea;0;0;#Magellan Strait
+2992;2399;sea;0;0;#Magellan Strait
+2992;2400;sea;0;0;#Magellan Strait
+2993;2333;sea;0;0;#South Chilean Coast
+2993;2334;sea;0;0;#South Chilean Coast
+2994;2328;sea;0;0;#Coast of Chile
+2994;2329;sea;0;0;#Coast of Chile
+2994;2332;sea;0;0;#Coast of Chile
+2994;2333;sea;0;0;#Coast of Chile
+2995;2325;sea;0;0;#Atacama Coast
+2995;2326;sea;0;0;#Atacama Coast
+2995;2329;sea;0;0;#Atacama Coast
+2995;2330;sea;0;0;#Atacama Coast
+2996;2305;sea;0;0;#Antofagasta Coast
+2996;2322;sea;0;0;#Antofagasta Coast
+2996;2323;sea;0;0;#Antofagasta Coast
+2996;2326;sea;0;0;#Antofagasta Coast
+2997;2297;sea;0;0;#Arequipa Bay
+2997;2304;sea;0;0;#Arequipa Bay
+2997;2305;sea;0;0;#Arequipa Bay
+2997;2307;sea;0;0;#Arequipa Bay
+2997;2308;sea;0;0;#Arequipa Bay
+2997;2309;sea;0;0;#Arequipa Bay
+2997;2578;sea;0;0;#Arequipa Bay
+2998;2292;sea;0;0;#Coast of Peru
+2998;2295;sea;0;0;#Coast of Peru
+2998;2297;sea;0;0;#Coast of Peru
+2998;2298;sea;0;0;#Coast of Peru
+2998;2619;sea;0;0;#Coast of Peru
+2999;2280;sea;0;0;#Guayaquil Bay
+2999;2291;sea;0;0;#Guayaquil Bay
+2999;2292;sea;0;0;#Guayaquil Bay
+3000;2258;sea;0;0;#Coast of Ecuador
+3000;2281;sea;0;0;#Coast of Ecuador
+3001;1723;sea;0;0;#Gulf of Panama
+3001;2201;sea;0;0;#Gulf of Panama
+3001;2204;sea;0;0;#Gulf of Panama
+3001;2205;sea;0;0;#Gulf of Panama
+3001;2206;sea;0;0;#Gulf of Panama
+3001;2208;sea;0;0;#Gulf of Panama
+3001;2253;sea;0;0;#Gulf of Panama
+3001;2258;sea;0;0;#Gulf of Panama
+3002;2191;sea;0;0;#Bay of Costa Rica
+3002;2192;sea;0;0;#Bay of Costa Rica
+3002;2193;sea;0;0;#Bay of Costa Rica
+3002;2197;sea;0;0;#Bay of Costa Rica
+3002;2198;sea;0;0;#Bay of Costa Rica
+3002;2199;sea;0;0;#Bay of Costa Rica
+3002;2201;sea;0;0;#Bay of Costa Rica
+3002;2202;sea;0;0;#Bay of Costa Rica
+3003;2178;sea;0;0;#Acapulco Bay
+3003;2182;sea;0;0;#Acapulco Bay
+3003;2186;sea;0;0;#Acapulco Bay
+3003;2187;sea;0;0;#Acapulco Bay
+3003;2191;sea;0;0;#Acapulco Bay
+3004;2171;sea;0;0;#Manzanilla Bay
+3004;2178;sea;0;0;#Manzanilla Bay
+3004;2179;sea;0;0;#Manzanilla Bay
+3005;2161;sea;0;0;#Mazatlan Bay
+3005;2168;sea;0;0;#Mazatlan Bay
+3005;2169;sea;0;0;#Mazatlan Bay
+3005;2171;sea;0;0;#Mazatlan Bay
+3006;2137;sea;0;0;#Gulf of California
+3006;2138;sea;0;0;#Gulf of California
+3006;2139;sea;0;0;#Gulf of California
+3006;2140;sea;0;0;#Gulf of California
+3006;2141;sea;0;0;#Gulf of California
+3006;2156;sea;0;0;#Gulf of California
+3006;2157;sea;0;0;#Gulf of California
+3006;2161;sea;0;0;#Gulf of California
+3007;2138;sea;0;0;#Coast of Baja
+3007;2139;sea;0;0;#Coast of Baja
+3008;89;sea;0;0;#Coast of California
+3008;90;sea;0;0;#Coast of California
+3008;2139;sea;0;0;#Coast of California
+3009;84;sea;0;0;#Santa Catalina Islands
+3009;85;sea;0;0;#Santa Catalina Islands
+3009;87;sea;0;0;#Santa Catalina Islands
+3009;89;sea;0;0;#Santa Catalina Islands
+3010;81;sea;0;0;#Coast of Oregon
+3010;85;sea;0;0;#Coast of Oregon
+3011;13;sea;0;0;#Coast of Columbia
+3011;15;sea;0;0;#Coast of Columbia
+3011;78;sea;0;0;#Coast of Columbia
+3011;81;sea;0;0;#Coast of Columbia
+3012;1;sea;0;0;#Hecate Strait
+3012;4;sea;0;0;#Hecate Strait
+3012;15;sea;0;0;#Hecate Strait
+3013;4;sea;0;0;#Gulf of Alaska
+3013;5;sea;0;0;#Gulf of Alaska
+3014;5;sea;0;0;#Coast of Alaska
+3014;2631;sea;0;0;#Coast of Alaska
+3015;2631;sea;0;0;#Kuskowim Bay
+3020;2134;sea;0;0;#Sea of Azores
+3021;2134;sea;0;0;#Corner Seamounts
+3022;71;sea;0;0;#New England Seamounts
+3022;72;sea;0;0;#New England Seamounts
+3025;203;sea;0;0;#West Bermuda Sea
+3038;2129;sea;0;0;#East Guinea Basin
+3048;2131;sea;0;0;#Coast of Falklands
+3053;2130;sea;0;0;#West Coast of Ascension
+3054;2130;sea;0;0;#East Coast of Ascension
+3057;2132;sea;0;0;#Gough Island
+3058;2132;sea;0;0;#Coast of Tristan da Cunha
+3067;1321;sea;0;0;#Ceylon Sea
+3067;1322;sea;0;0;#Ceylon Sea
+3067;1324;sea;0;0;#Ceylon Sea
+3068;1325;sea;0;0;#Coast of Maldives
+3072;1325;sea;0;0;#One and a Half Degree Channel
+3072;2128;sea;0;0;#One and a Half Degree Channel
+3073;2128;sea;0;0;#Chagos Archipelago
+3076;2406;sea;0;0;#Coast of the Keelings
+3077;2406;sea;0;0;#Java Trench
+3080;2117;sea;0;0;#Cape Sainte Marie
+3080;2118;sea;0;0;#Cape Sainte Marie
+3121;1074;sea;0;0;#Novarsk Plain
+3126;2525;sea;0;0;#Coast of Marcus Island
+3127;2517;sea;0;0;#Coast of the Mariana Islands
+3127;2521;sea;0;0;#Coast of the Mariana Islands
+3130;2631;sea;0;0;#North Bering Sea
+3132;5;sea;0;0;#Western Aleutian Islands
+3133;2631;sea;0;0;#Pribilof Islands
+3134;5;sea;0;0;#Eastern Aleutian Islands
+3135;5;sea;0;0;#Uminak Pass
+3150;658;sea;0;0;#Coast of Hawaii
+3153;2623;sea;0;0;#Coast of Midway Island
+3154;2168;sea;0;0;#Kepler Plain
+3157;2285;sea;0;0;#Coast of the Galapagos Islands
+3159;801;sea;0;0;#Coast of the Cook Islands
+3159;2545;sea;0;0;#Coast of the Cook Islands
+3169;686;sea;0;0;#Northern Line Islands
+3170;801;sea;0;0;#Coast of the Society Islands
+3170;2545;sea;0;0;#Coast of the Society Islands
+3170;2546;sea;0;0;#Coast of the Society Islands
+3170;2553;sea;0;0;#Coast of the Society Islands
+3175;2551;sea;0;0;#Southern Line Islands
+3176;686;sea;0;0;#Central Pacific Basin
+3176;2546;sea;0;0;#Central Pacific Basin
+3177;2520;sea;0;0;#Coast of Samoa
+3177;2540;sea;0;0;#Coast of Samoa
+3177;2542;sea;0;0;#Coast of Samoa
+3177;2543;sea;0;0;#Coast of Samoa
+3177;2544;sea;0;0;#Coast of Samoa
+3177;2547;sea;0;0;#Coast of Samoa
+3178;2526;sea;0;0;#Johnston Atoll
+3179;2520;sea;0;0;#Coast of Tonga
+3179;2540;sea;0;0;#Coast of Tonga
+3179;2544;sea;0;0;#Coast of Tonga
+3179;2545;sea;0;0;#Coast of Tonga
+3179;2548;sea;0;0;#Coast of Tonga
+3180;2551;sea;0;0;#Coast of the Marquesas
+3180;2553;sea;0;0;#Coast of the Marquesas
+3182;2552;sea;0;0;#Coast of the Tuamotus
+3182;2553;sea;0;0;#Coast of the Tuamotus
+3185;2545;sea;0;0;#Southwest Pacific Basin
+3187;2552;sea;0;0;#Coast of Pitcairn Island
+3190;2336;sea;0;0;#Coast of Easter Island
+3191;2541;sea;0;0;#Coast of the Ellice Islands
+3192;2535;sea;0;0;#New Caledonia Basin
+3197;2522;sea;0;0;#Syrus Reef
+3197;2524;sea;0;0;#Syrus Reef
+3200;4;sea;0;0;#Coast of South Georgia
+3203;2129;sea;0;0;#West Coast of Saint Helena
+3218;610;sea;0;0;#Pisaros Pass
+3218;2579;sea;0;0;#Pisaros Pass
+3219;2454;sea;0;0;#Coast of Fiji
+3219;2520;sea;0;0;#Coast of Fiji
+3220;2508;sea;0;0;#Coast of Norfolk Island
+3221;2522;sea;0;0;#Coast of the Gilbert Islands
+3221;2527;sea;0;0;#Coast of the Gilbert Islands
+3222;2522;sea;0;0;#Mainu Reef
+3223;610;sea;0;0;#Tusei Bank
+3223;2522;sea;0;0;#Tusei Bank
+3244;610;sea;0;0;#Jaluit Passage
+3244;2522;sea;0;0;#Jaluit Passage
+3248;2334;sea;0;0;#West Magellan Strait

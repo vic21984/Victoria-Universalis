@@ -1,0 +1,26 @@
+owner = IMG
+controller = IMG
+add_core = QNG
+add_core = MGL
+add_core = IMG
+trade_goods = iron
+life_rating = 32
+terrain = mountain_mine
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	owner = CHI
+	controller = CHI
+	add_core = CHI
+	remove_core = QNG
+}

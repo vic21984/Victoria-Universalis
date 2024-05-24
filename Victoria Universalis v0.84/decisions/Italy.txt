@@ -1,0 +1,386 @@
+political_decisions = {
+	expedition_to_sicily = {
+		picture = garibaldi_redshirts
+		potential = {
+			OR = {
+				tag = SAR
+				tag = LOM
+				tag = VEN
+				tag = PAR
+				tag = MOD
+				tag = LUC
+				tag = TUS
+			}
+			NOT = { exists = ITA }
+			NOT = { has_global_flag = expedition_to_sicily }
+		}
+
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			set_global_flag = expedition_to_sicily
+			define_general = {
+				name = "§RGiuseppe Garibaldi§W"
+				personality = org15mor40
+				background = 4a4d_1
+			}
+			any_country = {
+				limit = {
+					NOT = { tag = THIS }
+					owns = 754
+				}
+				country_event = { id = 35305 days = 0 }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes }
+					has_building = naval_base
+					is_core = THIS
+				}
+				sub_unit = { type = clipper_transport value = current }
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					war_exhaustion = 1
+					war = yes
+					754 = {
+						owner = {
+							brigades_compare = 1.2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	unite_northern_italy = {
+		picture = north_italian_federation
+		potential = {
+			OR = {
+				tag = SAR
+				tag = LOM
+				tag = VEN
+				tag = PAR
+				tag = MOD
+				tag = LUC
+				tag = TUS
+			}
+			NOT = { exists = ITA }
+			NOT = {	has_global_flag = north_italian_federation }
+		}
+		allow = {
+			727 = { owned_by = THIS }
+			OR = {
+				SAR_720 = { owned_by = THIS }
+				MOD_739 = { owned_by = THIS }
+			}
+			war = no
+		}
+
+		effect = {
+			add_accepted_culture = north_italian
+			any_country = {
+				limit = {
+					OR = {
+						tag = SAR
+						tag = LOM
+						tag = VEN
+						tag = PAR
+						tag = MOD
+						tag = LUC
+						tag = TUS
+					}
+					ai = yes
+				}
+				annex_to = THIS
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			MOD_739 = { add_core = THIS }
+			TUS_744 = { add_core = THIS }
+			SAR_720 = { add_core = THIS }
+			765 = { add_core = THIS }
+			766 = { add_core = THIS }
+			AUS_726 = { add_core = THIS }
+			PAP_749 = { add_core = THIS }
+			set_global_flag = north_italian_federation	
+		}
+	}
+
+	cavours_diplomacy = {
+		potential = {
+			OR = {
+				AND = { 
+					tag = ITA
+					NOT = { exists = SAR }
+				}
+				AND = { 
+					tag = SAR
+					NOT = { exists = ITA }
+				}
+			}
+			NOT = {
+				has_country_flag = cavour_has_done_his
+			}
+			owns = 465
+			owns = 466
+			owns = 472
+			FRA = {
+				exists = yes
+				is_greater_power = yes
+			}
+		}
+		allow = {
+			relation = {
+				who = FRA
+				value = 150
+			}
+			owns = 726
+			owns = 727
+			owns = 728
+			war = no
+		}
+		
+		effect = {
+			prestige = 20
+			badboy = -10
+			relation = {
+				who = FRA
+				value = 50
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			465 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			466 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			472 = {
+				remove_core = ITA
+				remove_core = SAR
+				add_core = FRA
+				secede_province = FRA
+			}
+			set_country_flag = cavour_has_done_his
+		}
+	}
+
+	law_of_guarantees = {
+		potential = {
+			tag = ITA
+			NOT = { has_country_flag = law_of_guarantees }
+		}
+		
+		allow = {
+			SAR_720 = { owned_by = THIS }
+			SAR_765 = { owned_by = THIS }
+			#AUS_726 = { owned_by = THIS }
+			MOD_739 = { owned_by = THIS }
+			TUS_744 = { owned_by = THIS }
+			PAP_749 = { owned_by = THIS }
+			SIC_754 = { owned_by = THIS }
+			SIC_753 = { owned_by = THIS }
+			SIC_755 = { owned_by = THIS }
+			SIC_763 = { owned_by = THIS }
+		}
+		
+		effect = {
+			set_country_flag = law_of_guarantees
+			capital = 749
+			prestige = 15
+			any_owned = {
+				remove_core = SAR
+				remove_core = PAR
+				remove_core = LUC
+				remove_core = MOD
+				remove_core = TUS
+				remove_core = PAP
+				remove_core = SIC
+				remove_core = LOM
+			}
+		}
+	}
+
+	italia_irredenta = {
+		potential = {
+			tag = ITA
+			NOT = {
+				has_country_flag = italia_ulterior
+			}
+		}
+		
+		allow = {
+			OR = {
+				nationalism_n_imperialism = 1
+				is_greater_power = yes
+			}
+			owns = 726
+			owns = 729
+		}
+		
+		effect = {
+			set_country_flag = italia_ulterior
+			734 = {
+				add_core = ITA
+			}
+			735 = {
+				add_core = ITA
+			}			
+			736 = {
+				add_core = ITA
+			}
+			737 = {
+				add_core = ITA
+			}
+			769 = {
+				add_core = ITA
+			}
+			770 = {
+				add_core = ITA
+			}
+			778 = {
+				add_core = ITA
+			}
+		}
+	}
+
+	embrace_south_italians = {
+		picture = embrace_south_italians
+		potential = {
+			tag = SAR
+			NOT = { has_country_flag = embraced_south_italians }
+		}
+		
+		allow = {
+			state_n_government = 1
+			765 = { owned_by = THIS }
+			766 = { owned_by = THIS }
+		}
+		
+		effect = {
+			add_accepted_culture = south_italian
+			set_country_flag = embraced_south_italians
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	annex_lucca = {
+		picture = duchy_of_lucca
+		potential = {
+			tag = TUS
+			exists = LUC
+			NOT = { has_country_flag = lucca_annexed }
+		}
+
+		allow = {
+			year = 1847
+			neighbour = LUC
+			LUC = { ai = yes }
+		}
+
+		effect = {
+			prestige = 5
+			LUC = { all_core = { add_core = THIS } }
+			inherit = LUC
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+		}
+	}
+
+}

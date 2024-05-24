@@ -1,0 +1,51 @@
+owner = AUS
+controller = AUS
+add_core = LOM
+add_core = ITA
+trade_goods = grain
+life_rating = 35
+fort = 1
+1913.1.1 = {
+	owner = ITA
+	controller = ITA
+	state_building = {
+		level = 11
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 9
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 9
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 9
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = cement_factory
+		upgrade = yes
+	}
+}

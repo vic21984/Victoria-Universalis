@@ -1,0 +1,509 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	id = 44450
+	title = "EVTNAME44450"
+	desc = "EVTDESC44450"
+	picture = "mahdist_rule"
+
+	trigger = {
+		owns = 1843
+		year = 1850
+		NOT = { has_global_flag = black_pasha }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1852
+		}
+		modifier = {
+			factor = 0.5
+			year = 1854
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44450"
+		set_global_flag = black_pasha
+		1844 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1845 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1846 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1847 = {
+			secede_province = THIS
+			life_rating = 20
+		}
+		1843 = {
+			secede_province = SSD
+		}
+		1844 = {
+			secede_province = SSD
+		}
+		1845 = {
+			secede_province = SSD
+		}
+		1846 = {
+			secede_province = SSD
+		}
+		1847 = {
+			secede_province = SSD
+		}
+	}
+}
+
+country_event = {
+	id = 44451
+	title = "AI Annex SSD"
+
+	trigger = {
+		ai = yes
+		year = 1865
+		NOT = { has_country_flag = ai_annex_ssd }
+		exists = SSD
+		neighbour = SSD
+		is_vassal = no
+		SSD = {
+			is_vassal = no
+			war = no
+		}
+		OR = {
+			tag = EGY
+			civilized = yes
+		}
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		set_country_flag = ai_annex_ssd
+		war = {
+			target = SSD
+			attacker_goal = { casus_belli = establish_protectorate_casus_belli }
+			call_ally = yes
+		}
+	}
+}
+
+country_event = {
+	id = 44461
+	title = "EVTNAME44461"
+	desc = "EVTDESC44461"
+	picture = "meeting_ali"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44461"
+	}
+}
+
+country_event = {
+	id = 44462
+	title = "EVTNAME44462"
+	desc = "EVTDESC44462"
+	picture = "bank_loan"
+
+	is_triggered_only = yes
+
+	immediate = {
+		add_country_modifier = { name = foreign_debt_timer duration = 10950 }
+		treasury = 500000
+	}
+
+	option = {
+		name = "EVTOPTA44462"
+	}
+}
+
+country_event = {
+	id = 44463
+	title = "EVTNAME44463"
+	desc = "EVTDESC44463"
+	picture = "bank_loan"
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = lent_egypt
+		treasury = 750000
+	}
+
+	option = {
+		name = "EVTOPTA44463"
+	}
+}
+
+country_event = {
+	id = 44464
+	title = "EVTNAME44464"
+	desc = "EVTDESC44464"
+	picture = "suez_canal"
+
+	trigger = {
+		has_country_flag = lent_egypt
+		NOT = { has_country_flag = egypt_decision }
+		EGY = {
+			NOT = { has_country_modifier = foreign_debt_timer }
+			NOT = { has_country_flag = paid_off_debt }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44464"
+		set_country_flag = egypt_decision
+		badboy = 5
+		EGY = {
+			country_event = { id = 44465 days = 0 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44464"
+		set_country_flag = egypt_decision
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 44465
+	title = "EVTNAME44465"
+	desc = "EVTDESC44465"
+	picture = "suez_canal"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44465"
+		FROM = {
+			country_event = { id = 44466 days = 0 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44465"
+		FROM = {
+			country_event = { id = 44467 days = 0 }
+			diplomatic_influence = {
+				who = THIS
+				value = -200
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = 44466
+	title = "EVTNAME44466"
+	desc = "EVTDESC44466"
+	picture = "cairo"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44466"
+		create_vassal = FROM
+		FROM = {
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							is_core = EGY
+							is_core = SUD
+							is_core = ETH
+						}
+					}
+				}
+				secede_province = THIS
+			}
+			country_event = { id = 44468 days = 0 }
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+country_event = {
+	id = 44467
+	title = "EVTNAME44467"
+	desc = "EVTDESC44467"
+	picture = "tel_kebir"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44467"
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = anglo_egypt_war }
+			attacker_goal = { casus_belli = status_quo }
+		}
+	}
+}
+
+country_event = {
+	id = 44468
+	title = "EVTNAME44468"
+	desc = "EVTDESC44468"
+	picture = "egypt_deliberates"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44468"
+		any_country = {
+			limit = {
+				has_country_flag = sub_saharan_africa
+				NOT = {
+					tag = DAR
+					tag = SSD
+					tag = SUD
+					tag = SHK
+					tag = ETH
+					tag = NIG
+				}
+				any_core = {
+					owned_by = THIS
+				}
+			}
+			country_event = { id = 44469 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 44469
+	title = "EVTNAME44469"
+	desc = "EVTDESC44469"
+	picture = "egypt_deliberates"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44469"
+		FROM = {
+			any_owned = {
+				limit = { is_core = THIS }
+				secede_province = THIS
+			}
+		}
+		## Audax Validator "." Ignore_NEXT
+		any_owned = {
+			limit = { has_building = province_selector }
+			province_selector = -1
+		}
+	}
+}
+
+### SUDANESE WAR ###
+country_event = {
+	id = 44470
+	title = "EVTNAME44470"
+	desc = "EVTDESC44470"
+	picture = "Rebellion"
+
+	trigger = {
+		year = 1880
+		NOT = { year = 1890 }
+		NOT = {
+			exists = SUD
+			has_global_flag = mahdist_revolt
+		}
+		owns = 1827
+		is_vassal = no
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1881
+		}
+		modifier = {
+			factor = 0.5
+			year = 1882
+		}
+		modifier = {
+			factor = 0.1
+			year = 1883
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44470"
+		set_global_flag = mahdist_revolt
+		country_event = {
+			id = 44473 days = 150
+		}
+		any_owned = {
+			limit = { is_core = SUD }
+			remove_core = THIS
+			secede_province = SUD
+		}
+		SUD = {
+			civilized = yes
+			add_country_modifier = { name = jihad duration = 1825 }
+			add_country_modifier = { name = general_mobilization duration = 1825 }
+			define_general = {
+				name = "§RMuhammad Ahmad§W"
+				personality = mor30att15
+				background = 4a4d_1
+			}
+		}
+		any_country = {
+			limit = {
+				ai = yes
+				civilized = no
+				NOT = { tag = SUD }
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { is_core = SUD }
+				secede_province = THIS
+				secede_province = SUD
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44471
+	title = "EVTNAME44470"
+	desc = "EVTDESC44470"
+	picture = "Rebellion"
+
+	trigger = {
+		year = 1880
+		NOT = { year = 1890 }
+		NOT = {
+			exists = SUD
+			has_global_flag = mahdist_revolt
+		}
+		owns = 1827
+		is_vassal = yes
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			year = 1881
+		}
+		modifier = {
+			factor = 0.5
+			year = 1882
+		}
+		modifier = {
+			factor = 0.1
+			year = 1883
+		}
+	}
+
+	option = {
+		name = "EVTOPTA44470"
+		set_global_flag = mahdist_revolt
+		overlord = {
+			country_event = {
+				id = 44472 days = 0
+			}
+		}
+		any_owned = {
+			limit = { is_core = SUD }
+			remove_core = THIS
+			secede_province = SUD
+		}
+		SUD = {
+			add_country_modifier = { name = jihad duration = 1825 }
+			add_country_modifier = { name = general_mobilization duration = 1825 }
+			define_general = {
+				name = "§RMuhammad Ahmad§W"
+				personality = mor30att15
+				background = 4a4d_1
+			}
+		}
+		any_country = {
+			limit = {
+				ai = yes
+				civilized = no
+				NOT = { tag = SUD }
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { is_core = SUD }
+				secede_province = THIS
+				secede_province = SUD
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44472
+	title = "EVTNAME44470"
+	desc = "EVTDESC44470"
+	picture = "Rebellion"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44470"
+		country_event = {
+			id = 44473 days = 150
+		}
+	}
+}
+
+country_event = {
+	id = 44473
+	title = "EVTNAME44473"
+	desc = "EVTDESC44473"
+	picture = "mahdist_war"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA44473"
+		war = {
+			target = SUD
+			attacker_goal = { casus_belli = conquest_free }
+		}
+		ai_chance = {
+			factor = 0.95
+		}
+	}
+
+	option = {
+		name = "EVTOPTB44473"
+		ai_chance = {
+			factor = 0.05
+		}
+	}
+}

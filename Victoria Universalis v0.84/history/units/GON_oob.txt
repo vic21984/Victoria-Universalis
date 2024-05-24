@@ -1,0 +1,96 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+
+EGY = {
+	value = 30
+}
+
+TUR = {
+	value = 30
+}
+
+GJM = {
+	value = -200
+}
+
+SHW = {
+	value = -200
+}
+
+TIG = {
+	value = -200
+}
+
+KAF = {
+	value = -200
+}
+
+HAR = {
+	value = -200
+}
+
+AWS = {
+	value = -200
+}
+
+WLO = {
+	value = -200
+}
+
+leader = {
+	name = "Ras Ali II"
+	type = land
+	date = 1836.1.1
+	personality = org05mor10
+	background = 2a1d_1
+}
+
+army = {
+	name = "Army of the Ras"
+	location = 1854
+	regiment = {
+		name= "Ras' Guards"
+		type = irregular
+		home = 1854
+	}
+
+	regiment = {
+		name= "Ras' Horsemen"
+		type = cavalry
+		home = 1854
+	}
+
+	regiment = {
+		name= "Imperial Guards"
+		type = irregular
+		home = 1852
+	}
+
+	regiment = {
+		name= "Gonder City Guard"
+		type = irregular
+		home = 1852
+	}
+	
+	regiment = {
+		name= "Negus' Guards"
+		type = irregular
+		home = 1855
+	}
+
+	regiment = {
+		name= "Gojjam irregular"
+		type = irregular
+		home = 1855
+	}
+
+}
+

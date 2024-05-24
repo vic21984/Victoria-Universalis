@@ -1,0 +1,69 @@
+JAN = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+GHO = {
+	value = -200
+	truce_until="1937.1.1"
+}
+
+FRA = {
+	value = 75	#relation
+}
+
+army = {
+	name = "Army of of Tunis"
+	location = 1725
+
+	leader = {
+		name = "Mohammed Bey"
+		date = 1836.1.1
+		type = land
+		personality = org05mor10
+		background = 1a2d_1
+		prestige = 0.1
+	}
+
+	regiment = {
+		name= "1.Askäris"
+		type = infantry
+		home = 1725
+	}
+
+	regiment = {
+		name= "2.Askäris"
+		type = infantry
+		home = 1725
+	}
+
+	regiment = {
+		name= "3.Askäris"
+		type = infantry
+		home = 1726
+	}
+
+}
+
+army = {
+	name = "Army of Ifriqiya"
+	location = 1730
+	regiment = {
+		name= "1.Kroumir"
+		type = irregular
+		home = 1727
+	}
+
+	regiment = {
+		name= "2.Kroumir"
+		type = irregular
+		home = 1728
+	}
+
+	regiment = {
+		name= "3.Kroumir"
+		type = irregular
+		home = 1730
+	}
+
+}
