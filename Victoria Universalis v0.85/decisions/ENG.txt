@@ -291,7 +291,7 @@ political_decisions = {
 			NOT = { has_country_modifier = taxing_eic }
 		}
 		effect = {
-			add_country_modifier = { name = taxing_eic duration = 3650 }
+			add_country_modifier = { name = taxing_eic duration = 1825 }
 			release_vassal = EIC
 			leave_alliance = EIC
 			war = {
