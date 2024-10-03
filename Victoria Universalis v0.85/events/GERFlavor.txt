@@ -1,0 +1,697 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+
+	id = 33003 #parallel event is BAY 33403
+	news = yes
+	news_desc_long = "EVTDESC33403_NEWS_LONG"
+	news_desc_medium = "EVTDESC33403_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33403_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1875
+		nationalism_n_imperialism = 1 #has the nationalism tech
+		owns = 598 #Bayreuth
+		NOT = {
+			exists = BAV
+			year = 1885
+			has_global_flag = RichardWagner
+		}
+	}
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1876
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1877
+		}
+	}
+
+	title = "EVTNAME33403"
+	desc = "EVTDESC33403"
+	picture = "wagner"
+
+	option = {
+		name = "EVTOPTA33403" 
+		prestige = 10
+		treasury = -200
+		set_global_flag = RichardWagner
+	}
+}
+
+province_event = {
+
+	id = 33004 #will set up DAN36206
+	news = yes
+	news_desc_long = "EVTDESC33004_NEWS_LONG"
+	news_desc_medium = "EVTDESC33004_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33004_NEWS_SHORT"
+
+	trigger = {
+		province_id = 371 #Aabenra/North Schleswig
+		owned_by = GER
+		year = 1896
+		culture = danish
+		NOT = {
+			year = 1899
+			has_global_flag = GermanizeSchlewsigDanes
+			has_global_flag = NOGermanizeSchlewsigDanes
+			}
+		}
+ 
+	mean_time_to_happen =  {
+		months = 6
+
+		modifier = {
+			factor = 0.85 #increase likelihood to happen
+			year = 1897
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1898
+		}
+	}
+
+	title = "EVTNAME33004"
+	desc = "EVTDESC33004"
+
+	option = {
+		name = "EVTOPTA33004" 
+		any_pop = {
+			limit = {
+				has_pop_culture = danish
+			}
+			militancy = 2
+		}
+		relation = { who = DEN value = -100 }
+		set_global_flag = GermanizeSchlewsigDanes
+	}
+
+	option = {
+		name = "EVTOPTB33004" 
+		any_pop = {
+			dominant_issue = {
+				value = jingoism
+				factor = 0.1
+			}
+		}
+		relation = { who = DEN value = 100 }
+		set_global_flag = NOGermanizeSchlewsigDanes
+	}
+}
+
+country_event = {
+
+	id = 33000
+	news = yes
+	news_desc_long = "EVTDESC33000_NEWS_LONG"
+	news_desc_medium = "EVTDESC33000_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33000_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1916
+		NOT = {
+			year = 1920
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1917
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1918
+		}
+	}
+
+	title = "EVTNAME33000"
+	desc = "EVTDESC33000"
+	picture = "theatre"
+
+	option = {
+		name = "EVTOPTA33000" 
+		prestige = 1
+	}
+
+}
+
+country_event = {
+
+	id = 33001
+	news = yes
+	news_desc_long = "EVTDESC33001_NEWS_LONG"
+	news_desc_medium = "EVTDESC33001_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33001_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1874
+		NOT = {
+			year = 1877
+			}	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1875
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1876
+		}
+	}
+
+	title = "EVTNAME33001"
+	desc = "EVTDESC33001"
+	picture = "Circus"
+
+	option = {
+		name = "EVTOPTA33001" 
+		prestige = 1
+		any_pop = {
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+
+	id = 33002
+	news = yes
+	news_desc_long = "EVTDESC33002_NEWS_LONG"
+	news_desc_medium = "EVTDESC33002_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33002_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1880
+		NOT = {
+			year = 1883
+		}
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1881
+		}
+
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1882
+		}
+	}
+
+	title = "EVTNAME33002"
+	desc = "EVTDESC33002"
+	picture = "School"
+
+	option = {
+		name = "EVTOPTA33002" 
+		prestige = 5
+	}
+
+}
+
+country_event = {
+
+	id = 33005
+	news = yes
+	news_desc_long = "EVTDESC33005_NEWS_LONG"
+	news_desc_medium = "EVTDESC33005_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC33005_NEWS_SHORT"
+
+	trigger = {
+		tag = GER
+		year = 1903
+		is_greater_power = yes
+		TUR = {
+			war = no
+			owns = 926 #Baghdad
+			is_vassal = no
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				}
+			NOT = {
+				alliance_with = ENG
+				alliance_with = FRA
+				alliance_with = RUS
+				}
+		}
+		NOT = {
+			year = 1910
+			alliance_with = TUR
+			has_global_flag = BerlinBaghdadRail
+		}
+	
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1904
+		}
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1908
+		}
+	}
+
+	title = "EVTNAME33005"
+	desc = "EVTDESC33005"
+	picture = "bagdadrailway"
+	
+
+	option = {
+		name = "EVTOPTA33005" 
+		prestige = 10
+		set_global_flag = BerlinBaghdadRail
+		relation = { who = TUR value = 100 }
+		relation = { who = ENG value = -75 }
+		relation = { who = RUS value = -75 }
+	}
+
+	option = {
+		name = "EVTOPTB33005" 
+		relation = { who = TUR value = -50 }
+		relation = { who = ENG value = 75 }
+		relation = { who = RUS value = 75 }
+		officers = {
+			consciousness = 2
+			}
+		capitalists = {
+			consciousness = 2
+			}
+	}
+
+}
+
+#Germany LR Normalization
+country_event = {
+	id = 33006
+	title = "EVTNAME33006"
+	desc = "EVTDESC33006"
+	picture = "rhineland"
+
+	trigger = {
+		owns = 549 #Berlin
+		year = 1880
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 14 }
+	
+	immediate = {
+		GER = { all_core = { limit = { life_rating = 40  } life_rating = -5 } }
+	}
+	
+	option = {
+		name = "EVTOPTA33006"
+	}
+}
+
+#Bismarck's Reforms
+country_event = {
+	id = 33007
+	title = "EVTNAME33007"
+	desc = "EVTDESC33007"
+	picture = "bismarck_reforms"
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = NGF
+		}
+		NOT = { has_country_flag = bismarck_reforms }
+		year = 1880
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+	
+	mean_time_to_happen = { days = 14 }
+	
+	option = {
+		name = "EVTOPTA33007"
+		set_country_flag = bismarck_reforms
+		treasury = -500000
+		random_owned = {
+			limit = {
+				owner = { school_reforms = good_schools }
+			}	
+			owner = { social_reform = compulsory_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = acceptable_schools }
+			}	
+			owner = { social_reform = good_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = low_schools }
+			}	
+			owner = { social_reform = acceptable_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { school_reforms = no_schools }
+			}	
+			owner = { social_reform = low_schools }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = ten_hours }
+			}	
+			owner = { social_reform = eight_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = twelve_hours }
+			}	
+			owner = { social_reform = ten_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = fourteen_hours }
+			}	
+			owner = { social_reform = twelve_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { work_hours = no_work_hour_limit }
+			}	
+			owner = { social_reform = fourteen_hours }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = acceptable_safety }
+			}	
+			owner = { social_reform = good_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = low_safety }
+			}	
+			owner = { social_reform = acceptable_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = trinket_safety }
+			}	
+			owner = { social_reform = low_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { safety_regulations = no_safety }
+			}	
+			owner = { social_reform = trinket_safety }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = acceptable_subsidies }
+			}	
+			owner = { social_reform = good_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = low_subsidies }
+			}	
+			owner = { social_reform = acceptable_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = trinket_subsidies }
+			}	
+			owner = { social_reform = low_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { unemployment_subsidies = no_subsidies }
+			}	
+			owner = { social_reform = trinket_subsidies }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = acceptable_pensions }
+			}	
+			owner = { social_reform = good_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = low_pensions }
+			}	
+			owner = { social_reform = acceptable_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = trinket_pensions }
+			}	
+			owner = { social_reform = low_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { pensions = no_pensions }
+			}	
+			owner = { social_reform = trinket_pensions }
+		}
+		random_owned = {
+			limit = {
+				owner = { NOT = { child_labor = child_labor_illegal } }
+			}	
+			owner = { social_reform = child_labor_illegal }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = good_health_care }
+			}	
+			owner = { social_reform = universal_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = acceptable_health_care } 
+			}	
+			owner = { social_reform = good_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = low_health_care }
+			}	
+			owner = { social_reform = acceptable_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = trinket_health_care }
+			}	
+			owner = { social_reform = low_health_care }
+		}
+		random_owned = {
+			limit = {
+				owner = { health_care = no_health_care }
+			}	
+			owner = { social_reform = trinket_health_care }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB33007"
+		set_country_flag = bismarck_reforms
+		any_pop = {
+			ideology = {
+				factor = 0.1
+				value = socialist
+			}
+			scaled_consciousness = {
+				factor = 5
+				ideology = socialist
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = socialist
+			}
+		}
+		any_pop = {
+			ideology = {
+				factor = 0.1
+				value = communist
+			}
+			scaled_consciousness = {
+				factor = 10
+				ideology = communist
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = communist
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 33008
+	title = "AI German Confederation"
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = PRU
+				NOT = { exists = NGF }
+			}
+			tag = NGF
+		}
+		ai = yes
+		exists = yes
+		GER = { exists = no }
+		revanchism = 0.13
+		ANH = { ai = yes }
+		BAD = { ai = yes }
+		BAV = { ai = yes }
+		BRA = { ai = yes }
+		BRA = { ai = yes }
+		BRE = { ai = yes }
+		COB = { ai = yes }
+		DZG = { ai = yes }
+		FRM = { ai = yes }
+		HAM = { ai = yes }
+		HAN = { ai = yes }
+		HES = { ai = yes }
+		HEK = { ai = yes }
+		HOL = { ai = yes }
+		LIP = { ai = yes }
+		LUB = { ai = yes }
+		LUX = { ai = yes }
+		MEC = { ai = yes }
+		MEI = { ai = yes }
+		NAS = { ai = yes }
+		OLD = { ai = yes }
+		SAX = { ai = yes }
+		SCH = { ai = yes }
+		SGF = { ai = yes }
+		WEI = { ai = yes }
+		WUR = { ai = yes }
+	}
+
+	option = {
+		change_tag = GER
+		political_reform = wealth_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = secret_ballots
+		political_reform = confederalism
+		set_country_flag = confederalism
+		government = hms_government
+		add_accepted_culture = union
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				NOT = {
+					OR = {
+						is_greater_power = yes
+						tag = AUS
+						tag = KUK
+						tag = DNB
+						tag = LUX
+						tag = DZG
+					}
+				}
+				OR = {
+					vassal_of = THIS
+					AND = {
+						tag = HOL
+						is_vassal = no
+					}
+					AND = {
+						tag = SCH
+						is_vassal = no
+					}
+				}
+			}
+			country_event = { id = 11101 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 33009
+	title = "AI Brother's War"
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = NGF
+				PRU = { exists = no }
+			}
+			AND = {
+				tag = PRU
+				NGF = { exists = no }
+			}
+		}
+		nationalism_n_imperialism = 1
+		exists = yes
+		ai = yes
+		NOT = { war_exhaustion = 1 }
+		war = no
+		NOT = {
+			OR = {
+				truce_with = AUS
+				truce_with = KUK
+			}
+		}
+	}
+
+	option = {
+		any_greater_power = {
+			leave_alliance = AUS
+			leave_alliance = KUK
+			relation = {
+				who = AUS
+				value = -200
+			}
+			relation = {
+				who = KUK
+				value = -200
+			}
+		}
+	}
+}

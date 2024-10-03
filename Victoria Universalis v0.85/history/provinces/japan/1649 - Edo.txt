@@ -1,0 +1,62 @@
+owner = TKG
+controller = TKG
+add_core = TKG
+trade_goods = grain
+life_rating = 40
+terrain = urban
+fort = 1
+naval_base = 1
+1836.1.2 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = TKG
+}
+1913.1.1 = {
+	owner = JAP
+	controller = JAP
+	colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = canned_food_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = radio_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = liquor_distillery
+		upgrade = yes
+	}
+	naval_base = 6
+}

@@ -1,0 +1,211 @@
+1836.1.2 = {
+	capital = 1329
+	primary_culture = tibetan
+	religion = gelugpa
+	government = absolute_monarchy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.02
+	non_state_culture_literacy = 0.02
+
+	# Political Reforms
+	slavery = no_slavery
+	upper_house_composition = appointed
+	vote_franschise = none_voting
+	public_meetings = no_meeting
+	press_rights = state_press
+	trade_unions = no_trade_unions
+	voting_system = jefferson_method
+	political_parties = underground_parties
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions 
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = serfdom
+	penal_system = capital_punishment
+	child_labor = child_labor_legal
+	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	centralization = regionalism
+	colonial_migration = no_colonial_migration
+
+	ruling_party = BHU_conservative
+	upper_house = {
+		fascist = 0
+		liberal = 13
+		conservative = 74
+		reactionary = 13
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+
+	# Starting Consciousness
+	consciousness = 0
+	nonstate_consciousness = 0
+
+	oob = "BHU_oob.txt"
+}
+
+1836.1.1 = {
+	capital = 1329
+	primary_culture = tibetan
+	religion = gelugpa
+	government = absolute_monarchy
+	plurality = 0.0
+	nationalvalue = nv_order
+	literacy = 0.02
+	non_state_culture_literacy = 0.02
+
+	# Political Reforms
+	slavery = no_slavery
+	upper_house_composition = appointed
+	vote_franschise = none_voting
+	public_meetings = no_meeting
+	press_rights = state_press
+	trade_unions = no_trade_unions
+	voting_system = jefferson_method
+	political_parties = underground_parties
+
+	# Social Reforms
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions 
+	school_reforms = no_schools
+
+	# New Reforms
+	conscription = no_draft
+	debt_law = serfdom
+	penal_system = capital_punishment
+	child_labor = child_labor_legal
+	citizens_rights = primary_culture_only
+	border_policy = open_borders
+	centralization = regionalism
+	colonial_migration = no_colonial_migration
+
+	ruling_party = BHU_conservative
+	upper_house = {
+		fascist = 0
+		liberal = 13
+		conservative = 74
+		reactionary = 13
+		anarcho_liberal = 0
+		socialist = 0
+		communist = 0
+	}
+
+	# Starting Consciousness
+	consciousness = 0
+	nonstate_consciousness = 0
+
+	oob = "BHU_oob.txt"
+}
+
+1913.1.1 = {
+	oob = "/1913/BHU_oob.txt"
+	plurality = 80
+	literacy = 0.15
+	non_state_culture_literacy = 0.15
+	civilized = yes
+	set_country_flag = domestic_idea
+	set_country_flag = military_supplies_idea
+	set_country_flag = army_experience_idea
+	set_country_flag = leadership_idea
+	set_country_flag = farming_idea
+	set_country_flag = army_morale_idea
+	set_country_flag = mob1_invented
+	set_country_flag = mob2_invented
+	set_country_flag = mob3_invented
+
+# Technologies
+		post_napoleonic_thought = 1
+		strategic_mobility = 1
+		point_defense_system = 1
+		flintlock_rifles = 1
+		muzzle_loaded_rifles = 1
+		breech_loaded_rifles = 1
+		bronze_muzzle_loaded_artillery = 1
+		iron_muzzle_loaded_artillery = 1
+		iron_breech_loaded_artillery = 1
+		military_staff_system = 1
+		military_plans = 1
+		army_command_principle = 1
+		army_professionalism = 1
+		army_decision_making = 1
+		army_risk_management = 1
+		private_banks = 1
+		no_standard = 1
+		ad_hoc_money_bill_printing = 1
+		late_classical_theory = 1
+		freedom_of_trade = 1
+		market_structure = 1
+		guild_based_production = 1
+		classicism_n_early_romanticism = 1
+		late_enlightenment_philosophy = 1
+		idealism = 1
+		empiricism = 1
+		malthusian_thought = 1
+		positivism = 1
+		functionalism = 1
+		enlightenment_thought = 1
+		ideological_thought = 1
+		state_n_government = 1
+		introspectionism = 1
+		water_wheel_power = 1
+		practical_steam_engine = 1
+		high_n_low_pressure_steam_engines = 1
+		industrial_revolution = 1
+		mechanical_production = 1
+		mechanized_mining = 1
+		clean_coal = 1
+		cheap_iron = 1
+		experimental_railroad = 1
+		early_railroad = 1
+		basic_chemistry = 1
+		medicine = 1
+		inorganic_chemistry = 1
+		organic_chemistry = 1
+		post_nelsonian_thought = 1
+		clipper_design = 1
+		naval_design_bureaus = 1
+		alphabetic_flag_signaling = 1
+		the_command_principle = 1
+
+#Inventions
+
+#Reforms
+	wage_reform=no_minimum_wage
+	work_hours=no_work_hour_limit
+	safety_regulations=no_safety
+	unemployment_subsidies=no_subsidies
+	pensions=no_pensions
+	health_care=no_health_care
+	school_reforms=no_schools
+	penal_system=capital_punishment
+	child_labor=child_labor_legal
+	slavery=no_slavery
+	vote_franschise=none_voting
+	upper_house_composition=appointed
+	voting_system=first_past_the_post
+	public_meetings=yes_meeting
+	press_rights=state_press
+	trade_unions=no_trade_unions
+	political_parties=underground_parties
+	conscription=two_year_draft
+	citizens_rights=primary_culture_only
+	debt_law=peonage
+	border_policy=open_borders
+	colonial_migration=no_colonial_migration
+	centralization=unitary
+}

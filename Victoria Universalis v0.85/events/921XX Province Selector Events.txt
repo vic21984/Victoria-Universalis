@@ -1,0 +1,2947 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+province_event = {
+	id = 92101
+	title = "$PROVINCENAME$ Province Selector Menu"
+	desc = "EVTDESC92101"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "§B1.§b Migration Attraction"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					NOT = { has_province_modifier = province_attract_immigrants }
+					is_colonial = no
+					NOT = { has_province_modifier = overcrowded }
+				}
+				owner = {
+					set_country_flag = province_migration
+					any_owned = {
+						remove_province_modifier = province_attract_immigrants
+					}
+				}
+				add_province_modifier = { name = province_attract_immigrants duration = -1 }
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B2.§b Reset Migration Attraction"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			clr_country_flag = province_migration
+			any_owned = {
+				limit = {
+					has_province_modifier = province_attract_immigrants
+				}
+				remove_province_modifier = province_attract_immigrants
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B3.§b Colony Settlement Policy"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					is_colonial = yes
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91520
+					days = 0
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B4.§b Colonial Statehood"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					is_colonial = yes
+				}
+				owner = { country_event = { id = 92102 days = 0 } }
+				state_scope = {
+					any_owned = {
+						secede_province = CIV
+					}
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B5.§b Create Supply Depot"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 500000 }
+				}
+				owner = {
+					any_owned = {
+						limit = { has_province_modifier = supply_depot }
+						remove_province_modifier = supply_depot
+					}
+					treasury = -500000
+				}
+				add_province_modifier = { name = supply_depot duration = -1 }
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B6.§b Literacy Campaign"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 25000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 50000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -25000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 50000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 50000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 100000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -50000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 100000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 100000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -100000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 150000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 300000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -150000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 200000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 300000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -200000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 250000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 500000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -250000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 300000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 500000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -300000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 350000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 700000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -350000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 400000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 700000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -400000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 450000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 800000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 900000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -450000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 500000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 900000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1000000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -500000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 600000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1000000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -600000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 700000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -700000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 800000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -800000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 900000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -900000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1000000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1800000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2000000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1000000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1100000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2000000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1100000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1200000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1200000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1300000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1300000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1400000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1400000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1500000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2800000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3000000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1500000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1600000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3000000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1600000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1700000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1700000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1800000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1800000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1900000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1800000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 2000000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3800000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -2000000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B7.§b Change Agricultural RGO"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						money = 100000
+					}
+					NOT = { total_pops = 50000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -100000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 100000
+					}
+					NOT = { total_pops = 50000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -100000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 100000
+					}
+					NOT = { total_pops = 50000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -100000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 200000
+					}
+					total_pops = 50000
+					NOT = { total_pops = 100000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 200000
+					}
+					total_pops = 50000
+					NOT = { total_pops = 100000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 200000
+					}
+					total_pops = 50000
+					NOT = { total_pops = 100000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 400000
+					}
+					total_pops = 100000
+					NOT = { total_pops = 200000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 400000
+					}
+					total_pops = 100000
+					NOT = { total_pops = 200000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 400000
+					}
+					total_pops = 100000
+					NOT = { total_pops = 200000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 600000
+					}
+					total_pops = 200000
+					NOT = { total_pops = 300000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 600000
+					}
+					total_pops = 200000
+					NOT = { total_pops = 300000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 600000
+					}
+					total_pops = 200000
+					NOT = { total_pops = 300000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 800000
+					}
+					total_pops = 300000
+					NOT = { total_pops = 400000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 800000
+					}
+					total_pops = 300000
+					NOT = { total_pops = 400000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 800000
+					}
+					total_pops = 300000
+					NOT = { total_pops = 400000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1000000
+					}
+					total_pops = 400000
+					NOT = { total_pops = 500000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -1000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1000000
+					}
+					total_pops = 400000
+					NOT = { total_pops = 500000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -1000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1000000
+					}
+					total_pops = 400000
+					NOT = { total_pops = 500000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -1000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1200000
+					}
+					total_pops = 500000
+					NOT = { total_pops = 600000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -1200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1200000
+					}
+					total_pops = 500000
+					NOT = { total_pops = 600000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -1200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1200000
+					}
+					total_pops = 500000
+					NOT = { total_pops = 600000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -1200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1400000
+					}
+					total_pops = 600000
+					NOT = { total_pops = 700000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -1400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1400000
+					}
+					total_pops = 600000
+					NOT = { total_pops = 700000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -1400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1400000
+					}
+					total_pops = 600000
+					NOT = { total_pops = 700000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -1400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1600000
+					}
+					total_pops = 700000
+					NOT = { total_pops = 800000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -1600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1600000
+					}
+					total_pops = 700000
+					NOT = { total_pops = 800000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -1600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1600000
+					}
+					total_pops = 700000
+					NOT = { total_pops = 800000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -1600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1800000
+					}
+					total_pops = 800000
+					NOT = { total_pops = 900000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -1800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1800000
+					}
+					total_pops = 800000
+					NOT = { total_pops = 900000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -1800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 1800000
+					}
+					total_pops = 800000
+					NOT = { total_pops = 900000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -1800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2000000
+					}
+					total_pops = 900000
+					NOT = { total_pops = 1000000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				owner = {
+					money = -2000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2000000
+					}
+					total_pops = 900000
+					NOT = { total_pops = 1000000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				owner = {
+					money = -2000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2000000
+					}
+					total_pops = 900000
+					NOT = { total_pops = 1000000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				owner = {
+					money = -2000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2400000
+					}
+					total_pops = 1000000
+					NOT = { total_pops = 1200000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1200000
+					money = -1200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2400000
+					}
+					total_pops = 1000000
+					NOT = { total_pops = 1200000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1200000
+					money = -1200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2400000
+					}
+					total_pops = 1000000
+					NOT = { total_pops = 1200000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1200000
+					money = -1200000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2800000
+					}
+					total_pops = 1200000
+					NOT = { total_pops = 1400000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1400000
+					money = -1400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2800000
+					}
+					total_pops = 1200000
+					NOT = { total_pops = 1400000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1400000
+					money = -1400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 2800000
+					}
+					total_pops = 1200000
+					NOT = { total_pops = 1400000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1400000
+					money = -1400000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3200000
+					}
+					total_pops = 1400000
+					NOT = { total_pops = 1600000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1600000
+					money = -1600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3200000
+					}
+					total_pops = 1400000
+					NOT = { total_pops = 1600000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1600000
+					money = -1600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3200000
+					}
+					total_pops = 1400000
+					NOT = { total_pops = 1600000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1600000
+					money = -1600000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3600000
+					}
+					total_pops = 1600000
+					NOT = { total_pops = 1800000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1800000
+					money = -1800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3600000
+					}
+					total_pops = 1600000
+					NOT = { total_pops = 1800000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1800000
+					money = -1800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 3600000
+					}
+					total_pops = 1600000
+					NOT = { total_pops = 1800000 }
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -1800000
+					money = -1800000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 4000000
+					}
+					total_pops = 1800000
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					OR = {
+						terrain = forest
+						terrain = woods
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -2000000
+					money = -2000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91739
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 4000000
+					}
+					total_pops = 1800000
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					is_coastal = yes
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -2000000
+					money = -2000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91738
+					days = 0
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						money = 4000000
+					}
+					total_pops = 1800000
+					is_core = JAN
+					NOT = {
+						OR = {
+							trade_goods = coal
+							trade_goods = iron
+							trade_goods = sulphur
+							trade_goods = oil
+							trade_goods = market_goods
+							trade_goods = precious_metal
+							trade_goods = tropical_wood
+						}
+					}
+					NOT = {
+						OR = {
+							is_coastal = yes
+							terrain = forest
+							terrain = woods
+						}
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				owner = {
+					money = -2000000
+					money = -2000000
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91737
+					days = 0
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B8.§b Baby Boom"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 100000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 3000
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 100000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 200000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 2700
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 200000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 300000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 2400
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 300000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 400000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 2100
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 400000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 500000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 1800
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 500000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 600000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 1500
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 600000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 700000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 1200
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 700000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 800000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 900
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 800000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 900000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 600
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 900000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 1000000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 300
+						}
+					}
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B9.§b Core Integration"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = {
+						has_global_flag = coring_enabled
+						NOT = { has_country_modifier = diplomatic_cores }
+					}
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = adding_cores duration = -1 }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = diplomatic_cores duration = 3650 }
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B10.§b Choose Nothing"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 92102
+	title = "Colony Literacy Check"
+	desc = "If the average literacy of the selected colonial state is over 50% then this event will convert it into a state."
+
+	is_triggered_only = yes
+
+	immediate = {
+		CIV = {
+			country_event = { id = 91511 days = 0 }
+		}
+	}
+
+	option = {
+	}
+}

@@ -1,0 +1,47 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = fruit
+life_rating = 31
+1913.1.1 = {
+	state_building = {
+		level = 9
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fuel_refinery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = telephone_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 9
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = artillery_factory
+		upgrade = yes
+	}
+}

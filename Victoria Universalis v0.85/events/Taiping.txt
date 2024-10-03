@@ -1,0 +1,762 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+#Taiping Rebellion
+country_event = {
+	id = 160001
+	title = "EVTNAME160001"
+	desc = "EVTDESC160001"
+	picture = rebellion
+	news = yes
+	news_desc_long = "EVTDESC160001_NEWS_LONG"
+	news_desc_medium = "EVTDESC160001_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC160001_NEWS_SHORT"
+
+	major = yes
+	trigger = {
+		tag = QNG
+		NOT = { has_global_flag = taiping_has_happened }
+		year = 1851
+		NOT = { year = 1861 }
+		civilized = no
+	}
+	
+	immediate = {
+		1528 = { add_core = TPG }
+		1522 = { add_core = TPG }
+		1474 = { add_core = TPG }
+		1477 = { add_core = TPG }
+		1540 = { add_core = TPG }
+		1541 = { add_core = TPG }
+		CHI_1545 = { add_core = TPG }
+		CHI_1547 = { add_core = TPG }
+		CHI_1473 = { add_core = TPG }
+		CHI_1539 = { add_core = TPG }
+		CHI_2221 = { add_core = TPG }
+		1538 = {
+			limit = { owned_by = THIS }
+			add_core = TPG
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA160001"
+		release = TPG
+		all_core = { add_core = TPG }
+		add_country_modifier = {  name = scripted_truce duration = 180 }
+		TPG = {
+			define_general = {
+				name = "Yang Xiuqing"
+				personality = org10att15
+				background = 3a2d_1
+			}
+			define_general = {
+				name = "Feng Yunshan"
+				personality = rec05att05
+				background = 1a1d_1
+			}
+			define_general = {
+				name = "Xiao Chaogui"
+				personality = rec05exp10
+				background = 2a1d_1
+			}
+			define_general = {
+				name = "Wei Changhui"
+				personality = att10exp05
+				background = 1a2d_1
+			}
+			define_general = {
+				name = "Hong Rengan"
+				personality = org10att10
+				background = 1a2d_1
+			}
+			define_general = {
+				name = "Shi Dakai"
+				personality = org15mor40
+				background = 3a3d_1
+			}
+			define_general = {
+				name = "Li Xiucheng"
+				personality = org10exp05
+				background = 2a2d_1
+			}
+			define_general = {
+				name = "Chen Yucheng"
+				personality = spd20rec05
+				background = 1a1d_1
+			}
+			define_general = {
+				name = "Qin Rigang"
+				personality = org05mor10
+				background = 2a1d_1
+			}
+			money = 200000
+			wool = 2000
+			capital = 2221
+			any_pop = {
+				consciousness = -5
+				militancy = -5
+			}
+			add_country_modifier = {  name = scripted_truce duration = 180 }
+			add_country_modifier = { name = middle_kingdom duration = -1 }
+			add_country_modifier = { name = taiping_mobilization duration = 730 }
+		}
+		random_owned = {
+			limit = {
+				owner = { land_reform = yes_land_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_land_reform
+					activate_technology = freedom_of_trade
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { admin_reform = yes_admin_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_admin_reform
+					activate_technology = enlightenment_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { finance_reform = yes_finance_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_finance_reform
+					activate_technology = private_banks
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { monetary_reform = yes_monetary_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_monetary_reform
+					activate_technology = no_standard
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { education_reform = yes_education_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_education_reform
+					activate_technology = malthusian_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { research_reform = yes_research_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_research_reform
+					activate_technology = late_enlightenment_philosophy
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { transport_improv = yes_transport_improv }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_transport_improv
+					activate_technology = experimental_railroad
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { firearms_production = yes_firearms_production }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_firearms_production
+					activate_technology = mechanized_mining
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { pre_indust = yes_pre_indust }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_pre_indust
+					activate_technology = water_wheel_power
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { pre_indust = yes_pre_indust2 }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_pre_indust2
+					activate_technology = guild_based_production
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { industrial_construction = yes_industrial_construction }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_industrial_construction
+					activate_technology = industrial_revolution
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { industrial_construction = yes_industrial_construction2 }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_industrial_construction2
+					activate_technology = basic_chemistry
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_training = yes_foreign_training }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_training
+					activate_technology = introspectionism
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_weapons = yes_foreign_weapons }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_weapons
+					activate_technology = flintlock_rifles
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { military_constructions = yes_military_constructions }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_military_constructions
+					activate_technology = post_napoleonic_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_officers = yes_foreign_officers }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_officers
+					activate_technology = military_staff_system
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { army_schools = yes_army_schools }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_army_schools
+					activate_technology = army_command_principle
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_naval_officers = yes_foreign_naval_officers }
+			}
+			owner = {
+				TPG = {
+					military_reform = alphabetic_flag_signaling
+					activate_technology = yes_foreign_naval_officers
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { naval_schools = yes_naval_schools }
+			}
+			owner = {
+				TPG = {
+					military_reform = the_command_principle
+					activate_technology = yes_naval_schools
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_navies = yes_foreign_navies }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_navies
+					activate_technology = clipper_design
+					activate_technology = steamers
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { western_shipyards = yes_western_shipyards }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_western_shipyards
+					activate_technology = post_nelsonian_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_artillery = yes_foreign_artillery }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_artillery
+					activate_technology = bronze_muzzle_loaded_artillery
+				}
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_religion = sunni
+					has_pop_culture = nanfaren
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		set_global_flag = taiping_has_happened
+		country_event = {
+			id = 160002
+			days = 180
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB160001"
+		release = TPG
+		all_core = { add_core = TPG }
+		add_country_modifier = {  name = scripted_truce duration = 180 }
+		TPG = {
+			define_general = {
+				name = "Yang Xiuqing"
+				personality = org10att15
+				background = 3a2d_1
+			}
+			define_general = {
+				name = "Feng Yunshan"
+				personality = rec05att05
+				background = 1a1d_1
+			}
+			define_general = {
+				name = "Xiao Chaogui"
+				personality = rec05exp10
+				background = 2a1d_1
+			}
+			define_general = {
+				name = "Wei Changhui"
+				personality = att10exp05
+				background = 1a2d_1
+			}
+			define_general = {
+				name = "Hong Rengan"
+				personality = org10att10
+				background = 1a2d_1
+			}
+			define_general = {
+				name = "Shi Dakai"
+				personality = org15mor40
+				background = 3a3d_1
+			}
+			define_general = {
+				name = "Li Xiucheng"
+				personality = org10exp05
+				background = 2a2d_1
+			}
+			define_general = {
+				name = "Chen Yucheng"
+				personality = spd20rec05
+				background = 1a1d_1
+			}
+			define_general = {
+				name = "Qin Rigang"
+				personality = org05mor10
+				background = 2a1d_1
+			}
+			money = 200000
+			wool = 2000
+			capital = 2221
+			any_pop = {
+				consciousness = -5
+				militancy = -5
+			}
+			add_country_modifier = {  name = scripted_truce duration = 180 }
+			add_country_modifier = { name = middle_kingdom duration = -1 }
+			add_country_modifier = { name = taiping_mobilization duration = 730 }
+		}
+		random_owned = {
+			limit = {
+				owner = { land_reform = yes_land_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_land_reform
+					activate_technology = freedom_of_trade
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { admin_reform = yes_admin_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_admin_reform
+					activate_technology = enlightenment_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { finance_reform = yes_finance_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_finance_reform
+					activate_technology = private_banks
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { monetary_reform = yes_monetary_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_monetary_reform
+					activate_technology = no_standard
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { education_reform = yes_education_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_education_reform
+					activate_technology = malthusian_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { research_reform = yes_research_reform }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_research_reform
+					activate_technology = late_enlightenment_philosophy
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { transport_improv = yes_transport_improv }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_transport_improv
+					activate_technology = experimental_railroad
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { firearms_production = yes_firearms_production }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_firearms_production
+					activate_technology = mechanized_mining
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { pre_indust = yes_pre_indust }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_pre_indust
+					activate_technology = water_wheel_power
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { pre_indust = yes_pre_indust2 }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_pre_indust2
+					activate_technology = guild_based_production
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { industrial_construction = yes_industrial_construction }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_industrial_construction
+					activate_technology = industrial_revolution
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { industrial_construction = yes_industrial_construction2 }
+			}
+			owner = {
+				TPG = {
+					economic_reform = yes_industrial_construction2
+					activate_technology = basic_chemistry
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_training = yes_foreign_training }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_training
+					activate_technology = introspectionism
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_weapons = yes_foreign_weapons }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_weapons
+					activate_technology = flintlock_rifles
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { military_constructions = yes_military_constructions }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_military_constructions
+					activate_technology = post_napoleonic_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_officers = yes_foreign_officers }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_officers
+					activate_technology = military_staff_system
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { army_schools = yes_army_schools }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_army_schools
+					activate_technology = army_command_principle
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_naval_officers = yes_foreign_naval_officers }
+			}
+			owner = {
+				TPG = {
+					military_reform = alphabetic_flag_signaling
+					activate_technology = yes_foreign_naval_officers
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { naval_schools = yes_naval_schools }
+			}
+			owner = {
+				TPG = {
+					military_reform = the_command_principle
+					activate_technology = yes_naval_schools
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_navies = yes_foreign_navies }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_navies
+					activate_technology = clipper_design
+					activate_technology = steamers
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { western_shipyards = yes_western_shipyards }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_western_shipyards
+					activate_technology = post_nelsonian_thought
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { foreign_artillery = yes_foreign_artillery }
+			}
+			owner = {
+				TPG = {
+					military_reform = yes_foreign_artillery
+					activate_technology = bronze_muzzle_loaded_artillery
+				}
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_religion = sunni
+					has_pop_culture = nanfaren
+					has_pop_culture = zhuang
+					has_pop_culture = yue
+				}
+			}
+			militancy = 5
+		}
+		set_global_flag = taiping_has_happened
+		change_tag_no_core_switch = TPG
+		country_event = {
+			id = 160003
+			days = 180
+		}
+	}
+}
+
+country_event = {
+	id = 160002
+	title = "EVTNAME160002"
+	desc = "EVTDESC160002"
+	picture = rebellion
+
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTOPTA160002"
+		war = {
+			target = TPG
+			attacker_goal = {
+				casus_belli = annex_core_country
+			}
+			call_ally = yes
+			defender_goal = {
+				casus_belli = annex_core_country
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 160003
+	title = "EVTNAME160003"
+	desc = "EVTDESC160003"
+	picture = rebellion
+
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "EVTOPTA160003"
+		QNG = {
+			war = {
+				target = TPG
+				attacker_goal = {
+					casus_belli = annex_core_country
+				}
+				call_ally = yes
+				defender_goal = {
+					casus_belli = annex_core_country
+				}
+			}
+		}
+	}
+}
+
+#Remove TPG cores
+country_event = {
+	id = 160004
+	title = "Remove Taiping Cores"
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAN
+		has_global_flag = taiping_has_happened
+		TPG = { exists = no }
+	}
+	
+	option = {
+		TPG = {
+			all_core = {
+				remove_core = TPG
+			}
+		}
+	}
+}

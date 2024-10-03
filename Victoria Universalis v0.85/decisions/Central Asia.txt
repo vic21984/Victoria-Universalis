@@ -1,0 +1,762 @@
+political_decisions = {
+	establish_the_dar_al_funun = {
+		potential = {
+			tag = PER
+			NOT = {
+				has_country_flag = dar_al_funun_built
+			}
+		}
+		allow = {
+			literacy = 0.1
+			money = 30000
+		}
+		effect = {
+			treasury = -30000
+			years_of_research = 1
+			random_owned = {
+				limit = {
+					owner = { school_reforms = good_schools }
+				}	
+				owner = { social_reform = compulsory_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = acceptable_schools }
+				}	
+				owner = { social_reform = good_schools }
+			}
+			random_owned = {
+				limit = {
+					owner = { school_reforms = low_schools }
+				}	
+				owner = { social_reform = acceptable_schools }
+			}				
+			random_owned = {
+				limit = {
+					owner = { school_reforms = no_schools }
+				}	
+				owner = { social_reform = low_schools }
+			}
+			any_pop = {
+				consciousness = 0.5
+			}
+			set_country_flag = dar_al_funun_built
+			add_country_modifier = {
+				name = dar_al_funun
+				duration = 14600
+			}
+		}
+	}
+
+    revoke_kurdish_autonomy = {
+        picture = old_kurdistan_map
+        potential = {
+            tag = PER
+            NOT = { has_country_flag = kurdish_states_integrated }
+            is_our_vassal = MKN
+			NOT = { has_global_flag = mp_1836_literacy_setup }
+        }
+
+        allow = {
+			war = no
+            OR = {
+                civilization_progress = 0.7
+                civilized = yes
+            }
+        }
+
+        effect = {
+            set_country_flag = kurdish_states_integrated
+            prestige = 5
+            any_country = {
+                limit = {
+                    vassal_of = THIS
+                    OR = {
+                        primary_culture = kurdish
+                        primary_culture = azerbaijani
+                    }
+                    ai = yes
+                }
+                annex_to = THIS
+            }
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+            random_country = {
+                limit = {
+                    vassal_of = THIS
+                    primary_culture = kurdish
+                    ai = no
+                }
+                PER = { release_vassal = THIS }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+	revoke_coastal_emirate_autonomy = {
+		picture = persia_map
+		potential = {
+			tag = PER
+			OR = {
+				AND = {
+					1132 = {
+						owner = { civilized = no }
+						NOT = { owned_by = PER }
+					}
+					NOT = { has_country_flag = bushehr_annexed }
+				}
+				AND = {
+					1131 = {
+						owner = { civilized = no }
+						NOT = { owned_by = PER }
+					}
+					NOT = { has_country_flag = arabistan_annexed }
+				}
+			}
+			NOT = { has_global_flag = mp_1836_literacy_setup }
+		}
+		
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					1136 = { owner = { vassal_of = THIS } NOT = { owned_by = PER } } #Bushehr
+					OR = {
+						civilized = yes 
+						civilization_progress = 0.55
+					}
+				}
+				AND = {
+					1131 = { owner = { vassal_of = THIS } NOT = { owned_by = PER } } #Arabistan
+					OR = {
+						civilized = yes 
+						civilization_progress = 0.9
+					}
+				}
+			}
+		}
+		
+		effect = {
+			random_owned = {
+				limit = {
+					owner = {
+						BSR = { vassal_of = PER }
+						OR = {
+						   civilization_progress = 0.55
+						   civilized = yes
+						}
+						NOT = { has_country_flag = bushehr_annexed }
+						NOT = { owns = 1132 }
+					}
+				}
+				owner = {
+					set_country_flag = bushehr_annexed 
+					inherit = BSR
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						KHZ = { vassal_of = PER }
+						OR = {
+						   civilization_progress = 0.9
+						   civilized = yes
+						}
+						NOT = { has_country_flag = arabistan_annexed }
+						NOT = {
+							owns = 1131
+						}
+					}
+				}
+				owner = {
+					set_country_flag = arabistan_annexed 
+					inherit = KHZ
+				}
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	#Revokes Omani Leases
+	regain_omani_coast = {
+		picture = gwadar_pakistan
+		potential = {
+			tag = PER
+			OR = {
+				AND = {
+					OR = {
+						owns = 1139 #Sirjan
+						owns = 2638 #Laristan
+					}
+					1142 = {
+						owner = { civilized = no }
+						NOT = { owned_by = PER }
+					}
+					NOT = { has_country_flag  = bandar_abbas_regained } 
+				}
+				AND = { #Lengeh and Jask
+					OR = {
+						owns = 1142 #Bandar Abbas
+						owns = 2647 #Jiroft
+					}
+					OR = {
+						1145 = {
+							owner = { civilized = no }
+							NOT = { owned_by = PER }
+						}
+						1141 = {
+							owner = { civilized = no }
+							NOT = { owned_by = PER }
+						}
+					}
+					NOT = { has_country_flag  = lengeh_regained }
+				}
+			}
+			NOT = { has_global_flag = mp_1836_literacy_setup }
+		}
+		
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					OR = {
+						owns = 1139 #Sirjan
+						owns = 2638 #Laristan
+					}
+				    #Bandar-e 'Abbas
+					1142 = {
+						owner = {
+							civilized = no
+							is_greater_power = no
+							ai = yes
+						}
+						NOT = { owned_by = PER }
+					}
+					OR = {
+						civilized = yes
+						civilization_progress = 0.6
+						1142 = { owner = { vassal_of = THIS } }
+					}
+				}
+				AND = {
+					owns = 1142 #Bandar-e 'Abbas
+					1145 = { NOT = { owned_by = PER } } #Jask
+					1141 = { NOT = { owned_by = PER } } #Lengeh
+					OR = {
+						civilized = yes
+						AND = {
+							civilization_progress = 0.85
+							1145 = {
+								owner = {
+									is_greater_power = no
+									ai = yes
+								}
+							}
+							1141 = {
+								owner = {
+									is_greater_power = no
+									ai = yes
+								}
+							}
+						}
+						1145 = { owner = { vassal_of = THIS } }
+						1141 = { owner = { vassal_of = THIS } }
+					}
+				}
+			}
+		}
+
+		effect = {
+			#Bandar-e 'Abbas
+			random_owned = {
+				limit = {
+					PER = {
+						OR = {
+							owns = 1139 #Sirjan
+							owns = 2638 #Laristan
+						}
+						OR = {
+							civilized = yes 
+							AND = {
+								civilization_progress = 0.6
+								1142 = { 
+									owner = { 
+										is_greater_power = no
+										part_of_sphere = no
+									}
+								}
+							}
+							1142 = { owner = { vassal_of = THIS } }
+						}
+						NOT = { has_country_flag = bandar_abbas_regained }
+						NOT = { owns = 1142 }
+					}
+				}
+				1142 = { secede_province = THIS }
+				1142 = { remove_core = OMA }
+				## Audax Validator "." Ignore_NEXT
+				any_owned = {
+					limit = { has_building = province_selector }
+					province_selector = -1
+				}
+				THIS = { set_country_flag = bandar_abbas_regained }
+			}
+
+			#Lengeh and Jask
+			random_owned = {
+				limit = {
+					PER = {
+						owns = 1142 #Bandar Abbas
+						OR = {
+							civilized = yes 
+							AND = {
+								civilization_progress = 0.85
+								1141 = { 
+									owner = { 
+										is_greater_power = no
+										part_of_sphere = no
+									}
+								}
+								1145 = { 
+									owner = { 
+										is_greater_power = no
+										part_of_sphere = no
+									}
+								}
+							}
+							1141 = { owner = { vassal_of = THIS } }
+							1145 = { owner = { vassal_of = THIS } }
+						}
+						NOT = { has_country_flag = lengeh_regained }
+						OR = {
+							NOT = { owns = 1141 }
+							NOT = { owns = 1145 }
+						}
+					}
+				}
+				1141 = { secede_province = THIS }
+				1145 = { secede_province = THIS }
+				1141 = { remove_core = ABU }
+				1145 = { remove_core = OMA }
+				## Audax Validator "." Ignore_NEXT
+				any_owned = {
+					limit = { has_building = province_selector }
+					province_selector = -1
+				}
+				THIS = { set_country_flag = lengeh_regained }
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+
+	revoke_kht_autonomy = {
+        picture = old_kurdistan_map
+        potential = {
+            tag = PER
+            NOT = { has_country_flag = kht_integrated }
+            KHT = { vassal_of = THIS }
+			2663 = { owned_by = KHT }
+			1148 = { owned_by = KHT }
+			NOT = { has_global_flag = mp_1836_literacy_setup }
+        }
+
+        allow = {
+			war = no
+			OR = {
+				civilized = yes
+				year = 1880
+				civilization_progress = 0.95
+			}
+        }
+
+        effect = {
+            set_country_flag = kht_integrated
+            prestige = 5
+			1148 = { add_core = THIS }
+			2663 = { add_core = THIS }
+            any_country = {
+                limit = {
+                    tag = KHT
+                    ai = yes
+                }
+                annex_to = THIS
+            }
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+            random_country = {
+                limit = {
+                    tag = KHT
+                    ai = no
+                }
+                PER = { release_vassal = KHT }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+	invade_herat = {
+		picture = herat
+		potential = {
+			tag = PER
+			NOT = {
+				OR = {
+					has_country_flag = invaded_herat
+					owns = 1212
+				}
+			}
+			1212 = { owned_by = HRT }
+		}
+
+		allow = {
+			OR = {
+				civilization_progress = 0.5
+				civilized = yes
+			}
+			war = no
+		}
+
+		effect = {
+			1212 = { add_core = PER }
+			1214 = { add_core = PER }
+			2680 = { add_core = PER }
+			1212 = { add_core = AFG }
+			1214 = { add_core = AFG }
+			2680 = { add_core = AFG }
+			set_country_flag = invaded_herat
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { year = 1853 }
+					war_exhaustion = 5
+				}
+			}
+		}
+	}
+
+	reclaim_transcaucasia = {
+		picture = caucasus
+		potential = {
+			tag = PER
+			NOT = {
+				has_country_flag = reclaimed_transcaucasia
+			}
+		}
+		allow = {
+			civilized = yes
+			rank = 10
+			romanticism = 1
+		}
+		effect = {
+			set_country_flag = reclaimed_transcaucasia
+			RUS_1102 = { add_core = THIS }
+			RUS_1098 = { add_core = THIS }
+			RUS_1090 = { add_core = THIS }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				RUS_1102 = { owned_by = RUS }
+				OR = {
+					relation = { who = RUS value = 100 }
+					in_sphere = RUS
+					alliance_with = RUS
+				}
+			}
+		}
+	}
+
+    become_kurdistan = {
+        picture = old_kurdistan_map
+        potential = {
+            NOT = { tag = KDS }
+            KDS = { exists = no }
+            primary_culture = kurdish
+        }
+
+        allow = {
+			OR = {
+				is_greater_power = yes
+				AND = {
+					nationalism_n_imperialism = 1
+					civilized = yes
+				}
+			}
+            is_vassal = no
+            war = no
+        }
+
+        effect = {
+            prestige = 10
+            change_tag = KDS
+            any_country = {
+                limit = {
+                    primary_culture = kurdish
+                    OR = {
+                        vassal_of = THIS
+                        in_sphere = THIS
+                    }
+                }
+                annex_to = THIS
+            }
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+            any_owned = {
+                remove_core = BHT
+				remove_core = MKN
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+	jezail_gunsmiths = {
+		picture = afghan_jezail
+		potential = {
+			OR = {
+				tag = AFG
+				tag = KAL
+				tag = MAK
+				tag = BDK
+				tag = HRT
+			}
+			NOT = { firearms_production = yes_firearms_production }
+			civilized = no
+		}
+		allow = {
+			foreign_weapons = yes_foreign_weapons
+			military_constructions = yes_military_constructions
+			civilized = no
+			money = 10000
+		}
+		effect = {
+			treasury = -10000
+			economic_reform = yes_firearms_production
+			build_factory_in_capital_state = small_arms_factory
+			activate_technology = mechanized_mining
+		}
+	}
+
+	embrace_the_baloch = {
+		picture = baloch_khans
+		potential = {
+			OR = {
+				tag = AFG
+				tag = HRT
+			}
+			NOT = { accepted_culture = baluchi }
+		}
+		allow = {
+			owns = 1221
+		}
+		effect = {
+			add_accepted_culture = baluchi
+		}
+	}
+
+	afg_attack_knd = {
+		picture = knd_attack
+		potential = {
+			tag = AFG
+			NOT = { has_country_flag = invasion_of_knd }
+			KND = { vassal_of = THIS }
+			NOT = { has_global_flag = mp_1836_literacy_setup }
+		}
+
+		allow = {
+			OR = {
+				year = 1855
+				civilization_progress = 0.3
+				civilized = yes
+			}
+			neighbour = KND
+			exists = KND
+			is_our_vassal = KND
+			war = no
+		}
+
+		effect = {
+			release_vassal = KND
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						KND = { ai = yes }
+					}
+				}
+				owner = { inherit = KND }
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = no }
+				}
+				owner = {
+					war = {
+						target = KND
+						attacker_goal = { casus_belli = conquest_free }
+					}
+				}
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			set_country_flag = invasion_of_knd
+		}
+	}
+
+	annex_herat = {
+		picture = herat
+		potential = {
+			tag = AFG
+			NOT = { has_country_flag = claimed_herat }
+			HRT = { exists = yes }
+		}
+		allow = {
+			OR = {
+				year = 1863
+				civilization_progress = 0.35
+				civilized = yes
+			}
+			war = no
+			HRT = { war = no }
+			neighbour = HRT
+			OR = {
+				HRT = { in_sphere = ENG }
+				PER = { has_country_flag = invaded_herat }
+			}
+		}
+		effect = {
+			set_country_flag = claimed_herat
+			1212 = { add_core = THIS }
+			1214 = { add_core = THIS }
+			2680 = { add_core = THIS }
+			ENG = { country_event = { id = 36983 days = 0 } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { year = 1856 }
+					war_exhaustion = 5
+				}
+			}
+		}
+	}
+
+	claim_herat = {
+		picture = herat
+		potential = {
+			tag = AFG
+			NOT = { has_country_flag = claimed_herat }
+			HRT = { exists = no }
+		}
+		allow = {
+			OR = {
+				year = 1863
+				civilization_progress = 0.35
+				civilized = yes
+				owns = 1212
+			}
+		}
+		effect = {
+			set_country_flag = claimed_herat
+			1212 = { add_core = THIS }
+			1214 = { add_core = THIS }
+			2680 = { add_core = THIS }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { year = 1863 }
+			}
+		}
+	}
+
+	greater_afghanistan = {
+		picture = durrani_empire
+		potential = {
+			tag = AFG
+			NOT = { has_country_flag = greater_afghanistan }
+		}
+		allow = {
+			has_unclaimed_cores = no
+			rank = 24
+		}
+		effect = {
+			set_country_flag = greater_afghanistan
+			KAL_1221 = { add_core = THIS }
+			SIN_1288 = { add_core = THIS }
+			PAN_1218 = { add_core = THIS }
+			PAN_1227 = { add_core = THIS }
+			PAN_1224 = { add_core = THIS }
+			PER_1147 = { add_core = THIS }
+		}
+	}
+
+	form_turkestan = {
+		picture = turkestan
+		potential = {
+			OR = {
+				primary_culture = uzbek
+				primary_culture = tajik
+				primary_culture = kazak
+				primary_culture = kirgiz
+				primary_culture = tatar
+				primary_culture = turkmen
+				primary_culture = uighur
+			}
+			NOT = { has_global_flag = turkestan }
+		}
+		allow = {
+			RUS_1196 = { owned_by = THIS }
+			KHI_1191 = { owned_by = THIS }
+			BUK_1207 = { owned_by = THIS }
+			KOK_1190 = { owned_by = THIS }
+			RUS_1185 = { owned_by = THIS }
+			RUS_2611 = { owned_by = THIS }
+		}
+		effect = {
+			set_global_flag = turkestan
+			change_tag = TRK
+			add_accepted_culture = uzbek
+			add_accepted_culture = tajik
+			add_accepted_culture = kazak
+			add_accepted_culture = kirgiz
+			add_accepted_culture = tatar
+			add_accepted_culture = turkmen
+			add_accepted_culture = uighur
+			RUS_1185 = { add_core = THIS }
+			RUS_1182 = { add_core = THIS }
+			KOK_1190 = { add_core = THIS }
+			KHI_1191 = { add_core = THIS }
+			RUS_1196 = { add_core = THIS }
+			CHI_1600 = { add_core = THIS }
+			BUK_1207 = { add_core = THIS }
+			RUS_2611 = { add_core = THIS }
+		}
+	}
+}

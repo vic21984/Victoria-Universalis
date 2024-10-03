@@ -1,0 +1,631 @@
+
+#########################################################################
+# 							DISABLE CRISIS								#
+#########################################################################
+
+country_event = {
+	id = 91200
+	title = "Crisis Cooldown"
+	desc = "Crisis Cooldown"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ok"
+		any_country = {
+			any_owned = {
+				state_scope = {
+					flashpoint_tension = -100
+				}
+			}
+		}
+		country_event = { id = 91200 days = 30 }
+	}
+}
+
+country_event = {
+	id = 91201
+	title = "EVTNAME91201"
+	desc = "EVTDESC91201"
+	picture = upper_house
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91201"
+		JAN = {
+			change_variable = {
+				which = crisis_vote
+				value = 1
+			}
+		}
+		country_event = { id = 91211 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91201"
+		JAN = {
+			change_variable = {
+				which = crisis_vote
+				value = -1
+			}
+		}
+		country_event = { id = 91211 days = 0 }
+	}
+}
+
+country_event = {
+	id = 91202
+	title = "Crises Enabled"
+	desc = "Crises have been enabled"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = crises_enabled
+				has_global_flag = crisis_disabled
+			}
+		}
+		check_variable = {
+			which = crisis_vote
+			value = 1
+		}
+	}
+
+	option = {
+		name = "ok"
+		set_global_flag = crises_enabled
+	}
+}
+
+country_event = {
+	id = 91203
+	title = "Crises Disabled"
+	desc = "Crises have been disabled"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = crises_enabled
+				has_global_flag = crisis_disabled
+			}
+		}
+		NOT = {
+			check_variable = {
+				which = crisis_vote
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "ok"
+		set_global_flag = crisis_disabled
+		country_event = { id = 91200 days = 0 }
+	}
+}
+
+#########################################################################
+# 						DISMANTLE NATION VOTE							#
+#########################################################################
+country_event = {
+	id = 91204
+	title = "EVTNAME91204"
+	desc = "EVTDESC91204"
+	picture = upper_house
+
+	trigger = {
+		ai = no
+		NOT = { tag = JAN }
+		great_wars_enabled = yes
+		NOT = {
+			OR = {
+				has_global_flag = dismantle_enabled
+				has_global_flag = dismantle_disabled
+			}
+		}
+		NOT = { has_country_flag = deciding_dismantle }
+		NOT = { has_country_flag = has_voted }
+	}
+
+	immediate = {
+		set_country_flag = deciding_dismantle
+		add_country_modifier = { name = deciding_dismantle duration = 150 }
+	}
+
+	option = {
+		name = "EVTOPTA91204"
+		JAN = {
+			change_variable = {
+				which = enable_dismantle
+				value = 1
+			}
+		}
+		clr_country_flag = deciding_dismantle
+		remove_country_modifier = deciding_dismantle
+		set_country_flag = has_voted
+	}
+
+	option = {
+		name = "EVTOPTB91204"
+		JAN = {
+			change_variable = {
+				which = enable_dismantle
+				value = -1
+			}
+		}
+		clr_country_flag = deciding_dismantle
+		remove_country_modifier = deciding_dismantle
+		set_country_flag = has_voted
+	}
+}
+
+country_event = {
+	id = 91205
+	title = "EVTNAME91205"
+	desc = "EVTDESC91205"
+	picture = upper_house
+
+	trigger = {
+		has_country_flag = deciding_dismantle
+		NOT = { has_country_modifier = deciding_dismantle }
+		NOT = { tag = JAN }
+	}
+
+	immediate = {
+		clr_country_flag = deciding_dismantle
+		remove_country_modifier = deciding_dismantle
+		set_country_flag = has_voted
+	}
+
+	option = {
+		name = "EVTOPTA91205"
+	}
+}
+
+country_event = {
+	id = 91206
+	title = "EVTNAME91206"
+	desc = "EVTDESC91206"
+	picture = upper_house
+
+	trigger = {
+		tag = JAN
+		great_wars_enabled = yes
+		NOT = {
+			OR = {
+				has_global_flag = dismantle_enabled
+				has_global_flag = dismantle_disabled
+				has_country_flag = deciding_dismantle
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91206"
+		set_country_flag = deciding_dismantle
+		add_country_modifier = { name = deciding_dismantle duration = 150 }
+	}
+}
+
+country_event = {
+	id = 91207
+	title = "EVTNAME91207"
+	desc = "EVTDESC91207"
+	picture = upper_house
+
+	trigger = {
+		tag = JAN
+		has_country_flag = deciding_dismantle
+		great_wars_enabled = yes
+		NOT = {
+			OR = {
+				has_global_flag = dismantle_enabled
+				has_global_flag = dismantle_disabled
+			}
+		}
+		NOT = {
+			has_country_modifier = deciding_dismantle
+		}
+		check_variable = {
+			which = enable_dismantle
+			value = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91207"
+		clr_country_flag = deciding_dismantle
+		set_global_flag = dismantle_enabled
+		any_country = {
+			limit = { ai = no }
+			country_event = { id = 91208 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91208
+	title = "EVTNAME91208"
+	desc = "EVTDESC91208"
+	picture = upper_house
+
+	is_triggered_only = yes
+
+	immediate = { clr_country_flag = has_voted }
+
+	option = {
+		name = "EVTOPTA91208"
+	}
+}
+
+country_event = {
+	id = 91209
+	title = "EVTNAME91209"
+	desc = "EVTDESC91209"
+	picture = upper_house
+
+	trigger = {
+		tag = JAN
+		has_country_flag = deciding_dismantle
+		great_wars_enabled = yes
+		NOT = {
+			OR = {
+				has_global_flag = dismantle_enabled
+				has_global_flag = dismantle_disabled
+			}
+		}
+		NOT = {
+			has_country_modifier = deciding_dismantle
+		}
+		NOT = {
+			check_variable = {
+				which = enable_dismantle
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91209"
+		clr_country_flag = deciding_dismantle
+		set_global_flag = dismantle_disabled
+		any_country = {
+			limit = { ai = no }
+			country_event = { id = 91210 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91210
+	title = "EVTNAME91210"
+	desc = "EVTDESC91210"
+	picture = upper_house
+
+	is_triggered_only = yes
+
+	immediate = { clr_country_flag = has_voted }
+
+	option = {
+		name = "EVTOPTA91210"
+	}
+}
+
+#########################################################################
+# 							CORING VOTE									#
+#########################################################################
+
+country_event = {
+	id = 91211
+	title = "EVTNAME91211"
+	desc = "EVTDESC91211"
+	picture = upper_house
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91211"
+		JAN = {
+			change_variable = {
+				which = core_vote
+				value = 1
+			}
+		}
+		country_event = { id = 91214 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91211"
+		JAN = {
+			change_variable = {
+				which = core_vote
+				value = -1
+			}
+		}
+		country_event = { id = 91214 days = 0 }
+	}
+}
+
+country_event = {
+	id = 91212
+	title = "EVTNAME91212"
+	desc = "EVTDESC91212"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = coring_enabled
+				has_global_flag = coring_disabled
+			}
+		}
+		check_variable = {
+			which = core_vote
+			value = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91212"
+		set_global_flag = coring_enabled
+	}
+}
+
+country_event = {
+	id = 91213
+	title = "EVTNAME91213"
+	desc = "EVTDESC91213"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = coring_enabled
+				has_global_flag = coring_disabled
+			}
+		}
+		NOT = {
+			check_variable = {
+				which = core_vote
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91213"
+		set_global_flag = coring_disabled
+	}
+}
+
+
+#########################################################################
+# 						FACTORY	CONTROL VOTE							#
+#########################################################################
+
+country_event = {
+	id = 91214
+	title = "EVTNAME91214"
+	desc = "EVTDESC91214"
+	picture = upper_house
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91214"
+		JAN = {
+			change_variable = {
+				which = manual_control
+				value = 1
+			}
+		}
+		country_event = { id = 91217 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91214"
+		JAN = {
+			change_variable = {
+				which = manual_control
+				value = -1
+			}
+		}
+		country_event = { id = 91217 days = 0 }
+	}
+}
+
+country_event = {
+	id = 91215
+	title = "EVTNAME91215"
+	desc = "EVTDESC91215"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = manual_control_enabled
+				has_global_flag = manual_control_disabled
+			}
+		}
+		check_variable = {
+			which = manual_control
+			value = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91215"
+		set_global_flag = manual_control_enabled
+	}
+}
+
+country_event = {
+	id = 91216
+	title = "EVTNAME91216"
+	desc = "EVTDESC91216"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = manual_control_enabled
+				has_global_flag = manual_control_disabled
+			}
+		}
+		NOT = {
+			check_variable = {
+				which = manual_control
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91216"
+		set_global_flag = manual_control_disabled
+	}
+}
+
+#########################################################################
+# 							INFMAY DECAY VOTE							#
+#########################################################################
+
+country_event = {
+	id = 91217
+	title = "EVTNAME91217"
+	desc = "EVTDESC91217"
+	picture = upper_house
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91217"
+		JAN = {
+			change_variable = {
+				which = extra_decay
+				value = 1
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = SPA }
+			}
+			owner = {
+				country_event = { id = 37703 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { colonial_nation = yes }
+			}
+			owner = {
+				country_event = { id = 91521 days = 0 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91217"
+		JAN = {
+			change_variable = {
+				which = extra_decay
+				value = -1
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = SPA }
+			}
+			owner = {
+				country_event = { id = 37703 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { colonial_nation = yes }
+			}
+			owner = {
+				country_event = { id = 91521 days = 0 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91218
+	title = "EVTNAME91218"
+	desc = "EVTDESC91218"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = extra_decay_enabled
+				has_global_flag = extra_decay_disabled
+			}
+		}
+		check_variable = {
+			which = extra_decay
+			value = 1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91218"
+		set_global_flag = extra_decay_enabled
+	}
+}
+
+country_event = {
+	id = 91219
+	title = "EVTNAME91219"
+	desc = "EVTDESC91219"
+	major = yes
+
+	trigger = {
+		tag = JAN
+		month = 1
+		NOT = { has_global_flag = 1913_bookmark }
+		NOT = {
+			OR = {
+				has_global_flag = extra_decay_enabled
+				has_global_flag = extra_decay_disabled
+			}
+		}
+		NOT = {
+			check_variable = {
+				which = extra_decay
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91219"
+		set_global_flag = extra_decay_disabled
+	}
+}

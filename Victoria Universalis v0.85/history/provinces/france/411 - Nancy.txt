@@ -1,0 +1,54 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = dye
+life_rating = 31
+state_building = {
+	level = 2
+	building = cement_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	fort = 2
+}
+1913.1.1 = {
+	## Audax Validator "." Ignore_NEXT
+	trade_goods = cotton
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cigarette_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+}

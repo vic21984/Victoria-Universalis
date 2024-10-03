@@ -1,8 +1,51 @@
+#Version 0.85 - 10/2/2024
+## Bug fixes:
+* Fixed bugged name placements in Ayan, Chernomin, and Aldan provinces.
+* Bismarck's Reforms event will not keep firing if you choose not to enact them.
+* Reclaim the Strait of Hormuz! decision can no longer be triggered an infinite number of times.
+* Fixed global assimilation rate bonus from Equality national value. It did not work at all in previous versions.
+* Removed Shogunate Japan cores from Japan in the multiplayer, 1913, and WW1 bookmarks.
+
+## Map changes:
+* Re-arranged and merged some French states.
+* Merged Croatia and Slovenia states.
+
+## Gameplay changes:
+* Core integration now takes 10 years instead of 15. The event to add and remove cores will not trigger while at war.
+* Reduced Cut Down to Size peace cost from 50 to 30.
+* Increased Great War Capitulation peace cost from 2 to 15.
+* Reverted changes to Reparations to vanilla values, from 10 years and 10% of income to 5 years and 25% of income.
+* Colonial Settlement province modifier no longer annually reduces 1% of the native population in a colony if the country has Colonial Migration turned off.
+* Using the Conquest, Minor Conquest, Tiny Conquest, Establish Protectorate, Establish Small Protectorate, and Restore Order CBs will now transfer the treasury of the defeated country to the conquering country.
+
+## Country changes:
+###### China:
+* Qing and Taiping now start with the Disorganized Army invention that reduces attack and defense stats of all units. This invention is removed once the country westernizes.
+* Taiping will now inherit all military and economic reforms of Qing instead of starting at 0.
+
+###### USA:
+* Irish immigrants are no longer hard coded to migrate to USA in the multiplayer bookmark. USA will still get most of the Irish immigrants if other immigrant countries don't rush reforms to catch up to the USA.
+
+###### Italy:
+* Italian countries can use the National Unification cb against other Italian states without having to research Nationalism and Imperialism in the multiplayer bookmark.
+
+###### Spain:
+* The 1st Carlist War has been replaced by an event that lets the player decide to play as Spain or Carlist Spain. If the player chooses to play as Spain, they will have to fight rebel stacks in Vasconia-Aragon and Catalonia. If they switch to Carlist Spain, the rebel stacks will disappear on their own.
+* Slightly increased starting literacy of accepted pops.
+
+###### Peru:
+* Owns the province of Cusco in 1836.
+
+###### South America:
+* Slightly increased starting literacy of accepted pops.
+* All countries start with basic school reform in the SP bookmark.
+
+
 # Version 0.84 - 5/24/2024
 ## Bug fixes:
 * Made treaty port in Singapore upgradeable.
 * Fixed glitched unit location when moving units or ships to the island of Tanjungpinang.
-* Removed puppet status of non-existant countries in multiplayer bookmark.
+* Removed puppet status of non-existent countries in multiplayer bookmark.
 * Steamer shipyard throughput bonus from having a machine parts factory in the same state works properly now.
 * Fixed a bug that made Small State and Medium State flags releasable as countries.
 * CSA will no longer be annexed by USA if it is sphered by USA.
@@ -36,7 +79,7 @@
 * Nerfed Industrial Goods and Consumer Goods national idea bonuses from +6% to +5%.
 * Nerfed Farming and Mining national idea bonuses from +30% to +25%.
 * Slightly increased price of steel and machine parts. Rebalanced factory inputs and outputs to account for the increase in price.
-* Added Derivatives, Money Markets, Transformers, Electical Grid, Shift Schedule, and Control Theory inventions to lategame commerce and industry techs.
+* Added Derivatives, Money Markets, Transformers, Electrical Grid, Shift Schedule, and Control Theory inventions to lategame commerce and industry techs.
 * Allowed craftsmen and clerks to migrate to mining provinces with RGO unemployment. Previously all POPs were prohibited from migrating to provinces with any RGO unemployment.
 * Imported End of Natural Dyes event from HPM.
 * Nerfed Great Power immigration bonus from 50% to 25%.
@@ -1441,7 +1484,7 @@ the population of Morocco in 1905 was 5M (1.25M pops). It is impossible for Moro
 
 ## Map Changes:
 * Removed strait from Balearic Islands to Barcelona.
-* Created Chinca Islands sulphur province in Ica state, Peru. It's population in 1836 is majority Yue labourers.
+* Created Chincha Islands sulphur province in Ica state, Peru. It's population in 1836 is majority Yue labourers.
 * Changed trade goods of Puno province from sulphur to wool.
 
 ## Country balance changes:

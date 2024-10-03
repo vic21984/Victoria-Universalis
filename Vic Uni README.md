@@ -15,4 +15,4 @@ Generals traits have been replaced by color coded + Attack and + Defense bonuses
 ### Credits
 
 Thanks to the following people:
-The creators of HPM and PDM for historical databases and art assets. God of Cheese for his RGO changing events in PIUR. General Townes for removing the menu tab backgrounds. Panzerfaust1 for new carrier and province selector sprites. Nurse Reno for the new fixed demand state warscore calculations. Wyrm for new TGC sprites.
+The creators of HPM and PDM for historical databases and art assets. God of Cheese for his RGO changing events in PIUR. General Townes for removing the menu tab backgrounds. Panzerfaust1 for new carrier and province selector sprites. Nurse Reno for the new fixed demand state warscore calculations. Wyrm for new TGC sprites. katerina_p for looping metaregions.

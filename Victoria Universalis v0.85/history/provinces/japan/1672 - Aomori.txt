@@ -1,0 +1,51 @@
+owner = TKG
+controller = TKG
+add_core = TKG
+trade_goods = iron
+life_rating = 35
+terrain = woods_mine
+1836.1.2 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = TKG
+}
+1913.1.1 = {
+	owner = JAP
+	controller = JAP
+	colonial = 0
+}
+1913.1.1 = {
+	## Audax Validator "." Ignore_NEXT
+	trade_goods = coal
+	state_building = {
+		level = 3
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = ammunition_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = small_arms_factory
+		upgrade = yes
+	}
+}

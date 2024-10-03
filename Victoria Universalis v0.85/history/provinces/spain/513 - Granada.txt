@@ -1,0 +1,19 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = iron
+life_rating = 35
+terrain = mountain_mine
+1913.1.1 = {
+	state_building = {
+		level = 4
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 4
+		building = steel_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

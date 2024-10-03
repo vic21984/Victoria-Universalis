@@ -1,0 +1,34 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = fish
+life_rating = 35
+naval_base = 1
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = artillery_factory
+		upgrade = yes
+	}
+	naval_base = 5
+}

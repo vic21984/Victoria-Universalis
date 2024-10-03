@@ -1,0 +1,6913 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+#########################################################################
+# 							ANNUAL MODIFIERS							#
+#########################################################################
+country_event = {
+	id = 91300
+	title = "ANNUAL MODIFIERS"
+
+
+	is_triggered_only = yes
+
+	option = {
+		country_event = { id = 91300 days = 365 }
+		any_country = {
+			limit = {
+				ai = no
+				battleship_column_doctrine = 1
+				NOT = { raider_group_doctrine = 1 }
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = built_naval_base
+				}
+				naval_base = 3
+			}
+		}
+		any_country = {
+			limit = {
+				ai = no
+				raider_group_doctrine = 1
+				NOT = { blue_and_brown_water_schools = 1 }
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = built_naval_base
+				}
+				naval_base = 4
+			}
+		}
+		any_country = {
+			limit = {
+				ai = no
+				blue_and_brown_water_schools = 1
+				NOT = { high_sea_battle_fleet = 1 }
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = built_naval_base
+				}
+				naval_base = 5
+			}
+		}
+		any_country = {
+			limit = {
+				ai = no
+				high_sea_battle_fleet = 1
+				NOT = { early_modern_naval_doctrine = 1 }
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = built_naval_base
+				}
+				naval_base = 6
+			}
+		}
+		any_country = {
+			limit = {
+				ai = no
+				early_modern_naval_doctrine = 1
+				NOT = { modern_naval_doctrine = 1 }
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = built_naval_base
+				}
+				naval_base = 7
+			}
+		}
+		any_country = {
+			limit = {
+				ai = no
+				modern_naval_doctrine = 1
+			}
+			any_owned = {
+				limit = {
+					has_province_modifier = built_naval_base
+				}
+				naval_base = 8
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 150000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1860
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 200000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1885
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 300000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 450000 }
+					}
+				}
+				add_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1860 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 150000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1885 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 200000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1910 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 300000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 450000 }
+					is_core = SMA
+				}
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 150000
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 300000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1860
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 200000
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 400000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1885
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 300000
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 600000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 450000
+						## Audax Validator "." Ignore_NEXT
+						NOT = { total_pops = 900000 }
+					}
+				}
+				add_core = MST
+				remove_core = SMA
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1860 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 300000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1885 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 400000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					NOT = { year = 1910 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 600000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					year = 1910
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 900000 }
+					is_core = MST
+				}
+				remove_core = MST
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+						trade_goods = sulphur
+						trade_goods = market_goods
+						trade_goods = precious_metal
+						trade_goods = oil
+					}
+					NOT = {
+						unemployment_by_type = {
+							type = labourers
+							value = 0.001
+						}
+					}
+				}
+				random_pop = {
+					limit = {
+						type = artisans
+					}
+					pop_type = labourers
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				ai = no
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				literacy = -0.001
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				literacy = -0.002
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				literacy = -0.003
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				literacy = -0.004
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				literacy = -0.005
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				literacy = -0.006
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				literacy = -0.007
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				literacy = -0.008
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.9
+					NOT = { literacy = 0.9 }
+				}
+				literacy = -0.009
+			}
+			any_pop = {
+				limit = {
+					literacy = 0.99
+				}
+				literacy = -0.01
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					has_province_modifier = literacy_campaign
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.9
+					}
+					literacy = 0.0055
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.8
+						NOT = { literacy = 0.9 }
+					}
+					literacy = 0.006
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.7
+						NOT = { literacy = 0.8 }
+					}
+					literacy = 0.0065
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.6
+						NOT = { literacy = 0.7 }
+					}
+					literacy = 0.007
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.5
+						NOT = { literacy = 0.6 }
+					}
+					literacy = 0.0075
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.4
+						NOT = { literacy = 0.5 }
+					}
+					literacy = 0.008
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.3
+						NOT = { literacy = 0.4 }
+					}
+					literacy = 0.0085
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.2
+						NOT = { literacy = 0.3 }
+					}
+					literacy = 0.009
+				}
+				any_pop = {
+					limit = {
+						literacy = 0.1
+						NOT = { literacy = 0.2 }
+					}
+					literacy = 0.0095
+				}
+				any_pop = {
+					limit = {
+						NOT = { literacy = 0.1 }
+					}
+					literacy = 0.01
+				}
+			}
+		}
+		any_country = {
+			slaves = { reduce_pop = 1.01 }
+			any_owned = {
+				limit = {
+					NOT = { total_pops = 1500 }
+				}
+				any_pop = {
+					reduce_pop = 1.01
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				any_owned_province = {
+					has_province_modifier = settlement
+				}
+			}
+			any_owned = {
+				limit = {
+					is_colonial = yes
+					has_province_modifier = settlement
+					owner = { NOT = { colonial_migration = no_colonial_migration } }
+				}
+				any_pop = {
+					limit = {
+						is_accepted_culture = no
+						is_primary_culture = no
+					}
+					reduce_pop = 0.99
+				}
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					total_pops = 1000000
+					NOT = { has_province_modifier = overcrowded }
+				}
+				add_province_modifier = { name = overcrowded duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					total_pops = 1000000
+					has_province_modifier = overcrowded
+					OR = {
+						has_province_modifier = province_attract_immigrants
+						has_province_modifier = new_world_province_attract_immigrants
+					}
+				}
+				remove_province_modifier = province_attract_immigrants
+				remove_province_modifier = new_world_province_attract_immigrants
+			}
+		}
+		any_country = {
+			limit = {
+				ai = yes
+				OR = {
+					civilized = yes
+					tag = EIC
+				}
+				OR = {
+					AND = {
+						year = 1870
+						NOT = { year = 1871 }
+					}
+					AND = {
+						year = 1890
+						NOT = { year = 1891 }
+					}
+					AND = {
+						year = 1890
+						NOT = { year = 1891 }
+					}
+					AND = {
+						year = 1910
+						NOT = { year = 1911 }
+					}
+					AND = {
+						year = 1930
+						NOT = { year = 1931 }
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { conscription = four_year_draft }
+				}	
+				owner = { political_reform = mandatory_service }
+			}
+			random_owned = {
+				limit = {
+					owner = { conscription = two_year_draft }
+				}	
+				owner = { political_reform = four_year_draft }
+			}				
+			random_owned = {
+				limit = {
+					owner = { conscription = one_year_draft }
+				}	
+				owner = { political_reform = two_year_draft }
+			}
+			random_owned = {
+				limit = {
+					owner = { conscription = no_draft }
+				}	
+				owner = { political_reform = one_year_draft }
+			}
+		}
+	}
+}
+
+#########################################################################
+# 							LIFERATING									#
+#########################################################################
+country_event = {
+	id = 91301
+	title = "EVTNAME91301"
+	desc = "EVTDESC91301"
+	picture = generic_map
+
+	trigger = {
+		NOT = { has_global_flag = 1913_bookmark }
+		year = 1900
+		tag = JAN
+		NOT = { has_country_flag = 1900_pop_recession }
+	}
+
+	option = {
+		name = "EVTOPTA91301" 
+		set_country_flag = 1900_pop_recession
+		any_country = {
+			any_owned = {
+				limit = {
+					life_rating = 35
+				}
+				life_rating = -2
+			}
+			any_owned = {
+				limit = {
+					life_rating = 38
+				}
+				life_rating = -3
+			}
+			any_owned = {
+				limit = {
+					life_rating = 40
+				}
+				life_rating = -5
+			}
+			any_owned = {
+				limit = {
+					life_rating = 40
+				}
+				life_rating = -5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91302
+	title = "EVTNAME91302"
+	desc = "EVTDESC91302"
+	picture = colonial_factory
+
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				continent = north_america
+				continent = oceania
+				continent = east_indies
+				continent = polynesia
+				region = MOR_1696
+				region = ALD_1714
+				region = TRI_1743
+				region = EGY_1737
+				region = EGY_1754
+				region = EGY_1842
+				region = EGY_1838
+				region = ENG_2019
+				region = ENG_2083
+				region = ENG_2078
+				region = ENG_2088
+				region = ENG_2074
+				region = ENG_2068
+				region = ENG_2014
+				region = ENG_2016
+				region = ENG_2039
+				region = ENG_2029
+				region = ENG_2034
+				region = ENG_2024
+				region = ENG_1844
+				region = ETH_1862
+				region = ETH_1867
+				region = POR_1999
+				region = POR_2003
+				region = POR_2053
+				region = POR_2060
+			}
+			OR = {
+				NOT = { life_rating = 11 }
+				NOT = { life_rating = 16 }
+				NOT = { life_rating = 21 }
+				NOT = { life_rating = 26 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91302" 
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = east_indies
+					continent = polynesia
+					region = MOR_1696
+					region = ALD_1714
+					region = TRI_1743
+					region = EGY_1737
+					region = EGY_1754
+					region = EGY_1842
+					region = EGY_1838
+					region = ENG_2019
+					region = ENG_2083
+					region = ENG_2078
+					region = ENG_2088
+					region = ENG_2074
+					region = ENG_2068
+					region = ENG_2014
+					region = ENG_2016
+					region = ENG_2039
+					region = ENG_2029
+					region = ENG_2034
+					region = ENG_2024
+					region = ENG_1844
+					region = ETH_1862
+					region = ETH_1867
+					region = POR_1999
+					region = POR_2003
+					region = POR_2053
+					region = POR_2060
+				}
+				NOT = { life_rating = 11 }
+			}
+			life_rating = 25
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = east_indies
+					continent = polynesia
+					region = MOR_1696
+					region = ALD_1714
+					region = TRI_1743
+					region = EGY_1737
+					region = EGY_1754
+					region = EGY_1842
+					region = EGY_1838
+					region = ENG_2019
+					region = ENG_2083
+					region = ENG_2078
+					region = ENG_2088
+					region = ENG_2074
+					region = ENG_2068
+					region = ENG_2014
+					region = ENG_2016
+					region = ENG_2039
+					region = ENG_2029
+					region = ENG_2034
+					region = ENG_2024
+					region = ENG_1844
+					region = ETH_1862
+					region = ETH_1867
+					region = POR_1999
+					region = POR_2003
+					region = POR_2053
+					region = POR_2060
+				}
+				NOT = { life_rating = 16 }
+			}
+			life_rating = 20
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = east_indies
+					continent = polynesia
+					region = MOR_1696
+					region = ALD_1714
+					region = TRI_1743
+					region = EGY_1737
+					region = EGY_1754
+					region = EGY_1842
+					region = EGY_1838
+					region = ENG_2019
+					region = ENG_2083
+					region = ENG_2078
+					region = ENG_2088
+					region = ENG_2074
+					region = ENG_2068
+					region = ENG_2014
+					region = ENG_2016
+					region = ENG_2039
+					region = ENG_2029
+					region = ENG_2034
+					region = ENG_2024
+					region = ENG_1844
+					region = ETH_1862
+					region = ETH_1867
+					region = POR_1999
+					region = POR_2003
+					region = POR_2053
+					region = POR_2060
+				}
+				NOT = { life_rating = 21 }
+			}
+			life_rating = 15
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					continent = north_america
+					continent = oceania
+					continent = east_indies
+					continent = polynesia
+					region = MOR_1696
+					region = ALD_1714
+					region = TRI_1743
+					region = EGY_1737
+					region = EGY_1754
+					region = EGY_1842
+					region = EGY_1838
+					region = ENG_2019
+					region = ENG_2083
+					region = ENG_2078
+					region = ENG_2088
+					region = ENG_2074
+					region = ENG_2068
+					region = ENG_2014
+					region = ENG_2016
+					region = ENG_2039
+					region = ENG_2029
+					region = ENG_2034
+					region = ENG_2024
+					region = ENG_1844
+					region = ETH_1862
+					region = ETH_1867
+					region = POR_1999
+					region = POR_2003
+					region = POR_2053
+					region = POR_2060
+				}
+				NOT = { life_rating = 26 }
+			}
+			life_rating = 10
+		}
+	}
+}
+
+#########################################################################
+# 							GHOST COUNTRY								#
+#########################################################################
+#Ghost Country Events
+country_event = {
+	id = 91303
+	title = "Ghost Country Trigger"
+	
+	trigger = {
+		tag = GHO
+		owns = 2133
+		NOT = { tag = REB }
+		OR = {
+			ABU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ADR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AFG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AGC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ALB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ALD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ANH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ARA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ARC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ARG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ARM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ARO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AGC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ASH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ASM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AST = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ATJ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AUS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AWA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AWS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AZB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			AZH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BAB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BAD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BAG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BAH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BAS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BAV = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BDK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BEL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BEN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BER = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BHO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BHP = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BHT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BHU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BIH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BIK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BNG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BOH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BOL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BOS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BRA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BRE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BRG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BRU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BRZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BSH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BSR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BUK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BUL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BUN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BUR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BYE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			BYZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CAM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CAN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CAT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CHE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CHI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CHK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CHL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CIR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CLA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CLM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CNG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			COB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			COL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			COS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CRE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CRI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CRO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CRT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CSA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CUB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CYP = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			CZH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D01 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D02 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D03 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D04 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D05 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D06 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D07 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D08 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D09 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D10 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D11 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D12 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D13 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D14 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D15 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D16 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D17 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D18 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D19 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			D20 = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DAG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DAH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DAI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DAM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DAR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DEN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DES = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DJA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DNB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DND = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DOM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			DZG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ECU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			EGY = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			EIC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ELS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ENG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ENT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			EST = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ETH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			FIN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			FLA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			FRA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			FRM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GAZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GBU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GCO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GEL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GEO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GER = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GJM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GLM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GNG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GON = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GRE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GRP = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GUA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GUY = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GWA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GXI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HAI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HAM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HAN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HAR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HAW = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HAZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HDJ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HEK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HES = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HND = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HNN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HOL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HON = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HRT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HUI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HUN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			HYD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ICL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			IND = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			IMG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			INO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ION = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			IRE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			IRQ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ISR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ITA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JAI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JAM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JAP = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JAS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JAV = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JHA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JOD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JOH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			JOR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KAF = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KAS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KAZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KBO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KDS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KGR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KHI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KHR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KHT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KHZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KLM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KMT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KND = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KNG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KOK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KON = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KOR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KRA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KRN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KSN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KTI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KUK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			KUT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LAD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LAN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LAT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LIB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LIP = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LIT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LOA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LOM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LPL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LUA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LUB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LUC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			LUX = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAJ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MAT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MCK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MEC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MEI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MEW = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MEX = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MGL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MKN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MOD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MOL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MON = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MOR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MOS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MRN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MTC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MUG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			MYS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NAG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NAS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NEJ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NEN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NEP = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NET = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NEW = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NGF = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NIC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NIG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NOR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NYE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			NZL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			OLD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			OMA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ORA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ORI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			OYO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PAK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PAP = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PAR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PBC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PER = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PEU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PHL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PLC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PLS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PNB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PNJ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PNK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PNM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			POL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			POR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PRG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			PRU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			QNG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			QUE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			RGS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			RHO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ROM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			RPL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			RUS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			RUT = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SAF = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SAK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SAR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SAX = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SBA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SCA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SCH = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SCO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SEG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SER = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SGF = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SHI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SHK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SHW = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SIA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SIC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SIE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SIK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SIN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SLO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SLW = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SLV = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SOK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SOM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SPA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SPC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SRI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SSD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SUD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SUL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SWE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SWI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SWK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SXI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SYR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			SZC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TCA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TEX = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TIB = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TIG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TKG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TKM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TMR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TOO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TPG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TRA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TRE = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TRI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TRK = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TRN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TRZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TUN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TUR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			TUS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			UBD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			UCA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ULA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			UKR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			URU = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			USA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			VEN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			VNZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WAD = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WAL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WEI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WIA = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WIF = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WLL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WLO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WOL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WRI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WRL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WRS = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			WUR = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			XBI = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			XHO = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			XIN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			YEM = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			YNN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			YUC = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			YUG = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ZAN = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			ZUL = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			GUZ = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		any_country = {
+			limit = {
+				is_greater_power = no
+				exists = no
+				OR = {
+					total_amount_of_divisions = 1
+					is_mobilised = yes
+					war = yes
+				}
+			}
+			inherit = GHO
+		}
+		any_country = {
+			limit = {
+				owns = 2133
+			}
+			country_event = { id = 91304 days = 3 }
+		}
+	}
+}
+
+country_event = {
+	id = 91304
+	title = "Ghost Country Appears"
+
+	is_triggered_only = yes
+
+	option = {
+		release_vassal = THIS
+		any_country = {
+			limit = { war_with = THIS }
+			end_war = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 91305
+	title = "Ghost Country Cleanup"
+
+	trigger = {
+		owns = 2133
+		NOT = { tag = GHO }
+		OR = {
+			AND = {
+				is_mobilised = no
+				NOT = { total_amount_of_divisions = 1 }
+				war = no
+			}
+			NOT = { capital = 2133 }
+		}
+	}
+
+	option = {
+		2133 = { secede_province = GHO }
+		GHO = { civilized = yes }
+	}
+}
+
+#########################################################################
+# 							RELEASE VASSALS								#
+#########################################################################
+country_event = {
+	id = 91306
+	title = "EVTNAME91306"
+	desc = "EVTDESC91306"
+	picture = upper_house
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91306"
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				OR = {
+					tag = EIC
+					NOT = { is_culture_group = south_asian }
+					EIC = { NOT = { vassal_of = THIS } }
+				}
+			}
+			country_event = { id = 91307 days = 0 }
+		}
+	}
+	option = {
+		name = "EVTOPTB91306"
+	}
+}
+country_event = {
+	id = 91307
+	title = "EVTNAME91307"
+	desc = "EVTDESC91307"
+	picture = upper_house
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91307"
+		overlord = { country_event = { id = 91308 days = 0} }
+	}
+}
+country_event = {
+	id = 91308
+	title = "EVTNAME91308"
+	desc = "EVTDESC91308"
+	picture = upper_house
+
+	allow_multiple_instances = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91308"
+		FROM = {
+			limit = { tag = EIC }
+			set_country_flag = granted_independence
+		}
+		release_vassal = FROM
+	}
+	option = {
+		name = "EVTOPTB91308"
+	}
+}
+
+#########################################################################
+# 						CAPITAL SUPPLY DEPOT							#
+#########################################################################
+country_event = {
+	id = 91309
+	title = "New Capital Supply Depot"
+	desc = "A capital supply depot will be built in your new capital and the old one will be destroyed."
+	picture = armament_depot
+
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				NOT = { has_province_modifier = capital_supply_depot }
+			}
+			any_owned_province = {
+				is_capital = no
+				has_province_modifier = capital_supply_depot
+			}
+		}
+	}
+
+	option = {
+		name = "OK."
+		any_owned = {
+			limit = {
+				is_capital = no
+				has_province_modifier = capital_supply_depot
+			}
+			remove_province_modifier = capital_supply_depot
+		}
+		capital_scope = {
+			add_province_modifier = { name = capital_supply_depot duration = -1 }
+		}
+	}
+}
+
+#########################################################################
+# 							REMINDERS									#
+#########################################################################
+country_event = {
+	id = 91310
+	title = "Baby Boom Reminder"
+	desc = "Your baby boom cooldown timer has expired. You can now use another baby boom decision."
+	picture = assimilation
+
+
+	trigger = {
+		ai = no
+		year = 1837
+		NOT = {
+			year = 1913
+			has_global_flag = 1913_bookmark
+		}
+		NOT = { has_country_modifier = baby_booming }
+		NOT = { has_country_flag = baby_boom_reminder }
+		any_owned_province = {
+			state_scope = {
+				## Audax Validator "." Ignore_NEXT
+				NOT = { total_pops = 1000000 }
+			}
+		}
+	}
+
+	option = {
+		name = "OK."
+		set_country_flag = baby_boom_reminder
+	}
+}
+
+#########################################################################
+# 							NATIONAL VALUES								#
+#########################################################################
+country_event = {
+	id = 91311
+	title = "National Values"
+	desc = "Choose a new national value for your nation."
+	picture = Upperhouse
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Equality"
+		nationalvalue = nv_equality
+	}
+
+	option = {
+		name = "Liberty"
+		nationalvalue = nv_liberty
+	}
+
+	option = {
+		name = "Order"
+		nationalvalue = nv_order
+	}
+}
+
+
+#########################################################################
+# 						REFORMS AND DEMOCRACY							#
+#########################################################################
+country_event = {
+	id = 91314
+	title = "EVTNAME91314"
+	desc = "EVTDESC91314"
+	picture = Upperhouse
+
+	trigger = {
+		has_country_flag = cannot_pass_reform
+		NOT = { has_country_modifier = cannot_pass_reform }
+	}
+
+	option = {
+		name = "EVTOPTA91314"
+		clr_country_flag = cannot_pass_reform
+	}
+}
+
+country_event = {
+	id = 91315
+	title = "EVTNAME91315"
+	desc = "EVTDESC91315"
+	picture = Upperhouse
+
+	trigger = {
+		government = democracy
+		NOT = { has_country_flag = democracy }
+	}
+
+	option = {
+		name = "EVTOPTA91315"
+		set_country_flag = democracy
+		add_country_modifier = { name = democracy_modifier duration = -1 }
+	}
+}
+
+country_event = {
+	id = 91316
+	title = "EVTNAME91316"
+	desc = "EVTDESC91316"
+	picture = Upperhouse
+
+	trigger = {
+		OR = {
+			has_country_modifier = democracy_modifier
+			has_country_flag = democracy
+		}
+		NOT = { government = democracy }
+	}
+
+	option = {
+		name = "EVTOPTA91316"
+		remove_country_modifier = democracy_modifier
+		clr_country_flag = democracy
+	}
+}
+
+
+#########################################################################
+# 							SUPPLY DEPOT								#
+#########################################################################
+
+
+province_event = {
+	id = 91320
+	title = "EVTNAME91320"
+	desc = "EVTDESC91320"
+
+	trigger = {
+		has_province_modifier = supply_depot
+		OR = {
+			# Audax Validator "." Ignore_1007
+			unit_in_battle = yes
+			country_units_in_province = REB
+			NOT = { controlled_by = THIS }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA91320"
+		remove_province_modifier = supply_depot
+		owner = { add_country_modifier = { name = supply_depot_destroyed duration = 180 } }
+	}
+}
+
+#########################################################################
+# 							REBEL ARMY TECH								#
+#########################################################################
+country_event = {
+	id = 91321
+	title = "Rebel Tech 1"
+
+	trigger = {
+		tag = JAN
+		year = 1846
+		NOT = { has_country_flag = reb_tech_1 }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		set_country_flag = reb_tech_1
+		REB = {
+			activate_technology = post_napoleonic_thought
+			activate_technology = flintlock_rifles
+			activate_technology = bronze_muzzle_loaded_artillery
+			activate_technology = military_staff_system
+			activate_technology = army_command_principle
+		}
+	}
+}
+
+country_event = {
+	id = 91322
+	title = "Rebel Tech 2"
+
+	trigger = {
+		tag = JAN
+		year = 1856
+		NOT = { has_country_flag = reb_tech_2 }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		set_country_flag = reb_tech_2
+		REB = {
+			activate_technology = strategic_mobility
+			activate_technology = muzzle_loaded_rifles
+			activate_technology = iron_muzzle_loaded_artillery
+			activate_technology = military_plans
+			activate_technology = army_professionalism
+		}
+	}
+}
+
+country_event = {
+	id = 91323
+	title = "Rebel Tech 3"
+
+	trigger = {
+		tag = JAN
+		year = 1870
+		NOT = { has_country_flag = reb_tech_3 }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		set_country_flag = reb_tech_3
+		REB = {
+			activate_technology = point_defense_system
+			activate_technology = breech_loaded_rifles
+			activate_technology = iron_breech_loaded_artillery
+			activate_technology = military_statistics
+			activate_technology = army_decision_making
+		}
+	}
+}
+
+country_event = {
+	id = 91324
+	title = "Rebel Tech 4"
+
+	trigger = {
+		tag = JAN
+		year = 1890
+		NOT = { has_country_flag = reb_tech_4 }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		set_country_flag = reb_tech_4
+		REB = {
+			activate_technology = deep_defense_system
+			activate_technology = machine_guns
+			activate_technology = steel_breech_loaded_artillery
+			activate_technology = military_logistics
+			activate_technology = army_risk_management
+		}
+	}
+}
+
+country_event = {
+	id = 91325
+	title = "Rebel Tech 5"
+
+	trigger = {
+		tag = JAN
+		year = 1910
+		NOT = { has_country_flag = reb_tech_5 }
+		NOT = { has_global_flag = 1913_bookmark }
+	}
+
+	option = {
+		set_country_flag = reb_tech_5
+		REB = {
+			activate_technology = trench_systems
+			activate_technology = bolt_action_rifles
+			activate_technology = indirect_artillery_fire
+			activate_technology = army_nco_training
+		}
+	}
+}
+
+country_event = {
+	id = 91326
+	title = "Rebel Tech 6"
+
+	trigger = {
+		tag = JAN
+		year = 1930
+		NOT = { has_country_flag = reb_tech_6 }
+	}
+
+	option = {
+		set_country_flag = reb_tech_6
+		REB = {
+			activate_technology = infiltration
+			activate_technology = chemical_weapons
+			activate_technology = creeping_barrage
+			activate_technology = great_war_experience
+		}
+	}
+}
+
+#########################################################################
+# 							AI MIL ACCESS								#
+#########################################################################
+
+
+country_event = {
+	id = 91330
+	title = "Cancel AI Mil Access"
+
+	trigger = {
+		ai = yes
+		META_1 = {
+			owner = {
+				exists = yes
+				ai = yes
+				military_access = THIS
+				NOT = {
+					OR = {
+						alliance_with = THIS
+						in_sphere = THIS
+						is_sphere_leader_of = THIS
+						vassal_of = THIS
+						is_our_vassal = THIS
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		any_country = {
+			limit = {
+				exists = yes
+				ai = yes
+				military_access = THIS
+				NOT = {
+					OR = {
+						alliance_with = THIS
+						in_sphere = THIS
+						is_sphere_leader_of = THIS
+						vassal_of = THIS
+						is_our_vassal = THIS
+					}
+				}
+			}
+			end_military_access = THIS
+		}
+	}
+}
+
+#########################################################################
+# 							END NEUTRAL WAR								#
+#########################################################################
+
+country_event = {
+	id = 91338
+	title = "EVTNAME91338"
+	desc = "EVTDESC91338"
+	picture = upper_house
+
+	trigger = {
+		has_country_flag = neutral
+		war = yes
+	}
+
+	immediate = {
+		any_country = { end_war = THIS }
+	}
+
+	option = {
+		name = "EVTOPTA91338"
+	}
+}
+
+
+#########################################################################
+# 						GREAT WAR PENALTY CB							#
+#########################################################################
+
+
+country_event = {
+	id = 91339
+	title = "EVTNAME91339"
+	desc = "EVTDESC91339"
+	picture = upper_house
+
+	trigger = {
+		has_country_flag = gw_penalty_target
+		war = no
+	}
+
+	option = {
+		name = "EVTOPTA91339"
+		clr_country_flag = gw_penalty_target
+	}
+}
+
+
+#########################################################################
+# 						LIBERATE PUPPET CB								#
+#########################################################################
+
+country_event = {
+    id = 91340
+    title = "Our New Puppet"
+    desc = "Our previous war has given us a new satellite!"
+    picture = "Celebration"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Good"
+
+        any_country = {
+            limit = {
+                exists = yes
+                NOT = { has_country_flag = existing_country }
+                is_vassal = no
+                in_sphere = THIS
+            }
+            country_event = { id = 91341 days = 0 }
+        }
+    }
+}
+
+#Event for a country that has been puppeted by CB
+country_event = {
+    id = 91341
+    title = "EVTNAME91341" #The $FROMCOUNTRY$ Overlords
+    desc = "EVTDESC91341"
+    picture = "Celebration"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA91341"
+        FROM = { create_vassal = THIS }
+        random_owned = {
+            limit = {
+                FROM = { government = fascist_dictatorship }
+                owner = {
+                    civilized = yes
+                    NOT = { government = fascist_dictatorship }
+                }
+            }
+            owner = {
+                ruling_party_ideology = fascist
+                government = fascist_dictatorship
+                political_reform = none_voting
+                political_reform = party_appointed
+                political_reform = no_meeting
+                political_reform = state_press
+                political_reform = state_controlled
+                political_reform = underground_parties
+            }
+        }
+        random_owned = {
+            limit = {
+                FROM = { government = proletarian_dictatorship }
+                owner = {
+                    civilized = yes
+                    NOT = { government = proletarian_dictatorship }
+                }
+            }
+            owner = {
+                ruling_party_ideology = communist
+                government = proletarian_dictatorship
+                political_reform = none_voting
+                political_reform = party_appointed
+                political_reform = no_meeting
+                political_reform = state_press
+                political_reform = state_controlled
+                political_reform = underground_parties
+                social_reform = good_minimum_wage
+                social_reform = eight_hours
+                social_reform = good_subsidies
+                social_reform = good_pensions
+                nationalize = yes
+            }
+        }
+
+        random_owned = {
+            limit = {
+                FROM = {
+                    OR = {
+                        government = democracy
+                        government = hms_government
+                    }
+                }
+                owner = {
+                    civilized = yes
+                    OR = {
+                        government = absolute_monarchy
+                        government = prussian_constitutionalism
+                    }
+                }
+            }
+            owner = {
+                random_owned = {
+                    limit = { owner = { OR = { government = prussian_constitutionalism government = absolute_monarchy } } }
+                    owner = { government = hms_government }
+                }
+                random_owned = {
+                    limit = { owner = { NOT = { vote_franschise = universal_voting } } }
+                    owner = { political_reform = universal_weighted_voting }
+                }
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                political_parties = underground_parties
+                                political_parties = harassment
+                                political_parties = gerrymandering
+                            }
+                        }
+                    }
+                    owner = { political_reform = non_secret_ballots }
+                }
+                random_owned = {
+                    limit = {
+                        owner = { upper_house_composition = party_appointed }
+                    }
+                    owner = { political_reform = appointed }
+                }
+                election = yes
+            }
+        }
+        random_owned = {
+            limit = {
+                FROM = {
+                    OR = {
+                        government = democracy
+                        government = hms_government
+                    }
+                }
+                owner = {
+                    civilized = yes
+                    OR = {
+                        government = fascist_dictatorship
+                        government = proletarian_dictatorship
+                    }
+                }
+            }
+            owner = {
+                government = democracy
+                random_owned = {
+                    limit = {
+                        owner = { NOT = { vote_franschise = universal_voting } }
+                    }
+                    owner = { political_reform = universal_weighted_voting }
+                }
+                random_owned = {
+                    limit = {
+                        owner = {
+                            OR = {
+                                political_parties = underground_parties
+                                political_parties = harassment
+                                political_parties = gerrymandering
+                            }
+                        }
+                    }
+                    owner = { political_reform = non_secret_ballots }
+                }
+                random_owned = {
+                    limit = {
+                        owner = { upper_house_composition = party_appointed }
+                    }
+                    owner = { political_reform = appointed }
+                }
+                election = yes
+            }
+        }
+        random_owned = {
+            limit = {
+                FROM = {
+                    OR = {
+                        government = absolute_monarchy
+                        government = prussian_constitutionalism
+                    }
+                }
+                owner = {
+                    civilized = yes
+                    NOT = { government = absolute_monarchy }
+                    NOT = { government = prussian_constitutionalism }
+                }
+            }
+            owner = {
+                government = absolute_monarchy
+                ruling_party_ideology = reactionary
+                political_reform = none_voting
+                political_reform = appointed
+                political_reform = underground_parties
+            }
+        }
+        random_owned = {
+            limit = {
+                FROM = { government = presidential_dictatorship }
+                owner = {
+                    civilized = yes
+                    NOT = { government = presidential_dictatorship }
+                }
+            }
+            owner = {
+                government = presidential_dictatorship
+                ruling_party_ideology = reactionary
+                political_reform = none_voting
+                political_reform = appointed
+                political_reform = no_meeting
+                political_reform = state_press
+                political_reform = underground_parties
+            }
+        }
+        random_country = {
+            limit = {
+                is_greater_power = yes
+                tag = FROM
+            }
+            diplomatic_influence = { who = THIS value = 400 }
+        }
+        any_country = {
+            limit = {
+                is_greater_power = yes
+                NOT = { tag = FROM }
+            }
+            diplomatic_influence = { who = THIS value = -100 }
+        }
+        any_country = {
+            limit = {
+                alliance_with = THIS
+                NOT = { tag = FROM }
+            }
+            leave_alliance = THIS
+        }
+        any_pop = {
+            limit = {
+                OR = {
+                    is_primary_culture = yes
+                    is_accepted_culture = yes
+                }
+                location = { is_core = THIS }
+            }
+            militancy = 4
+        }
+        any_owned = {
+            limit = { is_core = THIS }
+            add_province_modifier = {
+                name = nationalist_agitation
+                duration = 1825
+            }
+        }
+    }
+}
+
+
+#########################################################################
+# 							END OF SLAVERY								#
+#########################################################################
+
+country_event = {
+
+	id = 91337
+	title = "EVTNAME91337"
+
+	trigger = {
+		tag = JAN
+		year = 1890
+		NOT = { has_global_flag = slavery_ended }
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		set_global_flag = slavery_ended
+		any_country = {
+			limit = {
+				ai = yes
+				NOT = { tag = CSA }
+				OR = {
+					slavery = yes_slavery
+					slavery = freedom_of_womb
+				}
+			}
+			political_reform = no_slavery
+		}
+	}
+}
+
+
+#########################################################################
+# 							COMPANIES									#
+#########################################################################
+province_event = {
+    id = 91342
+    title = "Found a Company"
+    desc = "Choose a category our company should operate in."
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Construction"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 1.2
+				OR = {
+					tag = USA
+					tag = AUS
+					tag = KUK
+					tag = DNB
+					tag = RUS
+					tag = SPA
+					tag = SPC
+					tag = AST
+				}
+				NOT = { has_country_flag = carnegie_steel }
+				NOT = { has_country_flag = manfred_weiss }
+				NOT = { has_country_flag = putilov_plant }
+				NOT = { has_country_flag = altos_vizcaya }
+				NOT = { has_country_flag = william_sandford }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = carnegie_steel
+					has_country_flag = manfred_weiss
+					has_country_flag = putilov_plant
+					has_country_flag = altos_vizcaya
+					has_country_flag = william_sandford
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = USA
+						has_country_flag = carnegie_steel
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = USA
+						NOT = { has_country_flag = carnegie_steel }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = carnegie_steel duration = -1 }
+					set_country_flag = carnegie_steel
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						has_country_flag = manfred_weiss
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						NOT = { has_country_flag = manfred_weiss }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = manfred_weiss duration = -1 }
+					set_country_flag = manfred_weiss
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = RUS
+						has_country_flag = putilov_plant
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = RUS
+						NOT = { has_country_flag = putilov_plant }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = putilov_plant duration = -1 }
+					set_country_flag = putilov_plant
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = SPC
+							tag = SPA
+						}
+						has_country_flag = altos_vizcaya
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = SPC
+							tag = SPA
+						}
+						NOT = { has_country_flag = altos_vizcaya }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = altos_vizcaya duration = -1 }
+					set_country_flag = altos_vizcaya
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = AST
+						has_country_flag = william_sandford
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = AST
+						NOT = { has_country_flag = william_sandford }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = william_sandford duration = -1 }
+					set_country_flag = william_sandford
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = USA }
+						NOT = { tag = AUS }
+						NOT = { tag = KUK }
+						NOT = { tag = DNB }
+						NOT = { tag = RUS }
+						NOT = { tag = SPA }
+						NOT = { tag = SPC }
+						NOT = { tag = AST }
+						has_country_flag = construction_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = USA }
+						NOT = { tag = AUS }
+						NOT = { tag = KUK }
+						NOT = { tag = DNB }
+						NOT = { tag = RUS }
+						NOT = { tag = SPA }
+						NOT = { tag = SPC }
+						NOT = { tag = AST }
+						NOT = { has_country_flag = construction_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = construction_company duration = -1 }
+					set_country_flag = construction_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Tooling"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				tag = BEL
+				NOT = { has_country_flag = john_cockerill }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = john_cockerill
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = BEL
+						has_country_flag = john_cockerill
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = BEL
+						NOT = { has_country_flag = john_cockerill }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = john_cockerill duration = -1 }
+					set_country_flag = john_cockerill
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = BEL }
+						has_country_flag = tooling_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = BEL }
+						NOT = { has_country_flag = tooling_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = tooling_company duration = -1 }
+					set_country_flag = tooling_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Groceries"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = ARG
+					tag = ARC
+					tag = SBA
+					tag = LPL
+				}
+				NOT = { has_country_flag = bunge_born }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = bunge_born
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = ARG
+							tag = ARC
+							tag = SBA
+							tag = LPL
+						}
+						has_country_flag = bunge_born
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = ARG
+							tag = ARC
+							tag = SBA
+							tag = LPL
+						}
+						NOT = { has_country_flag = bunge_born }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = bunge_born duration = -1 }
+					set_country_flag = bunge_born
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ARG }
+						NOT = { tag = ARC }
+						NOT = { tag = SBA }
+						NOT = { tag = LPL }
+						has_country_flag = grocery_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ARG }
+						NOT = { tag = ARC }
+						NOT = { tag = SBA }
+						NOT = { tag = LPL }
+						NOT = { has_country_flag = grocery_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = grocery_company duration = -1 }
+					set_country_flag = grocery_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Drugs"
+		owner = {
+			random_owned = {
+				limit = {
+					owner = { has_country_flag = drug_company }
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = { NOT = { has_country_flag = drug_company } }
+				}
+				owner = {
+					add_country_modifier = { name = drug_company duration = -1 }
+					set_country_flag = drug_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Tobacco"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				tag = TUR
+				NOT = { has_country_flag = ottoman_tobacco }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = ottoman_tobacco
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = TUR
+						has_country_flag = ottoman_tobacco
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = TUR
+						NOT = { has_country_flag = ottoman_tobacco }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = ottoman_tobacco duration = -1 }
+					set_country_flag = ottoman_tobacco
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = TUR }
+						has_country_flag = tobacco_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = TUR }
+						NOT = { has_country_flag = tobacco_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = tobacco_company duration = -1 }
+					set_country_flag = tobacco_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Beverages"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = ENG
+					tag = BRZ
+				}
+				NOT = { has_country_flag = tetley }
+				NOT = { has_country_flag = fazenda_fortaleza }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = tetley
+					has_country_flag = fazenda_fortaleza
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = ENG
+						has_country_flag = tetley
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = ENG
+						NOT = { has_country_flag = tetley }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = tetley duration = -1 }
+					set_country_flag = tetley
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = BRZ
+						has_country_flag = fazenda_fortaleza
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = BRZ
+						NOT = { has_country_flag = fazenda_fortaleza }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = fazenda_fortaleza duration = -1 }
+					set_country_flag = fazenda_fortaleza
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ENG }
+						NOT = { tag = BRZ }
+						has_country_flag = beverage_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ENG }
+						NOT = { tag = BRZ }
+						NOT = { has_country_flag = beverage_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = beverage_company duration = -1 }
+					set_country_flag = beverage_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Brewing"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = RUS
+					tag = FRA
+				}
+				NOT = { has_country_flag = vodka_monopoly }
+				NOT = { has_country_flag = confederation_vignerons }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = vodka_monopoly
+					has_country_flag = confederation_vignerons
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = RUS
+						has_country_flag = vodka_monopoly
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = RUS
+						NOT = { has_country_flag = vodka_monopoly }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = vodka_monopoly duration = -1 }
+					set_country_flag = vodka_monopoly
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = FRA
+						has_country_flag = confederation_vignerons
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = FRA
+						NOT = { has_country_flag = confederation_vignerons }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = confederation_vignerons duration = -1 }
+					set_country_flag = confederation_vignerons
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = RUS }
+						NOT = { tag = FRA }
+						has_country_flag = brewing_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = RUS }
+						NOT = { tag = FRA }
+						NOT = { has_country_flag = brewing_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = brewing_company duration = -1 }
+					set_country_flag = brewing_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Clothing"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = JAP
+					tag = SPA
+					tag = SPC
+					tag = POR
+					tag = CAN
+					tag = RPL
+				}
+				NOT = { has_country_flag = mitsui }
+				NOT = { has_country_flag = espana_industrial }
+				NOT = { has_country_flag = companhia_mocambique }
+				NOT = { has_country_flag = hudson_bay }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = mitsui
+					has_country_flag = espana_industrial
+					has_country_flag = companhia_mocambique
+					has_country_flag = hudson_bay
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = JAP
+						has_country_flag = mitsui
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = JAP
+						NOT = { has_country_flag = mitsui }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = mitsui duration = -1 }
+					set_country_flag = mitsui
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = SPA
+							tag = SPC
+						}
+						has_country_flag = espana_industrial
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = SPA
+							tag = SPC
+						}
+						NOT = { has_country_flag = espana_industrial }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = espana_industrial duration = -1 }
+					set_country_flag = espana_industrial
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = POR
+						has_country_flag = companhia_mocambique
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = POR
+						NOT = { has_country_flag = companhia_mocambique }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = companhia_mocambique duration = -1 }
+					set_country_flag = companhia_mocambique
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = CAN
+							tag = RPL
+						}
+						has_country_flag = hudson_bay
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = CAN
+							tag = RPL
+						}
+						NOT = { has_country_flag = hudson_bay }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = hudson_bay duration = -1 }
+					set_country_flag = hudson_bay
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = JAP }
+						NOT = { tag = SPA }
+						NOT = { tag = SPC }
+						NOT = { tag = POR }
+						NOT = { tag = CAN }
+						NOT = { tag = RPL }
+						has_country_flag = clothing_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = JAP }
+						NOT = { tag = SPA }
+						NOT = { tag = SPC }
+						NOT = { tag = POR }
+						NOT = { tag = CAN }
+						NOT = { tag = RPL }
+						NOT = { has_country_flag = clothing_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = clothing_company duration = -1 }
+					set_country_flag = clothing_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Furniture"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = SWE
+					tag = KSN
+					tag = SCA
+				}
+				NOT = { has_country_flag = ikea }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = ikea
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = SWE
+							tag = KSN
+							tag = SCA
+						}
+						has_country_flag = ikea
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = SWE
+							tag = KSN
+							tag = SCA
+						}
+						NOT = { has_country_flag = ikea }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = ikea duration = -1 }
+					set_country_flag = ikea
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = SWE }
+						NOT = { tag = KSN }
+						NOT = { tag = SCA }
+						has_country_flag = furniture_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = SWE }
+						NOT = { tag = KSN }
+						NOT = { tag = SCA }
+						NOT = { has_country_flag = furniture_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = furniture_company duration = -1 }
+					set_country_flag = furniture_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Luxury Goods"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				tag = FRA
+				NOT = { has_country_flag = house_of_worth }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = house_of_worth
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = FRA
+						has_country_flag = house_of_worth
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = FRA
+						NOT = { has_country_flag = house_of_worth }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = house_of_worth duration = -1 }
+					set_country_flag = house_of_worth
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = FRA }
+						has_country_flag = luxury_goods_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = FRA }
+						NOT = { has_country_flag = luxury_goods_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = luxury_goods_company duration = -1 }
+					set_country_flag = luxury_goods_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Chemical"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = GER
+					tag = NGF
+					tag = PRU
+				}
+				NOT = { has_country_flag = basf }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = basf
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = GER
+							tag = NGF
+							tag = PRU
+						}
+						has_country_flag = basf
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = GER
+							tag = NGF
+							tag = PRU
+						}
+						NOT = { has_country_flag = basf }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = basf duration = -1 }
+					set_country_flag = basf
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = PEU
+							tag = PBC
+						}
+						has_country_flag = monopolio_del_salitre
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = PEU
+							tag = PBC
+						}
+						NOT = { has_country_flag = monopolio_del_salitre }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = monopolio_del_salitre duration = -1 }
+					set_country_flag = monopolio_del_salitre
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = GER }
+						NOT = { tag = NGF }
+						NOT = { tag = PRU }
+						NOT = { tag = PEU }
+						NOT = { tag = PBC }
+						has_country_flag = chemical_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = GER }
+						NOT = { tag = NGF }
+						NOT = { tag = PRU }
+						NOT = { tag = PEU }
+						NOT = { tag = PBC }
+						NOT = { has_country_flag = chemical_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = chemical_company duration = -1 }
+					set_country_flag = chemical_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Oil"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = PER
+					tag = VNZ
+					tag = GCO
+					tag = MEX
+				}
+				NOT = { has_country_flag = persian_oil }
+				NOT = { has_country_flag = caribbean_petroleum }
+				NOT = { has_country_flag = aguila }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = persian_oil
+					has_country_flag = caribbean_petroleum
+					has_country_flag = aguila
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = PER
+						has_country_flag = persian_oil
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = PER
+						NOT = { has_country_flag = persian_oil }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = persian_oil duration = -1 }
+					set_country_flag = persian_oil
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = VNZ
+							tag = GCO
+						}
+						has_country_flag = caribbean_petroleum
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = VNZ
+							tag = GCO
+						}
+						NOT = { has_country_flag = caribbean_petroleum }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = caribbean_petroleum duration = -1 }
+					set_country_flag = caribbean_petroleum
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						has_country_flag = aguila
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = MEX
+						NOT = { has_country_flag = aguila }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = aguila duration = -1 }
+					set_country_flag = aguila
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = PER }
+						NOT = { tag = VNZ }
+						NOT = { tag = GCO }
+						NOT = { tag = MEX }
+						has_country_flag = oil_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = PER }
+						NOT = { tag = VNZ }
+						NOT = { tag = GCO }
+						NOT = { tag = MEX }
+						NOT = { has_country_flag = oil_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = oil_company duration = -1 }
+					set_country_flag = oil_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Electronics"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				tag = NET
+				NOT = { has_country_flag = philips }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = philips
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = NET
+						has_country_flag = philips
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = NET
+						NOT = { has_country_flag = philips }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = philips duration = -1 }
+					set_country_flag = philips
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = NET }
+						has_country_flag = electronics_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = NET }
+						NOT = { has_country_flag = electronics_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = electronics_company duration = -1 }
+					set_country_flag = electronics_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Motor"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = USA
+					tag = ITA
+				}
+				NOT = { has_country_flag = ford_motors }
+				NOT = { has_country_flag = fiat }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = ford_motors
+					has_country_flag = fiat
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = USA
+						has_country_flag = ford_motors
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = USA
+						NOT = { has_country_flag = ford_motors }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = ford_motors duration = -1 }
+					set_country_flag = ford_motors
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = ITA
+							tag = SAR
+							tag = SIC
+						}
+						has_country_flag = fiat
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = ITA
+							tag = SAR
+							tag = SIC
+						}
+						NOT = { has_country_flag = fiat }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = fiat duration = -1 }
+					set_country_flag = fiat
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = USA }
+						NOT = { tag = ITA }
+						NOT = { tag = SAR }
+						NOT = { tag = SIC }
+						has_country_flag = motor_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = USA }
+						NOT = { tag = ITA }
+						NOT = { tag = SAR }
+						NOT = { tag = SIC }
+						NOT = { has_country_flag = motor_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = motor_company duration = -1 }
+					set_country_flag = motor_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Shipyard"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = ENG
+					tag = JAP
+				}
+				NOT = { has_country_flag = thames_ironworks }
+				NOT = { has_country_flag = mitsubishi }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = thames_ironworks
+					has_country_flag = mitsubishi
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = ENG
+						has_country_flag = thames_ironworks
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						tag = ENG
+						NOT = { has_country_flag = thames_ironworks }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = thames_ironworks duration = -1 }
+					set_country_flag = thames_ironworks
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = JAP
+							tag = TKG
+						}
+						has_country_flag = mitsubishi
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = JAP
+							tag = TKG
+						}
+						NOT = { has_country_flag = mitsubishi }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = mitsubishi duration = -1 }
+					set_country_flag = mitsubishi
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ENG }
+						NOT = { tag = JAP }
+						NOT = { tag = TKG }
+						has_country_flag = shipyard_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ENG }
+						NOT = { tag = JAP }
+						NOT = { tag = TKG }
+						NOT = { has_country_flag = shipyard_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = shipyard_company duration = -1 }
+					set_country_flag = shipyard_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Firearms"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = ITA
+					tag = SAR
+					tag = SIC
+				}
+				NOT = { has_country_flag = thames_ironworks }
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = thames_ironworks
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = ITA
+							tag = SAR
+							tag = SIC
+						}
+						has_country_flag = beretta
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = ITA
+							tag = SAR
+							tag = SIC
+						}
+						NOT = { has_country_flag = beretta }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = beretta duration = -1 }
+					set_country_flag = beretta
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ITA }
+						NOT = { tag = SAR }
+						NOT = { tag = SIC }
+						has_country_flag = firearm_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ITA }
+						NOT = { tag = SAR }
+						NOT = { tag = SIC }
+						NOT = { has_country_flag = firearm_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = firearm_company duration = -1 }
+					set_country_flag = firearm_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Heavy Armaments"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 20
+				OR = {
+					tag = GER
+					tag = NGF
+					tag = PRU
+					tag = AUS
+					tag = KUK
+					tag = DNB
+				}
+				NOT = { has_country_flag = krupp_steelworks }
+				NOT = { has_country_flag = skoda_works }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_country_flag = krupp_steelworks
+					has_country_flag = skoda_works
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = GER
+							tag = NGF
+							tag = PRU
+						}
+						has_country_flag = krupp_steelworks
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = GER
+							tag = NGF
+							tag = PRU
+						}
+						NOT = { has_country_flag = krupp_steelworks }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = krupp_steelworks duration = -1 }
+					set_country_flag = krupp_steelworks
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						has_country_flag = skoda_works
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						NOT = { has_country_flag = skoda_works }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = skoda_works duration = -1 }
+					set_country_flag = skoda_works
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = GER }
+						NOT = { tag = NGF }
+						NOT = { tag = PRU }
+						NOT = { tag = AUS }
+						NOT = { tag = KUK }
+						NOT = { tag = DNB }
+						has_country_flag = heavy_armament_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = GER }
+						NOT = { tag = NGF }
+						NOT = { tag = PRU }
+						NOT = { tag = AUS }
+						NOT = { tag = KUK }
+						NOT = { tag = DNB }
+						NOT = { has_country_flag = heavy_armament_company }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = heavy_armament_company duration = -1 }
+					set_country_flag = heavy_armament_company
+				}
+			}
+		}
+    }
+	option = {
+        name = "Aviation"
+		owner = {
+			random_owned = {
+				limit = {
+					owner = { has_country_flag = aviation_company }
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342
+					days = 1
+				}
+			}
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = { NOT = { has_country_flag = aviation_company } }
+				}
+				owner = {
+					add_country_modifier = { name = aviation_company duration = -1 }
+					set_country_flag = aviation_company
+				}
+			}
+		}
+    }
+}

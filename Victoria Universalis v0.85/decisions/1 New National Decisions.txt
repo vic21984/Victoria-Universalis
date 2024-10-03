@@ -1,0 +1,981 @@
+## Audax Validator "!" Ignore_1004
+## Audax Validator "!" Ignore_1007
+## Audax Validator "!" Ignore_1009
+political_decisions = {
+
+#########################################################################
+# 							HEALTHCARE									#
+#########################################################################
+	zcountry_decrease_healthcare = {
+		picture = healthcare
+		alert = no
+		potential = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+					tag = CIV
+				}
+			}
+			NOT = { health_care = no_health_care }
+		}
+
+		allow = {
+			NOT = { health_care = no_health_care }
+		}
+
+		effect = {
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = trinket_health_care
+					}
+				}
+				owner = {
+					social_reform = no_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = low_health_care
+					}
+				}
+				owner = {
+					social_reform = trinket_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = acceptable_health_care
+					}
+				}
+				owner = {
+					social_reform = low_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = good_health_care
+					}
+				}
+				owner = {
+					social_reform = acceptable_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = universal_health_care
+					}
+				}
+				owner = {
+					social_reform = good_health_care
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				health_care = universal_health_care
+				OR = {
+					AND = {
+						money = 4000000
+						total_pops = 2000000
+					}
+					AND = {
+						money = 2000000
+						NOT  = { total_pops = 2000000 }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = good_health_care
+				OR = {
+					AND = {
+						money = 2000000
+						total_pops = 1650000
+					}
+					AND = {
+						money = 1000000
+						NOT  = { total_pops = 1650000 }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = acceptable_health_care
+				OR = {
+					AND = {
+						money = 1000000
+						total_pops = 1400000
+					}
+					AND = {
+						money = 500000
+						NOT  = { total_pops = 1400000 }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = low_health_care
+				OR = {
+					AND = {
+						money = 500000
+						total_pops = 1200000
+					}
+					AND = {
+						money = 250000
+						NOT  = { total_pops = 1200000 }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = trinket_health_care
+				OR = {
+					AND = {
+						money = 250000
+						total_pops = 1000000
+					}
+					AND = {
+						money = 100000
+						NOT  = { total_pops = 1000000 }
+					}
+				}
+			}
+		}
+	}
+
+	zcountry_increase_healthcare = {
+		picture = healthcare
+		potential = {
+			NOT = {
+				OR = {
+					tag = JAN
+					tag = GHO
+					tag = CIV
+				}
+			}
+			NOT = { health_care = universal_health_care }
+			OR = {
+				AND = {
+					year = 1855
+					has_country_flag = medicine_invented
+					NOT = {
+						health_care = trinket_health_care
+						health_care = low_health_care
+						health_care = acceptable_health_care
+						health_care = good_health_care
+						health_care = universal_health_care
+					}
+				}
+				AND = {
+					year = 1870
+					has_country_flag = inorganic_chemistry_invented
+					NOT = {
+						health_care = low_health_care
+						health_care = acceptable_health_care
+						health_care = good_health_care
+						health_care = universal_health_care
+					}
+				}
+				AND = {
+					year = 1885
+					has_country_flag = organic_chemistry_invented
+					NOT = {
+						health_care = acceptable_health_care
+						health_care = good_health_care
+						health_care = universal_health_care
+					}
+				}
+				AND = {
+					year = 1900
+					has_country_flag = electricity_invented
+					NOT = {
+						health_care = good_health_care
+						health_care = universal_health_care
+					}
+				}
+				AND = {
+					year = 1915
+					has_country_flag = synthetic_polymers_invented
+					NOT = { health_care = universal_health_care }
+				}
+			}
+		}
+
+		allow = {
+		}
+
+		effect = {
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = good_health_care
+					}
+				}
+				owner = {
+					social_reform = universal_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = acceptable_health_care
+					}
+				}
+				owner = {
+					social_reform = good_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = low_health_care
+					}
+				}
+				owner = {
+					social_reform = acceptable_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = trinket_health_care
+					}
+				}
+				owner = {
+					social_reform = low_health_care
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						health_care = no_health_care
+					}
+				}
+				owner = {
+					social_reform = trinket_health_care
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				health_care = no_health_care
+				OR = {
+					AND = {
+						NOT = { money = 500000 }
+						total_pops = 1000000
+					}
+					NOT = {
+						money = 250000
+						total_pops = 1000000
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = trinket_health_care
+				OR = {
+					AND = {
+						NOT = { money = 1000000 }
+						total_pops = 1200000
+					}
+					NOT = {
+						money = 500000
+						total_pops = 1200000
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = low_health_care
+				OR = {
+					AND = {
+						NOT = { money = 2000000 }
+						total_pops = 1400000
+					}
+					NOT = {
+						money = 1000000
+						total_pops = 1400000
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = acceptable_health_care
+				OR = {
+					AND = {
+						NOT = { money = 4000000 }
+						total_pops = 1650000
+					}
+					NOT = {
+						money = 2000000
+						total_pops = 1650000
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				health_care = good_health_care
+				OR = {
+					AND = {
+						NOT = { money = 8000000 }
+						total_pops = 2000000
+					}
+					NOT = {
+						money = 4000000
+						total_pops = 2000000
+					}
+				}
+			}
+		}
+	}
+
+
+#########################################################################
+# 					RESEARCH AND DEVELOPMENT							#
+#########################################################################
+	zcountry_decrease_rnd = {
+		picture = research_and_development
+		alert = no
+		potential = {
+			ai = no
+			NOT = { research_and_development = no_rnd }
+		}
+
+		allow = {
+			NOT = { research_and_development = no_rnd }
+		}
+
+		effect = {
+			political_reform = no_rnd
+		}
+	}
+
+	zcountry_increase_rnd = {
+		picture = research_and_development
+		alert = yes
+		potential = {
+			NOT = { research_and_development = futuristic_rnd }
+		}
+
+		allow = {
+			civilized = yes
+			OR = {
+				AND = {
+					research_and_development = no_rnd
+					literacy = 0.1
+					NOT = { literacy = 0.2 }
+				}
+				AND = {
+					OR = {
+						research_and_development = no_rnd
+						research_and_development = rudimentary_rnd
+					}
+					literacy = 0.2
+					NOT = { literacy = 0.3 }
+				}
+				AND = {
+					OR = {
+						research_and_development = no_rnd
+						research_and_development = rudimentary_rnd
+						research_and_development = very_low_rnd
+					}
+					literacy = 0.3
+					NOT = { literacy = 0.4 }
+				}
+				AND = {
+					OR = {
+						research_and_development = no_rnd
+						research_and_development = rudimentary_rnd
+						research_and_development = very_low_rnd
+						research_and_development = low_rnd
+					}
+					literacy = 0.4
+					NOT = { literacy = 0.5 }
+				}
+				AND = {
+					OR = {
+						research_and_development = no_rnd
+						research_and_development = rudimentary_rnd
+						research_and_development = very_low_rnd
+						research_and_development = low_rnd
+						research_and_development = basic_rnd
+					}
+					literacy = 0.5
+					NOT = { literacy = 0.6 }
+				}
+				AND = {
+					NOT = {
+						OR = {
+							research_and_development = acceptable_rnd
+							research_and_development = good_rnd
+							research_and_development = very_good_rnd
+							research_and_development = advanced_rnd
+							research_and_development = futuristic_rnd
+						}
+					}
+					literacy = 0.6
+					NOT = { literacy = 0.7 }
+				}
+				AND = {
+					NOT = {
+						OR = {
+							research_and_development = good_rnd
+							research_and_development = very_good_rnd
+							research_and_development = advanced_rnd
+							research_and_development = futuristic_rnd
+						}
+					}
+					literacy = 0.7
+					NOT = { literacy = 0.8 }
+				}
+				AND = {
+					NOT = {
+						OR = {
+							research_and_development = very_good_rnd
+							research_and_development = advanced_rnd
+							research_and_development = futuristic_rnd
+						}
+					}
+					literacy = 0.8
+					NOT = { literacy = 0.9 }
+				}
+				AND = {
+					NOT = {
+						OR = {
+							research_and_development = advanced_rnd
+							research_and_development = futuristic_rnd
+						}
+					}
+					literacy = 0.9
+					NOT = { literacy = 0.97 }
+				}
+				AND = {
+					NOT = { research_and_development = futuristic_rnd }
+					literacy = 0.97
+				}
+			}
+		}
+
+		effect = {
+			random_owned = {
+				limit = {
+					owner = { literacy = 0.97 }
+				}
+				owner = { political_reform = futuristic_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.97 }
+						literacy = 0.9
+					}
+				}
+				owner = { political_reform = advanced_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.9 }
+						literacy = 0.8
+					}
+				}
+				owner = { political_reform = very_good_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.8 }
+						literacy = 0.7
+					}
+				}
+				owner = { political_reform = good_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.7 }
+						literacy = 0.6
+					}
+				}
+				owner = { political_reform = acceptable_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.6 }
+						literacy = 0.5
+					}
+				}
+				owner = { political_reform = moderate_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.5 }
+						literacy = 0.4
+					}
+				}
+				owner = { political_reform = basic_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.4 }
+						literacy = 0.3
+					}
+				}
+				owner = { political_reform = low_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.3 }
+						literacy = 0.2
+					}
+				}
+				owner = { political_reform = very_low_rnd }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { literacy = 0.2 }
+						literacy = 0.1
+					}
+				}
+				owner = { political_reform = rudimentary_rnd }
+			}
+		}		
+	}
+
+#########################################################################
+# 								RELEASE VASSALS							#
+#########################################################################
+release_vassals = {
+	alert = no
+	picture = gtfo
+	potential = {
+		ai = no
+		num_of_vassals = 1
+	}
+	allow = {
+	}
+	effect = {
+		country_event = { id = 91306 days = 0 }
+	}
+}
+
+#########################################################################
+# 						COLONIAL MIGRATION								#
+#########################################################################
+
+	zcountry_decrease_colonial_migration = {
+		picture = pioneers
+		alert = no
+		potential = {
+			ai = no
+			colonial_nation = yes
+			NOT = { colonial_migration = no_colonial_migration }
+		}
+		allow = {
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					owner = { colonial_migration = low_colonial_migration }
+				}
+				owner = { political_reform = no_colonial_migration }
+			}
+			random_owned = {
+				limit = {
+					owner = { colonial_migration = medium_colonial_migration }
+				}
+				owner = { political_reform = low_colonial_migration }
+			}
+			random_owned = {
+				limit = {
+					owner = { colonial_migration = high_colonial_migration }
+				}
+				owner = { political_reform = medium_colonial_migration }
+			}
+		}
+	}
+
+	zcountry_increase_colonial_migration = {
+		picture = pioneers
+		alert = no
+		potential = {
+			ai = no
+			colonial_nation = yes
+			NOT = { colonial_migration = high_colonial_migration }
+		}
+		allow = {
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					owner = { colonial_migration = medium_colonial_migration }
+				}
+				owner = { political_reform = high_colonial_migration }
+			}
+			random_owned = {
+				limit = {
+					owner = { colonial_migration = low_colonial_migration }
+				}
+				owner = { political_reform = medium_colonial_migration }
+			}
+			random_owned = {
+				limit = {
+					owner = { colonial_migration = no_colonial_migration }
+				}
+				owner = { political_reform = low_colonial_migration }
+			}
+		}
+	}
+
+#########################################################################
+# 							IDEOLOGY									#
+#########################################################################
+
+	zcountry_liberal_change_ideology = {
+		picture = ideology
+		alert = no
+		potential = {
+			ai = no
+			NOT = { is_ideology_enabled = anarcho_liberal }
+		}	
+		allow = {
+		}
+		effect = {
+			country_event = { id = 91699 days = 0 }
+		}
+	}
+		
+	zcountry_anarcho_liberal_change_ideology = {
+		picture = ideology
+		alert = no
+		potential = {
+			ai = no
+			is_ideology_enabled = anarcho_liberal
+			NOT = { is_ideology_enabled = socialist }
+		}	
+		allow = {
+		}
+		effect = {
+			country_event = { id = 91700 days = 0 }
+		}
+	}
+		
+	zcountry_socialist_change_ideology = {
+		picture = ideology
+		alert = no
+		potential = {
+			ai = no
+			is_ideology_enabled = socialist
+			NOT = { is_ideology_enabled = communist }
+		}	
+		allow = {
+		}
+		effect = {
+			country_event = { id = 91701 days = 0 }
+		}
+	}
+		
+	zcountry_communist_change_ideology = {
+		picture = ideology
+		alert = no
+		potential = {
+			ai = no
+			is_ideology_enabled = communist
+			NOT = { is_ideology_enabled = fascist }
+		}	
+		allow = {
+		}
+		effect = {
+			country_event = { id = 91702 days = 0 }
+		}
+	}
+
+	zcountry_fascist_change_ideology = {
+		picture = ideology
+		alert = no
+		potential = {
+			ai = no
+			is_ideology_enabled = fascist
+		}	
+		allow = {
+		}
+		effect = {
+			country_event = { id = 91703 days = 0 }
+		}
+	}
+	
+#########################################################################
+# 							PASS REFORM									#
+#########################################################################
+
+	zcountry_pass_reform = {
+		picture = pass_reform
+		alert = no
+		potential = {
+			ai = no
+		}
+			
+		allow = {
+			civilized = yes
+			NOT = {
+				OR = {
+					has_country_modifier = reform_passed
+					has_country_modifier = cannot_pass_reform
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = force_reform
+			add_country_modifier = {
+				name = force_reform
+				duration = 30
+			}
+			add_country_modifier = {
+				name = reform_passed
+				duration = 3650
+			}
+			set_country_flag = reform_passed
+		}
+	}
+
+#########################################################################
+# 							SUPPRESSION									#
+#########################################################################
+	zcountry_suppression = {
+		picture = martial_law
+		alert = no
+		potential = {
+			ai = no
+		}	
+		allow = {
+			civilized = yes
+		}
+		effect = {
+			country_event = { id = 91705 days = 0 }
+		}
+	}
+
+#########################################################################
+# 								FAKE WAR								#
+#########################################################################
+	fake_war = {
+		picture = fake_war
+		alert = no
+		potential = {
+			ai = no
+			num_of_vassals = 1
+			is_vassal = no
+		}
+		allow = {
+			NOT = { war_with = FWR }
+		}
+		effect = {
+			FWR = {
+				war = {
+					target = THIS
+					attacker_goal = { casus_belli = status_quo }
+				}
+			}
+		}
+	}
+
+	end_fake_war = {
+		picture = fake_war
+		potential = {
+			ai = no
+			war_with = FWR
+		}
+		allow = {
+		}
+		effect = {
+			end_war = FWR
+		}
+	}
+
+#########################################################################
+# 								NEUTRALITY								#
+#########################################################################
+	declare_neutrality = {
+		alert = no
+		picture = declare_neutrality
+		potential = {
+			OR = {
+				ai = no
+				tag = SWI
+			}
+			NOT = {
+				has_country_flag = neutral
+			}
+			is_greater_power = no
+			civilized = yes
+		}
+		allow = {
+			NOT = { badboy = 0.1 }
+			war = no
+			is_greater_power = no
+			NOT = { has_country_modifier = reform_passed }
+			OR = {
+				NOT = {
+					total_pops = 3000000
+					year = 1860
+				}
+				NOT = {
+					total_pops = 4000000
+					year = 1885
+				}
+				NOT = {
+					total_pops = 6000000
+					year = 1910
+				}
+			}
+		}
+		effect = {
+			set_country_flag = neutral
+			add_country_modifier = { name = reform_passed duration = 7300 }
+		}
+	}
+	
+	cancel_neutrality = {
+		alert = no
+		picture = declare_neutrality
+		potential = {
+			has_country_flag = neutral
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = neutral
+			badboy = 10
+			add_country_modifier = { name = reform_passed duration = 7300 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	enforce_neutrality = {
+		picture = declare_neutrality
+		potential = {
+			has_country_flag = neutral
+			war = yes
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = { war_with = THIS }
+				end_war = THIS
+			}
+		}
+	}
+
+#########################################################################
+# 							NEGOTIATIONS								#
+#########################################################################
+	negotiations = {
+		picture = cease_fire
+		potential = {
+			ai = no
+		}
+		allow = {
+			war = yes
+			war_countries = { ai = no }
+		}
+		effect = {
+			country_event = { id = 91711 days = 0 }
+		}
+	}
+
+#########################################################################
+# 							ESTABLISH COMPANY							#
+#########################################################################
+	establish_company = {
+		picture = company_stock
+		potential = {
+			civilized = yes
+			NOT = { has_country_flag = third_company }
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { has_country_flag = first_company }
+					industrial_score = 300
+					money = 250000
+				}
+				AND = {
+					has_country_flag = first_company
+					NOT = { has_country_flag = second_company }
+					industrial_score = 1000
+					money = 500000
+				}
+				AND = {
+					has_country_flag = second_company
+					NOT = { has_country_flag = third_company }
+					industrial_score = 2500
+					money = 1000000
+				}
+			}
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = third_company
+					prestige = 100
+					treasury = -1000000
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = first_company
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = second_company
+					prestige = 50
+					treasury = -500000
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { has_country_flag = first_company }
+					}
+				}
+				owner = {
+					set_country_flag = first_company
+					prestige = 20
+					treasury = -250000
+				}
+			}
+			random_owned = {
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342 days = 0
+				}
+			}
+		}
+	}
+}

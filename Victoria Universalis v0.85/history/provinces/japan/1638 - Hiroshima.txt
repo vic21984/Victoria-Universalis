@@ -1,0 +1,39 @@
+owner = JAP
+controller = JAP
+add_core = JAP
+trade_goods = cotton
+life_rating = 35
+naval_base = 1
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	naval_base = 6
+}
