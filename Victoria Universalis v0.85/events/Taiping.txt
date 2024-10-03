@@ -294,8 +294,8 @@ country_event = {
 			}
 			owner = {
 				TPG = {
-					military_reform = alphabetic_flag_signaling
-					activate_technology = yes_foreign_naval_officers
+					military_reform = yes_foreign_naval_officers
+					activate_technology = alphabetic_flag_signaling
 				}
 			}
 		}
@@ -305,8 +305,8 @@ country_event = {
 			}
 			owner = {
 				TPG = {
-					military_reform = the_command_principle
-					activate_technology = yes_naval_schools
+					military_reform = yes_naval_schools
+					activate_technology = the_command_principle
 				}
 			}
 		}
@@ -617,8 +617,8 @@ country_event = {
 			}
 			owner = {
 				TPG = {
-					military_reform = alphabetic_flag_signaling
-					activate_technology = yes_foreign_naval_officers
+					military_reform = yes_foreign_naval_officers
+					activate_technology = alphabetic_flag_signaling
 				}
 			}
 		}
@@ -628,8 +628,8 @@ country_event = {
 			}
 			owner = {
 				TPG = {
-					military_reform = the_command_principle
-					activate_technology = yes_naval_schools
+					military_reform = yes_naval_schools
+					activate_technology = the_command_principle
 				}
 			}
 		}

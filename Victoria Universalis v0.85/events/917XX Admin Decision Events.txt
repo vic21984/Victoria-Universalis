@@ -799,7 +799,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		META_COUNT_10 = {
+		COUNT_10 = {
 			limit = {
 				owner = {
 					THIS = { money = 1000000 }
@@ -810,7 +810,7 @@ country_event = {
 				FROM = { money = 1000000 }
 			}
 		}
-		META_COUNT_10 = {
+		COUNT_10 = {
 			limit = {
 				owner = {
 					THIS = { money = 100000 }
@@ -821,7 +821,7 @@ country_event = {
 				FROM = { money = 100000 }
 			}
 		}
-		META_COUNT_10 = {
+		COUNT_10 = {
 			limit = {
 				owner = {
 					THIS = { money = 10000 }
@@ -832,7 +832,7 @@ country_event = {
 				FROM = { money = 10000 }
 			}
 		}
-		META_COUNT_10 = {
+		COUNT_10 = {
 			limit = {
 				owner = {
 					THIS = { money = 1000 }
