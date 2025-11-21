@@ -1,0 +1,42 @@
+owner = BEL
+controller = BEL
+add_core = BEL
+add_core = NET
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steamer_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = small_arms_factory
+	upgrade = yes
+}

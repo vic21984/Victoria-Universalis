@@ -1,0 +1,21 @@
+owner = EIC
+controller = EIC
+add_core = MUG
+add_core = HND
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}

@@ -1,0 +1,17 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+add_core = ZAN
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fishery
+	upgrade = yes
+}

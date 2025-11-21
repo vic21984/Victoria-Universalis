@@ -1,0 +1,11 @@
+owner = JAI
+controller = JAI
+add_core = JAI
+add_core = HND
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

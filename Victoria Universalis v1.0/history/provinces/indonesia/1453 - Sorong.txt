@@ -1,0 +1,16 @@
+owner = MAL
+controller = MAL
+add_core = MAL
+trade_goods = raw_tropical_wood
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = NET
+	controller = NET
+	colonial = 0
+}

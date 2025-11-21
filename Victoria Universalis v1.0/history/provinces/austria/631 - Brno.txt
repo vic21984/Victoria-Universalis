@@ -1,0 +1,22 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = BOH
+add_core = CZH
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}

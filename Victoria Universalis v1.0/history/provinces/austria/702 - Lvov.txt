@@ -1,0 +1,23 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = POL
+add_core = UKR
+add_core = GLM
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = timber_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = furniture_factory
+	upgrade = yes
+}

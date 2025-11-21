@@ -1,0 +1,18 @@
+owner = HOL
+controller = HOL
+add_core = HOL
+add_core = GER
+trade_goods = raw_cattle
+life_rating = 5
+terrain = farmlands_mine
+naval_base = 1
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

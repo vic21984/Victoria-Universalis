@@ -1,0 +1,21 @@
+owner = KHZ
+controller = KHZ
+add_core = PER
+add_core = KHZ
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fishery
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = PER
+	controller = PER
+}

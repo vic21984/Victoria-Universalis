@@ -1,0 +1,16 @@
+owner = ZUL
+controller = ZUL
+add_core = ZUL
+add_core = SAF
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}

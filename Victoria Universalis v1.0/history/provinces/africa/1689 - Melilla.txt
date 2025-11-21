@@ -1,0 +1,14 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = SPC
+add_core = MOR
+trade_goods = raw_fruit
+life_rating = 5
+terrain = urban_mine
+naval_base = 1
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

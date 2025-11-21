@@ -1,0 +1,25 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}

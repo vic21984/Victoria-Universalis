@@ -1,0 +1,11 @@
+owner = FRA
+controller = FRA
+add_core = WIF
+trade_goods = raw_cotton
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}

@@ -1,0 +1,22 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = SER
+add_core = YUG
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 1
+	building = furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = timber_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

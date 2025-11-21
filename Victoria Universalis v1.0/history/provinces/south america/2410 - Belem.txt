@@ -1,0 +1,15 @@
+owner = GRP
+controller = GRP
+add_core = GRP
+add_core = BRZ
+trade_goods = raw_iron
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = BRZ
+	controller = BRZ
+}

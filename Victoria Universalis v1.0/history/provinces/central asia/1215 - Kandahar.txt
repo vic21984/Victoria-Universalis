@@ -1,0 +1,11 @@
+owner = KND
+controller = KND
+add_core = AFG
+add_core = KND
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

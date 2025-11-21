@@ -1,0 +1,12 @@
+owner = MAS
+controller = MAS
+add_core = MAS
+add_core = SEG
+add_core = DND
+trade_goods = raw_sulphur
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

@@ -1,0 +1,15 @@
+owner = USA
+controller = USA
+add_core = USA
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}

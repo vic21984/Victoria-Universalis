@@ -1,0 +1,20 @@
+owner = MOR
+controller = MOR
+add_core = MOR
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}

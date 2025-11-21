@@ -1,0 +1,924 @@
+## Audax Validator "!" Ignore_1004
+## Audax Validator "!" Ignore_1007
+## Audax Validator "!" Ignore_1009
+political_decisions = {
+
+#########################################################################
+# 								RELEASE VASSALS							#
+#########################################################################
+release_vassals = {
+	alert = no
+	picture = gtfo
+	potential = {
+		ai = no
+		num_of_vassals = 1
+	}
+	allow = {
+	}
+	effect = {
+		country_event = { id = 91306 days = 0 }
+	}
+}
+
+#########################################################################
+# 								FAKE WAR								#
+#########################################################################
+	fake_war = {
+		picture = fake_war
+		alert = no
+		potential = {
+			ai = no
+			num_of_vassals = 1
+			is_vassal = no
+			NOT = { has_country_flag = fake_war }
+		}
+		allow = {
+			NOT = { war_with = FWR }
+		}
+		effect = {
+			set_country_flag = fake_war
+			FWR = {
+				war = {
+					target = THIS
+					attacker_goal = { casus_belli = status_quo }
+				}
+			}
+		}
+	}
+
+	end_fake_war = {
+		picture = fake_war
+		potential = {
+			ai = no
+			war_with = FWR
+			has_country_flag = fake_war
+		}
+		allow = {
+		}
+		effect = {
+			end_war = FWR
+		}
+	}
+
+#########################################################################
+# 								NEUTRALITY								#
+#########################################################################
+	declare_neutrality = {
+		alert = no
+		picture = declare_neutrality
+		potential = {
+			OR = {
+				ai = no
+				tag = SWI
+			}
+			NOT = {
+				has_country_flag = neutral
+			}
+			is_greater_power = no
+		}
+		allow = {
+			NOT = { badboy = 0.1 }
+			NOT = { has_country_modifier = reform_passed }
+			war = no
+			is_greater_power = no
+			OR = {
+				NOT = {
+					total_pops = 3000000
+					year = 1860
+				}
+				AND = {
+					year = 1860
+					NOT = { year = 1885 }
+					NOT = { total_pops = 4000000 }
+				}
+				AND = {
+					year = 1885
+					NOT = { year = 1910 }
+					NOT = { total_pops = 6000000 }
+				}
+				AND = {
+					year = 1910
+					NOT = { total_pops = 8000000 }
+				}
+			}
+		}
+		effect = {
+			set_country_flag = neutral
+			add_country_modifier = { name = reform_passed duration = 7300 }
+		}
+	}
+	
+	cancel_neutrality = {
+		alert = no
+		picture = declare_neutrality
+		potential = {
+			has_country_flag = neutral
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = neutral
+			badboy = 10
+			add_country_modifier = { name = reform_passed duration = 7300 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	enforce_neutrality = {
+		picture = declare_neutrality
+		potential = {
+			has_country_flag = neutral
+			war = yes
+		}
+		allow = {
+		}
+		effect = {
+			any_country = {
+				limit = { war_with = THIS }
+				end_war = THIS
+			}
+		}
+	}
+
+#########################################################################
+# 							NEGOTIATIONS								#
+#########################################################################
+	negotiations = {
+		picture = cease_fire
+		potential = {
+			ai = no
+		}
+		allow = {
+			war = yes
+			war_countries = { ai = no }
+		}
+		effect = {
+			country_event = { id = 91711 days = 0 }
+		}
+	}
+
+#########################################################################
+# 							ESTABLISH COMPANY							#
+#########################################################################
+	establish_company = {
+		picture = company_stock
+		potential = {
+			NOT = { has_country_flag = third_company }
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { has_country_flag = first_company }
+					invention = corporate_charters
+					money = 250000
+				}
+				AND = {
+					has_country_flag = first_company
+					NOT = { has_country_flag = second_company }
+					invention = joint_stock_companies
+					money = 500000
+				}
+				AND = {
+					has_country_flag = second_company
+					NOT = { has_country_flag = third_company }
+					invention = corporate_governance
+					money = 1000000
+				}
+			}
+		}
+		effect = {
+			set_country_flag = choosing_company
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = third_company
+					prestige = 100
+					treasury = -1000000
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = first_company
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = second_company
+					prestige = 50
+					treasury = -500000
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { has_country_flag = first_company }
+					}
+				}
+				owner = {
+					set_country_flag = first_company
+					prestige = 25
+					treasury = -250000
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = ENG
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = blockow_vaughan
+					add_country_modifier = { name = blockow_vaughan duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = ENG
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = thames_ironworks
+					add_country_modifier = { name = thames_ironworks duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = USA
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = ford_motors
+					add_country_modifier = { name = ford_motors duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = USA
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = carnegie_steel
+					add_country_modifier = { name = carnegie_steel duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = PRU
+							tag = NGF
+							tag = GER
+						}
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = basf
+					add_country_modifier = { name = basf duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = PRU
+							tag = NGF
+							tag = GER
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = krupp_steelworks
+					add_country_modifier = { name = krupp_steelworks duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = skoda_works
+					add_country_modifier = { name = skoda_works duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = manfred_weiss
+					add_country_modifier = { name = manfred_weiss duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = RUS
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = putilov_plant
+					add_country_modifier = { name = putilov_plant duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = RUS
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = vodka_monopoly
+					add_country_modifier = { name = vodka_monopoly duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = FRA
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = house_of_worth
+					add_country_modifier = { name = house_of_worth duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = FRA
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = confederation_vignerons
+					add_country_modifier = { name = confederation_vignerons duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = SAR
+							tag = ITA
+						}
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = fiat
+					add_country_modifier = { name = fiat duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = SAR
+							tag = ITA
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = beretta
+					add_country_modifier = { name = beretta duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = JAP
+							tag = TKG
+						}
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = mitsubishi
+					add_country_modifier = { name = mitsubishi duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = JAP
+							tag = TKG
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = mitsui
+					add_country_modifier = { name = mitsui duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = SPA
+							tag = SPC
+						}
+						has_country_flag = second_company
+						NOT = { has_country_flag = third_company }
+					}
+				}
+				owner = {
+					set_country_flag = altos_vizcaya
+					add_country_modifier = { name = altos_vizcaya duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = SPA
+							tag = SPC
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = espana_industrial
+					add_country_modifier = { name = espana_industrial duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = POR
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = companhia_mocambique
+					add_country_modifier = { name = companhia_mocambique duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = EIC
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = east_india_company
+					add_country_modifier = { name = east_india_company duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = SWE
+							tag = KSN
+							tag = SCA
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = ikea
+					add_country_modifier = { name = ikea duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = PER
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = persian_oil
+					add_country_modifier = { name = persian_oil duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = TUR
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = ottoman_tobacco
+					add_country_modifier = { name = ottoman_tobacco duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = ARC
+							tag = ARG
+							tag = LPL
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = bunge_born
+					add_country_modifier = { name = bunge_born duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = BRZ
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = fazenda_fortaleza
+					add_country_modifier = { name = fazenda_fortaleza duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = BEL
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = john_cockerill
+					add_country_modifier = { name = john_cockerill duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = NET
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = philips
+					add_country_modifier = { name = philips duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = VNZ
+							tag = GCO
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = caribbean_petroleum
+					add_country_modifier = { name = caribbean_petroleum duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = MEX
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = aguila
+					add_country_modifier = { name = aguila duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = UCA
+							tag = GUA
+							tag = ELS
+							tag = HON
+							tag = NIC
+							tag = COS
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = united_fruit
+					add_country_modifier = { name = united_fruit duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						OR = {
+							tag = PEU
+							tag = PBC
+						}
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = monopolio_del_salitre
+					add_country_modifier = { name = monopolio_del_salitre duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = CHL
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = compania_de_salitres
+					add_country_modifier = { name = compania_de_salitres duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = CAN
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = macmillan_bloedel
+					add_country_modifier = { name = macmillan_bloedel duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes
+						tag = AST
+						NOT = { has_country_flag = second_company }
+					}
+				}
+				owner = {
+					set_country_flag = william_sandford
+					add_country_modifier = { name = william_sandford duration = -1 }
+					clr_country_flag = choosing_company
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = choosing_company
+					}
+				}
+				province_event = {
+					## Audax Validator "." Ignore_NEXT
+					id = 91342 days = 0
+				}
+			}
+			clr_country_flag = choosing_company
+		}
+	}
+#########################################################################
+# 							NO SPHERE									#
+#########################################################################
+	sphere_off = {
+		picture = sphere
+		alert = no
+		potential = {
+			is_greater_power = no
+			ai = no
+			NOT = { has_country_flag = no_sphere }
+		}
+		allow = {
+			NOT = { has_country_flag = no_sphere }
+		}
+		effect = {
+			set_country_flag = no_sphere
+		}
+	}
+	sphere_on = {
+		picture = sphere
+		alert = no
+		potential = {
+			is_greater_power = no
+			ai = no
+			has_country_flag = no_sphere
+		}
+		allow = {
+			has_country_flag = no_sphere
+		}
+		effect = {
+			clr_country_flag = no_sphere
+		}
+	}
+	ai_leave_sphere = {
+		picture = sphere
+		potential = {
+			ai = yes
+			any_sphere_member = { has_country_flag = no_sphere }
+		}
+		allow = {
+		}
+		effect = {
+			random_country = {
+				limit = {
+					in_sphere = THIS
+					has_country_flag = no_sphere
+				}
+				country_event = { id = 91716 days = 0 }
+			}
+		}
+	}
+#########################################################################
+# 							WAR ECONOMY									#
+#########################################################################
+	war_econ_on = {
+		picture = supply_depot
+		#alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = partial_war_econ }
+			NOT = { has_country_flag = total_war_econ }
+		}
+		allow = {
+			war = yes
+		}
+		effect = {
+			country_event = { id = 91710 days = 0 }
+		}
+	}
+	war_econ_off = {
+		picture = supply_depot
+		alert = no
+		potential = {
+			ai = no
+			OR = {
+				has_country_flag = partial_war_econ
+				has_country_flag = total_war_econ
+			}
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = partial_war_econ
+			clr_country_flag = total_war_econ
+		}
+	}
+#########################################################################
+# 							TAX VASSALS									#
+#########################################################################
+	tax_vassal = {
+		picture = levy_taxes
+		alert = no
+		potential = {
+			ai = no
+			num_of_vassals = 1
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { tag = ENG }
+					}
+				}
+				owner = {
+					any_country = {
+						limit = {
+							vassal_of = THIS
+							NOT = { is_substate = yes }
+							NOT = { truce_with = THIS }
+						}
+						country_event = {
+							id = 91501 days = 0
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = ENG
+					}
+				}
+				owner = {
+					any_country = {
+						limit = {
+							NOT = { is_culture_group = south_asian }
+							NOT = { tag = EIC }
+							vassal_of = THIS
+							NOT = { truce_with = THIS }
+						}
+						country_event = {
+							id = 91501 days = 0
+						}
+					}
+				}
+			}
+		}
+	}
+}

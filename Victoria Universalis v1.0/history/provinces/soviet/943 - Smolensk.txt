@@ -1,0 +1,21 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = raw_cattle
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = paper_mill
+	upgrade = yes
+}

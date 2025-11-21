@@ -1,0 +1,17 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+add_core = CIR
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 2
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}

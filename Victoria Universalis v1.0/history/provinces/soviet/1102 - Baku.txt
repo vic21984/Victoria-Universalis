@@ -1,0 +1,11 @@
+owner = TCA
+controller = TCA
+add_core = TCA
+add_core = AZB
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}

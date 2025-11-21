@@ -1,0 +1,10 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+trade_goods = raw_opium
+life_rating = 5
+state_building = {
+	level = 1
+	building = opium_factory
+	upgrade = yes
+}

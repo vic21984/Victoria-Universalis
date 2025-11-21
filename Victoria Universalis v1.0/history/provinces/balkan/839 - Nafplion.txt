@@ -1,0 +1,20 @@
+owner = GRE
+controller = GRE
+add_core = GRE
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}

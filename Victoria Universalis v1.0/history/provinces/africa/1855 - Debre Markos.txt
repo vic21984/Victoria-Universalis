@@ -1,0 +1,18 @@
+owner = GJM
+controller = GJM
+add_core = GJM
+add_core = GON
+add_core = SHW
+add_core = ETH
+trade_goods = raw_coffee
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}

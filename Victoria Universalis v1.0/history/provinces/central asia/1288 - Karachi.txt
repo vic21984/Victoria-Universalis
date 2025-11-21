@@ -1,0 +1,17 @@
+owner = SIN
+controller = SIN
+add_core = SIN
+add_core = PAK
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = opium_factory
+	upgrade = yes
+}

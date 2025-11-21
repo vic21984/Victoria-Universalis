@@ -1,0 +1,13 @@
+owner = GJM
+controller = GJM
+add_core = GJM
+add_core = SHW
+add_core = KAF
+add_core = ETH
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

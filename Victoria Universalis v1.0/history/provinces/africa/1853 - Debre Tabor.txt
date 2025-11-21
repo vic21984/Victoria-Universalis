@@ -1,0 +1,18 @@
+owner = WLO
+controller = WLO
+add_core = WLO
+add_core = SHW
+add_core = TIG
+add_core = ETH
+trade_goods = raw_coffee
+life_rating = 5
+state_building = {
+	level = 1
+	building = coffee_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

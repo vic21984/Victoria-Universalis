@@ -1,0 +1,41 @@
+owner = POR
+controller = POR
+add_core = POR
+trade_goods = raw_fruit
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = winery
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

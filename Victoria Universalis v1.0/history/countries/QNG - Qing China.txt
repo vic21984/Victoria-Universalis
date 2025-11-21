@@ -1,0 +1,79 @@
+govt_flag = 
+{
+	government = democracy
+	flag = presidential_dictatorship
+}
+
+govt_flag = 
+{
+	government = hms_government
+	flag = democracy
+}
+
+
+capital = 1616
+primary_culture = manchu
+culture = beifaren
+religion = mahayana
+government = absolute_monarchy
+plurality = 0.0
+nationalvalue = nv_order
+literacy = 0.04
+non_state_culture_literacy = 0.04
+decision = chinese_setup
+set_country_flag = qng_china
+set_country_flag = uncivilized
+
+# Political Reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = no_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = jefferson_method
+political_parties = underground_parties
+trade_laws = isolationism_law
+
+# Social Reforms
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+war_laws = pacifism_law
+debt_law = serfdom
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = closed_borders
+economic_laws = interventionism_law
+
+
+ruling_party = CHI_conservative
+upper_house = {
+	fascist = 0
+	liberal = 10
+	neo_conservative = 75
+	reactionary = 15
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+# Technology
+post_nelsonian_thought = 1
+guild_based_production = 1
+water_wheel_power = 1
+
+# Inventions
+qng_mil_nerf = yes
+
+# Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0
+
+oob = "CHI_oob.txt"

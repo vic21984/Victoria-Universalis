@@ -1,0 +1,16 @@
+owner = BEL
+controller = BEL
+add_core = NET
+add_core = BEL
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = liquor_distillery
+	upgrade = yes
+}

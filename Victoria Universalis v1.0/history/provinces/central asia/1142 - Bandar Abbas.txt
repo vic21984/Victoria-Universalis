@@ -1,0 +1,15 @@
+owner = OMA
+controller = OMA
+add_core = PER
+trade_goods = raw_fruit
+life_rating = 5
+terrain = coastal_desert
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = PER
+	controller = PER
+}

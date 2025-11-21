@@ -1,0 +1,1693 @@
+# Farmland Expansion
+country_event = {
+	id = 29906
+	title = "EVTNAME29906"
+	desc = "EVTDESC29906"
+
+	trigger = {
+		tag = JAN
+		OR = {
+			AND = {
+				year = 1865
+				NOT = {
+					check_variable = {
+						which = farm_expansion
+						value = 1
+					}
+				}
+			}
+			AND = {
+				year = 1870
+				NOT = {
+					check_variable = {
+						which = farm_expansion
+						value = 2
+					}
+				}
+			}
+			AND = {
+				year = 1885
+				NOT = {
+					check_variable = {
+						which = farm_expansion
+						value = 3
+					}
+				}
+			}
+			AND = {
+				year = 1900
+				NOT = {
+					check_variable = {
+						which = farm_expansion
+						value = 4
+					}
+				}
+			}
+			AND = {
+				year = 1915
+				NOT = {
+					check_variable = {
+						which = farm_expansion
+						value = 5
+					}
+				}
+			}
+			AND = {
+				year = 1930
+				NOT = {
+					check_variable = {
+						which = farm_expansion
+						value = 6
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA29906"
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = farm_expansion
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = farm_expansion
+							value = 6
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = farm_expansion
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = farm_expansion
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = farm_expansion
+							value = 5
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = farm_expansion
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = farm_expansion
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = farm_expansion
+							value = 4
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = farm_expansion
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = farm_expansion
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = farm_expansion
+							value = 3
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = farm_expansion
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = farm_expansion
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = farm_expansion
+							value = 2
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = farm_expansion
+					value = 1
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = farm_expansion
+							value = 1
+						}
+					}
+				}
+			}
+			owner = {
+				set_variable = {
+					which = farm_expansion
+					value = 1
+				}
+			}
+		}
+		any_country = {
+			limit = { ai = yes }
+			any_owned = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 2615
+							province_id = 1481
+							province_id = 1496
+							province_id = 1498
+							province_id = 1538
+							province_id = 1566
+							province_id = 1569
+							province_id = 2659
+							province_id = 2701
+						}
+					}
+					NOT = { is_core = CHI }
+					unemployment_by_type = {
+						type = farmers
+						value = 0.01
+					}
+				}
+				## Audax Validator "." Ignore_NEXT
+				farmland = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 29907
+	title = "EVTNAME29907"
+	desc = "EVTDESC29907"
+
+	trigger = {
+		ai = yes
+		OR = {
+			rank = 16
+			literacy = 0.7
+		}
+		OR = {
+			AND = {
+				invention = pharmaceuticals
+				NOT = { has_country_flag = pharmaceuticals_invented }
+			}
+			AND = {
+				invention = edison_light_bulb
+				NOT = { has_country_flag = edison_light_bulb_invented }
+			}
+			AND = {
+				invention = daimlers_automobile
+				NOT = { has_country_flag = daimlers_automobile_invented }
+			}
+			AND = {
+				invention = national_radio_networks
+				NOT = { has_country_flag = national_radio_networks_invented }
+			}
+			AND = {
+				invention = wright_n_langleys_aeroplanes
+				NOT = { has_country_flag = wright_n_langleys_aeroplanes_invented }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA29907"
+		random_owned = {
+			limit = {
+				owner = {
+					invention = pharmaceuticals
+					NOT = { has_country_flag = pharmaceuticals_invented }
+				}
+			}
+			owner = {
+				build_factory_in_capital_state = pharmaceutical_plant
+				set_country_flag = pharmaceuticals_invented
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = edison_light_bulb
+					NOT = { has_country_flag = edison_light_bulb_invented }
+				}
+			}
+			owner = {
+				build_factory_in_capital_state = electric_gear_factory
+				set_country_flag = edison_light_bulb_invented
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = daimlers_automobile
+					NOT = { has_country_flag = daimlers_automobile_invented }
+				}
+			}
+			owner = {
+				build_factory_in_capital_state = automobile_factory
+				set_country_flag = daimlers_automobile_invented
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = national_radio_networks
+					NOT = { has_country_flag = national_radio_networks_invented }
+				}
+			}
+			owner = {
+				build_factory_in_capital_state = radio_factory
+				set_country_flag = national_radio_networks_invented
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					invention = wright_n_langleys_aeroplanes
+					NOT = { has_country_flag = wright_n_langleys_aeroplanes_invented }
+				}
+			}
+			owner = {
+				build_factory_in_capital_state = aeroplane_factory
+				set_country_flag = wright_n_langleys_aeroplanes_invented
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 29908
+	title = "OIL SPREAD EVENT"
+	desc = "EVTDESC29908"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA29908"
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 619
+					owns = 702
+					702 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 702
+				build_factory_in_capital_state = oil_factory
+				capital = 619
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1008
+					owns = 1102
+					1102 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1102
+				build_factory_in_capital_state = oil_factory
+				capital = 1008
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1008
+					owns = 1055
+					1055 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1055
+				build_factory_in_capital_state = oil_factory
+				capital = 1008
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1008
+					owns = 1182
+					1182 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1182
+				build_factory_in_capital_state = oil_factory
+				capital = 1008
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1008
+					owns = 1186
+					1186 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1186
+				build_factory_in_capital_state = oil_factory
+				capital = 1008
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1008
+					owns = 1202
+					1202 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1202
+				build_factory_in_capital_state = oil_factory
+				capital = 1008
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1008
+					owns = 1205
+					1205 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1205
+				build_factory_in_capital_state = oil_factory
+				capital = 1008
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 220
+					owns = 89
+					89 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 89
+				build_factory_in_capital_state = oil_factory
+				capital = 220
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 220
+					owns = 110
+					110 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 110
+				build_factory_in_capital_state = oil_factory
+				capital = 220
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 220
+					owns = 126
+					126 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 126
+				build_factory_in_capital_state = oil_factory
+				capital = 220
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 220
+					owns = 129
+					129 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 129
+				build_factory_in_capital_state = oil_factory
+				capital = 220
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 220
+					owns = 132
+					132 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 132
+				build_factory_in_capital_state = oil_factory
+				capital = 220
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1399
+					1399 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1399
+				build_factory_in_capital_state = oil_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1416
+					1416 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1416
+				build_factory_in_capital_state = oil_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1425
+					1425 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1425
+				build_factory_in_capital_state = oil_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1432
+					1432 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1432
+				build_factory_in_capital_state = oil_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 2234
+					2234 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2234
+				build_factory_in_capital_state = oil_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1168
+					1168 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1168
+				build_factory_in_capital_state = oil_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1170
+					1170 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1170
+				build_factory_in_capital_state = oil_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1393
+					1393 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1393
+				build_factory_in_capital_state = oil_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1393
+					owns = 1393
+					1393 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1393
+				build_factory_in_capital_state = oil_factory
+				capital = 1393
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 2237
+					2237 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2237
+				build_factory_in_capital_state = oil_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2172
+					owns = 2162
+					2162 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2162
+				build_factory_in_capital_state = oil_factory
+				capital = 2172
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2172
+					owns = 2163
+					2163 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2163
+				build_factory_in_capital_state = oil_factory
+				capital = 2172
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2264
+					owns = 2264
+					2264 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2264
+				build_factory_in_capital_state = oil_factory
+				capital = 2264
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2264
+					owns = 2270
+					2270 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2270
+				build_factory_in_capital_state = oil_factory
+				capital = 2264
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1251
+					owns = 1260
+					1260 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1260
+				build_factory_in_capital_state = oil_factory
+				capital = 1251
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1251
+					owns = 1335
+					1335 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1335
+				build_factory_in_capital_state = oil_factory
+				capital = 1251
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1121
+					owns = 1125
+					1125 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1125
+				build_factory_in_capital_state = oil_factory
+				capital = 1121
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1121
+					owns = 1135
+					1135 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1135
+				build_factory_in_capital_state = oil_factory
+				capital = 1121
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 664
+					owns = 667
+					667 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 667
+				build_factory_in_capital_state = oil_factory
+				capital = 664
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 664
+					owns = 672
+					672 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 672
+				build_factory_in_capital_state = oil_factory
+				capital = 664
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2348
+					owns = 2361
+					2361 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2361
+				build_factory_in_capital_state = oil_factory
+				capital = 2348
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2348
+					owns = 2396
+					2396 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2396
+				build_factory_in_capital_state = oil_factory
+				capital = 2348
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2247
+					owns = 2253
+					2253 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2253
+				build_factory_in_capital_state = oil_factory
+				capital = 2247
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 860
+					owns = 849
+					849 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 849
+				build_factory_in_capital_state = oil_factory
+				capital = 860
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 860
+					owns = 928
+					928 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 928
+				build_factory_in_capital_state = oil_factory
+				capital = 860
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 860
+					owns = 1163
+					1163 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1163
+				build_factory_in_capital_state = oil_factory
+				capital = 860
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 860
+					owns = 1732
+					1732 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1732
+				build_factory_in_capital_state = oil_factory
+				capital = 860
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1680
+					1680 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1680
+				build_factory_in_capital_state = oil_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1720
+					1720 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1720
+				build_factory_in_capital_state = oil_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 57
+					owns = 26
+					26 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 26
+				build_factory_in_capital_state = oil_factory
+				capital = 57
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2295
+					owns = 2291
+					2291 = {
+						trade_goods = raw_oil
+						state_scope = { NOT = { has_building = oil_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2291
+				build_factory_in_capital_state = oil_factory
+				capital = 2295
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = 29909
+	title = "RUBBER SPREAD EVENT"
+	desc = "EVTDESC29909"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA29909"
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1891
+					1891 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1891
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1893
+					1893 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1893
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1923
+					1923 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1923
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1929
+					1929 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1929
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1931
+					1931 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1931
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1957
+					1957 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1957
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1981
+					1981 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1981
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1985
+					1985 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1985
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1985
+					1985 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1985
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1996
+					1996 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1996
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1996
+					1996 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1996
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1998
+					1998 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1998
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1998
+					1998 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1998
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 521
+					owns = 2057
+					2057 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2057
+				build_factory_in_capital_state = rubber_factory
+				capital = 521
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1829
+					1829 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1829
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1837
+					1837 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1837
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 749
+					owns = 1848
+					1848 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1848
+				build_factory_in_capital_state = rubber_factory
+				capital = 749
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1251
+					owns = 1318
+					1318 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1318
+				build_factory_in_capital_state = rubber_factory
+				capital = 1251
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1321
+					1321 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1321
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1346
+					owns = 1354
+					1354 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1354
+				build_factory_in_capital_state = rubber_factory
+				capital = 1346
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 1346
+					owns = 1389
+					1389 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1389
+				build_factory_in_capital_state = rubber_factory
+				capital = 1346
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1388
+					1388 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1388
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1367
+					1367 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1367
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 425
+					owns = 1382
+					1382 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1382
+				build_factory_in_capital_state = rubber_factory
+				capital = 425
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 300
+					owns = 1395
+					1395 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1395
+				build_factory_in_capital_state = rubber_factory
+				capital = 300
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1406
+					1406 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1406
+				build_factory_in_capital_state = rubber_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1398
+					1398 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1398
+				build_factory_in_capital_state = rubber_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1414
+					1414 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1414
+				build_factory_in_capital_state = rubber_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1426
+					1426 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1426
+				build_factory_in_capital_state = rubber_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 375
+					owns = 1414
+					1414 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 1414
+				build_factory_in_capital_state = rubber_factory
+				capital = 375
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2447
+					owns = 2600
+					2600 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2600
+				build_factory_in_capital_state = rubber_factory
+				capital = 2447
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2447
+					owns = 2405
+					2405 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2405
+				build_factory_in_capital_state = rubber_factory
+				capital = 2447
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2447
+					owns = 2417
+					2417 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2417
+				build_factory_in_capital_state = rubber_factory
+				capital = 2447
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2313
+					owns = 2317
+					2317 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2317
+				build_factory_in_capital_state = rubber_factory
+				capital = 2313
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2313
+					owns = 2319
+					2319 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2319
+				build_factory_in_capital_state = rubber_factory
+				capital = 2313
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					capital = 2295
+					owns = 2301
+					2301 = {
+						trade_goods = raw_rubber
+						state_scope = { NOT = { has_building = rubber_factory } }
+					}
+				}
+			}
+			owner = {
+				capital = 2301
+				build_factory_in_capital_state = rubber_factory
+				capital = 2295
+			}
+		}
+	}
+}

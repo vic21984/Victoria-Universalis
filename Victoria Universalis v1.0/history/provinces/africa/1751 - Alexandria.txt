@@ -1,0 +1,26 @@
+owner = EGY
+controller = EGY
+add_core = EGY
+trade_goods = raw_cotton
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = sulphur_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}

@@ -1,0 +1,10 @@
+owner = HDJ
+controller = HDJ
+add_core = NYE
+trade_goods = raw_coffee
+life_rating = 5
+state_building = {
+	level = 1
+	building = coffee_factory
+	upgrade = yes
+}

@@ -1,0 +1,31 @@
+owner = HYD
+controller = HYD
+add_core = HYD
+add_core = HND
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = dye_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}

@@ -1,0 +1,31 @@
+owner = AUS
+controller = AUS
+add_core = VEN
+add_core = ITA
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 1
+	building = winery
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = silk_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = luxury_clothes_factory
+	upgrade = yes
+}

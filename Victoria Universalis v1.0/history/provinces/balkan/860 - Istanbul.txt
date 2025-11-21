@@ -1,0 +1,23 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+trade_goods = raw_grain
+life_rating = 5
+terrain = urban
+naval_base = 1
+fort = 1
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steamer_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

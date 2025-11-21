@@ -1,0 +1,11 @@
+owner = MCK
+controller = MCK
+add_core = CHI
+add_core = MCK
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}

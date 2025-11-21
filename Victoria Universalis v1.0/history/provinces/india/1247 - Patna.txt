@@ -1,0 +1,21 @@
+owner = EIC
+controller = EIC
+add_core = BIH
+add_core = HND
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 2
+	building = opium_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}

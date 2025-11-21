@@ -1,0 +1,28 @@
+owner = EIC
+controller = EIC
+add_core = KRN
+add_core = HYD
+add_core = HND
+trade_goods = raw_fruit
+life_rating = 5
+fort = 1
+state_building = {
+	level = 1
+	building = dye_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = machine_parts_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}

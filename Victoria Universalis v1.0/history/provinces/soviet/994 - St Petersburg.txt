@@ -1,0 +1,18 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = raw_grain
+life_rating = 5
+terrain = urban
+naval_base = 2
+fort = 1
+state_building = {
+	level = 2
+	building = steamer_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = machine_parts_factory
+	upgrade = yes
+}

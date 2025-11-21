@@ -1,0 +1,22 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = IRE
+trade_goods = raw_cattle
+naval_base = 2
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steamer_shipyard
+	upgrade = yes
+}

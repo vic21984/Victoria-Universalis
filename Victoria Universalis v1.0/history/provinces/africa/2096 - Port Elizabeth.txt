@@ -1,0 +1,11 @@
+owner = SAF
+controller = SAF
+add_core = SAF
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 2
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}

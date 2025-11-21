@@ -1,0 +1,11 @@
+owner = EIC
+controller = EIC
+add_core = ORI
+add_core = HND
+trade_goods = raw_iron
+life_rating = 5
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}

@@ -1,0 +1,21 @@
+owner = NAG
+controller = NAG
+add_core = NAG
+add_core = HND
+trade_goods = raw_dye
+life_rating = 5
+state_building = {
+	level = 1
+	building = dye_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = opium_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

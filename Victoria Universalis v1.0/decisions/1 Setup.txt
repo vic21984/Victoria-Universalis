@@ -1,0 +1,1654 @@
+## Audax Validator "!" Ignore_1004
+## Audax Validator "!" Ignore_1009
+political_decisions = {
+	1836_literacy_setup = {
+		potential = {
+			tag = JAN
+			NOT = { has_global_flag = 1836_literacy_setup }
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = 1836_literacy_setup
+			any_country = {
+				any_pop = {
+					literacy = -1
+				}
+			}
+			any_country = {
+				any_pop = {
+					limit = {
+						has_pop_culture = north_german
+					}
+					literacy = 0.69
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = south_german
+					}
+					literacy = 0.39
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ashkenazi
+					}
+					literacy = 0.69
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = dutch
+					}
+					literacy = 0.69
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = wallonian
+							has_pop_culture = flemish
+						}
+					}
+					literacy = 0.49
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = swiss
+					}
+					literacy = 0.69
+				}
+				any_pop = {
+					limit = {
+						is_culture_group = scandinavian
+					}
+					literacy = 0.79
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = finnish
+					}
+					literacy = -0.2
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = british
+					}
+					literacy = 0.59
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = irish
+					}
+					literacy = 0.24
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+					}
+					literacy = 0.44
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = south_italian
+					}
+					literacy = 0.19
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = maltese
+					}
+					literacy = 0.17
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = spanish
+							has_pop_culture = catalan
+							has_pop_culture = basque
+						}
+					}
+					literacy = 0.19
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = portuguese
+					}
+					literacy = 0.12
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = french
+					}
+					literacy = 0.49
+				}
+				any_pop = {
+					limit = {
+						is_culture_group = south_slavic
+						NOT = { has_pop_culture = albanian }
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = albanian
+					}
+					literacy = 0.02
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = croat
+							has_pop_culture = slovene
+						}
+					}
+					literacy = 0.05
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = romanian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = hungarian
+					}
+					literacy = 0.14
+				}
+				any_pop = {
+					limit = {
+						is_culture_group = polish_culture_group
+					}
+					literacy = 0.14
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = czech
+					}
+					literacy = 0.39
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = slovak
+					}
+					literacy = 0.14
+				}
+				any_pop = {
+					limit = {
+						is_culture_group = east_slavic
+					}
+					literacy = 0.04
+				}
+				any_pop = {
+					limit = {
+						is_culture_group = baltic
+					}
+					literacy = 0.39
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = greek
+					}
+					literacy = 0.18
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = armenian
+					}
+					literacy = 0.07
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = georgian
+					}
+					literacy = 0.03
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = sephardic
+					}
+					literacy = 0.35
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						OR = {
+							has_pop_culture = turkish
+							has_pop_culture = azerbaijani
+						}
+					}
+					literacy = 0.02
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = north_caucasian
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						is_culture_group = arab
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = misri
+					}
+					literacy = 0.02
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						is_culture_group = iranian_turanian
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = persian
+					}
+					literacy = 0.03
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = hazara
+					}
+					literacy = -0.01
+				}
+				any_pop = {
+					limit = {
+						is_culture_group = south_asian
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = vietnamese
+					}
+					literacy = 0.02
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = khmer
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = malay
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = filipino
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = javan
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = thai
+					}
+					literacy = 0.02
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = lao
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = burmese
+					}
+					literacy = 0.03
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = japanese
+					}
+					literacy = 0.39
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = ainu
+					}
+					literacy = 0.03
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = korean
+					}
+					literacy = 0.04
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						is_culture_group = east_asian
+					}
+					literacy = 0.07
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = miao
+					}
+					literacy = -0.1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = yi
+					}
+					literacy = -0.1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = zhuang
+					}
+					literacy = -0.1
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = yankee
+					}
+					literacy = 0.69
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = dixie
+							has_pop_culture = texan
+						}
+					}
+					literacy = 0.54
+				}
+				any_pop = {
+					limit = {
+						is_culture_group = neo_european_cultures
+					}
+					literacy = 0.49
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = mexican
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = central_american
+					}
+					literacy = 0.06
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = caribeno
+					}
+					literacy = 0.03
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = north_andean
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = south_andean
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = platinean
+					}
+					literacy = 0.14
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = brazilian
+					}
+					literacy = 0.09
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						is_culture_group = native_american
+					}
+					literacy = 0.02
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = afro_american
+					}
+					literacy = 0.04
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = afro_brazilian
+					}
+					literacy = 0.02
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = afro_caribbean
+					}
+					literacy = 0.01
+				}
+				any_pop = {
+					limit = {
+						NOT = { type = slaves }
+						has_pop_culture = afro_antillean
+					}
+					literacy = 0.01
+				}
+			}
+			EGY = {
+				any_pop = {
+					limit = {
+						has_pop_culture = mashriqi
+					}
+					literacy = 0.01
+				}
+			}
+			PRG = {
+				any_pop = {
+					limit = {
+						has_pop_culture = platinean
+					}
+					literacy = -0.04
+				}
+			}
+			URU = {
+				any_pop = {
+					limit = {
+						OR = {
+							has_pop_culture = brazilian
+							has_pop_culture = platinean
+						}
+					}
+					literacy = 0.04
+				}
+			}
+			RGS = {
+				any_pop = {
+					limit = {
+						has_pop_culture = brazilian
+					}
+					literacy = 0.04
+				}
+			}
+		}
+	}
+
+	global_1836_setup = {
+		potential = {
+			tag = JAN
+			NOT = { has_global_flag = global_1836_setup }
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = global_1836_setup
+			country_event = { id = 91300 days = 1 }
+			country_event = { id = 91312 days = 2 }
+			random_owned = {
+				limit = {
+					owner = { has_global_flag = mp_setup }
+				}
+				owner = {
+					country_event = { id = 91313 days = 363 }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { NOT = { has_global_flag = mp_setup } }
+				}
+				owner = {
+					country_event = { id = 91313 days = 364 }
+				}
+			}
+			CIV = {
+				civilized = yes
+				## Audax Validator "." Ignore_NEXT
+				annex_to = FROM
+			}
+			any_country = {
+				limit = { civilized = yes }
+				prestige = 20
+			}
+			any_country = {
+				limit = {
+					civilized = yes
+					rank = 16
+				}
+				prestige = 40
+			}
+			any_country = {
+				limit = { is_greater_power = yes }
+				prestige = 60
+			}
+			any_country = {
+				limit = { ai = yes }
+				political_reform = no_allow_building
+			}
+			any_country = {
+				limit = {
+					OR = {
+						tag = NAM
+						tag = SAM
+						tag = EUR
+					}
+				}
+				add_country_modifier = { name = immigrant_factory duration = -1 }
+			}
+			any_country = {
+				limit = { economic_policy = laissez_faire }
+				political_reform = laissez_faire_law
+			}
+			any_country = {
+				limit = { economic_policy = interventionism }
+				political_reform = interventionism_law
+			}
+			any_country = {
+				limit = { economic_policy = state_capitalism }
+				political_reform = state_capitalism_law
+			}
+			any_country = {
+				limit = { economic_policy = planned_economy }
+				political_reform = planned_economy_law
+			}
+			any_country = {
+				limit = { religious_policy = moralism }
+				political_reform = moralism_law
+			}
+			any_country = {
+				limit = { religious_policy = pluralism }
+				political_reform = moralism_law
+			}
+			any_country = {
+				limit = { religious_policy = secularized }
+				political_reform = pluralism_law
+			}
+			any_country = {
+				limit = { religious_policy = pro_atheism }
+				political_reform = pluralism_law
+			}
+			any_country = {
+				limit = { trade_policy = mercantalism }
+				political_reform = mercantalism_law
+			}
+			any_country = {
+				limit = { trade_policy = protectionism }
+				political_reform = protectionism_law
+			}
+			any_country = {
+				limit = { trade_policy = free_trade }
+				political_reform = free_trade_law
+			}
+			any_country = {
+				limit = { citizenship_policy = residency }
+				political_reform = primary_culture_only
+			}
+			any_country = {
+				limit = { citizenship_policy = limited_citizenship }
+				political_reform = culture_voting_only
+			}
+			any_country = {
+				limit = { citizenship_policy = full_citizenship }
+				political_reform = all_voting_pops
+			}
+			any_country = {
+				limit = {
+					civilized = no
+					NOT = { tag = GHO }
+					NOT = { tag = CIV }
+					NOT = { tag = MST }
+					NOT = { tag = SMA }
+					NOT = { tag = FWR }
+					NOT = { tag = PRO }
+					NOT = { tag = RMC }
+					NOT = { tag = NAV }
+				}
+				set_country_flag = uncivilized
+				political_reform = closed_borders
+				civilized = yes
+			}
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = uncivilized
+						tag = AUS
+						tag = TUR
+					}
+					NOT = { tag = GHO }
+					NOT = { tag = CIV }
+					NOT = { tag = MST }
+					NOT = { tag = SMA }
+					NOT = { tag = FWR }
+					NOT = { tag = PRO }
+					NOT = { tag = RMC }
+					NOT = { tag = NAV }
+					NOT = { tag = NAM }
+					NOT = { tag = SAM }
+					NOT = { tag = EUR }
+				}
+				political_reform = serfdom
+				civilized = yes
+			}
+			any_country = {
+				limit = {
+					has_country_flag = uncivilized
+					NOT = { tag = GHO }
+					NOT = { tag = CIV }
+					NOT = { tag = MST }
+					NOT = { tag = SMA }
+					NOT = { tag = FWR }
+					NOT = { tag = PRO }
+					NOT = { tag = RMC }
+					NOT = { tag = NAV }
+					NOT = { tag = NAM }
+					NOT = { tag = SAM }
+					NOT = { tag = EUR }
+				}
+				political_reform = traditionalism_law
+			}
+			random_owned = {
+				limit = {
+					owner = { has_global_flag = mp_setup }
+				}
+				owner = {
+					any_country = {
+						limit = {
+							NOT = { has_country_flag = chinese }
+							NOT = { tag = EIC }
+							NOT = { late_enlightenment_philosophy = 1 }
+						}
+						activate_technology = late_enlightenment_philosophy
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { has_global_flag = mp_setup }
+				}
+				owner = {
+					any_country = {
+						limit = {
+							NOT = { has_country_flag = chinese }
+							NOT = { tag = EIC }
+							NOT = { malthusian_thought = 1 }
+						}
+						activate_technology = malthusian_thought
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { has_global_flag = mp_setup }
+				}
+				owner = {
+					any_country = {
+						limit = {
+							NOT = { has_country_flag = chinese }
+							NOT = { tag = EIC }
+							NOT = { army_command_principle = 1 }
+						}
+						activate_technology = army_command_principle
+					}
+				}
+			}
+			any_country = {
+				limit = { exists = yes }
+				capital_scope = {
+					add_province_modifier = { name = capital_supply_depot duration = -1 }
+				}
+			}
+			any_country = {
+				limit = { ai = no }
+				any_owned = {
+					limit = { has_building = naval_base }
+					add_province_modifier = { name = built_naval_base duration = -1 }
+				}
+			}
+			any_country = {
+				limit = {
+					invention = regulated_buying_and_selling_of_stocks
+					OR = {
+						tag = USA
+						tag = ENG
+						tag = NET
+					}
+				}
+				set_country_flag = regulated_buying_and_selling_of_stocks_invented
+			}
+			any_country = {
+				limit = {
+					invention = regulated_buying_and_selling_of_stocks
+					NOT = {
+						OR = {
+							tag = USA
+							tag = ENG
+							tag = NET
+						}
+					}
+				}
+				set_country_flag = regulated_buying_and_selling_of_stocks_invented
+				change_variable = {
+					which = stock_exchange_level
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { battleship_column_doctrine = 1 }
+				set_country_flag = battleship_column_doctrine_invented
+			}
+			any_country = {
+				limit = { invention = mob1 }
+				set_country_flag = mob1_invented
+			}
+			any_country = {
+				limit = { invention = private_banks_invention }
+				set_country_flag = private_banks_invented
+			}
+			any_country = {
+				limit = { early_classical_theory_and_critique = 1 }
+				set_country_flag = early_classical_theory_and_critique_invented
+				set_variable = {
+					which = economic_thought_level
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { freedom_of_trade = 1 }
+				set_country_flag = freedom_of_trade_invented
+			}
+			any_country = {
+				limit = { guild_based_production = 1 }
+				set_country_flag = guild_based_production_invented
+			}
+			any_country = {
+				limit = { malthusian_thought = 1 }
+				set_country_flag = malthusian_thought_invented
+			}
+			any_country = {
+				limit = { enlightenment_thought = 1 }
+				set_country_flag = enlightenment_thought_invented
+			}
+			any_country = {
+				limit = { the_command_principle = 1 }
+				set_country_flag = the_command_principle_invented
+				set_variable = {
+					which = naval_leadership_level
+					value = 1
+				}
+			}
+			any_country = {
+				limit = { naval_professionalism = 1 }
+				set_country_flag = naval_professionalism_invented
+				set_variable = {
+					which = naval_leadership_level
+					value = 2
+				}
+			}
+			META_1 = {
+				zbankers = {
+					pop_type = farmers
+				}
+			}
+			any_country = {
+				farmers = {
+					ideology = {
+						factor = 0.1
+						value = neo_conservative
+					}
+				}
+				farmers = {
+					ideology = {
+						factor = 0.2
+						value = reactionary
+					}
+				}
+				farmers = {
+					ideology = {
+						factor = 0.2
+						value = liberal
+					}
+				}
+				labourers = {
+					ideology = {
+						factor = 0.2
+						value = neo_conservative
+					}
+				}
+				labourers = {
+					ideology = {
+						factor = 0.2
+						value = reactionary
+					}
+				}
+				labourers = {
+					ideology = {
+						factor = 0.2
+						value = liberal
+					}
+				}
+			}
+			any_country = {
+				limit = {
+					experimental_railroad = 1
+					NOT = { early_railroad = 1 }
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							terrain = farmlands
+							terrain = woods
+							terrain = steppe
+							terrain = plains
+							terrain = urban
+						}
+					}
+					infrastructure = 1
+				}
+			}
+			any_country = {
+				limit = {
+					NOT = { tag = QNG }
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1260000
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 30
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1220000
+						NOT = { total_pops = 1260000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 30
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1180000
+						NOT = { total_pops = 1220000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 29
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1140000
+						NOT = { total_pops = 1180000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 28
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1100000
+						NOT = { total_pops = 1140000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 27
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1060000
+						NOT = { total_pops = 1100000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 26
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1020000
+						NOT = { total_pops = 1060000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 25
+				}
+				any_owned = {
+					limit = {
+						total_pops = 980000
+						NOT = { total_pops = 1020000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 24
+				}
+				any_owned = {
+					limit = {
+						total_pops = 940000
+						NOT = { total_pops = 980000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 23
+				}
+				any_owned = {
+					limit = {
+						total_pops = 900000
+						NOT = { total_pops = 940000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 22
+				}
+				any_owned = {
+					limit = {
+						total_pops = 860000
+						NOT = { total_pops = 900000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 21
+				}
+				any_owned = {
+					limit = {
+						total_pops = 820000
+						NOT = { total_pops = 860000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 20
+				}
+				any_owned = {
+					limit = {
+						total_pops = 780000
+						NOT = { total_pops = 820000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 19
+				}
+				any_owned = {
+					limit = {
+						total_pops = 740000
+						NOT = { total_pops = 780000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 18
+				}
+				any_owned = {
+					limit = {
+						total_pops = 700000
+						NOT = { total_pops = 740000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 17
+				}
+				any_owned = {
+					limit = {
+						total_pops = 660000
+						NOT = { total_pops = 700000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 16
+				}
+				any_owned = {
+					limit = {
+						total_pops = 620000
+						NOT = { total_pops = 660000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 15
+				}
+				any_owned = {
+					limit = {
+						total_pops = 580000
+						NOT = { total_pops = 620000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 14
+				}
+				any_owned = {
+					limit = {
+						total_pops = 540000
+						NOT = { total_pops = 580000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 13
+				}
+				any_owned = {
+					limit = {
+						total_pops = 500000
+						NOT = { total_pops = 540000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 12
+				}
+				any_owned = {
+					limit = {
+						total_pops = 460000
+						NOT = { total_pops = 500000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 11
+				}
+				any_owned = {
+					limit = {
+						total_pops = 420000
+						NOT = { total_pops = 460000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 10
+				}
+				any_owned = {
+					limit = {
+						total_pops = 380000
+						NOT = { total_pops = 420000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 9
+				}
+				any_owned = {
+					limit = {
+						total_pops = 340000
+						NOT = { total_pops = 380000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 8
+				}
+				any_owned = {
+					limit = {
+						total_pops = 300000
+						NOT = { total_pops = 340000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 7
+				}
+				any_owned = {
+					limit = {
+						total_pops = 260000
+						NOT = { total_pops = 300000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 6
+				}
+				any_owned = {
+					limit = {
+						total_pops = 220000
+						NOT = { total_pops = 260000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 5
+				}
+				any_owned = {
+					limit = {
+						total_pops = 180000
+						NOT = { total_pops = 220000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 4
+				}
+				any_owned = {
+					limit = {
+						total_pops = 140000
+						NOT = { total_pops = 180000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 3
+				}
+				any_owned = {
+					limit = {
+						total_pops = 100000
+						NOT = { total_pops = 140000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 2
+				}
+				any_owned = {
+					limit = {
+						total_pops = 60000
+						NOT = { total_pops = 100000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 1
+				}
+			}
+			any_country = {
+				limit = {
+					tag = QNG
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1600000
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 20
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1520000
+						NOT = { total_pops = 1600000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 19
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1440000
+						NOT = { total_pops = 1520000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 18
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1360000
+						NOT = { total_pops = 1440000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 17
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1280000
+						NOT = { total_pops = 1360000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 16
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1200000
+						NOT = { total_pops = 1280000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 15
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1120000
+						NOT = { total_pops = 1200000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 14
+				}
+				any_owned = {
+					limit = {
+						total_pops = 1040000
+						NOT = { total_pops = 1120000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 13
+				}
+				any_owned = {
+					limit = {
+						total_pops = 960000
+						NOT = { total_pops = 1040000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 12
+				}
+				any_owned = {
+					limit = {
+						total_pops = 880000
+						NOT = { total_pops = 960000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 11
+				}
+				any_owned = {
+					limit = {
+						total_pops = 800000
+						NOT = { total_pops = 880000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 10
+				}
+				any_owned = {
+					limit = {
+						total_pops = 720000
+						NOT = { total_pops = 800000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 9
+				}
+				any_owned = {
+					limit = {
+						total_pops = 640000
+						NOT = { total_pops = 720000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 8
+				}
+				any_owned = {
+					limit = {
+						total_pops = 560000
+						NOT = { total_pops = 640000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 7
+				}
+				any_owned = {
+					limit = {
+						total_pops = 480000
+						NOT = { total_pops = 560000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 6
+				}
+				any_owned = {
+					limit = {
+						total_pops = 400000
+						NOT = { total_pops = 480000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 5
+				}
+				any_owned = {
+					limit = {
+						total_pops = 320000
+						NOT = { total_pops = 400000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 4
+				}
+				any_owned = {
+					limit = {
+						total_pops = 240000
+						NOT = { total_pops = 320000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 3
+				}
+				any_owned = {
+					limit = {
+						total_pops = 160000
+						NOT = { total_pops = 240000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 2
+				}
+				any_owned = {
+					limit = {
+						total_pops = 80000
+						NOT = { total_pops = 160000 }
+					}
+					## Audax Validator "." Ignore_NEXT
+					farmland = 1
+				}
+			}
+			any_pop = {
+				money = 2000000
+			}
+			372 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			517 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			763 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			766 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			859 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			860 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			966 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			1640 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			1666 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			1667 = { add_province_modifier = { name = strait_crossing duration = -1 } }
+			2653 = { add_core = RUS }
+			2670 = { add_core = RUS }
+			2652 = { add_core = RUS }
+			2665 = { add_core = RUS }
+			2643 = { add_core = RUS }
+			2664 = { add_core = RUS }
+			2620 = { add_core = RUS }
+			2622 = { add_core = RUS }
+			2662 = { add_core = RUS }
+			78 = { add_core = COL }
+			79 = { add_core = COL }
+			80 = { add_core = COL }
+			81 = { add_core = COL }
+			82 = { add_core = COL }
+			83 = { add_core = COL }
+			92 = { add_core = COL }
+			
+			any_country = {
+				limit = { is_greater_power = yes }
+				treasury = 150000
+			}
+			any_country = {
+				limit = { is_greater_power = no }
+				treasury = 75000
+				prestige = 1
+			}
+			set_variable = {
+				which = trade_channel
+				value = 1
+			}
+			any_country = {
+				limit = { ai = no }
+				country_event = { id = 91001 days = 0 }
+			}
+			any_country = {
+				activate_technology = hidden_tech
+				leadership = 40
+			}
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					NOT = { tag = AUS }
+				}
+				set_country_flag = south_german
+			}
+			any_country = {
+				limit = { primary_culture = south_italian }
+				set_country_flag = south_italian
+			}
+			RUS = {
+				political_reform = traditionalism_law
+				political_reform = mercantalism_law
+			}
+			any_country = {
+				limit = {
+					is_culture_group = south_asian
+					NOT = { tag = PNJ }
+				}
+				set_country_flag = indian
+				add_country_modifier = { name = caste_system duration = -1 }
+			}
+			EIC = {
+				add_country_modifier = { name = direct_rule duration = -1 }
+				add_country_modifier = { name = caste_system duration = -1 }
+				political_reform = open_borders
+			}
+			PNJ = {
+				political_reform = open_borders
+				political_reform = tenant_farming
+			}
+			TUR = {
+				add_country_modifier = { name = christian_subjugation duration = -1 }
+				set_global_flag = turkey_exists
+			}
+			GRE = {
+				set_global_flag = greece_exists
+			}
+			ENG = {
+				prestige = -300
+				add_country_modifier = { name = corn_laws duration = -1 }
+				add_country_modifier = { name = unequal_china_treaty duration = -1 }
+				add_country_modifier = { name = hegemon duration = -1 }
+				add_country_modifier = { name = crown_rule duration = -1 }
+				political_reform = protectionism_law
+				political_reform = interventionism_law
+			}
+			USA = {
+				add_country_modifier = { name = american_isolationism duration = -1 }
+				political_reform = protectionism_law
+				political_reform = pluralism_law
+			}
+			NET = {
+				any_owned = {
+					limit = { continent = east_indies }
+					add_province_modifier = { name = cultuurstelsel duration = -1 }
+				}
+				1413 = {
+					add_province_modifier = { name = dutch_east_indies duration = 10950 }
+				}
+				1421 = {
+					add_province_modifier = { name = dutch_east_indies duration = 10950 }
+				}
+			}
+			ORA = {
+				add_country_modifier = { name = kommandos duration = -1 }
+			}
+			TRN = {
+				add_country_modifier = { name = kommandos duration = -1 }
+			}
+			GRP = {
+				add_country_modifier = { name = general_mobilization duration = 365 }
+			}
+			RGS = {
+				add_country_modifier = { name = general_mobilization duration = 365 }
+			}
+			ALD = {
+				add_country_modifier = { name = general_mobilization duration = 365 }
+			}
+			OYO = {
+				add_country_modifier = { name = general_mobilization duration = 365 }
+			}
+			TRI = {
+				add_country_modifier = { name = full_mobilization duration = 365 }
+			}
+			PER = {
+				political_reform = open_borders
+			}
+			KMT = {
+				political_reform = open_borders
+				political_reform = state_capitalism_law
+				political_reform = tenant_farming
+			}
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = platinean
+						primary_culture = south_andean
+						primary_culture = north_andean
+						primary_culture = central_american
+						primary_culture = mexican
+					}
+				}
+				add_country_modifier = { name = caudillos duration = -1 }
+			}
+			any_country = {
+				limit = {
+					primary_culture = japanese
+				}
+				any_pop = {
+					limit = {
+						has_pop_culture = japanese
+					}
+					ideology = {
+						factor = 0.1
+						value = reactionary
+					}
+				}
+			}
+			any_country = {
+				limit = { primary_culture = mexican }
+				any_pop = {
+					limit = {
+						has_pop_culture = mexican
+					}
+					ideology = {
+						factor = 0.15
+						value = reactionary
+					}
+				}
+			}
+			URU = {
+				2344 = {
+					any_pop = {
+						ideology = {
+							factor = 0.3
+							value = liberal
+						}
+					}
+				}
+				2345 = {
+					any_pop = {
+						ideology = {
+							factor = 0.3
+							value = neo_conservative
+						}
+					}
+				}
+				2347 = {
+					any_pop = {
+						ideology = {
+							factor = 0.3
+							value = neo_conservative
+						}
+					}
+				}
+				2346 = {
+					any_pop = {
+						ideology = {
+							factor = 0.3
+							value = neo_conservative
+						}
+					}
+				}
+			}
+			UCA = {
+				set_country_flag = cannot_pass_reform
+				add_country_modifier = { name = cannot_pass_reform duration = 730 }
+				add_country_modifier = { name = reform_passed duration = 730 }
+				any_owned = {
+					add_province_modifier = { name = nationalist_agitation duration = 730 }
+				}
+			}
+			TEX = { add_country_modifier = { name = the_alamo duration = 30 } }
+			random_country = {
+				limit = {
+					tag = MEX
+					ai = yes
+				}
+				add_country_modifier = { name = america_first_ww1 duration = 30 }
+			}
+			any_country = {
+				limit = {
+					NOT = {
+						tag = ALD
+						tag = TUN
+						tag = MOR
+						tag = EGY
+						tag = SAF
+						tag = TRN
+						tag = ORA
+					}
+					capital_scope = {
+						continent = africa
+					}
+				}
+				set_country_flag = sub_saharan_africa
+			}
+			any_country = {
+				any_owned = {
+					limit = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							NOT = { total_pops = 150000 }
+						}
+					}
+					add_core = SMA
+				}
+				any_owned = {
+					limit = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 150000
+							## Audax Validator "." Ignore_NEXT
+							NOT = { total_pops = 300000 }
+						}
+					}
+					add_core = MST
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	chinese_setup = {
+
+		potential = {
+			tag = QNG
+			## Audax Validator "." Ignore_NEXT
+			always = no
+		}
+		
+		allow = { }
+		
+		effect = {
+			QNG = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			CHI = { set_country_flag = chinese }
+			TPG = { set_country_flag = chinese }
+			KMT = { set_country_flag = chinese }
+			XBI = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			SXI = { set_country_flag = chinese }
+			MCK = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			HUI = { set_country_flag = chinese }
+			HNN = { set_country_flag = chinese }
+			SZC = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			GUZ = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			IMG = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			YNN = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			GXI = { set_country_flag = chinese }
+			GNG = { set_country_flag = chinese }
+			MGL = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			XIN = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+			TIB = {
+				set_country_flag = chinese
+				add_country_modifier = { name = imperial_examinations duration = -1 }
+				set_country_flag = imperial_examinations
+				add_country_modifier = { name = opium_addiction duration = -1 }
+				add_country_modifier = { name = the_eight_banners duration = -1 }
+			}
+		}
+	}
+}

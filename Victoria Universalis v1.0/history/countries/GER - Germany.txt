@@ -1,0 +1,58 @@
+govt_flag = 
+{
+	government = hms_government
+	flag = presidential_dictatorship
+
+	government = democracy
+	flag = presidential_dictatorship
+}
+
+capital = 549
+primary_culture = north_german
+culture = south_german
+religion = protestant
+government = absolute_monarchy
+plurality = 0.15
+nationalvalue = nv_order
+literacy = 0.87
+civilized = yes
+is_releasable_vassal = no
+schools = army_tech_school
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = universal_weighted_voting
+public_meetings = yes_meeting
+press_rights = assembly_rights
+trade_unions = all_trade_unions
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = low_minimum_wage
+work_hours = fourteen_hours
+safety_regulations = good_safety
+health_care = no_health_care
+unemployment_subsidies = low_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+war_laws = anti_military_law
+debt_law = serfdom
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = quota_immigration
+economic_laws = interventionism_law
+
+ruling_party = GER_conservative
+upper_house = {
+	fascist = 0
+	liberal = 35
+	neo_conservative = 45
+	reactionary = 5
+	anarcho_liberal = 5
+	socialist = 5
+	communist = 5
+}

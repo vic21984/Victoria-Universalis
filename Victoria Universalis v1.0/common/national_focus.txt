@@ -1,0 +1,168 @@
+rail_focus =
+{
+	increase_tension =
+	{
+		icon = 10
+		has_flashpoint = yes
+		own_provinces = no
+
+		flashpoint_tension = 0.15
+
+		limit = {
+			is_core = THIS
+			THIS = {
+				is_greater_power = no
+			}
+		}
+	}
+	#promote_assimilation = 
+	#{
+	#	limit = { ai = no }
+	#	assimilation_rate = 0.5
+	#	icon = 2
+	#}
+	#immigration =
+	#{
+	#	limit = { ai = no }
+	#	immigrant_attract = 2 #increases attactiveness to immigrants by 200 %
+	#	icon = 8
+	#}
+	militancy_appeasement = {
+		limit = { ai = no }
+		pop_militancy_modifier = -0.5
+		local_RGO_throughput = -0.2
+		local_factory_throughput = -0.2
+		icon = 6
+	}
+	consciousness_appeasement = {
+		limit = { ai = no }
+		pop_consciousness_modifier = -0.5
+		icon = 7
+	}
+}
+economy_focus = {
+	emergency_relief = {
+		limit = { ai = no }
+		local_RGO_throughput = 0.5
+		icon = 3
+	}
+	boost_industry = {
+		limit = { ai = no }
+		local_factory_throughput = 0.5
+		icon = 4
+	}
+}
+promotion_focus =
+{
+	promote_labourers =
+	{
+		life_rating = 0.401
+		labourers = 0
+		icon = 19
+		outliner_show_as_percent = yes
+	}
+	promote_soldiers =
+	{
+		life_rating = 0.601
+		soldiers = 0
+		icon = 21
+		outliner_show_as_percent = yes
+	}
+	#colonial_exploitation = {
+	#	limit = {
+	#		ai = no
+	#		NOT = { is_core = THIS }
+	#		NOT = {
+	#			state_scope = { labourers = 0.1 }
+	#		}
+	#		OR = {
+	#			continent = africa
+	#			continent = east_indies
+	#			continent = polynesia
+	#		}
+	#	}
+	#	population_growth = -0.001
+	#	life_rating = 3.001
+	#	icon = 5
+	#}
+}
+party_loyalty_focus =
+{
+	fascist_focus =
+	{
+		ideology = fascist
+		life_rating = 0.801
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 32
+		limit = {
+			ai = no
+		}
+	}
+	
+	reactionary_focus =
+	{
+		ideology = reactionary
+		life_rating = 1.001
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 33
+		limit = {
+			ai = no
+		}
+	}
+	
+	conservative_focus =
+	{
+		ideology = neo_conservative
+		life_rating = 1.201
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 34
+		limit = {
+			ai = no
+		}
+	}
+	
+	socialist_focus =
+	{
+		ideology = socialist
+		life_rating = 1.401
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 35
+		limit = {
+			ai = no
+		}
+	}
+	
+	communist_focus =
+	{
+		ideology = communist
+		life_rating = 1.601
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 36
+		limit = {
+			ai = no
+		}
+	}
+	
+	liberal_focus =
+	{
+		ideology = liberal
+		life_rating = 1.801
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 37
+		limit = {
+			ai = no
+		}
+	}
+	
+	anarcho_liberal_focus =
+	{
+		ideology = anarcho_liberal
+		life_rating = 2.001
+		loyalty_value = 0.001 # By that much pops will be more loyal
+		icon = 38
+		limit = {
+			ai = no
+		}
+	}
+}
+

@@ -1,0 +1,11 @@
+owner = HYD
+controller = HYD
+add_core = HYD
+add_core = HND
+trade_goods = raw_tea
+life_rating = 5
+state_building = {
+	level = 1
+	building = tea_factory
+	upgrade = yes
+}

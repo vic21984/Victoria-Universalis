@@ -1,0 +1,2374 @@
+sprite = 1
+color = { 11 40 93 }
+strata = rich
+#state_capital_only = yes
+
+
+rebel =
+{
+	cavalry = 0
+	artillery = 0.5
+	cuirassier = 0
+	dragoon = 0
+	guard = 0.5
+	hussar = 0
+	infantry = 0
+	irregular = 0
+}
+
+everyday_needs = {
+	luxury_clothes = 0.3	#12
+	luxury_furniture = 0.2	#12
+	paper = 2.5				#10
+	tobacco = 2.5			#10
+	coffee = 2.5			#10
+	tea = 2.5				#10
+	wine = 1				#10
+	pharmaceuticals = 0.5	#5		total: 79
+}
+
+life_needs = {
+	grain =  9.6			#38.4
+}
+
+luxury_needs = {
+	luxury_clothes = 0.45	#18
+	luxury_furniture = 0.3	#18
+	stocks = 4				#60
+	telephones = 0.5		#16
+	automobiles = 0.5		#20
+	radio = 0.5				#16
+	oil = 0.4				#10		total: 138
+}
+
+
+country_migration_target =
+{
+	factor = 0
+}
+
+
+migration_target =
+{
+	factor = 0
+}
+
+promote_to =
+{
+	aristocrats = {
+		factor = 0.01
+		modifier = {
+			factor = 40
+		}
+	}
+	capitalists = 
+	{
+		factor = 0.01
+		modifier = {
+			factor = -100
+			state_scope = {
+				has_factories = no
+			}
+		}
+		modifier = {
+			factor = -100
+			country = {
+				NOT = { has_country_flag = private_banks_invented }
+			}
+		}
+		modifier = {
+			factor = -2
+			is_accepted_culture = no
+		}
+		modifier = {
+			factor = 5
+			location = {
+				state_scope = {
+					has_building = stock_exchange
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			country = { economic_laws = laissez_faire_law }
+		}
+		modifier = {
+			factor = 2
+			country = { economic_laws = interventionism_law }
+		}
+		modifier = {
+			factor = 1
+			country = { economic_laws = state_capitalism_law }
+		}
+		modifier = {
+			factor = -100
+			country = { economic_laws = planned_economy_law }
+		}
+		modifier = {
+			factor = -100
+			country = { economic_laws = traditionalism_law }
+		}
+		modifier = {
+			factor = 3
+			country = { trade_laws = free_trade_law }
+		}
+		modifier = {
+			factor = 1
+			country = { trade_laws = protectionism_law }
+		}
+		modifier = {
+			factor = 2
+			country = { debt_law = commercialized_agriculture }
+		}
+		group = {
+			modifier = {
+				factor = 1
+				luxury_needs = 0.2
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.4
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.6
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.8
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.99
+			}
+		}
+		group = {
+			modifier = {
+				factor = 1
+				country = {
+					check_variable = {
+						which = financial_institutions_level
+						value = 1
+					}
+				}
+			}
+			modifier = {
+				factor = 1
+				country = {
+					check_variable = {
+						which = financial_institutions_level
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1
+				country = {
+					check_variable = {
+						which = financial_institutions_level
+						value = 3
+					}
+				}
+			}
+			modifier = {
+				factor = 1
+				country = {
+					check_variable = {
+						which = financial_institutions_level
+						value = 4
+					}
+				}
+			}
+			modifier = {
+				factor = 1
+				country = {
+					check_variable = {
+						which = financial_institutions_level
+						value = 5
+					}
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.001
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.002
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.003
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.004
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.005
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.006
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.007
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.008
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.009
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.01
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.011
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.012
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.013
+				}
+			}
+			modifier = {
+				factor = -1
+				state_scope = {
+					capitalists = 0.014
+				}
+			}
+			modifier = {
+				factor = -100
+				state_scope = {
+					capitalists = 0.015
+				}
+			}
+		}
+	}
+	officers =
+	{
+		factor = 0.01
+		group = {
+			modifier = {
+				factor = 120
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = -60
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 200000
+					}
+				}
+			}
+			modifier = {
+				factor = -20
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 400000
+					}
+				}
+			}
+			modifier = {
+				factor = -10
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 600000
+					}
+				}
+			}
+			modifier = {
+				factor = -6
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 800000
+					}
+				}
+			}
+			modifier = {
+				factor = -4
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 1000000
+					}
+				}
+			}
+			modifier = {
+				factor = -5
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 1200000
+					}
+				}
+			}
+			modifier = {
+				factor = -3
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 1600000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 2000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 2400000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 3000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 8
+					NOT = { life_rating = 9 }
+					state_scope = {
+						total_pops = 4000000
+					}
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = 200
+				country = {
+					check_variable = {
+						which = naval_leadership_level
+						value = 1
+					}
+				}
+			}
+			modifier = {
+				factor = 200
+				country = {
+					check_variable = {
+						which = naval_leadership_level
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 200
+				country = {
+					check_variable = {
+						which = naval_leadership_level
+						value = 3
+					}
+				}
+			}
+			modifier = {
+				factor = 200
+				country = {
+					check_variable = {
+						which = naval_leadership_level
+						value = 4
+					}
+				}
+			}
+			modifier = {
+				factor = 200
+				country = {
+					check_variable = {
+						which = naval_leadership_level
+						value = 5
+					}
+				}
+			}
+			modifier = {
+				factor = 200
+				country = {
+					check_variable = {
+						which = naval_leadership_level
+						value = 6
+					}
+				}
+			}
+			modifier = {
+				factor = 200
+				country = {
+					check_variable = {
+						which = naval_leadership_level
+						value = 7
+					}
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0019 }
+			}
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0022 }
+			}
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0025 }
+			}
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0028 }
+			}
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0031 }
+			}
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0034 }
+			}
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0037 }
+			}
+			modifier = {
+				factor = -200
+				state_scope = { officers = 0.0040 }
+			}
+		}
+		group = {
+			modifier = {
+				factor = 6
+				military_spending = 0.1
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.2
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.3
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.4
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.5
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.6
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.7
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.8
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.9
+			}
+			modifier = {
+				factor = 6
+				military_spending = 0.99
+			}
+		}
+	}
+	clerks =
+	{
+		factor = 0.01
+		group = {
+			modifier = {
+				factor = 120
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = -60
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 200000
+					}
+				}
+			}
+			modifier = {
+				factor = -20
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 400000
+					}
+				}
+			}
+			modifier = {
+				factor = -10
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 600000
+					}
+				}
+			}
+			modifier = {
+				factor = -6
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 800000
+					}
+				}
+			}
+			modifier = {
+				factor = -4
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1000000
+					}
+				}
+			}
+			modifier = {
+				factor = -5
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1200000
+					}
+				}
+			}
+			modifier = {
+				factor = -3
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1600000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 2000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 2400000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 3000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 4000000
+					}
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = 8
+				education_spending = 0.1
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.2
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.3
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.4
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.5
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.6
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.7
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.8
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.9
+			}
+			modifier = {
+				factor = 8
+				education_spending = 0.99
+			}
+		}
+		group = {
+			modifier = {
+				factor = -80
+				clerks = 0.0025
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.005
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.0075
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.01
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.0125
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.015
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.0175
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.02
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.0225
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.025
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.0275
+			}
+			modifier = {
+				factor = -80
+				clerks = 0.03
+			}
+		}
+		group = {
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 1
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 3
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 4
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 5
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 6
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 7
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 8
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 9
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 10
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 11
+					}
+				}
+			}
+			modifier = {
+				factor = 80
+				country = {
+					check_variable = {
+						which = social_thought_level
+						value = 12
+					}
+				}
+			}
+		}
+	}
+	clergymen =
+	{
+		factor = 0.01
+		group = {
+			modifier = {
+				factor = 120
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = -60
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 200000
+					}
+				}
+			}
+			modifier = {
+				factor = -20
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 400000
+					}
+				}
+			}
+			modifier = {
+				factor = -10
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 600000
+					}
+				}
+			}
+			modifier = {
+				factor = -6
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 800000
+					}
+				}
+			}
+			modifier = {
+				factor = -4
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1000000
+					}
+				}
+			}
+			modifier = {
+				factor = -5
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1200000
+					}
+				}
+			}
+			modifier = {
+				factor = -3
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1600000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 2000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 2400000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 3000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 4000000
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 80
+			country = { exists = yes }
+		}
+		modifier = {
+			factor = -200
+			clergymen = 0.01
+			country = {
+				religious_laws = moralism_law
+			}
+		}
+		modifier = {
+			factor = -200
+			clergymen = 0.0075
+			country = {
+				religious_laws = pluralism_law
+			}
+		}
+		modifier = {
+			factor = -200
+			clergymen = 0.005
+			country = {
+				religious_laws = secularized_law
+			}
+		}
+		modifier = {
+			factor = -200
+			country = {
+				religious_laws = pro_atheism_law
+			}
+		}
+	}
+	bureaucrats =
+	{
+		factor = 0.01
+		group = {
+			modifier = {
+				factor = 120
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = -60
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 200000
+					}
+				}
+			}
+			modifier = {
+				factor = -20
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 400000
+					}
+				}
+			}
+			modifier = {
+				factor = -10
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 600000
+					}
+				}
+			}
+			modifier = {
+				factor = -6
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 800000
+					}
+				}
+			}
+			modifier = {
+				factor = -4
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1000000
+					}
+				}
+			}
+			modifier = {
+				factor = -5
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1200000
+					}
+				}
+			}
+			modifier = {
+				factor = -3
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 1600000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 2000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 2400000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 3000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 6
+					NOT = { life_rating = 7 }
+					state_scope = {
+						total_pops = 4000000
+					}
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = 4
+				crime_fighting = 0.1
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.2
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.3
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.4
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.5
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.6
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.7
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.8
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.9
+			}
+			modifier = {
+				factor = 4
+				crime_fighting = 0.99
+			}
+		}
+		group = {
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.005 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.006 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.007 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.008 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.009 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.01 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.011 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.012 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.013 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.014 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.015 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.016 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.017 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.018 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.019 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.02 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.021 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.022 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.023 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.024 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.025 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.026 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.027 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.028 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.029 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.03 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.031 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.032 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.033 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.034 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.035 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.036 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.037 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.038 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.039 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.04 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.041 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.042 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.043 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.044 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.045 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.046 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.047 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.048 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.049 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.05 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.051 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.052 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.053 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.054 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.055 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.056 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.057 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.058 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.059 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.06 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.061 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.062 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.063 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.064 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.065 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.066 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.067 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.068 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.069 }
+			}
+			modifier = {
+				factor = -40
+				state_scope = { bureaucrats = 0.07 }
+			}
+		}
+		modifier = {
+			factor = 40
+			country = { wage_reform = trinket_wage }
+		}
+		modifier = {
+			factor = 80
+			country = { wage_reform = low_minimum_wage }
+		}
+		modifier = {
+			factor = 120
+			country = { wage_reform = acceptable_minimum_wage }
+		}
+		modifier = {
+			factor = 160
+			country = { wage_reform = good_minimum_wage }
+		}
+		modifier = {
+			factor = 40
+			country = { work_hours = fourteen_hours }
+		}
+		modifier = {
+			factor = 80
+			country = { work_hours = twelve_hours }
+		}
+		modifier = {
+			factor = 120
+			country = { work_hours = ten_hours }
+		}
+		modifier = {
+			factor = 160
+			country = { work_hours = eight_hours }
+		}
+		modifier = {
+			factor = 40
+			country = { safety_regulations = trinket_safety }
+		}
+		modifier = {
+			factor = 80
+			country = { safety_regulations = low_safety }
+		}
+		modifier = {
+			factor = 120
+			country = { safety_regulations = acceptable_safety }
+		}
+		modifier = {
+			factor = 160
+			country = { safety_regulations = good_safety }
+		}
+		modifier = {
+			factor = 80
+			country = { school_reforms = low_schools }
+		}
+		modifier = {
+			factor = 160
+			country = { school_reforms = acceptable_schools }
+		}
+		modifier = {
+			factor = 240
+			country = { school_reforms = good_schools }
+		}
+		modifier = {
+			factor = 320
+			country = { school_reforms = compulsory_schools }
+		}
+		modifier = {
+			factor = 120
+			country = { health_care = trinket_health_care }
+		}
+		modifier = {
+			factor = 240
+			country = { health_care = low_health_care }
+		}
+		modifier = {
+			factor = 360
+			country = { health_care = acceptable_health_care }
+		}
+		modifier = {
+			factor = 480
+			country = { health_care = good_health_care }
+		}
+		modifier = {
+			factor = 40
+			country = { law_enforcement = no_police }
+		}
+		modifier = {
+			factor = 80
+			country = { law_enforcement = local_police }
+		}
+		modifier = {
+			factor = 120
+			country = { law_enforcement = dedicated_police }
+		}
+		modifier = {
+			factor = 160
+			country = { law_enforcement = professional_police }
+		}
+		group = {
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 1
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 3
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 4
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 5
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 6
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 7
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 8
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 9
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 10
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 11
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 12
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 13
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 14
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 15
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 16
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 17
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 18
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 19
+					}
+				}
+			}
+			modifier = {
+				factor = 40
+				country = {
+					check_variable = {
+						which = bureaucracy_level
+						value = 20
+					}
+				}
+			}
+		}
+	}
+	farmers = { #and labourers
+		factor = 0.01
+		modifier = {
+			factor = 10
+			not = { luxury_needs = 0.1 }
+		}
+	}
+}
+
+
+ideologies = {
+	
+	fascist = {
+		factor = 1
+		modifier = {
+			factor = 300
+			location = {
+				life_rating = 9
+				NOT = { life_rating = 10 }
+			}
+		}
+		modifier = {
+			factor = -100
+			OR = {
+				country = { government = colonial_company }
+				AND = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			ruling_party_ideology = fascist 
+		}
+		modifier = {
+			factor = 1.1
+		 	revanchism = 0.01
+		}
+		modifier = {
+			factor = 1.1
+		 	revanchism = 0.02
+		}
+		modifier = {
+			factor = 1.1
+		 	revanchism = 0.03
+		}
+		modifier = {
+			factor = 1.1
+		 	revanchism = 0.04
+		}
+		modifier = {
+			factor = 1.1
+		 	revanchism = 0.05
+		}
+		modifier = {
+			factor = 2
+		 	revanchism = 0.10
+		}
+		modifier = {
+			factor = 4
+		 	revanchism = 0.15
+		}
+		modifier = {
+			factor = 8
+		 	revanchism = 0.20
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { political_reform_want = 0.15}
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { political_reform_want = 0.05 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { political_reform_want = 0.10 }
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 5
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 6
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 7
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 8
+		}
+	}
+	
+	reactionary = {
+		factor = 1.1
+		modifier = {
+			factor = 300
+			location = {
+				life_rating = 10
+				NOT = { life_rating = 11 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			ruling_party_ideology = reactionary
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { militancy = 6 }
+		}		
+		modifier = {
+			factor = 0.5
+			consciousness = 6
+		}		
+		modifier = {
+			factor = 1.1
+			NOT = { political_reform_want = 0.15}
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { political_reform_want = 0.05 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { political_reform_want = 0.10 }
+		}		
+		modifier = {
+			factor = 1.1
+			militancy = 6
+			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			militancy = 7
+			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			militancy = 8
+			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			militancy = 9
+			NOT = { consciousness = 4 }
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 5
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 6
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 7
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+		modifier = {
+			factor = 1.1
+			poor_strata_militancy = 8
+			OR = {
+				is_primary_culture = yes
+				is_accepted_culture = yes
+			}
+		}
+	}
+
+	neo_conservative = {
+		factor = 1
+		modifier = {
+			factor = 300
+			location = {
+				life_rating = 11
+				NOT = { life_rating = 12 }
+			}
+		}
+		modifier = {
+			factor = 2
+			country = { has_country_flag = blanco_rebels }
+		}
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 3 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { militancy = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 4 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 3 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { consciousness = 1 }
+		}
+		modifier = {
+			factor = 1.05
+			luxury_needs = 0.25
+		}		
+		modifier = {
+			factor = 1.05
+			luxury_needs = 0.5
+		}
+		modifier = {
+			factor = 1.05
+			luxury_needs = 0.75
+		}
+		modifier = {
+			factor = 1.05
+			luxury_needs = 0.99
+		}
+		modifier = {
+			factor = 1.05
+			everyday_needs = 0.25
+		}
+		modifier = {
+			factor = 1.05
+			everyday_needs = 0.5
+		}	
+		modifier = {
+			factor = 1.05
+			everyday_needs = 0.75
+		}	
+		modifier = {
+			factor = 1.05
+			everyday_needs = 0.99
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_order
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 5
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 6
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 7
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 8
+		}
+		modifier = {
+			factor = 0.9
+			poor_strata_militancy = 9
+		}
+	}
+
+	socialist = {
+		factor = 1
+		modifier = {
+			factor = 300
+			location = {
+				life_rating = 12
+				NOT = { life_rating = 13 }
+			}
+		}
+		modifier = {
+			factor = 0
+			country = { has_country_flag = uncivilized }
+		}
+		modifier = {
+			factor = 0.1
+			strata = rich
+		}
+		modifier = {
+			factor = 0.5
+			strata = middle
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_equality
+			NOT = { ruling_party_ideology = communist }
+		}
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.02
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.04
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.06
+		}
+		modifier = {
+			factor = 1.02	
+			social_reform_want = 0.08
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.1
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.12
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.14
+		}
+		modifier = {
+			factor = 1.02	
+			social_reform_want = 0.16
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.18
+		}
+		modifier = {
+			factor = 1.02
+			social_reform_want = 0.2
+		}
+		modifier = {
+			factor = 1.1
+			state_scope = {
+				poor_strata_everyday_needs = 0.5
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = { 
+			poor_strata_militancy = 5
+			middle_strata_militancy = 5
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			poor_strata_militancy = 6
+			middle_strata_militancy = 6
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			poor_strata_militancy = 7
+			middle_strata_militancy = 7
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			poor_strata_militancy = 8
+			middle_strata_militancy = 8
+			}
+		}
+		modifier = {
+			factor = 1.1
+			consciousness = 9 
+		}
+		modifier = {
+			factor = 1.1
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.1
+			consciousness = 7
+		}
+	}
+
+	communist = {
+		factor = 0
+	}
+	liberal = {
+		factor = 1.1
+		modifier = {
+			factor = 300
+			location = {
+				life_rating = 14
+				NOT = { life_rating = 15 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			country = { has_country_flag = uncivilized }
+		}
+		modifier = {
+			factor = 0.1
+			type = aristocrats
+		}
+		modifier = {
+			factor = 2
+			country = { has_country_flag = colorado_rebels }
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 9 
+		}
+		modifier = {
+			factor = 0.5
+			militancy = 6
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 5
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { is_ideology_enabled = socialist }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { is_ideology_enabled = communist }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { is_ideology_enabled = anarcho_liberal }
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.02
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.04
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.06
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.08
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.10
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.12
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.14
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.16
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.18
+		}
+		modifier = {
+			factor = 1.02
+			political_reform_want = 0.20
+		}
+		modifier = {
+			factor = 1.1
+			OR = { 
+			poor_strata_militancy = 5
+			middle_strata_militancy = 5
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			poor_strata_militancy = 6
+			middle_strata_militancy = 6
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			poor_strata_militancy = 7
+			middle_strata_militancy = 7
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+			poor_strata_militancy = 8
+			middle_strata_militancy = 8
+			}
+		}
+	}
+	anarcho_liberal = {
+		factor = 1
+		modifier = {
+			factor = 300
+			location = {
+				life_rating = 15
+				NOT = { life_rating = 16 }
+			}
+		}
+		modifier = {
+			factor = 0
+			country = { has_country_flag = uncivilized }
+		}
+		modifier = {
+			factor = 0.1
+			type = aristocrats
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { militancy = 6 }
+			NOT = { government = bourgeois_dictatorship }
+		}
+		modifier = {
+			factor = 1.5
+			ruling_party_ideology = anarcho_liberal 
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.10
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.20
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.30
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.40
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.50
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.60
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.70
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.80
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 0.90
+		}
+		modifier = {
+			factor = 1.1
+			political_reform_want = 1
+		}
+	}
+}
+
+issues =
+{
+}

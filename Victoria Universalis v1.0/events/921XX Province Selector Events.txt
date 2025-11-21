@@ -1,0 +1,3104 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+province_event = {
+	id = 92101
+	title = "$PROVINCENAME$ Province Selector Menu"
+	desc = "EVTDESC92101"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "§B1.§b Province Migration Attraction"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					NOT = { has_province_modifier = province_attract_immigrants }
+					NOT = { has_province_modifier = overcrowded }
+				}
+				owner = {
+					set_country_flag = province_migration
+					any_owned = {
+						remove_province_modifier = province_attract_immigrants
+					}
+				}
+				add_province_modifier = { name = province_attract_immigrants duration = -1 }
+			}
+		}
+		remove_core = JAN
+	}
+	
+	option = {
+		name = "§B2.§b State Migration Attraction"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					NOT = { has_province_modifier = province_attract_immigrants }
+				}
+				owner = {
+					set_country_flag = province_migration
+					any_owned = {
+						remove_province_modifier = province_attract_immigrants
+					}
+				}
+				state_scope = {
+					any_owned = {
+						limit = {
+							NOT = { has_province_modifier = overcrowded }
+						}
+						add_province_modifier = { name = province_attract_immigrants duration = -1 }
+					}
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B3.§b Reset Migration Attraction"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			clr_country_flag = province_migration
+			any_owned = {
+				limit = {
+					has_province_modifier = province_attract_immigrants
+				}
+				remove_province_modifier = province_attract_immigrants
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B4.§b Create Supply Depot"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 500000 }
+				}
+				owner = {
+					any_owned = {
+						limit = { has_province_modifier = supply_depot }
+						remove_province_modifier = supply_depot
+					}
+					treasury = -500000
+				}
+				add_province_modifier = { name = supply_depot duration = -1 }
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B5.§b Literacy Campaign"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 15000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 50000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -15000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 25000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 50000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 100000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -25000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 50000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 100000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 150000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -50000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 75000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 150000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -75000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 100000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 250000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -100000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 125000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 250000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 300000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -125000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 150000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 300000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 350000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -150000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 175000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 350000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -175000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 200000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 450000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -200000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 225000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 450000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 500000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -225000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 300000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 500000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -300000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 350000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 700000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -350000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 400000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 700000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -400000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 450000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 800000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 900000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -450000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 500000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 900000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1000000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -500000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 600000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1000000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -600000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 700000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -700000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 800000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -800000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 900000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 1800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -900000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1000000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 1800000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2000000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1000000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1100000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2000000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1100000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1200000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1200000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1300000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1300000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1400000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 2800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1400000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1500000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 2800000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3000000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1500000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1600000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3000000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3200000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1600000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1700000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3200000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3400000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1700000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1800000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3400000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3600000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1800000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 1900000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3600000 }
+					NOT = {
+						## Audax Validator "." Ignore_NEXT
+						state_scope = { total_pops = 3800000 }
+					}
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -1800000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { money = 2000000 }
+					## Audax Validator "." Ignore_NEXT
+					state_scope = { total_pops = 3800000 }
+					NOT = {
+						state_scope = {
+							any_owned_province = {
+								has_province_modifier = literacy_campaign
+							}
+						}
+					}
+				}
+				owner = { money = -2000000 }
+				state_scope = {
+					any_owned = {
+						add_province_modifier = {
+							name = literacy_campaign
+							duration = 3650
+						}
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+					}
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B6.§b Baby Boom"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 100000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 3000
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 100000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 200000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 2700
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 200000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 300000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 2400
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 300000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 400000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 2100
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 400000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 500000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 1800
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 500000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 600000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 1500
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 600000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 700000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 1200
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 700000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 800000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 900
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 800000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 900000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 600
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = { NOT = { has_country_modifier = baby_booming } }
+					state_scope = {
+						## Audax Validator "." Ignore_NEXT
+						total_pops = 900000
+					}
+					NOT = {
+						state_scope = {
+							## Audax Validator "." Ignore_NEXT
+							total_pops = 1000000
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = { name = baby_booming duration = 7300 }
+					clr_country_flag = baby_boom_reminder
+				}
+				state_scope = {
+					any_owned = {
+						## Audax Validator "." Ignore_NEXT
+						province_selector = -1
+						add_province_modifier = {
+							name = small_baby_boom
+							duration = 300
+						}
+					}
+				}
+			}
+		}
+		remove_core = JAN
+	}
+
+	option = {
+		name = "§B7.§b Core Integration"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = {
+						has_global_flag = coring_enabled
+						NOT = { has_country_modifier = diplomatic_cores }
+					}
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = adding_cores duration = -1 }
+					}
+				}
+				owner = {
+					add_country_modifier = { name = diplomatic_cores duration = 5475 }
+				}
+			}
+		}
+		remove_core = JAN
+	}
+	
+	option = {
+		name = "§B8.§b Return Core Territory"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					NOT = { has_province_modifier = transfer_provinces }
+				}
+				state_scope = {
+					any_owned = {
+						add_province_modifier = { name = transfer_provinces duration = 10 }
+					}
+				}
+				any_country = {
+					limit = {
+						exists = yes
+						any_core = {
+							owned_by = THIS
+							is_core = JAN
+						}
+						NOT = {
+							OR = {
+								tag = CIV
+								tag = FWR
+								tag = GHO
+								tag = PRO
+								tag = SMA
+								tag = MST
+								tag = RMC
+								tag = NAV
+								tag = JAN
+								tag = CHI
+								tag = NAM
+								tag = SAM
+								tag = EUR
+								tag = THIS
+							}
+						}
+					}
+					country_event = { id = 91717 days = 0 }
+				}
+			}
+		}
+		remove_core = JAN
+	}
+	
+	option = {
+		name = "§B9.§b Establish Financial District"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		add_core = JAN
+		owner = {
+			random_owned = {
+				limit = {
+					is_core = JAN
+					owner = {
+						check_variable = {
+							which = stock_exchange_level
+							value = 1
+						}
+					}
+					NOT = {
+						OR = {
+							trade_goods = raw_coal
+							trade_goods = raw_iron
+							trade_goods = raw_sulphur
+							trade_goods = raw_oil
+							trade_goods = raw_rubber
+						}
+					}
+				}
+				owner = {
+					change_variable = {
+						which = stock_exchange_level
+						value = -1
+					}
+				}
+				trade_goods = raw_stocks
+			}
+		}
+		remove_core = JAN
+	}
+	
+	option = {
+		name = "§B10.§b Check Political Clout & Workforce Ratio"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+		owner = {
+			country_event = { id = 92102 days = 0 }
+		}
+	}
+
+	option = {
+		name = "§B11.§b Choose Nothing"
+		owner = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				## Audax Validator "." Ignore_NEXT
+				province_selector = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 92102
+	title = "Political Clout & Workforce Ratio"
+	desc = ""
+	picture = "upper_house"
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 5
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_0 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 10
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_5 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 15
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_10 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 20
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_15 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 25
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_20 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 25
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 30
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_25 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 30
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 35
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_30 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 35
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 40
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_35 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 40
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 45
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_40 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 45
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 50
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_45 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 50
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 55
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_50 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 55
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 60
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_55 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 60
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 65
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_60 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 65
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 70
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_65 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 75
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_70 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 75
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 80
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_75 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 80
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 85
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_80 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 85
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 90
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_85 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 90
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 95
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_90 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 95
+					}
+					NOT = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_95 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = liberal_clout
+						value = 100
+					}
+				}
+			}
+			owner = {
+				LIBERAL_CLOUT = { } VARIABLE_100 = { }
+			}
+		}
+		random_owned = {
+			LINE_BREAK = { }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 5
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_0 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 10
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_5 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 15
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_10 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 20
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_15 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 25
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_20 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 25
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 30
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_25 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 30
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 35
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_30 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 35
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 40
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_35 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 40
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 45
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_40 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 45
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 50
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_45 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 50
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 55
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_50 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 55
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 60
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_55 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 60
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 65
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_60 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 65
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 70
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_65 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 75
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_70 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 75
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 80
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_75 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 80
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 85
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_80 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 85
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 90
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_85 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 90
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 95
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_90 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 95
+					}
+					NOT = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_95 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = socialist_clout
+						value = 100
+					}
+				}
+			}
+			owner = {
+				SOCIALIST_CLOUT = { } VARIABLE_100 = { }
+			}
+		}
+		random_owned = {
+			LINE_BREAK = { }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 5
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_0 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 10
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_5 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 15
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_10 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 20
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_15 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 25
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_20 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 25
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 30
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_25 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 30
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 35
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_30 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 35
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 40
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_35 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 40
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 45
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_40 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 45
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 50
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_45 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 50
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 55
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_50 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 55
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 60
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_55 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 60
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 65
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_60 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 65
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 70
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_65 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 75
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_70 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 75
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 80
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_75 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 80
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 85
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_80 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 85
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 90
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_85 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 90
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 95
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_90 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 95
+					}
+					NOT = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_95 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = reactionary_clout
+						value = 100
+					}
+				}
+			}
+			owner = {
+				REACTIONARY_CLOUT = { } VARIABLE_100 = { }
+			}
+		}
+		random_owned = {
+			LINE_BREAK = { }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 5
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_0 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 10
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_5 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 15
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_10 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 20
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_15 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 25
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_20 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 25
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 30
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_25 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 30
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 35
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_30 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 35
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 40
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_35 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 40
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 45
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_40 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 45
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 50
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_45 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 50
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 55
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_50 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 55
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 60
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_55 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 60
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 65
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_60 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 65
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 70
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_65 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 75
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_70 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 75
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 80
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_75 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 80
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 85
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_80 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 85
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 90
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_85 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 90
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 95
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_90 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 95
+					}
+					NOT = {
+						check_variable = {
+							which = workforce_ratio
+							value = 100
+						}
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_95 = { }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = workforce_ratio
+						value = 100
+					}
+				}
+			}
+			owner = {
+				WORKFORCE_RATIO = { } VARIABLE_100 = { }
+			}
+		}
+		random_owned = {
+			LINE_BREAK = { }
+		}
+	}
+	
+	option = {
+		name = "OK"
+	}
+}

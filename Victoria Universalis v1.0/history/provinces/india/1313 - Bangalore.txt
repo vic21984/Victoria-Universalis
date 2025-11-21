@@ -1,0 +1,16 @@
+owner = MYS
+controller = MYS
+add_core = MYS
+add_core = HND
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

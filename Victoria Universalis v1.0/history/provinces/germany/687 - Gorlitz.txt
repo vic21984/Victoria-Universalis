@@ -1,0 +1,11 @@
+owner = PRU
+controller = PRU
+add_core = PRU
+add_core = GER
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}

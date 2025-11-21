@@ -1,0 +1,20 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+add_core = SCH
+add_core = GER
+add_core = SCA
+trade_goods = raw_cattle
+life_rating = 5
+fort = 1
+naval_base = 1
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}

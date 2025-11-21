@@ -1,0 +1,11 @@
+owner = QNG
+controller = QNG
+add_core = CHI
+trade_goods = raw_opium
+life_rating = 5
+terrain = urban_mine
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

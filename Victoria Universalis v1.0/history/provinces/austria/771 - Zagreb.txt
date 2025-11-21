@@ -1,0 +1,18 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = CRO
+add_core = HUN
+add_core = YUG
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = fertilizer_factory
+	upgrade = yes
+}

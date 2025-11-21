@@ -1,16 +1,10 @@
 # Victoria Universalis Mod
 
-This mod reworks the core gameplay of vanilla Victoria 2 and introduces new mechanics, such as the ability to dynamically target provinces for province events, a national idea system that allows players to choose from a list of bonuses to their country, companies that grant bonuses to specific industries, and the addition of several generic decisions available to every country that give the player a greater degree of control over the economy and population.
-
-The economy has been extensively overhauled as well, with economic crashes being eliminated by the addition of a world bank reserve. The world bank is an unplayable country that has banker POPs which have almost unlimited demand for RGO goods. These POPs will buy any excess RGO goods that get produced from the rest of the world, thereby injecting money into the economy that directly scales with productivity. The world bank is set to always be last in the rankings, which forces their POPs to buy goods only after every other country has gotten a chance to buy goods.
-
-Farm base RGO size is the the same as vanilla but mine base RGO size has been set to 10k. Provinces no longer start with a size multiplier based on population, instead their size can be increased by 100% per each level of their respective expansion building. Countries will have to spend money to increase the size of their farms as their population grows throughout the game.
+This mod reworks the core gameplay of vanilla Victoria 2 and introduces new mechanics, such as the ability to dynamically target provinces for province events and a national idea system that allows players to choose from a list of bonuses to their country. As of version 1.0 it also adds the production system, political clout, and companies from Victoria 3.
 
 Many flavor countries and decisions have been imported over from HPM, GFM, and TGC with the decisions and events being modified to be more impactful in terms of gameplay and faster in terms of game performance.
 
-Generals traits have been replaced by color coded + Attack and + Defense bonuses that are clearly visible while scrolling through the list of generals.
-
-2 new starting dates have been added: 1913 and 1914. The 1914 scenario starts with the Great War already underway and includes an entire event/decision chain to simulate the end of the war.
+The 1914 scenario in previous versions was removed as of v1.0, it might be re-introduced at a later date.
 
 ### Credits
 

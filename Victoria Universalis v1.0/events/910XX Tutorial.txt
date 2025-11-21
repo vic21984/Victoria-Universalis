@@ -1,0 +1,392 @@
+country_event = {
+	id = 91001
+	title = "EVTNAME91001"
+	desc = "EVTDESC91001"
+	picture = tutorial_welcome
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91001"
+		country_event = { id = 91201 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91001"
+		random_owned = {
+			limit = {
+				owner = { tag = SPA }
+			}
+			owner = {
+				country_event = { id = 37703 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { primary_culture = north_german }
+			}
+			owner = {
+				country_event = { id = 91020 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { primary_culture = brazilian }
+			}
+			owner = {
+				country_event = { id = 91021 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { primary_culture = misri }
+			}
+			owner = {
+				country_event = { id = 91022 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { is_culture_group = french }
+			}
+			owner = {
+				country_event = { id = 91023 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					is_culture_group = east_asian
+					NOT = { primary_culture = yue }
+				}
+			}
+			owner = {
+				country_event = { id = 91024 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						is_culture_group = south_asian
+						tag = EIC
+					}
+				}
+			}
+			owner = {
+				country_event = { id = 91025 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { is_culture_group = south_slavic }
+			}
+			owner = {
+				country_event = { id = 91026 days = 0 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTC91001"
+		country_event = { id = 91002 days = 0 }
+	}
+}
+
+country_event = {
+	id = 91002
+	title = "EVTNAME91002"
+	desc = "EVTDESC91002"
+	picture = tutorial_province_selector
+
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91002"
+		country_event = { id = 91201 days = 0 }
+	}
+	
+	option = {
+		name = "EVTOPTB91002"
+		country_event = { id = 91003 days = 0 }	
+	}	
+}
+
+country_event = {
+	id = 91003
+	title = "EVTNAME91003"
+	desc = "EVTDESC91003"
+	picture = tutorial_rgo
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91003"
+		country_event = { id = 91201 days = 0 }
+	}
+	
+	option = {
+		name = "EVTOPTB91003"
+		country_event = { id = 91004 days = 0 }	
+	}	
+}
+
+country_event = {
+	id = 91004
+	title = "EVTNAME91004"
+	desc = "EVTDESC91004"
+	picture = tutorial_promotion
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91004"
+		country_event = { id = 91201 days = 0 }
+	}
+	
+	option = {
+		name = "EVTOPTB91004"
+		country_event = { id = 91005 days = 0 }		
+	}	
+}
+
+country_event = {
+	id = 91005
+	title = "EVTNAME91005"
+	desc = "EVTDESC91005"
+	picture = tutorial_reforms
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91005"
+		country_event = { id = 91201 days = 0 }
+	}
+	
+	option = {
+		name = "EVTOPTB91005"
+		country_event = { id = 91006 days = 0 }	
+	}	
+}
+
+country_event = {
+	id = 91006
+	title = "EVTNAME91006"
+	desc = "EVTDESC91006"
+	picture = tutorial_workforce_ratio
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91006"
+		country_event = { id = 91201 days = 0 }
+	}
+	
+	option = {
+		name = "EVTOPTB91006"
+		country_event = { id = 91007 days = 0 }	
+	}	
+}
+
+country_event = {
+	id = 91007
+	title = "EVTNAME91007"
+	desc = "EVTDESC91007"
+	picture = tutorial_westernization
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91007"
+		country_event = { id = 91201 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91007"
+		country_event = { id = 91008 days = 0 }		
+	}		
+}
+
+country_event = {
+	id = 91008
+	title = "EVTNAME91008"
+	desc = "EVTDESC91008"
+	picture = tutorial_research
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91008"
+		country_event = { id = 91201 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91008"
+		country_event = { id = 91009 days = 0 }		
+	}	
+	
+}
+
+country_event = {
+	id = 91009
+	title = "EVTNAME91009"
+	desc = "EVTDESC91009"
+	picture = tutorial_revanchism
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91009"
+		country_event = { id = 91201 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91009"
+		country_event = { id = 91010 days = 0 }		
+	}
+}
+
+country_event = {
+	id = 91010
+	title = "EVTNAME91010"
+	desc = "EVTDESC91010"
+	picture = tutorial_generals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91010"
+		country_event = { id = 91201 days = 0 }
+	}
+
+	option = {
+		name = "EVTOPTB91010"
+		country_event = { id = 91011 days = 0 }			
+	}
+}
+
+country_event = {
+	id = 91011
+	title = "EVTNAME91011"
+	desc = "EVTDESC91011"
+	picture = tutorial_migration
+
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91011"
+		country_event = { id = 91201 days = 0 }
+	}
+}
+
+country_event = {
+	id = 91051
+	title = "EVTNAME91051"
+	desc = "EVTDESC91051"
+	picture = the_great_war
+
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91051"
+	}
+}
+
+country_event = {
+	id = 91020
+	title = "EVTNAME91020"
+	desc = "EVTDESC91020"
+	picture = family
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91020"
+	}
+}
+
+country_event = {
+	id = 91021
+	title = "EVTNAME91021"
+	desc = "EVTDESC91021"
+	picture = family
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91021"
+	}
+}
+
+country_event = {
+	id = 91022
+	title = "EVTNAME91022"
+	desc = "EVTDESC91022"
+	picture = assimilation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91022"
+	}
+}
+
+country_event = {
+	id = 91023
+	title = "EVTNAME91023"
+	desc = "EVTDESC91023"
+	picture = family
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91023"
+	}
+}
+
+country_event = {
+	id = 91024
+	title = "EVTNAME91024"
+	desc = "EVTDESC91024"
+	picture = assimilation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91024"
+	}
+}
+
+country_event = {
+	id = 91025
+	title = "EVTNAME91025"
+	desc = "EVTDESC91025"
+	picture = assimilation
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91025"
+	}
+}
+
+country_event = {
+	id = 91026
+	title = "EVTNAME91026"
+	desc = "EVTDESC91026"
+	picture = family
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91026"
+	}
+}

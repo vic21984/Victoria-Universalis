@@ -1,0 +1,12 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = YUG
+add_core = MON
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

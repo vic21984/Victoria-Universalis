@@ -1,0 +1,14 @@
+owner = GEL
+controller = GEL
+add_core = GEL
+add_core = MAJ
+add_core = WRL
+add_core = SOM
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

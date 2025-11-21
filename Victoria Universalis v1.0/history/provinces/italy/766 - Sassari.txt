@@ -1,0 +1,16 @@
+owner = SAR
+controller = SAR
+add_core = SAR
+add_core = ITA
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}

@@ -1,0 +1,440 @@
+political_decisions = {
+	reform_caste_system = {
+		picture = "brahmins"
+		potential = { 
+			has_country_modifier = caste_system
+		}
+
+		allow = {
+			vote_franschise = universal_voting
+			OR = {
+				citizens_rights = all_voting_pops
+				citizens_rights = multiculturalism
+			}
+		}
+
+		effect = {
+			remove_country_modifier = caste_system
+		}
+	}
+
+	conquest_of_sindh = {
+		picture = "sindh"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = conquest_of_sindh }
+			exists = SIN
+		}
+
+		allow = {
+			SIN = {
+				exists = yes
+				is_vassal = no
+			}
+			war = no
+			year = 1842
+			NOT = { badboy = 0.6 }
+			OR = {
+				neighbour = SIN
+				JAS = {
+					overlord = { tag = ENG }
+					neighbour = SIN
+				}
+			}
+			ENG = {
+				NOT = { war_with = SIN }
+				NOT = { truce_with = SIN }
+			}
+			alliance_with = ENG
+		}
+
+		effect = {
+			set_country_flag = conquest_of_sindh
+			badboy = 10
+			war = {
+				target = SIN
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1288 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	conquest_of_punjab = {
+		picture = "punjab"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = conquest_of_punjab }
+			exists = PNJ
+		}
+
+		allow = {
+			PNJ = {
+				exists = yes
+				is_vassal = no
+				has_country_flag = death_of_ranjit_singh
+			}
+			war = no
+			ENG = {
+				NOT = { war_with = PNJ }
+				NOT = { truce_with = PNJ }
+			}
+			neighbour = PNJ
+			NOT = { truce_with = PNJ }
+			alliance_with = ENG
+		}
+
+		effect = {
+			set_country_flag = conquest_of_punjab
+			badboy = 20
+			war = {
+				target = PNJ
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1227 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1225 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1218 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1233 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	baluchistan_agency = {
+		picture = "baluchistan_agency"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = organize_baluchistan_agency }
+		}
+
+		allow = {
+			war = no
+			has_country_flag = sepoy_rebellion
+			owns = 1288
+			OR = {
+				1221 = {
+					owner = { neighbour = THIS }
+				}
+				1222 = {
+					owner = { neighbour = THIS }
+				}
+				1220 = {
+					owner = { neighbour = THIS }
+				}
+			}
+			NOT = { badboy = 0.8 }
+			alliance_with = ENG
+		}
+
+		effect = {
+			set_country_flag = organize_baluchistan_agency
+			any_neighbor_country = {
+				limit = {
+					owns = 1221
+					NOT = { owns = 1222 }
+				}
+				country_event = { id = 90046 days = 0 }
+			}
+			any_neighbor_country = {
+				limit = {
+					owns = 1222
+					NOT = { owns = 1221 }
+				}
+				country_event = { id = 90046 days = 0 }
+			}
+			any_neighbor_country = {
+				limit = {
+					owns = 1222
+					owns = 1221
+				}
+				country_event = { id = 90046 days = 0 }
+			}
+			any_neighbor_country = {
+				limit = {
+					owns = 1220
+				}
+				country_event = { id = 90046 days = 0 }
+			}
+			badboy = 5
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	anglo_afghan_war = {
+		picture = "bolan_pass"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = anglo_afghan_war }
+			exists = AFG
+			OR = {
+				KAL_1221 = { owned_by = AFG }
+				PAN_1218 = { owned_by = AFG }
+			}
+		}
+
+		allow = {
+			neighbour = AFG
+			AFG = {
+				exists = yes
+				is_vassal = no
+			}
+			owns = 1227
+			OR = {
+				KAL_1221 = { owned_by = AFG }
+				PAN_1218 = { owned_by = AFG }
+			}
+			war = no
+			NOT = { badboy = 0.8 }
+			ENG = {
+				NOT = { war_with = PNJ }
+				NOT = { truce_with = AFG }
+			}
+			alliance_with = ENG
+		}
+
+		effect = {
+			set_country_flag = anglo_afghan_war
+			badboy = 5
+			war = {
+				target = AFG
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1219 }
+				call_ally = yes
+			}
+			ENG = { country_event = { id = 36960 days = 0 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	conquest_of_burma = {
+		picture = "indochina"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = conquest_of_burma }
+			exists = BUR
+		}
+
+		allow = {
+			neighbour = BUR
+			BUR = {
+				exists = yes
+				is_vassal = no
+			}
+			war = no
+			OR = {
+				military_plans = 1
+				army_professionalism = 1
+				iron_muzzle_loaded_artillery = 1
+				strategic_mobility = 1
+				muzzle_loaded_rifles = 1
+			}
+			NOT = { badboy = 0.2 }
+			ENG = {
+				NOT = { war_with = BUR }
+				NOT = { truce_with = BUR }
+			}
+			alliance_with = ENG
+		}
+
+		effect = {
+			set_country_flag = conquest_of_burma
+			badboy = 20
+			ENG = {
+				diplomatic_influence = {
+					who = BUR
+					value = -200
+				}
+				leave_alliance = BUR
+				country_event = { id = 36960 days = 0 }
+			}
+			war = {
+				target = BUR
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1342 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1340 }
+				attacker_goal = { casus_belli = puppet_acquire_state state_province_id = 1333 }
+				call_ally = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	sikkim_protectorate = {
+		picture = "sikkim"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = sikkim_protectorate }
+			exists = SIK
+		}
+
+		allow = {
+			SIK = {
+				exists = yes
+				is_vassal = no
+				war = no
+			}
+			war = no
+			state_n_government = 1
+			owns = 1252
+			NOT = { badboy = 0.9 }
+		}
+
+		effect = {
+			set_country_flag = sikkim_protectorate
+			random_country = {
+				limit = {
+					tag = SIK
+					ai = yes
+				}
+				annex_to = THIS
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			badboy = 2.5
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	chitral_protectorate = {
+		picture = "chitral"
+		potential = { 
+			tag = EIC
+			vassal_of = ENG
+			NOT = { has_country_flag = chitral_protectorate }
+		}
+
+		allow = {
+			1223 = {
+				owner = {
+					ai = yes
+					is_greater_power = no
+				}
+			}
+			2409 = {
+				owner = {
+					ai = yes
+					is_greater_power = no
+				}
+			}
+			war = no
+			nationalism_n_imperialism = 1
+			owns = 1218
+			NOT = { badboy = 0.9 }
+		}
+
+		effect = {
+			set_country_flag = chitral_protectorate
+			1223 = { secede_province = THIS }
+			2409 = { secede_province = THIS }
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			badboy = 2.5
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	expand_indian_army = {
+		picture = gurkha
+		potential = {
+			tag = EIC
+			NOT = { has_country_flag = expand_indian_army }
+		}
+
+		allow = {
+			war = no
+			OR = {
+				army_risk_management = 1
+				AND = {
+					ai = yes
+					year = 1870
+				}
+			}
+		}
+
+		effect = {
+			add_accepted_culture = nepali
+			add_accepted_culture = panjabi
+			set_country_flag = expand_indian_army
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PNJ_embrace_minority = {
+		picture = sikh_empire
+		potential = {
+			tag = PNJ
+			OR = {
+				NOT = { accepted_culture = sindi }
+				NOT = { accepted_culture = baluchi }
+				NOT = { accepted_culture = pashtun }
+			}
+		}
+
+		allow = {
+			enlightenment_thought = 1
+			malthusian_thought = 1
+			NOT = { religious_laws = moralism_law }
+			OR = {
+				AND = {
+					NOT = { accepted_culture = sindi }
+					owns = 1288
+				}
+				AND = {
+					NOT = { accepted_culture = baluchi }
+					owns = 1221
+				}
+				AND = {
+					NOT = { accepted_culture = pashtun }
+					owns = 1209
+				}
+			}
+		}
+
+		effect = {
+			prestige = 5
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { accepted_culture = sindi }
+						owns = 1288
+					}
+				}
+				owner = { add_accepted_culture = sindi }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { accepted_culture = baluchi }
+						owns = 1221
+					}
+				}
+				owner = { add_accepted_culture = baluchi }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { accepted_culture = pashtun }
+						owns = 1209
+					}
+				}
+				owner = { add_accepted_culture = pashtun }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+}

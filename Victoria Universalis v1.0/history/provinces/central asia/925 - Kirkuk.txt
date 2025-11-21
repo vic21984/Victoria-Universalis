@@ -1,0 +1,21 @@
+owner = KDS
+controller = KDS
+add_core = KDS
+add_core = TUR
+add_core = IRQ
+trade_goods = raw_opium
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = opium_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = TUR
+	controller = TUR
+}

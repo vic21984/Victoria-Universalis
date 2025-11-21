@@ -1,0 +1,35 @@
+owner = WAL
+controller = WAL
+add_core = WAL
+add_core = ROM 
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = ROM
+	controller = ROM
+	state_building = {
+		level = 1
+		building = timber_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = small_arms_factory
+		upgrade = yes
+	}
+}

@@ -1,0 +1,10 @@
+owner = PRG
+controller = PRG
+add_core = PRG
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

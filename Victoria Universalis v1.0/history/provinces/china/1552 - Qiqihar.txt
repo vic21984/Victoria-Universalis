@@ -1,0 +1,16 @@
+owner = MCK
+controller = MCK
+add_core = CHI
+add_core = MCK
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 2
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}

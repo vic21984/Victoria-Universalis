@@ -1,0 +1,49 @@
+primary_culture = illuminati
+religion = animist
+government = absolute_monarchy
+plurality = 0.0
+nationalvalue = nv_order
+literacy = 0
+civilized = yes
+set_country_flag = south_america
+set_country_flag = utility_tag
+
+# Political reforms
+slavery = no_slavery
+upper_house_composition = population_equal_weight
+vote_franschise = universal_voting
+public_meetings = yes_meeting
+press_rights = assembly_rights
+trade_unions = non_socialist
+voting_system = first_past_the_post
+political_parties = non_secret_ballots
+
+# Social Reforms
+wage_reform = good_minimum_wage
+work_hours = eight_hours
+safety_regulations = good_safety
+health_care = good_health_care
+unemployment_subsidies = good_subsidies
+pensions = no_pensionsgood_pensions
+school_reforms = compulsory_schools
+
+# New Reforms
+war_laws = anti_military_law
+debt_law = commercialized_agriculture
+child_labor = child_labor_illegal
+citizens_rights = multiculturalism
+border_policy = open_borders
+economic_laws = laissez_faire_law
+womens_rights = womens_suffrage
+law_enforcement = professional_police
+
+ruling_party = JAN_anarcho_liberal
+upper_house = {
+	fascist = 0
+	liberal = 65
+	neo_conservative = 25
+	reactionary = 5
+	anarcho_liberal = 2
+	socialist = 3
+	communist = 0
+}

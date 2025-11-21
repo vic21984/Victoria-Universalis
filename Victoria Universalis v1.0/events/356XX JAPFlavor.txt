@@ -1,0 +1,382 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+
+#Commodore Perry's Expedition events
+country_event = {
+	id = 35601
+	title = "EVTNAME35601" #Kurofune
+	desc = "EVTDESC35601"
+	picture = "commodore_perry"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35601"
+		prestige = -10
+		political_reform = open_borders
+		any_country = {
+			limit = {
+				primary_culture = japanese
+				substate_of = THIS
+			}
+			political_reform = open_borders
+		}
+		FROM = { country_event = 35602 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "EVTOPTB35601"
+		leave_alliance = USA
+		relation = { who = USA value = -200 }
+		add_casus_belli = {
+			target = USA
+			type = add_to_sphere
+			months = 12
+		}
+		add_casus_belli = {
+			target = USA
+			type = humiliate
+			months = 12
+		}
+		FROM = { country_event = 35603 }
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 35602
+	title = "EVTNAME35602" #Commodore Perry Successful
+	desc = "EVTDESC35602"
+	picture = "commodore_perry"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35602"
+		prestige = 20
+		random_country = {
+			limit = {
+				is_sphere_leader_of = TKG
+				NOT = { tag = THIS }
+			}
+			diplomatic_influence = { who = TKG value = -100 }
+		}
+		diplomatic_influence = { who = TKG value = 100 }
+		relation = { who = TKG value = 100 }
+	}
+}
+
+country_event = {
+	id = 35603
+	title = "EVTNAME35603" #The Japanese Are Defiant
+	desc = "EVTDESC35603"
+	picture = "commodore_perry"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA35603"
+		any_pop = {
+			dominant_issue = {
+				factor = 0.05
+				value = jingoism
+			}
+		}
+		diplomatic_influence = { who = TKG value = -200 }
+		war = {
+			target = TKG
+			attacker_goal = {
+				casus_belli = add_to_sphere
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB35603"
+		prestige = -20
+		any_pop = {
+			dominant_issue = {
+				factor = 0.05
+				value = pacifism
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+#Boshin War
+country_event = {
+	id = 35604
+	title = "EVTNAME35604"
+	desc = "EVTDESC35604"
+	picture = boshin_war
+
+	trigger = {
+		tag = TKG
+		NOT = { has_country_flag = boshin_war }
+		border_policy = open_borders
+		OR = {
+			year = 1868
+			ideological_thought = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "EVTOPTA35604"
+		set_country_flag = boshin_war
+		all_core = { add_core = JAP }
+		JAP_1662 = { remove_core = THIS secede_province = JAP }
+		JAP_1661 = { remove_core = THIS secede_province = JAP }
+		JAP_1638 = { remove_core = THIS secede_province = JAP }
+		JAP_1665 = { remove_core = THIS secede_province = JAP }
+		JAP_1657 = { remove_core = THIS secede_province = JAP }
+		JAP = {
+			years_of_research = 1
+			capital = 1657
+			leadership = 600
+			money = 500000
+			artillery = 2000
+			canned_food = 2000
+			small_arms = 2000
+			#ammunition = 2000
+		}
+		THIS = {
+			war = {
+				target = JAP
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				
+				defender_goal = {
+					casus_belli = civil_war
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					ai = yes
+					JAP = { ai = yes }
+				}
+			}
+			owner = {
+				JAP = {
+					add_country_modifier = { name = general_mobilization duration = 30 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB35604"
+		set_country_flag = boshin_war
+		all_core = { add_core = JAP }
+		JAP_1662 = { remove_core = THIS secede_province = JAP }
+		JAP_1661 = { remove_core = THIS secede_province = JAP }
+		JAP_1638 = { remove_core = THIS secede_province = JAP }
+		JAP_1665 = { remove_core = THIS secede_province = JAP }
+		JAP_1657 = { remove_core = THIS secede_province = JAP }
+		JAP = {
+			years_of_research = 1
+			capital = 1657
+			leadership = 600
+			money = 500000
+			artillery = 2000
+			canned_food = 2000
+			small_arms = 2000
+			#ammunition = 2000
+			add_country_modifier = { name = general_mobilization duration = 30 }
+		}
+		TKG = {
+			war = {
+				target = JAP
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				
+				defender_goal = {
+					casus_belli = civil_war
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					ai = yes
+					JAP = { ai = yes }
+				}
+			}
+			owner = {
+				JAP = {
+					add_country_modifier = { name = general_mobilization duration = 30 }
+				}
+			}
+		}
+		change_tag_no_core_switch = JAP
+	}
+}
+
+country_event = {
+	id = 35605
+	title = "End of Shogunate Japan"
+	
+	trigger = {
+		tag = JAN
+		JAP = { exists = yes }
+		TKG = { exists = no }
+		NOT = { has_global_flag = japan_united }
+	}
+	
+	option = {
+		TKG = { all_core = { remove_core = TKG } }
+		set_global_flag = japan_united
+	}
+
+}
+
+country_event = {
+	id = 35606
+	title = "End of Imperial Japan"
+	
+	trigger = {
+		tag = JAN
+		TKG = {
+			has_country_flag = boshin_war
+			exists = yes
+		}
+		JAP = { exists = no }
+		NOT = { has_global_flag = japan_united }
+	}
+	
+	option = {
+		JAP = { all_core = { add_core = TKG remove_core = JAP } }
+		set_global_flag = japan_united
+	}
+
+}
+
+
+#Sino-Japanese War
+country_event = {
+	id = 35610
+	title = "EVTNAME35610"
+	desc = "EVTDESC35610"
+	picture = the_great_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35610"
+		FROM = {
+			country_event = { id = 35611 days = 0 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB35610"
+		FROM = {
+			country_event = { id = 35612 days = 0 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 35611
+	title = "EVTNAME35611"
+	desc = "EVTDESC35611"
+	picture = the_great_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35611"
+		any_country = {
+			limit = {
+				alliance_with = QNG
+			}
+			leave_alliance = QNG
+		}
+		QNG = {
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = sino_jap_war
+				}
+				defender_goal = {
+					casus_belli = sino_jap_war
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 35612
+	title = "EVTNAME35612"
+	desc = "EVTDESC35612"
+	picture = weihaiwei_surrender
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA35612"
+		QNG = { release_vassal = KOR }
+		create_vassal = KOR
+	}
+}
+#AI tech buffs
+country_event = {
+	id = 35650
+	title = "AI JAP Breech Loaded Rifle Tech"
+	
+	trigger = {
+		tag = JAP
+		ai = yes
+		year = 1860
+		NOT = { breech_loaded_rifles = 1 }
+	}
+	
+	fire_only_once = yes
+ 
+	
+	option = {
+		activate_technology = breech_loaded_rifles
+	}
+}
+
+country_event = {
+	id = 35651
+	title = "AI JAP Machine Gun Tech"
+	
+	trigger = {
+		tag = JAP
+		ai = yes
+		year = 1870
+		NOT = { machine_guns = 1 }
+	}
+	
+	fire_only_once = yes
+ 
+	
+	option = {
+		activate_technology = machine_guns
+	}
+}

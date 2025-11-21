@@ -1,0 +1,2426 @@
+
+### Factories #####################################################################################
+agriculture_template = {
+	efficiency = { #1.2 saved
+		fertilizer = 2		#20
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+cattle_template = {
+	efficiency = { #1.2 saved
+		grain = 5			#20
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+mining_template = {
+	efficiency = { #1.2 saved
+		explosives = 0.5		#10
+		machine_parts = 0.625	#10
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+forestry_template = {
+	efficiency = { #1.2 saved
+		machine_parts = 1.25	#20
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+dye_template = {
+	efficiency = { #1.2 saved
+		fruit = 5			#20
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+fish_template = {
+	efficiency = { #1.2 saved
+		steamer_convoy = 0.333	#20
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+cheap_template = {
+	efficiency = {
+		cement = 0.25			#4	total cost = 4
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+	
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+canned_food_template = {
+	efficiency = {
+		cattle = 1.75		#7
+		fish = 1.75			#7
+		glass = 1			#4
+		cement = 0.25		#4	total cost = 24
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+	
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+small_arms_template = {
+	efficiency = {
+		cement = 0.375			#6
+		machine_parts = 0.125	#2
+		sulphur = 1.1			#5.5	total cost = 13.5
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+	
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+cement_template = {
+	efficiency = {
+		machine_parts = 0.375	#6	total cost = 6
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = output
+		effect_multiplier = 10
+	}
+	
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+factory_template = {
+	efficiency = { #1.2 saved
+		cement = 0.375			#6
+		machine_parts = 0.125	#2	total cost = 8
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = output
+		effect_multiplier = 10
+	}
+
+	employees = {	
+		{ 
+			poptype = labourers
+			effect = throughput
+			amount = 0.99
+		}
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 0.01
+		}
+	}
+	type = factory
+	workforce = 10000
+}
+
+stock_exchange_template = {
+	efficiency = { #1.2 saved
+		cement = 0.25			#4	total cost = 4
+	}
+	
+	owner =
+	{
+		poptype = capitalists 
+		effect = input
+		effect_multiplier = 1
+	}
+
+	employees = {	
+		{ 
+			poptype = capitalists
+			effect = throughput
+			amount = 1
+		}
+	}
+	type = factory
+	workforce = 500
+}
+
+############# RGO FACTORIES
+
+cattle_factory = {       
+	template = cattle_template		#20
+	input_goods = {    
+		raw_cattle = 0.1			#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = cattle
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = agriculture_company
+					has_country_flag = united_fruit
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = bunge_born
+			}
+		}
+		value = 0.35
+	}
+}
+
+coal_factory = {       
+	template = mining_template		#20
+	input_goods = {    
+		raw_coal = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = coal
+	value = 10						#40
+	bonus = {
+		trigger = {
+			OR = {
+				state_id = 578
+				state_id = 217
+				state_id = 283
+			}
+		}
+		value = 0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = metalworks_company
+					has_country_flag = carnegie_steel
+					has_country_flag = manfred_weiss
+					has_country_flag = william_sandford
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = blockow_vaughan
+					has_country_flag = altos_vizcaya
+				}
+			}
+		}
+		value = 0.35
+	}
+}
+
+coffee_factory = {       
+	template = agriculture_template	#20
+	input_goods = {    
+		raw_coffee = 0.1			#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = coffee
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = plantation_company
+					has_country_flag = companhia_mocambique
+					has_country_flag = east_india_company
+					has_country_flag = ottoman_tobacco
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = fazenda_fortaleza
+			}
+		}
+		value = 0.35
+	}
+}
+
+cotton_factory = {       
+	template = agriculture_template	#20
+	input_goods = {    
+		raw_cotton = 0.1			#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = cotton
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = plantation_company
+					has_country_flag = east_india_company
+					has_country_flag = ottoman_tobacco
+					has_country_flag = fazenda_fortaleza
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = companhia_mocambique
+			}
+		}
+		value = 0.35
+	}
+}
+
+dye_factory = {       
+	template = dye_template			#20
+	input_goods = {    
+		raw_dye = 0.1					#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = dye
+	value = 5						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = plantation_company
+					has_country_flag = house_of_worth
+					has_country_flag = mitsui
+					has_country_flag = espana_industrial
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+grain_factory = {       
+	template = agriculture_template	#20
+	input_goods = {    
+		raw_grain = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = grain
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = agriculture_company
+					has_country_flag = united_fruit
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = bunge_born
+			}
+		}
+		value = 0.35
+	}
+}
+
+iron_factory = {       
+	template = mining_template		#20
+	input_goods = {    
+		raw_iron = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = iron
+	value = 8						#40
+	bonus = {
+		trigger = {
+			OR = {
+				state_id = 158
+				state_id = 177
+				state_id = 306
+				state_id = 320
+			}
+		}
+		value = 0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = metalworks_company
+					has_country_flag = blockow_vaughan
+					has_country_flag = carnegie_steel
+					has_country_flag = manfred_weiss
+					has_country_flag = altos_vizcaya
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = william_sandford
+			}
+		}
+		value = 0.35
+	}
+}
+
+oil_factory = {       
+	template = mining_template		#20
+	input_goods = {    
+		raw_oil = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = oil
+	value = 1.6						#40
+	bonus = {
+		trigger = {
+			OR = {
+				state_id = 2264
+				state_id = 2270
+			}
+		}
+		value = 0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = petroleum_company
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = persian_oil
+					has_country_flag = caribbean_petroleum
+					has_country_flag = aguila
+				}
+			}
+		}
+		value = 0.35
+	}
+}
+
+opium_factory = {       
+	template = agriculture_template	#20
+	input_goods = {    
+		raw_opium = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = opium
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = plantation_company
+					has_country_flag = companhia_mocambique
+					has_country_flag = ottoman_tobacco
+					has_country_flag = fazenda_fortaleza
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = east_india_company
+			}
+		}
+		value = 0.35
+	}
+}
+
+fruit_factory = {       
+	template = agriculture_template	#20
+	input_goods = {    
+		raw_fruit = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = fruit
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = agriculture_company
+					has_country_flag = bunge_born
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = united_fruit
+			}
+		}
+		value = 0.35
+	}
+}
+
+rubber_factory = {       
+	template = forestry_template	#20
+	input_goods = {    
+		raw_rubber = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = rubber
+	value = 5						#40
+	bonus = {
+		trigger = {
+			OR = {
+				state_id = 1384
+				state_id = 1385
+				state_id = 1389
+				state_id = 1394
+				state_id = 1426
+				state_id = 2600
+				state_id = 2402
+				state_id = 2403
+				state_id = 2550
+				state_id = 2321
+				state_id = 2320
+				state_id = 2301
+				state_id = 2317
+			}
+		}
+		value = 0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = forestry_company
+					has_country_flag = macmillan_bloedel
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+silk_factory = {       
+	template = dye_template			#20
+	input_goods = {    
+		raw_silk = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = silk
+	value = 3.33					#39.99
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = plantation_company
+					has_country_flag = companhia_mocambique
+					has_country_flag = east_india_company
+					has_country_flag = ottoman_tobacco
+					has_country_flag = fazenda_fortaleza
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+sulphur_factory = {       
+	template = mining_template		#20
+	input_goods = {    
+		raw_sulphur = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = sulphur
+	value = 8						#40
+	bonus = {
+		trigger = {
+			any_owned_province = {
+				OR = {
+					province_id = 763
+					province_id = 2307
+					province_id = 2305
+					province_id = 2523
+				}
+			}
+		}
+		value = 0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = nitrate_company
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = monopolio_del_salitre
+					has_country_flag = compania_de_salitres
+				}
+			}
+		}
+		value = 0.35
+	}
+}
+
+tea_factory = {       
+	template = agriculture_template	#20
+	input_goods = {    
+		raw_tea = 0.1				#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = tea
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = plantation_company
+					has_country_flag = companhia_mocambique
+					has_country_flag = east_india_company
+					has_country_flag = ottoman_tobacco
+					has_country_flag = fazenda_fortaleza
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+timber_factory = {       
+	template = forestry_template	#20
+	input_goods = {    
+		raw_timber = 0.1			#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = timber
+	value = 10						#40
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = forestry_company
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = macmillan_bloedel
+			}
+		}
+		value = 0.35
+	}
+}
+
+tobacco_factory = {       
+	template = agriculture_template	#20
+	input_goods = {    
+		raw_tobacco = 0.1			#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = tobacco
+	value = 10						#40
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = plantation_company
+					has_country_flag = companhia_mocambique
+					has_country_flag = east_india_company
+					has_country_flag = fazenda_fortaleza
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = ottoman_tobacco
+			}
+		}
+		value = 0.35
+	}
+}
+
+tropical_wood_factory = {       
+	template = forestry_template	#20
+	input_goods = {    
+		raw_tropical_wood = 0.1		#10 total input+maint = 30
+	}
+	limit_by_local_supply = yes
+	output_goods = tropical_wood
+	value = 6.67					#40.02
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = forestry_company
+					has_country_flag = macmillan_bloedel
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+############# LATE GAME FACTORIES
+
+aeroplane_factory = {       
+	template = factory_template	#8
+	input_goods = {
+		electric_gear = 0.75	#12
+		timber = 3				#12
+		machine_parts = 0.5		#8	total input+maint = 40
+	}
+	output_goods = aeroplanes
+	value = 0.4					#40
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = timber_factory }
+		value = 0.05
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = motor_company
+					has_country_flag = ford_motors
+					has_country_flag = fiat
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+barrel_factory = {       
+	template = factory_template	#8
+	input_goods = {   
+		automobiles = 0.6		#24
+		steel = 1.2				#8	total input+maint = 40
+	}
+	output_goods = barrels 
+	value = 0.4				#40
+	bonus = {
+		trigger = { has_building = automobile_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = motor_company
+					has_country_flag = ford_motors
+					has_country_flag = fiat
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+automobile_factory = {       
+	template = factory_template	#8
+	input_goods = { 
+		steel = 1				#10
+		electric_gear = 0.5		#8
+		machine_parts = 0.25	#4	total input+maint = 30
+	}
+	
+	output_goods = automobiles 
+	value = 1					#40
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.05
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = motor_company
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = ford_motors
+					has_country_flag = fiat
+				}
+			}
+		}
+		value = 0.35
+	}
+}
+
+radio_factory = {       
+	template = factory_template	#8
+	input_goods = {       
+		glass = 1				#4
+		electric_gear = 1.125	#18 	total input+maint = 30
+	}
+	output_goods = radio 
+	value = 1.25				#40
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = electronics_company
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = philips
+			}
+		}
+		value = 0.35
+	}
+}
+
+telephone_factory = {       
+	template = factory_template	#8
+	input_goods = {       
+		glass = 1				#4
+		electric_gear = 1.125	#18 	total input+maint = 30
+	}
+	output_goods = telephones 
+	value = 1.25				#40
+	bonus = {
+		trigger = { has_building = electric_gear_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = electronics_company
+					has_country_flag = philips
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+electric_gear_factory = {       
+	template = factory_template	#8
+	input_goods = { 
+		rubber = 2			#16
+		steel = 0.6			#6		total input+maint = 30
+	}
+	output_goods = electric_gear 
+	value = 2.5				#40
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = synthetic_rubber_factory
+				has_building = rubber_factory
+			}
+		}
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = construction_company
+					has_country_flag = putilov_plant
+					has_country_flag = john_cockerill
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+pharmaceutical_plant = {       
+	template = factory_template	#8
+	input_goods = {       
+		glass = 1.5				#6
+		opium = 4				#16	total input+maint = 30
+	}
+	output_goods = pharmaceuticals 
+	
+	value = 2					#40
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = opium_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = chemical_company
+					has_country_flag = basf
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+}
+
+synthetic_dye_factory = {       
+	template = factory_template	#8
+	input_goods = {
+		coal = 4				#16	total input+maint = 24
+	}
+	output_goods = dye 
+	value = 3.75				#30
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = chemical_company
+					has_country_flag = basf
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+synthetic_oil_factory = {       
+	template = factory_template	#8
+	input_goods = {
+		coal = 5				#20
+		iron = 1.2				#6
+		sulphur = 1.2			#6	total input+maint = 40
+	}
+	output_goods = oil 
+	value = 1.2					#30
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { 
+			OR = {
+				has_building = iron_factory
+				has_building = sulphur_factory
+				has_building = synthetic_nitrate_factory
+			}
+		}
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = chemical_company
+					has_country_flag = basf
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+synthetic_rubber_factory = {       
+	template = factory_template	#8
+	input_goods = {
+		coal = 2				#8
+		oil = 0.56				#14		total input+maint = 30
+	}
+	output_goods = rubber 
+	value = 3.75				#30
+	bonus = {
+		trigger = { 
+			OR = {
+				has_building = oil_factory
+				has_building = synthetic_oil_factory
+			}
+		}
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = chemical_company
+					has_country_flag = basf
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+synthetic_nitrate_factory = {       
+	template = factory_template	#8
+	input_goods = { 
+		coal = 3				#12	
+		iron = 2				#10 	total input+maint = 30
+	}
+	output_goods = sulphur
+	value = 6					#30
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = iron_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = chemical_company
+			}
+		}
+		value = 0.2
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = basf
+			}
+		}
+		value = 0.35
+	}
+}
+
+steamer_shipyard = {       
+	template = factory_template	#8
+	input_goods = { 
+		steel = 1.4				#14
+		machine_parts =	0.5		#8	total input+maint = 30
+	}
+	output_goods = steamer_convoy
+	is_coastal = yes
+	value = 0.6667				#40
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = machine_parts_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = shipyard_company
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = thames_ironworks
+					has_country_flag = mitsubishi
+				}
+			}
+		}
+		value = 0.35
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				ai = yes
+			}
+		}
+		value = 0.5
+	}
+}
+
+############# MILITARY FACTORIES
+artillery_factory = {       
+	template = factory_template	#8
+	input_goods = { 
+		explosives = 0.75		#15
+		steel = 0.7				#7   total input+maint = 30
+	}
+	output_goods = artillery 
+	value = 1.33				#39.9
+	bonus = {
+		trigger = { has_building = explosives_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = foundry_company
+				has_country_flag = beretta
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = krupp_steelworks
+					has_country_flag = skoda_works
+				}
+			}
+		}
+		value = 0.35
+	}
+}
+
+small_arms_factory = {       
+	template = small_arms_template	#13.5
+	input_goods = {        
+		timber = 2.5			#10
+		steel = 0.65			#6.5	total input+maint = 30
+	}
+	output_goods = small_arms 
+	value = 2.22				#39.96
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = timber_factory
+				has_building = steel_factory
+			}
+		}
+		value = 0.15
+	}
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = sulphur_factory
+				has_building = synthetic_nitrate_factory
+			}
+		}
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = foundry_company
+					has_country_flag = krupp_steelworks
+					has_country_flag = skoda_works
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = beretta
+			}
+		}
+		value = 0.35
+	}
+}
+
+ammunition_factory = {       
+	template = factory_template	#8
+	input_goods = {      
+		sulphur = 1.9			#9.5
+		iron = 2.5				#12.5	total input+maint = 30
+	}
+	output_goods = ammunition 
+	value = 2.86				#40.04
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = sulphur_factory
+				has_building = synthetic_nitrate_factory
+			}
+		}
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = iron_factory }
+		value = 0.10
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = foundry_company
+					has_country_flag = krupp_steelworks
+					has_country_flag = skoda_works
+					has_country_flag = beretta
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+############# COMMON FACTORIES
+steel_factory = {       
+	template = factory_template	#8
+	input_goods = { 
+		iron = 3.6				#18
+		coal = 1				#4 	total input+maint = 30
+	}
+
+	output_goods = steel
+	value = 4					#40
+	bonus = {
+		trigger = { has_building = iron_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = metalworks_company
+					has_country_flag = blockow_vaughan
+					has_country_flag = altos_vizcaya
+					has_country_flag = william_sandford
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = carnegie_steel
+					has_country_flag = manfred_weiss
+				}
+			}
+		}
+		value = 0.35
+	}
+}
+
+machine_parts_factory = {       
+	template = factory_template	#8
+	input_goods = {    
+		steel = 1.8				#18
+		coal = 1				#4 total input+maint = 30
+	}
+	output_goods = machine_parts 
+	value = 2.5					#40
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = construction_company
+					has_country_flag = putilov_plant
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = john_cockerill
+			}
+		}
+		value = 0.35
+	}
+}
+
+liquor_distillery = {       
+	template = cheap_template	#4
+	input_goods = {        
+		grain = 3.5				#14
+		glass = 3				#12	total input+maint = 30
+	}
+	output_goods = liquor 
+	value = 5					#40
+	bonus = {
+		trigger = { has_building = grain_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = beverage_company
+					has_country_flag = confederation_vignerons
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = vodka_monopoly
+			}
+		}
+		value = 0.35
+	}
+}
+
+winery = {       
+	template = cheap_template	#4
+	input_goods = {  	
+		fruit = 3.5				#14
+		glass = 3				#12	total input+maint = 30
+	}
+	output_goods = wine 
+	value = 4					#40
+	bonus = {
+		trigger = { has_building = fruit_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = glass_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = beverage_company
+					has_country_flag = vodka_monopoly
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = confederation_vignerons
+			}
+		}
+		value = 0.35
+	}
+}
+
+fertilizer_factory = {       
+	template = factory_template	#8
+	input_goods = {   
+		sulphur = 4.4			#22		total input+maint = 30
+	}
+	output_goods = fertilizer 
+	value = 4					#40
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = sulphur_factory
+				has_building = synthetic_nitrate_factory
+			}
+		}
+		value = 0.2
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = nitrate_company
+					has_country_flag = monopolio_del_salitre
+					has_country_flag = compania_de_salitres
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+cattle_fertilizer_factory = {       
+	template = cheap_template	#4
+	input_goods = {   
+		cattle = 2.75			#11		total input+maint = 15
+	}
+	bonus = {
+		trigger = {
+			has_building = cattle_factory
+		}
+		value = 0.2
+	}
+	output_goods = fertilizer 
+	value = 2					#20
+}
+
+furniture_factory = {       
+	template = cheap_template	#4
+	input_goods = { 
+		timber = 6.5			#26	total input+maint = 30
+	}
+	output_goods = furniture 
+	value = 4					#40
+	bonus = {
+		trigger = { has_building = timber_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = furniture_company
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = ikea
+			}
+		}
+		value = 0.35
+	}
+}
+
+explosives_factory = {
+	template = factory_template		#8
+	input_goods = {   
+		fertilizer = 1.7			#17
+		steel = 0.5					#5	total input+maint = 30
+	}
+	output_goods = explosives 
+	value = 2				#40
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = sulphur_factory
+				has_building = synthetic_nitrate_factory
+			}
+		}
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = steel_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = nitrate_company
+					has_country_flag = monopolio_del_salitre
+					has_country_flag = compania_de_salitres
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+stock_exchange = {       
+	template = stock_exchange_template	#4
+	input_goods = {   
+		raw_stocks = 0.01				#1
+		paper = 2.5						#10 total input+maint = 15
+	}
+	limit_by_local_supply = yes
+	output_goods = stocks 
+	value = 1							#20
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+}
+
+luxury_clothes_factory = {       
+	template = factory_template	#8
+	input_goods = {   
+		silk = 1.334			#16.008
+		dye = 0.75				#6 total input+maint = 30.008
+	}
+	output_goods = luxury_clothes 
+	value = 1					#40
+	bonus = {
+		trigger = { has_building = silk_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = {
+			has_building = dye_factory
+			has_building = synthetic_dye_factory
+		}
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = clothing_company
+					has_country_flag = mitsui
+					has_country_flag = espana_industrial
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = house_of_worth
+			}
+		}
+		value = 0.35
+	}
+}
+
+luxury_furniture_factory = {       
+	template = factory_template	#8
+	input_goods = { 
+		tropical_wood = 3		#18
+		dye = 0.5				#4 total input+maint = 30
+	}
+	output_goods = luxury_furniture 
+	value = 0.67				#40.2
+	bonus = {
+		trigger = { has_building = tropical_wood_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = {
+			has_building = dye_factory
+			has_building = synthetic_dye_factory
+		}
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = furniture_company
+					has_country_flag = ikea
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+############# CHEAP FACTORIES
+cement_factory = {       
+	template = cement_template	#6
+	input_goods = {           
+		coal = 4.75				#19				
+		iron = 1				#5	total input+maint = 30
+	} 
+	output_goods = cement 
+	value = 2.5					#40
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = { has_building = iron_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = construction_company
+					has_country_flag = john_cockerill
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				has_country_flag = putilov_plant
+			}
+		}
+		value = 0.35
+	}
+}
+
+glass_factory = {       
+	template = factory_template	#8
+	input_goods = {            
+		coal = 5.5				#22	total input+maint = 30
+	}
+	output_goods = glass 
+	value = 10					#40
+	bonus = {
+		trigger = { has_building = coal_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = beverage_company
+					has_country_flag = vodka_monopoly
+					has_country_flag = confederation_vignerons
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+paper_mill = {       
+	template = cheap_template	#4
+	input_goods = { 
+		timber = 6.5			#26	total input+maint = 30
+	}
+	output_goods = paper 
+	value = 10					#40
+	bonus = {
+		trigger = { has_building = timber_factory }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = furniture_company
+					has_country_flag = ikea
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+fishery = {       
+	template = fish_template		#20
+	input_goods = {        
+		raw_grain = 0.1			#10 total input+maint = 30
+	}
+	is_coastal = yes
+	output_goods = fish 
+	value = 10						#40
+	bonus = {
+		trigger = { has_building = steamer_shipyard }
+		value = 0.2
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = shipyard_company
+					has_country_flag = thames_ironworks
+					has_country_flag = mitsubishi
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+regular_clothes_factory = {       
+	template = cheap_template	#4
+	input_goods = {  
+		cotton = 5				#20
+		dye = 0.75				#6	total input+maint = 30
+	}
+	output_goods = regular_clothes 
+	value = 4					#40
+	bonus = {
+		trigger = { has_building = cotton_factory }
+		value = 0.15
+	}
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = dye_factory
+				has_building = synthetic_dye_factory
+			}
+		}
+		value = 0.1
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = -0.25
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = -0.5
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = clothing_company
+					has_country_flag = house_of_worth
+				}
+			}
+		}
+		value = 0.25
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = mitsui
+					has_country_flag = espana_industrial
+				}
+			}
+		}
+		value = 0.35
+	}
+}
+
+canned_food_factory = {       
+	template = canned_food_template	#22
+	input_goods = { 
+		grain = 2	 			#8		total input+maint = 30
+	}
+	output_goods = canned_food 
+	value = 5					#40
+	bonus = {
+		trigger = { has_building = grain_factory }
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			OR = {
+				has_building = cattle_factory
+				has_building = fishery
+			}
+		}
+		value = 0.1
+	}
+	bonus = {
+		trigger = {
+			has_building = glass_factory
+		}
+		value = 0.05
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = partial_war_econ } }
+		value = 0.5
+	}
+	bonus = {
+		trigger = { owner = { has_country_flag = total_war_econ } }
+		value = 1
+	}
+	bonus = {
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = agriculture_company
+					has_country_flag = bunge_born
+					has_country_flag = united_fruit
+				}
+			}
+		}
+		value = 0.25
+	}
+}
+
+############# BASIC FACTORIES 
+
+### RGOs #####################################################################################
+
+RGO_template_farmers = {
+	owner =
+	{
+		poptype = aristocrats 
+		effect = output
+	}
+
+	employees = {
+		{ 
+			poptype = farmers 
+			effect = throughput
+			amount = 1
+		}
+		{ 
+			poptype = slaves 
+			effect = throughput
+			amount = 1
+		}
+	}
+
+	type = rgo
+	workforce = 40000
+}
+
+RGO_template_gold = {
+	owner =
+	{
+		poptype = aristocrats 
+		effect = output
+	}
+
+	employees = {
+		{ 
+			poptype = farmers 
+			effect = throughput
+			amount = 1
+		}
+		{ 
+			poptype = slaves 
+			effect = throughput
+			amount = 1
+		}
+	}
+
+	type = rgo
+	workforce = 80000
+}
+
+cattle_ranch = {
+	template = RGO_template_farmers
+	output_goods = raw_cattle 
+	value = 0.5
+	farm = yes
+}
+
+coal_mine = {
+	template = RGO_template_farmers
+	output_goods = raw_coal
+	value = 0.5
+	farm = yes
+}
+
+coffee_plantation = {
+	template = RGO_template_farmers
+	output_goods = raw_coffee
+	value = 0.5
+	farm = yes
+}
+
+cotton_plantation = {
+	template = RGO_template_farmers
+	output_goods = raw_cotton 
+	value = 0.5
+	farm = yes
+}
+
+dye_plantation = {
+	template = RGO_template_farmers
+	output_goods = raw_dye 
+	value = 0.5
+	farm = yes
+}
+
+grain_farm = {
+	template = RGO_template_farmers
+	output_goods = raw_grain 
+	value = 0.5
+	farm = yes
+}
+
+iron_mine = {
+	template = RGO_template_farmers
+	output_goods = raw_iron
+	value = 0.5
+	farm = yes
+}
+
+oil_rig = {
+	template = RGO_template_farmers
+	output_goods = raw_oil 
+	value = 0.5
+	farm = yes
+}
+
+opium_plantation = {
+	template = RGO_template_farmers
+	output_goods = raw_opium 
+	value = 0.5
+	farm = yes
+}
+
+orchard = {
+	template = RGO_template_farmers
+	output_goods = raw_fruit 
+	value = 0.5
+	farm = yes
+}
+
+precious_metal_mine = {
+	template = RGO_template_gold
+	output_goods = precious_metal 
+	value = 32
+	farm = yes
+}
+
+rubber_lodge = {
+	template = RGO_template_farmers
+	output_goods = raw_rubber 
+	value = 0.5
+	farm = yes
+}
+
+silkworm_ranch = {
+	template = RGO_template_farmers
+	output_goods = raw_silk 
+	value = 0.5
+	farm = yes
+}
+
+sulphur_mine = {
+	template = RGO_template_farmers
+	output_goods = raw_sulphur 
+	value = 0.5
+	farm = yes
+}
+
+tea_plantation = {
+	template = RGO_template_farmers
+	output_goods = raw_tea 
+	value = 0.5
+	farm = yes
+}
+
+timber_lodge = {
+	template = RGO_template_farmers
+	output_goods = raw_timber 
+	value = 0.5
+	farm = yes
+}
+
+tobacco_plantation = {
+	template = RGO_template_farmers
+	output_goods = raw_tobacco 
+	value = 0.5
+	farm = yes
+}
+
+tropical_wood_lodge = {
+	template = RGO_template_farmers
+	output_goods = raw_tropical_wood 
+	value = 0.5
+	farm = yes
+}
+
+financial_district = {
+	template = RGO_template_farmers
+	output_goods = raw_stocks 
+	value = 0.5
+	farm = yes
+}
+
+### Artisans #####################################################################################
+peasant_grain = {
+	input_goods = {
+		grain = 0.001		#0.004
+	}
+	output_goods = grain
+	value = 0.025				#0.1
+	owner = {
+		poptype = farmers
+		effect = output
+	}
+	type = artisan
+	workforce = 10000
+}
+
+############# BASIC FACTORIES 

@@ -1,0 +1,13 @@
+owner = PNJ
+controller = PNJ
+add_core = PNJ
+add_core = KAS
+add_core = HND
+add_core = PAK
+trade_goods = raw_silk
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}

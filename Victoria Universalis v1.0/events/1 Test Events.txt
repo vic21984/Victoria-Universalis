@@ -1,0 +1,125 @@
+# Audax Validator "!" Ignore_ALL
+
+country_event = {
+	id = 1
+	title = "Literacy Increase"
+	is_triggered_only = yes
+	
+	option = {
+		any_pop = {
+			literacy = 0.10
+		}
+	}
+}
+
+country_event = {
+	id = 2
+	title = "MIL/CON Decrease"
+	is_triggered_only = yes
+	
+	option = {
+		any_pop = {
+			militancy = -5
+		}
+	}
+	
+	option = {
+		any_pop = {
+			consciousness = -5
+		}
+	}
+}
+
+country_event = {
+	id = 3
+	title = "MIL/CON Increase"
+	is_triggered_only = yes
+	
+	option = {
+		any_pop = {
+			militancy = 5
+		}
+	}
+	
+	option = {
+		any_pop = {
+			consciousness = 5
+		}
+	}
+}
+
+country_event = {
+	id = 4
+	title = "Assimilation"
+	is_triggered_only = yes
+	
+	option = {
+		any_owned = {
+			assimilate = yes
+		}
+	}
+}
+
+country_event = {
+	id = 5
+	title = "Badboy"
+	is_triggered_only = yes
+	
+	option = {
+		badboy = -25
+	}
+}
+
+country_event = {
+	id = 6
+	title = "upper house"
+	is_triggered_only = yes
+	
+
+	option = {
+		change_variable = {
+			which = liberal_clout
+			value = 100
+		}
+		change_variable = {
+			which = socialist_clout
+			value = 100
+		}
+		change_variable = {
+			which = reactionary_clout
+			value = 100
+		}
+	}
+}
+
+country_event = {
+	id = 7
+	title = "reforms"
+	is_triggered_only = yes
+	
+	option = {
+		political_reform = universal_voting
+		political_reform = child_labor_illegal
+		political_reform = multiculturalism
+		political_reform = population_equal_weight
+		political_reform = free_press
+		political_reform = womens_suffrage
+	}
+}
+
+country_event = {
+	id = 8
+	title = "reforms"
+	is_triggered_only = yes
+	
+	option = {
+		social_reform = good_minimum_wage
+		social_reform = eight_hours
+		social_reform = good_safety
+		social_reform = good_subsidies
+		social_reform = good_pensions
+		social_reform = good_health_care
+		social_reform = compulsory_schools
+		social_reform = militarized_police
+	}
+}

@@ -1,0 +1,15 @@
+owner = SPA
+controller = SPA
+add_core = PHL
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = tropical_wood_factory
+	upgrade = yes
+}

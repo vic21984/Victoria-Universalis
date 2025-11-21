@@ -1,0 +1,15 @@
+owner = VNZ
+controller = VNZ
+add_core = VNZ
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = sulphur_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}

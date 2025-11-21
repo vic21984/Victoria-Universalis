@@ -1,0 +1,21 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 4
+	building = sulphur_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = fertilizer_factory
+	upgrade = yes
+}
+
+state_building = {
+	level = 3
+	building = explosives_factory
+	upgrade = yes
+}

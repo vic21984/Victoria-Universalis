@@ -1,0 +1,439 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+country_event = {
+	id = 91501 #Vassal Tax
+	title = "EVTNAME91501"
+	desc = "EVTDESC91501"
+	picture = treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91501"
+		FROM = {
+			country_event = {
+				id = 91502 days = 0
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91502 #Vassal Tax
+	title = "EVTNAME91502"
+	desc = "EVTDESC91502"
+	picture = treaty
+
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+
+	option = {
+		name = "EVTOPTA91502"
+		release_vassal = FROM
+		leave_alliance = FROM
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = vassal_tax }
+			attacker_goal = { casus_belli = status_quo }
+		}
+		FROM = {
+			any_owned = {
+				change_controller = THIS
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB91502"
+	}
+}
+
+country_event = {
+	id = 91505 #War Economy
+	title = "EVTNAME91505"
+	desc = "EVTDESC91505"
+	picture = victory_parade
+
+	trigger = {
+		OR = {
+			has_country_flag = partial_war_econ
+			has_country_flag = total_war_econ
+		}
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA91505"
+		clr_country_flag = war_econ
+		clr_country_flag = total_war_econ
+	}
+}
+
+country_event = {
+	id = 91509
+	title = "Strategic Goods Counter"
+	
+	trigger = {
+		tag = JAN
+		NOT = { has_country_modifier = strategic_goods_counter }
+		OR = {
+			NOT = { year = 1875 }
+			year = 1885
+		}
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = strategic_goods_counter
+			duration = 365
+		}
+	}
+	
+	option = {
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2475
+						province_id = 2489
+						province_id = 2490
+						province_id = 2495
+						province_id = 2507
+						province_id = 2601
+						province_id = 2605
+						province_id = 2603
+					}
+					NOT = { has_province_modifier = outback }
+				}
+				add_province_modifier = { name = outback duration = -1 }
+			}
+		}
+		any_country = {
+			limit = { has_global_flag = atacama_saltpeter_discovered }
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2307
+						province_id = 2305
+					}
+					NOT = { has_province_modifier = strategic_sulphur_rgo }
+					trade_goods = raw_sulphur
+				}
+				add_province_modifier = { name = strategic_sulphur_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 763
+						province_id = 764
+						province_id = 2523
+					}
+					NOT = { has_province_modifier = strategic_sulphur_rgo }
+					trade_goods = raw_sulphur
+				}
+				add_province_modifier = { name = strategic_sulphur_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 283
+						province_id = 578
+						province_id = 217
+					}
+					NOT = { has_province_modifier = strategic_coal_rgo }
+					trade_goods = raw_coal
+				}
+				add_province_modifier = { name = strategic_coal_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 158
+						province_id = 177
+						province_id = 306
+						province_id = 321
+						province_id = 320
+					}
+					NOT = { has_province_modifier = strategic_iron_rgo }
+					trade_goods = raw_iron
+				}
+				add_province_modifier = { name = strategic_iron_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 2264
+						province_id = 2270
+					}
+					NOT = { has_province_modifier = strategic_oil_rgo }
+					trade_goods = raw_oil
+				}
+				add_province_modifier = { name = strategic_oil_rgo duration = -1 }
+			}
+		}
+		any_country = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1387
+						province_id = 1385
+						province_id = 1386
+						province_id = 1388
+						province_id = 1389
+						province_id = 1390
+						province_id = 1391
+						province_id = 1394
+						province_id = 1395
+						province_id = 2575
+						province_id = 1426
+						province_id = 2600
+						province_id = 2402
+						province_id = 2403
+						province_id = 2404
+						province_id = 2405
+						province_id = 2407
+						province_id = 2401
+						province_id = 2671
+						province_id = 2550
+						province_id = 2417
+						province_id = 2549
+						province_id = 2321
+						province_id = 2320
+						province_id = 2301
+						province_id = 2319
+						province_id = 2317
+						province_id = 2318
+					}
+					NOT = { has_province_modifier = strategic_rubber_rgo }
+					trade_goods = raw_rubber
+				}
+				add_province_modifier = { name = strategic_rubber_rgo duration = -1 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 91510
+	title = "Colony to State"
+
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_global_flag = civilizing_state
+	}
+	## Audax Validator "." Ignore_NEXT
+	option = {
+		civilized = no
+		civilized = yes
+		annex_to = FROM
+	}
+}
+
+#########################################################################
+# 							TREATY PORTS								#
+#########################################################################
+country_event = {
+	id = 91520
+	title = "EVTNAME91520"
+	desc = "EVTDESC91520"
+	picture = treaty
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91520"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { year = 1846 }
+				}
+			}
+			owner = { treasury = 36500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1846
+					NOT = { year = 1856 }
+				}
+			}
+			owner = { treasury = 73000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1856
+					NOT = { year = 1866 }
+				}
+			}
+			owner = { treasury = 109500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1866
+					NOT = { year = 1876 }
+				}
+			}
+			owner = { treasury = 146000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1876
+					NOT = { year = 1886 }
+				}
+			}
+			owner = { treasury = 182500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1886
+					NOT = { year = 1896 }
+				}
+			}
+			owner = { treasury = 219000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1896
+					NOT = { year = 1906 }
+				}
+			}
+			owner = { treasury = 255500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1906
+					NOT = { year = 1916 }
+				}
+			}
+			owner = { treasury = 292000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1916
+					NOT = { year = 1926 }
+				}
+			}
+			owner = { treasury = 328500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1926
+				}
+			}
+			owner = { treasury = 365000 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91520"
+		set_country_flag = no_treaty_port_popup
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { year = 1846 }
+				}
+			}
+			owner = { treasury = 36500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1846
+					NOT = { year = 1856 }
+				}
+			}
+			owner = { treasury = 73000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1856
+					NOT = { year = 1866 }
+				}
+			}
+			owner = { treasury = 109500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1866
+					NOT = { year = 1876 }
+				}
+			}
+			owner = { treasury = 146000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1876
+					NOT = { year = 1886 }
+				}
+			}
+			owner = { treasury = 182500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1886
+					NOT = { year = 1896 }
+				}
+			}
+			owner = { treasury = 219000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1896
+					NOT = { year = 1906 }
+				}
+			}
+			owner = { treasury = 255500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1906
+					NOT = { year = 1916 }
+				}
+			}
+			owner = { treasury = 292000 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1916
+					NOT = { year = 1926 }
+				}
+			}
+			owner = { treasury = 328500 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					year = 1926
+				}
+			}
+			owner = { treasury = 365000 }
+		}
+	}
+}

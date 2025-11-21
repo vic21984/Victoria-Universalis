@@ -1,0 +1,16 @@
+owner = HDJ
+controller = HDJ
+add_core = HDJ
+trade_goods = raw_opium
+life_rating = 5
+terrain = coastal_desert
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = opium_factory
+	upgrade = yes
+}

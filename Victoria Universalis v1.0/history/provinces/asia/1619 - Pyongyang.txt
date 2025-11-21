@@ -1,0 +1,31 @@
+owner = KOR
+controller = KOR
+add_core = KOR
+trade_goods = raw_coal
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

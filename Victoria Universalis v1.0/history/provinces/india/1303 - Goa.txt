@@ -1,0 +1,23 @@
+owner = POR
+controller = POR
+add_core = MAH
+add_core = HND
+trade_goods = raw_dye
+life_rating = 5
+naval_base = 1
+terrain = urban
+state_building = {
+	level = 1
+	building = dye_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = luxury_furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}

@@ -1,0 +1,13 @@
+owner = IMG
+controller = IMG
+add_core = CHI
+add_core = MGL
+add_core = IMG
+add_core = MCK
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

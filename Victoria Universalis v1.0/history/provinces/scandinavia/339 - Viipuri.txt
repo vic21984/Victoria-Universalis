@@ -1,0 +1,19 @@
+owner = FIN
+controller = FIN
+add_core = FIN
+add_core = SWE
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = timber_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	add_core = KSN
+}

@@ -1,0 +1,16 @@
+owner = NET
+controller = NET
+add_core = JAV
+trade_goods = raw_fruit
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = fertilizer_factory
+	upgrade = yes
+}

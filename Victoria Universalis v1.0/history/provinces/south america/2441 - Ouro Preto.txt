@@ -1,0 +1,20 @@
+owner = BRZ
+controller = BRZ
+add_core = BRZ
+trade_goods = raw_coffee
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = coffee_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}

@@ -1,0 +1,17 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = ARM
+add_core = KDS
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}

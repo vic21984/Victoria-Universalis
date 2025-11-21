@@ -1,0 +1,23 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = BOS
+add_core = YUG
+add_core = SER
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}

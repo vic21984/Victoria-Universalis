@@ -1,0 +1,28 @@
+owner = EIC
+controller = EIC
+add_core = MAH
+add_core = HND
+trade_goods = raw_grain
+life_rating = 5
+fort = 1
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

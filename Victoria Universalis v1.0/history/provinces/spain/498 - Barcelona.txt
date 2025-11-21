@@ -1,0 +1,27 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = CAT
+trade_goods = raw_fruit
+life_rating = 5
+terrain = urban
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = winery
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

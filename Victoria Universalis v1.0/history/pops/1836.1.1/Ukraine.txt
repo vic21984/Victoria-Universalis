@@ -1,0 +1,6008 @@
+#Bukovina Region (164000) #See Romania.txt for balance of region
+#under the rule of Austria in 1836
+#Bessarabia Region (332000) #see Moldova.txt for balance of Region
+#under the rule of Russia in 1836
+#Ismail (332000/83000 POPS)
+678 = {
+    aristocrats = {
+        culture = romanian
+        religion = orthodox
+        size = 2100
+    }
+
+    clergymen = {
+        culture = romanian
+        religion = orthodox
+        size = 300
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 2850
+    }
+
+    soldiers = {
+        culture = romanian
+        religion = orthodox
+        size = 600
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 51110
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1330
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5177
+    }
+
+    clergymen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 71
+    }
+
+    soldiers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 2707
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 475
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8835
+    }
+
+    clergymen = {
+        culture = turkish #gagauz
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = turkish
+        religion = orthodox
+        size = 142
+    }
+
+    soldiers = {
+        culture = turkish
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = turkish
+        religion = orthodox
+        size = 2636
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 150
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 2690
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 70
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 273
+    }
+
+    labourers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 4
+    }
+
+    labourers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 143
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 25
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 465
+    }
+
+    labourers = {
+        culture = turkish
+        religion = orthodox
+        size = 8
+    }
+
+    labourers = {
+        culture = turkish
+        religion = orthodox
+        size = 139
+    }
+
+    clerks = {
+        culture = romanian
+        religion = orthodox
+        size = 300
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 38
+    }
+
+    clerks = {
+        culture = bulgarian
+        religion = orthodox
+        size = 25
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 50
+    }
+
+    clerks = {
+        culture = turkish #gagauz
+        religion = orthodox
+        size = 25
+    }
+}
+#Felvidek Region (856000) #see Hungary.txt and Slovakia.txt for balance of Region
+#under the rule of Austria in 1836
+#Uzgorod (856000/214000 POPS) #Part of Ukraine today
+950 = {
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 238
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7050
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 675
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 56576
+    }
+
+    clergymen = {
+        culture = slovak
+        religion = catholic
+        size = 42
+    }
+
+    zbankers = {
+        culture = slovak
+        religion = catholic
+        size = 1410
+    }
+
+    soldiers = {
+        culture = slovak
+        religion = catholic
+        size = 131
+    }
+
+    zbankers = {
+        culture = slovak
+        religion = catholic
+        size = 10345
+    }
+
+    aristocrats = {
+        culture = hungarian
+        religion = catholic
+        size = 3187
+    }
+
+    clergymen = {
+        culture = hungarian
+        religion = catholic
+        size = 118
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = catholic
+        size = 3525
+    }
+
+    soldiers = {
+        culture = hungarian
+        religion = catholic
+        size = 337
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = catholic
+        size = 23176
+    }
+
+    clergymen = {
+        culture = hungarian
+        religion = protestant
+        size = 112
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = protestant
+        size = 3525
+    }
+
+    soldiers = {
+        culture = hungarian
+        religion = protestant
+        size = 300
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = protestant
+        size = 25521
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 21
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2731
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 6
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 669
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 18
+    }
+
+    clergymen = {
+        culture = romanian
+        religion = orthodox
+        size = 34
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 1410
+    }
+
+    soldiers = {
+        culture = romanian
+        religion = orthodox
+        size = 112
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 8970
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 505
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4061
+    }
+
+    labourers = {
+        culture = slovak
+        religion = catholic
+        size = 100
+    }
+
+    labourers = {
+        culture = slovak
+        religion = catholic
+        size = 742
+    }
+
+    labourers = {
+        culture = hungarian
+        religion = catholic
+        size = 252
+    }
+
+    labourers = {
+        culture = hungarian
+        religion = catholic
+        size = 1663
+    }
+
+    labourers = {
+        culture = hungarian
+        religion = protestant
+        size = 252
+    }
+
+    labourers = {
+        culture = hungarian
+        religion = protestant
+        size = 1832
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 195
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 46
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 100
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 644
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 179
+    }
+
+    clerks = {
+        culture = slovak
+        religion = catholic
+        size = 31
+    }
+
+    clerks = {
+        culture = hungarian
+        religion = catholic
+        size = 89
+    }
+
+    clerks = {
+        culture = hungarian
+        religion = protestant
+        size = 84
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 15
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 4
+    }
+
+    clerks = {
+        culture = romanian
+        religion = orthodox
+        size = 26
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 89
+    }
+
+    clerks = {
+        culture = slovak
+        religion = catholic
+        size = 15
+    }
+
+    clerks = {
+        culture = hungarian
+        religion = catholic
+        size = 45
+    }
+
+    clerks = {
+        culture = hungarian
+        religion = protestant
+        size = 42
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 7
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 2
+    }
+
+    clerks = {
+        culture = romanian
+        religion = orthodox
+        size = 12
+    }
+}
+#Galicia Region (2576000) #see Poland.txt for balance of region
+#under the rule of Austria in 1836
+#Lvov (660000/165000 POPS) #now part of Ukraine
+702 = {
+    capitalists = {
+        culture = ukrainian
+        religion = catholic
+        size = 25
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 375
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6815
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4700
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 3750
+    }
+
+    capitalists = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = polish
+        religion = catholic
+        size = 1300
+    }
+
+    officers = {
+        culture = polish
+        religion = catholic
+        size = 750
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 387
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2279
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 3100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2820
+    }
+
+    capitalists = {
+        culture = ashkenazi
+        religion = catholic
+        size = 50
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 62
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1645
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 125
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1880
+    }
+
+    bureaucrats = {
+        culture = polish
+        religion = catholic
+        size = 5300
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 1809
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 435
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 300
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 146
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 180
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 600
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 105
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 120
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 116
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 375
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 388
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 63
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+}
+#Stryi (404000/101000 POPS) #now part of Ukraine
+951 = {
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 237
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2843
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4700
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 5000
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 212
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1057
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 450
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 4700
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 6462
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 912
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 182
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 300
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 68
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 300
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 413
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 58
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 238
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 213
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+}
+#Ternopil (1136000/284000 POPS) #now part of Ukraine
+952 = {
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 975
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9306
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3150
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 172020
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 6500
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 350
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1880
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 3100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 52358
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 87
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 3196
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 12478
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 47
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 865
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 594
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 10980
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 120
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 3342
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 204
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 797
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 3
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 55
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 975
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 350
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 88
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+}
+#Stanislavov (376000/94000 POPS) #now part of Ukraine
+953 = {
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 250
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2491
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1525
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 45425
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 2150
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 162
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1551
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 325
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 26837
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1316
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5146
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 47
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 865
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 159
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2900
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 99
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 1713
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 84
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 329
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 3
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 55
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 250
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 163
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+}
+#Volhynia-Podolia Region (1892000)
+#under the rule of Russia in 1836
+#Vinnitsa (492000/123000 POPS)
+954 = {
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5557
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1050
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 107445
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 2000
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 37
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 810
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 309
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 62
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2850
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11139
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 775
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 293
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5655
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 15
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 16
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 586
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 38
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 63
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+}
+#Proskorov (496000/124000 POPS)
+955 = {
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 35
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1750
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 475
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2327
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 88920
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 2750
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 617
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 6080
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 62
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2850
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11139
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 12
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 95
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 807
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 123
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4680
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 33
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 320
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 586
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 5
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 43
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 475
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 63
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 13
+    }
+}
+#Rovne (460000/115000 POPS)
+956 = {
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 412
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2280
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 79586
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 2600
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 62
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 712
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 150
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9856
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 62
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2470
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 125
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9737
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 120
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4189
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 38
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 519
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 130
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 513
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 413
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 63
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 63
+    }
+}
+#Kovel (444000/111000 POPS)
+957 = {
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 412
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2232
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 78684
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 2300
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 570
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 125
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 7481
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 62
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2470
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 125
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9737
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 118
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4141
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 30
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 394
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 130
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 513
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 413
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 63
+    }
+}
+#Ukraine Region (4028000)
+#under the rule of Russia in 1836
+#Kiev (492000/123000 POPS)
+958 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1300
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 60
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3250
+    }
+
+    officers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 450
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6225
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 78327
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 1500
+    }
+
+    bureaucrats = {
+        culture = polish
+        religion = catholic
+        size = 150
+    }
+
+    officers = {
+        culture = polish
+        religion = catholic
+        size = 300
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1045
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 6507
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 3135
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 175
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11756
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 450
+    }
+
+    bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 250
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 150
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 275
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4123
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 55
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 343
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 165
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 619
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 450
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+}
+#Korosten (448000/112000 POPS)
+959 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1700
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 437
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1995
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 900
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 79254
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 900
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 712
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 7742
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 62
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2612
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9476
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 105
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4171
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 38
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 408
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 138
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 499
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 438
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 63
+    }
+}
+#Zhitomir (460000/115000 POPS)
+960 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1600
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2470
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 88160
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 800
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 142
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 926
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2850
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 10165
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 130
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4640
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 8
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 49
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 535
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+}
+#Cherkassy (460000/115000 POPS)
+961 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1600
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1852
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 900
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 77662
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 700
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 570
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 8075
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2850
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 10165
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 450
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 190
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 75
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 3159
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 98
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4088
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 30
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 425
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 535
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 10
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 166
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 400
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+}
+#Chernigov (616000/154000 POPS)
+962 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3000
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 700
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5700
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1450
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 125542
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1425
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 6009
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 500
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 142
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1187
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 300
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6608
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 316
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 8
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 63
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 700
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 38
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+}
+#Poltava (1552000/388000 POPS)
+963 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4500
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3200
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1312
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1900
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2800
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 243912
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 3087
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11352
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 500
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 37
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 95
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 261
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 100
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 12838
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 163
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 598
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 5
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 14
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1313
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 38
+    }
+}
+#Sumy (371900/92975 POPS)
+2692 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1500
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 437
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4750
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 80370
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 250
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4230
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 438
+    }
+}
+#Taurida Region (360000)
+#under the rule of Russia in 1836
+#Simferopol (126000/29000 POPS)
+964 = {
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 550
+    }
+
+    bureaucrats = {
+        culture = tatar
+        religion = sunni
+        size = 75
+    }
+
+    officers = {
+        culture = tatar
+        religion = sunni
+        size = 40
+    }
+
+    clergymen = {
+        culture = tatar
+        religion = sunni
+        size = 100
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 902
+    }
+
+    soldiers = {
+        culture = tatar
+        religion = sunni
+        size = 1100
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 17276
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 142
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2612
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 175
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 60
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 37
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 71
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 2342
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 12
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 190
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 712
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 7
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 71
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 841
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 48
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 909
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 138
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 4
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 123
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 10
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 38
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 4
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 44
+    }
+
+    clerks = {
+        culture = tatar
+        religion = sunni
+        size = 100
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 25
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 38
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 13
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 8
+    }
+}
+#Cherson (126000/29000 POPS)
+965 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 450
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 30
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2000
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 62
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 261
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 150
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 11400
+    }
+
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 100
+    }
+
+    clergymen = {
+        culture = tatar
+        religion = sunni
+        size = 37
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 190
+    }
+
+    soldiers = {
+        culture = tatar
+        religion = sunni
+        size = 50
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 4346
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 37
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 142
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 2494
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 12
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 380
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1472
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 190
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 712
+    }
+
+    clergymen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 95
+    }
+
+    soldiers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 2684
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 119
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 1710
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 14
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 10
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 229
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 8
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 131
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 20
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 78
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 10
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 38
+    }
+
+    labourers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 5
+    }
+
+    labourers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 141
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 6
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 90
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 63
+    }
+
+    clerks = {
+        culture = tatar
+        religion = sunni
+        size = 38
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 38
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 13
+    }
+
+    clerks = {
+        culture = greek
+        religion = orthodox
+        size = 13
+    }
+
+    clerks = {
+        culture = bulgarian
+        religion = orthodox
+        size = 25
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+}
+#Kerch (48000/12000 POPS)
+966 = {
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 200
+    }
+
+    clergymen = {
+        culture = tatar
+        religion = sunni
+        size = 37
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 166
+    }
+
+    soldiers = {
+        culture = tatar
+        religion = sunni
+        size = 100
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 7552
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 119
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1662
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 95
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 375
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 190
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 712
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 9
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 398
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 6
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 88
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 20
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 10
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 38
+    }
+
+    clerks = {
+        culture = tatar
+        religion = sunni
+        size = 38
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 3
+    }
+
+    clerks = {
+        culture = greek
+        religion = orthodox
+        size = 13
+    }
+}
+#Sevastopol (60000/15000 POPS)
+967 = {
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 250
+    }
+
+    clergymen = {
+        culture = tatar
+        religion = sunni
+        size = 50
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 166
+    }
+
+    soldiers = {
+        culture = tatar
+        religion = sunni
+        size = 100
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 8906
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 95
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1686
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 142
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 560
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 237
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 15
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 912
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 12
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 71
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 831
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 9
+    }
+
+    labourers = {
+        culture = tatar
+        religion = sunni
+        size = 469
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 5
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 89
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 8
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 30
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 13
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 48
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 4
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 44
+    }
+
+    clerks = {
+        culture = tatar
+        religion = sunni
+        size = 50
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    clerks = {
+        culture = greek
+        religion = orthodox
+        size = 13
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 13
+    }
+}
+#Odessa Region (1488000)
+#under the rule of Russia in 1836
+#Odessa (248000/62000 POPS)
+968 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    officers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 200
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 212
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7500
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 32039
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 150
+    }
+
+    officers = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 475
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1164
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1425
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5557
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 150
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 12
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 940
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 332
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 712
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 190
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_italian
+        religion = catholic
+        size = 3800
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = south_italian
+        religion = catholic
+        size = 855
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 712
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 1116
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 375
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1686
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 61
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 293
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 10
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 18
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 38
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 10
+    }
+
+    labourers = {
+        culture = south_italian
+        religion = catholic
+        size = 200
+    }
+
+    labourers = {
+        culture = south_italian
+        religion = catholic
+        size = 45
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 38
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 59
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 213
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 38
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 13
+    }
+
+    clerks = {
+        culture = greek
+        religion = orthodox
+        size = 13
+    }
+
+    clerks = {
+        culture = south_italian
+        religion = catholic
+        size = 25
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+}
+#Pervomaisk (496000/124000 POPS)
+969 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2000
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2517
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 95950
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 750
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 332
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2660
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 62
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2850
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11139
+    }
+
+    clergymen = {
+        culture = romanian
+        religion = orthodox
+        size = 37
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 190
+    }
+
+    soldiers = {
+        culture = romanian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 4394
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 133
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5050
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 18
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 140
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 586
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 10
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 231
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 63
+    }
+
+    clerks = {
+        culture = romanian
+        religion = orthodox
+        size = 38
+    }
+}
+#Nikolaev (248000/62000 POPS)
+970 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 850
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 137
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 665
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 300
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 26481
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 250
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 142
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1449
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1425
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5106
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 350
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 237
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 4085
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 142
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 2636
+    }
+
+    clergymen = {
+        culture = romanian
+        religion = orthodox
+        size = 62
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 332
+    }
+
+    soldiers = {
+        culture = romanian
+        religion = orthodox
+        size = 150
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 13656
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 35
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1394
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 8
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 76
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 269
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 13
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 215
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 8
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 139
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 18
+    }
+
+    labourers = {
+        culture = romanian
+        religion = orthodox
+        size = 719
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 138
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    clerks = {
+        culture = romanian
+        religion = orthodox
+        size = 63
+    }
+}
+#Krivoy Rog (244000/61000 POPS)
+971 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 250
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9476
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 525
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 250
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1591
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 6531
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 499
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = polish
+        religion = catholic
+        size = 84
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 344
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 250
+    }
+
+    clerks = {
+        culture = polish
+        religion = catholic
+        size = 25
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+}
+#Ekaterinoslav (252000/63000 POPS)
+972 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 850
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3500
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 262
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2400
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 46621
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 550
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 37
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 2209
+    }
+
+    clergymen = {
+        culture = north_german
+        religion = protestant
+        size = 37
+    }
+
+    soldiers = {
+        culture = north_german
+        religion = protestant
+        size = 50
+    }
+
+    zbankers = {
+        culture = north_german
+        religion = protestant
+        size = 3681
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2755
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 50
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 100
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2454
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 116
+    }
+
+    labourers = {
+        culture = north_german
+        religion = protestant
+        size = 194
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 145
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 263
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 38
+    }
+
+    clerks = {
+        culture = north_german
+        religion = protestant
+        size = 38
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+}
+#Zaporozhia Region (648000)
+#under the rule of Russia in 1836
+#Melitopol (84000/21000 POPS)
+973 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 250
+    }
+
+    officers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 75
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7885
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 175
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7600
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 703
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 200
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 760
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1900
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 415
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 400
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 40
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 100
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+}
+#Kramatorsk (240000/60000 POPS)
+974 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1250
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 275
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4869
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 575
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2304
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 256
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 121
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 275
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+}
+#Yuzovka (76000/19000 POPS)
+975 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 300
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 62
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5154
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 150
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7600
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 703
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 150
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1900
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1900
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 271
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 400
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 63
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+}
+#Mariopol (248000/62000 POPS)
+976 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1400
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 262
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5154
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7600
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2304
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 25
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 2850
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 50
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 1900
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 12
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 902
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 271
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 400
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 121
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 150
+    }
+
+    labourers = {
+        culture = greek
+        religion = orthodox
+        size = 100
+    }
+
+    labourers = {
+        culture = south_german
+        religion = catholic
+        size = 48
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 263
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25
+    }
+
+    clerks = {
+        culture = greek
+        religion = orthodox
+        size = 25
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 13
+    }
+}
+#Kursk Region (596000) #see Russia.txt for balance of region
+#under the rule of Russia in 1836
+#Kharkov (596000/149000 POPS) #now part of Ukraine
+978 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2250
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 687
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5890
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 122574
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 703
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 250
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 37
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 475
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 6721
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 310
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6451
+    }
+
+    labourers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 354
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 688
+    }
+
+    clerks = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 38
+    }
+}
+#Donbass Region (652000) #see Russia.txt for balance of region
+#under the rule of Russia in 1836
+#Luhansk (652000/163000 POPS) #now part of Ukraine
+980 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2900
+    }
+
+    clergymen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 662
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6650
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1425
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 121932
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 450
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 112
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1045
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 225
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 19000
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 350
+    }
+
+    labourers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6418
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 55
+    }
+
+    labourers = {
+        culture = russian
+        religion = orthodox
+        size = 1000
+    }
+
+    clerks = {
+        culture = ukrainian
+        religion = orthodox
+        size = 663
+    }
+
+    clerks = {
+        culture = russian
+        religion = orthodox
+        size = 113
+    }
+}

@@ -1,0 +1,15 @@
+owner = RUS
+controller = RUS
+add_core = DAG
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = silk_factory
+	upgrade = yes
+}

@@ -1,0 +1,15 @@
+owner = SBS
+controller = SBS
+add_core = SBS
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = NET
+	controller = NET
+	colonial = 0
+}

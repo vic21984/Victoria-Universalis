@@ -1,0 +1,22 @@
+owner = TKG
+controller = TKG
+add_core = TKG
+trade_goods = raw_coal
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = TKG
+}

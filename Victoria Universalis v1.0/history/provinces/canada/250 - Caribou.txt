@@ -1,0 +1,12 @@
+owner = CAN
+controller = CAN
+add_core = CAN
+add_core = NEN
+add_core = USA
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 1
+	building = timber_factory
+	upgrade = yes
+}

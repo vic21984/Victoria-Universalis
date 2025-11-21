@@ -1,0 +1,26 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = raw_iron
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = timber_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

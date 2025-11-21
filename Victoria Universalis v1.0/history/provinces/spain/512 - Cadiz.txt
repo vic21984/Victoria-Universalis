@@ -1,0 +1,16 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 2
+	building = sulphur_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = fertilizer_factory
+	upgrade = yes
+}

@@ -1,0 +1,204 @@
+political_decisions = {
+	switch_to_army_tech = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { tech_school = army_tech_school }
+			NOT = { has_country_modifier = academic_confusion }
+			NOT = { tech_school = prussian_tech_school }
+		}
+		allow = {
+			#military_score = 50
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			tech_school = army_tech_school
+		}
+	}
+	switch_to_navy_tech = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { tech_school = naval_tech_school }
+			NOT = { has_country_modifier = academic_confusion }
+			NOT = { tech_school = japanese_tech_school }
+		}
+		allow = {
+			#military_score = 50
+			#total_amount_of_ships = 20
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			tech_school = naval_tech_school
+		}
+	}
+	switch_to_culture_tech = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { tech_school = culture_tech_school }
+			NOT = { has_country_modifier = academic_confusion }
+		}
+		allow = {
+			#average_consciousness = 2
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			tech_school = culture_tech_school
+		}
+	}
+	switch_to_trade_tech = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { tech_school = commerce_tech_school }
+			NOT = { has_country_modifier = academic_confusion }
+		}
+		allow = {
+			#industrial_score = 50
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			tech_school = commerce_tech_school
+		}
+	}
+	switch_to_industry_tech = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = { tech_school = industrial_tech_school }
+			NOT = { has_country_modifier = academic_confusion }
+		}
+		allow = {
+			#industrial_score = 50
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			tech_school = industrial_tech_school
+		}
+	}
+	switch_to_traditional_academic = {
+		alert = no
+		potential = {
+			ai = no
+			NOT = {
+				tech_school = traditional_academic
+				has_country_modifier = academic_confusion
+			}
+		}
+		
+		allow = {
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			tech_school = traditional_academic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		#news = yes
+		#news_title = "SOME_TEXT_TITLE"
+		#news_desc_long = "SOME_TEXT_LONG"
+		#news_desc_medium = "SOME_TEXT_MEDIUM"
+		#news_desc_short = "SOME_TEXT_SHORT"
+	}
+	switch_to_japanese_tech_school = {
+		picture = mitsubishi_dockyard
+		potential = {
+			OR = {
+				tag = JAP
+				tag = TKG
+			}
+			NOT = { tech_school = japanese_tech_school }
+			NOT = { has_country_modifier = academic_confusion }
+		}
+
+		allow = {
+			NOT = { has_country_flag = uncivilized }
+			military_score = 100
+			invention = manifest_destiny
+			OR = {
+				AND = {
+					tag = TKG
+					NOT = { exists = JAP }
+				}
+				AND = {
+					tag = JAP
+					NOT = { exists = TKG }
+				}
+			}
+		}
+
+		effect = {
+			tech_school = japanese_tech_school
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			prestige = 5
+		}
+	}
+	support_ruhr_industrialism = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			NOT = { tech_school = prussian_tech_school }
+			NOT = { has_country_modifier = academic_confusion }
+		}
+
+		allow = {
+			has_global_flag = ruhr_boom_has_happened
+			cheap_steel = 1
+			iron_breech_loaded_artillery = 1
+			state_n_government = 1
+			industrial_score = 500
+			owns = 577
+			owns = 578
+			owns = 2561
+			owns = 576
+			owns = 575
+			575 = {
+				state_scope = {
+					has_building = steel_factory
+				}
+			}
+		}
+
+		effect = {
+			tech_school = prussian_tech_school
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 5475
+			}
+			prestige = 5
+		}
+	}
+}

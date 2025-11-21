@@ -1,0 +1,79 @@
+capital = 860
+primary_culture = turkish
+religion = sunni
+government = absolute_monarchy
+plurality = 25.0
+nationalvalue = nv_order
+literacy = 0.04
+non_state_culture_literacy = 0.01
+civilized = yes
+set_global_flag = turkey_exists
+set_country_flag = mob1_invented
+
+#GreaterPowers = prestige
+prestige = 40 #was 40
+
+# Political reforms
+slavery = yes_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = yes_meeting
+press_rights = state_press
+trade_unions = no_trade_unions
+voting_system = first_past_the_post
+political_parties = underground_parties
+
+# Social Reforms
+wage_reform = no_minimum_wage
+work_hours = no_work_hour_limit
+safety_regulations = no_safety
+health_care = no_health_care
+unemployment_subsidies = no_subsidies
+pensions = no_pensions 
+school_reforms = no_schools
+
+# New Reforms
+war_laws = pro_military_law
+debt_law = serfdom
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
+border_policy = open_borders
+economic_laws = interventionism_law
+
+ruling_party = TUR_conservative
+upper_house = {
+	fascist = 0
+	liberal = 25
+	neo_conservative = 60
+	reactionary = 15
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+# Technologies
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+military_staff_system = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
+clipper_design = 1
+the_command_principle = 1
+private_banks = 1
+no_standard = 1
+early_classical_theory_and_critique = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
+late_enlightenment_philosophy = 1
+enlightenment_thought = 1
+water_wheel_power = 1
+industrial_revolution = 1
+
+# Inventions
+
+#Starting Consciousness
+consciousness = 3
+nonstate_consciousness = 0
+
+oob = "TUR_oob.txt"

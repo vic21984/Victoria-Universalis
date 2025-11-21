@@ -1,0 +1,16 @@
+owner = PEU
+controller = PEU
+add_core = ECU
+add_core = PEU
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = PBC
+	controller = PBC
+	add_core = PBC
+}

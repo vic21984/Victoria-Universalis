@@ -1,0 +1,16 @@
+owner = CHK
+controller = CHK
+add_core = CHK
+add_core = LUA
+trade_goods = raw_tropical_wood
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = SIA
+	controller = SIA
+	add_core = SIA
+}

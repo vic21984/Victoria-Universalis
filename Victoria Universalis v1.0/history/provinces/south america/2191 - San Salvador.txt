@@ -1,0 +1,16 @@
+owner = UCA
+controller = UCA
+add_core = UCA
+add_core = ELS
+trade_goods = raw_coffee
+life_rating = 5
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

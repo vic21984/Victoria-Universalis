@@ -1,0 +1,2727 @@
+##########################################
+# Issues that parties have.
+##########################################
+party_issues = {
+	trade_policy = {
+		mercantalism = {
+		}
+		protectionism = {
+		}
+		free_trade = {
+		}
+	}
+	economic_policy = {
+		traditionalism = {
+        }
+		laissez_faire = {
+        }
+        interventionism = {
+        }
+        state_capitalism = {
+        }
+        planned_economy = {
+        }
+	}
+	religious_policy = {
+		pro_atheism = {
+			#no effect
+		}
+		secularized = {
+			#no effect
+		}
+		pluralism = {
+			#no effect
+		}
+		moralism = {
+			#no effect
+		}
+	}
+	citizenship_policy = {
+		residency = {
+		}
+		limited_citizenship = {
+		}
+		full_citizenship = {
+		}
+	}
+	war_policy = {
+		jingoism = {
+		}
+		pro_military = {
+		}
+		anti_military = {
+		}
+		pacifism = {
+		}
+	}
+}
+
+##########################################
+# Political reforms.
+##########################################
+political_reforms = {
+	religious_laws = {
+		moralism_law = {
+			allow = {
+				religious_policy = moralism
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+			}
+		}
+		pluralism_law = {
+			allow = {
+				religious_policy = pluralism
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+		secularized_law = {
+			allow = {
+				religious_policy = secularized
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+		pro_atheism_law = {
+			allow = {
+				has_country_flag = social_science_invented
+				religious_policy = pro_atheism
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+			}
+		}
+	}
+	trade_laws = {
+		mercantalism_law = {
+			max_tariff = 1
+			allow = {
+				trade_policy = mercantalism
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+			}
+		}
+		protectionism_law = {
+			max_tariff = 0.75
+			allow = {
+				trade_policy = protectionism
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+			}
+		}
+		free_trade_law = {
+			global_immigrant_attract = 0.01
+			max_tariff = 0.25
+			allow = {
+				trade_policy = free_trade
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+	}
+	economic_laws = {
+		traditionalism_law = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+			}
+			max_tax = 0.75
+			rules = {
+				expand_factory = yes
+				open_factory = yes
+				destroy_factory = yes		
+				build_railway = yes
+				factory_priority = yes
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				delete_factory_if_no_input = no
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				allow_foreign_investment = yes
+				can_invest_in_pop_projects = yes
+			}
+		}
+		laissez_faire_law = {
+			allow = {
+				has_country_flag = freedom_of_trade_invented
+				economic_policy = laissez_faire
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+			global_immigrant_attract = 0.01
+			max_tax = 0.5
+			rules = {
+				open_factory = yes
+				destroy_factory = yes
+				build_railway = no
+				factory_priority = yes
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				delete_factory_if_no_input = no
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				allow_foreign_investment = yes
+				can_invest_in_pop_projects = yes
+			}
+		}
+		interventionism_law = {
+			min_social_spending = 0.25
+			allow = {
+				has_country_flag = guild_based_production_invented
+				economic_policy = interventionism
+				OR = {
+					AND = {
+						has_country_flag = laissez_faire_law
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+					}
+					AND = {
+						NOT = { has_country_flag = laissez_faire_law }
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+					}
+				}
+			}
+			max_tax = 0.75
+			rules = {
+				open_factory = yes
+				destroy_factory = yes
+				build_railway = yes
+				factory_priority = yes
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				delete_factory_if_no_input = no
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				allow_foreign_investment = yes
+				can_invest_in_pop_projects = yes
+			}
+		}
+		state_capitalism_law = {
+			min_social_spending = 0.5
+			allow = {
+				has_country_flag = guild_based_production_invented
+				economic_policy = state_capitalism
+				OR = {
+					AND = {
+						NOT = { has_country_flag = planned_economy_law }
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+					}
+					AND = {
+						has_country_flag = planned_economy_law
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+					}
+				}
+			}
+			max_tax = 1
+			rules = {
+				open_factory = yes
+				destroy_factory = yes
+				build_railway = yes
+				factory_priority = yes
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				delete_factory_if_no_input = no
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				allow_foreign_investment = yes
+				can_invest_in_pop_projects = yes
+			}
+		}
+		planned_economy_law = {
+			min_social_spending = 0.5
+			allow = {
+				has_country_flag = collectivist_theory_invented
+				economic_policy = planned_economy
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+			}
+			max_tax = 1
+			research_points_modifier = 0.2
+			rules = {
+				open_factory = yes
+				destroy_factory = yes
+				build_railway = yes
+				factory_priority = yes
+				pop_build_factory = yes
+				pop_expand_factory = yes
+				pop_open_factory = yes
+				delete_factory_if_no_input = no
+				pop_build_factory_invest = yes
+				pop_expand_factory_invest = yes
+				open_factory_invest = yes
+				build_factory_invest = yes
+				expand_factory_invest = yes
+				build_railway_invest = yes
+				allow_foreign_investment = yes
+				can_invest_in_pop_projects = yes
+			}
+		}
+	}
+	
+	citizens_rights = {
+		primary_culture_only = {
+			rules = { culture_voting = yes }
+			non_accepted_pop_militancy_modifier = 0.02
+			non_accepted_pop_consciousness_modifier = 0.01
+			global_pop_militancy_modifier = -0.02
+			global_immigrant_attract = -0.01
+			allow = {
+				citizenship_policy = residency
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+			}
+		}
+		culture_voting_only = {
+			rules = { culture_voting = yes }
+			non_accepted_pop_consciousness_modifier = 0.01
+			allow = {
+				citizenship_policy = limited_citizenship
+				OR = {
+					check_variable = {
+						which = liberal_clout
+						value = 100
+					}
+					check_variable = {
+						which = socialist_clout
+						value = 100
+					}
+				}
+			}
+		}
+		all_voting_pops = {
+			rules = { all_voting = yes }
+			global_assimilation_rate = 0.1
+			global_immigrant_attract = 0.01
+			allow = {
+				citizenship_policy = full_citizenship
+				OR = {
+					check_variable = {
+						which = liberal_clout
+						value = 100
+					}
+					check_variable = {
+						which = socialist_clout
+						value = 100
+					}
+				}
+			}
+		}
+		multiculturalism = {
+			rules = { all_voting = yes }
+			non_accepted_pop_militancy_modifier = -0.02
+			global_assimilation_rate = -0.5
+			global_immigrant_attract = 0.02
+			allow = {
+				has_country_flag = all_voting_pops
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+			}
+		}
+	}
+
+	child_labor = {
+		child_labor_legal = {
+			factory_throughput = 0.1
+			RGO_throughput = 0.1
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = child_labor_restricted
+			}
+		}
+		
+		child_labor_restricted = {
+			global_immigrant_attract = 0.01
+			education_efficiency_modifier = 0.05
+			factory_throughput = 0.05
+			RGO_throughput = 0.05
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = child_labor_legal
+					}
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = child_labor_legal
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = child_labor_illegal
+					}
+				}
+			}
+		}
+		
+		child_labor_illegal = {
+			education_efficiency_modifier = 0.1
+			global_immigrant_attract = 0.02
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = child_labor_restricted
+					}
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = child_labor_restricted
+					}
+				}
+			}
+		}
+	}
+
+	slavery = {	
+		yes_slavery = {
+			rules = { slavery_allowed = yes }
+			allow = {
+				has_country_flag = communist_or_fascist_dictatorship
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+			}
+		}
+		no_slavery = {
+			global_immigrant_attract = 0.01
+			rules = { slavery_allowed = no }
+			allow = {
+				OR = {
+					NOT = { has_country_flag = the_slavery_debate }
+					year = 1900
+				}
+				OR = {
+					check_variable = {
+						which = liberal_clout
+						value = 100
+					}
+					check_variable = {
+						which = socialist_clout
+						value = 100
+					}
+				}
+			}
+		}
+	}
+
+	vote_franschise = {
+		none_voting = {
+			rich_vote = 0
+			middle_vote = 0
+			poor_vote = 0
+			cb_generation_speed_modifier = 0.15
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = landed_voting
+			}
+		}
+		landed_voting = {
+			rich_vote = 1
+			middle_vote = 0
+			poor_vote = 0
+			global_immigrant_attract = 0.01
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = none_voting
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = wealth_weighted_voting
+					}
+				}
+			}
+			cb_generation_speed_modifier = 0.1
+		}
+		wealth_weighted_voting = {
+			rich_vote = 3
+			middle_vote = 1
+			poor_vote = 0
+			cb_generation_speed_modifier = 0.05
+			global_immigrant_attract = 0.02
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = landed_voting
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = wealth_voting
+					}
+				}
+			}
+		}
+		wealth_voting = {
+			rich_vote = 2
+			middle_vote = 1
+			poor_vote = 0
+			global_immigrant_attract = 0.04
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = wealth_weighted_voting
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = universal_weighted_voting
+					}
+				}
+			}
+		}
+		universal_weighted_voting = {
+			rich_vote = 4
+			middle_vote = 2
+			poor_vote = 1
+			cb_generation_speed_modifier = -0.1
+			global_immigrant_attract = 0.06
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = wealth_voting
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = universal_voting
+					}
+				}
+			}
+		}
+		universal_voting = {
+			rich_vote = 1
+			middle_vote = 1
+			poor_vote = 1
+			cb_generation_speed_modifier = -0.15
+			global_immigrant_attract = 0.08
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = universal_weighted_voting
+					}
+				}
+			}
+		}
+	}
+	
+	upper_house_composition = {
+		party_appointed = {
+			rules = { same_as_ruling_party = yes }
+			ruling_party_support = 0.05
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = appointed
+			}
+		}
+		appointed = {
+			rules = { rich_only = yes }
+			global_immigrant_attract = 0.01
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = party_appointed
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = state_equal_weight
+					}
+				}
+			}
+		}
+		state_equal_weight = {
+			rules = { state_vote = yes }
+			allow = {
+				NOT = { vote_franschise = none_voting }
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = appointed
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = population_equal_weight
+					}
+				}
+			}
+			global_immigrant_attract = 0.02
+		}
+		population_equal_weight = {
+			rules = { population_vote = yes }
+			allow = {
+				NOT = { vote_franschise = none_voting }
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = state_equal_weight
+					}
+				}
+			}
+			global_immigrant_attract = 0.03
+		}
+	}
+
+	voting_system = {
+		first_past_the_post = {
+			rules = { largest_share = yes }
+			allow = {
+				NOT = { vote_franschise = none_voting }
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+		jefferson_method = {
+			rules = { dhont = yes }
+			allow = {
+				NOT = { vote_franschise = none_voting }
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+		proportional_representation = {
+			rules = { sainte_laque = yes }
+			allow = {
+				NOT = { vote_franschise = none_voting }
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+	}
+	press_rights = {
+		state_press = {
+			ruling_party_support = 0.5
+			literacy_con_impact = -0.25
+			suppression_points_modifier = 0.25
+			global_immigrant_attract = -0.01
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = censored_press
+			}
+		}
+		censored_press = {
+			ruling_party_support = 0.25
+			issue_change_speed = 0.1
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = state_press
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = assembly_rights
+					}
+				}
+			}
+		}
+		assembly_rights = {
+			literacy_con_impact = 0.15
+			issue_change_speed = 0.25
+			global_immigrant_attract = 0.01
+			suppression_points_modifier = -0.25
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = censored_press
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = free_press
+					}
+				}
+			}
+		}
+		free_press = {
+			research_points_modifier = 0.1
+			literacy_con_impact = 0.3
+			issue_change_speed = 0.5
+			global_immigrant_attract = 0.02
+			suppression_points_modifier = -0.5
+			allow = {
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+				has_country_flag = assembly_rights
+			}
+		}
+	}
+
+	war_laws = {
+		pacifism_law = {
+			war_exhaustion_effect = 1
+			war_exhaustion = 0.1
+			cb_generation_speed_modifier = -0.4
+			supply_consumption = -0.1
+			mobilization_impact = 1000
+			allow = {
+				war_policy = pacifism
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+		anti_military_law = {
+			war_exhaustion_effect = 0.75
+			war_exhaustion = 0.05
+			cb_generation_speed_modifier = -0.2
+			supply_consumption = -0.05
+			mobilization_impact = 1000
+			allow = {
+				war_policy = anti_military
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+				NOT = { has_country_flag = american_isolationism }
+			}
+		}
+		pro_military_law = {
+			min_military_spending = 0.25
+			war_exhaustion_effect = 0.5
+			cb_generation_speed_modifier = 0.2
+			supply_consumption = 0.05
+			mobilization_impact = 1000
+			allow = {
+				war_policy = pro_military
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				NOT = { has_country_flag = american_isolationism }
+			}
+		}
+		jingoism_law = {
+			min_military_spending = 0.5
+			war_exhaustion_effect = 0.25
+			is_jingoism = yes
+			supply_consumption = 0.1
+			mobilization_impact = 1000
+			allow = {
+				war_policy = jingoism
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				NOT = { has_country_flag = american_isolationism }
+			}
+		}
+	}
+
+	debt_law = {
+		serfdom = {
+			RGO_throughput  = 0.05
+			education_efficiency_modifier = -0.1
+			global_immigrant_attract = -0.1
+			suppression_points_modifier = 0.2
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = tenant_farming
+			}
+		}
+		tenant_farming = {
+			suppression_points_modifier = 0.1
+			allow = {
+				NOT = { has_country_flag = serfdom_not_abolished }
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = serfdom
+						has_country_flag = freedom_of_trade_invented
+						has_country_flag = early_classical_theory_and_critique_invented
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = commercialized_agriculture
+					}
+				}
+			}
+		}
+		commercialized_agriculture = {
+			allow = {
+				has_country_flag = regulated_buying_and_selling_of_stocks_invented
+				has_country_flag = late_classical_theory_invented
+				has_country_flag = market_structure_invented
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+		collectivized_agriculture = {
+			allow = {
+				has_country_flag = collectivist_theory_invented
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				OR = {
+					has_country_flag = tenant_farming
+					has_country_flag = commercialized_agriculture
+				}
+			}
+		}
+	}
+	
+	border_policy = {
+		closed_borders = {
+			global_immigrant_attract = -8
+			badboy = 0.01
+			literacy_con_impact = -0.2
+			research_points_modifier = -0.1
+			rgo_throughput = -0.1
+			factory_throughput = -0.1
+			allow = {
+				vote_franschise = none_voting
+				NOT = { press_rights = free_press }
+				has_country_flag = communist_or_fascist_dictatorship
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+			}
+		}
+		quota_immigration = {
+			core_pop_militancy_modifier = -0.01
+			allow = {
+				NOT = { has_country_flag = imperial_examinations }
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = closed_borders
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = open_borders
+					}
+				}
+			}
+		}
+		open_borders = {
+			allow = {
+				NOT = { has_country_flag = imperial_examinations }
+				OR = {
+					NOT = { has_country_flag = quota_immigration }
+					year = 1875
+				}
+				check_variable = {
+					which = liberal_clout
+					value = 100
+				}
+			}
+		}
+	}
+	
+	womens_rights = {
+		legal_guardianship = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = propertied_women
+				religious_laws = moralism_law
+			}
+		}
+		propertied_women = {
+			global_immigrant_attract = 0.01
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = legal_guardianship
+						NOT = { debt_law = serfdom }
+					}
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = legal_guardianship
+						NOT = { debt_law = serfdom }
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = women_workplace
+						religious_laws = moralism_law
+					}
+				}
+			}
+		}
+		women_workplace = {
+			global_population_growth = -0.001
+			global_immigrant_attract = 0.03
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = propertied_women
+						NOT = { debt_law = serfdom }
+						has_country_flag = feminism_invented
+					}
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = propertied_women
+						NOT = { debt_law = serfdom }
+						has_country_flag = feminism_invented
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = womens_suffrage
+						religious_laws = moralism_law
+					}
+				}
+			}
+		}
+		womens_suffrage = {
+			global_population_growth = -0.002
+			global_immigrant_attract = 0.05
+			allow = {
+				vote_franschise = universal_voting
+				NOT = { debt_law = serfdom }
+				has_country_flag = feminism_invented
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = women_workplace
+					}
+					AND = {
+						check_variable = {
+							which = liberal_clout
+							value = 100
+						}
+						has_country_flag = women_workplace
+					}
+				}
+			}
+		}
+	}
+
+	factory_construction = {
+		yes_allow_building = {
+			factory_owner_cost = 1
+			rules = {
+				build_factory = yes
+				expand_factory = yes
+				can_subsidise = yes
+			}
+			allow = {
+				exists = no
+			}
+		}
+		no_allow_building = {
+			factory_owner_cost = 0.1
+			rules = {
+				build_factory = no
+				expand_factory = no
+				can_subsidise = yes
+			}
+			allow = {
+				exists = no
+			}
+		}
+	}
+}
+
+##########################################
+# Social reforms.
+##########################################
+social_reforms = {
+	wage_reform = {
+		administrative = yes
+		no_minimum_wage = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = trinket_wage
+			}
+		}
+		trinket_wage = {
+			minimum_wage = 0.25
+			global_immigrant_attract = 0.01
+			administrative_multiplier = 1
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_minimum_wage
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = low_minimum_wage
+					}
+				}
+			}
+		}
+		low_minimum_wage = {
+			minimum_wage = 0.5
+			global_immigrant_attract = 0.02
+			administrative_multiplier = 2
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = trinket_wage
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = acceptable_minimum_wage
+					}
+				}
+			}
+		}
+		acceptable_minimum_wage = {
+			minimum_wage = 0.75
+			global_immigrant_attract = 0.03
+			administrative_multiplier = 3
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = low_minimum_wage
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = good_minimum_wage
+					}
+				}
+			}
+		}
+		good_minimum_wage = {
+			minimum_wage = 1
+			global_immigrant_attract = 0.04
+			administrative_multiplier = 4
+			allow = {
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = acceptable_minimum_wage
+			}
+		}
+	}
+	work_hours = {
+		administrative = yes
+		no_work_hour_limit = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = fourteen_hours
+			}
+		}
+		fourteen_hours = {
+			factory_throughput = -0.02
+			goods_demand = -0.025
+			global_immigrant_attract = 0.01
+			administrative_multiplier = 1
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_work_hour_limit
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = twelve_hours
+					}
+				}
+			}
+		}
+		twelve_hours = {
+			factory_throughput = -0.04
+			goods_demand = -0.05
+			global_immigrant_attract = 0.02
+			administrative_multiplier = 2
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = fourteen_hours
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = ten_hours
+					}
+				}
+			}
+		}
+		ten_hours = {
+			factory_throughput = -0.06
+			goods_demand = -0.075
+			global_immigrant_attract = 0.03
+			administrative_multiplier = 3
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = twelve_hours
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = eight_hours
+					}
+				}
+			}
+		}
+		eight_hours = {
+			factory_throughput = -0.08
+			goods_demand = -0.1
+			global_immigrant_attract = 0.04
+			administrative_multiplier = 4
+			allow = {
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = ten_hours
+			}
+		}
+	}
+	safety_regulations = {
+		administrative = yes
+		no_safety = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = trinket_safety
+			}
+		}
+		trinket_safety = {
+			factory_maintenance = 0.02
+			global_immigrant_attract = 0.01
+			administrative_multiplier = 1
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_safety
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = low_safety
+					}
+				}
+			}
+		}
+		low_safety = {
+			factory_maintenance = 0.04
+			global_immigrant_attract = 0.02
+			administrative_multiplier = 2
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = trinket_safety
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = acceptable_safety
+					}
+				}
+			}
+		}
+		acceptable_safety = {
+			factory_maintenance = 0.06
+			global_immigrant_attract = 0.03
+			administrative_multiplier = 3
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = low_safety
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = good_safety
+					}
+				}
+			}
+		}
+		good_safety = {
+			global_population_growth = 0.001
+			factory_maintenance = 0.08
+			global_immigrant_attract = 0.04
+			administrative_multiplier = 4
+			allow = {
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = acceptable_safety
+			}
+		}
+	}
+	unemployment_subsidies = {
+		no_subsidies = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = trinket_subsidies
+			}
+		}
+		trinket_subsidies = {
+			unemployment_benefit = 0.5
+			global_immigrant_attract = 0.01
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_subsidies
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = low_subsidies
+					}
+				}
+			}
+		}
+		low_subsidies = {
+			unemployment_benefit = 1
+			global_immigrant_attract = 0.02
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = trinket_subsidies
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = acceptable_subsidies
+					}
+				}
+			}
+		}
+		acceptable_subsidies = {
+			unemployment_benefit = 1.5
+			global_immigrant_attract = 0.03
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = low_subsidies
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = good_subsidies
+					}
+				}
+			}
+		}
+		good_subsidies = {
+			unemployment_benefit = 2
+			global_immigrant_attract = 0.04
+			allow = {
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = acceptable_subsidies
+			}
+		}
+	}
+	pensions = {
+		no_pensions = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = trinket_pensions
+			}
+		}
+		trinket_pensions = {
+			pension_level	= 0.5
+			global_immigrant_attract = 0.01
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_pensions
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = low_pensions
+					}
+				}
+			}
+		}
+		low_pensions = {
+			pension_level	= 1
+			global_immigrant_attract = 0.02
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = trinket_pensions
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = acceptable_pensions
+					}
+				}
+			}
+		}
+		acceptable_pensions = {
+			pension_level	= 1.5
+			global_immigrant_attract = 0.03
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = low_pensions
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = good_pensions
+					}
+				}
+			}
+		}
+		good_pensions = {
+			pension_level	= 2
+			global_immigrant_attract = 0.04
+			allow = {
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = acceptable_pensions
+			}
+		}
+	}
+	health_care = {
+		administrative = yes
+		no_health_care = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = trinket_health_care
+			}
+		}
+		trinket_health_care = {
+			global_population_growth = 0.001
+			global_immigrant_attract = 0.01
+			administrative_multiplier = 3
+			allow = { 
+				year = 1865
+				has_country_flag = medicine_invented
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_health_care
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = low_health_care
+					}
+				}
+			}
+		}
+		low_health_care = {
+			global_population_growth = 0.002
+			global_immigrant_attract = 0.02
+			administrative_multiplier = 6
+			allow = { 
+				year = 1880
+				has_country_flag = inorganic_chemistry_invented
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = trinket_health_care
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = acceptable_health_care
+					}
+				}
+			}
+		}
+		acceptable_health_care = {
+			global_population_growth = 0.003
+			global_immigrant_attract = 0.03
+			administrative_multiplier = 9
+			allow = {
+				year = 1895
+				has_country_flag = organic_chemistry_invented
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = low_health_care
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = good_health_care
+					}
+				}
+			}
+		}
+		good_health_care = {
+			global_population_growth = 0.004
+			global_immigrant_attract = 0.04
+			administrative_multiplier = 12
+			allow = { 
+				year = 1910
+				has_country_flag = electricity_invented
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = acceptable_health_care
+			}
+		}
+	}
+	school_reforms = {
+		administrative = yes
+		no_schools = {
+			allow = {
+				check_variable = {
+					which = reactionary_clout
+					value = 100
+				}
+				has_country_flag = low_schools
+			}
+		}
+		low_schools = {
+			education_efficiency_modifier = 0.1
+			global_assimilation_rate = 0.05
+			global_immigrant_attract = 0.01
+			administrative_multiplier = 2
+			allow = {
+				NOT = { child_labor = child_labor_legal }
+				NOT = { has_country_flag = imperial_examinations }
+				has_country_flag = malthusian_thought_invented
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_schools
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = acceptable_schools
+					}
+				}
+			}
+		}
+		acceptable_schools = {
+			education_efficiency_modifier = 0.2
+			global_assimilation_rate = 0.1
+			global_immigrant_attract = 0.02
+			administrative_multiplier = 4
+			allow = {
+				NOT = { child_labor = child_labor_legal }
+				has_country_flag = positivism_invented
+				NOT = { has_country_flag = imperial_examinations }
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = low_schools
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = good_schools
+					}
+				}
+			}
+		}
+		good_schools = {
+			education_efficiency_modifier = 0.3
+			global_assimilation_rate = 0.15
+			global_immigrant_attract = 0.03
+			administrative_multiplier = 6
+			allow = {
+				child_labor = child_labor_illegal
+				has_country_flag = functionalism_invented
+				NOT = { has_country_flag = imperial_examinations }
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = acceptable_schools
+					}
+					AND = {
+						check_variable = {
+							which = compulsory_schools
+							value = 100
+						}
+						has_country_flag = good_schools
+					}
+				}
+			}
+		}
+		compulsory_schools = {
+			education_efficiency_modifier = 0.4
+			global_assimilation_rate = 0.2
+			global_immigrant_attract = 0.04
+			administrative_multiplier = 8
+			allow = {
+				child_labor = child_labor_illegal
+				has_country_flag = biologism_invented
+				NOT = { has_country_flag = imperial_examinations }
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = good_schools
+			}
+		}
+	}
+	law_enforcement = {
+		administrative = yes
+		no_police = {
+			allow = {
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = local_police
+			}
+		}
+		local_police = {
+			global_pop_militancy_modifier = -0.01
+			global_immigrant_attract = 0.01
+			administrative_multiplier = 1
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = no_police
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = dedicated_police
+					}
+				}
+			}
+		}
+		dedicated_police = {
+			global_pop_militancy_modifier = -0.02
+			global_immigrant_attract = 0.02
+			administrative_multiplier = 2
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = local_police
+					}
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = professional_police
+					}
+				}
+			}
+		}
+		professional_police = {
+			global_pop_militancy_modifier = -0.03
+			global_immigrant_attract = 0.03
+			administrative_multiplier = 4
+			allow = {
+				OR = {
+					AND = {
+						check_variable = {
+							which = reactionary_clout
+							value = 100
+						}
+						has_country_flag = militarized_police
+					}
+					AND = {
+						check_variable = {
+							which = socialist_clout
+							value = 100
+						}
+						has_country_flag = dedicated_police
+					}
+				}
+			}
+		}
+		militarized_police = {
+			global_pop_militancy_modifier = -0.04
+			global_immigrant_attract = 0.03
+			administrative_multiplier = 6
+			allow = {
+				check_variable = {
+					which = socialist_clout
+					value = 100
+				}
+				has_country_flag = professional_police
+			}
+		}
+	}
+	bureaucracy_level = {
+		administrative = yes
+		next_step_only = yes
+		bureaucracy_level_0 = {
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_1 = {
+			administrative_multiplier = 1
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_2 = {
+			administrative_multiplier = 2
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_3 = {
+			administrative_multiplier = 3
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_4 = {
+			administrative_multiplier = 4
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_5 = {
+			administrative_multiplier = 5
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_6 = {
+			administrative_multiplier = 6
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_7 = {
+			administrative_multiplier = 7
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_8 = {
+			administrative_multiplier = 8
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_9 = {
+			administrative_multiplier = 9
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_10 = {
+			administrative_multiplier = 10
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_11 = {
+			administrative_multiplier = 11
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_12 = {
+			administrative_multiplier = 12
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_13 = {
+			administrative_multiplier = 13
+			allow = {
+				exists = no
+			}
+		}
+		bureaucracy_level_14 = {
+			administrative_multiplier = 14
+			allow = {
+				exists = no
+			}
+		}
+	}
+}
+
+###############Unciv Reforms
+economic_reforms = {
+	land_reform = {
+		no_land_reform = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_land_reform = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { }
+			
+			on_execute = {
+				effect = {
+					activate_technology = freedom_of_trade
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	admin_reform = {
+		no_admin_reform = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_admin_reform = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { }
+			
+			on_execute = {
+				effect = {
+					activate_technology = enlightenment_thought
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	finance_reform = {
+		next_step_only = yes
+		no_finance_reform = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_finance_reform = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = {
+				NOT = { }
+				is_substate = no
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = private_banks
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+
+	monetary_reform = {
+		next_step_only = yes
+		no_monetary_reform = {
+		}
+		yes_monetary_reform = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { }
+			
+			on_execute = {
+				effect = {
+					activate_technology = no_standard
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+
+	
+	education_reform = {
+		no_education_reform = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_education_reform = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { }
+			
+			on_execute = {
+				effect = {
+					set_country_flag = education_reform
+					plurality = 5
+					activate_technology = malthusian_thought
+					random_owned = {
+						limit = {
+							owner = { school_reforms = good_schools }
+						}	
+						owner = { social_reform = compulsory_schools }
+					}
+					random_owned = {
+						limit = {
+							owner = { school_reforms = acceptable_schools }
+						}	
+						owner = { social_reform = good_schools }
+					}
+					random_owned = {
+						limit = {
+							owner = { school_reforms = low_schools }
+						}	
+						owner = { social_reform = acceptable_schools }
+					}				
+					random_owned = {
+						limit = {
+							owner = { school_reforms = no_schools }
+						}	
+						owner = { social_reform = low_schools }
+					}
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	research_reform = {
+		no_research_reform = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		
+		yes_research_reform = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { }
+			
+			on_execute = {
+				effect = {
+					plurality = 5
+					activate_technology = late_enlightenment_philosophy
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 2
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	transport_improv = {
+		no_transport_improv = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_transport_improv = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { money = 2000 }
+			
+			on_execute = {
+				effect = {
+					treasury = -2000
+					activate_technology = experimental_railroad
+					set_country_flag = yes_transport_improv
+					
+					build_railway_in_capital = {
+						in_whole_capital_state = yes # no = just in main capital province.
+						limit_to_world_greatest_level = yes
+					}
+					
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}	
+	
+	firearms_production = {
+		no_firearms_production = {
+	
+		}
+		yes_firearms_production = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { money = 10000 }
+			
+			on_execute = {
+				effect = {
+					treasury = -10000
+					activate_technology = mechanized_mining
+					build_factory_in_capital_state = small_arms_factory
+
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	pre_indust = {
+		next_step_only = yes
+		no_pre_indust = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_pre_indust = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = { money = 2000 }
+			
+			on_execute = {
+				effect = {
+					activate_technology = water_wheel_power
+					treasury = -2000
+
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 2
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 3
+						}
+					}
+				}
+			}
+		}
+		yes_pre_indust2 = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.2
+			allow = { money = 4000 }
+			
+			on_execute = {
+				effect = {
+					activate_technology = guild_based_production
+					treasury = -4000
+					build_factory_in_capital_state = canned_food_factory
+
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 2
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 3
+						}
+					}
+				}
+			}
+		}
+	}	
+	industrial_construction = {
+		next_step_only = yes
+		no_industrial_construction = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_industrial_construction = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.1
+			allow = {
+				pre_indust = yes_pre_indust2
+				money = 7000 
+			}
+			
+			on_execute = {
+				effect = {
+					treasury = -7000
+					activate_technology = industrial_revolution
+
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 2
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 3
+						}
+					}
+				}
+			}
+		}
+		yes_industrial_construction2 = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.2
+			allow = {
+				money = 14000
+			}
+			
+			on_execute = {
+				effect = {
+					treasury = -14000
+					activate_technology = basic_chemistry
+
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 2
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 3
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#Military Reforms
+military_reforms = {
+	foreign_training = {
+		
+		no_foreign_training = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_foreign_training = {
+			min_military_spending = 0.05
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = introspectionism
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	foreign_weapons = {
+		no_foreign_weapons = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_foreign_weapons = {
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+
+			on_execute = {
+				effect = {
+					activate_technology = flintlock_rifles
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	military_constructions = {
+		no_military_constructions = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_military_constructions = {
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					treasury = -2000
+					activate_technology = post_napoleonic_thought
+					build_fort_in_capital = {
+						in_whole_capital_state = no # no = just in main capital province.
+						limit_to_world_greatest_level = yes
+					}
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}	
+	foreign_officers = {
+		no_foreign_officers = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_foreign_officers = {
+			leadership_modifier = 0.1
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = military_staff_system
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}	
+	army_schools = {
+		no_army_schools = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_army_schools = {
+			min_military_spending = 0.05
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = army_command_principle
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	foreign_naval_officers = {
+		no_foreign_naval_officers = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_foreign_naval_officers = {
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = alphabetic_flag_signaling
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	naval_schools = {
+		no_naval_schools = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_naval_schools = {
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = the_command_principle
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}	
+	}
+	foreign_navies = {
+		no_foreign_navies = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_foreign_navies = {
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = clipper_design
+					activate_technology = steamers
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}	
+	
+	western_shipyards = {
+		no_western_shipyards = {
+		}
+		
+		yes_western_shipyards = {
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			
+			allow = {
+			}
+			
+			on_execute = {
+				effect = {
+					activate_technology = post_nelsonian_thought
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	foreign_artillery = {
+		no_foreign_artillery = {
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
+		}
+		yes_foreign_artillery = {
+			technology_cost = 3000
+			civilization_progress_modifier = 0.05
+			
+			on_execute = {
+				effect = {
+					activate_technology = bronze_muzzle_loaded_artillery
+					
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.25
+						}
+						scaled_militancy = {
+							ideology = neo_conservative
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
+	}
+}

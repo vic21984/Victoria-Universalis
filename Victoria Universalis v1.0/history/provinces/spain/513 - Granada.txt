@@ -1,0 +1,25 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = winery
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = luxury_furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}

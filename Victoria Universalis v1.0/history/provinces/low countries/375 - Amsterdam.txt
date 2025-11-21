@@ -1,0 +1,36 @@
+owner = NET
+controller = NET
+add_core = NET
+trade_goods = raw_stocks
+life_rating = 5
+terrain = urban
+state_building = {
+	level = 1
+	building = stock_exchange
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = small_arms_factory
+	upgrade = yes
+}

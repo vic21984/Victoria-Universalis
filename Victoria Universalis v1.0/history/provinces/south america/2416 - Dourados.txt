@@ -1,0 +1,14 @@
+owner = BRZ
+controller = BRZ
+add_core = BRZtrade_goods = raw_fruit
+life_rating = 4
+state_building = {
+	level = 1
+	building = tropical_wood_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = luxury_furniture_factory
+	upgrade = yes
+}

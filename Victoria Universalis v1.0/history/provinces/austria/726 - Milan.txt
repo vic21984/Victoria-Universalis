@@ -1,0 +1,33 @@
+owner = AUS
+controller = AUS
+add_core = LOM
+add_core = SAR
+add_core = ITA
+trade_goods = raw_grain
+life_rating = 5
+fort = 1
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = liquor_distillery
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

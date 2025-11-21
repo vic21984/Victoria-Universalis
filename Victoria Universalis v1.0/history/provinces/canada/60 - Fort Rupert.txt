@@ -1,0 +1,22 @@
+owner = RPL
+controller = RPL
+add_core = RPL
+add_core = CAN
+add_core = QUE
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = paper_mill
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = furniture_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = CAN
+	controller = CAN
+	remove_core = RPL
+}

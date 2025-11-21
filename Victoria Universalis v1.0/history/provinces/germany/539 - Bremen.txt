@@ -1,0 +1,12 @@
+owner = BRE
+controller = BRE
+add_core = BRE
+add_core = GER
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

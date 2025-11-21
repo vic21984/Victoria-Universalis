@@ -1,0 +1,15 @@
+owner = BOL
+controller = BOL
+add_core = BOL
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = PBC
+	controller = PBC
+	add_core = PBC
+}

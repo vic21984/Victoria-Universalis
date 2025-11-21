@@ -1,0 +1,35 @@
+owner = RUS
+controller = RUS
+add_core = POL
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+state_building = {
+    level = 1
+    building = sulphur_factory
+    upgrade = yes
+}
+state_building = {
+    level = 1
+    building = fertilizer_factory
+    upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}

@@ -1,0 +1,11 @@
+owner = WAD
+controller = WAD
+add_core = WAD
+add_core = NIG
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

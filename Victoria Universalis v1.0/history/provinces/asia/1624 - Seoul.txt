@@ -1,0 +1,10 @@
+owner = KOR
+controller = KOR
+add_core = KOR
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}

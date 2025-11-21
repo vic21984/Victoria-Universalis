@@ -1,0 +1,11 @@
+owner = COB
+controller = COB
+add_core = COB
+add_core = GER
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}

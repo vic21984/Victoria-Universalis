@@ -1,0 +1,12 @@
+owner = PER
+controller = PER
+add_core = PER
+add_core = KHZ
+trade_goods = raw_cotton
+life_rating = 5
+terrain = hills
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}

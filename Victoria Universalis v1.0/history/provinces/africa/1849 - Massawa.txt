@@ -1,0 +1,11 @@
+owner = EGY
+controller = EGY
+add_core = TIG
+add_core = ETH
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

@@ -1,0 +1,384 @@
+country_event = {
+	id = 91704
+	title = "EVTNAME91704"
+	desc = "EVTDESC91704"
+	picture = upper_house
+
+	trigger = {
+		has_country_flag = reform_passed
+		NOT = { has_country_modifier = reform_passed }
+	}
+	
+	immediate = {
+		clr_country_flag = reform_passed
+	}
+	
+	option = {
+		name = "EVTOPTA91704"
+	}
+}
+
+country_event = {
+	id = 91706
+	title = "EVTNAME91706"
+	desc = "EVTDESC91706"
+	picture = upper_house
+
+	trigger = {
+		has_country_flag = force_reform
+		NOT = { has_country_modifier = force_reform }
+	}
+	
+	immediate = {
+		clr_country_flag = force_reform
+	}
+	
+	option = {
+		name = "EVTOPTA91706"
+	}
+}
+
+
+########## CORES ##########
+province_event = {
+	id = 91707
+	title = "EVTNAME91707"
+	desc = "EVTDESC91707"
+
+	trigger = {
+		owner = {
+			NOT = { has_country_modifier = diplomatic_cores }
+			war = no
+		}
+		has_province_modifier = adding_cores
+	}
+
+	option = {
+		name = "EVTOPTA91707"
+		state_scope = {
+			any_owned = {
+				limit = {
+					has_province_modifier = adding_cores
+				}
+				remove_province_modifier = adding_cores
+				add_core = THIS
+				#add_core = RMC
+			}
+		}
+		#any_country = {
+		#	limit = {
+		#		any_core = {
+		#			is_core = RMC
+		#			owned_by = THIS
+		#		}
+		#		NOT = { tag = THIS }
+		#		NOT = { tag = MST }
+		#		NOT = { tag = SMA }
+		#	}
+		#	country_event = { id = 91708 days = 0 }
+		#}
+	}
+}
+
+#country_event = {
+#	id = 91708
+#	title = "EVTNAME91708"
+#	desc = "EVTDESC91708"
+#	picture = generic_map
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "EVTOPTA91708"
+#		FROM = {
+#			any_owned = {
+#				limit = {
+#					is_core = RMC
+#					is_core = THIS
+#				}
+#				remove_core = THIS
+#			}
+#		}
+#	}
+#}
+
+#province_event = {
+#	id = 91709
+#	title = "EVTNAME91709"
+#	desc = "EVTDESC91709"
+#
+#	trigger = {
+#		NOT = { controlled_by = THIS }
+#		has_province_modifier = adding_cores
+#	}
+#
+#	option = {
+#		name = "EVTOPTA91709"
+#		remove_province_modifier = adding_cores
+#	}
+#}
+
+########## WAR ECON ##########
+country_event = {
+	id = 91710
+	title = "EVTNAME91710"
+	desc = "EVTDESC91710"
+	picture = armament_depot
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91710"
+		set_country_flag = partial_war_econ
+	}
+
+	option = {
+		name = "EVTOPTB91710"
+		set_country_flag = total_war_econ
+	}
+
+	option = {
+		name = "EVTOPTC91710"
+	}
+}
+
+
+########## UNOCCUPY PROVINCES ##########
+country_event = {
+	id = 91711
+	title = "EVTNAME91711"
+	desc = "EVTDESC91711"
+	picture = cease_fire
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91711"
+		any_owned = {
+			limit = {
+				NOT = { controlled_by = THIS }
+				controller = { ai = no }
+			}
+			controller = {
+				country_event = { id = 91712 days = 0 }
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91711"
+		any_country = {
+			limit = {
+				ai = no
+				war_with = THIS 
+			}
+			country_event = { id = 91714 days = 0 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTC91711"
+	}
+}
+
+country_event = {
+	id = 91712
+	title = "EVTNAME91712"
+	desc = "EVTDESC91712"
+	picture = cease_fire
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91712"
+		FROM = {
+			country_event = { id = 91713 days = 0 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91712"
+	}
+}
+
+country_event = {
+	id = 91713
+	title = "EVTNAME91713"
+	desc = "EVTDESC91713"
+	picture = cease_fire
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91713"
+		any_owned = {
+			limit = { controlled_by = FROM }
+			change_controller = THIS
+		}
+	}
+}
+
+country_event = {
+	id = 91714
+	title = "EVTNAME91714"
+	desc = "EVTDESC91714"
+	picture = cease_fire
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91714"
+		random_owned = {
+			limit = {
+				is_capital = yes
+			}
+			state_scope = {
+				any_owned = {
+					change_controller = FROM
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91714"
+	}
+}
+
+########## TREASURY TRANSFER ##########
+country_event = {
+	id = 91715
+	title = "Treasury Transfer"
+	desc = "EVTDESC91715"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTB91715"
+		COUNT_10 = {
+			limit = {
+				owner = {
+					THIS = { money = 1000000 }
+				}
+			}
+			owner = {
+				THIS = { money = -1000000 }
+				FROM = { money = 1000000 }
+			}
+		}
+		COUNT_10 = {
+			limit = {
+				owner = {
+					THIS = { money = 100000 }
+				}
+			}
+			owner = {
+				THIS = { money = -100000 }
+				FROM = { money = 100000 }
+			}
+		}
+		COUNT_10 = {
+			limit = {
+				owner = {
+					THIS = { money = 10000 }
+				}
+			}
+			owner = {
+				THIS = { money = -10000 }
+				FROM = { money = 10000 }
+			}
+		}
+		COUNT_10 = {
+			limit = {
+				owner = {
+					THIS = { money = 1000 }
+				}
+			}
+			owner = {
+				THIS = { money = -1000 }
+				FROM = { money = 1000 }
+			}
+		}
+	}
+}
+
+########## NO SPHERE ##########
+country_event = {
+	id = 91716
+	title = "EVTNAME91716"
+	desc = "EVTDESC91716"
+	picture = greatpowers
+
+	trigger = {
+		has_country_flag = no_sphere
+		part_of_sphere = yes
+	}
+
+	option = {
+		name = "EVTOPTA91716"
+		random_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+				ai = yes
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+			
+		}
+		random_country = {
+			limit = {
+				is_sphere_leader_of = THIS
+				ai = no
+			}
+			diplomatic_influence = {
+				who = THIS
+				value = -100
+			}
+			
+		}
+	}
+}
+
+########## RETURN CORES ##########
+country_event = {
+	id = 91717
+	title = "EVTNAME91717"
+	desc = "EVTDESC91717"
+	picture = upper_house
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA91717"
+		FROM = {
+			country_event = { id = 91718 days = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = 91718
+	title = "EVTNAME91718"
+	desc = "EVTDESC91718"
+	picture = upper_house
+
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+
+	option = {
+		name = "EVTOPTA91718"
+		any_owned = {
+			limit = {
+				is_core = FROM
+				has_province_modifier = transfer_provinces
+			}
+			secede_province = FROM
+		}
+	}
+
+	option = {
+		name = "EVTOPTB91718"
+	}
+}

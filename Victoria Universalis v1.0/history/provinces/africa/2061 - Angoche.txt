@@ -1,0 +1,10 @@
+owner = AGC
+controller = AGC
+add_core = AGC
+trade_goods = raw_tobacco
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

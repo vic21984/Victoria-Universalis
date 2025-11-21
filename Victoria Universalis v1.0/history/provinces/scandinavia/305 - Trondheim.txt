@@ -1,0 +1,31 @@
+owner = NOR
+controller = NOR
+add_core = NOR
+add_core = SCA
+trade_goods = raw_sulphur
+life_rating = 5
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = sulphur_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = KSN
+	controller = KSN
+	add_core = KSN
+}

@@ -1,0 +1,12 @@
+owner = JHA
+controller = JHA
+add_core = JHA
+add_core = BUN
+add_core = HND
+trade_goods = raw_dye
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

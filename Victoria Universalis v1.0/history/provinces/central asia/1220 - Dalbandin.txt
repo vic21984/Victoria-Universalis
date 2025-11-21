@@ -1,0 +1,13 @@
+owner = KND
+controller = KND
+add_core = KND
+add_core = AFG
+add_core = KAL
+add_core = PAK
+trade_goods = raw_opium
+life_rating = 5
+state_building = {
+	level = 1
+	building = opium_factory
+	upgrade = yes
+}

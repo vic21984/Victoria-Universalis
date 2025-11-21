@@ -1,0 +1,11 @@
+owner = KTI
+controller = KTI
+add_core = KTI
+trade_goods = raw_coal
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

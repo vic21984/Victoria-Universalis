@@ -1,0 +1,21 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+#add_core = GER
+trade_goods = raw_iron
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = iron_factory
+	upgrade = yes
+}

@@ -1,0 +1,1112 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+#
+# Order in here matters for selection priority if icons are overlapping,
+# so leave bases on top
+
+# 
+# cost = x #==> extra construction cost (added to goods cost estimations)
+# time = x #==> number of days to build.
+#
+
+############# RGO FACTORIES
+cattle_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_cattle = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = cattle_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+coal_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_coal = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = coal_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+coffee_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_coffee = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = coffee_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+cotton_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_cotton = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = cotton_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+dye_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_dye = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = dye_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+grain_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_grain = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = grain_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+iron_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_iron = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = iron_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+oil_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000	total cost: 24000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = oil_factory
+	pop_build_factory = yes
+}
+
+opium_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_opium = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = opium_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+fruit_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_fruit = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = fruit_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+rubber_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_rubber = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = rubber_factory
+	pop_build_factory = yes
+}
+
+silk_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_dye = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = silk_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+sulphur_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_sulphur = 100		#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = sulphur_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+tea_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_tea = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = tea_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+timber_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_timber = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = timber_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+tobacco_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_tobacco = 100		#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = tobacco_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+tropical_wood_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_tropical_wood = 100	#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = tropical_wood_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+############# LATE GAME FACTORIES
+
+aeroplane_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 160		#16000
+		raw_iron = 160			#16000
+		raw_coal = 160			#16000
+		electric_gear = 1500	#24000	total cost: 72000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = aeroplane_factory
+	pop_build_factory = yes
+	advanced_factory = yes
+}
+
+barrel_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 160		#16000
+		raw_iron = 160			#16000
+		raw_coal = 160			#16000
+		electric_gear = 1500	#24000	total cost: 72000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = barrel_factory
+	pop_build_factory = yes
+	advanced_factory = yes
+}
+
+automobile_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000
+		electric_gear = 750		#12000	total cost: 36000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = automobile_factory
+	pop_build_factory = yes
+	advanced_factory = yes
+}
+
+radio_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000
+		electric_gear = 750		#12000	total cost: 36000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = radio_factory
+	pop_build_factory = yes
+	advanced_factory = yes
+}
+
+telephone_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000
+		electric_gear = 750		#12000	total cost: 36000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = telephone_factory
+	pop_build_factory = yes
+	advanced_factory = yes
+}
+
+############# STRATEGIC FACTORIES
+
+electric_gear_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000	total cost: 24000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = electric_gear_factory
+	pop_build_factory = yes
+	strategic_factory = yes
+}
+
+machine_parts_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 30			#3000
+		raw_coal = 40			#4000
+		raw_iron = 50			#5000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = machine_parts_factory
+	pop_build_factory = yes
+	strategic_factory = yes
+}
+
+synthetic_dye_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000	total cost: 24000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = synthetic_dye_factory
+	pop_build_factory = yes
+	strategic_factory = yes
+}
+
+synthetic_oil_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000	total cost: 24000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = synthetic_oil_factory
+	pop_build_factory = yes
+	strategic_factory = yes
+}
+
+synthetic_nitrate_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000	total cost: 24000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = synthetic_nitrate_factory
+	pop_build_factory = yes
+	strategic_factory = yes
+}
+
+synthetic_rubber_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000	total cost: 24000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+	
+	production_type = synthetic_rubber_factory
+	pop_build_factory = yes
+	strategic_factory = yes
+}
+
+############# COMMON FACTORIES
+fishery = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+	
+	default_enabled = yes	
+	production_type = fishery
+	pop_build_factory = yes
+}
+
+
+liquor_distillery = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+	
+	production_type = liquor_distillery
+	pop_build_factory = yes
+}
+
+winery = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = winery
+	pop_build_factory = yes
+}
+
+furniture_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = furniture_factory
+	pop_build_factory = yes
+}
+
+regular_clothes_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = regular_clothes_factory
+	pop_build_factory = yes
+}
+
+explosives_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = explosives_factory
+	pop_build_factory = yes
+}
+
+############# MEDIUM FACTORIES
+
+steel_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+	
+	production_type = steel_factory
+	pop_build_factory = yes
+}
+
+artillery_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = artillery_factory
+	pop_build_factory = yes
+}
+
+small_arms_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = small_arms_factory
+	pop_build_factory = yes
+}
+
+ammunition_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = ammunition_factory
+	pop_build_factory = yes
+}
+
+############# CHEAP FACTORIES
+
+canned_food_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost = 
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = canned_food_factory
+	pop_build_factory = yes
+}
+
+paper_mill = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost = 
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+	
+	production_type = paper_mill
+	pop_build_factory = yes
+}
+
+############# LUXURY GOODS FACTORIES
+stock_exchange = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = stock_exchange
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+luxury_clothes_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost = 
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = luxury_clothes_factory
+	pop_build_factory = yes
+}
+
+luxury_furniture_factory = {
+	type = factory
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost = 
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = luxury_furniture_factory
+	pop_build_factory = yes
+}
+
+pharmaceutical_plant = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 80			#8000
+		raw_iron = 80			#8000
+		raw_coal = 80			#8000	total cost: 24000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = pharmaceutical_plant
+	pop_build_factory = yes
+}
+
+############# BASIC FACTORIES
+
+cement_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = cement_factory
+	pop_build_factory = yes
+}
+
+glass_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+	
+	production_type = glass_factory
+	pop_build_factory = yes
+}
+
+fertilizer_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 40			#4000
+		raw_coal = 40			#4000
+		raw_iron = 40			#4000	total cost: 12000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = fertilizer_factory
+	pop_build_factory = yes
+}
+
+cattle_fertilizer_factory = {
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 5
+	goods_cost =
+	{
+		raw_cattle = 100			#10000
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = cattle_fertilizer_factory
+	pop_build_factory = yes
+	default_enabled = yes
+}
+
+############# NAVAL FACTORIES
+
+steamer_shipyard = {
+	type = factory
+	
+	steam = yes
+
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 99
+	goods_cost =
+	{
+		raw_timber = 64			#6400
+		raw_iron = 40			#4000
+		raw_coal = 64			#6400	total cost: 16800
+	}
+	time = 90
+	visibility = yes
+	onmap = no
+
+	production_type = steamer_shipyard
+	pop_build_factory = yes
+}
+
+
+## Province Selectors for the Immigration mods
+
+province_selector = {
+	# Audax Validator "." Ignore_NEXT
+	type = province_selector
+	# Audax Validator "." Ignore_NEXT
+	goods_cost =
+	{
+	}
+	time = 1
+	visibility = no
+	onmap = no
+	max_level = 2
+	province = yes
+	#one_per_state = yes
+	
+}
+
+## Military Buildings and Infrastructure ##
+naval_base = {    
+	type = naval_base
+	# Audax Validator "." Ignore_NEXT
+	cost = 15000
+	goods_cost =
+	{
+		raw_timber = 20		#2000
+		raw_coal = 64		#6400
+		raw_iron = 25		#2500
+	}
+	time = 360
+	naval_capacity = 1
+	capital = yes
+	onmap = yes
+	port = yes
+	visibility = yes
+	max_level = 7
+	# Audax Validator "." Ignore_NEXT
+	colonial_points = { 30 50 70 90 110 130 150 } #points at levels 1-7
+	province = yes
+	one_per_state = yes
+	colonial_range = 40
+	local_ship_build = -0.05
+}
+
+railroad = {   
+	type = infrastructure
+	# Audax Validator "." Ignore_NEXT
+	cost = 500
+	goods_cost =
+	{
+		raw_timber = 8
+		raw_coal = 8
+		raw_iron = 8
+	}
+	time = 360
+	visibility = yes
+	onmap = yes
+	max_level = 7
+	province = yes
+	
+	infrastructure = 0.1
+	# Audax Validator "." Ignore_NEXT
+	movement_cost = -0.05
+	
+	pop_build_factory = yes
+	spawn_railway_track = yes
+}
+
+fort = {      
+	type = fort
+	# Audax Validator "." Ignore_NEXT
+	cost = 5000
+	goods_cost =
+	{
+		raw_timber = 10		#1000
+		raw_coal = 16		#1600
+		raw_iron = 10		#1000
+		explosives = 100	#2000
+		small_arms = 100	#1800
+		artillery = 100		#3000
+	}
+	time = 180
+	visibility = yes
+	onmap = yes
+	max_level = 7
+	province = yes
+	fort_level = 1
+}
+
+	## Urban Center
+	urban_center = {
+		# Audax Validator "." Ignore_NEXT
+		type = urban_center
+		# Audax Validator "." Ignore_NEXT
+		cost = 500
+		goods_cost =
+		{
+			raw_timber = 8	#800
+			raw_coal = 8	#800
+			raw_iron = 8	#800
+		}
+
+		time = 180
+		visibility = yes
+		onmap = no
+		max_level = 7
+		province = yes
+		pop_build_factory = yes
+		# Audax Validator "." Ignore_NEXT
+
+		#infrastructure = 0.08
+	}
+
+	## Farmland
+	farmland = {
+		# Audax Validator "." Ignore_NEXT
+		type = farmland
+		# Audax Validator "." Ignore_NEXT
+		goods_cost =
+		{
+			raw_grain =	100			#10000
+			raw_fruit = 100			#10000
+			raw_timber = 100		#10000
+			raw_cattle = 100		#10000
+		}
+
+		time = 180
+		visibility = yes
+		onmap = no
+		max_level = 50
+		province = yes
+		# Audax Validator "." Ignore_NEXT
+
+		farm_rgo_size = 1
+	}

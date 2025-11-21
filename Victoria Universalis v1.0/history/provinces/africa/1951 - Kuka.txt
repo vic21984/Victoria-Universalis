@@ -1,0 +1,11 @@
+owner = KBO
+controller = KBO
+add_core = KBO
+add_core = SOK
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

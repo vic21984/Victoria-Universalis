@@ -1,0 +1,11 @@
+owner = XHO
+controller = XHO
+add_core = XHO
+add_core = SAF
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

@@ -1,0 +1,15 @@
+owner = POR
+controller = POR
+add_core = POR
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = fishery
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}

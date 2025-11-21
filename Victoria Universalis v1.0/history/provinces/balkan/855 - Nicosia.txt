@@ -1,0 +1,13 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+add_core = CYP
+add_core = GRE
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

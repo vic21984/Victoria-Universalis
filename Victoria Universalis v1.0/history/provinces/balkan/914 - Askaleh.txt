@@ -1,0 +1,32 @@
+owner = EGY
+controller = EGY
+add_core = EGY
+add_core = TUR
+add_core = SYR
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 1
+	building = silk_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = luxury_clothes_factory
+	upgrade = yes
+}

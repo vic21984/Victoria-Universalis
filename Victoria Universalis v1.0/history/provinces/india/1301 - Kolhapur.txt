@@ -1,0 +1,16 @@
+owner = MAH
+controller = MAH
+add_core = MAH
+add_core = HND
+trade_goods = raw_tea
+life_rating = 5
+state_building = {
+	level = 1
+	building = tea_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

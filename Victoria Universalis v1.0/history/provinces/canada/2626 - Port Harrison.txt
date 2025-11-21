@@ -1,0 +1,11 @@
+owner = LAN
+controller = LAN
+add_core = LAN
+trade_goods = raw_timber
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

@@ -1,0 +1,886 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+########### SIZE BUFFS AND NERFS ###########
+tiny_nation = {
+	trigger = {
+		NOT = {
+			OR = {
+				total_pops = 1000000 #1 million POPs
+				#is_culture_group = germanic
+				is_culture_group = south_asian
+				is_culture_group = east_asian
+			}
+		}
+	}
+	mobilisation_economy_impact = -0.5
+	mobilisation_size = 0.03
+	tax_efficiency = 0.05
+	icon = 9
+}
+
+small_nation = {
+	trigger = {
+		total_pops = 1000000 #1 million POPs
+		NOT = {
+			OR = {
+				total_pops = 3500000 #3.5 million POPs
+				#is_culture_group = germanic
+				is_culture_group = south_asian
+				is_culture_group = east_asian
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = mexico }
+			ai = no
+			has_global_flag = 1836_setup
+		}
+	}
+	mobilisation_economy_impact = -0.2
+	mobilisation_size = 0.02
+	tax_efficiency = 0.02
+	icon = 9
+}
+
+medium_nation = {
+	trigger = {
+		total_pops = 3500000
+		NOT = { total_pops = 7000000 } #7 million POPs
+	}
+	leadership = 0.5
+	mobilisation_size = 0.01
+	icon = 9
+}
+
+medium_nation = {
+	trigger = {
+		total_pops = 7000000
+		NOT =  {total_pops = 14000000 } #14 million POPs
+	}
+	leadership = 1
+	mobilisation_size = 0.01
+	icon = 9
+}
+
+large_nation = {
+	trigger = {
+		total_pops = 14000000
+		NOT = { total_pops = 28000000 } #28 million POPs
+		NOT = { has_country_flag = uncivilized }	
+	}
+	leadership = 1.5
+	icon = 9
+}
+
+empire = {
+	trigger = {
+		total_pops = 28000000
+		NOT = { total_pops = 56000000 } #56 million POPs
+		NOT = { has_country_flag = uncivilized }
+	}
+	leadership = 1.5
+	icon = 9
+}
+
+superpower = {
+	trigger = {
+		total_pops = 56000000
+		NOT = { has_country_flag = uncivilized }
+	}
+	leadership = 2
+	icon = 9
+}
+
+########### EXPANSION ##########
+expansionism_modifier = {
+	trigger = {
+		has_country_flag = expansionism_invented	
+	}
+	badboy = -0.05
+	icon = 5
+}
+
+########## DRAFT LAWS ##########
+anti_military_law = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		war_laws = anti_military_law
+	}
+	mobilisation_size = 0.01
+	icon = 15		
+}
+pro_military_law = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		war_laws = pro_military_law
+	}
+	mobilisation_size = 0.02		
+	icon = 15		
+}	
+jingoism_law = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		war_laws = jingoism_law
+	}
+	mobilisation_size = 0.03		
+	icon = 15		
+}
+anti_military_law_china = {
+	trigger = {
+		has_country_flag = chinese
+		war_laws = anti_military_law
+	}
+	mobilisation_size = 0.002
+	icon = 15		
+}
+pro_military_law_china = {
+	trigger = {
+		has_country_flag = chinese
+		war_laws = pro_military_law
+	}
+	mobilisation_size = 0.004		
+	icon = 15		
+}	
+jingoism_law_china = {
+	trigger = {
+		has_country_flag = chinese
+		war_laws = jingoism_law
+	}
+	mobilisation_size = 0.006		
+	icon = 15		
+}
+########## REVANCHISM ##########
+
+save_the_nation0.5  = {
+	trigger = {
+		revanchism = 0.05
+		NOT = { revanchism = 0.10 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.005
+	icon = 15
+}
+
+save_the_nation1  = {
+	trigger = {
+		revanchism = 0.10
+		NOT = { revanchism = 0.15 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.010
+	icon = 15
+}
+
+save_the_nation1.5  = {
+	trigger = {
+		revanchism = 0.15
+		NOT = { revanchism = 0.20 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.015
+	icon = 15
+}
+
+save_the_nation2  = {
+	trigger = {
+		revanchism = 0.20
+		NOT = { revanchism = 0.25 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.020
+	icon = 15
+}
+
+save_the_nation2.5  = {
+	trigger = {
+		revanchism = 0.25
+		NOT = { revanchism = 0.30 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.025
+	icon = 15
+}
+
+save_the_nation3  = {
+	trigger = {
+		revanchism = 0.30
+		NOT = { revanchism = 0.35 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.030
+	icon = 15
+}
+
+save_the_nation3.5  = {
+	trigger = {
+		revanchism = 0.35
+		NOT = { revanchism = 0.40 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.035
+	icon = 15
+}
+
+save_the_nation4  = {
+	trigger = {
+		revanchism = 0.40
+		NOT = { revanchism = 0.45 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.040
+	icon = 15
+}
+
+save_the_nation4.5  = {
+	trigger = {
+		revanchism = 0.45
+		NOT = { revanchism = 0.50 }
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.045
+	icon = 15
+}
+
+save_the_nation5  = {
+	trigger = {
+		revanchism = 0.50
+		NOT = { has_country_flag = chinese }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.05
+	icon = 15
+}
+
+save_the_nation0.5_china  = {
+	trigger = {
+		revanchism = 0.05
+		NOT = { revanchism = 0.10 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.001
+	icon = 15
+}
+
+save_the_nation1_china  = {
+	trigger = {
+		revanchism = 0.10
+		NOT = { revanchism = 0.15 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.002
+	icon = 15
+}
+
+save_the_nation1.5_china  = {
+	trigger = {
+		revanchism = 0.15
+		NOT = { revanchism = 0.20 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.003
+	icon = 15
+}
+
+save_the_nation2_china  = {
+	trigger = {
+		revanchism = 0.20
+		NOT = { revanchism = 0.25 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.004
+	icon = 15
+}
+
+save_the_nation2.5_china  = {
+	trigger = {
+		revanchism = 0.25
+		NOT = { revanchism = 0.30 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.005
+	icon = 15
+}
+
+save_the_nation3_china  = {
+	trigger = {
+		revanchism = 0.30
+		NOT = { revanchism = 0.35 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.006
+	icon = 15
+}
+
+save_the_nation3.5_china  = {
+	trigger = {
+		revanchism = 0.35
+		NOT = { revanchism = 0.40 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.007
+	icon = 15
+}
+
+save_the_nation4_china  = {
+	trigger = {
+		revanchism = 0.40
+		NOT = { revanchism = 0.45 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.008
+	icon = 15
+}
+
+save_the_nation4.5_china  = {
+	trigger = {
+		revanchism = 0.45
+		NOT = { revanchism = 0.50 }
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.009
+	icon = 15
+}
+
+save_the_nation5_china  = {
+	trigger = {
+		revanchism = 0.50
+		has_country_flag = chinese
+		OR = {
+			NOT = { has_country_flag = qng_china }
+			NOT = { has_country_flag = uncivilized }
+		}
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	mobilisation_size = 0.010
+	icon = 15
+}
+
+########## AI SCRIPTS ##########
+help_ai_econ1 = {
+	trigger = {
+		ai = yes
+		NOT = { has_country_flag = jan_mayen }
+		economic_laws = laissez_faire_law
+	}
+	min_tax = 0.5
+}
+help_ai_econ2 = {
+	trigger = {
+		ai = yes
+		NOT = { has_country_flag = jan_mayen }
+		OR = {
+			economic_laws = interventionism_law
+			economic_laws = traditionalism_law
+		}
+	}
+	min_tax = 0.75
+}
+help_ai_econ3 = {
+	trigger = {
+		ai = yes
+		NOT = { has_country_flag = jan_mayen }
+		OR = {
+			economic_laws = state_capitalism_law
+			economic_laws = planned_economy_law
+		}
+	}
+	min_tax = 1
+}
+help_ai_econ4 = {
+	trigger = {
+		ai = yes
+		NOT = { has_country_flag = jan_mayen }
+		trade_laws = mercantalism_law
+	}
+	min_tariff = 0.75
+}
+help_ai_econ5 = {
+	trigger = {
+		ai = yes
+		NOT = { has_country_flag = jan_mayen }
+		trade_laws = free_trade_law
+	}
+	min_tariff = 0.25
+}
+help_ai_econ6 = {
+	trigger = {
+		ai = yes
+		NOT = { has_country_flag = jan_mayen }
+		trade_laws = protectionism_law
+	}
+	min_tariff = 0.75
+}
+help_ai_military1 = {
+	trigger = {
+		ai = yes
+		money = 1000000
+	}
+	icon = 9
+	min_military_spending = 0.25
+}
+help_ai_social = {
+	trigger = {
+		ai = yes
+		money = 1000000
+	}
+	icon = 9
+	min_social_spending = 0.25
+}
+
+########## SPHERELING BUFF ##########
+
+sphereling_tax_bonus = {
+	trigger = {
+		part_of_sphere = yes
+		NOT = { has_country_flag = jan_mayen }
+	}
+	tax_efficiency = 0.05
+	icon = 9
+}
+
+########## CHINA NERFS ##########
+china_score_nerf = {
+	trigger = {
+		has_country_flag = chinese
+	}
+	land_attack_modifier = -8	#is bugged and doesn't affect combat but still lowers military score
+	mobilisation_economy_impact = 4
+	tariff_efficiency_modifier = -0.1
+	icon = 16
+}
+
+chinese_pop_nerf1 = {
+	trigger = {
+		has_country_flag = chinese
+		has_country_flag = medicine_invented
+	}
+	global_population_growth = -0.001
+	icon = 16
+}
+
+chinese_pop_nerf2 = {
+	trigger = {
+		has_country_flag = chinese
+		has_country_flag = organic_chemistry_invented
+	}
+	global_population_growth = -0.001
+	icon = 16
+}
+
+########## EIC MODIFIERS ##########
+milscore_debuff = {
+	trigger = {
+		has_country_flag = indian
+		is_vassal = yes
+	}
+	land_attack_modifier = -8	#is bugged and doesn't affect combat but still lowers military score
+	icon = 16
+}
+
+milscore_debuff_1860 = {
+	trigger = {
+		has_country_flag = indian
+		is_vassal = yes
+		year = 1860
+	}
+	land_attack_modifier = -3	#is bugged and doesn't affect combat but still lowers military score
+	icon = 16
+}
+
+milscore_debuff_1880 = {
+	trigger = {
+		has_country_flag = indian
+		is_vassal = yes
+		year = 1880
+	}
+	land_attack_modifier = -3.5	#is bugged and doesn't affect combat but still lowers military score
+	icon = 16
+}
+
+########## AI PRUSSIA BUFF ##########
+
+ai_prussia = {
+	trigger = {
+		has_country_flag = prussia
+		ai = yes
+	}
+	mobilisation_size = 0.02
+	icon = 8
+}
+
+########## DISABLE LOANS ##########
+
+disable_loans = {
+	trigger = {
+		OR = {
+			ai = yes
+			has_country_flag = jan_mayen
+		}
+	}
+	max_loan_modifier = -1.0
+	icon = 9
+}
+
+########## IMMIGRATION ATTRACTION ##########
+great_power_immigration = {
+	trigger = {
+		is_greater_power = yes
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = oceania
+			}
+		}
+	}
+	global_immigrant_attract = 0.25
+	icon = 7
+}
+
+########## MOBILIZATION TECHS ##########
+
+mob1_trigger = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		has_country_flag = mob1_invented
+	}
+	mobilisation_size = 0.02
+	icon = 15		
+}
+
+mob2_trigger = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		has_country_flag = mob2_invented
+	}
+	mobilisation_size = 0.01
+	icon = 15		
+}
+
+mob3_trigger = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		has_country_flag = mob3_invented
+	}
+	mobilisation_size = 0.01
+	icon = 15		
+}
+
+mob4_trigger = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		has_country_flag = mob4_invented
+	}
+	mobilisation_size = 0.01
+	icon = 15		
+}
+
+mob5_trigger = {
+	trigger = {
+		NOT = { has_country_flag = chinese }
+		has_country_flag = mob5_invented
+	}
+	mobilisation_size = 0.02
+	icon = 15		
+}
+
+mob1_china_trigger = {
+	trigger = {
+		has_country_flag = chinese
+		has_country_flag = mob1_invented
+	}
+	mobilisation_size = 0.004
+	icon = 15		
+}
+
+mob2_china_trigger = {
+	trigger = {
+		has_country_flag = chinese
+		has_country_flag = mob2_invented
+	}
+	mobilisation_size = 0.002
+	icon = 15		
+}
+
+mob3_china_trigger = {
+	trigger = {
+		has_country_flag = chinese
+		has_country_flag = mob3_invented
+	}
+	mobilisation_size = 0.002
+	icon = 15		
+}
+
+mob4_china_trigger = {
+	trigger = {
+		has_country_flag = chinese
+		has_country_flag = mob4_invented
+	}
+	mobilisation_size = 0.002
+	icon = 15		
+}
+
+mob5_china_trigger = {
+	trigger = {
+		has_country_flag = chinese
+		has_country_flag = mob5_invented
+	}
+	mobilisation_size = 0.004
+	icon = 15		
+}
+
+########## Jan Mayen ##########
+jan_mayen_econ = {
+	trigger = {
+		has_country_flag = utility_tag
+	}
+	max_tax = 0
+	prestige = -10
+	factory_input = -0.9
+	diplomatic_points_modifier = -1
+}
+
+########## Government Types ##########
+colonial_trade_company = {
+	trigger = {
+		government = colonial_company
+	}
+	prestige = -10
+	global_pop_militancy_modifier = -0.05
+}
+
+fascism = {
+	trigger = {
+		government = fascist_dictatorship
+	}
+	non_accepted_pop_militancy_modifier = 0.03
+}
+
+########## Infamy Decay ##########
+extra_decay = {
+	trigger = {
+		has_global_flag = extra_decay_enabled
+	}
+	badboy = -0.05
+}
+
+########## Unrecognized Nation ##########
+unrecognized = {
+	trigger = {
+		has_country_flag = uncivilized
+	}
+	prestige = -10
+	global_pop_militancy_modifier = -0.1
+	goods_demand = -0.25
+}
+
+########## Rude boy ##########
+
+badboy1 = {
+	trigger = {
+		badboy = 1
+		NOT = { badboy = 1.2 }
+	}
+	non_accepted_pop_militancy_modifier = 0.04
+	tariff_efficiency_modifier = -0.05
+	tax_efficiency = -0.02
+}
+
+badboy2 = {
+	trigger = {
+		badboy = 1.2
+		NOT = { badboy = 1.4 }
+	}
+	non_accepted_pop_militancy_modifier = 0.08
+	tariff_efficiency_modifier = -0.1
+	tax_efficiency = -0.04
+}
+
+badboy3 = {
+	trigger = {
+		badboy = 1.4
+		NOT = { badboy = 1.6 }
+	}
+	non_accepted_pop_militancy_modifier = 0.12
+	tariff_efficiency_modifier = -0.15
+	tax_efficiency = -0.06
+}
+
+badboy4 = {
+	trigger = {
+		badboy = 1.6
+		NOT = { badboy = 1.8 }
+	}
+	non_accepted_pop_militancy_modifier = 0.16
+	tariff_efficiency_modifier = -0.2
+	tax_efficiency = -0.08
+}
+
+badboy5 = {
+	trigger = {
+		badboy = 1.8
+		NOT = { badboy = 2 }
+	}
+	non_accepted_pop_militancy_modifier = 0.2
+	tariff_efficiency_modifier = -0.25
+	tax_efficiency = -0.1
+}
+
+badboy6 = {
+	trigger = {
+		badboy = 2
+	}
+	non_accepted_pop_militancy_modifier = 0.24
+	tariff_efficiency_modifier = -0.3
+	tax_efficiency = -0.12
+}
+
+########### BUDGET SLIDER MODIFIERS ###########
+fully_funded_research = {
+	trigger = {
+		OR = {
+			ai = yes
+			education_spending = 0.99
+		}
+	}
+	research_points_modifier = 1
+}
+
+partially_funded_research = {
+	trigger = {
+		ai = no
+		education_spending = 0.5
+		NOT = { education_spending = 0.99 }
+	}
+	research_points_modifier = 0.5
+}
+
+fully_funded_admin = {
+	trigger = {
+		OR = {
+			ai = yes
+			administration_spending = 0.99
+		}
+	}
+}
+
+partially_funded_admin = {
+	trigger = {
+		ai = no
+		administration_spending = 0.5
+		NOT = { administration_spending = 0.99 }
+	}
+}
+
+########### 1900 POP GROWTH NERF ###########
+low_birthrate = {
+	trigger = {
+		year = 1900
+	}
+	global_population_growth = -0.003
+}
+
+
+########### 1836 ADMIN BUFF ###########
+admin_buff = {
+	trigger = {
+		NOT = { year = 1837 }
+	}
+	administrative_efficiency_modifier = 0.3
+}

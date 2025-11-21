@@ -1,0 +1,17 @@
+owner = TCA
+controller = TCA
+add_core = TCA
+add_core = GEO
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = tea_factory
+	upgrade = yes
+}

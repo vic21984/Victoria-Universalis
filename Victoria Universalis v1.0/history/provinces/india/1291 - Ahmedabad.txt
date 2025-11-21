@@ -1,0 +1,12 @@
+owner = EIC
+controller = EIC
+add_core = BER
+add_core = HND
+trade_goods = raw_tobacco
+life_rating = 5
+naval_base = 2
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

@@ -1,0 +1,15 @@
+owner = AST
+controller = AST
+add_core = AST
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = explosives_factory
+	upgrade = yes
+}

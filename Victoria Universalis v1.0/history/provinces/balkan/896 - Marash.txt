@@ -1,0 +1,15 @@
+owner = TUR
+controller = TUR
+add_core = TUR
+trade_goods = raw_dye
+life_rating = 5
+state_building = {
+	level = 1
+	building = dye_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}

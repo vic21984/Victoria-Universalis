@@ -1,0 +1,31 @@
+owner = HUN
+controller = HUN
+add_core = HUN
+trade_goods = raw_cattle
+life_rating = 5
+fort = 1
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = machine_parts_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = AUS
+	controller = AUS
+	add_core = AUS
+}

@@ -1,0 +1,12 @@
+owner = NET
+controller = NET
+add_core = NET
+add_core = WIF
+trade_goods = raw_tobacco
+life_rating = 5
+naval_base = 2
+state_building = {
+	level = 1
+	building = tobacco_factory
+	upgrade = yes
+}

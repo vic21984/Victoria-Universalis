@@ -1,0 +1,32 @@
+owner = POR
+controller = POR
+add_core = POR
+trade_goods = raw_grain
+life_rating = 5
+terrain = urban
+naval_base = 2
+state_building = {
+	level = 1
+	building = timber_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steamer_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = small_arms_factory
+	upgrade = yes
+}

@@ -1,0 +1,11 @@
+owner = MEX
+controller = MEX
+add_core = MEX
+add_core = DES
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

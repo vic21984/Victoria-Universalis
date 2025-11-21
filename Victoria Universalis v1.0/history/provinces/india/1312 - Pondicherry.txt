@@ -1,0 +1,19 @@
+owner = FRA
+controller = FRA
+add_core = HYD
+add_core = KRN
+add_core = HND
+trade_goods = raw_dye
+life_rating = 5
+terrain = urban
+naval_base = 2
+state_building = {
+	level = 1
+	building = dye_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}
