@@ -1,4 +1,4 @@
-#Version 1.0 - 11/20/2025
+# Version 1.0 - 11/20/2025
 ## Interface changes:
 * Renamed Industrial Score to GDP.
 
@@ -78,7 +78,7 @@
 * New Company: United Fruit Company
 
 
-#Version 0.85 - 10/2/2024
+# Version 0.85 - 10/2/2024
 ## Bug fixes:
 * Fixed bugged name placements in Ayan, Chernomin, and Aldan provinces.
 * Bismarck's Reforms event will not keep firing if you choose not to enact them.
