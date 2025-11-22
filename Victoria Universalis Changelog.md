@@ -23,7 +23,6 @@
 * Except for hardcoded migration events, all potential immigrants will first migrate to a utility tag named North America, South America, or Eurasia. Pops in the North American tag will then migrate to North American countries, pops in the South America tag will migrate to South America, and pops in Eurasia will migrate to the rest of the world. The top 3 nations in each hemisphere with the most reforms will receive immigrants.
 * The old boost to internal migration chance from using the migration national province selector has been removed. Now railroad techs give an internal migration boost.
 * Added togglable Disable Spheres decision. Disable Spheres prevents a country from being sphered. AI will never use this decision.
-* Added togglable Wartime Economy decision. Wartime economy adds a +50% throughput bonus to military goods and -25% throughput nerf to most consumer goods.
 * Company production bonuses have been changed. Now every type of good can receive a company bonus.
 * Companies are unlocked by researching Financial Institutions techs instead of through industry score.
 * North German, South Slavic, Misri, and Brazilian pops receive a worldwide pop growth bonus and French, Chinese, and Indian pops have a worldwide pop growth malus. These pop growth changes apply wherever the pop is located and happen via an annual background event so you will not see their pop growth bonus or malus show up in the monthly pop growth statistic.
