@@ -1,0 +1,334 @@
+sprite = 10
+strata = poor
+allowed_to_vote = no
+unemployment = yes
+#is_slave = yes
+color = { 17 17 17 }
+
+rebel =
+{
+	cavalry = 0.0
+	artillery = 0.0
+	cuirassier = 0.0
+	dragoon = 0.0
+	guard = 0.0
+	hussar = 0.0
+	infantry = 0.0
+	irregular = 1
+}
+
+life_needs = {
+	grain =  2.4			#9.6
+}
+
+everyday_needs = {
+	precious_metal = 500
+}
+
+luxury_needs = {
+	precious_metal = 500
+}
+
+country_migration_target =
+{
+	factor = 0
+}
+
+migration_target =
+{
+	factor = 0
+}
+
+promote_to =
+{
+	slaves = {
+		factor = 0.01
+		modifier = {
+			factor = 40
+			type = slaves
+		}
+		modifier = {
+			factor = 20
+			country = {
+				debt_law = serfdom
+			}
+		}
+		modifier = {
+			factor = 40
+			OR = {
+				AND = {
+					is_culture_group = east_asian
+					location = { continent = asia }
+				}
+				AND = {
+					is_culture_group = south_asian
+					location = { continent = asia }
+					country = {
+						NOT = { has_country_flag = sikh }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -10
+			country = {
+				ai = yes
+			}
+		}
+		modifier = {
+			factor = -10
+			is_culture_group = american_cultures
+			country = {
+				ai = yes
+			}
+		}
+	}
+	slaves_factory = {
+		factor = 0.01
+		group = {
+			modifier = {
+				factor = 100
+				location = {
+					life_rating = 20
+				}
+				NOT = { slaves_factory = 0.1 }
+			}
+		}
+		group = {
+			modifier = {
+				factor = 120
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+				}
+			}
+		}
+		group = {
+			modifier = {
+				factor = -60
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 200000
+					}
+				}
+			}
+			modifier = {
+				factor = -20
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 400000
+					}
+				}
+			}
+			modifier = {
+				factor = -10
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 600000
+					}
+				}
+			}
+			modifier = {
+				factor = -6
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 800000
+					}
+				}
+			}
+			modifier = {
+				factor = -4
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 1000000
+					}
+				}
+			}
+			modifier = {
+				factor = -5
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 1200000
+					}
+				}
+			}
+			modifier = {
+				factor = -3
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 1600000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 2000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 2400000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 3000000
+					}
+				}
+			}
+			modifier = {
+				factor = -2
+				location = {
+					life_rating = 7
+					NOT = { life_rating = 8 }
+					state_scope = {
+						total_pops = 4000000
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 20
+			country = { has_country_flag = rapid_industrialization }
+		}
+		modifier = {
+			factor = 20
+			country = { economic_laws = laissez_faire_law }
+		}
+		modifier = {
+			factor = 10
+			country = { economic_laws = interventionism_law }
+		}
+		modifier = {
+			factor = 15
+			country = { trade_laws = free_trade_law }
+		}
+		modifier = {
+			factor = 5
+			country = { trade_laws = protectionism_law }
+		}
+		group = {
+			modifier = {
+				factor = 5
+				country = {
+					check_variable = {
+						which = economic_thought_level
+						value = 1
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				country = {
+					check_variable = {
+						which = economic_thought_level
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				country = {
+					check_variable = {
+						which = economic_thought_level
+						value = 3
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				country = {
+					check_variable = {
+						which = economic_thought_level
+						value = 4
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				country = {
+					check_variable = {
+						which = economic_thought_level
+						value = 5
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				country = {
+					check_variable = {
+						which = economic_thought_level
+						value = 6
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				country = {
+					check_variable = {
+						which = economic_thought_level
+						value = 7
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -200
+			NOT = {
+				location = {
+					work_available = {
+						worker = slaves_factory
+					}
+				}
+			}
+		}
+	}
+}
+
+ideologies = {
+	liberal = {
+		factor = 4
+	}
+	neo_conservative = {
+		factor = 1
+	}
+}
+issues = {
+	full_citizenship =  {
+		factor = 3
+	}
+	no_slavery = {
+		factor = 5
+	}
+	yes_slavery = {
+		factor = 2
+	}
+} 

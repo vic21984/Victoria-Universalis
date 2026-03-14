@@ -1,0 +1,11 @@
+owner = EIC
+controller = EIC
+add_core = PNJ
+add_core = HNS
+trade_goods = raw_tea
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

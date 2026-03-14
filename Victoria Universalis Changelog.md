@@ -1,3 +1,101 @@
+# Version 1.01 - 3/14/2026
+## Bug fixes:
+* Fixed a bug that would cause the game to crash when the player would colonize some states in Africa.
+* Fixed a bug that made Britain lose the Unequal Treaty modifier despite winning the Opium War.
+* Fixed a bug that made bureaucrats not promote properly if a country had Militarized Police.
+* Dismantle Nation cb no longer crashes the game by releasing utility tags.
+* Fixed localization error with Indochina tag.
+
+## Gameplay changes:
+* Created new submod with less RNG dice rolls. The difference in casualties between a 0 roll and a 9 roll in vanilla is about 5.5x, in this submod the difference between a 0 and a 9 is only 2x. This was achieved by giving every leader including generic leaders a default +10 attack and defense stat. The increased attack and defense stats increases overall casualties so bonuses to organization, morale, dig in, forts, and army tactics were all increased in order to keep overall casualties similar to the base game. All units also get extra siege bonuses from army doctrine techs to counteract the increased fort penalties to province occupation from the extra fort effects.
+* Players can vote to bring back the World Bank mechanic at the start of the game.
+* Assimilation Chance bonuses are now increased via Psychology techs and not pop literacy.
+* Army Experience and Reinforcement Rate bonuses in Psychology techs moved to Army Doctrine techs.
+* Attack and Defence bonuses in Army Doctrine techs moved to Light Armament techs.
+* Women in the Workplace reform no longer requires the Feminism invention.
+* Collectivized Agriculture reform now requires a ruling party with Planned Economy.
+* Halved New World assimilation chance bonus from 1% to 0.5%.
+* Max soldier pops increased by 1% in 1890 and an additional 1% in 1922.
+* Moved war exhaustion modifiers from War Policy to Press Rights.
+* Halved administration funding bonus to non-core provinces.
+* A new slave pop type was created that can work in factories. RGO slaves promote into factory slaves the same way farmers promote into labourers.
+* Added a 5% bonus to global immigration attraction to Liberty national value.
+* Increased Order national value core province militancy reduction from -0.01 to -0.02 and doubled suppression gain.
+* Nerfed Equality national value global assimilation buff from 50% to 25%.
+* Slightly buffed cattle fertilizer factories.
+* Removed a bunch of redundant country tags.
+* Lowered Light Artillery support from 200 to 150.
+
+## Country changes:
+###### France:
+* Added Paris Commune event that triggers when French revanchism is above 1, communism is enabled, and The Second Empire decision has been enacted. This event gives the player the choice to become a democracy or proletarian dictatorship.
+* Haussmanns Renovations decision now adds a 2 year baby boom to Paris.
+
+###### Russia:
+* Added Autocracy modifier which disables Vote Franchise reforms. This modifier can be removed by researching Mass Politics.
+* Changed starting Border Policy to Closed Borders.
+* Increased infamy cost of Great Game cb from 2 to 3.
+* Added 4 infamy to Peking Convention decision.
+
+###### United Baltic Provinces:
+* Removed Latvian and Estonian accepted cultures, added North German as an accepted culture, and set Russian to primary culture. If UBD ceases to be a Russian vassal, it will re-add its Baltic cultures and remove Russian accepted culture status.
+
+###### Ottoman Empire:
+* Added Sick Man of Europe modifier that reduces prestige, education efficiency, assimilation, and land starting experience. This modifier is removed by the Tanzimat Reforms.
+* Changed Christian Subjugation modifier to Jizya and removed the education efficiency malus and mobilisation pool bonus.
+* Changed requirements of Tanzimat Reforms decision to having over 20% literacy, over 300 GDP, over 200 military score, not having the Jizya modifier, not having serfdom, and not having traditionalism.
+* Kanun-i-Esasi decision now gives 100 liberal clout.
+* Changed requirements of Embrace Ottomanism decision to require the All Allowed Rights law.
+
+###### Spain:
+* No longer starts with Basque and Catalan as accepted cultures. Choosing the Carlists in the 1st Carlist War event will add Basque and Catalan as accepted cultures.
+* Added Glorious Revolution event that lets Spain choose between continuing as its current government, an absolute monarchy, or a democracy. Choosing absolute monarchy or democracy adds Basque and Catalan as accepted cultures. This event only triggers if Spain picked the Isabella path in the Carlist War.
+
+###### Brazil:
+* Cannot abolish slavery until the Lei Aurea decision is enacted.
+* Lei Aurea decision triggers an event that gives the option to pay 2 million pounds to the slaveowners or pay nothing. Choosing to not pay will trigger the overthrow of the monarchy and a revolt in Rio Grande do Sul.
+* Removed Republica Velha decision.
+* Added Colossus of the South decision that gives rapid industrialization bonus and immigration boost for 5 years.
+
+###### South America:
+* End the Caudillos decision no longer gives an immigration boost.
+* Created Populating the Americas decision for all South American countries that gives a 5 year 100% immigration boost.
+* Removed Valparaiso Harbor decision from Chile.
+* Removed immigration boost from Argentine constitution decision.
+
+###### Italy:
+* Garibaldi Redshirt rebels give priority to the Italian unification event to human players over AI Italian countries.
+
+###### Austria:
+* Redrew province borders in Bohemia.
+
+###### Morocco:
+* Increased starting population by 30%.
+* Created new Tafilalet state from parts of Fez, Marrakesh, and Western Sahara states.
+
+###### Afghanistan:
+* Redrew province borders in Afghanistan.
+
+###### India:
+* Replaced India with Bharat and made India non-playable. Bharat can't gain cores but it has a free acquire core cb on any Indian cores in the same way Qing and Nationalist China have free cbs on any Chinese cores. This was done to lower the amount of possible brigades a unified India can raise as non-core provinces field less brigades than core provinces.
+
+###### China:
+* Beiyang China becomes Zhili Clique when the Warlord Era event triggers.
+* Lowered starting population of Tibet.
+* Lowered starting literacy from 8% to 5%.
+* Slightly increased Chinese pop growth nerf.
+
+###### Japan:
+* Made the land crossing between Aomori and Hakodate unblockable. Also added a strait crossing to Aomori that prevents hostile ships from passing through Tsugaru Strait and Sea of Japan seazones.
+* Converted Ansei Purge decision into an event.
+
+###### Egypt:
+* Slightly increased Misri pop growth bonus.
+* Re-arranged Western Desert, Cairo, and Alexandria states.
+
+###### Africa:
+* The event that creates Congo Free State now gives it a 10 year Rapid Industrialization bonus in addition to the Force Publique negative pop growth modifiers.
+
 # Version 1.0 - 11/20/2025
 ## Interface changes:
 * Renamed Industrial Score to GDP.

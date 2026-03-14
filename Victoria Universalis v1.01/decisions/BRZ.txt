@@ -1,0 +1,68 @@
+political_decisions = {
+	the_golden_law = {
+		picture = golden_law
+		potential = {
+			tag = BRZ
+			has_country_flag = the_slavery_debate
+		}
+		allow = {
+			analytic_philosophy = 1
+			NOT = { ruling_party_ideology = reactionary }
+		}
+		effect = {
+			country_event = { id = 46305 days = 0 }
+			clr_country_flag = the_slavery_debate
+			political_reform = no_slavery
+			add_accepted_culture = afro_brazilian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	colossus_of_the_south = {
+		picture = colossus_of_the_south
+		potential = {
+			tag = BRZ
+			NOT = { has_country_flag = colossus_of_the_south }
+		}
+		allow = {
+			early_railroad = 1
+			practical_steam_engine = 1
+			freedom_of_trade = 1
+			steamers = 1
+		}
+		effect = {
+			set_country_flag = colossus_of_the_south
+			add_country_modifier = { name = rapid_industrialization duration = 1825 }
+			set_country_flag = rapid_industrialization
+			RAPID_INDUSTRIALIZATION = { }
+			add_country_modifier = { name = small_immigration_boom duration = 1825 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fatherland_volunteers = {
+		potential = {
+			tag = BRZ
+			government = hms_government
+			NOT = {
+				has_country_flag = pedro_said_it_best
+			}
+		}
+		allow = {
+			army_decision_making = 1
+			war = yes
+		}
+		effect = {
+			war_exhaustion = -1
+			prestige = 10
+			random_owned = { limit = { owner = { war_laws = pro_military_law } } owner = { political_reform = jingoism_law } }
+			random_owned = { limit = { owner = { war_laws = anti_military_law } } owner = { political_reform = pro_military_law } }
+			random_owned = { limit = { owner = { war_laws = pacifism_law } } owner = { political_reform = anti_military_law } }
+			set_country_flag = pedro_said_it_best
+		}
+	}
+}
