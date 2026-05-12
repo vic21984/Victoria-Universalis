@@ -1,0 +1,25 @@
+owner = KOK
+controller = KOK
+add_core = KOK
+add_core = KAZ
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = RUS
+	controller = RUS
+}
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

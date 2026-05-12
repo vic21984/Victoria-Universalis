@@ -1,0 +1,13 @@
+owner = NET
+controller = NET
+add_core = KLM
+trade_goods = raw_rubber
+life_rating = 5
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	colonial = 0
+}

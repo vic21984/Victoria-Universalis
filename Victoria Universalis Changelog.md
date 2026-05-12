@@ -1,3 +1,33 @@
+# Version 1.02 - 5/12/2026
+## Bug fixes:
+* Fixed a bug that enabled the World Bank even if players voted to disable it.
+
+## Gameplay changes:
+* Brought back the 1913 bookmark.
+* Replaced Precious Metals with Subsistence Gold. Subsistence Gold locations all appear at the start of the game and don't run out like Precious Metals used to. The value of Subsistence Gold was greatly reduced to be in line with other subsistence goods.
+* Created new good called Gold which is mined in Gold Mine factories that can be built in any state with a Subsistence Gold RGO. Gold Mines have the same 5 level cap as other RGO factories.
+* Created Combustion Oil Derricks and Electric Pumpjacks inventions in the Power column of techs that each give a +10% bonus output to oil rigs.
+* Changed requirement to pass State Atheism reform from having researched Social Science to having a Proletarian Dictatorship form of government.
+* Integrate state timer now scales non-linearly with population size of target state.
+* Changed penalty to Closed Borders from -10% Research Points Modifier to -10% all tech school penalty.
+
+## Country changes:
+###### Sub-Saharan Africa:
+* Merged some African cultures into larger neighboring ones to improve performance and buff Sub-Saharan countries.
+
+###### Germany:
+* Reverted province shapes from GFM to vanilla to avoid misclicks in wars.
+
+###### Belgium:
+* Split Wallonia state into Hainaut and Luxembourg states.
+
+###### Arabia:
+* Created new Bahrain tag.
+* Created Hail state from Badiyat Ash-Sham and Nejd states.
+* Added oil to Hufuf Province in Nejd.
+* Gave oil provinces in Saudia Arabia and Bahrain the strategic resource throughput bonus.
+
+
 # Version 1.01 - 3/14/2026
 ## Bug fixes:
 * Fixed a bug that would cause the game to crash when the player would colonize some states in Africa.

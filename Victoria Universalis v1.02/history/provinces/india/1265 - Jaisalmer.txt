@@ -1,0 +1,18 @@
+owner = JAS
+controller = JAS
+add_core = JAS
+add_core = HNS
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = EIC
+	controller = EIC
+}
+1913.1.1 = {
+	colonial = 0
+}

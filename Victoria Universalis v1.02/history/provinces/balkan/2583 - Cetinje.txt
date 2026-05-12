@@ -1,0 +1,21 @@
+owner = MON
+controller = MON
+add_core = MON
+add_core = YUG
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = fruit_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

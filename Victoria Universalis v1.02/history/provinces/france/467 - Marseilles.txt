@@ -1,0 +1,30 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = raw_silk
+life_rating = 5
+state_building = {
+	level = 5
+	building = silk_factory
+	upgrade = yes
+}
+state_building = {
+	level = 5
+	building = luxury_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = glass_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

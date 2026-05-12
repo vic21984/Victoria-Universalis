@@ -1,0 +1,13 @@
+owner = POR
+controller = POR
+trade_goods = raw_tobacco
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = tobacco_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	colonial = 0
+}

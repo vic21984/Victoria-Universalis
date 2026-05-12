@@ -1,0 +1,31 @@
+owner = TIG
+controller = TIG
+add_core = TIG
+add_core = SHW
+add_core = ETH
+trade_goods = raw_coffee
+life_rating = 5
+state_building = {
+	level = 4
+	building = coffee_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	owner = ETH
+	controller = ETH
+}
+1913.1.1 = {
+	colonial = 0
+}

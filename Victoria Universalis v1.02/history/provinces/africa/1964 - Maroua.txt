@@ -1,0 +1,17 @@
+owner = BAG
+controller = BAG
+add_core = BAG
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = GER
+	controller = GER
+}
+1913.1.1 = {
+	colonial = 0
+}

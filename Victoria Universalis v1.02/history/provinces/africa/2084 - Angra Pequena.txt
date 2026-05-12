@@ -1,0 +1,22 @@
+owner = CIV
+controller = CIV
+trade_goods = raw_grain
+life_rating = 3
+1913.1.1 = {
+	owner = GER
+	controller = GER
+	life_rating = 5
+}
+1913.1.1 = {
+	naval_base = 6
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = fishery
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

@@ -1,0 +1,47 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = SCO
+trade_goods = raw_coal
+naval_base = 2 
+life_rating = 5
+state_building = {
+	level = 5
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = explosives_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = grain_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 15
+		building = aeroplane_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = machine_parts_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

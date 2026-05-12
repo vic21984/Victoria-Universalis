@@ -1,0 +1,17 @@
+owner = JAV
+controller = JAV
+add_core = JAV
+trade_goods = raw_coffee
+life_rating = 5
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = NET
+	controller = NET
+}
+1913.1.1 = {
+	colonial = 0
+}

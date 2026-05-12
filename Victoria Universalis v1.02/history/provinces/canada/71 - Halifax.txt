@@ -1,0 +1,37 @@
+owner = CAN
+controller = CAN
+add_core = CAN
+trade_goods = raw_coal
+life_rating = 5
+naval_base = 1
+fort = 1
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steamer_shipyard
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = fishery
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = steel_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

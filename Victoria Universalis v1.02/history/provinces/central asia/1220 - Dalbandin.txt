@@ -1,0 +1,20 @@
+owner = KND
+controller = KND
+add_core = KND
+add_core = AFG
+add_core = KAL
+add_core = PAK
+trade_goods = raw_opium
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = EIC
+	controller = EIC
+}
+1913.1.1 = {
+	colonial = 0
+}

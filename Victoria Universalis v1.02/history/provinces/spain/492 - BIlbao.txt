@@ -1,0 +1,52 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = BSQ
+trade_goods = raw_iron
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 3
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = timber_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = machine_parts_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = coal_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = pharmaceutical_plant
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

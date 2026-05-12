@@ -1,0 +1,21 @@
+owner = CIV
+controller = CIV
+add_core = MOR
+trade_goods = raw_cattle
+life_rating = 3
+terrain = coastal_desert
+1913.1.1 = {
+	owner = SPA
+	controller = SPA
+	life_rating = 5
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = sulphur_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

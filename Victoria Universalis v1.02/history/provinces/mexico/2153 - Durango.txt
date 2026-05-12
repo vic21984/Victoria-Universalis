@@ -1,0 +1,25 @@
+owner = MEX
+controller = MEX
+add_core = MEX
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 2
+	building = cattle_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = coal_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

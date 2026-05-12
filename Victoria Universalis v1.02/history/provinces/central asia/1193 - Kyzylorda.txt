@@ -1,0 +1,24 @@
+owner = BUK
+controller = BUK
+add_core = BUK
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 2
+	building = opium_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = RUS
+	controller = RUS
+}
+1913.1.1 = {
+	colonial = 0
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = cotton_factory
+		upgrade = yes
+	}
+}

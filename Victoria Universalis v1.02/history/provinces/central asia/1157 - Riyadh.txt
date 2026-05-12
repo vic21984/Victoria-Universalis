@@ -1,0 +1,21 @@
+owner = NEJ
+controller = NEJ
+add_core = NEJ
+add_core = HAL
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = oil_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

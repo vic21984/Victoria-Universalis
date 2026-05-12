@@ -1,0 +1,47 @@
+owner = EIC
+controller = EIC
+add_core = BNG
+add_core = PAK
+trade_goods = raw_silk
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 2
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 5
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = silk_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fruit_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = artillery_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

@@ -1,0 +1,58 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = BOH
+add_core = CZH
+trade_goods = raw_coal
+life_rating = 5
+terrain = urban
+state_building = {
+	level = 10
+	building = artillery_factory
+	upgrade = yes
+}
+state_building = {
+	level = 6
+	building = explosives_factory
+	upgrade = yes
+}
+state_building = {
+	level = 5
+	building = gold_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	add_core = KUK
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = coal_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 10
+		building = automobile_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 7
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = liquor_distillery
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

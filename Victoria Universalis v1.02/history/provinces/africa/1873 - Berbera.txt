@@ -1,0 +1,23 @@
+owner = WRL
+controller = WRL
+add_core = WRL
+add_core = MAJ
+add_core = GEL
+add_core = SOM
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = SOM
+	controller = SOM
+	remove_core = MAJ
+	remove_core = WRL
+	remove_core = GEL
+}
+1913.1.1 = {
+	colonial = 0
+}

@@ -1,0 +1,39 @@
+owner = CIV
+controller = CIV
+trade_goods = raw_cattle
+life_rating = 21913.1.1 = {
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	life_rating = 5
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = grain_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = paper_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

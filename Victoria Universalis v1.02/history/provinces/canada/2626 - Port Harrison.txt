@@ -1,0 +1,25 @@
+owner = LAN
+controller = LAN
+add_core = LAN
+trade_goods = precious_metal
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = NET
+	controller = NET
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = gold_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

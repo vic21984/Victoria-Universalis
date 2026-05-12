@@ -1,0 +1,18 @@
+owner = MUG
+controller = MUG
+add_core = MUG
+add_core = HNS
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 3
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = EIC
+	controller = EIC
+}
+1913.1.1 = {
+	colonial = 0
+}

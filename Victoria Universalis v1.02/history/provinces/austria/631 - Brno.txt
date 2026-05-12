@@ -1,0 +1,42 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+add_core = BOH
+add_core = CZH
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 5
+	building = coal_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = KUK
+	controller = KUK
+	add_core = KUK
+}
+1913.1.1 = {
+	state_building = {
+		level = 8
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 8
+		building = aeroplane_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = grain_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = canned_food_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

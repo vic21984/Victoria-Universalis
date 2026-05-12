@@ -1,0 +1,31 @@
+owner = BRZ
+controller = BRZ
+add_core = BRZ
+add_core = MRN
+trade_goods = raw_tobacco
+life_rating = 5
+state_building = {
+	level = 2
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = iron_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = explosives_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

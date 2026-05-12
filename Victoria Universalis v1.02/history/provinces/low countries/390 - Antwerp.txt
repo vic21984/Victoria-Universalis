@@ -1,0 +1,12 @@
+owner = BEL
+controller = BEL
+add_core = BEL
+add_core = NET
+trade_goods = raw_cattle
+life_rating = 5
+1913.1.1 = {
+	remove_core = NET
+}
+1913.1.1 = {
+	colonial = 0
+}

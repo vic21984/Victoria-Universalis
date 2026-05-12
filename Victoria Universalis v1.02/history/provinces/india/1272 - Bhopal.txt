@@ -1,0 +1,18 @@
+owner = BHO
+controller = BHO
+add_core = BHO
+add_core = HNS
+trade_goods = raw_iron
+life_rating = 5
+state_building = {
+	level = 4
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = EIC
+	controller = EIC
+}
+1913.1.1 = {
+	colonial = 0
+}

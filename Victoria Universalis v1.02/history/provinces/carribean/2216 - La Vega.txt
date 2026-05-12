@@ -1,0 +1,14 @@
+owner = HAI
+controller = HAI
+add_core = HAI
+add_core = DOM
+trade_goods = raw_grain
+life_rating = 5
+1913.1.1 = {
+	owner = DOM
+	controller = DOM
+	remove_core = HAI
+}
+1913.1.1 = {
+	colonial = 0
+}

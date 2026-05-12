@@ -1,0 +1,29 @@
+owner = ARC
+controller = ARCadd_core = ARC
+trade_goods = raw_fruit
+life_rating = 5state_building = {
+	level = 3
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = ARG
+	controller = ARG
+	add_core = ARG
+	remove_core = ARC
+}
+1836.1.2 = {
+	state_building = {
+		level = 2
+		building = timber_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

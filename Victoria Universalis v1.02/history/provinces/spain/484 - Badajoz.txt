@@ -1,0 +1,35 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 3
+		building = timber_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = cement_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = furniture_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

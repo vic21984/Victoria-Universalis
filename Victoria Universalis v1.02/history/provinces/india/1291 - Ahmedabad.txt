@@ -1,0 +1,15 @@
+owner = EIC
+controller = EIC
+add_core = BER
+add_core = HNS
+trade_goods = raw_tobacco
+life_rating = 5
+naval_base = 2
+state_building = {
+	level = 3
+	building = cotton_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	colonial = 0
+}

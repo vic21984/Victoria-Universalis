@@ -1,0 +1,805 @@
+#Khwarazm Region (40000) #see Uzbekistan.txt and Kazakhstan.txt for balance of region
+#under the rule of Khiva in 1836
+#Dashhowuz (40000/10000 POPS) #now part of Turkmenistan
+1195 = {
+	aristocrats = {
+		culture = uzbek
+		religion = sunni
+		size = 1883
+	}
+
+	clergymen = {
+		culture = uzbek
+		religion = sunni
+		size = 758
+	}
+
+	soldiers = {
+		culture = uzbek
+		religion = sunni
+		size = 6750
+	}
+
+	zbankers = {
+		culture = uzbek
+		religion = sunni
+		size = 81106
+	}
+
+	aristocrats = {
+		culture = kirgiz
+		religion = sunni
+		size = 104
+	}
+
+	clergymen = {
+		culture = kirgiz
+		religion = sunni
+		size = 42
+	}
+
+	soldiers = {
+		culture = kirgiz
+		religion = sunni
+		size = 42
+	}
+
+	zbankers = {
+		culture = kirgiz
+		religion = sunni
+		size = 5700
+	}
+
+	aristocrats = {
+		culture = tajik
+		religion = sunni
+		size = 261
+	}
+
+	clergymen = {
+		culture = tajik
+		religion = sunni
+		size = 83
+	}
+
+	soldiers = {
+		culture = tajik
+		religion = sunni
+		size = 84
+	}
+
+	zbankers = {
+		culture = tajik
+		religion = sunni
+		size = 13317
+	}
+
+	zbankers = {
+		culture = uzbek
+		religion = sunni
+		size = 4095
+	}
+
+	labourers = {
+		culture = uzbek
+		religion = sunni
+		size = 3703
+	}
+
+	labourers = {
+		culture = kirgiz
+		religion = sunni
+		size = 261
+	}
+
+	labourers = {
+		culture = tajik
+		religion = sunni
+		size = 609
+	}
+
+	clerks = {
+		culture = uzbek
+		religion = sunni
+		size = 635
+	}
+
+	clerks = {
+		culture = kirgiz
+		religion = sunni
+		size = 32
+	}
+
+	clerks = {
+		culture = tajik
+		religion = sunni
+		size = 72
+	}
+
+	labourers = {
+		culture = uzbek
+		religion = sunni
+		size = 8021
+	}
+
+	labourers = {
+		culture = kirgiz
+		religion = sunni
+		size = 564
+	}
+
+	labourers = {
+		culture = tajik
+		religion = sunni
+		size = 1317
+	}
+
+	labourers = {
+		culture = uzbek
+		religion = sunni
+		size = 405
+	}
+
+	capitalists = {
+		culture = uzbek
+		religion = sunni
+		size = 142
+	}
+
+	capitalists = {
+		culture = kirgiz
+		religion = sunni
+		size = 8
+	}
+
+	capitalists = {
+		culture = tajik
+		religion = sunni
+		size = 20
+	}
+}
+#Babadaýhan
+44 = {
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 104
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 135
+	}
+
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 454
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 8650
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 11
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size = 42
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 348
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 856
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 34
+	}
+
+	capitalists = {
+		culture = turkmen
+		religion = sunni
+		size = 8
+	}
+}
+#Turkmenia Region (368000)
+#under the rule of Khiva in 1836
+#Ashkabad (148000/32000 POPS)
+1204 = {
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 1046
+	}
+
+	bureaucrats = {
+		culture = turkmen
+		religion = sunni
+		size = 1012
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 618
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 2457
+	}
+
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 2193
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 49582
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 56
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 393
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size = 42
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 7371
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 112
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 2270
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 18
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 337
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 243
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 4904
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 39
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 729
+	}
+
+	capitalists = {
+		culture = turkmen
+		religion = sunni
+		size = 79
+	}
+}
+#Kizil Arvut (88000/22000 POPS)
+1205 = {
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 784
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 393
+	}
+
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 675
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 37366
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 56
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 6040
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size = 84
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 3696
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 597
+	}
+
+	capitalists = {
+		culture = turkmen
+		religion = sunni
+		size = 59
+	}
+}
+#under the rule of Bukhara in 1836
+#Merv (132000/33000 POPS)
+1206 = {
+	aristocrats = {
+		culture = tajik
+		religion = sunni
+		size = 52
+	}
+
+	clergymen = {
+		culture = tajik
+		religion = sunni
+		size = 56
+	}
+
+	zbankers = {
+		culture = tajik
+		religion = sunni
+		size = 197
+	}
+
+	soldiers = {
+		culture = tajik
+		religion = sunni
+		size = 84
+	}
+
+	zbankers = {
+		culture = tajik
+		religion = sunni
+		size = 3587
+	}
+
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 837
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 506
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 2162
+	}
+
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 843
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 41327
+	}
+
+	aristocrats = {
+		culture = persian
+		religion = shiite
+		size = 104
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 112
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 786
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size = 252
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 14595
+	}
+
+	labourers = {
+		culture = tajik
+		religion = sunni
+		size = 9
+	}
+
+	labourers = {
+		culture = tajik
+		religion = sunni
+		size = 164
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 99
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 1892
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 36
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 668
+	}
+
+	labourers = {
+		culture = tajik
+		religion = sunni
+		size = 19
+	}
+
+	labourers = {
+		culture = tajik
+		religion = sunni
+		size = 355
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 214
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 4087
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 78
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 1443
+	}
+
+	capitalists = {
+		culture = tajik
+		religion = sunni
+		size = 4
+	}
+
+	capitalists = {
+		culture = turkmen
+		religion = sunni
+		size = 63
+	}
+
+	capitalists = {
+		culture = persian
+		religion = shiite
+		size = 8
+	}
+}
+#Dehestan (88000/22000 POPS)
+1069 = {
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 209
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 112
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 77
+	}
+
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 675
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 16511
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 431
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 5111
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 4
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 756
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 20
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 234
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 8
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 1633
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 43
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 505
+	}
+
+	capitalists = {
+		culture = turkmen
+		religion = sunni
+		size = 16
+	}
+}
+#Abivard (?/? POPS)
+2590 = {
+	aristocrats = {
+		culture = turkmen
+		religion = sunni
+		size = 418
+	}
+
+	clergymen = {
+		culture = turkmen
+		religion = sunni
+		size = 675
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 1179
+	}
+
+	soldiers = {
+		culture = turkmen
+		religion = sunni
+		size = 5062
+	}
+
+	zbankers = {
+		culture = turkmen
+		religion = sunni
+		size = 37052
+	}
+
+	aristocrats = {
+		culture = persian
+		religion = shiite
+		size = 209
+	}
+
+	clergymen = {
+		culture = persian
+		religion = shiite
+		size = 450
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 393
+	}
+
+	soldiers = {
+		culture = persian
+		religion = shiite
+		size = 252
+	}
+
+	zbankers = {
+		culture = persian
+		religion = shiite
+		size = 27617
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 54
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 1696
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 18
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 1264
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 117
+	}
+
+	labourers = {
+		culture = turkmen
+		religion = sunni
+		size = 3664
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 39
+	}
+
+	labourers = {
+		culture = persian
+		religion = shiite
+		size = 2731
+	}
+
+	capitalists = {
+		culture = turkmen
+		religion = sunni
+		size = 32
+	}
+
+	capitalists = {
+		culture = persian
+		religion = shiite
+		size = 16
+	}
+}

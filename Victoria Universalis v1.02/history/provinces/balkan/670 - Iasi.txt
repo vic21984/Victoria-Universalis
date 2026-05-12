@@ -1,0 +1,55 @@
+owner = MOL
+controller = MOL
+add_core = MOL
+add_core = ROM
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cattle_fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = ROM
+	controller = ROM
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = oil_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 3
+		building = fertilizer_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = cement_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

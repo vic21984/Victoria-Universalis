@@ -1,0 +1,17 @@
+owner = AGC
+controller = AGC
+add_core = AGC
+trade_goods = raw_tobacco
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = POR
+	controller = POR
+}
+1913.1.1 = {
+	colonial = 0
+}

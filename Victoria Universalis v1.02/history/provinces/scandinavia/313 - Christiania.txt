@@ -1,0 +1,52 @@
+owner = NOR
+controller = NOR
+add_core = NOR
+add_core = SCA
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 2
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fishery
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steamer_shipyard
+	upgrade = yes
+}
+1836.1.2 = {
+	owner = SWE
+	controller = SWE
+	add_core = SWE
+}
+1913.1.1 = {
+	owner = NOR
+	controller = NOR
+	remove_core = SWE
+}
+1913.1.1 = {
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = automobile_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

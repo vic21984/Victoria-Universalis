@@ -1,0 +1,45 @@
+owner = SIC
+controller = SIC
+add_core = SIC
+add_core = ITA
+trade_goods = raw_sulphur
+life_rating = 5
+state_building = {
+	level = 5
+	building = sulphur_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	owner = ITA
+	controller = ITA
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = grain_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fruit_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = winery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fertilizer_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

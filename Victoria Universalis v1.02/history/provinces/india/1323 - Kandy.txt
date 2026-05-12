@@ -1,0 +1,13 @@
+owner = ENG
+controller = ENG
+add_core = SRI
+trade_goods = raw_tea
+life_rating = 5
+state_building = {
+	level = 5
+	building = tea_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	colonial = 0
+}

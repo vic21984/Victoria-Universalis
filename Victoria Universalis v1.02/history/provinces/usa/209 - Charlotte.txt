@@ -1,0 +1,40 @@
+owner = USA
+controller = USAadd_core = USA
+add_core = CSA
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 4
+	building = explosives_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	state_building = {
+		level = 5
+		building = tobacco_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = cotton_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = fishery
+		upgrade = yes
+	}
+	state_building = {
+		level = 5
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = artillery_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

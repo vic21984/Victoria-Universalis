@@ -1,0 +1,20 @@
+owner = CIV
+controller = CIV
+trade_goods = raw_coal
+life_rating = 2
+1913.1.1 = {
+	owner = ECU
+	controller = ECU
+	add_core = ECU
+	life_rating = 5
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = tropical_wood_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

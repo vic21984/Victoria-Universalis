@@ -1,0 +1,5 @@
+name = "Victoria Universalis v1.02"
+path = "mod/Victoria Universalis v1.02"
+user_dir = "Victoria Universalis v1.02"
+replace_path = "poptypes"
+replace_path = "decisions"

@@ -1,0 +1,20 @@
+owner = CIV
+controller = CIV
+trade_goods = raw_timber
+life_rating = 3
+naval_base = 1
+1913.1.1 = {
+	owner = SPA
+	controller = SPA
+	life_rating = 5
+}
+1913.1.1 = {
+	state_building = {
+		level = 1
+		building = timber_factory
+		upgrade = yes
+	}
+}
+1913.1.1 = {
+	colonial = 0
+}

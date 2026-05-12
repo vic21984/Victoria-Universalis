@@ -1,0 +1,33 @@
+owner = QNG
+controller = QNG
+add_core = CHI
+trade_goods = raw_tea
+life_rating = 5
+state_building = {
+	level = 3
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = dye_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = timber_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = coal_factory
+	upgrade = yes
+}
+1913.1.1 = {
+	colonial = 0
+}
