@@ -1,0 +1,10 @@
+owner = BHU
+controller = BHU
+add_core = BHU
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

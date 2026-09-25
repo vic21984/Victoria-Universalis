@@ -1,0 +1,16 @@
+owner = SOK
+controller = SOK
+add_core = SOK
+add_core = DND
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}

@@ -1,0 +1,10 @@
+owner = KON
+controller = KON
+add_core = KON
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

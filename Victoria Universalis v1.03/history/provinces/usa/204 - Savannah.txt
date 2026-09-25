@@ -1,0 +1,21 @@
+owner = USA
+controller = USAadd_core = USA
+add_core = CSA
+trade_goods = raw_fruit
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

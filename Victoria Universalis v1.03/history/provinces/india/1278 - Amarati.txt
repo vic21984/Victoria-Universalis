@@ -1,0 +1,11 @@
+owner = HYD
+controller = HYD
+add_core = HYD
+add_core = HNS
+trade_goods = raw_dye
+life_rating = 5
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

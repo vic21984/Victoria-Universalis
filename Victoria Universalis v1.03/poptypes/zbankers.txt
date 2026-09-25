@@ -1,0 +1,74 @@
+sprite = 14
+color = { 75 193 237 }
+strata = rich
+unemployment = yes
+
+rebel =
+{
+	cavalry = 0
+	artillery = 0.1
+	cuirassier = 0
+	dragoon = 0
+	guard = 0.3
+	hussar = 0
+	infantry = 0.6
+	irregular = 0
+}
+
+everyday_needs = {
+	grain = 100000
+	cattle = 50000
+	fruit = 50000
+	cotton = 50000
+	opium = 50000
+	tobacco = 50000
+	tea = 50000
+	coffee = 50000
+	fish = 50000
+	silk = 50000
+	tropical_wood = 50000
+	timber = 50000
+	rubber = 50000
+	coal = 50000
+	iron = 50000
+	sulphur = 50000
+	oil = 50000
+	dye = 50000
+	artillery = 50000
+	small_arms = 50000
+	ammunition = 50000
+	canned_food = 50000
+	steamer_convoy = 50000
+	stocks = 5000
+	gold = 5000
+}
+
+life_needs = {
+}
+
+
+luxury_needs = {
+}
+
+country_migration_target =
+{
+	factor = 0
+}
+
+migration_target =
+{
+	factor = 0
+}
+
+promote_to =
+{
+	factor = 0
+}
+
+ideologies = {
+}
+
+issues =
+{
+
+}

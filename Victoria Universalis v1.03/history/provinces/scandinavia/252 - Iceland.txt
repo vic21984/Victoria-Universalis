@@ -1,0 +1,13 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+add_core = ICL
+add_core = SCA
+trade_goods = raw_grain
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = fishery
+	upgrade = yes
+}

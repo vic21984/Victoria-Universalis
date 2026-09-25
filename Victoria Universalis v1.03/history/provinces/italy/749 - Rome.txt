@@ -1,0 +1,18 @@
+owner = PAP
+controller = PAP
+add_core = PAP
+add_core = ITA
+trade_goods = raw_grain
+life_rating = 5
+terrain = urban
+naval_base = 1
+state_building = {
+	level = 2
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}

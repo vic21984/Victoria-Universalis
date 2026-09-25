@@ -1,0 +1,11 @@
+owner = KHI
+controller = KHI
+add_core = KHI
+trade_goods = raw_grain
+life_rating = 5
+terrain = steppe
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

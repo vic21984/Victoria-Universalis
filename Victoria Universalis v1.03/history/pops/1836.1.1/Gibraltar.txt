@@ -1,0 +1,52 @@
+#Gibraltar : 16000
+#Ruled by Britain 1836
+#Gibraltar (16000/4000 POPS)
+517 = {
+    officers = {
+        culture = british
+        religion = protestant
+        size = 10
+    }
+
+    bureaucrats = {
+        culture = british
+        religion = protestant
+        size = 20
+    }
+
+    soldiers = {
+        culture = british
+        religion = protestant
+        size = 103
+    }
+
+    zbankers = {
+        culture = british
+        religion = protestant
+        size = 527
+    }
+
+    zbankers = {
+        culture = sephardic
+        religion = jewish
+        size = 1564
+    }
+
+    zbankers = {
+        culture = spanish
+        religion = catholic
+        size = 11733
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 51
+    }
+
+    zbankers = {
+        culture = spanish
+        religion = catholic
+        size = 781
+    }
+}

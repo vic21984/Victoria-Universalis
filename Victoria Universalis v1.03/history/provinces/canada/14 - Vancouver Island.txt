@@ -1,0 +1,11 @@
+owner = NET
+controller = NET
+add_core = KTI
+add_core = SUL
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}

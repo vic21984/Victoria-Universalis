@@ -1,0 +1,21 @@
+owner = CAN
+controller = CAN
+add_core = CAN
+add_core = QUE
+trade_goods = raw_cattle
+life_rating = 5
+state_building = {
+	level = 1
+	building = iron_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = furniture_factory
+	upgrade = yes
+}

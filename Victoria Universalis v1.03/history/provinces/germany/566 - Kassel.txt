@@ -1,0 +1,16 @@
+owner = HEK
+controller = HEK
+add_core = HEK
+add_core = GER
+trade_goods = raw_coal
+life_rating = 5
+state_building = {
+	level = 1
+	building = coal_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}

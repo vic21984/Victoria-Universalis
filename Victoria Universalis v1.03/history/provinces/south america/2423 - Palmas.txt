@@ -1,0 +1,10 @@
+owner = BRZ
+controller = BRZ
+add_core = BRZ
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 2
+	building = tropical_wood_factory
+	upgrade = yes
+}

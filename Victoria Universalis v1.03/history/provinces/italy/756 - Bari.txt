@@ -1,0 +1,16 @@
+owner = SIC
+controller = SIC
+add_core = SIC
+add_core = ITA
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 2
+	building = fruit_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}

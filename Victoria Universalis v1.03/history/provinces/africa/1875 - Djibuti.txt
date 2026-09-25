@@ -1,0 +1,11 @@
+owner = AWS
+controller = AWS
+add_core = AWS
+add_core = SOM
+trade_goods = raw_grain
+life_rating = 5
+state_building = {
+	level = 1
+	building = fishery
+	upgrade = yes
+}

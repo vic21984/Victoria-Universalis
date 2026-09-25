@@ -1,3 +1,53 @@
+# Version 1.03 - 9/24/2026
+## Gameplay changes:
+* Replaced consciousness with Standard of Living (SoL) from Victoria 3. A POP's SoL increases when they buy luxury goods and decreases when they fail to buy their everyday goods. SoL has 3 effects on POPs: increases needs by up to 4x at 10 SoL, increases literacy gain by +0.1% per 0.5 SoL up to 5 SoL then +0.1% per every 1 SoL up to 10 SoL, increases pop growth by +0.004% per 0.5 SoL then +0.004% per 1 SoL up to 10 SoL. National average SoL also increases a country's global immigration attraction by +1% every 0.5 SoL.;;;;;;;;;;;;;;;;;;;;;;;x
+* Reforms no longer increase global immigration attraction. Only SoL, scripted events, and national values influence immigration now.
+* POPs now represent the total population of a country instead of just adult males and all starting populations were multiplied by 4 to reflect this change.
+* Starting literacy of most nations was lowered to reflect lower female literacy rates.
+* Starting soldier cap reduced to from 5% to 1.25% so that brigade counts stay the same. The 1% increase from Great War and World War inventions also reduced to 0.25% each.
+* Workforce Ratio changed to act as a cap on labourers in a province instead of a minimum peasant percentage. 20% workforce ratio now means that a province can only have 20% labourers. The previous system was confusing and had some unintended interactions with slave pops.
+* Removed the extra slave pop type that could work in factories.
+* Nerfed monthly liberal and socialist ruling party political clout generation from +1 to 0.5.
+* Buffed monthly upper house political clout generation from +0.03 to +0.06 per 1% ideology representation.
+* Nerfed political clout bonus of democracy and Political Clout national idea from +0.3 to +0.2.
+* Removed bonuses to political clout generation from political thought techs.
+* Removed previous Religious Law effects and replaced them with POP political ideology bonuses.
+* Added a debuff that makes POPs 40% more likely to remain peasants if they are majority reactionary ideology or animist religion.
+* Pops in unwesternized nations are much more reactionary at game start to reflect their resistance to modernization.
+* Increased Strategic RGO throughput bonus from 50% to 100%.
+* Unemployment and pension reforms lower global pop promotion by 2.5% per level.
+* Removed Baby Boom province selector option.
+* Added Historical AI voting event. When Historical AI is turned on, AI nations won't use conquest or acquire state cbs and can only take new states from acquire core cbs and scripted events.
+* Removed clergymen POPs. Since all they did was provide literacy, having clergymen and intellectuals was redundant.
+* Intellectual cap is now determined by province literacy and not tech or reforms.
+* Large Nation (55 million POPs), Empire (112 million POPs), and Superpower (224000000 million POPs) triggered modifiers add +0.1%, +0.2%, and +0.3% minimum bureacrat percentage respectively.
+* Added Commission Warships national decision. The decision has a 3 year cooldown and lets the player purchase a few modern ships even if they don't have the tech for them.
+* Reworked military grants in multiplayer games. When a player requests military supplies and another player wants to donate, instead of only giving a one time shipment of goods, they will now automatically send a monthly shipment of military goods so long as they have more than 1500 of the good they want to send in their stockpile and the recipient has less than 1500 of that good in their stockpile. The automatic shipment of goods can be cancelled at any time via the Manage Money Grants and Military Supplies Aid decision.
+* Added a National Literacy Campaign decision that adds a literacy campaign to every province in the country. This was added to reduce clicking when players have a lot of money in the lategame and want to spam literacy campaigns in every state.
+* Labourers have a base mortality of -0.02% pop growth that other POPs don't get. Safety Regulations reforms reduce this malus by 0.005% per level.
+* Unemployment and Pension reforms give -2.5% pop promotion rate per level.
+* Moved national focus techs to the Psychology tech column and renamed all the techs.
+* Renamed Political Thought and Psychology techs to various tech names from Victoria 3. Political Thought techs now mostly unlock reforms and give liberal and social clout bonuses. National focuses were moved to the new Administration tech column.
+* Education efficiency bonuses from Social Thought techs moved to School System reforms.
+* Women in the Workplace reform requires the Feminism invention and Women's Suffrage reform requires Interpretivism tech.
+* Multiculturalism reform requires Critical Theory tech and now removes penalties to minority promotion rates.
+* Removed penalty to national focus use in non-cored states.
+* Removed 1913 bookmark due to having to redo all starting POPs. Will re-add 1913 in next version.
+
+## Country Changes:
+###### China:
+* Removed Imperial Examinations modifier.
+* Added Middle Kingdom modifier that makes pops 100% more reactionary.
+* Removed individual treaty port states and moved treaty ports back to their original states. To take a treaty port, use the Demand Chinese Concession cb on the state where treaty port is located.
+* Increased base annual treaty port revenue from 36500 to 50000.
+
+###### India:
+* Caste System now makes pops 100% more reactionary.
+
+###### Germany:
+* Can form NGF even if foreign countries own German cores.
+
+
 # Version 1.02 - 5/12/2026
 ## Bug fixes:
 * Fixed a bug that enabled the World Bank even if players voted to disable it.
@@ -26,6 +76,9 @@
 * Created Hail state from Badiyat Ash-Sham and Nejd states.
 * Added oil to Hufuf Province in Nejd.
 * Gave oil provinces in Saudia Arabia and Bahrain the strategic resource throughput bonus.
+
+###### Africa:
+* Added revolt tags to uncolonized states.
 
 
 # Version 1.01 - 3/14/2026

@@ -1,0 +1,11 @@
+owner = MOR
+controller = MOR
+add_core = MOR
+trade_goods = raw_timber
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = sulphur_factory
+	upgrade = yes
+}

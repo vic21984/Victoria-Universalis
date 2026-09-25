@@ -1,0 +1,1184 @@
+political_decisions = {
+	form_south_german_confederation = {
+		potential = {
+			is_greater_power = yes
+			OR = {
+				tag = BAD
+				tag = BAV
+				tag = WUR
+			}
+			NOT = {
+				exists = SGF
+				exists = GER
+				tag = AUS
+				tag = KUK
+			}
+		}
+		allow = {
+			war = no
+			BAD = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			BAV = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			WUR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			594 = {
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			set_country_flag = german_federation
+			any_country = {
+				limit = {
+					OR = {
+						tag = BAD
+						tag = BAV
+						tag = WUR
+					}
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			BAD = {
+				all_core = { add_core = SGF }
+			}
+			BAV = {
+				all_core = { add_core = SGF }
+			}
+			WUR = {
+				all_core = { add_core = SGF }
+			}
+			any_country = {
+				limit = {
+					in_sphere = THIS
+				}
+				any_owned = {
+					limit = { is_core = SGF }
+					secede_province = THIS
+				}
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			change_tag = SGF
+		}
+	}
+
+	austrian_form_south_german_confederation = {
+		potential = {
+			tag = AUS
+			is_greater_power = yes
+			NOT = {
+				exists = GER
+				exists = SGF
+			}
+		}	
+		allow = {
+			war = no
+			BAD = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			BAV = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			WUR = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			594 = {
+				owner = {
+					OR = {
+						tag = THIS
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			AUS = {
+				all_core = {
+					remove_core = AUS
+				}
+			}
+			AUS_612 = { add_core = THIS }
+			AUS_619 = { add_core = THIS }
+			AUS_734 = { add_core = THIS }
+			594 = { add_core = THIS }
+			any_country = {
+				limit = {
+					OR = {
+						tag = BAD
+						tag = BAV
+						tag = WUR
+					}
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			BAD = {
+				all_core = { add_core = SGF }
+			}
+			BAV = {
+				all_core = { add_core = SGF }
+			}
+			WUR = {
+				all_core = { add_core = SGF }
+			}
+			change_tag = SGF
+			BOH = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = german_federation
+		}
+	}
+
+	form_north_german_confederation = {
+		potential = {
+			is_greater_power = yes
+			primary_culture = north_german
+			NOT = {
+				exists = GER
+				exists = NGF
+			}
+			NOT = {
+				OR = {
+					tag = AUS
+					tag = KUK
+					tag = DNB
+					tag = BAD
+					tag = BAV
+					tag = WUR
+				}
+			}
+		}	
+		allow = {
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+						NOT = { culture = north_german }
+						owner = {
+							NOT = { is_culture_group = germanic }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = german_federation
+			prestige = 15
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						tag = SCH
+					}
+					in_sphere = THIS
+					NOT = {
+						OR = {
+							tag = THIS
+							tag = AUS
+							tag = KUK
+							tag = DNB
+							tag = BAD
+							tag = BAV
+							tag = WUR
+						}
+					}
+				}
+				annex_to = THIS
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			any_owned = {
+				limit = {
+					is_core = GER
+				}
+				add_core = NGF
+			}
+			change_tag = NGF
+			GER = { all_core = { remove_core = PRU } }
+		}
+	}
+
+	form_union_nation = {
+		potential = {
+			culture_has_union_tag = yes
+			NOT = {
+				OR = {
+					cultural_union = { exists = yes }
+					is_culture_group = germanic
+					is_culture_group = scandinavian
+					#is_culture_group = italian
+					is_culture_group = arab
+					is_culture_group = pan_romanian
+					is_culture_group = polish_culture_group
+					tag = ECU
+					tag = CLM
+					tag = VNZ
+					tag = PAK
+				}
+			}
+		}
+		allow = {
+			war = no
+			cultural_union = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								vassal_of = THIS
+								in_sphere = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = culture
+			clr_country_flag = sikh
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+						tag = AUS
+						tag = KUK
+					}
+					is_culture_group = THIS
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			add_accepted_culture = union
+		}
+	}	
+
+	form_germany = {
+		news = yes
+		news_desc_long = "form_germany_NEWS_LONG"
+		news_desc_medium = "form_germany_NEWS_MEDIUM"
+		news_desc_short = "form_germany_NEWS_SHORT"
+		potential = {
+			is_culture_group = germanic
+			NOT = { tag = KUK }
+			NOT = { tag = DNB }
+			NOT = {
+				exists = GER
+				tag = ISR
+			}
+		}
+		allow = {
+			is_greater_power = yes
+			prestige = 45
+			war = no
+			GER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+			OR = {
+				FRA_412 = { owned_by = THIS }
+				has_country_flag = ems_dispatch_sent
+			}
+		}
+		effect = {
+			set_country_flag = german_federation
+			prestige = 20
+			change_tag = GER
+			add_accepted_culture = north_german
+			add_accepted_culture = south_german
+			any_country = {
+				limit = {
+					is_culture_group = germanic
+					in_sphere = THIS
+				}
+				country_event = { id=11101 days=0 }
+			}
+			GER = { all_core = { remove_core = NGF } }
+		}
+	}
+
+	form_scandinavia = {
+		news = yes
+		news_desc_long = "form_scandinavia_NEWS_LONG"
+		news_desc_medium = "form_scandinavia_NEWS_MEDIUM"
+		news_desc_short = "form_scandinavia_NEWS_SHORT"
+		potential = {
+			is_culture_group = scandinavian
+			NOT = {
+				exists = SCA
+			}
+		}
+		allow = {
+			prestige = 45
+			war = no
+			SCA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+						owner = {
+							vassal_of = THIS
+						}
+						is_core = SCH
+						is_core = ICL
+						province_id = 253
+						province_id = 2591
+						province_id = 251
+						province_id = 2636
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = SCA
+			add_accepted_culture = swedish
+			add_accepted_culture = danish
+			add_accepted_culture = norwegian
+			add_accepted_culture = finnish
+			add_accepted_culture = icelandic
+			add_accepted_culture = sami
+			any_country = {
+				limit = {
+					NOT = {
+						is_greater_power = yes
+					}
+					is_culture_group = scandinavian
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				country_event = { id=11101 days=0 }
+			}
+		}
+	}
+
+	reichsland_elsass = {
+		potential = {
+			OR = {
+				tag = PRU
+				tag = GER
+				tag = NGF
+			}
+			owns = 8
+			owns = 43
+			owns = 410
+			owns = 409
+			owns = 412
+			NOT = {
+				has_global_flag = germany_has_renamed_elsass
+			}
+		}
+		allow = {
+			prestige = 10
+		}
+		effect = {
+			412 = {
+				change_province_name = "Kolmar"
+			}
+			411 = {
+				change_province_name = "Saarburg"
+			}
+			409 = {
+				change_province_name = "Straßburg"
+				state_scope = {
+					change_region_name = "Elsaß-Lothringen"
+				}
+			}
+			410 = {
+				change_province_name = "Mülhausen"
+			}
+			prestige = 5
+			set_global_flag = germany_has_renamed_elsass
+		}
+	}
+
+	restore_alsace = {
+		potential = {
+			tag = FRA
+			has_global_flag = germany_has_renamed_elsass
+			owns = 410
+			owns = 409
+			owns = 412
+		}
+		allow = {
+			prestige = 10
+		}
+		effect = {
+			412 = {
+				change_province_name = "Colmar"
+			}
+			411 = {
+				change_province_name = "Sarrebourg"
+			}
+			409 = {
+				change_province_name = "Strasbourg"
+				state_scope = {
+					change_region_name = "Alsace-Lorraine"
+				}
+			}
+			410 = {
+				change_province_name = "Mulhouse"
+			}
+			prestige = 10
+			clr_global_flag = germany_has_renamed_elsass
+		}
+	}
+
+	form_gran_colombia = {
+		potential = {
+			OR = {
+				tag = ECU
+				tag = CLM
+				tag = VNZ
+			}
+			NOT = {
+				exists = GCO
+			}
+		}	
+		allow = {
+			war = no
+			ECU = {
+				all_core = {
+					OR = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+						province_id = 2287
+					}
+				}
+			}
+			VNZ = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+			CLM = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					OR = {
+						tag = CLM
+						tag = VNZ
+						tag = ECU
+						tag = PNM
+					}
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				any_owned = {
+					limit = { is_core = GCO }
+					secede_province = THIS
+				}
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			2242 = { add_core = GCO } # Mahdia, prev VNZ core
+			2243 = { add_core = GCO }
+			CLM = {
+				all_core = {
+					add_core = GCO
+				}
+			}
+			ECU = {
+				all_core = {
+					add_core = GCO
+				}
+			}
+			VNZ = {
+				all_core = {
+					add_core = GCO
+				}
+			}
+			ECU = {
+				all_core = {
+					add_core = GCO
+				}
+			}
+			change_tag = GCO
+		}
+	}
+
+	form_poland = {
+		picture = greater_poland
+		potential = {
+			primary_culture = polish
+			NOT = { exists = POL }
+			NOT = { exists = PLC }
+		}	
+		allow = {
+			war = no
+			owns = 706
+			owns = 715
+		}
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					primary_culture = polish
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = { in_sphere = THIS }
+				any_owned = {
+					limit = {
+						is_core = THIS
+					}
+					secede_province = THIS
+				}
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			change_tag = POL
+			capital = 706
+		}
+	}
+
+	form_plc = {
+		picture = greater_poland
+		potential = {
+			OR = {
+				tag = POL
+				tag = LIT
+			}
+			NOT = {
+				OR = {
+					exists = PLC
+					has_global_flag = plc_formed
+				}
+			}
+		}	
+		allow = {
+			war = no
+			owns = 706
+			owns = 715
+			owns = 360
+			owns = 937
+			owns = 956
+		}
+		effect = {
+			set_global_flag = plc_formed
+			prestige = 10
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					is_culture_group = polish_culture_group
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						is_core = THIS
+					}
+					secede_province = THIS
+				}
+
+			}
+			## Audax Validator "." Ignore_NEXT
+			any_owned = {
+				limit = { has_building = province_selector }
+				province_selector = -1
+			}
+			POL = { all_core = { add_core = PLC } }
+			LIT = { all_core = { add_core = PLC } }
+			LAT = { all_core = { add_core = PLC } }
+			PRU_695 = { add_core = PLC }
+			RUS_955 = { add_core = PLC }
+			RUS_958 = { add_core = PLC }
+			RUS_718 = { add_core = PLC }
+			RUS_944 = { add_core = PLC }
+			RUS_707 = { add_core = PLC }
+			RUS_360 = { add_core = PLC }
+			change_tag = PLC
+			add_accepted_culture = polish
+			add_accepted_culture = lithuanian
+			capital = 706
+		}
+	}
+
+	form_pakistan = {
+		picture = pakistan
+		potential = {
+			OR = {
+				tag = SIN
+				tag = MAK
+				tag = KAL
+				tag = KAS
+				tag = BNG
+				tag = CRL
+				tag = MUG
+			}
+			NOT = {
+				OR = {
+					exists = PAK
+					has_global_flag = pakistan_formed
+				}
+			}
+		}
+		allow = {
+			war = no
+			owns = 1289
+			owns = 1221
+			owns = 1222
+			owns = 1227
+			owns = 1219
+			owns = 1225
+			owns = 1218
+		}
+		effect = {
+			set_global_flag = pakistan_formed
+			prestige = 10
+			change_tag = PAK
+			capital = 1230
+			add_accepted_culture = panjabi
+			add_accepted_culture = baluchi
+			add_accepted_culture = pashtun
+			add_accepted_culture = sindi
+			add_accepted_culture = kashmiri
+		}
+	}
+
+	form_indonesia = {
+		picture = map_indonesia
+		potential = {
+			OR = {
+				primary_culture = javan
+				primary_culture = moluccan
+				primary_culture = malay
+				primary_culture = melanesian
+				tag = LAN
+			}
+			NOT = {
+				OR = {
+					exists = INO
+					has_global_flag = indonesia_formed
+				}
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					ATJ_1405 = {
+						owner = {
+							tag = THIS
+						}
+					}
+					NET_1398 = {
+						owner = {
+							tag = THIS
+						}
+					}
+					NET_1399 = {
+						owner = {
+							tag = THIS
+						}
+					}
+				}
+				AND = {
+					JAV_1413 = {
+						owner = {
+							tag = THIS
+						}
+					}
+					JAV_1415 = {
+						owner = {
+							tag = THIS
+						}
+					}
+					JAV_1418 = {
+						owner = {
+							tag = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = indonesia_formed
+			prestige = 10
+			change_tag = INO
+			add_accepted_culture = javan
+			add_accepted_culture = moluccan
+			add_accepted_culture = malay
+			add_accepted_culture = melanesian
+			ATJ_1405 = {
+				add_core = THIS
+			}
+			NET_1398 = {
+				add_core = THIS
+			}
+			NET_1399 = {
+				add_core = THIS
+			}
+			JAV_1413 = {
+				add_core = THIS
+			}
+			JAV_1415 = {
+				add_core = THIS
+			}
+			JAV_1418 = {
+				add_core = THIS
+			}
+			BAL_1438 = {
+				add_core = THIS
+			}
+			NET_1424 = {
+				add_core = THIS
+			}
+			NET_1426 = {
+				add_core = THIS
+			}
+			NET_1431 = {
+				add_core = THIS
+			}
+			NET_1449 = {
+				add_core = THIS
+			}
+			NET_1451 = {
+				add_core = THIS
+			}
+		}
+	}
+
+	create_yugoslavia = {
+		picture = yugoslavia
+		potential = {
+			is_culture_group  = south_slavic
+			NOT = { has_country_flag = yugoslavia_formed }
+			YUG = { exists = no }
+		}
+		allow = {
+			TUR_788 = {
+				owned_by = THIS
+			}
+			MON_2582 = {
+				owned_by = THIS
+			}
+			SER_794 = {
+				owned_by = THIS
+			}
+			TUR_803 = {
+				owned_by = THIS
+			}
+			TUR_806 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			set_country_flag = yugoslavia_formed
+			change_tag = YUG
+			add_accepted_culture = union
+			prestige = 50
+		}
+	}
+
+	form_bulgaria_romania = {
+        picture = map_balkans
+        potential = {
+			NOT = { has_global_flag = bulgaria_romania_formed }
+            OR = {
+				tag = BUL
+				tag = ROM
+			}
+        }
+        allow = {
+			OR = {
+				BUL = { exists = no }
+				ROM = { exists = no }
+			}
+            809 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            664 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            670 = {
+                OR = {
+                    owned_by = THIS
+                    owner = {
+                        vassal_of = THIS
+                    }
+                }
+            }
+            war = no
+            is_vassal = no
+        }
+        effect = {
+			change_tag = BGR
+			add_accepted_culture = romanian
+			add_accepted_culture = bulgarian
+			set_global_flag = bulgaria_romania_formed
+			prestige = 20
+			BUL = { all_core = { add_core = BGR remove_core = BUL } }
+			ROM = { all_core = { add_core = BGR remove_core = ROM } }
+			WAL = { all_core = { add_core = BGR remove_core = WAL } }
+			MOL = { all_core = { add_core = BGR remove_core = MOL } }
+			any_country = {
+				limit = {
+					ai = yes
+					war = no
+					OR = {
+						primary_culture = bulgarian
+						primary_culture = romanian
+						tag = SIE
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+						AND = {
+							war = no
+							relation = { who = THIS value = 150 }
+							is_vassal = no
+						}
+					}
+				}
+				annex_to = THIS
+			}
+        }
+        ai_will_do = {
+            factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_global_flag = tsar_of_all_slavs }
+			}
+        }
+    }
+
+	form_turkestan = {
+		picture = turkestan
+		potential = {
+			OR = {
+				primary_culture = uzbek
+				primary_culture = tajik
+				primary_culture = kazak
+				primary_culture = kirgiz
+				primary_culture = tatar
+				primary_culture = turkmen
+				primary_culture = uighur
+			}
+			NOT = { has_global_flag = turkestan }
+		}
+		allow = {
+			KHI_1191 = { owned_by = THIS }
+			KHI_1198 = { owned_by = THIS }
+			BUK_1207 = { owned_by = THIS }
+			KOK_1190 = { owned_by = THIS }
+			RUS_1185 = { owned_by = THIS }
+			RUS_2611 = { owned_by = THIS }
+		}
+		effect = {
+			set_global_flag = turkestan
+			change_tag = TRK
+			prestige = 20
+			add_accepted_culture = uzbek
+			add_accepted_culture = tajik
+			add_accepted_culture = kazak
+			add_accepted_culture = kirgiz
+			add_accepted_culture = tatar
+			add_accepted_culture = turkmen
+			add_accepted_culture = uighur
+			RUS_1185 = { add_core = THIS }
+			RUS_1182 = { add_core = THIS }
+			KOK_1190 = { add_core = THIS }
+			KHI_1191 = { add_core = THIS }
+			KHI_1198 = { add_core = THIS }
+			RUS_1196 = { add_core = THIS }
+			CHI_1600 = { add_core = THIS }
+			BUK_1207 = { add_core = THIS }
+			RUS_2611 = { add_core = THIS }
+		}
+	}
+
+	form_indochina = {
+        picture = map_east_indies
+        potential = {
+            is_culture_group = southeast_asian
+            NOT = { exists = IDC }
+            NOT = { has_global_flag = indochina_formed }
+        }
+        allow = {
+            war = no
+            is_vassal = no
+            nationalism_n_imperialism = 1
+            1334 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1346 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1364 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1380 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1375 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1369 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1356 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1362 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+            1357 = {
+                owner = {
+                    OR = {
+                        tag = THIS
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    war = no
+                }
+            }
+        }
+        effect = {
+            set_global_flag = indochina_formed
+            prestige = 50
+            all_core = { add_core = IDC }
+            BUR = { all_core = { add_core = IDC } }
+            LUA = { all_core = { add_core = IDC } }
+            SIA = { all_core = { add_core = IDC } }
+            CAM = { all_core = { add_core = IDC } }
+            DAI = { all_core = { add_core = IDC } }
+			CHK = { all_core = { add_core = IDC } }
+            change_tag = IDC
+            add_accepted_culture = thai
+            add_accepted_culture = burmese
+            add_accepted_culture = khmer
+            add_accepted_culture = vietnamese
+            add_accepted_culture = lao
+            add_accepted_culture = karen
+            add_accepted_culture = kachin
+            add_accepted_culture = shan
+            any_country = {
+                limit = {
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                    OR = {
+                        tag = DAI
+                        tag = CAM
+                        tag = SIA
+                        tag = BUR
+                        tag = LUA
+                        tag = CHK
+                    }
+                }
+                any_owned = {
+                    limit = { is_core = IDC }
+                    secede_province = THIS
+                }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

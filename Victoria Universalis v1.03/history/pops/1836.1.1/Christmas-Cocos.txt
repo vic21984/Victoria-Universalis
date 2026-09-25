@@ -1,0 +1,24 @@
+#Christmas-Cocos Region (560)
+#uncolonized in 1836
+#Christmas Island (60/15POPS)
+2244 = {
+    zbankers = {
+        culture = malay
+        religion = sunni
+        size = 60
+    }
+}
+#Cocos Islands (500/125 POPS) #british trade post 1836
+2406 = {
+    aristocrats = {
+        culture = british
+        religion = protestant
+        size = 20
+    }
+
+    zbankers = {
+        culture = malay
+        religion = sunni
+        size = 480
+    }
+}

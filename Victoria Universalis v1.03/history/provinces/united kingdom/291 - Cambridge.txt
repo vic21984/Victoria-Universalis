@@ -1,0 +1,15 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+trade_goods = raw_timber
+life_rating = 5
+state_building = {
+	level = 3
+	building = machine_parts_factory
+	upgrade = yes
+}
+state_building = {
+	level = 6
+	building = cement_factory
+	upgrade = yes
+}

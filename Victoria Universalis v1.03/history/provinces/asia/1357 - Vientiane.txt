@@ -1,0 +1,12 @@
+owner = SIA
+controller = SIA
+add_core = SIA
+add_core = WIA
+add_core = LUA
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = cattle_factory
+	upgrade = yes
+}

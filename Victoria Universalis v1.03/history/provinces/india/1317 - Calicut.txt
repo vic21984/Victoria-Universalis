@@ -1,0 +1,12 @@
+owner = EIC
+controller = EIC
+add_core = MYS
+add_core = HNS
+trade_goods = raw_dye
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 2
+	building = clipper_shipyard
+	upgrade = yes
+}

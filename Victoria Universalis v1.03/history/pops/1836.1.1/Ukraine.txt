@@ -1,0 +1,4094 @@
+#Bukovina Region (164000) #See Romania.txt for balance of region
+#under the rule of Austria in 1836
+#Bessarabia Region (332000) #see Moldova.txt for balance of Region
+#under the rule of Russia in 1836
+#Ismail (332000/83000 POPS)
+678 = {
+    aristocrats = {
+        culture = romanian
+        religion = orthodox
+        size = 8400
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 11286
+    }
+
+    soldiers = {
+        culture = romanian
+        religion = orthodox
+        size = 600
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 202395
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5366
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 20500
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 306
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 10719
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1981
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 34986
+    }
+
+    zbankers = {
+        culture = turkish
+        religion = sunni
+        size = 587
+    }
+
+    zbankers = {
+        culture = turkish
+        religion = sunni
+        size = 10438
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 300
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 5380
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 140
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 546
+    }
+
+    craftsmen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 8
+    }
+
+    craftsmen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 286
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 50
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 930
+    }
+
+    craftsmen = {
+        culture = turkish
+        religion = sunni
+        size = 16
+    }
+
+    craftsmen = {
+        culture = turkish
+        religion = sunni
+        size = 278
+    }
+}
+#Felvidek Region (856000) #see Hungary.txt and Slovakia.txt for balance of Region
+#under the rule of Austria in 1836
+#Uzgorod (856000/214000 POPS) #Part of Ukraine today
+950 = {
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 25629
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 606
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 205687
+    }
+
+    zbankers = {
+        culture = slovak
+        religion = catholic
+        size = 5124
+    }
+
+    soldiers = {
+        culture = slovak
+        religion = catholic
+        size = 116
+    }
+
+    zbankers = {
+        culture = slovak
+        religion = catholic
+        size = 37609
+    }
+
+    aristocrats = {
+        culture = hungarian
+        religion = catholic
+        size = 11471
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = catholic
+        size = 12813
+    }
+
+    soldiers = {
+        culture = hungarian
+        religion = catholic
+        size = 302
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = catholic
+        size = 84258
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = catholic
+        size = 12813
+    }
+
+    soldiers = {
+        culture = hungarian
+        religion = catholic
+        size = 269
+    }
+
+    zbankers = {
+        culture = hungarian
+        religion = catholic
+        size = 92783
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9927
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 32
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 2431
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 15
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 5124
+    }
+
+    soldiers = {
+        culture = romanian
+        religion = orthodox
+        size = 99
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 32609
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 906
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7306
+    }
+
+    craftsmen = {
+        culture = slovak
+        religion = catholic
+        size = 178
+    }
+
+    craftsmen = {
+        culture = slovak
+        religion = catholic
+        size = 1332
+    }
+
+    craftsmen = {
+        culture = hungarian
+        religion = catholic
+        size = 450
+    }
+
+    craftsmen = {
+        culture = hungarian
+        religion = catholic
+        size = 2988
+    }
+
+    craftsmen = {
+        culture = hungarian
+        religion = catholic
+        size = 450
+    }
+
+    craftsmen = {
+        culture = hungarian
+        religion = catholic
+        size = 3294
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 348
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 80
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 178
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 1156
+    }
+}
+#Galicia Region (2576000) #see Poland.txt for balance of region
+#under the rule of Austria in 1836
+#Lvov (660000/165000 POPS) #now part of Ukraine
+702 = {
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 27260
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 18800
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 15000
+    }
+
+    capitalists = {
+        culture = polish
+        religion = catholic
+        size = 200
+    }
+
+    bureaucrats = {
+        culture = polish
+        religion = catholic
+        size = 2600
+    }
+
+    officers = {
+        culture = polish
+        religion = catholic
+        size = 1500
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 9116
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 3100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 11280
+    }
+
+    capitalists = {
+        culture = ashkenazi
+        religion = jewish
+        size = 200
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 6580
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 125
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 7520
+    }
+
+    bureaucrats = {
+        culture = polish
+        religion = catholic
+        size = 10600
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 7236
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 870
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 292
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 360
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 210
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 240
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 232
+    }
+}
+#Stryi (404000/101000 POPS) #now part of Ukraine
+951 = {
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 11372
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2500
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 18800
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 18000
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 37600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 4228
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 450
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 18800
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25848
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 3648
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 364
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 136
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 826
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 116
+    }
+
+    bureaucrats = {
+        culture = polish
+        religion = catholic
+        size = 2000
+    }
+}
+#Ternopil (1136000/284000 POPS) #now part of Ukraine
+952 = {
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37224
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3150
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 688080
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 26000
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 7520
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 3100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 209432
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 12784
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 49912
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 188
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 3460
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1188
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 21960
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 240
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 6684
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 408
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1594
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 6
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 110
+    }
+}
+#Stanislavov (376000/94000 POPS) #now part of Ukraine
+953 = {
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9964
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1525
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 181700
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 8600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 6204
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 325
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 107348
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5264
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 75
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 20584
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 188
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 3460
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 318
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5800
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 198
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 3426
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 168
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 658
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 6
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 110
+    }
+}
+#Volhynia-Podolia Region (1892000)
+#under the rule of Russia in 1836
+#Vinnitsa (492000/123000 POPS)
+954 = {
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 22005
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 425482
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 8000
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 3207
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1223
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11286
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 44110
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 3100
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 586
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 11310
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 30
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 32
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 300
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1172
+    }
+}
+#Proskorov (496000/124000 POPS)
+955 = {
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 140
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9214
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 352123
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 11000
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2543
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 24076
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11436
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 44110
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 401
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 3195
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 246
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9360
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 66
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 640
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 300
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1172
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 10
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 86
+    }
+}
+#Rovne (460000/115000 POPS)
+956 = {
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9028
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 315160
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 10400
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2969
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 39029
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9901
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 38558
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 240
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8378
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 76
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 1038
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 260
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1026
+    }
+}
+#Kovel (444000/111000 POPS)
+957 = {
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8838
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 311588
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 9200
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2357
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 29624
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9881
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 38558
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 236
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8282
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 60
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 788
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 260
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1026
+    }
+}
+#Ukraine Region (4028000)
+#under the rule of Russia in 1836
+#Kiev (492000/123000 POPS)
+958 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5200
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 240
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 13000
+    }
+
+    officers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 24651
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 310174
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 6000
+    }
+
+    bureaucrats = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    officers = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 4138
+    }
+
+    soldiers = {
+        culture = polish
+        religion = catholic
+        size = 100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 25767
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 12414
+    }
+
+    soldiers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 175
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 46553
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 1800
+    }
+
+    bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 1000
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 300
+    }
+
+    soldiers = {
+        culture = russian
+        religion = orthodox
+        size = 100
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8246
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 110
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 686
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 330
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1238
+    }
+}
+#Korosten (448000/112000 POPS)
+959 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6800
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7900
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 900
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 313845
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 3600
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2919
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 30658
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 10343
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 37524
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 210
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8342
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 76
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 816
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 276
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 998
+    }
+}
+#Zhitomir (460000/115000 POPS)
+960 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9781
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 349113
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 3200
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 562
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 3666
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11286
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 40253
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 260
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9280
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 16
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 98
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 300
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1070
+    }
+}
+#Cherkassy (460000/115000 POPS)
+961 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7333
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 900
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 307541
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 2800
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 2357
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 31977
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11286
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 40253
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 1800
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 752
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 12509
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 196
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8176
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 60
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 850
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 300
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1070
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 20
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 332
+    }
+}
+#Chernigov (616000/154000 POPS)
+962 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 12000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 22572
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1450
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 497146
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5743
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 23795
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 2000
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 612
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 4700
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 600
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 13216
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 632
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 16
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 126
+    }
+}
+#Poltava (1552000/388000 POPS)
+963 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 18000
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 200
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 12800
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 7524
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2800
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 965891
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 12374
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 44953
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 2000
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 426
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1033
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 25676
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 326
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1196
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 10
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 28
+    }
+}
+#Sumy (371900/92975 POPS)
+2692 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 6000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 18810
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 318265
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 500
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8460
+    }
+}
+#Taurida Region (360000)
+#under the rule of Russia in 1836
+#Simferopol (126000/29000 POPS)
+964 = {
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 2200
+    }
+
+    bureaucrats = {
+        culture = tatar
+        religion = sunni
+        size = 300
+    }
+
+    officers = {
+        culture = tatar
+        religion = sunni
+        size = 80
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 3571
+    }
+
+    soldiers = {
+        culture = tatar
+        religion = sunni
+        size = 1100
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 68412
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 61
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 10343
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 400
+    }
+
+    bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 700
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 120
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 331
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 9274
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 777
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2819
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 306
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 3330
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 96
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 1818
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 16
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 276
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 8
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 246
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 20
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 76
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 8
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 88
+    }
+}
+#Cherson (126000/29000 POPS)
+965 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1800
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 120
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1033
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 200
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 45144
+    }
+
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 400
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 752
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 17210
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 400
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 562
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 9876
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1504
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5829
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 752
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 2819
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 376
+    }
+
+    zbankers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 10628
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 471
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 6771
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 28
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 20
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 458
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 16
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 262
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 40
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 156
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 20
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 76
+    }
+
+    craftsmen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 10
+    }
+
+    craftsmen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 282
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 12
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 180
+    }
+}
+#Kerch (48000/12000 POPS)
+966 = {
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 800
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 657
+    }
+
+    soldiers = {
+        culture = tatar
+        religion = sunni
+        size = 125
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 29905
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 200
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 471
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 6581
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 376
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1485
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 777
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 2819
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 18
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 796
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 12
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 176
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 10
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 40
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 20
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 76
+    }
+}
+#Sevastopol (60000/15000 POPS)
+967 = {
+    aristocrats = {
+        culture = tatar
+        religion = sunni
+        size = 1000
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 657
+    }
+
+    soldiers = {
+        culture = tatar
+        religion = sunni
+        size = 125
+    }
+
+    zbankers = {
+        culture = tatar
+        religion = sunni
+        size = 35267
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 200
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 376
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 6676
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 562
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2217
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 950
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 3611
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 306
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 3290
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 18
+    }
+
+    craftsmen = {
+        culture = tatar
+        religion = sunni
+        size = 938
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 10
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 178
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 16
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 60
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 26
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 96
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 8
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 88
+    }
+}
+#Odessa Region (1488000)
+#under the rule of Russia in 1836
+#Odessa (248000/62000 POPS)
+968 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2200
+    }
+
+    officers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 29700
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 126874
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 600
+    }
+
+    officers = {
+        culture = polish
+        religion = catholic
+        size = 100
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1881
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 4609
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5643
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 22005
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 400
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 300
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 3722
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1314
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 2819
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 752
+    }
+
+    zbankers = {
+        culture = south_italian
+        religion = catholic
+        size = 15048
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 50
+    }
+
+    zbankers = {
+        culture = south_italian
+        religion = catholic
+        size = 3385
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 2819
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 4419
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 750
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3372
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 122
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 586
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 20
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 36
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 76
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 20
+    }
+
+    craftsmen = {
+        culture = south_italian
+        religion = catholic
+        size = 400
+    }
+
+    craftsmen = {
+        culture = south_italian
+        religion = catholic
+        size = 90
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 76
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 118
+    }
+}
+#Pervomaisk (496000/124000 POPS)
+969 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 8000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9967
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1100
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 379962
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 3000
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 1314
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 10533
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 11286
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 44110
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 752
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 17400
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 266
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 10100
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 36
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 280
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 300
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1172
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 20
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 462
+    }
+}
+#Nikolaev (248000/62000 POPS)
+970 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2633
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 300
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 104864
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 1000
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 562
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 5738
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 5643
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 20219
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 1400
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 938
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 16176
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 562
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 10438
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 1514
+    }
+
+    zbankers = {
+        culture = romanian
+        religion = orthodox
+        size = 54077
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 70
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 2788
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 16
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 152
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 150
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 538
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 26
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 430
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 16
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 278
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 36
+    }
+
+    craftsmen = {
+        culture = romanian
+        religion = orthodox
+        size = 1438
+    }
+}
+#Krivoy Rog (244000/61000 POPS)
+971 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37524
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 525
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 1000
+    }
+
+    zbankers = {
+        culture = polish
+        religion = catholic
+        size = 6325
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 25862
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 998
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = polish
+        religion = catholic
+        size = 168
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 688
+    }
+}
+#Ekaterinoslav (252000/63000 POPS)
+972 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 3400
+    }
+
+    capitalists = {
+        culture = ukrainian
+        religion = orthodox
+        size = 200
+    }
+
+    bureaucrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 14000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9504
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 184619
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 2200
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 8797
+    }
+
+    zbankers = {
+        culture = north_german
+        religion = protestant
+        size = 14626
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 10959
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 200
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 4908
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 232
+    }
+
+    craftsmen = {
+        culture = north_german
+        religion = protestant
+        size = 388
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 290
+    }
+}
+#Zaporozhia Region (648000)
+#under the rule of Russia in 1836
+#Melitopol (84000/21000 POPS)
+973 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    officers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 150
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 31224
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 175
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 30096
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2783
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 800
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 200
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 3059
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 7524
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 830
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 800
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 74
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 80
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 200
+    }
+}
+#Kramatorsk (240000/60000 POPS)
+974 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 19281
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 575
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9150
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 512
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 242
+    }
+}
+#Yuzovka (76000/19000 POPS)
+975 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1200
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 20409
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 200
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 30096
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2783
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 600
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 7524
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 7524
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 542
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 800
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 74
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 200
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 200
+    }
+}
+#Mariopol (248000/62000 POPS)
+976 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 5600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 37620
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 20409
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 550
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 30096
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 9150
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 11336
+    }
+
+    zbankers = {
+        culture = greek
+        religion = orthodox
+        size = 7524
+    }
+
+    zbankers = {
+        culture = south_german
+        religion = catholic
+        size = 3571
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 25
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 542
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 800
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 242
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 300
+    }
+
+    craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 200
+    }
+
+    craftsmen = {
+        culture = south_german
+        religion = catholic
+        size = 96
+    }
+}
+#Kursk Region (596000) #see Russia.txt for balance of region
+#under the rule of Russia in 1836
+#Kharkov (596000/149000 POPS) #now part of Ukraine
+978 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 9000
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 23324
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1400
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 485393
+    }
+
+    zbankers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2783
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 1000
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 1981
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 26615
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 620
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 12902
+    }
+
+    craftsmen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 74
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 708
+    }
+}
+#Donbass Region (652000) #see Russia.txt for balance of region
+#under the rule of Russia in 1836
+#Luhansk (652000/163000 POPS) #now part of Ukraine
+980 = {
+    aristocrats = {
+        culture = ukrainian
+        religion = orthodox
+        size = 11600
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 26334
+    }
+
+    soldiers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 1425
+    }
+
+    zbankers = {
+        culture = ukrainian
+        religion = orthodox
+        size = 482850
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 1800
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 4338
+    }
+
+    zbankers = {
+        culture = russian
+        religion = orthodox
+        size = 75240
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 700
+    }
+
+    craftsmen = {
+        culture = ukrainian
+        religion = orthodox
+        size = 12836
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 110
+    }
+
+    craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 2000
+    }
+}

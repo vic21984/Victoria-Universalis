@@ -1,0 +1,7566 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	title = "EVTNAMEgrantoptions"
+	desc = "EVTDESCgrantoptions"
+	id = 91400
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Enable Giving Grants and Military Supplies"
+		clr_country_flag = deny_grant
+	}
+	option = {
+		name = "Deny Giving Grants and Military Supplies"
+		set_country_flag = deny_grant
+	}
+	option = {
+		name = "Request Money"
+		any_country = {
+			limit = {
+				ai = no
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 91402 days = 0 }
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Request Military Supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 1
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91411 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 1
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 2
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91412 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 2
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 3
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91413 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 3
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 4
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91414 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 4
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 5
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91415 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 5
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 6
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91416 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 6
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 7
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91417 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 7
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 8
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91418 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 8
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 9
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91419 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 10
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91420 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 10
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 11
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91421 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 11
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 12
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91422 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 12
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 13
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91423 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 13
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 14
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91424 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 14
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 15
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91425 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 15
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 16
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91426 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 16
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 17
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91427 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 17
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 18
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91428 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 18
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 19
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91429 days = 0 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+					}
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 19
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 20
+							}
+						}
+					}
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						ai = no
+						NOT = { has_country_flag = deny_grant }
+						NOT = { war_with = THIS }
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 1
+							}
+						}
+					}
+					country_event = { id = 91430 days = 0 }
+				}
+			}
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+	option = {
+		name = "Cancel Sending Supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 2
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -1
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 1
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 2
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 2
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 3
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -2
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 3
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -2
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 3
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 4
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -3
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 4
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -3
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 4
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 5
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -4
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 5
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -4
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 5
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 6
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -5
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 6
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -5
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 6
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 7
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -6
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 7
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -6
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 7
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 8
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -7
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 8
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -7
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 8
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 8
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 9
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -8
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 9
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -8
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 9
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 10
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -9
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 10
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -9
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 10
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 11
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -10
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 11
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -10
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 11
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 11
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 12
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -11
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 12
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -11
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 12
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 12
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 13
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -12
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 13
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -12
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 13
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 13
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 14
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -13
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 14
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -13
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 14
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 15
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -14
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 15
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -14
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 15
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 16
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -15
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 16
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -15
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 16
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 16
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 17
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -16
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 17
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -16
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 17
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 17
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 18
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -17
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 18
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -17
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 18
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 18
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 19
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -18
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 19
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -18
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 19
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 19
+					}
+					NOT = {
+						check_variable = {
+							which = supplier
+							value = 20
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -19
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+						NOT = {
+							check_variable = {
+								which = beneficiary
+								value = 20
+							}
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -19
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 20
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = supplier
+						value = 20
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = supplier
+					value = -20
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -20
+					}
+					country_event = { id = 91408 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 21
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 21
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Cancel Receiving Supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -1
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 1
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 2
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 2
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -2
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 2
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 3
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -2
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 3
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -3
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 3
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 4
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -3
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 4
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -4
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 4
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 5
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -4
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 5
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -5
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 5
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 6
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -5
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 6
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -6
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 6
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 7
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -6
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 7
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -7
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 7
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 8
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -7
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 8
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 8
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -8
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 8
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 9
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -8
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 9
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -9
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 10
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -9
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 10
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -10
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 10
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 11
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -10
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 11
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 11
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -11
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 11
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 12
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -11
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 12
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 12
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -12
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 12
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 13
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -12
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 13
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 13
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -13
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 13
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 14
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -13
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 14
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -14
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 14
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 15
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -14
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 15
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -15
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 15
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 16
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -15
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 16
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 16
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -16
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 16
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 17
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -16
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 17
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 17
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -17
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 17
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 18
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -17
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 18
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 18
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -18
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 18
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 19
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -18
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 19
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 19
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -19
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 19
+						}
+						NOT = {
+							check_variable = {
+								which = supplier
+								value = 20
+							}
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -19
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 20
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					check_variable = {
+						which = beneficiary
+						value = 20
+					}
+				}
+			}
+			owner = {
+				change_variable = {
+					which = beneficiary
+					value = -20
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 20
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -20
+					}
+					country_event = { id = 91409 days = 0 }
+				}
+				JAN = {
+					change_variable = {
+						which = trade_channel
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = supplier
+							value = 21
+						}
+					}
+					change_variable = {
+						which = supplier
+						value = -1
+					}
+				}
+				any_country = {
+					limit = {
+						check_variable = {
+							which = beneficiary
+							value = 21
+						}
+					}
+					change_variable = {
+						which = beneficiary
+						value = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEinsufficientmoney
+	desc = EVTDESCinsufficientmoney
+	id = 91401
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAinsufficientmoney"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivemoney
+	desc = EVTDESCgivemoney
+	id = 91402
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_0.05M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 50000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 50000 }
+			}
+			owner = {
+				money = -50000
+				FROM = {
+					money = 50000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_0.1M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 100000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 100000 }
+			}
+			owner = {
+				money = -100000
+				FROM = {
+					money = 100000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_0.25M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 250000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 250000 }
+			}
+			owner = {
+				money = -250000
+				FROM = {
+					money = 250000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_0.5M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 500000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 500000 }
+			}
+			owner = {
+				money = -500000
+				FROM = {
+					money = 500000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_1M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 1000000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 1000000 }
+			}
+			owner = {
+				money = -1000000
+				FROM = {
+					money = 1000000
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_2M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 2000000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 2000000 }
+			}
+			owner = {
+				money = -2000000
+				FROM = {
+					money = 2000000
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Give_4M_Grant"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { money = 4000000 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { money = 4000000 }
+			}
+			owner = {
+				money = -2000000
+				money = -2000000
+				FROM = {
+					money = 2000000
+					money = 2000000
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAME91408
+	desc = EVTDESC91408
+	id = 91408
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91408"
+	}
+}
+
+country_event = {
+	title = EVTNAME91409
+	desc = EVTDESC91409
+	id = 91409
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91409"
+	}
+}
+
+country_event = {
+	title = EVTNAME91410
+	desc = EVTDESC91410
+	id = 91410
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA91410"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91411
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 1
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 1
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 1
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91412
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 1
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 2
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 2
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 2
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 2
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91413
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 2
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 3
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 3
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 3
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 3
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91414
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 3
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 4
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 4
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 4
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 4
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91415
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 4
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 5
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 5
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 5
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91416
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 5
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 6
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 6
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 6
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 6
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91417
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 6
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 7
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 7
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 7
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 7
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91418
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 7
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 8
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 8
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 8
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 8
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91419
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 8
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 9
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 9
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 9
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 9
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91420
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 10
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 10
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 10
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 10
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91421
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 10
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 11
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 11
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 11
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 11
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91422
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 11
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 12
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 12
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 12
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 12
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91423
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 12
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 13
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 13
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 13
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 13
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91424
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 13
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 14
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 14
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 14
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 14
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91425
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 14
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 15
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 15
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 15
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 15
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91426
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 15
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 16
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 16
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 16
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 16
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91427
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 16
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 17
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 17
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 17
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 17
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91428
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 17
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 18
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 18
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 18
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 18
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91429
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 18
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 19
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 19
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 19
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 19
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivesupplies
+	desc = EVTDESCgivesupplies
+	id = 91430
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_Mil_supplies"
+		random_owned = {
+			limit = {
+				owner = {
+					JAN = {
+						check_variable = {
+							which = trade_channel
+							value = 19
+						}
+						NOT = {
+							check_variable = {
+								which = trade_channel
+								value = 20
+							}
+						}
+					}
+					tag = THIS
+				}
+			}
+			owner = {
+				set_variable = {
+					which = supplier
+					value = 20
+				}
+				FROM = {
+					set_variable = {
+						which = beneficiary
+						value = 20
+					}
+					country_event = { id = 91410 days = 0 }
+				}
+				JAN = {
+					set_variable = {
+						which = trade_channel
+						value = 20
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	title = EVTNAMEtransfersupplies
+	desc = EVTDESCtransfersupplies
+	id = 91450
+	picture = player_grants
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Give_Mil_supplies"
+		country_event = { id = 91450 days = 30 }
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 2
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 2
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 2
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 2
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 2
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 3
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 3
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 3
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 3
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 3
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 3
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 4
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 3
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 4
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 3
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 4
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 3
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 4
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 4
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 4
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 5
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 4
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 5
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 4
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 5
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 4
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 5
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 5
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 5
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 6
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 5
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 6
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 5
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 6
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 5
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 6
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 6
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 6
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 7
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 6
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 7
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 6
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 7
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 6
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 7
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 6
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 7
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 7
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 8
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 7
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 8
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 7
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 8
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 7
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 8
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 8
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 8
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 9
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 8
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 8
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 9
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 8
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 8
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 9
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 8
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 8
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 9
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 8
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 9
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 9
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 10
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 9
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 10
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 9
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 10
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 9
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 10
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 10
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 11
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 11
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 11
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 11
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 10
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 11
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 11
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 12
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 11
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 11
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 12
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 11
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 11
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 12
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 11
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 11
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 12
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 11
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 12
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 12
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 13
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 12
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 12
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 13
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 12
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 12
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 13
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 12
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 12
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 13
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 12
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 13
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 13
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 14
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 13
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 13
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 14
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 13
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 13
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 14
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 13
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 13
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 14
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 13
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 14
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 14
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 15
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 14
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 15
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 14
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 15
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 14
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 15
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 15
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 15
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 16
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 15
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 16
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 15
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 16
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 15
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 16
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 15
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 16
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 16
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 17
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 16
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 16
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 17
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 16
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 16
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 17
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 16
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 16
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 17
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 16
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 17
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 17
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 18
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 17
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 17
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 18
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 17
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 17
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 18
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 17
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 17
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 18
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 17
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 18
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 18
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 19
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 18
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 18
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 19
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 18
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 18
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 19
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 18
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 18
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 19
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 18
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 19
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 19
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 20
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 19
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 19
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 20
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 19
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 19
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 20
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 19
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 19
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 20
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 19
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 20
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 20
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 21
+					}
+				}
+				small_arms = 1500
+			}
+			small_arms = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 21
+						}
+					}
+					NOT = { small_arms = 1500 }
+				}
+				small_arms = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 20
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 21
+					}
+				}
+				canned_food = 1500
+			}
+			canned_food = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 21
+						}
+					}
+					NOT = { canned_food = 1500 }
+				}
+				canned_food = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 20
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 21
+					}
+				}
+				artillery = 1500
+			}
+			artillery = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 21
+						}
+					}
+					NOT = { artillery = 1500 }
+				}
+				artillery = 1500
+			}
+		}
+		random_country = {
+			limit = {
+				check_variable = {
+					which = supplier
+					value = 20
+				}
+				NOT = {
+					check_variable = {
+						which = supplier
+						value = 21
+					}
+				}
+				steamer_convoy = 1500
+			}
+			steamer_convoy = -1500
+			random_country = {
+				limit = {
+					check_variable = {
+						which = beneficiary
+						value = 20
+					}
+					NOT = {
+						check_variable = {
+							which = beneficiary
+							value = 21
+						}
+					}
+					NOT = { steamer_convoy = 1500 }
+				}
+				steamer_convoy = 1500
+			}
+		}
+	}
+}

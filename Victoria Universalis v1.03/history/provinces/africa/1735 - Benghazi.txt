@@ -1,0 +1,10 @@
+owner = TRI
+controller = TUR
+add_core = TRI
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}

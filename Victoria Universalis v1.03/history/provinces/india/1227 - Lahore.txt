@@ -1,0 +1,26 @@
+owner = PNJ
+controller = PNJ
+add_core = PNJ
+add_core = PAK
+trade_goods = raw_cotton
+life_rating = 5
+state_building = {
+	level = 1
+	building = cotton_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fertilizer_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = regular_clothes_factory
+	upgrade = yes
+}

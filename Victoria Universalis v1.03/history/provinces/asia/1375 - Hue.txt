@@ -1,0 +1,20 @@
+owner = DAI
+controller = DAI
+add_core = DAI
+trade_goods = raw_fruit
+life_rating = 5
+state_building = {
+	level = 1
+	building = coffee_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = tobacco_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = fruit_factory
+	upgrade = yes
+}

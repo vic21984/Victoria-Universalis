@@ -1,0 +1,99 @@
+country_event = {
+	
+	id = 90100 
+
+	trigger = {
+		war = no
+			ai = no
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+				}
+			literacy = 0.40
+			free_press = 10
+			any_neighbor_country = {
+				press_rights = free_press
+			}
+			NOT = {
+				OR = {
+				has_country_flag = free_press_noway
+				has_country_flag = free_press_promised
+				}
+			}
+	}
+ 
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.8
+			year = 1865
+		}
+	}
+
+	title = "EVTNAME90100"
+	desc = "EVTDESC90100"
+	picture = "Demonstration"
+	
+
+	option = {
+		name = "EVTOPTA90100" 
+		any_pop = {
+			dominant_issue = {
+				factor = 0.1
+				value = free_press
+			}
+		}
+		set_country_flag = free_press_promised
+		add_country_modifier = {
+			name = "free_press_promised"
+			duration = 1825
+		}
+	}
+	option = {
+		name = "EVTOPTB90100"
+		scaled_militancy = {
+				issue = free_press
+				factor = 2
+			}
+		set_country_flag = free_press_noway
+	}
+}
+
+country_event = {
+	
+	id = 90101 
+
+	trigger = {
+		war = no
+			OR = {
+				press_rights = state_press
+				press_rights = censored_press
+				}
+			literacy = 0.40
+			has_country_flag = free_press_promised
+			NOT = { has_country_modifier = free_press_promised	}
+	}
+ 
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.8
+			year = 1865
+		}
+	}
+
+	title = "EVTNAME90101"
+	desc = "EVTDESC90101"
+	picture = "Demonstration"
+	
+
+	option = {
+		name = "EVTOPTA90101" 
+		scaled_militancy = {
+				issue = free_press
+				factor = 4
+			}
+	}
+}

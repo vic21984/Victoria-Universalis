@@ -1,0 +1,11 @@
+owner = POR
+controller = POR
+add_core = TMR
+trade_goods = raw_tropical_wood
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = tropical_wood_factory
+	upgrade = yes
+}

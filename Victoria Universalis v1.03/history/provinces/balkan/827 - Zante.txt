@@ -1,0 +1,11 @@
+owner = ION
+controller = ION
+add_core = ION
+add_core = GRE
+trade_goods = raw_grain
+life_rating = 5
+1836.1.2 = {
+	owner = GRE
+	controller = GRE
+	remove_core = ION
+}

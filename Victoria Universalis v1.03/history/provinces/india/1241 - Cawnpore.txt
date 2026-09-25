@@ -1,0 +1,16 @@
+owner = EIC
+controller = EIC
+add_core = MUG
+add_core = HNS
+trade_goods = raw_dye
+life_rating = 5
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = iron_factory
+	upgrade = yes
+}

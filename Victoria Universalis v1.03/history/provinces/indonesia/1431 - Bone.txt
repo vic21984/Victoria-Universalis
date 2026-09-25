@@ -1,0 +1,11 @@
+owner = SLW
+controller = SLW
+add_core = SLW
+trade_goods = raw_tropical_wood
+life_rating = 5
+naval_base = 1
+state_building = {
+	level = 1
+	building = grain_factory
+	upgrade = yes
+}
